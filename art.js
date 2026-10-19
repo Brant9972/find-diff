@@ -110,7 +110,7 @@ function propArt(type,changed,color,token=0){
  case 'pen':case 'brush':
    s+=P('M4 24L8 13L21 1L27 7L14 20Z',color)+P('M4 24L1 28L8 25Z',k)+L(11,18,23,6,w,2)+(changed?L(9,20,15,14,k,1):L(14,21,20,15,k,1));break;
  case 'bus':
-   s+=R(2,6,24,19,color,'rx="4"')+R(5,9,8,9,blu)+R(15,9,8,9,blu)+C(8,24,3,k)+C(21,24,3,k)+(changed?C(23,12,1.5,w):C(6,12,1.5,w));break;
+   s+=R(2,6,24,19,color,'rx="4"')+R(5,9,8,9,b)+R(15,9,8,9,b)+C(8,24,3,k)+C(21,24,3,k)+(changed?C(23,12,1.5,w):C(6,12,1.5,w));break;
  case 'traffic':
    s+=R(8,1,12,24,k,'rx="4"')+[7,14,21].map((y,i)=>C(14,y,2.7,i===1?g:i===0?p:m)).join('')+L(14,25,14,28,k,2)+(changed?L(10,14,18,14,w,.7):L(11,22,17,22,w,.7));break;
  case 'jelly':

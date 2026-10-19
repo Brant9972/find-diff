@@ -60,6 +60,6 @@ function drawLandmark(type,accent,alt){
  case 'canal':s+=P('M0 90L48 60L80 60L120 40L170 55L199 92L199 140L0 140Z','#d9b8a2')+P('M0 104Q99 69 199 105','none','stroke="'+wood+'" stroke-width="15"')+P('M3 136Q99 92 197 137Z',blu)+P('M54 133L137 133L118 143L67 143Z',wood)+L(98,96,98,132,k,3)+P('M98 98L128 130L98 130Z',w);break;
  }
  // Every scene has a unique structural focal point, not a generic repeated grid.
- let dx=alt?13:-9,dy=alt?4:0;
- return '<g transform="translate('+(139+dx)+' '+(65+dy)+')">'+s+'</g>';
+ // Alternate return visits use a side composition and a smaller focal point.
+ return alt?'<g transform="translate(259 77) scale(.81)">'+s+'</g>':'<g transform="translate(130 65)">'+s+'</g>';
 }

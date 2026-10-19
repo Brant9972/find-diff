@@ -89,6 +89,64 @@ function propArt(type,changed,color,token=0){
  case 'balloon':case 'ball':case 'heart':
    s+=C(14,12,10,color)+L(14,22,14,28,k,1.5)+(changed?C(10,9,2,w):C(18,9,2,w));break;
  case 'carrot': case 'grape': break;
+
+ case 'watering':
+   s+=R(5,10,16,15,color,'rx="3"')+P('M19 13L27 7L28 12L21 18Z',color)+P('M7 10Q7 2 15 2L16 7','none','stroke="'+k+'" stroke-width="2"')+(changed?C(25,18,2,b):C(24,23,2,b));break;
+ case 'buoy':
+   s+=C(14,14,11,color)+R(8,3,12,22,w)+R(3,11,22,6,p)+L(14,3,14,0,k,2)+(changed?L(9,7,12,7,k,1.5):L(16,21,20,21,k,1.5));break;
+ case 'crab':
+   s+=E(14,18,9,6,color)+C(9,17,1.5,k)+C(19,17,1.5,k)+L(9,13,8,6,k,1.5)+L(19,13,20,6,k,1.5)+C(8,5,3,p)+C(20,5,3,p);
+   s+=changed?L(2,19,5,15,k,1.6):L(23,15,26,19,k,1.6);break;
+ case 'fire':
+   s+=P('M14 1Q2 11 5 20Q9 29 16 27Q27 25 24 16Q22 10 20 7L18 16Z',color)+P('M14 11Q9 17 13 25Q20 25 19 18Z',g)+(changed?C(14,19,2,p):C(18,22,2,p));break;
+ case 'backpack':
+   s+=R(5,4,18,24,color,'rx="7"')+R(9,16,10,9,w,'rx="2"')+P('M7 14Q2 15 3 23','none','stroke="'+k+'" stroke-width="2"')+P('M21 14Q26 15 25 23','none','stroke="'+k+'" stroke-width="2"')+R(changed?10:16,8,3,3,g);break;
+ case 'bolt':
+   s+=P('M16 1L5 16L13 16L9 27L24 11L15 11L19 1Z',color)+(changed?L(14,11,18,8,w,1.4):L(11,18,15,15,w,1.4));break;
+ case 'crystal':
+   s+=P('M9 2L19 2L26 11L19 27L9 27L2 11Z',color)+P('M9 2L14 11L9 27L2 11Z',w,'opacity=".38"')+L(14,11,19,27,w,1)+(changed?L(9,2,14,11,k,1):L(19,2,14,11,k,1));break;
+ case 'glasses':
+   s+=C(8,15,7,w,'stroke="'+k+'" stroke-width="2"')+C(22,15,7,w,'stroke="'+k+'" stroke-width="2"')+L(15,15,16,15,k,2)+(changed?L(3,12,9,12,b,1):L(19,12,25,12,b,1));break;
+ case 'pen':case 'brush':
+   s+=P('M4 24L8 13L21 1L27 7L14 20Z',color)+P('M4 24L1 28L8 25Z',k)+L(11,18,23,6,w,2)+(changed?L(9,20,15,14,k,1):L(14,21,20,15,k,1));break;
+ case 'bus':
+   s+=R(2,6,24,19,color,'rx="4"')+R(5,9,8,9,blu)+R(15,9,8,9,blu)+C(8,24,3,k)+C(21,24,3,k)+(changed?C(23,12,1.5,w):C(6,12,1.5,w));break;
+ case 'traffic':
+   s+=R(8,1,12,24,k,'rx="4"')+[7,14,21].map((y,i)=>C(14,y,2.7,i===1?g:i===0?p:m)).join('')+L(14,25,14,28,k,2)+(changed?L(10,14,18,14,w,.7):L(11,22,17,22,w,.7));break;
+ case 'jelly':
+   s+=P('M4 14Q4 0 14 2Q24 0 24 14Z',color)+[7,12,17,22].map(x=>L(x,14,x+(changed&&x===12?4:0),27,w,1.4)).join('')+C(10,11,1.3,k)+C(18,11,1.3,k);break;
+ case 'telescope':
+   s+=P('M3 13L22 3L26 10L7 20Z',color)+L(14,15,8,27,k,2)+L(14,15,22,27,k,2)+R(changed?19:9,8,4,3,w);break;
+ case 'paint':
+   s+=C(14,15,12,color)+C(9,12,3,w)+C(18,9,3,g)+C(20,19,3,m)+C(changed?8:13,22,2.4,p);break;
+ case 'ski':
+   s+=L(2,25,24,4,color,3)+L(7,26,27,8,k,2)+R(9,12,11,3,w,'transform="rotate(-38 9 12)"')+(changed?C(19,9,2,p):C(12,17,2,p));break;
+ case 'glove':
+   s+=P('M6 26L4 12Q4 8 8 9L9 15L9 4Q12 1 14 5L15 13L16 3Q20 2 20 7L20 15L23 11Q27 11 26 16L22 26Z',color)+L(changed?10:16,21,20,21,w,1.4);break;
+ case 'snowman':
+   s+=C(14,20,8,w)+C(14,9,6,w)+C(11,8,1,k)+C(17,8,1,k)+P('M14 10L20 12L14 13Z',g)+R(8,2,13,3,k)+(changed?C(14,18,2,p):C(14,22,2,p));break;
+ case 'rope':
+   s+=C(14,14,10,'none','stroke="'+color+'" stroke-width="4"')+C(14,14,5,'none','stroke="'+w+'" stroke-width="2"')+(changed?L(17,21,25,25,color,3):L(6,21,1,25,color,3));break;
+ case 'bone':case 'fossil':
+   s+=L(7,8,21,22,w,7)+C(5,7,4,w)+C(9,5,4,w)+C(19,24,4,w)+C(24,20,4,w)+(changed?C(14,14,2,p):C(17,17,2,p));break;
+ case 'skull':
+   s+=C(14,12,11,w)+R(8,18,12,9,w,'rx="2"')+C(10,12,3,k)+C(19,12,3,k)+P('M14 15L11 20L17 20Z',k)+(changed?L(10,23,10,26,k,1):L(18,23,18,26,k,1));break;
+ case 'camel':
+   s+=P('M3 16L7 8L12 13L17 6L22 15L25 15L24 22L4 22Z',color)+L(7,20,6,28,k,2)+L(20,20,21,28,k,2)+C(25,11,3,color)+(changed?C(23,10,1,k):C(27,12,1,k));break;
+ case 'coral':
+   s+=L(14,27,14,5,color,4)+L(14,13,5,7,color,4)+L(14,19,24,10,color,4)+L(14,24,6,20,color,3)+(changed?L(24,10,25,3,color,3):L(5,7,3,1,color,3));break;
+ case 'coin':
+   s+=C(14,14,12,g)+C(14,14,9,'none','stroke="'+w+'" stroke-width="1.5"')+T(14,20,changed?'Ⅱ':'Ⅰ',17,k);break;
+ case 'bucket':
+   s+=P('M5 11L23 11L21 27L7 27Z',color)+P('M6 12Q6 0 14 0Q22 0 22 12','none','stroke="'+k+'" stroke-width="2"')+(changed?L(9,19,19,19,w,2):L(9,23,19,23,w,2));break;
+ case 'house':
+   s+=P('M1 14L14 2L27 14Z',color)+R(5,14,18,13,w)+R(11,18,6,9,k)+(changed?C(14,21,1.5,g):C(16,25,1.5,g));break;
+ case 'stone':
+   s+=P('M3 25L5 10L14 4L24 10L26 25Z',color)+P('M5 10L14 4L14 25L3 25Z',w,'opacity=".22"')+(changed?L(10,11,14,16,k,1.1):L(17,14,20,19,k,1.1));break;
+ case 'shirt':
+   s+=P('M7 4L1 12L6 17L9 14L9 27L20 27L20 14L23 17L27 12L20 4Z',color)+L(10,7,19,7,w,2)+(changed?C(12,16,2,w):C(17,16,2,w));break;
+ case 'socks':
+   s+=P('M7 2L18 2L18 17L26 19L24 26L9 26L7 20Z',color)+L(7,9,18,9,w,2)+(changed?L(18,21,24,21,k,1.5):L(10,22,16,22,k,1.5));break;
  default:
    s+=R(4,4,20,20,color,'rx="5"')+C(14,14,7,w)+T(14,18,changed?'✦':'★',12,k);
  }

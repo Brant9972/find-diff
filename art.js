@@ -55,7 +55,7 @@ function propArt(type,changed,color,token=0){
  case 'mushroom':
    s+=R(10,13,8,13,w,'rx="3"')+P('M2 15Q4 0 14 2Q25 0 26 15Z',color)+C(changed?8:11,11,2,w)+C(19,9,2.2,w);break;
  case 'star':case 'starfish':case 'snowflake':case 'moon':case 'sun':case 'cloud':
-   if(type==='cloud')s+=C(10,17,7,w)+C(16,13,9,w)+C(22,19,6,w)+R(6,18,21,6,w);
+   if(type==='cloud')s+=C(10,17,7,w)+C(16,13,9,w)+C(22,19,6,w)+R(6,18,21,6,w)+(changed?L(9,22,14,22,b,1.7):L(19,22,24,22,b,1.7));
    else if(type==='moon')s+=C(14,14,11,g)+C(changed?19:21,9,10,k);
    else if(type==='sun')s+=C(14,14,9,g)+L(changed?2:4,3,5,6,g,2)+L(23,4,20,7,g,2);
    else if(type==='snowflake'){for(let i=0;i<6;i++){let a=i*Math.PI/3;s+=L(14,14,14+12*Math.cos(a),14+12*Math.sin(a),w,2);}s+=C(14,14,changed?4:2,color);}

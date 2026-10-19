@@ -110,7 +110,7 @@ function lose(){
  {label:'↻ 重新挑戰',fn:()=>openLevel(current)},'關卡地圖',picker);
 }
 function picker(){
- showModal('🗺️','100 關地圖','50 種獨立主題 × 2 種視角。<br>目前解鎖 '+unlocked+' / 100 關。',
+ showModal('🗺️','100 關地圖','50 種不同主題 × 2 種構圖。<br>目前解鎖 '+unlocked+' / 100 關。',
  {label:'返回本關',fn:()=>openLevel(current)});
  const p=$('levelPicker');p.hidden=false;p.innerHTML='';
  for(let i=0;i<TOTAL;i++){

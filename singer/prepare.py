@@ -268,7 +268,7 @@ review = json.loads(review_path.read_text()) if review_path.exists() else {}
 rejected_sources = {source_key(x["source"]) for x in review.get("rejected",[])}
 def source_allowed(url):
     key=source_key(url)
-    return key not in rejected_sources and not re.search(r"statue|sculpture|waxwork|雕像|雕塑|蠟像|蜡像|銅像|铜像",key,re.I)
+    return key not in rejected_sources and not re.search(r"statue|sculpture|waxwork|madame.?tussauds|stamp(?:_| |%|of)|雕像|雕塑|蠟像|蜡像|銅像|铜像|郵票|邮票",key,re.I)
 oldpath = ROOT / "questions.json"
 existing = {}
 if oldpath.exists():

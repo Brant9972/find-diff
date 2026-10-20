@@ -13,7 +13,7 @@ const assert=require('node:assert/strict');
   for(let i=0;i<SCENES.length;i++){
    const stage={name:SCENES[i].name,spots:[]};
    for(let k=0;k<SCENES[i].diffs.length;k++){
-    let map;try{map=await HITMAP.one(SCENES[i].diffs[k]);}catch(e){throw new Error('Stage '+(i+1)+' / spot '+(k+1)+': '+e.message);}
+    let map;try{map=await HITMAP.one(SCENES[i].diffs[k]);}catch(e){stage.spots.push({error:'Stage '+(i+1)+' / spot '+(k+1)+': '+e.message});continue;}
     const actual=HITMAP.contains(map,map.centre.x,map.centre.y,1);
     const nearby=HITMAP.contains(map,map.centre.x+9,map.centre.y,18);
     stage.spots.push({count:map.count,centre:map.centre,bounds:map.bounds,centred:actual,nearby});
@@ -24,10 +24,12 @@ const assert=require('node:assert/strict');
  });
  assert.equal(summary.length,10);assert(summary.every(l=>l.spots.length===5));
  for(const s of summary)for(const p of s.spots){
+  if(p.error){console.error(p.error);continue;}
   assert(p.count>=3, s.name+': no pixels');
   assert(p.centred,s.name+': centre off actual visual difference');
   assert(p.centre.x>=0&&p.centre.y>=0&&p.centre.x<=800&&p.centre.y<=460,s.name+': invalid coordinate');
  }
+ assert(summary.every(s=>s.spots.every(p=>!p.error)),'Some visual differences produced empty hitmaps');
  await page.click('#modalGo');
  await page.waitForFunction(()=>document.querySelector('#message')?.textContent.includes('已校準完成'),{timeout:25000});
  const marker=summary[0].spots[3].centre;

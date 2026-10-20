@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "target": 300,
-  "playable": 298,
-  "updatedAt": "2026-10-20T17:10:25.877636+00:00",
+  "playable": 300,
+  "updatedAt": "2026-10-20T17:13:02.789979+00:00",
   "verification": "Automatic source/license/frontal-face/eye/nose/mouth landmark checks; human portrait and Taiwan-release review pending.",
   "questions": [
     {
@@ -3239,6 +3239,64 @@
         "attribution": ""
       },
       "bioExcerpt": "李英宏 （1986年7月6日—），藝名DJ Didilong，臺灣男歌手、演員，新北市新莊區人，畢業於國立台灣藝術大學廣播電視學系。2016年5月發行首張個人專輯《台北直直撞》，並於同年9月30日在ATT Show Box舉辦首次個人演唱會。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s085",
+      "name": "熱狗",
+      "aliases": [
+        "熱狗",
+        "MC HotDog",
+        "姚中仁",
+        "热狗"
+      ],
+      "photo": "photos/s085.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27666932353823204,
+          0.92,
+          0.4251079108771377
+        ],
+        "nose": [
+          0.08,
+          0.27666932353823204,
+          0.92,
+          0.545923968938392
+        ],
+        "mouth": [
+          0.08,
+          0.27666932353823204,
+          0.92,
+          0.671914732925535
+        ],
+        "chin": [
+          0.08,
+          0.27666932353823204,
+          0.92,
+          0.8217343932624877
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/MC_HotDog",
+        "source": "https://commons.wikimedia.org/wiki/File:MC_HotDog_with_Adidas_microphone_20120504.jpg",
+        "artist": "邱鈺鋒",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "姚中仁（1978年4月10日—），藝名MC HotDog，簡稱熱狗，台灣饒舌男歌手，畢業於輔仁大學影像傳播學系，早年被譽為「台灣地下饒舌第一人」，音樂蔓延華人市場。後簽約加入魔岩唱片「大馬戲團音樂工作室」。歌曲大多使用直白的語言對各種社會現象進行赤裸裸的揭露。2007年6月憑《Wake Up》獲第18屆金曲獎最佳國語專輯獎。2015年與張震嶽、頑童MJ116組成限定組合「兄弟本色」。2017年在中",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
@@ -15720,6 +15778,64 @@
         "attribution": "Rico Shen"
       },
       "bioExcerpt": "Yako Chan (Chinese: 詹子晴; pinyin: Zhan Ziqing) is a Taiwanese singer and actress. She was a member of the band Hey Girl.",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s402",
+      "name": "小蠻",
+      "aliases": [
+        "小蠻",
+        "王承嫣",
+        "Xiaoman",
+        "小蛮"
+      ],
+      "photo": "photos/s402.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.284920061896829,
+          0.92,
+          0.4157994214226218
+        ],
+        "nose": [
+          0.08,
+          0.284920061896829,
+          0.92,
+          0.5314536038567038
+        ],
+        "mouth": [
+          0.08,
+          0.284920061896829,
+          0.92,
+          0.6585951547061696
+        ],
+        "chin": [
+          0.08,
+          0.284920061896829,
+          0.92,
+          0.8007232360839844
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%89%BF%E5%AB%A3",
+        "source": "https://commons.wikimedia.org/wiki/File:2007TaipeiITMonth_ChineseGamer_HeiSeHuiMeiMei_Shu-hsuan_Wang.jpg",
+        "artist": "Rico Shen",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "王承嫣（英語：Lilu Suan Wang，1989年11月7日—），藝名小蠻（Hsiao Man），是台灣女演員、女歌手和節目主持人。於2005年參加電視節目《我愛黑澀會》後被選中加入台灣女子組合黑Girl（前稱 黑澀會美眉）出道。2009年離開團體，單飛後以電視劇和綜藝為主。老公為藝人邵翔，2019年2月和老公邵翔自立門戶成立個人工作室「相親相愛工作室」。",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {

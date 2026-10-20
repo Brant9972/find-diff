@@ -1,0 +1,31 @@
+name: Singer quiz rounds and mobile QA
+on:
+  push:
+    paths:
+      - 'singer/game.js'
+      - 'singer/index.html'
+      - 'singer/style.css'
+      - 'singer/qa.cjs'
+      - '.github/workflows/singer-ui-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node --check singer/game.js
+          node --check singer/qa.cjs
+      - run: npm install --no-save --package-lock=false puppeteer-core@24
+      - run: node singer/qa.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: singer-rounds-qa
+          path: qa-output

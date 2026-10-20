@@ -2,12 +2,12 @@
 "use strict";
 const KEY="singer-face-quiz-v1";
 const $=id=>document.getElementById(id);
-const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning"])el[id]=$(id);
+const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
 let bank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false;
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 function shuffle(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
-function fresh(){return {version:1,deck:shuffle(bank.map(q=>q.id)),pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
+function fresh(roundSize=10){return {version:1,roundSize,deck:shuffle(bank.map(q=>q.id)).slice(0,roundSize||bank.length),pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{el.saveWarning.hidden=false;}}
 function restore(){
  try{
@@ -18,9 +18,11 @@ function restore(){
   // Preserve the current question when a later build removes a failed photo.
   const prior=new Set(old.deck.slice(0,old.pos));
   const done=valid.filter(id=>prior.has(id)),remaining=valid.filter(id=>!prior.has(id));
-  const extra=bank.map(q=>q.id).filter(id=>!valid.includes(id));
+  const roundSize=[10,20].includes(old.roundSize)?old.roundSize:0;
+  const extra=old.pos===old.deck.length?[]:bank.map(q=>q.id).filter(id=>!valid.includes(id));
+  const deck=[...done,...remaining,...shuffle(extra)].slice(0,roundSize||bank.length);
   const same=byId.has(current);
-  return {version:1,deck:[...done,...remaining,...shuffle(extra)],pos:done.length,
+  return {version:1,roundSize,deck,pos:Math.min(done.length,deck.length),
    stage:same&&Number.isInteger(old.stage)?Math.max(0,Math.min(4,old.stage)):0,
    tried:same&&Array.isArray(old.tried)?old.tried.filter(x=>typeof x==="string").slice(0,8):[],
    finished:same&&old.finished===true,won:same&&old.won===true,
@@ -56,7 +58,7 @@ function showResult(){
  el.credits.hidden=!source;el.credits.open=false;
 }
 function render(){
- el.round.textContent=state?String(Math.min(state.pos+1,state.deck.length)):"—";
+ el.round.textContent=state?String(Math.min(state.pos+1,state.deck.length))+"／"+state.deck.length:"—";
  el.correct.textContent=state?.correct||0;el.score.textContent=state?.score||0;
  const q=question(),active=!!q&&!state.finished&&!loading;
  el.answer.disabled=!active;el.submit.disabled=!active;el.giveup.disabled=!active;
@@ -77,8 +79,8 @@ function end(){
  el.photoMessage.textContent="這輪挑戰完成！";
  el.guessForm.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
  el.result.hidden=false;el.result.textContent="答對 "+state.correct+" 位歌手，累積 "+state.score+" 分。";
- message("想再挑戰一次？點下方「重新開始」。","good");
- el.round.textContent=state.deck.length;el.correct.textContent=state.correct;el.score.textContent=state.score;
+ message("選擇關數，再開始新回合吧！","good");
+ el.round.textContent=state.deck.length+"／"+state.deck.length;el.correct.textContent=state.correct;el.score.textContent=state.score;
 }
 function loadQuestion(){
  const q=question();if(!q){end();return;}
@@ -114,12 +116,14 @@ el.next.addEventListener("click",()=>{
  state.pos++;state.stage=0;state.tried=[];state.finished=false;state.won=false;
  save();loadQuestion();
 });
-el.restart.addEventListener("click",()=>{
+function startRound(){
  if(empty){location.reload();return;}
  if(!bank.length)return;
  if(state&&(state.pos>0||state.tried.length||state.finished)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
- state=fresh();save();loadQuestion();
-});
+ state=fresh(el.roundSize.value==="all"?0:Number(el.roundSize.value));save();loadQuestion();
+}
+el.restart.addEventListener("click",startRound);
+el.startRound.addEventListener("click",startRound);
 async function init(){
  try{
   const response=await fetch("./questions.json",{cache:"no-store"});
@@ -128,6 +132,9 @@ async function init(){
   bank=(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
   if(!bank.length)throw Error("No prepared photos");
   byId=new Map(bank.map(q=>[q.id,q]));state=restore();save();
+  el.roundSize.value=state.roundSize===0?"all":String(state.roundSize);
+  el.roundSize.querySelector('option[value="all"]').textContent="全部（"+bank.length+" 關）";
+  el.roundSize.disabled=false;el.startRound.disabled=false;
   el.poolInfo.textContent=bank.length+" 位歌手 · 隨機不重複 · 自動記錄進度";
   loadQuestion();
  }catch{

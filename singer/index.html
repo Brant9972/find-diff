@@ -5,13 +5,18 @@
 <meta name="theme-color" content="#12111d">
 <title>猜歌手・五官挑戰</title>
 <meta name="description" content="只看眼睛，你認得出這位歌手嗎？輸入名字，從五官線索猜出熟悉的聲音。">
-<link rel="stylesheet" href="./style.css">
-<script defer src="./game.js"></script>
+<link rel="stylesheet" href="./style.css?v=rounds2">
+<script defer src="./game.js?v=rounds2"></script>
 </head>
 <body>
 <main>
 <header><a class="brand" href="./">FACE<span>／</span>VOICE</a><span class="edition">華語歌手篇</span></header>
 <section class="intro"><p class="eyebrow">看五官，猜聲音</p><h1>這雙眼睛，<br>你聽過嗎？</h1><p class="sub">輸入歌手名字。猜錯一次，就多露出一點。</p></section>
+<section class="round-options" aria-label="每回合關數">
+<label for="roundSize">每回合</label>
+<select id="roundSize" disabled><option value="10">10 關</option><option value="20">20 關</option><option value="all">全部題庫</option></select>
+<button id="startRound" type="button" disabled>開始新回合</button>
+</section>
 <div class="stats" aria-label="遊戲統計"><span>第 <b id="round">—</b> 題</span><span>答對 <b id="correct">0</b></span><span>積分 <b id="score">0</b></span></div>
 <section class="play" aria-label="猜歌手遊戲">
 <div class="photo-card" id="photoCard">

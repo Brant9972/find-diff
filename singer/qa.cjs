@@ -59,7 +59,7 @@ const server=http.createServer((req,res)=>{
   await page.setRequestInterception(true);
   page.on("request",req=>{
    if(req.url().endsWith("/singer/questions.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(fixtures)});
-   if(/\/photos\/qa[12]\.jpg$/.test(req.url()))return req.respond({status:200,contentType:"image/svg+xml",body:svg});
+   if(/\/photos\/qa\d+\.jpg$/.test(req.url()))return req.respond({status:200,contentType:"image/svg+xml",body:svg});
    req.continue();
   });
   await page.goto("http://127.0.0.1:8099/singer/");
@@ -98,9 +98,55 @@ const server=http.createServer((req,res)=>{
   });
   await page.reload();await page.waitForFunction(()=>!document.getElementById("portrait").hidden);
   await guess("測試甲");assert.equal((await snapshot()).score,100,"Restored round scored twice");
+  // New round sizes must stop at the chosen count and survive a growing bank.
+  page.on("dialog",dialog=>dialog.accept());
+  fixtures.questions=Array.from({length:30},(_,i)=>({id:"qa"+(i+1),name:"歌手"+(i+1),aliases:["Test "+(i+1)],photo:"photos/qa"+(i+1)+".jpg"}));
+  await page.evaluate(()=>localStorage.clear());
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).deck.length,10,"New round did not default to 10");
+  assert.equal(new Set((await snapshot()).deck).size,10,"10-question round repeats singers");
+  assert.equal(await page.$eval("#round",e=>e.textContent),"1／10");
+  await guess("猜錯一次");
+  fixtures.questions.push({id:"qa31",name:"歌手31",aliases:[],photo:"photos/qa31.jpg"});
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).stage,1,"10-question clue progress was lost");
+  assert.equal((await snapshot()).deck.length,10,"New bank entries extended a fixed round");
+  for(let i=0;i<10;i++){
+   const saved=await snapshot(),q=fixtures.questions.find(q=>q.id===saved.deck[saved.pos]);
+   await guess(q.name);await page.click("#next");
+   if(i<9)await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  }
+  assert.equal((await snapshot()).pos,10);
+  assert.equal((await snapshot()).correct,10);
+  assert.equal((await snapshot()).score,980);
+  assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("startRound").disabled);
+  assert.equal((await snapshot()).deck.length,10,"Completed round grew on reload");
+  await page.select("#roundSize","20");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).deck.length,20);
+  assert.equal((await snapshot()).roundSize,20);
+  assert.equal(new Set((await snapshot()).deck).size,20);
+  await guess("錯誤提示");
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal(await page.$eval("#roundSize",e=>e.value),"20");
+  assert.equal((await snapshot()).stage,1);
+  assert.equal((await snapshot()).deck.length,20);
+  for(let i=0;i<20;i++){
+   await page.click("#giveup");await page.click("#next");
+   if(i<19)await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  }
+  assert.equal((await snapshot()).pos,20);
+  assert.equal((await snapshot()).score,0);
+  assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");
+  await page.select("#roundSize","all");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).deck.length,31,"All-question mode was removed");
+  assert.equal((await snapshot()).roundSize,0);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Round controls overflow mobile width");
   assert.equal(errors.length,0,errors.join("\n"));
   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});
   await page.screenshot({path:path.join(root,"qa-output/singer-mobile.png"),fullPage:true});
-  console.log("PASS: roster, photo files, mobile layout, aliases, clues, duplicate guesses, reload, scores and round completion.");
+  console.log("PASS: real photos, aliases, clue/score persistence, 10/20-question endings, bank growth, all mode and mobile layout.");
  }finally{await browser.close();}
 })().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());

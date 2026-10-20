@@ -67,10 +67,10 @@ function ornament(cfg,j,random){
  if(j%4===0)s+=G('translate(695 368)',E(0,0,43,22,'#e9c58c')+T(0,2,'✦',27,'#8f858c'));
  return s;
 }
-function create(cfg,j){
+function create(cfg,j,cluePlan){
  const rand=makeRand(cfg.seed+93);
  const locs=points(rand);
- const {chosen,remaining}=choose(CLUE_PLANS[j],locs,rand);
+ const {chosen,remaining}=choose(cluePlan,locs,rand);
  const colors=spotColors(cfg);
  // Static props and actual changes use the same visual system.
  // Large vivid props may be false clues.
@@ -108,5 +108,6 @@ function create(cfg,j){
  register(cfg.name,'觀察整個場景：醒目物件不一定是答案。',()=>baseSVG,diffs);
 }
 if(FULL_SCENES.length!==90||CLUE_PLANS.length!==90)throw Error('Missing full-game data');
-FULL_SCENES.forEach(create);
+// Interleave nine thematic families so two consecutive stages never share a repeated backdrop family.
+for(let j=0;j<90;j++){const src=Math.floor(j/9)+(j%9)*10;create(FULL_SCENES[src],j,CLUE_PLANS[src]);}
 })();

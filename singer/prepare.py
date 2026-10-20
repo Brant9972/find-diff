@@ -57,6 +57,17 @@ def portrait_candidates(singer):
         candidates[0] = ("zh", "陳信宏")
     if singer["name"] == "王子":
         candidates[0] = ("zh", "邱勝翊")
+    canonical = {
+        "信":"蘇見信", "阿沁":"黃漢青", "平安":"平安_(歌手)",
+        "明道":"明道_(藝人)", "丫頭":"詹子晴", "小薰":"黃瀞怡",
+        "小蠻":"王承嫣", "郭美美":"郭美美_(歌手)",
+        "瘦子":"瘦子_(歌手)", "家家":"家家_(歌手)", "Tank":"呂建忠",
+        "阿杜":"杜成義", "蛋堡":"杜振熙", "熊仔":"熊信寬",
+        "熱狗":"姚中仁", "HUSH":"陳家偉", "Karencici":"林愷倫",
+        "黃安":"黃安_(藝人)", "ØZI":"陳奕凡"
+    }
+    if singer["name"] in canonical:
+        candidates[0] = ("zh", canonical[singer["name"]])
     for alias in singer["aliases"]:
         if re.search("[A-Za-z]", alias) and len(alias) > 3:
             candidates.append(("en", alias))

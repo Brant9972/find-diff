@@ -1,0 +1,24 @@
+name: Pilot precision hitbox QA
+on:
+  push:
+    paths:
+      - 'pilot/**'
+      - '.github/workflows/pilot-hitbox-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser test dependency
+        run: npm install --no-save puppeteer-core@24
+      - name: Serve static website
+        run: python3 -m http.server 8099 --bind 127.0.0.1 > /tmp/pilot-http.log 2>&1 &
+      - name: Check 50 differences and mobile click accuracy
+        run: node pilot/qa-hits.cjs

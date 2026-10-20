@@ -4,13 +4,14 @@ const puppeteer=require("puppeteer-core");
 const root=path.resolve(__dirname,"..");
 let realQuestions=[];
 const roster=JSON.parse(fs.readFileSync(path.join(__dirname,"roster.json")));
-assert.equal(roster.singers.length,300);
-assert.equal(new Set(roster.singers.map(x=>x.id)).size,300);
-assert.equal(new Set(roster.singers.map(x=>x.name)).size,300);
+assert(roster.singers.length>=300);
+assert.equal(new Set(roster.singers.map(x=>x.id)).size,roster.singers.length);
+assert.equal(new Set(roster.singers.map(x=>x.name)).size,roster.singers.length);
 if(fs.existsSync(path.join(__dirname,"questions.json"))){
  const real=JSON.parse(fs.readFileSync(path.join(__dirname,"questions.json")));
  realQuestions=real.questions;
  assert.equal(real.playable,real.questions.length);
+ assert(real.playable<=300);
  for(const q of real.questions){
   assert(roster.singers.some(s=>s.id===q.id&&s.name===q.name));
   assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing portrait");

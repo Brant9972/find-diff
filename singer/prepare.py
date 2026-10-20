@@ -2,7 +2,7 @@
 """Prepare licensed portraits without counting missing photos as playable questions."""
 import concurrent.futures, datetime, hashlib, html, io, json, os, re, threading, time
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 import cv2
 import numpy as np
 import requests
@@ -196,7 +196,7 @@ def choose_face(image):
     faces = sorted(detected, key=lambda face: float(face[2]*face[3]), reverse=True)
     face = faces[0].astype(float)
     x,y,w,h = face[:4]
-    if min(w,h) < 60:
+    if min(w,h) < 85:
         raise ValueError("Face is too small")
     if len(faces) > 1 and float(faces[1][2]*faces[1][3]) > w*h*.28:
         raise ValueError("Multiple prominent faces")
@@ -248,7 +248,16 @@ def crop_face(blob):
     return cropped,boundaries(face,box)
 
 roster = json.loads((ROOT / "roster.json").read_text())
-assert len(roster["singers"]) == len({s["name"] for s in roster["singers"]}) == 300
+assert len(roster["singers"]) >= 300
+assert len(roster["singers"]) == len({s["name"] for s in roster["singers"]})
+def source_key(url):
+    return unquote(url.split("/wiki/")[-1]).replace("_"," ").casefold()
+review_path = ROOT/"photo-review.json"
+review = json.loads(review_path.read_text()) if review_path.exists() else {}
+rejected_sources = {source_key(x["source"]) for x in review.get("rejected",[])}
+def source_allowed(url):
+    key=source_key(url)
+    return key not in rejected_sources and not re.search(r"statue|sculpture|waxwork|雕像|雕塑|蠟像|蜡像|銅像|铜像",key,re.I)
 oldpath = ROOT / "questions.json"
 existing = {}
 if oldpath.exists():
@@ -256,7 +265,9 @@ if oldpath.exists():
 
 def prepare(s):
     cached = existing.get(s["id"])
-    if cached and cached["name"] == s["name"] and (ROOT / cached["photo"]).exists():
+    if cached and cached["name"] == s["name"] and (ROOT / cached["photo"]).exists() and source_allowed(cached.get("attribution",{}).get("source","")):
+        aliases = list(dict.fromkeys([s["name"],*s["aliases"]]))
+        cached["aliases"] = list(dict.fromkeys(aliases+[CC.convert(a) for a in aliases]))
         if cached.get("processorVersion") == 2:
             return cached, None
         try:
@@ -270,6 +281,8 @@ def prepare(s):
             pass
     error = "No suitable freely licensed portrait found"
     for candidate in portrait_candidates(s):
+        if not source_allowed(candidate["source"]):
+            continue
         try:
             blob = get(candidate["url"]).content
             if len(blob) > 18_000_000:
@@ -294,14 +307,14 @@ def prepare(s):
 
 ready, pending = [], []
 def checkpoint():
-    ordered = sorted(ready, key=lambda s:s["id"])
+    ordered = sorted(ready, key=lambda s:s["id"])[:300]
     payload = {"schemaVersion":1,"target":300,"playable":len(ordered),
                "updatedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),
                "verification":"Automatic source/license/frontal-face/eye/nose/mouth landmark checks; human portrait and Taiwan-release review pending.",
                "questions":ordered}
     oldpath.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n")
     (ROOT/"photo-report.json").write_text(json.dumps({
-        "target":300,"processed":len(ready)+len(pending),"ready":len(ready),
+        "target":300,"candidateCount":len(roster["singers"]),"processed":len(ready)+len(pending),"ready":min(300,len(ready)),"available":len(ready),
         "pending":sorted(pending,key=lambda x:x["id"]),
         "humanReviewRequired":True
     },ensure_ascii=False,indent=2)+"\n")
@@ -319,7 +332,7 @@ checkpoint()
 
 # Contact sheets provide a compact review of every portrait and clue boundary.
 font = ImageFont.load_default(size=14)
-ordered = sorted(ready,key=lambda q:q["id"])
+ordered = sorted(ready,key=lambda q:q["id"])[:300]
 for offset in range(0,len(ordered),20):
     sheet = Image.new("RGB",(600,1000),(20,18,28))
     draw = ImageDraw.Draw(sheet)
@@ -339,11 +352,11 @@ report = f"""# 猜歌手遊戲：可接續進度
 
 更新：{datetime.datetime.now(datetime.timezone.utc).isoformat()}
 
-- 候選歌手：300 位，名稱已去重。
-- 已通過自動照片檢查：{len(ready)} 位。
+- 候選歌手：{len(roster["singers"])} 位，名稱已去重；正式題庫目標300位。
+- 正式題庫通過自動照片檢查：{min(300,len(ready))} 位；候選可用照片總數：{len(ready)} 位。
 - 缺少合適照片：{len(pending)} 位，原因見 photo-report.json。
 - 人工確認歌手身分、五官裁切、台灣發片資格：待完成。
-- 主入口：尚未切換；找碴保留在 /full/。
+- 主入口：已切換至 /singer/；找碴保留在 /full/。
 
 ## 已保存
 roster.json：完整300位候選人及別名。
@@ -353,8 +366,8 @@ prepare.py：可重跑且會重用已成功的照片。
 qa.cjs：遊戲流程、手機尺寸、圖片及進度恢復檢查。
 
 ## 下一步
-先看 photo-report.json 補缺圖；複核所有頭像與來源；確認300位資格。
-執行 QA 並檢查 iPhone Safari；達標後才將根目錄入口改成此遊戲。
+先看 photo-report.json 補缺圖；複核所有頭像與來源；確認正式題庫300位資格。
+執行 QA 並檢查 iPhone Safari；持續補圖並依 photo-review.json 排除已退回照片。
 不得將300個人名描述為300題全部完成。
 """
 (ROOT/"PROGRESS.md").write_text(report)

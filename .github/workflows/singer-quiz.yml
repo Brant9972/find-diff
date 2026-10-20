@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'singer/roster.json'
+      - 'singer/photo-review.json'
       - 'singer/prepare.py'
       - '.github/workflows/singer-quiz.yml'
   workflow_dispatch:

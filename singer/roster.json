@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "updatedAt": "2026-10-20",
   "target": 300,
-  "status": "candidate_roster_not_300_playable_questions",
-  "notes": "300位候選人名已去重；補入張信哲、周傳雄、張清芳、周蕙、蔡秋鳳。台灣發片資格待附來源複核。照片未完成的歌手不計入可玩題數。",
+  "status": "expanded_candidate_pool_for_300_playable_questions",
+  "notes": "擴大知名歌手候選池，正式題庫以通過照片檢查的300位為目標。保留缺圖歌手以便後續補入。台灣發片來源與照片人工複核狀態分開紀錄。",
   "singers": [
     {
       "id": "s001",
       "name": "周杰倫",
       "aliases": [
-        "Jay Chou"
+        "Jay Chou",
+        "周董"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -19,7 +20,8 @@
       "id": "s002",
       "name": "林俊傑",
       "aliases": [
-        "JJ Lin"
+        "JJ Lin",
+        "JJ"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -49,7 +51,8 @@
       "id": "s005",
       "name": "蕭敬騰",
       "aliases": [
-        "Jam Hsiao"
+        "Jam Hsiao",
+        "老蕭"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -89,7 +92,8 @@
       "id": "s009",
       "name": "吳青峰",
       "aliases": [
-        "Wu Qing-feng"
+        "Wu Qing-feng",
+        "青峰"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -100,7 +104,8 @@
       "name": "阿信",
       "aliases": [
         "陳信宏",
-        "Ashin"
+        "Ashin",
+        "五月天阿信"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -213,7 +218,8 @@
       "id": "s021",
       "name": "羅志祥",
       "aliases": [
-        "Show Lo"
+        "Show Lo",
+        "小豬"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -2400,7 +2406,8 @@
       "id": "s244",
       "name": "葉蒨文",
       "aliases": [
-        "Sally Yeh"
+        "Sally Yeh",
+        "葉倩文"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -2573,7 +2580,8 @@
       "id": "s261",
       "name": "李千那",
       "aliases": [
-        "Nana Lee"
+        "Nana Lee",
+        "李千娜"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -2966,6 +2974,1452 @@
       "name": "巴奈",
       "aliases": [
         "Panai"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s306",
+      "name": "信",
+      "aliases": [
+        "蘇見信",
+        "Shin",
+        "信樂團阿信"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s307",
+      "name": "伍思凱",
+      "aliases": [
+        "Sky Wu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s308",
+      "name": "邰正宵",
+      "aliases": [
+        "Samuel Tai"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s309",
+      "name": "楊培安",
+      "aliases": [
+        "Roger Yang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s310",
+      "name": "謝金燕",
+      "aliases": [
+        "Jeannie Hsieh"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s311",
+      "name": "陶晶瑩",
+      "aliases": [
+        "陶子",
+        "Matilda Tao"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s312",
+      "name": "詹雯婷",
+      "aliases": [
+        "Faye",
+        "Faye Zhan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s313",
+      "name": "梁心頤",
+      "aliases": [
+        "Lara",
+        "Lara Veronin"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s314",
+      "name": "阿沁",
+      "aliases": [
+        "黃漢青",
+        "Real Huang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s315",
+      "name": "鍾漢良",
+      "aliases": [
+        "Wallace Chung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s316",
+      "name": "張衛健",
+      "aliases": [
+        "Dicky Cheung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s317",
+      "name": "孫耀威",
+      "aliases": [
+        "Eric Suen"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s318",
+      "name": "許紹洋",
+      "aliases": [
+        "Ambrose Hsu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s319",
+      "name": "林峯",
+      "aliases": [
+        "林峰",
+        "Raymond Lam"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s320",
+      "name": "藍心湄",
+      "aliases": [
+        "Pauline Lan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s321",
+      "name": "楊林",
+      "aliases": [
+        "Diana Yang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s322",
+      "name": "袁詠琳",
+      "aliases": [
+        "Cindy Yen"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s323",
+      "name": "朱俐靜",
+      "aliases": [
+        "Miu Chu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s324",
+      "name": "王詩安",
+      "aliases": [
+        "Diana Wang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s325",
+      "name": "許哲珮",
+      "aliases": [
+        "Peggy Hsu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s326",
+      "name": "鄭怡",
+      "aliases": [
+        "Zheng Yi"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s327",
+      "name": "譚維維",
+      "aliases": [
+        "Sitar Tan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s328",
+      "name": "辛龍",
+      "aliases": [
+        "Shin Lung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s329",
+      "name": "黃中原",
+      "aliases": [
+        "Huang Zhongyuan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s330",
+      "name": "陳百強",
+      "aliases": [
+        "Danny Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s331",
+      "name": "陳小雲",
+      "aliases": [],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s332",
+      "name": "葉啟田",
+      "aliases": [
+        "Yeh Chi-tien"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s333",
+      "name": "王中平",
+      "aliases": [
+        "Jimmy Wang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s334",
+      "name": "余皓然",
+      "aliases": [],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s335",
+      "name": "甄妮",
+      "aliases": [
+        "Jenny Tseng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s336",
+      "name": "徐小鳳",
+      "aliases": [
+        "Paula Tsui"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s337",
+      "name": "姚蘇蓉",
+      "aliases": [
+        "Yao Su-jung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s338",
+      "name": "尤雅",
+      "aliases": [
+        "You Ya"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s339",
+      "name": "鄧妙華",
+      "aliases": [
+        "Maggie Teng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s340",
+      "name": "鄭鈞",
+      "aliases": [
+        "Zheng Jun"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s341",
+      "name": "許巍",
+      "aliases": [
+        "Xu Wei"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s342",
+      "name": "竇唯",
+      "aliases": [
+        "Dou Wei"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s343",
+      "name": "竇靖童",
+      "aliases": [
+        "Leah Dou"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s344",
+      "name": "張楚",
+      "aliases": [
+        "Zhang Chu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s345",
+      "name": "陳粒",
+      "aliases": [
+        "Chen Li"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s346",
+      "name": "趙雷",
+      "aliases": [
+        "Zhao Lei"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s347",
+      "name": "宋冬野",
+      "aliases": [
+        "Song Dongye"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s348",
+      "name": "馬頔",
+      "aliases": [
+        "Ma Di"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s349",
+      "name": "陳楚生",
+      "aliases": [
+        "Chen Chusheng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s350",
+      "name": "李泉",
+      "aliases": [
+        "James Li"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s351",
+      "name": "胡彥斌",
+      "aliases": [
+        "Anson Hu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s352",
+      "name": "金志文",
+      "aliases": [
+        "Jin Zhiwen"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s353",
+      "name": "平安",
+      "aliases": [
+        "Ping An"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s354",
+      "name": "劉力揚",
+      "aliases": [
+        "Jeno Liu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s355",
+      "name": "劉惜君",
+      "aliases": [
+        "Sara Liu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s356",
+      "name": "金莎",
+      "aliases": [
+        "Jin Sha"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s357",
+      "name": "戚薇",
+      "aliases": [
+        "Stephy Qi"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s358",
+      "name": "張含韻",
+      "aliases": [
+        "Kristy Zhang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s359",
+      "name": "張柏芝",
+      "aliases": [
+        "Cecilia Cheung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s360",
+      "name": "側田",
+      "aliases": [
+        "Justin Lo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s361",
+      "name": "方力申",
+      "aliases": [
+        "Alex Fong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s362",
+      "name": "余文樂",
+      "aliases": [
+        "Shawn Yue"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s363",
+      "name": "陳冠希",
+      "aliases": [
+        "Edison Chen"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s364",
+      "name": "林奕匡",
+      "aliases": [
+        "Phil Lam"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s365",
+      "name": "王菀之",
+      "aliases": [
+        "Ivana Wong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s366",
+      "name": "李幸倪",
+      "aliases": [
+        "Gin Lee"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s367",
+      "name": "湯寶如",
+      "aliases": [
+        "Karen Tong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s368",
+      "name": "黎瑞恩",
+      "aliases": [
+        "Vivian Lai"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s369",
+      "name": "盧巧音",
+      "aliases": [
+        "Candy Lo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s370",
+      "name": "泳兒",
+      "aliases": [
+        "Vincy Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s371",
+      "name": "葉德嫻",
+      "aliases": [
+        "Deanie Ip"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s372",
+      "name": "陳松伶",
+      "aliases": [
+        "Adia Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s373",
+      "name": "陳慧珊",
+      "aliases": [
+        "Flora Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s374",
+      "name": "李蕙敏",
+      "aliases": [
+        "Amanda Lee"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s375",
+      "name": "李彩樺",
+      "aliases": [
+        "Rain Li"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s376",
+      "name": "梁朝偉",
+      "aliases": [
+        "Tony Leung Chiu-wai",
+        "Tony Leung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s377",
+      "name": "梁家輝",
+      "aliases": [
+        "Tony Leung Ka-fai"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s378",
+      "name": "成龍",
+      "aliases": [
+        "Jackie Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s379",
+      "name": "王祖賢",
+      "aliases": [
+        "Joey Wong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s380",
+      "name": "劉嘉玲",
+      "aliases": [
+        "Carina Lau"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s381",
+      "name": "關之琳",
+      "aliases": [
+        "Rosamund Kwan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s382",
+      "name": "朱茵",
+      "aliases": [
+        "Athena Chu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s383",
+      "name": "翁虹",
+      "aliases": [
+        "Yvonne Yung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s384",
+      "name": "葉蘊儀",
+      "aliases": [
+        "Gloria Yip"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s385",
+      "name": "李麗珍",
+      "aliases": [
+        "Loletta Lee"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s386",
+      "name": "楊采妮",
+      "aliases": [
+        "Charlie Yeung"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s387",
+      "name": "黎姿",
+      "aliases": [
+        "Gigi Lai"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s388",
+      "name": "金素梅",
+      "aliases": [
+        "高金素梅",
+        "May Chin"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s389",
+      "name": "彭于晏",
+      "aliases": [
+        "Eddie Peng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s390",
+      "name": "鄭元暢",
+      "aliases": [
+        "Joe Cheng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s391",
+      "name": "明道",
+      "aliases": [
+        "Ming Dao"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s392",
+      "name": "王傳一",
+      "aliases": [
+        "Kingone Wang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s393",
+      "name": "唐禹哲",
+      "aliases": [
+        "Danson Tang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s394",
+      "name": "蔡昌憲",
+      "aliases": [
+        "Tsai Chang-hsien"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s395",
+      "name": "柯震東",
+      "aliases": [
+        "Kai Ko"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s396",
+      "name": "郭雪芙",
+      "aliases": [
+        "Puff Kuo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s397",
+      "name": "李毓芬",
+      "aliases": [
+        "Tia Lee"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s398",
+      "name": "宋米秦",
+      "aliases": [
+        "Emily Song"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s399",
+      "name": "洪詩",
+      "aliases": [
+        "Angel Hong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s400",
+      "name": "小薰",
+      "aliases": [
+        "黃瀞怡",
+        "Albee Huang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s401",
+      "name": "丫頭",
+      "aliases": [
+        "詹子晴",
+        "Yako Chan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s402",
+      "name": "小蠻",
+      "aliases": [
+        "王承嫣",
+        "Xiaoman"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s403",
+      "name": "吳佩慈",
+      "aliases": [
+        "Pace Wu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s404",
+      "name": "曾寶儀",
+      "aliases": [
+        "Bowie Tsang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s405",
+      "name": "徐熙媛",
+      "aliases": [
+        "大S",
+        "Barbie Hsu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s406",
+      "name": "徐熙娣",
+      "aliases": [
+        "小S",
+        "Dee Hsu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s407",
+      "name": "林逸欣",
+      "aliases": [
+        "Shara Lin"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s408",
+      "name": "丁文琪",
+      "aliases": [
+        "Kiki Ting"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s409",
+      "name": "蕭瀟",
+      "aliases": [
+        "Xiao Xiao"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s410",
+      "name": "包偉銘",
+      "aliases": [
+        "Billy Pao"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s411",
+      "name": "李建復",
+      "aliases": [
+        "Li Jianfu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s412",
+      "name": "李壽全",
+      "aliases": [
+        "Lee Shou-chuan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s413",
+      "name": "施孝榮",
+      "aliases": [],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s414",
+      "name": "葉佳修",
+      "aliases": [
+        "Yeh Chia-hsiu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s415",
+      "name": "許景淳",
+      "aliases": [
+        "Christine Hsu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s416",
+      "name": "紀曉君",
+      "aliases": [
+        "Samingad"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s417",
+      "name": "何維健",
+      "aliases": [
+        "Derrick Hoh"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s418",
+      "name": "郭美美",
+      "aliases": [
+        "Jocie Guo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s419",
+      "name": "黃湘怡",
+      "aliases": [
+        "Stella Huang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s420",
+      "name": "溫兆倫",
+      "aliases": [
+        "Deric Wan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s421",
+      "name": "劉錫明",
+      "aliases": [
+        "Canti Lau"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s422",
+      "name": "鄭少秋",
+      "aliases": [
+        "Adam Cheng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s423",
+      "name": "汪明荃",
+      "aliases": [
+        "Liza Wang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s424",
+      "name": "羅嘉良",
+      "aliases": [
+        "Gallen Lo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s425",
+      "name": "霍建華",
+      "aliases": [
+        "Wallace Huo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s426",
+      "name": "陳坤",
+      "aliases": [
+        "Chen Kun"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s427",
+      "name": "胡歌",
+      "aliases": [
+        "Hu Ge"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s428",
+      "name": "黃曉明",
+      "aliases": [
+        "Huang Xiaoming"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s429",
+      "name": "陸毅",
+      "aliases": [
+        "Lu Yi"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s430",
+      "name": "韓庚",
+      "aliases": [
+        "Han Geng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s431",
+      "name": "張藝興",
+      "aliases": [
+        "Lay Zhang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s432",
+      "name": "王嘉爾",
+      "aliases": [
+        "Jackson Wang"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s433",
+      "name": "澎恰恰",
+      "aliases": [
+        "Peng Chia-chia"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s434",
+      "name": "黃西田",
+      "aliases": [
+        "Huang Hsi-tien"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s435",
+      "name": "李炳輝",
+      "aliases": [
+        "Lee Ping-hui"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s436",
+      "name": "金門王",
+      "aliases": [
+        "Wang Ying-tan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s437",
+      "name": "陳一郎",
+      "aliases": [],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s438",
+      "name": "龍劭華",
+      "aliases": [
+        "Lung Shao-hua"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s439",
+      "name": "周定緯",
+      "aliases": [
+        "Judy Chou"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s440",
+      "name": "王若琪",
+      "aliases": [
+        "Takki Wong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s441",
+      "name": "黃宗澤",
+      "aliases": [
+        "Bosco Wong"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s442",
+      "name": "吳浩康",
+      "aliases": [
+        "Deep Ng"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s443",
+      "name": "李治廷",
+      "aliases": [
+        "Aarif Rahman"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s444",
+      "name": "袁成傑",
+      "aliases": [
+        "Jerry Yuan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s445",
+      "name": "戴軍",
+      "aliases": [
+        "Dai Jun"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s446",
+      "name": "羅中旭",
+      "aliases": [
+        "Luo Zhongxu"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s447",
+      "name": "景崗山",
+      "aliases": [
+        "Jing Gangshan"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s448",
+      "name": "羅美玲",
+      "aliases": [
+        "Meling Luo"
+      ],
+      "eligibility": "pending_source_check",
+      "photoStatus": "pending",
+      "photo": null
+    },
+    {
+      "id": "s449",
+      "name": "汪佩蓉",
+      "aliases": [
+        "Fengie Wang"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",

@@ -13,7 +13,7 @@ const assert=require('node:assert/strict');
   for(let i=0;i<SCENES.length;i++){
    const stage={level:i+1,name:SCENES[i].name,spots:[]};
    for(let k=0;k<SCENES[i].diffs.length;k++){
-    let map;try{map=await HITMAP.one(SCENES[i].diffs[k]);}catch(e){stage.spots.push({error:'Stage '+(i+1)+' / spot '+(k+1)+': '+e.message});continue;}
+    let map;try{map=await HITMAP.one(SCENES[i].diffs[k]);}catch(e){stage.spots.push({error:'Stage '+(i+1)+' / spot '+(k+1)+' / '+(SCENES[i].clueKinds?.[k]||'pilot')+': '+e.message});continue;}
     const actual=HITMAP.contains(map,map.centre.x,map.centre.y,1);
     const nearby=HITMAP.contains(map,map.centre.x+9,map.centre.y,18);
     stage.spots.push({count:map.count,centre:map.centre,bounds:map.bounds,centred:actual,nearby});

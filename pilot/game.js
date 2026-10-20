@@ -1,19 +1,42 @@
 (()=>{
 "use strict";
 const $=id=>document.getElementById(id),N=10,saveKey='eye_blind_pilot_v1';
-let current=0,found=new Set(),unlocked=1,best={},last=0,seconds=165,hints=2,wrong=0,usedHints=0,playing=false,zoom=false,timer=null,syncLock=false,audio=null;
+let current=0,found=new Set(),unlocked=1,best={},last=0,seconds=165,hints=2,wrong=0,usedHints=0,playing=false,zoom=false,timer=null,syncLock=false,audio=null,hitmaps=[],generation=0,lastTapAt=0,loading=false;
 try{const old=JSON.parse(localStorage.getItem(saveKey)||'{}');unlocked=Math.min(10,Math.max(1,old.unlocked||1));best=old.best||{};last=Math.min(unlocked-1,Math.max(0,old.last||0));}catch(e){}
 const store=()=>{try{localStorage.setItem(saveKey,JSON.stringify({unlocked,best,last}));}catch(e){}};
 function beep(freq=600,len=.09){try{audio??=new(window.AudioContext||window.webkitAudioContext)();const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(.035,audio.currentTime);g.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+len);o.connect(g).connect(audio.destination);o.start();o.stop(audio.currentTime+len);}catch(e){}}
 const scene=()=>SCENES[current];
+async function prepareHits(level,token){
+ loading=true;hitmaps=[];
+ $('message').textContent='正在校準 5 個差異的實際位置…';
+ stats();
+ try{
+   const maps=await Promise.all(SCENES[level].diffs.map(d=>HITMAP.one(d)));
+   if(token!==generation||level!==current)return;
+   if(maps.length!==5||maps.some(v=>!v?.mask||v.count<3))throw new Error('incomplete masks');
+   hitmaps=maps;loading=false;playing=true;lastTapAt=0;
+   $('message').textContent='已校準完成！請仔細比對兩張圖片。';
+   stats();loop();
+ }catch(error){
+   if(token!==generation)return;
+   loading=false;
+   dialog('⚠️','判定資料載入失敗','為避免你明明答對卻無法點中，這關已暫停。請重新載入頁面再試。',{label:'重新整理',fn:()=>location.reload()});
+ }
+}
 function picture(side){let s=scene();return '<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="'+s.name+'，圖片'+(side?'B':'A')+'">'+defs+s.base()+s.diffs.map(d=>d[3](side)).join('')+R(0,0,800,460,'url(#grain)')+'</svg>';}
-function mark(i,side,hint=false){const spot=scene().diffs[i],el=$('rings'+side);if(!el)return;let ring=document.createElement('span');ring.className='ring'+(hint?' hint':'');ring.style.left=(spot[0]/8)+'%';ring.style.top=(spot[1]/460*100)+'%';el.appendChild(ring);if(hint)setTimeout(()=>ring.remove(),1500);}
+function mark(i,side,hint=false){
+ const hit=hitmaps[i],el=$('rings'+side);if(!el||!hit)return;
+ let ring=document.createElement('span');ring.className='ring'+(hint?' hint':'');
+ ring.style.left=(hit.centre.x/8)+'%';ring.style.top=(hit.centre.y/460*100)+'%';
+ ring.style.width=(hit.ringWidth/800*100)+'%';
+ el.appendChild(ring);if(hint)setTimeout(()=>ring.remove(),1500);
+}
 function stats(){
 $('level').textContent=String(current+1).padStart(2,'0')+' / 10';
 $('count').textContent=found.size+' / 5';$('seconds').textContent=Math.max(0,seconds);
 $('sceneTitle').textContent=scene().name;$('sceneSub').textContent=scene().subtitle;
 [...$('dots').children].forEach((d,i)=>d.classList.toggle('done',i<found.size));
-$('hintBtn').textContent='💡 提示 '+hints;$('hintBtn').disabled=!playing||hints===0;
+$('hintBtn').textContent='💡 提示 '+hints;$('hintBtn').disabled=!playing||loading||hints===0;
 $('zoomBtn').textContent=zoom?'↙ 縮小':'⌕ 放大 2×';
 }
 function render(){
@@ -28,16 +51,30 @@ found.forEach(i=>mark(i,side));
 stats();
 }
 function tap(x,y,side){
-let ix=-1,dist=Infinity;
-scene().diffs.forEach((d,i)=>{if(found.has(i))return;let v=Math.hypot(x-d[0],y-d[1]);if(v<dist){dist=v;ix=i;}});
-if(ix!==-1&&dist<Math.min(44,Math.max(29,scene().diffs[ix][2]))){
-found.add(ix);beep(590+found.size*95);mark(ix,'A');mark(ix,'B');$('message').textContent=['找到了！','還有三處','有眼力！','剩最後一處！','全部找齊！'][found.size-1];stats();
-if(found.size===5){playing=false;clearInterval(timer);setTimeout(win,480);}
-}else{wrong++;seconds=Math.max(0,seconds-5);beep(180,.12);$('message').textContent='這裡相同，扣 5 秒';let el=$('frame'+side);el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');stats();if(seconds===0)lose();}
+ if(!playing||loading||hitmaps.length!==5)return;
+ // 400ms cooldown blocks frantic tapping without making deliberate tapping feel sluggish.
+ const now=Date.now();if(now-lastTapAt<400)return;lastTapAt=now;
+ const sw=$('stage'+side).getBoundingClientRect().width||390;
+ // A strict finger-size allowance: ~8 CSS px, smaller in image coordinates when zoomed.
+ const tolerance=Math.min(21,Math.max(10.5,800/sw*8));
+ let ix=-1;
+ for(let i=0;i<5;i++){
+   if(found.has(i))continue;
+   if(HITMAP.contains(hitmaps[i],x,y,tolerance)){ix=i;break;}
+ }
+ if(ix>=0){
+   found.add(ix);beep(590+found.size*95);mark(ix,'A');mark(ix,'B');
+   $('message').textContent=['找到了！','還有三處','有眼力！','剩最後一處！','全部找齊！'][found.size-1];stats();
+   if(found.size===5){playing=false;clearInterval(timer);setTimeout(win,480);}
+ }else{
+   wrong++;seconds=Math.max(0,seconds-5);beep(180,.12);$('message').textContent='這裡沒有真正的不同，扣 5 秒';
+   let el=$('frame'+side);el.classList.remove('shake');void el.offsetWidth;el.classList.add('shake');
+   stats();if(seconds===0)lose();
+ }
 }
 function loop(){clearInterval(timer);timer=setInterval(()=>{if(!playing)return;seconds--;stats();if(seconds<=0)lose();},1000);}
 function load(i){
-if(i<0||i>=N||i>=unlocked)return;current=i;last=i;store();found=new Set();seconds=155+(i%3)*10;wrong=0;usedHints=0;hints=i<4?2:1;playing=true;$('overlay').hidden=true;$('message').textContent='仔細看兩張完整場景，找出五處不同。';render();loop();
+if(i<0||i>=N||i>=unlocked)return;const token=++generation;current=i;last=i;store();found=new Set();seconds=155+(i%3)*10;wrong=0;usedHints=0;hints=i<4?2:1;playing=false;loading=true;clearInterval(timer);hitmaps=[];$('overlay').hidden=true;render();prepareHits(i,token);
 }
 function dialog(emoji,title,html,main,alt='',altFn=null){
 playing=false;clearInterval(timer);
@@ -60,11 +97,11 @@ for(let i=0;i<N;i++){let b=document.createElement('button');b.textContent=i<unlo
 }
 $('mapBtn').onclick=picker;
 $('restartBtn').onclick=()=>load(current);
-$('hintBtn').onclick=()=>{if(!playing||hints<1)return;const i=scene().diffs.findIndex((d,i)=>!found.has(i));if(i<0)return;hints--;usedHints++;mark(i,'A',true);mark(i,'B',true);$('message').textContent='黃色光圈會顯示約 1.5 秒';stats();};
+$('hintBtn').onclick=()=>{if(!playing||loading||hints<1)return;const i=scene().diffs.findIndex((d,i)=>!found.has(i));if(i<0)return;hints--;usedHints++;mark(i,'A',true);mark(i,'B',true);$('message').textContent='黃色光圈會顯示約 1.5 秒';stats();};
 $('zoomBtn').onclick=()=>{zoom=!zoom;render();$('message').textContent=zoom?'已放大兩倍，可滑動圖片仔細比對。':'已恢復原始大小。';};
 $('pauseBtn').onclick=()=>{if(!playing)return;dialog('⏸️','暫停中','時間已經停止，你可以休息一下。',{label:'繼續遊戲',fn:()=>{$('overlay').hidden=true;playing=true;stats();loop();}},'重玩這關',()=>load(current));};
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)$('pauseBtn').click();});
-if(SCENES.length!==10){dialog('⚠️','關卡載入異常','找到 '+SCENES.length+' / 10 個場景，請重新整理頁面。',{label:'重新整理',fn:()=>location.reload()});return;}
+if(SCENES.length!==10||typeof HITMAP==='undefined'){dialog('⚠️','關卡載入異常','找到 '+SCENES.length+' / 10 個場景，請重新整理頁面。',{label:'重新整理',fn:()=>location.reload()});return;}
 render();
 dialog('👀','這次真的來盲測','<b>10 張獨立構圖</b>，每關 5 處由人工設計的差異。<br>不再有固定的出題物件，也不需要故事敘述。<br><b>上下任一張都能點，放大兩倍可同步滑動。</b><br>原本 100 關版完全不受影響。',{label:'開始第一關 →',fn:()=>load(0)},unlocked>1?'接續第 '+(last+1)+' 關':'',unlocked>1?()=>load(last):null);
 })();

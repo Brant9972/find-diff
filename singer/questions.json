@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "target": 300,
-  "playable": 209,
-  "updatedAt": "2026-10-20T17:04:45.467Z",
+  "playable": 298,
+  "updatedAt": "2026-10-20T17:10:25.877636+00:00",
   "verification": "Automatic source/license/frontal-face/eye/nose/mouth landmark checks; human portrait and Taiwan-release review pending.",
   "questions": [
     {
@@ -11,6 +11,7 @@
       "aliases": [
         "周杰倫",
         "Jay Chou",
+        "周董",
         "周杰伦"
       ],
       "photo": "photos/s001.jpg",
@@ -68,6 +69,7 @@
       "aliases": [
         "林俊傑",
         "JJ Lin",
+        "JJ",
         "林俊杰"
       ],
       "photo": "photos/s002.jpg",
@@ -237,7 +239,9 @@
       "aliases": [
         "蕭敬騰",
         "Jam Hsiao",
-        "萧敬腾"
+        "老蕭",
+        "萧敬腾",
+        "老萧"
       ],
       "photo": "photos/s005.jpg",
       "reveal": {
@@ -464,6 +468,7 @@
       "aliases": [
         "吳青峰",
         "Wu Qing-feng",
+        "青峰",
         "吴青峰"
       ],
       "photo": "photos/s009.jpg",
@@ -522,6 +527,7 @@
         "阿信",
         "陳信宏",
         "Ashin",
+        "五月天阿信",
         "陈信宏"
       ],
       "photo": "photos/s010.jpg",
@@ -977,7 +983,9 @@
       "aliases": [
         "羅志祥",
         "Show Lo",
-        "罗志祥"
+        "小豬",
+        "罗志祥",
+        "小猪"
       ],
       "photo": "photos/s021.jpg",
       "reveal": {
@@ -2952,6 +2960,63 @@
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
+      "id": "s076",
+      "name": "鼓鼓",
+      "aliases": [
+        "鼓鼓",
+        "呂思緯",
+        "吕思纬"
+      ],
+      "photo": "photos/s076.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28404207715801166,
+          0.92,
+          0.4167670306037454
+        ],
+        "nose": [
+          0.08,
+          0.28404207715801166,
+          0.92,
+          0.5293341991948146
+        ],
+        "mouth": [
+          0.08,
+          0.28404207715801166,
+          0.92,
+          0.652953198002834
+        ],
+        "chin": [
+          0.08,
+          0.28404207715801166,
+          0.92,
+          0.7966626862170649
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%91%82%E6%80%9D%E7%B7%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%BC%93%E9%BC%9320210424.jpg",
+        "artist": "SINCIH0302",
+        "credit": "20210424參加企業女子壘球聯賽開球時拍攝\n\n先前釋出：https://www.instagram.com/p/CONqDnipRCS/",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "呂思緯（英文：GBOYSWAG）（1984年4月28日—），藝名鼓鼓，台灣男歌手，前團體MP魔幻力量成員。曾任骨頭樂團、Green! Eyes與八十八顆芭樂籽等地下樂團鼓手以及張惠妹阿密特鼓手。2016年12月推出個人首張全創作專輯《Make It Real 鼓鼓可以唷》，2019年11月發行第二張個人全創作概念專輯《蟲洞Wormhole》。2023年5月睽違4年發行全創作專輯《跳舞在米蘭》，粉絲",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
       "id": "s078",
       "name": "敖犬",
       "aliases": [
@@ -3174,6 +3239,62 @@
         "attribution": ""
       },
       "bioExcerpt": "李英宏 （1986年7月6日—），藝名DJ Didilong，臺灣男歌手、演員，新北市新莊區人，畢業於國立台灣藝術大學廣播電視學系。2016年5月發行首張個人專輯《台北直直撞》，並於同年9月30日在ATT Show Box舉辦首次個人演唱會。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s086",
+      "name": "大支",
+      "aliases": [
+        "大支",
+        "Dwagie"
+      ],
+      "photo": "photos/s086.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.284029126393501,
+          0.92,
+          0.415840018632516
+        ],
+        "nose": [
+          0.08,
+          0.284029126393501,
+          0.92,
+          0.5351620408117884
+        ],
+        "mouth": [
+          0.08,
+          0.284029126393501,
+          0.92,
+          0.6543209763586634
+        ],
+        "chin": [
+          0.08,
+          0.284029126393501,
+          0.92,
+          0.7800152020391069
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Dwagie",
+        "source": "https://commons.wikimedia.org/wiki/File:CMJTaiwan_Dwagie10242014_21_(15441351187).jpg",
+        "artist": "May S. Young from Metro NYC, United States",
+        "credit": "CMJTaiwan_Dwagie10242014_21",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Tseng Kuan-jung (Chinese: 曾冠榕; pinyin: Zēng Guànróng; Pe̍h-ōe-jī: Chan Koàn-iông, c. 1979), professionally known as Dwagie (Chinese: 大支; Pe̍h-ōe-jī: Toā-ki), is a Taiwanese rapper, best known for usin",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
@@ -5561,6 +5682,61 @@
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
+      "id": "s134",
+      "name": "詹雅雯",
+      "aliases": [
+        "詹雅雯"
+      ],
+      "photo": "photos/s134.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2895120164622431,
+          0.92,
+          0.4134923271510912
+        ],
+        "nose": [
+          0.08,
+          0.2895120164622431,
+          0.92,
+          0.5288037424502166
+        ],
+        "mouth": [
+          0.08,
+          0.2895120164622431,
+          0.92,
+          0.6476384287295135
+        ],
+        "chin": [
+          0.08,
+          0.2895120164622431,
+          0.92,
+          0.7723525403893513
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%A9%B9%E9%9B%85%E9%9B%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:Chan_Ya-wen_(cropped).jpg",
+        "artist": "蕭嘉錡",
+        "credit": "Own work",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "詹雅雯（1967年3月2日—），原名詹淑貞，臺灣台語流行音樂創作女歌手、詞曲作家。詹雅雯出身勞工家庭，1980年代以台語流行音樂合唱團體「櫻花姐妹」出道，走唱直至1991年起才開始灌錄個人專輯，並以日本演歌式的唱腔走紅藝界，素有「夜市江蕙」的美稱，以演唱國台語老歌與演歌類歌曲為主。三立電視台台語歌唱節目超級紅人榜評審。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
       "id": "s136",
       "name": "黃妃",
       "aliases": [
@@ -5841,6 +6017,63 @@
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
+      "id": "s145",
+      "name": "齊豫",
+      "aliases": [
+        "齊豫",
+        "Chyi Yu",
+        "齐豫"
+      ],
+      "photo": "photos/s145.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28445766596323424,
+          0.92,
+          0.42790534874911984
+        ],
+        "nose": [
+          0.08,
+          0.28445766596323424,
+          0.92,
+          0.5450437488474048
+        ],
+        "mouth": [
+          0.08,
+          0.28445766596323424,
+          0.92,
+          0.6499531627212983
+        ],
+        "chin": [
+          0.08,
+          0.28445766596323424,
+          0.92,
+          0.7733918100774544
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Chyi_Yu",
+        "source": "https://commons.wikimedia.org/wiki/File:Chyiyu.jpg",
+        "artist": "Hweimeng",
+        "credit": "Own work",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Chyi Yu or Qi Yu (Chinese: 齊豫; Pe̍h-ōe-jī: Chê Ū / Chôe Ū; born 17 October 1957) is a Taiwanese singer best known for her 1979 hit \"The Olive Tree\" (橄欖樹). She won the 9th Golden Melody Award for Best ",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
       "id": "s147",
       "name": "蘇慧倫",
       "aliases": [
@@ -5953,6 +6186,63 @@
       "bioExcerpt": "Sarah Chen or Chen Shu-hua (traditional Chinese: 陳淑樺; simplified Chinese: 陈淑桦; pinyin: Chén Shúhuà; born 14 May 1958) is a Taiwanese singer who was active from the 1970s to the late 1990s. The recipient of the \"Best Female Artist\" award at the 1985 Golden Bell Awards and the 1992 and 1996 Golden Melody Awards, Sarah Chen was known for hit songs such as \"Dream to Awakening\" (夢醒時分), \"Red Dust\" (滾滾紅塵), and \"The Mundane World\" (笑紅塵). Chen released over 30 albums in her career, which included Mandopo",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
       "processorVersion": 2
+    },
+    {
+      "id": "s150",
+      "name": "鄧麗君",
+      "aliases": [
+        "鄧麗君",
+        "Teresa Teng",
+        "邓丽君"
+      ],
+      "photo": "photos/s150.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28079652332124255,
+          0.92,
+          0.4199078151157924
+        ],
+        "nose": [
+          0.08,
+          0.28079652332124255,
+          0.92,
+          0.5425479162307013
+        ],
+        "mouth": [
+          0.08,
+          0.28079652332124255,
+          0.92,
+          0.6592501322428386
+        ],
+        "chin": [
+          0.08,
+          0.28079652332124255,
+          0.92,
+          0.7835207984561012
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Teresa_Teng",
+        "source": "https://commons.wikimedia.org/wiki/File:Stamp_of_Tuva_(1996)_-_Teresa_Teng_09.jpg",
+        "artist": "Russian Post",
+        "credit": "Russian State Teresa Teng, Flute Player MNH Specimen M/S Sheet #M200",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "attribution": ""
+      },
+      "bioExcerpt": "Teng Li-Chun (traditional Chinese: 鄧麗君; simplified Chinese: 邓丽君; pinyin: Dèng Lìjūn; 29 January 1953 – 8 May 1995), also known as Teresa Teng, was a Taiwanese singer, television personality, musician,",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
       "id": "s151",
@@ -6407,6 +6697,63 @@
         "attribution": "三立娛樂星聞"
       },
       "bioExcerpt": "焦安溥（1981年5月30日—），藝名安溥、張懸，是臺灣創作歌手及社會運動者。\n被大眾所悉知的名字「張懸」是中學時期嘗試書寫新詩並投稿於副刊上的筆名，2015年高雄潮水箴言演唱會結束後她選擇告別張懸身份暫別樂壇，並以單名「安溥」進行創作。\n安溥的詞作極具詩性、雋永且時常引領聽眾進入深層的思考，她也常在作品當中表達對社會的關懷與批判，獨到的觀察與細膩的文字讓她於2013年以寫給社運人士的《玫瑰色的你",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s163",
+      "name": "張芸京",
+      "aliases": [
+        "張芸京",
+        "Jing Chang",
+        "张芸京"
+      ],
+      "photo": "photos/s163.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28302350616455074,
+          0.92,
+          0.4176908874511719
+        ],
+        "nose": [
+          0.08,
+          0.28302350616455074,
+          0.92,
+          0.5352488327026367
+        ],
+        "mouth": [
+          0.08,
+          0.28302350616455074,
+          0.92,
+          0.6563420257568359
+        ],
+        "chin": [
+          0.08,
+          0.28302350616455074,
+          0.92,
+          0.7885132385253906
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Jing_Chang",
+        "source": "https://commons.wikimedia.org/wiki/File:Jing_Chang_@_I%27m_with_You_Asia_Concert_Tour_-_Taipei_2012.12.23.jpg",
+        "artist": "Vanessa Lee",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Jing Chang (Chinese: 張芸京; pinyin: Zhāng Yúnjīng) is a Taiwanese singer.",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
@@ -7879,6 +8226,63 @@
       "processorVersion": 2
     },
     {
+      "id": "s202",
+      "name": "張國榮",
+      "aliases": [
+        "張國榮",
+        "Leslie Cheung",
+        "张国荣"
+      ],
+      "photo": "photos/s202.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2817232093032526,
+          0.92,
+          0.4216187405748432
+        ],
+        "nose": [
+          0.08,
+          0.2817232093032526,
+          0.92,
+          0.5463337541437473
+        ],
+        "mouth": [
+          0.08,
+          0.2817232093032526,
+          0.92,
+          0.6658816071594654
+        ],
+        "chin": [
+          0.08,
+          0.2817232093032526,
+          0.92,
+          0.7940069061071695
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%9C%8B%E6%A6%AE",
+        "source": "https://commons.wikimedia.org/wiki/File:Leslie_Cheung_in_Madame_Tussauds_Hong_Kong.jpg",
+        "artist": "倪少寅",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "張國榮 （英語：Leslie Cheung Kwok Wing；1956年9月12日—2003年4月1日），香港男歌手、演員、詞曲作家，並曾經擔任電影配樂、排舞、音樂錄影帶導演、藝術總監和電影導演。\n在音樂方面，1983年至1984年憑藉歌曲《風繼續吹》《Monica》成名。1986年至1987年在十大勁歌金曲頒獎典禮上連續兩年獲得「金曲金獎」。1988年至1989年連續兩年獲得十大勁歌金曲「最受",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
       "id": "s204",
       "name": "許冠傑",
       "aliases": [
@@ -8217,6 +8621,63 @@
         "attribution": ""
       },
       "bioExcerpt": "蘇永康（英語：William So Wing Hong；1967年9月24日—），香港男歌手、演員兼節目主持，曾參與多部電視劇及電影演出。1985年，參加無綫電視與華星唱片合辦的第四屆《新秀歌唱大賽》奪得亞軍，並簽約華星唱片而涉足娛樂圈。1989年，獲得商業電台及香港電台所頒發的兩台新人獎項。1998年，憑「首本名曲」《越吻越傷心》在多個樂壇頒獎典禮奪得金曲獎項，於《十大中文金曲頒獎音樂會》奪得「",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s210",
+      "name": "許志安",
+      "aliases": [
+        "許志安",
+        "Andy Hui",
+        "许志安"
+      ],
+      "photo": "photos/s210.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27919497910366264,
+          0.92,
+          0.42393206524592575
+        ],
+        "nose": [
+          0.08,
+          0.27919497910366264,
+          0.92,
+          0.5463917557911206
+        ],
+        "mouth": [
+          0.08,
+          0.27919497910366264,
+          0.92,
+          0.6746812717888945
+        ],
+        "chin": [
+          0.08,
+          0.27919497910366264,
+          0.92,
+          0.8220849307480678
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Andy_Hui",
+        "source": "https://commons.wikimedia.org/wiki/File:AndyHui2007_(cropped).jpg",
+        "artist": "Verity",
+        "credit": "Flickr",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Andrew Hui Chi On (born 12 August 1967) is a Hong Kong singer and actor. Hui is considered one of the most successful Hong Kong singers, with an extensive list of Cantonese and Mandarin hits to his cr",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
@@ -8729,6 +9190,62 @@
       "bioExcerpt": "杜德偉（英語：Alex To Duk Wai，1962年2月10日—），香港男歌手、演員。出生於香港，具有中國、西班牙和菲律賓血統。母親為華語歌手張露，父親為菲律賓籍樂隊領班兼鼓手杜奧利（西班牙語：Ollie Delfino），其兄杜德智（Orlando To）亦曾為歌手。2026年，以電影《風林火山》獲得第44屆香港電影金像獎最佳男配角。",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
       "processorVersion": 2
+    },
+    {
+      "id": "s220",
+      "name": "林子祥",
+      "aliases": [
+        "林子祥",
+        "George Lam"
+      ],
+      "photo": "photos/s220.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2826431823730469,
+          0.92,
+          0.4199046173095703
+        ],
+        "nose": [
+          0.08,
+          0.2826431823730469,
+          0.92,
+          0.5448273620605468
+        ],
+        "mouth": [
+          0.08,
+          0.2826431823730469,
+          0.92,
+          0.6735631469726562
+        ],
+        "chin": [
+          0.08,
+          0.2826431823730469,
+          0.92,
+          0.8113292626953126
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/George_Lam",
+        "source": "https://commons.wikimedia.org/wiki/File:George_lam.jpg",
+        "artist": "Myself (User:Raphaelmak)",
+        "credit": "Self-photographed",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "George Lam Tsz-cheung (Chinese: 林子祥; Jyutping: Lam4 Zi2coeng4, born 12 October 1947), also credited mononymously as Lam, is a Hong Kong Cantopop singer, songwriter, composer, record producer, and acto",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
       "id": "s221",
@@ -9761,7 +10278,9 @@
       "aliases": [
         "葉蒨文",
         "Sally Yeh",
-        "叶蒨文"
+        "葉倩文",
+        "叶蒨文",
+        "叶倩文"
       ],
       "photo": "photos/s244.jpg",
       "reveal": {
@@ -10444,7 +10963,8 @@
       "name": "李千那",
       "aliases": [
         "李千那",
-        "Nana Lee"
+        "Nana Lee",
+        "李千娜"
       ],
       "photo": "photos/s261.jpg",
       "reveal": {
@@ -11850,6 +12370,4548 @@
         "attribution": "娛樂星聞"
       },
       "bioExcerpt": "Where Chou (Chinese: 周蕙; born 26 March 1977) is a Taiwanese singer, songwriter and actress. Chou released her debut album Where Chou Collection in 1999, which sold more than a million copies in Asia. ",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s308",
+      "name": "邰正宵",
+      "aliases": [
+        "邰正宵",
+        "Samuel Tai"
+      ],
+      "photo": "photos/s308.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2804215229042592,
+          0.92,
+          0.41616277265855023
+        ],
+        "nose": [
+          0.08,
+          0.2804215229042592,
+          0.92,
+          0.534036362707232
+        ],
+        "mouth": [
+          0.08,
+          0.2804215229042592,
+          0.92,
+          0.6515179129688337
+        ],
+        "chin": [
+          0.08,
+          0.2804215229042592,
+          0.92,
+          0.7787745578283927
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%82%B0%E6%AD%A3%E5%AE%B5",
+        "source": "https://commons.wikimedia.org/wiki/File:Samuel_Tai.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "邰正宵（英語：Samuel Tai，1966年11月6日—），台灣男歌手，出生於香港，在臺灣唸書和成名的歌手，被稱為「玫瑰王子」，現時居住在台灣，近年也在中國大陸發展其歌唱事業。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s310",
+      "name": "謝金燕",
+      "aliases": [
+        "謝金燕",
+        "Jeannie Hsieh",
+        "谢金燕"
+      ],
+      "photo": "photos/s310.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27516358439127603,
+          0.92,
+          0.4244049326578776
+        ],
+        "nose": [
+          0.08,
+          0.27516358439127603,
+          0.92,
+          0.5455123138427734
+        ],
+        "mouth": [
+          0.08,
+          0.27516358439127603,
+          0.92,
+          0.6697911885579427
+        ],
+        "chin": [
+          0.08,
+          0.27516358439127603,
+          0.92,
+          0.8178140116373698
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%87%91%E7%87%95",
+        "source": "https://commons.wikimedia.org/wiki/File:Jeannie_Hsieh_in_Taoyuan_Hakka_Sea_Music_20130809.jpg",
+        "artist": "Knanda",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "謝金燕（1974年12月25日—），臺灣女歌手、演員，發表作品以臺語流行音樂為主，國語流行音樂為輔。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s311",
+      "name": "陶晶瑩",
+      "aliases": [
+        "陶晶瑩",
+        "陶子",
+        "Matilda Tao",
+        "陶晶莹"
+      ],
+      "photo": "photos/s311.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28231187005890457,
+          0.92,
+          0.4148452010015594
+        ],
+        "nose": [
+          0.08,
+          0.28231187005890457,
+          0.92,
+          0.5345096537541963
+        ],
+        "mouth": [
+          0.08,
+          0.28231187005890457,
+          0.92,
+          0.6634012075570913
+        ],
+        "chin": [
+          0.08,
+          0.28231187005890457,
+          0.92,
+          0.8018040794149951
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Matilda_Tao",
+        "source": "https://commons.wikimedia.org/wiki/File:Matilda_Tao_(cropped).jpg",
+        "artist": "Destinedtraveler",
+        "credit": "Own work",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "attribution": ""
+      },
+      "bioExcerpt": "Matilda Tao Ching-ying (Chinese: 陶晶瑩; pinyin: Táo Jīngyíng) is a Taiwanese singer, television host and author.",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s312",
+      "name": "詹雯婷",
+      "aliases": [
+        "詹雯婷",
+        "Faye",
+        "Faye Zhan"
+      ],
+      "photo": "photos/s312.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27922783627717385,
+          0.92,
+          0.42510561735733693
+        ],
+        "nose": [
+          0.08,
+          0.27922783627717385,
+          0.92,
+          0.5437242988918138
+        ],
+        "mouth": [
+          0.08,
+          0.27922783627717385,
+          0.92,
+          0.6666181481402853
+        ],
+        "chin": [
+          0.08,
+          0.27922783627717385,
+          0.92,
+          0.8145810716711955
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%A9%B9%E9%9B%AF%E5%A9%B7",
+        "source": "https://commons.wikimedia.org/wiki/File:Faye.jpg",
+        "artist": "Tszkin",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "詹雯婷（1981年8月27日—），臺灣創作女歌手。出道時以飛之藝名，擔任飛兒樂團主唱。2004年以經典電視劇《鬥魚》片尾曲〈Lydia〉知名，隔年獲第16屆金曲獎最佳新人獎。2018年10月詹雯婷宣布加盟亞神音樂，以本名繼續演藝活動。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s313",
+      "name": "梁心頤",
+      "aliases": [
+        "梁心頤",
+        "Lara",
+        "Lara Veronin",
+        "梁心颐"
+      ],
+      "photo": "photos/s313.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28161181640625,
+          0.92,
+          0.4268413751775568
+        ],
+        "nose": [
+          0.08,
+          0.28161181640625,
+          0.92,
+          0.5540451142282197
+        ],
+        "mouth": [
+          0.08,
+          0.28161181640625,
+          0.92,
+          0.6857055072206439
+        ],
+        "chin": [
+          0.08,
+          0.28161181640625,
+          0.92,
+          0.8352034623579545
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%A2%81%E5%BF%83%E9%A0%A4",
+        "source": "https://commons.wikimedia.org/wiki/File:Lara_Veronin_(cropped).jpg",
+        "artist": "Longjiangmei",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "梁心頤（俄語：Лара Майкловна Веронин，英語：Lara Liang Veronin，1988年5月2日—），台灣藝人，生於美國加州洛杉磯，曾為周杰倫杰威爾音樂旗下組合南拳媽媽成員，因與周杰倫合唱《珊瑚海》而廣為人知。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s316",
+      "name": "張衛健",
+      "aliases": [
+        "張衛健",
+        "Dicky Cheung",
+        "张卫健"
+      ],
+      "photo": "photos/s316.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2801909399814293,
+          0.92,
+          0.41821746270296134
+        ],
+        "nose": [
+          0.08,
+          0.2801909399814293,
+          0.92,
+          0.5402695007880094
+        ],
+        "mouth": [
+          0.08,
+          0.2801909399814293,
+          0.92,
+          0.6662952638497552
+        ],
+        "chin": [
+          0.08,
+          0.2801909399814293,
+          0.92,
+          0.8027466287248123
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E8%A1%9B%E5%81%A5",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E8%A1%9B%E5%81%A5.jpg",
+        "artist": "am730",
+        "credit": "【娛樂】《大帥哥》開播 張衛健感慨︰未必再用廣東話拍劇 2018-11-21",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "張衛健（英語：Dicky Cheung Wai Kin，1965年2月8日—），香港男演員及歌手，香港電視專業人員協會榮譽副主席。1984年參加TVB及華星唱片合辦的第3屆新秀歌唱大賽奪得金獎，從而晉身娛樂圈。曾於1990年代至2000年代初於香港及台灣兩地走紅。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s317",
+      "name": "孫耀威",
+      "aliases": [
+        "孫耀威",
+        "Eric Suen",
+        "孙耀威"
+      ],
+      "photo": "photos/s317.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.283977976355533,
+          0.92,
+          0.4246161974997187
+        ],
+        "nose": [
+          0.08,
+          0.283977976355533,
+          0.92,
+          0.548411679365998
+        ],
+        "mouth": [
+          0.08,
+          0.283977976355533,
+          0.92,
+          0.66499403965326
+        ],
+        "chin": [
+          0.08,
+          0.283977976355533,
+          0.92,
+          0.7917647448881174
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%AD%AB%E8%80%80%E5%A8%81",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%AD%AB%E8%80%80%E5%A8%81_Suen_Yiu_Wai,Eric_%E6%96%BC%E6%B8%AF%E5%8F%B0%E6%8B%8D%E7%85%A7.jpg",
+        "artist": "Wmail3579",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "孫耀威（英語：Eric Suen Yiu Wai，1973年1月3日—），香港男歌手及演員，出生於香港。1993年在台灣出道，其後重返香港樂壇，近年亦北上中國大陸發展。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s319",
+      "name": "林峯",
+      "aliases": [
+        "林峯",
+        "林峰",
+        "Raymond Lam"
+      ],
+      "photo": "photos/s319.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2736330304827009,
+          0.92,
+          0.42379129303168067
+        ],
+        "nose": [
+          0.08,
+          0.2736330304827009,
+          0.92,
+          0.549835631566018
+        ],
+        "mouth": [
+          0.08,
+          0.2736330304827009,
+          0.92,
+          0.6825496981603019
+        ],
+        "chin": [
+          0.08,
+          0.2736330304827009,
+          0.92,
+          0.8342695447080625
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%B3%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:Raymond_Lam_Fung.jpg",
+        "artist": "am730",
+        "credit": "YouTube：https://www.youtube.com/watch?v=Bklw9nziyZw—在archive.org上查看/保存存檔版本。",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "am730"
+      },
+      "bioExcerpt": "林峯（英語：Raymond Lam Fung，1979年12月8日—），生於中國福建省廈門市，原名林匯文，後改名林逸峰，香港男歌手及演員，是新世紀第一位在紅磡香港體育館連開個唱的歌手；香港人氣偶像代表人物。其舞曲作品《CHOK》於2011年奪得「金曲金獎」，雖引發外界對評審準則的爭議，但也令「Chok」一詞成為其個人標籤及流行語。被譽為「Chok王」、「林公子」。\n林峯自幼師從包含戴思聰在內的數位",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s322",
+      "name": "袁詠琳",
+      "aliases": [
+        "袁詠琳",
+        "Cindy Yen",
+        "袁咏琳"
+      ],
+      "photo": "photos/s322.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27202836080314285,
+          0.92,
+          0.4274407679738562
+        ],
+        "nose": [
+          0.08,
+          0.27202836080314285,
+          0.92,
+          0.5711880852194393
+        ],
+        "mouth": [
+          0.08,
+          0.27202836080314285,
+          0.92,
+          0.7228482115502451
+        ],
+        "chin": [
+          0.08,
+          0.27202836080314285,
+          0.92,
+          0.8817741922615401
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Cindy_Yen",
+        "source": "https://commons.wikimedia.org/wiki/File:Cindy_Yen_(2010,_cropped).JPG",
+        "artist": "Onlymyself65536",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Cindy Yen (born Cindy Wu Chinese: 吳欣雲; 14 November 1986) is a Taiwanese-American singer-songwriter, actress, composer, and record producer. She is signed to JVR Music since 2009 and released her first",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s323",
+      "name": "朱俐靜",
+      "aliases": [
+        "朱俐靜",
+        "Miu Chu",
+        "朱俐静"
+      ],
+      "photo": "photos/s323.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28282690215529055,
+          0.92,
+          0.41735246446397567
+        ],
+        "nose": [
+          0.08,
+          0.28282690215529055,
+          0.92,
+          0.5364292211699904
+        ],
+        "mouth": [
+          0.08,
+          0.28282690215529055,
+          0.92,
+          0.6478244089940836
+        ],
+        "chin": [
+          0.08,
+          0.28282690215529055,
+          0.92,
+          0.7635723430789703
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E4%BF%90%E9%9D%9C",
+        "source": "https://commons.wikimedia.org/wiki/File:MIU-20141109%E5%BF%AB%E6%A8%82%E7%BE%8E%E4%BA%BA%E9%AD%9A%E7%B0%BD%E5%94%B1%E6%9C%83.jpg",
+        "artist": "Banana800908",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "朱俐靜（英語：Miu Chu，1981年12月16日—2022年7月3日），臺灣女歌手，客家人。德明財經科技大學資訊管理學系畢業。2009年參加三立電視、臺灣電視公司選秀節目《超級偶像》第三季取得冠軍後出道。2013年3月28日，發行首張個人專輯《存在的力量》。2022年7月3日，朱俐靜因乳癌病逝，終年40歲。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s324",
+      "name": "王詩安",
+      "aliases": [
+        "王詩安",
+        "Diana Wang",
+        "王诗安"
+      ],
+      "photo": "photos/s324.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.283140720614009,
+          0.92,
+          0.4220665567879139
+        ],
+        "nose": [
+          0.08,
+          0.283140720614009,
+          0.92,
+          0.5425077759872069
+        ],
+        "mouth": [
+          0.08,
+          0.283140720614009,
+          0.92,
+          0.6699855557865969
+        ],
+        "chin": [
+          0.08,
+          0.283140720614009,
+          0.92,
+          0.8156822044072798
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Diana_Wang",
+        "source": "https://commons.wikimedia.org/wiki/File:Diana_Wang_(cropped).jpg",
+        "artist": "Gene Wang",
+        "credit": "王詩安",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Diana Wang (born 14 November 1990) is a Dutch singer.",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s325",
+      "name": "許哲珮",
+      "aliases": [
+        "許哲珮",
+        "Peggy Hsu",
+        "许哲珮"
+      ],
+      "photo": "photos/s325.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27690566409983036,
+          0.92,
+          0.41519065880265077
+        ],
+        "nose": [
+          0.08,
+          0.27690566409983036,
+          0.92,
+          0.5394968855271646
+        ],
+        "mouth": [
+          0.08,
+          0.27690566409983036,
+          0.92,
+          0.6659598347608466
+        ],
+        "chin": [
+          0.08,
+          0.27690566409983036,
+          0.92,
+          0.7968405310021264
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Peggy_Hsu",
+        "source": "https://commons.wikimedia.org/wiki/File:Peggy_Hsu_(2014).jpg",
+        "artist": "Whowhor",
+        "credit": "This image has been extracted from another file",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Peggy Hsu (Chinese: 許哲珮; pinyin: Xǔ Zhépèi; born 2 February 1981) is a Taiwanese singer-songwriter, songwriter and record producer. She made her debut in 2001 with the self-written studio album Balloo",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s327",
+      "name": "譚維維",
+      "aliases": [
+        "譚維維",
+        "Sitar Tan",
+        "谭维维"
+      ],
+      "photo": "photos/s327.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.283289251936243,
+          0.92,
+          0.4222261043305093
+        ],
+        "nose": [
+          0.08,
+          0.283289251936243,
+          0.92,
+          0.5431552846381005
+        ],
+        "mouth": [
+          0.08,
+          0.283289251936243,
+          0.92,
+          0.662190481956969
+        ],
+        "chin": [
+          0.08,
+          0.283289251936243,
+          0.92,
+          0.7943579685941656
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%B0%AD%E7%BB%B4%E7%BB%B4",
+        "source": "https://commons.wikimedia.org/wiki/File:Tan_Weiwei_-_nicogenin_-_66%C3%A8me_Festival_de_Venise_(Mostra)_3.jpg",
+        "artist": "nicolas genin from Paris, France",
+        "credit": "66ème Festival de Venise (Mostra)",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "譚維維（1982年10月8日—），四川省自貢市人，是一名中国大陆創作女歌手、中央民族樂團歌唱家、國家一級演員。\n2005年，憑藉專輯《高原之心》正式出道並獲得法國唱片展世界音樂大獎；2006年獲得湖南衛視《超級女聲》總決賽亞軍而廣受關注；2009年憑藉《遇見》歌曲獲得第46屆金馬獎「最佳原創電影歌曲獎」，2015年2月7日，參加湖南衛視《我是歌手第三季》踢館賽成功並晉級總決賽 ；2016年、201",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s333",
+      "name": "王中平",
+      "aliases": [
+        "王中平",
+        "Jimmy Wang"
+      ],
+      "photo": "photos/s333.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2826815464457527,
+          0.92,
+          0.41483498401329166
+        ],
+        "nose": [
+          0.08,
+          0.2826815464457527,
+          0.92,
+          0.5323684254630667
+        ],
+        "mouth": [
+          0.08,
+          0.2826815464457527,
+          0.92,
+          0.6534325021212218
+        ],
+        "chin": [
+          0.08,
+          0.2826815464457527,
+          0.92,
+          0.7845644328633293
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E4%B8%AD%E5%B9%B3",
+        "source": "https://commons.wikimedia.org/wiki/File:%E8%B6%85%E7%B4%9A%E5%A4%9C%E7%B8%BD%E6%9C%83_%E7%8E%8B%E4%B8%AD%E5%B9%B3_20151025.jpg",
+        "artist": "蕭嘉錡",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "王中平（1967年6月30日—），本名韓志偉，屏東縣人，臺灣歌手、演員、主持人。\n1992年9月，王中平推出第一张國語专辑《向天要一点爱》。1995年3月，王中平推出第一张个人台语专辑《空笑梦》。\n2008年买了房子后，王中平逐渐爱上种树。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s335",
+      "name": "甄妮",
+      "aliases": [
+        "甄妮",
+        "Jenny Tseng"
+      ],
+      "photo": "photos/s335.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2774693316723927,
+          0.92,
+          0.42336945131600623
+        ],
+        "nose": [
+          0.08,
+          0.2774693316723927,
+          0.92,
+          0.5433099034320877
+        ],
+        "mouth": [
+          0.08,
+          0.2774693316723927,
+          0.92,
+          0.6713276617211031
+        ],
+        "chin": [
+          0.08,
+          0.2774693316723927,
+          0.92,
+          0.8219558679052146
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+        "source": "https://commons.wikimedia.org/wiki/File:Jenny_Tseng_in_2024_(1).jpg",
+        "artist": "星眸甜寵劇場",
+        "credit": "香港殿堂级天后#甄妮久违亮相出席好友生日会，为了傅声孤独一生不嫁，如今71岁了",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "甄妮（英語：Jenny Tseng，1953年4月3日—），原名甄淑詩，又名甄苡婷，女歌手，1971年於臺灣出道，先後走紅臺灣及香港樂壇。她曾獲華語音樂頒獎禮多個重要獎項，包括台灣金鐘獎最佳女歌星獎、香港十大勁歌金曲頒獎典禮首位最受歡迎女歌星、十大中文金曲頒獎音樂會最高榮譽金針獎等。2010年獲選「華語金曲獎」30年經典30人之一。除了被譽為樂壇天后級歌手，因不平則鳴的作風而又有「樂壇風紀」之稱。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s336",
+      "name": "徐小鳳",
+      "aliases": [
+        "徐小鳳",
+        "Paula Tsui",
+        "徐小凤"
+      ],
+      "photo": "photos/s336.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28291345781984584,
+          0.92,
+          0.4152352662213081
+        ],
+        "nose": [
+          0.08,
+          0.28291345781984584,
+          0.92,
+          0.5371847068314004
+        ],
+        "mouth": [
+          0.08,
+          0.28291345781984584,
+          0.92,
+          0.6608385406764208
+        ],
+        "chin": [
+          0.08,
+          0.28291345781984584,
+          0.92,
+          0.7873607277659188
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%BE%90%E5%B0%8F%E9%B3%B32018.jpg",
+        "artist": "zh:am730",
+        "credit": "【娛樂】山竹襲港屋企門口冧樹 徐小鳳差啲空降紅館 2018-09-18",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "徐小鳳（英語：Paula Tsui Siu-fung，1949年1月1日—），原名徐鄖書，人稱「小鳳姐」，初出道時藝名「小白光」，香港女歌手。生於湖北武昌，1965年獲得「香港之鶯歌唱比賽」冠軍從而開展歌唱事業，憑藉低沉磁性聲線縱橫樂壇。1972年至1980年間曾八度入選《華僑晚報》十大歌星金駱駝獎，1984年獲頒十大勁歌金曲頒獎典禮榮譽大獎，1989年獲得香港樂壇最高榮譽金針獎，1992年於紅磡",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s337",
+      "name": "姚蘇蓉",
+      "aliases": [
+        "姚蘇蓉",
+        "Yao Su-jung",
+        "姚苏蓉"
+      ],
+      "photo": "photos/s337.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28260092687125166,
+          0.92,
+          0.4219630077631787
+        ],
+        "nose": [
+          0.08,
+          0.28260092687125166,
+          0.92,
+          0.5485305786132812
+        ],
+        "mouth": [
+          0.08,
+          0.28260092687125166,
+          0.92,
+          0.6718378856928661
+        ],
+        "chin": [
+          0.08,
+          0.28260092687125166,
+          0.92,
+          0.8019201937588777
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%98%87%E8%93%89",
+        "source": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%8A%E7%92%B0_Sheung_Wan_Lower_Lascar_Row_%E9%BB%91%E8%86%A0%E5%94%B1%E7%89%87_Black_plastic_disk_%E4%BA%8C%E6%89%8B%E5%B8%82%E5%A0%B4_2nd_hand_market_%E5%8F%B0%E7%81%A3%E5%9C%8B%E8%AA%9E%E5%A5%B3%E6%AD%8C%E6%98%9F_Yao_Surong_%E5%A7%9A%E8%98%87%E8%93%89_Nov_2018_SSG_01.jpg",
+        "artist": "Zhuhabai Karom",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "姚蘇蓉（英文名：Yao Su-jung，1945年12月5日—），台灣女歌手，為華語歌壇1960年代著名且最具實力的歌后，有盈淚歌后、禁唱歌后、東南亞歌后之稱。藉由1966年參加正聲電台所主辦歌唱比賽，獲得評審青睞得到冠軍，在翁清溪老師的促成下，與當時海山唱片公司簽約，才進入演藝世界，以一曲〈負心的人〉令她一炮而紅；更以一首電影主題曲〈今天不回家〉，紅遍東南亞，加上深具特色與實力唱腔，很快成了華語",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s341",
+      "name": "許巍",
+      "aliases": [
+        "許巍",
+        "Xu Wei",
+        "许巍"
+      ],
+      "photo": "photos/s341.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27790380525989694,
+          0.92,
+          0.4359554803671957
+        ],
+        "nose": [
+          0.08,
+          0.27790380525989694,
+          0.92,
+          0.5616122333943343
+        ],
+        "mouth": [
+          0.08,
+          0.27790380525989694,
+          0.92,
+          0.6728798489610688
+        ],
+        "chin": [
+          0.08,
+          0.27790380525989694,
+          0.92,
+          0.8080644495346967
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%AE%B8%E5%B7%8D",
+        "source": "https://commons.wikimedia.org/wiki/File:%E8%AE%B8%E5%B7%8D(Xuwei).jpg",
+        "artist": "Flickr user cgwu68",
+        "credit": "https://www.flickr.com/photos/guangguang/375785220/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "许巍（1968年7月21日—），原名许玮，生于陕西西安的音乐人。\n许巍于1998年结婚。他的妻子就是他参军时期的战友。故许巍的一些歌曲创作灵感来自于他和妻子之间的感情，例如其第二张专辑《那一年》中的《故乡》和《温暖》两首歌都是写给妻子的。\n1999年的时候，许巍患上了严重的抑郁症，在录制其第二张专辑《那一年》的时候已经到了进录音棚就腿软、精神临界崩溃的境地，而日常生活也基本靠药物来维持。随后，其妻",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s343",
+      "name": "竇靖童",
+      "aliases": [
+        "竇靖童",
+        "Leah Dou",
+        "窦靖童"
+      ],
+      "photo": "photos/s343.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2711704822887074,
+          0.92,
+          0.4262745527787642
+        ],
+        "nose": [
+          0.08,
+          0.2711704822887074,
+          0.92,
+          0.5618125221946023
+        ],
+        "mouth": [
+          0.08,
+          0.2711704822887074,
+          0.92,
+          0.6939813121448865
+        ],
+        "chin": [
+          0.08,
+          0.2711704822887074,
+          0.92,
+          0.8354815917968751
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%AA%A6%E9%9D%96%E7%AB%A5",
+        "source": "https://commons.wikimedia.org/wiki/File:%E7%AA%A6%E9%9D%96%E7%AB%A5_1203%E5%92%AA%E5%92%95%E9%9F%B3%E4%B9%90%E7%9B%9B%E5%85%B8_(2).jpg",
+        "artist": "GEM_Ady (GEM_brilliant)",
+        "credit": "http://huiziady.lofter.com/post/1d2ac5a6_d3ed6a1",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "attribution": ""
+      },
+      "bioExcerpt": "窦靖童（英語：Leah Dou，1997年1月3日—），生于北京，中国女歌手、演员，是华语天后级歌手王菲和中国大陆摇滚歌手窦唯之女。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s346",
+      "name": "趙雷",
+      "aliases": [
+        "趙雷",
+        "Zhao Lei",
+        "赵雷"
+      ],
+      "photo": "photos/s346.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27703498456117914,
+          0.92,
+          0.4237945748747682
+        ],
+        "nose": [
+          0.08,
+          0.27703498456117914,
+          0.92,
+          0.5607849779746515
+        ],
+        "mouth": [
+          0.08,
+          0.27703498456117914,
+          0.92,
+          0.7026065853859881
+        ],
+        "chin": [
+          0.08,
+          0.27703498456117914,
+          0.92,
+          0.8502749688676794
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%B5%B5%E9%9B%B7",
+        "source": "https://commons.wikimedia.org/wiki/File:Photo_zhaolei.jpg",
+        "artist": "Akane L",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "赵雷（1986年7月20日—），中国大陆民谣歌手，獨立音樂人，唱作人，北京房山人，民谣圈内称他雷子。早期曾有过酒吧歌手和流浪歌手的经历，去过西藏，丽江等地，也参加过一些综艺节目，办过一些小型巡演，2017年因参加湖南卫视《歌手2017》而走红，目前已发行了4张錄音室專輯和1张现场专辑。赵雷的词以白描为主，质朴坦诚，又不失文艺，作品多以生活中的细节作为描写对象，代表作有《成都》、《南方姑娘》、《我记",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s349",
+      "name": "陳楚生",
+      "aliases": [
+        "陳楚生",
+        "Chen Chusheng",
+        "陈楚生"
+      ],
+      "photo": "photos/s349.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28363661993117556,
+          0.92,
+          0.42469583238874165
+        ],
+        "nose": [
+          0.08,
+          0.28363661993117556,
+          0.92,
+          0.5467974344889323
+        ],
+        "mouth": [
+          0.08,
+          0.28363661993117556,
+          0.92,
+          0.6654105413527716
+        ],
+        "chin": [
+          0.08,
+          0.28363661993117556,
+          0.92,
+          0.7980327497209823
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%A5%9A%E7%94%9F",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%99%88%E6%A5%9A%E7%94%9F_%E5%9B%BD%E6%BD%AE%E9%9F%B3%E4%B9%90%E5%98%89%E5%B9%B4%E5%8D%8E_%E6%B7%B1%E5%9C%B3%E7%AB%99.jpg",
+        "artist": "CecileEl",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "陈楚生（1981年7月25日—），出生于海南省三亚市，籍贯广东省普宁市，唱作人、歌手、音乐制作人、吉他手及演员，SPY.C乐队主唱。\n曾任全国青联委员，海南省青联常委。\n2003年，获得湖南衛視举办的的全国PUB歌手大赛冠军。2007年参加湖南衛視快乐男声获得全国总冠军而广受关注。\n2011年以第十一届中华全国青联委员的身份受邀前往人民大会堂献唱\n°\n并于2009年，2010年，2015年和202",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s351",
+      "name": "胡彥斌",
+      "aliases": [
+        "胡彥斌",
+        "Anson Hu",
+        "胡彦斌"
+      ],
+      "photo": "photos/s351.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.284445334666997,
+          0.92,
+          0.4123603858757968
+        ],
+        "nose": [
+          0.08,
+          0.284445334666997,
+          0.92,
+          0.52955004943544
+        ],
+        "mouth": [
+          0.08,
+          0.284445334666997,
+          0.92,
+          0.6564740688646611
+        ],
+        "chin": [
+          0.08,
+          0.284445334666997,
+          0.92,
+          0.7913427233340135
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%83%A1%E5%BD%A5%E6%96%8C",
+        "source": "https://commons.wikimedia.org/wiki/File:%E8%83%A1%E5%BD%A6%E6%96%8C.jpg",
+        "artist": "鱼头炮",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "胡彥斌（1983年7月4日—），中國大陸創作歌手、音乐制作人、牛班音乐学校创始人，生于上海，祖籍浙江省寧波市。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s355",
+      "name": "劉惜君",
+      "aliases": [
+        "劉惜君",
+        "Sara Liu",
+        "刘惜君"
+      ],
+      "photo": "photos/s355.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2808463063525853,
+          0.92,
+          0.4228867732387988
+        ],
+        "nose": [
+          0.08,
+          0.2808463063525853,
+          0.92,
+          0.5454187603779019
+        ],
+        "mouth": [
+          0.08,
+          0.2808463063525853,
+          0.92,
+          0.6653075449850281
+        ],
+        "chin": [
+          0.08,
+          0.2808463063525853,
+          0.92,
+          0.7983957563815431
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%88%98%E6%83%9C%E5%90%9B",
+        "source": "https://commons.wikimedia.org/wiki/File:WebTVAsia_%E7%B6%B2%E7%BE%85%E5%A4%A7%E6%98%8E%E6%98%9F_EP46_%E9%80%8F%E6%98%8E%E7%B3%BB%E5%A5%B3%E8%81%B2%E3%80%90%E5%8A%89%E6%83%9C%E5%90%9B%E3%80%9102.png",
+        "artist": "WebTVAsiaTaiwan",
+        "credit": "YouTube：https://www.youtube.com/watch?v=uVoNQj9XLnM—在archive.org上查看/保存存檔版本。",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "劉惜君（1988年4月30日—），中国歌手，16岁时参加歌唱比赛出道，曾发表多张EP和单曲。2009年湖南卫视《快乐女声》比赛全国第5名，赛后发行了五张个人专辑《爱情花园》、《拂晓》、《惜·君》、《当我身边空无一人》、《如我》。2019年展開硬地計畫，詮釋獨立搖滾曲風，發行迷你專輯 (EP)《硬地之美》，並嘗試拓展海外市場。2021年發行 EP《硬地之影》，2022年發行 EP《硬地之熵》。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s356",
+      "name": "金莎",
+      "aliases": [
+        "金莎",
+        "Jin Sha"
+      ],
+      "photo": "photos/s356.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2811198621182828,
+          0.92,
+          0.418448087331411
+        ],
+        "nose": [
+          0.08,
+          0.2811198621182828,
+          0.92,
+          0.5427227278013487
+        ],
+        "mouth": [
+          0.08,
+          0.2811198621182828,
+          0.92,
+          0.6752147262160842
+        ],
+        "chin": [
+          0.08,
+          0.2811198621182828,
+          0.92,
+          0.8168601989746094
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%87%91%E8%8E%8E",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E8%8E%8E.JPG",
+        "artist": "Jc0116",
+        "credit": "自己的作品",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "attribution": ""
+      },
+      "bioExcerpt": "金莎（1983年3月14日—）是一位中國大陸女歌手。因2002年出演《十八歲的天空》中的藍菲琳而出名。2003年拍攝阿杜的《走向前》MV，其間被海蝶音樂中國大陸公司總裁畢曉世賞識而後進軍歌壇，成為海蝶音樂在中國大陸簽約的第一位歌手，並使用金莎作為歌手藝名。\n2010年因演唱電視劇《神话》中片尾曲〈星月神话〉將歌唱事業推向一個高峰。2011年9月15日宣告與合作八年的海蝶結束合約，簽約天浩盛世，並自",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s359",
+      "name": "張柏芝",
+      "aliases": [
+        "張柏芝",
+        "Cecilia Cheung",
+        "张柏芝"
+      ],
+      "photo": "photos/s359.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2752389850038471,
+          0.92,
+          0.43225548484108667
+        ],
+        "nose": [
+          0.08,
+          0.2752389850038471,
+          0.92,
+          0.564544186447606
+        ],
+        "mouth": [
+          0.08,
+          0.2752389850038471,
+          0.92,
+          0.6887763861453894
+        ],
+        "chin": [
+          0.08,
+          0.2752389850038471,
+          0.92,
+          0.8292078330300071
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%9F%8F%E8%8A%9D",
+        "source": "https://commons.wikimedia.org/wiki/File:Cecilia_Cheung_2012.jpg",
+        "artist": "e.little.photo",
+        "credit": "https://www.flickr.com/photos/e-little/6981964565/",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "張柏芝（英文名：Cecilia Cheung Pak-chi，1980年5月24日—），本名張栢芝，香港女演員及歌手。1999年以電影《喜剧之王》出道並走紅。2004年，凭借電影《忘不了》获得第二十三届香港电影金像奖最佳女主角奖。其他电影代表作有：《星愿》（1999），《河东狮吼》（2003），《大隻佬》（2003）。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s360",
+      "name": "側田",
+      "aliases": [
+        "側田",
+        "Justin Lo",
+        "侧田"
+      ],
+      "photo": "photos/s360.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27901623403425696,
+          0.92,
+          0.42182206078399
+        ],
+        "nose": [
+          0.08,
+          0.27901623403425696,
+          0.92,
+          0.5590506903559184
+        ],
+        "mouth": [
+          0.08,
+          0.27901623403425696,
+          0.92,
+          0.6955840625351283
+        ],
+        "chin": [
+          0.08,
+          0.27901623403425696,
+          0.92,
+          0.8313525522355554
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%81%B4%E7%94%B0",
+        "source": "https://commons.wikimedia.org/wiki/File:2025.03.29_%E5%81%B4%E7%94%B0%E5%86%8D%E4%B8%80%E8%B5%B7_Come_Together_%E6%BC%94%E5%94%B1%E6%9C%83.jpg",
+        "artist": "JXSHELBY",
+        "credit": "自己的作品",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "attribution": ""
+      },
+      "bioExcerpt": "側田（英語：Justin Lo Ting Wei，1976年7月1日—），原名羅定偉，藝名“側田”取自其英文名\"Justin\"的粵語諧音，是一位美籍香港男歌手，生於美國紐約。2017年1月，作為第2位挑戰歌手加盟湖南衛視《歌手2017》，最終以第4名挑戰成功。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s361",
+      "name": "方力申",
+      "aliases": [
+        "方力申",
+        "Alex Fong"
+      ],
+      "photo": "photos/s361.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27940617497504117,
+          0.92,
+          0.4274897391607505
+        ],
+        "nose": [
+          0.08,
+          0.27940617497504117,
+          0.92,
+          0.5563372288949591
+        ],
+        "mouth": [
+          0.08,
+          0.27940617497504117,
+          0.92,
+          0.6700565051839028
+        ],
+        "chin": [
+          0.08,
+          0.27940617497504117,
+          0.92,
+          0.7921527743387898
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%96%B9%E5%8A%9B%E7%94%B3",
+        "source": "https://commons.wikimedia.org/wiki/File:2010-11-13-Alex-Fong.JPG",
+        "artist": "Kawai429",
+        "credit": "Own work",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "attribution": ""
+      },
+      "bioExcerpt": "方力申（英語：Alex Fong Lik-sun，1980年2月26日—），香港男歌手、演員，2014年香港十大傑出青年，為退役香港游泳代表隊隊員，曾擁11項香港游泳紀錄，他在2000年悉尼奧運刷新200米背泳、400米混合泳港績後，保持香港紀錄逾21年才遭打破。\n方力申於2000年悉尼奧運後加入娛樂圈及開始大學生涯，展開唱歌、游泳及讀書的「三棲生活」，後來逐漸淡出泳壇，全身投入娛樂圈。2018年",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s362",
+      "name": "余文樂",
+      "aliases": [
+        "余文樂",
+        "Shawn Yue",
+        "余文乐"
+      ],
+      "photo": "photos/s362.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27659068328655323,
+          0.92,
+          0.4189433546255756
+        ],
+        "nose": [
+          0.08,
+          0.27659068328655323,
+          0.92,
+          0.5437980045545969
+        ],
+        "mouth": [
+          0.08,
+          0.27659068328655323,
+          0.92,
+          0.6775576559913079
+        ],
+        "chin": [
+          0.08,
+          0.27659068328655323,
+          0.92,
+          0.8242447374356503
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E4%BD%99%E6%96%87%E6%A8%82",
+        "source": "https://commons.wikimedia.org/wiki/File:Shawn_Yue.jpg",
+        "artist": "Marianou766",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "余文樂（英語：Shawn Yue Man Lok，1981年11月13日—），香港男演員、男歌手，潮流品牌MADNESS主理人、電子競技職業戰隊MAD Team的老闆。2005年在《頭文字D》中與周杰倫、陳冠希、杜汶澤一同演出令人留下深刻印象，後2010年與楊千嬅演出《志明與春嬌》。2016年演出電影《一念無明》獲第53屆金馬獎提名，但未得獎。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s363",
+      "name": "陳冠希",
+      "aliases": [
+        "陳冠希",
+        "Edison Chen",
+        "陈冠希"
+      ],
+      "photo": "photos/s363.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27687094128085477,
+          0.92,
+          0.42394608375163395
+        ],
+        "nose": [
+          0.08,
+          0.27687094128085477,
+          0.92,
+          0.550637478958308
+        ],
+        "mouth": [
+          0.08,
+          0.27687094128085477,
+          0.92,
+          0.6819357786660992
+        ],
+        "chin": [
+          0.08,
+          0.27687094128085477,
+          0.92,
+          0.8287066424774289
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%86%A0%E5%B8%8C",
+        "source": "https://commons.wikimedia.org/wiki/File:Edison-Chen-EDC.jpg",
+        "artist": "邱鈺鋒",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "陳冠希（英語：Edison Chen，1980年10月7日—），本名陳興華，加拿大籍香港男歌手、演員、饒舌歌手及時裝設計師。2000年在樂壇出道，並出演《無間道》（2002）、《頭文字D》（2005）等電影。2008年因不雅照風波宣布「無限期」退出娛樂圈，2010年復出。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s364",
+      "name": "林奕匡",
+      "aliases": [
+        "林奕匡",
+        "Phil Lam"
+      ],
+      "photo": "photos/s364.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2797983120369023,
+          0.92,
+          0.4257626355889875
+        ],
+        "nose": [
+          0.08,
+          0.2797983120369023,
+          0.92,
+          0.5568414157987666
+        ],
+        "mouth": [
+          0.08,
+          0.2797983120369023,
+          0.92,
+          0.6866259293433247
+        ],
+        "chin": [
+          0.08,
+          0.2797983120369023,
+          0.92,
+          0.8250756136394162
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%A5%95%E5%8C%A1",
+        "source": "https://commons.wikimedia.org/wiki/File:Phil_Lam_20251227.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "林奕匡（英語：Phil Lam Yik-hong，1985年6月12日—），原名林漢輝（Phillip Lam），香港唱作男歌手，被譽為「香港唱作小天王」，現為Sony Music旗下藝人。他在加拿大纳奈莫出生，在闊里坎灘（Qualicum Beach）長大。他於2009年正式簽約香港Sony Music，成為唱作歌手。2014年憑《高山低谷》而走紅，奪得《2014年度勁歌金曲頒獎典禮》「最佳創作",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s365",
+      "name": "王菀之",
+      "aliases": [
+        "王菀之",
+        "Ivana Wong"
+      ],
+      "photo": "photos/s365.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27404943946900406,
+          0.92,
+          0.4316302198704665
+        ],
+        "nose": [
+          0.08,
+          0.27404943946900406,
+          0.92,
+          0.5698241567224022
+        ],
+        "mouth": [
+          0.08,
+          0.27404943946900406,
+          0.92,
+          0.7005098668540396
+        ],
+        "chin": [
+          0.08,
+          0.27404943946900406,
+          0.92,
+          0.8419833646944868
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%80%E4%B9%8B",
+        "source": "https://commons.wikimedia.org/wiki/File:Usc2013_Ivana_Wong.JPG",
+        "artist": "Tksteven",
+        "credit": "自己的作品",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "王菀之（英語：Ivana Wong Yuen Chi，1979年6月18日－），香港唱作女歌手、藝術家、作曲家、演員，2005年加入樂壇，被譽為「天使吻過的聲音」。2008年9月，於STAR HALL舉行兩場入行後首次個人演唱會《我來自火星演唱會》，首場邀得歌神張學友當特別嘉賓，兩人合唱《我真的受傷了》（王菀之為張學友創作的歌曲）。2011年10月首次於香港紅磡體育館舉行2場《水．百合》個人演唱會",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s366",
+      "name": "李幸倪",
+      "aliases": [
+        "李幸倪",
+        "Gin Lee"
+      ],
+      "photo": "photos/s366.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27758785429454974,
+          0.92,
+          0.4203290182446677
+        ],
+        "nose": [
+          0.08,
+          0.27758785429454974,
+          0.92,
+          0.5455213274274554
+        ],
+        "mouth": [
+          0.08,
+          0.27758785429454974,
+          0.92,
+          0.6697520664760046
+        ],
+        "chin": [
+          0.08,
+          0.27758785429454974,
+          0.92,
+          0.8027298118954613
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%B9%B8%E5%80%AA",
+        "source": "https://commons.wikimedia.org/wiki/File:GINLEE_LAVA.jpg",
+        "artist": "Fhcpy",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "李幸倪（英語：Jeanie Lee Hang Ngai，1987年8月26日—），藝名Gin Lee，馬來西亞籍香港女歌手，以扎實和穩定的唱功見稱。\n早年曾多次參加電視音樂選秀節目如《超級偶像4》、《超級巨聲2》和《中国好声音》第四季而為人所熟悉。分別在2009年及2011年於馬來西亞及香港出道。2016年簽約環球唱片，憑歌曲〈雙雙〉、〈月球下的人〉打開知名度。2018年首登紅館開唱。2023年轉",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s367",
+      "name": "湯寶如",
+      "aliases": [
+        "湯寶如",
+        "Karen Tong",
+        "汤宝如"
+      ],
+      "photo": "photos/s367.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2844116748692181,
+          0.92,
+          0.41510487022904047
+        ],
+        "nose": [
+          0.08,
+          0.2844116748692181,
+          0.92,
+          0.5335032929407868
+        ],
+        "mouth": [
+          0.08,
+          0.2844116748692181,
+          0.92,
+          0.6587519574270375
+        ],
+        "chin": [
+          0.08,
+          0.2844116748692181,
+          0.92,
+          0.7918540329450028
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%B9%AF%E5%AF%B6%E5%A6%82",
+        "source": "https://commons.wikimedia.org/wiki/File:Karen_Tong_20221119.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "湯寶如（英語：Karen Tong Po Yu，1971年10月4日—），暱稱湯記，香港女歌手、演員及電視節目主持。1992年出道，其歌唱代表作品包括與張學友合唱《相思風雨中》、《絕對是個夢》、《緣份的天空》，1996年更憑《感冒》一曲勇奪該年度「十大中文金曲獎」。一頭清爽短髮成為她出道時的標記，與劉小慧、黎瑞恩、王馨平並稱「寶麗金四小花」。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s368",
+      "name": "黎瑞恩",
+      "aliases": [
+        "黎瑞恩",
+        "Vivian Lai"
+      ],
+      "photo": "photos/s368.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27992242393847955,
+          0.92,
+          0.42621385792829675
+        ],
+        "nose": [
+          0.08,
+          0.27992242393847955,
+          0.92,
+          0.5568333912191007
+        ],
+        "mouth": [
+          0.08,
+          0.27992242393847955,
+          0.92,
+          0.681653209957914
+        ],
+        "chin": [
+          0.08,
+          0.27992242393847955,
+          0.92,
+          0.8147275951846096
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%BB%8E%E7%91%9E%E6%81%A9",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%8E%E7%91%9E%E6%81%A9.jpg",
+        "artist": "zh:am730",
+        "credit": "【娛樂】黎瑞恩閉關準備舞台劇",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "黎瑞恩（英語：Vivian Lai Shui Yan，1973年2月18日—），暱稱小恩子，香港女歌手。代表歌曲包括《一人有一個夢想》、《雨季不再來》、《陽光路上》以及與張學友合唱的《長流不息》，《一人有一個夢想》是1993年十大勁歌金曲之一，與劉小慧、湯寶如並稱「寶麗金三小花」。而其「小恩子」一名由張學潤所改。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s370",
+      "name": "泳兒",
+      "aliases": [
+        "泳兒",
+        "Vincy Chan",
+        "泳儿"
+      ],
+      "photo": "photos/s370.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.43209148119854673
+        ],
+        "nose": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.5723713044197328
+        ],
+        "mouth": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.7174189019972278
+        ],
+        "chin": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.880171637422295
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%B3%B3%E5%85%92",
+        "source": "https://commons.wikimedia.org/wiki/File:Vincy_Chan_20240428.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "泳兒（英語：Vincy Chan，1982年10月16日—），原名陳家欣，香港女歌手，公認實力唱將，有「靚聲天后」、「暗黑天后」等美譽，特色為女高音。2005年，參加無綫電視與英皇娛樂合辦的《英皇新秀歌唱大賽》香港區選拔賽奪得亞軍及最佳型格奬。2006年，以新人身份出道，憑「天籟之音」唱到「街知巷聞」的「首本名曲」《感應》奪得「十大中文金曲」及「新城勁爆歌曲」一炮而紅，是香港樂壇史上首位憑第一首派",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s371",
+      "name": "葉德嫻",
+      "aliases": [
+        "葉德嫻",
+        "Deanie Ip",
+        "叶德娴"
+      ],
+      "photo": "photos/s371.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27984223752408416,
+          0.92,
+          0.4233061042991844
+        ],
+        "nose": [
+          0.08,
+          0.27984223752408416,
+          0.92,
+          0.5550939714586413
+        ],
+        "mouth": [
+          0.08,
+          0.27984223752408416,
+          0.92,
+          0.6805821599187077
+        ],
+        "chin": [
+          0.08,
+          0.27984223752408416,
+          0.92,
+          0.8085606126527528
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Deanie_Ip",
+        "source": "https://commons.wikimedia.org/wiki/File:Deanie_YIP_Tak-Han_Mar-2013_(cropped).JPG",
+        "artist": "Tongtamkinloen",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": "Tongtamkinloen"
+      },
+      "bioExcerpt": "Deanie Ip (born 25 December 1947) is a Hong Kong singer and actress. Ip released her debut EP Deanie Ip in 1969 before shifting her focus to live performances. She returned to recording in the early 1",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s372",
+      "name": "陳松伶",
+      "aliases": [
+        "陳松伶",
+        "Adia Chan",
+        "陈松伶"
+      ],
+      "photo": "photos/s372.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27278005505696,
+          0.92,
+          0.42915862050799813
+        ],
+        "nose": [
+          0.08,
+          0.27278005505696,
+          0.92,
+          0.556588147529631
+        ],
+        "mouth": [
+          0.08,
+          0.27278005505696,
+          0.92,
+          0.690129071950006
+        ],
+        "chin": [
+          0.08,
+          0.27278005505696,
+          0.92,
+          0.8487150637550499
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%9D%BE%E4%BC%B6",
+        "source": "https://commons.wikimedia.org/wiki/File:Adia_Chan_20260213.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "陳松伶（英語：Adia Chan Chung Ling，1970年1月21日—），原名陳松齡，暱稱「松松」、「松松姐姐」，香港女歌手及演員。父母是在香港定居的印尼華僑，曾為香港無綫電視部頭合約女演員，是無綫電視1990年代當紅的女演員之一，並以演唱粵語電視劇主題曲而創下唱片銷量佳績，陳亦買樓投資身家逾3億。\n2006年，陈松伶与小她8岁的中國大陸男演員张铎合演电视剧《血未冷》结缘，其后双方各自将背",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s374",
+      "name": "李蕙敏",
+      "aliases": [
+        "李蕙敏",
+        "Amanda Lee"
+      ],
+      "photo": "photos/s374.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2777469277641612,
+          0.92,
+          0.4270837156341486
+        ],
+        "nose": [
+          0.08,
+          0.2777469277641612,
+          0.92,
+          0.5498115356711261
+        ],
+        "mouth": [
+          0.08,
+          0.2777469277641612,
+          0.92,
+          0.6715794914428446
+        ],
+        "chin": [
+          0.08,
+          0.2777469277641612,
+          0.92,
+          0.8149590186823427
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E8%95%99%E6%95%8F",
+        "source": "https://commons.wikimedia.org/wiki/File:Amanda_Lee_20260905.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "李蕙敏（英語：Amanda Lee Wai Man；1970年10月4日—），原名李惠敏，籍貫廣東佛山市三水，香港女歌手、演員、時裝節目主持與專欄作家。 1989年和區海倫組成2人女子組合Echo出道，拆夥後曾在商業電台擔任DJ，1994年正式以個人歌手出道，曾一度以《橫濱別戀》、《活得比你好》、《（你沒有）好結果》等歌曲走紅，並於《1995年度叱咤樂壇流行榜頒獎典禮》奪得「叱咤樂壇女歌手銅獎」。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s375",
+      "name": "李彩樺",
+      "aliases": [
+        "李彩樺",
+        "Rain Li",
+        "李彩桦"
+      ],
+      "photo": "photos/s375.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28242512155086436,
+          0.92,
+          0.4320744214875528
+        ],
+        "nose": [
+          0.08,
+          0.28242512155086436,
+          0.92,
+          0.5648519733223658
+        ],
+        "mouth": [
+          0.08,
+          0.28242512155086436,
+          0.92,
+          0.6968778951594767
+        ],
+        "chin": [
+          0.08,
+          0.28242512155086436,
+          0.92,
+          0.8453428327156993
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BD%A9%E8%8F%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E5%BD%A9%E6%A8%BA.jpg",
+        "artist": "中国新闻网",
+        "credit": "王晶、陈百祥等发声 十几位香港演艺人士挺“爱国者治港”",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "李彩華（英語：Rain Li Choi Wa，1983年11月11日—），曾用藝名李彩樺，香港女歌手和演員。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s376",
+      "name": "梁朝偉",
+      "aliases": [
+        "梁朝偉",
+        "Tony Leung Chiu-wai",
+        "Tony Leung",
+        "梁朝伟"
+      ],
+      "photo": "photos/s376.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28781466970638353,
+          0.92,
+          0.41931791694796816
+        ],
+        "nose": [
+          0.08,
+          0.28781466970638353,
+          0.92,
+          0.5399606860413844
+        ],
+        "mouth": [
+          0.08,
+          0.28781466970638353,
+          0.92,
+          0.6527979091722137
+        ],
+        "chin": [
+          0.08,
+          0.28781466970638353,
+          0.92,
+          0.7699056025913783
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%A2%81%E6%9C%9D%E5%81%89",
+        "source": "https://commons.wikimedia.org/wiki/File:Tony_Leung_at_Shanghai_International_Film_Festival_2026_01.jpg",
+        "artist": "Runawaymo",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "梁朝偉（英語：Tony Leung Chiu Wai，1962年6月27日—），香港男演員、歌手，6次獲頒香港電影金像獎最佳男主角，3次獲頒台灣金馬獎最佳男主角，是獲此兩項榮譽最多的演員，並獲頒1次中國電影金雞獎最佳男主角，是首位集合中港台三大頒獎禮最佳男主角的演員。他亦曾獲威尼斯电影节终身成就金獅奖、坎城影展最佳男演員獎、亞洲電影大獎最佳男主角等奬項，並被「威尼斯影展」大會形容為當代最具影響力的",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s377",
+      "name": "梁家輝",
+      "aliases": [
+        "梁家輝",
+        "Tony Leung Ka-fai",
+        "梁家辉"
+      ],
+      "photo": "photos/s377.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2734233809337569,
+          0.92,
+          0.4281831033692606
+        ],
+        "nose": [
+          0.08,
+          0.2734233809337569,
+          0.92,
+          0.5589505132351812
+        ],
+        "mouth": [
+          0.08,
+          0.2734233809337569,
+          0.92,
+          0.6951821666970593
+        ],
+        "chin": [
+          0.08,
+          0.2734233809337569,
+          0.92,
+          0.8520085530199056
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%A2%81%E5%AE%B6%E8%BC%9D",
+        "source": "https://commons.wikimedia.org/wiki/File:Tony_Leung_Ka-fai_2025_(cropped).jpg",
+        "artist": "Outhere505",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "梁家輝（英語：Tony Leung Ka-fai，1958年2月1日—），香港男演員，是香港電影金像獎歷史上最年輕的影帝（26歲），亦是唯一一位在1980至2020年代中每個年代皆奪得最佳男主角的演員。他於1983年的《垂簾聽政》初露頭角，其他經典演出包括《愛在別鄉的季節》、《92黑玫瑰對黑玫瑰》、《黑社會》、《寒戰》及《捕風追影》等。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s378",
+      "name": "成龍",
+      "aliases": [
+        "成龍",
+        "Jackie Chan",
+        "成龙"
+      ],
+      "photo": "photos/s378.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2775938066862139,
+          0.92,
+          0.4248773823206196
+        ],
+        "nose": [
+          0.08,
+          0.2775938066862139,
+          0.92,
+          0.5386686207914235
+        ],
+        "mouth": [
+          0.08,
+          0.2775938066862139,
+          0.92,
+          0.6529589453844825
+        ],
+        "chin": [
+          0.08,
+          0.2775938066862139,
+          0.92,
+          0.7959767589522228
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%88%90%E9%BE%8D",
+        "source": "https://commons.wikimedia.org/wiki/File:Jackie_Chan.jpg",
+        "artist": "Segolene Liger",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "成龍，本名陳港生，SBS，MBE，PMW（英語：Jackie Chan；1954年4月7日—），又名房仕龍，祖籍今山东烟台，香港演员、歌手、导演、編劇和電影監製。1979年加盟嘉禾公司，填補突然逝世的李小龙，期間拍攝多部電影，屢創佳績。1998年因何冠昌逝世而暫時離開嘉禾。同年年底，經嘉禾集團創辦人鄒文懷的邀請回歸拍攝《玻璃樽》和《特務迷城》。2001年初加盟英皇集團至今。成龍以功夫喜劇為名，自称",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s380",
+      "name": "劉嘉玲",
+      "aliases": [
+        "劉嘉玲",
+        "Carina Lau",
+        "刘嘉玲"
+      ],
+      "photo": "photos/s380.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28078877375676076,
+          0.92,
+          0.42244633650168395
+        ],
+        "nose": [
+          0.08,
+          0.28078877375676076,
+          0.92,
+          0.5534723722017728
+        ],
+        "mouth": [
+          0.08,
+          0.28078877375676076,
+          0.92,
+          0.6881107721573267
+        ],
+        "chin": [
+          0.08,
+          0.28078877375676076,
+          0.92,
+          0.8291382628220779
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Carina_Lau",
+        "source": "https://commons.wikimedia.org/wiki/File:Carina_Lau_(2023).png",
+        "artist": "am730",
+        "credit": "亞洲電影大獎｜湯唯封影后 梁朝偉稱帝獲劉嘉玲頒獎",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "am730"
+      },
+      "bioExcerpt": "Carina Lau Kar-ling (Chinese: 劉嘉玲; Jyutping: Lau4 Gaa1-ling4; born 8 December 1965) is a Hong Kong actress and singer. She started her acting career at TVB, before achieving success with her girl-next",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s381",
+      "name": "關之琳",
+      "aliases": [
+        "關之琳",
+        "Rosamund Kwan",
+        "关之琳"
+      ],
+      "photo": "photos/s381.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27434971664891106,
+          0.92,
+          0.4174566095525568
+        ],
+        "nose": [
+          0.08,
+          0.27434971664891106,
+          0.92,
+          0.5452474574850064
+        ],
+        "mouth": [
+          0.08,
+          0.27434971664891106,
+          0.92,
+          0.6856203761245264
+        ],
+        "chin": [
+          0.08,
+          0.27434971664891106,
+          0.92,
+          0.8363053989603061
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%97%9C%E4%B9%8B%E7%90%B3",
+        "source": "https://commons.wikimedia.org/wiki/File:Rosamund_Kwan_20181206.png",
+        "artist": "am730",
+        "credit": "本图像提取自另一个文件",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "am730"
+      },
+      "bioExcerpt": "關之琳（英語：Rosamund Kwan Chi-lam，1962年9月24日—），本名關家慧，滿族人（屬瓜尔佳氏正白旗），香港電影女演員。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s382",
+      "name": "朱茵",
+      "aliases": [
+        "朱茵",
+        "Athena Chu"
+      ],
+      "photo": "photos/s382.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28090923161796444,
+          0.92,
+          0.42431274962030063
+        ],
+        "nose": [
+          0.08,
+          0.28090923161796444,
+          0.92,
+          0.5442692034810946
+        ],
+        "mouth": [
+          0.08,
+          0.28090923161796444,
+          0.92,
+          0.6621567446882554
+        ],
+        "chin": [
+          0.08,
+          0.28090923161796444,
+          0.92,
+          0.7975895522312564
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E8%8C%B5",
+        "source": "https://commons.wikimedia.org/wiki/File:Athena_Chu.jpg",
+        "artist": "Eddie Guyuno",
+        "credit": "Flickr: ZHU YIN 朱茵",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "朱茵（英語：Athena Chu Yan；1971年10月25日—），香港女演員。丈夫为Beyond乐队吉他手黄贯中。她於1991年以兒童節目主持身份入行。出道初期已涉足影視兩個範疇，從影多年以電影《西遊記大結局之仙履奇緣》「紫霞仙子」一角為其代表作，仍引起討論話題。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s383",
+      "name": "翁虹",
+      "aliases": [
+        "翁虹",
+        "Yvonne Yung"
+      ],
+      "photo": "photos/s383.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2804905437756006,
+          0.92,
+          0.42356780421575846
+        ],
+        "nose": [
+          0.08,
+          0.2804905437756006,
+          0.92,
+          0.5491030528724457
+        ],
+        "mouth": [
+          0.08,
+          0.2804905437756006,
+          0.92,
+          0.6817416431275314
+        ],
+        "chin": [
+          0.08,
+          0.2804905437756006,
+          0.92,
+          0.8301309801868557
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%BF%81%E8%99%B9",
+        "source": "https://commons.wikimedia.org/wiki/File:MKr378334_Yvonne_Yung_(Cannes_2025).jpg",
+        "artist": "Martin Kraft",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "翁虹（英語：Yvonne (Ewong) Yung Hung，1968年9月17日—），香港女演員、女歌手。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s385",
+      "name": "李麗珍",
+      "aliases": [
+        "李麗珍",
+        "Loletta Lee",
+        "李丽珍"
+      ],
+      "photo": "photos/s385.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27659299736780835,
+          0.92,
+          0.42670614987809136
+        ],
+        "nose": [
+          0.08,
+          0.27659299736780835,
+          0.92,
+          0.554267782249198
+        ],
+        "mouth": [
+          0.08,
+          0.27659299736780835,
+          0.92,
+          0.6757165971970716
+        ],
+        "chin": [
+          0.08,
+          0.27659299736780835,
+          0.92,
+          0.8123413045516867
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%BA%97%E7%8F%8D",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%BA%97%E7%8F%8D.jpg",
+        "artist": "zh:am730",
+        "credit": "【娛樂】李麗珍 : 台灣原住民愛得簡單 2019-12-03",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "李麗珍（英語：Rachel Lee Lai Chun；1966年1月8日—），香港女演員，2020年3月前英文名曾為「Loletta Lee」，父母皆為印尼華人。1998年曾改名李孋珍，2000年改回本名李麗珍。1999年，李麗珍憑許鞍華執導電影《千言萬語》分別奪得第36屆金馬獎最佳女主角及第5屆香港電影金紫荊獎最佳女主角殊榮，成為雙料影后。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s386",
+      "name": "楊采妮",
+      "aliases": [
+        "楊采妮",
+        "Charlie Yeung",
+        "杨采妮"
+      ],
+      "photo": "photos/s386.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2756807595814178,
+          0.92,
+          0.4219467424743873
+        ],
+        "nose": [
+          0.08,
+          0.2756807595814178,
+          0.92,
+          0.5475789837888863
+        ],
+        "mouth": [
+          0.08,
+          0.2756807595814178,
+          0.92,
+          0.6847374485718214
+        ],
+        "chin": [
+          0.08,
+          0.2756807595814178,
+          0.92,
+          0.8401671327666685
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E9%87%87%E5%A6%AE",
+        "source": "https://commons.wikimedia.org/wiki/File:2007TaiwanOrbisCharityWalking_CharlieYeung.jpg",
+        "artist": "Rico Shen",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "楊采妮（英語：Charlie Yeung Choi-Nei，1974年5月23日—），出生於台灣台北縣，香港女歌手、演員。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s388",
+      "name": "金素梅",
+      "aliases": [
+        "金素梅",
+        "高金素梅",
+        "May Chin"
+      ],
+      "photo": "photos/s388.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.29458335008078473,
+          0.92,
+          0.40993806017123585
+        ],
+        "nose": [
+          0.08,
+          0.29458335008078473,
+          0.92,
+          0.5159196776103198
+        ],
+        "mouth": [
+          0.08,
+          0.29458335008078473,
+          0.92,
+          0.6078362875837621
+        ],
+        "chin": [
+          0.08,
+          0.29458335008078473,
+          0.92,
+          0.7006646976626016
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Kao_Chin_Su-mei",
+        "source": "https://commons.wikimedia.org/wiki/File:2008TaiwanPresidentialElection_May_Chin_at_Anti-Referendum_Protest_(cropped).jpg",
+        "artist": "Rico Shen",
+        "credit": "Rico Shen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "Kao Chin Su-mei (Chinese: 高金素梅; pinyin: Gāo Jīn Sùméi; born September 21, 1965), also known as Chin Su-mei, May Chin and Ciwas Ali, is a Taiwanese politician and retired actress and singer. She is of ",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s389",
+      "name": "彭于晏",
+      "aliases": [
+        "彭于晏",
+        "Eddie Peng"
+      ],
+      "photo": "photos/s389.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27428825759887693,
+          0.92,
+          0.4311198711395264
+        ],
+        "nose": [
+          0.08,
+          0.27428825759887693,
+          0.92,
+          0.551463851928711
+        ],
+        "mouth": [
+          0.08,
+          0.27428825759887693,
+          0.92,
+          0.6674344482421876
+        ],
+        "chin": [
+          0.08,
+          0.27428825759887693,
+          0.92,
+          0.8139135345458984
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BD%AD%E4%BA%8E%E6%99%8F",
+        "source": "https://commons.wikimedia.org/wiki/File:Eddie_Peng_(%E5%BD%AD%E4%BA%8E%E6%99%8F)_-_Exclusive_Interview_with_am730_in_January_2024.png",
+        "artist": "am730",
+        "credit": "專訪 劉德華自願被打？搵林家棟監製《今晚打老闆》 彭于晏演醜化角色 被指嘥化妝品",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "am730"
+      },
+      "bioExcerpt": "彭于晏（英語：Eddie Peng；1982年3月24日—），台灣男演員，生於臺灣澎湖縣，2002年在演藝圈出道。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s390",
+      "name": "鄭元暢",
+      "aliases": [
+        "鄭元暢",
+        "Joe Cheng",
+        "郑元畅"
+      ],
+      "photo": "photos/s390.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28860439804365057,
+          0.92,
+          0.41835730930544296
+        ],
+        "nose": [
+          0.08,
+          0.28860439804365057,
+          0.92,
+          0.5368757427863355
+        ],
+        "mouth": [
+          0.08,
+          0.28860439804365057,
+          0.92,
+          0.6543012942907945
+        ],
+        "chin": [
+          0.08,
+          0.28860439804365057,
+          0.92,
+          0.7778121789896263
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E5%85%83%E6%9A%A2",
+        "source": "https://commons.wikimedia.org/wiki/File:Joseph_Cheng_2009.jpg",
+        "artist": "2009 아시아모델 페스티벌 어워즈 - 정원창 05.jpg\nderivative work: P1340 (talk)",
+        "credit": "2009 아시아모델 페스티벌 어워즈 - 정원창 05.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "鄭綜騰（英語：Joseph Cheng，1982年6月19日—），藝名鄭元暢，台灣男演員、模特兒、主持人及歌手。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s391",
+      "name": "明道",
+      "aliases": [
+        "明道",
+        "Ming Dao"
+      ],
+      "photo": "photos/s391.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2772114492166897,
+          0.92,
+          0.4314491819228804
+        ],
+        "nose": [
+          0.08,
+          0.2772114492166897,
+          0.92,
+          0.5541343367049463
+        ],
+        "mouth": [
+          0.08,
+          0.2772114492166897,
+          0.92,
+          0.6638259115098398
+        ],
+        "chin": [
+          0.08,
+          0.2772114492166897,
+          0.92,
+          0.7953741828499967
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Ming_Dao",
+        "source": "https://commons.wikimedia.org/wiki/File:Ming_Dao_in_Guangzhou_20100123.gif",
+        "artist": "Zhengfmy",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Ming Dao (Chinese: 明道; pinyin: Míng Dào; Pe̍h-ōe-jī: Bêng Tō; born 26 February 1980) is a Taiwanese actor, singer and model. He is known for starring in The Prince Who Turns into a Frog, which held th",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s392",
+      "name": "王傳一",
+      "aliases": [
+        "王傳一",
+        "Kingone Wang",
+        "王传一"
+      ],
+      "photo": "photos/s392.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27896350931238245,
+          0.92,
+          0.41841382450527614
+        ],
+        "nose": [
+          0.08,
+          0.27896350931238245,
+          0.92,
+          0.5451927008452239
+        ],
+        "mouth": [
+          0.08,
+          0.27896350931238245,
+          0.92,
+          0.678195282264992
+        ],
+        "chin": [
+          0.08,
+          0.27896350931238245,
+          0.92,
+          0.8177647710729529
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%82%B3%E4%B8%80",
+        "source": "https://commons.wikimedia.org/wiki/File:KingoneWang20210316.jpg",
+        "artist": "PlayIN",
+        "credit": "YouTube：https://www.youtube.com/watch?v=v67fRrnZWLk—在archive.org上查看/保存存檔版本。",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "PlayIN"
+      },
+      "bioExcerpt": "王傳一（1980年5月5日—），為臺灣男演員、歌手、電視節目主持人，曾經為男子演唱團體可米小子成員，並為該團體之團長。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s395",
+      "name": "柯震東",
+      "aliases": [
+        "柯震東",
+        "Kai Ko",
+        "柯震东"
+      ],
+      "photo": "photos/s395.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2783917556000685,
+          0.92,
+          0.43115845841699335
+        ],
+        "nose": [
+          0.08,
+          0.2783917556000685,
+          0.92,
+          0.5753150781963687
+        ],
+        "mouth": [
+          0.08,
+          0.2783917556000685,
+          0.92,
+          0.6931690880500152
+        ],
+        "chin": [
+          0.08,
+          0.2783917556000685,
+          0.92,
+          0.8040442221638056
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Kai_Ko",
+        "source": "https://commons.wikimedia.org/wiki/File:Kai_Ko_%E6%9F%AF%E9%9C%87%E6%9D%B1_-_ELLE_Taiwan_Digital_Cover_Story_%22ELLE_GREEN%22_July_Issue_2023.jpg",
+        "artist": "ELLE Taiwan",
+        "credit": "YouTube – View/save archived versions on archive.org",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Kai Ko Chen-tung (Chinese: 柯震東; Pe̍h-ōe-jī: Koa Chìn-tong; born Ko Chia-kai on 18 June 1991) is a Taiwanese actor, singer and film director.",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s396",
+      "name": "郭雪芙",
+      "aliases": [
+        "郭雪芙",
+        "Puff Kuo"
+      ],
+      "photo": "photos/s396.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2755044340355996,
+          0.92,
+          0.42463164534305503
+        ],
+        "nose": [
+          0.08,
+          0.2755044340355996,
+          0.92,
+          0.554810459628427
+        ],
+        "mouth": [
+          0.08,
+          0.2755044340355996,
+          0.92,
+          0.6969430186265817
+        ],
+        "chin": [
+          0.08,
+          0.2755044340355996,
+          0.92,
+          0.8559560576830905
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%83%AD%E9%9B%AA%E8%8A%99",
+        "source": "https://commons.wikimedia.org/wiki/File:20240716_%E9%83%AD%E9%9B%AA%E8%8A%99Kuo_Hsueh_Fu.jpg",
+        "artist": "ELLE TAIWAN",
+        "credit": "https://youtube.com/watch?v=XQLgJbKPa80",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "ELLE TAIWAN"
+      },
+      "bioExcerpt": "郭雪芙（英語：Puff Kuo，1988年6月30日—），臺灣歌手、演員。曾為女子團體「Dream Girls」成員，2011年在電視劇《真愛找麻煩》中飾演黑道千金「黎兒」一角而獲得知名度。獲得2013至2015年的FHM臺灣百大美女冠軍。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s397",
+      "name": "李毓芬",
+      "aliases": [
+        "李毓芬",
+        "Tia Lee"
+      ],
+      "photo": "photos/s397.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2786352408272879,
+          0.92,
+          0.42368884495326453
+        ],
+        "nose": [
+          0.08,
+          0.2786352408272879,
+          0.92,
+          0.5515795680454799
+        ],
+        "mouth": [
+          0.08,
+          0.2786352408272879,
+          0.92,
+          0.6765994262695313
+        ],
+        "chin": [
+          0.08,
+          0.2786352408272879,
+          0.92,
+          0.8112007847377233
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%AF%93%E8%8A%AC",
+        "source": "https://commons.wikimedia.org/wiki/File:Retouched_version_of_Tia_Li_at_2011_IT_Month.jpg",
+        "artist": "攝眼睛",
+        "credit": "https://www.flickr.com/photos/34750184@N04/6486817949/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "李毓芬（英語：Tia Lee，1985年05月11日—)，臺灣歌手、演員、平面模特兒，出生於新北市，曾為女子團體「Dream Girls」成員。2008年，李毓芬因參加東方衛視綜藝節目《我型我秀》而被更多的中國大陸觀眾所認識。2010年，李毓芬與其她兩位女藝人一起組成Dream Girls，正式進軍歌壇。2023年2月，李毓芬受邀出席倫敦時裝週多個頂級品牌的時裝秀，亦是唯一獲設計師朱利安·麥克唐納",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s398",
+      "name": "宋米秦",
+      "aliases": [
+        "宋米秦",
+        "Emily Song"
+      ],
+      "photo": "photos/s398.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27973597215324997,
+          0.92,
+          0.4273774533253041
+        ],
+        "nose": [
+          0.08,
+          0.27973597215324997,
+          0.92,
+          0.5594687205623362
+        ],
+        "mouth": [
+          0.08,
+          0.27973597215324997,
+          0.92,
+          0.689058324331381
+        ],
+        "chin": [
+          0.08,
+          0.27973597215324997,
+          0.92,
+          0.8295577774947781
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E7%B1%B3%E7%A7%A6",
+        "source": "https://commons.wikimedia.org/wiki/File:Emily_Son_20131227_retouched.jpg",
+        "artist": "Gene Wang",
+        "credit": "本图像提取自另一个文件",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "宋米秦（韓語：송미진／宋米秦，羅馬化：Song Mi-jin，1983年3月23日—），出生於韓國首爾特別市，韓國籍，從韓國至台灣發展的女藝人，高中時期曾在天津留學，漢語流利。曾為宏將多利安旗下藝人，女子團體Dream Girls的一員，2016年正式單飛，與傳動藝能簽約。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s399",
+      "name": "洪詩",
+      "aliases": [
+        "洪詩",
+        "Angel Hong",
+        "洪诗"
+      ],
+      "photo": "photos/s399.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27994478968947145,
+          0.92,
+          0.4207630694752008
+        ],
+        "nose": [
+          0.08,
+          0.27994478968947145,
+          0.92,
+          0.5434027300194395
+        ],
+        "mouth": [
+          0.08,
+          0.27994478968947145,
+          0.92,
+          0.6661192701456133
+        ],
+        "chin": [
+          0.08,
+          0.27994478968947145,
+          0.92,
+          0.8006420984402509
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%B4%AA%E8%A9%A9",
+        "source": "https://commons.wikimedia.org/wiki/File:AngelHong2019.jpg",
+        "artist": "Franzen77",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "洪詩涵（英語：Angel Hong，1988年1月7日—），藝名洪詩，臺灣女藝人，為女子團體星期三成員，過去曾為Popu Lady、我愛黑澀會成員。粉絲名為小獅子。曾在綜藝節目我愛黑澀會出名，被眾人所知。目前跨足餐飲界，經營鹹酥雞居酒屋「原火乍初」。丈夫為演員李運慶。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s401",
+      "name": "丫頭",
+      "aliases": [
+        "丫頭",
+        "詹子晴",
+        "Yako Chan",
+        "丫头"
+      ],
+      "photo": "photos/s401.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2836640334043879,
+          0.92,
+          0.42111729721014646
+        ],
+        "nose": [
+          0.08,
+          0.2836640334043879,
+          0.92,
+          0.5370854750329022
+        ],
+        "mouth": [
+          0.08,
+          0.2836640334043879,
+          0.92,
+          0.6532583585349462
+        ],
+        "chin": [
+          0.08,
+          0.2836640334043879,
+          0.92,
+          0.7868530492201501
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Yako_Chan",
+        "source": "https://commons.wikimedia.org/wiki/File:Yako_Chen_(cropped).jpg",
+        "artist": "Rico Shen",
+        "credit": "Own work",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "Yako Chan (Chinese: 詹子晴; pinyin: Zhan Ziqing) is a Taiwanese singer and actress. She was a member of the band Hey Girl.",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s404",
+      "name": "曾寶儀",
+      "aliases": [
+        "曾寶儀",
+        "Bowie Tsang",
+        "曾宝仪"
+      ],
+      "photo": "photos/s404.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28248682872790126,
+          0.92,
+          0.42566106017206756
+        ],
+        "nose": [
+          0.08,
+          0.28248682872790126,
+          0.92,
+          0.5500696030021274
+        ],
+        "mouth": [
+          0.08,
+          0.28248682872790126,
+          0.92,
+          0.6708590082159624
+        ],
+        "chin": [
+          0.08,
+          0.28248682872790126,
+          0.92,
+          0.8055117439664027
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%AF%B6%E5%84%80",
+        "source": "https://commons.wikimedia.org/wiki/File:Bowie_Tsang_(cropped).jpg",
+        "artist": "Tonychan1992",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "曾寶儀（英語：Bowie Tsang，1973年2月21日—），又名阿寶，出生於香港，成長於臺灣的女主持人、演員、歌手、製片及作家，畢業於國立臺灣大學社會學系。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s405",
+      "name": "徐熙媛",
+      "aliases": [
+        "徐熙媛",
+        "大S",
+        "Barbie Hsu"
+      ],
+      "photo": "photos/s405.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28887336575255096,
+          0.92,
+          0.4077158402423469
+        ],
+        "nose": [
+          0.08,
+          0.28887336575255096,
+          0.92,
+          0.521670033980389
+        ],
+        "mouth": [
+          0.08,
+          0.28887336575255096,
+          0.92,
+          0.647486534897162
+        ],
+        "chin": [
+          0.08,
+          0.28887336575255096,
+          0.92,
+          0.775198882433833
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BE%90%E7%86%99%E5%AA%9B",
+        "source": "https://commons.wikimedia.org/wiki/File:Barbie_Hsu_(cropped).jpg",
+        "artist": "Ding Yuin Shan",
+        "credit": "https://www.flickr.com/photos/90461913@N00/7392569070/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "徐熙媛（英語：Barbie Hsu，1976年10月6日—2025年2月2日），藝名大S，台灣女演員、歌手及節目主持人。1994年與妹妹徐熙娣（藝名小S）共組雙人女子團體S.O.S（Sisters Of Shiu）出道，後改名ASOS（Adult Sisters Of Shiu）並轉型主持。1996年起，大小S先後主持綜藝節目《我猜我猜我猜猜猜》、《娛樂百分百》、《大小愛吃》等。\n作為演員，徐熙媛",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s406",
+      "name": "徐熙娣",
+      "aliases": [
+        "徐熙娣",
+        "小S",
+        "Dee Hsu"
+      ],
+      "photo": "photos/s406.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2703112405443948,
+          0.92,
+          0.43048168364025297
+        ],
+        "nose": [
+          0.08,
+          0.2703112405443948,
+          0.92,
+          0.5640941650148422
+        ],
+        "mouth": [
+          0.08,
+          0.2703112405443948,
+          0.92,
+          0.6929748353503999
+        ],
+        "chin": [
+          0.08,
+          0.2703112405443948,
+          0.92,
+          0.8390537661597842
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BE%90%E7%86%99%E5%A8%A3",
+        "source": "https://commons.wikimedia.org/wiki/File:Dee_Hsu_in_2023.png",
+        "artist": "Play大明星",
+        "credit": "https://youtube.com/watch?v=GCSDWRViUjo",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "徐熙娣（英語：Dee Hsu，1978年6月14日—），藝名小S、Elephant Dee，臺灣女主持人、歌手及演員。1994年，她與其姊徐熙媛（藝名大S）共組雙人女子團體「S.O.S」出道。1996年起，她與大S共同主持《我猜我猜我猜猜猜》、《娛樂百分百》、《週末三寶FUN》和《大小愛吃》等綜藝節目。2004年起至2016年，她與蔡康永共同主持綜藝談話節目《康熙來了》，在華人世界取得巨大成功，曾",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s407",
+      "name": "林逸欣",
+      "aliases": [
+        "林逸欣",
+        "Shara Lin"
+      ],
+      "photo": "photos/s407.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27477423959671093,
+          0.92,
+          0.42561343815773045
+        ],
+        "nose": [
+          0.08,
+          0.27477423959671093,
+          0.92,
+          0.5587191821233323
+        ],
+        "mouth": [
+          0.08,
+          0.27477423959671093,
+          0.92,
+          0.6987819096813463
+        ],
+        "chin": [
+          0.08,
+          0.27477423959671093,
+          0.92,
+          0.852759377118115
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E9%80%B8%E6%AC%A3",
+        "source": "https://commons.wikimedia.org/wiki/File:SharaLin_(4).jpg",
+        "artist": "Kikimusic58",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "林逸欣（1985年11月5日—），台灣女歌手、演員、音樂家。畢業於國立臺灣師範大學音樂學系。入行時，起初是擔任旅遊節目《臺灣腳逛大陸》的主持人。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s415",
+      "name": "許景淳",
+      "aliases": [
+        "許景淳",
+        "Christine Hsu",
+        "许景淳"
+      ],
+      "photo": "photos/s415.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28058556499317244,
+          0.92,
+          0.41690070034781296
+        ],
+        "nose": [
+          0.08,
+          0.28058556499317244,
+          0.92,
+          0.5258983404383618
+        ],
+        "mouth": [
+          0.08,
+          0.28058556499317244,
+          0.92,
+          0.6458029410900564
+        ],
+        "chin": [
+          0.08,
+          0.28058556499317244,
+          0.92,
+          0.7911858763599122
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%A8%B1%E6%99%AF%E6%B7%B3",
+        "source": "https://commons.wikimedia.org/wiki/File:Christine_Hsu_20101127.jpg",
+        "artist": "音樂雯",
+        "credit": "https://www.flickr.com/photos/musicwen/5248510636",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "許景淳（1963年11月21日—），臺灣女歌手、音樂製作人、音樂劇演員、電台製作及節目主持人，於臺中縣出生，師從李泰祥。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s416",
+      "name": "紀曉君",
+      "aliases": [
+        "紀曉君",
+        "Samingad",
+        "纪晓君"
+      ],
+      "photo": "photos/s416.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28055959348787846,
+          0.92,
+          0.41884935194848993
+        ],
+        "nose": [
+          0.08,
+          0.28055959348787846,
+          0.92,
+          0.5432294105742059
+        ],
+        "mouth": [
+          0.08,
+          0.28055959348787846,
+          0.92,
+          0.6712601382291453
+        ],
+        "chin": [
+          0.08,
+          0.28055959348787846,
+          0.92,
+          0.8071899024476396
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%B4%80%E6%9B%89%E5%90%9B",
+        "source": "https://commons.wikimedia.org/wiki/File:2006TaiwanSportEliteAwards_Samingad_Hsiao-chun_Chi.jpg",
+        "artist": "Rico Shen",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "沙敏岸·波若普若般（卑南語：Samingad Purepurepuan，1977年10月2日—），台灣女歌手及卑南族古謠歌唱家，1999年以藝名紀曉君出道，並於2000年獲得金曲獎「最佳新人獎」。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s422",
+      "name": "鄭少秋",
+      "aliases": [
+        "鄭少秋",
+        "Adam Cheng",
+        "郑少秋"
+      ],
+      "photo": "photos/s422.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2781924850876266,
+          0.92,
+          0.4280568715688345
+        ],
+        "nose": [
+          0.08,
+          0.2781924850876266,
+          0.92,
+          0.552053874247783
+        ],
+        "mouth": [
+          0.08,
+          0.2781924850876266,
+          0.92,
+          0.6795329985747467
+        ],
+        "chin": [
+          0.08,
+          0.2781924850876266,
+          0.92,
+          0.8308295106630067
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://en.wikipedia.org/wiki/Adam_Cheng",
+        "source": "https://commons.wikimedia.org/wiki/File:2013%E5%B9%B4%E3%80%8A%E5%BF%A0%E7%83%88%E6%A5%8A%E5%AE%B6%E5%B0%87%E3%80%8B%E9%A6%99%E6%B8%AF%E8%A8%98%E8%80%85%E6%9C%83.jpg",
+        "artist": "酱油大四喜",
+        "credit": "https://weibo.com/1690513482/Gf3eH6BUM",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "Adam Cheng Siu-chau  (born 24 February 1947; formerly known as Cheng Chong-sai and Wong Ho-chung) is a Hong Kong TVB actor and Cantopop singer.\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s423",
+      "name": "汪明荃",
+      "aliases": [
+        "汪明荃",
+        "Liza Wang"
+      ],
+      "photo": "photos/s423.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.272551989946209,
+          0.92,
+          0.4291168796560152
+        ],
+        "nose": [
+          0.08,
+          0.272551989946209,
+          0.92,
+          0.5634998814872922
+        ],
+        "mouth": [
+          0.08,
+          0.272551989946209,
+          0.92,
+          0.7052944162504269
+        ],
+        "chin": [
+          0.08,
+          0.272551989946209,
+          0.92,
+          0.8656605760473588
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%B1%AA%E6%98%8E%E8%8D%83",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%B1%AA%E6%98%8E%E8%8D%83.jpg",
+        "artist": "中国新闻网",
+        "credit": "香港艺人汪明荃办展推广粤剧文化",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "汪明荃，GBS（英語：Elizabeth \"Liza\" Wang Ming-chun；1947年8月28日—），人稱「阿姐」、「Liza姐」、「汪阿姐」，香港女演員、歌手、節目主持人、司儀。籍貫上海青浦，生於江苏省崇明县（现属上海），成長於英屬香港。汪明荃自加入演藝圈後獲獎無數，曾17度於《華僑晚報》十大明星選舉中當選十大明星，當中15次為電視明星（1969、1971、1973－1982、1984",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s424",
+      "name": "羅嘉良",
+      "aliases": [
+        "羅嘉良",
+        "Gallen Lo",
+        "罗嘉良"
+      ],
+      "photo": "photos/s424.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2841832833379587,
+          0.92,
+          0.4288382440725536
+        ],
+        "nose": [
+          0.08,
+          0.2841832833379587,
+          0.92,
+          0.5496670924946067
+        ],
+        "mouth": [
+          0.08,
+          0.2841832833379587,
+          0.92,
+          0.6680460421073852
+        ],
+        "chin": [
+          0.08,
+          0.2841832833379587,
+          0.92,
+          0.8094393830900218
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%BE%85%E5%98%89%E8%89%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E5%98%89%E8%89%AF_Gallen_Lo_Ka-leung.png",
+        "artist": "am730",
+        "credit": "萬千星輝頒獎典禮2023｜林保怡認已收《刑偵12》劇本︰睇到好燒腦 【[1]】",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "羅嘉良（英語：Gallen Lo Ka-leung；1962年12月16日—），人稱「撈家」，原名羅浩良，香港男演員及歌手，曾是亞洲電視及無綫電視旗下艺人，1984年参加無綫電視新秀歌唱大赛经填词人卢国沾发掘而投身演艺界。1986年以主唱亞洲電視劇集《秦始皇》同名主題曲成名，同年加入無綫電視，1990年代末至2000年代初成為無綫電視「一哥」，更分別於1997年、1998年、2002年先後憑無綫劇",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s425",
+      "name": "霍建華",
+      "aliases": [
+        "霍建華",
+        "Wallace Huo",
+        "霍建华"
+      ],
+      "photo": "photos/s425.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2786484778344215,
+          0.92,
+          0.42320219453398167
+        ],
+        "nose": [
+          0.08,
+          0.2786484778344215,
+          0.92,
+          0.5565917808692772
+        ],
+        "mouth": [
+          0.08,
+          0.2786484778344215,
+          0.92,
+          0.6911097493205037
+        ],
+        "chin": [
+          0.08,
+          0.2786484778344215,
+          0.92,
+          0.8314590635499755
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%9C%8D%E5%BB%BA%E8%8F%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:Wallace_Huo_image_taken_in_November_2016.png",
+        "artist": "霍建华微吧",
+        "credit": "https://wallacehuowebar.lofter.com/post/1dc120c7_ccf4da7",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "attribution": ""
+      },
+      "bioExcerpt": "霍建華（英語：Wallace Huo，1979年12月26日—），台灣男演員、歌手及製片人，主要在中國大陸發展。2015年，以電視劇《花千骨》中白子畫一角創事業高峰。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s426",
+      "name": "陳坤",
+      "aliases": [
+        "陳坤",
+        "Chen Kun",
+        "陈坤"
+      ],
+      "photo": "photos/s426.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2723602240620135,
+          0.92,
+          0.4199277395879671
+        ],
+        "nose": [
+          0.08,
+          0.2723602240620135,
+          0.92,
+          0.5626404243007673
+        ],
+        "mouth": [
+          0.08,
+          0.2723602240620135,
+          0.92,
+          0.7147820415021687
+        ],
+        "chin": [
+          0.08,
+          0.2723602240620135,
+          0.92,
+          0.8651601868761817
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%9D%A4",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%AF%BB%E9%BE%99%E8%AF%80.jpg",
+        "artist": "Yunwai",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "陈坤（1976年2月4日—），重庆人，中国大陆演員、歌手，畢業于北京电影学院，以《像雾像雨又像风》、《粉紅女郎》、《金粉世家》等电视剧获得关注，后凭电影《云水谣》、《画皮》获华表奖、百花奖双料影帝，其他電影代表作有《龙门飞甲》、《画皮》、《让子弹飞》、《寻龙诀》、《火锅英雄》等。陳坤與鄧超、劉燁、黃曉明齊名「四大中生」。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s427",
+      "name": "胡歌",
+      "aliases": [
+        "胡歌",
+        "Hu Ge"
+      ],
+      "photo": "photos/s427.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27889477008322006,
+          0.92,
+          0.4224513045601223
+        ],
+        "nose": [
+          0.08,
+          0.27889477008322006,
+          0.92,
+          0.5502202573029892
+        ],
+        "mouth": [
+          0.08,
+          0.27889477008322006,
+          0.92,
+          0.6802846255095109
+        ],
+        "chin": [
+          0.08,
+          0.27889477008322006,
+          0.92,
+          0.8207253057065218
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E8%83%A1%E6%AD%8C",
+        "source": "https://commons.wikimedia.org/wiki/File:HUGE20161211BJ.jpg",
+        "artist": "飘渺的毒毒",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "胡歌（1982年9月20日—），中国演員、歌手，毕业于上海戏剧学院表演系，現任上海戲劇學院實驗電影製片廠表演指導，中国民主同盟中央宣传委员会副主任。2005年出演《仙劍奇俠傳》主角李逍遙一炮而紅。2015年以《琅琊榜》梅長蘇一角獲得第22屆上海電視節白玉蘭獎最佳男主角、第28屆中国电视金鹰奖觀眾喜愛的男演員及最具人氣男演員。2024年6月，憑《繁花》再度獲白玉蘭獎最佳男主角。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s428",
+      "name": "黃曉明",
+      "aliases": [
+        "黃曉明",
+        "Huang Xiaoming",
+        "黄晓明"
+      ],
+      "photo": "photos/s428.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2761382956582992,
+          0.92,
+          0.4204453140008645
+        ],
+        "nose": [
+          0.08,
+          0.2761382956582992,
+          0.92,
+          0.5432984649157915
+        ],
+        "mouth": [
+          0.08,
+          0.2761382956582992,
+          0.92,
+          0.6813860883869108
+        ],
+        "chin": [
+          0.08,
+          0.2761382956582992,
+          0.92,
+          0.8401662197425717
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%BB%84%E6%99%93%E6%98%8E",
+        "source": "https://commons.wikimedia.org/wiki/File:Huang_Xiaoming_from_%22Mostly_Sunny%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2024_(54577127407).jpg",
+        "artist": "Dick Thomas Johnson from Tokyo, Japan",
+        "credit": "Huang Xiaoming from \"Mostly Sunny\" at Red Carpet of the Tokyo International Film Festival 2024",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "黃曉明（英語：Mark Huang Xiaoming，1977年11月13日—），山东省青岛市人，中國演员、歌手，畢業於北京電影學院。2001年以《大漢天子》走红，後主演《神鵰俠侶》、《新上海灘》、《鹿鼎記》等熱門劇集。2013年憑藉《中國合伙人》獲得金雞獎、華表獎、百花獎。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s430",
+      "name": "韓庚",
+      "aliases": [
+        "韓庚",
+        "Han Geng",
+        "韩庚"
+      ],
+      "photo": "photos/s430.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27907822412236866,
+          0.92,
+          0.4215622147443089
+        ],
+        "nose": [
+          0.08,
+          0.27907822412236866,
+          0.92,
+          0.5433011963846789
+        ],
+        "mouth": [
+          0.08,
+          0.27907822412236866,
+          0.92,
+          0.6733842018067681
+        ],
+        "chin": [
+          0.08,
+          0.27907822412236866,
+          0.92,
+          0.8208960423083591
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E5%BA%9A",
+        "source": "https://commons.wikimedia.org/wiki/File:Hangeng.JPG",
+        "artist": "Arina Prinsiska",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "韩庚（1984年2月9日—），中国大陸男演员、歌手。曾為韓國男子團體Super Junior成员及子團Super Junior-M隊長，於2009年与SM娱乐解约後返回中國大陸发展，音乐类型以流行舞曲为主，2015年轉向影视演员发展。代表作有《致我們終將逝去的青春》、《前任攻略》和《前任3：再見前任》。\n\n",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s431",
+      "name": "張藝興",
+      "aliases": [
+        "張藝興",
+        "Lay Zhang",
+        "张艺兴"
+      ],
+      "photo": "photos/s431.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27395622867277303,
+          0.92,
+          0.4301891107668822
+        ],
+        "nose": [
+          0.08,
+          0.27395622867277303,
+          0.92,
+          0.5778113617294136
+        ],
+        "mouth": [
+          0.08,
+          0.27395622867277303,
+          0.92,
+          0.7268132001504132
+        ],
+        "chin": [
+          0.08,
+          0.27395622867277303,
+          0.92,
+          0.879969456113618
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E8%97%9D%E8%88%88",
+        "source": "https://commons.wikimedia.org/wiki/File:Zhang_Yixing_at_press_conference_of_The_Founding_of_an_Army.jpg",
+        "artist": "Enchantedlay",
+        "credit": "本图像提取自另一个文件",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "張藝興（英語：Lay Zhang，韓語：장이씽，1991年10月7日—），曾用名張加帥，藝名Lay（韓語：레이，羅馬化：Re I ），中國大陆男歌手、詞曲作者、音樂制作人、舞者、演员以及娛樂集團創辦人和總裁。張藝興出生于湖南长沙，小時候是一名童星曾參影過電視劇和各種綜藝節目。最為人熟知的是2005年參加湖南經視舉辦的才藝比賽節目《明星學院》並获得總決賽季軍。2008年，他通過SM Casting ",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s432",
+      "name": "王嘉爾",
+      "aliases": [
+        "王嘉爾",
+        "Jackson Wang",
+        "王嘉尔"
+      ],
+      "photo": "photos/s432.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2754662461935902,
+          0.92,
+          0.4196465952327838
+        ],
+        "nose": [
+          0.08,
+          0.2754662461935902,
+          0.92,
+          0.5528992235470123
+        ],
+        "mouth": [
+          0.08,
+          0.2754662461935902,
+          0.92,
+          0.6999805389501796
+        ],
+        "chin": [
+          0.08,
+          0.2754662461935902,
+          0.92,
+          0.8552187993351263
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%98%89%E7%88%BE",
+        "source": "https://commons.wikimedia.org/wiki/File:Jackson_Wang_at_a_mini_fanmeeting_outside_%22Show!_Music_Core%22_studios,_1_June_2019_02.jpg",
+        "artist": "wjs852",
+        "credit": "190601 음악중심 미니팬미팅 잭슨 (1)",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "王嘉爾（英語：Jackson Wang Ka Yee，韓語：잭슨，羅馬化：Jaek Seun，1994年3月28日—），香港男歌手、TEAM WANG创办人、韓國男子偶像團體GOT7成員及香港代表隊前劍擊手。17歲獲得亞洲青少年劍擊錦標賽冠軍後，前往韓國當練習生。2014年1月，以韓國男子組合GOT7成員出道。2020年及2021年在福布斯中國名人榜排名第41位及第10位。華人明星Instagra",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s433",
+      "name": "澎恰恰",
+      "aliases": [
+        "澎恰恰",
+        "Peng Chia-chia"
+      ],
+      "photo": "photos/s433.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2877716845018242,
+          0.92,
+          0.4193598744105978
+        ],
+        "nose": [
+          0.08,
+          0.2877716845018242,
+          0.92,
+          0.5368831747829323
+        ],
+        "mouth": [
+          0.08,
+          0.2877716845018242,
+          0.92,
+          0.6470452689495024
+        ],
+        "chin": [
+          0.08,
+          0.2877716845018242,
+          0.92,
+          0.7653651020314434
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%BE%8E%E6%81%B0%E6%81%B0",
+        "source": "https://commons.wikimedia.org/wiki/File:Peng_Chia-chia_at_Super_Night_Club_20160715.jpg",
+        "artist": "Solomon203",
+        "credit": "Own work",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "澎恰恰（1956年4月15日—），原名彭樟燦，後改名彭高尚，台灣男藝人、主持人、導演。出生於嘉義市，遠東科技大學創新商品設計與創業管理系暨碩士班畢業。在進入演藝圈前，曾在台南市立棒球場做過球童、郵差和西餐廳的歌手等。自1984年踏入演藝圈，成為秀場主持人及台灣鄉土劇演員；自己出過歌唱專輯，也為許多歌手創作歌曲。之後還跨行主持，以及電影編劇、導演。澎恰恰與搭檔夥伴暨徒弟許效舜合作多年，有極佳默契，兩",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s439",
+      "name": "周定緯",
+      "aliases": [
+        "周定緯",
+        "Judy Chou",
+        "周定纬"
+      ],
+      "photo": "photos/s439.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2796218331404558,
+          0.92,
+          0.4237667894738866
+        ],
+        "nose": [
+          0.08,
+          0.2796218331404558,
+          0.92,
+          0.5465547606700988
+        ],
+        "mouth": [
+          0.08,
+          0.2796218331404558,
+          0.92,
+          0.6772436727689006
+        ],
+        "chin": [
+          0.08,
+          0.2796218331404558,
+          0.92,
+          0.8274616139329324
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%91%A8%E5%AE%9A%E7%B7%AF",
+        "source": "https://commons.wikimedia.org/wiki/File:2007SamsungRunningFestivalTaipei_PeterPan.jpg",
+        "artist": "Rico Shen",
+        "credit": "Image:2007SamsungRunningFestivalTaipei MickyHuang PeterPan JamesLin.jpg by Rico Shen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": "Rico Shen"
+      },
+      "bioExcerpt": "周定緯（1987年8月11日—），臺灣男歌手，出道於歌唱比賽節目《超級星光大道》。媒體稱他和同樣簽入華研的林宥嘉、許仁杰、潘裕文為「星光四少」或「華研四公子」。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s440",
+      "name": "王若琪",
+      "aliases": [
+        "王若琪",
+        "Takki Wong"
+      ],
+      "photo": "photos/s440.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28059272448221845,
+          0.92,
+          0.415341051419576
+        ],
+        "nose": [
+          0.08,
+          0.28059272448221845,
+          0.92,
+          0.5382315158843994
+        ],
+        "mouth": [
+          0.08,
+          0.28059272448221845,
+          0.92,
+          0.6710176912943522
+        ],
+        "chin": [
+          0.08,
+          0.28059272448221845,
+          0.92,
+          0.8107977879842122
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8B%A5%E7%90%AA",
+        "source": "https://commons.wikimedia.org/wiki/File:Takki_Wong.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "王若琪（Takki Wong，1985年3月28日—），香港女歌手。2008年正式加入樂壇，中性唱作歌手，罕有左手結他，《左手》首張專輯主打歌。她由歌唱老師韋綺姍介紹給當時的經理人認識而入行。\n2016年與李端嫻組成日月系，擔任節奏結他手兼主唱。\n為響應台灣2018年11月24日的「平權公投」推出彩虹MV影像計劃，第五首彩虹單曲為Takki《我的愛沒有錯》，MV構想來自於童書《穿裙子的男孩》，告訴",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s441",
+      "name": "黃宗澤",
+      "aliases": [
+        "黃宗澤",
+        "Bosco Wong",
+        "黄宗泽"
+      ],
+      "photo": "photos/s441.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28319937913937676,
+          0.92,
+          0.42541486697089403
+        ],
+        "nose": [
+          0.08,
+          0.28319937913937676,
+          0.92,
+          0.5412642543477223
+        ],
+        "mouth": [
+          0.08,
+          0.28319937913937676,
+          0.92,
+          0.6544644864878261
+        ],
+        "chin": [
+          0.08,
+          0.28319937913937676,
+          0.92,
+          0.7904293788823865
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E5%AE%97%E6%BE%A4",
+        "source": "https://commons.wikimedia.org/wiki/File:Bosco_Wong_20251116.jpg",
+        "artist": "Will629",
+        "credit": "自己的作品",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "attribution": ""
+      },
+      "bioExcerpt": "黃宗澤（英語：Bosco Wong Chung-chak，1980年12月13日—），籍貫廣東潮州。香港男演員及歌手，現為邵氏兄弟藝員，並以《廉政狙擊》在《萬千星輝頒獎典禮2023》奪得「大灣區最喜愛TVB男主角」，成為大灣區視帝，其後在《萬千星輝頒獎典禮2025》以《新聞女王2》奪得「最佳男主角」及「大灣區最喜愛TVB男主角」，成為雙料視帝。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s442",
+      "name": "吳浩康",
+      "aliases": [
+        "吳浩康",
+        "Deep Ng",
+        "吴浩康"
+      ],
+      "photo": "photos/s442.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.277724599202474,
+          0.92,
+          0.4215252939860026
+        ],
+        "nose": [
+          0.08,
+          0.277724599202474,
+          0.92,
+          0.5396578216552734
+        ],
+        "mouth": [
+          0.08,
+          0.277724599202474,
+          0.92,
+          0.6649992574055988
+        ],
+        "chin": [
+          0.08,
+          0.277724599202474,
+          0.92,
+          0.8126243123372395
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E6%B5%A9%E5%BA%B7",
+        "source": "https://commons.wikimedia.org/wiki/File:Deep_Ng.jpg",
+        "artist": "Tombus20032000",
+        "credit": "自己的作品",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": ""
+      },
+      "bioExcerpt": "吳浩康（英語：Deep Ng Ho Hong，1983年6月13日—），原名吳偉男，香港男歌手。2002年參加無綫電視自辦的《全球華人新秀歌唱大賽》香港區選拔賽奪得冠軍及動力新能量大獎，以及於同年的全球總決賽奪得季軍及最佳台風獎，並獲得新城電台、商業電台、TVB及香港電台所頒發的四台新人獎項，及後開始推出唱片、拍廣告、電視劇和電影。2025年，吳浩康擔任無綫電視歌唱選秀節目《聲秀》導師。",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     }
   ]

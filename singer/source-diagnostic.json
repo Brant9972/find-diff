@@ -1,20 +1,630 @@
 [
   {
     "host": "zh.wikipedia.org",
-    "status": 200,
-    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Wikipedia:\\u9996\\u9875\",\"base\":\"https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5\",\"sitename\":\"Wikipedia\",\"logo\":\"//zh.wikipedia.org/static/images/project-logos/zhwiki.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversi",
-    "seconds": 0.18
+    "title": "林俊傑",
+    "page": {
+      "batchcomplete": true,
+      "query": {
+        "redirects": [
+          {
+            "from": "林俊傑",
+            "to": "林俊杰"
+          }
+        ],
+        "pages": [
+          {
+            "pageid": 95400,
+            "ns": 0,
+            "title": "林俊杰",
+            "thumbnail": {
+              "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg/1280px-JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+              "width": 1200,
+              "height": 1601
+            },
+            "pageimage": "JJ林俊杰在JJ20世界巡回演唱会北京站_(cropped).jpg",
+            "pageprops": {
+              "defaultsort": "Lin林",
+              "page_image_free": "JJ林俊杰在JJ20世界巡回演唱会北京站_(cropped).jpg",
+              "wikibase_item": "Q716022"
+            },
+            "extract": "林俊傑（英語：Wayne Lim Jun Jie，藝名：JJ Lin；1981年3月27日—），新加坡華裔歌手、詞曲作家、音樂製作人，被誉为“行走的CD”，出道至今已舉辦逾两百場世界巡回演唱會。曾拿下金曲獎最佳新人獎以及兩屆金曲獎最佳男歌手。2003年，發行首張創作專輯《樂行者》，之後憑藉2004年的專輯《第二天堂》中〈江南〉一曲成名，隨後的〈小酒窩〉、〈曹操〉、〈她說〉等歌曲亦造成迴響。2014年，以專輯《因你而在》獲得第25屆金曲獎最佳國語男歌手獎。2016年，再以專輯《和自己對話》奪得第27屆金曲獎最佳國語男歌手獎及演唱類最佳作曲人獎。",
+            "contentmodel": "wikitext",
+            "pagelanguage": "zh",
+            "pagelanguagehtmlcode": "zh",
+            "pagelanguagedir": "ltr",
+            "touched": "2026-10-13T16:01:56Z",
+            "lastrevid": 94371151,
+            "length": 79353,
+            "fullurl": "https://zh.wikipedia.org/wiki/%E6%9E%97%E4%BF%8A%E6%9D%B0",
+            "editurl": "https://zh.wikipedia.org/w/index.php?title=%E6%9E%97%E4%BF%8A%E6%9D%B0&action=edit",
+            "canonicalurl": "https://zh.wikipedia.org/wiki/%E6%9E%97%E4%BF%8A%E6%9D%B0"
+          }
+        ]
+      }
+    },
+    "file": {
+      "batchcomplete": true,
+      "query": {
+        "normalized": [
+          {
+            "fromencoded": false,
+            "from": "File:JJ林俊杰在JJ20世界巡回演唱会北京站_(cropped).jpg",
+            "to": "File:JJ林俊杰在JJ20世界巡回演唱会北京站 (cropped).jpg"
+          }
+        ],
+        "pages": [
+          {
+            "ns": 6,
+            "title": "File:JJ林俊杰在JJ20世界巡回演唱会北京站 (cropped).jpg",
+            "missing": true,
+            "known": true,
+            "imagerepository": "shared",
+            "imageinfo": [
+              {
+                "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg/1280px-JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "thumbwidth": 1200,
+                "thumbheight": 1601,
+                "responsiveUrls": {
+                  "2": "https://upload.wikimedia.org/wikipedia/commons/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                },
+                "thumbattribs": {
+                  "src": "//thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg/1280px-JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                  "decoding": "async",
+                  "loading": "lazy",
+                  "width": 1200,
+                  "height": 1601,
+                  "srcset": "//upload.wikimedia.org/wikipedia/commons/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+                },
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+                "descriptionurl": "https://commons.wikimedia.org/wiki/File:JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_(cropped).jpg",
+                "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=181816275",
+                "extmetadata": {
+                  "DateTime": {
+                    "value": "2026-01-14 15:34:31",
+                    "source": "mediawiki-metadata",
+                    "hidden": ""
+                  },
+                  "ObjectName": {
+                    "value": "JJ林俊杰在JJ20世界巡回演唱会北京站 (cropped)",
+                    "source": "mediawiki-metadata"
+                  },
+                  "CommonsMetadataExtension": {
+                    "value": 1.2,
+                    "source": "extension",
+                    "hidden": ""
+                  },
+                  "Categories": {
+                    "value": "Self-published work|Extracted images|Media needing categories as of 14 January 2026|All media needing categories as of 2026",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "Assessments": {
+                    "value": "",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "ImageDescription": {
+                    "value": "​林俊杰于2023年9月22日在北京国家体育场的演唱会现场",
+                    "source": "commons-desc-page"
+                  },
+                  "DateTimeOriginal": {
+                    "value": "2023-09-22 19:19:52",
+                    "source": "commons-desc-page"
+                  },
+                  "Credit": {
+                    "value": "<span class=\"int-own-work\" lang=\"zh\">自己的作品</span>",
+                    "source": "commons-desc-page"
+                  },
+                  "Artist": {
+                    "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E8%BF%9B%E9%98%B6%E7%9A%84%E6%97%A0%E5%A4%84&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:进阶的无处 (page does not exist)\">进阶的无处</a>",
+                    "source": "commons-desc-page"
+                  },
+                  "LicenseShortName": {
+                    "value": "CC BY 4.0",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "UsageTerms": {
+                    "value": "Creative Commons Attribution 4.0",
+                    "source": "commons-desc-page"
+                  },
+                  "AttributionRequired": {
+                    "value": "true",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "LicenseUrl": {
+                    "value": "https://creativecommons.org/licenses/by/4.0",
+                    "source": "commons-desc-page"
+                  },
+                  "Copyrighted": {
+                    "value": "True",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "Restrictions": {
+                    "value": "",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "License": {
+                    "value": "cc-by-4.0",
+                    "source": "commons-templates",
+                    "hidden": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "host": "en.wikipedia.org",
-    "status": 200,
-    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Main Page\",\"base\":\"https://en.wikipedia.org/wiki/Main_Page\",\"sitename\":\"Wikipedia\",\"logo\":\"//en.wikipedia.org/static/images/project-logos/enwiki-25.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversion\":\"\",\"titleconversion\":\"\",\"",
-    "seconds": 0.15
+    "title": "JJ Lin",
+    "page": {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "pageid": 5062504,
+            "ns": 0,
+            "title": "JJ Lin",
+            "thumbnail": {
+              "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg/1280px-JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+              "width": 1200,
+              "height": 1600
+            },
+            "pageimage": "JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+            "pageprops": {
+              "defaultsort": "Lin, JJ",
+              "page_image_free": "JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+              "wikibase-shortdesc": "Singaporean singer-songwriter (born 1981)",
+              "wikibase_item": "Q716022"
+            },
+            "extract": "Wayne Lim Junjie (Chinese: 林俊傑; pinyin: Lín Jùnjié; born 27 March 1981), professionally known as JJ Lin, is a Singaporean singer, songwriter, record producer, and businessman. Known for his vocal performances in the Chinese-speaking world, Lin achieved recognition with his pop ballads, songwriting, and emotional vocal delivery.\nLin signed to Ocean Butterflies International in 2002, and debuted with the album Music Voyager (2003). The record went on to sell over 1.2 million copies across Asia. His sophomore album, Haven (2004), was also a top-seller and produced the single \"River South\", which went on to receive significant popularity in Greater China. Cao Cao (2006) sold over 2 million copies across Asia, including over 200,000 copies in Taiwan. In March 2007, Lin established his own label and production company JFJ Productions. \nBy 2008, each of Lin's studio albums had sold over 1 million copies across Asia. He continued to experience commercial success with the release of She Says (2010), Lost N Found (2011), Stories Untold (2013), and Genesis (2014). His next album From M.E. to Myself (2015) produced the hit single \"Twilight\", while Message in a Bottle (2017) produced the single \"Little Big Us\". Four of Lin's albums have been certified platinum by the Recording Industry Association Singapore (RIAS) since certifications began in 2018. He has embarked on five concert tours since his debut, including the JJ20 World Tour (2022–2025), which has attracted over 2.6 million people.\nLin's accolades include four Golden Melody Awards, including one for Best New Artist and two for Best Mandarin Male Singer, and fourteen Singapore Hit Awards. Aside from music, Lin has launched various business ventures including the professional esports Team SMG and the app-based NFT community ARC. In 2017, Lin founded the coffee franchise Miracle Coffee, which has expanded into eleven locations in Taiwan, Singapore, and China.",
+            "contentmodel": "wikitext",
+            "pagelanguage": "en",
+            "pagelanguagehtmlcode": "en",
+            "pagelanguagedir": "ltr",
+            "touched": "2026-10-18T10:16:22Z",
+            "lastrevid": 1380000882,
+            "length": 36422,
+            "fullurl": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "editurl": "https://en.wikipedia.org/w/index.php?title=JJ_Lin&action=edit",
+            "canonicalurl": "https://en.wikipedia.org/wiki/JJ_Lin"
+          }
+        ]
+      }
+    },
+    "file": {
+      "batchcomplete": true,
+      "query": {
+        "normalized": [
+          {
+            "fromencoded": false,
+            "from": "File:JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+            "to": "File:JJ Lin at Shaping Hearts Award 2025 ceremony.jpg"
+          }
+        ],
+        "pages": [
+          {
+            "ns": 6,
+            "title": "File:JJ Lin at Shaping Hearts Award 2025 ceremony.jpg",
+            "missing": true,
+            "known": true,
+            "imagerepository": "shared",
+            "imageinfo": [
+              {
+                "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg/1280px-JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "thumbwidth": 1200,
+                "thumbheight": 1600,
+                "responsiveUrls": {
+                  "2": "https://upload.wikimedia.org/wikipedia/commons/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                },
+                "thumbattribs": {
+                  "src": "//thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg/1280px-JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                  "decoding": "async",
+                  "loading": "lazy",
+                  "width": 1200,
+                  "height": 1600,
+                  "srcset": "//upload.wikimedia.org/wikipedia/commons/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+                },
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+                "descriptionurl": "https://commons.wikimedia.org/wiki/File:JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+                "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175933643",
+                "extmetadata": {
+                  "DateTime": {
+                    "value": "2025-10-02 03:35:17",
+                    "source": "mediawiki-metadata",
+                    "hidden": ""
+                  },
+                  "ObjectName": {
+                    "value": "JJ Lin at Shaping Hearts Award 2025 ceremony",
+                    "source": "mediawiki-metadata"
+                  },
+                  "CommonsMetadataExtension": {
+                    "value": 1.2,
+                    "source": "extension",
+                    "hidden": ""
+                  },
+                  "Categories": {
+                    "value": "The Fullerton Hotel Singapore|Self-published work|2025 Shaping Hearts Award ceremony|Portraits by Robertsky|JJ Lin in 2025",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "Assessments": {
+                    "value": "",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "ImageDescription": {
+                    "value": "Portraits taken at Shaping Hearts Award 2025 ceremony",
+                    "source": "commons-desc-page"
+                  },
+                  "DateTimeOriginal": {
+                    "value": "2025-09-25 20:51:31",
+                    "source": "commons-desc-page"
+                  },
+                  "Credit": {
+                    "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                    "source": "commons-desc-page"
+                  },
+                  "Artist": {
+                    "value": "<a href=\"//commons.wikimedia.org/wiki/User:Robertsky\" title=\"User:Robertsky\">Robert Sim</a>",
+                    "source": "commons-desc-page"
+                  },
+                  "LicenseShortName": {
+                    "value": "CC BY-SA 4.0",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "UsageTerms": {
+                    "value": "Creative Commons Attribution-Share Alike 4.0",
+                    "source": "commons-desc-page"
+                  },
+                  "AttributionRequired": {
+                    "value": "true",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "LicenseUrl": {
+                    "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                    "source": "commons-desc-page"
+                  },
+                  "Copyrighted": {
+                    "value": "True",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "Restrictions": {
+                    "value": "",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "License": {
+                    "value": "cc-by-sa-4.0",
+                    "source": "commons-templates",
+                    "hidden": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
   },
   {
-    "host": "commons.wikimedia.org",
-    "status": 200,
-    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Main Page\",\"base\":\"https://commons.wikimedia.org/wiki/Main_Page\",\"sitename\":\"Wikimedia Commons\",\"logo\":\"//commons.wikimedia.org/static/images/project-logos/commonswiki.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversion\":\"\",\"t",
-    "seconds": 0.11
+    "host": "zh.wikipedia.org",
+    "title": "陶喆",
+    "page": {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "pageid": 1076917,
+            "ns": 0,
+            "title": "陶喆",
+            "thumbnail": {
+              "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+              "width": 1200,
+              "height": 1600
+            },
+            "pageimage": "陶喆_再件你好嗎_新歌發表會.JPG",
+            "pageprops": {
+              "defaultsort": "Tao陶",
+              "page_image_free": "陶喆_再件你好嗎_新歌發表會.JPG",
+              "wikibase_item": "Q710857"
+            },
+            "extract": "陶喆（zhé）（英語：David Tao，1969年7月11日—），譜名陶緒忠，臺灣創作男歌手、音樂製作人，被譽為台灣乃至華語樂壇的“R&B教父”。",
+            "contentmodel": "wikitext",
+            "pagelanguage": "zh",
+            "pagelanguagehtmlcode": "zh",
+            "pagelanguagedir": "ltr",
+            "touched": "2026-10-18T05:05:47Z",
+            "lastrevid": 95065523,
+            "length": 30159,
+            "fullurl": "https://zh.wikipedia.org/wiki/%E9%99%B6%E5%96%86",
+            "editurl": "https://zh.wikipedia.org/w/index.php?title=%E9%99%B6%E5%96%86&action=edit",
+            "canonicalurl": "https://zh.wikipedia.org/wiki/%E9%99%B6%E5%96%86"
+          }
+        ]
+      }
+    },
+    "file": {
+      "batchcomplete": true,
+      "query": {
+        "normalized": [
+          {
+            "fromencoded": false,
+            "from": "File:陶喆_再件你好嗎_新歌發表會.JPG",
+            "to": "File:陶喆 再件你好嗎 新歌發表會.JPG"
+          }
+        ],
+        "pages": [
+          {
+            "ns": 6,
+            "title": "File:陶喆 再件你好嗎 新歌發表會.JPG",
+            "missing": true,
+            "known": true,
+            "imagerepository": "shared",
+            "imageinfo": [
+              {
+                "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "thumbwidth": 1200,
+                "thumbheight": 1600,
+                "responsiveUrls": {
+                  "2": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                },
+                "thumbattribs": {
+                  "src": "//thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                  "decoding": "async",
+                  "loading": "lazy",
+                  "width": 1200,
+                  "height": 1600,
+                  "srcset": "//upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+                },
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+                "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG",
+                "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=27904010",
+                "extmetadata": {
+                  "DateTime": {
+                    "value": "2013-08-27 13:47:01",
+                    "source": "mediawiki-metadata",
+                    "hidden": ""
+                  },
+                  "ObjectName": {
+                    "value": "陶喆 再件你好嗎 新歌發表會",
+                    "source": "mediawiki-metadata"
+                  },
+                  "CommonsMetadataExtension": {
+                    "value": 1.2,
+                    "source": "extension",
+                    "hidden": ""
+                  },
+                  "Categories": {
+                    "value": "David Tao|GFDL|Taken with Nikon Coolpix P100|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Males with microphones in Taiwan|Self-published work",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "Assessments": {
+                    "value": "",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "ImageDescription": {
+                    "value": "​陶喆第七張專輯【再見你好嗎】新歌發表會",
+                    "source": "commons-desc-page"
+                  },
+                  "DateTimeOriginal": {
+                    "value": "2013-06-11 14:45",
+                    "source": "commons-desc-page"
+                  },
+                  "Credit": {
+                    "value": "<span class=\"int-own-work\" lang=\"zh\">自己的作品</span>",
+                    "source": "commons-desc-page"
+                  },
+                  "Artist": {
+                    "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:LiZuTsai&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:LiZuTsai (page does not exist)\">LiZuTsai</a>",
+                    "source": "commons-desc-page"
+                  },
+                  "LicenseShortName": {
+                    "value": "CC BY-SA 3.0",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "UsageTerms": {
+                    "value": "Creative Commons Attribution-Share Alike 3.0",
+                    "source": "commons-desc-page"
+                  },
+                  "AttributionRequired": {
+                    "value": "true",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "LicenseUrl": {
+                    "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                    "source": "commons-desc-page"
+                  },
+                  "Copyrighted": {
+                    "value": "True",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "Restrictions": {
+                    "value": "",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "License": {
+                    "value": "cc-by-sa-3.0",
+                    "source": "commons-templates",
+                    "hidden": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "host": "en.wikipedia.org",
+    "title": "David Tao",
+    "page": {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "pageid": 1371130,
+            "ns": 0,
+            "title": "David Tao",
+            "thumbnail": {
+              "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+              "width": 1200,
+              "height": 1600
+            },
+            "pageimage": "陶喆_再件你好嗎_新歌發表會.JPG",
+            "pageprops": {
+              "defaultsort": "Tao, David",
+              "page_image_free": "陶喆_再件你好嗎_新歌發表會.JPG",
+              "wikibase-shortdesc": "Taiwanese singer-songwriter (born 1969)",
+              "wikibase_item": "Q710857"
+            },
+            "extract": "David Tao (Chinese: 陶喆; pinyin: Táo Zhé; Pe̍h-ōe-jī: Tô Tiat ; born July 11, 1969) is a Taiwanese singer-songwriter. His signature style incorporates R&B and rock. Tao's accolades include six Golden Melody Awards in Taiwan.",
+            "contentmodel": "wikitext",
+            "pagelanguage": "en",
+            "pagelanguagehtmlcode": "en",
+            "pagelanguagedir": "ltr",
+            "touched": "2026-10-18T10:16:20Z",
+            "lastrevid": 1366098106,
+            "length": 22103,
+            "fullurl": "https://en.wikipedia.org/wiki/David_Tao",
+            "editurl": "https://en.wikipedia.org/w/index.php?title=David_Tao&action=edit",
+            "canonicalurl": "https://en.wikipedia.org/wiki/David_Tao"
+          }
+        ]
+      }
+    },
+    "file": {
+      "batchcomplete": true,
+      "query": {
+        "normalized": [
+          {
+            "fromencoded": false,
+            "from": "File:陶喆_再件你好嗎_新歌發表會.JPG",
+            "to": "File:陶喆 再件你好嗎 新歌發表會.JPG"
+          }
+        ],
+        "pages": [
+          {
+            "ns": 6,
+            "title": "File:陶喆 再件你好嗎 新歌發表會.JPG",
+            "missing": true,
+            "known": true,
+            "imagerepository": "shared",
+            "imageinfo": [
+              {
+                "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "thumbwidth": 1200,
+                "thumbheight": 1600,
+                "responsiveUrls": {
+                  "2": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                },
+                "thumbattribs": {
+                  "src": "//thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG/1280px-%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                  "decoding": "async",
+                  "loading": "lazy",
+                  "width": 1200,
+                  "height": 1600,
+                  "srcset": "//upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+                },
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+                "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%96%86_%E5%86%8D%E4%BB%B6%E4%BD%A0%E5%A5%BD%E5%97%8E_%E6%96%B0%E6%AD%8C%E7%99%BC%E8%A1%A8%E6%9C%83.JPG",
+                "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=27904010",
+                "extmetadata": {
+                  "DateTime": {
+                    "value": "2013-08-27 13:47:01",
+                    "source": "mediawiki-metadata",
+                    "hidden": ""
+                  },
+                  "ObjectName": {
+                    "value": "陶喆 再件你好嗎 新歌發表會",
+                    "source": "mediawiki-metadata"
+                  },
+                  "CommonsMetadataExtension": {
+                    "value": 1.2,
+                    "source": "extension",
+                    "hidden": ""
+                  },
+                  "Categories": {
+                    "value": "David Tao|GFDL|Taken with Nikon Coolpix P100|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Males with microphones in Taiwan|Self-published work",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "Assessments": {
+                    "value": "",
+                    "source": "commons-categories",
+                    "hidden": ""
+                  },
+                  "ImageDescription": {
+                    "value": "​陶喆第七張專輯【再見你好嗎】新歌發表會",
+                    "source": "commons-desc-page"
+                  },
+                  "DateTimeOriginal": {
+                    "value": "2013-06-11 14:45",
+                    "source": "commons-desc-page"
+                  },
+                  "Credit": {
+                    "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                    "source": "commons-desc-page"
+                  },
+                  "Artist": {
+                    "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:LiZuTsai&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:LiZuTsai (page does not exist)\">LiZuTsai</a>",
+                    "source": "commons-desc-page"
+                  },
+                  "LicenseShortName": {
+                    "value": "CC BY-SA 3.0",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "UsageTerms": {
+                    "value": "Creative Commons Attribution-Share Alike 3.0",
+                    "source": "commons-desc-page"
+                  },
+                  "AttributionRequired": {
+                    "value": "true",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "LicenseUrl": {
+                    "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                    "source": "commons-desc-page"
+                  },
+                  "Copyrighted": {
+                    "value": "True",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "Restrictions": {
+                    "value": "",
+                    "source": "commons-desc-page",
+                    "hidden": ""
+                  },
+                  "License": {
+                    "value": "cc-by-sa-3.0",
+                    "source": "commons-templates",
+                    "hidden": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ]

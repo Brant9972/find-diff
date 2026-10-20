@@ -56,8 +56,8 @@ def portrait_candidates(singer):
     seen = set()
     for lang, title in candidates:
         try:
-            result = api(lang, titles=title, redirects=1,
-                         prop="pageimages|pageprops|extracts|info",
+            result = api(lang, titles=title, redirects=1, converttitles=1,
+                         prop="pageimages|pageprops|extracts|info|images", imlimit=50,
                          piprop="name|thumbnail", pilicense="free", pithumbsize=1200,
                          exintro=1, explaintext=1, inprop="url")
             pages = result.get("query", {}).get("pages", [])
@@ -70,35 +70,49 @@ def portrait_candidates(singer):
             if not re.search(r"歌手|歌唱|音樂|音乐|藝人|艺人|演員|演员|唱作|singer|musician|rapper|songwriter|actor", intro, re.I):
                 continue
             filename = page.get("pageimage")
-            if not filename or filename in seen:
-                continue
-            seen.add(filename)
-            info = api(lang, titles="File:" + filename, prop="imageinfo",
-                       iiprop="url|extmetadata", iiurlwidth=1200)
-            filepage = info.get("query", {}).get("pages", [{}])[0]
-            images = filepage.get("imageinfo", [])
-            if not images:
-                continue
-            ii = images[0]
-            ext = ii.get("extmetadata", {})
-            val = lambda k: strip(ext.get(k, {}).get("value", ""))
-            license_name = val("LicenseShortName")
-            if not re.search(r"^CC BY(?:-SA)?(?: |$)|^CC0|public domain|^PD", license_name, re.I):
-                continue
-            imageurl = ii.get("thumburl") or ii.get("url")
-            if urlparse(imageurl).hostname != "upload.wikimedia.org":
-                continue
-            yield {
-                "url": imageurl,
-                "article": page.get("fullurl", ""),
-                "source": ii.get("descriptionurl", ""),
-                "artist": val("Artist"),
-                "credit": val("Credit"),
-                "license": license_name,
-                "licenseUrl": val("LicenseUrl"),
-                "attribution": val("Attribution"),
-                "intro": intro,
-            }
+            filenames = [filename] if filename else []
+            def comparable(text):
+                return re.sub(r"[\W_]+", "", CC.convert(text).casefold())
+            identity_tokens = [comparable(x) for x in [singer["name"], *singer["aliases"]]]
+            identity_tokens = [x for x in identity_tokens if len(x) >= 2]
+            for image in page.get("images", []):
+                title = image.get("title", "")
+                short = re.sub(r"^[^:]+:", "", title)
+                if not re.search(r"\.(?:jpe?g|png|webp)$", short, re.I):
+                    continue
+                if any(x in comparable(short) for x in identity_tokens):
+                    if short not in filenames:
+                        filenames.append(short)
+            for filename in filenames[:6]:
+                if filename in seen:
+                    continue
+                seen.add(filename)
+                info = api(lang, titles="File:" + filename, prop="imageinfo",
+                           iiprop="url|extmetadata", iiurlwidth=1200)
+                filepage = info.get("query", {}).get("pages", [{}])[0]
+                images = filepage.get("imageinfo", [])
+                if not images:
+                    continue
+                ii = images[0]
+                ext = ii.get("extmetadata", {})
+                val = lambda k: strip(ext.get(k, {}).get("value", ""))
+                license_name = val("LicenseShortName")
+                if not re.search(r"^CC BY(?:-SA)?(?: |$)|^CC0|public domain|^PD", license_name, re.I):
+                    continue
+                imageurl = ii.get("thumburl") or ii.get("url")
+                if urlparse(imageurl).hostname not in {"upload.wikimedia.org", "thumb.wikimedia.org"}:
+                    continue
+                yield {
+                    "url": imageurl,
+                    "article": page.get("fullurl", ""),
+                    "source": ii.get("descriptionurl", ""),
+                    "artist": val("Artist"),
+                    "credit": val("Credit"),
+                    "license": license_name,
+                    "licenseUrl": val("LicenseUrl"),
+                    "attribution": val("Attribution"),
+                    "intro": intro,
+                }
         except Exception as exc:
             print(singer["id"], lang, type(exc).__name__, str(exc)[:140], flush=True)
 

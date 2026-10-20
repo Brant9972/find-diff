@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-20",
   "target": 300,
   "status": "candidate_roster_not_300_playable_questions",
-  "notes": "300位候選人名已去重。台灣發片資格及知名度待附來源複核。照片未完成的歌手不可進入正式遊戲；不得把人名數量當成可玩題數。",
+  "notes": "300位候選人名已去重；補入張信哲、周傳雄、張清芳、周蕙、蔡秋鳳。台灣發片資格待附來源複核。照片未完成的歌手不計入可玩題數。",
   "singers": [
     {
       "id": "s001",
@@ -341,21 +341,21 @@
       "photo": null
     },
     {
-      "id": "s034",
-      "name": "倪安東",
+      "id": "s301",
+      "name": "張信哲",
       "aliases": [
-        "Anthony Neely"
+        "Jeff Chang"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
       "photo": null
     },
     {
-      "id": "s035",
-      "name": "林育羣",
+      "id": "s302",
+      "name": "周傳雄",
       "aliases": [
-        "小胖",
-        "Lin Yu-chun"
+        "小剛",
+        "Steve Chou"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -857,20 +857,18 @@
       "photo": null
     },
     {
-      "id": "s087",
-      "name": "呂士軒",
-      "aliases": [
-        "Trout Fresh"
-      ],
+      "id": "s305",
+      "name": "蔡秋鳳",
+      "aliases": [],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
       "photo": null
     },
     {
-      "id": "s088",
-      "name": "派偉俊",
+      "id": "s303",
+      "name": "張清芳",
       "aliases": [
-        "Patrick Brasca"
+        "Stella Chang"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -1758,10 +1756,10 @@
       "photo": null
     },
     {
-      "id": "s179",
-      "name": "吳汶芳",
+      "id": "s304",
+      "name": "周蕙",
       "aliases": [
-        "Fang Wu"
+        "Where Chou"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
@@ -2915,8 +2913,7 @@
       "id": "s295",
       "name": "HUSH",
       "aliases": [
-        "陳家偉",
-        "吳獻"
+        "陳家偉"
       ],
       "eligibility": "pending_source_check",
       "photoStatus": "pending",

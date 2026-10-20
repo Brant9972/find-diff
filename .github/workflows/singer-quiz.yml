@@ -17,6 +17,8 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -36,6 +38,8 @@ jobs:
         run: node singer/qa.cjs
       - name: Download reusable portraits and align eyes
         run: python -u singer/prepare.py
+      - name: Verify newly generated portrait files and real image loading
+        run: node singer/qa.cjs
       - name: Save completed photo checkpoints back to GitHub
         if: always()
         run: |

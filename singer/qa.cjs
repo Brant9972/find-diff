@@ -2,12 +2,14 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),http=require("node:http");
 const puppeteer=require("puppeteer-core");
 const root=path.resolve(__dirname,"..");
+let realQuestions=[];
 const roster=JSON.parse(fs.readFileSync(path.join(__dirname,"roster.json")));
 assert.equal(roster.singers.length,300);
 assert.equal(new Set(roster.singers.map(x=>x.id)).size,300);
 assert.equal(new Set(roster.singers.map(x=>x.name)).size,300);
 if(fs.existsSync(path.join(__dirname,"questions.json"))){
  const real=JSON.parse(fs.readFileSync(path.join(__dirname,"questions.json")));
+ realQuestions=real.questions;
  assert.equal(real.playable,real.questions.length);
  for(const q of real.questions){
   assert(roster.singers.some(s=>s.id===q.id&&s.name===q.name));
@@ -38,6 +40,21 @@ const server=http.createServer((req,res)=>{
  try{
   const page=await browser.newPage();await page.setViewport({width:390,height:844,deviceScaleFactor:2,isMobile:true,hasTouch:true});
   const errors=[];page.on("pageerror",e=>errors.push(String(e)));
+  if(realQuestions.length){
+   await page.goto("http://127.0.0.1:8099/singer/");
+   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+   const broken=await page.evaluate(async questions=>{
+    const outcomes=await Promise.all(questions.map(q=>new Promise(resolve=>{
+     const image=new Image();image.onload=()=>resolve(image.naturalWidth===600&&image.naturalHeight===720?null:q.id);
+     image.onerror=()=>resolve(q.id);image.src=new URL(q.photo,location.href).href;
+    })));
+    return outcomes.filter(Boolean);
+   },realQuestions);
+   assert.deepEqual(broken,[],"Real portraits failed to decode in browser");
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});
+   await page.screenshot({path:path.join(root,"qa-output/singer-mobile-real.png"),fullPage:true});
+  }
   await page.setRequestInterception(true);
   page.on("request",req=>{
    if(req.url().endsWith("/singer/questions.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(fixtures)});

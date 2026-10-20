@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """Prepare licensed portraits without counting missing photos as playable questions."""
-import concurrent.futures, datetime, html, io, json, os, re, threading, time
+import concurrent.futures, datetime, hashlib, html, io, json, os, re, threading, time
 from pathlib import Path
 from urllib.parse import urlparse
 import cv2
 import numpy as np
 import requests
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageDraw, ImageFont
 from opencc import OpenCC
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "photos"
 OUT.mkdir(exist_ok=True)
 CC = OpenCC("t2s")
-FACE = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-EYES = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye_tree_eyeglasses.xml")
 LOCK = threading.Lock()
 UA = "SingerFaceQuiz/1.0 (https://github.com/Brant9972/find-diff; educational portrait quiz)"
 TIMEOUT = (10, 25)
@@ -37,6 +35,16 @@ def get(url, params=None):
 def api(lang, **kwargs):
     return get("https://" + lang + ".wikipedia.org/w/api.php",
                {"format": "json", "formatversion": 2, "action": "query", **kwargs}).json()
+
+
+MODEL = Path("/tmp/singer-face-yunet-2023mar.onnx")
+MODEL_SHA = "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+if not MODEL.exists() or hashlib.sha256(MODEL.read_bytes()).hexdigest() != MODEL_SHA:
+    model_data = get("https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx").content
+    if hashlib.sha256(model_data).hexdigest() != MODEL_SHA:
+        raise RuntimeError("Face landmark model checksum mismatch")
+    MODEL.write_bytes(model_data)
+DETECTOR = cv2.FaceDetectorYN.create(str(MODEL), "", (320,320), .85, .3, 5000)
 
 def strip(value):
     return html.unescape(re.sub("<[^>]+>", "", value or "")).strip()
@@ -116,43 +124,66 @@ def portrait_candidates(singer):
         except Exception as exc:
             print(singer["id"], lang, type(exc).__name__, str(exc)[:140], flush=True)
 
+def choose_face(image):
+    arr = np.array(image.convert("RGB"))
+    with LOCK:
+        DETECTOR.setInputSize((image.width, image.height))
+        _, detected = DETECTOR.detect(cv2.cvtColor(arr, cv2.COLOR_RGB2BGR))
+    if detected is None:
+        raise ValueError("No reliable frontal face")
+    faces = sorted(detected, key=lambda face: float(face[2]*face[3]), reverse=True)
+    face = faces[0].astype(float)
+    x,y,w,h = face[:4]
+    if min(w,h) < 60:
+        raise ValueError("Face is too small")
+    if len(faces) > 1 and float(faces[1][2]*faces[1][3]) > w*h*.28:
+        raise ValueError("Multiple prominent faces")
+    eye_span = abs(face[6]-face[4])
+    eye_y = (face[5]+face[7])/2
+    mouth_y = (face[11]+face[13])/2
+    if eye_span < w*.2 or abs(face[5]-face[7]) > eye_span*.25:
+        raise ValueError("Face is too tilted")
+    if not (eye_y+h*.08 < face[9] < mouth_y-h*.04):
+        raise ValueError("Eye, nose and mouth landmarks are ambiguous")
+    return face
+
+def boundaries(face, crop_box):
+    x,y,w,h = face[:4]
+    left,top,right,bottom = crop_box
+    eye_y = (face[5]+face[7])/2
+    nose_y = face[9]
+    mouth_y = (face[11]+face[13])/2
+    chin_y = y+h
+    norm = lambda py: max(0.0,min(1.0,float((py-top)/(bottom-top))))
+    upper = norm(eye_y-h*.10)
+    eye_end = norm((eye_y+nose_y)/2)
+    nose_end = norm((nose_y+mouth_y)/2)
+    mouth_end = norm(mouth_y+(chin_y-mouth_y)*.40)
+    chin_end = norm(chin_y+h*.04)
+    if not upper < eye_end < nose_end < mouth_end < chin_end:
+        raise ValueError("Clue boundaries overlap")
+    return {"eyes":[.08,upper,.92,eye_end],
+            "nose":[.08,upper,.92,nose_end],
+            "mouth":[.08,upper,.92,mouth_end],
+            "chin":[.08,upper,.92,chin_end],
+            "full":[0,0,1,1]}
+
 def crop_face(blob):
     original = ImageOps.exif_transpose(Image.open(io.BytesIO(blob))).convert("RGB")
     if original.width < 180 or original.height < 180:
         raise ValueError("Image too small")
-    original.thumbnail((1600, 1600))
-    arr = np.array(original)
-    gray = cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY)
-    with LOCK:
-        faces = FACE.detectMultiScale(gray, scaleFactor=1.08, minNeighbors=6, minSize=(70, 70))
-    faces = sorted(faces, key=lambda b: int(b[2]) * int(b[3]), reverse=True)
-    if not faces:
-        raise ValueError("No reliable frontal face")
-    x, y, w, h = map(int, faces[0])
-    if len(faces) > 1 and int(faces[1][2]) * int(faces[1][3]) > w * h * .28:
-        raise ValueError("Multiple prominent faces")
-    with LOCK:
-        eyes = EYES.detectMultiScale(gray[y:y+int(h*.6), x:x+w],
-                                    scaleFactor=1.06, minNeighbors=5,
-                                    minSize=(max(12, w//10), max(12, h//10)))
-    eye_centers = [(x+ex+ew/2, y+ey+eh/2) for ex,ey,ew,eh in eyes]
-    pairs = [(a,b) for a in eye_centers for b in eye_centers
-             if .22*w < b[0]-a[0] < .65*w and abs(a[1]-b[1]) < .15*h]
-    if not pairs:
-        raise ValueError("Eye position could not be confirmed")
-    a,b = min(pairs, key=lambda p: abs(p[0][1]-p[1][1]))
-    eye_y = (a[1]+b[1])/2
-    # Align actual eye line to 35% of canvas; use full face to set scale.
-    crop_w = w / .64
-    crop_h = crop_w * 1.2
-    left = (a[0]+b[0])/2 - crop_w/2
-    top = eye_y - crop_h*.35
-    box = (round(left), round(top), round(left+crop_w), round(top+crop_h))
-    cropped = original.crop(box).resize((600,720), Image.Resampling.LANCZOS)
-    # Progressive reveal starts at eyes, then includes nose, mouth and chin.
-    return cropped, {"eyes":[.08,.275,.92,.425],"nose":[.08,.275,.92,.59],
-                     "mouth":[.08,.275,.92,.74],"chin":[.08,.275,.92,.92],
-                     "full":[0,0,1,1]}
+    original.thumbnail((1400,1400))
+    face = choose_face(original)
+    x,y,w,h = face[:4]
+    eye_x = (face[4]+face[6])/2
+    eye_y = (face[5]+face[7])/2
+    crop_h = max(w/.64*1.2, (y+h-eye_y)/.50)
+    crop_w = crop_h/1.2
+    left = eye_x-crop_w/2
+    top = eye_y-crop_h*.35
+    box = (round(left),round(top),round(left+crop_w),round(top+crop_h))
+    cropped = original.crop(box).resize((600,720),Image.Resampling.LANCZOS)
+    return cropped,boundaries(face,box)
 
 roster = json.loads((ROOT / "roster.json").read_text())
 assert len(roster["singers"]) == len({s["name"] for s in roster["singers"]}) == 300
@@ -164,7 +195,17 @@ if oldpath.exists():
 def prepare(s):
     cached = existing.get(s["id"])
     if cached and cached["name"] == s["name"] and (ROOT / cached["photo"]).exists():
-        return cached, None
+        if cached.get("processorVersion") == 2:
+            return cached, None
+        try:
+            image = Image.open(ROOT / cached["photo"]).convert("RGB")
+            face = choose_face(image)
+            cached["reveal"] = boundaries(face, (0,0,image.width,image.height))
+            cached["processorVersion"] = 2
+            cached["photoStatus"] = "automatic_landmark_checks_passed"
+            return cached, None
+        except Exception:
+            pass
     error = "No suitable freely licensed portrait found"
     for candidate in portrait_candidates(s):
         try:
@@ -179,7 +220,7 @@ def prepare(s):
             return {
                 "id":s["id"], "name":s["name"], "aliases":list(dict.fromkeys(aliases)),
                 "photo":"photos/"+filename, "reveal":reveal,
-                "photoStatus":"automatic_checks_passed",
+                "photoStatus":"automatic_landmark_checks_passed", "processorVersion":2,
                 "humanReviewed":False, "eligibility":s["eligibility"],
                 "attribution":{k:v for k,v in candidate.items() if k not in ("intro", "url")},
                 "bioExcerpt":candidate["intro"][:500],
@@ -194,7 +235,7 @@ def checkpoint():
     ordered = sorted(ready, key=lambda s:s["id"])
     payload = {"schemaVersion":1,"target":300,"playable":len(ordered),
                "updatedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),
-               "verification":"Automatic source/license/frontal-face/eye checks; human portrait and Taiwan-release review pending.",
+               "verification":"Automatic source/license/frontal-face/eye/nose/mouth landmark checks; human portrait and Taiwan-release review pending.",
                "questions":ordered}
     oldpath.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n")
     (ROOT/"photo-report.json").write_text(json.dumps({
@@ -213,6 +254,25 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
             checkpoint()
             print("Processed",len(ready)+len(pending),"Playable",len(ready),"Pending",len(pending),flush=True)
 checkpoint()
+
+# Contact sheets provide a compact review of every portrait and clue boundary.
+font = ImageFont.load_default(size=14)
+ordered = sorted(ready,key=lambda q:q["id"])
+for offset in range(0,len(ordered),20):
+    sheet = Image.new("RGB",(600,1000),(20,18,28))
+    draw = ImageDraw.Draw(sheet)
+    for n,q in enumerate(ordered[offset:offset+20]):
+        col,row = n%4,n//4
+        px,py = col*150,row*200
+        portrait = Image.open(ROOT/q["photo"]).convert("RGB").resize((150,180))
+        sheet.paste(portrait,(px,py+20))
+        draw.text((px+5,py+2),q["id"],font=font,fill="white")
+        for key,color in [("eyes","#70ff90"),("nose","#70c5ff"),("mouth","#ffb45a"),("chin","#e99aff")]:
+            rect = q["reveal"][key]
+            yy=py+20+rect[3]*180
+            draw.line((px+12,yy,px+138,yy),fill=color,width=1)
+    sheet.save(OUT/f"review-sheet-{offset//20+1:02d}.jpg",quality=90)
+
 report = f"""# 猜歌手遊戲：可接續進度
 
 更新：{datetime.datetime.now(datetime.timezone.utc).isoformat()}

@@ -67,10 +67,73 @@ function ornament(cfg,j,random){
  if(j%4===0)s+=G('translate(695 368)',E(0,0,43,22,'#e9c58c')+T(0,2,'✦',27,'#8f858c'));
  return s;
 }
+
+function scenicPatch(kind,x,y,accent,changed,seed,scale=1){
+ const gold='#ffe5b9',ink='#526679',ice='#e1f3e5';
+ let art='';
+ switch(kind%9){
+ case 0: // window grille built into the façade
+  art=R(-32,-25,64,49,'#739da4','rx="4" stroke="'+gold+'" stroke-width="4"')+
+  L(0,-25,0,24,gold,3)+L(-32,changed?7:0,32,changed?7:0,gold,3);break;
+ case 1: // old painted masonry — a shortened painted seam
+  art=R(-30,-20,60,42,accent,'opacity=".53"')+L(-28,-2,changed?13:29,-2,gold,4)+L(-5,-20,-5,-2,gold,2);break;
+ case 2: // placard, frequently loud but often unchanged
+  art=R(-38,-21,76,40,'#455d72','rx="5"')+R(-34,-17,68,32,accent)+T(0,-1,changed?'08':'03',20,gold);break;
+ case 3: // architectural flourish — two or three rivets
+  art=R(-35,-11,70,23,'#aa8f82','rx="6"')+repeat(changed?2:3,i=>C(-22+i*22,0,6,gold));break;
+ case 4: // railing with a missing upright
+  art=L(-34,-21,34,-21,ink,5)+L(-34,20,34,20,ink,5)+repeat(4,i=>i===2&&changed?'':L(-28+i*18,-20,-28+i*18,20,ice,3));break;
+ case 5: // emblem in the main subject
+  art=C(0,0,28,accent)+C(0,0,19,gold)+T(0,1,changed?'✦':'★',22,ink);break;
+ case 6: // shadow/reflection goes the opposite way
+  art=E(0,12,33,12,'#769a9d','opacity=".7"')+
+       P(changed?'M-6 16L26 1L22 21Z':'M-6 16L-26 1L-22 21Z',ice,'opacity=".9"');break;
+ case 7: // lamp or far-off building fixture
+  art=L(0,-28,0,-18,ink,3)+P('M-22 -18L22 -18L31 9L-31 9Z',accent)+
+       C(changed?8:0,10,8,gold)+L(-28,13,28,13,ice,2);break;
+ default: // compass/hand orientation 
+  art=C(0,0,28,ice)+C(0,0,24,accent)+L(0,0,0,-18,ink,3)+
+       L(0,0,changed?20:-20,changed?-3:9,ink,4)+C(0,0,3,ink);
+ }
+ return G('translate('+x.toFixed(2)+' '+y.toFixed(2)+') scale('+scale.toFixed(3)+')',art);
+}
+function structuralSpots(j,cfg,viewpoint,existing,rand,count){
+ const results=[];
+ const heroLocations=[
+  {x:viewpoint.x+80*viewpoint.scale,y:viewpoint.y+62*viewpoint.scale},
+  {x:viewpoint.x+165*viewpoint.scale,y:viewpoint.y+72*viewpoint.scale},
+  {x:viewpoint.x+111*viewpoint.scale,y:viewpoint.y+125*viewpoint.scale}
+ ];
+ const backdropLocations=[
+  {x:95+(j%3)*17,y:102+(j%5)*9},
+  {x:695-(j%4)*13,y:206+(j%3)*23},
+  {x:76+(j%4)*18,y:360-(j%3)*25},
+  {x:654-(j%3)*21,y:82+(j%4)*8},
+  {x:583+(j%3)*17,y:373-(j%4)*11}
+ ];
+ const activeCenters=existing.map(p=>({x:p.x,y:p.y}));
+ for(let k=0;k<count;k++){
+  const desiredHero=(j%5===1||j%5===2||j%5===4)&&(k===0||j%5===2);
+  const pool=shuffle(desiredHero?heroLocations:backdropLocations,rand);
+  pool.sort((a,b)=>{
+   const da=Math.min(...activeCenters.map(p=>Math.hypot(a.x-p.x,a.y-p.y)),9999);
+   const db=Math.min(...activeCenters.map(p=>Math.hypot(b.x-p.x,b.y-p.y)),9999);
+   return db-da;
+  });
+  const loc=pool[0];
+  if(!loc)throw Error('no structural anchor');
+  activeCenters.push(loc);
+  const index=j*5+k+(desiredHero?2:0),sc=desiredHero?viewpoint.scale:1;
+  results.push([loc.x,loc.y,33,b=>scenicPatch(index,loc.x,loc.y,cfg.accent,!!b,cfg.seed,sc)]);
+ }
+ return results;
+}
+
 function create(cfg,j,cluePlan){
  const rand=makeRand(cfg.seed+93);
  const locs=points(rand);
- const {chosen,remaining}=choose(cluePlan,locs,rand);
+ const structuralCount=[2,2,2,1,1][j%5];
+ const {chosen,remaining}=choose(cluePlan.slice(0,5-structuralCount),locs,rand);
  const colors=spotColors(cfg);
  // Static props and actual changes use the same visual system.
  // Large vivid props may be false clues.
@@ -105,6 +168,8 @@ function create(cfg,j,cluePlan){
     p.x,p.y,31,
     b=>detailG(p.type,j,p.color,!!b,p.x.toFixed(1),p.y.toFixed(1),p.scale,p.rotation,p.caption)
  ]);
+ diffs.push(...structuralSpots(j,cfg,viewpoint,active,rand,structuralCount));
+ if(diffs.length!==5)throw Error('Stage does not contain five differences: '+cfg.name);
  register(cfg.name,'觀察整個場景：醒目物件不一定是答案。',()=>baseSVG,diffs);
 }
 if(FULL_SCENES.length!==90||CLUE_PLANS.length!==90)throw Error('Missing full-game data');

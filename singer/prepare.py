@@ -62,6 +62,7 @@ def portrait_candidates(singer):
             candidates.append(("en", alias))
             break
     seen = set()
+    entities = {}
     for lang, title in candidates:
         try:
             result = api(lang, titles=title, redirects=1, converttitles=1,
@@ -77,6 +78,9 @@ def portrait_candidates(singer):
             intro = page.get("extract", "")
             if not re.search(r"歌手|歌唱|音樂|音乐|藝人|艺人|演員|演员|唱作|singer|musician|rapper|songwriter|actor", intro, re.I):
                 continue
+            qid = page.get("pageprops", {}).get("wikibase_item")
+            if qid:
+                entities[qid] = (page.get("fullurl", ""), intro)
             filename = page.get("pageimage")
             filenames = [filename] if filename else []
             def comparable(text):
@@ -123,6 +127,64 @@ def portrait_candidates(singer):
                 }
         except Exception as exc:
             print(singer["id"], lang, type(exc).__name__, str(exc)[:140], flush=True)
+
+    # Linked Commons categories supply other photographs of the same Wikidata subject.
+    for qid,(article,intro) in entities.items():
+        try:
+            entity = get("https://www.wikidata.org/wiki/Special:EntityData/"+qid+".json").json()["entities"][qid]
+            claims = entity.get("claims", {})
+            filenames = []
+            for claim in claims.get("P18", []):
+                value = claim.get("mainsnak", {}).get("datavalue", {}).get("value")
+                if isinstance(value,str):
+                    filenames.append("File:"+value)
+            categories = []
+            for claim in claims.get("P373", []):
+                value = claim.get("mainsnak", {}).get("datavalue", {}).get("value")
+                if isinstance(value,str):
+                    categories.append(value)
+            def commons(**params):
+                return get("https://commons.wikimedia.org/w/api.php",
+                    {"action":"query","format":"json","formatversion":2,**params}).json()
+            pages = []
+            if filenames:
+                result = commons(titles="|".join(filenames[:5]),prop="imageinfo",
+                    iiprop="url|extmetadata|size",iiurlwidth=1000)
+                pages.extend(result.get("query",{}).get("pages",[]))
+            for category in categories[:1]:
+                result = commons(generator="categorymembers",gcmtitle="Category:"+category,
+                    gcmtype="file",gcmlimit=40,prop="imageinfo",
+                    iiprop="url|extmetadata|size",iiurlwidth=1000)
+                pages.extend(result.get("query",{}).get("pages",[]))
+            def photo_rank(page):
+                title = page.get("title","").lower()
+                return (0 if "cropped" in title or "portrait" in title else 1,title)
+            attempts = 0
+            for filepage in sorted(pages,key=photo_rank):
+                filename = filepage.get("title","").removeprefix("File:")
+                if filename in seen or not re.search(r"\.(?:jpe?g|png|webp)$",filename,re.I):
+                    continue
+                seen.add(filename)
+                ii = (filepage.get("imageinfo") or [{}])[0]
+                width,height = ii.get("width",0),ii.get("height",0)
+                if min(width,height)<180 or not .4 < width/height < 1.7:
+                    continue
+                ext = ii.get("extmetadata",{})
+                val = lambda k: strip(ext.get(k,{}).get("value",""))
+                license_name = val("LicenseShortName")
+                if not re.search(r"^CC BY(?:-SA)?(?: |$)|^CC0|public domain|^PD",license_name,re.I):
+                    continue
+                url = ii.get("thumburl") or ii.get("url","")
+                if urlparse(url).hostname not in {"upload.wikimedia.org","thumb.wikimedia.org"}:
+                    continue
+                attempts += 1
+                yield {"url":url,"article":article,"source":ii.get("descriptionurl",""),
+                       "artist":val("Artist"),"credit":val("Credit"),"license":license_name,
+                       "licenseUrl":val("LicenseUrl"),"attribution":val("Attribution"),"intro":intro}
+                if attempts >= 12:
+                    break
+        except Exception as exc:
+            print(singer["id"],"Commons",type(exc).__name__,str(exc)[:140],flush=True)
 
 def choose_face(image):
     arr = np.array(image.convert("RGB"))
@@ -223,7 +285,7 @@ def prepare(s):
                 "photoStatus":"automatic_landmark_checks_passed", "processorVersion":2,
                 "humanReviewed":False, "eligibility":s["eligibility"],
                 "attribution":{k:v for k,v in candidate.items() if k not in ("intro", "url")},
-                "bioExcerpt":candidate["intro"][:500],
+                "bioExcerpt":candidate["intro"][:200],
                 "transform":"Face cropped, eye line aligned, resized; revealed progressively during play"
             }, None
         except Exception as exc:

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "target": 300,
   "playable": 300,
-  "updatedAt": "2026-10-20T17:13:02.789979+00:00",
+  "updatedAt": "2026-10-20T17:16:25.302995+00:00",
   "verification": "Automatic source/license/frontal-face/eye/nose/mouth landmark checks; human portrait and Taiwan-release review pending.",
   "questions": [
     {
@@ -6246,63 +6246,6 @@
       "processorVersion": 2
     },
     {
-      "id": "s150",
-      "name": "鄧麗君",
-      "aliases": [
-        "鄧麗君",
-        "Teresa Teng",
-        "邓丽君"
-      ],
-      "photo": "photos/s150.jpg",
-      "reveal": {
-        "eyes": [
-          0.08,
-          0.28079652332124255,
-          0.92,
-          0.4199078151157924
-        ],
-        "nose": [
-          0.08,
-          0.28079652332124255,
-          0.92,
-          0.5425479162307013
-        ],
-        "mouth": [
-          0.08,
-          0.28079652332124255,
-          0.92,
-          0.6592501322428386
-        ],
-        "chin": [
-          0.08,
-          0.28079652332124255,
-          0.92,
-          0.7835207984561012
-        ],
-        "full": [
-          0,
-          0,
-          1,
-          1
-        ]
-      },
-      "photoStatus": "automatic_landmark_checks_passed",
-      "processorVersion": 2,
-      "humanReviewed": false,
-      "eligibility": "pending_source_check",
-      "attribution": {
-        "article": "https://en.wikipedia.org/wiki/Teresa_Teng",
-        "source": "https://commons.wikimedia.org/wiki/File:Stamp_of_Tuva_(1996)_-_Teresa_Teng_09.jpg",
-        "artist": "Russian Post",
-        "credit": "Russian State Teresa Teng, Flute Player MNH Specimen M/S Sheet #M200",
-        "license": "Public domain",
-        "licenseUrl": "",
-        "attribution": ""
-      },
-      "bioExcerpt": "Teng Li-Chun (traditional Chinese: 鄧麗君; simplified Chinese: 邓丽君; pinyin: Dèng Lìjūn; 29 January 1953 – 8 May 1995), also known as Teresa Teng, was a Taiwanese singer, television personality, musician,",
-      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
-    },
-    {
       "id": "s151",
       "name": "蔡琴",
       "aliases": [
@@ -8282,63 +8225,6 @@
       "bioExcerpt": "陳奕迅（英語：Eason Chan Yick Shun；1974年7月27日—），香港男歌手、演員，被譽為「樂壇天王」、「金曲歌王」及「新一代歌神」等。1995年贏得第14屆新秀歌唱大賽冠軍而正式入行，至今已發行超過40張專輯。2005年他被《時代雜誌》喻為带領香港粵語音樂潮流及影響香港樂壇風格的人物，同年推出的大碟《U87》也被該雜誌推選為「2005年五大亞洲最值得購買的唱片之一」。2010年，入選中國華語金曲獎「30年經典評選」，成為90年代出道歌手唯一代表。迄今共九度提名台湾金曲獎「最佳國語男歌手獎」並獲獎三次，是該獎項的入圍暨得獎紀錄保持者。2016—2021連續六年登上Spotify香港最高串流量歌手榜首。與環球唱片合作19年來歌曲串流播放率破750億。2023及2024年均登上Spotify全球最多串流收聽次數華語歌手第三位；香港最受歡迎本地歌手榜分別為第五及第四位； 2024年12月每月聽眾人數更超過四百萬。2025年已出道30年的他仍佔香港YouTube 熱門歌手第三位。\n陳奕迅曾在多個亞太及華人地區音樂頒獎禮獲得無數獎項。他在香港的各大樂壇頒獎禮中更開創多項紀錄，包括",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
       "processorVersion": 2
-    },
-    {
-      "id": "s202",
-      "name": "張國榮",
-      "aliases": [
-        "張國榮",
-        "Leslie Cheung",
-        "张国荣"
-      ],
-      "photo": "photos/s202.jpg",
-      "reveal": {
-        "eyes": [
-          0.08,
-          0.2817232093032526,
-          0.92,
-          0.4216187405748432
-        ],
-        "nose": [
-          0.08,
-          0.2817232093032526,
-          0.92,
-          0.5463337541437473
-        ],
-        "mouth": [
-          0.08,
-          0.2817232093032526,
-          0.92,
-          0.6658816071594654
-        ],
-        "chin": [
-          0.08,
-          0.2817232093032526,
-          0.92,
-          0.7940069061071695
-        ],
-        "full": [
-          0,
-          0,
-          1,
-          1
-        ]
-      },
-      "photoStatus": "automatic_landmark_checks_passed",
-      "processorVersion": 2,
-      "humanReviewed": false,
-      "eligibility": "pending_source_check",
-      "attribution": {
-        "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%9C%8B%E6%A6%AE",
-        "source": "https://commons.wikimedia.org/wiki/File:Leslie_Cheung_in_Madame_Tussauds_Hong_Kong.jpg",
-        "artist": "倪少寅",
-        "credit": "自己的作品",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "attribution": ""
-      },
-      "bioExcerpt": "張國榮 （英語：Leslie Cheung Kwok Wing；1956年9月12日—2003年4月1日），香港男歌手、演員、詞曲作家，並曾經擔任電影配樂、排舞、音樂錄影帶導演、藝術總監和電影導演。\n在音樂方面，1983年至1984年憑藉歌曲《風繼續吹》《Monica》成名。1986年至1987年在十大勁歌金曲頒獎典禮上連續兩年獲得「金曲金獎」。1988年至1989年連續兩年獲得十大勁歌金曲「最受",
-      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
       "id": "s204",
@@ -17028,6 +16914,120 @@
         "attribution": ""
       },
       "bioExcerpt": "吳浩康（英語：Deep Ng Ho Hong，1983年6月13日—），原名吳偉男，香港男歌手。2002年參加無綫電視自辦的《全球華人新秀歌唱大賽》香港區選拔賽奪得冠軍及動力新能量大獎，以及於同年的全球總決賽奪得季軍及最佳台風獎，並獲得新城電台、商業電台、TVB及香港電台所頒發的四台新人獎項，及後開始推出唱片、拍廣告、電視劇和電影。2025年，吳浩康擔任無綫電視歌唱選秀節目《聲秀》導師。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s452",
+      "name": "歐陽娜娜",
+      "aliases": [
+        "歐陽娜娜",
+        "Nana Ouyang",
+        "欧阳娜娜"
+      ],
+      "photo": "photos/s452.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2802278037787159,
+          0.92,
+          0.41888931317640093
+        ],
+        "nose": [
+          0.08,
+          0.2802278037787159,
+          0.92,
+          0.5356129762471229
+        ],
+        "mouth": [
+          0.08,
+          0.2802278037787159,
+          0.92,
+          0.6504456949639252
+        ],
+        "chin": [
+          0.08,
+          0.2802278037787159,
+          0.92,
+          0.778019255295016
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E6%AD%90%E9%99%BD%E5%A8%9C%E5%A8%9C",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%AC%A7%E9%98%B3%E5%A8%9C%E5%A8%9C_%E5%BE%AE%E5%8D%9A%E7%94%B5%E5%BD%B1%E4%B9%8B%E5%A4%9C_(1)_(cropped).jpg",
+        "artist": "GEM_Ady (GEM_brilliant)",
+        "credit": "http://huiziady.lofter.com/post/1d2ac5a6_1041082f",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "attribution": ""
+      },
+      "bioExcerpt": "歐陽娜娜（2000年6月15日—），祖籍江西省吉安县，生於臺北市，中華民國女演員、歌手、大提琴家，是歐陽龍和傅娟的二女。",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "s453",
+      "name": "陳立農",
+      "aliases": [
+        "陳立農",
+        "Chen Linong",
+        "陈立农"
+      ],
+      "photo": "photos/s453.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28444558071612575,
+          0.92,
+          0.4198541508984676
+        ],
+        "nose": [
+          0.08,
+          0.28444558071612575,
+          0.92,
+          0.5353855315268683
+        ],
+        "mouth": [
+          0.08,
+          0.28444558071612575,
+          0.92,
+          0.6614368597421514
+        ],
+        "chin": [
+          0.08,
+          0.28444558071612575,
+          0.92,
+          0.8080488612288136
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoStatus": "automatic_landmark_checks_passed",
+      "processorVersion": 2,
+      "humanReviewed": false,
+      "eligibility": "pending_source_check",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%AB%8B%E8%BE%B2",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E7%AB%8B%E8%BE%B2%E7%B0%BD%E5%94%AE%E6%9C%83.jpg",
+        "artist": "",
+        "credit": "",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "attribution": ""
+      },
+      "bioExcerpt": "陳立農（2000年10月3日—），臺灣男歌手、演員，現隸屬傳奇星娛樂。2018年因參加中國大陸偶像選秀節目《偶像練習生》獲得第二名，以男子組合 NINE PERCENT 成員身份出道。該團體於2019年解散後，展開個人發展，陸續推出個人專輯、單曲，並參與電影演出。其代表作品包括專輯《格格不入》《日心說》《青春為名》、電影《赤狐書生》，並舉辦多場演唱會。",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     }
   ]

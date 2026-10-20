@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12111d">
+<title>猜歌手・五官挑戰</title>
+<meta name="description" content="只看眼睛，你認得出這位歌手嗎？輸入名字，從五官線索猜出熟悉的聲音。">
+<link rel="stylesheet" href="./style.css">
+<script defer src="./game.js"></script>
+</head>
+<body>
+<main>
+<header><a class="brand" href="./">FACE<span>／</span>VOICE</a><span class="edition">華語歌手篇</span></header>
+<section class="intro"><p class="eyebrow">看五官，猜聲音</p><h1>這雙眼睛，<br>你聽過嗎？</h1><p class="sub">輸入歌手名字。猜錯一次，就多露出一點。</p></section>
+<div class="stats" aria-label="遊戲統計"><span>第 <b id="round">—</b> 題</span><span>答對 <b id="correct">0</b></span><span>積分 <b id="score">0</b></span></div>
+<section class="play" aria-label="猜歌手遊戲">
+<div class="photo-card" id="photoCard">
+<img id="portrait" alt="本題歌手的五官線索" decoding="async" draggable="false" hidden>
+<div id="photoMessage" role="status">題庫載入中…</div>
+<div class="photo-tag" id="photoTag" hidden>線索 1／5 · 眼睛</div>
+</div>
+<ol class="stages" aria-label="照片揭露進度"><li data-stage="0">眼睛</li><li data-stage="1">鼻子</li><li data-stage="2">嘴巴</li><li data-stage="3">下巴</li><li data-stage="4">全臉</li></ol>
+<p id="message" class="message" role="status" aria-live="polite">先從眼睛開始。</p>
+<form id="guessForm" autocomplete="off">
+<label for="answer" class="sr-only">歌手姓名</label>
+<div class="answer-row"><input id="answer" name="answer" type="text" maxlength="60" placeholder="他／她是誰？" enterkeyhint="go" autocapitalize="off" spellcheck="false" disabled><button id="submit" type="submit" disabled>猜！</button></div>
+</form>
+<div class="actions"><button id="giveup" class="quiet" type="button" disabled>想不到，揭曉答案</button><button id="next" type="button" hidden>下一位歌手 <span aria-hidden="true">→</span></button></div>
+<div id="result" class="result" hidden></div>
+<details id="credits" hidden><summary>照片來源與授權</summary><p id="creditText"></p><a id="creditLink" target="_blank" rel="noopener noreferrer">查看原始照片</a><p class="credit-note">照片經過裁切、縮放，並分階段揭露。</p></details>
+</section>
+<footer><p id="poolInfo">隨機出題 · 自由作答 · 自動記錄進度</p><button id="restart" class="quiet" type="button">重新開始</button><a href="../full/">也玩玩找碴</a><p id="saveWarning" class="warning" hidden>此瀏覽器無法儲存進度，關閉頁面後可能無法接續。</p></footer>
+</main>
+<noscript>此遊戲需要啟用 JavaScript。</noscript>
+</body></html>

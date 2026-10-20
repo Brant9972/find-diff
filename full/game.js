@@ -2,7 +2,7 @@
 "use strict";
 const $=id=>document.getElementById(id),N=100,saveKey='eye_full_100_v1';
 let current=0,found=new Set(),unlocked=1,best={},last=0,seconds=165,hints=2,wrong=0,usedHints=0,playing=false,zoom=false,timer=null,syncLock=false,audio=null,hitmaps=[],generation=0,lastTapAt=0,loading=false;
-try{const old=JSON.parse(localStorage.getItem(saveKey)||'{}');unlocked=Math.min(100,Math.max(1,old.unlocked||1));best=old.best||{};last=Math.min(unlocked-1,Math.max(0,old.last||0));}catch(e){}
+try{const old=JSON.parse(localStorage.getItem(saveKey)||localStorage.getItem('eye_blind_pilot_v1')||'{}');unlocked=Math.min(100,Math.max(1,old.unlocked||1));best=old.best||{};last=Math.min(unlocked-1,Math.max(0,old.last||0));}catch(e){}
 const store=()=>{try{localStorage.setItem(saveKey,JSON.stringify({unlocked,best,last}));}catch(e){}};
 function beep(freq=600,len=.09){try{audio??=new(window.AudioContext||window.webkitAudioContext)();const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(.035,audio.currentTime);g.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+len);o.connect(g).connect(audio.destination);o.start();o.stop(audio.currentTime+len);}catch(e){}}
 const scene=()=>SCENES[current];

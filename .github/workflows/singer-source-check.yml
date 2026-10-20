@@ -1,0 +1,47 @@
+name: Singer photo source connectivity
+on:
+  push:
+    paths:
+      - '.github/workflows/singer-source-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public photo APIs without retries
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.request, urllib.error
+          from pathlib import Path
+          report = []
+          for host in ["zh.wikipedia.org", "en.wikipedia.org", "commons.wikimedia.org"]:
+              url = "https://" + host + "/w/api.php?action=query&format=json&meta=siteinfo"
+              start = time.monotonic()
+              row = {"host": host}
+              try:
+                  request = urllib.request.Request(url, headers={"User-Agent":"SingerFaceQuiz/1.0 (https://github.com/Brant9972/find-diff)"})
+                  with urllib.request.urlopen(request, timeout=12) as response:
+                      row.update(status=response.status, body=response.read(400).decode("utf-8", "replace"))
+              except urllib.error.HTTPError as error:
+                  row.update(status=error.code, body=error.read(400).decode("utf-8", "replace"))
+              except Exception as error:
+                  row.update(error=str(error))
+              row["seconds"] = round(time.monotonic()-start, 2)
+              report.append(row)
+          Path("singer/source-diagnostic.json").write_text(json.dumps(report, indent=2))
+          print(json.dumps(report, indent=2))
+          PY
+      - name: Save connectivity result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/source-diagnostic.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record photo source connectivity diagnostics"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

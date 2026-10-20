@@ -1,0 +1,26 @@
+name: 100-stage precision and mobile QA
+on:
+  push:
+    paths:
+      - 'full/**'
+      - '.github/workflows/full-game-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser test dependency
+        run: npm install --no-save puppeteer-core@24
+      - name: Install CJK fonts for correct Chinese SVG text comparison
+        run: sudo apt-get update -qq && sudo apt-get install -y fonts-noto-cjk
+      - name: Serve static website
+        run: python3 -m http.server 8099 --bind 127.0.0.1 > /tmp/pilot-http.log 2>&1 &
+      - name: Check 500 independent visual changes and mobile click accuracy
+        run: node full/qa-full.cjs

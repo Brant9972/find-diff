@@ -56,11 +56,11 @@ case 'flowerpot':
 case 'candy':
   s+=C(0,0,17,fg)+P('M-15 -10L-34 -20L-32 0L-15 10Z',gold)+P('M15 -10L34 -20L32 0L15 10Z',gold)+repeat(changed?2:3,i=>L(-8+i*8,-9,-8+i*8,10,cream,2));break;
 case 'fruit':
-  s+=E(0,3,22,24,fg)+L(0,-19,4,-32,ink,3)+E(12,-25,12,5,mint,'transform="rotate(-18 12 -25)"')+C(changed?-7:8,2,4,cream);break;
+  s+=E(0,3,22,24,fg)+L(0,-19,4,-32,ink,3)+E(12,-25,12,5,mint,'transform="rotate(-18 12 -25)"')+C(changed?-9:11,2,6,ink);break;
 case 'ribbon':
   s+=C(0,0,8,gold)+P('M-6 -3Q-35 -30 -33 2Q-31 18 -6 3Z',fg)+P('M6 -3Q35 -30 33 2Q31 18 6 3Z',fg)+P('M-3 4L-14 31L0 27L6 7Z',fg)+(changed?P('M5 5L18 29L23 23Z',fg):P('M5 5L13 29L24 23Z',fg));break;
 case 'chair':
-  s+=R(-19,-26,38,39,fg,'rx="6"')+R(-25,12,50,8,ink)+L(-17,20,-17,35,ink,4)+L(17,20,17,35,ink,4)+L(-16,changed?-12:-17,16,changed?-12:-17,cream,3);break;
+  s+=R(-19,-26,38,39,fg,'rx="6"')+R(-25,12,50,8,ink)+L(-17,20,-17,35,ink,4)+L(17,20,17,35,ink,4)+L(changed?-13:13,-15,changed?-13:13,2,ink,4);break;
 case 'lamp':
   s+=L(0,-28,0,-17,ink,3)+P('M-24 3L-15 -18L15 -18L24 3Z',fg)+C(0,5,9,gold)+L(-20,5,20,5,cream,3)+L(0,7,0,changed?21:14,cream,2);break;
 case 'radio':

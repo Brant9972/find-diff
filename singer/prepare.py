@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare licensed portraits without counting missing photos as playable questions."""
+"""Prepare licensed portraits; exclude visually rejected sources and cap the game at 300."""
 import concurrent.futures, datetime, hashlib, html, io, json, os, re, threading, time
 from pathlib import Path
 from urllib.parse import urlparse, unquote

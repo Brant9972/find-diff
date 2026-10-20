@@ -171,6 +171,13 @@ function create(cfg,j,cluePlan){
  diffs.push(...structuralSpots(j,cfg,viewpoint,active,rand,structuralCount));
  if(diffs.length!==5)throw Error('Stage does not contain five differences: '+cfg.name);
  register(cfg.name,'觀察整個場景：醒目物件不一定是答案。',()=>baseSVG,diffs);
+ SCENES[SCENES.length-1].clueKinds=[
+   ...active.map(p=>p.type),
+   ...Array.from({length:structuralCount},(_,k)=>{
+      const hero=(j%5===1||j%5===2||j%5===4)&&(k===0||j%5===2);
+      return (hero?'hero-':'background-')+String((j*5+k+(hero?2:0))%9);
+   })
+ ];
 }
 if(FULL_SCENES.length!==90||CLUE_PLANS.length!==90)throw Error('Missing full-game data');
 // Interleave nine thematic families so two consecutive stages never share a repeated backdrop family.

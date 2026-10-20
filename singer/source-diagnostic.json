@@ -1,0 +1,20 @@
+[
+  {
+    "host": "zh.wikipedia.org",
+    "status": 200,
+    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Wikipedia:\\u9996\\u9875\",\"base\":\"https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5\",\"sitename\":\"Wikipedia\",\"logo\":\"//zh.wikipedia.org/static/images/project-logos/zhwiki.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversi",
+    "seconds": 0.18
+  },
+  {
+    "host": "en.wikipedia.org",
+    "status": 200,
+    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Main Page\",\"base\":\"https://en.wikipedia.org/wiki/Main_Page\",\"sitename\":\"Wikipedia\",\"logo\":\"//en.wikipedia.org/static/images/project-logos/enwiki-25.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversion\":\"\",\"titleconversion\":\"\",\"",
+    "seconds": 0.15
+  },
+  {
+    "host": "commons.wikimedia.org",
+    "status": 200,
+    "body": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"Main Page\",\"base\":\"https://commons.wikimedia.org/wiki/Main_Page\",\"sitename\":\"Wikimedia Commons\",\"logo\":\"//commons.wikimedia.org/static/images/project-logos/commonswiki.png\",\"generator\":\"MediaWiki 1.47.0-wmf.24\",\"phpversion\":\"8.3.35\",\"phpsapi\":\"fpm-fcgi\",\"dbtype\":\"mysql\",\"dbversion\":\"10.11.16-MariaDB-log\",\"langconversion\":\"\",\"linkconversion\":\"\",\"t",
+    "seconds": 0.11
+  }
+]

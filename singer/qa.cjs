@@ -18,6 +18,8 @@ if(fs.existsSync(path.join(__dirname,"questions.json"))){
   assert(q.attribution.source&&q.attribution.license,q.id+" missing attribution");
  }
 }
+const realHints=JSON.parse(fs.readFileSync(path.join(__dirname,"hints.json")));
+for(const q of realQuestions)assert(realHints.entries[q.id]?.singer?.title,"Missing singer work hint: "+q.id);
 const actorBank=JSON.parse(fs.readFileSync(path.join(__dirname,"actors.json")));
 const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
 assert.equal(actorBank.playable,actorBank.questions.length);
@@ -26,10 +28,13 @@ assert.equal(new Set(actorBank.questions.map(q=>q.id)).size,actorBank.playable);
 assert.equal(new Set(actorBank.questions.map(q=>q.name)).size,actorBank.playable);
 for(const q of actorBank.questions){
  assert(actorRoster.some(a=>a.id===q.id&&a.name===q.name));
+ assert(realHints.entries[q.id]?.actor?.title,"Missing actor work hint: "+q.id);
  assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing actor portrait");
  assert(q.attribution.source&&q.attribution.license);
 }
 realQuestions=[...new Map([...realQuestions,...actorBank.questions].map(q=>[q.id,q])).values()];
+let hintUnavailable=false;
+const missingHints=new Set();
 const actorFixtures={questions:Array.from({length:25},(_,i)=>({id:"qa"+(101+i),name:"演員"+(i+1),aliases:["Actor "+(i+1)],photo:"photos/qa"+(101+i)+".jpg"}))};
 const fixtures={questions:[
  {id:"qa1",name:"測試甲",aliases:["Test Singer","测试甲"],photo:"photos/qa1.jpg"},
@@ -71,6 +76,17 @@ const server=http.createServer((req,res)=>{
   }
   await page.setRequestInterception(true);
   page.on("request",req=>{
+   if(req.url().endsWith("/singer/hints.json")){
+    if(hintUnavailable)return req.respond({status:503,contentType:"application/json",body:"{}"});
+    const entries={};
+    for(const [mode,bank] of [["singer",fixtures],["actor",actorFixtures]]){
+     for(const q of bank.questions){
+      if(missingHints.has(q.id))continue;
+      entries[q.id]??={};entries[q.id][mode]={title:mode==="singer"?"線索歌曲":"線索電影",kind:mode==="singer"?"音樂作品":"影視作品",source:"https://example.com/work"};
+     }
+    }
+    return req.respond({status:200,contentType:"application/json",body:JSON.stringify({entries})});
+   }
    if(req.url().endsWith("/singer/actors.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(actorFixtures)});
    if(req.url().endsWith("/singer/questions.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(fixtures)});
    if(/\/photos\/qa\d+\.jpg$/.test(req.url()))return req.respond({status:200,contentType:"image/svg+xml",body:svg});
@@ -215,9 +231,69 @@ const server=http.createServer((req,res)=>{
   await page.setViewport({width:320,height:740,deviceScaleFactor:2,isMobile:true,hasTouch:true});
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Category controls overflow narrow mobile width");
   await page.setViewport({width:390,height:844,deviceScaleFactor:2,isMobile:true,hasTouch:true});
+  // Work hints are optional, charge only this question and survive reload.
+  await page.select("#quizMode","singer");await page.select("#roundSize","10");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  const singerAnswer=async()=>{const s=await snapshot();return fixtures.questions.find(q=>q.id===s.deck[s.pos]).name;};
+  assert(await page.$eval("#hintText",e=>e.hidden),"Hint leaked before use");
+  await page.click("#hintButton");
+  saved=await snapshot();
+  assert.equal(saved.hintUsed,true);assert.equal(saved.stage,0);assert.equal(saved.score,0);
+  assert(await page.$eval("#hintText",e=>e.textContent.includes("音樂作品")));
+  assert(await page.$eval("#hintButton",e=>e.disabled));
+  await page.$eval("#hintButton",e=>e.dispatchEvent(new MouseEvent("click",{bubbles:true})));
+  await guess("多露一點");assert.equal((await snapshot()).stage,1);
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).hintUsed,true);
+  assert(await page.$eval("#hintText",e=>!e.hidden));
+  await guess(await singerAnswer());
+  assert.equal((await snapshot()).score,60,"Hint plus one wrong guess should award 60");
+  assert(await page.$eval("#result",e=>e.textContent.includes("+60 分")));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("portrait").hidden);
+  assert.equal((await snapshot()).score,60,"Finished hint answer scored twice on reload");
+  await page.$eval("#hintButton",e=>e.dispatchEvent(new MouseEvent("click",{bubbles:true})));
+  assert.equal((await snapshot()).score,60);
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).hintUsed,false,"Hint penalty carried into next question");
+  assert(await page.$eval("#hintText",e=>e.hidden),"Previous answer's work clue leaked");
+  await guess(await singerAnswer());assert.equal((await snapshot()).score,160,"Unassisted score changed");
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.click("#hintButton");
+  for(let i=0;i<4;i++)await guess("提示後錯答"+i);
+  assert.equal((await snapshot()).stage,4);assert.equal((await snapshot()).finished,false);
+  await guess(await singerAnswer());assert.equal((await snapshot()).score,170,"Hint score floor should be 10");
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.click("#hintButton");await page.click("#giveup");
+  assert.equal((await snapshot()).score,170,"Giving up after a hint changed total score");
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();missingHints.add(saved.deck[saved.pos]);
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert(await page.$eval("#hintButton",e=>e.disabled),"Missing hint can be clicked");
+  await page.$eval("#hintButton",e=>e.dispatchEvent(new MouseEvent("click",{bubbles:true})));
+  assert.equal((await snapshot()).hintUsed,false,"Missing hint incurred a penalty");
+  await guess(await singerAnswer());assert.equal((await snapshot()).score,270);
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.click("#hintButton");hintUnavailable=true;
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).hintUsed,true,"Hint file outage erased used status");
+  assert.equal((await snapshot()).score,270);
+  await guess(await singerAnswer());assert.equal((await snapshot()).score,350);
+  hintUnavailable=false;missingHints.clear();
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("portrait").hidden);
+  await page.select("#quizMode","actor");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.click("#hintButton");
+  assert(await page.$eval("#hintText",e=>e.textContent.includes("影視作品")),"Actor mode showed a music hint");
+  await page.select("#quizMode","mixed");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  await page.click("#hintButton");
+  const expectedKind=actorFixtures.questions.some(q=>q.id===saved.deck[saved.pos])?"影視作品":"音樂作品";
+  assert(await page.$eval("#hintText",(e,kind)=>e.textContent.includes(kind),expectedKind),"Mixed mode chose the wrong work hint");
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Work clue overflows mobile");
   assert.equal(errors.length,0,errors.join("\n"));
   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});
   await page.screenshot({path:path.join(root,"qa-output/singer-mobile.png"),fullPage:true});
-  console.log("PASS: singer/actor real photos, legacy saves, category filtering, shared-person deduplication, mixed rounds, 10/20-question endings, persistence and mobile layout.");
+  console.log("PASS: all real portraits, categories, rounds, work hints, optional scoring, no double charge, reload, 10-point floor, missing hints, source outage and mobile layout.");
  }finally{await browser.close();}
 })().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());

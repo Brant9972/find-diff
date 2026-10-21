@@ -5,8 +5,8 @@
 <meta name="theme-color" content="#12111d">
 <title>猜明星・五官挑戰</title>
 <meta name="description" content="歌手、演員或混合模式。輸入名字，從五官線索猜出熟悉的明星。">
-<link rel="stylesheet" href="./style.css?v=categories1">
-<script defer src="./game.js?v=categories1"></script>
+<link rel="stylesheet" href="./style.css?v=works1">
+<script defer src="./game.js?v=works1"></script>
 </head>
 <body>
 <main>
@@ -27,6 +27,11 @@
 </div>
 <ol class="stages" aria-label="照片揭露進度"><li data-stage="0">眼睛</li><li data-stage="1">鼻子</li><li data-stage="2">嘴巴</li><li data-stage="3">下巴</li><li data-stage="4">全臉</li></ol>
 <p id="message" class="message" role="status" aria-live="polite">先從眼睛開始。</p>
+<section id="hintPanel" class="work-hint" aria-label="作品提示" hidden>
+<button id="hintButton" type="button" class="hint-button" disabled>看作品提示</button>
+<p id="hintNote" class="hint-note">本題答對少 20 分，最低 10 分；不影響五官線索。</p>
+<p id="hintText" class="hint-text" role="status" aria-live="polite" hidden></p>
+</section>
 <form id="guessForm" autocomplete="off">
 <label for="answer" class="sr-only">人物姓名</label>
 <div class="answer-row"><input id="answer" name="answer" type="text" maxlength="60" placeholder="他／她是誰？" enterkeyhint="go" autocapitalize="off" spellcheck="false" disabled><button id="submit" type="submit" disabled>猜！</button></div>

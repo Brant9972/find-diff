@@ -2,9 +2,9 @@
 "use strict";
 const KEY="singer-face-quiz-v1";
 const $=id=>document.getElementById(id);
-const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode"])el[id]=$(id);
+const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
-let bank=[],singerBank=[],actorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false;
+let bank=[],singerBank=[],actorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 function shuffle(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
 const modeLabels={singer:"歌手",actor:"演員",mixed:"混合"};
@@ -25,7 +25,7 @@ function makeDeck(mode,roundSize){
  }
  return shuffle([...ids]);
 }
-function fresh(roundSize=10,mode="singer"){setPool(mode);return {version:1,mode,roundSize,deck:makeDeck(mode,roundSize),pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
+function fresh(roundSize=10,mode="singer"){setPool(mode);return {version:1,mode,roundSize,deck:makeDeck(mode,roundSize),pos:0,stage:0,hintUsed:false,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
 function updateRoundOption(){
  const count=pool(el.quizMode.value).length;
  el.roundSize.querySelector('option[value="all"]').textContent="全部（"+count+" 關）";
@@ -58,6 +58,7 @@ function restore(){
   const same=byId.has(current);
   return {version:1,mode,roundSize,deck,pos:Math.min(done.length,deck.length),
    stage:same&&Number.isInteger(old.stage)?Math.max(0,Math.min(4,old.stage)):0,
+   hintUsed:same&&old.hintUsed===true,
    tried:same&&Array.isArray(old.tried)?old.tried.filter(x=>typeof x==="string").slice(0,8):[],
    finished:same&&old.finished===true,won:same&&old.won===true,
    score:Number.isFinite(old.score)?Math.max(0,Math.min(1e7,old.score)):0,
@@ -79,11 +80,31 @@ function reveal(){
   if(n===state.stage&&!state.finished)node.setAttribute("aria-current","step");else node.removeAttribute("aria-current");
  });
 }
+function points(){return Math.max(10,(5-state.stage)*20-(state.hintUsed?20:0));}
+function workHint(){
+ const q=question(),entry=q&&hints[q.id];
+ const hint=state.mode==="singer"?entry?.singer:state.mode==="actor"?entry?.actor:entry?.actor||entry?.singer;
+ return hint&&typeof hint.title==="string"&&hint.title.trim()&&typeof hint.kind==="string"?hint:null;
+}
+function renderHint(){
+ const q=question(),hint=workHint();
+ el.hintPanel.hidden=!q||state.finished&&!state.hintUsed;
+ el.hintButton.hidden=!!state.finished;
+ el.hintButton.disabled=loading||state.finished||state.hintUsed||!hint;
+ el.hintButton.textContent=state.hintUsed?"作品提示已使用":hint?"看作品提示":"這題暫無作品提示";
+ el.hintText.hidden=!state.hintUsed;
+ el.hintText.textContent=state.hintUsed?(hint?hint.kind+"：《"+hint.title+"》":"提示暫時無法載入，使用狀態已保留。"):"";
+ el.hintNote.textContent=state.hintUsed?(state.finished?"已使用作品提示。":"本題答對可得 "+points()+" 分；五官線索照常揭露。"):hint?"本題答對少 20 分，最低 10 分；不影響五官線索。":"本題照常計分，五官線索仍可使用。";
+}
+el.hintButton.addEventListener("click",()=>{
+ if(loading||!question()||state.finished||state.hintUsed||!workHint())return;
+ state.hintUsed=true;save();renderHint();
+});
 function showResult(){
  const q=question();if(!q)return;
  el.result.replaceChildren();
  const name=document.createElement("strong");name.textContent=q.name;
- const note=document.createElement("p");note.textContent=state.won?"你認出來了！本題 +"+((5-state.stage)*20)+" 分":"下次再認出這張熟悉的臉。";
+ const note=document.createElement("p");note.textContent=state.won?"你認出來了！本題 +"+points()+" 分":"下次再認出這張熟悉的臉。";
  el.result.append(name,note);el.result.hidden=false;
  const a=q.attribution||{};
  el.creditText.textContent=[a.artist,a.credit,a.license,a.attribution].filter(Boolean).join(" · ");
@@ -99,17 +120,18 @@ function render(){
  el.guessForm.hidden=!!state?.finished;el.giveup.hidden=!!state?.finished;
  el.next.hidden=!state?.finished||!q;el.result.hidden=!state?.finished||!q;
  if(!state?.finished)el.credits.hidden=true;
+ renderHint();
  if(q){reveal();if(state.finished)showResult();}
 }
 function finish(won){
  if(loading||state.finished||!question())return;
  state.finished=true;state.won=won;state.completed++;
- if(won){state.correct++;state.score+=(5-state.stage)*20;}
+ if(won){state.correct++;state.score+=points();}
  save();render();message(won?"答對了！":"答案是…",won?"good":"");
  el.next.focus({preventScroll:true});
 }
 function end(){
- loading=false;el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;
+ loading=false;el.hintPanel.hidden=true;el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;
  el.photoMessage.textContent="這輪挑戰完成！";
  el.guessForm.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
  el.result.hidden=false;el.result.textContent="答對 "+state.correct+" 題，累積 "+state.score+" 分。";
@@ -147,13 +169,13 @@ el.guessForm.addEventListener("submit",event=>{
 el.giveup.addEventListener("click",()=>finish(false));
 el.next.addEventListener("click",()=>{
  if(!question())return;
- state.pos++;state.stage=0;state.tried=[];state.finished=false;state.won=false;
+ state.pos++;state.stage=0;state.hintUsed=false;state.tried=[];state.finished=false;state.won=false;
  save();loadQuestion();
 });
 function startRound(){
  if(empty){location.reload();return;}
  if(!bank.length)return;
- if(state&&(state.pos>0||state.tried.length||state.finished)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
+ if(state&&(state.pos>0||state.tried.length||state.finished||state.hintUsed)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
  state=fresh(el.roundSize.value==="all"?0:Number(el.roundSize.value),el.quizMode.value);save();showMode();loadQuestion();
 }
 el.restart.addEventListener("click",startRound);
@@ -167,6 +189,10 @@ async function init(){
   const valid=payload=>(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
   singerBank=valid(payloads[0]);actorBank=valid(payloads[1]);
   if(!singerBank.length||!actorBank.length)throw Error("No prepared photos");
+  try{
+   const response=await fetch("./hints.json",{cache:"no-store"});
+   if(response.ok)hints=(await response.json()).entries||{};
+  }catch{hints={};}
   setPool("singer");state=restore();save();
   el.quizMode.value=state.mode;el.quizMode.disabled=false;
   el.roundSize.value=state.roundSize===0?"all":String(state.roundSize);

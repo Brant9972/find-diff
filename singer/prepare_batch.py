@@ -138,11 +138,18 @@ for mode in banks:
 
 # Check each new work title against the person's Chinese profile for review.
 work_review=[]
+prior_work_path=ROOT/"batches"/(batch_id+"-work-review.json")
+prior_work=json.loads(prior_work_path.read_text()).get("entries",[]) if prior_work_path.exists() else []
+prior_work={(r["id"],r["mode"],r["work"]):r for r in prior_work}
 for mode,items in selected.items():
     for person,q in items:
         approval=eligibility[person["id"]]
         source=approval["profileSource"]
         row={"id":person["id"],"name":person["name"],"mode":mode,"work":person["work"],"source":source}
+        previous=prior_work.get((person["id"],mode,person["work"]))
+        if previous:
+            work_review.append(previous)
+            continue
         try:
             title=unquote(source.split("/wiki/")[-1])
             result=tools.api("zh",titles=title,redirects=1,converttitles=1,prop="extracts",explaintext=1)

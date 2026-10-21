@@ -1,0 +1,36 @@
+name: Verify work hints
+on:
+  push:
+    paths:
+      - 'singer/hint-candidates.json'
+      - 'singer/prepare_hints.py'
+      - '.github/workflows/work-hints.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quiz-work-hints
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests opencc-python-reimplemented
+      - run: python singer/prepare_hints.py
+      - name: Save verified hints and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/hints.json singer/hint-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Save source-checked work hints"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

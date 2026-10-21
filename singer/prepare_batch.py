@@ -124,6 +124,25 @@ for mode in banks:
     if not manifest.get("flexibleDistribution") or mode=="actor":
         assert len(selected[mode])==quota,"Not enough usable "+mode+" portraits; bank remains unchanged"
 
+# Check each new work title against the person's Chinese profile for review.
+work_review=[]
+for mode,items in selected.items():
+    for person,q in items:
+        approval=eligibility[person["id"]]
+        source=approval["profileSource"]
+        row={"id":person["id"],"name":person["name"],"mode":mode,"work":person["work"],"source":source}
+        try:
+            title=unquote(source.split("/wiki/")[-1])
+            result=tools.api("zh",titles=title,redirects=1,converttitles=1,prop="extracts",explaintext=1)
+            article=result.get("query",{}).get("pages",[{}])[0].get("extract","")
+            norm=lambda s:re.sub(r"[\\W_]+","",tools.CC.convert(s).casefold())
+            row["articleTextMatch"]=bool(article) and norm(person["work"]) in norm(article)
+            row["profileIntro"]=article[:400]
+        except Exception as exc:
+            row["articleTextMatch"]=False
+            row["error"]=str(exc)[:180]
+        work_review.append(row)
+write(ROOT/"batches"/(batch_id+"-work-review.json"),{"notes":"Title matching is a consistency check, not independent credit verification.","entries":work_review})
 singer_roster=json.loads((ROOT/"roster.json").read_text())
 actor_roster=json.loads((ROOT/"actors-roster.json").read_text())
 hints=json.loads((ROOT/"hints.json").read_text())
@@ -163,6 +182,7 @@ for mode,items in selected.items():
         approval.pop("candidateOnly",None)
         approval["profileSource"]=q["attribution"]["article"]
         approval["profileExcerpt"]=q["bioExcerpt"]
+        approval["representativeWorks"]={mode:{"title":person["work"],"kind":person["kind"],"source":approval["profileSource"],"review":"editorial_selection"}}
         approval["sources"]=list(dict.fromkeys([*approval["sources"],q["attribution"]["article"]]))
 eligibility_payload["currentPlayable"]={"singer":banks["singer"]["playable"],"actor":banks["actor"]["playable"],"mixedUnique":len(unique_people)}
 eligibility_payload["latestBatch"]={"batchId":batch_id,"added":sum(len(v) for v in selected.values())}

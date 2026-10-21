@@ -33,7 +33,9 @@ def write(path,data):
 def identity_matches(person,intro):
     norm=lambda value:re.sub(r"[\W_]+","",tools.CC.convert(value).casefold())
     text=norm(intro[:200])
-    tokens=[norm(person["name"]),*[norm(a) for a in person["aliases"]]]
+    name=norm(person["name"])
+    if len(name)>=2 and name in text:return True
+    tokens=[norm(a) for a in person["aliases"]]
     return any(len(token)>=3 and token in text for token in tokens)
 
 def prepare(person):
@@ -74,6 +76,15 @@ def prepare(person):
     return None
 
 banks={mode:json.loads((ROOT/file).read_text()) for mode,file in [("singer","questions.json"),("actor","actors.json")]}
+# Reuse this batch's already published, still-approved portraits on reruns.
+people={p["id"]:p for p in manifest["entries"]}
+for payload in banks.values():
+    for q in payload["questions"]:
+        person=people.get(q["id"])
+        if q.get("batchId")==batch_id and person and source_allowed(q["attribution"]["source"]) and identity_matches(person,q.get("bioExcerpt","")):
+            cache["ready"].setdefault(q["id"],q)
+            cache["failed"].pop(q["id"],None)
+write(cache_path,cache)
 replaced_ids={q["id"] for payload in banks.values() for q in payload["questions"] if q.get("batchId")==batch_id}
 for payload in banks.values():
     payload["questions"]=[q for q in payload["questions"] if q.get("batchId")!=batch_id]

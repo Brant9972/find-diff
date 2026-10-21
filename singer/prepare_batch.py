@@ -135,7 +135,7 @@ for mode,items in selected.items():
             title=unquote(source.split("/wiki/")[-1])
             result=tools.api("zh",titles=title,redirects=1,converttitles=1,prop="extracts",explaintext=1)
             article=result.get("query",{}).get("pages",[{}])[0].get("extract","")
-            norm=lambda s:re.sub(r"[\\W_]+","",tools.CC.convert(s).casefold())
+            norm=lambda s:re.sub(r"[\W_]+","",tools.CC.convert(s).casefold())
             row["articleTextMatch"]=bool(article) and norm(person["work"]) in norm(article)
             row["profileIntro"]=article[:400]
         except Exception as exc:

@@ -12,6 +12,13 @@ cache_path.parent.mkdir(exist_ok=True)
 cache=json.loads(cache_path.read_text()) if cache_path.exists() else {"ready":{},"failed":{}}
 original_get=tools.get
 last_request=0.0
+review_path=ROOT/"photo-review.json"
+review=json.loads(review_path.read_text()) if review_path.exists() else {}
+def source_key(url):
+    return unquote(url.split("/wiki/")[-1]).replace("_"," ").casefold()
+rejected={source_key(e["source"]) for e in review.get("rejected",[])}
+def source_allowed(url):
+    return source_key(url) not in rejected
 def paced_get(url,params=None):
     global last_request
     time.sleep(max(0,.8-(time.monotonic()-last_request)))
@@ -26,12 +33,15 @@ def write(path,data):
 def prepare(person):
     if person["id"] in cache["ready"]:
         q=cache["ready"][person["id"]]
-        if (ROOT/q["photo"]).exists():
+        if (ROOT/q["photo"]).exists() and source_allowed(q["attribution"]["source"]):
             return q
+        cache["ready"].pop(person["id"],None)
+        cache["failed"].pop(person["id"],None)
     if person["id"] in cache["failed"]:
         return None
     reason="No suitable freely licensed portrait"
     for candidate in tools.portrait_candidates(person):
+        if not source_allowed(candidate["source"]):continue
         source=unquote(candidate["source"]).lower()
         if any(w in source for w in ["statue","sculpture","waxwork","tussauds","stamp","雕像","蠟像","蜡像","邮票","郵票"]):
             continue
@@ -58,6 +68,9 @@ def prepare(person):
     return None
 
 banks={mode:json.loads((ROOT/file).read_text()) for mode,file in [("singer","questions.json"),("actor","actors.json")]}
+replaced_ids={q["id"] for payload in banks.values() for q in payload["questions"] if q.get("batchId")==batch_id}
+for payload in banks.values():
+    payload["questions"]=[q for q in payload["questions"] if q.get("batchId")!=batch_id]
 original={mode:list(payload["questions"]) for mode,payload in banks.items()}
 all_existing={q["name"]:q["id"] for payload in banks.values() for q in payload["questions"]}
 selected={mode:[] for mode in banks}
@@ -75,6 +88,8 @@ singer_roster=json.loads((ROOT/"roster.json").read_text())
 actor_roster=json.loads((ROOT/"actors-roster.json").read_text())
 hints=json.loads((ROOT/"hints.json").read_text())
 hint_candidates=json.loads((ROOT/"hint-candidates.json").read_text())
+for id in replaced_ids:hints["entries"].pop(id,None)
+hint_candidates["entries"]=[e for e in hint_candidates["entries"] if e["id"] not in replaced_ids]
 for mode,entries in selected.items():
     payload=banks[mode]
     current_ids={q["id"] for q in payload["questions"]}
@@ -116,3 +131,20 @@ for e in hints["entries"].values():
 write(ROOT/"hint-report.json",{"available":sum(review_counts.values()),"people":len(hints["entries"]),
     "reviewCounts":review_counts,"notes":"Curated titles; article matches are consistency checks, not independent credit verification."})
 print("FINAL",len(entries),"new questions;", {mode:p["playable"] for mode,p in banks.items()},flush=True)
+
+# Compact sheets make every new face and clue boundary visually reviewable.
+from PIL import Image,ImageDraw,ImageFont
+review_questions=[q for items in selected.values() for person,q in items]
+font=ImageFont.load_default(size=14)
+for offset in range(0,len(review_questions),20):
+    sheet=Image.new("RGB",(750,800),(24,21,32))
+    draw=ImageDraw.Draw(sheet)
+    for n,q in enumerate(review_questions[offset:offset+20]):
+        px,py=n%5*150,n//5*200
+        image=Image.open(ROOT/q["photo"]).resize((150,180))
+        sheet.paste(image,(px,py+20))
+        draw.text((px+5,py+2),q["id"],fill="white",font=font)
+        for key,color in [("eyes","#70ff90"),("nose","#70c5ff"),("mouth","#ffb45a"),("chin","#e99aff")]:
+            yy=py+20+q["reveal"][key][3]*180
+            draw.line((px+12,yy,px+138,yy),fill=color,width=1)
+    sheet.save(ROOT/"batches"/(batch_id+"-review-"+str(offset//20+1).zfill(2)+".jpg"),quality=92)

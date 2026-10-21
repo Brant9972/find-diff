@@ -34,6 +34,10 @@ for(const q of actorBank.questions){
  assert(q.attribution.source&&q.attribution.license);
 }
 realQuestions=[...new Map([...realQuestions,...actorBank.questions].map(q=>[q.id,q])).values()];
+const rejectedPortraits=JSON.parse(fs.readFileSync(path.join(__dirname,"photo-review.json"))).rejected||[];
+const sourceKey=url=>decodeURIComponent(url.split("/wiki/").pop()).replaceAll("_"," ").toLowerCase();
+const rejectedKeys=new Set(rejectedPortraits.map(e=>sourceKey(e.source)));
+for(const q of realQuestions)assert(!rejectedKeys.has(sourceKey(q.attribution.source)),"Previously rejected portrait reused: "+q.id);
 let hintUnavailable=false;
 const missingHints=new Set();
 const actorFixtures={questions:Array.from({length:25},(_,i)=>({id:"qa"+(101+i),name:"演員"+(i+1),aliases:["Actor "+(i+1)],photo:"photos/qa"+(101+i)+".jpg"}))};

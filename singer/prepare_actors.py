@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """Build the actor bank without changing the existing 300 singer questions."""
 import concurrent.futures, datetime, json
+import sys
 from pathlib import Path
+if (Path(__file__).resolve().parent/"eligibility-review.json").exists():
+    print("Legacy full-roster actor rebuild retired; use prepare_batch.py.",flush=True)
+    sys.exit(0)
 from portrait_tools import get, crop_face, portrait_candidates, CC
 
 ROOT = Path(__file__).resolve().parent

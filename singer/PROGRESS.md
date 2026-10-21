@@ -13,6 +13,13 @@
 
 後續遵守 ELIGIBILITY.md。prepare_batch.py 只接受已登錄 approved 且有理由／來源的人物。b004 歷史批次關閉，避免重跑把94位加回；下次使用 b005。候選與照片快取不是可玩題庫。長期1000／1000為方向，資格優先。
 
+## 本輪驗證完成
+資產提交：8bdb5b66cee5d4c56956e66d06335a15619bc6a6
+完整瀏覽器與提示覆蓋測試通過：https://github.com/Brant9972/find-diff/actions/runs/39549673912
+舊批次關閉與完整測試通過：https://github.com/Brant9972/find-diff/actions/runs/39549673846
+正式部署成功：https://github.com/Brant9972/find-diff/actions/runs/39549673564
+已在正式頁實際選取混合／全部，確認506關並可正常開始。
+
 ## 以下為審查前歷史記錄（數量已由上文取代）
 
 # 猜明星遊戲：接續記錄

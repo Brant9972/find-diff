@@ -1,5 +1,5 @@
 """Add the requested batch quotas while keeping existing questions intact."""
-import datetime,json,time
+import datetime,json,time,re
 from pathlib import Path
 from urllib.parse import unquote
 import portrait_tools as tools
@@ -30,10 +30,16 @@ tools.get=paced_get
 
 def write(path,data):
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n")
+def identity_matches(person,intro):
+    norm=lambda value:re.sub(r"[\W_]+","",tools.CC.convert(value).casefold())
+    text=norm(intro[:200])
+    tokens=[norm(person["name"]),*[norm(a) for a in person["aliases"]]]
+    return any(len(token)>=3 and token in text for token in tokens)
+
 def prepare(person):
     if person["id"] in cache["ready"]:
         q=cache["ready"][person["id"]]
-        if (ROOT/q["photo"]).exists() and source_allowed(q["attribution"]["source"]):
+        if (ROOT/q["photo"]).exists() and source_allowed(q["attribution"]["source"]) and identity_matches(person,q.get("bioExcerpt","")):
             return q
         cache["ready"].pop(person["id"],None)
         cache["failed"].pop(person["id"],None)
@@ -41,7 +47,7 @@ def prepare(person):
         return None
     reason="No suitable freely licensed portrait"
     for candidate in tools.portrait_candidates(person):
-        if not source_allowed(candidate["source"]):continue
+        if not source_allowed(candidate["source"]) or not identity_matches(person,candidate.get("intro","")):continue
         source=unquote(candidate["source"]).lower()
         if any(w in source for w in ["statue","sculpture","waxwork","tussauds","stamp","雕像","蠟像","蜡像","邮票","郵票"]):
             continue

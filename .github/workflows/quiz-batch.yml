@@ -10,7 +10,7 @@ permissions:
   contents: write
 concurrency:
   group: quiz-batch
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   expand:
     runs-on: ubuntu-latest

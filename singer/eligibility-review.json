@@ -5,9 +5,9 @@
   "policy": "在台灣有演藝／音樂發展經歷，或有台灣觀眾熟悉的代表作與討論依據。國籍、團體連帶知名度及單篇提及不足以自動入選。",
   "method": "逐人編輯審閱既有簡介與代表作品，對邊界人物補查台灣來源；不是600人的獨立量化聲量調查。依據不足先停用，不代表斷言從未來台。 b005新增94人的人物簡介與代表作品編輯審閱；以現有來源及針對性補查核對台灣發展，作品文字比對僅供一致性檢查。 2026-10-21 已先完成11位台劇/港片演員替換，剩餘44位照片及來源仍待完成；換人不等同否定原人物的知名度。",
   "summary": {
-    "reviewed": 705,
+    "reviewed": 709,
     "retained": 600,
-    "paused": 105,
+    "paused": 109,
     "singer": 339,
     "actor": 329,
     "shared": 68
@@ -11023,9 +11023,9 @@
     "a049": {
       "id": "a049",
       "name": "李現",
-      "status": "approved",
+      "status": "excluded_audience_preference",
       "basis": "taiwan_screen_audience",
-      "reason": "主演作品在台灣播映且具主流追劇／電影關注；依作品及台灣受眾資料保留，不把中國粉絲數當作證據",
+      "reason": "以符合台灣30歲出頭玩家之台劇、港片人物替補。",
       "sources": [
         "https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%8E%B0"
       ],
@@ -11047,9 +11047,9 @@
     "a050": {
       "id": "a050",
       "name": "許凱",
-      "status": "approved",
+      "status": "excluded_audience_preference",
       "basis": "taiwan_screen_audience",
-      "reason": "主演作品在台灣播映且具主流追劇／電影關注；依作品及台灣受眾資料保留，不把中國粉絲數當作證據",
+      "reason": "以符合台灣30歲出頭玩家之台劇、港片人物替補。",
       "sources": [
         "https://zh.wikipedia.org/wiki/%E8%A8%B1%E5%87%B1"
       ],
@@ -11071,9 +11071,9 @@
     "a051": {
       "id": "a051",
       "name": "吳磊",
-      "status": "approved",
+      "status": "excluded_audience_preference",
       "basis": "taiwan_screen_audience",
-      "reason": "主演作品在台灣播映且具主流追劇／電影關注；依作品及台灣受眾資料保留，不把中國粉絲數當作證據",
+      "reason": "以符合台灣30歲出頭玩家之台劇、港片人物替補。",
       "sources": [
         "https://zh.wikipedia.org/wiki/%E5%90%B4%E7%A3%8A"
       ],
@@ -11095,9 +11095,9 @@
     "a052": {
       "id": "a052",
       "name": "張新成",
-      "status": "approved",
+      "status": "excluded_audience_preference",
       "basis": "taiwan_screen_audience",
-      "reason": "主演作品在台灣播映且具主流追劇／電影關注；依作品及台灣受眾資料保留，不把中國粉絲數當作證據",
+      "reason": "以符合台灣30歲出頭玩家之台劇、港片人物替補。",
       "sources": [
         "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%96%B0%E6%88%90"
       ],
@@ -17388,6 +17388,110 @@
         }
       },
       "photoReview": "Visually checked face framing; Commons Wikidata linked source"
+    },
+    "a1313": {
+      "id": "a1313",
+      "name": "顏行書",
+      "status": "approved",
+      "basis": "taiwan_dramas_or_classic_hk_films",
+      "reviewedAt": "2026-10-22",
+      "reason": "台灣30歲出頭玩家熟悉之台劇或港片演員；照片、裁切、提示已檢查。",
+      "modes": [
+        "actor"
+      ],
+      "sources": [
+        "https://zh.wikipedia.org/wiki/顏行書",
+        "https://commons.wikimedia.org/wiki/File:2008LeisureTaiwan_Day3_Johnny_Yen.jpg",
+        "https://zh.wikipedia.org/wiki/MVP情人"
+      ],
+      "profileSource": "https://zh.wikipedia.org/wiki/顏行書",
+      "representativeWorks": {
+        "actor": {
+          "title": "MVP情人",
+          "kind": "電視劇",
+          "source": "https://zh.wikipedia.org/wiki/MVP情人",
+          "review": "work_source_checked"
+        }
+      },
+      "photoReview": "Reviewed portrait crop and named source"
+    },
+    "a1322": {
+      "id": "a1322",
+      "name": "楊一展",
+      "status": "approved",
+      "basis": "taiwan_dramas_or_classic_hk_films",
+      "reviewedAt": "2026-10-22",
+      "reason": "台灣30歲出頭玩家熟悉之台劇或港片演員；照片、裁切、提示已檢查。",
+      "modes": [
+        "actor"
+      ],
+      "sources": [
+        "https://zh.wikipedia.org/wiki/楊一展",
+        "https://commons.wikimedia.org/wiki/File:Weber_Yang_at_the_2026_Busan_International_Film_Festival.jpg",
+        "https://zh.wikipedia.org/wiki/16個夏天"
+      ],
+      "profileSource": "https://zh.wikipedia.org/wiki/楊一展",
+      "representativeWorks": {
+        "actor": {
+          "title": "16個夏天",
+          "kind": "電視劇",
+          "source": "https://zh.wikipedia.org/wiki/16個夏天",
+          "review": "work_source_checked"
+        }
+      },
+      "photoReview": "Reviewed portrait crop and named source"
+    },
+    "a1329": {
+      "id": "a1329",
+      "name": "林美秀",
+      "status": "approved",
+      "basis": "taiwan_dramas_or_classic_hk_films",
+      "reviewedAt": "2026-10-22",
+      "reason": "台灣30歲出頭玩家熟悉之台劇或港片演員；照片、裁切、提示已檢查。",
+      "modes": [
+        "actor"
+      ],
+      "sources": [
+        "https://zh.wikipedia.org/wiki/林美秀",
+        "https://commons.wikimedia.org/wiki/File:2026.08.01_Lin_Mei-hsiu_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/總舖師_(電影)"
+      ],
+      "profileSource": "https://zh.wikipedia.org/wiki/林美秀",
+      "representativeWorks": {
+        "actor": {
+          "title": "總舖師",
+          "kind": "電影",
+          "source": "https://zh.wikipedia.org/wiki/總舖師_(電影)",
+          "review": "work_source_checked"
+        }
+      },
+      "photoReview": "Reviewed portrait crop and named source"
+    },
+    "a1350": {
+      "id": "a1350",
+      "name": "張耀揚",
+      "status": "approved",
+      "basis": "taiwan_dramas_or_classic_hk_films",
+      "reviewedAt": "2026-10-22",
+      "reason": "台灣30歲出頭玩家熟悉之台劇或港片演員；照片、裁切、提示已檢查。",
+      "modes": [
+        "actor"
+      ],
+      "sources": [
+        "https://zh.wikipedia.org/wiki/張耀揚",
+        "https://commons.wikimedia.org/wiki/File:Roy_cheung.JPG",
+        "https://zh.wikipedia.org/wiki/古惑仔3之隻手遮天"
+      ],
+      "profileSource": "https://zh.wikipedia.org/wiki/張耀揚",
+      "representativeWorks": {
+        "actor": {
+          "title": "古惑仔3之隻手遮天",
+          "kind": "電影",
+          "source": "https://zh.wikipedia.org/wiki/古惑仔3之隻手遮天",
+          "review": "work_source_checked"
+        }
+      },
+      "photoReview": "Reviewed portrait crop and named source"
     }
   },
   "initialReview": {

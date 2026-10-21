@@ -859,8 +859,8 @@
     "candidateHintTitlesAreEditorialSuggestions": true,
     "licenseAndPhotoClearanceCompleted": false
   },
-  "note": "This document is a curation change plan, not a playable roster; questions.json, actors.json, hints.json and photos/ have deliberately been left untouched until the media requirements can be completed.",
-  "deployedAt": "2026-10-21",
+  "note": "15 reviewed actor replacements deployed; 40 more need valid photos. The 600 unique playable people are preserved.",
+  "deployedAt": "2026-10-22",
   "deployedReplacements": [
     {
       "id": "a1317",
@@ -905,6 +905,22 @@
     {
       "id": "a1352",
       "name": "邱淑貞"
+    },
+    {
+      "id": "a1313",
+      "name": "顏行書"
+    },
+    {
+      "id": "a1322",
+      "name": "楊一展"
+    },
+    {
+      "id": "a1329",
+      "name": "林美秀"
+    },
+    {
+      "id": "a1350",
+      "name": "張耀揚"
     }
   ],
   "deployedRemovals": [
@@ -971,6 +987,30 @@
     {
       "id": "a048",
       "name": "楊洋",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a049",
+      "name": "李現",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a050",
+      "name": "許凱",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a051",
+      "name": "吳磊",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a052",
+      "name": "張新成",
       "category": "mainland_screen_low_fit_for_target_audience",
       "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
     }
@@ -1085,15 +1125,6 @@
       "hintStatus": "needs_source_check"
     },
     {
-      "proposedId": "a1313",
-      "name": "顏行書",
-      "category": "台灣偶像劇",
-      "workForHint": "MVP情人",
-      "reviewStatus": "candidate_needs_source_and_portrait",
-      "photoStatus": "missing",
-      "hintStatus": "needs_source_check"
-    },
-    {
       "proposedId": "a1314",
       "name": "陳奕",
       "category": "台灣偶像劇",
@@ -1157,15 +1188,6 @@
       "hintStatus": "needs_source_check"
     },
     {
-      "proposedId": "a1322",
-      "name": "楊一展",
-      "category": "台灣偶像劇",
-      "workForHint": "16個夏天",
-      "reviewStatus": "candidate_needs_source_and_portrait",
-      "photoStatus": "missing",
-      "hintStatus": "needs_source_check"
-    },
-    {
       "proposedId": "a1323",
       "name": "李沛旭",
       "category": "台灣偶像劇",
@@ -1197,15 +1219,6 @@
       "name": "鄭人碩",
       "category": "台灣電影",
       "workForHint": "角頭",
-      "reviewStatus": "candidate_needs_source_and_portrait",
-      "photoStatus": "missing",
-      "hintStatus": "needs_source_check"
-    },
-    {
-      "proposedId": "a1329",
-      "name": "林美秀",
-      "category": "台灣電影",
-      "workForHint": "總舖師",
       "reviewStatus": "candidate_needs_source_and_portrait",
       "photoStatus": "missing",
       "hintStatus": "needs_source_check"
@@ -1328,15 +1341,6 @@
       "hintStatus": "needs_source_check"
     },
     {
-      "proposedId": "a1350",
-      "name": "張耀揚",
-      "category": "經典香港電影",
-      "workForHint": "古惑仔之人在江湖",
-      "reviewStatus": "candidate_needs_source_and_portrait",
-      "photoStatus": "missing",
-      "hintStatus": "needs_source_check"
-    },
-    {
       "proposedId": "a1351",
       "name": "王祖賢",
       "category": "經典香港電影",
@@ -1374,30 +1378,6 @@
     }
   ],
   "remainingPlannedRemovals": [
-    {
-      "id": "a049",
-      "name": "李現",
-      "category": "mainland_screen_low_fit_for_target_audience",
-      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
-    },
-    {
-      "id": "a050",
-      "name": "許凱",
-      "category": "mainland_screen_low_fit_for_target_audience",
-      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
-    },
-    {
-      "id": "a051",
-      "name": "吳磊",
-      "category": "mainland_screen_low_fit_for_target_audience",
-      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
-    },
-    {
-      "id": "a052",
-      "name": "張新成",
-      "category": "mainland_screen_low_fit_for_target_audience",
-      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
-    },
     {
       "id": "a054",
       "name": "朱一龍",
@@ -1640,8 +1620,8 @@
     }
   ],
   "deploymentStatus": {
-    "replaced": 11,
-    "pending": 44,
+    "replaced": 15,
+    "pending": 40,
     "uniqueTotal": 600,
     "singerTotal": 339,
     "actorTotal": 329

@@ -10,6 +10,8 @@ if manifest.get("status")=="closed_after_eligibility_review":
     print("Batch closed after Taiwan eligibility review; no questions rebuilt.",flush=True)
     raise SystemExit(0)
 eligibility=json.loads((ROOT/"eligibility-review.json").read_text())["entries"]
+if manifest.get("eligibilitySupplement"):
+    eligibility.update(json.loads((ROOT/manifest["eligibilitySupplement"]).read_text())["entries"])
 import portrait_tools as tools
 cache_path=ROOT/"batches"/(batch_id+"-cache.json")
 cache_path.parent.mkdir(exist_ok=True)
@@ -105,6 +107,8 @@ for payload in banks.values():
 original={mode:list(payload["questions"]) for mode,payload in banks.items()}
 all_existing={q["name"]:q["id"] for payload in banks.values() for q in payload["questions"]}
 selected={mode:[] for mode in banks}
+used_sources={q["attribution"]["source"]:q["id"] for payload in banks.values() for q in payload["questions"]}
+used_profiles={q["attribution"]["article"]:q["id"] for payload in banks.values() for q in payload["questions"]}
 for mode in banks:
     quota=manifest["targetPerMode"][mode]
     if manifest.get("flexibleDistribution") and mode=="actor":
@@ -119,7 +123,15 @@ for mode in banks:
             continue
         question=prepare(person)
         print(mode,person["name"],"ready" if question else "skipped",flush=True)
-        if question:selected[mode].append((person,question))
+        if question:
+            source=question["attribution"]["source"]
+            profile=question["attribution"]["article"]
+            if (source in used_sources and used_sources[source]!=question["id"]) or (profile in used_profiles and used_profiles[profile]!=question["id"]):
+                print(mode,person["name"],"skipped: duplicate portrait or canonical person",flush=True)
+                continue
+            selected[mode].append((person,question))
+            used_sources[source]=question["id"]
+            used_profiles[profile]=question["id"]
         if len(selected[mode])==quota:break
     if not manifest.get("flexibleDistribution") or mode=="actor":
         assert len(selected[mode])==quota,"Not enough usable "+mode+" portraits; bank remains unchanged"
@@ -178,7 +190,7 @@ assert len(unique_people)==manifest["targetMixedUnique"],"Mixed unique target no
 eligibility_payload=json.loads((ROOT/"eligibility-review.json").read_text())
 for mode,items in selected.items():
     for person,q in items:
-        approval=eligibility_payload["entries"][q["id"]]
+        approval=eligibility_payload["entries"].setdefault(q["id"],eligibility[q["id"]])
         approval.pop("candidateOnly",None)
         approval["profileSource"]=q["attribution"]["article"]
         approval["profileExcerpt"]=q["bioExcerpt"]

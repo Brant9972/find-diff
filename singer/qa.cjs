@@ -39,6 +39,8 @@ for(const q of realQuestions){
  const r=eligibility[q.id];
  assert(r&&r.status==="approved"&&r.name===q.name&&r.reason&&r.sources.length,"Unapproved Taiwan eligibility: "+q.id);
 }
+assert.equal(new Set(realQuestions.map(q=>q.attribution.article)).size,realQuestions.length,"Same canonical person counted twice");
+assert.equal(new Set(realQuestions.map(q=>q.attribution.source)).size,realQuestions.length,"Same portrait used for different people");
 const rejectedPortraits=JSON.parse(fs.readFileSync(path.join(__dirname,"photo-review.json"))).rejected||[];
 const sourceKey=url=>decodeURIComponent(url.split("/wiki/").pop()).replaceAll("_"," ").toLowerCase();
 const rejectedKeys=new Set(rejectedPortraits.map(e=>sourceKey(e.source)));

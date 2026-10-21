@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-21",
-  "phase": "STAGING_NOT_LIVE",
+  "phase": "PARTIALLY_DEPLOYED",
   "goal": "Replace 55 actor-only entries heavily centered on mainland dramas with 55 Taiwanese and classic Hong Kong actors familiar to an early-thirties Taiwanese audience; retain 600 distinct playable people after verified imagery is ready.",
   "audienceProfile": "Taiwan players aged around 30-35; prioritize Taiwanese TV dramas, Taiwanese cinema and classic Hong Kong films; avoid mainland-drama-driven popularity.",
   "startingCounts": {
@@ -859,5 +859,791 @@
     "candidateHintTitlesAreEditorialSuggestions": true,
     "licenseAndPhotoClearanceCompleted": false
   },
-  "note": "This document is a curation change plan, not a playable roster; questions.json, actors.json, hints.json and photos/ have deliberately been left untouched until the media requirements can be completed."
+  "note": "This document is a curation change plan, not a playable roster; questions.json, actors.json, hints.json and photos/ have deliberately been left untouched until the media requirements can be completed.",
+  "deployedAt": "2026-10-21",
+  "deployedReplacements": [
+    {
+      "id": "a1317",
+      "name": "陳昭榮"
+    },
+    {
+      "id": "a1324",
+      "name": "陳昊森"
+    },
+    {
+      "id": "a1327",
+      "name": "蔡昌憲"
+    },
+    {
+      "id": "a1331",
+      "name": "邵雨薇"
+    },
+    {
+      "id": "a1339",
+      "name": "李心潔"
+    },
+    {
+      "id": "a1341",
+      "name": "夏如芝"
+    },
+    {
+      "id": "a1343",
+      "name": "林雪"
+    },
+    {
+      "id": "a1344",
+      "name": "羅家英"
+    },
+    {
+      "id": "a1346",
+      "name": "元秋"
+    },
+    {
+      "id": "a1347",
+      "name": "陳百祥"
+    },
+    {
+      "id": "a1352",
+      "name": "邱淑貞"
+    }
+  ],
+  "deployedRemovals": [
+    {
+      "id": "a027",
+      "name": "孫儷",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a028",
+      "name": "楊冪",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a029",
+      "name": "趙麗穎",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a041",
+      "name": "張若昀",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a042",
+      "name": "白敬亭",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a043",
+      "name": "肖戰",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a044",
+      "name": "王一博",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a045",
+      "name": "龔俊",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a046",
+      "name": "成毅",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a047",
+      "name": "任嘉倫",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a048",
+      "name": "楊洋",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    }
+  ],
+  "remainingPlannedReplacements": [
+    {
+      "proposedId": "a1301",
+      "name": "賀軍翔",
+      "category": "台灣偶像劇",
+      "workForHint": "惡魔在身邊",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1302",
+      "name": "言承旭",
+      "category": "台灣偶像劇",
+      "workForHint": "流星花園",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1303",
+      "name": "周渝民",
+      "category": "台灣偶像劇",
+      "workForHint": "流星花園",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1304",
+      "name": "朱孝天",
+      "category": "台灣偶像劇",
+      "workForHint": "流星花園",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1305",
+      "name": "李威",
+      "category": "台灣偶像劇",
+      "workForHint": "海派甜心",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1306",
+      "name": "許紹洋",
+      "category": "台灣偶像劇",
+      "workForHint": "薰衣草",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1307",
+      "name": "唐禹哲",
+      "category": "台灣偶像劇",
+      "workForHint": "終極一班",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1308",
+      "name": "邱勝翊",
+      "category": "台灣偶像劇",
+      "workForHint": "黑糖瑪奇朵",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1309",
+      "name": "邱宇辰",
+      "category": "台灣偶像劇",
+      "workForHint": "黑糖瑪奇朵",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1310",
+      "name": "王少偉",
+      "category": "台灣偶像劇",
+      "workForHint": "王子變青蛙",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1311",
+      "name": "王仁甫",
+      "category": "台灣偶像劇",
+      "workForHint": "格鬥天王",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1312",
+      "name": "許孟哲",
+      "category": "台灣偶像劇",
+      "workForHint": "西街少年",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1313",
+      "name": "顏行書",
+      "category": "台灣偶像劇",
+      "workForHint": "MVP情人",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1314",
+      "name": "陳奕",
+      "category": "台灣偶像劇",
+      "workForHint": "愛似百匯",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1315",
+      "name": "謝承均",
+      "category": "台灣本土劇",
+      "workForHint": "甘味人生",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1316",
+      "name": "江宏恩",
+      "category": "台灣本土劇",
+      "workForHint": "飛龍在天",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1318",
+      "name": "黃少祺",
+      "category": "台灣本土劇",
+      "workForHint": "金家好媳婦",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1319",
+      "name": "李政穎",
+      "category": "台灣本土劇",
+      "workForHint": "夜市人生",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1320",
+      "name": "林佑威",
+      "category": "台灣偶像劇",
+      "workForHint": "兩個爸爸",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1321",
+      "name": "張勛傑",
+      "category": "台灣偶像劇",
+      "workForHint": "鬥魚",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1322",
+      "name": "楊一展",
+      "category": "台灣偶像劇",
+      "workForHint": "16個夏天",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1323",
+      "name": "李沛旭",
+      "category": "台灣偶像劇",
+      "workForHint": "犀利人妻",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1325",
+      "name": "金士傑",
+      "category": "台灣舞台劇及電影",
+      "workForHint": "暗戀桃花源",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1326",
+      "name": "夏靖庭",
+      "category": "台灣電視劇",
+      "workForHint": "俗女養成記",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1328",
+      "name": "鄭人碩",
+      "category": "台灣電影",
+      "workForHint": "角頭",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1329",
+      "name": "林美秀",
+      "category": "台灣電影",
+      "workForHint": "總舖師",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1330",
+      "name": "安以軒",
+      "category": "台灣偶像劇",
+      "workForHint": "鬥魚",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1332",
+      "name": "陳怡蓉",
+      "category": "台灣偶像劇",
+      "workForHint": "薰衣草",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1333",
+      "name": "陳德容",
+      "category": "台灣經典戲劇",
+      "workForHint": "梅花烙",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1334",
+      "name": "李佳穎",
+      "category": "台灣偶像劇",
+      "workForHint": "莫非，這就是愛情",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1335",
+      "name": "王宇婕",
+      "category": "台灣偶像劇",
+      "workForHint": "雪天使",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1336",
+      "name": "陳珮騏",
+      "category": "台灣本土劇",
+      "workForHint": "甘味人生",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1337",
+      "name": "趙小僑",
+      "category": "台灣偶像劇",
+      "workForHint": "王子變青蛙",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1338",
+      "name": "連俞涵",
+      "category": "台灣電視劇",
+      "workForHint": "一把青",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1340",
+      "name": "張寗",
+      "category": "台灣電視劇",
+      "workForHint": "親愛壞蛋",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1342",
+      "name": "吳孟達",
+      "category": "經典香港電影",
+      "workForHint": "逃學威龍",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1345",
+      "name": "元華",
+      "category": "經典香港電影",
+      "workForHint": "功夫",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1348",
+      "name": "黃一飛",
+      "category": "經典香港電影",
+      "workForHint": "少林足球",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1349",
+      "name": "樊少皇",
+      "category": "經典香港電影",
+      "workForHint": "力王",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1350",
+      "name": "張耀揚",
+      "category": "經典香港電影",
+      "workForHint": "古惑仔之人在江湖",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1351",
+      "name": "王祖賢",
+      "category": "經典香港電影",
+      "workForHint": "倩女幽魂",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1353",
+      "name": "張敏",
+      "category": "經典香港電影",
+      "workForHint": "倚天屠龍記之魔教教主",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1354",
+      "name": "袁詠儀",
+      "category": "經典香港電影",
+      "workForHint": "新不了情",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    },
+    {
+      "proposedId": "a1355",
+      "name": "林子聰",
+      "category": "經典香港電影",
+      "workForHint": "功夫",
+      "reviewStatus": "candidate_needs_source_and_portrait",
+      "photoStatus": "missing",
+      "hintStatus": "needs_source_check"
+    }
+  ],
+  "remainingPlannedRemovals": [
+    {
+      "id": "a049",
+      "name": "李現",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a050",
+      "name": "許凱",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a051",
+      "name": "吳磊",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a052",
+      "name": "張新成",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a054",
+      "name": "朱一龍",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a055",
+      "name": "檀健次",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a056",
+      "name": "陳曉",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a057",
+      "name": "劉亦菲",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a058",
+      "name": "唐嫣",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a059",
+      "name": "劉詩詩",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a060",
+      "name": "倪妮",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a061",
+      "name": "迪麗熱巴",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a062",
+      "name": "楊紫",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a063",
+      "name": "趙露思",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a064",
+      "name": "白鹿",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a065",
+      "name": "周冬雨",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a066",
+      "name": "景甜",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a068",
+      "name": "宋佳",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a069",
+      "name": "馬思純",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a070",
+      "name": "張子楓",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a071",
+      "name": "郭麒麟",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a102",
+      "name": "廖凡",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a104",
+      "name": "靳東",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a111",
+      "name": "劉昊然",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a115",
+      "name": "陳哲遠",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a116",
+      "name": "宋威龍",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a117",
+      "name": "丁禹兮",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a118",
+      "name": "張凌赫",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a119",
+      "name": "王鶴棣",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a122",
+      "name": "胡一天",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a131",
+      "name": "李沁",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a132",
+      "name": "李一桐",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a133",
+      "name": "宋軼",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a134",
+      "name": "宋祖兒",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a139",
+      "name": "周也",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a140",
+      "name": "李蘭迪",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a141",
+      "name": "趙今麥",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a144",
+      "name": "王楚然",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a145",
+      "name": "盧昱曉",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a146",
+      "name": "孟子義",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a147",
+      "name": "田曦薇",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a314",
+      "name": "秦嵐",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a500",
+      "name": "胡軍",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    },
+    {
+      "id": "a501",
+      "name": "胡兵",
+      "category": "mainland_screen_low_fit_for_target_audience",
+      "action": "REMOVE_FROM_ACTOR_POOL_AFTER_REPLACEMENT_MEDIA_READY"
+    }
+  ],
+  "deploymentStatus": {
+    "replaced": 11,
+    "pending": 44,
+    "uniqueTotal": 600,
+    "singerTotal": 339,
+    "actorTotal": 329
+  }
 }

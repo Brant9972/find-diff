@@ -1,0 +1,63 @@
+name: Publish second batch of four actor replacements
+on:
+  push:
+    branches: [actor-refresh-20261021]
+    paths:
+      - singer/tools/publish_four_reviewed_actors.py
+      - .github/workflows/publish-four-reviewed-actors.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Load reviewed portraits from staging branch
+        run: |
+          git fetch origin actor-refresh-20261021
+          mkdir -p singer/tools singer/actor-roster-staging-extra/photos
+          git show origin/actor-refresh-20261021:singer/tools/publish_four_reviewed_actors.py > singer/tools/publish_four_reviewed_actors.py
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging-extra/report.json > singer/actor-roster-staging-extra/report.json
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging-extra/photos/a1313_opt1.jpg > singer/actor-roster-staging-extra/photos/a1313_opt1.jpg
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging-extra/photos/a1322_opt1.jpg > singer/actor-roster-staging-extra/photos/a1322_opt1.jpg
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging-extra/photos/a1329_opt2.jpg > singer/actor-roster-staging-extra/photos/a1329_opt2.jpg
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging-extra/photos/a1350_opt1.jpg > singer/actor-roster-staging-extra/photos/a1350_opt1.jpg
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q Pillow
+      - name: Apply swap and validate all questions
+        run: |
+          python singer/tools/publish_four_reviewed_actors.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("singer")
+          actors=json.loads((root/"actors.json").read_text())["questions"]
+          singers=json.loads((root/"questions.json").read_text())["questions"]
+          hints=json.loads((root/"hints.json").read_text())["entries"]
+          ids={q["id"] for q in actors+singers}
+          assert len(ids)==600
+          for typ, qs in (("actor",actors),("singer",singers)):
+              for q in qs:
+                  assert (root/q["photo"]).is_file(),q["id"]
+                  assert hints[q["id"]].get(typ),q["id"]
+          print("600 unique, all media and hints present")
+          PY
+      - name: Commit to official game
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/actors.json singer/hints.json singer/eligibility-review.json singer/roster-review-2026-10-21.json
+          git add singer/photos/a1313.jpg singer/photos/a1322.jpg singer/photos/a1329.jpg singer/photos/a1350.jpg
+          if git diff --cached --quiet; then
+            echo "Nothing to release"
+          else
+            git commit -m "Deploy 4 more familiar Taiwan and Hong Kong actors, keep playable 600"
+            git push origin HEAD:main
+          fi

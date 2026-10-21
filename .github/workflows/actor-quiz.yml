@@ -1,0 +1,45 @@
+name: Actor quiz portraits
+on:
+  push:
+    paths:
+      - 'singer/actors-roster.json'
+      - 'singer/prepare_actors.py'
+      - 'singer/portrait_tools.py'
+      - '.github/workflows/actor-quiz.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: actor-quiz-assets
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests Pillow numpy==2.2.6 opencv-python-headless==4.12.0.88 opencc-python-reimplemented
+      - run: python -u singer/prepare_actors.py
+      - name: Save actor portrait checkpoint
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/actors.json singer/actors-report.json singer/photos
+          if ! git diff --cached --quiet; then
+            git commit -m "Save prepared actor portraits and source metadata"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: actor-portraits
+          path: |
+            singer/actors.json
+            singer/actors-report.json

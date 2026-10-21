@@ -6,6 +6,8 @@ on:
       - 'singer/index.html'
       - 'singer/style.css'
       - 'singer/qa.cjs'
+      - 'singer/actors.json'
+      - 'singer/actors-roster.json'
       - '.github/workflows/singer-ui-qa.yml'
   workflow_dispatch:
 permissions:

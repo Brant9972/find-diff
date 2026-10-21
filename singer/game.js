@@ -2,18 +2,52 @@
 "use strict";
 const KEY="singer-face-quiz-v1";
 const $=id=>document.getElementById(id);
-const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound"])el[id]=$(id);
+const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
-let bank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false;
+let bank=[],singerBank=[],actorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false;
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 function shuffle(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
-function fresh(roundSize=10){return {version:1,roundSize,deck:shuffle(bank.map(q=>q.id)).slice(0,roundSize||bank.length),pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
+const modeLabels={singer:"歌手",actor:"演員",mixed:"混合"};
+function pool(mode){
+ const items=mode==="actor"?actorBank:mode==="mixed"?[...singerBank,...actorBank]:singerBank;
+ return [...new Map(items.map(q=>[q.id,q])).values()];
+}
+function setPool(mode){bank=pool(mode);byId=new Map(bank.map(q=>[q.id,q]));}
+function makeDeck(mode,roundSize){
+ const limit=roundSize||bank.length;
+ if(mode!=="mixed")return shuffle(bank.map(q=>q.id)).slice(0,limit);
+ // Alternate the two shuffled pools; shared singer/actors appear only once.
+ const groups=[shuffle(singerBank.map(q=>q.id)),shuffle(actorBank.map(q=>q.id))];
+ const ids=new Set();let turn=Math.random()<.5?0:1;
+ while(ids.size<limit&&(groups[0].length||groups[1].length)){
+  const group=groups[turn].length?groups[turn]:groups[1-turn];
+  ids.add(group.pop());turn=1-turn;
+ }
+ return shuffle([...ids]);
+}
+function fresh(roundSize=10,mode="singer"){setPool(mode);return {version:1,mode,roundSize,deck:makeDeck(mode,roundSize),pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
+function updateRoundOption(){
+ const count=pool(el.quizMode.value).length;
+ el.roundSize.querySelector('option[value="all"]').textContent="全部（"+count+" 關）";
+}
+function showMode(){
+ const mode=state.mode,label=modeLabels[mode];
+ document.querySelector(".edition").textContent=mode==="mixed"?"歌手 × 演員":"華語"+label+"篇";
+ document.querySelector(".eyebrow").textContent="看五官，猜"+(mode==="singer"?"聲音":"明星");
+ document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"歌手或演員":label)+"名字。猜錯一次，就多露出一點。";
+ document.querySelector(".play").setAttribute("aria-label","猜"+(mode==="mixed"?"明星":label)+"遊戲");
+ el.portrait.alt="本題"+(mode==="mixed"?"明星":label)+"的五官線索";
+ el.poolInfo.textContent=label+"模式 · "+bank.length+" 位 · 隨機不重複 · 自動記錄進度";
+ document.title="猜"+(mode==="mixed"?"明星":label)+"・五官挑戰";
+}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{el.saveWarning.hidden=false;}}
 function restore(){
  try{
   const old=JSON.parse(localStorage.getItem(KEY)||"null");
   if(!old||old.version!==1||!Array.isArray(old.deck))return fresh();
   if(!Number.isInteger(old.pos)||old.pos<0||old.pos>old.deck.length)return fresh();
+  const mode=["singer","actor","mixed"].includes(old.mode)?old.mode:"singer";
+  setPool(mode);
   const current=old.deck[old.pos],valid=[...new Set(old.deck.filter(id=>byId.has(id)))];
   // Preserve the current question when a later build removes a failed photo.
   const prior=new Set(old.deck.slice(0,old.pos));
@@ -22,7 +56,7 @@ function restore(){
   const extra=old.pos===old.deck.length?[]:bank.map(q=>q.id).filter(id=>!valid.includes(id));
   const deck=[...done,...remaining,...shuffle(extra)].slice(0,roundSize||bank.length);
   const same=byId.has(current);
-  return {version:1,roundSize,deck,pos:Math.min(done.length,deck.length),
+  return {version:1,mode,roundSize,deck,pos:Math.min(done.length,deck.length),
    stage:same&&Number.isInteger(old.stage)?Math.max(0,Math.min(4,old.stage)):0,
    tried:same&&Array.isArray(old.tried)?old.tried.filter(x=>typeof x==="string").slice(0,8):[],
    finished:same&&old.finished===true,won:same&&old.won===true,
@@ -78,7 +112,7 @@ function end(){
  loading=false;el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;
  el.photoMessage.textContent="這輪挑戰完成！";
  el.guessForm.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
- el.result.hidden=false;el.result.textContent="答對 "+state.correct+" 位歌手，累積 "+state.score+" 分。";
+ el.result.hidden=false;el.result.textContent="答對 "+state.correct+" 題，累積 "+state.score+" 分。";
  message("選擇關數，再開始新回合吧！","good");
  el.round.textContent=state.deck.length+"／"+state.deck.length;el.correct.textContent=state.correct;el.score.textContent=state.score;
 }
@@ -102,7 +136,7 @@ function loadQuestion(){
 el.guessForm.addEventListener("submit",event=>{
  event.preventDefault();const q=question();if(!q||loading||state.finished)return;
  const answer=normalize(el.answer.value);
- if(!answer){message("先輸入歌手的名字。");return;}
+ if(!answer){message("先輸入人物的名字。");return;}
  if([q.name,...q.aliases].some(alias=>normalize(alias)===answer)){finish(true);return;}
  if(state.tried.includes(answer)){message("這個名字猜過了，換一個試試。");return;}
  state.tried.push(answer);
@@ -120,27 +154,29 @@ function startRound(){
  if(empty){location.reload();return;}
  if(!bank.length)return;
  if(state&&(state.pos>0||state.tried.length||state.finished)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
- state=fresh(el.roundSize.value==="all"?0:Number(el.roundSize.value));save();loadQuestion();
+ state=fresh(el.roundSize.value==="all"?0:Number(el.roundSize.value),el.quizMode.value);save();showMode();loadQuestion();
 }
 el.restart.addEventListener("click",startRound);
 el.startRound.addEventListener("click",startRound);
+el.quizMode.addEventListener("change",updateRoundOption);
 async function init(){
  try{
-  const response=await fetch("./questions.json",{cache:"no-store"});
-  if(!response.ok)throw Error("Question bank unavailable");
-  const payload=await response.json();
-  bank=(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
-  if(!bank.length)throw Error("No prepared photos");
-  byId=new Map(bank.map(q=>[q.id,q]));state=restore();save();
+  const responses=await Promise.all(["./questions.json","./actors.json"].map(url=>fetch(url,{cache:"no-store"})));
+  if(responses.some(r=>!r.ok))throw Error("Question bank unavailable");
+  const payloads=await Promise.all(responses.map(r=>r.json()));
+  const valid=payload=>(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
+  singerBank=valid(payloads[0]);actorBank=valid(payloads[1]);
+  if(!singerBank.length||!actorBank.length)throw Error("No prepared photos");
+  setPool("singer");state=restore();save();
+  el.quizMode.value=state.mode;el.quizMode.disabled=false;
   el.roundSize.value=state.roundSize===0?"all":String(state.roundSize);
-  el.roundSize.querySelector('option[value="all"]').textContent="全部（"+bank.length+" 關）";
-  el.roundSize.disabled=false;el.startRound.disabled=false;
-  el.poolInfo.textContent=bank.length+" 位歌手 · 隨機不重複 · 自動記錄進度";
+  updateRoundOption();el.roundSize.disabled=false;el.startRound.disabled=false;
+  showMode();
   loadQuestion();
  }catch{
-  empty=true;el.photoMessage.textContent="歌手照片正在準備中";
+  empty=true;el.photoMessage.textContent="題庫暫時無法載入";
   message("題庫準備好後，點「重新載入」即可開始。");
-  el.restart.textContent="重新載入";el.poolInfo.textContent="猜歌手・五官挑戰";
+  el.restart.textContent="重新載入";el.poolInfo.textContent="猜明星・五官挑戰";
  }
 }
 init();

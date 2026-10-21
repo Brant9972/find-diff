@@ -18,6 +18,19 @@ if(fs.existsSync(path.join(__dirname,"questions.json"))){
   assert(q.attribution.source&&q.attribution.license,q.id+" missing attribution");
  }
 }
+const actorBank=JSON.parse(fs.readFileSync(path.join(__dirname,"actors.json")));
+const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
+assert.equal(actorBank.playable,actorBank.questions.length);
+assert(actorBank.playable>=20,"Actor mode needs at least 20 playable portraits");
+assert.equal(new Set(actorBank.questions.map(q=>q.id)).size,actorBank.playable);
+assert.equal(new Set(actorBank.questions.map(q=>q.name)).size,actorBank.playable);
+for(const q of actorBank.questions){
+ assert(actorRoster.some(a=>a.id===q.id&&a.name===q.name));
+ assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing actor portrait");
+ assert(q.attribution.source&&q.attribution.license);
+}
+realQuestions=[...new Map([...realQuestions,...actorBank.questions].map(q=>[q.id,q])).values()];
+const actorFixtures={questions:Array.from({length:25},(_,i)=>({id:"qa"+(101+i),name:"演員"+(i+1),aliases:["Actor "+(i+1)],photo:"photos/qa"+(101+i)+".jpg"}))};
 const fixtures={questions:[
  {id:"qa1",name:"測試甲",aliases:["Test Singer","测试甲"],photo:"photos/qa1.jpg"},
  {id:"qa2",name:"測試乙",aliases:["Test Two"],photo:"photos/qa2.jpg"}
@@ -58,6 +71,7 @@ const server=http.createServer((req,res)=>{
   }
   await page.setRequestInterception(true);
   page.on("request",req=>{
+   if(req.url().endsWith("/singer/actors.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(actorFixtures)});
    if(req.url().endsWith("/singer/questions.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(fixtures)});
    if(/\/photos\/qa\d+\.jpg$/.test(req.url()))return req.respond({status:200,contentType:"image/svg+xml",body:svg});
    req.continue();
@@ -144,9 +158,66 @@ const server=http.createServer((req,res)=>{
   assert.equal((await snapshot()).deck.length,31,"All-question mode was removed");
   assert.equal((await snapshot()).roundSize,0);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Round controls overflow mobile width");
+  // Categories are a draft until explicitly started. Old saves stay in singer mode.
+  assert.equal((await snapshot()).mode,"singer");
+  const singerDeck=(await snapshot()).deck;
+  actorFixtures.questions.push({...fixtures.questions[0]},{...fixtures.questions[1]});
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.select("#quizMode","actor");
+  assert.deepEqual((await snapshot()).deck,singerDeck,"Draft category reset the active round");
+  assert.equal((await snapshot()).mode,"singer");
+  await page.select("#roundSize","20");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  let saved=await snapshot();
+  const actorIds=new Set(actorFixtures.questions.map(q=>q.id));
+  assert.equal(saved.mode,"actor");
+  assert.equal(saved.deck.length,20);
+  assert(saved.deck.every(id=>actorIds.has(id)),"Actor mode drew a singer-only question");
+  assert.equal(await page.$eval(".edition",e=>e.textContent),"華語演員篇");
+  await guess("錯誤提示");
+  const actorCurrent=saved.deck[0];
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  assert.equal(saved.mode,"actor");
+  assert.equal(saved.stage,1);
+  assert.equal(saved.deck[0],actorCurrent);
+  assert.equal(await page.$eval("#quizMode",e=>e.value),"actor");
+  for(let i=0;i<20;i++){
+   const current=await snapshot(),q=actorFixtures.questions.find(q=>q.id===current.deck[current.pos]);
+   await guess(q.name);await page.click("#next");
+   if(i<19)await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  }
+  assert.equal((await snapshot()).pos,20);
+  assert.equal((await snapshot()).correct,20);
+  assert.equal((await snapshot()).score,1980);
+  await page.select("#quizMode","mixed");await page.select("#roundSize","10");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  assert.equal(saved.mode,"mixed");
+  assert.equal(saved.deck.length,10);
+  assert.equal(new Set(saved.deck).size,10,"Shared singer/actors repeated");
+  assert(saved.deck.some(id=>id.startsWith("qa1")&&Number(id.slice(2))>=101),"Mixed round has no actor-only questions");
+  assert(saved.deck.some(id=>!actorIds.has(id)),"Mixed round has no singer-only questions");
+  await guess("混合錯答");
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).mode,"mixed");
+  assert.equal((await snapshot()).stage,1);
+  await page.select("#roundSize","all");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  assert.equal(saved.deck.length,56,"Mixed bank did not deduplicate shared people");
+  assert.equal(new Set(saved.deck).size,56);
+  await page.select("#quizMode","singer");await page.select("#roundSize","10");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert((await snapshot()).deck.every(id=>fixtures.questions.some(q=>q.id===id)),"Singer mode drew an actor-only question");
+  await page.select("#quizMode","actor");await page.select("#roundSize","10");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  await page.setViewport({width:320,height:740,deviceScaleFactor:2,isMobile:true,hasTouch:true});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Category controls overflow narrow mobile width");
+  await page.setViewport({width:390,height:844,deviceScaleFactor:2,isMobile:true,hasTouch:true});
   assert.equal(errors.length,0,errors.join("\n"));
   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});
   await page.screenshot({path:path.join(root,"qa-output/singer-mobile.png"),fullPage:true});
-  console.log("PASS: real photos, aliases, clue/score persistence, 10/20-question endings, bank growth, all mode and mobile layout.");
+  console.log("PASS: singer/actor real photos, legacy saves, category filtering, shared-person deduplication, mixed rounds, 10/20-question endings, persistence and mobile layout.");
  }finally{await browser.close();}
 })().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());

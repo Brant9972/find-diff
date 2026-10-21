@@ -14,6 +14,13 @@ import portrait_tools as tools
 cache_path=ROOT/"batches"/(batch_id+"-cache.json")
 cache_path.parent.mkdir(exist_ok=True)
 cache=json.loads(cache_path.read_text()) if cache_path.exists() else {"ready":{},"failed":{}}
+# Source lookup now recognizes actress biographies and corrected Chinese identities.
+# Retry only affected exclusions once; preserve successful portrait checkpoints.
+if cache.get("sourceLookupVersion")!=2:
+    for person in manifest["entries"]:
+        if person["mode"]=="actor" or person["name"] in {"曾靜玟","林綾","李度","李至正","陳宇風","李麗芬"}:
+            cache["failed"].pop(person["id"],None)
+    cache["sourceLookupVersion"]=2
 original_get=tools.get
 last_request=0.0
 review_path=ROOT/"photo-review.json"
@@ -38,10 +45,10 @@ def identity_matches(person,intro):
     norm=lambda value:re.sub(r"[\W_]+","",tools.CC.convert(value).casefold())
     text=norm(intro[:200])
     name=norm(person["name"])
-    if len(name)>=2 and name in text:return True
     chinese=[norm(a) for a in [person["name"],*person["aliases"]] if re.search(r"[\u3400-\u9fff]",a)]
     if chinese:
         return any(len(token)>=2 and token in text for token in chinese)
+    if len(name)>=2 and name in text:return True
     tokens=[norm(a) for a in person["aliases"]]
     return any(len(token)>=3 and token in text for token in tokens)
 

@@ -140,6 +140,19 @@ for mode,entries in selected.items():
 singer_roster["target"]=manifest["longTermTargetPerMode"]["singer"]
 singer_roster["status"]="incremental_50_question_batches"
 singer_roster["notes"]="每批只加入完成照片、別名與作品提示的新題；長期目標1000位，不將候選名單當成可玩題數。"
+unique_people={q["id"] for p in banks.values() for q in p["questions"]}
+assert len(unique_people)==manifest["targetMixedUnique"],"Mixed unique target not met"
+eligibility_payload=json.loads((ROOT/"eligibility-review.json").read_text())
+for mode,items in selected.items():
+    for person,q in items:
+        approval=eligibility_payload["entries"][q["id"]]
+        approval.pop("candidateOnly",None)
+        approval["profileSource"]=q["attribution"]["article"]
+        approval["profileExcerpt"]=q["bioExcerpt"]
+        approval["sources"]=list(dict.fromkeys([*approval["sources"],q["attribution"]["article"]]))
+eligibility_payload["currentPlayable"]={"singer":banks["singer"]["playable"],"actor":banks["actor"]["playable"],"mixedUnique":len(unique_people)}
+eligibility_payload["latestBatch"]={"batchId":batch_id,"added":sum(len(v) for v in selected.values())}
+write(ROOT/"eligibility-review.json",eligibility_payload)
 write(ROOT/"questions.json",banks["singer"]);write(ROOT/"actors.json",banks["actor"])
 write(ROOT/"roster.json",singer_roster);write(ROOT/"actors-roster.json",actor_roster)
 write(ROOT/"hints.json",hints);write(ROOT/"hint-candidates.json",hint_candidates)
@@ -147,10 +160,12 @@ entries=[{"id":q["id"],"name":q["name"],"mode":mode,"work":person["work"]}
     for mode,items in selected.items() for person,q in items]
 write(ROOT/"batches"/(batch_id+".json"),{"batchId":batch_id,"added":entries,"count":len(entries),
     "perMode":{mode:len(items) for mode,items in selected.items()},"totals":{mode:p["playable"] for mode,p in banks.items()}})
-write(ROOT/"expansion-plan.json",{"batchSize":50,"longTermTargets":manifest["longTermTargetPerMode"],
+plan=json.loads((ROOT/"expansion-plan.json").read_text())
+plan.update({"batchSize":50,"longTermTargets":manifest["longTermTargetPerMode"],
     "latestBatch":batch_id,"latestBatchSize":len(entries),"currentPlayable":{mode:p["playable"] for mode,p in banks.items()},
     "mixedUnique":len({q["id"] for p in banks.values() for q in p["questions"]}),
-    "note":"每次經使用者要求才新增一批；沒有定時自動擴充。"})
+    "qualityFirst":True,"note":"每次經使用者要求才新增一批；台灣發展資格、照片及作品提示優先，沒有定時自動擴充。"})
+write(ROOT/"expansion-plan.json",plan)
 review_counts={}
 for e in hints["entries"].values():
     for hint in e.values():review_counts[hint["review"]]=review_counts.get(hint["review"],0)+1

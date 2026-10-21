@@ -14,7 +14,7 @@ concurrency:
 jobs:
   expand:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,7 +42,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add singer/photos singer/batches
           if [ "$JOB_RESULT" = "success" ]; then
-            git add singer/questions.json singer/actors.json singer/roster.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/hint-report.json singer/expansion-plan.json
+            git add singer/eligibility-review.json singer/questions.json singer/actors.json singer/roster.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/hint-report.json singer/expansion-plan.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m "Checkpoint quiz batch portraits and verified expansion"

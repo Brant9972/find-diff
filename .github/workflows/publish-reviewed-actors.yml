@@ -1,0 +1,54 @@
+name: Deploy reviewed 11 actor replacements
+on:
+  push:
+    branches: [actor-refresh-20261021]
+    paths: ["singer/tools/publish_reviewed_actor_batch.py", ".github/workflows/publish-reviewed-actors.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Load reviewed photos and publishing script
+        run: |
+          git fetch origin actor-refresh-20261021
+          git show origin/actor-refresh-20261021:singer/tools/publish_reviewed_actor_batch.py > /tmp/publish_reviewed_actor_batch.py
+          mkdir -p singer/actor-roster-staging/photos
+          git show origin/actor-refresh-20261021:singer/actor-roster-staging/report.json > singer/actor-roster-staging/report.json
+          for id in a1317 a1324 a1327 a1331 a1339 a1341 a1343 a1344 a1346 a1347 a1352; do
+            git show "origin/actor-refresh-20261021:singer/actor-roster-staging/photos/$id.jpg" > "singer/actor-roster-staging/photos/$id.jpg"
+          done
+          cp /tmp/publish_reviewed_actor_batch.py singer/tools/publish_reviewed_actor_batch.py
+      - name: Apply replacement atomically and validate
+        run: |
+          python singer/tools/publish_reviewed_actor_batch.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("singer/actors.json").read_text())
+          s=json.loads(Path("singer/questions.json").read_text())
+          h=json.loads(Path("singer/hints.json").read_text())["entries"]
+          q=a["questions"]+s["questions"]
+          assert len(set(x["id"] for x in q))==600
+          assert len(a["questions"])==329
+          assert all(x["id"] in h for x in q)
+          assert all(Path("singer",x["photo"]).is_file() for x in q)
+          print("600 unique and all photo/hint paths exist")
+          PY
+      - name: Commit validated replacement to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/actors.json singer/hints.json singer/eligibility-review.json singer/roster-review-2026-10-21.json singer/photos/a13*.jpg
+          if git diff --cached --quiet; then
+            echo "No changed files"
+          else
+            git commit -m "Publish 11 reviewed Taiwanese and Hong Kong actor replacements (retain 600)"
+            git push origin HEAD:main
+          fi

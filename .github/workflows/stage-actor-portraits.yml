@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install portrait processing tools
-        run: pip install --disable-pip-version-check requests Pillow numpy opencv-python-headless
+        run: pip install --disable-pip-version-check requests Pillow 'numpy<2' 'opencv-python-headless==4.10.0.84'
       - name: Download public-license portrait candidates
         run: python singer/tools/fetch_actor_media.py
       - uses: actions/upload-artifact@v4

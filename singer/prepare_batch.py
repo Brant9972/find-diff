@@ -1,4 +1,4 @@
-"""Add exactly 25 new singers and 25 new actors; keep existing questions intact."""
+"""Add the requested batch quotas while keeping existing questions intact."""
 import datetime,json,time
 from pathlib import Path
 from urllib.parse import unquote
@@ -107,7 +107,7 @@ entries=[{"id":q["id"],"name":q["name"],"mode":mode,"work":person["work"]}
 write(ROOT/"batches"/(batch_id+".json"),{"batchId":batch_id,"added":entries,"count":len(entries),
     "perMode":{mode:len(items) for mode,items in selected.items()},"totals":{mode:p["playable"] for mode,p in banks.items()}})
 write(ROOT/"expansion-plan.json",{"batchSize":50,"longTermTargets":manifest["longTermTargetPerMode"],
-    "latestBatch":batch_id,"currentPlayable":{mode:p["playable"] for mode,p in banks.items()},
+    "latestBatch":batch_id,"latestBatchSize":len(entries),"currentPlayable":{mode:p["playable"] for mode,p in banks.items()},
     "mixedUnique":len({q["id"] for p in banks.values() for q in p["questions"]}),
     "note":"每次經使用者要求才新增一批；沒有定時自動擴充。"})
 review_counts={}

@@ -39,6 +39,9 @@ def identity_matches(person,intro):
     text=norm(intro[:200])
     name=norm(person["name"])
     if len(name)>=2 and name in text:return True
+    chinese=[norm(a) for a in [person["name"],*person["aliases"]] if re.search(r"[\u3400-\u9fff]",a)]
+    if chinese:
+        return any(len(token)>=2 and token in text for token in chinese)
     tokens=[norm(a) for a in person["aliases"]]
     return any(len(token)>=3 and token in text for token in tokens)
 

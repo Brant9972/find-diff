@@ -89,7 +89,7 @@ def portrait_candidates(singer):
             if page.get("missing") or "disambiguation" in page.get("pageprops", {}):
                 continue
             intro = page.get("extract", "")
-            if not re.search(r"歌手|歌唱|音樂|音乐|藝人|艺人|演員|演员|唱作|singer|musician|rapper|songwriter|actor", intro, re.I):
+            if not re.search(r"歌手|歌唱|音樂|音乐|藝人|艺人|演員|演员|唱作|singer|musician|rapper|songwriter|actor|actress", intro, re.I):
                 continue
             qid = page.get("pageprops", {}).get("wikibase_item")
             if qid:

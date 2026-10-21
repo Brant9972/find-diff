@@ -2,11 +2,15 @@
 import datetime,json,time,re
 from pathlib import Path
 from urllib.parse import unquote
-import portrait_tools as tools
 
 ROOT=Path(__file__).resolve().parent
 manifest=json.loads((ROOT/"next-batch.json").read_text())
 batch_id=manifest["batchId"]
+if manifest.get("status")=="closed_after_eligibility_review":
+    print("Batch closed after Taiwan eligibility review; no questions rebuilt.",flush=True)
+    raise SystemExit(0)
+eligibility=json.loads((ROOT/"eligibility-review.json").read_text())["entries"]
+import portrait_tools as tools
 cache_path=ROOT/"batches"/(batch_id+"-cache.json")
 cache_path.parent.mkdir(exist_ok=True)
 cache=json.loads(cache_path.read_text()) if cache_path.exists() else {"ready":{},"failed":{}}
@@ -92,9 +96,14 @@ original={mode:list(payload["questions"]) for mode,payload in banks.items()}
 all_existing={q["name"]:q["id"] for payload in banks.values() for q in payload["questions"]}
 selected={mode:[] for mode in banks}
 for mode in banks:
+    if manifest["targetPerMode"][mode]==0:continue
     for person in manifest["entries"]:
         if person["mode"]!=mode:continue
         assert person["name"] not in all_existing or all_existing[person["name"]]==person["id"],"Existing person reused as a new question"
+        approval=eligibility.get(person["id"],{})
+        if not (approval.get("status")=="approved" and approval.get("name")==person["name"] and approval.get("sources") and approval.get("reason")):
+            print(mode,person["name"],"skipped: Taiwan eligibility needs approval",flush=True)
+            continue
         question=prepare(person)
         print(mode,person["name"],"ready" if question else "skipped",flush=True)
         if question:selected[mode].append((person,question))

@@ -34,6 +34,11 @@ for(const q of actorBank.questions){
  assert(q.attribution.source&&q.attribution.license);
 }
 realQuestions=[...new Map([...realQuestions,...actorBank.questions].map(q=>[q.id,q])).values()];
+const eligibility=JSON.parse(fs.readFileSync(path.join(__dirname,"eligibility-review.json"))).entries;
+for(const q of realQuestions){
+ const r=eligibility[q.id];
+ assert(r&&r.status==="approved"&&r.name===q.name&&r.reason&&r.sources.length,"Unapproved Taiwan eligibility: "+q.id);
+}
 const rejectedPortraits=JSON.parse(fs.readFileSync(path.join(__dirname,"photo-review.json"))).rejected||[];
 const sourceKey=url=>decodeURIComponent(url.split("/wiki/").pop()).replaceAll("_"," ").toLowerCase();
 const rejectedKeys=new Set(rejectedPortraits.map(e=>sourceKey(e.source)));
@@ -104,6 +109,13 @@ const server=http.createServer((req,res)=>{
   });
   await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   const snapshot=()=>page.evaluate(()=>JSON.parse(localStorage.getItem("singer-face-quiz-v1")));
+  await page.evaluate(()=>localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,mode:"singer",roundSize:10,deck:["removed-eligibility-id","qa1","qa2"],pos:0,stage:4,hintUsed:true,tried:["舊猜測"],finished:true,won:false,score:80,correct:1,completed:1})));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  const migrated=await snapshot();
+  assert(!migrated.deck.includes("removed-eligibility-id"));assert.equal(migrated.deck[0],"qa1");
+  assert.equal(migrated.stage,0);assert.equal(migrated.hintUsed,false);assert.equal(migrated.score,80);
+  await page.evaluate(()=>localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,deck:["qa1","qa2"],pos:0,stage:0,tried:[],finished:false,won:false,score:0,correct:0,completed:0})));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   async function guess(value){
    await page.$eval("#answer",(e,value)=>{e.value=value;},value);
    await page.$eval("#guessForm",e=>e.requestSubmit());

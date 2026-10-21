@@ -96,7 +96,10 @@ original={mode:list(payload["questions"]) for mode,payload in banks.items()}
 all_existing={q["name"]:q["id"] for payload in banks.values() for q in payload["questions"]}
 selected={mode:[] for mode in banks}
 for mode in banks:
-    if manifest["targetPerMode"][mode]==0:continue
+    quota=manifest["targetPerMode"][mode]
+    if manifest.get("flexibleDistribution") and mode=="actor":
+        quota=manifest["targetNewUnique"]-len(selected["singer"])
+    if quota==0:continue
     for person in manifest["entries"]:
         if person["mode"]!=mode:continue
         assert person["name"] not in all_existing or all_existing[person["name"]]==person["id"],"Existing person reused as a new question"
@@ -107,8 +110,9 @@ for mode in banks:
         question=prepare(person)
         print(mode,person["name"],"ready" if question else "skipped",flush=True)
         if question:selected[mode].append((person,question))
-        if len(selected[mode])==manifest["targetPerMode"][mode]:break
-    assert len(selected[mode])==manifest["targetPerMode"][mode],"Not enough usable "+mode+" portraits; bank remains unchanged"
+        if len(selected[mode])==quota:break
+    if not manifest.get("flexibleDistribution") or mode=="actor":
+        assert len(selected[mode])==quota,"Not enough usable "+mode+" portraits; bank remains unchanged"
 
 singer_roster=json.loads((ROOT/"roster.json").read_text())
 actor_roster=json.loads((ROOT/"actors-roster.json").read_text())

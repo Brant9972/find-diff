@@ -1,11 +1,5 @@
 name: Singer quiz portraits and mobile QA
 on:
-  push:
-    paths:
-      - 'singer/roster.json'
-      - 'singer/photo-review.json'
-      - 'singer/prepare.py'
-      - '.github/workflows/singer-quiz.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -36,7 +30,7 @@ jobs:
       - name: Install browser test library
         run: npm install --no-save --package-lock=false puppeteer-core@24
       - name: Download reusable portraits and align eyes
-        run: python -u singer/prepare.py
+        run: python -u singer/prepare_batch.py
       - name: Verify newly generated portrait files and real image loading
         run: node singer/qa.cjs
       - name: Save completed photo checkpoints back to GitHub
@@ -45,7 +39,7 @@ jobs:
           if [ -f singer/questions.json ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add singer/photos singer/questions.json singer/photo-report.json singer/PROGRESS.md
+            git add singer/photos singer/questions.json singer/actors.json singer/roster.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/hint-report.json singer/expansion-plan.json singer/batches
             if ! git diff --cached --quiet; then
               git commit -m "Checkpoint singer portraits and missing-photo report"
               git pull --rebase origin main

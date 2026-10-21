@@ -1,0 +1,59 @@
+name: Add 50 quiz questions
+on:
+  push:
+    paths:
+      - 'singer/next-batch.json'
+      - 'singer/prepare_batch.py'
+      - '.github/workflows/quiz-batch.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quiz-batch
+  cancel-in-progress: false
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install requests Pillow numpy==2.2.6 opencv-python-headless==4.12.0.88 opencc-python-reimplemented
+      - run: npm install --no-save --package-lock=false puppeteer-core@24
+      - name: Prepare exactly 50 playable questions
+        run: python -u singer/prepare_batch.py
+      - name: Verify hints and browser gameplay
+        run: |
+          python singer/prepare_hints.py
+          node singer/qa.cjs
+      - name: Save tested banks or reusable portrait cache
+        if: always()
+        env:
+          JOB_RESULT: ${{ job.status }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/photos singer/batches
+          if [ "$JOB_RESULT" = "success" ]; then
+            git add singer/questions.json singer/actors.json singer/roster.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/hint-report.json singer/expansion-plan.json
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Checkpoint quiz batch portraits and verified expansion"
+            git restore singer
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quiz-batch-review
+          path: |
+            singer/batches
+            qa-output

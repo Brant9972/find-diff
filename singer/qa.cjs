@@ -11,7 +11,7 @@ if(fs.existsSync(path.join(__dirname,"questions.json"))){
  const real=JSON.parse(fs.readFileSync(path.join(__dirname,"questions.json")));
  realQuestions=real.questions;
  assert.equal(real.playable,real.questions.length);
- assert(real.playable<=300);
+ assert(real.playable<=1000);
  for(const q of real.questions){
   assert(roster.singers.some(s=>s.id===q.id&&s.name===q.name));
   assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing portrait");
@@ -23,6 +23,7 @@ for(const q of realQuestions)assert(realHints.entries[q.id]?.singer?.title,"Miss
 const actorBank=JSON.parse(fs.readFileSync(path.join(__dirname,"actors.json")));
 const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
 assert.equal(actorBank.playable,actorBank.questions.length);
+assert(actorBank.playable<=1000);
 assert(actorBank.playable>=20,"Actor mode needs at least 20 playable portraits");
 assert.equal(new Set(actorBank.questions.map(q=>q.id)).size,actorBank.playable);
 assert.equal(new Set(actorBank.questions.map(q=>q.name)).size,actorBank.playable);

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-20",
-  "target": 300,
-  "status": "expanded_candidate_pool_for_300_playable_questions",
-  "notes": "擴大知名歌手候選池，正式題庫以通過照片檢查的300位為目標。保留缺圖歌手以便後續補入。台灣發片來源與照片人工複核狀態分開紀錄。",
+  "target": 1000,
+  "status": "incremental_50_question_batches",
+  "notes": "每批只加入完成照片、別名與作品提示的新題；長期目標1000位，不將候選名單當成可玩題數。",
   "singers": [
     {
       "id": "s001",
@@ -4849,6 +4849,248 @@
       "eligibility": "pending_source_check",
       "photoStatus": "pending",
       "photo": null
+    },
+    {
+      "id": "s500",
+      "name": "鹿晗",
+      "aliases": [
+        "鹿晗",
+        "Lu Han"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s501",
+      "name": "黃子韜",
+      "aliases": [
+        "黃子韜",
+        "Huang Zitao",
+        "黄子韬"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s502",
+      "name": "王源",
+      "aliases": [
+        "王源",
+        "Roy Wang"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s503",
+      "name": "王俊凱",
+      "aliases": [
+        "王俊凱",
+        "Karry Wang",
+        "王俊凯"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s504",
+      "name": "易烊千璽",
+      "aliases": [
+        "易烊千璽",
+        "Jackson Yee",
+        "易烊千玺"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s505",
+      "name": "蔡徐坤",
+      "aliases": [
+        "蔡徐坤",
+        "Cai Xukun"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s506",
+      "name": "劉雨昕",
+      "aliases": [
+        "劉雨昕",
+        "Liu Yuxin",
+        "刘雨昕"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s507",
+      "name": "孟美岐",
+      "aliases": [
+        "孟美岐",
+        "Meng Meiqi"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s508",
+      "name": "吳宣儀",
+      "aliases": [
+        "吳宣儀",
+        "Wu Xuanyi",
+        "吴宣仪"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s509",
+      "name": "單依純",
+      "aliases": [
+        "單依純",
+        "Shan Yichun",
+        "单依纯"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s511",
+      "name": "劉柏辛",
+      "aliases": [
+        "劉柏辛",
+        "Lexie Liu",
+        "刘柏辛"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s515",
+      "name": "段奧娟",
+      "aliases": [
+        "段奧娟",
+        "Duan Aojuan",
+        "段奥娟"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s517",
+      "name": "王琳凱",
+      "aliases": [
+        "王琳凱",
+        "Lil Ghost",
+        "王琳凯"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s519",
+      "name": "朱正廷",
+      "aliases": [
+        "朱正廷",
+        "Zhu Zhengting"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s520",
+      "name": "尤長靖",
+      "aliases": [
+        "尤長靖",
+        "You Zhangjing",
+        "尤长靖"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s521",
+      "name": "黃明昊",
+      "aliases": [
+        "黃明昊",
+        "Justin Huang",
+        "黄明昊"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s523",
+      "name": "丁程鑫",
+      "aliases": [
+        "丁程鑫",
+        "Ding Chengxin"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s528",
+      "name": "龔琳娜",
+      "aliases": [
+        "龔琳娜",
+        "Gong Linna",
+        "龚琳娜"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s529",
+      "name": "薩頂頂",
+      "aliases": [
+        "薩頂頂",
+        "Sa Dingding",
+        "萨顶顶"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s535",
+      "name": "周湯豪",
+      "aliases": [
+        "周湯豪",
+        "Nick Chou",
+        "周汤豪"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s536",
+      "name": "盧學叡",
+      "aliases": [
+        "盧學叡",
+        "Afalean Lu",
+        "卢学叡"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s537",
+      "name": "潘裕文",
+      "aliases": [
+        "潘裕文",
+        "Peter Pan (singer)"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s539",
+      "name": "李友廷",
+      "aliases": [
+        "李友廷",
+        "Li Youting"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s540",
+      "name": "陳彥允",
+      "aliases": [
+        "陳彥允",
+        "Ian Chen (singer)",
+        "陈彦允"
+      ],
+      "eligibility": "curated_singer"
+    },
+    {
+      "id": "s542",
+      "name": "吳汶芳",
+      "aliases": [
+        "吳汶芳",
+        "Fang Wu",
+        "吴汶芳"
+      ],
+      "eligibility": "curated_singer"
     }
   ]
 }

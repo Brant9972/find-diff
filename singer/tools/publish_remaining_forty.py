@@ -19,6 +19,13 @@ for pid,optn in selection.items():
  p=prepared[pid];o=p["options"][optn-1];old=pairs[pid]
  assert any(x["id"]==old["id"] for x in actors["questions"]),old
  assert p["name"]==next(x["name"] for x in original if x["id"]==pid)
+ assert set(o["reveal"])=={"eyes","nose","mouth","chin","full"}
+ ends=[]
+ for stage in ["eyes","nose","mouth","chin"]:
+  x0,y0,x1,y1=o["reveal"][stage]
+  assert 0<=x0<x1<=1 and 0<=y0<y1<=1
+  ends.append(y1)
+ assert ends==sorted(set(ends)) and o["reveal"]["full"]==[0,0,1,1]
  photo="photos/"+pid+".jpg";shutil.copyfile(B/"actor-replacements-pending-40"/o["file"],B/photo)
  q={"id":pid,"name":p["name"],"aliases":[p["name"]]+{"a1308":["王子"],"a1309":["毛弟"],"a1310":["王紹偉"],"a1314":["Andy Chen"]}.get(pid,[]),"photo":photo,"reveal":o["reveal"],"attribution":o["attribution"],"humanReviewed":True,"photoStatus":"identity_and_landmarks_visually_reviewed_20261022","eligibility":"approved","processorVersion":2,"bioExcerpt":o["bioExcerpt"],"batchId":"actor_refresh_remaining40_20261022"}
  source=o["attribution"]["article"]

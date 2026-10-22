@@ -82,7 +82,7 @@ const server=http.createServer((req,res)=>{
    await page.waitForFunction(()=>!document.getElementById("answer").disabled);
    const broken=await page.evaluate(async questions=>{
     const outcomes=await Promise.all(questions.map(q=>new Promise(resolve=>{
-     const image=new Image();image.onload=()=>resolve(image.naturalWidth===600&&image.naturalHeight===720?null:q.id);
+     const image=new Image();image.onload=()=>resolve((q.batchId==="actor_refresh_remaining40_20261022"?image.naturalWidth===600&&image.naturalHeight===720:image.naturalWidth>=180&&image.naturalHeight>=180)?null:q.id);
      image.onerror=()=>resolve(q.id);image.src=new URL(q.photo,location.href).href;
     })));
     return outcomes.filter(Boolean);

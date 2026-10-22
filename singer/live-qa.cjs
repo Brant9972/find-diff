@@ -29,10 +29,11 @@ const puppeteer=require('puppeteer-core');
    await page.waitForFunction(()=>!document.getElementById('answer').disabled);
    const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('singer-face-quiz-v1')));
    assert.equal(state.mode,mode);assert.equal(state.deck.length,count);assert.equal(new Set(state.deck).size,count);
-   assert(await page.$eval('#poolInfo',e=>e.textContent.includes(String(count))));
+   assert(await page.$eval('#poolInfo',(e,n)=>e.textContent.includes(String(n)),count));
   }
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   fs.mkdirSync('qa-output',{recursive:true});await page.screenshot({path:'qa-output/live-1000-mobile.png',fullPage:true});
   console.log('PASS LIVE: 1000 deployed portraits, sourced hints, all five selectors, correct counts, unique mixed deck, mobile width');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});
+

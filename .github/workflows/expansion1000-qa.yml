@@ -6,6 +6,7 @@ on:
       - singer/expansion-1000-release.json
       - singer/game.js
       - singer/qa.cjs
+      - singer/live-qa.cjs
       - .github/workflows/expansion1000-qa.yml
 permissions:
   contents: read

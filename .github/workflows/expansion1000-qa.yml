@@ -35,10 +35,11 @@ jobs:
           print('PASS: 1000 distinct people, 411 reviewed additions')
           PY
       - run: node singer/qa.cjs --preserve-existing-portraits
+      - name: Verify the deployed public game
+        if: github.ref == 'refs/heads/main'
+        run: node singer/live-qa.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: celebrity-release-qa
           path: qa-output
-
-# Recheck active and archived roster membership separately.

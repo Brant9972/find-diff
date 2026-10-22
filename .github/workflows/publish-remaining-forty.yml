@@ -2,7 +2,7 @@ name: Publish reviewed remaining actor replacements
 on:
   push:
     branches: [main]
-    paths: [singer/actor-replacements-40-approved.json]
+    paths: [singer/actor-replacements-40-approved.json, singer/tools/publish_remaining_forty.py]
 permissions:
   contents: write
 jobs:

@@ -44,6 +44,7 @@ assert len(unique)==600 and len(actors["questions"])==329 and len(singers["quest
 assert len({q["name"] for q in unique.values()})==600
 for q in unique.values():assert (B/q["photo"]).exists() and q["id"] in hints["entries"]
 actors["updatedAt"]="2026-10-22";actors["playable"]=329
+roster["actors"]=[next((r for r in roster["actors"] if r["id"]==q["id"]),{"id":q["id"],"name":q["name"],"aliases":q["aliases"]}) for q in actors["questions"]]
 remaining=len(plan["remainingPlannedReplacements"])
 plan["phase"]="FULLY_DEPLOYED" if not remaining else "PARTIALLY_DEPLOYED"
 plan["deploymentStatus"]={"replaced":55-remaining,"pending":remaining,"uniqueTotal":600,"singerTotal":339,"actorTotal":329}

@@ -20,13 +20,16 @@ def get_json(params):
 def image_candidates(name):
     q = get_json({"action":"query","generator":"search","gsrsearch":'' + name + '',
                   "gsrnamespace":6,"gsrlimit":30,"prop":"imageinfo",
-                  "iiprop":"url|size|mime|extmetadata","format":"json","formatversion":2})
+                  "iiprop":"url|size|mime|extmetadata","iiurlwidth":1200,"format":"json","formatversion":2})
     for page in q.get("query",{}).get("pages",[]):
         for info in page.get("imageinfo",[]):
             if info.get("width",0) < 520 or info.get("height",0) < 520:
                 continue
             if not info.get("mime","image/").startswith("image/"): continue
-            yield {"commonsPage":info.get("descriptionurl"),"downloadUrl":info.get("url"),
+            license_short = info.get("extmetadata", {}).get("LicenseShortName", {}).get("value", "").strip().lower()
+            if not license_short.startswith(("cc by", "cc0", "public domain", "pd-")):
+                continue
+            yield {"commonsPage":info.get("descriptionurl"),"downloadUrl":info.get("thumburl") or info.get("url"),
                    "width":info.get("width"),"height":info.get("height"),
                    "metadata":{k:v.get("value","") for k,v in info.get("extmetadata",{}).items()}}
 def face_bounds(im):
@@ -69,7 +72,7 @@ def main():
         try:
             for ix,c in enumerate(image_candidates(t["name"])):
                 item["foundSourceResults"] += 1
-                if ix>=12: break
+                if ix>=6: break
                 url=c["downloadUrl"]
                 req=urllib.request.Request(url,headers=HEADERS)
                 with urllib.request.urlopen(req,timeout=35) as resp:

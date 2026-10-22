@@ -44,3 +44,5 @@ for start in range(0,len(rows),20):
    yy=y+35+int(b[3]*240);draw.line((x+16,yy,x+184,yy),fill=(190,230,160))
  sheet.save(OUT/f"review-{start//20+1:02}.jpg",quality=94)
 print("READY",sum(bool(p["options"]) for p in results),"of",len(TARGETS),flush=True)
+
+# Resume only the three unresolved portrait sources; keep successful crops.

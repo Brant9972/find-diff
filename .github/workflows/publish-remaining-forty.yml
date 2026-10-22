@@ -1,0 +1,37 @@
+name: Publish reviewed remaining actor replacements
+on:
+  push:
+    branches: [main]
+    paths: [singer/actor-replacements-40-approved.json]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false puppeteer-core@24
+      - run: python singer/tools/publish_remaining_forty.py
+      - run: python singer/prepare_hints.py
+      - run: node singer/qa.cjs
+      - name: Publish tested portraits and banks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/photos singer/actors.json singer/hints.json singer/hint-candidates.json singer/actors-roster.json singer/eligibility-review.json singer/roster-review-2026-10-21.json singer/actor-replacements-40-release.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish reviewed portraits and hints for remaining actor replacements"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: remaining-actor-replacement-qa
+          path: qa-output

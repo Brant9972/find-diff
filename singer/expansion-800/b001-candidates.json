@@ -1,0 +1,2959 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22",
+  "goalUnique": 800,
+  "baseUnique": 600,
+  "additionalRequired": 200,
+  "phase": "STAGING_NOT_LIVE",
+  "origin": "Manual editorial initial shortlist, automatically cross-checked against 600 GitHub playable IDs plus 40 pending 55-actor substitutions.",
+  "notes": [
+    "Candidates have not yet passed individual biography, license, title, hint or visual identification checks.",
+    "Never assign live IDs or publish game files before portrait and sources are verified.",
+    "Names appearing in two roles are ONE person with multiple category memberships.",
+    "All additions must be strictly disjoint from pending actor replacement manifest.",
+    "Show variety-only characters in a new game mode once the developer implements it; do not introduce unsupported modes into live JSON."
+  ],
+  "counts": {
+    "uniqueInitialCandidates": 220,
+    "roleCounts": {
+      "singer": 79,
+      "actor": 69,
+      "variety": 74
+    },
+    "skippedExistingOrDuplicate": 5
+  },
+  "candidates": [
+    {
+      "name": "張震嶽",
+      "aliases": [
+        "張震嶽",
+        "阿嶽",
+        "A-Yue"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "江蕙",
+      "aliases": [
+        "江蕙",
+        "二姊"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張信哲",
+      "aliases": [
+        "張信哲"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳克群",
+      "aliases": [
+        "吳克群"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "范曉萱",
+      "aliases": [
+        "范曉萱"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "鄧麗君",
+      "aliases": [
+        "鄧麗君"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "鳳飛飛",
+      "aliases": [
+        "鳳飛飛"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張雨生",
+      "aliases": [
+        "張雨生"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "齊秦",
+      "aliases": [
+        "齊秦"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王傑",
+      "aliases": [
+        "王傑"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃鶯鶯",
+      "aliases": [
+        "黃鶯鶯"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "高勝美",
+      "aliases": [
+        "高勝美"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "葉璦菱",
+      "aliases": [
+        "葉璦菱"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張清芳",
+      "aliases": [
+        "張清芳"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "孫淑媚",
+      "aliases": [
+        "孫淑媚"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李翊君",
+      "aliases": [
+        "李翊君"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳盈潔",
+      "aliases": [
+        "陳盈潔"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李茂山",
+      "aliases": [
+        "李茂山"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "洪榮宏",
+      "aliases": [
+        "洪榮宏"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蔡秋鳳",
+      "aliases": [
+        "蔡秋鳳"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林姍",
+      "aliases": [
+        "林姍"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "伍思凱",
+      "aliases": [
+        "伍思凱"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "周傳雄",
+      "aliases": [
+        "周傳雄"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "游鴻明",
+      "aliases": [
+        "游鴻明"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃韻玲",
+      "aliases": [
+        "黃韻玲"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林隆璇",
+      "aliases": [
+        "林隆璇"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李麗芬",
+      "aliases": [
+        "李麗芬"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃舒駿",
+      "aliases": [
+        "黃舒駿"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "江淑娜",
+      "aliases": [
+        "江淑娜"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳明真",
+      "aliases": [
+        "陳明真"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蔡幸娟",
+      "aliases": [
+        "蔡幸娟"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳雷",
+      "aliases": [
+        "陳雷"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "葉啟田",
+      "aliases": [
+        "葉啟田"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李玉璽",
+      "aliases": [
+        "李玉璽"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳志朋",
+      "aliases": [
+        "陳志朋"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "楊培安",
+      "aliases": [
+        "楊培安"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃靖倫",
+      "aliases": [
+        "黃靖倫"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蕭閎仁",
+      "aliases": [
+        "蕭閎仁"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "葛仲珊",
+      "aliases": [
+        "葛仲珊"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蛋堡",
+      "aliases": [
+        "蛋堡",
+        "Soft Lipa"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "瘦子",
+      "aliases": [
+        "瘦子",
+        "E.SO",
+        "瘦子 E.SO"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "大淵",
+      "aliases": [
+        "大淵",
+        "MUTA"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小春",
+      "aliases": [
+        "小春",
+        "Kenzy"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "熊仔",
+      "aliases": [
+        "熊仔"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "高爾宣",
+      "aliases": [
+        "高爾宣",
+        "OSN"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "派偉俊",
+      "aliases": [
+        "派偉俊"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "J.Sheon",
+      "aliases": [
+        "J.Sheon"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "呂士軒",
+      "aliases": [
+        "呂士軒"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "持修",
+      "aliases": [
+        "持修"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "許書豪",
+      "aliases": [
+        "許書豪"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李佳薇",
+      "aliases": [
+        "李佳薇"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "鄭心慈",
+      "aliases": [
+        "鄭心慈"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林芯儀",
+      "aliases": [
+        "林芯儀"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "田亞霍",
+      "aliases": [
+        "田亞霍"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "管罄",
+      "aliases": [
+        "管罄"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林采欣",
+      "aliases": [
+        "林采欣"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張文綺",
+      "aliases": [
+        "張文綺"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "郭芝吟",
+      "aliases": [
+        "郭芝吟"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳忻玥",
+      "aliases": [
+        "陳忻玥"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李浩瑋",
+      "aliases": [
+        "李浩瑋"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林亭翰",
+      "aliases": [
+        "林亭翰"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "江志豐",
+      "aliases": [
+        "江志豐"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "向蕙玲",
+      "aliases": [
+        "向蕙玲"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳隨意",
+      "aliases": [
+        "陳隨意"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "羅百吉",
+      "aliases": [
+        "羅百吉"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "杜忻恬",
+      "aliases": [
+        "杜忻恬"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿沁",
+      "aliases": [
+        "阿沁"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳建寧",
+      "aliases": [
+        "陳建寧"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張洪量",
+      "aliases": [
+        "張洪量"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃中原",
+      "aliases": [
+        "黃中原"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "鄭進一",
+      "aliases": [
+        "鄭進一"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "方季惟",
+      "aliases": [
+        "方季惟"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李明依",
+      "aliases": [
+        "李明依"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林慧萍",
+      "aliases": [
+        "林慧萍"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李度",
+      "aliases": [
+        "李度"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林淑容",
+      "aliases": [
+        "林淑容"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "南方二重唱",
+      "aliases": [
+        "南方二重唱"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "卓義峯",
+      "aliases": [
+        "卓義峯"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳申梅",
+      "aliases": [
+        "吳申梅"
+      ],
+      "categories": [
+        "singer"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "葉全真",
+      "aliases": [
+        "葉全真"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張晨光",
+      "aliases": [
+        "張晨光"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "龍劭華",
+      "aliases": [
+        "龍劭華"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳博正",
+      "aliases": [
+        "陳博正"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳冠霖",
+      "aliases": [
+        "陳冠霖"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "曾智希",
+      "aliases": [
+        "曾智希"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王瞳",
+      "aliases": [
+        "王瞳"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李燕",
+      "aliases": [
+        "李燕"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蘇晏霈",
+      "aliases": [
+        "蘇晏霈"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳子玄",
+      "aliases": [
+        "陳子玄"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳婉君",
+      "aliases": [
+        "吳婉君"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "何蓓蓓",
+      "aliases": [
+        "何蓓蓓"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李易",
+      "aliases": [
+        "李易"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "六月",
+      "aliases": [
+        "六月",
+        "蔡君茹"
+      ],
+      "categories": [
+        "actor",
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳淑芳",
+      "aliases": [
+        "陳淑芳"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "丁寧",
+      "aliases": [
+        "丁寧"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "高慧君",
+      "aliases": [
+        "高慧君"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "方文琳",
+      "aliases": [
+        "方文琳"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張玉嬿",
+      "aliases": [
+        "張玉嬿"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林韋君",
+      "aliases": [
+        "林韋君"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "季芹",
+      "aliases": [
+        "季芹"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張瓊姿",
+      "aliases": [
+        "張瓊姿"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "鄭仲茵",
+      "aliases": [
+        "鄭仲茵"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "趙永馨",
+      "aliases": [
+        "趙永馨"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "周幼婷",
+      "aliases": [
+        "周幼婷"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "馬國賢",
+      "aliases": [
+        "馬國賢"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李天柱",
+      "aliases": [
+        "李天柱"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "楊子儀",
+      "aliases": [
+        "楊子儀"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳念軒",
+      "aliases": [
+        "吳念軒"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "楊懷民",
+      "aliases": [
+        "楊懷民"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蔡振南",
+      "aliases": [
+        "蔡振南"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李興文",
+      "aliases": [
+        "李興文"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "宋達民",
+      "aliases": [
+        "宋達民"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "劉亮佐",
+      "aliases": [
+        "劉亮佐"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "朱德剛",
+      "aliases": [
+        "朱德剛"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳竹昇",
+      "aliases": [
+        "陳竹昇"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳朋奉",
+      "aliases": [
+        "吳朋奉"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張再興",
+      "aliases": [
+        "張再興"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "唐振剛",
+      "aliases": [
+        "唐振剛"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蔡燦得",
+      "aliases": [
+        "蔡燦得"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張鳳書",
+      "aliases": [
+        "張鳳書"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "岳庭",
+      "aliases": [
+        "岳庭"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "宋逸民",
+      "aliases": [
+        "宋逸民"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "方岑",
+      "aliases": [
+        "方岑"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "江祖平",
+      "aliases": [
+        "江祖平"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳子強",
+      "aliases": [
+        "陳子強"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李羅",
+      "aliases": [
+        "李羅"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "趙駿亞",
+      "aliases": [
+        "趙駿亞"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "馬如龍",
+      "aliases": [
+        "馬如龍"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林慶台",
+      "aliases": [
+        "林慶台"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李淑楨",
+      "aliases": [
+        "李淑楨"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林美貞",
+      "aliases": [
+        "林美貞"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳志強",
+      "aliases": [
+        "陳志強"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王振復",
+      "aliases": [
+        "王振復"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "岳虹",
+      "aliases": [
+        "岳虹"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林在培",
+      "aliases": [
+        "林在培"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "施易男",
+      "aliases": [
+        "施易男"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "郭品超",
+      "aliases": [
+        "郭品超"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李國超",
+      "aliases": [
+        "李國超"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃西田",
+      "aliases": [
+        "黃西田"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "葉歡",
+      "aliases": [
+        "葉歡"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "岳華",
+      "aliases": [
+        "岳華"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "金超群",
+      "aliases": [
+        "金超群"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "寇世勳",
+      "aliases": [
+        "寇世勳"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張復建",
+      "aliases": [
+        "張復建"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "侯昌明",
+      "aliases": [
+        "侯昌明"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王中皇",
+      "aliases": [
+        "王中皇"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李㼈",
+      "aliases": [
+        "李㼈"
+      ],
+      "categories": [
+        "actor"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王彩樺",
+      "aliases": [
+        "王彩樺",
+        "台灣濱崎步"
+      ],
+      "categories": [
+        "actor",
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "胡瓜",
+      "aliases": [
+        "胡瓜"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張菲",
+      "aliases": [
+        "張菲"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "曾國城",
+      "aliases": [
+        "曾國城"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "徐乃麟",
+      "aliases": [
+        "徐乃麟"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "沈玉琳",
+      "aliases": [
+        "沈玉琳"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "納豆",
+      "aliases": [
+        "納豆"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿Ken",
+      "aliases": [
+        "阿Ken",
+        "林暐恆"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "KID",
+      "aliases": [
+        "KID",
+        "林柏昇",
+        "KID 林柏昇"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小禎",
+      "aliases": [
+        "小禎",
+        "胡盈禎"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "藍心湄",
+      "aliases": [
+        "藍心湄"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張小燕",
+      "aliases": [
+        "張小燕"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "白雲",
+      "aliases": [
+        "白雲",
+        "李國弘"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小鐘",
+      "aliases": [
+        "小鐘",
+        "鐘昀呈"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "浩子",
+      "aliases": [
+        "浩子",
+        "謝炘昊"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿翔",
+      "aliases": [
+        "阿翔",
+        "陳秉立"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "康康",
+      "aliases": [
+        "康康",
+        "康晉榮"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "郭彥均",
+      "aliases": [
+        "郭彥均"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "郭彥甫",
+      "aliases": [
+        "郭彥甫"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小甜甜",
+      "aliases": [
+        "小甜甜",
+        "張可昀"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "黃豪平",
+      "aliases": [
+        "黃豪平"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "楊繡惠",
+      "aliases": [
+        "楊繡惠"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "侯怡君",
+      "aliases": [
+        "侯怡君"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "豬哥亮",
+      "aliases": [
+        "豬哥亮"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "庹宗康",
+      "aliases": [
+        "庹宗康"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "蔡康永",
+      "aliases": [
+        "蔡康永"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "趙正平",
+      "aliases": [
+        "趙正平"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "郭子乾",
+      "aliases": [
+        "郭子乾"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "賀一航",
+      "aliases": [
+        "賀一航"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "張立東",
+      "aliases": [
+        "張立東"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "董至成",
+      "aliases": [
+        "董至成"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陽帆",
+      "aliases": [
+        "陽帆"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "王偉忠",
+      "aliases": [
+        "王偉忠"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "謝忻",
+      "aliases": [
+        "謝忻"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "風田",
+      "aliases": [
+        "風田"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "洪都拉斯",
+      "aliases": [
+        "洪都拉斯"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿達",
+      "aliases": [
+        "阿達"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "Lulu",
+      "aliases": [
+        "Lulu",
+        "黃路梓茵"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李懿",
+      "aliases": [
+        "李懿"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "邵庭",
+      "aliases": [
+        "邵庭"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "薔薔",
+      "aliases": [
+        "薔薔",
+        "林嘉凌"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小嫻",
+      "aliases": [
+        "小嫻",
+        "黃瑜嫻"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "Janet",
+      "aliases": [
+        "Janet",
+        "謝怡芬"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "夢多",
+      "aliases": [
+        "夢多",
+        "大谷主水"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "歐漢聲",
+      "aliases": [
+        "歐漢聲",
+        "歐弟"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李明川",
+      "aliases": [
+        "李明川"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "林進",
+      "aliases": [
+        "林進"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "無尊",
+      "aliases": [
+        "無尊"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿喜",
+      "aliases": [
+        "阿喜",
+        "林育品"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳鳳",
+      "aliases": [
+        "吳鳳"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "陳為民",
+      "aliases": [
+        "陳為民"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "高山峰",
+      "aliases": [
+        "高山峰"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳淡如",
+      "aliases": [
+        "吳淡如"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "潘若迪",
+      "aliases": [
+        "潘若迪"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小薰",
+      "aliases": [
+        "小薰"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "大牙",
+      "aliases": [
+        "大牙",
+        "周宜霈"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "Apple",
+      "aliases": [
+        "Apple",
+        "黃暐婷"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "威廉",
+      "aliases": [
+        "威廉",
+        "廖亦崟"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿緯",
+      "aliases": [
+        "阿緯",
+        "劉峻緯"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "小煜",
+      "aliases": [
+        "小煜",
+        "楊奇煜"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿本",
+      "aliases": [
+        "阿本",
+        "翁瑞迪"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "梁赫群",
+      "aliases": [
+        "梁赫群"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "唐綺陽",
+      "aliases": [
+        "唐綺陽"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "茵聲",
+      "aliases": [
+        "茵聲",
+        "鄭茵聲"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "劉真",
+      "aliases": [
+        "劉真"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "余祥銓",
+      "aliases": [
+        "余祥銓"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "楊昇達",
+      "aliases": [
+        "楊昇達"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "山豬",
+      "aliases": [
+        "山豬"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "阿松",
+      "aliases": [
+        "阿松"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "柯大堡",
+      "aliases": [
+        "柯大堡"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "李佳玲",
+      "aliases": [
+        "李佳玲"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "錦雯",
+      "aliases": [
+        "錦雯"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    },
+    {
+      "name": "吳怡霈",
+      "aliases": [
+        "吳怡霈"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "status": "candidate_only",
+      "photoStatus": "not_prepared",
+      "hintStatus": "not_verified",
+      "manualIdentityCheckRequired": true
+    }
+  ],
+  "skipped": [
+    {
+      "name": "李翊君",
+      "reason": "same_new_person_as_prior",
+      "matched": "李翊君"
+    },
+    {
+      "name": "黃明志",
+      "reason": "exists_or_in_55_swap",
+      "matched": {
+        "id": "s474",
+        "name": "黃明志",
+        "kind": "currently_playable"
+      }
+    },
+    {
+      "name": "鄭人碩",
+      "reason": "exists_or_in_55_swap",
+      "matched": {
+        "id": "a1328",
+        "name": "鄭人碩",
+        "kind": "another_conversation_actor_swap"
+      }
+    },
+    {
+      "name": "王彩樺",
+      "reason": "same_new_person_as_prior",
+      "matched": "王彩樺"
+    },
+    {
+      "name": "六月",
+      "reason": "same_new_person_as_prior",
+      "matched": "六月"
+    }
+  ]
+}

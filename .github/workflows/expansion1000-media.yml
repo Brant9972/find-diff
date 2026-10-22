@@ -51,3 +51,5 @@ jobs:
             done
             exit 1
           fi
+
+# Resume source checkpoints, preserving already prepared media.

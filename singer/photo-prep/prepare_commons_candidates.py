@@ -8,6 +8,7 @@ import urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
 import io
+import urllib.error
 
 API = "https://commons.wikimedia.org/w/api.php"
 HEADERS = {"User-Agent": "FindDiffPhotoPrep/1.0 (noncommercial; contact via GitHub Brant9972/find-diff)"}
@@ -74,14 +75,25 @@ def main():
                 item["foundSourceResults"] += 1
                 if ix>=6: break
                 url=c["downloadUrl"]
-                req=urllib.request.Request(url,headers=HEADERS)
-                with urllib.request.urlopen(req,timeout=35) as resp:
-                    data=resp.read(12_000_000+1)
-                if len(data)>12_000_000: continue
-                im=ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert("RGB")
-                if min(im.size)<520:continue
-                face=face_bounds(im)
-                if not face:continue
+                try:
+                    req=urllib.request.Request(url,headers=HEADERS)
+                    with urllib.request.urlopen(req,timeout=35) as resp:
+                        data=resp.read(12_000_000+1)
+                    if len(data)>12_000_000: continue
+                    im=ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert("RGB")
+                    if min(im.size)<520:continue
+                    face=face_bounds(im)
+                    if not face:continue
+                except urllib.error.HTTPError as err:
+                    item.setdefault("errors",[]).append({"candidate":ix+1,"error":"HTTP "+str(err.code)})
+                    if err.code==429:
+                        item["status"]="rate_limited_resume_later"
+                        print("RATE_LIMIT",t["id"],"stopping this person's requests",flush=True)
+                        break
+                    continue
+                except Exception as err:
+                    item.setdefault("errors",[]).append({"candidate":ix+1,"error":str(err)})
+                    continue
                 # Save separately; NEVER write directly into singer/photos or actors.json.
                 filename=f"{t['id']}_candidate_{ix+1}.jpg"
                 im.save(dest/filename,quality=90)
@@ -94,9 +106,12 @@ def main():
                 item["candidates"].append(entry)
         except Exception as exc:
             item["error"]=str(exc)
+            if isinstance(exc, urllib.error.HTTPError) and exc.code==429:
+                item["status"]="rate_limited_resume_later"
             print("LOOKUP_ERROR",t["id"],t["name"],str(exc),flush=True)
         (dest/"review.json").write_text(json.dumps(item,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
         outcomes.append({"id":item["id"],"name":item["name"],"candidates":len(item["candidates"])})
-        time.sleep(0.4)
+        time.sleep(2.5)
     print(json.dumps(outcomes,ensure_ascii=False,indent=2))
+    print("CANDIDATES_TOTAL",sum(x["candidates"] for x in outcomes),flush=True)
 if __name__=="__main__": main()

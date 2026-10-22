@@ -1,0 +1,41 @@
+name: Fetch and prepare actor photo candidates
+on:
+  push:
+    branches:
+      - photo-prep-actors-batch-01-20261022
+    paths:
+      - .github/workflows/photo-prep-candidates.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  download-and-crop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        start: [0, 10, 20, 30]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python tools
+        run: python -m pip install --disable-pip-version-check Pillow 'numpy<2' 'opencv-python-headless==4.10.0.84'
+      - name: Download image candidates and prepare provisional face reveals
+        shell: bash
+        run: |
+          python singer/photo-prep/prepare_commons_candidates.py \
+            --manifest singer/photo-prep/actors-pending-40/manifest.json \
+            --start ${{ matrix.start }} \
+            --count 10 \
+            --out "actor-photo-candidates/batch-${{ matrix.start }}"
+      - name: Upload review artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: actor-photo-batch-${{ matrix.start }}
+          path: actor-photo-candidates/batch-${{ matrix.start }}/
+          if-no-files-found: warn
+          retention-days: 14

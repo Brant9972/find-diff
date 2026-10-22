@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-22",
+  "audience": "台灣30–35歲為主，優先2000年代以來具熟悉度的主持人與綜藝藝人",
+  "status": "candidate_staging_not_live",
+  "purpose": "For photo specialist and game developer; do not count these people as playable until verified photos, identities, per-question hints and any needed mode support are complete.",
+  "categoryGuidance": "純綜藝人物建議新增 variety 模式；已有歌手演員資格者不新建重複人物 ID，只增模式歸屬並考慮各模式作品提示。",
+  "singerPriorityCandidates": [
+    {
+      "name": "張震嶽",
+      "status": "not_in_current_playable_questions",
+      "note": "User remembers having played; historical presence unconfirmed. Check previous media/IDs before new ID."
+    },
+    {
+      "name": "江蕙",
+      "status": "not_in_current_playable_questions",
+      "note": "User remembers having played; historical presence unconfirmed. Check previous media/IDs before new ID."
+    }
+  ],
+  "existingEntertainersToExtendNotDuplicate": [
+    {
+      "name": "吳宗憲"
+    },
+    {
+      "name": "徐熙娣"
+    },
+    {
+      "name": "澎恰恰"
+    },
+    {
+      "name": "許效舜"
+    },
+    {
+      "name": "陳漢典"
+    },
+    {
+      "name": "曾莞婷"
+    }
+  ],
+  "varietyCandidates": [
+    {
+      "name": "胡瓜",
+      "aliases": [
+        "胡瓜",
+        "胡自雄"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "張菲",
+      "aliases": [
+        "張菲",
+        "張彥明"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "曾國城",
+      "aliases": [
+        "曾國城"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "徐乃麟",
+      "aliases": [
+        "徐乃麟"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "沈玉琳",
+      "aliases": [
+        "沈玉琳"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "納豆",
+      "aliases": [
+        "納豆",
+        "林郁智"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "阿Ken",
+      "aliases": [
+        "阿Ken",
+        "林暐恆"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "KID",
+      "aliases": [
+        "KID",
+        "林柏昇"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "小禎",
+      "aliases": [
+        "小禎",
+        "胡盈禎"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "藍心湄",
+      "aliases": [
+        "藍心湄"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "張小燕",
+      "aliases": [
+        "張小燕"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "白雲",
+      "aliases": [
+        "白雲",
+        "李國弘"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "小鐘",
+      "aliases": [
+        "小鐘",
+        "鐘昀呈"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "浩子",
+      "aliases": [
+        "浩子",
+        "謝炘昊"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "阿翔",
+      "aliases": [
+        "阿翔",
+        "陳秉立"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "康康",
+      "aliases": [
+        "康康",
+        "康晉榮"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "郭彥均",
+      "aliases": [
+        "郭彥均"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "郭彥甫",
+      "aliases": [
+        "郭彥甫"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "小甜甜",
+      "aliases": [
+        "小甜甜",
+        "張可昀"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "黃豪平",
+      "aliases": [
+        "黃豪平"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "楊繡惠",
+      "aliases": [
+        "楊繡惠"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "侯怡君",
+      "aliases": [
+        "侯怡君"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "王彩樺",
+      "aliases": [
+        "王彩樺"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "豬哥亮",
+      "aliases": [
+        "豬哥亮",
+        "謝新達"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "庹宗康",
+      "aliases": [
+        "庹宗康"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "蔡康永",
+      "aliases": [
+        "蔡康永"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "趙正平",
+      "aliases": [
+        "趙正平"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "郭子乾",
+      "aliases": [
+        "郭子乾"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "賀一航",
+      "aliases": [
+        "賀一航"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "張立東",
+      "aliases": [
+        "張立東"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "董至成",
+      "aliases": [
+        "董至成"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "陽帆",
+      "aliases": [
+        "陽帆"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "王偉忠",
+      "aliases": [
+        "王偉忠"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "謝忻",
+      "aliases": [
+        "謝忻"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "六月",
+      "aliases": [
+        "六月",
+        "蔡君茹"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    },
+    {
+      "name": "風田",
+      "aliases": [
+        "風田"
+      ],
+      "category": "variety",
+      "status": "candidate_only",
+      "priority": "taiwan_30s_familiarity",
+      "portraitStatus": "needs_verified_source_and_face_crop",
+      "hintStatus": "requires_program_source_check"
+    }
+  ],
+  "summary": {
+    "singerPriority": 2,
+    "varietyCandidates": 36,
+    "existingToReclassify": 6
+  },
+  "safety": "This staging list is not a verified biography, published gameplay bank or license approval. Cross-check identity, performer aliases, programs and portrait attribution before promotion."
+}

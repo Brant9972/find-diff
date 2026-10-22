@@ -15,6 +15,7 @@ jobs:
     timeout-minutes: 30
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         start: [0, 10, 20, 30]
     steps:
@@ -22,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install Pillow numpy opencv-python-headless
+      - run: python -m pip install 'Pillow<13' 'numpy<2' 'opencv-python-headless>=4.8,<5'
       - name: Find and crop 10 candidate portraits
         run: >-
           python singer/photo-prep/prepare_commons_candidates.py

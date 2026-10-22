@@ -1,0 +1,39 @@
+name: Prepare clean portrait replacements
+on:
+  push:
+    branches: [portrait-quality-review-20261022]
+    paths: [photo-audit/sources/**, photo-audit/prepare.py, .github/workflows/portrait-quality-media.yml]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        batch: [0,1,2,3,4,5,6,7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: portrait-quality-review-20261022
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests Pillow numpy opencv-python-headless opencc-python-reimplemented
+      - run: python -u photo-audit/prepare.py ${{ matrix.batch }}
+      - name: Save review candidates separately from the game
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photo-audit/prepared/batch-${{ matrix.batch }}
+          if ! git diff --cached --quiet; then
+            git commit -m "Prepare quality review candidates batch ${{ matrix.batch }}"
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin portrait-quality-review-20261022
+              if git push origin HEAD:portrait-quality-review-20261022; then exit 0; fi
+            done
+            exit 1
+          fi

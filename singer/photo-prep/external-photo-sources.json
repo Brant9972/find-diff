@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22",
+  "status": "CURATED_IMAGE_LINKS_ONLY",
+  "description": "照片專員可在 Wikimedia Commons、藝人官方網站、經紀公司、媒體記者會、官方影劇宣傳頁與其他網頁尋找照片。此檔只存可直接下載的候選圖片網址，不代表可上傳至公開遊戲。",
+  "instructions": [
+    "在 sources 中逐張新增 id、name、imageUrl、sourcePage、provider、photographer、rightsStatus、license、observedDate。",
+    "提供可直接下載的 https 圖片網址和真實來源網頁；搜尋引擎縮圖網址不能當原始來源。",
+    "候選照片可先進入雲端工作流程做身份、品質、裁切審查，未確認前不得合併到 main 的 singer/photos/。",
+    "標註來源可提升可追溯性，但不能取代發布許可。unknown 和 permission_needed 的照片只留在未公開的審查流程。",
+    "避免疑似非本人、錯誤同名、影視劇照冒充單人肖像、嚴重美顏濾鏡、臉被遮住的照片。"
+  ],
+  "fieldExample": {
+    "id": "a1301",
+    "name": "賀軍翔",
+    "imageUrl": "https://example.org/replace-with-direct-photo.jpg",
+    "sourcePage": "https://example.org/replace-with-official-source-page",
+    "provider": "official_artist_site",
+    "photographer": "",
+    "rightsStatus": "unknown",
+    "license": "",
+    "observedDate": ""
+  },
+  "note": "fieldExample contains PLACEHOLDER URLs; sources remains empty until evidence is collected. Only sources[] is processed.",
+  "sources": []
+}

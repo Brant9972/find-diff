@@ -1,0 +1,23 @@
+name: Prepare complete portrait quality review
+on:
+  push:
+    branches: [main]
+    paths: [singer/tools/photo-audit-sheets.py, .github/workflows/photo-audit-sheets.yml]
+permissions:
+  contents: write
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install Pillow
+      - run: python singer/tools/photo-audit-sheets.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/photo-audit-20261022
+          if ! git diff --cached --quiet; then
+            git commit -m "Prepare all 1000 portraits for quality review"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

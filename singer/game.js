@@ -2,7 +2,7 @@
 "use strict";
 const KEY="singer-face-quiz-v1";
 const $=id=>document.getElementById(id);
-const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote"])el[id]=$(id);
+const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote","roundSummary","summaryTitle","summaryMode","summaryScore","summaryCorrect","summaryRate","summaryRestart","photoCard"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
 let bank=[],singerBank=[],actorBank=[],varietyBank=[],creatorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
@@ -121,6 +121,7 @@ function render(){
  const q=question(),active=!!q&&!state.finished&&!loading;
  el.answer.disabled=!active;el.submit.disabled=!active;el.giveup.disabled=!active;
  el.guessForm.hidden=!!state?.finished;el.giveup.hidden=!!state?.finished;
+ el.next.textContent=state?.pos===state?.deck.length-1?"查看本回合結算 →":"下一位 →";
  el.next.hidden=!state?.finished||!q;el.result.hidden=!state?.finished||!q;
  if(!state?.finished)el.credits.hidden=true;
  renderHint();
@@ -134,15 +135,24 @@ function finish(won){
  el.next.focus({preventScroll:true});
 }
 function end(){
- loading=false;el.hintPanel.hidden=true;el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;
+ loading=false;photoToken++;el.hintPanel.hidden=true;el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;
  el.photoMessage.textContent="這輪挑戰完成！";
+ el.photoCard.hidden=true;document.querySelector(".stages").hidden=true;
+ el.roundSummary.hidden=false;
+ el.summaryMode.textContent=modeLabels[state.mode]+" · "+state.deck.length+" 關";
+ el.summaryScore.textContent=state.score;
+ el.summaryCorrect.textContent=state.correct+"／"+state.deck.length;
+ el.summaryRate.textContent=Math.round(state.correct/state.deck.length*100)+"%";
  el.guessForm.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
- el.result.hidden=false;el.result.textContent="答對 "+state.correct+" 題，累積 "+state.score+" 分。";
+ el.result.hidden=true;
+ el.summaryTitle.focus({preventScroll:true});
+ el.roundSummary.scrollIntoView({block:"center",behavior:"instant"});
  message("選擇關數，再開始新回合吧！","good");
  el.round.textContent=state.deck.length+"／"+state.deck.length;el.correct.textContent=state.correct;el.score.textContent=state.score;
 }
 function loadQuestion(){
  const q=question();if(!q){end();return;}
+ el.roundSummary.hidden=true;el.photoCard.hidden=false;document.querySelector(".stages").hidden=false;
  const token=++photoToken;loading=true;
  el.answer.value="";el.result.hidden=true;el.credits.hidden=true;el.credits.open=false;
  el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;el.photoMessage.textContent="照片載入中…";
@@ -178,11 +188,12 @@ el.next.addEventListener("click",()=>{
 function startRound(){
  if(empty){location.reload();return;}
  if(!bank.length)return;
- if(state&&(state.pos>0||state.tried.length||state.finished||state.hintUsed)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
+ if(state&&question()&&(state.pos>0||state.tried.length||state.finished||state.hintUsed)&&!confirm("確定重新開始？本輪進度與積分將會重設。"))return;
  state=fresh(el.roundSize.value==="all"?0:Number(el.roundSize.value),el.quizMode.value);save();showMode();loadQuestion();
 }
 el.restart.addEventListener("click",startRound);
 el.startRound.addEventListener("click",startRound);
+el.summaryRestart.addEventListener("click",startRound);
 el.quizMode.addEventListener("change",updateRoundOption);
 async function init(){
  try{

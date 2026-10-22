@@ -190,15 +190,29 @@ const server=http.createServer((req,res)=>{
   assert.equal((await snapshot()).deck.length,10,"New bank entries extended a fixed round");
   for(let i=0;i<10;i++){
    const saved=await snapshot(),q=fixtures.questions.find(q=>q.id===saved.deck[saved.pos]);
-   await guess(q.name);await page.click("#next");
+   await guess(q.name);
+   if(i===9){
+    assert.equal(await page.$eval("#next",e=>e.textContent),"查看本回合結算 →");
+    assert(await page.$eval("#roundSummary",e=>e.hidden),"Summary hid the final answer");
+   }
+   await page.click("#next");
    if(i<9)await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   }
   assert.equal((await snapshot()).pos,10);
   assert.equal((await snapshot()).correct,10);
   assert.equal((await snapshot()).score,980);
+  assert(await page.$eval("#roundSummary",e=>!e.hidden),"10-question summary missing");
+  assert.equal(await page.$eval("#summaryScore",e=>e.textContent),"980");
+  assert.equal(await page.$eval("#summaryCorrect",e=>e.textContent),"10／10");
+  assert.equal(await page.$eval("#summaryRate",e=>e.textContent),"100%");
+  assert(await page.$eval("#photoCard",e=>e.hidden),"Summary still shows empty portrait card");
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Summary overflows mobile");
+
   assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");
   await page.reload();await page.waitForFunction(()=>!document.getElementById("startRound").disabled);
   assert.equal((await snapshot()).deck.length,10,"Completed round grew on reload");
+  assert(await page.$eval("#roundSummary",e=>!e.hidden),"Summary lost after reload");
+  assert.equal(await page.$eval("#summaryScore",e=>e.textContent),"980");
   await page.select("#roundSize","20");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert.equal((await snapshot()).deck.length,20);
@@ -215,8 +229,11 @@ const server=http.createServer((req,res)=>{
   }
   assert.equal((await snapshot()).pos,20);
   assert.equal((await snapshot()).score,0);
+  assert(await page.$eval("#roundSummary",e=>!e.hidden),"20-question summary missing");
+  assert.equal(await page.$eval("#summaryCorrect",e=>e.textContent),"0／20");
+  assert.equal(await page.$eval("#summaryRate",e=>e.textContent),"0%");
   assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");
-  await page.select("#roundSize","all");await page.click("#startRound");
+  await page.select("#roundSize","all");await page.click("#summaryRestart");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert.equal((await snapshot()).deck.length,31,"All-question mode was removed");
   assert.equal((await snapshot()).roundSize,0);

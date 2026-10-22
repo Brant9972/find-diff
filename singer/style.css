@@ -12,3 +12,5 @@
 .hint-button{width:100%;background:transparent;border:1px solid #8e9e58;color:var(--accent);font-size:13px;min-height:44px;padding:10px 14px}
 .hint-note{font-size:11px;color:var(--muted);margin:8px 0 0;text-align:center}
 .hint-text{font-size:15px;line-height:1.6;color:var(--text);margin:12px 0 0;overflow-wrap:anywhere;text-align:center}
+
+.round-summary{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 18px;margin:14px 0}.round-summary h2{font-size:26px;margin:8px 0 18px}.summary-score{margin:0 0 22px}.summary-score strong{display:block;font-size:64px;line-height:1.15;color:var(--accent);font-variant-numeric:tabular-nums}.summary-score span,.summary-stats dt,.summary-note{font-size:12px;color:var(--muted)}.summary-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 24px}.summary-stats div{padding:14px 8px;background:var(--bg);border-radius:12px}.summary-stats dd{margin:4px 0 0;font-size:24px;font-weight:750}.round-summary button{width:100%}.summary-note{margin:12px 0 0}

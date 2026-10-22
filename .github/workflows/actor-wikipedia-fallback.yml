@@ -1,0 +1,25 @@
+name: Fill 23 missing actor portraits via Wikipedia
+on:
+  push:
+    branches: [photo-prep-actors-batch-01-20261022]
+    paths: [.github/workflows/actor-wikipedia-fallback.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fallback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow
+      - run: python singer/photo-prep/prepare_wikipedia_fallback.py --roster singer/photo-prep/actors-pending-40/manifest.json --progress singer/photo-prep/actors-pending-40/progress-summary.json --out actor-fallback/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: actor-fallback-23
+          path: actor-fallback/
+          retention-days: 14

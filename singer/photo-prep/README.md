@@ -36,3 +36,45 @@ the live `main` actor/game files. If an Actions job fails, inspect its log and
 fix the specific failure directly instead of repeatedly asking the user to confirm
 the same steps. This workflow is a *candidate collector*; results are **not**
 automatically approved or installed into the game.
+
+## Source policy changed — Wikimedia is NOT mandatory
+
+Search for current, high-quality portraits across Wikimedia Commons **and** artist
+websites, agencies, authorized press photo libraries, official interviews and event
+photos, and other publicly accessible image pages. A photo source can be searched
+and recorded even if its redistribution rights have not yet been established.
+
+Record every candidate in `external-photo-sources.json` with the person's ID,
+the actual photo URL, original source page, provider, photographer and rights status.
+The optional GitHub Actions workflow
+`.github/workflows/prepare-external-photos.yml` uses
+`prepare_external_candidates.py` to download these manually researched URLs,
+resize the images, and generate provisional eyes/nose/mouth/chin reveals as
+**short-lived review artifacts**, *not* as public production photos.
+
+Suggested photo selection order:
+1. Artist or agency's up-to-date professional portrait accompanied by reuse terms.
+2. Officially provided promotional / press photograph with permission for reposting.
+3. Event or interview photographs from named photographers and sources.
+4. Wikimedia Commons or other clearly licensed images when better current sources are unavailable.
+
+Important: using an image without charging admission, keeping the URL unadvertised,
+and adding attribution are **not** automatic website-publication rights. The
+existing `github.io` game is publicly reachable. Keep uncertain images in the
+review workflow, not the publicly accessible repository or Pages site; if rights
+are unclear, look for another permitted photo or move the game to genuine private
+hosting. The user should not be asked to approve every photo individually.
+
+### Deliverables
+
+Photo-specialist should deliver each independently verified batch without
+waiting for the user to confirm routine steps:
+- `id`, name, and identity evidence.
+- A real person-specific image, source page, author/credit, date, license or permission.
+- A visually reviewed 5-stage reveal, not just automatic face boxes.
+- A prepared photo file and metadata on the photo specialist's **review branch**.
+- A clear short list of failures to continue looking for, rather than blocking a
+  full batch.
+
+Do not overwrite `singer/actors.json`, `singer/questions.json`,
+`singer/hints.json`, `singer/game.js` or published `singer/photos`.

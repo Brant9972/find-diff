@@ -1,0 +1,44 @@
+name: Verify 1000-person celebrity release
+on:
+  push:
+    branches: [expansion-1000-media-20261022, main]
+    paths:
+      - singer/expansion-1000-release.json
+      - singer/game.js
+      - singer/qa.cjs
+      - .github/workflows/expansion1000-qa.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save puppeteer-core
+      - run: python singer/prepare_hints.py
+      - name: Check release count and preserve all prior questions
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=Path('singer')
+          release=json.loads((r/'expansion-1000-release.json').read_text())
+          banks=[json.loads((r/f).read_text())['questions'] for f in ['questions.json','actors.json','variety.json','creators.json']]
+          allq={q['id']:q for b in banks for q in b}
+          assert len(allq)==1000
+          assert len(release['entries'])==411
+          assert sum(q.get('batchId')=='expansion1000_20261022' for q in allq.values())==411
+          assert all(q.get('humanReviewed') for q in allq.values() if q.get('batchId')=='expansion1000_20261022')
+          print('PASS: 1000 distinct people, 411 reviewed additions')
+          PY
+      - run: node singer/qa.cjs --preserve-existing-portraits
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: celebrity-release-qa
+          path: qa-output
+
+# Recheck active and archived roster membership separately.

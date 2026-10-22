@@ -4,24 +4,26 @@ const KEY="singer-face-quiz-v1";
 const $=id=>document.getElementById(id);
 const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
-let bank=[],singerBank=[],actorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
+let bank=[],singerBank=[],actorBank=[],varietyBank=[],creatorBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 function shuffle(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
-const modeLabels={singer:"歌手",actor:"演員",mixed:"混合"};
+const modeLabels={singer:"歌手",actor:"演員",variety:"綜藝",creator:"網路創作者",mixed:"全部混合"};
+const roles=["singer","actor","variety","creator"];
+function banks(){return {singer:singerBank,actor:actorBank,variety:varietyBank,creator:creatorBank};}
 function pool(mode){
- const items=mode==="actor"?actorBank:mode==="mixed"?[...singerBank,...actorBank]:singerBank;
+ const items=mode==="mixed"?roles.flatMap(role=>banks()[role]):banks()[mode]||singerBank;
  return [...new Map(items.map(q=>[q.id,q])).values()];
 }
 function setPool(mode){bank=pool(mode);byId=new Map(bank.map(q=>[q.id,q]));}
 function makeDeck(mode,roundSize){
  const limit=roundSize||bank.length;
  if(mode!=="mixed")return shuffle(bank.map(q=>q.id)).slice(0,limit);
- // Alternate the two shuffled pools; shared singer/actors appear only once.
- const groups=[shuffle(singerBank.map(q=>q.id)),shuffle(actorBank.map(q=>q.id))];
- const ids=new Set();let turn=Math.random()<.5?0:1;
- while(ids.size<limit&&(groups[0].length||groups[1].length)){
-  const group=groups[turn].length?groups[turn]:groups[1-turn];
-  ids.add(group.pop());turn=1-turn;
+ // Rotate shuffled role pools; people in several categories appear only once.
+ const groups=shuffle(roles.map(role=>shuffle(banks()[role].map(q=>q.id))));
+ const ids=new Set();let turn=0;
+ while(ids.size<limit&&groups.some(group=>group.length)){
+  const group=groups[turn++%groups.length];
+  if(group.length)ids.add(group.pop());
  }
  return shuffle([...ids]);
 }
@@ -32,9 +34,9 @@ function updateRoundOption(){
 }
 function showMode(){
  const mode=state.mode,label=modeLabels[mode];
- document.querySelector(".edition").textContent=mode==="mixed"?"歌手 × 演員":"華語"+label+"篇";
+ document.querySelector(".edition").textContent=mode==="mixed"?"全部明星":"華語"+label+"篇";
  document.querySelector(".eyebrow").textContent="看五官，猜"+(mode==="singer"?"聲音":"明星");
- document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"歌手或演員":label)+"名字。猜錯一次，就多露出一點。";
+ document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"明星":label)+"名字。猜錯一次，就多露出一點。";
  document.querySelector(".play").setAttribute("aria-label","猜"+(mode==="mixed"?"明星":label)+"遊戲");
  el.portrait.alt="本題"+(mode==="mixed"?"明星":label)+"的五官線索";
  el.poolInfo.textContent=label+"模式 · "+bank.length+" 位 · 隨機不重複 · 自動記錄進度";
@@ -46,7 +48,7 @@ function restore(){
   const old=JSON.parse(localStorage.getItem(KEY)||"null");
   if(!old||old.version!==1||!Array.isArray(old.deck))return fresh();
   if(!Number.isInteger(old.pos)||old.pos<0||old.pos>old.deck.length)return fresh();
-  const mode=["singer","actor","mixed"].includes(old.mode)?old.mode:"singer";
+  const mode=[...roles,"mixed"].includes(old.mode)?old.mode:"singer";
   setPool(mode);
   const current=old.deck[old.pos],valid=[...new Set(old.deck.filter(id=>byId.has(id)))];
   // Preserve the current question when a later build removes a failed photo.
@@ -83,7 +85,8 @@ function reveal(){
 function points(){return Math.max(10,(5-state.stage)*20-(state.hintUsed?20:0));}
 function workHint(){
  const q=question(),entry=q&&hints[q.id];
- const hint=state.mode==="singer"?entry?.singer:state.mode==="actor"?entry?.actor:entry?.actor||entry?.singer;
+ // Stable precedence preserves actor/singer hints for shared legacy people.
+ const hint=state.mode==="mixed"?["actor","singer","variety","creator"].map(role=>entry?.[role]).find(h=>h&&typeof h.title==="string"&&h.title.trim()&&typeof h.kind==="string"):entry?.[state.mode];
  return hint&&typeof hint.title==="string"&&hint.title.trim()&&typeof hint.kind==="string"?hint:null;
 }
 function renderHint(){
@@ -189,11 +192,17 @@ async function init(){
   const valid=payload=>(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
   singerBank=valid(payloads[0]);actorBank=valid(payloads[1]);
   if(!singerBank.length||!actorBank.length)throw Error("No prepared photos");
+  // Each optional category fails independently; existing categories remain playable.
+  const optional=await Promise.all(["./variety.json","./creators.json"].map(async url=>{
+   try{const response=await fetch(url,{cache:"no-store"});return response.ok?valid(await response.json()):[];}catch{return [];}
+  }));
+  [varietyBank,creatorBank]=optional;
+  for(const role of roles)el.quizMode.querySelector('option[value="'+role+'"]').disabled=!banks()[role].length;
   try{
    const response=await fetch("./hints.json",{cache:"no-store"});
    if(response.ok)hints=(await response.json()).entries||{};
   }catch{hints={};}
-  setPool("singer");state=restore();save();
+  setPool("singer");state=restore();if(!bank.length)state=fresh();save();
   el.quizMode.value=state.mode;el.quizMode.disabled=false;
   el.roundSize.value=state.roundSize===0?"all":String(state.roundSize);
   updateRoundOption();el.roundSize.disabled=false;el.startRound.disabled=false;

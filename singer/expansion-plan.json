@@ -7,10 +7,10 @@
   "latestBatch": "b005",
   "latestBatchSize": 94,
   "currentPlayable": {
-    "singer": 339,
-    "actor": 329
+    "singer": 329,
+    "actor": 328
   },
-  "mixedUnique": 600,
+  "mixedUnique": 589,
   "note": "每次經使用者要求才新增一批；台灣發展資格、照片及作品提示優先，沒有定時自動擴充。",
   "qualityFirst": true,
   "latestReview": {
@@ -32,5 +32,23 @@
     "shared": 68
   },
   "finalized": true,
-  "nextBatch": "b006"
+  "nextBatch": "b006",
+  "latestRemoval": {
+    "date": "2026-10-22",
+    "count": 11,
+    "names": [
+      "李宇春",
+      "周筆暢",
+      "張杰",
+      "陳楚生",
+      "王源",
+      "王俊凱",
+      "蔡徐坤",
+      "許巍",
+      "龔琳娜",
+      "薩頂頂",
+      "沈騰"
+    ],
+    "reason": "user_confirmed_audience_fit_removal"
+  }
 }

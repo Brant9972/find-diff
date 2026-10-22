@@ -1,0 +1,33 @@
+name: Verify requested roster removals
+on:
+  push:
+    branches: [main]
+    paths: [singer/removals-20261022.json]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false puppeteer-core@24
+      - run: python singer/prepare_hints.py
+      - run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          base=Path("singer")
+          read=lambda f:json.loads((base/f).read_text())
+          removed={e["id"] for e in read("removals-20261022.json")["removed"]}
+          s=read("questions.json")["questions"]; a=read("actors.json")["questions"]
+          active={q["id"] for q in s+a}
+          assert not removed & active
+          assert not removed & set(read("hints.json")["entries"])
+          assert (len(s),len(a),len(active))==(329,328,589)
+          print("PASS: all eleven removed; 329 singer, 328 actor, 589 unique")
+          PY
+      - run: node singer/qa.cjs --preserve-existing-portraits

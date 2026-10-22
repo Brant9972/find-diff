@@ -12,47 +12,50 @@
   "totals": {
     "target": 40,
     "ready": 0,
-    "review_needed": 17,
+    "review_needed": 21,
     "blocked": 0,
-    "todo": 23,
-    "candidatePhotos": 27
+    "todo": 19,
+    "candidatePhotos": 31
   },
   "entries": [
     {
       "id": "a1301",
       "name": "賀軍翔",
-      "status": "todo",
-      "candidateCount": 0,
+      "status": "review_needed",
+      "candidateCount": 1,
       "sourceHint": null,
       "reviewNotes": null,
       "needsIdentityVerification": true,
       "needsCropVerification": true,
       "needsRightsVerification": true,
-      "readyPhoto": null
+      "readyPhoto": null,
+      "newCandidateArtifact": "https://github.com/Brant9972/find-diff/actions/runs/39717924510/artifacts/12400070877"
     },
     {
       "id": "a1302",
       "name": "言承旭",
-      "status": "todo",
-      "candidateCount": 0,
+      "status": "review_needed",
+      "candidateCount": 1,
       "sourceHint": null,
       "reviewNotes": "Category is for Taiwanese performer Jerry Yan; do not confuse with poker player / Yahoo founder Jerry Yang.",
       "needsIdentityVerification": true,
       "needsCropVerification": true,
       "needsRightsVerification": true,
-      "readyPhoto": null
+      "readyPhoto": null,
+      "newCandidateArtifact": "https://github.com/Brant9972/find-diff/actions/runs/39717924510/artifacts/12400070877"
     },
     {
       "id": "a1303",
       "name": "周渝民",
-      "status": "todo",
-      "candidateCount": 0,
+      "status": "review_needed",
+      "candidateCount": 1,
       "sourceHint": "https://commons.wikimedia.org/wiki/File:Vic_Chou_at_autograph_event_20090921.jpg",
       "reviewNotes": "Group photo; target identified as second from right; extraction, visibility and face alignment still require manual check.",
       "needsIdentityVerification": true,
       "needsCropVerification": true,
       "needsRightsVerification": true,
-      "readyPhoto": null
+      "readyPhoto": null,
+      "newCandidateArtifact": "https://github.com/Brant9972/find-diff/actions/runs/39717924510/artifacts/12400070877"
     },
     {
       "id": "a1304",
@@ -93,14 +96,15 @@
     {
       "id": "a1307",
       "name": "唐禹哲",
-      "status": "todo",
-      "candidateCount": 0,
+      "status": "review_needed",
+      "candidateCount": 1,
       "sourceHint": null,
       "reviewNotes": null,
       "needsIdentityVerification": true,
       "needsCropVerification": true,
       "needsRightsVerification": true,
-      "readyPhoto": null
+      "readyPhoto": null,
+      "newCandidateArtifact": "https://github.com/Brant9972/find-diff/actions/runs/39717924510/artifacts/12400070877"
     },
     {
       "id": "a1308",
@@ -499,5 +503,6 @@
       "readyPhoto": null
     }
   ],
-  "notes": "Candidate counts are parsed from successful GitHub Actions job logs. Candidates might depict wrong persons or show incorrect crops; no image is marked ready. Do not edit production files."
+  "notes": "21 actors have 31 unreviewed candidate images across existing Commons and Wikipedia fallback artifacts. 19 actors have none. None are validated for publishing.",
+  "lastVerifiedRunUrl": "https://github.com/Brant9972/find-diff/actions/runs/39717924510"
 }

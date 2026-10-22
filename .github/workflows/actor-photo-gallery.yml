@@ -1,0 +1,35 @@
+name: Build actor photo review gallery
+on:
+  push:
+    branches: [photo-prep-actors-batch-01-20261022]
+    paths:
+      - .github/workflows/actor-photo-gallery.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  gallery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow
+      - name: Download actual existing candidate photo artifacts
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 39714182917
+          pattern: actor-photo-batch-*
+          path: collected
+          merge-multiple: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create review gallery of real images and five reveal stages
+        run: python singer/photo-prep/build_review_gallery.py --input collected --output review-site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: actor-photo-visual-review
+          path: review-site/
+          retention-days: 30

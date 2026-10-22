@@ -31,7 +31,8 @@
     "Priority candidates are intended to fill 411 net-new slots. Reserves provide fallback for inaccessible pictures, obscure names, duplicate aliases or insufficient works.",
     "Taiwan-linked roles are singer, actor, variety and creator; hongkong is supplementary familiar film/TV personalities.",
     "Cross-category entertainers keep one ID and can show in multiple modes when each mode has an appropriate hint.",
-    "Current main might change: recalculate the number needed and dedup every batch against latest main."
+    "Current main might change: recalculate the number needed and dedup every batch against latest main.",
+    "Second editorial pass demoted ambiguous/nonentertainment labels and moved prominent Taiwanese singers/TV personalities from backup into priority."
   ],
   "priorityCandidates": [
     {
@@ -981,21 +982,22 @@
     },
     {
       "candidateKey": "p0053",
-      "name": "陳昇之子陳世崇",
+      "name": "陳華",
       "aliases": [
-        "陳昇之子陳世崇"
+        "陳華"
       ],
       "categories": [
         "singer"
       ],
       "categoryForPhotos": "singer",
-      "priority": "A",
+      "priority": "B",
       "batch": 3,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "台灣主流／華語與台語歌手"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0054",
@@ -2089,9 +2091,10 @@
     },
     {
       "candidateKey": "p0114",
-      "name": "王夢麟",
+      "name": "蔡佩軒",
       "aliases": [
-        "王夢麟"
+        "蔡佩軒",
+        "Ariel Tsai"
       ],
       "categories": [
         "singer"
@@ -2103,14 +2106,14 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0115",
-      "name": "史俊威",
+      "name": "魏嘉瑩",
       "aliases": [
-        "史俊威",
-        "蘇打綠 小威"
+        "魏嘉瑩"
       ],
       "categories": [
         "singer"
@@ -2122,7 +2125,8 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0116",
@@ -2182,10 +2186,9 @@
     },
     {
       "candidateKey": "p0119",
-      "name": "何景揚",
+      "name": "法蘭",
       "aliases": [
-        "何景揚",
-        "蘇打綠 阿福"
+        "法蘭"
       ],
       "categories": [
         "singer"
@@ -2197,7 +2200,8 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0120",
@@ -2383,21 +2387,22 @@
     },
     {
       "candidateKey": "p0130",
-      "name": "王惠五",
+      "name": "蔡嘉茵",
       "aliases": [
-        "王惠五"
+        "蔡嘉茵"
       ],
       "categories": [
         "actor"
       ],
       "categoryForPhotos": "actor",
-      "priority": "A",
+      "priority": "B",
       "batch": 6,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "台灣本土劇／資深影視"
+      "sourceGroup": "台灣新世代演員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0131",
@@ -3269,21 +3274,22 @@
     },
     {
       "candidateKey": "p0179",
-      "name": "張維錫",
+      "name": "陳以文",
       "aliases": [
-        "張維錫"
+        "陳以文"
       ],
       "categories": [
         "actor"
       ],
       "categoryForPhotos": "actor",
-      "priority": "A",
+      "priority": "B",
       "batch": 8,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "台灣本土劇／資深影視"
+      "sourceGroup": "台灣新世代演員",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0180",
@@ -5367,21 +5373,23 @@
     },
     {
       "candidateKey": "p0295",
-      "name": "沈春華",
+      "name": "歐漢聲",
       "aliases": [
-        "沈春華"
+        "歐漢聲",
+        "歐弟"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "A",
+      "priority": "C",
       "batch": 12,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "台灣綜藝／主持"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0296",
@@ -5638,21 +5646,23 @@
     },
     {
       "candidateKey": "p0310",
-      "name": "盛竹如",
+      "name": "Lulu",
       "aliases": [
-        "盛竹如"
+        "Lulu",
+        "黃路梓茵"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "A",
+      "priority": "C",
       "batch": 13,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "台灣綜藝／主持"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0311",
@@ -5890,21 +5900,23 @@
     },
     {
       "candidateKey": "p0324",
-      "name": "尼克",
+      "name": "康康",
       "aliases": [
-        "尼克"
+        "康康",
+        "康晉榮"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "B",
+      "priority": "C",
       "batch": 13,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "新世代綜藝／表演／啦啦隊"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0325",
@@ -5944,21 +5956,23 @@
     },
     {
       "candidateKey": "p0327",
-      "name": "妞妞",
+      "name": "郭彥均",
       "aliases": [
-        "妞妞"
+        "郭彥均"
       ],
       "categories": [
-        "variety"
+        "variety",
+        "actor"
       ],
       "categoryForPhotos": "variety",
-      "priority": "B",
+      "priority": "C",
       "batch": 14,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "新世代綜藝／表演／啦啦隊"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0328",
@@ -5998,21 +6012,23 @@
     },
     {
       "candidateKey": "p0330",
-      "name": "佩甄",
+      "name": "浩子",
       "aliases": [
-        "佩甄"
+        "浩子",
+        "謝炘昊"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "B",
+      "priority": "C",
       "batch": 14,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "新世代綜藝／表演／啦啦隊"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0331",
@@ -6179,21 +6195,22 @@
     },
     {
       "candidateKey": "p0340",
-      "name": "博焱",
+      "name": "郭彥甫",
       "aliases": [
-        "博焱"
+        "郭彥甫"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "B",
+      "priority": "C",
       "batch": 14,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "新世代綜藝／表演／啦啦隊"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0341",
@@ -6215,21 +6232,22 @@
     },
     {
       "candidateKey": "p0342",
-      "name": "雅涵",
+      "name": "楊繡惠",
       "aliases": [
-        "雅涵"
+        "楊繡惠"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "B",
+      "priority": "C",
       "batch": 14,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "1000_target_priority",
-      "sourceGroup": "新世代綜藝／表演／啦啦隊"
+      "sourceGroup": "previous_800_shortlist",
+      "reviewNote": "Promoted from reserve during recognizability/identity quality pass"
     },
     {
       "candidateKey": "p0343",
@@ -7554,9 +7572,10 @@
     },
     {
       "candidateKey": "p0415",
-      "name": "法蘭",
+      "name": "何景揚",
       "aliases": [
-        "法蘭"
+        "何景揚",
+        "蘇打綠 阿福"
       ],
       "categories": [
         "singer"
@@ -7568,7 +7587,8 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0416",
@@ -7680,21 +7700,22 @@
     },
     {
       "candidateKey": "p0422",
-      "name": "陳華",
+      "name": "陳昇之子陳世崇",
       "aliases": [
-        "陳華"
+        "陳昇之子陳世崇"
       ],
       "categories": [
         "singer"
       ],
       "categoryForPhotos": "singer",
-      "priority": "B",
+      "priority": "A",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "台灣主流／華語與台語歌手",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0423",
@@ -7881,10 +7902,9 @@
     },
     {
       "candidateKey": "p0433",
-      "name": "蔡佩軒",
+      "name": "王夢麟",
       "aliases": [
-        "蔡佩軒",
-        "Ariel Tsai"
+        "王夢麟"
       ],
       "categories": [
         "singer"
@@ -7896,7 +7916,8 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0434",
@@ -8011,9 +8032,10 @@
     },
     {
       "candidateKey": "p0440",
-      "name": "魏嘉瑩",
+      "name": "史俊威",
       "aliases": [
-        "魏嘉瑩"
+        "史俊威",
+        "蘇打綠 小威"
       ],
       "categories": [
         "singer"
@@ -8025,7 +8047,8 @@
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "獨立／新世代歌手與樂團成員"
+      "sourceGroup": "獨立／新世代歌手與樂團成員",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0441",
@@ -8265,21 +8288,22 @@
     },
     {
       "candidateKey": "p0454",
-      "name": "陳以文",
+      "name": "張維錫",
       "aliases": [
-        "陳以文"
+        "張維錫"
       ],
       "categories": [
         "actor"
       ],
       "categoryForPhotos": "actor",
-      "priority": "B",
+      "priority": "A",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "台灣新世代演員"
+      "sourceGroup": "台灣本土劇／資深影視",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0455",
@@ -8537,21 +8561,22 @@
     },
     {
       "candidateKey": "p0469",
-      "name": "蔡嘉茵",
+      "name": "王惠五",
       "aliases": [
-        "蔡嘉茵"
+        "王惠五"
       ],
       "categories": [
         "actor"
       ],
       "categoryForPhotos": "actor",
-      "priority": "B",
+      "priority": "A",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "台灣新世代演員"
+      "sourceGroup": "台灣本土劇／資深影視",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0470",
@@ -9261,22 +9286,22 @@
     },
     {
       "candidateKey": "p0509",
-      "name": "浩子",
+      "name": "佩甄",
       "aliases": [
-        "浩子",
-        "謝炘昊"
+        "佩甄"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "B",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "新世代綜藝／表演／啦啦隊",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0510",
@@ -9317,22 +9342,22 @@
     },
     {
       "candidateKey": "p0512",
-      "name": "康康",
+      "name": "尼克",
       "aliases": [
-        "康康",
-        "康晉榮"
+        "尼克"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "B",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "新世代綜藝／表演／啦啦隊",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0513",
@@ -9372,40 +9397,41 @@
     },
     {
       "candidateKey": "p0515",
-      "name": "郭彥均",
+      "name": "妞妞",
       "aliases": [
-        "郭彥均"
-      ],
-      "categories": [
-        "variety",
-        "actor"
-      ],
-      "categoryForPhotos": "variety",
-      "priority": "C",
-      "batch": null,
-      "verification": "requires_portrait_identity_works_and_license_check",
-      "photoStatus": "not_prepared",
-      "worksHint": "to_verify",
-      "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
-    },
-    {
-      "candidateKey": "p0516",
-      "name": "郭彥甫",
-      "aliases": [
-        "郭彥甫"
+        "妞妞"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "B",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "新世代綜藝／表演／啦啦隊",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
+    },
+    {
+      "candidateKey": "p0516",
+      "name": "博焱",
+      "aliases": [
+        "博焱"
+      ],
+      "categories": [
+        "variety"
+      ],
+      "categoryForPhotos": "variety",
+      "priority": "B",
+      "batch": null,
+      "verification": "requires_portrait_identity_works_and_license_check",
+      "photoStatus": "not_prepared",
+      "worksHint": "to_verify",
+      "intendedUse": "replacement_candidate_if_priority_unavailable",
+      "sourceGroup": "新世代綜藝／表演／啦啦隊",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0517",
@@ -9517,21 +9543,22 @@
     },
     {
       "candidateKey": "p0523",
-      "name": "楊繡惠",
+      "name": "雅涵",
       "aliases": [
-        "楊繡惠"
+        "雅涵"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "B",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "新世代綜藝／表演／啦啦隊",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0524",
@@ -9608,22 +9635,22 @@
     },
     {
       "candidateKey": "p0528",
-      "name": "歐漢聲",
+      "name": "沈春華",
       "aliases": [
-        "歐漢聲",
-        "歐弟"
+        "沈春華"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "A",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "台灣綜藝／主持",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0529",
@@ -9738,22 +9765,22 @@
     },
     {
       "candidateKey": "p0535",
-      "name": "Lulu",
+      "name": "盛竹如",
       "aliases": [
-        "Lulu",
-        "黃路梓茵"
+        "盛竹如"
       ],
       "categories": [
         "variety"
       ],
       "categoryForPhotos": "variety",
-      "priority": "C",
+      "priority": "A",
       "batch": null,
       "verification": "requires_portrait_identity_works_and_license_check",
       "photoStatus": "not_prepared",
       "worksHint": "to_verify",
       "intendedUse": "replacement_candidate_if_priority_unavailable",
-      "sourceGroup": "previous_800_shortlist"
+      "sourceGroup": "台灣綜藝／主持",
+      "reviewNote": "Held for weak recognizability, uncertain identity or duplicate stage names"
     },
     {
       "candidateKey": "p0536",
@@ -10787,5 +10814,19 @@
   "rejectionsSummary": {
     "number": 149,
     "note": "Raw composites, name/alias collisions or people already in current game excluded before curation."
+  },
+  "editedAt": "2026-10-22",
+  "qualityCheck": {
+    "numberPriority": 411,
+    "numberReserve": 181,
+    "noDuplicateNames": true,
+    "allCategoriesCount": {
+      "singer": 120,
+      "actor": 150,
+      "variety": 95,
+      "creator": 13,
+      "hongkong": 33
+    },
+    "copyrightAndPortraitsNotYetCleared": true
   }
 }

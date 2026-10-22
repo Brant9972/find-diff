@@ -33,7 +33,24 @@ for(const q of actorBank.questions){
  assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing actor portrait");
  assert(q.attribution.source&&q.attribution.license);
 }
-realQuestions=[...new Map([...realQuestions,...actorBank.questions].map(q=>[q.id,q])).values()];
+const additionalBanks=[];
+for(const [role,file,rosterFile,rosterKey] of [["variety","variety.json","variety-roster.json","variety"],["creator","creators.json","creators-roster.json","creators"]]){
+ if(!fs.existsSync(path.join(__dirname,file)))continue;
+ const bank=JSON.parse(fs.readFileSync(path.join(__dirname,file)));
+ const roster=JSON.parse(fs.readFileSync(path.join(__dirname,rosterFile)))[rosterKey];
+ assert.equal(bank.playable,bank.questions.length);
+ assert(bank.playable>0&&bank.playable<=1000);
+ assert.equal(new Set(bank.questions.map(q=>q.id)).size,bank.playable);
+ assert.equal(new Set(bank.questions.map(q=>q.name)).size,bank.playable);
+ for(const q of bank.questions){
+  assert(roster.some(p=>p.id===q.id&&p.name===q.name),"Unknown "+role+" identity: "+q.id);
+  assert(realHints.entries[q.id]?.[role]?.title,"Missing "+role+" work hint: "+q.id);
+  assert(fs.existsSync(path.join(__dirname,q.photo)),q.id+" missing portrait");
+  assert(q.attribution.source&&q.attribution.license,q.id+" missing attribution");
+ }
+ additionalBanks.push(...bank.questions);
+}
+realQuestions=[...new Map([...realQuestions,...actorBank.questions,...additionalBanks].map(q=>[q.id,q])).values()];
 const eligibility=JSON.parse(fs.readFileSync(path.join(__dirname,"eligibility-review.json"))).entries;
 for(const q of realQuestions){
  const r=eligibility[q.id];
@@ -47,13 +64,15 @@ const rejectedKeys=new Set(rejectedPortraits.map(e=>sourceKey(e.source)));
 const preserveExisting=process.argv.includes("--preserve-existing-portraits");
 const priorPortraits=preserveExisting?JSON.parse(fs.readFileSync(path.join(__dirname,"actor-replacements-40-baseline-known-issues.json"))).questions:[];
 for(const q of realQuestions){
- const unchangedPrior=priorPortraits.some(p=>JSON.stringify(p)===JSON.stringify(q));
+ const unchangedPrior=["a1324","a1347"].includes(q.id)&&priorPortraits.some(p=>JSON.stringify(p)===JSON.stringify(q));
  if(rejectedKeys.has(sourceKey(q.attribution.source))&&unchangedPrior)console.warn("UNCHANGED BASELINE PORTRAIT OUTSIDE FORTY-PERSON SCOPE:",q.id);
  assert(!rejectedKeys.has(sourceKey(q.attribution.source))||unchangedPrior,"Previously rejected portrait reused: "+q.id);
 }
-let hintUnavailable=false;
+let hintUnavailable=false,optionalUnavailable=false;
 const missingHints=new Set();
 const actorFixtures={questions:Array.from({length:25},(_,i)=>({id:"qa"+(101+i),name:"演員"+(i+1),aliases:["Actor "+(i+1)],photo:"photos/qa"+(101+i)+".jpg"}))};
+const varietyFixtures={questions:[{id:"qa201",name:"吳宗憲",aliases:["綜藝測試"],photo:"photos/qa201.jpg"},{id:"qa202",name:"曾國城",aliases:[],photo:"photos/qa202.jpg"}]};
+const creatorFixtures={questions:[{id:"qa301",name:"蔡阿嘎",aliases:["創作者測試"],photo:"photos/qa301.jpg"},{id:"qa302",name:"阿滴",aliases:[],photo:"photos/qa302.jpg"}]};
 const fixtures={questions:[
  {id:"qa1",name:"測試甲",aliases:["Test Singer","测试甲"],photo:"photos/qa1.jpg"},
  {id:"qa2",name:"測試乙",aliases:["Test Two"],photo:"photos/qa2.jpg"}
@@ -82,7 +101,7 @@ const server=http.createServer((req,res)=>{
    await page.waitForFunction(()=>!document.getElementById("answer").disabled);
    const broken=await page.evaluate(async questions=>{
     const outcomes=await Promise.all(questions.map(q=>new Promise(resolve=>{
-     const image=new Image();image.onload=()=>resolve((q.batchId==="actor_refresh_remaining40_20261022"?image.naturalWidth===600&&image.naturalHeight===720:image.naturalWidth>=180&&image.naturalHeight>=180)?null:q.id);
+     const image=new Image();image.onload=()=>resolve((["actor_refresh_remaining40_20261022","expansion1000_20261022"].includes(q.batchId)?image.naturalWidth===600&&image.naturalHeight===720:image.naturalWidth>=180&&image.naturalHeight>=180)?null:q.id);
      image.onerror=()=>resolve(q.id);image.src=new URL(q.photo,location.href).href;
     })));
     return outcomes.filter(Boolean);
@@ -97,13 +116,16 @@ const server=http.createServer((req,res)=>{
    if(req.url().endsWith("/singer/hints.json")){
     if(hintUnavailable)return req.respond({status:503,contentType:"application/json",body:"{}"});
     const entries={};
-    for(const [mode,bank] of [["singer",fixtures],["actor",actorFixtures]]){
+    for(const [mode,bank] of [["singer",fixtures],["actor",actorFixtures],["variety",varietyFixtures],["creator",creatorFixtures]]){
      for(const q of bank.questions){
       if(missingHints.has(q.id))continue;
-      entries[q.id]??={};entries[q.id][mode]={title:mode==="singer"?"線索歌曲":"線索電影",kind:mode==="singer"?"音樂作品":"影視作品",source:"https://example.com/work"};
+      entries[q.id]??={};entries[q.id][mode]={title:({singer:"線索歌曲",actor:"線索電影",variety:"線索節目",creator:"線索頻道"})[mode],kind:({singer:"音樂作品",actor:"影視作品",variety:"綜藝節目",creator:"網路作品"})[mode],source:"https://example.com/work"};
      }
     }
     return req.respond({status:200,contentType:"application/json",body:JSON.stringify({entries})});
+   }
+   for(const [file,bank] of [["variety.json",varietyFixtures],["creators.json",creatorFixtures]]){
+    if(req.url().endsWith("/singer/"+file))return req.respond({status:optionalUnavailable&&file==="variety.json"?503:200,contentType:"application/json",body:JSON.stringify(bank)});
    }
    if(req.url().endsWith("/singer/actors.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(actorFixtures)});
    if(req.url().endsWith("/singer/questions.json"))return req.respond({status:200,contentType:"application/json",body:JSON.stringify(fixtures)});
@@ -246,8 +268,8 @@ const server=http.createServer((req,res)=>{
   await page.select("#roundSize","all");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   saved=await snapshot();
-  assert.equal(saved.deck.length,56,"Mixed bank did not deduplicate shared people");
-  assert.equal(new Set(saved.deck).size,56);
+  assert.equal(saved.deck.length,60,"Mixed bank did not deduplicate shared people");
+  assert.equal(new Set(saved.deck).size,60);
   await page.select("#quizMode","singer");await page.select("#roundSize","10");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert((await snapshot()).deck.every(id=>fixtures.questions.some(q=>q.id===id)),"Singer mode drew an actor-only question");
@@ -313,8 +335,33 @@ const server=http.createServer((req,res)=>{
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   saved=await snapshot();
   await page.click("#hintButton");
-  const expectedKind=actorFixtures.questions.some(q=>q.id===saved.deck[saved.pos])?"影視作品":"音樂作品";
+  const expectedKind=[[actorFixtures,"影視作品"],[fixtures,"音樂作品"],[varietyFixtures,"綜藝節目"],[creatorFixtures,"網路作品"]].find(([bank])=>bank.questions.some(q=>q.id===saved.deck[saved.pos]))[1];
   assert(await page.$eval("#hintText",(e,kind)=>e.textContent.includes(kind),expectedKind),"Mixed mode chose the wrong work hint");
+  // New category rounds isolate their people and use category-specific hints.
+  for(const [mode,bank,kind,label] of [["variety",varietyFixtures,"綜藝節目","綜藝"],["creator",creatorFixtures,"網路作品","網路創作者"]]){
+   await page.select("#quizMode",mode);await page.select("#roundSize","all");await page.click("#startRound");
+   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+   const s=await snapshot();
+   assert.equal(s.mode,mode);assert.equal(s.deck.length,bank.questions.length);
+   assert(s.deck.every(id=>bank.questions.some(q=>q.id===id)),"Category leaked unrelated people");
+   assert.equal(await page.$eval("#quizMode option:last-child",e=>e.value),"mixed","Mixed must remain last for keyboard End");
+   assert.equal(await page.title(),"猜"+label+"・五官挑戰");
+   await page.click("#hintButton");
+   assert(await page.$eval("#hintText",(e,k)=>e.textContent.includes(k),kind));
+   await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+   assert.equal((await snapshot()).mode,mode);assert.equal((await snapshot()).hintUsed,true);
+   const current=await snapshot();await guess(bank.questions.find(q=>q.id===current.deck[current.pos]).name);
+   assert.equal((await snapshot()).score,80,"New category scoring changed");
+  }
+  // One missing optional bank cannot block another category or the legacy game.
+  optionalUnavailable=true;await page.evaluate(()=>localStorage.clear());await page.reload();
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).mode,"singer");
+  assert(await page.$eval('#quizMode option[value="variety"]',e=>e.disabled));
+  assert(await page.$eval('#quizMode option[value="creator"]',e=>!e.disabled));
+  await page.select("#quizMode","creator");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).mode,"creator");
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Work clue overflows mobile");
   assert.equal(errors.length,0,errors.join("\n"));
   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});
@@ -322,3 +369,4 @@ const server=http.createServer((req,res)=>{
   console.log("PASS: all real portraits, categories, rounds, work hints, optional scoring, no double charge, reload, 10-point floor, missing hints, source outage and mobile layout.");
  }finally{await browser.close();}
 })().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());
+

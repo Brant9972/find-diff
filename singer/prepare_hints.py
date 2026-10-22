@@ -5,7 +5,8 @@ ROOT=Path(__file__).resolve().parent
 candidates=json.loads((ROOT/"hint-candidates.json").read_text())["entries"]
 payload=json.loads((ROOT/"hints.json").read_text())
 banks={mode:{q["id"]:q for q in json.loads((ROOT/file).read_text())["questions"]}
-       for mode,file in [("singer","questions.json"),("actor","actors.json")]}
+       for mode,file in [("singer","questions.json"),("actor","actors.json"),("variety","variety.json"),("creator","creators.json")]
+       if (ROOT/file).exists()}
 seen=set()
 for e in candidates:
     key=(e["id"],e["mode"])
@@ -19,3 +20,4 @@ for e in candidates:
 for mode,bank in banks.items():
     assert all((id,mode) in seen for id in bank),mode+" hint coverage incomplete"
 print("PASS:",len(seen),"curated work hints for",len(payload["entries"]),"people")
+

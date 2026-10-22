@@ -5,6 +5,7 @@ on:
       - photo-prep-actors-batch-01-20261022
     paths:
       - .github/workflows/photo-prep-candidates.yml
+      - singer/photo-prep/prepare_commons_candidates.py
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,0 +1,53 @@
+name: Prepare 1000-person expansion media
+on:
+  push:
+    branches: [expansion-1000-media-20261022]
+    paths: [singer/expansion-1000/sources/**, singer/tools/prepare_expansion1000.py, .github/workflows/expansion1000-media.yml]
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      batches: ${{ steps.list.outputs.batches }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          print("batches="+json.dumps([p.stem for p in sorted(Path("singer/expansion-1000/sources").glob("*.json"))]))
+          PY
+  prepare:
+    needs: discover
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        batch: ${{ fromJSON(needs.discover.outputs.batches) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: expansion-1000-media-20261022
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests Pillow numpy==2.2.6 opencv-python-headless==4.12.0.88 opencc-python-reimplemented
+      - run: python -u singer/tools/prepare_expansion1000.py ${{ matrix.batch }}
+      - name: Save reusable media checkpoint on the isolated branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/expansion-1000/prepared/${{ matrix.batch }}
+          if ! git diff --cached --quiet; then
+            git commit -m "Prepare expansion media ${{ matrix.batch }}"
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin expansion-1000-media-20261022
+              if git push origin HEAD:expansion-1000-media-20261022; then exit 0; fi
+            done
+            exit 1
+          fi

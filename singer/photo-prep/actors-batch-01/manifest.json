@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-22",
+  "project": "Brant9972/find-diff",
+  "branch": "photo-prep-actors-batch-01-20261022",
+  "batch": 1,
+  "purpose": "Photo-only preparation; does not change production actor roster or game",
+  "sourceRoster": "singer/roster-review-2026-10-21.json",
+  "notReadyForMerge": true,
+  "completedPhotoCount": 0,
+  "targets": [
+    {
+      "id": "a1301",
+      "name": "賀軍翔",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1302",
+      "name": "言承旭",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1303",
+      "name": "周渝民",
+      "status": "candidate_found_manual_review_required",
+      "photoFile": null,
+      "reveal": null,
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%91%A8%E6%B8%9D%E6%B0%91.jpg",
+      "artist": "臺中市政府新聞局",
+      "license": "Government Website Open Information Announcement (attribution required)",
+      "licenseUrl": "https://www.news.taichung.gov.tw/",
+      "manualReviewRequired": true,
+      "sourceDimensions": [
+        1279,
+        2054
+      ],
+      "qualityConcern": "Holding microphone and head turned; mouth obscured. Do not crop or publish until alternate front-facing unobstructed portrait is verified.",
+      "identityEvidence": "File description 周渝民, 2023 Taichung movie premiere"
+    },
+    {
+      "id": "a1304",
+      "name": "朱孝天",
+      "status": "candidate_rejected_quality",
+      "photoFile": null,
+      "reveal": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Ken_Chu_2007.jpg",
+      "artist": "KCIFC Philippines webmaster - ZAQ (uploader claim)",
+      "license": "Public domain claimed; provenance should be independently reviewed",
+      "licenseUrl": null,
+      "manualReviewRequired": true,
+      "sourceDimensions": [
+        258,
+        200
+      ],
+      "qualityConcern": "Only 258x200; insufficient resolution for reliable five-stage facial reveal"
+    },
+    {
+      "id": "a1305",
+      "name": "李威",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1306",
+      "name": "許紹洋",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1307",
+      "name": "唐禹哲",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1308",
+      "name": "邱勝翊",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1309",
+      "name": "邱宇辰",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    },
+    {
+      "id": "a1310",
+      "name": "王少偉",
+      "status": "awaiting_verified_portrait",
+      "photoFile": null,
+      "reveal": null,
+      "source": null,
+      "artist": null,
+      "license": null,
+      "licenseUrl": null,
+      "manualReviewRequired": true
+    }
+  ]
+}

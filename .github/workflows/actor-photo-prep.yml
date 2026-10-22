@@ -1,0 +1,36 @@
+name: Prepare actor photo candidates (isolated)
+on:
+  push:
+    branches:
+      - photo-prep-actors-batch-01-20261022
+    paths:
+      - .github/workflows/actor-photo-prep.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        start: [0, 10, 20, 30]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow numpy opencv-python-headless
+      - name: Find and crop 10 candidate portraits
+        run: >-
+          python singer/photo-prep/prepare_commons_candidates.py
+          --manifest singer/photo-prep/actors-pending-40/manifest.json
+          --start ${{ matrix.start }} --count 10
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: actor-candidates-${{ matrix.start }}
+          path: actor-photo-candidates/
+          retention-days: 7
+          if-no-files-found: warn

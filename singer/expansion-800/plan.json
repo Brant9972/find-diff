@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22",
+  "title": "猜名人 800 人擴充計畫",
+  "target": {
+    "uniquePersons": 800,
+    "baselineAtCreation": 600,
+    "netAdditionsRequired": 200,
+    "existingSwapPlanReplaces": 55,
+    "actorSwapCompletedAtCreation": 15,
+    "actorSwapStillPendingAtCreation": 40
+  },
+  "state": "staging_candidates_not_yet_live",
+  "audience": {
+    "primary": "台灣30～35歲玩家",
+    "focus": [
+      "台灣歌手",
+      "台劇和台灣電影演員",
+      "台灣綜藝主持人和熟悉綜藝咖",
+      "少數經典香港電影熟面孔"
+    ],
+    "exclude": [
+      "以陸劇為主要代表作的人物",
+      "知名度不足又缺乏台灣連結的人物",
+      "照片身分無法確認的人物"
+    ]
+  },
+  "branchOwnership": {
+    "roster-expansion-800-20261022": "題庫對話：只能先新增/編輯 singer/expansion-800/*，候選名單、來源、身份審查；不動舊55人汰換中的檔案。",
+    "actor-refresh-20261021": "原55人汰換對話與其相關照片審查。",
+    "photo-prep-actors-batch-01-20261022": "另一對話原55人照片準備；勿覆寫本擴充計畫。",
+    "main": "僅已檢查可玩的正式出題資料。每一批統一整合，由負責整合的人從最新 main 更新，避免覆寫他人變更。"
+  },
+  "protectedFiles": [
+    "singer/actors.json",
+    "singer/questions.json",
+    "singer/hints.json",
+    "singer/eligibility-review.json",
+    "singer/game.js",
+    "singer/photos/"
+  ],
+  "safeWorkingPath": "singer/expansion-800/",
+  "integrationRequirements": [
+    "每人需與最新 main 以及55人剩餘候選以標準化中文名/別名比對，禁止重複。",
+    "先確認本人及在台灣玩家的辨識度，歌手/演員/綜藝跨類只算一人。",
+    "所有可玩人物須有正確辨識的真實照片、可查授權與作者、在 GitHub 存在的 jpg、五官框經逐張檢查。",
+    "每個可玩模式須有合適的代表作品/綜藝節目提示和來源。",
+    "對話 B 在增加 variety（綜藝）模式前，禁止將 variety-only 人物直接插入現有歌手或演員題庫。",
+    "不從長時間前的分支整包合併到 main；應只複製審核通過的資料到『當下最新 main』並重新檢查照片、提示、人物ID。",
+    "正式提交前檢驗全站人物 ID、同名/別名、照片路徑、五官裁切、各模式提示均有效；數量必須等於更新前的unique+本批新人物數。",
+    "55人換人不會影響unique數字，800人是基於換人後再額外淨增200；沒照片的人不得為湊數放進可玩題庫。"
+  ],
+  "candidateFile": "singer/expansion-800/b001-candidates.json",
+  "immediatePriorities": [
+    "張震嶽",
+    "江蕙",
+    "張信哲",
+    "吳克群",
+    "范曉萱",
+    "胡瓜",
+    "張菲",
+    "曾國城",
+    "沈玉琳",
+    "納豆",
+    "阿Ken",
+    "蔡康永",
+    "王彩樺",
+    "豬哥亮"
+  ],
+  "nextMilestones": [
+    {
+      "totalPlayable": 650,
+      "batchSize": 50
+    },
+    {
+      "totalPlayable": 700,
+      "batchSize": 50
+    },
+    {
+      "totalPlayable": 750,
+      "batchSize": 50
+    },
+    {
+      "totalPlayable": 800,
+      "batchSize": 50
+    }
+  ],
+  "targetIsNotCurrentPlayableCount": true
+}

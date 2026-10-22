@@ -18,9 +18,9 @@ def get_json(params):
     with urllib.request.urlopen(req, timeout=25) as r:
         return json.load(r)
 def image_candidates(name):
-    q = get_json({"action":"query","generator":"search","gsrsearch":'intitle:"'+name+'"',
-                  "gsrnamespace":6,"gsrlimit":12,"prop":"imageinfo",
-                  "iiprop":"url|size|extmetadata","format":"json","formatversion":2})
+    q = get_json({"action":"query","generator":"search","gsrsearch":'' + name + '',
+                  "gsrnamespace":6,"gsrlimit":30,"prop":"imageinfo",
+                  "iiprop":"url|size|mime|extmetadata","format":"json","formatversion":2})
     for page in q.get("query",{}).get("pages",[]):
         for info in page.get("imageinfo",[]):
             if info.get("width",0) < 520 or info.get("height",0) < 520:
@@ -65,10 +65,11 @@ def main():
     outcomes=[]
     for t in targets[a.start:a.start+a.count]:
         dest=root/t["id"];dest.mkdir(exist_ok=True)
-        item={"id":t["id"],"name":t["name"],"status":"needs_manual_review","candidates":[]}
+        item={"id":t["id"],"name":t["name"],"status":"needs_manual_review","candidates":[],"foundSourceResults":0}
         try:
             for ix,c in enumerate(image_candidates(t["name"])):
-                if ix>=4: break
+                item["foundSourceResults"] += 1
+                if ix>=12: break
                 url=c["downloadUrl"]
                 req=urllib.request.Request(url,headers=HEADERS)
                 with urllib.request.urlopen(req,timeout=35) as resp:
@@ -90,6 +91,7 @@ def main():
                 item["candidates"].append(entry)
         except Exception as exc:
             item["error"]=str(exc)
+            print("LOOKUP_ERROR",t["id"],t["name"],str(exc),flush=True)
         (dest/"review.json").write_text(json.dumps(item,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
         outcomes.append({"id":item["id"],"name":item["name"],"candidates":len(item["candidates"])})
         time.sleep(0.4)

@@ -20,7 +20,7 @@ def api(lang,**kw):
 def norm(s):return re.sub(r"[\W_]+","",t.CC.convert(s).lower())
 def process(p):
  record=CACHE.get(p["id"],{**p,"options":[],"errors":[]})
- if p["id"] in {"a1320","a1323","a1328","a1345","a1337"} and record.get("sourceRevision")!=3:
+ if p["id"] in {"a1320","a1323","a1328","a1345","a1337","a1316"} and record.get("sourceRevision")!=3:
   record["options"]=[];record["sourceRevision"]=3
  if record["options"]:return record
  record["errors"]=[]

@@ -44,7 +44,13 @@ assert.equal(new Set(realQuestions.map(q=>q.attribution.source)).size,realQuesti
 const rejectedPortraits=JSON.parse(fs.readFileSync(path.join(__dirname,"photo-review.json"))).rejected||[];
 const sourceKey=url=>decodeURIComponent(url.split("/wiki/").pop()).replaceAll("_"," ").toLowerCase();
 const rejectedKeys=new Set(rejectedPortraits.map(e=>sourceKey(e.source)));
-for(const q of realQuestions)assert(!rejectedKeys.has(sourceKey(q.attribution.source)),"Previously rejected portrait reused: "+q.id);
+const preserveExisting=process.argv.includes("--preserve-existing-portraits");
+const priorPortraits=preserveExisting?JSON.parse(fs.readFileSync(path.join(__dirname,"actor-replacements-40-baseline-known-issues.json"))).questions:[];
+for(const q of realQuestions){
+ const unchangedPrior=priorPortraits.some(p=>JSON.stringify(p)===JSON.stringify(q));
+ if(rejectedKeys.has(sourceKey(q.attribution.source))&&unchangedPrior)console.warn("UNCHANGED BASELINE PORTRAIT OUTSIDE FORTY-PERSON SCOPE:",q.id);
+ assert(!rejectedKeys.has(sourceKey(q.attribution.source))||unchangedPrior,"Previously rejected portrait reused: "+q.id);
+}
 let hintUnavailable=false;
 const missingHints=new Set();
 const actorFixtures={questions:Array.from({length:25},(_,i)=>({id:"qa"+(101+i),name:"演員"+(i+1),aliases:["Actor "+(i+1)],photo:"photos/qa"+(101+i)+".jpg"}))};

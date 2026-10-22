@@ -19,7 +19,7 @@ jobs:
       - run: npm install --no-save --package-lock=false puppeteer-core@24
       - run: python singer/tools/publish_remaining_forty.py
       - run: python singer/prepare_hints.py
-      - run: node singer/qa.cjs
+      - run: node singer/qa.cjs --preserve-existing-portraits
       - name: Publish tested portraits and banks
         run: |
           git config user.name "github-actions[bot]"

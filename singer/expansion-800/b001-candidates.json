@@ -14,11 +14,11 @@
     "Show variety-only characters in a new game mode once the developer implements it; do not introduce unsupported modes into live JSON."
   ],
   "counts": {
-    "uniqueInitialCandidates": 220,
+    "uniqueInitialCandidates": 217,
     "roleCounts": {
-      "singer": 79,
+      "singer": 78,
       "actor": 69,
-      "variety": 74
+      "variety": 72
     },
     "skippedExistingOrDuplicate": 5
   },
@@ -1011,19 +1011,6 @@
       "name": "林淑容",
       "aliases": [
         "林淑容"
-      ],
-      "categories": [
-        "singer"
-      ],
-      "status": "candidate_only",
-      "photoStatus": "not_prepared",
-      "hintStatus": "not_verified",
-      "manualIdentityCheckRequired": true
-    },
-    {
-      "name": "南方二重唱",
-      "aliases": [
-        "南方二重唱"
       ],
       "categories": [
         "singer"
@@ -2869,32 +2856,6 @@
       "manualIdentityCheckRequired": true
     },
     {
-      "name": "柯大堡",
-      "aliases": [
-        "柯大堡"
-      ],
-      "categories": [
-        "variety"
-      ],
-      "status": "candidate_only",
-      "photoStatus": "not_prepared",
-      "hintStatus": "not_verified",
-      "manualIdentityCheckRequired": true
-    },
-    {
-      "name": "李佳玲",
-      "aliases": [
-        "李佳玲"
-      ],
-      "categories": [
-        "variety"
-      ],
-      "status": "candidate_only",
-      "photoStatus": "not_prepared",
-      "hintStatus": "not_verified",
-      "manualIdentityCheckRequired": true
-    },
-    {
       "name": "錦雯",
       "aliases": [
         "錦雯"
@@ -2954,6 +2915,24 @@
       "name": "六月",
       "reason": "same_new_person_as_prior",
       "matched": "六月"
+    }
+  ],
+  "editorialHold": [
+    {
+      "name": "南方二重唱",
+      "reason": "Band not a single face, insufficient target-audience familiarity, or ambiguous identity; do not include without a specific verified person."
+    },
+    {
+      "name": "柯大堡",
+      "reason": "Band not a single face, insufficient target-audience familiarity, or ambiguous identity; do not include without a specific verified person."
+    },
+    {
+      "name": "李佳玲",
+      "reason": "Band not a single face, insufficient target-audience familiarity, or ambiguous identity; do not include without a specific verified person."
+    },
+    {
+      "name": "林智賢",
+      "reason": "Band not a single face, insufficient target-audience familiarity, or ambiguous identity; do not include without a specific verified person."
     }
   ]
 }

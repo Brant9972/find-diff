@@ -20,7 +20,7 @@ for pid,optn in selection.items():
  assert any(x["id"]==old["id"] for x in actors["questions"]),old
  assert p["name"]==next(x["name"] for x in original if x["id"]==pid)
  photo="photos/"+pid+".jpg";shutil.copyfile(B/"actor-replacements-pending-40"/o["file"],B/photo)
- q={"id":pid,"name":p["name"],"aliases":[p["name"]],"photo":photo,"reveal":o["reveal"],"attribution":o["attribution"],"humanReviewed":True,"photoStatus":"identity_and_landmarks_visually_reviewed_20261022","eligibility":"approved","processorVersion":2,"bioExcerpt":o["bioExcerpt"],"batchId":"actor_refresh_remaining40_20261022"}
+ q={"id":pid,"name":p["name"],"aliases":[p["name"]]+{"a1308":["王子"],"a1309":["毛弟"],"a1310":["王紹偉"],"a1314":["Andy Chen"]}.get(pid,[]),"photo":photo,"reveal":o["reveal"],"attribution":o["attribution"],"humanReviewed":True,"photoStatus":"identity_and_landmarks_visually_reviewed_20261022","eligibility":"approved","processorVersion":2,"bioExcerpt":o["bioExcerpt"],"batchId":"actor_refresh_remaining40_20261022"}
  source=o["attribution"]["article"]
  work=p["work"]
  if pid=="a1314":work="噗通噗通我愛你"
@@ -54,6 +54,8 @@ for mode,bank in [("singer",singers),("actor",actors)]:
  for q in bank["questions"]:
   h=hints["entries"][q["id"]][mode]
   hc["entries"].append({"id":q["id"],"name":q["name"],"mode":mode,"kind":h["kind"],"title":h["title"],"article":h["source"]})
+elig["currentRosterRefresh"]={"reviewedAt":"2026-10-22","planned":55,"completed":55-remaining,"pending":remaining,"scope":"original55_actor_swaps"}
+elig["summary"]={"reviewed":len(elig["entries"]),"retained":600,"paused":sum(e.get("status")!="approved" for e in elig["entries"].values()),"singer":339,"actor":329,"shared":68}
 for path,j in [("actors.json",actors),("hints.json",hints),("hint-candidates.json",hc),("actors-roster.json",roster),("eligibility-review.json",elig),("roster-review-2026-10-21.json",plan)]:write(path,j)
 write("actor-replacements-40-release.json",{"scope":"original_remaining_40_only","updatedAt":"2026-10-22","justPublished":newly,"pending":remaining,"approved":selection})
 print("PUBLISHED",len(newly),newly,"PENDING",remaining,flush=True)

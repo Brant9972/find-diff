@@ -30,7 +30,7 @@ jobs:
           node --check singer/qa.cjs
       - run: npm install --no-save --package-lock=false puppeteer-core@24
       - run: python singer/prepare_hints.py
-      - run: node singer/qa.cjs --preserve-existing-portraits
+      - run: node singer/qa.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

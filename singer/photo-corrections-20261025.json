@@ -1,0 +1,55 @@
+{
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "id": "x1000_p0297",
+      "name": "林葉亭",
+      "previousPhoto": "photos/x1000_p0297.jpg",
+      "rejectedSourceImage": "https://hips.hearstapps.com/hmg-prod/images/8-658b89102cd84.png",
+      "reason": "Correct mistaken identity: previous crop was the article's separately captioned beauty expert, not 林葉亭.",
+      "source": "https://www.elle.com/tw/beauty/skin/a46231092/chlitinaspa-2024/",
+      "replacementPhoto": "photos/x1000_p0297_r3.jpg",
+      "replacementImage": "https://hips.hearstapps.com/hmg-prod/images/3-658b883d03936.png",
+      "sha256": "f0769bc415d358edfbebb50fa751aed1c61893d871463d73e4a92767587520dc",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.335,
+          0.92,
+          0.43
+        ],
+        "nose": [
+          0.08,
+          0.335,
+          0.92,
+          0.5
+        ],
+        "mouth": [
+          0.08,
+          0.335,
+          0.92,
+          0.6
+        ],
+        "chin": [
+          0.08,
+          0.335,
+          0.92,
+          0.7
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "checks": {
+        "sourceCaptionChecked": true,
+        "singleSubject": true,
+        "noVisibleWatermark": true,
+        "fiveRevealStagesReviewed": true
+      },
+      "note": "This correction supersedes the retained_after_visual_review status for x1000_p0297 in the 2026-10-22 audit."
+    }
+  ]
+}

@@ -3,10 +3,10 @@ const fs=require('node:fs');
 const puppeteer=require('puppeteer-core');
 (async()=>{
  const url='https://brant9972.github.io/find-diff/singer/';
- const files=['questions.json','actors.json','variety.json','creators.json'];
+ const files=['questions.json','actors.json','variety.json'];
  const banks=await Promise.all(files.map(async f=>{const r=await fetch(url+f,{cache:'no-store'});assert(r.ok,f);return await r.json()}));
  const people=[...new Map(banks.flatMap(b=>b.questions).map(q=>[q.id,q])).values()];
- assert.equal(people.length,1000);
+ assert.equal(people.length,987);
  const hints=await (await fetch(url+'hints.json',{cache:'no-store'})).json();
  for(const q of people)assert(hints.entries[q.id]);
  const executable=['/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
@@ -15,6 +15,7 @@ const puppeteer=require('puppeteer-core');
   const page=await browser.newPage();await page.setViewport({width:390,height:844});
   await page.goto(url,{waitUntil:'networkidle0'});
   await page.waitForFunction(()=>!document.getElementById('answer').disabled);
+  assert.equal(await page.$('#quizMode option[value="creator"]'),null);
   const broken=await page.evaluate(async qs=>{
    const failures=[];
    for(let i=0;i<qs.length;i+=20){
@@ -24,7 +25,7 @@ const puppeteer=require('puppeteer-core');
    return failures;
   },people);
   assert.deepEqual(broken,[]);
-  for(const [mode,count] of [['singer',449],['actor',511],['variety',95],['creator',13],['mixed',1000]]){
+  for(const [mode,count] of [['singer',449],['actor',511],['variety',95],['mixed',987]]){
    await page.select('#quizMode',mode);await page.select('#roundSize','all');await page.click('#startRound');
    await page.waitForFunction(()=>!document.getElementById('answer').disabled);
    const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('singer-face-quiz-v1')));
@@ -33,7 +34,7 @@ const puppeteer=require('puppeteer-core');
   }
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   fs.mkdirSync('qa-output',{recursive:true});await page.screenshot({path:'qa-output/live-1000-mobile.png',fullPage:true});
-  console.log('PASS LIVE: 1000 deployed portraits, sourced hints, all five selectors, correct counts, unique mixed deck, mobile width');
+  console.log('PASS LIVE: 987 active portraits, sourced hints, all four selectors, correct counts, unique mixed deck, mobile width');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});
 

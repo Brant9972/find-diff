@@ -276,8 +276,8 @@ const server=http.createServer((req,res)=>{
   assert.equal(saved.mode,"mixed");
   assert.equal(saved.deck.length,10);
   assert.equal(new Set(saved.deck).size,10,"Shared singer/actors repeated");
-  assert(saved.deck.some(id=>id.startsWith("qa1")&&Number(id.slice(2))>=101),"Mixed round has no actor-only questions");
-  assert(saved.deck.some(id=>!actorIds.has(id)),"Mixed round has no singer-only questions");
+  assert(saved.deck.every(id=>[...fixtures.questions,...actorFixtures.questions,...varietyFixtures.questions].some(q=>q.id===id)),"Mixed round has an inactive person");
+  assert(!saved.deck.some(id=>creatorFixtures.questions.some(q=>q.id===id)),"Creator appeared in mixed mode");
   await guess("混合錯答");
   await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert.equal((await snapshot()).mode,"mixed");
@@ -285,8 +285,8 @@ const server=http.createServer((req,res)=>{
   await page.select("#roundSize","all");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   saved=await snapshot();
-  assert.equal(saved.deck.length,60,"Mixed bank did not deduplicate shared people");
-  assert.equal(new Set(saved.deck).size,60);
+  assert.equal(saved.deck.length,58,"Mixed bank did not deduplicate shared people");
+  assert.equal(new Set(saved.deck).size,58);
   await page.select("#quizMode","singer");await page.select("#roundSize","10");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert((await snapshot()).deck.every(id=>fixtures.questions.some(q=>q.id===id)),"Singer mode drew an actor-only question");
@@ -352,10 +352,10 @@ const server=http.createServer((req,res)=>{
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   saved=await snapshot();
   await page.click("#hintButton");
-  const expectedKind=[[actorFixtures,"影視作品"],[fixtures,"音樂作品"],[varietyFixtures,"綜藝節目"],[creatorFixtures,"網路作品"]].find(([bank])=>bank.questions.some(q=>q.id===saved.deck[saved.pos]))[1];
+  const expectedKind=[[actorFixtures,"影視作品"],[fixtures,"音樂作品"],[varietyFixtures,"綜藝節目"]].find(([bank])=>bank.questions.some(q=>q.id===saved.deck[saved.pos]))[1];
   assert(await page.$eval("#hintText",(e,kind)=>e.textContent.includes(kind),expectedKind),"Mixed mode chose the wrong work hint");
   // New category rounds isolate their people and use category-specific hints.
-  for(const [mode,bank,kind,label] of [["variety",varietyFixtures,"綜藝節目","綜藝"],["creator",creatorFixtures,"網路作品","網路創作者"]]){
+  for(const [mode,bank,kind,label] of [["variety",varietyFixtures,"綜藝節目","綜藝"]]){
    await page.select("#quizMode",mode);await page.select("#roundSize","all");await page.click("#startRound");
    await page.waitForFunction(()=>!document.getElementById("answer").disabled);
    const s=await snapshot();
@@ -370,15 +370,49 @@ const server=http.createServer((req,res)=>{
    const current=await snapshot();await guess(bank.questions.find(q=>q.id===current.deck[current.pos]).name);
    assert.equal((await snapshot()).score,80,"New category scoring changed");
   }
-  // One missing optional bank cannot block another category or the legacy game.
+  // Shared history prevents repeat people across rounds, reloads and category changes.
+  const originalFixtures=fixtures.questions;
+  fixtures.questions=fixtures.questions.slice(0,30);
+  await page.evaluate(()=>localStorage.clear());await page.reload();
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  const visited=[];
+  for(let round=0;round<3;round++){
+   if(round){await page.click("#summaryRestart");await page.waitForFunction(()=>!document.getElementById("answer").disabled);}
+   const s=await snapshot();
+   assert.equal(s.deck.length,10);
+   assert(!s.deck.some(id=>visited.includes(id)),"A new round repeated someone before the pool was exhausted");
+   visited.push(...s.deck);
+   for(let i=0;i<10;i++){
+    await page.click("#giveup");await page.click("#next");
+    if(i<9)await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+   }
+   await page.reload();await page.waitForFunction(()=>!document.getElementById("startRound").disabled);
+  }
+  assert.equal(new Set(visited).size,30,"Three rounds did not cover 30 different people");
+  await page.select("#quizMode","actor");await page.click("#summaryRestart");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  assert(!saved.deck.includes("qa1")&&!saved.deck.includes("qa2"),"Changing categories repeated a shared person");
+  // Exhaustion recycles the oldest people, without duplicate IDs within a round.
+  await page.select("#quizMode","singer");await page.click("#startRound");
+  await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  saved=await snapshot();
+  assert.equal(new Set(saved.deck).size,10);
+  assert.deepEqual(saved.deck,visited.slice(0,10),"Exhausted pool did not use the least-recently seen people");
+  fixtures.questions=originalFixtures;
+  // Old creator saves migrate to a supported mode; creator data is kept as an archive.
+  await page.evaluate(()=>localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,mode:"creator",roundSize:20,deck:["qa301"],pos:0})));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).mode,"singer");
+  assert.equal((await snapshot()).deck.length,20);
+  assert.equal(await page.$('#quizMode option[value="creator"]'),null);
   optionalUnavailable=true;await page.evaluate(()=>localStorage.clear());await page.reload();
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
   assert.equal((await snapshot()).mode,"singer");
   assert(await page.$eval('#quizMode option[value="variety"]',e=>e.disabled));
-  assert(await page.$eval('#quizMode option[value="creator"]',e=>!e.disabled));
-  await page.select("#quizMode","creator");await page.click("#startRound");
+  await page.select("#quizMode","mixed");await page.click("#startRound");
   await page.waitForFunction(()=>!document.getElementById("answer").disabled);
-  assert.equal((await snapshot()).mode,"creator");
+  assert.equal((await snapshot()).mode,"mixed");
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Work clue overflows mobile");
   assert.equal(errors.length,0,errors.join("\n"));
   fs.mkdirSync(path.join(root,"qa-output"),{recursive:true});

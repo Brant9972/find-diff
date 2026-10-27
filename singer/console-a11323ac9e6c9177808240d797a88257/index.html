@@ -139,7 +139,7 @@ $("candidateFile").addEventListener("change",function(){
  clearCandidate();localFile=file;candidateObjectUrl=URL.createObjectURL(file);chooseCandidate(candidateObjectUrl,file.name,true);
 });
 function loadCandidateUrl(){
- var url=this.value.trim();if(!url){if(!localFile)clearCandidate();return;}
+ var url=$("candidateUrl").value.trim();if(!url){if(!localFile)clearCandidate();return;}
  var good=safeHttp(url);if(!good||!good.startsWith("https://")){showFeedback("請使用 HTTPS 圖片直連網址。",true);return;}
  if(candidateObjectUrl){URL.revokeObjectURL(candidateObjectUrl);candidateObjectUrl=null;}localFile=null;$("candidateFile").value="";chooseCandidate(good,"遠端圖片預覽",false);
 }

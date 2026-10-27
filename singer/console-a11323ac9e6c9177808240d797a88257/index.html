@@ -45,7 +45,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 </div>
 <hr class="section-line">
 <h3 class="section-label">正式紀錄與照片來源</h3>
-<dl class="meta-grid"><dt>照片檔案</dt><dd id="photoPath"></dd><dt>跨題庫資料</dt><dd id="allPaths" class="paths"></dd><dt>來源文章</dt><dd id="articleLink"></dd><dt>原始圖片</dt><dd id="sourceLink"></dd><dt>授權／署名</dt><dd id="licenseText"></dd></dl><div class="record-flags" id="recordFlags"></div>
+<dl class="meta-grid"><dt>照片檔案</dt><dd id="photoPath"></dd><dt>跨題庫資料</dt><dd id="allPaths" class="paths"></dd><dt>來源文章</dt><dd id="articleLink"></dd><dt>原始圖片／來源頁</dt><dd id="sourceLink"></dd><dt>授權／署名</dt><dd id="licenseText"></dd></dl><div class="record-flags" id="recordFlags"></div>
 <hr class="section-line">
 <div class="proposal-heading"><h3>照片修正草稿</h3><span>不會自動發布</span></div><p class="helper">你可以先替換預覽圖，再微調眼、鼻、嘴、下巴的顯示範圍。下載草稿後，交給我處理正式修正。</p>
 <label class="field"><span>從電腦選擇候選照片</span><div class="upload-box"><input id="candidateFile" type="file" accept="image/jpeg,image/png,image/webp"></div></label><p class="or">或</p>
@@ -70,7 +70,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 (function(){
 "use strict";
 var roles=[["singer","questions.json","歌手"],["actor","actors.json","演員"],["variety","variety.json","綜藝"]];
-var steps=["eyes","nose","mouth","chin","full"],selected=null,recordRole=null,stage="eyes",all=[],filterRole="all",draft=null,candidateObjectUrl=null,candidateSource="",localFile=null;
+var steps=["eyes","nose","mouth","chin","full"],selected=null,recordRole=null,stage="eyes",all=[],filterRole="all",draft=null,candidateObjectUrl=null,candidateSource="",localFile=null,corrections=new Map();
 var $=function(id){return document.getElementById(id);};
 var normalize=function(s){return String(s||"").normalize("NFKC").toLocaleLowerCase().replace(/[\s\-_·．.]/g,"");};
 var prettyRole=function(role){var found=roles.find(function(x){return x[0]===role;});return found?found[2]:role;};
@@ -107,10 +107,12 @@ function renderRecord(){
  var q=rec();draft=clonedReveal(q);stage="eyes";
  $("currentPhoto").src="../"+q.photo;$("currentFilename").textContent=q.photo;$("photoPath").textContent=q.photo;
  $("allPaths").replaceChildren();selected.roles.forEach(function(role){var el=document.createElement("div");el.textContent=prettyRole(role)+"："+selected.records[role].photo;$("allPaths").append(el);});
- addLink($("articleLink"),q.attribution&&q.attribution.article);addLink($("sourceLink"),q.attribution&&q.attribution.source);
+ var correction=corrections.get(q.id),updated=correction&&correction.replacementPhoto===q.photo;
+ addLink($("articleLink"),updated?correction.source:q.attribution&&q.attribution.article);addLink($("sourceLink"),updated?correction.replacementImage:q.attribution&&q.attribution.source);
  $("licenseText").textContent=[q.attribution&&q.attribution.license,q.attribution&&q.attribution.artist].filter(Boolean).join(" · ")||"未提供";
  $("recordFlags").replaceChildren();
  ["photoStatus","humanReviewed","processorVersion"].forEach(function(k){if(q[k]===undefined)return;var s=document.createElement("span");s.textContent=k+"："+String(q[k]);$("recordFlags").append(s);});
+ if(updated){var s=document.createElement("span");s.textContent="照片更正紀錄："+correction.date;$("recordFlags").append(s);}
  syncPreview();
 }
 function clip(img,rect){var r=rect||[0,0,1,1];img.style.clipPath="inset("+(r[1]*100)+"% "+((1-r[2])*100)+"% "+((1-r[3])*100)+"% "+(r[0]*100)+"%)";}
@@ -161,7 +163,7 @@ function requestData(){
  var original={};selected.roles.forEach(function(role){original[role]=selected.records[role].photo;});
  return {schemaVersion:1,type:"portrait-correction-draft",status:"pending-manual-identity-review",createdAt:new Date().toISOString(),
   id:selected.id,name:selected.name,aliases:selected.aliases,categories:selected.roles,selectedCategory:recordRole,originalPhotos:original,
-  existingArticle:rec().attribution&&rec().attribution.article||"",existingOriginalImage:rec().attribution&&rec().attribution.source||"",
+  existingArticle:corrections.get(selected.id)?.source||rec().attribution&&rec().attribution.article||"",existingOriginalImage:corrections.get(selected.id)?.replacementImage||rec().attribution&&rec().attribution.source||"",
   correctionReason:$("issue").value.trim(),candidateSourceArticle:$("sourceArticle").value.trim(),candidateOriginalImageUrl:localFile?"":$("candidateUrl").value.trim(),
   localCandidateFilename:localFile?localFile.name:"",suggestedPhotoFilename:selected.id+"_review_"+new Date().toISOString().slice(0,10).replace(/-/g,"")+".jpg",
   proposedReveal:draft,notes:"草稿並非正式資料；須核對身分、來源及圖說，將候選 JPEG 與相同 ID 的各題庫資料同步更新後再部署。"};
@@ -191,6 +193,7 @@ $("exportPortrait").addEventListener("click",async function(){
 async function init(){
  try{
   var data=await Promise.all(roles.map(async function(role){var res=await fetch("../"+role[1],{cache:"no-store"});if(!res.ok)throw Error(role[1]+" 無法讀取");var value=await res.json();if(!Array.isArray(value.questions))throw Error(role[1]+" 格式不正確");return value.questions;}));
+  try{var correctionResponse=await fetch("../photo-corrections-20261025.json",{cache:"no-store"});if(correctionResponse.ok){var correctionData=await correctionResponse.json();(correctionData.corrections||[]).forEach(function(item){corrections.set(item.id,item);});}}catch(e){}
   var byId=new Map();
   data.forEach(function(bank,i){var role=roles[i][0];$("count"+role[0].toUpperCase()+role.slice(1)).textContent=bank.length;
    bank.forEach(function(q){if(!q.id||!q.name||!q.photo)return;var p=byId.get(q.id);if(!p){p={id:q.id,name:q.name,roles:[],records:{},aliases:[]};byId.set(q.id,p);}p.roles.push(role);p.records[role]=q;[q.name].concat(q.aliases||[]).forEach(function(alias){if(alias&&!p.aliases.includes(alias)&&alias!==p.name)p.aliases.push(alias);});});

@@ -49,7 +49,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 <hr class="section-line">
 <div class="proposal-heading"><h3>照片修正草稿</h3><span>不會自動發布</span></div><p class="helper">你可以先替換預覽圖，再微調眼、鼻、嘴、下巴的顯示範圍。下載草稿後，交給我處理正式修正。</p>
 <label class="field"><span>從電腦選擇候選照片</span><div class="upload-box"><input id="candidateFile" type="file" accept="image/jpeg,image/png,image/webp"></div></label><p class="or">或</p>
-<label class="field"><span>貼上候選照片直連網址（HTTPS）</span><input id="candidateUrl" type="url" placeholder="https://example.com/photo.jpg" inputmode="url"></label>
+<label class="field"><span>貼上候選照片直連網址（HTTPS）</span><input id="candidateUrl" type="url" placeholder="https://example.com/photo.jpg" inputmode="url"></label><button id="previewUrl" class="subtle" type="button">載入網址預覽</button>
 <h3 class="section-label" style="margin-top:17px">調整目前線索裁切（百分比）</h3>
 <div class="sliders" id="sliders">
 <label class="slider-label"><span>左界 <output id="leftValue">8%</output></span><input type="range" id="left" min="0" max="98" value="8" step="1"></label>
@@ -138,11 +138,14 @@ $("candidateFile").addEventListener("change",function(){
  if(!/^image\/(jpeg|png|webp)$/.test(file.type)||file.size>20*1024*1024){clearCandidate();showFeedback("僅接受小於 20 MB 的 JPG、PNG 或 WebP 圖片。",true);return;}
  clearCandidate();localFile=file;candidateObjectUrl=URL.createObjectURL(file);chooseCandidate(candidateObjectUrl,file.name,true);
 });
-$("candidateUrl").addEventListener("change",function(){
+function loadCandidateUrl(){
  var url=this.value.trim();if(!url){if(!localFile)clearCandidate();return;}
  var good=safeHttp(url);if(!good||!good.startsWith("https://")){showFeedback("請使用 HTTPS 圖片直連網址。",true);return;}
  if(candidateObjectUrl){URL.revokeObjectURL(candidateObjectUrl);candidateObjectUrl=null;}localFile=null;$("candidateFile").value="";chooseCandidate(good,"遠端圖片預覽",false);
-});
+}
+$("candidateUrl").addEventListener("change",loadCandidateUrl);
+$("candidateUrl").addEventListener("keydown",function(event){if(event.key==="Enter"){event.preventDefault();loadCandidateUrl();}});
+$("previewUrl").addEventListener("click",loadCandidateUrl);
 $("recordSelect").addEventListener("change",function(){recordRole=this.value;renderRecord();showFeedback("切換至"+prettyRole(recordRole)+"題庫紀錄。");});
 document.querySelectorAll("[data-stage]").forEach(function(b){b.addEventListener("click",function(){stage=b.dataset.stage;syncPreview();});});
 document.querySelectorAll("[data-role]").forEach(function(b){b.addEventListener("click",function(){filterRole=b.dataset.role;document.querySelectorAll("[data-role]").forEach(function(t){t.setAttribute("aria-pressed",String(t===b));});renderPeople();});});

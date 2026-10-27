@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101321">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>FACE／STAR · 資料檢視台</title>
+<style>
+:root{color-scheme:dark;--bg:#101321;--panel:#1a1e30;--panel2:#23283c;--line:#363d52;--text:#f4f4fb;--muted:#a5abc1;--lime:#e5fb93;--blue:#9dd5ff;--red:#ffa7a7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 0%,#30334b 0,transparent 40%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif;line-height:1.5}
+button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.4;cursor:default}a{color:var(--blue)}[hidden]{display:none!important}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.shell{width:min(1420px,100%);margin:auto;padding:22px clamp(14px,3vw,42px) 48px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.wordmark{font-size:17px;font-weight:900;letter-spacing:1px}.wordmark b{color:var(--lime)}.top-right{display:flex;align-items:center;gap:10px}.mini-pill{border:1px solid var(--line);border-radius:30px;padding:5px 10px;font-size:11px;color:var(--muted)}.top a{font-size:12px;text-decoration:none;color:var(--muted)}
+.intro{padding:24px 0 22px;display:flex;align-items:flex-end;justify-content:space-between;gap:18px}.eyebrow{text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:800;color:var(--lime);margin:0 0 8px}h1{font-size:clamp(29px,4vw,46px);line-height:1.13;margin:0;letter-spacing:-.7px}.intro p.desc{color:var(--muted);margin:12px 0 0;font-size:13px}.stat-band{display:flex;gap:9px;flex-wrap:wrap}.stat{background:#22283b;border:1px solid var(--line);border-radius:13px;padding:12px 17px;text-align:center;min-width:90px}.stat b{display:block;font-size:22px;color:var(--lime)}.stat span{font-size:11px;color:var(--muted)}
+.notice{background:#282b3f;border:1px solid #5a546d;border-radius:12px;padding:11px 14px;color:#c8c5d8;font-size:12px;margin-bottom:17px}
+.workspace{display:grid;grid-template-columns:minmax(280px,350px) minmax(0,1fr);align-items:start;gap:16px}
+.sidebar,.inspector,.empty{background:var(--panel);border:1px solid var(--line);border-radius:18px;min-width:0}.sidebar{padding:17px;position:sticky;top:12px}.sidebar h2{font-size:16px;margin:0 0 13px}.search{width:100%;background:#111525;border:1px solid #485168;color:var(--text);border-radius:11px;padding:13px 12px;font-size:16px}.filter{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}.filter button,.stage-tabs button,.subtle{background:var(--panel2);border:1px solid var(--line);border-radius:9px;color:var(--muted);padding:8px 10px;font-size:12px;font-weight:650}.filter button[aria-pressed=true],.stage-tabs button[aria-pressed=true]{background:var(--lime);color:#171e0b;border-color:var(--lime)}.result-count{font-size:12px;color:var(--muted);margin:9px 0}.people{height:min(64vh,610px);overflow:auto;overscroll-behavior:contain;display:grid;align-content:start;gap:6px;padding-right:3px}.person{width:100%;display:flex;align-items:center;gap:11px;text-align:left;background:transparent;color:var(--text);border:1px solid transparent;border-radius:11px;padding:7px}.person:hover{background:#292d42}.person[aria-current=true]{background:#2c3346;border-color:#a3b67b}.person img{width:51px;height:58px;border-radius:8px;object-fit:cover;background:#34394e;flex:none}.person strong{font-size:14px;display:block}.person small{font-size:11px;color:var(--muted);display:block;overflow-wrap:anywhere}
+.inspector{padding:clamp(16px,2vw,26px)}.empty{display:grid;place-items:center;min-height:540px;padding:35px;text-align:center;color:var(--muted)}.inspect-head{display:flex;align-items:start;justify-content:space-between;gap:14px}.person-kicker{font-size:11px;color:var(--lime);font-weight:750;letter-spacing:1.5px}.inspect-head h2{font-size:clamp(26px,3vw,36px);margin:4px 0 6px}.id-pill{font-size:12px;border:1px solid var(--line);border-radius:7px;padding:5px 8px;color:var(--muted);user-select:all}.categories{display:flex;gap:5px;flex-wrap:wrap;margin:9px 0 12px}.chip{background:#343c4e;color:#d9e0f5;border-radius:30px;font-size:11px;padding:4px 9px}.muted{color:var(--muted);font-size:12px}.record-row{display:flex;gap:12px;align-items:center;margin:14px 0 21px}.record-row label{font-size:12px;color:var(--muted)}.record-row select{background:#121525;border:1px solid var(--line);border-radius:8px;color:var(--text);padding:9px 12px;font-size:14px;min-width:140px}.section-label{font-size:13px;color:var(--muted);margin:0 0 10px;font-weight:700}.stage-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:0 0 14px}.stage-tabs button{padding:12px 3px;min-width:0}
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.image-block{min-width:0}.photo-frame{width:100%;aspect-ratio:5/6;border:1px solid var(--line);border-radius:12px;background:linear-gradient(125deg,#34344b,#161a2c);position:relative;overflow:hidden}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover}.image-overlay{position:absolute;bottom:8px;left:8px;font-size:10px;background:#141726d9;padding:4px 7px;border-radius:6px;pointer-events:none}.photo-placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);font-size:12px;pointer-events:none}.image-block figcaption{font-size:12px;font-weight:750;margin:9px 0 3px}.image-block p{font-size:11px;color:var(--muted);margin:0;overflow-wrap:anywhere}.image-block figure{margin:0}
+.section-line{border:none;border-top:1px solid var(--line);margin:24px 0}.meta-grid{display:grid;grid-template-columns:110px 1fr;gap:8px 12px;font-size:12px}.meta-grid dt{color:var(--muted)}.meta-grid dd{margin:0;overflow-wrap:anywhere;min-width:0}.meta-grid a{word-break:break-all}.meta-grid .paths{display:flex;flex-direction:column;gap:4px}.record-flags{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap}.record-flags span{border:1px solid var(--line);border-radius:7px;padding:4px 7px;font-size:11px;color:var(--muted)}
+.proposal-heading{display:flex;justify-content:space-between;gap:8px;align-items:center}.proposal-heading h3{margin:0;font-size:20px}.proposal-heading span{font-size:11px;color:var(--lime)}.helper{font-size:12px;color:var(--muted);margin:7px 0 15px}.field{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}.field span{display:block;margin-bottom:5px}input[type=text],input[type=url],textarea{background:#111525;color:var(--text);border:1px solid #49516a;border-radius:9px;width:100%;padding:11px 12px;font-size:14px}textarea{resize:vertical;min-height:76px}.upload-box{padding:13px;border:1px dashed #626c83;border-radius:10px;background:#171c2d}.upload-box input{font-size:12px;max-width:100%;color:var(--muted)}.or{font-size:11px;color:var(--muted);text-align:center;margin:8px}.sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:13px 0}.slider-label{font-size:12px;color:var(--muted);display:block}.slider-label>span{display:flex;justify-content:space-between;gap:4px}.slider-label output{color:var(--text)}.slider-label input{width:100%;accent-color:var(--lime);margin-top:7px}.crop-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.crop-note{font-size:11px;color:var(--muted);margin:9px 0 0}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.primary,.secondary{border:0;border-radius:10px;padding:12px 16px;font-size:13px;font-weight:750;min-height:44px}.primary{color:#18200a;background:var(--lime)}.secondary{background:#343c52;color:var(--text)}.feedback{font-size:12px;min-height:22px;color:var(--lime);margin:10px 0 0}.info-note{border-left:3px solid #7d8497;padding-left:12px;font-size:12px;color:var(--muted);margin-top:17px}
+@media(max-width:950px){.intro{align-items:start;flex-direction:column}.workspace{grid-template-columns:minmax(260px,300px) minmax(0,1fr)}.stat-band{width:100%}.stat{flex:1}.compare{gap:8px}.inspector{padding:16px}.meta-grid{grid-template-columns:90px 1fr}}
+@media(max-width:720px){.shell{padding:14px 12px 28px}.top-right .mini-pill{display:none}.intro{padding:23px 0 15px}.workspace{grid-template-columns:1fr}.sidebar{position:static}.people{height:auto;max-height:220px}.person{padding:5px}.person img{width:42px;height:48px}.inspector{padding:15px}.inspect-head{flex-direction:column;gap:4px}.id-pill{font-size:11px}.record-row{margin-bottom:14px}.image-overlay{font-size:9px}.stat{padding:8px 5px;min-width:0}.stat b{font-size:18px}.stat span{font-size:10px}.sliders{grid-template-columns:1fr 1fr}.stage-tabs button{font-size:11px}.buttons>*{flex:1}}
+@media(max-width:350px){.stage-tabs button{font-size:10px}.sliders{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top"><div class="wordmark">FACE<b>／</b>STAR <span class="mini-pill">DATA CONSOLE</span></div><div class="top-right"><span class="mini-pill">檢視與草稿模式</span><a href="../" target="_blank" rel="noopener">開啟遊戲 ↗</a></div></header>
+<section class="intro"><div><p class="eyebrow">PERSONNEL / PORTRAIT INSPECTOR</p><h1>人物資料檢視台</h1><p class="desc">搜尋正式題庫、查看五官揭露、試換照片並下載修正資料。</p></div><div class="stat-band"><div class="stat"><b id="countAll">—</b><span>不重複人物</span></div><div class="stat"><b id="countSinger">—</b><span>歌手</span></div><div class="stat"><b id="countActor">—</b><span>演員</span></div><div class="stat"><b id="countVariety">—</b><span>綜藝</span></div></div></section>
+<div class="notice">這個頁面是獨立的工程檢視工具：只讀取正式 JSON。預覽、裁切與填表不會直接改動 GitHub 或正式遊戲；下載檔案後仍須經照片身分核對、提交及部署。</div>
+<div class="workspace">
+<aside class="sidebar" aria-label="人物搜尋"><h2>搜尋人物</h2><input id="search" class="search" type="search" placeholder="姓名、別名或人物 ID" autocomplete="off" aria-label="搜尋姓名、別名、ID">
+<div class="filter" role="group" aria-label="分類篩選"><button type="button" data-role="all" aria-pressed="true">全部</button><button type="button" data-role="singer" aria-pressed="false">歌手</button><button type="button" data-role="actor" aria-pressed="false">演員</button><button type="button" data-role="variety" aria-pressed="false">綜藝</button></div>
+<p id="resultCount" class="result-count" role="status">正在載入題庫…</p><div id="people" class="people" aria-label="搜尋結果"></div></aside>
+<div id="empty" class="empty" role="status">正在讀取正式人物資料…</div>
+<article id="inspector" class="inspector" hidden>
+<header class="inspect-head"><div><div class="person-kicker">PERSON RECORD</div><h2 id="personName"></h2><div class="categories" id="categoryChips"></div><div id="aliases" class="muted"></div></div><div id="personId" class="id-pill"></div></header>
+<div class="record-row"><label for="recordSelect">檢視題庫</label><select id="recordSelect"></select></div>
+<h3 class="section-label">五階段線索預覽 · 與正式遊戲相同的揭露順序</h3>
+<div class="stage-tabs" id="stageTabs" role="group" aria-label="揭露階段"><button type="button" data-stage="eyes" aria-pressed="true">1 眼睛</button><button type="button" data-stage="nose" aria-pressed="false">2 鼻子</button><button type="button" data-stage="mouth" aria-pressed="false">3 嘴巴</button><button type="button" data-stage="chin" aria-pressed="false">4 下巴</button><button type="button" data-stage="full" aria-pressed="false">5 全臉</button></div>
+<div class="compare">
+<div class="image-block"><figure><div class="photo-frame"><img id="currentPhoto" alt="正式照片揭露預覽"><div class="image-overlay">正式照片</div></div><figcaption>目前正式版</figcaption><p id="currentFilename"></p></figure></div>
+<div class="image-block"><figure><div class="photo-frame"><img id="candidatePhoto" alt="候選照片揭露預覽" hidden><div id="candidatePlaceholder" class="photo-placeholder">上傳照片或貼上圖片網址<br>即可在此對照</div><div class="image-overlay">候選預覽 · 未發布</div></div><figcaption>候選照片</figcaption><p id="candidateInfo">尚未選擇新照片</p></figure></div>
+</div>
+<hr class="section-line">
+<h3 class="section-label">正式紀錄與照片來源</h3>
+<dl class="meta-grid"><dt>照片檔案</dt><dd id="photoPath"></dd><dt>跨題庫資料</dt><dd id="allPaths" class="paths"></dd><dt>來源文章</dt><dd id="articleLink"></dd><dt>原始圖片</dt><dd id="sourceLink"></dd><dt>授權／署名</dt><dd id="licenseText"></dd></dl><div class="record-flags" id="recordFlags"></div>
+<hr class="section-line">
+<div class="proposal-heading"><h3>照片修正草稿</h3><span>不會自動發布</span></div><p class="helper">你可以先替換預覽圖，再微調眼、鼻、嘴、下巴的顯示範圍。下載草稿後，交給我處理正式修正。</p>
+<label class="field"><span>從電腦選擇候選照片</span><div class="upload-box"><input id="candidateFile" type="file" accept="image/jpeg,image/png,image/webp"></div></label><p class="or">或</p>
+<label class="field"><span>貼上候選照片直連網址（HTTPS）</span><input id="candidateUrl" type="url" placeholder="https://example.com/photo.jpg" inputmode="url"></label>
+<h3 class="section-label" style="margin-top:17px">調整目前線索裁切（百分比）</h3>
+<div class="sliders" id="sliders">
+<label class="slider-label"><span>左界 <output id="leftValue">8%</output></span><input type="range" id="left" min="0" max="98" value="8" step="1"></label>
+<label class="slider-label"><span>上界 <output id="topValue">27%</output></span><input type="range" id="top" min="0" max="98" value="27" step="1"></label>
+<label class="slider-label"><span>右界 <output id="rightValue">92%</output></span><input type="range" id="right" min="2" max="100" value="92" step="1"></label>
+<label class="slider-label"><span>下界 <output id="bottomValue">43%</output></span><input type="range" id="bottom" min="2" max="100" value="43" step="1"></label>
+</div>
+<div class="crop-footer"><span class="crop-note">只有候選預覽使用調整值；正式照片不變。</span><button id="resetCrop" class="subtle" type="button">重設此階段</button></div>
+<label class="field"><span>照片問題／修改理由</span><textarea id="issue" placeholder="例如：有浮水印遮臉、抓到文章中的其他人、照片模糊…"></textarea></label>
+<label class="field"><span>候選照片的來源文章／身分核對依據</span><input id="sourceArticle" type="url" placeholder="https://..."></label>
+<p class="helper">照片是否為本人仍需要人工核對圖說及原始素材；輸入網址並不代表通過驗證。</p>
+<div class="buttons"><button class="primary" id="exportRequest" type="button">下載修正草稿 JSON</button><button class="secondary" id="exportPortrait" type="button" disabled>下載 600×720 候選 JPEG</button><button class="secondary" id="copyRequest" type="button">複製 AI 找圖需求</button></div><p id="feedback" class="feedback" role="status"></p>
+<div class="info-note">遠端圖片如禁止跨網域讀取，可能看得到預覽卻無法匯出 JPEG；可先將圖片下載到電腦，再以「選擇候選照片」開啟。來源與身分核對必須另外確認。</div>
+</article>
+</div>
+</main>
+<script>
+(function(){
+"use strict";
+var roles=[["singer","questions.json","歌手"],["actor","actors.json","演員"],["variety","variety.json","綜藝"]];
+var steps=["eyes","nose","mouth","chin","full"],selected=null,recordRole=null,stage="eyes",all=[],filterRole="all",draft=null,candidateObjectUrl=null,candidateSource="",localFile=null;
+var $=function(id){return document.getElementById(id);};
+var normalize=function(s){return String(s||"").normalize("NFKC").toLocaleLowerCase().replace(/[\s\-_·．.]/g,"");};
+var prettyRole=function(role){var found=roles.find(function(x){return x[0]===role;});return found?found[2]:role;};
+var safeHttp=function(s){try{var u=new URL(s);return (u.protocol==="https:"||u.protocol==="http:")?u.href:null;}catch(e){return null;}};
+var defaultRect=function(k){return {eyes:[.08,.275,.92,.425],nose:[.08,.275,.92,.59],mouth:[.08,.275,.92,.74],chin:[.08,.275,.92,.92],full:[0,0,1,1]}[k];};
+function clonedReveal(q){var out={};steps.forEach(function(k){var r=q.reveal&&q.reveal[k];out[k]=Array.isArray(r)&&r.length===4?r.slice():defaultRect(k).slice();});return out;}
+function showFeedback(s,error){$("feedback").textContent=s;$("feedback").style.color=error?"var(--red)":"var(--lime)";}
+function addLink(target,value){target.replaceChildren();var u=safeHttp(value);if(!u){target.textContent=value||"未提供";return;}var a=document.createElement("a");a.href=u;a.target="_blank";a.rel="noopener noreferrer";a.textContent=value;target.append(a);}
+function clearCandidate(){if(candidateObjectUrl){URL.revokeObjectURL(candidateObjectUrl);candidateObjectUrl=null;}candidateSource="";localFile=null;$("candidateFile").value="";$("candidateUrl").value="";$("candidatePhoto").hidden=true;$("candidatePhoto").removeAttribute("src");$("candidatePlaceholder").hidden=false;$("candidateInfo").textContent="尚未選擇新照片";$("exportPortrait").disabled=true;}
+function rec(){return selected.records[recordRole];}
+function renderPeople(){
+ var query=normalize($("search").value);
+ var matches=all.filter(function(p){return (filterRole==="all"||p.roles.includes(filterRole))&&(!query||normalize([p.id,p.name].concat(p.aliases).join(" ")).includes(query));});
+ $("resultCount").textContent="找到 "+matches.length+" 位"+(matches.length>70?" · 顯示前 70 位":"");
+ $("people").replaceChildren();
+ matches.slice(0,70).forEach(function(p){
+  var button=document.createElement("button");button.type="button";button.className="person";button.setAttribute("aria-current",String(selected&&selected.id===p.id));button.dataset.id=p.id;
+  var img=document.createElement("img");img.alt="";img.loading="lazy";img.src="../"+p.records[p.roles[0]].photo;
+  var info=document.createElement("span"),name=document.createElement("strong"),small=document.createElement("small");name.textContent=p.name;small.textContent=p.id+" · "+p.roles.map(prettyRole).join("、");
+  info.append(name,small);button.append(img,info);button.addEventListener("click",function(){selectPerson(p);});
+  $("people").append(button);
+ });
+ if(!matches.length)$("resultCount").textContent="沒有符合條件的人物";
+}
+function selectPerson(p){
+ selected=p;recordRole=p.roles[0];stage="eyes";draft=clonedReveal(rec());clearCandidate();$("issue").value="";$("sourceArticle").value="";showFeedback("");
+ $("empty").hidden=true;$("inspector").hidden=false;
+ $("personName").textContent=p.name;$("personId").textContent=p.id;$("aliases").textContent=p.aliases.length?"其他名稱："+p.aliases.join("、"):"無其他別名";
+ $("categoryChips").replaceChildren();p.roles.forEach(function(role){var s=document.createElement("span");s.className="chip";s.textContent=prettyRole(role);$("categoryChips").append(s);});
+ $("recordSelect").replaceChildren();p.roles.forEach(function(role){var o=document.createElement("option");o.value=role;o.textContent=prettyRole(role)+"題庫";$("recordSelect").append(o);});
+ $("recordSelect").value=recordRole;renderRecord();renderPeople();
+}
+function renderRecord(){
+ var q=rec();draft=clonedReveal(q);stage="eyes";
+ $("currentPhoto").src="../"+q.photo;$("currentFilename").textContent=q.photo;$("photoPath").textContent=q.photo;
+ $("allPaths").replaceChildren();selected.roles.forEach(function(role){var el=document.createElement("div");el.textContent=prettyRole(role)+"："+selected.records[role].photo;$("allPaths").append(el);});
+ addLink($("articleLink"),q.attribution&&q.attribution.article);addLink($("sourceLink"),q.attribution&&q.attribution.source);
+ $("licenseText").textContent=[q.attribution&&q.attribution.license,q.attribution&&q.attribution.artist].filter(Boolean).join(" · ")||"未提供";
+ $("recordFlags").replaceChildren();
+ ["photoStatus","humanReviewed","processorVersion"].forEach(function(k){if(q[k]===undefined)return;var s=document.createElement("span");s.textContent=k+"："+String(q[k]);$("recordFlags").append(s);});
+ syncPreview();
+}
+function clip(img,rect){var r=rect||[0,0,1,1];img.style.clipPath="inset("+(r[1]*100)+"% "+((1-r[2])*100)+"% "+((1-r[3])*100)+"% "+(r[0]*100)+"%)";}
+function syncPreview(){
+ if(!selected)return;
+ var q=rec(),rect=q.reveal&&q.reveal[stage]||defaultRect(stage);
+ clip($("currentPhoto"),rect);clip($("candidatePhoto"),draft[stage]);
+ document.querySelectorAll("[data-stage]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.stage===stage));});
+ var fields=["left","top","right","bottom"],r=draft[stage];
+ fields.forEach(function(key,i){$(key).value=Math.round(r[i]*100);$(key+"Value").textContent=Math.round(r[i]*100)+"%";$(key).disabled=stage==="full";});
+ $("resetCrop").disabled=stage==="full";
+}
+function chooseCandidate(src,description,isLocal){
+ if(!src){clearCandidate();return;}
+ candidateSource=src;var img=$("candidatePhoto");img.hidden=false;img.src=src;$("candidatePlaceholder").hidden=true;$("candidateInfo").textContent=description+" · 載入中";
+ $("exportPortrait").disabled=false;
+ img.onload=function(){if(img.src!==src)return;$("candidateInfo").textContent=description+" · "+img.naturalWidth+"×"+img.naturalHeight;};
+ img.onerror=function(){if(img.src!==src)return;img.hidden=true;$("candidatePlaceholder").hidden=false;$("candidatePlaceholder").textContent="候選圖片無法載入";$("candidateInfo").textContent="圖片網址無法顯示";$("exportPortrait").disabled=true;};
+ clip(img,draft[stage]);if(isLocal)showFeedback("已載入本機候選圖片，尚未存回題庫。");
+}
+$("candidateFile").addEventListener("change",function(){
+ var file=this.files&&this.files[0];if(!file)return;
+ if(!/^image\/(jpeg|png|webp)$/.test(file.type)||file.size>20*1024*1024){clearCandidate();showFeedback("僅接受小於 20 MB 的 JPG、PNG 或 WebP 圖片。",true);return;}
+ clearCandidate();localFile=file;candidateObjectUrl=URL.createObjectURL(file);chooseCandidate(candidateObjectUrl,file.name,true);
+});
+$("candidateUrl").addEventListener("change",function(){
+ var url=this.value.trim();if(!url){if(!localFile)clearCandidate();return;}
+ var good=safeHttp(url);if(!good||!good.startsWith("https://")){showFeedback("請使用 HTTPS 圖片直連網址。",true);return;}
+ if(candidateObjectUrl){URL.revokeObjectURL(candidateObjectUrl);candidateObjectUrl=null;}localFile=null;$("candidateFile").value="";chooseCandidate(good,"遠端圖片預覽",false);
+});
+$("recordSelect").addEventListener("change",function(){recordRole=this.value;renderRecord();showFeedback("切換至"+prettyRole(recordRole)+"題庫紀錄。");});
+document.querySelectorAll("[data-stage]").forEach(function(b){b.addEventListener("click",function(){stage=b.dataset.stage;syncPreview();});});
+document.querySelectorAll("[data-role]").forEach(function(b){b.addEventListener("click",function(){filterRole=b.dataset.role;document.querySelectorAll("[data-role]").forEach(function(t){t.setAttribute("aria-pressed",String(t===b));});renderPeople();});});
+$("search").addEventListener("input",renderPeople);
+["left","top","right","bottom"].forEach(function(key,i){
+ $(key).addEventListener("input",function(){
+  if(!draft||stage==="full")return;
+  var rect=draft[stage].slice(),v=Number(this.value)/100;
+  if(i===0)v=Math.min(v,rect[2]-.02);
+  if(i===1)v=Math.min(v,rect[3]-.02);
+  if(i===2)v=Math.max(v,rect[0]+.02);
+  if(i===3)v=Math.max(v,rect[1]+.02);
+  rect[i]=Math.round(v*100)/100;draft[stage]=rect;syncPreview();
+ });
+});
+$("resetCrop").addEventListener("click",function(){if(stage==="full")return;draft[stage]=(rec().reveal&&rec().reveal[stage]||defaultRect(stage)).slice();syncPreview();});
+function requestData(){
+ var original={};selected.roles.forEach(function(role){original[role]=selected.records[role].photo;});
+ return {schemaVersion:1,type:"portrait-correction-draft",status:"pending-manual-identity-review",createdAt:new Date().toISOString(),
+  id:selected.id,name:selected.name,aliases:selected.aliases,categories:selected.roles,selectedCategory:recordRole,originalPhotos:original,
+  existingArticle:rec().attribution&&rec().attribution.article||"",existingOriginalImage:rec().attribution&&rec().attribution.source||"",
+  correctionReason:$("issue").value.trim(),candidateSourceArticle:$("sourceArticle").value.trim(),candidateOriginalImageUrl:localFile?"":$("candidateUrl").value.trim(),
+  localCandidateFilename:localFile?localFile.name:"",suggestedPhotoFilename:selected.id+"_review_"+new Date().toISOString().slice(0,10).replace(/-/g,"")+".jpg",
+  proposedReveal:draft,notes:"草稿並非正式資料；須核對身分、來源及圖說，將候選 JPEG 與相同 ID 的各題庫資料同步更新後再部署。"};
+}
+function downloadBlob(blob,name){var a=document.createElement("a"),u=URL.createObjectURL(blob);a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},2000);}
+$("exportRequest").addEventListener("click",function(){
+ var data=requestData();downloadBlob(new Blob([JSON.stringify(data,null,2)],{type:"application/json;charset=utf-8"}),selected.id+"-photo-review.json");
+ showFeedback("已下載修正草稿；它不會自動修改正式照片。");
+});
+$("copyRequest").addEventListener("click",async function(){
+ var d=requestData(),s="請協助「猜名人・五官挑戰」核對及修正人物照片：\n人物："+d.name+"（"+d.id+"）\n分類："+d.categories.map(prettyRole).join("、")+"\n既有照片："+JSON.stringify(d.originalPhotos)+"\n問題："+(d.correctionReason||"請協助檢查照片品質與本人身分")+"\n來源文章："+(d.candidateSourceArticle||"尚未提供")+"\n候選原圖："+(d.candidateOriginalImageUrl||"尚未提供")+"\n請先查圖說驗證身分；不要使用 AI 生成人臉；更換時同步更新五階段揭露與跨題庫紀錄。";
+ try{await navigator.clipboard.writeText(s);showFeedback("已複製找圖需求，可貼回 ChatGPT。");}catch(e){var t=document.createElement("textarea");t.value=s;document.body.append(t);t.select();var ok=document.execCommand("copy");t.remove();showFeedback(ok?"已複製找圖需求。":"瀏覽器禁止複製，請下載 JSON 草稿。",!ok);}
+});
+$("exportPortrait").addEventListener("click",async function(){
+ if(!candidateSource)return;
+ var source=candidateSource;
+ try{
+  var im=new Image();if(!localFile)im.crossOrigin="anonymous";
+  await new Promise(function(resolve,reject){im.onload=resolve;im.onerror=function(){reject(Error("遠端圖片不允許跨網域匯出，請先下載並從電腦上傳。"));};im.src=source;});
+  var canvas=document.createElement("canvas");canvas.width=600;canvas.height=720;var ctx=canvas.getContext("2d");
+  var scale=Math.max(600/im.naturalWidth,720/im.naturalHeight),w=im.naturalWidth*scale,h=im.naturalHeight*scale;
+  ctx.fillStyle="#fff";ctx.fillRect(0,0,600,720);ctx.drawImage(im,(600-w)/2,(720-h)/2,w,h);
+  var blob=await new Promise(function(resolve,reject){try{canvas.toBlob(function(b){b?resolve(b):reject(Error("無法產生 JPEG"));},"image/jpeg",.93);}catch(e){reject(e);}});
+  downloadBlob(blob,requestData().suggestedPhotoFilename);showFeedback("已下載 600×720 JPEG。請與修正草稿一併交付，尚未正式發布。");
+ }catch(e){showFeedback(e.message||"圖片匯出失敗，請改用本機上傳。",true);}
+});
+async function init(){
+ try{
+  var data=await Promise.all(roles.map(async function(role){var res=await fetch("../"+role[1],{cache:"no-store"});if(!res.ok)throw Error(role[1]+" 無法讀取");var value=await res.json();if(!Array.isArray(value.questions))throw Error(role[1]+" 格式不正確");return value.questions;}));
+  var byId=new Map();
+  data.forEach(function(bank,i){var role=roles[i][0];$("count"+role[0].toUpperCase()+role.slice(1)).textContent=bank.length;
+   bank.forEach(function(q){if(!q.id||!q.name||!q.photo)return;var p=byId.get(q.id);if(!p){p={id:q.id,name:q.name,roles:[],records:{},aliases:[]};byId.set(q.id,p);}p.roles.push(role);p.records[role]=q;[q.name].concat(q.aliases||[]).forEach(function(alias){if(alias&&!p.aliases.includes(alias)&&alias!==p.name)p.aliases.push(alias);});});
+  });
+  all=[...byId.values()].sort(function(a,b){return a.name.localeCompare(b.name,"zh-Hant");});$("countAll").textContent=all.length;
+  $("resultCount").textContent="已讀取人物資料";renderPeople();$("empty").textContent="從左側搜尋或選擇一位人物";
+ }catch(e){$("empty").textContent="題庫載入失敗："+e.message+"。請重新整理後再試。";$("resultCount").textContent="資料無法讀取";}
+}
+init();
+})();
+</script>
+</body>
+</html>

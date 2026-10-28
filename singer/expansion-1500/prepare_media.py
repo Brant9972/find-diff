@@ -128,7 +128,7 @@ def collect_person(person):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=60)
+    parser.add_argument("--limit", type=int, default=250)
     args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     PHOTOS.mkdir(parents=True, exist_ok=True)
@@ -138,7 +138,7 @@ def main():
         [x for x in manifest["selectedNew"] if x.get("photoStatus") != "published"
          and x["candidateId"] not in done],
         key=lambda x: (x.get("priority") != "A", x["candidateId"]),
-    )[:max(0, min(100, args.limit))]
+    )[:max(0, min(300, args.limit))]
     for n, person in enumerate(people, 1):
         result = collect_person(person)
         items.append(result)

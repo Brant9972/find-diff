@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 512,
     "targetUniqueAfterFullPass": 1499,
-    "currentlyLiveUnique": 1023,
-    "publishedFromPlan": 36,
-    "remainingSelectedNovel": 476,
+    "currentlyLiveUnique": 1028,
+    "publishedFromPlan": 41,
+    "remainingSelectedNovel": 471,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 1
   },
@@ -1156,25 +1156,28 @@
       ],
       "proposedPrimaryBank": "actors.json",
       "representativeWorks": [
-        "綜藝與戲劇演出"
+        "同學少年都不賤"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "李佳豫 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
         "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "placeholder_must_replace",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "李佳豫  角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "李佳豫  角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0003",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day3_SCET_Angela_Chia-yu_Li_in_Gaming.jpg",
+      "rightsNote": "CC BY-SA 4.0 Wikimedia Commons; credited in actors.json"
     },
     {
       "candidateId": "c1500-0004",
@@ -6779,25 +6782,28 @@
       ],
       "proposedPrimaryBank": "variety.json",
       "representativeWorks": [
-        "綜藝節目通告"
+        "11點熱吵店"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "何嘉文 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "何嘉文  綜藝 節目 單人 特寫 正面 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "何嘉文  綜藝 節目 單人 特寫 正面 無浮水印",
+      "publishedQuestionId": "t1500_0254",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Vivi_Ho_retouched.jpg",
+      "rightsNote": "CC BY-SA 2.0 Wikimedia Commons; credited in variety.json"
     },
     {
       "candidateId": "c1500-0255",
@@ -7651,27 +7657,30 @@
       "categories": [
         "演員"
       ],
-      "proposedPrimaryBank": "actors.json",
+      "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
-        "原住民族歌手"
+        "美感 Harateng no Pangcah"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "舞思愛 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
         "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "舞思愛 原住民族歌手 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "舞思愛 原住民族歌手 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0280",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:%E8%88%9E%E6%80%9D%E6%84%9B_%E7%B6%AD%E5%9F%BA%E7%99%BE%E7%A7%91.png",
+      "rightsNote": "CC0 Wikimedia Commons; credited in questions.json"
     },
     {
       "candidateId": "c1500-0281",
@@ -8880,25 +8889,30 @@
       "categories": [
         "演員"
       ],
-      "proposedPrimaryBank": "actors.json",
-      "representativeWorks": [],
+      "proposedPrimaryBank": "variety.json",
+      "representativeWorks": [
+        "大特寫"
+      ],
       "priority": "B",
       "photoSearchKeywords": [
         "侯昌明 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
         "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "missing",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "侯昌明  角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "侯昌明  角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0320",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Taiwanese_Entertainer_Hou_Chang-Ming.JPG",
+      "rightsNote": "CC BY-SA 3.0 Wikimedia Commons; credited in variety.json"
     },
     {
       "candidateId": "c1500-0321",
@@ -9811,25 +9825,28 @@
       ],
       "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
-        "歌唱節目"
+        "海的盡頭沒有燈塔"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "黃霆睿 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "黃霆睿 歌唱節目 經典時期 歌手 獨照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "黃霆睿 歌唱節目 經典時期 歌手 獨照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0349",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Ray_%E9%BB%83%E9%9C%86%E7%9D%BF.jpg",
+      "rightsNote": "CC BY-SA 4.0 Wikimedia Commons; credited in questions.json"
     },
     {
       "candidateId": "c1500-0350",
@@ -18190,7 +18207,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 36,
+    "published": 41,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18227,9 +18244,14 @@
       "岑麗香",
       "陳茵媺",
       "黃翠如",
-      "羅仲謙"
+      "羅仲謙",
+      "李佳豫",
+      "何嘉文",
+      "舞思愛",
+      "侯昌明",
+      "黃霆睿"
     ],
-    "pendingPhotoAndHintReview": 476,
+    "pendingPhotoAndHintReview": 471,
     "latestCommit": "pending-new-release"
   }
 }

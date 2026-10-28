@@ -16,7 +16,7 @@ class FixtureHTTP:
             return {'entities': {'Q123': {'claims': {'P18': [{'mainsnak': {'datavalue': {'value': '測試人物.jpg'}}}]}}}}
         if params.get('generator'):
             return {'query': {'pages': [{'title': 'File:測試人物.jpg'}]}}
-        return {'query': {'pages': [{'imageinfo': [{'url': 'https://upload.wikimedia.org/a.jpg', 'descriptionurl': 'https://commons.wikimedia.org/wiki/File:測試人物.jpg', 'width': 800, 'height': 1000,
+        return {'query': {'pages': [{'imageinfo': [{'url': 'https://upload.wikimedia.org/a.jpg', 'thumburl': 'https://upload.wikimedia.org/thumb/a/1400px-a.jpg', 'descriptionurl': 'https://commons.wikimedia.org/wiki/File:測試人物.jpg', 'width': 800, 'height': 1000,
                 'extmetadata': {k: {'value': v} for k, v in {'LicenseShortName': 'CC BY 4.0', 'LicenseUrl': 'https://creativecommons.org/licenses/by/4.0/', 'Artist': '<b>Photographer</b>', 'ImageDescription': '測試人物在代表作舞台'}.items()}}]}]}}
 
 
@@ -26,6 +26,8 @@ class SourcesTest(unittest.TestCase):
         rows = list(Wikimedia().search({'name': '測試人物', 'representativeWorks': ['代表作'], 'preferredImageQuery': '測試人物 代表作'}, http))
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]['artist'], 'Photographer')
+        self.assertIn('/thumb/', rows[0]['url'])
+        self.assertEqual(rows[0]['originalUrl'], 'https://upload.wikimedia.org/a.jpg')
         self.assertEqual(rights(rows[0]), 'open_license_metadata')
         self.assertEqual(rows[0]['recognitionEvidence']['matchedWorks'], ['代表作'])
         self.assertTrue(any('wikidata.org' in url for url, _ in http.calls))

@@ -46,7 +46,7 @@ NODE_PATH=/workspace/.find-diff-tools/node_modules node singer/expansion-1500/te
 
 ## 來源與授權
 
-- Wikimedia adapter：中文／英文 Wikipedia 人物頁與圖像、Wikidata P18、Commons 直接搜尋及授權資料。Wikipedia/Commons/Wikidata 不是三套獨立的照片來源。
+- Wikimedia adapter：中文／英文 Wikipedia 人物頁與圖像、Wikidata P18、Commons 直接搜尋及授權資料。Wikipedia/Commons/Wikidata 不是三套獨立的照片來源。優先下載 Wikimedia 提供的 1400px 版本以減少大型原圖逾時，另保存 originalUrl 與 downloadVariant，不把下載版本誤當完整原始檔。
 - Openverse adapter：獨立聚合搜尋入口；回傳的來源頁及授權仍須逐張核對原始提供者。可能遇到限流或 API 行為變更。
 - Official adapter：讀取經指定的官方／經紀公司／電視台素材清單，避免把任意網頁視為有授權。這一版沒有全網搜尋引擎或自動爬遍官方網站；新增站點應寫 adapter 或提供明確網址。
 

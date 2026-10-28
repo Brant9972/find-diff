@@ -197,7 +197,8 @@ class Wikimedia:
                 for info in page.get('imageinfo', []):
                     ext = info.get('extmetadata', {})
                     val = lambda key: clean(ext.get(key, {}).get('value', ''))
-                    yield {'provider': self.name, 'url': info.get('url', ''), 'source': info.get('descriptionurl', ''),
+                    yield {'provider': self.name, 'url': info.get('thumburl') or info.get('url', ''), 'originalUrl': info.get('url', ''),
+                           'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original', 'source': info.get('descriptionurl', ''),
                            'filename': filename, 'artist': val('Artist'), 'credit': val('Credit'),
                            'license': val('LicenseShortName'), 'licenseUrl': val('LicenseUrl'),
                            'caption': val('ImageDescription'), 'identityEvidence': evidence,

@@ -8,7 +8,7 @@ import time
 import uuid
 from pathlib import Path
 
-from media_pipeline.core import Cropper, atomic, contained, initialise, live_people, lock, process, protected, read, rejection_keys
+from media_pipeline.core import Cropper, apply_rejections, atomic, contained, initialise, live_people, lock, process, protected, read, rejection_keys
 from media_pipeline.review import import_decisions, report
 from media_pipeline.sources import HTTP, Official, Openverse, Wikimedia
 
@@ -53,6 +53,8 @@ def main(argv=None):
             elif norm(row['name']) in active_names:
                 row['status'] = 'published'
                 row['skipReason'] = 'Existing canonical name; no new person count'
+        rejected = rejection_keys(root, args.live_ref)
+        apply_rejections(state, rejected)
         atomic(directory / 'state.json', state)
         if args.import_review:
             import_decisions(root, directory, state, read(args.import_review))
@@ -84,7 +86,7 @@ def main(argv=None):
                     shift = row['attempts'] % len(selected)
                     selected = selected[shift:] + selected[:shift]
                     try:
-                        process(people[row['personId']], row, root, directory, selected, http, crop, rejection_keys(root, args.live_ref), args.max_candidates, deadline=deadline, checkpoint=lambda: atomic(directory / 'state.json', state), active=active)
+                        process(people[row['personId']], row, root, directory, selected, http, crop, rejected, args.max_candidates, deadline=deadline, checkpoint=lambda: atomic(directory / 'state.json', state), active=active)
                     except Exception as exc:
                         row['status'] = 'download_failed'
                         row['lastErrors'] = [{'code': 'processing_error', 'message': str(exc)[:400]}]

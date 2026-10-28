@@ -105,6 +105,21 @@ def rejection_keys(root, ref=None):
     return keys
 
 
+def apply_rejections(state, rejected):
+    """Apply newly received legacy rejections, preserving explicit approvals and live people."""
+    for row in state['people'].values():
+        if row['status'] in {'approved', 'published'}:
+            continue
+        for candidate in row['candidates']:
+            if candidate.get('status') != 'approved' and source_key(candidate.get('source')) in rejected:
+                candidate['status'] = 'rejected'
+                warning = 'Source rejected by existing review records'
+                if warning not in candidate.setdefault('warnings', []):
+                    candidate['warnings'].append(warning)
+        if row['status'] in {'pending_review', 'candidate_ready'} and not any(c.get('status') in {'pending_review', 'legacy_requires_review'} for c in row['candidates']):
+            row['status'], row['nextRetryAt'] = 'rejected', None
+
+
 def initialise(root, state_dir, active=None):
     state = read(state_dir / 'state.json')
     if state:

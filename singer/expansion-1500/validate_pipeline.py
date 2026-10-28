@@ -17,8 +17,8 @@ def validate(root):
         assert sum(c['status'] == 'pending_review' for c in person['candidates']) <= 3, pid
         for candidate in person['candidates']:
             assert candidate.get('eligibleForLive') is False, candidate['id']
-            if candidate.get('status') == 'metadata_only':
-                assert not candidate.get('gamePath')
+            if not candidate.get('gamePath'):
+                assert candidate.get('status') in {'metadata_only', 'rejected'}
                 continue
             path = contained(root, candidate['gamePath'])
             assert path.is_file(), path

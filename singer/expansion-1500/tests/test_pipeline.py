@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.core import Cropper, atomic, initialise, lock, process, rejection_keys, valid_reveal
+from media_pipeline.core import Cropper, apply_rejections, atomic, initialise, live_people, lock, process, rejection_keys, valid_reveal
 from media_pipeline.review import import_decisions, report
 from media_pipeline.sources import SourceError, rights, source_key, public_https
 
@@ -219,6 +219,32 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse(self.row['candidates'])
         self.assertEqual(self.row['lastErrors'][0]['code'], 'image_used_for_other_person')
         self.assertEqual(self.state['people']['other']['status'], 'approved')
+
+    def test_new_legacy_rejection_updates_pending_but_never_overwrites_approval(self):
+        self.run_person([Provider([candidate()])])
+        apply_rejections(self.state, {source_key(candidate()['source'])})
+        self.assertEqual(self.row['status'], 'rejected')
+        self.assertEqual(self.row['candidates'][0]['status'], 'rejected')
+        self.row['status'] = 'approved'
+        self.row['candidates'][0]['status'] = 'approved'
+        apply_rejections(self.state, {source_key(candidate()['source'])})
+        self.assertEqual(self.row['candidates'][0]['status'], 'approved')
+
+    def test_live_git_ref_reads_published_banks_without_checkout(self):
+        import subprocess
+        repo = self.root.parent
+        def git(*args):
+            return subprocess.check_output(['git', '-C', str(repo), *args], stderr=subprocess.DEVNULL, text=True).strip()
+        git('init')
+        for filename in ['questions.json', 'actors.json', 'variety.json']:
+            atomic(self.root / filename, {'questions': [{'id': 't1', 'name': 'Published'}] if filename == 'questions.json' else []})
+        git('add', 'singer')
+        git('-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.org', 'commit', '-m', 'Fixture published banks')
+        ref = git('rev-parse', 'HEAD')
+        atomic(self.root / 'questions.json', {'questions': []})
+        self.assertIn('t1', live_people(self.root, ref))
+        self.assertFalse(live_people(self.root))
+        self.assertEqual(git('rev-parse', 'HEAD'), ref)
 
     def test_lock_excludes_other_writer(self):
         with lock(self.directory):

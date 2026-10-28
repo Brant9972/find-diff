@@ -10,6 +10,8 @@ import re
 import sys
 import time
 from pathlib import Path
+import cv2
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -77,10 +79,13 @@ def collect_person(person):
                     continue
                 photo_path = PHOTOS / (person["plannedQuestionId"] + ".jpg")
                 image.save(photo_path, "JPEG", quality=87, optimize=True)
+                sharpness = round(float(cv2.Laplacian(np.asarray(image.convert("L")), cv2.CV_64F).var()), 2)
                 b = photo_path.read_bytes()
                 licensed.update({
                     "draftPhoto": str(photo_path.relative_to(ROOT)),
                     "sha256": hashlib.sha256(b).hexdigest(),
+                    "sharpnessScore": sharpness,
+                    "qualityWarning": "blurry_draft" if sharpness < 65 else "",
                     "source": candidate.get("source"),
                     "article": candidate.get("article"),
                     "artist": candidate.get("artist"),

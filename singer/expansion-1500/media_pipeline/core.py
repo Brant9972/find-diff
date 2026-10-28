@@ -14,6 +14,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from .sources import SourceError, identity, norm, now, rights, source_key
+from .rejection_pixels import matches_rejected
 
 STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published'}
 BLOCKED = ('funeral', 'mourning', 'memorial', 'obituary', 'waxwork', 'statue', 'sculpture', 'tussauds', '葬禮', '丧礼', '喪禮', '追思', '告別式', '告别式', '蠟像', '蜡像', '雕像', 'ai-generated', 'ai generated')
@@ -224,7 +225,7 @@ def ready(row):
     return [c for c in row['candidates'] if c.get('status') == 'pending_review']
 
 
-def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None, active=None):
+def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None, active=None, rejected_pixels=None):
     row['status'] = 'searching'
     row['attempts'] += 1
     row['lastAttemptAt'] = now()
@@ -289,8 +290,12 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     continue
                 try:
                     blob = http.get(item['url'])
+                    if matches_rejected(blob, rejected_pixels or []):
+                        raise SourceError('rejected_photo_pixels', 'Pixels match a previously rejected source photograph')
                     digest = hashlib.sha256(blob).hexdigest()
                     image, reveal, validation = crop(blob)
+                    if matches_rejected(image, rejected_pixels or []):
+                        raise SourceError('rejected_photo_pixels', 'Crop matches a previously rejected game photograph')
                     game_digest = hashlib.sha256(image).hexdigest()
                     if any(c.get('originalSha256') == digest or c.get('gameSha256') == game_digest for c in other_images):
                         errors.append({'provider': provider.name, 'source': item['source'], 'code': 'image_used_for_other_person', 'message': 'Image hash already belongs to another person; identity conflict'})

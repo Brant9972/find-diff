@@ -6,6 +6,7 @@ import json
 import time
 from .core import atomic, read, process
 from .sources import HTTP, now
+from .rejection_pixels import rejected_fingerprints
 
 
 def row_hash(row):
@@ -44,6 +45,7 @@ def merge_person(state,pid,updated,baseline):
 
 def run_batch(root,directory,state,people,queue,providers,crop,rejected,active,run_id,deadline,workers=3,person_seconds=60,max_candidates=3,http_factory=HTTP):
     blocked_hosts={};scanned=[];started=time.monotonic()
+    rejected_pixels=rejected_fingerprints(root,state)
     def worker(pid):
         row=copy.deepcopy(state['people'][pid]);baseline=row_hash(row);prior={c['id'] for c in row['candidates'] if c.get('gamePath')}
         row['lastRunId']=run_id;row['lastRunNewCandidateIds']=[];row['lastSearchRevision']=3
@@ -52,7 +54,7 @@ def run_batch(root,directory,state,people,queue,providers,crop,rejected,active,r
         budget=min(deadline,time.monotonic()+person_seconds)
         http=http_factory(attempts=1,timeout=8,interval=.5,budget=budget,blocked_hosts=blocked_hosts)
         try:
-            process(people[pid],row,root,directory,providers,http,crop,rejected,max_candidates=max_candidates,max_attempts=18,deadline=budget,checkpoint=save,active=active)
+            process(people[pid],row,root,directory,providers,http,crop,rejected,max_candidates=max_candidates,max_attempts=18,deadline=budget,checkpoint=save,active=active,rejected_pixels=rejected_pixels)
         except Exception as exc:
             row['status']='download_failed';row['lastErrors']=[{'code':'worker_error','message':str(exc)[:400]}]
         row['lastRunNewCandidateIds']=[c['id'] for c in row['candidates'] if c.get('status')=='pending_review' and c.get('gamePath') and c['id'] not in prior]

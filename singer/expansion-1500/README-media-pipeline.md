@@ -1,129 +1,65 @@
-# 名人照片候選自動化（僅待審核）
+# 猜名人照片批次與視覺審核（工作分支限定）
 
-此工具從既有 `release-plan-20261028.json` 的 `selectedNew` 接續，沿用人物 ID、600×720 照片及 `reveal` 座標格式。**沒有整合題庫、合併 main 或部署功能。** 自動程式永遠不會核准照片；`approved` 只能來自外部審核決定匯入，且仍不代表發布。
+工作分支：`automation/celebrity-photo-pipeline`。程式不寫 main、正式題庫、正式照片，也沒有部署／自動核准功能。
 
-## 安裝與執行
+## ChatGPT 的固定入口
 
-Python 3.12，依賴與現有處理器相容。從 repository 根目錄執行：
+- 審核輸入：`pipeline/chatgpt-review/latest.json`。
+- Codex 回覆：`pipeline/codex-response/latest.json`。
+- 可直接看圖的入口：`pipeline/review-public/latest.md`。
+- 機器可讀圖片 URL 與證據：`pipeline/review-public/latest.json`。
+
+公開入口的每一張候選、來源圖片、五階段 PNG、Contact Sheet 都有 **固定在資產 Commit SHA 的 raw.githubusercontent.com 絕對 URL**、GitHub 看圖備援 URL、圖片 SHA、MIME 與尺寸。原圖以正確 `.jpg/.png/.webp` 副檔名保存，不要求審核者解壓縮或執行 HTML。Markdown 直接嵌入圖片，同時保留來源頁、作者、具名圖說與授權連結。
+
+圖片工具若仍無法取得像素，必須保持 pending 並明確回報；HTTP 可讀、像素可解碼與最終目視通過是不同結果。程式只驗證前兩項，不冒充 ChatGPT 已看過圖。
+
+## 一輪處理 30～50 人
 
 ```bash
 python3 -m venv /workspace/.find-diff-tools/media-venv
 /workspace/.find-diff-tools/media-venv/bin/pip install -r singer/expansion-1500/requirements-media.txt
-# 下列 python 可改用該 venv 的 python
-python singer/expansion-1500/prepare_media.py --render-only
-git fetch --no-tags origin main
-python singer/expansion-1500/prepare_media.py --limit 10 --max-minutes 10 --live-ref origin/main
-python singer/expansion-1500/prepare_media.py --limit 50 --max-minutes 25 --retry-failed
-python singer/expansion-1500/prepare_media.py --limit 1 --retry-failed --person-id t1500_0001
+git fetch origin main
+# 使用上述 venv 的 python
+python singer/expansion-1500/prepare_media.py --limit 40 --workers 3 --max-minutes 25 --person-seconds 60 --live-ref origin/main
 python singer/expansion-1500/validate_pipeline.py
-python -m unittest discover -s singer/expansion-1500/tests -v
-# 已安裝 puppeteer-core 的開發環境可驗證審核介面
-NODE_PATH=/workspace/.find-diff-tools/node_modules node singer/expansion-1500/tests/review-ui.cjs
+python -m unittest discover -s singer/expansion-1500/tests -q
 ```
 
-`--live-ref origin/main` 從已 fetch 的正式 Git 版本讀取題庫和退件來源，不 checkout、不覆蓋檔案；Actions 每次先 fetch 最新 main。省略時使用工作目錄題庫。
+預設 40 人／3 個並行工作，可設 `--limit 30` 或 `--limit 50`。每人最多 3 張合適照片，不湊數。403/429 與耗時來源使用批次共用熔斷／冷卻；單人失敗不阻斷其他人物。每人有時間預算，整批有總預算，報告必須記載實際處理人數與是否提前停止。
 
-正常執行會跳過 `pending_review`、`candidate_ready`、`approved`、`published`，優先 A 級與嘗試次數少者。`--retry-failed` 只挑失敗／退件／中斷項目並略過冷卻時間，不會重新處理已核准照片。網路等暫時錯誤採退避，下次仍可搜尋；每次輪替來源與搜尋用語／頁次。`--providers wikimedia,openverse,official` 可限定來源；每人最多 3 張通過初檢的照片，不硬湊。
+搜尋優先處理退件人物與未完成候選，跳過已上線、已核准及已經等待目視的照片。6 位舊 pending 與新裁切會保留在視覺審核包，不在每次批次重抓來源。`--evidence-only` 是明確要求重新補證時的選項；`--review-round` 只限舊審核名單，不是一般大量批次的預設。
 
-`--render-only` 不連網，不搜尋，不修改舊索引；第一次執行會初始化新版進度。`--limit 0` 也可只產生進度報告。每次 run ID 含 UTC 時間與隨機尾碼，不覆蓋其他批次。
+Wikidata 會先以精確中文姓名／別名與 P31=Q5 確認唯一人物映射，取得可追溯英文搜尋別名，再查 Commons 與 Openverse。英文別名與圖片檔名／圖說必須有對應，不把查詢命中直接當成視覺身分驗證。官方素材可經 `--official-sources` 載入明確來源與授權清單，未提供清單的官方網站不宣稱已全面爬取。
 
-## 保存內容與相容性
+授權不明／不允許修改的來源只記錄中繼資料，不作為合格照片。新下載的照片沿用 YuNet、600×720 與現有 reveal 座標格式，檢查解析度、人臉、清晰度及曝光；閉眼、遮擋、浮水印、熟悉形象與權利仍由 ChatGPT 最後審核。
 
-- `pipeline/state.json`：新版狀態，以人物 ID 為 key，保存歷次嘗試、下次重試時間、來源錯誤與候選。
-- `pipeline/assets/<人物ID>/<候選ID>/<原圖雜湊>/`：原圖 `original.bin` 及以裁切圖雜湊命名的 JPEG。原圖保持下載位元組（可用 Pillow 開啟）；原圖和裁切都有 SHA-256。
-- `pipeline/runs/<run-id>/review-index.json`：完整人物、候選、授權、證據、驗證與狀態。
-- 同目錄 `review.html`：離線審核頁，姓名／ID／狀態篩選、原圖連結、候選照片、五階段預覽、來源及授權資訊、審核決定匯出。
-- 同目錄 `contact-sheet-*.jpg`、`contact-sheets.json`：待審核人物總覽，縮圖與人物 ID、候選 ID、雜湊對應。
-- 同目錄 `summary.json`、`failures.json`：本次掃描與全域待重試／待審核統計；欄位區分本批與全域。
-- `pipeline/reviews/`：不可覆寫的外部審核 JSON。
-- `pipeline/latest.json`：最近一次報告位置。
+## 進度、批次與中斷
 
-初始化保留舊索引整筆 `legacyRecord`，不覆蓋舊 JSON 或照片。正式題庫仍在用者標記 published；舊失敗與退件可重新搜尋。舊圖缺檔或雜湊不符不視為處理完成。舊圖授權網址／原始下載資料不足時標記需要補審，不能直接核准。
+每個 worker 使用獨立人物狀態，階段結果寫 `pipeline/checkpoints/<人物ID>.json`；只有協調者寫共用 `state.json`。中斷時只有基底人物狀態雜湊相符才能恢復，不覆蓋新的人工審核。跨人物同圖在合併時再次排除。
 
-狀態包括 `not_started / searching / download_failed / no_suitable_source / candidate_ready / pending_review / rejected / approved / published`。`searching` 在處理前存檔；取得每張候選後及每人完成後存檔；寫入使用 fsync+原子替換。整個輸出目錄用 kernel flock 排他鎖，程序中斷自動釋放。請勿刪除使用中的 `.lock`。
+**每張候選只保存進度，不產生完整報告。** 全部人物完成或總預算到期後，才一次產生 Contact Sheet、五階段預覽、review-index.json、failures.json、summary.json 與視覺圖片包。每輪 run ID 不重複，舊圖片、退件與審核紀錄保留。
 
-來源退件同時讀取 `photo-review.json`、舊擴充索引及新版審核紀錄；Wikimedia 來源會做 URL 解碼及檔名正規化。搜尋也排除正式題庫已用來源。不同人物使用相同照片不會因為有臉就被視為身分正確；身分與代表性仍需人工確認。
+## 兩階段提交，防止圖片網址指到不存在的 HEAD
 
-## 來源與授權
-
-- Wikimedia adapter：中文／英文 Wikipedia 人物頁與圖像、Wikidata P18、Commons 直接搜尋及授權資料。Wikipedia/Commons/Wikidata 不是三套獨立的照片來源。優先下載 Wikimedia 提供的 1400px 版本以減少大型原圖逾時，另保存 originalUrl 與 downloadVariant，不把下載版本誤當完整原始檔。
-- Openverse adapter：獨立聚合搜尋入口；回傳的來源頁及授權仍須逐張核對原始提供者。可能遇到限流或 API 行為變更。
-- Official adapter：讀取經指定的官方／經紀公司／電視台素材清單，避免把任意網頁視為有授權。這一版沒有全網搜尋引擎或自動爬遍官方網站；新增站點應寫 adapter 或提供明確網址。
-
-官方來源清單例子（非真實素材，不要直接拿來執行）：
-
-```json
-[
-  {
-    "personId": "t1500_0001",
-    "url": "https://official.example/media/portrait.jpg",
-    "source": "https://official.example/press/artist",
-    "filename": "portrait.jpg",
-    "artist": "實際提供者",
-    "license": "請填實際條款，不能因為公開就寫 CC",
-    "licenseUrl": "https://official.example/terms",
-    "caption": "來源頁圖說",
-    "identityEvidence": {"caption": "原文圖說及人物對應依據"},
-    "recognitionEvidence": {"note": "代表時期與作品依據"}
-  }
-]
-```
-
-以 `--official-sources /path/to/sources.json` 載入。第一版自動下載僅接受名稱／網址相符的 CC BY、CC BY-SA 或 CC0 中繼資料；作者要求依授權而定。自訂授權、新聞用途、NC、ND、未知或無授權網址者只存中繼資料，不下載，不接受核准匯入。未來要支援明確書面許可，需增加經審閱的權利證據規格。
-
-任何 open-license metadata 都不等於權利人已核實。Openverse、Commons 的錯誤標記或冒名上傳仍由審核者檢查；程式不宣稱法律認證。`eligibleForLive` 始終 false。
-
-## 外部 ChatGPT／人工審核
-
-下載整份 review artifact 並解壓後開啟 review.html；若瀏覽器禁止 file://，以本機靜態 HTTP 伺服器開啟同一目錄；保留 `pipeline/` 與 `review_photos/` 相對位置。每張圖檢查人物、圖說、代表形象、五階段、浮水印、閉眼／墨鏡／口罩、來源與授權。填入審核者及具體理由後匯出 JSON。
-
-只有收到另一個對話實際作成的決定，才可執行：
+1. 批次結束後 `build_assets` 產生 `pipeline/review-assets/<run>/`，提交候選、進度與資產。
+2. 以這個已存在的資產 SHA 執行：
 
 ```bash
-python singer/expansion-1500/prepare_media.py --import-review /path/to/review-decisions.json
+python singer/expansion-1500/tools/publish_review_links.py --asset-commit <完整40位資產Commit SHA>
 ```
 
-匯入綁定人物 ID＋候選 ID＋照片 SHA，整份驗證成功才修改狀態；過期照片、同人多張核准、既有核准／已上線人物或授權未解決會被拒絕。匯入不發布、不寫正式題庫。照片若有變更，舊決定不能沿用。Codex 不得自行填入人工接受紀錄。
+3. 提交 `review-public/latest.md`、`latest.json` 與 Codex 回覆，再一起推到工作分支。
+
+發佈連結前會從 Git 物件核對所有圖片與索引位元組，避免用「尚未包含新照片的舊 HEAD」產生失效圖片網址。這裡的發佈只指工作分支的審核入口，不涉及正式遊戲。
 
 ## GitHub Actions
 
-workflow 只 checkout 和 checkpoint `automation/celebrity-photo-pipeline`。搜尋 job 僅 contents:read、不保留 Git credentials；另一個 job 只提交 `pipeline/`，檢查來源 commit 沒有變動，且不 force push。不執行任何舊擴充／發布程式。
+只有明確的 `pipeline/batch-request.json` 變更或新的 `chatgpt-review/latest.json` 才自動啟動；單純改程式、寫進度或補一張圖不會自動再跑一批。預設執行一次 40 人批次，最後統一提交資產和固定圖片連結。
 
-push 程式變更會跑最多 2 人／5 分鐘小批次；手動 dispatch 可以指定 limit/retry；排程每批最多 50 人／25 分鐘。每日排程已寫入，但 **只有 workflow 經獨立審閱加入 default branch 後排程才會啟用**，目前工作分支上的 cron 不會定期運作。main 合併及 Pages 設定不在此工具權限內。
+`batch-request.json` 是啟動紀錄；工作流程預設40人，可在 workflow_dispatch 的 limit 或本機 CLI 調整。cron 只有控制 workflow 經獨立審閱加入預設分支後才啟用，本工作分支不直接改 main 來啟用它。
 
-每次上傳成果保存 30 天，已成功且驗證通過者會 checkpoint 回工作分支；驗證或 commit 衝突失敗時保留 artifact，不覆蓋別人的變更。硬逾時可由 artifact 恢復 state；一般執行在 25 分鐘主動結束，預留 Actions 40 分鐘限制的保存時間。
+若執行期間分支又有別人提交，checkpoint 拒絕覆蓋並保留 artifact。需要先逐欄合併進度與審核歷史，不能直接選 ours/theirs 丟掉另一邊資料。已核准與已上線項目、候選 SHA 及審核歷史應另外驗證。
 
-## 已知限制與網路需求
+## 初步審核交接
 
-- 此雲端目前未放行來源 API。需要：`zh.wikipedia.org`、`en.wikipedia.org`、`commons.wikimedia.org`、`www.wikidata.org`、`upload.wikimedia.org`、`thumb.wikimedia.org`、`api.openverse.org`、`media.githubusercontent.com`；Openverse 各原始圖片 host 另需逐站放行。403 代理拒絕記錄為 `proxy_access_denied`，不能回報成找不到人物照片。
-- YuNet 沿用現有處理器，首次載入從官方 OpenCV 模型來源下載並驗證既有 SHA，未停用 TLS 或修改預期雜湊。
-- 清晰度／曝光是保守啟發式；閉眼、遮擋、浮水印、真人真偽與熟悉度仍無可靠自動保證。
-- 未解決授權的候選不會自動下載；舊有上線照片的授權問題不由這個工具變更。
-- HTML 頁面使用 textContent 呈現外部文字；只接受 HTTPS 來源，限制回應位元組與圖片像素。沿用環境代理與 TLS 驗證，不處理登入或受限制素材。
-- 批次報告與原圖可能增大 Git repository；後續大量運作時可把原圖保存改為專用 artifact/object storage，仍需保留雜湊與審核可追溯性。
-
-若驗證成功但 checkpoint 失敗，可建立 `pipeline/recovery-request.json`（runId、baseStateSha256、completed:false），下一次 Actions 會以唯讀 token 下載該 run 的 artifact，僅在目前 state 雜湊未改變且沒有改動核准／人工審核紀錄時恢復，並標記完成。不得用復原覆蓋其他批次的進度；雜湊不同須先人工整合。
-
-## 固定 ChatGPT 審核交接（每輪自動讀取）
-
-輸入固定為本工作分支的 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。每次執行都先讀檔，不需要使用者傳送 JSON；該路徑的 GitHub push 也會觸發批次。先 pull 工作分支再執行，避免讀到舊結果。
-
-初步審核格式使用 `schemaVersion:1`、`releaseGate:DRAFT_ONLY_NOT_PLAYABLE`，逐項含 `personId/candidateId/gameSha256/decision/reason`，其中 decision 是 `reject` 或 `pending`。整份精確驗證照片雜湊後才套用；相同檔案以 SHA-256 去重，不重複記錄或重設進度。`received/<檔案SHA>.json` 保存歷史，原始 latest.json 不被 Codex 改寫。這個初步交接介面不接受 approved，最終核准仍由獨立審核與整合流程處理。
-
-```bash
-python singer/expansion-1500/prepare_media.py --review-round --limit 18 --max-minutes 25 --person-seconds 60 --live-ref origin/main
-```
-
-- reject：保留退件圖及原理由，封鎖重複來源，定向查詢代表作品、經典時期等新來源；涉及錯誤人物的名字也列入新候選圖說排除條件。
-- pending：補 Commons 圖說、作者、授權網址、原圖尺寸、外部原始提供者（例如 Flickr）連結、人物文章與五階段 PNG 證據。API 不可用時明確列出剩餘缺口，不自動標成已確認。
-- 修改裁切時建立新候選、新照片雜湊與父候選關聯，舊照片和舊決定保留。李妍瑾的特定舊圖提供移除背景人臉的新裁切，但不提高原始解析度，也不宣稱已獲核准。
-- 網路按人物分配時間，再均分給來源；Commons bulk 查詢獨立於 Wikipedia，避免一個網站逾時就耗掉整批時間。代理明確拒絕的 host 在同批不重複嘗試，後續批次仍可重試。
-- `pipeline/codex-response/latest.json` 是 Codex 的固定回覆，含來源審核檔 SHA、新 run、審核索引與逐人結果。ChatGPT 下一輪可由此取得候選，結果仍寫回原固定輸入路徑。
-
-有固定交接檔時，Actions 會針對其中人物跑最多 25 分鐘、每人最多 60 秒；不因 code push 的一般 2 人設定而漏掉待補證據者。每輪完成後等待新的 ChatGPT 審核，不自行整合或部署。
-
-### 已下載來源的定向重裁切
-
-`tools/recrop_review_source.py` 只適用於本次李妍瑾已審核的舊照片雜湊與背景人臉移除要求。它將舊遊戲圖與下載來源做 ORB/RANSAC 對齊，至少 20 個內點且內點比例至少 0.6，裁切範圍必須在來源圖內，再從來源像素重建 600×720 候選及五階段證據。保留父照片、來源 SHA 與轉換矩陣，已核准／已發布人物不可修改；相同輸出重跑不新增候選。像素對應不能代替人物身分或授權審核。以 media venv 的 Python 執行此工具。
-
-本輪固定 Codex 回覆另外提供 `sourceImageMap`（六張可直接檢視的來源 JPEG、原始網址及原始／下載尺寸）及 `revealContactSheet`（七張現行待審圖的五階段總覽）。來源 JPEG 與保存的下載位元組完全相同；它們不是新替代來源照片。
+`decisions` 與 `newCandidates` 都依 personId + candidateId + gameSha256 驗證；每人只出現一次，但可有多張照片。證據說明或來源 SHA 更新不會重設相同退件的搜尋進度。初步交接接受 reject/pending；所有圖片 `eligibleForLive` 保持 false，最終核准與整合仍由獨立審核流程處理。

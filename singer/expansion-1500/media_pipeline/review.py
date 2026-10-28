@@ -8,11 +8,41 @@ from .core import atomic, contained
 from .sources import now
 
 
+def contact_sheets(root, out, people):
+    from PIL import Image, ImageDraw, ImageFont
+    from pathlib import Path
+    rows = [(p, c) for p in people if p['status'] == 'pending_review' for c in p['candidates'] if c.get('gamePath') and c.get('status') not in {'rejected', 'metadata_only'}]
+    font_path = next((p for p in [Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'), Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')] if p.exists()), None)
+    font = ImageFont.truetype(str(font_path), 16) if font_path else ImageFont.load_default(size=16)
+    mapping, sheets = [], []
+    for start in range(0, len(rows), 20):
+        page = rows[start:start + 20]
+        sheet = Image.new('RGB', (800, ((len(page) + 3) // 4) * 280), '#17151f')
+        draw = ImageDraw.Draw(sheet)
+        filename = f'contact-sheet-{start // 20 + 1:02}.jpg'
+        for index, (person, candidate) in enumerate(page):
+            x, y = index % 4 * 200, index // 4 * 280
+            draw.text((x + 4, y + 2), person['personId'], fill='white', font=font)
+            draw.text((x + 4, y + 22), person['name'], fill='white', font=font)
+            try:
+                with Image.open(contained(root, candidate['gamePath'])) as image:
+                    image = image.convert('RGB').resize((190, 228))
+                    sheet.paste(image, (x + 5, y + 50))
+            except (OSError, ValueError):
+                draw.text((x + 4, y + 100), 'MISSING IMAGE', fill='red', font=font)
+            mapping.append({'personId': person['personId'], 'candidateId': candidate['id'], 'gameSha256': candidate.get('gameSha256'), 'sheet': filename, 'tile': index + 1})
+        sheet.save(out / filename, quality=90)
+        sheets.append(filename)
+    atomic(out / 'contact-sheets.json', mapping)
+    return sheets
+
+
 def report(root, directory, state, run_id, scanned):
     out = directory / 'runs' / run_id
     out.mkdir(parents=True, exist_ok=True)
     people = list(state['people'].values())
     selected = [state['people'][pid] for pid in scanned]
+    sheets = contact_sheets(root, out, people)
     failures = [{'personId': p['personId'], 'name': p['name'], 'status': p['status'], 'nextRetryAt': p.get('nextRetryAt'), 'errors': p.get('lastErrors', []), 'legacyFailure': p.get('lastFailure')} for p in people if p['status'] in {'download_failed', 'no_suitable_source', 'rejected'}]
     summary = {'runId': run_id, 'generatedAt': now(), 'scannedPeople': len(scanned),
                'peopleWithNewCandidates': sum(any(c.get('status') == 'pending_review' for c in p['candidates']) for p in selected),
@@ -22,7 +52,7 @@ def report(root, directory, state, run_id, scanned):
                'licenseConcernCandidates': sum(c.get('rightsStatus') == 'needs_review' for p in people for c in p['candidates'] if c.get('status') != 'rejected' and p['status'] != 'published'),
                'statusCounts': dict(collections.Counter(p['status'] for p in people)),
                'failureReasons': dict(collections.Counter(e['code'] for p in failures for e in p['errors'])),
-               'modifiedProduction': False, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE'}
+               'contactSheets': sheets, 'modifiedProduction': False, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE'}
     atomic(out / 'summary.json', summary)
     atomic(out / 'failures.json', failures)
     payload = {'schemaVersion': 2, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE', 'summary': summary, 'people': people}

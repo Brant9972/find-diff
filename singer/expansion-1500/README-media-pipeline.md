@@ -11,7 +11,8 @@ python3 -m venv /workspace/.find-diff-tools/media-venv
 /workspace/.find-diff-tools/media-venv/bin/pip install -r singer/expansion-1500/requirements-media.txt
 # 下列 python 可改用該 venv 的 python
 python singer/expansion-1500/prepare_media.py --render-only
-python singer/expansion-1500/prepare_media.py --limit 10 --max-minutes 10
+git fetch --no-tags origin main
+python singer/expansion-1500/prepare_media.py --limit 10 --max-minutes 10 --live-ref origin/main
 python singer/expansion-1500/prepare_media.py --limit 50 --max-minutes 25 --retry-failed
 python singer/expansion-1500/prepare_media.py --limit 1 --retry-failed --person-id t1500_0001
 python singer/expansion-1500/validate_pipeline.py
@@ -19,6 +20,8 @@ python -m unittest discover -s singer/expansion-1500/tests -v
 # 已安裝 puppeteer-core 的開發環境可驗證審核介面
 NODE_PATH=/workspace/.find-diff-tools/node_modules node singer/expansion-1500/tests/review-ui.cjs
 ```
+
+`--live-ref origin/main` 從已 fetch 的正式 Git 版本讀取題庫和退件來源，不 checkout、不覆蓋檔案；Actions 每次先 fetch 最新 main。省略時使用工作目錄題庫。
 
 正常執行會跳過 `pending_review`、`candidate_ready`、`approved`、`published`，優先 A 級與嘗試次數少者。`--retry-failed` 只挑失敗／退件／中斷項目並略過冷卻時間，不會重新處理已核准照片。網路等暫時錯誤採退避，下次仍可搜尋；每次輪替來源與搜尋用語／頁次。`--providers wikimedia,openverse,official` 可限定來源；每人最多 3 張通過初檢的照片，不硬湊。
 
@@ -30,6 +33,7 @@ NODE_PATH=/workspace/.find-diff-tools/node_modules node singer/expansion-1500/te
 - `pipeline/assets/<人物ID>/<候選ID>/<原圖雜湊>/`：原圖 `original.bin` 及以裁切圖雜湊命名的 JPEG。原圖保持下載位元組（可用 Pillow 開啟）；原圖和裁切都有 SHA-256。
 - `pipeline/runs/<run-id>/review-index.json`：完整人物、候選、授權、證據、驗證與狀態。
 - 同目錄 `review.html`：離線審核頁，姓名／ID／狀態篩選、原圖連結、候選照片、五階段預覽、來源及授權資訊、審核決定匯出。
+- 同目錄 `contact-sheet-*.jpg`、`contact-sheets.json`：待審核人物總覽，縮圖與人物 ID、候選 ID、雜湊對應。
 - 同目錄 `summary.json`、`failures.json`：本次掃描與全域待重試／待審核統計；欄位區分本批與全域。
 - `pipeline/reviews/`：不可覆寫的外部審核 JSON。
 - `pipeline/latest.json`：最近一次報告位置。

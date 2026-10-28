@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import subprocess
 import time
 import uuid
 from pathlib import Path
@@ -32,6 +33,24 @@ def atomic(path, data):
             stream.flush()
             os.fsync(stream.fileno())
         os.replace(temp, path)
+    finally:
+        temp.unlink(missing_ok=True)
+
+
+def immutable_bytes(path, data):
+    """Publish a complete asset atomically without replacing an existing file."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + '.' + uuid.uuid4().hex + '.tmp')
+    try:
+        with temp.open('xb') as stream:
+            stream.write(data)
+            stream.flush()
+            os.fsync(stream.fileno())
+        try:
+            os.link(temp, path)
+        except FileExistsError:
+            if path.read_bytes() != data:
+                raise ValueError('Immutable asset differs from existing bytes')
     finally:
         temp.unlink(missing_ok=True)
 
@@ -65,22 +84,28 @@ def protected(root):
     return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
-def live_people(root):
+def git_json(root, ref, filename):
+    return json.loads(subprocess.check_output(['git', '-C', str(root), 'show', ref + ':singer/' + filename]))
+
+
+def live_people(root, ref=None):
     result = {}
     for filename in ('questions.json', 'actors.json', 'variety.json'):
-        for row in read(root / filename, {'questions': []})['questions']:
+        for row in (git_json(root, ref, filename) if ref else read(root / filename, {'questions': []}))['questions']:
             result[row['id']] = row
     return result
 
 
-def rejection_keys(root):
+def rejection_keys(root, ref=None):
     keys = {source_key(x.get('source')) for x in read(root / 'photo-review.json', {}).get('rejected', []) if x.get('source')}
+    if ref:
+        keys.update(source_key(x.get('source')) for x in git_json(root, ref, 'photo-review.json').get('rejected', []) if x.get('source'))
     legacy = read(root / 'expansion-1500/draft-media-index.json', {}).get('items', [])
     keys.update(source_key(x.get('source')) for x in legacy if x.get('source') and (x.get('reviewStatus', '').startswith('rejected') or x.get('reviewStatus') == 'needs_alternative_source'))
     return keys
 
 
-def initialise(root, state_dir):
+def initialise(root, state_dir, active=None):
     state = read(state_dir / 'state.json')
     if state:
         if state.get('schemaVersion') != 2:
@@ -88,7 +113,7 @@ def initialise(root, state_dir):
         return state
     plan = read(root / 'expansion-1500/release-plan-20261028.json')
     legacy = {x['candidateId']: x for x in read(root / 'expansion-1500/draft-media-index.json', {}).get('items', [])}
-    active = live_people(root)
+    active = live_people(root) if active is None else active
     people = {}
     for person in plan['selectedNew']:
         pid = person['plannedQuestionId']
@@ -184,7 +209,7 @@ def ready(row):
     return [c for c in row['candidates'] if c.get('status') == 'pending_review']
 
 
-def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None):
+def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None, active=None):
     row['status'] = 'searching'
     row['attempts'] += 1
     row['lastAttemptAt'] = now()
@@ -192,7 +217,8 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
         checkpoint()
     errors, seen, tried = [], {source_key(c.get('source')) for c in row['candidates'] if c.get('status') != 'metadata_only'}, 0
     rejected = rejected | {source_key(c.get('source')) for c in row['candidates'] if c.get('status') == 'rejected'}
-    used = {source_key(q.get('attribution', {}).get('source')) for q in live_people(root).values()}
+    used = {source_key(q.get('attribution', {}).get('source')) for q in (live_people(root) if active is None else active).values()}
+    other_images = [c for pid, p in read(directory / 'state.json', {'people': {}})['people'].items() if pid != row['personId'] for c in p['candidates']]
     for provider in providers:
         provider_tried = 0
         if len(ready(row)) >= max_candidates or (deadline and time.monotonic() >= deadline):
@@ -241,19 +267,24 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     continue
                 try:
                     blob = http.get(item['url'])
-                    image, reveal, validation = crop(blob)
                     digest = hashlib.sha256(blob).hexdigest()
+                    image, reveal, validation = crop(blob)
                     game_digest = hashlib.sha256(image).hexdigest()
+                    if any(c.get('originalSha256') == digest or c.get('gameSha256') == game_digest for c in other_images):
+                        errors.append({'provider': provider.name, 'source': item['source'], 'code': 'image_used_for_other_person', 'message': 'Image hash already belongs to another person; identity conflict'})
+                        continue
+                    duplicate = next((c for c in row['candidates'] if c.get('originalSha256') == digest or c.get('gameSha256') == game_digest), None)
+                    if duplicate:
+                        duplicate.setdefault('alternateSources', []).append(item)
+                        errors.append({'provider': provider.name, 'source': item['source'], 'code': 'duplicate_image', 'message': 'Same image already saved under another source'})
+                        if checkpoint:
+                            checkpoint()
+                        continue
                     base = directory / 'assets' / row['personId'] / cid / digest[:12]
                     base.mkdir(parents=True, exist_ok=True)
                     raw_path, game_path = base / 'original.bin', base / (game_digest[:12] + '.jpg')
                     for path, data in ((raw_path, blob), (game_path, image)):
-                        if path.exists():
-                            if path.read_bytes() != data:
-                                raise ValueError('Immutable asset differs from existing bytes')
-                        else:
-                            with path.open('xb') as stream:
-                                stream.write(data)
+                        immutable_bytes(path, data)
                     candidate.update({'status': 'pending_review', 'originalPath': str(raw_path.relative_to(root)), 'gamePath': str(game_path.relative_to(root)),
                                       'originalSha256': digest, 'gameSha256': hashlib.sha256(image).hexdigest(), 'reveal': reveal, 'validation': validation})
                     row['candidates'].append(candidate)

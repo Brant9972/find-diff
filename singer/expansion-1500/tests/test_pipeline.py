@@ -34,7 +34,7 @@ class Provider:
 
 class FakeHTTP:
     def get(self, url):
-        return b'raw original'
+        return ('original ' + url).encode()
 
 
 class PipelineTest(unittest.TestCase):
@@ -51,7 +51,7 @@ class PipelineTest(unittest.TestCase):
         self.temp.cleanup()
 
     def crop(self, blob):
-        return b'game image', REVEAL, {'decoded': True, 'size': [600, 720]}
+        return b'game image ' + blob, REVEAL, {'decoded': True, 'size': [600, 720]}
 
     def run_person(self, providers, crop=None):
         process(self.person, self.row, self.root, self.directory, providers, FakeHTTP(), crop or self.crop, set(), checkpoint=lambda: atomic(self.directory / 'state.json', self.state))
@@ -201,6 +201,24 @@ class PipelineTest(unittest.TestCase):
         self.run_person([Provider([record])])
         self.assertEqual(self.row['candidates'][0]['status'], 'metadata_only')
         self.assertEqual(self.row['lastErrors'][0]['code'], 'identity_unconfirmed')
+
+    def test_identical_images_from_different_sources_are_not_multiple_options(self):
+        http = FakeHTTP()
+        http.get = lambda url: b'same image from mirrors'
+        process(self.person, self.row, self.root, self.directory, [Provider([candidate(), candidate('mirror')])], http, self.crop, set())
+        self.assertEqual(len(self.row['candidates']), 1)
+        self.assertEqual(len(self.row['candidates'][0]['alternateSources']), 1)
+        self.assertEqual(self.row['lastErrors'][0]['code'], 'duplicate_image')
+
+    def test_same_image_cannot_be_assigned_to_a_second_person(self):
+        blob = FakeHTTP().get(candidate()['url'])
+        image_hash = hashlib.sha256(self.crop(blob)[0]).hexdigest()
+        self.state['people']['other'] = {'personId': 'other', 'status': 'approved', 'candidates': [{'gameSha256': image_hash}]}
+        atomic(self.directory / 'state.json', self.state)
+        self.run_person([Provider([candidate()])])
+        self.assertFalse(self.row['candidates'])
+        self.assertEqual(self.row['lastErrors'][0]['code'], 'image_used_for_other_person')
+        self.assertEqual(self.state['people']['other']['status'], 'approved')
 
     def test_lock_excludes_other_writer(self):
         with lock(self.directory):

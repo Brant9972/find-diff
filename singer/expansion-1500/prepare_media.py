@@ -24,6 +24,7 @@ def main(argv=None):
     parser.add_argument('--render-only', action='store_true', help='Migrate/read state and generate review pages without network calls')
     parser.add_argument('--import-review', type=Path, help='Explicit decisions exported by the external human review workflow; never use for auto-approval')
     parser.add_argument('--official-sources', type=Path)
+    parser.add_argument('--live-ref', help='Read published banks/blacklist from a fetched Git ref, without changing the checkout')
     args = parser.parse_args(argv)
     if not 0 <= args.limit <= 300 or not 0 < args.max_minutes <= 120:
         parser.error('limit must be 0..300; max-minutes must be >0 and <=120')
@@ -37,13 +38,13 @@ def main(argv=None):
     if set(names) - {'wikimedia', 'openverse', 'official'}:
         parser.error('Unknown provider')
     with lock(directory):
-        state = initialise(root, directory)
+        active = live_people(root, args.live_ref)
+        state = initialise(root, directory, active=active)
         plan = read(root / 'expansion-1500/release-plan-20261028.json')
         people = {p['plannedQuestionId']: p for p in plan['selectedNew']}
         if set(args.person_id) - people.keys():
             parser.error('Unknown person ID')
         # Current banks override stale state. Names/articles prevent retired alias IDs being searched again.
-        active = live_people(root)
         from media_pipeline.sources import norm
         active_names = {norm(q['name']) for q in active.values()}
         for pid, row in state['people'].items():
@@ -83,7 +84,7 @@ def main(argv=None):
                     shift = row['attempts'] % len(selected)
                     selected = selected[shift:] + selected[:shift]
                     try:
-                        process(people[row['personId']], row, root, directory, selected, http, crop, rejection_keys(root), args.max_candidates, deadline=deadline, checkpoint=lambda: atomic(directory / 'state.json', state))
+                        process(people[row['personId']], row, root, directory, selected, http, crop, rejection_keys(root, args.live_ref), args.max_candidates, deadline=deadline, checkpoint=lambda: atomic(directory / 'state.json', state), active=active)
                     except Exception as exc:
                         row['status'] = 'download_failed'
                         row['lastErrors'] = [{'code': 'processing_error', 'message': str(exc)[:400]}]

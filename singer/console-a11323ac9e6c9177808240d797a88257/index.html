@@ -339,7 +339,7 @@ $("exportBatch").addEventListener("click",async function(){
 async function init(){
  try{
   var data=await Promise.all(roles.map(async function(role){var res=await fetch("../"+role[1],{cache:"no-store"});if(!res.ok)throw Error(role[1]+" 無法讀取");var value=await res.json();if(!Array.isArray(value.questions))throw Error(role[1]+" 格式不正確");return value.questions;}));
-  try{var correctionResponse=await fetch("../photo-corrections-20261025.json",{cache:"no-store"});if(correctionResponse.ok){var correctionData=await correctionResponse.json();(correctionData.corrections||[]).forEach(function(item){corrections.set(item.id,item);});}}catch(e){}
+  for(var correctionFile of ["photo-corrections-20261025.json","photo-corrections-20261028.json"]){try{var correctionResponse=await fetch("../"+correctionFile,{cache:"no-store"});if(correctionResponse.ok){var correctionData=await correctionResponse.json();(correctionData.corrections||[]).forEach(function(item){corrections.set(item.id,item);});}}catch(e){}}
   var byId=new Map();
   data.forEach(function(bank,i){var role=roles[i][0];$("count"+role[0].toUpperCase()+role.slice(1)).textContent=bank.length;
    bank.forEach(function(q){if(!q.id||!q.name||!q.photo)return;var p=byId.get(q.id);if(!p){p={id:q.id,name:q.name,roles:[],records:{},aliases:[]};byId.set(q.id,p);}p.roles.push(role);p.records[role]=q;[q.name].concat(q.aliases||[]).forEach(function(alias){if(alias&&!p.aliases.includes(alias)&&alias!==p.name)p.aliases.push(alias);});});

@@ -11,6 +11,7 @@ on:
       - 'singer/actors.json'
       - 'singer/questions.json'
       - 'singer/hints.json'
+      - 'singer/hint-candidates.json'
       - 'singer/actors-roster.json'
       - '.github/workflows/singer-ui-qa.yml'
   workflow_dispatch:

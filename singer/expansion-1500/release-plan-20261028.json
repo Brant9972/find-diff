@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "preparedAt": "2026-10-28",
   "project": "Brant9972/find-diff singer",
-  "status": "STAGING_NOT_LIVE",
+  "status": "STAGING_IN_PROGRESS",
   "source": {
     "branch": "roster-1500-taiwan-20261028",
     "file": "singer/expansion-1500/taiwan-first-candidates-20261028.json",
@@ -21,7 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 513,
     "targetUniqueAfterFullPass": 1500,
-    "currentlyLiveUnique": 987
+    "currentlyLiveUnique": 988,
+    "publishedFromPlan": 1,
+    "remainingSelectedNovel": 512
   },
   "criteria": {
     "image": [
@@ -1090,7 +1092,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡幸娟 星星知我心 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0002",
@@ -1122,7 +1125,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳建寧 F.I.R. 飛兒樂團 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0003",
@@ -1152,9 +1156,10 @@
         "rightsDocumented": false,
         "finalCropReviewed": false
       },
-      "hintsStatus": "candidate_only_unverified",
+      "hintsStatus": "placeholder_must_replace",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李佳豫  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0004",
@@ -1186,7 +1191,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周群達 鬥魚 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0005",
@@ -1222,7 +1228,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林嘉欣 男人四十 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0006",
@@ -1254,7 +1261,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "范植偉 美麗時光 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0007",
@@ -1286,7 +1294,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王瞳 多情城市 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0008",
@@ -1318,7 +1327,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙永馨 庭院深深 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0009",
@@ -1350,7 +1360,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "姚淳耀 模仿犯 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0016",
@@ -1386,7 +1397,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "庹宗康 國光幫幫忙 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0027",
@@ -1418,7 +1430,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "大炳 模仿綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0029",
@@ -1450,7 +1463,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曲家瑞 康熙來了 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0041",
@@ -1482,7 +1496,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "海裕芬 我可能不會愛你 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0048",
@@ -1514,7 +1529,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊皓如  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0054",
@@ -1550,7 +1566,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "Gino K ONE 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0092",
@@ -1582,7 +1599,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江祖平 風水世家 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0093",
@@ -1618,7 +1636,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭品超 鬥魚 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0094",
@@ -1650,7 +1669,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "寇世勳 一剪梅 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0095",
@@ -1671,18 +1691,22 @@
       "photoSearchKeywords": [
         "金超群 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_running",
+      "publishedQuestionId": "t1500_0095",
+      "portraitSource": "https://p7.itc.cn/images01/20220815/f88933f4f0174b10a5517bcff201c946.jpeg",
+      "rightsNote": "Film still is not openly licensed; original rights holder unknown; reuse authorization not confirmed.",
+      "preferredImageQuery": "金超群 包青天 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0096",
@@ -1714,7 +1738,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "馬如龍 海角七號 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0099",
@@ -1750,7 +1775,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿翔 食尚玩家 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0102",
@@ -1782,7 +1808,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙正平 康熙來了 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0103",
@@ -1814,7 +1841,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陽帆 分手擂台 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0104",
@@ -1846,7 +1874,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "董至成 全民大悶鍋 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0105",
@@ -1878,7 +1907,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鍾嘉欣 溏心風暴 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0106",
@@ -1910,7 +1940,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林生祥 菊花夜行軍 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0107",
@@ -1942,7 +1973,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳明章 流浪到淡水 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0108",
@@ -1974,7 +2006,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃少谷 強辯樂團 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0109",
@@ -2006,7 +2039,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃連煜 新寶島康樂隊 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0110",
@@ -2038,7 +2072,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉佳修 外婆的澎湖灣 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0111",
@@ -2070,7 +2105,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王夢麟 雨中即景 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0112",
@@ -2106,7 +2142,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝馨儀 蘇打綠 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0113",
@@ -2142,7 +2179,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "史俊威 蘇打綠 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0114",
@@ -2178,7 +2216,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "龔鈺祺 蘇打綠 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0115",
@@ -2210,7 +2249,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝佳見 我的寶貝四千金 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0116",
@@ -2242,7 +2282,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝瓊煖 俗女養成記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0117",
@@ -2274,7 +2315,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "方岑 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0118",
@@ -2306,7 +2348,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王中皇 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0119",
@@ -2338,7 +2381,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王振復 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0120",
@@ -2370,7 +2414,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "宋逸民 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0121",
@@ -2402,7 +2447,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李淑楨 魯冰花 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0122",
@@ -2434,7 +2480,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "岳華 大醉俠 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0123",
@@ -2466,7 +2513,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林慶台 賽德克・巴萊 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0124",
@@ -2498,7 +2546,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "施易男 母雞帶小鴨 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0125",
@@ -2530,7 +2579,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張復建 包青天 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0126",
@@ -2562,7 +2612,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃西田 台語演藝節目 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0127",
@@ -2594,7 +2645,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉歡 記得我們有約 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0128",
@@ -2626,7 +2678,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙駿亞 新兵日記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0133",
@@ -2658,7 +2711,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳為民  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0134",
@@ -2690,7 +2744,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "賀一航  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0135",
@@ -2722,7 +2777,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "沈春華 沈春華Live Show 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0136",
@@ -2754,7 +2810,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "潘若迪 有氧運動 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0137",
@@ -2790,7 +2847,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "薔薔 我愛黑澀會 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0138",
@@ -2822,7 +2880,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝忻 綜藝大集合 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0139",
@@ -2858,7 +2917,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "Janet 瘋台灣 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0140",
@@ -2890,7 +2950,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "盛竹如 華視新聞 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0141",
@@ -2926,7 +2987,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蘇芮 酒矸倘賣無 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0142",
@@ -2962,7 +3024,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "童安格 其實你不懂我的心 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0143",
@@ -2994,7 +3057,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李驥 優客李林 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0144",
@@ -3026,7 +3090,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "熊天平 火柴天堂 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0145",
@@ -3058,7 +3123,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "魏如昀 花香 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0146",
@@ -3090,7 +3156,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "余佩真 台灣獨立音樂 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0147",
@@ -3122,7 +3189,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝雷 台語流行歌曲 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0148",
@@ -3154,7 +3222,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "袁小迪 台語流行歌曲 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0149",
@@ -3186,7 +3255,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王瑞霞 台語歌壇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0150",
@@ -3218,7 +3288,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "方瑞娥 台語歌壇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0151",
@@ -3250,7 +3321,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "高向鵬 台語對唱歌曲 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0152",
@@ -3282,7 +3354,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝宜君 台語流行歌曲 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0153",
@@ -3314,7 +3387,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭忠祐 超級紅人榜 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0154",
@@ -3350,7 +3424,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李炳輝 流浪到淡水 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0155",
@@ -3382,7 +3457,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "金佩姍 一代女皇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0156",
@@ -3414,7 +3490,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "潘美辰 我想有個家 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0157",
@@ -3446,7 +3523,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "姜育恆 再回首 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0158",
@@ -3482,7 +3560,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "孟庭葦 冬季到台北來看雨 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0159",
@@ -3514,7 +3593,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "高明駿 年輕的喝采 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0160",
@@ -3550,7 +3630,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿杜 他一定很愛你 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0161",
@@ -3582,7 +3663,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林道遠 星光大道 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0162",
@@ -3614,7 +3696,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "梁一貞 星光大道 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0163",
@@ -3650,7 +3733,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "春風 玖壹壹 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0164",
@@ -3682,7 +3766,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "健志 玖壹壹 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0165",
@@ -3714,7 +3799,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "洋蔥 玖壹壹 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0166",
@@ -3750,7 +3836,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿璞 八三夭 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0167",
@@ -3791,7 +3878,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "小傑 棒棒堂 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0168",
@@ -3823,7 +3911,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李銓 模范棒棒堂 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0169",
@@ -3859,7 +3948,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "瑪莎 五月天 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0170",
@@ -3895,7 +3985,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "冠佑 五月天 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0171",
@@ -3927,7 +4018,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳湘琪 回光奏鳴曲 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0172",
@@ -3959,7 +4051,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陸弈靜 郊遊 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0173",
@@ -3991,7 +4084,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李亦捷 當愛來的時候 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0174",
@@ -4027,7 +4121,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鳳小岳 艋舺 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0175",
@@ -4059,7 +4154,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "章廣辰 華燈初上 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0176",
@@ -4095,7 +4191,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曹佑寧 KANO 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0177",
@@ -4127,7 +4224,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李運慶 真愛找麻煩 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0178",
@@ -4159,7 +4257,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "祝釩剛 183club 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0179",
@@ -4191,7 +4290,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃玉榮 183club 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0180",
@@ -4223,7 +4323,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張翰 牯嶺街少年殺人事件 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0181",
@@ -4259,7 +4360,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王大陸 我的少女時代 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0182",
@@ -4291,7 +4393,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "任容萱 我的自由年代 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0183",
@@ -4323,7 +4426,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝麗金 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0184",
@@ -4355,7 +4459,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李之勤 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0185",
@@ -4387,7 +4492,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳仙梅 世間情 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0186",
@@ -4419,7 +4525,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "亮哲 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0187",
@@ -4451,7 +4558,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林佑星 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0188",
@@ -4483,7 +4591,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃維德 京華煙雲 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0189",
@@ -4515,7 +4624,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鐘瑶 花甲男孩轉大人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0190",
@@ -4547,7 +4657,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許安植 俗女養成記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0191",
@@ -4579,7 +4690,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "姚愛寗 比悲傷更悲傷的故事 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0192",
@@ -4611,7 +4723,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭碧婷 小時代 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0193",
@@ -4643,7 +4756,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曾珮瑜 做工的人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0194",
@@ -4675,7 +4789,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "朱芷瑩 色，戒 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0195",
@@ -4707,7 +4822,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周姮吟 台灣電影與戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0196",
@@ -4739,7 +4855,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡亘晏 咒 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0197",
@@ -4771,7 +4888,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "方郁婷 美國女孩 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0198",
@@ -4803,7 +4921,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "魏蔓 真愛趁現在 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0199",
@@ -4835,7 +4954,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭家榆 懷玉公主 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0200",
@@ -4867,7 +4987,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "翁家明 台灣經典戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0201",
@@ -4899,7 +5020,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周明增 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0202",
@@ -4931,7 +5053,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "喜翔 老大人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0203",
@@ -4967,7 +5090,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳松勇 悲情城市 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0204",
@@ -4999,7 +5123,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李立群 搭錯車 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0205",
@@ -5031,7 +5156,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙自強 如果兒童劇團 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0206",
@@ -5063,7 +5189,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "顧寶明 暗戀桃花源 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0207",
@@ -5095,7 +5222,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "孫越 搭錯車 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0208",
@@ -5127,7 +5255,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "乾德門 新白娘子傳奇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0209",
@@ -5159,7 +5288,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張國柱 花樣年華 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0210",
@@ -5191,7 +5321,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張世 粉紅女郎 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0211",
@@ -5223,7 +5354,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周孝安 一把青 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0212",
@@ -5255,7 +5387,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳慕 若是一個人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0213",
@@ -5287,7 +5420,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林雨宣 星光大道 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0214",
@@ -5319,7 +5453,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃采儀 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0215",
@@ -5351,7 +5486,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何以奇 我的自由年代 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0216",
@@ -5383,7 +5519,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "韓瑜 意難忘 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0217",
@@ -5415,7 +5552,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "賴慧如 多情城市 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0218",
@@ -5447,7 +5585,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江俊翰 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0219",
@@ -5479,7 +5618,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蘇意菁 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0220",
@@ -5511,7 +5651,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉秀雯 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0221",
@@ -5543,7 +5684,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "崔佩儀 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0222",
@@ -5575,7 +5717,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙樹海 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0223",
@@ -5607,7 +5750,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "檢場 台灣綜藝與戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0224",
@@ -5639,7 +5783,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "丁國琳 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0225",
@@ -5671,7 +5816,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝京穎 天道 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0226",
@@ -5703,7 +5849,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張家瑋 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0227",
@@ -5735,7 +5882,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李亮瑾 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0228",
@@ -5767,7 +5915,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳熙鋒 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0229",
@@ -5799,7 +5948,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林健寰 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0230",
@@ -5831,7 +5981,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林小樓 新桃太郎 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0231",
@@ -5863,7 +6014,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周筱雲 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0232",
@@ -5895,7 +6047,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "余筱萍  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0233",
@@ -5927,7 +6080,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曹啟泰 連環泡 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0234",
@@ -5959,7 +6113,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "九孔 全民大悶鍋 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0235",
@@ -5991,7 +6146,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "唐治平 花樣少年少女 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0236",
@@ -6023,7 +6179,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "馮翊綱 相聲瓦舍 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0237",
@@ -6055,7 +6212,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "宋少卿 相聲瓦舍 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0238",
@@ -6087,7 +6245,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張魁 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0239",
@@ -6119,7 +6278,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張帝 急智歌王 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0240",
@@ -6151,7 +6311,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張克帆 紅孩兒 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0241",
@@ -6183,7 +6344,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何篤霖 命運好好玩 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0242",
@@ -6215,7 +6377,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "大根  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0243",
@@ -6247,7 +6410,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "大飛  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0244",
@@ -6279,7 +6443,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "小炳  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0245",
@@ -6311,7 +6476,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "寶媽  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0246",
@@ -6343,7 +6509,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "徐小可  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0247",
@@ -6375,7 +6542,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿布 台灣綜藝與戲劇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0248",
@@ -6407,7 +6575,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "斯容  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0249",
@@ -6439,7 +6608,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "茵芙  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0250",
@@ -6471,7 +6641,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "逸祥 瘋神無雙 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0251",
@@ -6503,7 +6674,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭靜純 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0252",
@@ -6535,7 +6707,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "崔麗心  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0253",
@@ -6567,7 +6740,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳今佩  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0254",
@@ -6599,7 +6773,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何嘉文  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0255",
@@ -6631,7 +6806,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林采緹  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0256",
@@ -6663,7 +6839,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙孟姿  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0257",
@@ -6695,7 +6872,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "汪建民 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0258",
@@ -6727,7 +6905,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳凱倫 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0259",
@@ -6759,7 +6938,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "羅璧玲 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0260",
@@ -6791,7 +6971,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡頭 紅白勝利 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0261",
@@ -6823,7 +7004,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "脫線 台灣秀場 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0262",
@@ -6855,7 +7037,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "文英 稻草人 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0263",
@@ -6894,7 +7077,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳姍儒 小明星大跟班 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0264",
@@ -6926,7 +7110,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "甄莉  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0265",
@@ -6958,7 +7143,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "紀言愷 SpeXial 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0266",
@@ -6990,7 +7176,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何美  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0267",
@@ -7022,7 +7209,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "胡釋安  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0268",
@@ -7054,7 +7242,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何孟遠 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0269",
@@ -7086,7 +7275,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃沐妍 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0270",
@@ -7118,7 +7308,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "廖科溢 旅遊節目主持 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0271",
@@ -7150,7 +7341,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "孫翠鳳 明華園 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0272",
@@ -7182,7 +7374,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "唐美雲 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0273",
@@ -7214,7 +7407,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊麗花 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0274",
@@ -7246,7 +7440,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉青 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0275",
@@ -7278,7 +7473,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳美雲 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0276",
@@ -7310,7 +7506,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許書豪 金曲獎 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0277",
@@ -7342,7 +7539,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何欣穗 創作歌手 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0278",
@@ -7374,7 +7572,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何景揚 蘇打綠 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0279",
@@ -7406,7 +7605,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊士弘 金曲獎 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0280",
@@ -7438,7 +7638,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "舞思愛 原住民族歌手 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0281",
@@ -7470,7 +7671,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉家凱 蘇打綠 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0282",
@@ -7502,7 +7704,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "戴曉君 原住民族歌手 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0283",
@@ -7534,7 +7737,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳霆 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0284",
@@ -7566,7 +7770,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "關勇 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0285",
@@ -7598,7 +7803,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林柏叡 鬥魚 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0286",
@@ -7630,7 +7836,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳又瑄 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0287",
@@ -7662,7 +7869,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "潘綱大 陽光普照 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0288",
@@ -7694,7 +7902,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡明修 台灣電影 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0290",
@@ -7726,7 +7935,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "馬世莉 台灣綜藝 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0292",
@@ -7758,7 +7968,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃喬歆 我愛黑澀會 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0294",
@@ -7790,7 +8001,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "錦雯 台灣歌仔戲 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0295",
@@ -7822,7 +8034,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "譚俊彥 十八年後的終極告白 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0296",
@@ -7854,7 +8067,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "熊欣欣 黃飛鴻電影 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0297",
@@ -7886,7 +8100,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李香琴 香港經典電影 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0298",
@@ -7918,7 +8133,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王浩信 踩過界 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0299",
@@ -7950,7 +8166,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李施嬅 金宵大廈 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0300",
@@ -7982,7 +8199,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "唐文龍 香港電影與電視 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0301",
@@ -8014,7 +8232,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳敏之 怒火街頭 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0302",
@@ -8046,7 +8265,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉丹 射鵰英雄傳 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0303",
@@ -8082,7 +8302,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "賴薇如 七朵花 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0304",
@@ -8114,7 +8335,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林玟誼 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0305",
@@ -8146,7 +8368,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許傑輝 全民大悶鍋 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0306",
@@ -8178,7 +8401,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉香慈 新兵日記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0307",
@@ -8214,7 +8438,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李妍瑾  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0308",
@@ -8246,7 +8471,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曹晏豪 天黑請閉眼 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0309",
@@ -8278,7 +8504,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "梁正群  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0310",
@@ -8310,7 +8537,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃尚禾 角頭 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0311",
@@ -8342,7 +8570,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃遠 一頁台北 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0312",
@@ -8374,7 +8603,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉修甫 誰是被害者 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0313",
@@ -8406,7 +8636,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝沛恩 波麗士大人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0314",
@@ -8436,7 +8667,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李國超  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0315",
@@ -8466,7 +8698,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李羅  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0316",
@@ -8496,7 +8729,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李㼈  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0317",
@@ -8526,7 +8760,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "岳虹  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0318",
@@ -8556,7 +8791,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林在培  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0319",
@@ -8586,7 +8822,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林美貞  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0320",
@@ -8616,7 +8853,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "侯昌明  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0321",
@@ -8646,7 +8884,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳子強  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0322",
@@ -8676,7 +8915,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳志強  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0323",
@@ -8712,7 +8952,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿喜 網路短片與綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0325",
@@ -8748,7 +8989,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿緯 棒棒堂 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0327",
@@ -8783,7 +9025,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許寀菁 Super7 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0328",
@@ -8815,7 +9058,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "無尊 模仿綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0329",
@@ -8847,7 +9091,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃豪平 站立喜劇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0330",
@@ -8879,7 +9124,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊昇達 站立喜劇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0331",
@@ -8915,7 +9161,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "夢多  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0332",
@@ -8947,7 +9194,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉真 國標舞 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0333",
@@ -8979,7 +9227,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "秦沛 新不了情 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0334",
@@ -9011,7 +9260,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "田蕊妮 巨輪 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0335",
@@ -9043,7 +9293,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李思捷 荃加福祿壽 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0336",
@@ -9075,7 +9326,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阮兆祥 荃加福祿壽 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0337",
@@ -9107,7 +9359,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "唐寧 大唐雙龍傳 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0338",
@@ -9139,7 +9392,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "梁小冰 鹿鼎記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0339",
@@ -9171,7 +9425,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳錦鴻 創世紀 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0340",
@@ -9203,7 +9458,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃德斌 火舞黃沙 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0341",
@@ -9235,7 +9491,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉心悠 步步驚心 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0342",
@@ -9267,7 +9524,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "滕麗名 陀槍師姐 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0343",
@@ -9299,7 +9557,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "盧海鵬 歡樂今宵 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0344",
@@ -9331,7 +9590,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蕭正楠 巨輪 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0345",
@@ -9363,7 +9623,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "關海山 五億探長雷洛傳 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0346",
@@ -9400,7 +9661,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳怡叡 樂天女孩 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0347",
@@ -9432,7 +9694,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃雋智  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0348",
@@ -9464,7 +9727,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "雷嘉汭 哭悲 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0349",
@@ -9496,7 +9760,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃霆睿 歌唱節目 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0350",
@@ -9528,7 +9793,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳惠婷 Tizzy Bac 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0351",
@@ -9560,7 +9826,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳建年 海洋 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0352",
@@ -9592,7 +9859,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳建騏 音樂製作 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0353",
@@ -9624,7 +9892,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝宇威 客語音樂 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0354",
@@ -9654,7 +9923,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳展鵬  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0355",
@@ -9684,7 +9954,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃智賢  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0356",
@@ -9714,7 +9985,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳山聰  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0357",
@@ -9744,7 +10016,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "文詠珊  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0358",
@@ -9774,7 +10047,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江若琳  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0359",
@@ -9804,7 +10078,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "岑麗香  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0360",
@@ -9834,7 +10109,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林德信  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0361",
@@ -9864,7 +10140,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳鍵鋒  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0362",
@@ -9894,7 +10171,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳茵媺  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0363",
@@ -9924,7 +10202,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃翠如  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0364",
@@ -9954,7 +10233,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "羅仲謙  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0365",
@@ -9984,7 +10264,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "駱應鈞  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0366",
@@ -10016,7 +10297,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江玲 我的小妹 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0367",
@@ -10046,7 +10328,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江蕾  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0368",
@@ -10078,7 +10361,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林玉英 小雨 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0369",
@@ -10110,7 +10394,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張蓉蓉 台語歌壇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0370",
@@ -10142,7 +10427,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳小雲 舞女 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0371",
@@ -10174,7 +10460,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭金發 燒肉粽 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0372",
@@ -10206,7 +10493,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭英男 老人飲酒歌 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0373",
@@ -10236,7 +10524,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉勝欽  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0374",
@@ -10268,7 +10557,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林俊吉 一個人的藉口 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0375",
@@ -10300,7 +10590,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林良樂 冷井情深 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0376",
@@ -10332,7 +10623,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曾淑勤 魯冰花 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0377",
@@ -10364,7 +10656,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王海玲 忘了我是誰 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0378",
@@ -10396,7 +10689,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李碧華 浮水印 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0379",
@@ -10428,7 +10722,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李建復 龍的傳人 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0380",
@@ -10460,7 +10755,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "施孝榮 歸人沙城 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0381",
@@ -10492,7 +10788,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王芷蕾 台灣流行歌壇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0382",
@@ -10524,7 +10821,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "錢幽蘭 在雨中 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0383",
@@ -10556,7 +10854,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡藍欽 這個世界 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0384",
@@ -10588,7 +10887,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭華娟 創作歌手 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0385",
@@ -10618,7 +10918,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳艾湄  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0386",
@@ -10654,7 +10955,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "堂娜 奢求 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0387",
@@ -10686,7 +10988,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳佩慈 Candies 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0388",
@@ -10718,7 +11021,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林宇中 靠岸 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0389",
@@ -10750,7 +11054,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林冠吟 毀滅愛情 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0390",
@@ -10786,7 +11091,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "家家 忘不記 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0391",
@@ -10818,7 +11124,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "昊恩 昊恩家家 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0392",
@@ -10850,7 +11157,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "以莉高露 輕快的生活 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0393",
@@ -10880,7 +11188,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳蓓雅  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0394",
@@ -10912,7 +11221,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃玠 綠色的日子 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0395",
@@ -10942,7 +11252,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李權哲  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0396",
@@ -10974,7 +11285,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "徐暐翔 聲林之王 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0397",
@@ -11004,7 +11316,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃奕儒  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0398",
@@ -11034,7 +11347,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳以恆  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0399",
@@ -11064,7 +11378,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許含光  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0400",
@@ -11096,7 +11411,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡詩芸 紫外線 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0401",
@@ -11126,7 +11442,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳勇濱  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0402",
@@ -11170,7 +11487,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "朱安禹 水蜜桃姐姐 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0403",
@@ -11206,7 +11524,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "香蕉哥哥 YOYO點點名 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0404",
@@ -11250,7 +11569,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蝴蝶姐姐 蝴蝶姐姐 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0405",
@@ -11282,7 +11602,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "月亮姐姐 YOYO點點名 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0406",
@@ -11324,7 +11645,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "米可白 牛車來去 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0407",
@@ -11354,7 +11676,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "方怡萍  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0408",
@@ -11386,7 +11709,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李明洋 台語歌壇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0409",
@@ -11416,7 +11740,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曾昱嘉  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0410",
@@ -11448,7 +11773,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "賴銘偉 星光大道 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0411",
@@ -11480,7 +11806,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "袁惟仁 夢醒了 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0412",
@@ -11512,7 +11839,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曾靜玟 我最親愛的 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0413",
@@ -11544,7 +11872,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黎礎寧 星光大道 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0414",
@@ -11574,7 +11903,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李杰明  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0415",
@@ -11610,7 +11940,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周予天 歌唱與戲劇 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0416",
@@ -11642,7 +11973,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "艾薇 聲林之王 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0417",
@@ -11672,7 +12004,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "阿洛  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0418",
@@ -11704,7 +12037,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "廖士賢 台語搖滾 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0419",
@@ -11736,7 +12070,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "豬頭皮 我是神經病 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0420",
@@ -11769,7 +12104,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何家勁 包青天 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0421",
@@ -11801,7 +12137,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "俞小凡 婉君 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0422",
@@ -11833,7 +12170,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周紹棟 倚天屠龍記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0423",
@@ -11865,7 +12203,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉德凱 一簾幽夢 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0424",
@@ -11897,7 +12236,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "甄珍 彩雲飛 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0425",
@@ -11929,7 +12269,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林瑞陽 一簾幽夢 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0426",
@@ -11961,7 +12302,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林以真 家有仙妻 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0427",
@@ -11993,7 +12335,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林千鈺 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0428",
@@ -12023,7 +12366,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王淑娟  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0429",
@@ -12055,7 +12399,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳鈴山 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0430",
@@ -12087,7 +12432,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳孝萱 倚天屠龍記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0431",
@@ -12119,7 +12465,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王耿豪 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0432",
@@ -12151,7 +12498,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王靜瑩 東方不敗 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0433",
@@ -12183,7 +12531,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林煒 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0434",
@@ -12215,7 +12564,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "田麗 風雲 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0435",
@@ -12247,7 +12597,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "馬幼興 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0436",
@@ -12279,7 +12630,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "朱陸豪 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0437",
@@ -12311,7 +12663,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "羅巧倫 天之驕女 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0438",
@@ -12343,7 +12696,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楚宣 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0439",
@@ -12375,7 +12729,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "德馨 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0440",
@@ -12407,7 +12762,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "賴芊合 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0441",
@@ -12439,7 +12795,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃瑄 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0442",
@@ -12471,7 +12828,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "范瑞君 台灣電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0443",
@@ -12503,7 +12861,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王欣逸 海豚灣戀人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0444",
@@ -12535,7 +12894,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭平君 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0445",
@@ -12567,7 +12927,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張懷秋 大嘴巴 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0446",
@@ -12597,7 +12958,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王庭勻  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0447",
@@ -12627,7 +12989,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳怡嘉  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0448",
@@ -12657,7 +13020,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林昀希  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0449",
@@ -12689,7 +13053,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周曉涵 18禁不禁 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0450",
@@ -12721,7 +13086,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "袁艾菲 大學生了沒 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0451",
@@ -12753,7 +13119,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王家梁 我的寶貝四千金 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0452",
@@ -12783,7 +13150,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王以路  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0453",
@@ -12813,7 +13181,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭亞棠  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0454",
@@ -12845,7 +13214,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張本渝 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0455",
@@ -12877,7 +13247,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔣偉文 台灣綜藝 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0456",
@@ -12909,7 +13280,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "簡沛恩 台灣偶像劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0457",
@@ -12941,7 +13313,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王耀慶 失戀33天 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0458",
@@ -12971,7 +13344,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林嘉俐  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0459",
@@ -13003,7 +13377,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "伊正 台灣戲劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0460",
@@ -13033,7 +13408,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林照雄  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0461",
@@ -13065,7 +13441,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林暉閔 星空 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0462",
@@ -13097,7 +13474,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉書宏 終極三國 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0463",
@@ -13127,7 +13505,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳禕倫  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0464",
@@ -13159,7 +13538,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "方駿 台灣歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0465",
@@ -13191,7 +13571,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉家昌 往事只能回味 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0466",
@@ -13223,7 +13604,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "余苑綺 歌唱與綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0467",
@@ -13255,7 +13637,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李亞萍 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0468",
@@ -13287,7 +13670,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉爾金 台灣綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0469",
@@ -13319,7 +13703,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "余炳賢 紅白勝利 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0470",
@@ -13351,7 +13736,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "孫鵬 國光幫幫忙 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0471",
@@ -13381,7 +13767,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳國華  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0472",
@@ -13413,7 +13800,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蘇霈  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0473",
@@ -13445,7 +13833,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭源元 綜藝與戲劇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0474",
@@ -13483,7 +13872,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡黃汝 豆花妹 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0475",
@@ -13524,7 +13914,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "大元 Popu Lady 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0476",
@@ -13556,7 +13947,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "篠崎泫 我愛黑澀會 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0477",
@@ -13588,7 +13980,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "龍龍 站立喜劇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0478",
@@ -13623,7 +14016,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "沈立心 樂天女孩 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0479",
@@ -13653,7 +14047,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "佳娜  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0480",
@@ -13685,7 +14080,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭凱云 健康2.0 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0481",
@@ -13715,7 +14111,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "關心妍  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0482",
@@ -13745,7 +14142,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭美珠  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0483",
@@ -13775,7 +14173,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張維錫  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0484",
@@ -13805,7 +14204,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "孫樂欣  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0485",
@@ -13835,7 +14235,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "馬韻婷  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0486",
@@ -13867,7 +14268,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "粘嫦鈺 娛樂評論 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0487",
@@ -13899,7 +14301,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "麥若愚 影視評論 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0488",
@@ -13931,7 +14334,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "狄志為 娛樂評論 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0489",
@@ -13963,7 +14367,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "呂文婉  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0490",
@@ -13993,7 +14398,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "呂如中  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0491",
@@ -14025,7 +14431,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭弘儀 新聞挖挖哇 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0492",
@@ -14055,7 +14462,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳思瑋  經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0493",
@@ -14087,7 +14495,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "呂捷 歷史教學與節目 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0494",
@@ -14119,7 +14528,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "詹惟中 命運好好玩 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0495",
@@ -14151,7 +14561,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江柏樂 命運好好玩 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0496",
@@ -14181,7 +14592,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林真邑  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0497",
@@ -14213,7 +14625,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "許秀年 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0498",
@@ -14245,7 +14658,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王金櫻 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0499",
@@ -14280,7 +14694,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳鳳桂 歌仔戲《韓信》 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0500",
@@ -14312,7 +14727,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭春美 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0501",
@@ -14344,7 +14760,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃香蓮 歌仔戲 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0502",
@@ -14376,7 +14793,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳大天 全民最大黨 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0503",
@@ -14408,7 +14826,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "小蝦 模仿綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0504",
@@ -14440,7 +14859,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "錦榮 電影與綜藝 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0505",
@@ -14470,7 +14890,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王尹平  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0506",
@@ -14500,7 +14921,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林書煒  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0507",
@@ -14532,7 +14954,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃小柔 黑澀會美眉 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0508",
@@ -14569,7 +14992,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張甯兒 黑Girl 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0509",
@@ -14601,7 +15025,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "勇兔 黑澀會美眉 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0510",
@@ -14631,7 +15056,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡玓彤  綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0511",
@@ -14663,7 +15089,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陶嫚曼 黑澀會美眉 綜藝 節目 單人 特寫 正面 無浮水印"
     },
     {
       "candidateId": "c1500-0512",
@@ -14695,7 +15122,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江宜蓉 花甲男孩轉大人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0513",
@@ -14727,7 +15155,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳妤 我們與惡的距離 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0514",
@@ -14759,7 +15188,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "劉黛瑩 戀愛是科學 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0515",
@@ -14791,7 +15221,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "范宸菲 國際橋牌社 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0516",
@@ -14823,7 +15254,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊宇騰 We Best Love 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0517",
@@ -14853,7 +15285,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "朱家儀  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0518",
@@ -14885,7 +15318,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃騰浩 光陰的故事 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0519",
@@ -14917,7 +15351,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江常輝 花甲男孩轉大人 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0520",
@@ -14949,7 +15384,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "趙逸嵐 刺青 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0521",
@@ -14981,7 +15417,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王以綸 台灣偶像劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0522",
@@ -15011,7 +15448,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張洛偍  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0523",
@@ -15043,7 +15481,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "楊銘威 我的寶貝四千金 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0524",
@@ -15075,7 +15514,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "是元介 我的自由年代 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0525",
@@ -15107,7 +15547,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鍾承翰 一把青 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0526",
@@ -15137,7 +15578,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳若穎  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0527",
@@ -15167,7 +15609,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林真亦  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0528",
@@ -15199,7 +15642,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "明杰 SpeXial 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0529",
@@ -15231,7 +15675,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "宏正 SpeXial 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0530",
@@ -15263,7 +15708,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "偉晉 SpeXial 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0531",
@@ -15295,7 +15741,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "易柏辰 SpeXial 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0532",
@@ -15325,7 +15772,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳奕丞  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0533",
@@ -15357,7 +15805,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李至正 醉後決定愛上你 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0534",
@@ -15389,7 +15838,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃宏軒 關於未知的我們 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0535",
@@ -15419,7 +15869,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "王碩瀚  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0536",
@@ -15449,7 +15900,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "徐韜  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0537",
@@ -15485,7 +15937,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李鴻其 醉・生夢死 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0538",
@@ -15517,7 +15970,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉星辰 稍息立正我愛你 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0539",
@@ -15549,7 +16003,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "章永華 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0540",
@@ -15579,7 +16034,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李長安  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0541",
@@ -15609,7 +16065,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林清國  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0542",
@@ -15639,7 +16096,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳世明  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0543",
@@ -15669,7 +16127,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "談學斌  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0544",
@@ -15701,7 +16160,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳皓昇 台灣八點檔 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0545",
@@ -15731,7 +16191,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡阿炮  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0546",
@@ -15763,7 +16224,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝孟偉 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0547",
@@ -15793,7 +16255,8 @@
       },
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "錢君仲  角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0548",
@@ -15825,7 +16288,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭志偉 台灣本土劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0549",
@@ -15864,7 +16328,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝賢 千王之王 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0550",
@@ -15896,7 +16361,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "爾冬陞 三少爺的劍 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0551",
@@ -15928,7 +16394,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "曾江 英雄本色 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0552",
@@ -15960,7 +16427,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "石修 香港電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0553",
@@ -15992,7 +16460,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "苗僑偉 射鵰英雄傳 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0554",
@@ -16024,7 +16493,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃日華 天龍八部 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0555",
@@ -16056,7 +16526,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "湯鎮業 天龍八部 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0556",
@@ -16088,7 +16559,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "關詠荷 陀槍師姐 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0557",
@@ -16120,7 +16592,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陶大宇 刑事偵緝檔案 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0558",
@@ -16152,7 +16625,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡一智 草蜢 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0559",
@@ -16184,7 +16658,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蔡一傑 草蜢 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0560",
@@ -16216,7 +16691,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "蘇志威 草蜢 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0561",
@@ -16248,7 +16724,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "杜汶澤 無間道 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0562",
@@ -16284,7 +16761,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張達明 大內密探零零發 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0563",
@@ -16316,7 +16794,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭丹瑞 小男人週記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0564",
@@ -16348,7 +16827,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葛民輝 百分百感覺 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0565",
@@ -16380,7 +16860,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "謝天華 潛行狙擊 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0566",
@@ -16412,7 +16893,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "董驃 警察故事 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0567",
@@ -16444,7 +16926,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "羅蘭 陰陽路 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0568",
@@ -16476,7 +16959,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李司棋 溏心風暴 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0569",
@@ -16508,7 +16992,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "薛家燕 真情 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0570",
@@ -16540,7 +17025,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "朱咪咪 唐伯虎點秋香 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0571",
@@ -16572,7 +17058,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃一山 逃學威龍 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0572",
@@ -16604,7 +17091,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "釋小龍 少年黃飛鴻 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0573",
@@ -16636,7 +17124,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "毛舜筠 家有囍事 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0574",
@@ -16668,7 +17157,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭裕玲 男親女愛 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0575",
@@ -16700,7 +17190,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "田啟文 少林足球 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0576",
@@ -16732,7 +17223,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林子善 少林足球 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0577",
@@ -16764,7 +17256,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "張兆輝 黑社會 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0578",
@@ -16796,7 +17289,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李子雄 英雄本色 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0579",
@@ -16828,7 +17322,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "黃浩然 拳王 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0580",
@@ -16860,7 +17355,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "麥長青 巾幗梟雄 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0581",
@@ -16892,7 +17388,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳卓羲 衝上雲霄 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0582",
@@ -16924,7 +17421,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "郭政鴻 古靈精探 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0583",
@@ -16956,7 +17454,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "江華 尋秦記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0584",
@@ -16988,7 +17487,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "魏駿傑 陀槍師姐 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0585",
@@ -17020,7 +17520,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "何寶生 笑傲江湖 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0586",
@@ -17052,7 +17553,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "向海嵐 楊貴妃 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0587",
@@ -17084,7 +17586,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "廖啟智 無間道 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0588",
@@ -17116,7 +17619,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "苗可秀 精武門 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0589",
@@ -17148,7 +17652,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "袁潔瑩 開心鬼 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0590",
@@ -17180,7 +17685,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "陳淑蘭 家有囍事 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0591",
@@ -17212,7 +17718,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李嘉欣 倩女幽魂II 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0592",
@@ -17244,7 +17751,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳家麗 郎心如鐵 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0593",
@@ -17276,7 +17784,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "葉子楣 跛豪 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0594",
@@ -17308,7 +17817,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "李婉華 香港電視劇 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0595",
@@ -17340,7 +17850,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "徐濠縈 鹿鼎記 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0596",
@@ -17372,7 +17883,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄭融 紅綠燈 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0597",
@@ -17404,7 +17916,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "泳兒 感應 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0598",
@@ -17436,7 +17949,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "鄧麗欣 十分愛 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0599",
@@ -17468,7 +17982,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "傅穎 Cookies 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0600",
@@ -17500,7 +18015,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "吳雨霏 愛是最大權利 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0601",
@@ -17532,7 +18048,8 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "周柏豪 夠鐘 角色 劇照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0602",
@@ -17564,8 +18081,18 @@
       },
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable"
+      "qaStatus": "not_releasable",
+      "preferredImageQuery": "林美照 台灣經典戲劇 角色 劇照 正面 清晰 無浮水印"
     }
   ],
-  "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces."
+  "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
+  "releaseProgress": {
+    "firstPublished": {
+      "candidateId": "c1500-0095",
+      "name": "金超群",
+      "questionId": "t1500_0095",
+      "commit": "3d37e47ff2e675f912a8570949ec10307a2b0223"
+    },
+    "pendingPhotoAndHintReview": 512
+  }
 }

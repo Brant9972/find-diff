@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "playable": 511,
-  "updatedAt": "2026-10-22",
-  "verification": "15 reviewed actor replacements in total; 40 more planned; exactly 600 unique playable people.",
+  "playable": 512,
+  "updatedAt": "2026-10-28",
+  "verification": "1 approved iconic-role actor from 1500-person staging roster; no unverified batch released.",
   "questions": [
     {
       "id": "a001",
@@ -28614,8 +28614,67 @@
       "eligibility": "approved",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
       "processorVersion": 2
+    },
+    {
+      "id": "t1500_0095",
+      "name": "金超群",
+      "aliases": [
+        "金超群",
+        "Jin Chao-chun",
+        "Jin Chaoqun"
+      ],
+      "photo": "photos/t1500_0095.jpg",
+      "reveal": {
+        "eyes": [
+          0.26,
+          0.3,
+          0.68,
+          0.41
+        ],
+        "nose": [
+          0.26,
+          0.3,
+          0.68,
+          0.465
+        ],
+        "mouth": [
+          0.26,
+          0.3,
+          0.68,
+          0.515
+        ],
+        "chin": [
+          0.26,
+          0.3,
+          0.68,
+          0.655
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "iconic_role_visual_and_article_checked",
+      "humanReviewed": false,
+      "visualReviewedByAI": true,
+      "recognitionContext": "包拯（《包青天》）",
+      "eligibility": "curated_actor",
+      "attribution": {
+        "article": "https://www.sohu.com/a/576944968_121428648",
+        "source": "https://p7.itc.cn/images01/20220815/f88933f4f0174b10a5517bcff201c946.jpeg",
+        "artist": "《包青天》影視劇照；原攝影及版權人未確認",
+        "credit": "搜狐網 2022-08-15，金超群《包青天》人物專文配圖；新浪網 2011-01-06 圖說另確認金超群飾包拯",
+        "license": "Copyright retained by original rights holders; no open license asserted",
+        "licenseUrl": "",
+        "attribution": ""
+      },
+      "bioExcerpt": "金超群為台灣演員，在1993年《包青天》飾演包拯並以此角色廣為人知。圖為包拯官帽、月牙、鬍鬚的經典戲劇形象。",
+      "batchId": "expansion1500_20261028"
     }
   ],
-  "target": 1000,
+  "target": 1500,
   "eligibilityReview": "eligibility-review.json"
 }

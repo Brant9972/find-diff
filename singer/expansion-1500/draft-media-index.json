@@ -1870,16 +1870,16 @@
       "questionId": "t1500_0169",
       "name": "瑪莎",
       "candidateId": "c1500-0169",
-      "reviewStatus": "released_verified_cc",
+      "reviewStatus": "rejected_previous_source_identity_conflict",
       "iconicCharacterRequired": false,
       "representativeWorks": [
         "最重要的小事"
       ],
-      "articleAdjacentCaptionVerified": true,
-      "recognizabilityReviewed": true,
-      "noWatermarkReviewed": true,
+      "articleAdjacentCaptionVerified": false,
+      "recognizabilityReviewed": false,
+      "noWatermarkReviewed": false,
       "rightsReviewed": true,
-      "eligibleForLive": true,
+      "eligibleForLive": false,
       "draftPhoto": "expansion-1500/review_photos/t1500_0169.jpg",
       "sha256": "715fc0f6631c53091ef169ed2ee17ef5dd392ffe9b0f32c29fd8432187fa3cdb",
       "sharpnessScore": 223.4,
@@ -1889,7 +1889,7 @@
       "artist": "Rico Shen",
       "credit": "Own work",
       "license": "CC BY-SA 3.0",
-      "sourceNotes": "Manually checked image, title-adjacent identity and source work 2026-10-28.",
+      "sourceNotes": "This file was previously rejected when attributed to 石頭 (s953) due ambiguous identity; do not reuse without a new verified source.",
       "revealDraft": {
         "eyes": [
           0.08,
@@ -1922,7 +1922,7 @@
           1
         ]
       },
-      "reviewNote": "五月天貝斯手瑪莎早期清晰正面表演特寫"
+      "reviewNote": "Blocked by photo-review.json previously rejected source"
     },
     {
       "questionId": "t1500_0170",

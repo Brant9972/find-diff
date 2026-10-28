@@ -8,9 +8,11 @@
     "reviewed": 18,
     "approved": 0,
     "rejected": 12,
-    "pending": 6
+    "pending": 6,
+    "newCandidatesAwaitingVisualReview": 1
   },
   "instructions": [
+    "最新證據批次 20261028T175736Z-a138bf90 已讀取 summary/contact-sheets/source-image-map；本次無法實際取得圖片像素，6 位保持 pending，新增李妍瑾裁切候選亦不得視為核准。請提供可由審核端讀取的圖片資料或可見的圖片預覽，保留 SHA 配對。",
     "此檔是 ChatGPT 給 Codex 的固定審核交接檔。每輪先讀此路徑最新版本，依 personId+candidateId+gameSha256 精確匹配，雜湊不同不得套用舊決定。",
     "reject 重新搜尋；pending 補身分、來源圖說、作者、授權 URL、解析度及五階段揭露預覽，仍不可上線。",
     "改善 403、network_error 的重試、退避及來源替代策略；勿把網路失敗當作無照片。",
@@ -52,7 +54,9 @@
       "name": "林采緹",
       "decision": "pending",
       "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0307",
@@ -61,7 +65,9 @@
       "name": "李妍瑾",
       "decision": "pending",
       "reason": "裁掉背景第二張人臉，補來源及解析度",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0308",
@@ -97,7 +103,9 @@
       "name": "林德信",
       "decision": "pending",
       "reason": "補來源授權、人物證據、正面五官預覽",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0393",
@@ -115,7 +123,9 @@
       "name": "蔡黃汝",
       "decision": "pending",
       "reason": "確認舊照解析度、來源授權與辨識度",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0481",
@@ -151,7 +161,9 @@
       "name": "鄭丹瑞",
       "decision": "pending",
       "reason": "補原圖解析度、身分證據與授權",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0564",
@@ -160,7 +172,9 @@
       "name": "葛民輝",
       "decision": "pending",
       "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
-      "eligibleForLive": false
+      "eligibleForLive": false,
+      "evidenceRun": "20261028T175736Z-a138bf90",
+      "evidenceStatus": "source_image_map_available_visual_not_verified"
     },
     {
       "personId": "t1500_0568",
@@ -178,6 +192,19 @@
       "name": "向海嵐",
       "decision": "reject",
       "reason": "嚴重模糊；重找",
+      "eligibleForLive": false
+    }
+  ],
+  "latestEvidenceRun": "20261028T175736Z-a138bf90",
+  "latestEvidenceCommit": "76ce53d4c13e788d663fd471825ebe50ec165191",
+  "reviewStatus": "EVIDENCE_METADATA_CHECKED_VISUAL_REVIEW_BLOCKED",
+  "newCandidates": [
+    {
+      "personId": "t1500_0307",
+      "candidateId": "source-recrop-1a20f122e98b8f930224",
+      "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+      "decision": "pending",
+      "reason": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
       "eligibleForLive": false
     }
   ]

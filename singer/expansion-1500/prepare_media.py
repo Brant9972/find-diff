@@ -104,7 +104,7 @@ def collect_person(person):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=25)
+    parser.add_argument("--limit", type=int, default=60)
     args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     PHOTOS.mkdir(parents=True, exist_ok=True)

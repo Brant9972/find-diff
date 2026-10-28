@@ -1,16 +1,16 @@
 {
-  "runId": "20261028T173443Z-95e4d96f",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261028T173443Z-95e4d96f/review-index.json",
+  "runId": "20261028T173620Z-5f60426f",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T173620Z-5f60426f/review-index.json",
   "summary": {
-    "runId": "20261028T173443Z-95e4d96f",
-    "generatedAt": "2026-10-28T17:34:43.667643+00:00",
-    "scannedPeople": 0,
+    "runId": "20261028T173620Z-5f60426f",
+    "generatedAt": "2026-10-28T17:40:42.838330+00:00",
+    "scannedPeople": 18,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 18,
     "retryNeeded": 435,
     "pendingReviewPeople": 6,
-    "licenseConcernCandidates": 31,
+    "licenseConcernCandidates": 47,
     "statusCounts": {
       "download_failed": 26,
       "published": 70,
@@ -19,11 +19,11 @@
       "pending_review": 6
     },
     "failureReasons": {
-      "proxy_access_denied": 40,
-      "license_unclear": 6,
-      "identity_unconfirmed": 41,
-      "network_error": 12,
-      "image_validation_failed": 1
+      "proxy_access_denied": 4,
+      "license_unclear": 7,
+      "identity_unconfirmed": 71,
+      "network_error": 24,
+      "image_validation_failed": 3
     },
     "contactSheets": [
       "contact-sheet-01.jpg"

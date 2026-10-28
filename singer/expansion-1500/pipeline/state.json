@@ -6927,8 +6927,8 @@
       "candidateId": "c1500-0174",
       "name": "鳳小岳",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:05.010689+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:36:43.272901+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0174",
@@ -7045,6 +7045,41 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:36:20.360936+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:36:35.441095+00:00"
+        },
+        {
+          "time": "2026-10-28T17:36:35.441130+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:36:40.909153+00:00"
+        },
+        {
+          "time": "2026-10-28T17:36:40.909161+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:36:40.909168+00:00"
+        },
+        {
+          "time": "2026-10-28T17:36:40.909171+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:36:43.272861+00:00"
+        },
+        {
+          "time": "2026-10-28T17:36:43.272885+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -7116,22 +7151,12 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:04.932225+00:00",
+      "lastAttemptAt": "2026-10-28T17:36:20.308835+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
@@ -7139,7 +7164,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:05.010710+00:00"
+      "updatedAt": "2026-10-28T17:36:43.272916+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0175": {
       "personId": "t1500_0175",
@@ -8041,8 +8068,8 @@
       "candidateId": "c1500-0196",
       "name": "蔡亘晏",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:05.117054+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:37:03.702000+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0196",
@@ -8159,6 +8186,41 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:36:43.393867+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:36:58.401060+00:00"
+        },
+        {
+          "time": "2026-10-28T17:36:58.401093+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:01.519185+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:01.519193+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:01.519199+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:01.519202+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:03.701960+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:03.701983+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -8230,22 +8292,12 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:05.067358+00:00",
+      "lastAttemptAt": "2026-10-28T17:36:43.336094+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
@@ -8253,7 +8305,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:05.117063+00:00"
+      "updatedAt": "2026-10-28T17:37:03.702014+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0197": {
       "personId": "t1500_0197",
@@ -9370,8 +9424,8 @@
       "candidateId": "c1500-0224",
       "name": "丁國琳",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:05.203115+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:37:26.641441+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0224",
@@ -9441,6 +9495,53 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/%E4%B8%81%E5%9C%8B%E7%90%B3_%282%29.jpg/1920px-%E4%B8%81%E5%9C%8B%E7%90%B3_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E4%B8%81%E5%9C%8B%E7%90%B3_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
+          "filename": "丁國琳 (2).jpg",
+          "artist": "亂跑的牛 from 台北市, 中華民國 (台灣)",
+          "credit": "丁國琳",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "丁國琳",
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E4%B8%81%E5%9C%8B%E7%90%B3",
+            "excerpt": "丁國琳（1967年5月30日—），台灣女演員。父親籍貫四川敘永縣，是出身傣族（擺夷族）的軍人；自幼成長於新北市瑞芳區九份，畢業於基隆市二信中學廣告設計科。\n\n1993年，丁國琳在瑞星唱片擔任《音樂磁場》MV造型化妝師時，受孫建平延攬以歌手出道。後來丁演出電視劇《台灣霹靂火》，以灑脫的演技備受矚目。",
+            "matchedAliases": [
+              "丁國琳",
+              "丁國琳"
+            ],
+            "wikidataId": "Q8949519",
+            "captionAliasMatches": [
+              "丁國琳",
+              "丁國琳"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "台灣八點檔"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T17:37:22.958863+00:00",
+          "width": 3434,
+          "height": 4580,
+          "id": "a9201be0c1df2373750e",
+          "personId": "t1500_0224",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -9488,6 +9589,47 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:37:03.825501+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:18.824363+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:18.824396+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:23.906539+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:23.906547+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:23.906552+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:23.906556+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:26.641405+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:26.641426+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -9559,22 +9701,18 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:05.163225+00:00",
+      "lastAttemptAt": "2026-10-28T17:37:03.765048+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
           "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
       "lastFailure": {
@@ -9582,7 +9720,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:05.203123+00:00"
+      "updatedAt": "2026-10-28T17:37:26.641454+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0225": {
       "personId": "t1500_0225",
@@ -10611,8 +10751,8 @@
       "candidateId": "c1500-0255",
       "name": "林采緹",
       "status": "pending_review",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T23:30:05.587426+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:37:27.621056+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0255",
@@ -10682,7 +10822,7 @@
             }
           ],
           "evidenceRequest": "補 Flickr 原圖、人物圖說、授權及五官預覽",
-          "evidenceAttempts": 1,
+          "evidenceAttempts": 2,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/nose.png",
@@ -10732,12 +10872,12 @@
           },
           "evidenceSupplement": {
             "requested": "補 Flickr 原圖、人物圖說、授權及五官預覽",
-            "attemptedAt": "2026-10-28T17:30:05.248276+00:00",
+            "attemptedAt": "2026-10-28T17:37:26.704202+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "proxy_access_denied",
-                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -10824,11 +10964,13 @@
       },
       "lastErrors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:30:05.587408+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:37:27.621035+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0256": {
       "personId": "t1500_0256",
@@ -13147,8 +13289,8 @@
       "candidateId": "c1500-0307",
       "name": "李妍瑾",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:32:04.805824+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:40:42.433070+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0307",
@@ -13218,7 +13360,7 @@
             }
           ],
           "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/nose.png",
@@ -13268,12 +13410,12 @@
           },
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "network_error",
-                "message": "<urlopen error [Errno 1] Operation not permitted>"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -13405,12 +13547,12 @@
           ],
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "network_error",
-                "message": "<urlopen error [Errno 1] Operation not permitted>"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -13532,12 +13674,12 @@
           },
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "network_error",
-                "message": "<urlopen error [Errno 1] Operation not permitted>"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -13633,19 +13775,21 @@
       },
       "lastErrors": [
         {
-          "code": "network_error",
-          "message": "<urlopen error [Errno 1] Operation not permitted>"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:32:04.805808+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:40:42.433045+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0308": {
       "personId": "t1500_0308",
       "candidateId": "c1500-0308",
       "name": "曹晏豪",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:06.483905+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:37:48.386345+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0308",
@@ -13762,6 +13906,41 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:37:27.736033+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:42.737041+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:42.737074+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:45.892396+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:45.892405+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:45.892410+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:45.892414+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:37:48.386305+00:00"
+        },
+        {
+          "time": "2026-10-28T17:37:48.386326+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -13833,22 +14012,12 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:06.439673+00:00",
+      "lastAttemptAt": "2026-10-28T17:37:27.683370+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
@@ -13856,7 +14025,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:06.483916+00:00"
+      "updatedAt": "2026-10-28T17:37:48.386358+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0309": {
       "personId": "t1500_0309",
@@ -15050,8 +15221,8 @@
       "candidateId": "c1500-0335",
       "name": "李思捷",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:06.564559+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:38:09.569375+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0335",
@@ -15121,6 +15292,240 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg",
+          "filename": "Minneapolis City Council Candidate Forum Ward 5 2009.jpg",
+          "artist": "Tony Webster",
+          "credit": "Own work, Flickr",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Minneapolis City Council Candidates for the 5th Ward answer constituent questions during a candidate forum sponsored by the League of Women Voters at the Capri Theater in North Minneapolis.  (L to R: Don Samuels [incumbent], Roger Smithrud, Lennie Chism, Kenya McKnight [speaking] and Natalie Johnson Lee)",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.346105+00:00",
+          "width": 1200,
+          "height": 800,
+          "id": "be56176ad77a7efc6cba",
+          "personId": "t1500_0335",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_%284015126923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_%284015126923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg",
+          "filename": "North Minneapolis 5th Ward City Council Candidate Forum (4015126923).jpg",
+          "artist": "Tony Webster from Minneapolis, Minnesota, USA",
+          "credit": "North Minneapolis 5th Ward City Council Candidate Forum",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Minneapolis City Council Candidates (L to R) Roger Smithrud, Lennie Chism, Kenya McKnight [speaking] and Natalie Johnson Lee answer constituent questions during a Ward 5 candidate forum sponsored by the League of Women Voters at the Capri Theater in North Minneapolis on October 13, 2009.",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.379677+00:00",
+          "width": 920,
+          "height": 613,
+          "id": "ea11616f17192dd62c11",
+          "personId": "t1500_0335",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/LaFayeJohnsonLeeES.jpg/1920px-LaFayeJohnsonLeeES.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/LaFayeJohnsonLeeES.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:LaFayeJohnsonLeeES.jpg",
+          "filename": "LaFayeJohnsonLeeES.jpg",
+          "artist": "WhisperToMe",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "LaFaye Johnson Lee Elementary School, Harris County, Texas",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.412455+00:00",
+          "width": 3264,
+          "height": 2448,
+          "id": "fa716a2981bac25c9b89",
+          "personId": "t1500_0335",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4%281779%E5%B9%B4%29%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4%281779%E5%B9%B4%29%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4(1779%E5%B9%B4)%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg",
+          "filename": "2018Xinzhuang乾隆四十四年(1779年)重修慈祐宮碑記乙.jpg",
+          "artist": "Taiwankengo",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​2018Xinzhuang乾隆四十四年(1779年)重修慈祐宮碑記\n碑文\n游阿任、長順号、劉媽連、厚記号、陳高覌、陳裕覌、林本覌、陳光發、林端覌、黃超覌、鄭宗覌、呂遜德、江元長、江西山、劉高日、李阿堪、陳榮舵，各捐艮五元。\n振興号、吳春斐、恒仁堂、益元堂、萬安堂、謙興号、茶林号、豐裕号、恒利号、鄭赫覌、協和号、漳豐号、振和号、振育号、宝興号、廣源号、振魁号、聯興号、聚興号、宝盈号、藏興号、寧遠号、復源号、源盈号、裕源号、利昌号、沛興号、振源号、金順号、合源号、廣信号、振興号、保寧号、永昌号、賴阿祖、錦興号、步玉号、聚興号、源盛号、和順号、錦裕号、恒德号、豐順号、泉裕号、允盛号、福如号、錦玉号、劉石賜、順利号、瑞茂号、榮發号、源利号、增隆号、林聚覌、新錦成、長順号、柯貴覌、勝興号、同發号、永泰号、劉□武、黃族覌、劉普照、鄭惠覌、林木桂、李泰覌、黃兆林、麥賓覌、黃可信、袁君泰、江新喜、陳淵覌、林□覌、邵強覌、李節覌、施宋覌、陳泰覌、陳外覌、林洪吉、方媽賜、劉承永、曹綏覌、呂天喜、王大成、吳時歲、沈啟覌、鍾興端、簡德孝、葉雲隆、簡待覌、李天送、簡乃宣、林鳳捷、徐相山、鍾榮宣、馮乃達、葉雲開、鍾長祥、劉光湾、張世翰、胡兆鳳、張能操、林嘉瑞、胡開瑞、胡業覌、張桂漳、黃燕礼、劉光沈、王胡覌、茂盛号、時宗号、廣順号、怡盛号、晉盛号、陳天厚、黃妹覌、黃連生、林阿春、仁和号、新永吉，各捐艮四元。\n柯林覌、李賴氏、陳典覌、徐思順、徐勸深、張大献、羅德文、合盛号、余財覌、振昌号、錦盛号、碾泉号、恒裕号、金桐号、永利号、和興号、榮興号、漳興号，各捐艮三元。\n廣源号、茂福号、同源号、茂興号、泉吉号、宝興号、流源号、振豐号、玉記号、金興号、益利号、金茂号、恒茂号、和昌号、謝再覌、允成号、潮發号、江煥文、泰隆号、盈利号、潮成号、廣和号、金春号、彰利号、泉益号、賴仕信、黃江覌、玉青号、源興号、大源号、悅盛号、瑞興号、振興号、高振号、日利号、漳茂号、源利号、漳源号、振德号、利源号、開勝号、鼎興号、合成号、林滿淇、振隆号、源茂号、同成号、永記号、源成号、林蔭覌、王位覌、林習覌、劉協恭、劉路盛、黃業□、吳玉覌、林長覌、劉梘覌、馮光成、宋□覌、張甯傳、吳天送、侯貴宝、賴化覌、趙港覌、張宗伯、石文近、李明瑞、程文秀、林安覌、黃提覌、李永青、林天覌、陳玉山、蔡法覌、黃福舵、顏江覌、張泰覌、曾填覌、黃省覌、鍾榮富、林雲霑、楊滿覌、林協覌、張士貴、莊泗郎、陳佳位、七滿嬸、江阿養、黃福覌、復合号、協成号、賴鈞覌、羅胆覌、漳成号、平和縣、協興号、源榮号、合利号、德盈号、合源号、石基覌、新發号、福興号、合記号、李愈巧、有德号、長勝号、德興号、合豐号、泉成号、林子開、趙鼎覌、林雲昌、阮士桂，各捐艮二元。\n劉漳明、陳長覌、漳順号、泉合号、盈興号、漳源号、聚成号、雙合号、王萼覌、王佐覌、日生号、魏理覌、元美号、陳軒覌、張趙覌、鍾飛鳳、黃素覌、涂初覌、楊榮仕、林聚覌、林波覌、林仕覌、賴子達、俞雲龍、施連覌、林耶覌、蕭實覌、林招楚、黃滿覌、陳長生、陳長舵、周欽覌、周液泉、涂遇覌、賴佐覌、黃參覌、聯豐号、張虎覌、龍川号、郭守覌、振泰号、榮源号、永和号、廣濟号、陳李氏、和興号、嚴註覌、廣成号、松盛号、捷茂号、盛發号、益壽号、泉寧号、遂安号、元美号、劉隨覌、劉皆覌、漳發号、陳文覌、泰寧堂、張登元、沈齊覌、賴池覌、李恒覌、吳蒲覌、謝天賜、鄭佛賜、吳偕覌、于仕文、于亨覌、劉富覌、鄭連覌、泉源号、源成号、許濕覌、林納覌、林閩覌、林誥覌、源遠号、泉德号、新源春、登瑞号、協成号、永和号、劉怡謀、陳長舵，各捐艮一元。\n益寧号助隨珠三百合，郭萬合助籐竹千七合，林清覌助灰十石，盛興号助泥數百担。義合班、廣鳳班、桂春班，各助戲一枱。\n\n乾隆四十四年歲次己亥桂月，新庄司首事曾諱應蔚，董事趙宜捷，余雄泰、李省覌、董定覌、張雀覌、林順覌、盧炳臣、吳睿覌、陳德覌、王欠覌、廖慈覌仝立石。",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.454063+00:00",
+          "width": 1904,
+          "height": 3962,
+          "id": "daa2eb32f64bee092939",
+          "personId": "t1500_0335",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Alabama-_CHAMBERS_County%2C_Enumeration_District_2%2C_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg/1920px-Alabama-_CHAMBERS_County%2C_Enumeration_District_2%2C_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Alabama-_CHAMBERS_County%2C_Enumeration_District_2%2C_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Alabama-_CHAMBERS_County,_Enumeration_District_2,_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg",
+          "filename": "Alabama- CHAMBERS County, Enumeration District 2, Sheet No. 5B - DPLA - bc45ada04de335807aae5f524d9e67b0.jpg",
+          "artist": "Department of the Interior. 12th Decennial Census Office. ca. 1899-7/1/1902",
+          "credit": "This file was contributed to Wikimedia Commons by National Archives and Records Administration as part of a cooperation project. The donation was facilitated by the Digital Public Library of America, via its partner Digital Public Library of America.\nRecord in source catalog\nDPLA identifier: bc45ada04de335807aae5f524d9e67b0\nNational Archives Identifier: 89312550",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Surname, Given Name; Family Number; Age; Birth Year; Place of Birth Banks, Alice; 91; 26; 1874; North Carolina Banks, Paulena; 91; 7; 1893; Alabama Banks, Emma D; 91; 6; 1894; Alabama Banks, Sallie F; 91; 3; 1897; Alabama Johnson, Willis S; 92; 48; 1852; Alabama Johnson, Mary M; 92; 46; 1854; Georgia Johnson, George T; 92; 19; 1881; Alabama Johnson, John W; 92; 17; 1883; Alabama Johnson, Susie; 92; 14; 1886; Alabama Johnson, Lee A; 92; 9; 1891; Alabama Thompson, Andrew J; 93; 82; 1818; Georgia Thompson, Sarah E; 93; 70; 1830; Georgia Ferrell, Mary; 93; 37; 1863; Georgia Williams, Charles; 94; 65; 1835; Virginia Patterson, Maural; 95; 21; 1879; Alabama Patterson, Savilla; 95; 22; 1878; Alabama Smedley, Killis; 96; 76; 1824; Alabama Smedley, Millie A; 96; 52; 1848; Alabama Haldesfield, Laura F; 97; 41; 1859; Alabama Haldesfield, Lana L; 97; 19; 1881; Alabama Haldesfield, Annie M; 97; 17; 1883; Alabama Haldesfield, David B; 97; 15; 1885; Alabama Haldesfield, Phelon O; 97; 12; 1888; Alabama Haldesfield, Harris M; 97; 10; 1890; Alabama Haldesfield, Vera P; 97; 7; 1893; Alabama Haralson, Annie; 98; 23; 1877; Alabama Haralson, Oliver; 98; 4; 1896; Alabama Haralson, Lee; 98; 3; 1897; Alabama Haralson, George; 98; 1; 1899; Alabama Haralson, Lena; 98; 0; 1900; Alabama Roberson, Dora; 98; 27; 1873; Alabama Roberson, Walter; 98; 8; 1892; Alabama Roberson, Julia; 98; 4; 1896; Alabama Roberson, Belle; 98; 3; 1897; Alabama Walton, Jennie; 99; 37; 1863; Georgia Walton, Johnnie; 99; 17; 1883; Georgia Walton, Randle; 99; 12; 1888; Georgia Walton, Francis; 99; 11; 1889; Georgia Walton, Olen; 99; 10; 1890; Georgia Walton, Mattie R; 99; 5; 1895; Georgia Newell, Thomas S; 100; 28; 1872; Alabama Newell, Martha R; 100; 24; 1876; Alabama Newell, Harvey L; 100; 5; 1895; Alabama Newell, Imergine G; 100; 2; 1898; Alabama Newell, James J; 100; 0; 1900; Alabama",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.496201+00:00",
+          "width": 5224,
+          "height": 5273,
+          "id": "6e378237ee0fe3ffb40a",
+          "personId": "t1500_0335",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson%2C_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson%2C_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson,_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg",
+          "filename": "Confederate Soldiers from the State of North Carolina - Johnson, Lee - Twenty-third Infantry - DPLA - e6d3ab808acc3148cc417e5515d10cf0.jpg",
+          "artist": "War Department. The Adjutant General's Office. 3/4/1907-9/18/1947",
+          "credit": "This file was contributed to Wikimedia Commons by National Archives and Records Administration as part of a cooperation project. The donation was facilitated by the Digital Public Library of America, via its partner Digital Public Library of America.\nRecord in source catalog\nDPLA identifier: e6d3ab808acc3148cc417e5515d10cf0\nNational Archives Identifier: 93578491",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "",
+          "identityEvidence": {
+            "query": "李思捷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "representativeWorks": [
+              "荃加福祿壽"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:09.536183+00:00",
+          "width": 1752,
+          "height": 3797,
+          "id": "824248a615c50fc2cdcf",
+          "personId": "t1500_0335",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -15168,6 +15573,77 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:37:48.508866+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:03.513935+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:03.513970+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:06.726882+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:06.726891+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:06.726896+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:06.726900+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:09.569359+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:09.569366+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:LaFayeJohnsonLeeES.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4(1779%E5%B9%B4)%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Alabama-_CHAMBERS_County,_Enumeration_District_2,_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson,_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
         }
       ],
       "legacyRecord": {
@@ -15239,22 +15715,48 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:06.526916+00:00",
+      "lastAttemptAt": "2026-10-28T17:37:48.448579+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:LaFayeJohnsonLeeES.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4(1779%E5%B9%B4)%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Alabama-_CHAMBERS_County,_Enumeration_District_2,_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson,_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
@@ -15262,7 +15764,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:06.564567+00:00"
+      "updatedAt": "2026-10-28T17:38:09.569384+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0336": {
       "personId": "t1500_0336",
@@ -16255,8 +16759,8 @@
       "candidateId": "c1500-0350",
       "name": "陳惠婷",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:06.646542+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:38:30.937959+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0350",
@@ -16326,6 +16830,240 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG/1920px-Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG",
+          "filename": "Detail of Czechoslovak Huite Church in Duchcov.JPG",
+          "artist": "Zacatecnik",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "Detail of Czechoslovak Huite Church in Duchcov in Czech Republic",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.728788+00:00",
+          "width": 3072,
+          "height": 2304,
+          "id": "373c5e31baad71d8c1b3",
+          "personId": "t1500_0350",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG/1920px-Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG",
+          "filename": "Detail of Czechoslovak Huite Church in Duchcov2.JPG",
+          "artist": "Zacatecnik",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "Detail of Czechoslovak Huite Church in Duchcov in Czech Republic",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.760895+00:00",
+          "width": 3072,
+          "height": 2304,
+          "id": "ba4c520b14a4ad391543",
+          "personId": "t1500_0350",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Presa_Huites_%2818238885575%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Presa_Huites_%2818238885575%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Presa_Huites_(18238885575).jpg",
+          "filename": "Presa Huites (18238885575).jpg",
+          "artist": "sinaloaarchivohistorico",
+          "credit": "https://www.flickr.com/photos/99115493@N08/18238885575/",
+          "license": "No restrictions",
+          "licenseUrl": "https://www.flickr.com/commons/usage/",
+          "caption": "Presa y Central Hidroelectrica \"Luis Donaldo Colosio Murrieta\"",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.802285+00:00",
+          "width": 1588,
+          "height": 987,
+          "id": "ac6510d71f94f9054675",
+          "personId": "t1500_0350",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg/1920px-SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg",
+          "filename": "SNH48 第二届总选举 9.jpg",
+          "artist": "纸鱼_咲",
+          "credit": "http://zhiyuxiao.lofter.com/post/1d50f767_7e08b69",
+          "license": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "caption": "​SNH48 第二届总选举",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.835184+00:00",
+          "width": 2000,
+          "height": 2666,
+          "id": "134c4b857a22c39e5997",
+          "personId": "t1500_0350",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2%2C5_jarig_bestaan%2C_omdat_zijn%2C_Bestanddeelnr_1591A-1-1.jpg/1920px-Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2%2C5_jarig_bestaan%2C_omdat_zijn%2C_Bestanddeelnr_1591A-1-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2%2C5_jarig_bestaan%2C_omdat_zijn%2C_Bestanddeelnr_1591A-1-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2,5_jarig_bestaan,_omdat_zijn,_Bestanddeelnr_1591A-1-1.jpg",
+          "filename": "Het Friese bataljon 1-9 RI vierde op 16 maart zijn 2,5 jarig bestaan, omdat zijn, Bestanddeelnr 1591A-1-1.jpg",
+          "artist": "Taillie, J.C. / DLC",
+          "credit": "http://proxy.handle.net/10648/50b6a1fb-ea81-5d78-e394-55c820b7960e",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "Collectie / Archief : Fotocollectie Dienst voor Legercontacten Indonesië\nReportage / Serie : [DLC] 2 ½ jarig bestaan Friese Bataljon. Sportwedstrijden\nBeschrijving : Het Friese bataljon 1-9 RI vierde op 16 maart zijn 2,5 jarig bestaan, omdat zijn tweede jaardag tijdens de politionele actie viel. Kolonel Huiting, commandant V-Brigade groet de commandant van de erewacht\nDatum : 16 maart 1948\nLocatie : Indonesië, Nederlands-Indië, Poerbalingga\nFotograaf : Taillie, J.C. / DLC\nAuteursrechthebbende : Nationaal Archief \nMateriaalsoort : Negatief (zwart/wit)\nNummer archiefinventaris : bekijk toegang 2.24.04.03\n\nBestanddeelnummer : 1591A-1-1",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.868231+00:00",
+          "width": 3668,
+          "height": 2417,
+          "id": "d658b66e9f4fc33b6ea6",
+          "personId": "t1500_0350",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_%28%2C_Bestanddeelnr_1591-3-3.jpg/1920px-Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_%28%2C_Bestanddeelnr_1591-3-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_%28%2C_Bestanddeelnr_1591-3-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_(,_Bestanddeelnr_1591-3-3.jpg",
+          "filename": "Op 10 maart werd de grote rubberfabriek van de onderneming Tjiseroe te Tjipari (, Bestanddeelnr 1591-3-3.jpg",
+          "artist": "Taillie, J.C. / DLC",
+          "credit": "http://proxy.handle.net/10648/0bd88a9e-8246-2ab1-2ef3-dd0f99419a82",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "Collectie / Archief : Fotocollectie Dienst voor Legercontacten Indonesië\nReportage / Serie : [DLC] Rubberonderneming Tjiseroe Tjipari bij Tjilatjtap\nBeschrijving : Op 10 maart werd de grote rubberfabriek van de onderneming Tjiseroe te Tjipari (70km. nw van Tjilatjap) weer in bedrijf gesteld. Tijdens de ontvangst in de administrateurswoning. Geheel links kol. Huiting, cdt. V-Brigade.\nAnnotatie : Nu rubberonderneming Ciseru te Cipari\nDatum : 10 maart 1948\nLocatie : Cilacap, Indonesië, Nederlands-Indië\nFotograaf : Taillie, J.C. / DLC\nAuteursrechthebbende : Nationaal Archief \nMateriaalsoort : Negatief (zwart/wit)\nNummer archiefinventaris : bekijk toegang 2.24.04.03\n\nBestanddeelnummer : 1591-3-3",
+          "identityEvidence": {
+            "query": "陳惠婷",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "representativeWorks": [
+              "Tizzy Bac"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:30.903129+00:00",
+          "width": 3668,
+          "height": 2417,
+          "id": "1261288974f6abfd165e",
+          "personId": "t1500_0350",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -16373,6 +17111,77 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:38:09.683851+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:24.684589+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:24.684651+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:28.714421+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:28.714428+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:28.714434+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:28.714437+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:30.937944+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:30.937950+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Presa_Huites_(18238885575).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2,5_jarig_bestaan,_omdat_zijn,_Bestanddeelnr_1591A-1-1.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_(,_Bestanddeelnr_1591-3-3.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
         }
       ],
       "legacyRecord": {
@@ -16444,22 +17253,48 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:06.608568+00:00",
+      "lastAttemptAt": "2026-10-28T17:38:09.632606+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Presa_Huites_(18238885575).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2,5_jarig_bestaan,_omdat_zijn,_Bestanddeelnr_1591A-1-1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_(,_Bestanddeelnr_1591-3-3.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
@@ -16467,7 +17302,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:06.646551+00:00"
+      "updatedAt": "2026-10-28T17:38:30.937970+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0351": {
       "personId": "t1500_0351",
@@ -17203,8 +18040,8 @@
       "candidateId": "c1500-0360",
       "name": "林德信",
       "status": "pending_review",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T23:30:07.046734+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:38:31.699999+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0360",
@@ -17274,7 +18111,7 @@
             }
           ],
           "evidenceRequest": "補來源授權、人物證據、正面五官預覽",
-          "evidenceAttempts": 1,
+          "evidenceAttempts": 2,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/nose.png",
@@ -17324,12 +18161,12 @@
           },
           "evidenceSupplement": {
             "requested": "補來源授權、人物證據、正面五官預覽",
-            "attemptedAt": "2026-10-28T17:30:06.688787+00:00",
+            "attemptedAt": "2026-10-28T17:38:31.002207+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "proxy_access_denied",
-                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -17414,11 +18251,13 @@
       },
       "lastErrors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:30:07.046717+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:38:31.699976+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0361": {
       "personId": "t1500_0361",
@@ -18677,8 +19516,8 @@
       "candidateId": "c1500-0393",
       "name": "吳蓓雅",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:07.134363+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:38:51.812401+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0393",
@@ -18748,6 +19587,228 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pia-Tafdrup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pia-Tafdrup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia-Tafdrup.jpg",
+          "filename": "Pia-Tafdrup.jpg",
+          "artist": "Mogens Engelund",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Pia Tafdrup, a Danish writer and poet.",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.609379+00:00",
+          "width": 500,
+          "height": 715,
+          "id": "6ba7b8fc727e79ed3709",
+          "personId": "t1500_0393",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pia_Viitanen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pia_Viitanen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Viitanen.jpg",
+          "filename": "Pia Viitanen.jpg",
+          "artist": "Kirsi Nurmio",
+          "credit": "(Kansaned. Pia Viitasen ek-avustaja Kirsi Nurmio",
+          "license": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "caption": "Finnish MP Pia Viitanen",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.642151+00:00",
+          "width": 900,
+          "height": 674,
+          "id": "8b6656c9f9e91093eadd",
+          "personId": "t1500_0393",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Fortezza_Pia_di_Ascoli_Piceno_052.jpg/1920px-Fortezza_Pia_di_Ascoli_Piceno_052.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Fortezza_Pia_di_Ascoli_Piceno_052.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Fortezza_Pia_di_Ascoli_Piceno_052.jpg",
+          "filename": "Fortezza Pia di Ascoli Piceno 052.jpg",
+          "artist": "Infinitispazi at Italian Wikipedia",
+          "credit": "Transferred from it.wikipedia to Commons by Sannita using CommonsHelper.",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Fortezza Pia di Ascoli Piceno.",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.674096+00:00",
+          "width": 3456,
+          "height": 2304,
+          "id": "6f08e221815d220ee0fb",
+          "personId": "t1500_0393",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Maria_Cristina_Pia_de_Bourbon-Siciles_%281870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Maria_Cristina_Pia_de_Bourbon-Siciles_%281870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Maria_Cristina_Pia_de_Bourbon-Siciles_(1870).jpg",
+          "filename": "Maria Cristina Pia de Bourbon-Siciles (1870).jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "http://www.royaltyguide.nl/images-families/bourbon/bbsicilie2/1869%20M.Cristina.jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Princess Cristina Pia of the Two Sicilies",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.706337+00:00",
+          "width": 251,
+          "height": 319,
+          "id": "7753ca1336f4b7d2fd5f",
+          "personId": "t1500_0393",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pia_Sundhage%2C_Euro_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pia_Sundhage%2C_Euro_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Sundhage,_Euro_2013.jpg",
+          "filename": "Pia Sundhage, Euro 2013.jpg",
+          "artist": "Rikard Fröberg",
+          "credit": "Pia Sundhage\n\nUploaded by Dudek1337",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Pia Sundhage",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.739302+00:00",
+          "width": 561,
+          "height": 1381,
+          "id": "db466546d6e3c880f380",
+          "personId": "t1500_0393",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Pia_Tjelta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Pia_Tjelta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Tjelta.JPG",
+          "filename": "Pia Tjelta.JPG",
+          "artist": "Jarvin",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Pia Tjelta, norsk skuespiller",
+          "identityEvidence": {
+            "query": "吳蓓雅",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "低頭、麥克風遮嘴、模糊；重找",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:38:51.779477+00:00",
+          "width": 1116,
+          "height": 1322,
+          "id": "d2853fec100716db42af",
+          "personId": "t1500_0393",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -18795,6 +19856,77 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:38:31.816716+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:46.819739+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:46.819771+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:49.846505+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:49.846513+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:49.846519+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:49.846522+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:38:51.812386+00:00"
+        },
+        {
+          "time": "2026-10-28T17:38:51.812392+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pia-Tafdrup.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pia_Viitanen.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Fortezza_Pia_di_Ascoli_Piceno_052.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Maria_Cristina_Pia_de_Bourbon-Siciles_(1870).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pia_Sundhage,_Euro_2013.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pia_Tjelta.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
         }
       ],
       "legacyRecord": {
@@ -18864,22 +19996,48 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:07.094132+00:00",
+      "lastAttemptAt": "2026-10-28T17:38:31.763527+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia-Tafdrup.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Viitanen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Fortezza_Pia_di_Ascoli_Piceno_052.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Maria_Cristina_Pia_de_Bourbon-Siciles_(1870).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Sundhage,_Euro_2013.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Tjelta.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
@@ -18887,7 +20045,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:07.134371+00:00"
+      "updatedAt": "2026-10-28T17:38:51.812413+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0394": {
       "personId": "t1500_0394",
@@ -21983,8 +23143,8 @@
       "candidateId": "c1500-0474",
       "name": "蔡黃汝",
       "status": "pending_review",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T23:30:07.567617+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:38:52.552904+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0474",
@@ -22054,7 +23214,7 @@
             }
           ],
           "evidenceRequest": "確認舊照解析度、來源授權與辨識度",
-          "evidenceAttempts": 1,
+          "evidenceAttempts": 2,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/nose.png",
@@ -22104,12 +23264,12 @@
           },
           "evidenceSupplement": {
             "requested": "確認舊照解析度、來源授權與辨識度",
-            "attemptedAt": "2026-10-28T17:30:07.184183+00:00",
+            "attemptedAt": "2026-10-28T17:38:51.878407+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "proxy_access_denied",
-                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -22196,11 +23356,13 @@
       },
       "lastErrors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:30:07.567601+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:38:52.552883+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0475": {
       "personId": "t1500_0475",
@@ -22483,8 +23645,8 @@
       "candidateId": "c1500-0481",
       "name": "關心妍",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:07.652758+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:39:14.650679+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0481",
@@ -22601,6 +23763,140 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:38:52.672529+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:07.677816+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:07.677851+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:12.371842+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:12.371872+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:12.371879+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:12.371884+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:14.650609+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:14.650663+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "wikimedia",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+                "filename": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站).jpg",
+                "artist": "Jadefanclub",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站)",
+                "identityEvidence": {
+                  "article": "https://zh.wikipedia.org/wiki/%E9%97%9C%E5%BF%83%E5%A6%8D",
+                  "excerpt": "關心妍（英語：Jade Kwan Sum-yin，1979年7月31日—），原名關惠文，香港女歌手。她於1999年至2000年間通過參加《全球華人新秀歌唱大賽》而進入香港樂壇，2002年正式出道。",
+                  "matchedAliases": [
+                    "關心妍",
+                    "關心妍"
+                  ],
+                  "wikidataId": "Q837037",
+                  "captionAliasMatches": [
+                    "關心妍",
+                    "關心妍"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [],
+                  "matchedWorks": [],
+                  "note": "Search context only; recognizability not verified"
+                },
+                "searchTime": "2026-10-28T17:39:10.902231+00:00",
+                "width": 4160,
+                "height": 6240,
+                "id": "1ef8ee341f826aed4ac2",
+                "personId": "t1500_0481",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "wikimedia",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+                "filename": "20090910 JadeKwan-ShiningAsStar.jpg",
+                "artist": "Vincent Kwok, of Jade Online",
+                "credit": "Own work",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "Jade Kwan 關心妍 performing \"Shining As Star 妍亮生命音樂佈道會\"",
+                "identityEvidence": {
+                  "article": "https://www.wikidata.org/wiki/Q837037",
+                  "wikidataId": "Q837037",
+                  "claim": "P18",
+                  "identityWarning": "Article/entity match is not visual identity verification",
+                  "captionAliasMatches": [
+                    "關心妍",
+                    "關心妍"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [],
+                  "matchedWorks": [],
+                  "note": "Search context only; recognizability not verified"
+                },
+                "searchTime": "2026-10-28T17:39:12.099755+00:00",
+                "width": 333,
+                "height": 500,
+                "id": "304142c70cb591bca194",
+                "personId": "t1500_0481",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "legacyRecord": {
@@ -22670,22 +23966,111 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:07.611998+00:00",
+      "lastAttemptAt": "2026-10-28T17:38:52.617557+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
           "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "wikimedia",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+            "filename": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站).jpg",
+            "artist": "Jadefanclub",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站)",
+            "identityEvidence": {
+              "article": "https://zh.wikipedia.org/wiki/%E9%97%9C%E5%BF%83%E5%A6%8D",
+              "excerpt": "關心妍（英語：Jade Kwan Sum-yin，1979年7月31日—），原名關惠文，香港女歌手。她於1999年至2000年間通過參加《全球華人新秀歌唱大賽》而進入香港樂壇，2002年正式出道。",
+              "matchedAliases": [
+                "關心妍",
+                "關心妍"
+              ],
+              "wikidataId": "Q837037",
+              "captionAliasMatches": [
+                "關心妍",
+                "關心妍"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [],
+              "matchedWorks": [],
+              "note": "Search context only; recognizability not verified"
+            },
+            "searchTime": "2026-10-28T17:39:10.902231+00:00",
+            "width": 4160,
+            "height": 6240,
+            "id": "1ef8ee341f826aed4ac2",
+            "personId": "t1500_0481",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "wikimedia",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+            "filename": "20090910 JadeKwan-ShiningAsStar.jpg",
+            "artist": "Vincent Kwok, of Jade Online",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Jade Kwan 關心妍 performing \"Shining As Star 妍亮生命音樂佈道會\"",
+            "identityEvidence": {
+              "article": "https://www.wikidata.org/wiki/Q837037",
+              "wikidataId": "Q837037",
+              "claim": "P18",
+              "identityWarning": "Article/entity match is not visual identity verification",
+              "captionAliasMatches": [
+                "關心妍",
+                "關心妍"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [],
+              "matchedWorks": [],
+              "note": "Search context only; recognizability not verified"
+            },
+            "searchTime": "2026-10-28T17:39:12.099755+00:00",
+            "width": 333,
+            "height": 500,
+            "id": "304142c70cb591bca194",
+            "personId": "t1500_0481",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
         }
       ],
       "lastFailure": {
@@ -22693,7 +24078,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:07.652766+00:00"
+      "updatedAt": "2026-10-28T17:39:14.650692+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0482": {
       "personId": "t1500_0482",
@@ -25316,8 +26703,8 @@
       "candidateId": "c1500-0554",
       "name": "黃日華",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:07.737564+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:39:35.838419+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0554",
@@ -25387,6 +26774,240 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg",
+          "filename": "台灣時代力量黨立委黃國昌在立法院接受美國之音採訪.jpg",
+          "artist": "申華",
+          "credit": "https://www.voachinese.com/a/3917690.html",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​台灣時代力量黨立委黃國昌2016年6月26日晚在立法院接受美國之音採訪（美國之音記者申華拍攝）",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.629396+00:00",
+          "width": 2592,
+          "height": 1936,
+          "id": "2d2ec5b25f74850da411",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg",
+          "filename": "王海日.jpg",
+          "artist": "顧祖訓撰，黃應澄繪",
+          "credit": "《明狀元圖考》",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Wang Hua, zhuangyuan of the Ming Dynasty.",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.663220+00:00",
+          "width": 690,
+          "height": 1084,
+          "id": "a42914ad7069586aa20b",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg",
+          "filename": "臺灣省立博物館舉行華越同心照片展覽 01.jpg",
+          "artist": "中華民國攝影師",
+          "credit": "https://memory.culture.tw/Home/Detail?Id=684675&IndexCode=Culture_Object",
+          "license": "OGDL-Taiwan-1.0",
+          "licenseUrl": "https://data.gov.tw/license",
+          "caption": "​這批相片由台灣新生報記者於1969年5月28日所拍攝，主題為華越同心照片展覽。越南共和國配合總統阮文紹訪華舉辦照片展覽，於臺北市省立博物館（今國立臺灣博物館）揭幕，由越南專使阮富德及外交部次長蔡維屏共同主持剪綵，國史館館長黃季陸、越南駐華公使代辦阮文矯等也到場參與。\n1950年韓戰爆發，中華民國政府於1954年與美國簽訂《中美共同防禦條約》，成為美國在東亞地區反共圍堵政策的一環。1954年法國在越南戰場失敗後，越南以北緯17度線劃分為北邊的越南民主共和國與南邊的越南共和國（俗稱北越與南越）。南越與中華民國同持反共立場，1955年10月中華民國承認南越。1957年雙方將公使館升格為大使館，常有訪問活動。\n\n1967年阮文紹成功當選總統，而相片背景為1969年5月30日阮文紹首度抵臺訪問，並於6月3日與總統蔣中正發表共同對付共產黨侵略之聯合公報。相片顯示冷戰期間臺灣的外交處境，以及博物館如何配合政府的外交政策。",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.696005+00:00",
+          "width": 822,
+          "height": 522,
+          "id": "f8ae2a6b88e8598a4cb8",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg",
+          "filename": "臺灣省立博物館舉行華越同心照片展覽 02.jpg",
+          "artist": "中華民國攝影師",
+          "credit": "https://memory.culture.tw/Home/Detail?Id=684675&IndexCode=Culture_Object",
+          "license": "OGDL-Taiwan-1.0",
+          "licenseUrl": "https://data.gov.tw/license",
+          "caption": "​這批相片由台灣新生報記者於1969年5月28日所拍攝，主題為華越同心照片展覽。越南共和國配合總統阮文紹訪華舉辦照片展覽，於臺北市省立博物館（今國立臺灣博物館）揭幕，由越南專使阮富德及外交部次長蔡維屏共同主持剪綵，國史館館長黃季陸、越南駐華公使代辦阮文矯等也到場參與。\n1950年韓戰爆發，中華民國政府於1954年與美國簽訂《中美共同防禦條約》，成為美國在東亞地區反共圍堵政策的一環。1954年法國在越南戰場失敗後，越南以北緯17度線劃分為北邊的越南民主共和國與南邊的越南共和國（俗稱北越與南越）。南越與中華民國同持反共立場，1955年10月中華民國承認南越。1957年雙方將公使館升格為大使館，常有訪問活動。\n\n1967年阮文紹成功當選總統，而相片背景為1969年5月30日阮文紹首度抵臺訪問，並於6月3日與總統蔣中正發表共同對付共產黨侵略之聯合公報。相片顯示冷戰期間臺灣的外交處境，以及博物館如何配合政府的外交政策。",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.731509+00:00",
+          "width": 822,
+          "height": 516,
+          "id": "445d3ceb3852d384f498",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg",
+          "filename": "臺灣省立博物館舉行華越同心照片展覽 03.jpg",
+          "artist": "中華民國攝影師",
+          "credit": "https://memory.culture.tw/Home/Detail?Id=684675&IndexCode=Culture_Object",
+          "license": "OGDL-Taiwan-1.0",
+          "licenseUrl": "https://data.gov.tw/license",
+          "caption": "​這批相片由台灣新生報記者於1969年5月28日所拍攝，主題為華越同心照片展覽。越南共和國配合總統阮文紹訪華舉辦照片展覽，於臺北市省立博物館（今國立臺灣博物館）揭幕，由越南專使阮富德及外交部次長蔡維屏共同主持剪綵，國史館館長黃季陸、越南駐華公使代辦阮文矯等也到場參與。\n1950年韓戰爆發，中華民國政府於1954年與美國簽訂《中美共同防禦條約》，成為美國在東亞地區反共圍堵政策的一環。1954年法國在越南戰場失敗後，越南以北緯17度線劃分為北邊的越南民主共和國與南邊的越南共和國（俗稱北越與南越）。南越與中華民國同持反共立場，1955年10月中華民國承認南越。1957年雙方將公使館升格為大使館，常有訪問活動。\n\n1967年阮文紹成功當選總統，而相片背景為1969年5月30日阮文紹首度抵臺訪問，並於6月3日與總統蔣中正發表共同對付共產黨侵略之聯合公報。相片顯示冷戰期間臺灣的外交處境，以及博物館如何配合政府的外交政策。",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.766855+00:00",
+          "width": 820,
+          "height": 520,
+          "id": "7767af6177e00dec56ea",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg",
+          "filename": "臺灣省立博物館舉行華越同心照片展覽 04.jpg",
+          "artist": "中華民國攝影師",
+          "credit": "https://memory.culture.tw/Home/Detail?Id=684675&IndexCode=Culture_Object",
+          "license": "OGDL-Taiwan-1.0",
+          "licenseUrl": "https://data.gov.tw/license",
+          "caption": "​這批相片由台灣新生報記者於1969年5月28日所拍攝，主題為華越同心照片展覽。越南共和國配合總統阮文紹訪華舉辦照片展覽，於臺北市省立博物館（今國立臺灣博物館）揭幕，由越南專使阮富德及外交部次長蔡維屏共同主持剪綵，國史館館長黃季陸、越南駐華公使代辦阮文矯等也到場參與。\n1950年韓戰爆發，中華民國政府於1954年與美國簽訂《中美共同防禦條約》，成為美國在東亞地區反共圍堵政策的一環。1954年法國在越南戰場失敗後，越南以北緯17度線劃分為北邊的越南民主共和國與南邊的越南共和國（俗稱北越與南越）。南越與中華民國同持反共立場，1955年10月中華民國承認南越。1957年雙方將公使館升格為大使館，常有訪問活動。\n\n1967年阮文紹成功當選總統，而相片背景為1969年5月30日阮文紹首度抵臺訪問，並於6月3日與總統蔣中正發表共同對付共產黨侵略之聯合公報。相片顯示冷戰期間臺灣的外交處境，以及博物館如何配合政府的外交政策。",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:39:35.802245+00:00",
+          "width": 822,
+          "height": 522,
+          "id": "00620405620b5ed54aa9",
+          "personId": "t1500_0554",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -25434,6 +27055,77 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:39:14.772689+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:29.779950+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:29.779985+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:33.944014+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:33.944023+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:33.944029+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:33.944033+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:35.838404+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:35.838410+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
         }
       ],
       "legacyRecord": {
@@ -25505,22 +27197,48 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:07.698993+00:00",
+      "lastAttemptAt": "2026-10-28T17:39:14.716489+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
@@ -25528,7 +27246,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:07.737572+00:00"
+      "updatedAt": "2026-10-28T17:39:35.838429+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0555": {
       "personId": "t1500_0555",
@@ -25751,8 +27471,8 @@
       "candidateId": "c1500-0559",
       "name": "蔡一傑",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:07.823362+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:39:57.848093+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0559",
@@ -25869,6 +27589,41 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:39:35.964357+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:50.964168+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:50.964205+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:55.459046+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:55.459055+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:55.459061+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:55.459064+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:39:57.848053+00:00"
+        },
+        {
+          "time": "2026-10-28T17:39:57.848077+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -25940,22 +27695,12 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:07.783316+00:00",
+      "lastAttemptAt": "2026-10-28T17:39:35.905799+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
@@ -25963,7 +27708,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:07.823369+00:00"
+      "updatedAt": "2026-10-28T17:39:57.848106+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0560": {
       "personId": "t1500_0560",
@@ -26248,8 +27995,8 @@
       "candidateId": "c1500-0563",
       "name": "鄭丹瑞",
       "status": "pending_review",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T23:30:08.205265+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:39:58.786779+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0563",
@@ -26319,7 +28066,7 @@
             }
           ],
           "evidenceRequest": "補原圖解析度、身分證據與授權",
-          "evidenceAttempts": 1,
+          "evidenceAttempts": 2,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/nose.png",
@@ -26369,12 +28116,12 @@
           },
           "evidenceSupplement": {
             "requested": "補原圖解析度、身分證據與授權",
-            "attemptedAt": "2026-10-28T17:30:07.869762+00:00",
+            "attemptedAt": "2026-10-28T17:39:57.915323+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "proxy_access_denied",
-                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -26461,19 +28208,21 @@
       },
       "lastErrors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:30:08.205248+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:39:58.786757+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0564": {
       "personId": "t1500_0564",
       "candidateId": "c1500-0564",
       "name": "葛民輝",
       "status": "pending_review",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T23:30:08.546740+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:39:59.748163+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0564",
@@ -26543,7 +28292,7 @@
             }
           ],
           "evidenceRequest": "測試鬍鬚遮下巴、麥克風位置與授權",
-          "evidenceAttempts": 1,
+          "evidenceAttempts": 2,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/nose.png",
@@ -26593,12 +28342,12 @@
           },
           "evidenceSupplement": {
             "requested": "測試鬍鬚遮下巴、麥克風位置與授權",
-            "attemptedAt": "2026-10-28T17:30:08.250067+00:00",
+            "attemptedAt": "2026-10-28T17:39:58.853296+00:00",
             "status": "incomplete",
             "errors": [
               {
-                "code": "proxy_access_denied",
-                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+                "code": "source_evidence_failed",
+                "message": "expected string or bytes-like object, got 'float'"
               }
             ],
             "visualIdentityVerified": false,
@@ -26685,11 +28434,13 @@
       },
       "lastErrors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:30:08.546723+00:00"
+      "lastEvidenceAttemptAt": "2026-10-28T17:39:59.748139+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0565": {
       "personId": "t1500_0565",
@@ -26789,8 +28540,8 @@
       "candidateId": "c1500-0568",
       "name": "李司棋",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:08.632805+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:40:20.899593+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0568",
@@ -26860,6 +28611,240 @@
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Karin_L_Lee_Vancouver_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Karin_L_Lee_Vancouver_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Karin_L_Lee_Vancouver_2017.jpg",
+          "filename": "Karin L Lee Vancouver 2017.jpg",
+          "artist": "Wendy D",
+          "credit": "Was sent to me personally by e-mail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Portrait of award-winning Canadian filmmaker Karin Louise Lee, generally known as Karin Lee.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.685478+00:00",
+          "width": 1762,
+          "height": 2026,
+          "id": "9301374736d71502de92",
+          "personId": "t1500_0568",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Margaret_Dale_Owen_%28Business_Woman%27s_Mag%2C_1903%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Margaret_Dale_Owen_%28Business_Woman%27s_Mag%2C_1903%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Margaret_Dale_Owen_(Business_Woman%27s_Mag,_1903).png",
+          "filename": "Margaret Dale Owen (Business Woman's Mag, 1903).png",
+          "artist": "Photographer not named.",
+          "credit": "The Business Woman's Magazine, volume 1, Louise Lee Hardin, editor and publisher (Colorado, 1903)\n\nhttps://books.google.com/books?id=qRcTAAAAYAAJ",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "From a 1903 publication.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.719459+00:00",
+          "width": 402,
+          "height": 581,
+          "id": "1530cf0c3cc55ef94aa7",
+          "personId": "t1500_0568",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kate_T._Cummings_%28Business_Woman%27s_Mag%2C_1903%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kate_T._Cummings_%28Business_Woman%27s_Mag%2C_1903%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Kate_T._Cummings_(Business_Woman%27s_Mag,_1903).png",
+          "filename": "Kate T. Cummings (Business Woman's Mag, 1903).png",
+          "artist": "Photographer not named.",
+          "credit": "The Business Woman's Magazine, volume 1, Louise Lee Hardin, editor and publisher (Colorado, 1903)\n\nhttps://books.google.com/books?id=qRcTAAAAYAAJ",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Kate T. Cummings, pharmacist, of Hartford, Conn.; born in Lowell, Mass. From a 1903 publication.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.752833+00:00",
+          "width": 466,
+          "height": 589,
+          "id": "a76319e4bd3dbbd721a2",
+          "personId": "t1500_0568",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Business_Woman%27s_Magazine%2C_Jul-Aug_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Business_Woman%27s_Magazine%2C_Jul-Aug_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Jul-Aug_1903.png",
+          "filename": "The Business Woman's Magazine, Jul-Aug 1903.png",
+          "artist": "Photographer not named.",
+          "credit": "The Business Woman's Magazine, volume 1, Louise Lee Hardin, editor and publisher (Colorado, 1903)\n\nhttps://books.google.com/books?id=qRcTAAAAYAAJ",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "From a 1903 publication.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.796781+00:00",
+          "width": 457,
+          "height": 670,
+          "id": "f94e058ee4b108e75de5",
+          "personId": "t1500_0568",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/The_Business_Woman%27s_Magazine%2C_Sep_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/The_Business_Woman%27s_Magazine%2C_Sep_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Sep_1903.png",
+          "filename": "The Business Woman's Magazine, Sep 1903.png",
+          "artist": "Photographer not named.",
+          "credit": "The Business Woman's Magazine, volume 1, Louise Lee Hardin, editor and publisher (Colorado, 1903)\n\nhttps://books.google.com/books?id=qRcTAAAAYAAJ",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "From a 1903 publication.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.830903+00:00",
+          "width": 456,
+          "height": 690,
+          "id": "86eeed79893d69d9fc2d",
+          "personId": "t1500_0568",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Business_Woman%27s_Magazine%2C_Oct_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Business_Woman%27s_Magazine%2C_Oct_1903.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Oct_1903.png",
+          "filename": "The Business Woman's Magazine, Oct 1903.png",
+          "artist": "Photographer not named.",
+          "credit": "The Business Woman's Magazine, volume 1, Louise Lee Hardin, editor and publisher (Colorado, 1903)\n\nhttps://books.google.com/books?id=qRcTAAAAYAAJ",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "From a 1903 publication.",
+          "identityEvidence": {
+            "query": "李司棋",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-28T17:40:20.865297+00:00",
+          "width": 406,
+          "height": 622,
+          "id": "4532bdd9e7da6778a6dc",
+          "personId": "t1500_0568",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -26907,6 +28892,77 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:39:59.881759+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:14.878799+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:14.878835+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:19.090463+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:19.090472+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:19.090478+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:19.090482+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:20.899576+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:20.899583+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Karin_L_Lee_Vancouver_2017.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Margaret_Dale_Owen_(Business_Woman%27s_Mag,_1903).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Kate_T._Cummings_(Business_Woman%27s_Mag,_1903).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Jul-Aug_1903.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Sep_1903.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Oct_1903.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
         }
       ],
       "legacyRecord": {
@@ -26978,22 +29034,48 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:08.593823+00:00",
+      "lastAttemptAt": "2026-10-28T17:39:59.815175+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Karin_L_Lee_Vancouver_2017.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Margaret_Dale_Owen_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Kate_T._Cummings_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Jul-Aug_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Sep_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Oct_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
@@ -27001,7 +29083,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:08.632814+00:00"
+      "updatedAt": "2026-10-28T17:40:20.899604+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0569": {
       "personId": "t1500_0569",
@@ -28364,8 +30448,8 @@
       "candidateId": "c1500-0586",
       "name": "向海嵐",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T19:30:08.720651+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T21:40:41.469718+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0586",
@@ -28482,6 +30566,41 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-28T17:40:21.023858+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:36.020591+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:36.020651+00:00",
+          "provider": "wikimedia",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:38.980788+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:38.980797+00:00",
+          "provider": "official",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:38.980803+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:38.980807+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-28T17:40:41.469679+00:00"
+        },
+        {
+          "time": "2026-10-28T17:40:41.469703+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -28553,22 +30672,12 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastAttemptAt": "2026-10-28T17:30:08.678139+00:00",
+      "lastAttemptAt": "2026-10-28T17:40:20.967544+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
@@ -28576,7 +30685,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T17:30:08.720659+00:00"
+      "updatedAt": "2026-10-28T17:40:41.469732+00:00",
+      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0587": {
       "personId": "t1500_0587",

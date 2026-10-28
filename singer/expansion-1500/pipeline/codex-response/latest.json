@@ -3,18 +3,18 @@
   "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
   "sourceReviewCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261028T173443Z-95e4d96f",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261028T173443Z-95e4d96f/review-index.json",
+  "runId": "20261028T173620Z-5f60426f",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T173620Z-5f60426f/review-index.json",
   "summary": {
-    "runId": "20261028T173443Z-95e4d96f",
-    "generatedAt": "2026-10-28T17:34:43.667643+00:00",
-    "scannedPeople": 0,
+    "runId": "20261028T173620Z-5f60426f",
+    "generatedAt": "2026-10-28T17:40:42.838330+00:00",
+    "scannedPeople": 18,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 18,
     "retryNeeded": 435,
     "pendingReviewPeople": 6,
-    "licenseConcernCandidates": 31,
+    "licenseConcernCandidates": 47,
     "statusCounts": {
       "download_failed": 26,
       "published": 70,
@@ -23,11 +23,11 @@
       "pending_review": 6
     },
     "failureReasons": {
-      "proxy_access_denied": 40,
-      "license_unclear": 6,
-      "identity_unconfirmed": 41,
-      "network_error": 12,
-      "image_validation_failed": 1
+      "proxy_access_denied": 4,
+      "license_unclear": 7,
+      "identity_unconfirmed": 71,
+      "network_error": 24,
+      "image_validation_failed": 3
     },
     "contactSheets": [
       "contact-sheet-01.jpg"
@@ -53,19 +53,9 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -87,19 +77,9 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -121,19 +101,15 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
           "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
       "candidateIds": []
@@ -155,8 +131,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -180,8 +156,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "network_error",
-          "message": "<urlopen error [Errno 1] Operation not permitted>"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -206,19 +182,9 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -240,19 +206,45 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:LaFayeJohnsonLeeES.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4(1779%E5%B9%B4)%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Alabama-_CHAMBERS_County,_Enumeration_District_2,_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson,_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -274,19 +266,45 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Presa_Huites_(18238885575).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2,5_jarig_bestaan,_omdat_zijn,_Bestanddeelnr_1591A-1-1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_(,_Bestanddeelnr_1591-3-3.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -308,8 +326,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -333,19 +351,45 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia-Tafdrup.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Viitanen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Fortezza_Pia_di_Ascoli_Piceno_052.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Maria_Cristina_Pia_de_Bourbon-Siciles_(1870).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Sundhage,_Euro_2013.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Tjelta.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -367,8 +411,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -392,19 +436,108 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
           "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "wikimedia",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg/1920px-2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
+            "filename": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站).jpg",
+            "artist": "Jadefanclub",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "2019年7月13日關心妍時刻觸動演唱會2019(廣州站)",
+            "identityEvidence": {
+              "article": "https://zh.wikipedia.org/wiki/%E9%97%9C%E5%BF%83%E5%A6%8D",
+              "excerpt": "關心妍（英語：Jade Kwan Sum-yin，1979年7月31日—），原名關惠文，香港女歌手。她於1999年至2000年間通過參加《全球華人新秀歌唱大賽》而進入香港樂壇，2002年正式出道。",
+              "matchedAliases": [
+                "關心妍",
+                "關心妍"
+              ],
+              "wikidataId": "Q837037",
+              "captionAliasMatches": [
+                "關心妍",
+                "關心妍"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [],
+              "matchedWorks": [],
+              "note": "Search context only; recognizability not verified"
+            },
+            "searchTime": "2026-10-28T17:39:10.902231+00:00",
+            "width": 4160,
+            "height": 6240,
+            "id": "1ef8ee341f826aed4ac2",
+            "personId": "t1500_0481",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "wikimedia",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/20090910_JadeKwan-ShiningAsStar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:20090910_JadeKwan-ShiningAsStar.jpg",
+            "filename": "20090910 JadeKwan-ShiningAsStar.jpg",
+            "artist": "Vincent Kwok, of Jade Online",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Jade Kwan 關心妍 performing \"Shining As Star 妍亮生命音樂佈道會\"",
+            "identityEvidence": {
+              "article": "https://www.wikidata.org/wiki/Q837037",
+              "wikidataId": "Q837037",
+              "claim": "P18",
+              "identityWarning": "Article/entity match is not visual identity verification",
+              "captionAliasMatches": [
+                "關心妍",
+                "關心妍"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [],
+              "matchedWorks": [],
+              "note": "Search context only; recognizability not verified"
+            },
+            "searchTime": "2026-10-28T17:39:12.099755+00:00",
+            "width": 333,
+            "height": 500,
+            "id": "304142c70cb591bca194",
+            "personId": "t1500_0481",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
         }
       ],
       "candidateIds": []
@@ -426,19 +559,45 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -460,19 +619,9 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -494,8 +643,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -519,8 +668,8 @@
       "status": "pending_review",
       "errors": [
         {
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "source_evidence_failed",
+          "message": "expected string or bytes-like object, got 'float'"
         }
       ],
       "candidateIds": [
@@ -544,19 +693,45 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         },
         {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Karin_L_Lee_Vancouver_2017.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Margaret_Dale_Owen_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Kate_T._Cummings_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Jul-Aug_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Sep_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Oct_1903.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -578,19 +753,9 @@
       "status": "download_failed",
       "errors": [
         {
-          "provider": "commons",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
           "provider": "openverse",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
-        },
-        {
-          "provider": "wikimedia",
-          "code": "proxy_access_denied",
-          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []

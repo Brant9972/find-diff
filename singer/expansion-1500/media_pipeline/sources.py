@@ -92,64 +92,128 @@ def public_https(url):
 
 
 class HTTPSRedirect(urllib.request.HTTPRedirectHandler):
+    def __init__(self, deadline=None):
+        super().__init__()
+        self.deadline = deadline
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         public_https(newurl)
+        if self.deadline is not None:
+            remaining = self.deadline - time.monotonic()
+            if remaining <= 0:
+                raise SourceError('time_budget', 'Redirect exceeded request deadline')
+            req.timeout = min(getattr(req, 'timeout', remaining), remaining)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
 class HTTP:
-    def __init__(self, attempts=3, interval=.8, budget=None, timeout=20):
-        self.attempts, self.interval, self.budget = attempts, interval, budget
+    def __init__(self, attempts=3, interval=.8, budget=None, timeout=20, blocked_hosts=None):
+        self.attempts, self.interval, self.budget = max(1, min(3, attempts)), interval, budget
         self.last = {}
-        self.timeout = timeout
+        self.timeout = max(.01, timeout)
         self.denied_hosts = set()
+        # May be shared by concurrent workers. Each worker still owns its time budget.
+        self.blocked_hosts = blocked_hosts if blocked_hosts is not None else {}
+
+    def _seconds_left(self, deadline):
+        if self.budget is not None and time.monotonic() >= self.budget:
+            raise SourceError('time_budget', 'Person/provider time budget reached')
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            raise SourceError('network_error', 'Per-request wall time budget reached')
+        return remaining
+
+    def _pause(self, delay, deadline):
+        if delay <= 0:
+            return
+        if delay >= self._seconds_left(deadline):
+            raise SourceError('time_budget', 'Insufficient budget for source backoff; moving on')
+        time.sleep(delay)
+
+    def _refusal(self, host):
+        refusal = self.blocked_hosts.get(host)
+        if refusal and (refusal.get('until') is None or time.monotonic() < refusal['until']):
+            raise SourceError(refusal['code'], refusal['reason'])
+        if host in self.denied_hosts:
+            raise SourceError('proxy_access_denied', 'Proxy denied this host in this batch')
+
+    def _retry_after(self, headers, default=60):
+        value = headers.get('Retry-After', str(default))
+        try:
+            return max(1, min(float(value), 3600))
+        except (TypeError, ValueError):
+            try:
+                return max(1, min((parsedate_to_datetime(value) - datetime.datetime.now(datetime.timezone.utc)).total_seconds(), 3600))
+            except (TypeError, ValueError):
+                return default
 
     def get(self, url, params=None):
         if params:
             url += ('&' if '?' in url else '?') + urllib.parse.urlencode(params)
         host = public_https(url)
-        if host in self.denied_hosts:
-            raise SourceError('proxy_access_denied', 'Proxy previously denied this host in this batch; no repeated forbidden requests')
+        self._refusal(host)
+        # Retries share one wall budget; slow downloads cannot multiply socket timeout by attempts.
+        deadline = time.monotonic() + self.timeout
+        if self.budget is not None:
+            deadline = min(deadline, self.budget)
+        self._seconds_left(deadline)
         for attempt in range(self.attempts):
-            if self.budget and time.monotonic() >= self.budget:
-                raise SourceError('time_budget', 'Batch time budget reached')
-            time.sleep(max(0, self.interval - (time.monotonic() - self.last.get(host, 0))))
+            self._refusal(host)
+            self._pause(max(0, self.interval - (time.monotonic() - self.last.get(host, 0))), deadline)
             try:
-                with urllib.request.build_opener(HTTPSRedirect()).open(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=min(self.timeout, max(1, self.budget-time.monotonic())) if self.budget else self.timeout) as response:
+                timeout = self._seconds_left(deadline)
+                with urllib.request.build_opener(HTTPSRedirect(deadline)).open(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=timeout) as response:
                     if int(response.headers.get('Content-Length', '0')) > MAX_BYTES:
                         raise SourceError('oversize', 'Response exceeds 14 MB')
-                    data = response.read(MAX_BYTES + 1)
-                    if len(data) > MAX_BYTES:
-                        raise SourceError('oversize', 'Response exceeds 14 MB')
-                    return data
+                    data = bytearray()
+                    read_chunk = getattr(response, 'read1', response.read)
+                    while True:
+                        remaining = self._seconds_left(deadline)
+                        connection = getattr(getattr(getattr(response, 'fp', None), 'raw', None), '_sock', None)
+                        if connection is not None:
+                            connection.settimeout(remaining)
+                        chunk = read_chunk(min(65536, MAX_BYTES + 1 - len(data)))
+                        if not chunk:
+                            break
+                        data.extend(chunk)
+                        if len(data) > MAX_BYTES:
+                            raise SourceError('oversize', 'Response exceeds 14 MB')
+                    self.blocked_hosts.pop(host, None)
+                    return bytes(data)
             except urllib.error.HTTPError as exc:
-                if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 == self.attempts:
+                if exc.code in {403, 429}:
+                    self.blocked_hosts[host] = {'code': 'http_' + str(exc.code),
+                        'reason': 'Source refused/rate-limited this batch: ' + str(exc),
+                        'until': time.monotonic() + self._retry_after(exc.headers) if exc.code == 429 else None}
                     raise SourceError('http_' + str(exc.code), str(exc)) from exc
-                retry = exc.headers.get('Retry-After', '2')
-                try:
-                    delay = float(retry)
-                except ValueError:
-                    try:
-                        delay = (parsedate_to_datetime(retry) - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
-                    except (ValueError, TypeError):
-                        delay = 2
-                time.sleep(max(0, min(delay, 10)))
+                if exc.code not in {500, 502, 503, 504} or attempt + 1 == self.attempts:
+                    raise SourceError('http_' + str(exc.code), str(exc)) from exc
+                self._pause(min(self._retry_after(exc.headers, 2), 2), deadline)
             except (urllib.error.URLError, TimeoutError, OSError) as exc:
                 if 'Tunnel connection failed: 403' in str(exc):
                     self.denied_hosts.add(host)
+                    self.blocked_hosts[host] = {'code': 'proxy_access_denied', 'reason': str(exc), 'until': None}
                     raise SourceError('proxy_access_denied', str(exc)) from exc
+                previous = self.blocked_hosts.get(host, {})
+                failures = previous.get('failures', 0) + 1
                 if attempt + 1 == self.attempts:
+                    self.blocked_hosts[host] = {'code': 'network_error', 'reason': str(exc),
+                        'until': time.monotonic() + 30 if failures >= 2 else time.monotonic(), 'failures': failures}
                     raise SourceError('network_error', str(exc)) from exc
-                time.sleep(2 ** attempt)
+                self._pause(2 ** attempt, deadline)
             finally:
                 self.last[host] = time.monotonic()
         raise SourceError('network_error', 'Request attempts exhausted')
 
     def json(self, url, **params):
         try:
-            return json.loads(self.get(url, params or None))
+            data = json.loads(self.get(url, params or None))
         except (ValueError, UnicodeError) as exc:
             raise SourceError('invalid_metadata', 'Source returned invalid JSON') from exc
+        if isinstance(data, dict) and data.get('error'):
+            error = data['error']
+            raise SourceError('source_api_error', str(error.get('code', 'unknown')) + ': ' + str(error.get('info', error))[:300])
+        return data
 
 
 class Wikimedia:
@@ -268,3 +332,119 @@ class CommonsSearch:
                         'identityEvidence':{'query':query,'identityWarning':'Caption/name match is preliminary evidence only'},
                         'recognitionEvidence':{'requestedReplacement':person.get('reviewReason'),'representativeWorks':person.get('representativeWorks',[]),'note':'Familiar appearance must be reviewed'},
                         'searchTime':now(),'width':info.get('width'),'height':info.get('height')}
+
+
+class EntityPortraits:
+    """Authoritative bilingual name mapping, then independent portrait catalogues.
+
+    A unique exact Chinese label/alias and Q5 statement is required. The entity
+    mapping establishes search aliases, not visual identity or image rights.
+    """
+    name = 'entity'
+    wikidata_api = 'https://www.wikidata.org/w/api.php'
+
+    def _resolve(self, person, http):
+        result = http.json(self.wikidata_api, action='wbsearchentities', format='json',
+                           search=person['name'], language='zh', uselang='zh', type='item', limit=5)
+        ids = list(dict.fromkeys(row.get('id') for row in result.get('search', [])
+                                if re.fullmatch(r'Q[1-9][0-9]*', str(row.get('id', '')))))
+        if not ids:
+            raise SourceError('identity_not_found', 'No Wikidata entity candidates for the exact person name')
+        data = http.json(self.wikidata_api, action='wbgetentities', format='json',
+                         ids='|'.join(ids), props='labels|aliases|claims|sitelinks',
+                         languages='en|zh|zh-hant|zh-hans|zh-tw|zh-cn', sitefilter='zhwiki|enwiki')
+        expected = {norm(value) for value in [person['name'], *person.get('acceptedAnswers', [])]
+                    if len(norm(value)) >= 2}
+        eligible = []
+        for qid in ids:
+            entity = data.get('entities', {}).get(qid, {})
+            chinese = [row.get('value', '') for lang, row in entity.get('labels', {}).items() if lang.startswith('zh')]
+            chinese.extend(row.get('value', '') for lang, rows in entity.get('aliases', {}).items()
+                           if lang.startswith('zh') for row in rows)
+            matched = [value for value in chinese if norm(value) in expected]
+            human = any(claim.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id') == 'Q5'
+                        for claim in entity.get('claims', {}).get('P31', []) if claim.get('rank') != 'deprecated')
+            if matched and human:
+                eligible.append((qid, entity, matched))
+        if len(eligible) != 1:
+            code = 'identity_ambiguous' if len(eligible) > 1 else 'identity_unconfirmed'
+            raise SourceError(code, 'Expected exactly one exact-name Q5 human; found ' + str(len(eligible)))
+        qid, entity, matched = eligible[0]
+        english = [entity.get('labels', {}).get('en', {}).get('value', '')]
+        english.extend(row.get('value', '') for row in entity.get('aliases', {}).get('en', []))
+        # Short English fragments can match unrelated filenames. Keep complete names.
+        english = [value for value in dict.fromkeys(english) if re.search('[A-Za-z]', value) and len(norm(value)) >= 5][:4]
+        aliases = list(dict.fromkeys([person['name'], *matched, *english]))
+        evidence = {'wikidataId': qid, 'mappingSource': 'https://www.wikidata.org/wiki/' + qid,
+                    'exactChineseAliases': matched, 'verifiedSearchAliases': aliases,
+                    'entityTypeEvidence': 'P31=Q5', 'retrievedAt': now(),
+                    'visualIdentityVerified': False,
+                    'identityWarning': 'Entity names only establish search aliases. Verify the pictured person and caption.'}
+        files = [claim.get('mainsnak', {}).get('datavalue', {}).get('value')
+                 for claim in entity.get('claims', {}).get('P18', []) if claim.get('rank') != 'deprecated']
+        return aliases, english[0] if english else person['name'], evidence, [value for value in files if isinstance(value, str)][:3]
+
+    def search(self, person, http, round_number=0):
+        aliases, query, mapping, entity_files = self._resolve(person, http)
+        enriched = {**person, 'aliases': aliases}
+        failures, seen, yielded = [], set(), False
+        requests = []
+        if entity_files:
+            requests.append({'titles': '|'.join('File:' + value for value in entity_files)})
+        requests.append({'generator': 'search', 'gsrsearch': query + ' filetype:bitmap',
+                         'gsrnamespace': 6, 'gsrlimit': 15, 'gsroffset': (round_number % 3) * 15})
+        for request in requests:
+            try:
+                data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
+                                 prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
+                pages = list(data.get('query', {}).get('pages', []))
+                pages.sort(key=lambda row: (not any(word in row.get('title', '').lower() for word in ('portrait', 'cropped')), row.get('title', '')))
+                for page in pages:
+                    filename = page.get('title', '').removeprefix('File:')
+                    if not re.search(r'\.(jpg|jpeg|png|webp)$', filename, re.I):
+                        continue
+                    for info in page.get('imageinfo', []):
+                        source = info.get('descriptionurl', '')
+                        if not source or source_key(source) in seen:
+                            continue
+                        seen.add(source_key(source))
+                        ext = info.get('extmetadata', {})
+                        val = lambda key: clean(ext.get(key, {}).get('value', ''))
+                        license_url = val('LicenseUrl')
+                        if license_url.startswith('http://creativecommons.org/'):
+                            license_url = 'https://' + license_url[7:]
+                        caption = val('ImageDescription')
+                        evidence = {**mapping, 'query': query,
+                                    'matchedAliases': identity(enriched, filename + ' ' + caption),
+                                    'discoveryWarnings': list(failures)}
+                        if filename in entity_files:
+                            evidence['claim'] = 'P18'
+                        yielded = True
+                        yield {'provider': 'commons', 'url': info.get('thumburl') or info.get('url', ''),
+                               'originalUrl': info.get('url', ''), 'source': source, 'filename': filename,
+                               'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original',
+                               'artist': val('Artist'), 'credit': val('Credit'), 'license': val('LicenseShortName'),
+                               'licenseUrl': license_url, 'caption': caption, 'identityEvidence': evidence,
+                               'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []),
+                                   'requestedReplacement': person.get('reviewReason'), 'note': 'Familiar appearance has not been visually reviewed'},
+                               'searchTime': now(), 'width': info.get('width'), 'height': info.get('height')}
+            except SourceError as exc:
+                failures.append({'provider': 'commons', 'code': exc.code, 'message': str(exc)[:300]})
+        # A refused Commons host must not prevent an independent catalogue search.
+        try:
+            for candidate in Openverse().search({**person, 'name': query, 'aliases': []}, http, round_number):
+                if not candidate.get('source') or source_key(candidate['source']) in seen:
+                    continue
+                seen.add(source_key(candidate['source']))
+                candidate['identityEvidence'] = {**mapping, 'query': query,
+                    'matchedAliases': identity(enriched, candidate.get('filename', '') + ' ' + candidate.get('caption', '')),
+                    'discoveryWarnings': list(failures)}
+                candidate['recognitionEvidence'] = {'representativeWorks': person.get('representativeWorks', []),
+                    'requestedReplacement': person.get('reviewReason'), 'note': 'Familiar appearance has not been visually reviewed'}
+                yielded = True
+                yield candidate
+        except SourceError as exc:
+            failures.append({'provider': 'openverse', 'code': exc.code, 'message': str(exc)[:300]})
+        if not yielded and failures:
+            last = failures[-1]
+            raise SourceError(last['code'], 'No catalogue response: ' + last['message'])

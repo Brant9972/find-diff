@@ -1,32 +1,20 @@
-name: Celebrity portrait pipeline (review only)
+name: Celebrity bulk photos and direct visual review (no deploy)
 on:
   push:
     branches: [automation/celebrity-photo-pipeline]
     paths:
-      - singer/expansion-1500/prepare_media.py
-      - singer/expansion-1500/media_pipeline/**
-      - singer/expansion-1500/tests/**
-      - singer/expansion-1500/validate_pipeline.py
-      - singer/expansion-1500/requirements-media.txt
-      - singer/expansion-1500/recover_pipeline.py
+      - singer/expansion-1500/pipeline/batch-request.json
       - singer/expansion-1500/pipeline/chatgpt-review/latest.json
-      - .github/workflows/expansion1500-draft-media.yml
   workflow_dispatch:
     inputs:
       limit:
-        description: Maximum people this run (0..300)
+        description: People to search in one batch (30..50 recommended)
         type: number
-        default: 10
-      retry_failed:
-        description: Retry failed/rejected people now
-        type: boolean
-        default: false
-  # Schedules only activate after this workflow is separately reviewed onto the default branch.
+        default: 40
   schedule:
     - cron: '20 18 * * *'
 permissions:
   contents: read
-  actions: read
 concurrency:
   group: celebrity-photo-pipeline
   cancel-in-progress: false
@@ -44,75 +32,37 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r singer/expansion-1500/requirements-media.txt
-      - name: Test resume, licence and review protection
-        run: python -m unittest discover -s singer/expansion-1500/tests -v
-      - name: Check for an explicit artifact recovery request
-        id: recovery
-        run: |
-          python - <<'PYREC'
-          import json,os
-          from pathlib import Path
-          p=Path('singer/expansion-1500/pipeline/recovery-request.json')
-          d=json.loads(p.read_text()) if p.exists() else {}
-          value=str(d.get('runId','')) if not d.get('completed') else ''
-          assert not value or value.isdigit()
-          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('run_id='+value+'\n')
-          PYREC
-      - uses: actions/download-artifact@v4
-        if: steps.recovery.outputs.run_id != ''
-        with:
-          name: celebrity-review-${{ steps.recovery.outputs.run_id }}
-          run-id: ${{ steps.recovery.outputs.run_id }}
-          github-token: ${{ github.token }}
-          path: /tmp/media-recovery
-      - name: Restore without overwriting human review
-        if: steps.recovery.outputs.run_id != ''
-        run: python singer/expansion-1500/recover_pipeline.py /tmp/media-recovery
-      - name: Read latest published roster without changing checkout
-        run: git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
-      - name: Record source commit
-        run: git rev-parse HEAD > /tmp/media-source-commit.txt
-      - name: Collect bounded batch (never publish)
+      - name: Test batching, image pixels and review protections
+        run: python -m unittest discover -s singer/expansion-1500/tests -q
+      - run: git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
+      - run: git rev-parse HEAD > /tmp/media-source-commit.txt
+      - name: Collect a single 40-person batch, then build review assets once
         env:
-          BATCH_LIMIT: ${{ github.event.inputs.limit || (github.event_name == 'schedule' && '50') || '2' }}
-          BATCH_MINUTES: ${{ github.event_name == 'push' && '5' || '25' }}
-          RETRY_FAILED: ${{ inputs.retry_failed || 'false' }}
+          REQUEST_LIMIT: ${{ inputs.limit || '40' }}
         run: |
           set -euo pipefail
-          extra=()
-          if [ -f singer/expansion-1500/pipeline/chatgpt-review/latest.json ]; then
-            extra+=(--review-round)
-            BATCH_LIMIT=$(python -c "import json; print(len(json.load(open('singer/expansion-1500/pipeline/chatgpt-review/latest.json'))['decisions']))")
-            BATCH_MINUTES=25
-            pending_only=$(python -c "import json,hashlib; from pathlib import Path; p=Path('singer/expansion-1500/pipeline/evidence-retry.json'); r=json.loads(p.read_text()) if p.exists() else {}; h=hashlib.sha256(Path('singer/expansion-1500/pipeline/chatgpt-review/latest.json').read_bytes()).hexdigest(); print('true' if r.get('sourceReviewSha256')==h and not r.get('attemptCompleted') else 'false')")
-            if [ "$pending_only" = "true" ]; then extra+=(--evidence-only); fi
-          fi
-          if [ "$RETRY_FAILED" = "true" ]; then extra+=(--retry-failed); fi
-          python singer/expansion-1500/prepare_media.py --limit "$BATCH_LIMIT" --max-minutes "$BATCH_MINUTES" --live-ref origin/main "${extra[@]}"
-      - name: Validate candidates
-        run: python singer/expansion-1500/validate_pipeline.py
-      - name: Ensure tracked inputs and production data did not change
+          python singer/expansion-1500/prepare_media.py --limit "$REQUEST_LIMIT" --workers 3 --max-minutes 25 --person-seconds 60 --live-ref origin/main
+      - run: python singer/expansion-1500/validate_pipeline.py
+      - name: Assert only draft outputs changed
         if: always()
         run: |
-          python - <<'PYGUARD'
+          python - <<'PY'
           import subprocess
           changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
-          assert all(p.startswith('singer/expansion-1500/pipeline/') for p in changed), changed
-          PYGUARD
-      - name: Save review files and checkpoint even after a failed source
+          assert all(p.startswith('singer/expansion-1500/pipeline/') for p in changed),changed
+          assert 'singer/expansion-1500/pipeline/chatgpt-review/latest.json' not in changed
+          PY
+      - uses: actions/upload-artifact@v4
         if: always()
-        uses: actions/upload-artifact@v4
         with:
           name: celebrity-review-${{ github.run_id }}
           retention-days: 30
           path: |
             singer/expansion-1500/pipeline
-            singer/expansion-1500/review_photos
             /tmp/media-source-commit.txt
           if-no-files-found: error
   checkpoint:
     needs: collect
-    if: always() && needs.collect.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -124,26 +74,28 @@ jobs:
         with:
           name: celebrity-review-${{ github.run_id }}
           path: /tmp/media-review
-      - name: Commit generated state only to the work branch
+      - run: python -m pip install Pillow==12.0.0
+      - name: Commit assets, then pin public image links to that exact asset commit
         run: |
           set -euo pipefail
-          test "$(git branch --show-current)" = "automation/celebrity-photo-pipeline"
+          test "$(git branch --show-current)" = 'automation/celebrity-photo-pipeline'
           saved=$(find /tmp/media-review -name media-source-commit.txt -type f)
-          test -n "$saved"
           test "$(git rev-parse HEAD)" = "$(cat "$saved")"
           generated=$(find /tmp/media-review -type d -path '*/expansion-1500/pipeline')
           test -n "$generated"
-          mkdir -p singer/expansion-1500/pipeline
           cp -a "$generated/." singer/expansion-1500/pipeline/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- singer/expansion-1500/pipeline
           python - <<'PY'
           import subprocess
           files=subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines()
-          assert all(p.startswith('singer/expansion-1500/pipeline/') for p in files), files
+          assert all(p.startswith('singer/expansion-1500/pipeline/') for p in files),files
+          assert 'singer/expansion-1500/pipeline/chatgpt-review/latest.json' not in files
           PY
-          if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Checkpoint unapproved celebrity photo review batch'
-            git push origin HEAD:refs/heads/automation/celebrity-photo-pipeline
-          fi
+          git commit -m 'Checkpoint one bulk batch of unapproved photos and visual assets'
+          asset_commit=$(git rev-parse HEAD)
+          python singer/expansion-1500/tools/publish_review_links.py --asset-commit "$asset_commit"
+          git add -- singer/expansion-1500/pipeline/review-public singer/expansion-1500/pipeline/codex-response/latest.json
+          git commit -m 'Publish immutable GitHub image links for ChatGPT review'
+          git push origin HEAD:refs/heads/automation/celebrity-photo-pipeline

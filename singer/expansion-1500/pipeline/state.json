@@ -6997,7 +6997,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0174",
+            "candidateId": "legacy-t1500_0174",
+            "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+            "name": "鳳小岳",
+            "decision": "reject",
+            "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -7147,9 +7160,10 @@
         "decision": "reject",
         "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:36:20.308835+00:00",
       "lastErrors": [
@@ -7166,7 +7180,22 @@
       },
       "updatedAt": "2026-10-28T17:36:43.272916+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0174": {
+          "personId": "t1500_0174",
+          "candidateId": "legacy-t1500_0174",
+          "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+          "name": "鳳小岳",
+          "decision": "reject",
+          "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0175": {
       "personId": "t1500_0175",
@@ -8138,7 +8167,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0196",
+            "candidateId": "legacy-t1500_0196",
+            "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+            "name": "蔡亘晏",
+            "decision": "reject",
+            "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -8288,9 +8330,10 @@
         "decision": "reject",
         "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:36:43.336094+00:00",
       "lastErrors": [
@@ -8307,7 +8350,22 @@
       },
       "updatedAt": "2026-10-28T17:37:03.702014+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0196": {
+          "personId": "t1500_0196",
+          "candidateId": "legacy-t1500_0196",
+          "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+          "name": "蔡亘晏",
+          "decision": "reject",
+          "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0197": {
       "personId": "t1500_0197",
@@ -9494,7 +9552,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0224",
+            "candidateId": "legacy-t1500_0224",
+            "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+            "name": "丁國琳",
+            "decision": "reject",
+            "reason": "麥克風遮嘴；找八點檔清晰正面照",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "wikimedia",
@@ -9697,9 +9768,10 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找八點檔清晰正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:37:03.765048+00:00",
       "lastErrors": [
@@ -9722,7 +9794,22 @@
       },
       "updatedAt": "2026-10-28T17:37:26.641454+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0224": {
+          "personId": "t1500_0224",
+          "candidateId": "legacy-t1500_0224",
+          "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+          "name": "丁國琳",
+          "decision": "reject",
+          "reason": "麥克風遮嘴；找八點檔清晰正面照",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0225": {
       "personId": "t1500_0225",
@@ -10960,7 +11047,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/source-09bbd79d58d2b11d.bin",
-          "originalSha256": "09bbd79d58d2b11d96d221c8e2aa4eb78401f00513b4479340ff5ef5a3bb4c89"
+          "originalSha256": "09bbd79d58d2b11d96d221c8e2aa4eb78401f00513b4479340ff5ef5a3bb4c89",
+          "chatgptReview": {
+            "personId": "t1500_0255",
+            "candidateId": "legacy-t1500_0255",
+            "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+            "name": "林采緹",
+            "decision": "pending",
+            "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [],
@@ -11029,14 +11131,34 @@
         "decision": "pending",
         "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:29.089237+00:00",
       "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0255": {
+          "personId": "t1500_0255",
+          "candidateId": "legacy-t1500_0255",
+          "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+          "name": "林采緹",
+          "decision": "pending",
+          "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0256": {
       "personId": "t1500_0256",
@@ -13356,7 +13478,7 @@
       "name": "李妍瑾",
       "status": "pending_review",
       "attempts": 4,
-      "nextRetryAt": "2026-10-28T23:47:33.737381+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "id": "legacy-t1500_0307",
@@ -13544,7 +13666,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
-          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8"
+          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8",
+          "chatgptReview": {
+            "personId": "t1500_0307",
+            "candidateId": "legacy-t1500_0307",
+            "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+            "name": "李妍瑾",
+            "decision": "pending",
+            "reason": "裁掉背景第二張人臉，補來源及解析度",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "id": "recrop-3465c04fd55149210d96",
@@ -13951,7 +14088,7 @@
               1
             ]
           },
-          "status": "pending_review",
+          "status": "pending_evidence",
           "rightsStatus": "open_license_metadata",
           "warnings": [
             "New crop rendered from the downloaded source, not an enlargement of the old crop. Source identity, rights, face framing and all five stages require external review."
@@ -13966,7 +14103,7 @@
           },
           "humanReview": null,
           "eligibleForLive": false,
-          "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
+          "evidenceRequest": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
           "evidenceAttempts": 4,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/eyes.png",
@@ -14136,7 +14273,33 @@
             ],
             "sourceSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8",
             "note": "Same-photo pixel correspondence; not a visual identity or rights approval"
-          }
+          },
+          "chatgptReview": {
+            "personId": "t1500_0307",
+            "candidateId": "source-recrop-1a20f122e98b8f930224",
+            "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+            "decision": "pending",
+            "reason": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "newCandidates"
+          },
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0307",
+              "candidateId": "source-recrop-1a20f122e98b8f930224",
+              "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+              "decision": "pending",
+              "reason": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+              "handoffCollection": "newCandidates"
+            }
+          ]
         }
       ],
       "history": [],
@@ -14205,16 +14368,48 @@
         "decision": "pending",
         "reason": "裁掉背景第二張人臉，補來源及解析度",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:33.737344+00:00",
       "lastRunId": "20261028T175736Z-a138bf90",
       "lastRunNewCandidateIds": [
         "source-recrop-1a20f122e98b8f930224"
-      ]
+      ],
+      "chatgptReviews": {
+        "legacy-t1500_0307": {
+          "personId": "t1500_0307",
+          "candidateId": "legacy-t1500_0307",
+          "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+          "name": "李妍瑾",
+          "decision": "pending",
+          "reason": "裁掉背景第二張人臉，補來源及解析度",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        },
+        "source-recrop-1a20f122e98b8f930224": {
+          "personId": "t1500_0307",
+          "candidateId": "source-recrop-1a20f122e98b8f930224",
+          "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+          "decision": "pending",
+          "reason": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "newCandidates"
+        }
+      }
     },
     "t1500_0308": {
       "personId": "t1500_0308",
@@ -14291,7 +14486,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0308",
+            "candidateId": "legacy-t1500_0308",
+            "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+            "name": "曹晏豪",
+            "decision": "reject",
+            "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -14441,9 +14649,10 @@
         "decision": "reject",
         "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:37:27.683370+00:00",
       "lastErrors": [
@@ -14460,7 +14669,22 @@
       },
       "updatedAt": "2026-10-28T17:37:48.386358+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0308": {
+          "personId": "t1500_0308",
+          "candidateId": "legacy-t1500_0308",
+          "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+          "name": "曹晏豪",
+          "decision": "reject",
+          "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0309": {
       "personId": "t1500_0309",
@@ -15724,7 +15948,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0335",
+            "candidateId": "legacy-t1500_0335",
+            "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+            "name": "李思捷",
+            "decision": "reject",
+            "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "commons",
@@ -16144,9 +16381,10 @@
         "decision": "reject",
         "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:37:48.448579+00:00",
       "lastErrors": [
@@ -16199,7 +16437,22 @@
       },
       "updatedAt": "2026-10-28T17:38:09.569384+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0335": {
+          "personId": "t1500_0335",
+          "candidateId": "legacy-t1500_0335",
+          "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+          "name": "李思捷",
+          "decision": "reject",
+          "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0336": {
       "personId": "t1500_0336",
@@ -17262,7 +17515,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0350",
+            "candidateId": "legacy-t1500_0350",
+            "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+            "name": "陳惠婷",
+            "decision": "reject",
+            "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "commons",
@@ -17682,9 +17948,10 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:38:09.632606+00:00",
       "lastErrors": [
@@ -17737,7 +18004,22 @@
       },
       "updatedAt": "2026-10-28T17:38:30.937970+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0350": {
+          "personId": "t1500_0350",
+          "candidateId": "legacy-t1500_0350",
+          "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+          "name": "陳惠婷",
+          "decision": "reject",
+          "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0351": {
       "personId": "t1500_0351",
@@ -18658,7 +18940,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/source-62591a490e0baf7a.bin",
-          "originalSha256": "62591a490e0baf7ada2049bc23e7501e67af9853453fc9bf72fa61823ab75684"
+          "originalSha256": "62591a490e0baf7ada2049bc23e7501e67af9853453fc9bf72fa61823ab75684",
+          "chatgptReview": {
+            "personId": "t1500_0360",
+            "candidateId": "legacy-t1500_0360",
+            "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+            "name": "林德信",
+            "decision": "pending",
+            "reason": "補來源授權、人物證據、正面五官預覽",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [],
@@ -18725,14 +19022,34 @@
         "decision": "pending",
         "reason": "補來源授權、人物證據、正面五官預覽",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:30.034712+00:00",
       "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0360": {
+          "personId": "t1500_0360",
+          "candidateId": "legacy-t1500_0360",
+          "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+          "name": "林德信",
+          "decision": "pending",
+          "reason": "補來源授權、人物證據、正面五官預覽",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0361": {
       "personId": "t1500_0361",
@@ -20061,7 +20378,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0393",
+            "candidateId": "legacy-t1500_0393",
+            "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+            "name": "吳蓓雅",
+            "decision": "reject",
+            "reason": "低頭、麥克風遮嘴、模糊；重找",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "commons",
@@ -20467,9 +20797,10 @@
         "decision": "reject",
         "reason": "低頭、麥克風遮嘴、模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:38:31.763527+00:00",
       "lastErrors": [
@@ -20522,7 +20853,22 @@
       },
       "updatedAt": "2026-10-28T17:38:51.812413+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0393": {
+          "personId": "t1500_0393",
+          "candidateId": "legacy-t1500_0393",
+          "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+          "name": "吳蓓雅",
+          "decision": "reject",
+          "reason": "低頭、麥克風遮嘴、模糊；重找",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0394": {
       "personId": "t1500_0394",
@@ -23813,7 +24159,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/source-e5660eed817f4f14.bin",
-          "originalSha256": "e5660eed817f4f14fbdf5d4e1c47472bd84da10cdad34b340a3e72eec4d69e72"
+          "originalSha256": "e5660eed817f4f14fbdf5d4e1c47472bd84da10cdad34b340a3e72eec4d69e72",
+          "chatgptReview": {
+            "personId": "t1500_0474",
+            "candidateId": "legacy-t1500_0474",
+            "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+            "name": "蔡黃汝",
+            "decision": "pending",
+            "reason": "確認舊照解析度、來源授權與辨識度",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [],
@@ -23882,14 +24243,34 @@
         "decision": "pending",
         "reason": "確認舊照解析度、來源授權與辨識度",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:30.905611+00:00",
       "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0474": {
+          "personId": "t1500_0474",
+          "candidateId": "legacy-t1500_0474",
+          "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+          "name": "蔡黃汝",
+          "decision": "pending",
+          "reason": "確認舊照解析度、來源授權與辨識度",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0475": {
       "personId": "t1500_0475",
@@ -24242,7 +24623,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0481",
+            "candidateId": "legacy-t1500_0481",
+            "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+            "name": "關心妍",
+            "decision": "reject",
+            "reason": "年代久且柔焦；重找高清正面照",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -24489,9 +24883,10 @@
         "decision": "reject",
         "reason": "年代久且柔焦；重找高清正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:38:52.617557+00:00",
       "lastErrors": [
@@ -24607,7 +25002,22 @@
       },
       "updatedAt": "2026-10-28T17:39:14.650692+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0481": {
+          "personId": "t1500_0481",
+          "candidateId": "legacy-t1500_0481",
+          "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+          "name": "關心妍",
+          "decision": "reject",
+          "reason": "年代久且柔焦；重找高清正面照",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0482": {
       "personId": "t1500_0482",
@@ -27300,7 +27710,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0554",
+            "candidateId": "legacy-t1500_0554",
+            "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+            "name": "黃日華",
+            "decision": "reject",
+            "reason": "側臉模糊；找經典角色正面照",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "commons",
@@ -27720,9 +28143,10 @@
         "decision": "reject",
         "reason": "側臉模糊；找經典角色正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:39:14.716489+00:00",
       "lastErrors": [
@@ -27775,7 +28199,22 @@
       },
       "updatedAt": "2026-10-28T17:39:35.838429+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0554": {
+          "personId": "t1500_0554",
+          "candidateId": "legacy-t1500_0554",
+          "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+          "name": "黃日華",
+          "decision": "reject",
+          "reason": "側臉模糊；找經典角色正面照",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0555": {
       "personId": "t1500_0555",
@@ -28068,7 +28507,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0559",
+            "candidateId": "legacy-t1500_0559",
+            "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+            "name": "蔡一傑",
+            "decision": "reject",
+            "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -28218,9 +28670,10 @@
         "decision": "reject",
         "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:39:35.905799+00:00",
       "lastErrors": [
@@ -28237,7 +28690,22 @@
       },
       "updatedAt": "2026-10-28T17:39:57.848106+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0559": {
+          "personId": "t1500_0559",
+          "candidateId": "legacy-t1500_0559",
+          "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+          "name": "蔡一傑",
+          "decision": "reject",
+          "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0560": {
       "personId": "t1500_0560",
@@ -28719,7 +29187,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/source-67badc341bdaab7e.bin",
-          "originalSha256": "67badc341bdaab7e26466f007f4f48bcc43c9084211df1db3e0a8612f58d61fb"
+          "originalSha256": "67badc341bdaab7e26466f007f4f48bcc43c9084211df1db3e0a8612f58d61fb",
+          "chatgptReview": {
+            "personId": "t1500_0563",
+            "candidateId": "legacy-t1500_0563",
+            "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+            "name": "鄭丹瑞",
+            "decision": "pending",
+            "reason": "補原圖解析度、身分證據與授權",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [],
@@ -28788,14 +29271,34 @@
         "decision": "pending",
         "reason": "補原圖解析度、身分證據與授權",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:31.869412+00:00",
       "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0563": {
+          "personId": "t1500_0563",
+          "candidateId": "legacy-t1500_0563",
+          "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+          "name": "鄭丹瑞",
+          "decision": "pending",
+          "reason": "補原圖解析度、身分證據與授權",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0564": {
       "personId": "t1500_0564",
@@ -28987,7 +29490,22 @@
             }
           },
           "originalPath": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/source-ea8bd395761304fa.bin",
-          "originalSha256": "ea8bd395761304fa6cfa010d46336ddff9b41e994ee8f30f8c71af38f4063e2e"
+          "originalSha256": "ea8bd395761304fa6cfa010d46336ddff9b41e994ee8f30f8c71af38f4063e2e",
+          "chatgptReview": {
+            "personId": "t1500_0564",
+            "candidateId": "legacy-t1500_0564",
+            "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+            "name": "葛民輝",
+            "decision": "pending",
+            "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+            "eligibleForLive": false,
+            "evidenceRun": "20261028T175736Z-a138bf90",
+            "evidenceStatus": "source_image_map_available_visual_not_verified",
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [],
@@ -29056,14 +29574,34 @@
         "decision": "pending",
         "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:32.764219+00:00",
       "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0564": {
+          "personId": "t1500_0564",
+          "candidateId": "legacy-t1500_0564",
+          "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+          "name": "葛民輝",
+          "decision": "pending",
+          "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+          "eligibleForLive": false,
+          "evidenceRun": "20261028T175736Z-a138bf90",
+          "evidenceStatus": "source_image_map_available_visual_not_verified",
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0565": {
       "personId": "t1500_0565",
@@ -29233,7 +29771,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0568",
+            "candidateId": "legacy-t1500_0568",
+            "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+            "name": "李司棋",
+            "decision": "reject",
+            "reason": "眼鏡反光、前景遮擋；重找",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         },
         {
           "provider": "commons",
@@ -29653,9 +30204,10 @@
         "decision": "reject",
         "reason": "眼鏡反光、前景遮擋；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:39:59.815175+00:00",
       "lastErrors": [
@@ -29708,7 +30260,22 @@
       },
       "updatedAt": "2026-10-28T17:40:20.899604+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0568": {
+          "personId": "t1500_0568",
+          "candidateId": "legacy-t1500_0568",
+          "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+          "name": "李司棋",
+          "decision": "reject",
+          "reason": "眼鏡反光、前景遮擋；重找",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0569": {
       "personId": "t1500_0569",
@@ -31141,7 +31708,20 @@
               "reviewType": "human_visual_preliminary_with_source_gaps",
               "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
             }
-          ]
+          ],
+          "chatgptReview": {
+            "personId": "t1500_0586",
+            "candidateId": "legacy-t1500_0586",
+            "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+            "name": "向海嵐",
+            "decision": "reject",
+            "reason": "嚴重模糊；重找",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "decisions"
+          }
         }
       ],
       "history": [
@@ -31291,9 +31871,10 @@
         "decision": "reject",
         "reason": "嚴重模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
-        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "decisions"
       },
       "lastAttemptAt": "2026-10-28T17:40:20.967544+00:00",
       "lastErrors": [
@@ -31310,7 +31891,22 @@
       },
       "updatedAt": "2026-10-28T17:40:41.469732+00:00",
       "lastRunId": "20261028T173620Z-5f60426f",
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "chatgptReviews": {
+        "legacy-t1500_0586": {
+          "personId": "t1500_0586",
+          "candidateId": "legacy-t1500_0586",
+          "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+          "name": "向海嵐",
+          "decision": "reject",
+          "reason": "嚴重模糊；重找",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "decisions"
+        }
+      }
     },
     "t1500_0587": {
       "personId": "t1500_0587",
@@ -33010,10 +33606,10 @@
     }
   },
   "chatgptReview": {
-    "sha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+    "sha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
     "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
     "sourceRun": "20261028T130409Z-86ed1960",
-    "receivedAt": "2026-10-28T17:27:34.892677+00:00",
+    "receivedAt": "2026-10-28T18:38:30.615388+00:00",
     "personIds": [
       "t1500_0174",
       "t1500_0196",
@@ -33034,9 +33630,150 @@
       "t1500_0568",
       "t1500_0586"
     ],
+    "candidateRefs": [
+      {
+        "personId": "t1500_0174",
+        "candidateId": "legacy-t1500_0174",
+        "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0196",
+        "candidateId": "legacy-t1500_0196",
+        "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0224",
+        "candidateId": "legacy-t1500_0224",
+        "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0255",
+        "candidateId": "legacy-t1500_0255",
+        "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0307",
+        "candidateId": "legacy-t1500_0307",
+        "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0308",
+        "candidateId": "legacy-t1500_0308",
+        "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0335",
+        "candidateId": "legacy-t1500_0335",
+        "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0350",
+        "candidateId": "legacy-t1500_0350",
+        "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0360",
+        "candidateId": "legacy-t1500_0360",
+        "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0393",
+        "candidateId": "legacy-t1500_0393",
+        "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0474",
+        "candidateId": "legacy-t1500_0474",
+        "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0481",
+        "candidateId": "legacy-t1500_0481",
+        "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0554",
+        "candidateId": "legacy-t1500_0554",
+        "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0559",
+        "candidateId": "legacy-t1500_0559",
+        "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0563",
+        "candidateId": "legacy-t1500_0563",
+        "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0564",
+        "candidateId": "legacy-t1500_0564",
+        "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+        "decision": "pending",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0568",
+        "candidateId": "legacy-t1500_0568",
+        "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0586",
+        "candidateId": "legacy-t1500_0586",
+        "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+        "decision": "reject",
+        "collection": "decisions"
+      },
+      {
+        "personId": "t1500_0307",
+        "candidateId": "source-recrop-1a20f122e98b8f930224",
+        "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+        "decision": "pending",
+        "collection": "newCandidates"
+      }
+    ],
     "counts": {
       "reject": 12,
-      "pending": 6
-    }
+      "pending": 7
+    },
+    "peopleCounts": {
+      "reviewed": 18,
+      "pending": 6,
+      "reject": 12
+    },
+    "changedCandidates": 1
   }
 }

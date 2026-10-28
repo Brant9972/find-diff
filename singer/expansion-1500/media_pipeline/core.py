@@ -236,7 +236,9 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
     other_images = [c for pid, p in read(directory / 'state.json', {'people': {}})['people'].items() if pid != row['personId'] for c in p['candidates']]
     for provider_index, provider in enumerate(providers):
         if deadline:
-            http.budget = min(deadline, time.monotonic() + max(1, (deadline-time.monotonic())/(len(providers)-provider_index)))
+            weights={'entity':4, 'commons':2, 'openverse':2, 'official':.2}
+            fraction=weights.get(provider.name,1)/sum(weights.get(p.name,1) for p in providers[provider_index:])
+            http.budget = min(deadline, time.monotonic() + max(1, (deadline-time.monotonic())*fraction))
         provider_tried = 0
         if len(ready(row)) >= max_candidates or (deadline and time.monotonic() >= deadline):
             break

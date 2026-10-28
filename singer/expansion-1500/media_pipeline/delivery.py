@@ -1,0 +1,311 @@
+"""Publish review pixels and absolute immutable GitHub links, never playable banks.
+
+Publishing has two phases: build_assets(), commit those assets, then publish_links()
+with that exact commit SHA. The latter verifies every referenced blob is committed.
+"""
+import copy
+import hashlib
+import io
+import json
+import re
+import subprocess
+from pathlib import Path
+from urllib.parse import quote, urlsplit
+
+from PIL import Image, ImageDraw, ImageFont, ImageOps
+
+from .core import atomic, contained, immutable_bytes, valid_reveal
+
+ACTIVE_CANDIDATE_STATES = {'pending_review', 'pending_evidence', 'legacy_requires_review', 'candidate_ready'}
+ACTIVE_PERSON_STATES = {'pending_review', 'candidate_ready'}
+STAGES = ('eyes', 'nose', 'mouth', 'chin', 'full')
+STAGE_NAMES = ('眼睛', '鼻子', '嘴巴', '下巴', '全臉')
+IMAGE_FORMATS = {'JPEG': ('.jpg', 'image/jpeg'), 'MPO': ('.jpg', 'image/jpeg'),
+                 'PNG': ('.png', 'image/png'), 'WEBP': ('.webp', 'image/webp')}
+
+
+def _json_bytes(value):
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + '\n').encode('utf-8')
+
+
+def _font(size):
+    for path in ('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
+                 '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'):
+        if Path(path).exists():
+            return ImageFont.truetype(path, size)
+    return ImageFont.load_default(size=size)
+
+
+def _asset(root, path, blob, mime, size):
+    immutable_bytes(path, blob)
+    return {'path': str(path.relative_to(root)), 'sha256': hashlib.sha256(blob).hexdigest(),
+            'mimeType': mime, 'width': size[0], 'height': size[1], 'bytes': len(blob)}
+
+
+def _copy_image(root, input_path, output_stem, expected_hash=None):
+    raw = input_path.read_bytes()
+    digest = hashlib.sha256(raw).hexdigest()
+    if expected_hash and expected_hash != digest:
+        raise ValueError('Source or candidate bytes changed: ' + str(input_path.relative_to(root)))
+    with Image.open(io.BytesIO(raw)) as image:
+        if image.width * image.height > 30_000_000:
+            raise ValueError('Review source exceeds 30 megapixels')
+        image.load()  # Test that the review pixels actually decode, not just the header.
+        image_format = image.format
+        size = image.size
+        if image_format not in IMAGE_FORMATS:
+            raise ValueError('Unsupported direct-review image format: ' + str(image_format))
+        display_size = ImageOps.exif_transpose(image).size
+    extension, mime = IMAGE_FORMATS[image_format]
+    result = _asset(root, output_stem.with_suffix(extension), raw, mime, size)
+    result['displayWidth'], result['displayHeight'] = display_size
+    return result
+
+
+def _rendered_asset(root, path, image, image_format='JPEG'):
+    stream = io.BytesIO()
+    image.save(stream, image_format, **({'quality': 94} if image_format == 'JPEG' else {}))
+    return _asset(root, path, stream.getvalue(), 'image/jpeg' if image_format == 'JPEG' else 'image/png', image.size)
+
+
+def _safe_https(value):
+    if not isinstance(value, str):
+        return None
+    try:
+        parsed = urlsplit(value)
+        if parsed.scheme == 'https' and parsed.hostname and not parsed.username and not parsed.password:
+            return value
+    except ValueError:
+        pass
+    return None
+
+
+def _metadata(person, candidate):
+    supplement = candidate.get('evidenceSupplement', {})
+    source = supplement.get('sourceMetadata', {})
+    return {
+        'sourcePage': _safe_https(candidate.get('source')),
+        'imageUrl': _safe_https(candidate.get('url')),
+        'originalSourceUrl': _safe_https(candidate.get('originalUrl')),
+        'author': candidate.get('artist') or source.get('artist'),
+        'credit': candidate.get('credit') or source.get('credit'),
+        'caption': candidate.get('caption') or source.get('caption'),
+        'license': candidate.get('license') or source.get('license'),
+        'licenseUrl': _safe_https(candidate.get('licenseUrl') or source.get('licenseUrl')),
+        'externalSourceLinks': [url for url in candidate.get('externalSourceLinks', []) if _safe_https(url)],
+        'originalDimensionsFromMetadata': [source.get('width'), source.get('height')],
+        'rightsStatus': candidate.get('rightsStatus'),
+        'identityEvidence': copy.deepcopy(candidate.get('identityEvidence')),
+        'recognitionEvidence': copy.deepcopy(candidate.get('recognitionEvidence')),
+        'sourceAlignmentEvidence': copy.deepcopy(candidate.get('sourceAlignmentEvidence')),
+        'evidenceSupplement': copy.deepcopy(supplement),
+        'warnings': copy.deepcopy(candidate.get('warnings', [])),
+        'reviewerRequest': candidate.get('evidenceRequest') or person.get('chatgptReview', {}).get('reason'),
+        'parentCandidateId': candidate.get('parentCandidateId'),
+        'parentGameSha256': candidate.get('parentGameSha256'),
+        'humanIdentityVerifiedByExporter': False,
+        'humanRightsVerifiedByExporter': False,
+    }
+
+
+def build_assets(root, directory, state, run_id):
+    """Build one immutable visual package after the batch, without mutating state.
+
+    root is the singer directory. Return a deterministic manifest whose paths are
+    relative to it. All active pending candidates are included, including retained
+    candidates from previous batches; rejected/superseded/approved/live ones are not.
+    """
+    root, directory = Path(root).resolve(), Path(directory).resolve()
+    if not directory.is_relative_to(root):
+        raise ValueError('Review directory must be inside singer')
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,119}', str(run_id)):
+        raise ValueError('Invalid visual package run ID')
+    output = directory / 'review-assets' / run_id
+    photos = []
+    for person_id, person in sorted(state['people'].items()):
+        if person.get('status') not in ACTIVE_PERSON_STATES:
+            continue
+        for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
+            if candidate.get('status') not in ACTIVE_CANDIDATE_STATES or not candidate.get('gamePath'):
+                continue
+            if not valid_reveal(candidate.get('reveal', {})):
+                raise ValueError('Invalid reveal for ' + person_id + '/' + candidate['id'])
+            number = len(photos) + 1
+            base = output / ('photo-' + str(number).zfill(4))
+            game_path = contained(root, candidate['gamePath'])
+            if not candidate.get('gameSha256'):
+                raise ValueError('Candidate requires a game SHA-256')
+            game = _copy_image(root, game_path, base / 'candidate', candidate['gameSha256'])
+            if (game['width'], game['height']) != (600, 720):
+                raise ValueError('Candidate is not 600x720')
+            stages = {}
+            with Image.open(game_path) as image:
+                image = image.convert('RGB')
+                for key in STAGES:
+                    x0, y0, x1, y1 = candidate['reveal'][key]
+                    box = (round(x0 * image.width), round(y0 * image.height),
+                           round(x1 * image.width), round(y1 * image.height))
+                    mask = Image.new('RGB', image.size, '#17151f')
+                    mask.paste(image.crop(box), box[:2])
+                    stages[key] = _rendered_asset(root, base / (key + '.png'), mask, 'PNG')
+            original = None
+            if candidate.get('originalPath'):
+                original = _copy_image(root, contained(root, candidate['originalPath']), base / 'source',
+                                       candidate.get('originalSha256'))
+            photos.append({'personId': person_id, 'name': person.get('name', ''),
+                           'candidateId': candidate['id'], 'gameSha256': candidate['gameSha256'],
+                           'reviewStatus': candidate['status'], 'eligibleForLive': False,
+                           'candidateImage': game, 'stageImages': stages, 'sourceImage': original,
+                           'reveal': copy.deepcopy(candidate['reveal']), 'metadata': _metadata(person, candidate)})
+    font, small_font = _font(18), _font(14)
+    contacts, reveal_sheets = [], []
+    for offset in range(0, len(photos), 20):
+        page = photos[offset:offset + 20]
+        sheet = Image.new('RGB', (960, ((len(page) + 3) // 4) * 315), '#17151f')
+        draw = ImageDraw.Draw(sheet)
+        entries = []
+        for index, photo in enumerate(page):
+            x, y = index % 4 * 240, index // 4 * 315
+            draw.text((x + 7, y + 4), f"{offset + index + 1}. {photo['name']}", font=font, fill='white')
+            draw.text((x + 7, y + 29), photo['personId'], font=small_font, fill='white')
+            with Image.open(contained(root, photo['candidateImage']['path'])) as image:
+                sheet.paste(image.convert('RGB').resize((210, 252)), (x + 15, y + 58))
+            entries.append({'tile': index + 1, 'personId': photo['personId'],
+                            'candidateId': photo['candidateId'], 'gameSha256': photo['gameSha256']})
+        item = _rendered_asset(root, output / f'contact-sheet-{offset // 20 + 1:02}.jpg', sheet)
+        item['entries'] = entries
+        contacts.append(item)
+    for offset in range(0, len(photos), 6):
+        page = photos[offset:offset + 6]
+        sheet = Image.new('RGB', (1000, 45 + len(page) * 235), '#17151f')
+        draw = ImageDraw.Draw(sheet)
+        for index, label in enumerate(STAGE_NAMES):
+            draw.text((190 + index * 160, 10), label, font=font, fill='white')
+        entries = []
+        for index, photo in enumerate(page):
+            y = 45 + index * 235
+            draw.text((8, y + 10), photo['name'], font=font, fill='white')
+            draw.text((8, y + 40), photo['personId'], font=small_font, fill='white')
+            draw.text((8, y + 65), photo['candidateId'][:22], font=small_font, fill='white')
+            for stage_index, key in enumerate(STAGES):
+                with Image.open(contained(root, photo['stageImages'][key]['path'])) as image:
+                    sheet.paste(image.convert('RGB').resize((160, 192)), (185 + stage_index * 160, y))
+            entries.append({'row': index + 1, 'personId': photo['personId'],
+                            'candidateId': photo['candidateId'], 'gameSha256': photo['gameSha256']})
+        item = _rendered_asset(root, output / f'reveal-sheet-{offset // 6 + 1:02}.jpg', sheet)
+        item['entries'] = entries
+        reveal_sheets.append(item)
+    manifest_path = output / 'assets-index.json'
+    manifest = {'schemaVersion': 1, 'runId': run_id, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE',
+                'assetManifestPath': str(manifest_path.relative_to(root)),
+                'sourceReviewSha256': state.get('chatgptReview', {}).get('sha256'),
+                'peopleCount': len({p['personId'] for p in photos}), 'photoCount': len(photos),
+                'contactSheets': contacts, 'revealSheets': reveal_sheets, 'photos': photos}
+    immutable_bytes(manifest_path, _json_bytes(manifest))
+    return manifest
+
+
+def _asset_objects(value):
+    if isinstance(value, dict):
+        if {'path', 'sha256', 'mimeType'}.issubset(value):
+            yield value
+        for child in value.values():
+            yield from _asset_objects(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from _asset_objects(child)
+
+
+def _markdown_text(value):
+    text = str(value or '').replace('\n', ' ').replace('\r', ' ')
+    for char in ('\\', '`', '*', '_', '[', ']', '<', '>', '#', '|'):
+        text = text.replace(char, '\\' + char)
+    return text
+
+
+def publish_links(root, directory, manifest, asset_commit, repository='Brant9972/find-diff'):
+    """Verify committed image bytes and publish fixed absolute image/metadata links.
+
+    The asset SHA must already exist locally and contain every manifest/image blob.
+    This prevents accidentally publishing a prior HEAD that lacks the new pixels.
+    Does not commit, push, modify state or approve any candidate.
+    """
+    root, directory = Path(root).resolve(), Path(directory).resolve()
+    if not directory.is_relative_to(root):
+        raise ValueError('Review directory must be inside singer')
+    if not re.fullmatch(r'[0-9a-fA-F]{40}', str(asset_commit)):
+        raise ValueError('Use a full immutable 40-character asset commit SHA')
+    if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository):
+        raise ValueError('Invalid GitHub repository identity')
+    asset_commit = asset_commit.lower()
+    repository_root = Path(subprocess.check_output(['git', '-C', str(root), 'rev-parse', '--show-toplevel'], text=True).strip()).resolve()
+    subprocess.check_output(['git', '-C', str(root), 'rev-parse', '--verify', asset_commit + '^{commit}'])
+    def git_path(path):
+        return contained(root, path).relative_to(repository_root).as_posix()
+    def urls(path):
+        relative = quote(git_path(path), safe='/')
+        base = f'https://github.com/{repository}/blob/{asset_commit}/{relative}'
+        return {'rawUrl': f'https://raw.githubusercontent.com/{repository}/{asset_commit}/{relative}',
+                'githubViewUrl': base, 'githubRawUrl': base + '?raw=true'}
+    assets = list(_asset_objects(manifest))
+    for item in assets:
+        committed = subprocess.check_output(['git', '-C', str(root), 'cat-file', 'blob', asset_commit + ':' + git_path(item['path'])], stderr=subprocess.DEVNULL)
+        if hashlib.sha256(committed).hexdigest() != item['sha256']:
+            raise ValueError('Asset commit does not contain the stated bytes: ' + item['path'])
+    committed_manifest = subprocess.check_output(['git', '-C', str(root), 'cat-file', 'blob', asset_commit + ':' + git_path(manifest['assetManifestPath'])], stderr=subprocess.DEVNULL)
+    if committed_manifest != _json_bytes(manifest):
+        raise ValueError('Asset manifest differs from the committed snapshot')
+    result = copy.deepcopy(manifest)
+    result['assetCommit'] = asset_commit
+    result['assetManifest'] = urls(manifest['assetManifestPath'])
+    for item in _asset_objects(result):
+        item.update(urls(item['path']))
+    result['reviewInstructions'] = [
+        'These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.',
+        'Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.',
+        'Match decisions to personId + candidateId + gameSha256. Do not approve by list position.',
+        'Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on the work branch.',
+    ]
+    lines = ['# 照片視覺審核入口', '',
+             f"批次 `{manifest['runId']}`：{manifest['peopleCount']} 位人物、{manifest['photoCount']} 張現行待審圖。",
+             f'所有圖片固定於資產 Commit `{asset_commit}`。沒有修改正式題庫或自動核准照片。', '',
+             '請先看總覽，再開每張候選圖與五階段預覽。若圖片工具無法開啟 raw 連結，使用旁邊的 GitHub 看圖頁；無法取得像素時保留待審，不得視為已目視。', '']
+    def image_line(label, item):
+        return [f"![{_markdown_text(label)}]({item['rawUrl']})", '',
+                f"[直接圖片]({item['rawUrl']}) · [GitHub 看圖頁]({item['githubViewUrl']}) · [GitHub 原圖]({item['githubRawUrl']})", '']
+    for number, sheet in enumerate(result['contactSheets'], 1):
+        lines += [f'## 照片總覽 {number}', ''] + image_line('照片總覽 ' + str(number), sheet)
+    for number, sheet in enumerate(result['revealSheets'], 1):
+        lines += [f'## 五階段總覽 {number}', ''] + image_line('五階段總覽 ' + str(number), sheet)
+    for photo in result['photos']:
+        name, cid, metadata = photo['name'], photo['candidateId'], photo['metadata']
+        lines += [f"## {_markdown_text(name)} · `{photo['personId']}` · `{_markdown_text(cid)}`", '',
+                  f"照片 SHA-256：`{photo['gameSha256']}`；狀態：`{photo['reviewStatus']}`。", '']
+        lines += image_line(name + ' 候選照片', photo['candidateImage'])
+        lines += ['| 眼睛 | 鼻子 | 嘴巴 | 下巴 | 全臉 |', '| --- | --- | --- | --- | --- |',
+                  '| ' + ' | '.join(f"![{label}]({photo['stageImages'][key]['rawUrl']})" for key, label in zip(STAGES, STAGE_NAMES)) + ' |', '',
+                  '五階段直接圖片：' + ' · '.join(f"[{label}]({photo['stageImages'][key]['rawUrl']})" for key, label in zip(STAGES, STAGE_NAMES)), '']
+        if photo['sourceImage']:
+            source = photo['sourceImage']
+            lines += [f"### {_markdown_text(name)} · 已保存來源圖片", '',
+                      f"下載副本 {source['width']}×{source['height']}；保留來源位元組，並非宣稱其為全尺寸原檔。", '']
+            lines += image_line(name + ' 來源圖片', source)
+        else:
+            lines += ['來源圖片尚未保存；請核對下方來源頁，不可把候選裁切當成原圖證據。', '']
+        for title, key in [('來源頁', 'sourcePage'), ('下載圖片網址', 'imageUrl'), ('原始來源網址', 'originalSourceUrl'), ('授權條款', 'licenseUrl')]:
+            if metadata.get(key):
+                url = metadata[key].replace('>', '%3E').replace('<', '%3C').replace('\n', '%0A').replace('\r', '%0D')
+                lines.append(f'- [{title}](<{url}>)')
+        lines += [f"- 作者／提供者：{_markdown_text(metadata.get('author') or '待確認')}",
+                  f"- 授權紀錄：{_markdown_text(metadata.get('license') or '待確認')}；仍需人工核對來源是否適用。",
+                  f"- 人物圖說：{_markdown_text(metadata.get('caption') or '來源未提供具名圖說，需補核')} ",
+                  f"- 審核要求：{_markdown_text(metadata.get('reviewerRequest') or '核對人物、辨識度、來源權利與五階段')} ",
+                  f"- 風險：{_markdown_text('；'.join(str(x) for x in metadata.get('warnings', []) if x) or '仍需獨立視覺與來源審核')}", '']
+    lines += [f"[固定資產索引 JSON]({result['assetManifest']['rawUrl']})", '',
+              '本頁只有待審成果。所有決定需綁定人物 ID、候選 ID 與照片 SHA；不得自動整合 main 或部署。', '']
+    output = directory / 'review-public'
+    atomic(output / 'latest.json', result)
+    markdown = '\n'.join(lines)
+    output.mkdir(parents=True, exist_ok=True)
+    (output / 'latest.md').write_text(markdown, encoding='utf-8')
+    return result

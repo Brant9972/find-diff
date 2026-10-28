@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1498,
-    "currentlyLiveUnique": 1054,
-    "publishedFromPlan": 67,
-    "remainingSelectedNovel": 444,
+    "currentlyLiveUnique": 1058,
+    "publishedFromPlan": 71,
+    "remainingSelectedNovel": 440,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 2
   },
@@ -3978,35 +3978,38 @@
       ],
       "acceptedAnswers": [
         "瑪莎",
-        "蔡昇晏"
+        "蔡昇晏",
+        "五月天瑪莎",
+        "Masa"
       ],
       "categories": [
         "歌手"
       ],
       "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
-        "倔強"
+        "最重要的小事"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "瑪莎 藝人 正面 清晰 肖像",
         "蔡昇晏 portrait"
       ],
-      "photoStatus": "requires_alternative_photo",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
         "rightsDocumented": true,
         "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "verified_band_member_but_photo_ambiguous",
-      "qaStatus": "blocked_by_existing_photo_rejection",
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
       "preferredImageQuery": "瑪莎 五月天 經典時期 歌手 獨照 正面 清晰 無浮水印",
       "portraitSource": "https://commons.wikimedia.org/wiki/File:X06Taiwan_20061105-36_(cropped).jpg",
-      "rightsNote": "CC BY-SA 3.0 Wikimedia Commons, attribution in questions.json"
+      "rightsNote": "CC BY-SA 3.0 Wikimedia Commons; credited in questions.json",
+      "publishedQuestionId": "t1500_0169"
     },
     {
       "candidateId": "c1500-0170",
@@ -10138,30 +10141,36 @@
       "name": "江若琳",
       "aliases": [],
       "acceptedAnswers": [
-        "江若琳"
+        "江若琳",
+        "Elanne Kong"
       ],
       "categories": [
         "演員"
       ],
-      "proposedPrimaryBank": "actors.json",
-      "representativeWorks": [],
+      "proposedPrimaryBank": "questions.json",
+      "representativeWorks": [
+        "錯愛"
+      ],
       "priority": "B",
       "photoSearchKeywords": [
         "江若琳 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "missing",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "江若琳  角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "江若琳  角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0358",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Elaine_Kong02.JPG",
+      "rightsNote": "CC BY-SA 3.0 Wikimedia Commons; credited in questions.json"
     },
     {
       "candidateId": "c1500-0359",
@@ -14820,32 +14829,36 @@
       ],
       "acceptedAnswers": [
         "陳鳳桂",
-        "小咪"
+        "小咪",
+        "小咪老師"
       ],
       "categories": [
         "綜藝"
       ],
-      "proposedPrimaryBank": "variety.json",
+      "proposedPrimaryBank": "actors.json",
       "representativeWorks": [
-        "歌仔戲《韓信》"
+        "韓信"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "陳鳳桂 小咪 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "陳鳳桂 歌仔戲《韓信》 綜藝 節目 單人 特寫 正面 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "陳鳳桂 歌仔戲《韓信》 綜藝 節目 單人 特寫 正面 無浮水印",
+      "publishedQuestionId": "t1500_0499",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E9%B3%B3%E6%A1%82%E8%82%96%E5%83%8F.jpg",
+      "rightsNote": "CC BY 2.0 Wikimedia Commons; credited in questions.json"
     },
     {
       "candidateId": "c1500-0500",
@@ -17939,7 +17952,8 @@
       "name": "葉子楣",
       "aliases": [],
       "acceptedAnswers": [
-        "葉子楣"
+        "葉子楣",
+        "Amy Yip"
       ],
       "categories": [
         "演員"
@@ -17952,19 +17966,22 @@
       "photoSearchKeywords": [
         "葉子楣 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "葉子楣 跛豪 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_pending",
+      "preferredImageQuery": "葉子楣 跛豪 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0593",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:%E8%91%89%E5%AD%90%E6%A5%A3.png",
+      "rightsNote": "CC BY 3.0 Wikimedia Commons; credited in questions.json"
     },
     {
       "candidateId": "c1500-0594",
@@ -18290,7 +18307,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 67,
+    "published": 71,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18358,9 +18375,13 @@
       "傅穎",
       "吳雨霏",
       "周柏豪",
-      "林美照"
+      "林美照",
+      "瑪莎",
+      "江若琳",
+      "陳鳳桂",
+      "葉子楣"
     ],
-    "pendingPhotoAndHintReview": 444,
-    "latestCommit": "pending-batch10"
+    "pendingPhotoAndHintReview": 440,
+    "latestCommit": "pending-batch11"
   }
 }

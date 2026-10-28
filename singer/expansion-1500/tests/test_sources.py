@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import Official, Openverse, Wikimedia, rights
+from media_pipeline.sources import CommonsSearch, Official, Openverse, Wikimedia, rights
 
 
 class FixtureHTTP:
@@ -32,6 +32,16 @@ class SourcesTest(unittest.TestCase):
         self.assertEqual(rows[0]['recognitionEvidence']['matchedWorks'], ['代表作'])
         self.assertTrue(any('wikidata.org' in url for url, _ in http.calls))
         self.assertTrue(any(p.get('generator') == 'search' for _, p in http.calls))
+
+    def test_commons_bulk_search_does_not_depend_on_wikipedia(self):
+        class Bulk:
+            def json(self,url,**params):
+                assert url=='https://commons.wikimedia.org/w/api.php'
+                assert params['prop']=='imageinfo'
+                return {'query':{'pages':[{'title':'File:測試人物.jpg','imageinfo':[{'descriptionurl':'https://commons.wikimedia.org/wiki/File:測試人物.jpg','url':'https://upload.wikimedia.org/a.jpg','extmetadata':{'Artist':{'value':'Photographer'},'LicenseShortName':{'value':'CC BY 4.0'},'LicenseUrl':{'value':'http://creativecommons.org/licenses/by/4.0/'}}}]}]}}
+        rows=list(CommonsSearch().search({'name':'測試人物'},Bulk()))
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rights(rows[0]),'open_license_metadata')
 
     def test_openverse_preserves_original_landing_page_and_rights_warning(self):
         class API:

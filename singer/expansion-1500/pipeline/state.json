@@ -6926,9 +6926,9 @@
       "personId": "t1500_0174",
       "candidateId": "c1500-0174",
       "name": "鳳小岳",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:05.010689+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0174",
@@ -6972,20 +6972,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0174",
+              "candidateId": "legacy-t1500_0174",
+              "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+              "name": "鳳小岳",
+              "decision": "reject",
+              "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:04.972650+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:04.988291+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:04.988322+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:04.999956+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:04.999979+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.010652+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.010670+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.010676+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.010679+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0174",
         "name": "鳳小岳",
@@ -7042,7 +7103,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0174",
+        "candidateId": "legacy-t1500_0174",
+        "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+        "name": "鳳小岳",
+        "decision": "reject",
+        "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:04.932225+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:05.010710+00:00"
     },
     "t1500_0175": {
       "personId": "t1500_0175",
@@ -7943,9 +8040,9 @@
       "personId": "t1500_0196",
       "candidateId": "c1500-0196",
       "name": "蔡亘晏",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:05.117054+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0196",
@@ -7989,20 +8086,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0196",
+              "candidateId": "legacy-t1500_0196",
+              "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+              "name": "蔡亘晏",
+              "decision": "reject",
+              "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:05.116754+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.116941+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.116946+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.116988+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.116991+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.117037+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.117040+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.117044+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.117046+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0196",
         "name": "蔡亘晏",
@@ -8059,7 +8217,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0196",
+        "candidateId": "legacy-t1500_0196",
+        "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+        "name": "蔡亘晏",
+        "decision": "reject",
+        "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:05.067358+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:05.117063+00:00"
     },
     "t1500_0197": {
       "personId": "t1500_0197",
@@ -9175,9 +9369,9 @@
       "personId": "t1500_0224",
       "candidateId": "c1500-0224",
       "name": "丁國琳",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:05.203115+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0224",
@@ -9221,20 +9415,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0224",
+              "candidateId": "legacy-t1500_0224",
+              "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+              "name": "丁國琳",
+              "decision": "reject",
+              "reason": "麥克風遮嘴；找八點檔清晰正面照",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:05.202751+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.202918+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.202924+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.203047+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.203052+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.203100+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.203103+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:05.203107+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:05.203109+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0224",
         "name": "丁國琳",
@@ -9291,7 +9546,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0224",
+        "candidateId": "legacy-t1500_0224",
+        "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+        "name": "丁國琳",
+        "decision": "reject",
+        "reason": "麥克風遮嘴；找八點檔清晰正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:05.163225+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:05.203123+00:00"
     },
     "t1500_0225": {
       "personId": "t1500_0225",
@@ -10320,8 +10611,8 @@
       "candidateId": "c1500-0255",
       "name": "林采緹",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T23:30:05.587426+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0255",
@@ -10365,7 +10656,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -10375,7 +10666,90 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0255",
+              "candidateId": "legacy-t1500_0255",
+              "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+              "name": "林采緹",
+              "decision": "pending",
+              "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/chin.png",
+            "full": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.2762669255183293,
+                0.92,
+                0.43735372103177583
+              ],
+              "nose": [
+                0.08,
+                0.2762669255183293,
+                0.92,
+                0.5776716965895433
+              ],
+              "mouth": [
+                0.08,
+                0.2762669255183293,
+                0.92,
+                0.6843377568171574
+              ],
+              "chin": [
+                0.08,
+                0.2762669255183293,
+                0.92,
+                0.7939751821664665
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+            "attemptedAt": "2026-10-28T17:30:05.248276+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "proxy_access_denied",
+                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
         }
       ],
       "history": [],
@@ -10435,7 +10809,26 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0255",
+        "candidateId": "legacy-t1500_0255",
+        "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+        "name": "林采緹",
+        "decision": "pending",
+        "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:30:05.587408+00:00"
     },
     "t1500_0256": {
       "personId": "t1500_0256",
@@ -12754,8 +13147,8 @@
       "candidateId": "c1500-0307",
       "name": "李妍瑾",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 2,
+      "nextRetryAt": "2026-10-28T23:32:04.805824+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0307",
@@ -12799,7 +13192,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -12809,7 +13202,363 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0307",
+              "candidateId": "legacy-t1500_0307",
+              "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+              "name": "李妍瑾",
+              "decision": "pending",
+              "reason": "裁掉背景第二張人臉，補來源及解析度",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
+          "evidenceAttempts": 2,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/chin.png",
+            "full": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.2819947513848244,
+                0.92,
+                0.42108649314446595
+              ],
+              "nose": [
+                0.08,
+                0.2819947513848244,
+                0.92,
+                0.5449499685230064
+              ],
+              "mouth": [
+                0.08,
+                0.2819947513848244,
+                0.92,
+                0.6691981388972356
+              ],
+              "chin": [
+                0.08,
+                0.2819947513848244,
+                0.92,
+                0.8035741473041649
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "裁掉背景第二張人臉，補來源及解析度",
+            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "network_error",
+                "message": "<urlopen error [Errno 1] Operation not permitted>"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
+        },
+        {
+          "id": "recrop-3465c04fd55149210d96",
+          "personId": "t1500_0307",
+          "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+          "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+          "artist": "Rico Shen",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0307/recrop-3465c04fd5514921/game.jpg",
+          "gameSha256": "3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b",
+          "reveal": {
+            "eyes": [
+              0,
+              0.2772019786764991,
+              0.8883720930232558,
+              0.47128347880623156
+            ],
+            "nose": [
+              0,
+              0.2772019786764991,
+              0.8883720930232558,
+              0.644116235148381
+            ],
+            "mouth": [
+              0,
+              0.2772019786764991,
+              0.8883720930232558,
+              0.817485775205445
+            ],
+            "chin": [
+              0,
+              0.2772019786764991,
+              0.8883720930232558,
+              1
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "status": "superseded",
+          "rightsStatus": "needs_review",
+          "warnings": [
+            "Derived from the reviewed crop; no added source resolution. Main face/removed background and rights require fresh ChatGPT review.",
+            "Superseded before external review: crop margin was too tight around the eye"
+          ],
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "resampledFromExistingCrop": true
+          },
+          "humanReview": null,
+          "eligibleForLive": false,
+          "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b/chin.png",
+            "full": "expansion-1500/pipeline/evidence/3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0,
+                0.2772019786764991,
+                0.8883720930232558,
+                0.47128347880623156
+              ],
+              "nose": [
+                0,
+                0.2772019786764991,
+                0.8883720930232558,
+                0.644116235148381
+              ],
+              "mouth": [
+                0,
+                0.2772019786764991,
+                0.8883720930232558,
+                0.817485775205445
+              ],
+              "chin": [
+                0,
+                0.2772019786764991,
+                0.8883720930232558,
+                1
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "parentCandidateId": "legacy-t1500_0307",
+          "parentGameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+          "transformation": "remove_background_face_v1",
+          "cropBoxInParent": [
+            170,
+            60,
+            600,
+            576
+          ],
+          "evidenceSupplement": {
+            "requested": "裁掉背景第二張人臉，補來源及解析度",
+            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "network_error",
+                "message": "<urlopen error [Errno 1] Operation not permitted>"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
+        },
+        {
+          "id": "recrop-6deff70fcf28ea33873b",
+          "personId": "t1500_0307",
+          "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+          "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+          "artist": "Rico Shen",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0307/recrop-6deff70fcf28ea33/game.jpg",
+          "gameSha256": "6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196",
+          "reveal": {
+            "eyes": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.4843657359291054
+            ],
+            "nose": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.6424893215187315
+            ],
+            "mouth": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.8011040071028539
+            ],
+            "chin": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.9726478476223381
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "status": "pending_review",
+          "rightsStatus": "needs_review",
+          "warnings": [
+            "Derived from the reviewed crop; no added source resolution. Main face/removed background and rights require fresh ChatGPT review."
+          ],
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "resampledFromExistingCrop": true
+          },
+          "humanReview": null,
+          "eligibleForLive": false,
+          "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
+          "evidenceAttempts": 2,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196/chin.png",
+            "full": "expansion-1500/pipeline/evidence/6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.4843657359291054
+              ],
+              "nose": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.6424893215187315
+              ],
+              "mouth": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.8011040071028539
+              ],
+              "chin": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.9726478476223381
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "裁掉背景第二張人臉，補來源及解析度",
+            "attemptedAt": "2026-10-28T17:32:02.131283+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "network_error",
+                "message": "<urlopen error [Errno 1] Operation not permitted>"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          },
+          "parentCandidateId": "legacy-t1500_0307",
+          "parentGameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+          "transformation": "remove_background_face_v2",
+          "cropBoxInParent": [
+            130,
+            30,
+            600,
+            594
+          ]
         }
       ],
       "history": [],
@@ -12869,15 +13618,34 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0307",
+        "candidateId": "legacy-t1500_0307",
+        "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+        "name": "李妍瑾",
+        "decision": "pending",
+        "reason": "裁掉背景第二張人臉，補來源及解析度",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "network_error",
+          "message": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:32:04.805808+00:00"
     },
     "t1500_0308": {
       "personId": "t1500_0308",
       "candidateId": "c1500-0308",
       "name": "曹晏豪",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:06.483905+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0308",
@@ -12921,20 +13689,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0308",
+              "candidateId": "legacy-t1500_0308",
+              "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+              "name": "曹晏豪",
+              "decision": "reject",
+              "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:06.483597+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.483747+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.483753+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.483790+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.483793+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.483866+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.483869+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.483872+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.483875+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0308",
         "name": "曹晏豪",
@@ -12991,7 +13820,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0308",
+        "candidateId": "legacy-t1500_0308",
+        "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+        "name": "曹晏豪",
+        "decision": "reject",
+        "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:06.439673+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:06.483916+00:00"
     },
     "t1500_0309": {
       "personId": "t1500_0309",
@@ -14184,9 +15049,9 @@
       "personId": "t1500_0335",
       "candidateId": "c1500-0335",
       "name": "李思捷",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:06.564559+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0335",
@@ -14230,20 +15095,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0335",
+              "candidateId": "legacy-t1500_0335",
+              "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+              "name": "李思捷",
+              "decision": "reject",
+              "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:06.564320+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.564454+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.564460+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.564498+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.564500+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.564544+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.564547+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.564549+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.564552+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0335",
         "name": "李思捷",
@@ -14300,7 +15226,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0335",
+        "candidateId": "legacy-t1500_0335",
+        "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+        "name": "李思捷",
+        "decision": "reject",
+        "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:06.526916+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:06.564567+00:00"
     },
     "t1500_0336": {
       "personId": "t1500_0336",
@@ -15292,9 +16254,9 @@
       "personId": "t1500_0350",
       "candidateId": "c1500-0350",
       "name": "陳惠婷",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:06.646542+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0350",
@@ -15338,20 +16300,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0350",
+              "candidateId": "legacy-t1500_0350",
+              "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+              "name": "陳惠婷",
+              "decision": "reject",
+              "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:06.646312+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.646441+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.646446+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.646483+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.646486+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.646529+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.646531+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:06.646535+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:06.646536+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0350",
         "name": "陳惠婷",
@@ -15408,7 +16431,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0350",
+        "candidateId": "legacy-t1500_0350",
+        "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+        "name": "陳惠婷",
+        "decision": "reject",
+        "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:06.608568+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:06.646551+00:00"
     },
     "t1500_0351": {
       "personId": "t1500_0351",
@@ -16144,8 +17203,8 @@
       "candidateId": "c1500-0360",
       "name": "林德信",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T23:30:07.046734+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0360",
@@ -16189,7 +17248,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -16199,7 +17258,90 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0360",
+              "candidateId": "legacy-t1500_0360",
+              "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+              "name": "林德信",
+              "decision": "pending",
+              "reason": "補來源授權、人物證據、正面五官預覽",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "補來源授權、人物證據、正面五官預覽",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/chin.png",
+            "full": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.27455781210221486,
+                0.92,
+                0.41736723983360646
+              ],
+              "nose": [
+                0.08,
+                0.27455781210221486,
+                0.92,
+                0.5532212733251257
+              ],
+              "mouth": [
+                0.08,
+                0.27455781210221486,
+                0.92,
+                0.6980066551938805
+              ],
+              "chin": [
+                0.08,
+                0.27455781210221486,
+                0.92,
+                0.8429977559946219
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "補來源授權、人物證據、正面五官預覽",
+            "attemptedAt": "2026-10-28T17:30:06.688787+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "proxy_access_denied",
+                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
         }
       ],
       "history": [],
@@ -16257,7 +17399,26 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0360",
+        "candidateId": "legacy-t1500_0360",
+        "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+        "name": "林德信",
+        "decision": "pending",
+        "reason": "補來源授權、人物證據、正面五官預覽",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:30:07.046717+00:00"
     },
     "t1500_0361": {
       "personId": "t1500_0361",
@@ -17515,9 +18676,9 @@
       "personId": "t1500_0393",
       "candidateId": "c1500-0393",
       "name": "吳蓓雅",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:07.134363+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0393",
@@ -17561,20 +18722,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0393",
+              "candidateId": "legacy-t1500_0393",
+              "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+              "name": "吳蓓雅",
+              "decision": "reject",
+              "reason": "低頭、麥克風遮嘴、模糊；重找",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:07.134005+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.134257+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.134263+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.134301+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.134304+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.134349+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.134352+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.134355+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.134357+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0393",
         "name": "吳蓓雅",
@@ -17629,7 +18851,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0393",
+        "candidateId": "legacy-t1500_0393",
+        "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+        "name": "吳蓓雅",
+        "decision": "reject",
+        "reason": "低頭、麥克風遮嘴、模糊；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:07.094132+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:07.134371+00:00"
     },
     "t1500_0394": {
       "personId": "t1500_0394",
@@ -20725,8 +21983,8 @@
       "candidateId": "c1500-0474",
       "name": "蔡黃汝",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T23:30:07.567617+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0474",
@@ -20770,7 +22028,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -20780,7 +22038,90 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0474",
+              "candidateId": "legacy-t1500_0474",
+              "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+              "name": "蔡黃汝",
+              "decision": "pending",
+              "reason": "確認舊照解析度、來源授權與辨識度",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "確認舊照解析度、來源授權與辨識度",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/chin.png",
+            "full": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.28158136676138906,
+                0.92,
+                0.4227842622901578
+              ],
+              "nose": [
+                0.08,
+                0.28158136676138906,
+                0.92,
+                0.5420968597368451
+              ],
+              "mouth": [
+                0.08,
+                0.28158136676138906,
+                0.92,
+                0.6631893479943447
+              ],
+              "chin": [
+                0.08,
+                0.28158136676138906,
+                0.92,
+                0.8027081901321083
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "確認舊照解析度、來源授權與辨識度",
+            "attemptedAt": "2026-10-28T17:30:07.184183+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "proxy_access_denied",
+                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
         }
       ],
       "history": [],
@@ -20840,7 +22181,26 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0474",
+        "candidateId": "legacy-t1500_0474",
+        "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+        "name": "蔡黃汝",
+        "decision": "pending",
+        "reason": "確認舊照解析度、來源授權與辨識度",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:30:07.567601+00:00"
     },
     "t1500_0475": {
       "personId": "t1500_0475",
@@ -21122,9 +22482,9 @@
       "personId": "t1500_0481",
       "candidateId": "c1500-0481",
       "name": "關心妍",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:07.652758+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0481",
@@ -21168,20 +22528,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0481",
+              "candidateId": "legacy-t1500_0481",
+              "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+              "name": "關心妍",
+              "decision": "reject",
+              "reason": "年代久且柔焦；重找高清正面照",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:07.652524+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.652656+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.652660+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.652699+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.652702+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.652744+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.652746+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.652750+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.652752+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0481",
         "name": "關心妍",
@@ -21236,7 +22657,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0481",
+        "candidateId": "legacy-t1500_0481",
+        "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+        "name": "關心妍",
+        "decision": "reject",
+        "reason": "年代久且柔焦；重找高清正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:07.611998+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:07.652766+00:00"
     },
     "t1500_0482": {
       "personId": "t1500_0482",
@@ -23858,9 +25315,9 @@
       "personId": "t1500_0554",
       "candidateId": "c1500-0554",
       "name": "黃日華",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:07.737564+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0554",
@@ -23904,20 +25361,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0554",
+              "candidateId": "legacy-t1500_0554",
+              "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+              "name": "黃日華",
+              "decision": "reject",
+              "reason": "側臉模糊；找經典角色正面照",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:07.737338+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.737462+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.737467+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.737504+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.737507+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.737551+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.737553+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.737556+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.737558+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0554",
         "name": "黃日華",
@@ -23974,7 +25492,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0554",
+        "candidateId": "legacy-t1500_0554",
+        "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+        "name": "黃日華",
+        "decision": "reject",
+        "reason": "側臉模糊；找經典角色正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:07.698993+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:07.737572+00:00"
     },
     "t1500_0555": {
       "personId": "t1500_0555",
@@ -24196,9 +25750,9 @@
       "personId": "t1500_0559",
       "candidateId": "c1500-0559",
       "name": "蔡一傑",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:07.823362+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0559",
@@ -24242,20 +25796,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0559",
+              "candidateId": "legacy-t1500_0559",
+              "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+              "name": "蔡一傑",
+              "decision": "reject",
+              "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:07.823139+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.823260+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.823264+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.823301+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.823304+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.823348+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.823350+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:07.823354+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:07.823356+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0559",
         "name": "蔡一傑",
@@ -24312,7 +25927,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0559",
+        "candidateId": "legacy-t1500_0559",
+        "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+        "name": "蔡一傑",
+        "decision": "reject",
+        "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:07.783316+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:07.823369+00:00"
     },
     "t1500_0560": {
       "personId": "t1500_0560",
@@ -24597,8 +26248,8 @@
       "candidateId": "c1500-0563",
       "name": "鄭丹瑞",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T23:30:08.205265+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0563",
@@ -24642,7 +26293,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -24652,7 +26303,90 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0563",
+              "candidateId": "legacy-t1500_0563",
+              "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+              "name": "鄭丹瑞",
+              "decision": "pending",
+              "reason": "補原圖解析度、身分證據與授權",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "補原圖解析度、身分證據與授權",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/chin.png",
+            "full": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.27816659930262466,
+                0.92,
+                0.4272113852146363
+              ],
+              "nose": [
+                0.08,
+                0.27816659930262466,
+                0.92,
+                0.564926656859055
+              ],
+              "mouth": [
+                0.08,
+                0.27816659930262466,
+                0.92,
+                0.7105391228868313
+              ],
+              "chin": [
+                0.08,
+                0.27816659930262466,
+                0.92,
+                0.866726254823537
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "補原圖解析度、身分證據與授權",
+            "attemptedAt": "2026-10-28T17:30:07.869762+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "proxy_access_denied",
+                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
         }
       ],
       "history": [],
@@ -24712,15 +26446,34 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0563",
+        "candidateId": "legacy-t1500_0563",
+        "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+        "name": "鄭丹瑞",
+        "decision": "pending",
+        "reason": "補原圖解析度、身分證據與授權",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:30:08.205248+00:00"
     },
     "t1500_0564": {
       "personId": "t1500_0564",
       "candidateId": "c1500-0564",
       "name": "葛民輝",
       "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T23:30:08.546740+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0564",
@@ -24764,7 +26517,7 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "pending_evidence",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
@@ -24774,7 +26527,90 @@
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0564",
+              "candidateId": "legacy-t1500_0564",
+              "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+              "name": "葛民輝",
+              "decision": "pending",
+              "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ],
+          "evidenceRequest": "測試鬍鬚遮下巴、麥克風位置與授權",
+          "evidenceAttempts": 1,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/chin.png",
+            "full": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.2854038188983868,
+                0.92,
+                0.4168280894622142
+              ],
+              "nose": [
+                0.08,
+                0.2854038188983868,
+                0.92,
+                0.5377619194261956
+              ],
+              "mouth": [
+                0.08,
+                0.2854038188983868,
+                0.92,
+                0.6616981473319974
+              ],
+              "chin": [
+                0.08,
+                0.2854038188983868,
+                0.92,
+                0.7926590322519277
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "測試鬍鬚遮下巴、麥克風位置與授權",
+            "attemptedAt": "2026-10-28T17:30:08.250067+00:00",
+            "status": "incomplete",
+            "errors": [
+              {
+                "code": "proxy_access_denied",
+                "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+              }
+            ],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review",
+              "Source author/licence/resolution metadata unavailable",
+              "Original/source image download unavailable"
+            ]
+          }
         }
       ],
       "history": [],
@@ -24834,7 +26670,26 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0564",
+        "candidateId": "legacy-t1500_0564",
+        "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+        "name": "葛民輝",
+        "decision": "pending",
+        "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastErrors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastEvidenceAttemptAt": "2026-10-28T17:30:08.546723+00:00"
     },
     "t1500_0565": {
       "personId": "t1500_0565",
@@ -24933,9 +26788,9 @@
       "personId": "t1500_0568",
       "candidateId": "c1500-0568",
       "name": "李司棋",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:08.632805+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0568",
@@ -24979,20 +26834,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0568",
+              "candidateId": "legacy-t1500_0568",
+              "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+              "name": "李司棋",
+              "decision": "reject",
+              "reason": "眼鏡反光、前景遮擋；重找",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:08.632553+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.632702+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.632707+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.632745+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.632748+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.632792+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.632794+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.632797+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.632799+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0568",
         "name": "李司棋",
@@ -25049,7 +26965,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0568",
+        "candidateId": "legacy-t1500_0568",
+        "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+        "name": "李司棋",
+        "decision": "reject",
+        "reason": "眼鏡反光、前景遮擋；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:08.593823+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:08.632814+00:00"
     },
     "t1500_0569": {
       "personId": "t1500_0569",
@@ -26411,9 +28363,9 @@
       "personId": "t1500_0586",
       "candidateId": "c1500-0586",
       "name": "向海嵐",
-      "status": "pending_review",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T19:30:08.720651+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0586",
@@ -26457,20 +28409,81 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
           },
           "humanReview": null,
-          "eligibleForLive": false
+          "eligibleForLive": false,
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0586",
+              "candidateId": "legacy-t1500_0586",
+              "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+              "name": "向海嵐",
+              "decision": "reject",
+              "reason": "嚴重模糊；重找",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+            }
+          ]
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T17:30:08.720296+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.720541+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.720548+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.720589+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.720592+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.720636+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.720639+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T17:30:08.720642+00:00"
+        },
+        {
+          "time": "2026-10-28T17:30:08.720644+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "openverse",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            },
+            {
+              "provider": "wikimedia",
+              "code": "proxy_access_denied",
+              "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0586",
         "name": "向海嵐",
@@ -26527,7 +28540,43 @@
             1
           ]
         }
-      }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0586",
+        "candidateId": "legacy-t1500_0586",
+        "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+        "name": "向海嵐",
+        "decision": "reject",
+        "reason": "嚴重模糊；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "lastAttemptAt": "2026-10-28T17:30:08.678139+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T17:30:08.720659+00:00"
     },
     "t1500_0587": {
       "personId": "t1500_0587",
@@ -28224,6 +30273,36 @@
         },
         "reviewNote": "林美照節目演出近照，臉部清楚可辨"
       }
+    }
+  },
+  "chatgptReview": {
+    "sha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+    "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+    "sourceRun": "20261028T130409Z-86ed1960",
+    "receivedAt": "2026-10-28T17:27:34.892677+00:00",
+    "personIds": [
+      "t1500_0174",
+      "t1500_0196",
+      "t1500_0224",
+      "t1500_0255",
+      "t1500_0307",
+      "t1500_0308",
+      "t1500_0335",
+      "t1500_0350",
+      "t1500_0360",
+      "t1500_0393",
+      "t1500_0474",
+      "t1500_0481",
+      "t1500_0554",
+      "t1500_0559",
+      "t1500_0563",
+      "t1500_0564",
+      "t1500_0568",
+      "t1500_0586"
+    ],
+    "counts": {
+      "reject": 12,
+      "pending": 6
     }
   }
 }

@@ -9,6 +9,7 @@ on:
       - singer/expansion-1500/validate_pipeline.py
       - singer/expansion-1500/requirements-media.txt
       - singer/expansion-1500/recover_pipeline.py
+      - singer/expansion-1500/pipeline/chatgpt-review/latest.json
       - .github/workflows/expansion1500-draft-media.yml
   workflow_dispatch:
     inputs:
@@ -79,6 +80,11 @@ jobs:
         run: |
           set -euo pipefail
           extra=()
+          if [ -f singer/expansion-1500/pipeline/chatgpt-review/latest.json ]; then
+            extra+=(--review-round)
+            BATCH_LIMIT=$(python -c "import json; print(len(json.load(open('singer/expansion-1500/pipeline/chatgpt-review/latest.json'))['decisions']))")
+            BATCH_MINUTES=25
+          fi
           if [ "$RETRY_FAILED" = "true" ]; then extra+=(--retry-failed); fi
           python singer/expansion-1500/prepare_media.py --limit "$BATCH_LIMIT" --max-minutes "$BATCH_MINUTES" --live-ref origin/main "${extra[@]}"
       - name: Validate candidates

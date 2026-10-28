@@ -11,7 +11,7 @@ from .sources import now
 def contact_sheets(root, out, people):
     from PIL import Image, ImageDraw, ImageFont
     from pathlib import Path
-    rows = [(p, c) for p in people if p['status'] == 'pending_review' for c in p['candidates'] if c.get('gamePath') and c.get('status') not in {'rejected', 'metadata_only'}]
+    rows = [(p, c) for p in people if p['status'] == 'pending_review' for c in p['candidates'] if c.get('gamePath') and c.get('status') in {'pending_review', 'pending_evidence', 'legacy_requires_review'}]
     font_path = next((p for p in [Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'), Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')] if p.exists()), None)
     font = ImageFont.truetype(str(font_path), 16) if font_path else ImageFont.load_default(size=16)
     mapping, sheets = [], []
@@ -45,11 +45,11 @@ def report(root, directory, state, run_id, scanned):
     sheets = contact_sheets(root, out, people)
     failures = [{'personId': p['personId'], 'name': p['name'], 'status': p['status'], 'nextRetryAt': p.get('nextRetryAt'), 'errors': p.get('lastErrors', []), 'legacyFailure': p.get('lastFailure')} for p in people if p['status'] in {'download_failed', 'no_suitable_source', 'rejected'}]
     summary = {'runId': run_id, 'generatedAt': now(), 'scannedPeople': len(scanned),
-               'peopleWithNewCandidates': sum(any(c.get('status') == 'pending_review' for c in p['candidates']) for p in selected),
-               'newCandidatePhotos': sum(c.get('status') == 'pending_review' for p in selected for c in p['candidates']),
-               'scannedWithoutCandidates': sum(not any(c.get('status') == 'pending_review' for c in p['candidates']) for p in selected),
+               'peopleWithNewCandidates': sum(bool(p.get('lastRunNewCandidateIds')) for p in selected),
+               'newCandidatePhotos': sum(len(p.get('lastRunNewCandidateIds', [])) for p in selected),
+               'scannedWithoutCandidates': sum(not p.get('lastRunNewCandidateIds') for p in selected),
                'retryNeeded': len(failures), 'pendingReviewPeople': sum(p['status'] == 'pending_review' for p in people),
-               'licenseConcernCandidates': sum(c.get('rightsStatus') == 'needs_review' for p in people for c in p['candidates'] if c.get('status') != 'rejected' and p['status'] != 'published'),
+               'licenseConcernCandidates': sum(c.get('rightsStatus') == 'needs_review' for p in people for c in p['candidates'] if c.get('status') not in {'rejected','superseded'} and p['status'] != 'published'),
                'statusCounts': dict(collections.Counter(p['status'] for p in people)),
                'failureReasons': dict(collections.Counter(e['code'] for p in failures for e in p['errors'])),
                'contactSheets': sheets, 'modifiedProduction': False, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE'}
@@ -62,7 +62,7 @@ def report(root, directory, state, run_id, scanned):
     ui_people = []
     for p in people:
         row = {k: v for k, v in p.items() if k not in {'history', 'legacyRecord'}}
-        row['candidates'] = [{**c, 'gameHref': asset(c.get('gamePath')), 'originalHref': asset(c.get('originalPath'))} for c in p['candidates']]
+        row['candidates'] = [{**c, 'gameHref': asset(c.get('gamePath')), 'originalHref': asset(c.get('originalPath')), 'previewHrefs': {k: asset(v) for k,v in c.get('stagePreviews',{}).items()}} for c in p['candidates']]
         ui_people.append(row)
     # Escape '<' before embedding JSON, so untrusted captions cannot close the script element.
     encoded = json.dumps(ui_people, ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
@@ -82,13 +82,17 @@ for(const c of p.candidates){const card=el('div');card.className='candidate';car
 if(c.gameHref){const img=el('img');img.src=c.gameHref;img.loading='lazy';img.alt=p.name+' 候選裁切';card.append(img);const stages=el('div');for(const key of ['eyes','nose','mouth','chin','full']){const rect=c.reveal?.[key];if(!rect)continue;const box=el('span');box.className='stage';box.title=key;const im=el('img');im.src=c.gameHref;im.style.clipPath=`inset(${rect[1]*100}% ${(1-rect[2])*100}% ${(1-rect[3])*100}% ${rect[0]*100}%)`;box.append(im);stages.append(box)}card.append(stages)}
 card.append(link('來源頁',c.source||''),el('span',' · '),link('原始圖片',c.url||''));if(c.originalHref){card.append(el('p'),link('已保存原圖',c.originalHref));const original=el('details');original.append(el('summary','展開原圖'));const full=el('img');full.src=c.originalHref;full.loading='lazy';full.alt=p.name+' 原圖';original.append(full);card.append(original)}
 card.append(el('p',(c.artist||'作者不明')+' · '+(c.license||'授權不明')),link('授權條款',c.licenseUrl||''));const warn=el('p',(c.warnings||[]).filter(Boolean).join('；'));warn.className='warn';card.append(warn);
-const detail=el('details');detail.append(el('summary','身分／代表性證據與品質結果'),el('pre',JSON.stringify({identity:c.identityEvidence,recognition:c.recognitionEvidence,validation:c.validation,rightsStatus:c.rightsStatus},null,2)));card.append(detail);
+const detail=el('details');detail.append(el('summary','身分／代表性證據與品質結果'),el('pre',JSON.stringify({identity:c.identityEvidence,recognition:c.recognitionEvidence,requested:c.evidenceRequest,supplement:c.evidenceSupplement,validation:c.validation,rightsStatus:c.rightsStatus},null,2)));card.append(detail);
+if(c.previewHrefs){const fullStages=el('details');fullStages.append(el('summary','五階段原尺寸證據'));for(const [key,url]of Object.entries(c.previewHrefs))fullStages.append(link(key,url),el('span',' · '));card.append(fullStages)}
 if(!['published','approved'].includes(p.status)&&c.status!=='rejected'){const choice=el('select');for(const [v,t]of [['','尚未決定'],['rejected','退回'],['approved','人工接受']]){const o=el('option',t);o.value=v;choice.append(o)}choice.value=decisions[c.id]?.decision||'';const note=el('textarea');note.placeholder='必填：身分、辨識度、來源與裁切的審核理由';note.value=decisions[c.id]?.reason||'';const save=()=>{decisions[c.id]={personId:p.personId,candidateId:c.id,gameSha256:c.gameSha256,decision:choice.value,reason:note.value}};choice.onchange=save;note.oninput=save;card.append(choice,note)}options.append(card)}
 if(!p.candidates.length)a.append(el('pre',JSON.stringify(p.lastErrors||p.lastFailure||{},null,2)));a.append(options);root.append(a)}document.querySelector('#count').textContent=count+' 位人物'}
 document.querySelector('#search').oninput=render;document.querySelector('#filter').onchange=render;
 document.querySelector('#export').onclick=()=>{const reviewer=document.querySelector('#reviewer').value.trim(),entries=Object.values(decisions).filter(x=>x.decision);if(!reviewer||!entries.length||entries.some(x=>!x.reason.trim()||!x.gameSha256)){alert('請填審核者、理由；沒有照片雜湊的項目不可核准。');return}const a=el('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({schemaVersion:1,reviewer,reviewedAt:new Date().toISOString(),decisions:entries},null,2)],{type:'application/json'}));a.download='review-decisions.json';a.click();URL.revokeObjectURL(a.href)};render();
 </script></html>'''
     (out / 'review.html').write_text(template.replace('__DATA__', encoded), encoding='utf-8')
+    if state.get('chatgptReview'):
+        payload['chatgptReview']=state['chatgptReview']
+        atomic(out / 'review-index.json', payload)
     atomic(directory / 'latest.json', {'runId': run_id, 'reviewIndex': str((out / 'review-index.json').relative_to(root)), 'summary': summary})
     return summary
 

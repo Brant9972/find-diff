@@ -13,7 +13,7 @@ import uuid
 from pathlib import Path
 from urllib.parse import unquote
 
-from .sources import SourceError, identity, now, rights, source_key
+from .sources import SourceError, identity, norm, now, rights, source_key
 
 STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published'}
 BLOCKED = ('funeral', 'mourning', 'memorial', 'obituary', 'waxwork', 'statue', 'sculpture', 'tussauds', '葬禮', '丧礼', '喪禮', '追思', '告別式', '告别式', '蠟像', '蜡像', '雕像', 'ai-generated', 'ai generated')
@@ -116,7 +116,7 @@ def apply_rejections(state, rejected):
                 warning = 'Source rejected by existing review records'
                 if warning not in candidate.setdefault('warnings', []):
                     candidate['warnings'].append(warning)
-        if row['status'] in {'pending_review', 'candidate_ready'} and not any(c.get('status') in {'pending_review', 'legacy_requires_review'} for c in row['candidates']):
+        if row['status'] in {'pending_review', 'candidate_ready'} and not any(c.get('status') in {'pending_review', 'pending_evidence', 'legacy_requires_review'} for c in row['candidates']):
             row['status'], row['nextRetryAt'] = 'rejected', None
 
 
@@ -234,7 +234,9 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
     rejected = rejected | {source_key(c.get('source')) for c in row['candidates'] if c.get('status') == 'rejected'}
     used = {source_key(q.get('attribution', {}).get('source')) for q in (live_people(root) if active is None else active).values()}
     other_images = [c for pid, p in read(directory / 'state.json', {'people': {}})['people'].items() if pid != row['personId'] for c in p['candidates']]
-    for provider in providers:
+    for provider_index, provider in enumerate(providers):
+        if deadline:
+            http.budget = min(deadline, time.monotonic() + max(1, (deadline-time.monotonic())/(len(providers)-provider_index)))
         provider_tried = 0
         if len(ready(row)) >= max_candidates or (deadline and time.monotonic() >= deadline):
             break
@@ -254,6 +256,9 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 tried += 1
                 provider_tried += 1
                 text = unquote(' '.join(str(item.get(k, '')) for k in ('source', 'url', 'caption', 'filename'))).casefold()
+                if any(norm(name) in norm(text) for name in person.get('excludedCaptionNames', [])):
+                    errors.append({'provider': provider.name, 'source': item['source'], 'code': 'review_identity_conflict', 'message': 'Caption/file refers to a different person named in the rejection'})
+                    continue
                 if any(word in text for word in BLOCKED):
                     errors.append({'provider': provider.name, 'source': item['source'], 'code': 'excluded_context', 'message': 'Disallowed memorial/statue/generated context'})
                     continue
@@ -305,7 +310,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     row['candidates'].append(candidate)
                 except (SourceError, ValueError, OSError, ImportError) as exc:
                     code = getattr(exc, 'code', 'image_validation_failed' if not isinstance(exc, ImportError) else 'processor_unavailable')
-                    errors.append({'provider': provider.name, 'source': item['source'], 'url': item['url'], 'code': code, 'message': str(exc)[:400]})
+                    errors.append({'provider': provider.name, 'source': item['source'], 'url': item['url'], 'candidateMetadata': candidate, 'code': code, 'message': str(exc)[:400]})
                 # Checkpoint candidates immediately; a later failed source must not lose them.
                 if checkpoint:
                     checkpoint()
@@ -317,7 +322,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
     if ready(row):
         row['status'], row['nextRetryAt'] = 'pending_review', None
     else:
-        network_codes = {'network_error', 'proxy_access_denied', 'download_failed', 'http_429', 'http_403', 'http_500', 'http_502', 'http_503', 'http_504', 'processor_unavailable'}
+        network_codes = {'network_error', 'time_budget', 'proxy_access_denied', 'download_failed', 'http_429', 'http_403', 'http_500', 'http_502', 'http_503', 'http_504', 'processor_unavailable'}
         row['status'] = 'download_failed' if any(e['code'] in network_codes for e in errors) else 'no_suitable_source'
         row['nextRetryAt'] = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=min(24 * 7, 2 ** min(row['attempts'], 7)))).isoformat()
         row['lastFailure'] = {'code': row['status'], 'retryable': True, 'message': 'See lastErrors' if errors else 'No usable candidates returned by sources'}

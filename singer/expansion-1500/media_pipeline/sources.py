@@ -98,20 +98,24 @@ class HTTPSRedirect(urllib.request.HTTPRedirectHandler):
 
 
 class HTTP:
-    def __init__(self, attempts=3, interval=.8, budget=None):
+    def __init__(self, attempts=3, interval=.8, budget=None, timeout=20):
         self.attempts, self.interval, self.budget = attempts, interval, budget
         self.last = {}
+        self.timeout = timeout
+        self.denied_hosts = set()
 
     def get(self, url, params=None):
         if params:
             url += ('&' if '?' in url else '?') + urllib.parse.urlencode(params)
         host = public_https(url)
+        if host in self.denied_hosts:
+            raise SourceError('proxy_access_denied', 'Proxy previously denied this host in this batch; no repeated forbidden requests')
         for attempt in range(self.attempts):
             if self.budget and time.monotonic() >= self.budget:
                 raise SourceError('time_budget', 'Batch time budget reached')
             time.sleep(max(0, self.interval - (time.monotonic() - self.last.get(host, 0))))
             try:
-                with urllib.request.build_opener(HTTPSRedirect()).open(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=20) as response:
+                with urllib.request.build_opener(HTTPSRedirect()).open(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=min(self.timeout, max(1, self.budget-time.monotonic())) if self.budget else self.timeout) as response:
                     if int(response.headers.get('Content-Length', '0')) > MAX_BYTES:
                         raise SourceError('oversize', 'Response exceeds 14 MB')
                     data = response.read(MAX_BYTES + 1)
@@ -132,6 +136,7 @@ class HTTP:
                 time.sleep(max(0, min(delay, 10)))
             except (urllib.error.URLError, TimeoutError, OSError) as exc:
                 if 'Tunnel connection failed: 403' in str(exc):
+                    self.denied_hosts.add(host)
                     raise SourceError('proxy_access_denied', str(exc)) from exc
                 if attempt + 1 == self.attempts:
                     raise SourceError('network_error', str(exc)) from exc
@@ -235,3 +240,31 @@ class Official:
         for record in self.records:
             if record.get('personId') == person['plannedQuestionId']:
                 yield {**record, 'provider': self.name, 'searchTime': now()}
+
+
+class CommonsSearch:
+    """Independent bulk Commons search: a Wikipedia timeout must not prevent it."""
+    name = 'commons'
+
+    def search(self, person, http, round_number=0):
+        queries = [person['name'], person.get('reviewSearchQuery') or person.get('preferredImageQuery') or person['name']]
+        seen=set()
+        for query in dict.fromkeys(queries):
+            data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
+                generator='search',gsrsearch=query+' filetype:bitmap',gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
+                prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
+            for page in data.get('query',{}).get('pages',[]):
+                for info in page.get('imageinfo',[]):
+                    source=info.get('descriptionurl','')
+                    if source in seen:continue
+                    seen.add(source)
+                    ext=info.get('extmetadata',{});val=lambda key:clean(ext.get(key,{}).get('value',''))
+                    license_url=val('LicenseUrl')
+                    if license_url.startswith('http://creativecommons.org/'):license_url='https://'+license_url[7:]
+                    yield {'provider':self.name,'url':info.get('thumburl') or info.get('url',''),'originalUrl':info.get('url',''),
+                        'downloadVariant':'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original','source':source,
+                        'filename':page.get('title','').removeprefix('File:'),'artist':val('Artist'),'credit':val('Credit'),
+                        'license':val('LicenseShortName'),'licenseUrl':license_url,'caption':val('ImageDescription'),
+                        'identityEvidence':{'query':query,'identityWarning':'Caption/name match is preliminary evidence only'},
+                        'recognitionEvidence':{'requestedReplacement':person.get('reviewReason'),'representativeWorks':person.get('representativeWorks',[]),'note':'Familiar appearance must be reviewed'},
+                        'searchTime':now(),'width':info.get('width'),'height':info.get('height')}

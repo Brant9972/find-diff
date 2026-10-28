@@ -103,3 +103,21 @@ push 程式變更會跑最多 2 人／5 分鐘小批次；手動 dispatch 可以
 - 批次報告與原圖可能增大 Git repository；後續大量運作時可把原圖保存改為專用 artifact/object storage，仍需保留雜湊與審核可追溯性。
 
 若驗證成功但 checkpoint 失敗，可建立 `pipeline/recovery-request.json`（runId、baseStateSha256、completed:false），下一次 Actions 會以唯讀 token 下載該 run 的 artifact，僅在目前 state 雜湊未改變且沒有改動核准／人工審核紀錄時恢復，並標記完成。不得用復原覆蓋其他批次的進度；雜湊不同須先人工整合。
+
+## 固定 ChatGPT 審核交接（每輪自動讀取）
+
+輸入固定為本工作分支的 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。每次執行都先讀檔，不需要使用者傳送 JSON；該路徑的 GitHub push 也會觸發批次。先 pull 工作分支再執行，避免讀到舊結果。
+
+初步審核格式使用 `schemaVersion:1`、`releaseGate:DRAFT_ONLY_NOT_PLAYABLE`，逐項含 `personId/candidateId/gameSha256/decision/reason`，其中 decision 是 `reject` 或 `pending`。整份精確驗證照片雜湊後才套用；相同檔案以 SHA-256 去重，不重複記錄或重設進度。`received/<檔案SHA>.json` 保存歷史，原始 latest.json 不被 Codex 改寫。這個初步交接介面不接受 approved，最終核准仍由獨立審核與整合流程處理。
+
+```bash
+python singer/expansion-1500/prepare_media.py --review-round --limit 18 --max-minutes 25 --person-seconds 60 --live-ref origin/main
+```
+
+- reject：保留退件圖及原理由，封鎖重複來源，定向查詢代表作品、經典時期等新來源；涉及錯誤人物的名字也列入新候選圖說排除條件。
+- pending：補 Commons 圖說、作者、授權網址、原圖尺寸、外部原始提供者（例如 Flickr）連結、人物文章與五階段 PNG 證據。API 不可用時明確列出剩餘缺口，不自動標成已確認。
+- 修改裁切時建立新候選、新照片雜湊與父候選關聯，舊照片和舊決定保留。李妍瑾的特定舊圖提供移除背景人臉的新裁切，但不提高原始解析度，也不宣稱已獲核准。
+- 網路按人物分配時間，再均分給來源；Commons bulk 查詢獨立於 Wikipedia，避免一個網站逾時就耗掉整批時間。代理明確拒絕的 host 在同批不重複嘗試，後續批次仍可重試。
+- `pipeline/codex-response/latest.json` 是 Codex 的固定回覆，含來源審核檔 SHA、新 run、審核索引與逐人結果。ChatGPT 下一輪可由此取得候選，結果仍寫回原固定輸入路徑。
+
+有固定交接檔時，Actions 會針對其中人物跑最多 25 分鐘、每人最多 60 秒；不因 code push 的一般 2 人設定而漏掉待補證據者。每輪完成後等待新的 ChatGPT 審核，不自行整合或部署。

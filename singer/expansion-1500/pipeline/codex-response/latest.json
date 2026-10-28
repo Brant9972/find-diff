@@ -1,0 +1,599 @@
+{
+  "schemaVersion": 1,
+  "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+  "sourceReviewCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "runId": "20261028T173443Z-95e4d96f",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T173443Z-95e4d96f/review-index.json",
+  "summary": {
+    "runId": "20261028T173443Z-95e4d96f",
+    "generatedAt": "2026-10-28T17:34:43.667643+00:00",
+    "scannedPeople": 0,
+    "peopleWithNewCandidates": 0,
+    "newCandidatePhotos": 0,
+    "scannedWithoutCandidates": 0,
+    "retryNeeded": 435,
+    "pendingReviewPeople": 6,
+    "licenseConcernCandidates": 31,
+    "statusCounts": {
+      "download_failed": 26,
+      "published": 70,
+      "no_suitable_source": 367,
+      "rejected": 42,
+      "pending_review": 6
+    },
+    "failureReasons": {
+      "proxy_access_denied": 40,
+      "license_unclear": 6,
+      "identity_unconfirmed": 41,
+      "network_error": 12,
+      "image_validation_failed": 1
+    },
+    "contactSheets": [
+      "contact-sheet-01.jpg"
+    ],
+    "modifiedProduction": false,
+    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
+  },
+  "items": [
+    {
+      "personId": "t1500_0174",
+      "request": {
+        "personId": "t1500_0174",
+        "candidateId": "legacy-t1500_0174",
+        "gameSha256": "a0da276377dacedffee1722a3f7d1502dd752d4160bf79f5b0f0d73c6dacf2dd",
+        "name": "鳳小岳",
+        "decision": "reject",
+        "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0196",
+      "request": {
+        "personId": "t1500_0196",
+        "candidateId": "legacy-t1500_0196",
+        "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+        "name": "蔡亘晏",
+        "decision": "reject",
+        "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0224",
+      "request": {
+        "personId": "t1500_0224",
+        "candidateId": "legacy-t1500_0224",
+        "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+        "name": "丁國琳",
+        "decision": "reject",
+        "reason": "麥克風遮嘴；找八點檔清晰正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0255",
+      "request": {
+        "personId": "t1500_0255",
+        "candidateId": "legacy-t1500_0255",
+        "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+        "name": "林采緹",
+        "decision": "pending",
+        "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0255"
+      ]
+    },
+    {
+      "personId": "t1500_0307",
+      "request": {
+        "personId": "t1500_0307",
+        "candidateId": "legacy-t1500_0307",
+        "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+        "name": "李妍瑾",
+        "decision": "pending",
+        "reason": "裁掉背景第二張人臉，補來源及解析度",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "network_error",
+          "message": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0307",
+        "recrop-6deff70fcf28ea33873b"
+      ]
+    },
+    {
+      "personId": "t1500_0308",
+      "request": {
+        "personId": "t1500_0308",
+        "candidateId": "legacy-t1500_0308",
+        "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+        "name": "曹晏豪",
+        "decision": "reject",
+        "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0335",
+      "request": {
+        "personId": "t1500_0335",
+        "candidateId": "legacy-t1500_0335",
+        "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+        "name": "李思捷",
+        "decision": "reject",
+        "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0350",
+      "request": {
+        "personId": "t1500_0350",
+        "candidateId": "legacy-t1500_0350",
+        "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+        "name": "陳惠婷",
+        "decision": "reject",
+        "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0360",
+      "request": {
+        "personId": "t1500_0360",
+        "candidateId": "legacy-t1500_0360",
+        "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+        "name": "林德信",
+        "decision": "pending",
+        "reason": "補來源授權、人物證據、正面五官預覽",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0360"
+      ]
+    },
+    {
+      "personId": "t1500_0393",
+      "request": {
+        "personId": "t1500_0393",
+        "candidateId": "legacy-t1500_0393",
+        "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+        "name": "吳蓓雅",
+        "decision": "reject",
+        "reason": "低頭、麥克風遮嘴、模糊；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0474",
+      "request": {
+        "personId": "t1500_0474",
+        "candidateId": "legacy-t1500_0474",
+        "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+        "name": "蔡黃汝",
+        "decision": "pending",
+        "reason": "確認舊照解析度、來源授權與辨識度",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0474"
+      ]
+    },
+    {
+      "personId": "t1500_0481",
+      "request": {
+        "personId": "t1500_0481",
+        "candidateId": "legacy-t1500_0481",
+        "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+        "name": "關心妍",
+        "decision": "reject",
+        "reason": "年代久且柔焦；重找高清正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0554",
+      "request": {
+        "personId": "t1500_0554",
+        "candidateId": "legacy-t1500_0554",
+        "gameSha256": "9b17cb307aaecbca3d3a74d35dc60958feffd1a6787c0dab3912a13fc93e349a",
+        "name": "黃日華",
+        "decision": "reject",
+        "reason": "側臉模糊；找經典角色正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0559",
+      "request": {
+        "personId": "t1500_0559",
+        "candidateId": "legacy-t1500_0559",
+        "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+        "name": "蔡一傑",
+        "decision": "reject",
+        "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0563",
+      "request": {
+        "personId": "t1500_0563",
+        "candidateId": "legacy-t1500_0563",
+        "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+        "name": "鄭丹瑞",
+        "decision": "pending",
+        "reason": "補原圖解析度、身分證據與授權",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0563"
+      ]
+    },
+    {
+      "personId": "t1500_0564",
+      "request": {
+        "personId": "t1500_0564",
+        "candidateId": "legacy-t1500_0564",
+        "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+        "name": "葛民輝",
+        "decision": "pending",
+        "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "pending_review",
+      "errors": [
+        {
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": [
+        "legacy-t1500_0564"
+      ]
+    },
+    {
+      "personId": "t1500_0568",
+      "request": {
+        "personId": "t1500_0568",
+        "candidateId": "legacy-t1500_0568",
+        "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+        "name": "李司棋",
+        "decision": "reject",
+        "reason": "眼鏡反光、前景遮擋；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    },
+    {
+      "personId": "t1500_0586",
+      "request": {
+        "personId": "t1500_0586",
+        "candidateId": "legacy-t1500_0586",
+        "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+        "name": "向海嵐",
+        "decision": "reject",
+        "reason": "嚴重模糊；重找",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
+      },
+      "status": "download_failed",
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "openverse",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        },
+        {
+          "provider": "wikimedia",
+          "code": "proxy_access_denied",
+          "message": "Proxy previously denied this host in this batch; no repeated forbidden requests"
+        }
+      ],
+      "candidateIds": []
+    }
+  ]
+}

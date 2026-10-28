@@ -1,0 +1,30 @@
+{
+  "runId": "20261028T130409Z-86ed1960",
+  "generatedAt": "2026-10-28T13:06:03.690651+00:00",
+  "scannedPeople": 2,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 2,
+  "retryNeeded": 423,
+  "pendingReviewPeople": 18,
+  "licenseConcernCandidates": 42,
+  "statusCounts": {
+    "download_failed": 14,
+    "published": 70,
+    "no_suitable_source": 367,
+    "rejected": 42,
+    "pending_review": 18
+  },
+  "failureReasons": {
+    "proxy_access_denied": 4,
+    "license_unclear": 6,
+    "identity_unconfirmed": 41,
+    "network_error": 12,
+    "image_validation_failed": 1
+  },
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
+}

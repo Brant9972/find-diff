@@ -957,11 +957,41 @@
       "personId": "t1500_0006",
       "candidateId": "c1500-0006",
       "name": "范植偉",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T15:05:16.139765+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T13:04:09.131696+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:04:11.251132+00:00"
+        },
+        {
+          "time": "2026-10-28T13:04:11.251156+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:05:16.139717+00:00"
+        },
+        {
+          "time": "2026-10-28T13:05:16.139744+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:05:16.139750+00:00"
+        },
+        {
+          "time": "2026-10-28T13:05:16.139752+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0006",
         "name": "范植偉",
@@ -977,7 +1007,21 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T13:04:09.103815+00:00",
+      "lastErrors": [
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T13:05:16.139779+00:00"
     },
     "t1500_0007": {
       "personId": "t1500_0007",
@@ -1053,11 +1097,35 @@
       "personId": "t1500_0008",
       "candidateId": "c1500-0008",
       "name": "趙永馨",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "no_suitable_source",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T15:06:03.409431+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T13:05:16.205976+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:05:18.543585+00:00"
+        },
+        {
+          "time": "2026-10-28T13:05:18.543605+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:06:03.409393+00:00"
+        },
+        {
+          "time": "2026-10-28T13:06:03.409413+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T13:06:03.409418+00:00"
+        },
+        {
+          "time": "2026-10-28T13:06:03.409421+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0008",
         "name": "趙永馨",
@@ -1073,7 +1141,15 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T13:05:16.171899+00:00",
+      "lastErrors": [],
+      "lastFailure": {
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "updatedAt": "2026-10-28T13:06:03.409444+00:00"
     },
     "t1500_0009": {
       "personId": "t1500_0009",

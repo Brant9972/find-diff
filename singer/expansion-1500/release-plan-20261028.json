@@ -16,16 +16,16 @@
   },
   "arithmetic": {
     "sourceTargets": 608,
-    "reusedAlreadyLive": 90,
+    "reusedAlreadyLive": 91,
     "novelTargets": 518,
     "deferredForIdentityAndHints": 6,
-    "selectedNovel": 512,
-    "targetUniqueAfterFullPass": 1499,
-    "currentlyLiveUnique": 1055,
-    "publishedFromPlan": 68,
+    "selectedNovel": 511,
+    "targetUniqueAfterFullPass": 1498,
+    "currentlyLiveUnique": 1054,
+    "publishedFromPlan": 67,
     "remainingSelectedNovel": 444,
     "targetGoal": 1500,
-    "replacementCandidatesNeeded": 1
+    "replacementCandidatesNeeded": 2
   },
   "criteria": {
     "image": [
@@ -1041,6 +1041,19 @@
       "decision": "reuse_existing_person_same_wikimedia_photo_no_extra_count",
       "canonicalName": "鍾瑶",
       "acceptedAlternateSpelling": "鐘瑶"
+    },
+    {
+      "candidateId": "c1500-0530",
+      "name": "偉晉",
+      "existingQuestions": [
+        {
+          "id": "s029",
+          "bank": "questions.json"
+        }
+      ],
+      "decision": "reuse_existing_person_alias_no_extra_count",
+      "canonicalName": "黃偉晉",
+      "acceptedAlternateSpelling": "偉晉"
     }
   ],
   "deferred": [
@@ -15821,44 +15834,6 @@
       "rightsNote": "CC BY-SA 4.0 Wikimedia Commons; credited in questions.json"
     },
     {
-      "candidateId": "c1500-0530",
-      "plannedQuestionId": "t1500_0530",
-      "name": "偉晉",
-      "aliases": [],
-      "acceptedAnswers": [
-        "偉晉",
-        "黃偉晉",
-        "Wayne Huang"
-      ],
-      "categories": [
-        "演員"
-      ],
-      "proposedPrimaryBank": "questions.json",
-      "representativeWorks": [
-        "背光旅行"
-      ],
-      "priority": "B",
-      "photoSearchKeywords": [
-        "偉晉 藝人 正面 清晰 肖像"
-      ],
-      "photoStatus": "published",
-      "imageVerification": {
-        "faceMatchesPerson": true,
-        "imageAdjacentCaptionVerified": true,
-        "iconicContextVerified": true,
-        "noWatermarkVerified": true,
-        "rightsDocumented": true,
-        "finalCropReviewed": true
-      },
-      "hintsStatus": "published_verified",
-      "identityStatus": "verified",
-      "qaStatus": "CI_pending",
-      "preferredImageQuery": "偉晉 SpeXial 角色 劇照 正面 清晰 無浮水印",
-      "publishedQuestionId": "t1500_0530",
-      "portraitSource": "https://commons.wikimedia.org/wiki/File:SpeXial_Wayne01.jpg",
-      "rightsNote": "CC BY-SA 4.0 Wikimedia Commons; credited in questions.json"
-    },
-    {
       "candidateId": "c1500-0531",
       "plannedQuestionId": "t1500_0531",
       "name": "易柏辰",
@@ -18315,7 +18290,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 68,
+    "published": 67,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18364,7 +18339,6 @@
       "郭源元",
       "篠崎泫",
       "宏正",
-      "偉晉",
       "爾冬陞",
       "苗僑偉",
       "關詠荷",

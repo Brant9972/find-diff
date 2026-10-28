@@ -13770,7 +13770,7 @@
               1
             ]
           },
-          "status": "pending_review",
+          "status": "superseded",
           "rightsStatus": "open_license_metadata",
           "warnings": [
             "Derived from the reviewed crop; no added source resolution. Main face/removed background and rights require fresh ChatGPT review."
@@ -13908,6 +13908,235 @@
           },
           "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
           "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8"
+        },
+        {
+          "id": "source-recrop-1a20f122e98b8f930224",
+          "personId": "t1500_0307",
+          "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+          "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+          "artist": "Rico Shen",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0307/source-recrop-1a20f122e98b8f930224/game.jpg",
+          "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+          "reveal": {
+            "eyes": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.4843657359291054
+            ],
+            "nose": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.6424893215187315
+            ],
+            "mouth": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.8011040071028539
+            ],
+            "chin": [
+              0,
+              0.3068018102784992,
+              0.8978723404255319,
+              0.9726478476223381
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "status": "pending_review",
+          "rightsStatus": "open_license_metadata",
+          "warnings": [
+            "New crop rendered from the downloaded source, not an enlargement of the old crop. Source identity, rights, face framing and all five stages require external review."
+          ],
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "renderedFromDownloadedSource": true
+          },
+          "humanReview": null,
+          "eligibleForLive": false,
+          "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
+          "evidenceAttempts": 4,
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/chin.png",
+            "full": "expansion-1500/pipeline/evidence/1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "1a20f122e98b8f930224bb646f9dd76ee30059e2ab46a8eef497fafc4dcbc320",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.4843657359291054
+              ],
+              "nose": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.6424893215187315
+              ],
+              "mouth": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.8011040071028539
+              ],
+              "chin": [
+                0,
+                0.3068018102784992,
+                0.8978723404255319,
+                0.9726478476223381
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "evidenceSupplement": {
+            "requested": "裁掉背景第二張人臉，補來源及解析度",
+            "attemptedAt": "2026-10-28T17:47:32.816881+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
+            "visualIdentityVerified": false,
+            "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2154,
+              "height": 2872,
+              "artist": "Rico Shen",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:33.313668+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            },
+            "sourceImageSaved": true,
+            "remainingGaps": [
+              "Human identity/caption confirmation",
+              "Human rights verification",
+              "Five-stage and recognizability review"
+            ]
+          },
+          "previousProvenance": {
+            "artist": "Rico Shen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg"
+          },
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+            "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
+          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8",
+          "parentCandidateId": "legacy-t1500_0307",
+          "parentGameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+          "transformation": "source_aligned_background_face_removal",
+          "sourceAlignmentEvidence": {
+            "method": "ORB + RANSAC similarity transform",
+            "matches": 49,
+            "inliers": 34,
+            "inlierRatio": 0.6938775510204082,
+            "parentToSourceTransform": [
+              [
+                1.511393053887497,
+                -0.0034465034004343225,
+                444.97372662934737
+              ],
+              [
+                0.0034465034004343225,
+                1.511393053887497,
+                154.60705072272833
+              ]
+            ],
+            "cropBoxInParent": [
+              130,
+              30,
+              600,
+              594
+            ],
+            "cropCornersInSource": [
+              [
+                641.3514404296875,
+                200.3968963623047
+              ],
+              [
+                1351.7061767578125,
+                202.01675415039062
+              ],
+              [
+                1349.7623291015625,
+                1054.4423828125
+              ],
+              [
+                639.4075927734375,
+                1052.822509765625
+              ]
+            ],
+            "sourceImageSize": [
+              1920,
+              2560
+            ],
+            "sourceSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8",
+            "note": "Same-photo pixel correspondence; not a visual identity or rights approval"
+          }
         }
       ],
       "history": [],
@@ -13982,8 +14211,10 @@
       },
       "lastErrors": [],
       "lastEvidenceAttemptAt": "2026-10-28T17:47:33.737344+00:00",
-      "lastRunId": "20261028T174728Z-e2f4fe1d",
-      "lastRunNewCandidateIds": []
+      "lastRunId": "20261028T175736Z-a138bf90",
+      "lastRunNewCandidateIds": [
+        "source-recrop-1a20f122e98b8f930224"
+      ]
     },
     "t1500_0308": {
       "personId": "t1500_0308",

@@ -3,15 +3,15 @@
   "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
   "sourceReviewCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261028T174728Z-e2f4fe1d",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261028T174728Z-e2f4fe1d/review-index.json",
+  "runId": "20261028T175736Z-a138bf90",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/review-index.json",
   "summary": {
-    "runId": "20261028T174728Z-e2f4fe1d",
-    "generatedAt": "2026-10-28T17:47:34.053403+00:00",
-    "scannedPeople": 6,
-    "peopleWithNewCandidates": 0,
-    "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 6,
+    "runId": "20261028T175736Z-a138bf90",
+    "generatedAt": "2026-10-28T17:57:37.180820+00:00",
+    "scannedPeople": 1,
+    "peopleWithNewCandidates": 1,
+    "newCandidatePhotos": 1,
+    "scannedWithoutCandidates": 0,
     "retryNeeded": 435,
     "pendingReviewPeople": 6,
     "licenseConcernCandidates": 40,
@@ -152,7 +152,7 @@
       "errors": [],
       "candidateIds": [
         "legacy-t1500_0307",
-        "recrop-6deff70fcf28ea33873b"
+        "source-recrop-1a20f122e98b8f930224"
       ]
     },
     {
@@ -730,5 +730,30 @@
       ],
       "candidateIds": []
     }
+  ],
+  "previousEvidenceRunId": "20261028T174728Z-e2f4fe1d",
+  "sourceImageMap": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/source-image-map.json",
+  "revealContactSheet": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/reveal-contact-sheet.jpg",
+  "sourceReviewFileCommit": "82af8c62dec70b4ac037fa8ae3654158dfa32026",
+  "roundResult": {
+    "reviewedPeople": 18,
+    "rejectedPeopleResearched": 12,
+    "newSuitableAlternativeSourcePhotos": 0,
+    "pendingPeopleWithSourceMetadata": 6,
+    "pendingPeopleWithSourceImageCopies": 6,
+    "pendingPeopleWithBiographyEvidence": 6,
+    "pendingPeopleWithFiveStagePreviews": 6,
+    "activeNewSourceRecrops": 1,
+    "activeReviewPhotos": 7,
+    "rejectedPeopleStillNeedingRetry": 12,
+    "automaticallyApproved": 0,
+    "productionModified": false
+  },
+  "reviewerInstructions": [
+    "Read the reviewIndex, sourceImageMap and revealContactSheet for this round.",
+    "Review six pending people and the new source-aligned Yuni Li crop; do not reinterpret superseded/rejected crops as active candidates.",
+    "Match any new decision to personId + candidateId + gameSha256 from the current review index.",
+    "Source metadata and feature alignment do not constitute human identity or rights verification.",
+    "Write the next preliminary reject/pending decisions to pipeline/chatgpt-review/latest.json on this branch; do not publish automatically."
   ]
 }

@@ -121,3 +121,9 @@ python singer/expansion-1500/prepare_media.py --review-round --limit 18 --max-mi
 - `pipeline/codex-response/latest.json` 是 Codex 的固定回覆，含來源審核檔 SHA、新 run、審核索引與逐人結果。ChatGPT 下一輪可由此取得候選，結果仍寫回原固定輸入路徑。
 
 有固定交接檔時，Actions 會針對其中人物跑最多 25 分鐘、每人最多 60 秒；不因 code push 的一般 2 人設定而漏掉待補證據者。每輪完成後等待新的 ChatGPT 審核，不自行整合或部署。
+
+### 已下載來源的定向重裁切
+
+`tools/recrop_review_source.py` 只適用於本次李妍瑾已審核的舊照片雜湊與背景人臉移除要求。它將舊遊戲圖與下載來源做 ORB/RANSAC 對齊，至少 20 個內點且內點比例至少 0.6，裁切範圍必須在來源圖內，再從來源像素重建 600×720 候選及五階段證據。保留父照片、來源 SHA 與轉換矩陣，已核准／已發布人物不可修改；相同輸出重跑不新增候選。像素對應不能代替人物身分或授權審核。以 media venv 的 Python 執行此工具。
+
+本輪固定 Codex 回覆另外提供 `sourceImageMap`（六張可直接檢視的來源 JPEG、原始網址及原始／下載尺寸）及 `revealContactSheet`（七張現行待審圖的五階段總覽）。來源 JPEG 與保存的下載位元組完全相同；它們不是新替代來源照片。

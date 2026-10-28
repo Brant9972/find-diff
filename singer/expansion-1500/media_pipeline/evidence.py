@@ -86,7 +86,7 @@ def supplement(root, directory, row, person, http):
         val=lambda key:clean(ext.get(key,{}).get('value',''))
         links=[]
         for entry in ext.values():
-            for link in re.findall(r'href=[\"\']([^\"\']+)',entry.get('value','')):
+            for link in re.findall(r'href=[\"\']([^\"\']+)',str(entry.get('value',''))):
                 if link.startswith('http://') and urllib.parse.urlsplit(link).hostname in {'www.flickr.com','flickr.com','creativecommons.org'}:
                     link='https://'+link[7:]
                 if link.startswith('https://') and link not in links:links.append(link)
@@ -134,7 +134,7 @@ def supplement(root, directory, row, person, http):
     for variant in row['candidates']:
         if variant.get('parentCandidateId')==candidate['id']:
             variant['evidenceSupplement']=copy.deepcopy(evidence)
-            for key in ('url','originalUrl','artist','credit','license','licenseUrl','caption','externalSourceLinks','rightsStatus','identityEvidence'):
+            for key in ('url','originalUrl','artist','credit','license','licenseUrl','caption','externalSourceLinks','rightsStatus','identityEvidence','originalPath','originalSha256'):
                 if key in candidate:variant[key]=copy.deepcopy(candidate[key])
     row['lastErrors']=evidence['errors'];row['status']='pending_review'
     row['lastEvidenceAttemptAt']=now()

@@ -27,12 +27,15 @@ def main(argv=None):
     parser.add_argument('--render-only', action='store_true', help='Migrate/read state and generate review pages without network calls')
     parser.add_argument('--import-review', type=Path, help='Explicit decisions exported by the external human review workflow; never use for auto-approval')
     parser.add_argument('--official-sources', type=Path)
+    parser.add_argument('--evidence-only', action='store_true', help='Only supplement pending decisions from the fixed handoff')
     parser.add_argument('--review-round', action='store_true', help='Process only fixed-location ChatGPT handoff targets, including pending evidence')
     parser.add_argument('--person-seconds', type=float, default=60, help='Per-person network/search budget')
     parser.add_argument('--live-ref', help='Read published banks/blacklist from a fetched Git ref, without changing the checkout')
     args = parser.parse_args(argv)
     if not 0 <= args.limit <= 300 or not 0 < args.max_minutes <= 120 or not 1 <= args.person_seconds <= 300:
         parser.error('limit must be 0..300; max-minutes must be >0 and <=120')
+    if args.evidence_only:
+        args.review_round = True
     root = Path(__file__).resolve().parents[1]
     directory = root / 'expansion-1500/pipeline'
     before = protected(root)
@@ -85,6 +88,8 @@ def main(argv=None):
                     if args.person_id and row['personId'] not in args.person_id:
                         continue
                     needs_evidence = row.get('chatgptReview', {}).get('decision') == 'pending'
+                    if args.evidence_only and not needs_evidence:
+                        continue
                     if row['status'] in {'approved', 'published'} or (row['status'] in {'pending_review', 'candidate_ready'} and not needs_evidence):
                         continue
                     failed = row['status'] in {'download_failed', 'no_suitable_source', 'rejected', 'searching'}
@@ -128,6 +133,9 @@ def main(argv=None):
             print(json.dumps(summary, ensure_ascii=False, indent=2))
             print('Review:', directory / 'runs' / run_id / 'review.html')
             if handoff:
+                pending_ids = {pid for pid in handoff['personIds'] if state['people'][pid].get('chatgptReview',{}).get('decision')=='pending'}
+                if args.evidence_only and pending_ids.issubset(scanned):
+                    atomic(directory/'evidence-retry.json', {'sourceReviewSha256':handoff['sha256'],'attemptCompleted':True,'runId':run_id})
                 atomic(directory / 'codex-response/latest.json', {'schemaVersion': 1, 'sourceReviewSha256': handoff['sha256'], 'sourceReviewCommit': handoff.get('sourceCommit'), 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE', 'runId': run_id, 'reviewIndex': str((directory/'runs'/run_id/'review-index.json').relative_to(root)), 'summary': summary, 'items': [{'personId': pid, 'request': state['people'][pid].get('chatgptReview'), 'status': state['people'][pid]['status'], 'errors': state['people'][pid].get('lastErrors', []), 'candidateIds': [c['id'] for c in state['people'][pid]['candidates'] if c.get('status') in {'pending_review','pending_evidence'}]} for pid in handoff['personIds']]})
     return 0
 

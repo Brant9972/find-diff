@@ -63,7 +63,7 @@ class HandoffTest(unittest.TestCase):
         class Metadata:
             def json(self,url,**kw):
                 if 'wikipedia' in url:return {'query':{'pages':[{'fullurl':'https://zh.wikipedia.org/wiki/測試人物','extract':'測試人物為演員'}]}}
-                return {'query':{'pages':[{'imageinfo':[{'url':'https://upload.wikimedia.org/a.jpg','width':1800,'height':2100,'extmetadata':{k:{'value':v} for k,v in {'Artist':'Photographer','LicenseShortName':'CC BY 4.0','LicenseUrl':'https://creativecommons.org/licenses/by/4.0/','ImageDescription':'測試人物'}.items()}}]}]}}
+                return {'query':{'pages':[{'imageinfo':[{'url':'https://upload.wikimedia.org/a.jpg','width':1800,'height':2100,'extmetadata':{k:{'value':v} for k,v in {'Artist':'Photographer','LicenseShortName':'CC BY 4.0','LicenseUrl':'https://creativecommons.org/licenses/by/4.0/','ImageDescription':'測試人物','GPSLatitude':22.3}.items()}}]}]}}
             def get(self,url):raise SourceError('network_error','Image download failed')
         supplement(self.root,self.directory,self.state['people']['t1'],{'name':'測試人物'},Metadata())
         self.assertEqual(self.candidate['rightsStatus'],'open_license_metadata')

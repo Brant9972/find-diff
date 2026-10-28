@@ -1,68 +1,38 @@
 {
-  "runId": "20261028T183830Z-902348ef",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261028T183830Z-902348ef/review-index.json",
+  "runId": "20261028T185334Z-9220641c",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T185334Z-9220641c/review-index.json",
   "summary": {
-    "runId": "20261028T183830Z-902348ef",
-    "generatedAt": "2026-10-28T18:38:30.942462+00:00",
-    "scannedPeople": 0,
+    "runId": "20261028T185334Z-9220641c",
+    "generatedAt": "2026-10-28T18:54:48.775796+00:00",
+    "scannedPeople": 40,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 40,
     "retryNeeded": 435,
     "pendingReviewPeople": 6,
-    "licenseConcernCandidates": 40,
+    "licenseConcernCandidates": 121,
     "statusCounts": {
-      "download_failed": 26,
-      "published": 70,
       "no_suitable_source": 367,
-      "rejected": 42,
+      "download_failed": 54,
+      "rejected": 14,
+      "published": 70,
       "pending_review": 6
     },
     "failureReasons": {
-      "proxy_access_denied": 4,
-      "license_unclear": 7,
-      "identity_unconfirmed": 71,
-      "network_error": 24,
-      "image_validation_failed": 3
+      "source_api_error": 15,
+      "network_error": 54,
+      "license_unclear": 16,
+      "image_validation_failed": 32,
+      "identity_unconfirmed": 162,
+      "excluded_context": 2,
+      "identity_ambiguous": 2,
+      "review_identity_conflict": 1,
+      "proxy_access_denied": 4
     },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
-  },
-  "preservedConcurrentCheckpoint": {
-    "runId": "20261028T182523Z-86a60f45",
-    "reviewIndex": "expansion-1500/pipeline/runs/20261028T182523Z-86a60f45/review-index.json",
-    "summary": {
-      "runId": "20261028T182523Z-86a60f45",
-      "generatedAt": "2026-10-28T18:32:18.242305+00:00",
-      "scannedPeople": 18,
-      "peopleWithNewCandidates": 0,
-      "newCandidatePhotos": 0,
-      "scannedWithoutCandidates": 18,
-      "retryNeeded": 435,
-      "pendingReviewPeople": 6,
-      "licenseConcernCandidates": 63,
-      "statusCounts": {
-        "download_failed": 26,
-        "published": 70,
-        "no_suitable_source": 367,
-        "rejected": 42,
-        "pending_review": 6
-      },
-      "failureReasons": {
-        "proxy_access_denied": 4,
-        "license_unclear": 7,
-        "identity_unconfirmed": 83,
-        "network_error": 24,
-        "image_validation_failed": 3
-      },
-      "contactSheets": [
-        "contact-sheet-01.jpg"
-      ],
-      "modifiedProduction": false,
-      "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
-    }
   }
 }

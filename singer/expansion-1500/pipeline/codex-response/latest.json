@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+  "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
   "sourceReviewCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261028T175736Z-a138bf90",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/review-index.json",
+  "runId": "20261028T182523Z-86a60f45",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261028T182523Z-86a60f45/review-index.json",
   "summary": {
-    "runId": "20261028T175736Z-a138bf90",
-    "generatedAt": "2026-10-28T17:57:37.180820+00:00",
-    "scannedPeople": 1,
-    "peopleWithNewCandidates": 1,
-    "newCandidatePhotos": 1,
-    "scannedWithoutCandidates": 0,
+    "runId": "20261028T182523Z-86a60f45",
+    "generatedAt": "2026-10-28T18:32:18.242305+00:00",
+    "scannedPeople": 18,
+    "peopleWithNewCandidates": 0,
+    "newCandidatePhotos": 0,
+    "scannedWithoutCandidates": 18,
     "retryNeeded": 435,
     "pendingReviewPeople": 6,
-    "licenseConcernCandidates": 40,
+    "licenseConcernCandidates": 63,
     "statusCounts": {
       "download_failed": 26,
       "published": 70,
@@ -25,7 +25,7 @@
     "failureReasons": {
       "proxy_access_denied": 4,
       "license_unclear": 7,
-      "identity_unconfirmed": 71,
+      "identity_unconfirmed": 83,
       "network_error": 24,
       "image_validation_failed": 3
     },
@@ -46,7 +46,7 @@
         "decision": "reject",
         "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -70,7 +70,7 @@
         "decision": "reject",
         "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -94,22 +94,22 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找八點檔清晰正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        },
-        {
           "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -124,7 +124,9 @@
         "decision": "pending",
         "reason": "補 Flickr 原圖、人物圖說、授權及五官預覽",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -144,7 +146,9 @@
         "decision": "pending",
         "reason": "裁掉背景第二張人臉，補來源及解析度",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -165,7 +169,7 @@
         "decision": "reject",
         "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -189,52 +193,88 @@
         "decision": "reject",
         "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Minneapolis_City_Council_Candidate_Forum_Ward_5_2009.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:LaFayeJohnsonLeeES.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2018Xinzhuang%E4%B9%BE%E9%9A%86%E5%9B%9B%E5%8D%81%E5%9B%9B%E5%B9%B4(1779%E5%B9%B4)%E9%87%8D%E4%BF%AE%E6%85%88%E7%A5%90%E5%AE%AE%E7%A2%91%E8%A8%98%E4%B9%99.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Alabama-_CHAMBERS_County,_Enumeration_District_2,_Sheet_No._5B_-_DPLA_-_bc45ada04de335807aae5f524d9e67b0.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Confederate_Soldiers_from_the_State_of_North_Carolina_-_Johnson,_Lee_-_Twenty-third_Infantry_-_DPLA_-_e6d3ab808acc3148cc417e5515d10cf0.jpg",
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Pink_and_Acorn_Barnacles_and_Periwenkles_(c2a9d4232fc24b88a5020f03122d56b0).jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%871.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%872.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%873.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%875.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Bulletin_(1897)_(14577619957).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Illinois-_COOK_County,_Enumeration_District_1003,_Sheet_No._11B_-_DPLA_-_a5daea6351ba8ef9aa8a362b064e00f9.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:New_York-_ALBANY_County,_Enumeration_District_124,_Sheet_No._2B_-_DPLA_-_b1da0ac558a6663bb44452ddee075fe6.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Acorn_Barnacles_(a536691ceef1440ea0e9dd8b7b034417).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%874.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E5%B0%B9%E9%BB%98%E3%80%8A%E5%8C%8F%E7%93%9C%E5%BA%B5%E8%B0%88%E8%89%BA%E5%BD%95%E3%80%8B%E6%89%8B%E7%A8%BF%E9%87%8A%E6%96%876.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -249,52 +289,88 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        },
-        {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov.JPG",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Detail_of_Czechoslovak_Huite_Church_in_Duchcov2.JPG",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Presa_Huites_(18238885575).jpg",
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Watermolen_van_Huite_Buursteepolder_-_Nijemirdum_-_20166319_-_RCE.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Banjoemas._De_evacuatie_van_de_TNI-troepen_vergde_zeer_veel_voorbereiding._De_co,_Bestanddeelnr_1527-3-5.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Een_gezelschap_officieren_en_twee_dames_zitten_op_een_plankier_onder_een_dak_ges,_Bestanddeelnr_471-2-1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Toeschouwers_zien_een_spannend_moment_in_de_voetbalwedstrijd._Links_luitenant-ko,_Bestanddeelnr_471-2-5.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:SNH48_%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%80%BB%E9%80%89%E4%B8%BE_9.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:La_Tremblade_(Charente-Inferieure)_Parc_a_Huites,_Etablissement_Ostreicole_L._Colombier_Marennes_et_Portugaises.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Het_Friese_bataljon_1-9_RI_vierde_op_16_maart_zijn_2,5_jarig_bestaan,_omdat_zijn,_Bestanddeelnr_1591A-1-1.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Curandero_awaj%C3%BAn_Joel_Wajajai_Huite_en_el_Congreso_CISEI_2015.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Op_10_maart_werd_de_grote_rubberfabriek_van_de_onderneming_Tjiseroe_te_Tjipari_(,_Bestanddeelnr_1591-3-3.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_Maritime_Museum_HUITE_ANANUTA_TANGAROA.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Lagune_de_somone.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Mangrove_au_milieu_de_la_lagune_de_somone.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:...dix-sept_vrancs._-_Non!...cent_sous._-_Quinze_vrancs_(barceque_c%27est_fous!)_-_Cent_sous._-_Foyons!_douze_vrancs%3F_-_Cent_sous._-_Foulez-fous_me_tonner_huite_vrancs_et_demie_(sic)%3F_-_DPLA_-_1900232c40efc572b76305666f6a741d.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -309,7 +385,9 @@
         "decision": "pending",
         "reason": "補來源授權、人物證據、正面五官預覽",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -329,52 +407,88 @@
         "decision": "reject",
         "reason": "低頭、麥克風遮嘴、模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        },
-        {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Pia-Tafdrup.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Pia_Viitanen.jpg",
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Allerslev.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Fortezza_Pia_di_Ascoli_Piceno_052.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
+          "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:Maria_Cristina_Pia_de_Bourbon-Siciles_(1870).jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Pia_Sundhage,_Euro_2013.jpg",
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Tassinari.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_G%C3%B3rska.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Pia_Tjelta.JPG",
+          "source": "https://commons.wikimedia.org/wiki/File:Roma.Porta_Pia_lato_Nomentana.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:La_porte_Pia_%C3%A0_Rome.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Senator_Pia_Cayetano.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Giancaro.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia-Cramling.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pia_Fernau11-.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -389,7 +503,9 @@
         "decision": "pending",
         "reason": "確認舊照解析度、來源授權與辨識度",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -409,17 +525,12 @@
         "decision": "reject",
         "reason": "年代久且柔焦；重找高清正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        },
         {
           "provider": "wikimedia",
           "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019(%E5%BB%A3%E5%B7%9E%E7%AB%99).jpg",
@@ -455,7 +566,7 @@
               "matchedWorks": [],
               "note": "Search context only; recognizability not verified"
             },
-            "searchTime": "2026-10-28T17:39:10.902231+00:00",
+            "searchTime": "2026-10-28T18:29:33.305711+00:00",
             "width": 4160,
             "height": 6240,
             "id": "1ef8ee341f826aed4ac2",
@@ -503,7 +614,7 @@
               "matchedWorks": [],
               "note": "Search context only; recognizability not verified"
             },
-            "searchTime": "2026-10-28T17:39:12.099755+00:00",
+            "searchTime": "2026-10-28T18:29:34.959972+00:00",
             "width": 333,
             "height": 500,
             "id": "304142c70cb591bca194",
@@ -518,6 +629,11 @@
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
         }
       ],
       "candidateIds": []
@@ -532,7 +648,7 @@
         "decision": "reject",
         "reason": "側臉模糊；找經典角色正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -542,42 +658,6 @@
           "provider": "openverse",
           "code": "network_error",
           "message": "The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F%E9%BB%A8%E7%AB%8B%E5%A7%94%E9%BB%83%E5%9C%8B%E6%98%8C%E5%9C%A8%E7%AB%8B%E6%B3%95%E9%99%A2%E6%8E%A5%E5%8F%97%E7%BE%8E%E5%9C%8B%E4%B9%8B%E9%9F%B3%E6%8E%A1%E8%A8%AA.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%B7%E6%97%A5.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_01.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_02.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_03.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E7%81%A3%E7%9C%81%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%88%89%E8%A1%8C%E8%8F%AF%E8%B6%8A%E5%90%8C%E5%BF%83%E7%85%A7%E7%89%87%E5%B1%95%E8%A6%BD_04.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -592,7 +672,7 @@
         "decision": "reject",
         "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -616,7 +696,9 @@
         "decision": "pending",
         "reason": "補原圖解析度、身分證據與授權",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -636,7 +718,9 @@
         "decision": "pending",
         "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "evidenceRun": "20261028T175736Z-a138bf90",
+        "evidenceStatus": "source_image_map_available_visual_not_verified",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -656,52 +740,52 @@
         "decision": "reject",
         "reason": "眼鏡反光、前景遮擋；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
       "status": "download_failed",
       "errors": [
         {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Review_of_reviews_and_world%27s_work_(1890)_(14587320919).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Juvenile_Instructor_(1919)_(14757034306).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Harriet_Elizabeth_Abbott_Clark_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Katherine_E._Lamb_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Mrs._Harry_E._Churchil_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Mrs._A._M._Hawley_(Business_Woman%27s_Mag,_1903).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
           "provider": "openverse",
           "code": "network_error",
           "message": "The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Karin_L_Lee_Vancouver_2017.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Margaret_Dale_Owen_(Business_Woman%27s_Mag,_1903).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Kate_T._Cummings_(Business_Woman%27s_Mag,_1903).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Jul-Aug_1903.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Sep_1903.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Business_Woman%27s_Magazine,_Oct_1903.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidateIds": []
@@ -716,7 +800,7 @@
         "decision": "reject",
         "reason": "嚴重模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "660b4579ab6815ac3cfad71a72bf749ed04e6d47d9bb43a1e7ea36eefdf3d64e",
+        "sourceReviewSha256": "fa7d3bf1938bea0f7f23dc88fba719ea38f06489d1d77bf03a2dde4a321a1f2b",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
@@ -730,30 +814,5 @@
       ],
       "candidateIds": []
     }
-  ],
-  "previousEvidenceRunId": "20261028T174728Z-e2f4fe1d",
-  "sourceImageMap": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/source-image-map.json",
-  "revealContactSheet": "expansion-1500/pipeline/runs/20261028T175736Z-a138bf90/reveal-contact-sheet.jpg",
-  "sourceReviewFileCommit": "82af8c62dec70b4ac037fa8ae3654158dfa32026",
-  "roundResult": {
-    "reviewedPeople": 18,
-    "rejectedPeopleResearched": 12,
-    "newSuitableAlternativeSourcePhotos": 0,
-    "pendingPeopleWithSourceMetadata": 6,
-    "pendingPeopleWithSourceImageCopies": 6,
-    "pendingPeopleWithBiographyEvidence": 6,
-    "pendingPeopleWithFiveStagePreviews": 6,
-    "activeNewSourceRecrops": 1,
-    "activeReviewPhotos": 7,
-    "rejectedPeopleStillNeedingRetry": 12,
-    "automaticallyApproved": 0,
-    "productionModified": false
-  },
-  "reviewerInstructions": [
-    "Read the reviewIndex, sourceImageMap and revealContactSheet for this round.",
-    "Review six pending people and the new source-aligned Yuni Li crop; do not reinterpret superseded/rejected crops as active candidates.",
-    "Match any new decision to personId + candidateId + gameSha256 from the current review index.",
-    "Source metadata and feature alignment do not constitute human identity or rights verification.",
-    "Write the next preliminary reject/pending decisions to pipeline/chatgpt-review/latest.json on this branch; do not publish automatically."
   ]
 }

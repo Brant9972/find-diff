@@ -121,11 +121,403 @@
       "personId": "t1500_0002",
       "candidateId": "c1500-0002",
       "name": "陳建寧",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:58:31.662709+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chen_Chien-Ning2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
+          "filename": "Chen_Chien-Ning2022.jpg",
+          "artist": "臺南市政府",
+          "credit": "2023台南好YOUNG耶誕跨年系列活動記者會(2).jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​陳建寧出席2023台南好YOUNG耶誕跨年系列活動記者會",
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%BB%BA%E5%AF%A7",
+            "excerpt": "陳建寧（Ian Chen，1971年10月28日—），台灣音樂人，唱片製作人，詞曲作者，經紀人，樂團F.I.R.的團長與鍵盤手。",
+            "matchedAliases": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "wikidataId": "Q8943339",
+            "captionAliasMatches": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:16.942952+00:00",
+          "width": 576,
+          "height": 688,
+          "id": "06f5369797dd0367d290",
+          "personId": "t1500_0002",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/IanChenFoxLa_Screening2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:IanChenFoxLa_Screening2018.jpg",
+          "filename": "IanChenFoxLa Screening2018.jpg",
+          "artist": "Alplab",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Ian Chen at Fox Los Angeles Screening 2018",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:18.961118+00:00",
+          "width": 1591,
+          "height": 2299,
+          "id": "436821ea338d6775b6de",
+          "personId": "t1500_0002",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Ian_Chen_and_Dino_Lee_attending_the_festival_of_Songshan_Cihui_Temple_20160429.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_and_Dino_Lee_attending_the_festival_of_Songshan_Cihui_Temple_20160429.jpg",
+          "filename": "Ian Chen and Dino Lee attending the festival of Songshan Cihui Temple 20160429.jpg",
+          "artist": "kung3800",
+          "credit": "https://www.flickr.com/photos/kung3800/26440225260/",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "​陳彥允、李玉璽等參與松山慈惠堂母娘文化季活動",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:20.969384+00:00",
+          "width": 3456,
+          "height": 5184,
+          "id": "f9aac0395919353a2e1e",
+          "personId": "t1500_0002",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(1).jpg",
+          "filename": "2023台南好YOUNG耶誕跨年系列活動記者會(1).jpg",
+          "artist": "臺南市政府",
+          "credit": "https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=7931688#",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023台南好YOUNG耶誕跨年系列活動記者會， 藝人范逸臣、阿沁、陳建寧與市長黃偉哲合影",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:21.973041+00:00",
+          "width": 4282,
+          "height": 2854,
+          "id": "317a94df49fa42d3c4a4",
+          "personId": "t1500_0002",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(2).jpg",
+          "filename": "2023台南好YOUNG耶誕跨年系列活動記者會(2).jpg",
+          "artist": "臺南市政府",
+          "credit": "https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=7931688#",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023台南好YOUNG耶誕跨年系列活動記者會， 藝人范逸臣、阿沁、陳建寧與市長黃偉哲合影",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:22.941243+00:00",
+          "width": 3718,
+          "height": 2479,
+          "id": "05916b4e7b97c14cfda0",
+          "personId": "t1500_0002",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/2023%E5%8F%B0%E5%8D%97%E3%80%8C%E5%A5%BDYOUNG%E8%B7%A8%E5%B9%B4%E6%BC%94%E5%94%B1%E6%9C%83%E3%80%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E3%80%8C%E5%A5%BDYOUNG%E8%B7%A8%E5%B9%B4%E6%BC%94%E5%94%B1%E6%9C%83%E3%80%8D.jpg",
+          "filename": "2023台南「好YOUNG跨年演唱會」.jpg",
+          "artist": "臺南市政府新聞及國際關係處",
+          "credit": "https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=7942127#",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023台南「好YOUNG跨年演唱會」-范逸臣、陳建寧、TANK、阿沁4人組成「造夢者樂團」一日限定組合，與市長黃偉哲合影。",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:23.942362+00:00",
+          "width": 2508,
+          "height": 1672,
+          "id": "cb2f46db6800396b263b",
+          "personId": "t1500_0002",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ian_Chen_at_Sherman_Oaks_2022_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_at_Sherman_Oaks_2022_(cropped).jpg",
+          "filename": "Ian Chen at Sherman Oaks 2022 (cropped).jpg",
+          "artist": "Alplab",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Ian Chen at Sherman Oaks Galleria 11/18/2022",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:24.914616+00:00",
+          "width": 884,
+          "height": 1153,
+          "id": "374c129ab146ab251fc5",
+          "personId": "t1500_0002",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ian_Chen_by_Joanna_DeGeneres.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_by_Joanna_DeGeneres.jpg",
+          "filename": "Ian Chen by Joanna DeGeneres.jpg",
+          "artist": "Genuinewax",
+          "credit": "Own work",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Headshot of Ian Chen taken by Joanna DeGeneres",
+          "identityEvidence": {
+            "query": "陳建寧",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:57:25.906707+00:00",
+          "width": 2400,
+          "height": 3598,
+          "id": "55620c1b4eda23248bf7",
+          "personId": "t1500_0002",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:57:13.103530+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:57:26.909496+00:00"
+        },
+        {
+          "time": "2026-10-28T12:57:26.909501+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:58:31.662657+00:00"
+        },
+        {
+          "time": "2026-10-28T12:58:31.662682+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:58:31.662689+00:00"
+        },
+        {
+          "time": "2026-10-28T12:58:31.662693+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:IanChenFoxLa_Screening2018.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_and_Dino_Lee_attending_the_festival_of_Songshan_Cihui_Temple_20160429.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(1).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(2).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E3%80%8C%E5%A5%BDYOUNG%E8%B7%A8%E5%B9%B4%E6%BC%94%E5%94%B1%E6%9C%83%E3%80%8D.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_at_Sherman_Oaks_2022_(cropped).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_by_Joanna_DeGeneres.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 8
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0002",
         "name": "陳建寧",
@@ -141,7 +533,69 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:57:13.047229+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:IanChenFoxLa_Screening2018.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_and_Dino_Lee_attending_the_festival_of_Songshan_Cihui_Temple_20160429.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(1).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(2).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E3%80%8C%E5%A5%BDYOUNG%E8%B7%A8%E5%B9%B4%E6%BC%94%E5%94%B1%E6%9C%83%E3%80%8D.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_at_Sherman_Oaks_2022_(cropped).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_by_Joanna_DeGeneres.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:58:31.662723+00:00"
     },
     "t1500_0003": {
       "personId": "t1500_0003",
@@ -529,11 +983,41 @@
       "personId": "t1500_0007",
       "candidateId": "c1500-0007",
       "name": "王瞳",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:38:43.300918+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T12:37:34.097843+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:37:38.282138+00:00"
+        },
+        {
+          "time": "2026-10-28T12:37:38.282156+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:38:43.300872+00:00"
+        },
+        {
+          "time": "2026-10-28T12:38:43.300894+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:38:43.300902+00:00"
+        },
+        {
+          "time": "2026-10-28T12:38:43.300906+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0007",
         "name": "王瞳",
@@ -549,7 +1033,21 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:37:34.038673+00:00",
+      "lastErrors": [
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:38:43.300933+00:00"
     },
     "t1500_0008": {
       "personId": "t1500_0008",
@@ -581,11 +1079,84 @@
       "personId": "t1500_0009",
       "candidateId": "c1500-0009",
       "name": "姚淳耀",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:39:53.119027+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/%E6%88%91%E6%9C%80%E6%84%9B%E7%9A%84%E7%AC%A8%E7%94%B7%E4%BA%BA-%E8%87%BA%E4%B8%AD%E9%A6%96%E6%98%A0%E6%B4%BB%E5%8B%95-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%88%91%E6%9C%80%E6%84%9B%E7%9A%84%E7%AC%A8%E7%94%B7%E4%BA%BA-%E8%87%BA%E4%B8%AD%E9%A6%96%E6%98%A0%E6%B4%BB%E5%8B%95-5.jpg",
+          "filename": "我最愛的笨男人-臺中首映活動-5.jpg",
+          "artist": "臺中市政府新聞局",
+          "credit": "https://www.news.taichung.gov.tw/2446705/post",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​《我最愛的笨男人》台中首映",
+          "identityEvidence": {
+            "query": "姚淳耀",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "模仿犯"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:38:48.356099+00:00",
+          "width": 6720,
+          "height": 4480,
+          "id": "f1b04711cb6efc35f21f",
+          "personId": "t1500_0009",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:38:43.426376+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:38:48.382188+00:00"
+        },
+        {
+          "time": "2026-10-28T12:38:48.382201+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:39:53.118974+00:00"
+        },
+        {
+          "time": "2026-10-28T12:39:53.119002+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:39:53.119010+00:00"
+        },
+        {
+          "time": "2026-10-28T12:39:53.119013+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%88%91%E6%9C%80%E6%84%9B%E7%9A%84%E7%AC%A8%E7%94%B7%E4%BA%BA-%E8%87%BA%E4%B8%AD%E9%A6%96%E6%98%A0%E6%B4%BB%E5%8B%95-5.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0009",
         "name": "姚淳耀",
@@ -601,17 +1172,399 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:38:43.364917+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%88%91%E6%9C%80%E6%84%9B%E7%9A%84%E7%AC%A8%E7%94%B7%E4%BA%BA-%E8%87%BA%E4%B8%AD%E9%A6%96%E6%98%A0%E6%B4%BB%E5%8B%95-5.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:39:53.119041+00:00"
     },
     "t1500_0016": {
       "personId": "t1500_0016",
       "candidateId": "c1500-0016",
       "name": "庹宗康",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "no_suitable_source",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:40:51.269487+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Shotgun-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-009.jpg",
+          "filename": "Shotgun-009.jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "http://www.peosoldier.army.mil/program_images/shotgun-009.jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "M4 + XM26 LSS",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:39:59.084235+00:00",
+          "width": 300,
+          "height": 123,
+          "id": "b1a8ac20cfd0fb4c2035",
+          "personId": "t1500_0016",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shotgun_formation.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_formation.JPG",
+          "filename": "Shotgun formation.JPG",
+          "artist": "Anthony J Hyde",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Illustration of a Shotgun Formation in American Football",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:00.012445+00:00",
+          "width": 320,
+          "height": 118,
+          "id": "acbb2f0e432e0863e7ef",
+          "personId": "t1500_0016",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Shotgun_houses_on_S_5th_St.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_houses_on_S_5th_St.jpg",
+          "filename": "Shotgun houses on S 5th St.jpg",
+          "artist": "LJOHN04",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "shotgun house",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:00.927799+00:00",
+          "width": 3072,
+          "height": 2304,
+          "id": "cd42cb5165e00aa5ecb1",
+          "personId": "t1500_0016",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Shotgun_loading.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_loading.jpg",
+          "filename": "Shotgun loading.jpg",
+          "artist": "Artem Popov",
+          "credit": "https://www.flickr.com/photos/7259240@N03/5830617832",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Rechargement d'un fusil de chasse à magasin tubulaire.",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:01.838463+00:00",
+          "width": 3087,
+          "height": 2048,
+          "id": "944d8da47028541b83cd",
+          "personId": "t1500_0016",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/M1200_Shotgun_%287414627784%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:M1200_Shotgun_(7414627784).jpg",
+          "filename": "M1200 Shotgun (7414627784).jpg",
+          "artist": "US Air Force from USA",
+          "credit": "M1200, M500, M870 Shotgun",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Winchester M1200 Shotgun Primary function: Anti-personnel, breaching and less-than-lethal. Length: 40.75 in. Weight: 8 lbs. Caliber: 12 gage. Maximum effective range: 68 meters.",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:02.814771+00:00",
+          "width": 2100,
+          "height": 485,
+          "id": "d9a4f4544a835ef66831",
+          "personId": "t1500_0016",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Shotgun-Chokes-Basic_es.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-Chokes-Basic_es.png",
+          "filename": "Shotgun-Chokes-Basic es.png",
+          "artist": "Srinivasa247 (original) // Wiki LIC (español)",
+          "credit": "File:Shotgun-Chokes-Basic.png",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Tipos de Estranguladores",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:03.727596+00:00",
+          "width": 384,
+          "height": 234,
+          "id": "9f829c9fdb3d018e37fe",
+          "personId": "t1500_0016",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg",
+          "filename": "Casey Ryan during a shotgun stage at the 2018 USPSA Multigun Championship.jpg",
+          "artist": "U.S. Air Force photo by Senior Airman Kevin Tanenbaum",
+          "credit": "This image was released by the United States Air Force with the ID 180421-F-YM181-003 (next).\nThis tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing.\n\n\nالعربية ∙ বাংলা ∙ \nBahasa Indonesia ∙ \nBahaso Jambi ∙ \nDeutsch ∙ Deutsch (Sie-Form) ∙ English ∙ español ∙ euskara ∙ فارسی ∙ français ∙ italiano ∙ 日本語 ∙ 한국어 ∙ македонски ∙ മലയാളം ∙ Plattdüütsch ∙ Nederlands ∙ polski ∙ پښتو ∙ português ∙ русский ∙ slovenščina ∙ svenska ∙ Türkçe ∙ українська ∙ 简体中文 ∙ 繁體中文 ∙ +/−",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "1st Lt. Casey Ryan, assigned to the 55th Security Forces Squadron, Offutt Air Force Base, Nebraska, reloads a shotgun while moving during the United States Practical Shooting Association's Multigun National Championship in Boulder City, Nevada, April 21, 2018. The team serves an integral role in representing the Air Force during interactions throughout the competition. (U.S. Air Force photo by Senior Airman Kevin Tanenbaum)",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:04.646793+00:00",
+          "width": 4154,
+          "height": 2682,
+          "id": "2afa92f979e5d29693d2",
+          "personId": "t1500_0016",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Hunting_shotgun_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Hunting_shotgun_01.jpg",
+          "filename": "Hunting shotgun 01.jpg",
+          "artist": "Ragnhild Kjeldsen",
+          "credit": "https://ndla.no/subjects/subject:13/topic:1:184914/topic:1:184882/topic:1:184883/resource:1:173352",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Over/under shotgun with 12/76 shotgun shells",
+          "identityEvidence": {
+            "query": "庹宗康",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:05.566394+00:00",
+          "width": 2000,
+          "height": 938,
+          "id": "b02961294eba2363a519",
+          "personId": "t1500_0016",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:39:53.242407+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:40:06.473391+00:00"
+        },
+        {
+          "time": "2026-10-28T12:40:06.473396+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:40:51.269446+00:00"
+        },
+        {
+          "time": "2026-10-28T12:40:51.269466+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:40:51.269472+00:00"
+        },
+        {
+          "time": "2026-10-28T12:40:51.269475+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Shotgun-009.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Shotgun_formation.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Shotgun_houses_on_S_5th_St.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Shotgun_loading.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:M1200_Shotgun_(7414627784).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Shotgun-Chokes-Basic_es.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Hunting_shotgun_01.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 8
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0016",
         "name": "庹宗康",
@@ -627,7 +1580,64 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:39:53.183971+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-009.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_formation.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_houses_on_S_5th_St.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_loading.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:M1200_Shotgun_(7414627784).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-Chokes-Basic_es.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Hunting_shotgun_01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "lastFailure": {
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:40:51.269499+00:00"
     },
     "t1500_0027": {
       "personId": "t1500_0027",
@@ -735,7 +1745,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -858,11 +1869,84 @@
       "personId": "t1500_0092",
       "candidateId": "c1500-0092",
       "name": "江祖平",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:42:01.458235+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_02_054_%22%E9%95%B7%E5%AE%89%E5%AF%BA%EF%BC%88%E6%9C%9D%E9%AE%AE%E9%87%91%E5%89%9B%E5%B1%B1%EF%BC%89%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_02_054_%22%E9%95%B7%E5%AE%89%E5%AF%BA%EF%BC%88%E6%9C%9D%E9%AE%AE%E9%87%91%E5%89%9B%E5%B1%B1%EF%BC%89%22.jpg",
+          "filename": "亜東印画輯 02 054 \"長安寺（朝鮮金剛山）\".jpg",
+          "artist": "亜東印画協会",
+          "credit": "亜東印画輯 第2冊",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "◆長安寺（朝鮮金剛山）\n平康驛から三十五里の山中にある長安寺は山中四大寺廟で約千四百年前の創建である。其の後不幸文祿の兵火に羅り當時の伽藍は寺寳と共に烏有に歸して梵磬正に絕江哀れ狐狸の窟とならうとしたが、李朝世祖王の佛敎尊信に依つて歷代王室の歸依を得、今日の大雄寳殿を初め六殿七閣一門を建て、玆に又復僧俗渇仰の靈場となつたのである。（印畫の複製を嚴禁す）",
+          "identityEvidence": {
+            "query": "江祖平",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "風水世家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:40:56.653167+00:00",
+          "width": 1151,
+          "height": 794,
+          "id": "c77df17ac982ac74b1fe",
+          "personId": "t1500_0092",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:40:51.390973+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:40:56.681104+00:00"
+        },
+        {
+          "time": "2026-10-28T12:40:56.681114+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:42:01.458187+00:00"
+        },
+        {
+          "time": "2026-10-28T12:42:01.458211+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:42:01.458219+00:00"
+        },
+        {
+          "time": "2026-10-28T12:42:01.458222+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_02_054_%22%E9%95%B7%E5%AE%89%E5%AF%BA%EF%BC%88%E6%9C%9D%E9%AE%AE%E9%87%91%E5%89%9B%E5%B1%B1%EF%BC%89%22.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0092",
         "name": "江祖平",
@@ -878,17 +1962,194 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:40:51.332611+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_02_054_%22%E9%95%B7%E5%AE%89%E5%AF%BA%EF%BC%88%E6%9C%9D%E9%AE%AE%E9%87%91%E5%89%9B%E5%B1%B1%EF%BC%89%22.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:42:01.458248+00:00"
     },
     "t1500_0093": {
       "personId": "t1500_0093",
       "candidateId": "c1500-0093",
       "name": "郭品超",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:43:13.935836+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_01.jpg",
+          "filename": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 01.jpg",
+          "artist": "駐緬甸臺北經濟文化辦事處",
+          "credit": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 (Archive)",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作\n為對接台商與緬甸大型企業之合作，駐緬甸代表處李朝成大使3月8日上午引介緬甸寶運集團(Myanmar Jewellery Luck Group)副董事長Tin Tun Oo與農友種苗(緬甸)公司郭坤石總經理，雙方針對業務專長、合作機會及中長程規畫充分交換意見。\n緬甸寶運集團(JLC)旗下企業業務包括伐木業、膠合板加工、貿易、旅遊、金融、房地產開發及酒店等，未來將積極推動緬甸農、畜產業發展的工作。農友種苗公司本年開發的新品種農產品包括：番茄、櫻桃番茄、茄子、南瓜、苦瓜、瓠瓜、小黃瓜、大黃瓜、木瓜、超甜玉米、洋香瓜、哈密瓜、西瓜等，日前在奈比都舉辦農產品觀摩會，及參加農業部所主辦的新品種展示會，在多家參展種子公司中，品項多元、產品優質、成果耀眼，受到參訪者高度讚揚。該公司設有農友訓練所，訓練課程配合理論及農場實作，傳授緬甸農民從整地、播種、施肥、催芽、病蟲害防治到留果、採收時機等完整瓜果栽培技術，迄今已有千餘人完成訓練，對緬甸農業發展貢獻卓著。\n\n李大使表示，農友公司已深耕緬甸農業產業數十年，提供農技教育訓練，對緬甸相對弱勢的農民生計、增加就業人口及提升農業技術有顯著貢獻。歡迎緬甸具有遠見的企業集團與合適的臺商共同合作，擴大投資緬甸農、畜產業，提升農產品質與增進對外貿易。",
+          "identityEvidence": {
+            "query": "郭品超",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "鬥魚"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:42:07.043440+00:00",
+          "width": 1280,
+          "height": 1124,
+          "id": "6d164fc69e7a8f8c128a",
+          "personId": "t1500_0093",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_03.jpg",
+          "filename": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 03.jpg",
+          "artist": "駐緬甸臺北經濟文化辦事處",
+          "credit": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 (Archive)",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作\n為對接台商與緬甸大型企業之合作，駐緬甸代表處李朝成大使3月8日上午引介緬甸寶運集團(Myanmar Jewellery Luck Group)副董事長Tin Tun Oo與農友種苗(緬甸)公司郭坤石總經理，雙方針對業務專長、合作機會及中長程規畫充分交換意見。\n緬甸寶運集團(JLC)旗下企業業務包括伐木業、膠合板加工、貿易、旅遊、金融、房地產開發及酒店等，未來將積極推動緬甸農、畜產業發展的工作。農友種苗公司本年開發的新品種農產品包括：番茄、櫻桃番茄、茄子、南瓜、苦瓜、瓠瓜、小黃瓜、大黃瓜、木瓜、超甜玉米、洋香瓜、哈密瓜、西瓜等，日前在奈比都舉辦農產品觀摩會，及參加農業部所主辦的新品種展示會，在多家參展種子公司中，品項多元、產品優質、成果耀眼，受到參訪者高度讚揚。該公司設有農友訓練所，訓練課程配合理論及農場實作，傳授緬甸農民從整地、播種、施肥、催芽、病蟲害防治到留果、採收時機等完整瓜果栽培技術，迄今已有千餘人完成訓練，對緬甸農業發展貢獻卓著。\n\n李大使表示，農友公司已深耕緬甸農業產業數十年，提供農技教育訓練，對緬甸相對弱勢的農民生計、增加就業人口及提升農業技術有顯著貢獻。歡迎緬甸具有遠見的企業集團與合適的臺商共同合作，擴大投資緬甸農、畜產業，提升農產品質與增進對外貿易。",
+          "identityEvidence": {
+            "query": "郭品超",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "鬥魚"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:42:07.978997+00:00",
+          "width": 1280,
+          "height": 973,
+          "id": "22c80ffbdae5aefef576",
+          "personId": "t1500_0093",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_02.jpg",
+          "filename": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 02.jpg",
+          "artist": "駐緬甸臺北經濟文化辦事處",
+          "credit": "駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作 (Archive)",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​駐緬甸代表處引介緬甸寶運集團與農友種苗公司探討推廣農業合作\n為對接台商與緬甸大型企業之合作，駐緬甸代表處李朝成大使3月8日上午引介緬甸寶運集團(Myanmar Jewellery Luck Group)副董事長Tin Tun Oo與農友種苗(緬甸)公司郭坤石總經理，雙方針對業務專長、合作機會及中長程規畫充分交換意見。\n緬甸寶運集團(JLC)旗下企業業務包括伐木業、膠合板加工、貿易、旅遊、金融、房地產開發及酒店等，未來將積極推動緬甸農、畜產業發展的工作。農友種苗公司本年開發的新品種農產品包括：番茄、櫻桃番茄、茄子、南瓜、苦瓜、瓠瓜、小黃瓜、大黃瓜、木瓜、超甜玉米、洋香瓜、哈密瓜、西瓜等，日前在奈比都舉辦農產品觀摩會，及參加農業部所主辦的新品種展示會，在多家參展種子公司中，品項多元、產品優質、成果耀眼，受到參訪者高度讚揚。該公司設有農友訓練所，訓練課程配合理論及農場實作，傳授緬甸農民從整地、播種、施肥、催芽、病蟲害防治到留果、採收時機等完整瓜果栽培技術，迄今已有千餘人完成訓練，對緬甸農業發展貢獻卓著。\n\n李大使表示，農友公司已深耕緬甸農業產業數十年，提供農技教育訓練，對緬甸相對弱勢的農民生計、增加就業人口及提升農業技術有顯著貢獻。歡迎緬甸具有遠見的企業集團與合適的臺商共同合作，擴大投資緬甸農、畜產業，提升農產品質與增進對外貿易。",
+          "identityEvidence": {
+            "query": "郭品超",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "鬥魚"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:42:08.964928+00:00",
+          "width": 1280,
+          "height": 960,
+          "id": "2d7e863be919db48f75d",
+          "personId": "t1500_0093",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:42:01.584324+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:42:08.998162+00:00"
+        },
+        {
+          "time": "2026-10-28T12:42:08.998174+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:43:13.935789+00:00"
+        },
+        {
+          "time": "2026-10-28T12:43:13.935813+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:43:13.935819+00:00"
+        },
+        {
+          "time": "2026-10-28T12:43:13.935823+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_01.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_03.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_02.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 3
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0093",
         "name": "郭品超",
@@ -904,17 +2165,122 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:42:01.523751+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_03.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_02.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:43:13.935849+00:00"
     },
     "t1500_0094": {
       "personId": "t1500_0094",
       "candidateId": "c1500-0094",
       "name": "寇世勳",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:44:24.230491+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
+          "filename": "Yan Zhenqing - Draft of a Requiem to My Nephew.jpg",
+          "artist": "Yan Zhenqing  顏真卿  (709–785)",
+          "credit": "Decipher the Calligraphy. NPM's Anime Carnival (exhibit). Taipei: National Palace Museum.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "During the An Lushan Rebellion, rebel forces invaded and sacked Changshan (常山). At the time, Yan Gaoqing (顏杲卿, 692–756)—Yan Zhenqing's cousin—served as the Magistrate of Changshan. Both he and his son Yan Jiming (顏季明) perished during the conflict. Yan Zhenqing alluded to the incident in this work: \n\n\"Traitorous officials did not rescue [them], so a lone town was surrounded. A father and son perished, and their nest was destroyed.\"\n「賊臣不救，孤城圍逼，父陷子死，巢傾卵覆。」\nAfter the conflict, Yan Zhenqing sent his nephew Yan Quanming (顏泉明)—Yan Gaoqing's surviving son—to make funerary arrangements as well as prepare the return of family members, subordinate officials, and servants. Under these circumstances, Yan Zhenqing composed and wrote this work. It is done in running script. It was probably a preliminary draft for a more formal composition.",
+          "identityEvidence": {
+            "query": "寇世勳",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "一剪梅"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:43:19.384178+00:00",
+          "width": 6903,
+          "height": 400,
+          "id": "88348b248a3919b6a684",
+          "personId": "t1500_0094",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:43:14.057028+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:43:19.412916+00:00"
+        },
+        {
+          "time": "2026-10-28T12:43:19.412927+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:44:24.230444+00:00"
+        },
+        {
+          "time": "2026-10-28T12:44:24.230468+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:44:24.230475+00:00"
+        },
+        {
+          "time": "2026-10-28T12:44:24.230479+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0094",
         "name": "寇世勳",
@@ -930,7 +2296,27 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:43:13.997693+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:44:24.230503+00:00"
     },
     "t1500_0095": {
       "personId": "t1500_0095",
@@ -947,11 +2333,41 @@
       "personId": "t1500_0096",
       "candidateId": "c1500-0096",
       "name": "馬如龍",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:45:33.476937+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-28T12:44:24.355339+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:44:28.664798+00:00"
+        },
+        {
+          "time": "2026-10-28T12:44:28.664816+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:45:33.476892+00:00"
+        },
+        {
+          "time": "2026-10-28T12:45:33.476915+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:45:33.476922+00:00"
+        },
+        {
+          "time": "2026-10-28T12:45:33.476925+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0096",
         "name": "馬如龍",
@@ -967,17 +2383,370 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:44:24.296772+00:00",
+      "lastErrors": [
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:45:33.476949+00:00"
     },
     "t1500_0099": {
       "personId": "t1500_0099",
       "candidateId": "c1500-0099",
       "name": "阿翔",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:46:52.339402+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aaron_Chen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Aaron_Chen.jpg",
+          "filename": "Aaron_Chen.jpg",
+          "artist": "嘉義市政府",
+          "credit": "D004 160101012426.jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2016「全嘉藝起來」跨年晚會主持",
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%A7%89%E7%AB%8B",
+            "excerpt": "陳秉立（英語：Aaron Chan，1981年3月9日—），藝名阿翔，原名陳文翔，2007年改為現名。台灣台南人，中華藝校影劇科畢業。2004年與浩子組成兩人搞笑團體浩角翔起，除主持工作外，亦為演員及歌手。2011年所屬團體浩角翔起以主持《食尚玩家》獲得第46屆金鐘獎最佳綜藝節目主持人獎；2018年以主持《綜藝大集合》獲得第53屆金鐘獎最佳綜藝節目主持人獎。現為《綜藝大集合》、《綜藝新時代》節目主持人。",
+            "matchedAliases": [
+              "阿翔",
+              "陳秉立",
+              "阿翔",
+              "陳秉立"
+            ],
+            "wikidataId": "Q8944380",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:39.448693+00:00",
+          "width": 930,
+          "height": 1095,
+          "id": "a05b167c0cb2e13c68d8",
+          "personId": "t1500_0099",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Avatar_Flight_of_Passage_%2833825570024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(33825570024).jpg",
+          "filename": "Avatar Flight of Passage (33825570024).jpg",
+          "artist": "Theme Park Tourist",
+          "credit": "Flickr",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Avatar Flight of Passage.",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:41.732706+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "f44b7ae6216997aea229",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Avatar_Flight_of_Passage_%2834627171886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171886).jpg",
+          "filename": "Avatar Flight of Passage (34627171886).jpg",
+          "artist": "Theme Park Tourist",
+          "credit": "Flickr",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Avatar Flight of Passage.",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:42.684188+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "7e446b41a24d3b47f5d2",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Avatar_Flight_of_Passage_%2834627171146%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171146).jpg",
+          "filename": "Avatar Flight of Passage (34627171146).jpg",
+          "artist": "Theme Park Tourist",
+          "credit": "Flickr",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Avatar Flight of Passage.",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:43.688090+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "95021f6d911a3e57bcc0",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Avatar_Flight_of_Passage_-_Disney%27s_Animal_Kingdom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_-_Disney%27s_Animal_Kingdom.jpg",
+          "filename": "Avatar Flight of Passage - Disney's Animal Kingdom.jpg",
+          "artist": "Freddo",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Avatar Flight of Passage à Disney's Animal Kingdom",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:44.618821+00:00",
+          "width": 3648,
+          "height": 2736,
+          "id": "d405d96baeafef273dea",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/%E5%A0%B1%E6%AD%B2%E7%B4%A0%E7%BF%94%E9%BE%8D_Cymbidium_sinense_%27Plain_Flying_Dragon%27_-%E9%A6%99%E6%B8%AF%E6%B2%99%E7%94%B0%E5%9C%8B%E8%98%AD%E5%B1%95_Shatin_Orchid_Show%2C_Hong_Kong-_%2812247700225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%A0%B1%E6%AD%B2%E7%B4%A0%E7%BF%94%E9%BE%8D_Cymbidium_sinense_%27Plain_Flying_Dragon%27_-%E9%A6%99%E6%B8%AF%E6%B2%99%E7%94%B0%E5%9C%8B%E8%98%AD%E5%B1%95_Shatin_Orchid_Show,_Hong_Kong-_(12247700225).jpg",
+          "filename": "報歲素翔龍 Cymbidium sinense 'Plain Flying Dragon' -香港沙田國蘭展 Shatin Orchid Show, Hong Kong- (12247700225).jpg",
+          "artist": "阿橋 HQ",
+          "credit": "報歲素翔龍 Cymbidium sinense 'Plain Flying Dragon'  [香港沙田國蘭展 Shatin Orchid Show, Hong Kong]",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "報歲素翔龍 Cymbidium sinense 'Plain Flying Dragon'  [香港沙田國蘭展 Shatin Orchid Show, Hong Kong]",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:45.646560+00:00",
+          "width": 2096,
+          "height": 1852,
+          "id": "8572c936ad2143e51679",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Luantan_Ascent_performing_at_the_celebration_ceremony_of_the_centennial_of_Taiwanese_Cultural_Association_2021-10-17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Luantan_Ascent_performing_at_the_celebration_ceremony_of_the_centennial_of_Taiwanese_Cultural_Association_2021-10-17.jpg",
+          "filename": "Luantan Ascent performing at the celebration ceremony of the centennial of Taiwanese Cultural Association 2021-10-17.jpg",
+          "artist": "總統府",
+          "credit": "https://www.flickr.com/photos/presidentialoffice/51599503560/",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Official Photo by Wang Yu Ching / Office of the President",
+          "identityEvidence": {
+            "query": "阿翔",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:45:46.590797+00:00",
+          "width": 2048,
+          "height": 1178,
+          "id": "5677cc85b78cfc71fbdf",
+          "personId": "t1500_0099",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:45:33.602077+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:45:47.518843+00:00"
+        },
+        {
+          "time": "2026-10-28T12:45:47.518850+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:46:52.339345+00:00"
+        },
+        {
+          "time": "2026-10-28T12:46:52.339374+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:46:52.339382+00:00"
+        },
+        {
+          "time": "2026-10-28T12:46:52.339386+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Aaron_Chen.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(33825570024).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171886).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171146).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_-_Disney%27s_Animal_Kingdom.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%A0%B1%E6%AD%B2%E7%B4%A0%E7%BF%94%E9%BE%8D_Cymbidium_sinense_%27Plain_Flying_Dragon%27_-%E9%A6%99%E6%B8%AF%E6%B2%99%E7%94%B0%E5%9C%8B%E8%98%AD%E5%B1%95_Shatin_Orchid_Show,_Hong_Kong-_(12247700225).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Luantan_Ascent_performing_at_the_celebration_ceremony_of_the_centennial_of_Taiwanese_Cultural_Association_2021-10-17.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 8
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0099",
         "name": "阿翔",
@@ -993,17 +2762,195 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:45:33.541865+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Aaron_Chen.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "code": "image_validation_failed",
+          "message": "Multiple prominent faces"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(33825570024).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171886).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171146).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_-_Disney%27s_Animal_Kingdom.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%A0%B1%E6%AD%B2%E7%B4%A0%E7%BF%94%E9%BE%8D_Cymbidium_sinense_%27Plain_Flying_Dragon%27_-%E9%A6%99%E6%B8%AF%E6%B2%99%E7%94%B0%E5%9C%8B%E8%98%AD%E5%B1%95_Shatin_Orchid_Show,_Hong_Kong-_(12247700225).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Luantan_Ascent_performing_at_the_celebration_ceremony_of_the_centennial_of_Taiwanese_Cultural_Association_2021-10-17.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:46:52.339416+00:00"
     },
     "t1500_0102": {
       "personId": "t1500_0102",
       "candidateId": "c1500-0102",
       "name": "趙正平",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:48:04.229752+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Zhao_Zhengping.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Zhao_Zhengping.JPG",
+          "filename": "Zhao Zhengping.JPG",
+          "artist": "Unknown; scanned by 天竺鼠 (talk)",
+          "credit": "Shashin Shuhō [Weekly Photo], Tokyo:  Intelligence Department of the Cabinet  No.110,April 3,1940",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Zhao Zhengping (Chao Cheng-p'ing) (1877 - 1945)",
+          "identityEvidence": {
+            "query": "趙正平",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "康熙來了"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:46:57.522985+00:00",
+          "width": 369,
+          "height": 420,
+          "id": "b11d843690b64b1fadb0",
+          "personId": "t1500_0102",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+          "filename": "David Chao at Kinokuniya Taipei Breeze Store 20100102.jpg",
+          "artist": "竹筍弟弟 (talk)",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "David Chao in the Kinokuniya Taipei Breeze Store, and he was holding a book-signing activity for his fans.",
+          "identityEvidence": {
+            "query": "趙正平",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "康熙來了"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:46:58.452047+00:00",
+          "width": 1280,
+          "height": 960,
+          "id": "20fae62503985d52547b",
+          "personId": "t1500_0102",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:46:52.476796+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:46:59.412519+00:00"
+        },
+        {
+          "time": "2026-10-28T12:46:59.412525+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:48:04.229700+00:00"
+        },
+        {
+          "time": "2026-10-28T12:48:04.229726+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:48:04.229734+00:00"
+        },
+        {
+          "time": "2026-10-28T12:48:04.229738+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Zhao_Zhengping.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0102",
         "name": "趙正平",
@@ -1019,17 +2966,410 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:46:52.417696+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Zhao_Zhengping.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:48:04.229766+00:00"
     },
     "t1500_0103": {
       "personId": "t1500_0103",
       "candidateId": "c1500-0103",
       "name": "陽帆",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:49:22.308948+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Joseph_clock_tower.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Joseph_clock_tower.JPG",
+          "filename": "Joseph clock tower.JPG",
+          "artist": "Yang fan",
+          "credit": "\\yfan\\cpt\\DSC00796.JPG",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "(Yang Fan, I took this picture in 2008. I am student of the University of Birmingham. Any one that want to use this image, it is allowed to do it.)",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:09.630131+00:00",
+          "width": 2448,
+          "height": 3264,
+          "id": "63b27775f7256b229fa5",
+          "personId": "t1500_0103",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Yuanyangfans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuanyangfans.jpg",
+          "filename": "Yuanyangfans.jpg",
+          "artist": "Heung66",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Yuan Yang's Fans",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:10.581262+00:00",
+          "width": 1215,
+          "height": 895,
+          "id": "f00f7cb3d72dfc4364e6",
+          "personId": "t1500_0103",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/London_Chess_Classic_2016_Day8-6_%2831063698433%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-6_(31063698433).jpg",
+          "filename": "London Chess Classic 2016 Day8-6 (31063698433).jpg",
+          "artist": "Wolfgang Jekel",
+          "credit": "London_Chess_Classic_2016_Day8-6",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "IM Yang-Fan Zhou",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:11.543960+00:00",
+          "width": 2832,
+          "height": 4256,
+          "id": "9d68b0111d48d333c50b",
+          "personId": "t1500_0103",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/London_Chess_Classic_2016_Day8-2_%2831873324675%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-2_(31873324675).jpg",
+          "filename": "London Chess Classic 2016 Day8-2 (31873324675).jpg",
+          "artist": "Wolfgang Jekel",
+          "credit": "London_Chess_Classic_2016_Day8-2",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "IM Yang-Fan Zhou",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:12.507802+00:00",
+          "width": 4256,
+          "height": 2832,
+          "id": "9cf3331b9223aeff56a7",
+          "personId": "t1500_0103",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_11_130_%22%E5%B8%86%E3%82%92%E7%B9%95%E3%81%B5%EF%BC%88%E6%A6%AE%E6%88%90%EF%BC%89%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_11_130_%22%E5%B8%86%E3%82%92%E7%B9%95%E3%81%B5%EF%BC%88%E6%A6%AE%E6%88%90%EF%BC%89%22.jpg",
+          "filename": "亜東印画輯 11 130 \"帆を繕ふ（榮成）\".jpg",
+          "artist": "亜東印画協会",
+          "credit": "亜東印画輯 第11冊",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "◎帆を繕ふ（榮成）\n寒い舊正も終り春の跫音が黃海の波濤に乘つてこの山東角の磯邊に訪れる季節となると、此處漁村の砂濱はやがて來る出漁の準備に忙しく、暖かな陽の光を浴びて處々に網すく人々や帆を繕ふ群が賑ふのである。　（印畫の複製を嚴禁す）",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:13.472943+00:00",
+          "width": 1137,
+          "height": 791,
+          "id": "d9888394dd2d49c70619",
+          "personId": "t1500_0103",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Reconstruction_Diagram_of_%22Tian_Fa_Shenchen_Bei_%28Stele_of_divine_prophecy_Revealed_from_God%29%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Reconstruction_Diagram_of_%22Tian_Fa_Shenchen_Bei_(Stele_of_divine_prophecy_Revealed_from_God)%22.jpg",
+          "filename": "Reconstruction Diagram of \"Tian Fa Shenchen Bei (Stele of divine prophecy Revealed from God)\".jpg",
+          "artist": "蝠翔似黑潮",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Reconstruction Diagram of \"Tian Fa Shenchen Bei (Stele of divine prophecy Revealed from God)\"",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:14.433968+00:00",
+          "width": 2994,
+          "height": 2490,
+          "id": "21f6bf85888d9308fa06",
+          "personId": "t1500_0103",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/SF9YooTaeYang%EF%BC%8820240608%EF%BC%89.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:SF9YooTaeYang%EF%BC%8820240608%EF%BC%89.png",
+          "filename": "SF9YooTaeYang（20240608）.png",
+          "artist": "Btkm8",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "SF9 YOO TAE YANG FAN-CON「Double Casting: No. YTY」",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:15.401628+00:00",
+          "width": 1133,
+          "height": 1572,
+          "id": "2d91bb7e42ea9745f198",
+          "personId": "t1500_0103",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Yang_Fan_%28footballler%2C_born_1996%29_2024-08-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Yang_Fan_(footballler,_born_1996)_2024-08-21.jpg",
+          "filename": "Yang Fan (footballler, born 1996) 2024-08-21.jpg",
+          "artist": "IDontHaveSkype",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "Yang Fan 21 August 2024.",
+          "identityEvidence": {
+            "query": "陽帆",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "分手擂台"
+            ],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:48:16.450976+00:00",
+          "width": 3024,
+          "height": 4032,
+          "id": "16fc78f02adac4b7fd79",
+          "personId": "t1500_0103",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:48:04.354807+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:48:17.350828+00:00"
+        },
+        {
+          "time": "2026-10-28T12:48:17.350835+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:49:22.308892+00:00"
+        },
+        {
+          "time": "2026-10-28T12:49:22.308921+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:49:22.308929+00:00"
+        },
+        {
+          "time": "2026-10-28T12:49:22.308933+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Joseph_clock_tower.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Yuanyangfans.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-6_(31063698433).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-2_(31873324675).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_11_130_%22%E5%B8%86%E3%82%92%E7%B9%95%E3%81%B5%EF%BC%88%E6%A6%AE%E6%88%90%EF%BC%89%22.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Reconstruction_Diagram_of_%22Tian_Fa_Shenchen_Bei_(Stele_of_divine_prophecy_Revealed_from_God)%22.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:SF9YooTaeYang%EF%BC%8820240608%EF%BC%89.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Yang_Fan_(footballler,_born_1996)_2024-08-21.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 8
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0103",
         "name": "陽帆",
@@ -1045,17 +3385,462 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:48:04.298204+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Joseph_clock_tower.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuanyangfans.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-6_(31063698433).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:London_Chess_Classic_2016_Day8-2_(31873324675).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E6%9D%B1%E5%8D%B0%E7%94%BB%E8%BC%AF_11_130_%22%E5%B8%86%E3%82%92%E7%B9%95%E3%81%B5%EF%BC%88%E6%A6%AE%E6%88%90%EF%BC%89%22.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Reconstruction_Diagram_of_%22Tian_Fa_Shenchen_Bei_(Stele_of_divine_prophecy_Revealed_from_God)%22.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:SF9YooTaeYang%EF%BC%8820240608%EF%BC%89.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Yang_Fan_(footballler,_born_1996)_2024-08-21.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:49:22.308962+00:00"
     },
     "t1500_0104": {
       "personId": "t1500_0104",
       "candidateId": "c1500-0104",
       "name": "董至成",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-28T14:57:12.990524+00:00",
+      "candidates": [
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/%E6%B0%91%E8%A6%96%E7%B6%9C%E8%97%9D%E5%A4%A7%E9%9B%86%E5%90%88%E7%AF%80%E7%9B%AE%E9%8C%84%E5%BD%B1_%E9%84%AD%E5%B8%82%E9%95%B7%EF%BC%9A%E6%AD%A1%E8%BF%8E%E6%90%AD%E4%B9%98%E6%A9%9F%E5%A0%B4%E6%8D%B7%E9%81%8B%EF%BC%8C%E4%BE%86%E6%A1%83%E5%9C%92%E4%B8%80%E6%97%A5%E5%B0%8F%E6%97%85%E8%A1%8C%28%E8%91%A3%E8%87%B3%E6%88%90%29%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E8%A6%96%E7%B6%9C%E8%97%9D%E5%A4%A7%E9%9B%86%E5%90%88%E7%AF%80%E7%9B%AE%E9%8C%84%E5%BD%B1_%E9%84%AD%E5%B8%82%E9%95%B7%EF%BC%9A%E6%AD%A1%E8%BF%8E%E6%90%AD%E4%B9%98%E6%A9%9F%E5%A0%B4%E6%8D%B7%E9%81%8B%EF%BC%8C%E4%BE%86%E6%A1%83%E5%9C%92%E4%B8%80%E6%97%A5%E5%B0%8F%E6%97%85%E8%A1%8C(%E8%91%A3%E8%87%B3%E6%88%90)(cropped).jpg",
+          "filename": "民視綜藝大集合節目錄影_鄭市長：歡迎搭乘機場捷運，來桃園一日小旅行(董至成)(cropped).jpg",
+          "artist": "桃園市政府新聞處",
+          "credit": "https://news.tycg.gov.tw/home.jsp?id=2&parentpath=0&mcustomize=news_view.jsp&dataserno=201703110004&aplistdn=ou=news,ou=chinese,ou=ap_root,o=tycg,c=tw&toolsflag=Y",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​民視《綜藝大集合》桃園錄影 董至成",
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%A3%E8%87%B3%E6%88%90",
+            "excerpt": "董至成（1965年12月22日—），台灣電視主持人、演員。世界新聞專科學校三專部廣電科畢業。除主持綜藝節目外，亦有參與戲劇的演出。曾在《紅白勝利》中扮演角色「董月花」。",
+            "matchedAliases": [
+              "董至成",
+              "董至成"
+            ],
+            "wikidataId": "Q15908656",
+            "captionAliasMatches": [
+              "董至成",
+              "董至成"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:55:59.258120+00:00",
+          "width": 272,
+          "height": 352,
+          "id": "b11227bc46b5ce9a6e43",
+          "personId": "t1500_0104",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/360%C2%BA_Pano_Auenfeld_Hochtannberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:360%C2%BA_Pano_Auenfeld_Hochtannberg.jpg",
+          "filename": "360º Pano Auenfeld Hochtannberg.jpg",
+          "artist": "Alexander Vonbun",
+          "credit": "Own work",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "caption": "360° Panorama of Auenfeld, Vorarlberg, Austria",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:01.232921+00:00",
+          "width": 21239,
+          "height": 4402,
+          "id": "c5479620a1c00498f14b",
+          "personId": "t1500_0104",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/James_Joyce_by_Alex_Ehrenzweig%2C_1915_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:James_Joyce_by_Alex_Ehrenzweig,_1915_cropped.jpg",
+          "filename": "James Joyce by Alex Ehrenzweig, 1915 cropped.jpg",
+          "artist": "James_Joyce_by_Alex_Ehrenzweig,_1915_restored.jpg: *James_Joyce_by_Alex_Ehrenzweig,_1915.jpg: Alex Ehrenzweig\nderivative work: RedAppleJack (talk)\nderivative work: Missionary (talk)",
+          "credit": "James_Joyce_by_Alex_Ehrenzweig,_1915_restored.jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "James Joyce, 1 photographic print, b&w, cartes-de-visites, 9.2 x 6.1 on mount 10.5 x 6.5 cm.",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:02.301150+00:00",
+          "width": 855,
+          "height": 1297,
+          "id": "630ceba1ae05d1c50bc1",
+          "personId": "t1500_0104",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Alex_Young_-_Orlandina_Basket_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Young_-_Orlandina_Basket_2013.JPG",
+          "filename": "Alex Young - Orlandina Basket 2013.JPG",
+          "artist": "Niccolò Caranti",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Alex Young con la maglia dell'Orlandina Basket al PalaTrento.",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:03.289471+00:00",
+          "width": 1716,
+          "height": 2158,
+          "id": "3b54016eb50e71493dff",
+          "personId": "t1500_0104",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Alex_Honnold_-_Trento_Film_Festival_2014.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Honnold_-_Trento_Film_Festival_2014.JPG",
+          "filename": "Alex Honnold - Trento Film Festival 2014.JPG",
+          "artist": "Niccolò Caranti",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Alex Honnold al Trento Film Festival.",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:04.270832+00:00",
+          "width": 1585,
+          "height": 2228,
+          "id": "a3a82fd5628b79f353f7",
+          "personId": "t1500_0104",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Alex_Schomburg_-_Harl_Vincent_-_Marvel_Science_Stories_for_April-May_1939_-_Illustration_for_Newscast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Schomburg_-_Harl_Vincent_-_Marvel_Science_Stories_for_April-May_1939_-_Illustration_for_Newscast.jpg",
+          "filename": "Alex Schomburg - Harl Vincent - Marvel Science Stories for April-May 1939 - Illustration for Newscast.jpg",
+          "artist": "Alex Schomburg (1905-1998)\nStory by Harl Vincent (Pseudonym of Harold Vincent Schoepflin, 1893–1968)\nRestoration by Adam Cuerden",
+          "credit": "Self-scanned, 600dpi.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Interior illustration from the April-May 1939 issue of Marvel Science Stories for the story Newscast by Harl Vincent. Art by Alex Schomburg.",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:05.269235+00:00",
+          "width": 3224,
+          "height": 4700,
+          "id": "e7989c80208a0bf5a437",
+          "personId": "t1500_0104",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nerium_oleander_pink_flower%2C_Alex_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Nerium_oleander_pink_flower,_Alex_005.jpg",
+          "filename": "Nerium oleander pink flower, Alex 005.jpg",
+          "artist": "لا روسا",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Nerium oleander pink flower in Montazah Garden in Alexandria, Egypt.",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:06.243663+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "a35e09af40d209785e57",
+          "personId": "t1500_0104",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/%C3%81lex_Anwandter_%286555717877%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%C3%81lex_Anwandter_(6555717877).jpg",
+          "filename": "Álex Anwandter (6555717877).jpg",
+          "artist": "Puma Lab",
+          "credit": "DSC_3542",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "DSC_3542",
+          "identityEvidence": {
+            "query": "董至成",
+            "identityWarning": "Search result only; identity needs review",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "全民大悶鍋"
+            ],
+            "matchedWorks": [],
+            "note": "Search context only; recognizability not verified"
+          },
+          "searchTime": "2026-10-28T12:56:07.232058+00:00",
+          "width": 2277,
+          "height": 3401,
+          "id": "f6319e67a3aa682735e7",
+          "personId": "t1500_0104",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-28T12:55:55.192343+00:00",
+          "provider": "wikimedia",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:56:08.214997+00:00"
+        },
+        {
+          "time": "2026-10-28T12:56:08.215004+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:57:12.990467+00:00"
+        },
+        {
+          "time": "2026-10-28T12:57:12.990495+00:00",
+          "provider": "official",
+          "attempt": 1,
+          "finishedAt": "2026-10-28T12:57:12.990503+00:00"
+        },
+        {
+          "time": "2026-10-28T12:57:12.990507+00:00",
+          "errors": [
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E8%A6%96%E7%B6%9C%E8%97%9D%E5%A4%A7%E9%9B%86%E5%90%88%E7%AF%80%E7%9B%AE%E9%8C%84%E5%BD%B1_%E9%84%AD%E5%B8%82%E9%95%B7%EF%BC%9A%E6%AD%A1%E8%BF%8E%E6%90%AD%E4%B9%98%E6%A9%9F%E5%A0%B4%E6%8D%B7%E9%81%8B%EF%BC%8C%E4%BE%86%E6%A1%83%E5%9C%92%E4%B8%80%E6%97%A5%E5%B0%8F%E6%97%85%E8%A1%8C(%E8%91%A3%E8%87%B3%E6%88%90)(cropped).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:360%C2%BA_Pano_Auenfeld_Hochtannberg.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:James_Joyce_by_Alex_Ehrenzweig,_1915_cropped.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Alex_Young_-_Orlandina_Basket_2013.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Alex_Honnold_-_Trento_Film_Festival_2014.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Alex_Schomburg_-_Harl_Vincent_-_Marvel_Science_Stories_for_April-May_1939_-_Illustration_for_Newscast.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:Nerium_oleander_pink_flower,_Alex_005.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "wikimedia",
+              "source": "https://commons.wikimedia.org/wiki/File:%C3%81lex_Anwandter_(6555717877).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "The read operation timed out"
+            }
+          ],
+          "candidatesTried": 8
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0104",
         "name": "董至成",
@@ -1071,7 +3856,69 @@
         "rightsReviewed": false,
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
-      }
+      },
+      "lastAttemptAt": "2026-10-28T12:55:55.139199+00:00",
+      "lastErrors": [
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E8%A6%96%E7%B6%9C%E8%97%9D%E5%A4%A7%E9%9B%86%E5%90%88%E7%AF%80%E7%9B%AE%E9%8C%84%E5%BD%B1_%E9%84%AD%E5%B8%82%E9%95%B7%EF%BC%9A%E6%AD%A1%E8%BF%8E%E6%90%AD%E4%B9%98%E6%A9%9F%E5%A0%B4%E6%8D%B7%E9%81%8B%EF%BC%8C%E4%BE%86%E6%A1%83%E5%9C%92%E4%B8%80%E6%97%A5%E5%B0%8F%E6%97%85%E8%A1%8C(%E8%91%A3%E8%87%B3%E6%88%90)(cropped).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:360%C2%BA_Pano_Auenfeld_Hochtannberg.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:James_Joyce_by_Alex_Ehrenzweig,_1915_cropped.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Young_-_Orlandina_Basket_2013.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Honnold_-_Trento_Film_Festival_2014.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Alex_Schomburg_-_Harl_Vincent_-_Marvel_Science_Stories_for_April-May_1939_-_Illustration_for_Newscast.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Nerium_oleander_pink_flower,_Alex_005.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "wikimedia",
+          "source": "https://commons.wikimedia.org/wiki/File:%C3%81lex_Anwandter_(6555717877).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "The read operation timed out"
+        }
+      ],
+      "lastFailure": {
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "updatedAt": "2026-10-28T12:57:12.990540+00:00"
     },
     "t1500_0105": {
       "personId": "t1500_0105",
@@ -1274,7 +4121,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -1650,7 +4498,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -2305,7 +5154,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -3802,7 +6652,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -4448,7 +7299,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -8406,7 +11258,7 @@
       "personId": "t1500_0276",
       "candidateId": "c1500-0276",
       "name": "許書豪",
-      "status": "pending_review",
+      "status": "rejected",
       "attempts": 0,
       "nextRetryAt": null,
       "candidates": [
@@ -8452,11 +11304,12 @@
               1
             ]
           },
-          "status": "legacy_requires_review",
+          "status": "rejected",
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -11181,7 +14034,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -15329,7 +18183,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -17288,7 +20143,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -17473,7 +20329,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -19239,7 +22096,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -21557,7 +24415,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -22601,7 +25460,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -23647,7 +26507,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -23832,7 +26693,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -24324,7 +27186,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            ""
+            "",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -24478,7 +27341,8 @@
           "rightsStatus": "needs_review",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
-            "blurry_draft"
+            "blurry_draft",
+            "Source rejected by existing review records"
           ],
           "validation": {
             "legacyAssetIntact": true

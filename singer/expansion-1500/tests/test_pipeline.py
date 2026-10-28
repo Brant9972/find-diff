@@ -9,6 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from media_pipeline.core import Cropper, apply_rejections, atomic, initialise, live_people, lock, process, rejection_keys, valid_reveal
 from media_pipeline.review import import_decisions, report
+from recover_pipeline import recover
 from media_pipeline.sources import SourceError, rights, source_key, public_https
 
 REVEAL = {k: [.08, .2, .92, y] for k, y in [('eyes', .4), ('nose', .55), ('mouth', .7), ('chin', .9)]}
@@ -245,6 +246,37 @@ class PipelineTest(unittest.TestCase):
         self.assertIn('t1', live_people(self.root, ref))
         self.assertFalse(live_people(self.root))
         self.assertEqual(git('rev-parse', 'HEAD'), ref)
+
+    def recovery_fixture(self):
+        atomic(self.directory / 'state.json', self.state)
+        digest = hashlib.sha256((self.directory / 'state.json').read_bytes()).hexdigest()
+        atomic(self.directory / 'recovery-request.json', {'runId': '123', 'baseStateSha256': digest, 'completed': False})
+        artifact = self.root.parent / 'artifact'
+        incoming = copy.deepcopy(self.state)
+        incoming['people']['t1']['attempts'] = 3
+        atomic(artifact / 'singer/expansion-1500/pipeline/state.json', incoming)
+        return artifact, incoming
+
+    def test_artifact_recovery_resumes_without_overwriting_review(self):
+        artifact, incoming = self.recovery_fixture()
+        recover(self.root, artifact)
+        stored = json.loads((self.directory / 'state.json').read_text())
+        self.assertEqual(stored, incoming)
+        recover(self.root, artifact)  # completed request is idempotent
+
+    def test_artifact_recovery_refuses_diverged_state_or_new_approval(self):
+        artifact, incoming = self.recovery_fixture()
+        self.state['people']['t1']['attempts'] = 9
+        atomic(self.directory / 'state.json', self.state)
+        with self.assertRaises(ValueError):
+            recover(self.root, artifact)
+        self.state['people']['t1']['attempts'] = 0
+        atomic(self.directory / 'state.json', self.state)
+        incoming['people']['t1']['status'] = 'approved'
+        atomic(artifact / 'singer/expansion-1500/pipeline/state.json', incoming)
+        with self.assertRaises(ValueError):
+            recover(self.root, artifact)
+        self.assertEqual(json.loads((self.directory / 'state.json').read_text())['people']['t1']['status'], 'not_started')
 
     def test_lock_excludes_other_writer(self):
         with lock(self.directory):

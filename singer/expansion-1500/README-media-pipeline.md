@@ -89,7 +89,7 @@ python singer/expansion-1500/prepare_media.py --import-review /path/to/review-de
 
 workflow 只 checkout 和 checkpoint `automation/celebrity-photo-pipeline`。搜尋 job 僅 contents:read、不保留 Git credentials；另一個 job 只提交 `pipeline/`，檢查來源 commit 沒有變動，且不 force push。不執行任何舊擴充／發布程式。
 
-push 程式變更會跑 10 人小批次；手動 dispatch 可以指定 limit/retry。每日排程已寫入，但 **只有 workflow 經獨立審閱加入 default branch 後排程才會啟用**，目前工作分支上的 cron 不會定期運作。main 合併及 Pages 設定不在此工具權限內。
+push 程式變更會跑最多 2 人／5 分鐘小批次；手動 dispatch 可以指定 limit/retry；排程每批最多 50 人／25 分鐘。每日排程已寫入，但 **只有 workflow 經獨立審閱加入 default branch 後排程才會啟用**，目前工作分支上的 cron 不會定期運作。main 合併及 Pages 設定不在此工具權限內。
 
 每次上傳成果保存 30 天，已成功且驗證通過者會 checkpoint 回工作分支；驗證或 commit 衝突失敗時保留 artifact，不覆蓋別人的變更。硬逾時可由 artifact 恢復 state；一般執行在 25 分鐘主動結束，預留 Actions 40 分鐘限制的保存時間。
 
@@ -101,3 +101,5 @@ push 程式變更會跑 10 人小批次；手動 dispatch 可以指定 limit/ret
 - 未解決授權的候選不會自動下載；舊有上線照片的授權問題不由這個工具變更。
 - HTML 頁面使用 textContent 呈現外部文字；只接受 HTTPS 來源，限制回應位元組與圖片像素。沿用環境代理與 TLS 驗證，不處理登入或受限制素材。
 - 批次報告與原圖可能增大 Git repository；後續大量運作時可把原圖保存改為專用 artifact/object storage，仍需保留雜湊與審核可追溯性。
+
+若驗證成功但 checkpoint 失敗，可建立 `pipeline/recovery-request.json`（runId、baseStateSha256、completed:false），下一次 Actions 會以唯讀 token 下載該 run 的 artifact，僅在目前 state 雜湊未改變且沒有改動核准／人工審核紀錄時恢復，並標記完成。不得用復原覆蓋其他批次的進度；雜湊不同須先人工整合。

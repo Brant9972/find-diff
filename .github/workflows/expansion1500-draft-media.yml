@@ -8,6 +8,7 @@ on:
       - singer/expansion-1500/tests/**
       - singer/expansion-1500/validate_pipeline.py
       - singer/expansion-1500/requirements-media.txt
+      - singer/expansion-1500/recover_pipeline.py
       - .github/workflows/expansion1500-draft-media.yml
   workflow_dispatch:
     inputs:
@@ -24,6 +25,7 @@ on:
     - cron: '20 18 * * *'
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: celebrity-photo-pipeline
   cancel-in-progress: false
@@ -43,24 +45,52 @@ jobs:
       - run: python -m pip install -r singer/expansion-1500/requirements-media.txt
       - name: Test resume, licence and review protection
         run: python -m unittest discover -s singer/expansion-1500/tests -v
+      - name: Check for an explicit artifact recovery request
+        id: recovery
+        run: |
+          python - <<'PYREC'
+          import json,os
+          from pathlib import Path
+          p=Path('singer/expansion-1500/pipeline/recovery-request.json')
+          d=json.loads(p.read_text()) if p.exists() else {}
+          value=str(d.get('runId','')) if not d.get('completed') else ''
+          assert not value or value.isdigit()
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('run_id='+value+'\n')
+          PYREC
+      - uses: actions/download-artifact@v4
+        if: steps.recovery.outputs.run_id != ''
+        with:
+          name: celebrity-review-${{ steps.recovery.outputs.run_id }}
+          run-id: ${{ steps.recovery.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: /tmp/media-recovery
+      - name: Restore without overwriting human review
+        if: steps.recovery.outputs.run_id != ''
+        run: python singer/expansion-1500/recover_pipeline.py /tmp/media-recovery
       - name: Read latest published roster without changing checkout
         run: git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
       - name: Record source commit
         run: git rev-parse HEAD > /tmp/media-source-commit.txt
       - name: Collect bounded batch (never publish)
         env:
-          BATCH_LIMIT: ${{ github.event.inputs.limit || '10' }}
+          BATCH_LIMIT: ${{ github.event.inputs.limit || (github.event_name == 'schedule' && '50') || '2' }}
+          BATCH_MINUTES: ${{ github.event_name == 'push' && '5' || '25' }}
           RETRY_FAILED: ${{ inputs.retry_failed || 'false' }}
         run: |
           set -euo pipefail
           extra=()
           if [ "$RETRY_FAILED" = "true" ]; then extra+=(--retry-failed); fi
-          python singer/expansion-1500/prepare_media.py --limit "$BATCH_LIMIT" --max-minutes 25 --live-ref origin/main "${extra[@]}"
+          python singer/expansion-1500/prepare_media.py --limit "$BATCH_LIMIT" --max-minutes "$BATCH_MINUTES" --live-ref origin/main "${extra[@]}"
       - name: Validate candidates
         run: python singer/expansion-1500/validate_pipeline.py
       - name: Ensure tracked inputs and production data did not change
         if: always()
-        run: git diff --exit-code
+        run: |
+          python - <<'PYGUARD'
+          import subprocess
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          assert all(p.startswith('singer/expansion-1500/pipeline/') for p in changed), changed
+          PYGUARD
       - name: Save review files and checkpoint even after a failed source
         if: always()
         uses: actions/upload-artifact@v4

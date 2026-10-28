@@ -10751,8 +10751,8 @@
       "candidateId": "c1500-0255",
       "name": "林采緹",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:37:27.621056+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:47:29.089276+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0255",
@@ -10761,7 +10761,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E9%87%87%E7%B7%B9",
           "artist": "ChenTim0602",
           "license": "CC BY-SA 2.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
           "gamePath": "expansion-1500/review_photos/t1500_0255.jpg",
           "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
           "reveal": {
@@ -10797,7 +10797,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft"
@@ -10822,7 +10822,7 @@
             }
           ],
           "evidenceRequest": "補 Flickr 原圖、人物圖說、授權及五官預覽",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/nose.png",
@@ -10872,24 +10872,95 @@
           },
           "evidenceSupplement": {
             "requested": "補 Flickr 原圖、人物圖說、授權及五官預覽",
-            "attemptedAt": "2026-10-28T17:37:26.704202+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:28.273334+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 1200,
+              "height": 1800,
+              "artist": "ChenTim0602",
+              "credit": "https://www.flickr.com/photos/42750204@N05/38078551815/",
+              "license": "CC BY-SA 2.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+              "caption": "Sunny Lin \"Beauty Announcement\" album signing at Kingstone Bookstore in Banqiao Station.",
+              "externalSourceLinks": [
+                "https://www.flickr.com/photos/42750204@N05/38078551815/",
+                "https://en.wikipedia.org/wiki/en:Creative_Commons",
+                "https://en.wikipedia.org/wiki/Public_domain",
+                "https://en.wikipedia.org/wiki/personality_rights",
+                "https://en.wikipedia.org/wiki/model_release"
+              ],
+              "retrievedAt": "2026-10-28T17:47:28.709344+00:00"
+            },
+            "captionAliasMatches": [
+              "林采緹",
+              "林采緹"
+            ],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E9%87%87%E7%B7%B9",
+              "excerpt": "林采緹（英語：Sunny Lin，1990年7月22日—），本名林小晴，臺灣女藝人，出生於澳門，曾就讀士林高商。華岡藝校畢業後就進入演藝圈。",
+              "wikidataId": "Q11304938",
+              "matchedAliases": [
+                "林采緹",
+                "林采緹"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "ChenTim0602",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "https://www.flickr.com/photos/42750204@N05/38078551815/",
+          "caption": "Sunny Lin \"Beauty Announcement\" album signing at Kingstone Bookstore in Banqiao Station.",
+          "externalSourceLinks": [
+            "https://www.flickr.com/photos/42750204@N05/38078551815/",
+            "https://en.wikipedia.org/wiki/en:Creative_Commons",
+            "https://en.wikipedia.org/wiki/Public_domain",
+            "https://en.wikipedia.org/wiki/personality_rights",
+            "https://en.wikipedia.org/wiki/model_release"
+          ],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E9%87%87%E7%B7%B9",
+            "caption": "Sunny Lin \"Beauty Announcement\" album signing at Kingstone Bookstore in Banqiao Station.",
+            "captionAliasMatches": [
+              "林采緹",
+              "林采緹"
+            ],
+            "externalSourceLinks": [
+              "https://www.flickr.com/photos/42750204@N05/38078551815/",
+              "https://en.wikipedia.org/wiki/en:Creative_Commons",
+              "https://en.wikipedia.org/wiki/Public_domain",
+              "https://en.wikipedia.org/wiki/personality_rights",
+              "https://en.wikipedia.org/wiki/model_release"
+            ],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E9%87%87%E7%B7%B9",
+              "excerpt": "林采緹（英語：Sunny Lin，1990年7月22日—），本名林小晴，臺灣女藝人，出生於澳門，曾就讀士林高商。華岡藝校畢業後就進入演藝圈。",
+              "wikidataId": "Q11304938",
+              "matchedAliases": [
+                "林采緹",
+                "林采緹"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d/source-09bbd79d58d2b11d.bin",
+          "originalSha256": "09bbd79d58d2b11d96d221c8e2aa4eb78401f00513b4479340ff5ef5a3bb4c89"
         }
       ],
       "history": [],
@@ -10962,14 +11033,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:37:27.621035+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:29.089237+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0256": {
@@ -13289,8 +13355,8 @@
       "candidateId": "c1500-0307",
       "name": "李妍瑾",
       "status": "pending_review",
-      "attempts": 3,
-      "nextRetryAt": "2026-10-28T23:40:42.433070+00:00",
+      "attempts": 4,
+      "nextRetryAt": "2026-10-28T23:47:33.737381+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0307",
@@ -13299,7 +13365,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
           "artist": "Rico Shen",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "gamePath": "expansion-1500/review_photos/t1500_0307.jpg",
           "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
           "reveal": {
@@ -13335,7 +13401,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft"
@@ -13360,7 +13426,7 @@
             }
           ],
           "evidenceRequest": "裁掉背景第二張人臉，補來源及解析度",
-          "evidenceAttempts": 3,
+          "evidenceAttempts": 4,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/nose.png",
@@ -13410,24 +13476,75 @@
           },
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:32.816881+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2154,
+              "height": 2872,
+              "artist": "Rico Shen",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:33.313668+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "Rico Shen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg"
+          },
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+            "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
+          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8"
         },
         {
           "id": "recrop-3465c04fd55149210d96",
@@ -13436,7 +13553,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
           "artist": "Rico Shen",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "gamePath": "expansion-1500/pipeline/assets/t1500_0307/recrop-3465c04fd5514921/game.jpg",
           "gameSha256": "3465c04fd55149210d9684f9cbc143aa3a3b986733d175dd1c319746d40b7c4b",
           "reveal": {
@@ -13472,7 +13589,7 @@
             ]
           },
           "status": "superseded",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Derived from the reviewed crop; no added source resolution. Main face/removed background and rights require fresh ChatGPT review.",
             "Superseded before external review: crop margin was too tight around the eye"
@@ -13547,24 +13664,69 @@
           ],
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:32.816881+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2154,
+              "height": 2872,
+              "artist": "Rico Shen",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:33.313668+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+            "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
+          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8"
         },
         {
           "id": "recrop-6deff70fcf28ea33873b",
@@ -13573,7 +13735,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
           "artist": "Rico Shen",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "gamePath": "expansion-1500/pipeline/assets/t1500_0307/recrop-6deff70fcf28ea33/game.jpg",
           "gameSha256": "6deff70fcf28ea33873bc9491ae5990299f34d6a5af0410aade4989600419196",
           "reveal": {
@@ -13609,7 +13771,7 @@
             ]
           },
           "status": "pending_review",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Derived from the reviewed crop; no added source resolution. Main face/removed background and rights require fresh ChatGPT review."
           ],
@@ -13674,22 +13836,42 @@
           },
           "evidenceSupplement": {
             "requested": "裁掉背景第二張人臉，補來源及解析度",
-            "attemptedAt": "2026-10-28T17:40:41.538340+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:32.816881+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2154,
+              "height": 2872,
+              "artist": "Rico Shen",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:33.313668+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
           },
           "parentCandidateId": "legacy-t1500_0307",
@@ -13700,7 +13882,32 @@
             30,
             600,
             594
-          ]
+          ],
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg/1920px-2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+            "caption": "2008 Taipei Game Show: Yuni Li, famous model in Taiwan, at Charity Bidding Pavilion.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A6%8D%E7%91%BE",
+              "excerpt": "李妍瑾，曾用藝名李妍憬（英語：Yuni Li，1985年5月25日—），台湾女藝人、演員、模特兒。",
+              "wikidataId": "Q8994495",
+              "matchedAliases": [
+                "李妍瑾",
+                "李妍憬",
+                "李妍瑾",
+                "李妍憬"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453/source-65ea06cb9867e9ed.bin",
+          "originalSha256": "65ea06cb9867e9ed4ef4646f7fb9cb56c2f410dad1cbec0f2938669b02e656d8"
         }
       ],
       "history": [],
@@ -13773,14 +13980,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:40:42.433045+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:33.737344+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0308": {
@@ -18040,8 +18242,8 @@
       "candidateId": "c1500-0360",
       "name": "林德信",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:38:31.699999+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:47:30.034749+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0360",
@@ -18050,7 +18252,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%B7%E4%BF%A1",
           "artist": "Tombus20032000",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "gamePath": "expansion-1500/review_photos/t1500_0360.jpg",
           "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
           "reveal": {
@@ -18086,7 +18288,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             ""
@@ -18111,7 +18313,7 @@
             }
           ],
           "evidenceRequest": "補來源授權、人物證據、正面五官預覽",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/nose.png",
@@ -18161,24 +18363,71 @@
           },
           "evidenceSupplement": {
             "requested": "補來源授權、人物證據、正面五官預覽",
-            "attemptedAt": "2026-10-28T17:38:31.002207+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:29.141844+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:Alex_Lam_20230401.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Alex_Lam_20230401.jpg/1920px-Alex_Lam_20230401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Alex_Lam_20230401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2412,
+              "height": 3216,
+              "artist": "Tombus20032000",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "Alex Lam is at HKCEC.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:29.630996+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%B7%E4%BF%A1",
+              "excerpt": "林德信（英語：Alex Lam，1985年3月6日—），原名林德正，香港男歌手、演員，是著名歌手林子祥的兒子，繼母是女歌手葉蒨文，現為獨立歌手，自資製作音樂，經理人為林姍姍。他也是瑜伽導師。",
+              "wikidataId": "Q8997846",
+              "matchedAliases": [
+                "林德信",
+                "林德信"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "Tombus20032000",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:Alex_Lam_20230401.jpg"
+          },
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Alex_Lam_20230401.jpg/1920px-Alex_Lam_20230401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Alex_Lam_20230401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "Alex Lam is at HKCEC.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%B7%E4%BF%A1",
+            "caption": "Alex Lam is at HKCEC.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%B7%E4%BF%A1",
+              "excerpt": "林德信（英語：Alex Lam，1985年3月6日—），原名林德正，香港男歌手、演員，是著名歌手林子祥的兒子，繼母是女歌手葉蒨文，現為獨立歌手，自資製作音樂，經理人為林姍姍。他也是瑜伽導師。",
+              "wikidataId": "Q8997846",
+              "matchedAliases": [
+                "林德信",
+                "林德信"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3/source-62591a490e0baf7a.bin",
+          "originalSha256": "62591a490e0baf7ada2049bc23e7501e67af9853453fc9bf72fa61823ab75684"
         }
       ],
       "history": [],
@@ -18249,14 +18498,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:38:31.699976+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:30.034712+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0361": {
@@ -23143,8 +23387,8 @@
       "candidateId": "c1500-0474",
       "name": "蔡黃汝",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:38:52.552904+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:47:30.905648+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0474",
@@ -23153,7 +23397,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%BB%83%E6%B1%9D",
           "artist": "Onlymyself65536",
           "license": "CC BY-SA 3.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
           "gamePath": "expansion-1500/review_photos/t1500_0474.jpg",
           "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
           "reveal": {
@@ -23189,7 +23433,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft"
@@ -23214,7 +23458,7 @@
             }
           ],
           "evidenceRequest": "確認舊照解析度、來源授權與辨識度",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/nose.png",
@@ -23264,24 +23508,81 @@
           },
           "evidenceSupplement": {
             "requested": "確認舊照解析度、來源授權與辨識度",
-            "attemptedAt": "2026-10-28T17:38:51.878407+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:30.084850+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mini_Tsai_%282011%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mini_Tsai_%282011%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 1010,
+              "height": 1428,
+              "artist": "Onlymyself65536",
+              "credit": "Own work",
+              "license": "CC BY-SA 3.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+              "caption": "​豆花妹《情豆花開》台中簽唱會",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:30.558249+00:00"
+            },
+            "captionAliasMatches": [
+              "豆花妹",
+              "豆花妹"
+            ],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%BB%83%E6%B1%9D",
+              "excerpt": "蔡黃汝（1987年11月15日—），藝名豆花妹，臺灣女藝人，歌手、演員、主持人，出生於臺灣台北縣泰山鄉（今新北市泰山區），醒吾技術學院行銷與流通管理系畢業。2021年開始擔任飢餓遊戲主持人，並於2026年榮獲第61屆金鐘獎實境節目主持人獎。",
+              "wikidataId": "Q7211761",
+              "matchedAliases": [
+                "蔡黃汝",
+                "豆花妹",
+                "蔡黃汝",
+                "豆花妹"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "Onlymyself65536",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mini_Tsai_%282011%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mini_Tsai_%282011%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "​豆花妹《情豆花開》台中簽唱會",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%BB%83%E6%B1%9D",
+            "caption": "​豆花妹《情豆花開》台中簽唱會",
+            "captionAliasMatches": [
+              "豆花妹",
+              "豆花妹"
+            ],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%BB%83%E6%B1%9D",
+              "excerpt": "蔡黃汝（1987年11月15日—），藝名豆花妹，臺灣女藝人，歌手、演員、主持人，出生於臺灣台北縣泰山鄉（今新北市泰山區），醒吾技術學院行銷與流通管理系畢業。2021年開始擔任飢餓遊戲主持人，並於2026年榮獲第61屆金鐘獎實境節目主持人獎。",
+              "wikidataId": "Q7211761",
+              "matchedAliases": [
+                "蔡黃汝",
+                "豆花妹",
+                "蔡黃汝",
+                "豆花妹"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2/source-e5660eed817f4f14.bin",
+          "originalSha256": "e5660eed817f4f14fbdf5d4e1c47472bd84da10cdad34b340a3e72eec4d69e72"
         }
       ],
       "history": [],
@@ -23354,14 +23655,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:38:52.552883+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:30.905611+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0475": {
@@ -27995,8 +28291,8 @@
       "candidateId": "c1500-0563",
       "name": "鄭丹瑞",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:39:58.786779+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:47:31.869448+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0563",
@@ -28005,7 +28301,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E4%B8%B9%E7%91%9E",
           "artist": "數碼電台DBC",
           "license": "CC BY 3.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
           "gamePath": "expansion-1500/review_photos/t1500_0563.jpg",
           "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
           "reveal": {
@@ -28041,7 +28337,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft"
@@ -28066,7 +28362,7 @@
             }
           ],
           "evidenceRequest": "補原圖解析度、身分證據與授權",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/nose.png",
@@ -28116,24 +28412,83 @@
           },
           "evidenceSupplement": {
             "requested": "補原圖解析度、身分證據與授權",
-            "attemptedAt": "2026-10-28T17:39:57.915323+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:30.956575+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E4%B8%B9%E7%91%9E.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E9%84%AD%E4%B8%B9%E7%91%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E9%84%AD%E4%B8%B9%E7%91%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 1172,
+              "height": 1580,
+              "artist": "數碼電台DBC",
+              "credit": "YouTube - 始終小男人鄭丹瑞『越界傾情』",
+              "license": "CC BY 3.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+              "caption": "​香港著名的跨媒體文化人",
+              "externalSourceLinks": [
+                "https://www.youtube.com/watch?v=Uxb72oBu82I"
+              ],
+              "retrievedAt": "2026-10-28T17:47:31.483453+00:00"
+            },
+            "captionAliasMatches": [
+              "鄭丹瑞",
+              "鄭丹瑞"
+            ],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E4%B8%B9%E7%91%9E",
+              "excerpt": "鄭丹瑞（英語：Lawrence Cheng Tan-shui，1955年11月27日—），人称“旦哥”或“阿旦”，香港男主持人、演員、跨媒体文化人，涉猎电影、电视、电台、舞台、报纸专栏，是香港娱乐圈、文化界的多面手及前無綫電視基本藝人合約藝員兼藝員訓練班導師。鄭丹瑞是由電台DJ出道，曾是香港最受欢迎的男DJ，并历任香港電台節目總監、香港商业電台營運總裁，其编撰的《小男人周记》是华语影坛至今唯一一部广播剧，並创下多项纪录，收听率高居榜首，也是迄今为止首部原创的广播剧剧本能发展为小说专栏、电视剧、电影及舞台剧作品。鄭丹瑞也曾制作参与过多部经典的广播剧、电视剧、电影，主持过上百台经典综艺晚会和大型节目，有“金牌司仪”的美誉。",
+              "wikidataId": "Q6503919",
+              "matchedAliases": [
+                "鄭丹瑞",
+                "鄭丹瑞"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "數碼電台DBC",
+            "license": "CC BY 3.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E4%B8%B9%E7%91%9E.jpg"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E9%84%AD%E4%B8%B9%E7%91%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E9%84%AD%E4%B8%B9%E7%91%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "YouTube - 始終小男人鄭丹瑞『越界傾情』",
+          "caption": "​香港著名的跨媒體文化人",
+          "externalSourceLinks": [
+            "https://www.youtube.com/watch?v=Uxb72oBu82I"
+          ],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E4%B8%B9%E7%91%9E",
+            "caption": "​香港著名的跨媒體文化人",
+            "captionAliasMatches": [
+              "鄭丹瑞",
+              "鄭丹瑞"
+            ],
+            "externalSourceLinks": [
+              "https://www.youtube.com/watch?v=Uxb72oBu82I"
+            ],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E4%B8%B9%E7%91%9E",
+              "excerpt": "鄭丹瑞（英語：Lawrence Cheng Tan-shui，1955年11月27日—），人称“旦哥”或“阿旦”，香港男主持人、演員、跨媒体文化人，涉猎电影、电视、电台、舞台、报纸专栏，是香港娱乐圈、文化界的多面手及前無綫電視基本藝人合約藝員兼藝員訓練班導師。鄭丹瑞是由電台DJ出道，曾是香港最受欢迎的男DJ，并历任香港電台節目總監、香港商业電台營運總裁，其编撰的《小男人周记》是华语影坛至今唯一一部广播剧，並创下多项纪录，收听率高居榜首，也是迄今为止首部原创的广播剧剧本能发展为小说专栏、电视剧、电影及舞台剧作品。鄭丹瑞也曾制作参与过多部经典的广播剧、电视剧、电影，主持过上百台经典综艺晚会和大型节目，有“金牌司仪”的美誉。",
+              "wikidataId": "Q6503919",
+              "matchedAliases": [
+                "鄭丹瑞",
+                "鄭丹瑞"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5/source-67badc341bdaab7e.bin",
+          "originalSha256": "67badc341bdaab7e26466f007f4f48bcc43c9084211df1db3e0a8612f58d61fb"
         }
       ],
       "history": [],
@@ -28206,14 +28561,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:39:58.786757+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:31.869412+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0564": {
@@ -28221,8 +28571,8 @@
       "candidateId": "c1500-0564",
       "name": "葛民輝",
       "status": "pending_review",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-28T23:39:59.748163+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-28T23:47:32.764255+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0564",
@@ -28231,7 +28581,7 @@
           "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
           "artist": "Tombus20032000",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "gamePath": "expansion-1500/review_photos/t1500_0564.jpg",
           "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
           "reveal": {
@@ -28267,7 +28617,7 @@
             ]
           },
           "status": "pending_evidence",
-          "rightsStatus": "needs_review",
+          "rightsStatus": "open_license_metadata",
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft"
@@ -28292,7 +28642,7 @@
             }
           ],
           "evidenceRequest": "測試鬍鬚遮下巴、麥克風位置與授權",
-          "evidenceAttempts": 2,
+          "evidenceAttempts": 3,
           "stagePreviews": {
             "eyes": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/eyes.png",
             "nose": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/nose.png",
@@ -28342,24 +28692,71 @@
           },
           "evidenceSupplement": {
             "requested": "測試鬍鬚遮下巴、麥克風位置與授權",
-            "attemptedAt": "2026-10-28T17:39:58.853296+00:00",
-            "status": "incomplete",
-            "errors": [
-              {
-                "code": "source_evidence_failed",
-                "message": "expected string or bytes-like object, got 'float'"
-              }
-            ],
+            "attemptedAt": "2026-10-28T17:47:31.921223+00:00",
+            "status": "source_metadata_added_pending_manual_verification",
+            "errors": [],
             "visualIdentityVerified": false,
             "rightsHumanVerified": false,
+            "sourceMetadata": {
+              "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Eric_Kot_20231029.jpg/1920px-Eric_Kot_20231029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Eric_Kot_20231029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "width": 2708,
+              "height": 3611,
+              "artist": "Tombus20032000",
+              "credit": "Own work",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "caption": "Eric Kot is in Langham Place.",
+              "externalSourceLinks": [],
+              "retrievedAt": "2026-10-28T17:47:32.402445+00:00"
+            },
+            "captionAliasMatches": [],
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+              "excerpt": "葛民輝（英語：Eric Kot Man Fai，1966年12月30日—），香港電台節目主持、演員及導演，其流行組合軟硬天師成員的「軟天師」身份最廣為人知。",
+              "wikidataId": "Q590914",
+              "matchedAliases": [
+                "葛民輝",
+                "葛民輝"
+              ]
+            },
+            "sourceImageSaved": true,
             "remainingGaps": [
               "Human identity/caption confirmation",
               "Human rights verification",
-              "Five-stage and recognizability review",
-              "Source author/licence/resolution metadata unavailable",
-              "Original/source image download unavailable"
+              "Five-stage and recognizability review"
             ]
-          }
+          },
+          "previousProvenance": {
+            "artist": "Tombus20032000",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "",
+            "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg"
+          },
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Eric_Kot_20231029.jpg/1920px-Eric_Kot_20231029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Eric_Kot_20231029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "credit": "Own work",
+          "caption": "Eric Kot is in Langham Place.",
+          "externalSourceLinks": [],
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "caption": "Eric Kot is in Langham Place.",
+            "captionAliasMatches": [],
+            "externalSourceLinks": [],
+            "visualIdentityVerified": false,
+            "biography": {
+              "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+              "excerpt": "葛民輝（英語：Eric Kot Man Fai，1966年12月30日—），香港電台節目主持、演員及導演，其流行組合軟硬天師成員的「軟天師」身份最廣為人知。",
+              "wikidataId": "Q590914",
+              "matchedAliases": [
+                "葛民輝",
+                "葛民輝"
+              ]
+            }
+          },
+          "originalPath": "expansion-1500/pipeline/evidence/5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03/source-ea8bd395761304fa.bin",
+          "originalSha256": "ea8bd395761304fa6cfa010d46336ddff9b41e994ee8f30f8c71af38f4063e2e"
         }
       ],
       "history": [],
@@ -28432,14 +28829,9 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb"
       },
-      "lastErrors": [
-        {
-          "code": "source_evidence_failed",
-          "message": "expected string or bytes-like object, got 'float'"
-        }
-      ],
-      "lastEvidenceAttemptAt": "2026-10-28T17:39:59.748139+00:00",
-      "lastRunId": "20261028T173620Z-5f60426f",
+      "lastErrors": [],
+      "lastEvidenceAttemptAt": "2026-10-28T17:47:32.764219+00:00",
+      "lastRunId": "20261028T174728Z-e2f4fe1d",
       "lastRunNewCandidateIds": []
     },
     "t1500_0565": {

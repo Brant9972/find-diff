@@ -10,6 +10,7 @@ import re
 import sys
 import time
 from pathlib import Path
+from urllib.parse import unquote
 import cv2
 import numpy as np
 
@@ -38,10 +39,33 @@ def identity_matches(person, excerpt):
     tokens = [normalized(t) for t in aliases]
     return any(len(t) >= 2 and t in biography for t in tokens)
 
+def source_key(url):
+    """Match QA's canonical Wikimedia-source key, including percent-encoded names."""
+    value = str(url or "")
+    return unquote(value.split("/wiki/")[-1]).replace("_", " ").casefold()
+
+def excluded_photo_sources():
+    keys = set()
+    review = ROOT / "photo-review.json"
+    if review.exists():
+        data = json.loads(review.read_text(encoding="utf-8"))
+        keys.update(source_key(x.get("source")) for x in data.get("rejected", []) if x.get("source"))
+    for bank_name in ("questions.json", "actors.json", "variety.json"):
+        bank_file = ROOT / bank_name
+        if bank_file.exists():
+            data = json.loads(bank_file.read_text(encoding="utf-8"))
+            keys.update(source_key(x.get("attribution", {}).get("source"))
+                        for x in data.get("questions", [])
+                        if x.get("attribution", {}).get("source"))
+    keys.discard("")
+    return keys
+
+EXCLUDED_SOURCE_KEYS = excluded_photo_sources()
+
 def disallowed_source(candidate):
     path = str(candidate.get("source", "")) + " " + str(candidate.get("url", ""))
     low = path.casefold()
-    return any(blocked in low for blocked in BLOCKED)
+    return any(blocked in low for blocked in BLOCKED) or source_key(candidate.get("source")) in EXCLUDED_SOURCE_KEYS
 
 def write_index(records):
     INDEX.write_text(json.dumps({"schemaVersion": 1, "generatedAt": "2026-10-28",

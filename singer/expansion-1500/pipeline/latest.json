@@ -30,5 +30,39 @@
     ],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
+  },
+  "preservedConcurrentCheckpoint": {
+    "runId": "20261028T182523Z-86a60f45",
+    "reviewIndex": "expansion-1500/pipeline/runs/20261028T182523Z-86a60f45/review-index.json",
+    "summary": {
+      "runId": "20261028T182523Z-86a60f45",
+      "generatedAt": "2026-10-28T18:32:18.242305+00:00",
+      "scannedPeople": 18,
+      "peopleWithNewCandidates": 0,
+      "newCandidatePhotos": 0,
+      "scannedWithoutCandidates": 18,
+      "retryNeeded": 435,
+      "pendingReviewPeople": 6,
+      "licenseConcernCandidates": 63,
+      "statusCounts": {
+        "download_failed": 26,
+        "published": 70,
+        "no_suitable_source": 367,
+        "rejected": 42,
+        "pending_review": 6
+      },
+      "failureReasons": {
+        "proxy_access_denied": 4,
+        "license_unclear": 7,
+        "identity_unconfirmed": 83,
+        "network_error": 24,
+        "image_validation_failed": 3
+      },
+      "contactSheets": [
+        "contact-sheet-01.jpg"
+      ],
+      "modifiedProduction": false,
+      "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
+    }
   }
 }

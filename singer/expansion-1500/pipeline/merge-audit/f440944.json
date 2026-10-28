@@ -1,0 +1,25 @@
+{
+  "oursCommit": "d8bf0517b9b824070812881c08830307525a7310",
+  "concurrentCommit": "f4409445eedbef2d2e95a0ca143519425c54481c",
+  "backupPath": "/workspace/.find-diff-tools/merge-backup-ee2d-f440",
+  "people": 511,
+  "candidateUnionCount": 222,
+  "protectedRowsUnchanged": true,
+  "historiesPreserved": true,
+  "conflictDecisions": [
+    {
+      "path": "/chatgptReview/receivedAt",
+      "ours": "2026-10-28T18:38:30.615388+00:00",
+      "concurrent": "2026-10-28T18:25:23.516965+00:00",
+      "selected": "2026-10-28T18:38:30.615388+00:00",
+      "reason": "retain candidate-scoped review schema"
+    },
+    {
+      "path": "/people/t1500_0307/nextRetryAt",
+      "ours": null,
+      "concurrent": "2026-10-29T00:32:17.811153+00:00",
+      "selected": "2026-10-29T00:32:17.811153+00:00",
+      "reason": "retain later runtime observation"
+    }
+  ]
+}

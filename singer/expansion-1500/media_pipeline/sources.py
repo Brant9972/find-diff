@@ -151,13 +151,14 @@ class Wikimedia:
     name = 'wikimedia'
 
     def search(self, person, http, round_number=0):
-        queries = list(dict.fromkeys([person['name'], *person.get('aliases', []), *person.get('photoSearchKeywords', [])]))
+        queries = list(dict.fromkeys([person['name'], person.get('preferredImageQuery') or person['name'], *person.get('photoSearchKeywords', []), *person.get('aliases', [])]))
         # Rotating query order gives retries new searches even with a bounded candidate budget.
         shift = round_number % len(queries)
         queries = queries[shift:] + queries[:shift]
         articles, qids, files = {}, set(), set()
         for lang in ('zh', 'en'):
-            for title in queries[:2]:
+            titles = [person['name'], *person.get('aliases', [])]
+            for title in titles[:2]:
                 data = http.json(f'https://{lang}.wikipedia.org/w/api.php', action='query', format='json', formatversion=2,
                                  titles=title, redirects=1, converttitles=1, prop='pageimages|pageprops|extracts|info|images',
                                  imlimit=50, piprop='name', pilicense='free', exintro=1, explaintext=1, inprop='url')
@@ -200,7 +201,7 @@ class Wikimedia:
                            'filename': filename, 'artist': val('Artist'), 'credit': val('Credit'),
                            'license': val('LicenseShortName'), 'licenseUrl': val('LicenseUrl'),
                            'caption': val('ImageDescription'), 'identityEvidence': evidence,
-                           'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []), 'note': 'Search context only; recognizability not verified'},
+                           'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []), 'matchedWorks': [w for w in person.get('representativeWorks', []) if isinstance(w, str) and norm(w) in norm(filename + ' ' + val('ImageDescription'))], 'note': 'Search context only; recognizability not verified'},
                            'searchTime': now(), 'width': info.get('width'), 'height': info.get('height')}
 
 

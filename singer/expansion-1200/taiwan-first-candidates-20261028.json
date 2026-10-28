@@ -1,0 +1,7553 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-28",
+  "goal": "台灣藝人為主、正式題庫累計1200位；YouTuber/網紅不列入新增",
+  "status": "candidate_staging_only",
+  "baseline": {
+    "branch": "main",
+    "singerEntries": 449,
+    "actorEntries": 511,
+    "crossCategoryOverlaps": 68,
+    "uniquePeople": 892,
+    "requiredNewPeople": 308
+  },
+  "counts": {
+    "newTargets": 308,
+    "backup": 64,
+    "allCandidates": 372,
+    "grades": {
+      "A": 61,
+      "B": 247,
+      "C": 64
+    },
+    "projectedIfAllTargetsPass": 1200,
+    "duplicateAliasConflicts": 0
+  },
+  "constraints": [
+    "排除主要以 YouTuber、網紅、直播主身分知名的人物",
+    "台灣歌手、台語歌手、經典藝人、本土劇、偶像劇、綜藝主持人優先",
+    "團體名稱不能當單一人物；團體成員可個別列入",
+    "藝名本名與已知別名跨正式歌手/演員題庫檢查",
+    "作品線索均為編輯候選，待照片專員入庫前再次核實",
+    "所有照片未製作，無授權狀態承諾"
+  ],
+  "handoff": {
+    "requires": "逐人確認身分、演出作品、照片本人與授權，裁切後由其他對話合入正式題庫",
+    "officialFilesUntouched": true
+  },
+  "candidates": [
+    {
+      "candidateId": "c1200-0001",
+      "name": "蔡幸娟",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "星星知我心"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蔡幸娟 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0002",
+      "name": "陳建寧",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "F.I.R. 飛兒樂團"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳建寧 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0003",
+      "name": "李佳豫",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝與戲劇演出"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李佳豫 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0004",
+      "name": "周群達",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "鬥魚"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "周群達 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0005",
+      "name": "林嘉欣",
+      "aliases": [
+        "Karena Lam"
+      ],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "男人四十"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林嘉欣 台灣 藝人 正面 人像",
+        "Karena Lam portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0006",
+      "name": "范植偉",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "美麗時光"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "范植偉 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0007",
+      "name": "王瞳",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "多情城市"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王瞳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0008",
+      "name": "趙永馨",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "庭院深深"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙永馨 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0009",
+      "name": "姚淳耀",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "模仿犯"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "姚淳耀 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0010",
+      "name": "小禎",
+      "aliases": [
+        "胡盈禎"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "醫師好辣"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小禎 台灣 藝人 正面 人像",
+        "胡盈禎 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0011",
+      "name": "沈玉琳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "11點熱吵店"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "沈玉琳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0012",
+      "name": "阿Ken",
+      "aliases": [
+        "林暐恆"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "大學生了沒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿Ken 台灣 藝人 正面 人像",
+        "林暐恆 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0013",
+      "name": "胡瓜",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝大集合"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "胡瓜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0014",
+      "name": "徐乃麟",
+      "aliases": [],
+      "categories": [
+        "綜藝",
+        "歌手"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "天才衝衝衝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "徐乃麟 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0015",
+      "name": "納豆",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "大學生了沒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "納豆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0016",
+      "name": "庹宗康",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "國光幫幫忙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "庹宗康 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0017",
+      "name": "張小燕",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "超級星期天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張小燕 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0018",
+      "name": "張菲",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "龍兄虎弟"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張菲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0019",
+      "name": "郭子乾",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "全民最大黨"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭子乾 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0020",
+      "name": "曾國城",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "一字千金"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曾國城 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0021",
+      "name": "蔡康永",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "康熙來了"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蔡康永 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0022",
+      "name": "豬哥亮",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "豬哥會社"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "豬哥亮 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0023",
+      "name": "藍心湄",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "女人我最大"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "藍心湄 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0024",
+      "name": "KID",
+      "aliases": [
+        "林柏昇",
+        "KID 林柏昇"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝玩很大"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "KID 台灣 藝人 正面 人像",
+        "林柏昇 portrait",
+        "KID 林柏昇 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0025",
+      "name": "卜學亮",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "子曰"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "卜學亮 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0026",
+      "name": "于美人",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "新聞挖挖哇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "于美人 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0027",
+      "name": "大炳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "模仿綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "大炳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0028",
+      "name": "王思佳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "康熙來了"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王思佳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0029",
+      "name": "曲家瑞",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "康熙來了"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曲家瑞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0030",
+      "name": "利菁",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "麻辣天后宮"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "利菁 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0031",
+      "name": "李佩甄",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李佩甄 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0032",
+      "name": "歐漢聲",
+      "aliases": [
+        "歐弟"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "天天向上"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "歐漢聲 台灣 藝人 正面 人像",
+        "歐弟 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0033",
+      "name": "狄鶯",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣本土劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "狄鶯 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0034",
+      "name": "林葉亭",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "女人我最大"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林葉亭 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0035",
+      "name": "阿龐",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "戲劇及綜藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿龐 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0036",
+      "name": "侯佩岑",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "娛樂亞洲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "侯佩岑 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0037",
+      "name": "哈孝遠",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "哈孝遠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0038",
+      "name": "夏語心",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "大學生了沒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "夏語心 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0039",
+      "name": "峮峮",
+      "aliases": [
+        "吳函峮"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "中信兄弟啦啦隊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "峮峮 台灣 藝人 正面 人像",
+        "吳函峮 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0040",
+      "name": "殷悅",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "康熙來了"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "殷悅 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0041",
+      "name": "海裕芬",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我可能不會愛你"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "海裕芬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0042",
+      "name": "馬力歐",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "馬力歐 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0043",
+      "name": "馬國畢",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "馬國畢 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0044",
+      "name": "曹西平",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曹西平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0045",
+      "name": "Lulu",
+      "aliases": [
+        "黃路梓茵"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝大熱門"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "Lulu 台灣 藝人 正面 人像",
+        "黃路梓茵 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0046",
+      "name": "黃子佼",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "超級星期天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃子佼 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0047",
+      "name": "黃國倫",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "我願意"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃國倫 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0048",
+      "name": "楊皓如",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "楊皓如 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0049",
+      "name": "賈永婕",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "賈永婕 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0050",
+      "name": "廖峻",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "鳥來伯與十三姨"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "廖峻 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0051",
+      "name": "賴佩霞",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "人選之人—造浪者"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "賴佩霞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0052",
+      "name": "謝哲青",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "下課花路米"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝哲青 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0053",
+      "name": "嚴立婷",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "嚴立婷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0054",
+      "name": "Gino",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "K ONE"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "Gino 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0055",
+      "name": "康康",
+      "aliases": [
+        "康晉榮"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "快樂星期天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "康康 台灣 藝人 正面 人像",
+        "康晉榮 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0056",
+      "name": "安苡愛",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "安苡愛 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0057",
+      "name": "何妤玟",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "國光幫幫忙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何妤玟 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0058",
+      "name": "郭彥均",
+      "aliases": [],
+      "categories": [
+        "綜藝",
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "2moro"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭彥均 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0059",
+      "name": "巫苡萱",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "樂天女孩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "巫苡萱 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0060",
+      "name": "浩子",
+      "aliases": [
+        "謝炘昊"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "食尚玩家"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "浩子 台灣 藝人 正面 人像",
+        "謝炘昊 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0061",
+      "name": "孟潔",
+      "aliases": [
+        "李孟潔"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "樂天女孩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "孟潔 台灣 藝人 正面 人像",
+        "李孟潔 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0062",
+      "name": "林襄",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "樂天女孩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林襄 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0063",
+      "name": "香蕉",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "瘋神無雙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "香蕉 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0064",
+      "name": "夏克立",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "爸爸去哪兒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "夏克立 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0065",
+      "name": "張艾亞",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "大學生了沒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張艾亞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0066",
+      "name": "梓梓",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "Formosa Sexy"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "梓梓 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0067",
+      "name": "陳伊",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "伊梓帆"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳伊 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0068",
+      "name": "郭彥甫",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "2moro"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭彥甫 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0069",
+      "name": "楊繡惠",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "楊繡惠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0070",
+      "name": "慈妹",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "中信兄弟啦啦隊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "慈妹 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0071",
+      "name": "熊熊",
+      "aliases": [
+        "卓毓彤"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "美胸女神"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "熊熊 台灣 藝人 正面 人像",
+        "卓毓彤 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0072",
+      "name": "粿粿",
+      "aliases": [
+        "江瑋琳"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "中信兄弟啦啦隊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "粿粿 台灣 藝人 正面 人像",
+        "江瑋琳 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0073",
+      "name": "嘻小瓜",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "大學生了沒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "嘻小瓜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0074",
+      "name": "籃籃",
+      "aliases": [
+        "籃靖玟"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝大集合"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "籃籃 台灣 藝人 正面 人像",
+        "籃靖玟 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0075",
+      "name": "大牙",
+      "aliases": [
+        "周宜霈"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "黑澀會美眉"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "大牙 台灣 藝人 正面 人像",
+        "周宜霈 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0076",
+      "name": "小甜甜",
+      "aliases": [
+        "張可昀"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "黑澀會美眉"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小甜甜 台灣 藝人 正面 人像",
+        "張可昀 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0077",
+      "name": "小煜",
+      "aliases": [
+        "楊奇煜"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小煜 台灣 藝人 正面 人像",
+        "楊奇煜 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0078",
+      "name": "小嫻",
+      "aliases": [
+        "黃瑜嫻"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "超級星期天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小嫻 台灣 藝人 正面 人像",
+        "黃瑜嫻 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0079",
+      "name": "小薰",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "黑澀會美眉"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小薰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0080",
+      "name": "小鐘",
+      "aliases": [
+        "鐘昀呈"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝玩很大"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小鐘 台灣 藝人 正面 人像",
+        "鐘昀呈 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0081",
+      "name": "山豬",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "瘋神無雙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "山豬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0082",
+      "name": "王偉忠",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "全民大悶鍋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王偉忠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0083",
+      "name": "白雲",
+      "aliases": [
+        "李國弘"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "白雲 台灣 藝人 正面 人像",
+        "李國弘 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0084",
+      "name": "余祥銓",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "余祥銓 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0085",
+      "name": "吳怡霈",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "吳怡霈 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0086",
+      "name": "吳淡如",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "命運好好玩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "吳淡如 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0087",
+      "name": "吳鳳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "愛玩客"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "吳鳳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0088",
+      "name": "李明川",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "時尚造型節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李明川 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0089",
+      "name": "李懿",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李懿 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0090",
+      "name": "邵庭",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我猜我猜我猜猜猜"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "邵庭 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0091",
+      "name": "阿本",
+      "aliases": [
+        "翁瑞迪"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "模范棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿本 台灣 藝人 正面 人像",
+        "翁瑞迪 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0092",
+      "name": "江祖平",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "風水世家"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "江祖平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0093",
+      "name": "郭品超",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "鬥魚"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭品超 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0094",
+      "name": "寇世勳",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "一剪梅"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "寇世勳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0095",
+      "name": "金超群",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "包青天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "金超群 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0096",
+      "name": "馬如龍",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "海角七號"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "馬如龍 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0097",
+      "name": "唐綺陽",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "唐綺陽占星幫"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "唐綺陽 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0098",
+      "name": "洪都拉斯",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "全民大悶鍋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "洪都拉斯 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0099",
+      "name": "阿翔",
+      "aliases": [
+        "陳秉立"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "食尚玩家"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿翔 台灣 藝人 正面 人像",
+        "陳秉立 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0100",
+      "name": "張立東",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "綜藝大熱門"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張立東 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0101",
+      "name": "梁赫群",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "2分之一強"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "梁赫群 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0102",
+      "name": "趙正平",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "康熙來了"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙正平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0103",
+      "name": "陽帆",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "分手擂台"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陽帆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0104",
+      "name": "董至成",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "全民大悶鍋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "董至成 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0105",
+      "name": "鍾嘉欣",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "A",
+      "representativeWorks": [
+        "溏心風暴"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "鍾嘉欣 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0106",
+      "name": "林生祥",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "菊花夜行軍"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林生祥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0107",
+      "name": "陳明章",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "流浪到淡水"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳明章 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0108",
+      "name": "黃少谷",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "強辯樂團"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃少谷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0109",
+      "name": "黃連煜",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "新寶島康樂隊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃連煜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0110",
+      "name": "葉佳修",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "外婆的澎湖灣"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "葉佳修 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0111",
+      "name": "王夢麟",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "雨中即景"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王夢麟 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0112",
+      "name": "謝馨儀",
+      "aliases": [
+        "蘇打綠 馨儀"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "蘇打綠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝馨儀 台灣 藝人 正面 人像",
+        "蘇打綠 馨儀 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0113",
+      "name": "史俊威",
+      "aliases": [
+        "蘇打綠 小威"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "蘇打綠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "史俊威 台灣 藝人 正面 人像",
+        "蘇打綠 小威 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0114",
+      "name": "龔鈺祺",
+      "aliases": [
+        "蘇打綠 阿龔"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "蘇打綠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "龔鈺祺 台灣 藝人 正面 人像",
+        "蘇打綠 阿龔 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0115",
+      "name": "謝佳見",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我的寶貝四千金"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝佳見 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0116",
+      "name": "謝瓊煖",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "俗女養成記"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝瓊煖 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0117",
+      "name": "方岑",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "方岑 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0118",
+      "name": "王中皇",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王中皇 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0119",
+      "name": "王振復",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王振復 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0120",
+      "name": "宋逸民",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "宋逸民 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0121",
+      "name": "李淑楨",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "魯冰花"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李淑楨 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0122",
+      "name": "岳華",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "大醉俠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "岳華 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0123",
+      "name": "林慶台",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "賽德克・巴萊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林慶台 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0124",
+      "name": "施易男",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "母雞帶小鴨"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "施易男 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0125",
+      "name": "張復建",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "包青天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張復建 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0126",
+      "name": "黃西田",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語演藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃西田 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0127",
+      "name": "葉歡",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "記得我們有約"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "葉歡 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0128",
+      "name": "趙駿亞",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "新兵日記"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙駿亞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0129",
+      "name": "侯怡君",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "侯怡君 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0130",
+      "name": "威廉",
+      "aliases": [
+        "廖亦崟"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "模范棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "威廉 台灣 藝人 正面 人像",
+        "廖亦崟 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0131",
+      "name": "風田",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝3國智"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "風田 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0132",
+      "name": "茵聲",
+      "aliases": [
+        "鄭茵聲"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "這群人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "茵聲 台灣 藝人 正面 人像",
+        "鄭茵聲 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0133",
+      "name": "陳為民",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳為民 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0134",
+      "name": "賀一航",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "賀一航 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0135",
+      "name": "沈春華",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "沈春華Live Show"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "沈春華 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0136",
+      "name": "潘若迪",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "有氧運動"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "潘若迪 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0137",
+      "name": "薔薔",
+      "aliases": [
+        "林嘉凌"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我愛黑澀會"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "薔薔 台灣 藝人 正面 人像",
+        "林嘉凌 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0138",
+      "name": "謝忻",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝大集合"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝忻 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0139",
+      "name": "Janet",
+      "aliases": [
+        "謝怡芬"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "瘋台灣"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "Janet 台灣 藝人 正面 人像",
+        "謝怡芬 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0140",
+      "name": "盛竹如",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "華視新聞"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "盛竹如 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0141",
+      "name": "蘇芮",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "酒矸倘賣無"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蘇芮 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0142",
+      "name": "童安格",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "其實你不懂我的心"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "童安格 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0143",
+      "name": "李驥",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "優客李林"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李驥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0144",
+      "name": "熊天平",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "火柴天堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "熊天平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0145",
+      "name": "魏如昀",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "花香"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "魏如昀 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0146",
+      "name": "余佩真",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣獨立音樂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "余佩真 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0147",
+      "name": "謝雷",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語流行歌曲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝雷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0148",
+      "name": "袁小迪",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語流行歌曲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "袁小迪 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0149",
+      "name": "王瑞霞",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語歌壇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王瑞霞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0150",
+      "name": "方瑞娥",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語歌壇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "方瑞娥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0151",
+      "name": "高向鵬",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語對唱歌曲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "高向鵬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0152",
+      "name": "謝宜君",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台語流行歌曲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝宜君 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0153",
+      "name": "郭忠祐",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "超級紅人榜"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭忠祐 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0154",
+      "name": "李炳輝",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "流浪到淡水"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李炳輝 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0155",
+      "name": "金佩姍",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "一代女皇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "金佩姍 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0156",
+      "name": "潘美辰",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我想有個家"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "潘美辰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0157",
+      "name": "姜育恆",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "再回首"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "姜育恆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0158",
+      "name": "孟庭葦",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "冬季到台北來看雨"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "孟庭葦 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0159",
+      "name": "高明駿",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "年輕的喝采"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "高明駿 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0160",
+      "name": "阿杜",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "他一定很愛你"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿杜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0161",
+      "name": "林道遠",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "星光大道"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林道遠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0162",
+      "name": "梁一貞",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "星光大道"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "梁一貞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0163",
+      "name": "春風",
+      "aliases": [
+        "洪瑜鴻"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "玖壹壹"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "春風 台灣 藝人 正面 人像",
+        "洪瑜鴻 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0164",
+      "name": "健志",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "玖壹壹"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "健志 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0165",
+      "name": "洋蔥",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "玖壹壹"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "洋蔥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0166",
+      "name": "阿璞",
+      "aliases": [
+        "李賢璞"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "八三夭"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿璞 台灣 藝人 正面 人像",
+        "李賢璞 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0167",
+      "name": "小傑",
+      "aliases": [
+        "廖俊傑"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小傑 台灣 藝人 正面 人像",
+        "廖俊傑 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0168",
+      "name": "李銓",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "模范棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李銓 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0169",
+      "name": "瑪莎",
+      "aliases": [
+        "蔡昇晏"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "五月天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "瑪莎 台灣 藝人 正面 人像",
+        "蔡昇晏 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0170",
+      "name": "冠佑",
+      "aliases": [
+        "劉冠佑"
+      ],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "五月天"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "冠佑 台灣 藝人 正面 人像",
+        "劉冠佑 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0171",
+      "name": "陳湘琪",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "回光奏鳴曲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳湘琪 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0172",
+      "name": "陸弈靜",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "郊遊"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陸弈靜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0173",
+      "name": "李亦捷",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "當愛來的時候"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李亦捷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0174",
+      "name": "鳳小岳",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "艋舺"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "鳳小岳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0175",
+      "name": "章廣辰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "華燈初上"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "章廣辰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0176",
+      "name": "曹佑寧",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "KANO"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曹佑寧 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0177",
+      "name": "李運慶",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "真愛找麻煩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李運慶 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0178",
+      "name": "祝釩剛",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "183club"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "祝釩剛 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0179",
+      "name": "黃玉榮",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "183club"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃玉榮 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0180",
+      "name": "張翰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "牯嶺街少年殺人事件"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張翰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0181",
+      "name": "王大陸",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我的少女時代"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王大陸 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0182",
+      "name": "任容萱",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我的自由年代"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "任容萱 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0183",
+      "name": "謝麗金",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣本土劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝麗金 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0184",
+      "name": "李之勤",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李之勤 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0185",
+      "name": "陳仙梅",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "世間情"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳仙梅 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0186",
+      "name": "亮哲",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "亮哲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0187",
+      "name": "林佑星",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林佑星 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0188",
+      "name": "黃維德",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "京華煙雲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃維德 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0189",
+      "name": "鐘瑶",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "花甲男孩轉大人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "鐘瑶 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0190",
+      "name": "許安植",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "俗女養成記"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "許安植 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0191",
+      "name": "姚愛寗",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "比悲傷更悲傷的故事"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "姚愛寗 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0192",
+      "name": "郭碧婷",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "小時代"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭碧婷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0193",
+      "name": "曾珮瑜",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "做工的人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曾珮瑜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0194",
+      "name": "朱芷瑩",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "色，戒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "朱芷瑩 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0195",
+      "name": "周姮吟",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣電影與戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "周姮吟 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0196",
+      "name": "蔡亘晏",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "咒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蔡亘晏 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0197",
+      "name": "方郁婷",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "美國女孩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "方郁婷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0198",
+      "name": "魏蔓",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "真愛趁現在"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "魏蔓 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0199",
+      "name": "鄭家榆",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "懷玉公主"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "鄭家榆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0200",
+      "name": "翁家明",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣經典戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "翁家明 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0201",
+      "name": "周明增",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣本土劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "周明增 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0202",
+      "name": "喜翔",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "老大人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "喜翔 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0203",
+      "name": "陳松勇",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "悲情城市"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳松勇 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0204",
+      "name": "李立群",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "搭錯車"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李立群 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0205",
+      "name": "趙自強",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "如果兒童劇團"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙自強 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0206",
+      "name": "顧寶明",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "暗戀桃花源"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "顧寶明 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0207",
+      "name": "孫越",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "搭錯車"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "孫越 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0208",
+      "name": "乾德門",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "新白娘子傳奇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "乾德門 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0209",
+      "name": "張國柱",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "花樣年華"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張國柱 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0210",
+      "name": "張世",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "粉紅女郎"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張世 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0211",
+      "name": "周孝安",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "一把青"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "周孝安 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0212",
+      "name": "陳慕",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "若是一個人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳慕 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0213",
+      "name": "林雨宣",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "星光大道"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林雨宣 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0214",
+      "name": "黃采儀",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣電視劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃采儀 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0215",
+      "name": "何以奇",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我的自由年代"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何以奇 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0216",
+      "name": "韓瑜",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "意難忘"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "韓瑜 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0217",
+      "name": "賴慧如",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "多情城市"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "賴慧如 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0218",
+      "name": "江俊翰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "江俊翰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0219",
+      "name": "蘇意菁",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣本土劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蘇意菁 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0220",
+      "name": "劉秀雯",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉秀雯 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0221",
+      "name": "崔佩儀",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "崔佩儀 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0222",
+      "name": "趙樹海",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣電視劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙樹海 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0223",
+      "name": "檢場",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝與戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "檢場 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0224",
+      "name": "丁國琳",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "丁國琳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0225",
+      "name": "謝京穎",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "天道"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝京穎 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0226",
+      "name": "張家瑋",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張家瑋 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0227",
+      "name": "李亮瑾",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李亮瑾 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0228",
+      "name": "陳熙鋒",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳熙鋒 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0229",
+      "name": "林健寰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林健寰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0230",
+      "name": "林小樓",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "新桃太郎"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林小樓 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0231",
+      "name": "周筱雲",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣本土劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "周筱雲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0232",
+      "name": "余筱萍",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "余筱萍 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0233",
+      "name": "曹啟泰",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "連環泡"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曹啟泰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0234",
+      "name": "九孔",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "全民大悶鍋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "九孔 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0235",
+      "name": "唐治平",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "花樣少年少女"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "唐治平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0236",
+      "name": "馮翊綱",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "相聲瓦舍"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "馮翊綱 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0237",
+      "name": "宋少卿",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "相聲瓦舍"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "宋少卿 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0238",
+      "name": "張魁",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張魁 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0239",
+      "name": "張帝",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "急智歌王"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張帝 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0240",
+      "name": "張克帆",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "紅孩兒"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張克帆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0241",
+      "name": "何篤霖",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "命運好好玩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何篤霖 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0242",
+      "name": "大根",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "大根 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0243",
+      "name": "大飛",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "大飛 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0244",
+      "name": "小炳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小炳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0245",
+      "name": "寶媽",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "寶媽 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0246",
+      "name": "徐小可",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "徐小可 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0247",
+      "name": "阿布",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝與戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿布 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0248",
+      "name": "斯容",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "斯容 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0249",
+      "name": "茵芙",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "茵芙 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0250",
+      "name": "逸祥",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "瘋神無雙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "逸祥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0251",
+      "name": "郭靜純",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "郭靜純 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0252",
+      "name": "崔麗心",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "崔麗心 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0253",
+      "name": "陳今佩",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳今佩 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0254",
+      "name": "何嘉文",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何嘉文 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0255",
+      "name": "林采緹",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林采緹 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0256",
+      "name": "趙孟姿",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "趙孟姿 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0257",
+      "name": "汪建民",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "汪建民 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0258",
+      "name": "陳凱倫",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳凱倫 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0259",
+      "name": "羅璧玲",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "羅璧玲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0260",
+      "name": "蔡頭",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "紅白勝利"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蔡頭 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0261",
+      "name": "脫線",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣秀場"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "脫線 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0262",
+      "name": "文英",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "稻草人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "文英 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0263",
+      "name": "吳姍儒",
+      "aliases": [
+        "Sandy",
+        "Sandy Wu"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "小明星大跟班"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "吳姍儒 台灣 藝人 正面 人像",
+        "Sandy portrait",
+        "Sandy Wu portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0264",
+      "name": "甄莉",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "甄莉 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0265",
+      "name": "紀言愷",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "SpeXial"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "紀言愷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0266",
+      "name": "何美",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何美 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0267",
+      "name": "胡釋安",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "胡釋安 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0268",
+      "name": "何孟遠",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何孟遠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0269",
+      "name": "黃沐妍",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃沐妍 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0270",
+      "name": "廖科溢",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "旅遊節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "廖科溢 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0271",
+      "name": "孫翠鳳",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "明華園"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "孫翠鳳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0272",
+      "name": "唐美雲",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "歌仔戲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "唐美雲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0273",
+      "name": "楊麗花",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "歌仔戲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "楊麗花 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0274",
+      "name": "葉青",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "歌仔戲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "葉青 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0275",
+      "name": "陳美雲",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "歌仔戲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳美雲 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0276",
+      "name": "許書豪",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "金曲獎"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "許書豪 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0277",
+      "name": "何欣穗",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "創作歌手"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何欣穗 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0278",
+      "name": "何景揚",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "蘇打綠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "何景揚 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0279",
+      "name": "楊士弘",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "金曲獎"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "楊士弘 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0280",
+      "name": "舞思愛",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "原住民族歌手"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "舞思愛 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0281",
+      "name": "劉家凱",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "蘇打綠"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉家凱 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0282",
+      "name": "戴曉君",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "原住民族歌手"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "戴曉君 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0283",
+      "name": "陳霆",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳霆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0284",
+      "name": "關勇",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣電視劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "關勇 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0285",
+      "name": "林柏叡",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "鬥魚"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林柏叡 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0286",
+      "name": "陳又瑄",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣戲劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳又瑄 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0287",
+      "name": "潘綱大",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "陽光普照"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "潘綱大 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0288",
+      "name": "蔡明修",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣電影"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蔡明修 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0289",
+      "name": "小優",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我愛黑澀會"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小優 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0290",
+      "name": "馬世莉",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "馬世莉 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0291",
+      "name": "張兆志",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "張兆志 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0292",
+      "name": "黃喬歆",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "我愛黑澀會"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃喬歆 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0293",
+      "name": "小Call",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "小Call 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0294",
+      "name": "尼克",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "尼克 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0295",
+      "name": "錦雯",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣歌仔戲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "錦雯 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0296",
+      "name": "譚俊彥",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "十八年後的終極告白"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "譚俊彥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0297",
+      "name": "熊欣欣",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "黃飛鴻電影"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "熊欣欣 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0298",
+      "name": "李香琴",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "香港經典電影"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李香琴 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0299",
+      "name": "王浩信",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "踩過界"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "王浩信 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0300",
+      "name": "李施嬅",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "金宵大廈"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李施嬅 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0301",
+      "name": "唐文龍",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "香港電影與電視"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "唐文龍 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0302",
+      "name": "陳敏之",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "怒火街頭"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳敏之 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0303",
+      "name": "劉丹",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "射鵰英雄傳"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉丹 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0304",
+      "name": "賴薇如",
+      "aliases": [
+        "Doris Lai"
+      ],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "七朵花"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "賴薇如 台灣 藝人 正面 人像",
+        "Doris Lai portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0305",
+      "name": "林玟誼",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "台灣八點檔"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "林玟誼 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0306",
+      "name": "許傑輝",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "全民大悶鍋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "許傑輝 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0307",
+      "name": "劉香慈",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "新兵日記"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉香慈 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0308",
+      "name": "李妍瑾",
+      "aliases": [
+        "李妍憬"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "B",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李妍瑾 台灣 藝人 正面 人像",
+        "李妍憬 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "target",
+      "source": "new_editorial_20261028"
+    },
+    {
+      "candidateId": "c1200-0309",
+      "name": "曹晏豪",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "天黑請閉眼"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "曹晏豪 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0310",
+      "name": "梁正群",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "戲劇演出"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "梁正群 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0311",
+      "name": "黃尚禾",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "角頭"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃尚禾 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0312",
+      "name": "黃遠",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "一頁台北"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃遠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0313",
+      "name": "劉修甫",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "誰是被害者"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉修甫 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0314",
+      "name": "謝沛恩",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "波麗士大人"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝沛恩 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0315",
+      "name": "李國超",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "李國超 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0316",
+      "name": "李羅",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "李羅 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0317",
+      "name": "李㼈",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "李㼈 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0318",
+      "name": "岳虹",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "岳虹 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0319",
+      "name": "林在培",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "林在培 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0320",
+      "name": "林美貞",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "林美貞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0321",
+      "name": "侯昌明",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "侯昌明 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0322",
+      "name": "陳子強",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳子強 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0323",
+      "name": "陳志強",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳志強 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0324",
+      "name": "阿喜",
+      "aliases": [
+        "林育品"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "網路短片與綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿喜 台灣 藝人 正面 人像",
+        "林育品 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0325",
+      "name": "阿達",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "綜藝節目主持"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿達 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0326",
+      "name": "阿緯",
+      "aliases": [
+        "劉峻緯"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "棒棒堂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阿緯 台灣 藝人 正面 人像",
+        "劉峻緯 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0327",
+      "name": "高山峰",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "麻辣鮮師"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "高山峰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0328",
+      "name": "妞妞",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "妞妞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0329",
+      "name": "無尊",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "模仿綜藝"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "無尊 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0330",
+      "name": "黃豪平",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "站立喜劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃豪平 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0331",
+      "name": "楊昇達",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "站立喜劇"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "楊昇達 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0332",
+      "name": "夢多",
+      "aliases": [
+        "大谷主水"
+      ],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "綜藝節目通告"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "夢多 台灣 藝人 正面 人像",
+        "大谷主水 portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0333",
+      "name": "劉真",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "國標舞"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉真 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0334",
+      "name": "秦沛",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "新不了情"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "秦沛 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0335",
+      "name": "田蕊妮",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "巨輪"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "田蕊妮 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0336",
+      "name": "李思捷",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "荃加福祿壽"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "李思捷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0337",
+      "name": "阮兆祥",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "荃加福祿壽"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "阮兆祥 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0338",
+      "name": "唐寧",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "大唐雙龍傳"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "唐寧 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0339",
+      "name": "梁小冰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "鹿鼎記"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "梁小冰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0340",
+      "name": "陳錦鴻",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "創世紀"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳錦鴻 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0341",
+      "name": "黃德斌",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "火舞黃沙"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃德斌 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0342",
+      "name": "劉心悠",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "步步驚心"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "劉心悠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0343",
+      "name": "滕麗名",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "陀槍師姐"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "滕麗名 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0344",
+      "name": "盧海鵬",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "歡樂今宵"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "盧海鵬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0345",
+      "name": "蕭正楠",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "巨輪"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "蕭正楠 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0346",
+      "name": "關海山",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "五億探長雷洛傳"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "關海山 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0347",
+      "name": "陳怡叡",
+      "aliases": [
+        "Yuri"
+      ],
+      "categories": [
+        "演員",
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "樂天女孩"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳怡叡 台灣 藝人 正面 人像",
+        "Yuri portrait"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0348",
+      "name": "陳婉婷",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "港臺戲劇演出"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳婉婷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0349",
+      "name": "黃雋智",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "戲劇演出"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃雋智 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0350",
+      "name": "潘親御",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "潘親御 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0351",
+      "name": "雷嘉汭",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "哭悲"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "雷嘉汭 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0352",
+      "name": "黃霆睿",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "歌唱節目"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "黃霆睿 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0353",
+      "name": "陳惠婷",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "Tizzy Bac"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳惠婷 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0354",
+      "name": "陳建年",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "海洋"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳建年 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0355",
+      "name": "陳建騏",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "音樂製作"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "陳建騏 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0356",
+      "name": "謝宇威",
+      "aliases": [],
+      "categories": [
+        "歌手"
+      ],
+      "priority": "C",
+      "representativeWorks": [
+        "客語音樂"
+      ],
+      "hintStatus": "candidate_needs_verification",
+      "photoSearchKeywords": [
+        "謝宇威 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0357",
+      "name": "阿松",
+      "aliases": [],
+      "categories": [
+        "綜藝"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "阿松 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "refreshed_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0358",
+      "name": "陳瑋儒",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳瑋儒 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0359",
+      "name": "陳文彬",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳文彬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0360",
+      "name": "王惠五",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "王惠五 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0361",
+      "name": "陳展鵬",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳展鵬 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0362",
+      "name": "黃智賢",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "黃智賢 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0363",
+      "name": "陳山聰",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳山聰 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0364",
+      "name": "文詠珊",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "文詠珊 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0365",
+      "name": "江若琳",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "江若琳 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0366",
+      "name": "岑麗香",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "岑麗香 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0367",
+      "name": "林德信",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "林德信 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0368",
+      "name": "陳鍵鋒",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳鍵鋒 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0369",
+      "name": "陳茵媺",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "陳茵媺 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0370",
+      "name": "黃翠如",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "黃翠如 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0371",
+      "name": "羅仲謙",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "羅仲謙 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    },
+    {
+      "candidateId": "c1200-0372",
+      "name": "駱應鈞",
+      "aliases": [],
+      "categories": [
+        "演員"
+      ],
+      "priority": "C",
+      "representativeWorks": [],
+      "hintStatus": "needs_research",
+      "photoSearchKeywords": [
+        "駱應鈞 台灣 藝人 正面 人像"
+      ],
+      "alreadyInOfficialRoster": false,
+      "photoStatus": "not_prepared",
+      "purpose": "backup",
+      "source": "earlier_1000_shortlist"
+    }
+  ]
+}

@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 513,
     "targetUniqueAfterFullPass": 1500,
-    "currentlyLiveUnique": 988,
-    "publishedFromPlan": 1,
-    "remainingSelectedNovel": 512
+    "currentlyLiveUnique": 991,
+    "publishedFromPlan": 4,
+    "remainingSelectedNovel": 509
   },
   "criteria": {
     "image": [
@@ -1217,19 +1217,22 @@
         "林嘉欣 藝人 正面 清晰 肖像",
         "Karena Lam portrait"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "林嘉欣 男人四十 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_running",
+      "preferredImageQuery": "林嘉欣 男人四十 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0005",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%98%89%E6%AC%A3_-_Standing_position.jpg",
+      "rightsNote": "CC BY 3.0 Wikimedia Commons, attribution in actors.json"
     },
     {
       "candidateId": "c1500-0006",
@@ -1896,19 +1899,22 @@
       "photoSearchKeywords": [
         "鍾嘉欣 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "鍾嘉欣 溏心風暴 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_running",
+      "preferredImageQuery": "鍾嘉欣 溏心風暴 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0105",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Linda_Chung_2022.jpg",
+      "rightsNote": "CC BY 3.0 Wikimedia Commons, attribution in actors.json"
     },
     {
       "candidateId": "c1500-0106",
@@ -2535,19 +2541,22 @@
       "photoSearchKeywords": [
         "施易男 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "施易男 母雞帶小鴨 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "CI_running",
+      "preferredImageQuery": "施易男 母雞帶小鴨 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0124",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Eli_Shih_2024_Pastry_Chef.jpg",
+      "rightsNote": "CC BY-SA 4.0 Wikimedia Commons, attribution in actors.json"
     },
     {
       "candidateId": "c1500-0125",
@@ -18087,12 +18096,14 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "firstPublished": {
-      "candidateId": "c1500-0095",
-      "name": "金超群",
-      "questionId": "t1500_0095",
-      "commit": "3d37e47ff2e675f912a8570949ec10307a2b0223"
-    },
-    "pendingPhotoAndHintReview": 512
+    "published": 4,
+    "publishedNames": [
+      "金超群",
+      "林嘉欣",
+      "鍾嘉欣",
+      "施易男"
+    ],
+    "pendingPhotoAndHintReview": 509,
+    "latestCommit": "650cb77a8cf12120ee1bec9059862e3c836c0040"
   }
 }

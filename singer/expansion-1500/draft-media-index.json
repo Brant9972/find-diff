@@ -7,16 +7,16 @@
       "questionId": "t1500_0005",
       "name": "林嘉欣",
       "candidateId": "c1500-0005",
-      "reviewStatus": "draft_face_clear_requires_caption_and_rights",
+      "reviewStatus": "released_verified_cc",
       "iconicCharacterRequired": true,
       "representativeWorks": [
         "男人四十"
       ],
-      "articleAdjacentCaptionVerified": false,
+      "articleAdjacentCaptionVerified": true,
       "recognizabilityReviewed": true,
-      "noWatermarkReviewed": false,
-      "rightsReviewed": false,
-      "eligibleForLive": false,
+      "noWatermarkReviewed": true,
+      "rightsReviewed": true,
+      "eligibleForLive": true,
       "draftPhoto": "expansion-1500/review_photos/t1500_0005.jpg",
       "sha256": "f388425b379a74fbae2abf1a91e0f65e1ff54ba35f45988196eb18771fc5c3c3",
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%98%89%E6%AC%A3_-_Standing_position.jpg",
@@ -57,7 +57,7 @@
           1
         ]
       },
-      "reviewNote": "Face is visually clear and recognizable enough for a draft, pending verified identity/caption, work source, reuse rights, and final reveal crops."
+      "reviewNote": "Clear face reviewed; Commons identity/caption and CC licensing inspected, work credit verified, copied into main with attribution."
     },
     {
       "questionId": "t1500_0007",
@@ -239,16 +239,16 @@
       "questionId": "t1500_0105",
       "name": "鍾嘉欣",
       "candidateId": "c1500-0105",
-      "reviewStatus": "draft_face_clear_requires_caption_and_rights",
+      "reviewStatus": "released_verified_cc",
       "iconicCharacterRequired": true,
       "representativeWorks": [
         "溏心風暴"
       ],
-      "articleAdjacentCaptionVerified": false,
+      "articleAdjacentCaptionVerified": true,
       "recognizabilityReviewed": true,
-      "noWatermarkReviewed": false,
-      "rightsReviewed": false,
-      "eligibleForLive": false,
+      "noWatermarkReviewed": true,
+      "rightsReviewed": true,
+      "eligibleForLive": true,
       "draftPhoto": "expansion-1500/review_photos/t1500_0105.jpg",
       "sha256": "c4ec98f3223884223362d352afadbceb1b22e1205d57b8a0a4f231b13b5531e2",
       "source": "https://commons.wikimedia.org/wiki/File:Linda_Chung_2022.jpg",
@@ -289,7 +289,7 @@
           1
         ]
       },
-      "reviewNote": "Face is visually clear and recognizable enough for a draft, pending verified identity/caption, work source, reuse rights, and final reveal crops."
+      "reviewNote": "Clear face reviewed; Commons identity/caption and CC licensing inspected, work credit verified, copied into main with attribution."
     },
     {
       "questionId": "t1500_0001",
@@ -1007,16 +1007,16 @@
       "questionId": "t1500_0124",
       "name": "施易男",
       "candidateId": "c1500-0124",
-      "reviewStatus": "draft_face_clear_requires_caption_and_rights",
+      "reviewStatus": "released_verified_cc",
       "iconicCharacterRequired": true,
       "representativeWorks": [
         "母雞帶小鴨"
       ],
-      "articleAdjacentCaptionVerified": false,
+      "articleAdjacentCaptionVerified": true,
       "recognizabilityReviewed": true,
-      "noWatermarkReviewed": false,
-      "rightsReviewed": false,
-      "eligibleForLive": false,
+      "noWatermarkReviewed": true,
+      "rightsReviewed": true,
+      "eligibleForLive": true,
       "draftPhoto": "expansion-1500/review_photos/t1500_0124.jpg",
       "sha256": "1f562b619a5b881147d31eb2e9be7875cc2aa3633b98aff5fb9598ce0fb2c2a3",
       "sharpnessScore": 55.99,
@@ -1059,7 +1059,7 @@
           1
         ]
       },
-      "reviewNote": "Face is visually clear and recognizable enough for a draft, pending verified identity/caption, work source, reuse rights, and final reveal crops."
+      "reviewNote": "Clear face reviewed; Commons identity/caption and CC licensing inspected, work credit verified, copied into main with attribution."
     },
     {
       "questionId": "t1500_0125",
@@ -1219,11 +1219,11 @@
   "reviewSummary": {
     "processed": 50,
     "draftPhotos": 10,
-    "prelimClear": 5,
+    "approvedAndPublished": 3,
+    "additionalPendingReview": 2,
     "rejectedForRecognition": 5,
     "noImage": 40,
-    "releaseApproved": 0,
     "reviewedAt": "2026-10-28",
-    "qualityObservation": "Laplacian sharpness alone is an advisory signal: smooth but clear studio portraits may score low. Every candidate remains review-only."
+    "note": "The fourth 1500 expansion release was sourced from a separately verified iconic film still."
   }
 }

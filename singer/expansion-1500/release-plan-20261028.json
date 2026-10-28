@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1498,
-    "currentlyLiveUnique": 1058,
-    "publishedFromPlan": 71,
-    "remainingSelectedNovel": 440,
+    "currentlyLiveUnique": 1057,
+    "publishedFromPlan": 70,
+    "remainingSelectedNovel": 441,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 2
   },
@@ -3994,22 +3994,19 @@
         "瑪莎 藝人 正面 清晰 肖像",
         "蔡昇晏 portrait"
       ],
-      "photoStatus": "published",
+      "photoStatus": "rejected_previous_source",
       "imageVerification": {
-        "faceMatchesPerson": true,
-        "imageAdjacentCaptionVerified": true,
-        "iconicContextVerified": true,
-        "noWatermarkVerified": true,
+        "faceMatchesPerson": false,
+        "imageAdjacentCaptionVerified": false,
+        "iconicContextVerified": false,
+        "noWatermarkVerified": false,
         "rightsDocumented": true,
-        "finalCropReviewed": true
+        "finalCropReviewed": false
       },
-      "hintsStatus": "published_verified",
-      "identityStatus": "verified",
-      "qaStatus": "CI_pending",
-      "preferredImageQuery": "瑪莎 五月天 經典時期 歌手 獨照 正面 清晰 無浮水印",
-      "portraitSource": "https://commons.wikimedia.org/wiki/File:X06Taiwan_20061105-36_(cropped).jpg",
-      "rightsNote": "CC BY-SA 3.0 Wikimedia Commons; credited in questions.json",
-      "publishedQuestionId": "t1500_0169"
+      "hintsStatus": "candidate_only_unverified",
+      "identityStatus": "candidate_only_unverified",
+      "qaStatus": "needs_new_licensed_photo",
+      "preferredImageQuery": "瑪莎 五月天 經典時期 歌手 獨照 正面 清晰 無浮水印"
     },
     {
       "candidateId": "c1500-0170",
@@ -18307,7 +18304,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 71,
+    "published": 70,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18376,12 +18373,11 @@
       "吳雨霏",
       "周柏豪",
       "林美照",
-      "瑪莎",
       "江若琳",
       "陳鳳桂",
       "葉子楣"
     ],
-    "pendingPhotoAndHintReview": 440,
+    "pendingPhotoAndHintReview": 441,
     "latestCommit": "pending-batch11"
   }
 }

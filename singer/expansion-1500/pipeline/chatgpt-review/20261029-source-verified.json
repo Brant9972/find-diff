@@ -4,7 +4,7 @@
   "sourceReview": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
   "baseReview": "pipeline/chatgpt-review/latest.json",
   "method": "Locally opened 600x720 game photos; verified Commons file description, photographer, source, permission and work-credit where available.",
-  "releaseGate": "APPROVED_ITEMS_ONLY_TEST_BRANCH_NOT_MAIN",
+  "releaseGate": "APPROVED_ITEMS_ONLY_PUBLISHED_WITH_QA",
   "eighteenPersonSummary": {
     "reviewed": 18,
     "approved": 2,
@@ -177,9 +177,9 @@
       "image_validation_failed": 57
     },
     "target": 1100,
-    "lastVerifiedMainUnique": 1062,
-    "remaining": 38,
-    "mainCommitAtAudit": "81c3392a91b7596ec355fea1c9bec6da8e564ee8",
+    "lastVerifiedMainUnique": 1063,
+    "remaining": 37,
+    "mainCommitAtAudit": "9301c0736d7de138ba9656119c3a862419ad50bf",
     "conclusions": [
       "New-candidate yield is at most 1/40 and 1/200, with one /40 a duplicate; fix provider effectiveness and dedup before doing more expensive retries.",
       "Normalize person matching with all live main people across questions/actors/variety and all aliases, linked Wikidata QID, traditional/simplified names and romanizations BEFORE querying image sources.",
@@ -188,5 +188,63 @@
       "Before next 200-person sweep, run 10-person diagnostic batch with per-provider successful requests/eligible image counts and recorded reasons for each 403, 429, timeout, missing caption or bad crop.",
       "Continue the 1100 goal only after source-caption-photo-license-human-review alignment. Main merges must pass Singer QA, hints QA, mobile QA and live Pages QA."
     ]
-  }
+  },
+  "additionalApprovedReplacements": [
+    {
+      "personId": "t1500_0360",
+      "candidateId": "review20261029-t1500_0360",
+      "gameSha256": "cc8b0d6f952268ac1b2b5dbc79385fc571b92acc054184fd224148133b87d06e",
+      "name": "林德信",
+      "decision": "approve",
+      "replacesRejectedCandidate": "legacy-t1500_0360",
+      "source": "https://commons.wikimedia.org/wiki/File:Alex_Lam_20230401.jpg",
+      "captionEvidence": "Commons image-local caption explicitly says 林德信於香港會議展覽中心參與《想張國榮20周年致敬音樂會》演出; depicts Alex Lam and 2023-04-01 date.",
+      "license": "CC BY-SA 4.0",
+      "artist": "Tombus20032000",
+      "review": "Opened 2412x3216 original and 600x720 game crop; readable both eyes, nose, unobscured lips and chin; near-front head slightly right; no microphone covering face, no second face or watermark; brighter and more representative than old noisy rejected portrait.",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.4156135991517349
+        ],
+        "nose": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.5474191889589132
+        ],
+        "mouth": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.6900450671732667
+        ],
+        "chin": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.83340346239839
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "workHint": {
+        "title": "死開啲啦",
+        "source": "https://www.1905.com/mdb/film/2233498/"
+      },
+      "releaseCommit": "9301c0736d7de138ba9656119c3a862419ad50bf",
+      "releaseChecks": {
+        "hints": "success",
+        "mobile": "success",
+        "pages": "pending_at_review_recording"
+      },
+      "eligibleForLiveAfterQA": true
+    }
+  ]
 }

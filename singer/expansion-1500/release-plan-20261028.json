@@ -9595,7 +9595,11 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "劉心悠 步步驚心 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "劉心悠 步步驚心 角色 劇照 正面 清晰 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Annie_Liu_Profile_Picture_9-13-22.jpg"
+      ],
+      "reviewReason": "Exclude English homonym 'Annie Liu Profile Picture 9-13-22.jpg' (uploader AnnieLiu13, caption only Profile picture); actress identity not established. Seek actual 劉心悠 portrait with source caption."
     },
     {
       "candidateId": "c1500-0342",

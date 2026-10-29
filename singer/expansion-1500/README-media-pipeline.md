@@ -52,6 +52,10 @@ python singer/expansion-1500/tools/publish_review_links.py --asset-commit <完�
 
 發佈連結前會從 Git 物件核對所有圖片與索引位元組，避免用「尚未包含新照片的舊 HEAD」產生失效圖片網址。這裡的發佈只指工作分支的審核入口，不涉及正式遊戲。
 
+**2026-10-29 併行修復：**若 collect 開始後工作分支已被其他審核提交更新，checkpoint 以 collect 記錄的原始 SHA 產生不可變資產與圖片連結，再推到獨立的 `automation/photo-review-run-<GitHub Actions run ID>` 分支。這不是正式上線，且**不可直接以舊 state.json 覆蓋新審核紀錄**；下輪先核對各人物 ID、候選 SHA、最新 main 與 source run，再逐筆安全合併。沒有分支競爭才會直接快進 `automation/celebrity-photo-pipeline`。
+
+**10 人診斷：**改 `pipeline/batch-request.json` 的 `targetPeople: 10`、`plannedPersonIds`、`retryFailed` 和 `providers` 可執行限定人物／來源順序的診斷批次。最新 `summary.json` 的 `batchFailureReasons` 與 `batchProviderStages` 是本輪數據；舊 `failureReasons` 是全狀態歷史累計，不能當作本輪的失敗率。
+
 ## GitHub Actions
 
 只有明確的 `pipeline/batch-request.json` 變更或新的 `chatgpt-review/latest.json` 才自動啟動；單純改程式、寫進度或補一張圖不會自動再跑一批。預設執行一次 40 人批次，最後統一提交資產和固定圖片連結。

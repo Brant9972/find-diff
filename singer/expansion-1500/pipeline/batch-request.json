@@ -1,23 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-10person-source-diagnostic-v1",
-  "targetPeople": 10,
+  "requestId": "20261029-5person-postfix-source-check-v2",
+  "targetPeople": 5,
   "workers": 1,
   "personSeconds": 90,
   "searchRevision": 4,
   "retryFailed": true,
-  "providers": "commons,entity,openverse",
-  "purpose": "Diagnose 10 existing expansion candidates after per-run source-stage metrics and race-safe checkpoint fix; no production deploy; avoid repeating the old 40/200 batches",
+  "providers": "entity,commons,openverse",
+  "purpose": "Verify corrected checkpoint SHA preflight, Wikimedia original fallback and blocked Shotgun/Ian Chen homonyms on five existing high-evidence cases; draft only, no deploy",
   "plannedPersonIds": [
-    "t1500_0499",
-    "t1500_0001",
     "t1500_0002",
-    "t1500_0004",
-    "t1500_0006",
-    "t1500_0007",
-    "t1500_0008",
-    "t1500_0009",
     "t1500_0016",
-    "t1500_0093"
+    "t1500_0295",
+    "t1500_0332",
+    "t1500_0348"
   ]
 }

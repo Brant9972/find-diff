@@ -61,6 +61,7 @@ def main(argv=None):
         active_names={norm(q['name']) for q in active.values()}
         for pid,row in state['people'].items():
             if pid in active or norm(row['name']) in active_names:row['status']='published'
+            elif people[pid].get('duplicateExistingCanonicalId') in active:row['status']='duplicate_existing'
         handoff=consume(root,directory,state)
         if (args.review_round or args.evidence_only) and not handoff:parser.error('No fixed ChatGPT handoff')
         rejected=rejection_keys(root,args.live_ref)

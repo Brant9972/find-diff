@@ -55,6 +55,10 @@ jobs:
           # 40 random people when a 10-person diagnostic was requested.
           for pid in request.get('plannedPersonIds', [])[:limit]:
               args += ['--person-id', pid]
+          if request.get('retryFailed'):
+              args.append('--retry-failed')
+          if request.get('providers'):
+              args += ['--providers', request['providers']]
           print('Collecting', limit, 'people; explicit IDs:', request.get('plannedPersonIds', [])[:limit], flush=True)
           subprocess.run(args, check=True)
           PY

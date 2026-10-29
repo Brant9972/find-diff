@@ -55337,9 +55337,9 @@
       "personId": "t1500_0579",
       "candidateId": "c1500-0579",
       "name": "黃浩然",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-29T22:18:19.130604+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -55426,6 +55426,157 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+          "filename": "黃浩然.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】《法證先鋒IV》重拍 黃浩然提醒湯洛雯：要乖乖哋 2019-05-28",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​2019年萬千星輝頒獎典禮飛躍進步男藝員",
+          "identityEvidence": {
+            "query": "黃浩然",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃浩然"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "拳王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T20:18:17.869951+00:00",
+          "width": 1065,
+          "height": 1503,
+          "id": "manualrecrop-094dad3cbd9776fe71bb",
+          "personId": "t1500_0579",
+          "discoveryRunId": "20261029T201720Z-9c28875a",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0579/manualrecrop-094dad3cbd9776fe71bb/e4dfd6bfc98a/original.bin",
+          "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0579/manualrecrop-094dad3cbd9776fe71bb/e4dfd6bfc98a/094dad3cbd97.jpg",
+          "parentCandidateId": "0f354b84f8a2efa7aea8",
+          "parentSourceSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+          "gameSha256": "094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.22,
+              0.92,
+              0.41
+            ],
+            "nose": [
+              0.08,
+              0.22,
+              0.92,
+              0.52
+            ],
+            "mouth": [
+              0.08,
+              0.22,
+              0.92,
+              0.62
+            ],
+            "chin": [
+              0.08,
+              0.22,
+              0.92,
+              0.75
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+            "sourceCandidateId": "0f354b84f8a2efa7aea8",
+            "sourceSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+            "sourceSize": [
+              1065,
+              1503
+            ],
+            "cropBox": [
+              65,
+              80,
+              1065,
+              1280
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "黃浩然: single near-frontal face 1065x1503, eyes/nose/mouth/chin clear. am730 Commons source license CC BY 3.0 reviewed by Puramyun31 on 2019-08-14. Automated sharpness rejected; check staged 600x720 and all five reveal stages visually before approving. Draft only."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/chin.png",
+            "full": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.22,
+                0.92,
+                0.41
+              ],
+              "nose": [
+                0.08,
+                0.22,
+                0.92,
+                0.52
+              ],
+              "mouth": [
+                0.08,
+                0.22,
+                0.92,
+                0.62
+              ],
+              "chin": [
+                0.08,
+                0.22,
+                0.92,
+                0.75
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -55510,6 +55661,13 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261029T224621Z-0d0d0ed8",
+          "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+          "candidateId": "manualrecrop-094dad3cbd9776fe71bb",
+          "sourceCandidateId": "0f354b84f8a2efa7aea8"
         }
       ],
       "legacyRecord": {
@@ -55533,76 +55691,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T201720Z-9c28875a",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261029T224621Z-0d0d0ed8",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-094dad3cbd9776fe71bb"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T20:18:11.279315+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 5"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
-            "filename": "黃浩然.jpg",
-            "artist": "am730",
-            "credit": "【娛樂】《法證先鋒IV》重拍 黃浩然提醒湯洛雯：要乖乖哋 2019-05-28",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​2019年萬千星輝頒獎典禮飛躍進步男藝員",
-            "identityEvidence": {
-              "query": "黃浩然",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃浩然"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "拳王"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T20:18:17.869951+00:00",
-            "width": 1065,
-            "height": 1503,
-            "id": "0f354b84f8a2efa7aea8",
-            "personId": "t1500_0579",
-            "discoveryRunId": "20261029T201720Z-9c28875a",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0579/0f354b84f8a2efa7aea8/e4dfd6bfc98a/original.bin",
-            "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Amos_Wong_20230622.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-29T20:18:19.130613+00:00",
       "workerFinishedAt": "2026-10-29T20:18:19.132323+00:00"
     },
@@ -62460,9 +62555,9 @@
       "personId": "t1500_0577",
       "candidateId": "c1500-0577",
       "name": "張兆輝",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-29T22:18:11.207391+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -62536,6 +62631,184 @@
           "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
           "cropFailure": "No reliable frontal face",
           "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+          "filename": "張兆輝.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "am730",
+          "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《黃金有罪》「發財迎新歲」記者會",
+          "identityEvidence": {
+            "wikidataId": "Q701359",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701359",
+            "exactChineseAliases": [
+              "张兆辉",
+              "張兆輝",
+              "張兆輝"
+            ],
+            "verifiedSearchAliases": [
+              "張兆輝",
+              "张兆辉",
+              "Cheung Siu-fai",
+              "Eddie Cheung",
+              "Eddie Cheung Siu-Fai",
+              "Zhang Zhao-Hui"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
+            "articleTitle": "張兆輝",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Cheung Siu-fai",
+            "matchedAliases": [
+              "張兆輝",
+              "张兆辉"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "張兆輝",
+              "张兆辉"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "黑社會"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T20:17:49.598664+00:00",
+          "width": 1208,
+          "height": 1669,
+          "id": "manualrecrop-1f29f8e5e8cae1f71d69",
+          "personId": "t1500_0577",
+          "discoveryRunId": "20261029T201720Z-9c28875a",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0577/manualrecrop-1f29f8e5e8cae1f71d69/cb78e00ef28c/original.bin",
+          "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0577/manualrecrop-1f29f8e5e8cae1f71d69/cb78e00ef28c/1f29f8e5e8ca.jpg",
+          "parentCandidateId": "bf90b9c5bde0fdea7421",
+          "parentSourceSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+          "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.32,
+              0.92,
+              0.48
+            ],
+            "nose": [
+              0.08,
+              0.32,
+              0.92,
+              0.57
+            ],
+            "mouth": [
+              0.08,
+              0.32,
+              0.92,
+              0.69
+            ],
+            "chin": [
+              0.08,
+              0.32,
+              0.92,
+              0.84
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+            "sourceCandidateId": "bf90b9c5bde0fdea7421",
+            "sourceSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+            "sourceSize": [
+              1208,
+              1669
+            ],
+            "cropBox": [
+              0,
+              80,
+              1200,
+              1520
+            ],
+            "parentCropFailure": "No reliable frontal face",
+            "reviewerNotes": "張兆輝: single high-resolution 1208x1669 face, eyes nose mouth chin unobstructed, slight three-quarter view. Source am730 event image; Commons attribution/license review still requires independent confirmation. Draft only."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9/chin.png",
+            "full": "expansion-1500/pipeline/evidence/1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.32,
+                0.92,
+                0.48
+              ],
+              "nose": [
+                0.08,
+                0.32,
+                0.92,
+                0.57
+              ],
+              "mouth": [
+                0.08,
+                0.32,
+                0.92,
+                0.69
+              ],
+              "chin": [
+                0.08,
+                0.32,
+                0.92,
+                0.84
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -62636,6 +62909,13 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261029T224621Z-0d0d0ed8",
+          "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+          "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
+          "sourceCandidateId": "bf90b9c5bde0fdea7421"
         }
       ],
       "legacyRecord": {
@@ -62659,92 +62939,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T201720Z-9c28875a",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261029T224621Z-0d0d0ed8",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-1f29f8e5e8cae1f71d69"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T20:17:49.242406+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
-            "filename": "張兆輝.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "am730",
-            "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​《黃金有罪》「發財迎新歲」記者會",
-            "identityEvidence": {
-              "wikidataId": "Q701359",
-              "mappingSource": "https://www.wikidata.org/wiki/Q701359",
-              "exactChineseAliases": [
-                "张兆辉",
-                "張兆輝",
-                "張兆輝"
-              ],
-              "verifiedSearchAliases": [
-                "張兆輝",
-                "张兆辉",
-                "Cheung Siu-fai",
-                "Eddie Cheung",
-                "Eddie Cheung Siu-Fai",
-                "Zhang Zhao-Hui"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
-              "articleTitle": "張兆輝",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Cheung Siu-fai",
-              "matchedAliases": [
-                "張兆輝",
-                "张兆辉"
-              ],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": [
-                "張兆輝",
-                "张兆辉"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "黑社會"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-29T20:17:49.598664+00:00",
-            "width": 1208,
-            "height": 1669,
-            "id": "bf90b9c5bde0fdea7421",
-            "personId": "t1500_0577",
-            "discoveryRunId": "20261029T201720Z-9c28875a",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0577/bf90b9c5bde0fdea7421/cb78e00ef28c/original.bin",
-            "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
-            "cropFailure": "No reliable frontal face",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-29T20:18:11.207399+00:00",
       "workerFinishedAt": "2026-10-29T20:18:11.209032+00:00"
     },

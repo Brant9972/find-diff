@@ -55,5 +55,27 @@
     "No images downloaded or cropped: current container cannot reach Wikimedia binary URLs.",
     "No person identified from image; file captions are source metadata, not visual identity verification.",
     "Do not publish until image quality, license obligations, identity metadata, and crop previews are checked."
+  ],
+  "searchPolicy": {
+    "sources": [
+      "official artist/agency press kits",
+      "record label press photos",
+      "entertainment news photography",
+      "photographers with licensed reuse",
+      "Wikimedia Commons"
+    ],
+    "rule": "Do not discard non-Wikimedia candidates solely for source domain. Track source rights and permissions separately from photo quality. Password gate does not grant rights.",
+    "productionRule": "Use only with documented permission, compatible license, or substantiated legal exception."
+  },
+  "nonWikiCandidates": [
+    {
+      "source": "https://winnews.com.tw/183083/",
+      "kind": "news article",
+      "submittedByUser": true,
+      "photoQuality": "user-provided screenshot visually judged suitable for facial reveal",
+      "reuseRights": "not established",
+      "status": "priority candidate - permission required before publication",
+      "nextAction": "identify credited photographer/rights holder and request permission for crop and web-game use"
+    }
   ]
 }

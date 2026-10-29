@@ -355,7 +355,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     crop_reason = str(exc)
                     source_named = (
                         evidence.get('claim') == 'P18'
-                        or any(re.search(r'[\\u4e00-\\u9fff]', match)
+                        or any(re.search(r'[一-鿿]', match)
                                for match in candidate['identityEvidence'].get('captionAliasMatches', []))
                     )
                     crop_recoverable = any(token in crop_reason for token in (

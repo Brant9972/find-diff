@@ -1,15 +1,18 @@
 import copy
 import hashlib
+import io
 import json
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from media_pipeline.core import Cropper, apply_rejections, atomic, initialise, live_people, lock, process, rejection_keys, valid_reveal
 from media_pipeline.review import import_decisions, report
 from recover_pipeline import recover
+from validate_pipeline import validate
 from media_pipeline.sources import SourceError, rights, source_key, public_https
 
 REVEAL = {k: [.08, .2, .92, y] for k, y in [('eyes', .4), ('nose', .55), ('mouth', .7), ('chin', .9)]}
@@ -133,6 +136,44 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(calls, [photo['url']])
         self.assertEqual(self.row['status'], 'download_failed')
         self.assertFalse(any(c.get('status') == 'pending_review' for c in self.row['candidates']))
+
+    def test_crop_failure_preserves_one_source_only_for_manual_recrop(self):
+        photo = candidate('needs-recrop')
+        photo['provider'] = 'commons'
+        image = Image.new('RGB', (500, 600), 'white')
+        out = io.BytesIO()
+        image.save(out, format='JPEG')
+        source = out.getvalue()
+        class SourceHTTP:
+            def get(self, url):
+                return source
+        def bad_crop(blob):
+            raise ValueError('No reliable frontal face')
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([photo])], SourceHTTP(), bad_crop, set())
+        self.assertEqual(self.row['status'], 'no_suitable_source')
+        manual = [c for c in self.row['candidates'] if c.get('status') == 'manual_crop_required']
+        self.assertEqual(len(manual), 1)
+        self.assertEqual(manual[0]['originalSha256'], hashlib.sha256(source).hexdigest())
+        self.assertFalse(manual[0]['eligibleForLive'])
+        self.assertFalse(manual[0].get('gamePath'))
+        self.assertIsNone(manual[0]['humanReview'])
+        atomic(self.directory / 'state.json', self.state)
+        validate(self.root)
+
+    def test_english_filename_without_named_caption_cannot_save_manual_crop(self):
+        photo = candidate('unverified-homonym')
+        photo.update({'provider': 'commons', 'filename': 'Common English Name.jpg',
+                      'caption': 'Profile picture'})
+        class SourceHTTP:
+            def get(self, url):
+                return b'raw image'
+        def bad_crop(blob):
+            raise ValueError('No reliable frontal face')
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([photo])], SourceHTTP(), bad_crop, set())
+        self.assertFalse(any(c.get('status') == 'manual_crop_required'
+                             for c in self.row['candidates']))
 
     def test_rejected_source_blocked_after_review(self):
         self.run_person([Provider([candidate()])])

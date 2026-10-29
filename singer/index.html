@@ -7,8 +7,30 @@
 <meta name="description" content="歌手、演員、綜藝或全部混合模式。輸入名字，從五官線索猜出熟悉的明星。">
 <link rel="stylesheet" href="./style.css?v=no-repeat-20261025">
 <script defer src="./game.js?v=no-repeat-20261025"></script>
+<style>
+html.gate-locked body{visibility:hidden}html.gate-locked #accessGate{visibility:visible}
+#accessGate{position:fixed;inset:0;z-index:9999;background:#12111d;color:#fff;display:grid;place-items:center;padding:24px;font-family:system-ui,sans-serif}
+#accessGate[hidden]{display:none}#accessGate form{width:min(100%,360px);display:grid;gap:14px;text-align:center}#accessGate input,#accessGate button{font:inherit;padding:14px;border-radius:10px}#accessGate button{cursor:pointer}#accessGate p{margin:0;color:#fca5a5}
+</style>
+<script>try{if(sessionStorage.getItem("facestar-access")!=="yes")document.documentElement.classList.add("gate-locked")}catch(e){document.documentElement.classList.add("gate-locked")}</script>
 </head>
 <body>
+<div id="accessGate" hidden><form id="accessForm"><h1>FACE／STAR</h1><label for="accessPassword">請輸入遊戲密碼</label><input id="accessPassword" type="password" autocomplete="off" required><button type="submit">進入遊戲</button><p id="accessError" role="alert" hidden>密碼不正確，請再試一次。</p></form></div>
+<script>
+(function(){
+  const gate=document.getElementById("accessGate");
+  const locked=document.documentElement.classList.contains("gate-locked");
+  gate.hidden=!locked;
+  if(!locked)return;
+  document.getElementById("accessForm").addEventListener("submit",function(event){
+    event.preventDefault();
+    if(document.getElementById("accessPassword").value==="whoareyou"){
+      try{sessionStorage.setItem("facestar-access","yes")}catch(e){}
+      gate.hidden=true;document.documentElement.classList.remove("gate-locked");
+    }else{document.getElementById("accessError").hidden=false;}
+  });
+})();
+</script>
 <main>
 <header><a class="brand" href="./">FACE<span>／</span>STAR</a><span class="edition">華語歌手篇</span></header>
 <section class="intro"><p class="eyebrow">看五官，猜聲音</p><h1>這雙眼睛，<br>你認得嗎？</h1><p class="sub">輸入歌手名字。猜錯一次，就多露出一點。</p></section>

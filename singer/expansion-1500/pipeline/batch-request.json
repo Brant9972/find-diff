@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-tin-manual-recrop-source-sha-v1",
+  "requestId": "20261029-tin-manual-recrop-source-sha-v2",
   "mode": "manual_recrop",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261029-tin.json",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261029-tin-v2.json",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0334"
   ],
-  "purpose": "Source-SHA pinned 600x720 draft crop for 田蕊妮 only. Do not approve, change live questions, or deploy; require five-stage, identity and license QA."
+  "purpose": "Second draft corrects cropped eye/nose/lip reveal; verify source SHA, pixels and five-stage; no live modification."
 }

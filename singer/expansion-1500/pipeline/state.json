@@ -2,10 +2,10 @@
   "createdAt": "2026-10-28T12:28:58.548634+00:00",
   "schemaVersion": 2,
   "chatgptReview": {
-    "sha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+    "sha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
     "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
     "sourceRun": "20261028T130409Z-86ed1960",
-    "receivedAt": "2026-10-29T12:31:28.298834+00:00",
+    "receivedAt": "2026-10-29T14:00:33.854574+00:00",
     "personIds": [
       "t1500_0174",
       "t1500_0196",
@@ -29,7 +29,8 @@
       "t1500_0154",
       "t1500_0140",
       "t1500_0202",
-      "t1500_0212"
+      "t1500_0212",
+      "t1500_0259"
     ],
     "candidateRefs": [
       {
@@ -213,18 +214,25 @@
         "gameSha256": "04b4d778ddb8717fc6ee9a68b33b9d0fde04cea6af7d2053f5ae55324aa7dfa7",
         "decision": "reject",
         "collection": "newCandidates"
+      },
+      {
+        "personId": "t1500_0259",
+        "candidateId": "79adef831d2d0f56d48e",
+        "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+        "decision": "reject",
+        "collection": "newCandidates"
       }
     ],
     "counts": {
-      "reject": 22,
+      "reject": 23,
       "pending": 4
     },
     "peopleCounts": {
-      "reviewed": 23,
+      "reviewed": 24,
       "pending": 3,
-      "reject": 20
+      "reject": 21
     },
-    "changedCandidates": 2
+    "changedCandidates": 1
   },
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
   "people": {
@@ -269,7 +277,7 @@
         "decision": "reject",
         "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -290,7 +298,7 @@
           "decision": "reject",
           "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -517,7 +525,7 @@
             "decision": "reject",
             "reason": "有色眼鏡、模糊；找草蜢經典舞台正面照",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -6781,7 +6789,7 @@
             "decision": "reject",
             "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Julie_Su_Portrait.jpg identifies U.S. Deputy Secretary of Labor Julie A. Su, not Taiwanese singer 蘇芮. Reject English alias collision; do not reuse image, search singer with Chinese name and confirmed adjacent caption.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -7366,7 +7374,7 @@
           "decision": "reject",
           "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Julie_Su_Portrait.jpg identifies U.S. Deputy Secretary of Labor Julie A. Su, not Taiwanese singer 蘇芮. Reject English alias collision; do not reuse image, search singer with Chinese name and confirmed adjacent caption.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -7380,7 +7388,7 @@
         "decision": "reject",
         "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Julie_Su_Portrait.jpg identifies U.S. Deputy Secretary of Labor Julie A. Su, not Taiwanese singer 蘇芮. Reject English alias collision; do not reuse image, search singer with Chinese name and confirmed adjacent caption.",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
@@ -8195,7 +8203,7 @@
         "decision": "reject",
         "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -8216,7 +8224,7 @@
           "decision": "reject",
           "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -8467,7 +8475,7 @@
             "decision": "reject",
             "reason": "影片截圖模糊；找《天黑請閉眼》時期正面照",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -9493,7 +9501,7 @@
         "decision": "reject",
         "reason": "年代久且柔焦；重找高清正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -9514,7 +9522,7 @@
           "decision": "reject",
           "reason": "年代久且柔焦；重找高清正面照",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -10456,7 +10464,7 @@
             "decision": "reject",
             "reason": "年代久且柔焦；重找高清正面照",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -10741,7 +10749,7 @@
         "decision": "reject",
         "reason": "嚴重模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -10762,7 +10770,7 @@
           "decision": "reject",
           "reason": "嚴重模糊；重找",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -10979,7 +10987,7 @@
             "decision": "reject",
             "reason": "嚴重模糊；重找",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -11404,9 +11412,9 @@
       "personId": "t1500_0016",
       "candidateId": "c1500-0016",
       "name": "庹宗康",
-      "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:40:51.269487+00:00",
+      "status": "download_failed",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T18:02:59.390181+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -11769,6 +11777,45 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-29T14:02:09.535142+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:02:25.144925+00:00"
+        },
+        {
+          "time": "2026-10-29T14:02:25.144966+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:02:44.318465+00:00"
+        },
+        {
+          "time": "2026-10-29T14:02:44.318500+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:02:59.390135+00:00"
+        },
+        {
+          "time": "2026-10-29T14:02:59.390163+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -11787,63 +11834,34 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:39:53.183971+00:00",
+      "lastAttemptAt": "2026-10-29T14:02:09.491059+00:00",
       "lastErrors": [
         {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-009.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
         },
         {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_formation.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
         },
         {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_houses_on_S_5th_St.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_loading.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:M1200_Shotgun_(7414627784).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-Chokes-Basic_es.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Hunting_shotgun_01.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
         }
       ],
       "lastFailure": {
-        "code": "no_suitable_source",
+        "code": "download_failed",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:40:51.269499+00:00"
+      "updatedAt": "2026-10-29T14:02:59.390193+00:00",
+      "lastRunId": "20261029T140033Z-239f8ba7",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-29T14:02:59.391682+00:00"
     },
     "t1500_0128": {
       "personId": "t1500_0128",
@@ -13283,7 +13301,7 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找八點檔清晰正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -13304,7 +13322,7 @@
           "decision": "reject",
           "reason": "麥克風遮嘴；找八點檔清晰正面照",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -13568,7 +13586,7 @@
             "decision": "reject",
             "reason": "麥克風遮嘴；找八點檔清晰正面照",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -19410,7 +19428,7 @@
       "personId": "t1500_0259",
       "candidateId": "c1500-0259",
       "name": "羅璧玲",
-      "status": "pending_review",
+      "status": "rejected",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -19471,9 +19489,10 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "pending_review",
+          "status": "rejected",
           "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Source rejected by existing review records"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0259/79adef831d2d0f56d48e/cb78f8c9e105/original.bin",
           "gamePath": "expansion-1500/pipeline/assets/t1500_0259/79adef831d2d0f56d48e/cb78f8c9e105/0079c314fc1a.jpg",
@@ -19523,7 +19542,35 @@
             ],
             "sharpness": 91.56,
             "overexposedFraction": 0.0
-          }
+          },
+          "chatgptReview": {
+            "personId": "t1500_0259",
+            "candidateId": "79adef831d2d0f56d48e",
+            "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+            "name": "羅璧玲",
+            "decision": "reject",
+            "reason": "DUPLICATE CANONICAL PERSON: 羅璧玲 is the former name of already-live 羅霈穎 (x1000_p0217), confirmed by TVBS and 民視; 2013 Commons file depicts 羅霈穎 and is not a new distinct person. Existing actor aliases now accept 羅璧玲 and 東區羅姐. Do not stage second question or increment unique count.",
+            "eligibleForLive": false,
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+            "reviewType": "human_visual_preliminary_with_source_gaps",
+            "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+            "handoffCollection": "newCandidates"
+          },
+          "externalReviewHistory": [
+            {
+              "personId": "t1500_0259",
+              "candidateId": "79adef831d2d0f56d48e",
+              "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+              "name": "羅璧玲",
+              "decision": "reject",
+              "reason": "DUPLICATE CANONICAL PERSON: 羅璧玲 is the former name of already-live 羅霈穎 (x1000_p0217), confirmed by TVBS and 民視; 2013 Commons file depicts 羅霈穎 and is not a new distinct person. Existing actor aliases now accept 羅璧玲 and 東區羅姐. Do not stage second question or increment unique count.",
+              "eligibleForLive": false,
+              "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+              "reviewType": "human_visual_preliminary_with_source_gaps",
+              "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+              "handoffCollection": "newCandidates"
+            }
+          ]
         }
       ],
       "history": [
@@ -19776,7 +19823,35 @@
         }
       ],
       "updatedAt": "2026-10-29T12:31:50.188400+00:00",
-      "workerFinishedAt": "2026-10-29T12:31:50.196045+00:00"
+      "workerFinishedAt": "2026-10-29T12:31:50.196045+00:00",
+      "chatgptReviews": {
+        "79adef831d2d0f56d48e": {
+          "personId": "t1500_0259",
+          "candidateId": "79adef831d2d0f56d48e",
+          "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+          "name": "羅璧玲",
+          "decision": "reject",
+          "reason": "DUPLICATE CANONICAL PERSON: 羅璧玲 is the former name of already-live 羅霈穎 (x1000_p0217), confirmed by TVBS and 民視; 2013 Commons file depicts 羅霈穎 and is not a new distinct person. Existing actor aliases now accept 羅璧玲 and 東區羅姐. Do not stage second question or increment unique count.",
+          "eligibleForLive": false,
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+          "reviewType": "human_visual_preliminary_with_source_gaps",
+          "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+          "handoffCollection": "newCandidates"
+        }
+      },
+      "chatgptReview": {
+        "personId": "t1500_0259",
+        "candidateId": "79adef831d2d0f56d48e",
+        "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+        "name": "羅璧玲",
+        "decision": "reject",
+        "reason": "DUPLICATE CANONICAL PERSON: 羅璧玲 is the former name of already-live 羅霈穎 (x1000_p0217), confirmed by TVBS and 民視; 2013 Commons file depicts 羅霈穎 and is not a new distinct person. Existing actor aliases now accept 羅璧玲 and 東區羅姐. Do not stage second question or increment unique count.",
+        "eligibleForLive": false,
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+        "reviewType": "human_visual_preliminary_with_source_gaps",
+        "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+        "handoffCollection": "newCandidates"
+      }
     },
     "t1500_0544": {
       "personId": "t1500_0544",
@@ -20692,7 +20767,7 @@
             "decision": "reject",
             "reason": "2026-10-29 source file Delegate_card_of_Chen_Muhua_for_the_1985_World_Conference_on_Women depicts Chinese politician Chen Muhua 陳慕華, not Taiwanese actor 陳慕. Source description 1985 Nairobi does not identify the actor; reject name collision.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -21106,7 +21181,7 @@
           "decision": "reject",
           "reason": "2026-10-29 source file Delegate_card_of_Chen_Muhua_for_the_1985_World_Conference_on_Women depicts Chinese politician Chen Muhua 陳慕華, not Taiwanese actor 陳慕. Source description 1985 Nairobi does not identify the actor; reject name collision.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -21120,7 +21195,7 @@
         "decision": "reject",
         "reason": "2026-10-29 source file Delegate_card_of_Chen_Muhua_for_the_1985_World_Conference_on_Women depicts Chinese politician Chen Muhua 陳慕華, not Taiwanese actor 陳慕. Source description 1985 Nairobi does not identify the actor; reject name collision.",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
@@ -22263,7 +22338,7 @@
         "eligibleForLive": false,
         "evidenceRun": "20261028T175736Z-a138bf90",
         "evidenceStatus": "source_image_map_available_visual_not_verified",
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -22282,7 +22357,7 @@
           "eligibleForLive": false,
           "evidenceRun": "20261028T175736Z-a138bf90",
           "evidenceStatus": "source_image_map_available_visual_not_verified",
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -22443,7 +22518,7 @@
             "eligibleForLive": false,
             "evidenceRun": "20261028T175736Z-a138bf90",
             "evidenceStatus": "source_image_map_available_visual_not_verified",
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -23639,7 +23714,7 @@
             "decision": "reject",
             "reason": "Actual 600x720 portrait and five reveal PNGs inspected: although Commons caption names 盛竹如 and photographer JeanHavoc CC BY-SA 3.0, eyes are nearly shut behind glasses in first reveal and face is slightly blurred. Reject as weak eye-only quiz image; find open-eyed, sharp frontal photo.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -24056,7 +24131,7 @@
           "decision": "reject",
           "reason": "Actual 600x720 portrait and five reveal PNGs inspected: although Commons caption names 盛竹如 and photographer JeanHavoc CC BY-SA 3.0, eyes are nearly shut behind glasses in first reveal and face is slightly blurred. Reject as weak eye-only quiz image; find open-eyed, sharp frontal photo.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -24070,7 +24145,7 @@
         "decision": "reject",
         "reason": "Actual 600x720 portrait and five reveal PNGs inspected: although Commons caption names 盛竹如 and photographer JeanHavoc CC BY-SA 3.0, eyes are nearly shut behind glasses in first reveal and face is slightly blurred. Reject as weak eye-only quiz image; find open-eyed, sharp frontal photo.",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
@@ -27830,7 +27905,7 @@
         "eligibleForLive": false,
         "evidenceRun": "20261028T175736Z-a138bf90",
         "evidenceStatus": "source_image_map_available_visual_not_verified",
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -27849,7 +27924,7 @@
           "eligibleForLive": false,
           "evidenceRun": "20261028T175736Z-a138bf90",
           "evidenceStatus": "source_image_map_available_visual_not_verified",
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -28071,7 +28146,7 @@
             "eligibleForLive": false,
             "evidenceRun": "20261028T175736Z-a138bf90",
             "evidenceStatus": "source_image_map_available_visual_not_verified",
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -28375,7 +28450,7 @@
         "decision": "reject",
         "reason": "眼鏡反光、前景遮擋；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -28396,7 +28471,7 @@
           "decision": "reject",
           "reason": "眼鏡反光、前景遮擋；重找",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -29017,7 +29092,7 @@
             "decision": "reject",
             "reason": "眼鏡反光、前景遮擋；重找",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -32484,7 +32559,7 @@
         "decision": "reject",
         "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -32505,7 +32580,7 @@
           "decision": "reject",
           "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -32738,7 +32813,7 @@
             "decision": "reject",
             "reason": "牌卡遮嘴；改找《艋舺》時期正面肖像",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -33799,8 +33874,8 @@
       "candidateId": "c1500-0002",
       "name": "陳建寧",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:58:31.662709+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T18:03:49.094525+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -34114,6 +34189,76 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chen_Chien-Ning2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chen_Chien-Ning2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
+          "filename": "Chen Chien-Ning2022.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "臺南市政府",
+          "credit": "2023台南好YOUNG耶誕跨年系列活動記者會(2).jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​陳建寧出席2023台南好YOUNG耶誕跨年系列活動記者會",
+          "identityEvidence": {
+            "wikidataId": "Q8943339",
+            "mappingSource": "https://www.wikidata.org/wiki/Q8943339",
+            "exactChineseAliases": [
+              "陳建寧",
+              "陳建寧"
+            ],
+            "verifiedSearchAliases": [
+              "陳建寧",
+              "Chen Chien-ning",
+              "Chen Chienning",
+              "Chen Chien Ning"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T14:02:59.831255+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%BB%BA%E5%AF%A7",
+            "articleTitle": "陳建寧",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chien-ning",
+            "matchedAliases": [
+              "陳建寧",
+              "陳建寧",
+              "Chen Chien-ning",
+              "Chen Chienning",
+              "Chen Chien Ning",
+              "陳建寧"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "陳建寧",
+              "陳建寧"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "F.I.R. 飛兒樂團"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T14:03:14.743103+00:00",
+          "width": 576,
+          "height": 688,
+          "id": "99eb6d41d4398d6b67ea",
+          "personId": "t1500_0002",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -34193,6 +34338,46 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-29T14:02:59.514193+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:03:31.037445+00:00"
+        },
+        {
+          "time": "2026-10-29T14:03:31.037482+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:03:34.013716+00:00"
+        },
+        {
+          "time": "2026-10-29T14:03:34.013749+00:00",
+          "provider": "openverse",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T14:03:49.094478+00:00"
+        },
+        {
+          "time": "2026-10-29T14:03:49.094507+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -34211,60 +34396,23 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:57:13.047229+00:00",
+      "lastAttemptAt": "2026-10-29T14:02:59.471351+00:00",
       "lastErrors": [
         {
-          "provider": "wikimedia",
+          "provider": "entity",
           "source": "https://commons.wikimedia.org/wiki/File:Chen_Chien-Ning2022.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:IanChenFoxLa_Screening2018.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_and_Dino_Lee_attending_the_festival_of_Songshan_Cihui_Temple_20160429.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(1).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E5%A5%BDYOUNG%E8%80%B6%E8%AA%95%E8%B7%A8%E5%B9%B4%E7%B3%BB%E5%88%97%E6%B4%BB%E5%8B%95%E8%A8%98%E8%80%85%E6%9C%83(2).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:2023%E5%8F%B0%E5%8D%97%E3%80%8C%E5%A5%BDYOUNG%E8%B7%A8%E5%B9%B4%E6%BC%94%E5%94%B1%E6%9C%83%E3%80%8D.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_at_Sherman_Oaks_2022_(cropped).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Ian_Chen_by_Joanna_DeGeneres.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
         },
         {
           "provider": "openverse",
           "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "Per-request wall time budget reached"
         }
       ],
       "lastFailure": {
@@ -34272,7 +34420,11 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:58:31.662723+00:00"
+      "updatedAt": "2026-10-29T14:03:49.094538+00:00",
+      "lastRunId": "20261029T140033Z-239f8ba7",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-29T14:03:49.096076+00:00"
     },
     "t1500_0156": {
       "personId": "t1500_0156",
@@ -36087,7 +36239,7 @@
         "decision": "reject",
         "reason": "側臉模糊；找經典角色正面照",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -36108,7 +36260,7 @@
           "decision": "reject",
           "reason": "側臉模糊；找經典角色正面照",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -36426,7 +36578,7 @@
             "decision": "reject",
             "reason": "側臉模糊；找經典角色正面照",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -37990,11 +38142,503 @@
       "personId": "t1500_0295",
       "candidateId": "c1500-0295",
       "name": "譚俊彥",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T16:01:14.002046+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Ti_Lung_20260426.jpg/1920px-Ti_Lung_20260426.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ti_Lung_20260426.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Ti_Lung_20260426.jpg",
+          "filename": "Ti Lung 20260426.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Will629",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "​2026年4月26日，香港男演員狄龍於香港文化中心大劇院出席「香港流行文化節2026：修復瑰寶──《流星語》4K數碼修復版香港首映」活動",
+          "identityEvidence": {
+            "wikidataId": "Q9344250",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+            "exactChineseAliases": [
+              "譚俊彥",
+              "譚俊彥"
+            ],
+            "verifiedSearchAliases": [
+              "譚俊彥",
+              "Shaun Tam",
+              "Shaun Tam Chun Yin"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+            "articleTitle": "譚俊彥",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Shaun Tam",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "十八年後的終極告白"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T14:00:37.160396+00:00",
+          "width": 2023,
+          "height": 2294,
+          "id": "927b5c0b5e60737a896e",
+          "personId": "t1500_0295",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%E7%8B%84%E9%BE%8D_mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%E7%8B%84%E9%BE%8D_mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8B%84%E9%BE%8D_mod.jpg",
+          "filename": "狄龍 mod.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "am730",
+          "credit": "This image has been extracted from another file",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《我來自紐約2：當我們在一起》慈善場",
+          "identityEvidence": {
+            "wikidataId": "Q9344250",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+            "exactChineseAliases": [
+              "譚俊彥",
+              "譚俊彥"
+            ],
+            "verifiedSearchAliases": [
+              "譚俊彥",
+              "Shaun Tam",
+              "Shaun Tam Chun Yin"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+            "articleTitle": "譚俊彥",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Shaun Tam",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "十八年後的終極告白"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T14:00:37.160797+00:00",
+          "width": 1200,
+          "height": 1656,
+          "id": "b99f28d67855068512fa",
+          "personId": "t1500_0295",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E9%99%B3%E7%85%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E9%99%B3%E7%85%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E7%85%92.jpg",
+          "filename": "陳煒.jpg",
+          "artist": "am730",
+          "credit": "【娛眼鏡】陳煒譚俊彥新劇感情細水長流",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​「至型拍擋『證』實力」宣傳活動",
+          "identityEvidence": {
+            "query": "譚俊彥",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9344250",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+            "exactChineseAliases": [
+              "譚俊彥",
+              "譚俊彥"
+            ],
+            "verifiedSearchAliases": [
+              "譚俊彥",
+              "Shaun Tam",
+              "Shaun Tam Chun Yin"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+            "articleTitle": "譚俊彥",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "十八年後的終極告白"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T14:00:57.777698+00:00",
+          "width": 933,
+          "height": 1282,
+          "id": "6b7cb6ffca235761ff45",
+          "personId": "t1500_0295",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T14:00:35.203303+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:00:55.111105+00:00"
+        },
+        {
+          "time": "2026-10-29T14:00:55.111133+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:00:58.918082+00:00"
+        },
+        {
+          "time": "2026-10-29T14:00:58.918114+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:14.002000+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:14.002025+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
+                "filename": "譚俊彥.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "am730",
+                "credit": "【娛樂】譚俊彥恭喜羅仲謙做爸爸",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​【GiveYou5】譚俊彥「縱」囝囝全因靚仔似爺爺狄龍？",
+                "identityEvidence": {
+                  "wikidataId": "Q9344250",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+                  "exactChineseAliases": [
+                    "譚俊彥",
+                    "譚俊彥"
+                  ],
+                  "verifiedSearchAliases": [
+                    "譚俊彥",
+                    "Shaun Tam",
+                    "Shaun Tam Chun Yin"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+                  "articleTitle": "譚俊彥",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Shaun Tam",
+                  "matchedAliases": [
+                    "譚俊彥",
+                    "譚俊彥",
+                    "譚俊彥"
+                  ],
+                  "discoveryWarnings": [],
+                  "claim": "P18",
+                  "captionAliasMatches": [
+                    "譚俊彥",
+                    "譚俊彥"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "十八年後的終極告白"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T14:00:35.907405+00:00",
+                "width": 1068,
+                "height": 1450,
+                "id": "5760656be14a6cc9d8ee",
+                "personId": "t1500_0295",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_-_Cast_%26_crew.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_-_Cast_%26_crew.jpg",
+                "filename": "BURSTING POINT - Cast & crew.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "am730",
+                "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "Cast and crew of the film Bursting PointFrom left to right: Chrissie Chau, Shaun Tam, Dante Lam and William Chan",
+                "identityEvidence": {
+                  "wikidataId": "Q9344250",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+                  "exactChineseAliases": [
+                    "譚俊彥",
+                    "譚俊彥"
+                  ],
+                  "verifiedSearchAliases": [
+                    "譚俊彥",
+                    "Shaun Tam",
+                    "Shaun Tam Chun Yin"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+                  "articleTitle": "譚俊彥",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Shaun Tam",
+                  "matchedAliases": [
+                    "Shaun Tam"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "十八年後的終極告白"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T14:00:37.158282+00:00",
+                "width": 1544,
+                "height": 720,
+                "id": "6903bf1a25e2568dfed0",
+                "personId": "t1500_0295",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_Cast_and_Crew.png",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_Cast_and_Crew.png",
+                "filename": "BURSTING POINT Cast and Crew.png",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "am730",
+                "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "Cast and crew of Bursting PointFrom left to right: Chrissie Chau, Shaun Tam, Dante Lam and William Chan",
+                "identityEvidence": {
+                  "wikidataId": "Q9344250",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+                  "exactChineseAliases": [
+                    "譚俊彥",
+                    "譚俊彥"
+                  ],
+                  "verifiedSearchAliases": [
+                    "譚俊彥",
+                    "Shaun Tam",
+                    "Shaun Tam Chun Yin"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+                  "articleTitle": "譚俊彥",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Shaun Tam",
+                  "matchedAliases": [
+                    "Shaun Tam"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "十八年後的終極告白"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T14:00:37.159101+00:00",
+                "width": 1366,
+                "height": 768,
+                "id": "084ae08a47c394515b27",
+                "personId": "t1500_0295",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png",
+                "filename": "SHAUN TAM - BURSTING POINT Conference Event 2023.png",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "am730",
+                "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "Shaun Tam",
+                "identityEvidence": {
+                  "wikidataId": "Q9344250",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+                  "exactChineseAliases": [
+                    "譚俊彥",
+                    "譚俊彥"
+                  ],
+                  "verifiedSearchAliases": [
+                    "譚俊彥",
+                    "Shaun Tam",
+                    "Shaun Tam Chun Yin"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+                  "articleTitle": "譚俊彥",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Shaun Tam",
+                  "matchedAliases": [
+                    "Shaun Tam"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "十八年後的終極告白"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T14:00:37.159538+00:00",
+                "width": 388,
+                "height": 524,
+                "id": "7d590620800e6883f8e6",
+                "personId": "t1500_0295",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Ti_Lung_20260426.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%8B%84%E9%BE%8D_mod.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E7%85%92.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 7
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0295",
         "name": "譚俊彥",
@@ -38012,10 +38656,311 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No reliable frontal face",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T140033Z-239f8ba7",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T14:00:35.152517+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
+            "filename": "譚俊彥.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "am730",
+            "credit": "【娛樂】譚俊彥恭喜羅仲謙做爸爸",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​【GiveYou5】譚俊彥「縱」囝囝全因靚仔似爺爺狄龍？",
+            "identityEvidence": {
+              "wikidataId": "Q9344250",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+              "exactChineseAliases": [
+                "譚俊彥",
+                "譚俊彥"
+              ],
+              "verifiedSearchAliases": [
+                "譚俊彥",
+                "Shaun Tam",
+                "Shaun Tam Chun Yin"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+              "articleTitle": "譚俊彥",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Shaun Tam",
+              "matchedAliases": [
+                "譚俊彥",
+                "譚俊彥",
+                "譚俊彥"
+              ],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": [
+                "譚俊彥",
+                "譚俊彥"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "十八年後的終極告白"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:00:35.907405+00:00",
+            "width": 1068,
+            "height": 1450,
+            "id": "5760656be14a6cc9d8ee",
+            "personId": "t1500_0295",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_-_Cast_%26_crew.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BURSTING_POINT_-_Cast_%26_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_-_Cast_%26_crew.jpg",
+            "filename": "BURSTING POINT - Cast & crew.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "am730",
+            "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "Cast and crew of the film Bursting PointFrom left to right: Chrissie Chau, Shaun Tam, Dante Lam and William Chan",
+            "identityEvidence": {
+              "wikidataId": "Q9344250",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+              "exactChineseAliases": [
+                "譚俊彥",
+                "譚俊彥"
+              ],
+              "verifiedSearchAliases": [
+                "譚俊彥",
+                "Shaun Tam",
+                "Shaun Tam Chun Yin"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+              "articleTitle": "譚俊彥",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Shaun Tam",
+              "matchedAliases": [
+                "Shaun Tam"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "十八年後的終極告白"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:00:37.158282+00:00",
+            "width": 1544,
+            "height": 720,
+            "id": "6903bf1a25e2568dfed0",
+            "personId": "t1500_0295",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Multiple prominent faces"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_Cast_and_Crew.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BURSTING_POINT_Cast_and_Crew.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:BURSTING_POINT_Cast_and_Crew.png",
+            "filename": "BURSTING POINT Cast and Crew.png",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "am730",
+            "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "Cast and crew of Bursting PointFrom left to right: Chrissie Chau, Shaun Tam, Dante Lam and William Chan",
+            "identityEvidence": {
+              "wikidataId": "Q9344250",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+              "exactChineseAliases": [
+                "譚俊彥",
+                "譚俊彥"
+              ],
+              "verifiedSearchAliases": [
+                "譚俊彥",
+                "Shaun Tam",
+                "Shaun Tam Chun Yin"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+              "articleTitle": "譚俊彥",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Shaun Tam",
+              "matchedAliases": [
+                "Shaun Tam"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "十八年後的終極告白"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:00:37.159101+00:00",
+            "width": 1366,
+            "height": 768,
+            "id": "084ae08a47c394515b27",
+            "personId": "t1500_0295",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Multiple prominent faces"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:SHAUN_TAM_-_BURSTING_POINT_Conference_Event_2023.png",
+            "filename": "SHAUN TAM - BURSTING POINT Conference Event 2023.png",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "am730",
+            "credit": "YouTube: https://www.youtube.com/watch?v=oemgEOwdqXg – View/save archived versions on archive.org",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "Shaun Tam",
+            "identityEvidence": {
+              "wikidataId": "Q9344250",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9344250",
+              "exactChineseAliases": [
+                "譚俊彥",
+                "譚俊彥"
+              ],
+              "verifiedSearchAliases": [
+                "譚俊彥",
+                "Shaun Tam",
+                "Shaun Tam Chun Yin"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:00:35.719079+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E4%BF%8A%E5%BD%A5",
+              "articleTitle": "譚俊彥",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Shaun Tam",
+              "matchedAliases": [
+                "Shaun Tam"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "十八年後的終極告白"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:00:37.159538+00:00",
+            "width": 388,
+            "height": 524,
+            "id": "7d590620800e6883f8e6",
+            "personId": "t1500_0295",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Ti_Lung_20260426.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8B%84%E9%BE%8D_mod.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E7%85%92.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T14:01:14.002060+00:00",
+      "workerFinishedAt": "2026-10-29T14:01:14.003318+00:00"
     },
     "t1500_0006": {
       "personId": "t1500_0006",
@@ -39629,7 +40574,7 @@
             "decision": "reject",
             "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -39766,7 +40711,7 @@
             "decision": "reject",
             "reason": "2026-10-29 source caption confirms USC Thornton Dean Jason King at 2025 Pop Conference, not Taiwanese actor 喜翔. Second distinct same-name wrong-person portrait; block English homonym photo queries, require Chinese caption and exact person.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -40883,7 +41828,7 @@
           "decision": "reject",
           "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -40896,7 +41841,7 @@
           "decision": "reject",
           "reason": "2026-10-29 source caption confirms USC Thornton Dean Jason King at 2025 Pop Conference, not Taiwanese actor 喜翔. Second distinct same-name wrong-person portrait; block English homonym photo queries, require Chinese caption and exact person.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -40910,7 +41855,7 @@
         "decision": "reject",
         "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match.",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
@@ -42780,7 +43725,7 @@
         "decision": "reject",
         "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -42801,7 +43746,7 @@
           "decision": "reject",
           "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -43174,7 +44119,7 @@
             "decision": "reject",
             "reason": "麥克風遮嘴；找 Tizzy Bac 無遮擋照片",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -53090,7 +54035,7 @@
       "personId": "t1500_0574",
       "candidateId": "c1500-0574",
       "name": "鄭裕玲",
-      "status": "rejected",
+      "status": "published",
       "attempts": 0,
       "nextRetryAt": null,
       "candidates": [
@@ -54462,7 +55407,7 @@
             "decision": "reject",
             "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -55620,7 +56565,7 @@
           "decision": "reject",
           "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -55634,7 +56579,7 @@
         "decision": "reject",
         "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
@@ -56308,7 +57253,7 @@
         "decision": "reject",
         "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -56329,7 +57274,7 @@
           "decision": "reject",
           "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -56342,7 +57287,7 @@
           "decision": "reject",
           "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject.",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "newCandidates"
@@ -57196,7 +58141,7 @@
             "decision": "reject",
             "reason": "墨鏡遮眼；來源影片涉及曹永廉；重找",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -58195,7 +59140,7 @@
             "decision": "reject",
             "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject.",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "newCandidates"
@@ -61647,7 +62592,7 @@
         "decision": "reject",
         "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -61668,7 +62613,7 @@
           "decision": "reject",
           "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -61890,7 +62835,7 @@
             "decision": "reject",
             "reason": "模糊側臉，來源圖說涉及謝盈萱；重新查明身分並重找",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"
@@ -64975,11 +65920,335 @@
       "personId": "t1500_0332",
       "candidateId": "c1500-0332",
       "name": "劉真",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T16:01:33.972722+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/2007TFCOM_SerenaLiu.jpg/1920px-2007TFCOM_SerenaLiu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/2007TFCOM_SerenaLiu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2007TFCOM_SerenaLiu.jpg",
+          "filename": "2007TFCOM SerenaLiu.jpg",
+          "artist": "Rico Shen",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "A Taiwanese dancer Serena Liu at 2007 Taipei TFCOM.",
+          "identityEvidence": {
+            "query": "劉真",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "國標舞"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T14:01:16.154217+00:00",
+          "width": 2736,
+          "height": 3648,
+          "id": "db3db435fc37a8b71263",
+          "personId": "t1500_0332",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Serina_Liu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Serina_Liu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu.jpg",
+          "filename": "Serina Liu.jpg",
+          "artist": "Rico Shen",
+          "credit": "File:2007TFCOM SerenaLiu.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "A Taiwanese dancer Serena Liu at 2007 Taipei TFCOM.",
+          "identityEvidence": {
+            "query": "劉真",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "國標舞"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T14:01:16.155466+00:00",
+          "width": 1288,
+          "height": 1492,
+          "id": "694a6df0c94873486c07",
+          "personId": "t1500_0332",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T14:01:14.140056+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:15.722604+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:15.722634+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:18.882197+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:18.882211+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:33.972676+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:33.972703+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "identity_ambiguous",
+              "message": "Expected exactly one exact-name Q5 human; found 5"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2007TFCOM_SerenaLiu.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Serina_Liu_20140824.jpg/1920px-Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Serina_Liu_20140824.jpg/1920px-Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
+                "filename": "Serina Liu 20140824.jpg",
+                "artist": "Gene Wang",
+                "credit": "https://www.flickr.com/photos/gene_wang/15019379801",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "​藝人劉真於天母棒球場「Clean Master中信兄弟主題日」擔任開球嘉賓，穿兄弟象服裝，右手持棒球用球，左手持台灣雪豹科技Clean Master廣告團扇。",
+                "identityEvidence": {
+                  "query": "劉真",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "劉真",
+                    "劉真"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "國標舞"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T14:01:16.156669+00:00",
+                "width": 2899,
+                "height": 5539,
+                "id": "9487d47aea06627be4d8",
+                "personId": "t1500_0332",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg",
+                "filename": "國立台灣師範大學內的孔子銅像.jpg",
+                "artist": "寺人孟子",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​國立臺灣師範大學內的孔子銅像，下方刻劉真落款的校訓。",
+                "identityEvidence": {
+                  "query": "劉真",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "劉真",
+                    "劉真"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "國標舞"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T14:01:16.710387+00:00",
+                "width": 1080,
+                "height": 1620,
+                "id": "7ce0f82c2dbf401c20d3",
+                "personId": "t1500_0332",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg/1920px-%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg/1920px-%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg",
+                "filename": "劉真校長故居.jpg",
+                "artist": "Outlookxp",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​劉真校長故居（福州街11號日式宿舍）",
+                "identityEvidence": {
+                  "query": "劉真",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "劉真",
+                    "劉真"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "國標舞"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T14:01:17.081308+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "678e5c21f9f141d1fd2a",
+                "personId": "t1500_0332",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F(%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85)8055.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg/1920px-%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg/1920px-%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F(%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85)8055.jpg",
+                "filename": "中正區福州街11號(臺灣師範教育館--劉真校長故居)8055.jpg",
+                "artist": "林高志",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​中正區福州街11號(臺灣師範教育館--劉真校長故居)住宅是2層樓木造建築，考量台北的地方氣候，融合日本式和西洋式的設計，形式屬於「和洋折衷建築」",
+                "identityEvidence": {
+                  "query": "劉真",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "劉真",
+                    "劉真"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "國標舞"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T14:01:17.726522+00:00",
+                "width": 4928,
+                "height": 3264,
+                "id": "3c60f5d63b787e6e2043",
+                "personId": "t1500_0332",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 6
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0332",
         "name": "劉真",
@@ -64997,10 +66266,236 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T140033Z-239f8ba7",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T14:01:14.092116+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 5"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2007TFCOM_SerenaLiu.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Serina_Liu_20140824.jpg/1920px-Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Serina_Liu_20140824.jpg/1920px-Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Serina_Liu_20140824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
+            "filename": "Serina Liu 20140824.jpg",
+            "artist": "Gene Wang",
+            "credit": "https://www.flickr.com/photos/gene_wang/15019379801",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "​藝人劉真於天母棒球場「Clean Master中信兄弟主題日」擔任開球嘉賓，穿兄弟象服裝，右手持棒球用球，左手持台灣雪豹科技Clean Master廣告團扇。",
+            "identityEvidence": {
+              "query": "劉真",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "劉真",
+                "劉真"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "國標舞"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:01:16.156669+00:00",
+            "width": 2899,
+            "height": 5539,
+            "id": "9487d47aea06627be4d8",
+            "personId": "t1500_0332",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%85%A7%E7%9A%84%E5%AD%94%E5%AD%90%E9%8A%85%E5%83%8F.jpg",
+            "filename": "國立台灣師範大學內的孔子銅像.jpg",
+            "artist": "寺人孟子",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​國立臺灣師範大學內的孔子銅像，下方刻劉真落款的校訓。",
+            "identityEvidence": {
+              "query": "劉真",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "劉真",
+                "劉真"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "國標舞"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:01:16.710387+00:00",
+            "width": 1080,
+            "height": 1620,
+            "id": "7ce0f82c2dbf401c20d3",
+            "personId": "t1500_0332",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg/1920px-%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg/1920px-%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85.jpg",
+            "filename": "劉真校長故居.jpg",
+            "artist": "Outlookxp",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​劉真校長故居（福州街11號日式宿舍）",
+            "identityEvidence": {
+              "query": "劉真",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "劉真",
+                "劉真"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "國標舞"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:01:17.081308+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "678e5c21f9f141d1fd2a",
+            "personId": "t1500_0332",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F(%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85)8055.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg/1920px-%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg/1920px-%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F%28%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85%298055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%A6%8F%E5%B7%9E%E8%A1%9711%E8%99%9F(%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E6%95%99%E8%82%B2%E9%A4%A8--%E5%8A%89%E7%9C%9F%E6%A0%A1%E9%95%B7%E6%95%85%E5%B1%85)8055.jpg",
+            "filename": "中正區福州街11號(臺灣師範教育館--劉真校長故居)8055.jpg",
+            "artist": "林高志",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​中正區福州街11號(臺灣師範教育館--劉真校長故居)住宅是2層樓木造建築，考量台北的地方氣候，融合日本式和西洋式的設計，形式屬於「和洋折衷建築」",
+            "identityEvidence": {
+              "query": "劉真",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "劉真",
+                "劉真"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "國標舞"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:01:17.726522+00:00",
+            "width": 4928,
+            "height": 3264,
+            "id": "3c60f5d63b787e6e2043",
+            "personId": "t1500_0332",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T14:01:33.972735+00:00",
+      "workerFinishedAt": "2026-10-29T14:01:33.974131+00:00"
     },
     "t1500_0182": {
       "personId": "t1500_0182",
@@ -70250,7 +71745,7 @@
           "candidatesTried": 1
         }
       ],
-      "status": "download_failed",
+      "status": "published",
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T12:24:46.117117+00:00",
       "lastFailure": {
@@ -70577,11 +72072,171 @@
       "personId": "t1500_0348",
       "candidateId": "c1500-0348",
       "name": "雷嘉汭",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T16:02:09.386759+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg/1920px-Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg",
+          "filename": "Taichung Bus KKA-5839 right side and Taiwan Boulevard bus stop 20250825.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "我愛鉅巃日野二八零",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​從臺中市中區臺灣大道一段人行道拍攝台中客運2016年日野RK8JRVA-KJF大客車KKA-5839（原三重客運車號FAB-873）右側與臺灣大道一段公車停靠區。",
+          "identityEvidence": {
+            "wikidataId": "Q104723720",
+            "mappingSource": "https://www.wikidata.org/wiki/Q104723720",
+            "exactChineseAliases": [
+              "雷嘉汭",
+              "雷嘉汭"
+            ],
+            "verifiedSearchAliases": [
+              "雷嘉汭",
+              "Regina Lei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T14:01:34.596619+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%9B%B7%E5%98%89%E6%B1%AD",
+            "articleTitle": "雷嘉汭",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Regina Lei",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "哭悲"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T14:01:36.055298+00:00",
+          "width": 4573,
+          "height": 3049,
+          "id": "a4053d20cd86a048c13f",
+          "personId": "t1500_0348",
+          "discoveryRunId": "20261029T140033Z-239f8ba7",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T14:01:34.105450+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:51.477929+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:51.477956+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:01:54.297124+00:00"
+        },
+        {
+          "time": "2026-10-29T14:01:54.297155+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T14:02:09.386719+00:00"
+        },
+        {
+          "time": "2026-10-29T14:02:09.386743+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
+                "filename": "Regina Lei in February 2025.png",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Elle Taiwan",
+                "credit": "https://youtube.com/watch?v=oR7USstw6VU",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "For Elle Taiwan",
+                "identityEvidence": {
+                  "wikidataId": "Q104723720",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q104723720",
+                  "exactChineseAliases": [
+                    "雷嘉汭",
+                    "雷嘉汭"
+                  ],
+                  "verifiedSearchAliases": [
+                    "雷嘉汭",
+                    "Regina Lei"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T14:01:34.596619+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E9%9B%B7%E5%98%89%E6%B1%AD",
+                  "articleTitle": "雷嘉汭",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Regina Lei",
+                  "matchedAliases": [
+                    "Regina Lei"
+                  ],
+                  "discoveryWarnings": [],
+                  "claim": "P18",
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "哭悲"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T14:01:34.746151+00:00",
+                "width": 1080,
+                "height": 1342,
+                "id": "7110f9dae3076a316fba",
+                "personId": "t1500_0348",
+                "discoveryRunId": "20261029T140033Z-239f8ba7",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0348",
         "name": "雷嘉汭",
@@ -70599,10 +72254,95 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No reliable frontal face",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T140033Z-239f8ba7",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T14:01:34.066511+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Regina_Lei_in_February_2025.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
+            "filename": "Regina Lei in February 2025.png",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Elle Taiwan",
+            "credit": "https://youtube.com/watch?v=oR7USstw6VU",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "For Elle Taiwan",
+            "identityEvidence": {
+              "wikidataId": "Q104723720",
+              "mappingSource": "https://www.wikidata.org/wiki/Q104723720",
+              "exactChineseAliases": [
+                "雷嘉汭",
+                "雷嘉汭"
+              ],
+              "verifiedSearchAliases": [
+                "雷嘉汭",
+                "Regina Lei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:01:34.596619+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%9B%B7%E5%98%89%E6%B1%AD",
+              "articleTitle": "雷嘉汭",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Regina Lei",
+              "matchedAliases": [
+                "Regina Lei"
+              ],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "哭悲"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:01:34.746151+00:00",
+            "width": 1080,
+            "height": 1342,
+            "id": "7110f9dae3076a316fba",
+            "personId": "t1500_0348",
+            "discoveryRunId": "20261029T140033Z-239f8ba7",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Taichung_Bus_KKA-5839_right_side_and_Taiwan_Boulevard_bus_stop_20250825.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T14:02:09.386778+00:00",
+      "workerFinishedAt": "2026-10-29T14:02:09.388230+00:00"
     },
     "t1500_0549": {
       "personId": "t1500_0549",
@@ -70647,7 +72387,7 @@
         "decision": "reject",
         "reason": "低頭、麥克風遮嘴、模糊；重找",
         "eligibleForLive": false,
-        "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+        "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "decisions"
@@ -70668,7 +72408,7 @@
           "decision": "reject",
           "reason": "低頭、麥克風遮嘴、模糊；重找",
           "eligibleForLive": false,
-          "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+          "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
           "reviewType": "human_visual_preliminary_with_source_gaps",
           "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
           "handoffCollection": "decisions"
@@ -71041,7 +72781,7 @@
             "decision": "reject",
             "reason": "低頭、麥克風遮嘴、模糊；重找",
             "eligibleForLive": false,
-            "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+            "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
             "reviewType": "human_visual_preliminary_with_source_gaps",
             "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
             "handoffCollection": "decisions"

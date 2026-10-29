@@ -1,0 +1,85 @@
+{
+  "runId": "20261029T140033Z-239f8ba7",
+  "generatedAt": "2026-10-29T14:03:49.841635+00:00",
+  "scannedPeople": 5,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 5,
+  "retryNeeded": 435,
+  "pendingReviewPeople": 0,
+  "licenseConcernCandidates": 210,
+  "statusCounts": {
+    "no_suitable_source": 227,
+    "download_failed": 197,
+    "rejected": 11,
+    "published": 76
+  },
+  "failureReasons": {
+    "network_error": 284,
+    "identity_unconfirmed": 237,
+    "image_validation_failed": 72,
+    "source_api_busy": 67,
+    "license_unclear": 52,
+    "source_api_error": 28,
+    "identity_ambiguous": 9,
+    "excluded_context": 6,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4
+  },
+  "batchFailureReasons": {
+    "image_validation_failed": 9,
+    "identity_unconfirmed": 6,
+    "network_error": 6,
+    "identity_ambiguous": 1,
+    "source_api_busy": 2,
+    "license_unclear": 1
+  },
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 5,
+      "metadataCandidates": 7,
+      "identitySupportedMetadata": 1,
+      "openLicenseMetadata": 6,
+      "downloadedForHumanReview": 0,
+      "errors": {
+        "identity_unconfirmed": 3,
+        "image_validation_failed": 4,
+        "source_api_busy": 2
+      }
+    },
+    "entity": {
+      "attemptedPeople": 5,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "errors": {
+        "image_validation_failed": 5,
+        "identity_unconfirmed": 3,
+        "identity_ambiguous": 1,
+        "network_error": 1,
+        "license_unclear": 1
+      }
+    },
+    "openverse": {
+      "attemptedPeople": 5,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "errors": {
+        "network_error": 5
+      }
+    }
+  },
+  "contactSheets": [],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 5,
+    "processedPeople": 5,
+    "workers": 1,
+    "elapsedSeconds": 195.28,
+    "stoppedForBudget": false
+  }
+}

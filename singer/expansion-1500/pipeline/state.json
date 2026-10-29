@@ -55463,7 +55463,7 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "pending_review",
+          "status": "superseded",
           "warnings": [
             "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
           ],
@@ -55576,6 +55576,159 @@
               ]
             },
             "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "supersededBy": "manualrecrop-094dad3cbd97-8175042f"
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+          "filename": "黃浩然.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】《法證先鋒IV》重拍 黃浩然提醒湯洛雯：要乖乖哋 2019-05-28",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​2019年萬千星輝頒獎典禮飛躍進步男藝員",
+          "identityEvidence": {
+            "query": "黃浩然",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃浩然"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "拳王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T20:18:17.869951+00:00",
+          "width": 1065,
+          "height": 1503,
+          "id": "manualrecrop-094dad3cbd97-8175042f",
+          "personId": "t1500_0579",
+          "discoveryRunId": "20261029T201720Z-9c28875a",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0579/manualrecrop-094dad3cbd97-8175042f/e4dfd6bfc98a/original.bin",
+          "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0579/manualrecrop-094dad3cbd97-8175042f/e4dfd6bfc98a/094dad3cbd97.jpg",
+          "parentCandidateId": "0f354b84f8a2efa7aea8",
+          "parentSourceSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+          "gameSha256": "094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.23,
+              0.92,
+              0.35
+            ],
+            "nose": [
+              0.08,
+              0.23,
+              0.92,
+              0.43
+            ],
+            "mouth": [
+              0.08,
+              0.23,
+              0.92,
+              0.53
+            ],
+            "chin": [
+              0.08,
+              0.23,
+              0.92,
+              0.64
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": "8175042f1a21",
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+            "sourceCandidateId": "0f354b84f8a2efa7aea8",
+            "sourceSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+            "sourceSize": [
+              1065,
+              1503
+            ],
+            "cropBox": [
+              65,
+              80,
+              1065,
+              1280
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "黃浩然: single near-frontal face 1065x1503, eyes/nose/mouth/chin clear. am730 Commons source license CC BY 3.0 reviewed by Puramyun31 on 2019-08-14. Automated sharpness rejected; check staged 600x720 and all five reveal stages visually before approving. Draft only. Visual review of 20261029T224621Z-0d0d0ed8 found the original nose stage exposed the entire mouth, with near-identical nose/mouth stages; revised boundaries isolate eyes, nose, mouth, and chin. Re-render and re-review all stages before live. Source license independently checked at Commons on 2026-10-30."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/8175042f1a21/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/8175042f1a21/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/8175042f1a21/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/8175042f1a21/chin.png",
+            "full": "expansion-1500/pipeline/evidence/094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e/8175042f1a21/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.23,
+                0.92,
+                0.35
+              ],
+              "nose": [
+                0.08,
+                0.23,
+                0.92,
+                0.43
+              ],
+              "mouth": [
+                0.08,
+                0.23,
+                0.92,
+                0.53
+              ],
+              "chin": [
+                0.08,
+                0.23,
+                0.92,
+                0.64
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
           }
         }
       ],
@@ -55668,6 +55821,13 @@
           "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
           "candidateId": "manualrecrop-094dad3cbd9776fe71bb",
           "sourceCandidateId": "0f354b84f8a2efa7aea8"
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261029T232610Z-3f239814",
+          "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+          "candidateId": "manualrecrop-094dad3cbd97-8175042f",
+          "sourceCandidateId": "0f354b84f8a2efa7aea8"
         }
       ],
       "legacyRecord": {
@@ -55691,9 +55851,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T224621Z-0d0d0ed8",
+      "lastRunId": "20261029T232610Z-3f239814",
       "lastRunNewCandidateIds": [
-        "manualrecrop-094dad3cbd9776fe71bb"
+        "manualrecrop-094dad3cbd97-8175042f"
       ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T20:18:11.279315+00:00",

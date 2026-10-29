@@ -1,12 +1,12 @@
 {
-  "runId": "20261029T232310Z-e7a1c2af",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261029T232310Z-e7a1c2af/review-index.json",
+  "runId": "20261029T232610Z-3f239814",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261029T232610Z-3f239814/review-index.json",
   "summary": {
-    "runId": "20261029T232310Z-e7a1c2af",
-    "generatedAt": "2026-10-29T23:23:11.228197+00:00",
-    "scannedPeople": 0,
-    "peopleWithNewCandidates": 0,
-    "newCandidatePhotos": 0,
+    "runId": "20261029T232610Z-3f239814",
+    "generatedAt": "2026-10-29T23:26:11.144868+00:00",
+    "scannedPeople": 1,
+    "peopleWithNewCandidates": 1,
+    "newCandidatePhotos": 1,
     "scannedWithoutCandidates": 0,
     "retryNeeded": 426,
     "pendingReviewPeople": 2,
@@ -33,7 +33,26 @@
     },
     "batchFailureReasons": {},
     "manualCropSources": 13,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      },
+      "entity": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

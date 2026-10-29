@@ -12,7 +12,7 @@ class SelectionTest(unittest.TestCase):
     def setUp(self):
         self.people = {key: {'priority': 'A'} for key in ('live', 'approved', 'waiting', 'ready', 'duplicate', 'reviewed', 'fresh', 'old', 'cooldown')}
         self.state = {'people': {key: {'personId': key, 'status': 'no_suitable_source', 'attempts': 0} for key in self.people}}
-        for key, status in [('live', 'published'), ('approved', 'approved'), ('waiting', 'pending_review'), ('ready', 'candidate_ready')]:
+        for key, status in [('live', 'published'), ('approved', 'approved'), ('waiting', 'pending_review'), ('ready', 'candidate_ready'), ('duplicate', 'duplicate_existing')]:
             self.state['people'][key]['status'] = status
         future = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=1)).isoformat()
         for key, revision in [('old', SEARCH_REVISION - 1), ('cooldown', SEARCH_REVISION)]:

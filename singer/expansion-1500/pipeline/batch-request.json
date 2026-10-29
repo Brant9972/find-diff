@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-5person-manual-recrop-salvage-v4",
-  "targetPeople": 5,
+  "requestId": "20261029-4-source-manual-crops-review-v1",
+  "targetPeople": 4,
   "workers": 1,
   "personSeconds": 90,
   "searchRevision": 4,
   "retryFailed": true,
   "providers": "entity,commons,openverse",
-  "purpose": "Retry after fixed CJK source evidence regex; tests must pass before manual-crop assets are collected; draft only",
+  "purpose": "Stage four exact-source-sha 600x720 manually framed portraits for independent five-stage human review; draft only, do not deploy",
   "plannedPersonIds": [
     "t1500_0295",
-    "t1500_0312",
     "t1500_0332",
     "t1500_0341",
     "t1500_0348"
-  ]
+  ],
+  "mode": "manual_recrop"
 }

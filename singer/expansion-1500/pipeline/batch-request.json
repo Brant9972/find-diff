@@ -1,11 +1,36 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-tin-manual-recrop-source-sha-v2",
-  "mode": "manual_recrop",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261029-tin-v2.json",
-  "targetPeople": 1,
+  "requestId": "20261029-commons-new-20-after-source-review-fix",
+  "targetPeople": 20,
   "plannedPersonIds": [
-    "t1500_0334"
+    "t1500_0361",
+    "t1500_0355",
+    "t1500_0365",
+    "t1500_0420",
+    "t1500_0423",
+    "t1500_0424",
+    "t1500_0387",
+    "t1500_0388",
+    "t1500_0434",
+    "t1500_0445",
+    "t1500_0425",
+    "t1500_0430",
+    "t1500_0427",
+    "t1500_0432",
+    "t1500_0431",
+    "t1500_0442",
+    "t1500_0351",
+    "t1500_0352",
+    "t1500_0353",
+    "t1500_0379"
   ],
-  "purpose": "Second draft corrects cropped eye/nose/lip reveal; verify source SHA, pixels and five-stage; no live modification."
+  "retryFailed": false,
+  "providers": [
+    "commons"
+  ],
+  "maxMinutes": 25,
+  "personSeconds": 60,
+  "workers": 3,
+  "maxCandidates": 3,
+  "purpose": "20 new, previously unattempted expansion-1500 people. Commons-only to isolate identity/caption and image stages; retain source-only originals with immutable review contact sheets. Do not modify live or autoapprove."
 }

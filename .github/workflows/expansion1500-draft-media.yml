@@ -78,9 +78,15 @@ jobs:
       - name: Commit assets, then pin public image links to that exact asset commit
         run: |
           set -euo pipefail
-          test "$(git branch --show-current)" = 'automation/celebrity-photo-pipeline'
+          # A 25-minute collector can finish after a human has advanced the
+          # pipeline branch. Preserve the collected pixels on their original
+          # source commit; never overwrite newer review decisions or state.
           saved=$(find /tmp/media-review -name media-source-commit.txt -type f)
-          test "$(git rev-parse HEAD)" = "$(cat "$saved")"
+          test "$(printf '%s\\n' "$saved" | wc -l)" -eq 1
+          source_sha=$(cat "$saved")
+          test "$source_sha" != ""
+          git fetch --no-tags --depth=1 origin "$source_sha"
+          git checkout -B "checkpoint-${GITHUB_RUN_ID}" "$source_sha"
           generated=$(find /tmp/media-review -type d -path '*/expansion-1500/pipeline')
           test -n "$generated"
           cp -a "$generated/." singer/expansion-1500/pipeline/
@@ -98,4 +104,16 @@ jobs:
           python singer/expansion-1500/tools/publish_review_links.py --asset-commit "$asset_commit"
           git add -- singer/expansion-1500/pipeline/review-public singer/expansion-1500/pipeline/codex-response/latest.json
           git commit -m 'Publish immutable GitHub image links for ChatGPT review'
-          git push origin HEAD:refs/heads/automation/celebrity-photo-pipeline
+          git fetch --no-tags origin refs/heads/automation/celebrity-photo-pipeline
+          current_remote=$(git rev-parse FETCH_HEAD)
+          if [ "$current_remote" = "$source_sha" ] && git push origin HEAD:refs/heads/automation/celebrity-photo-pipeline; then
+            echo "Review assets safely checkpointed to the pipeline branch." >> "$GITHUB_STEP_SUMMARY"
+          else
+            # A changed branch is NOT a reason to discard 100 MB of collected
+            # assets. Keep them in a unique, non-production branch for
+            # conflict-aware reconciliation by the next review run.
+            review_branch="automation/photo-review-run-${GITHUB_RUN_ID}"
+            git push origin "HEAD:refs/heads/$review_branch"
+            echo "::warning::Pipeline branch changed during collection; saved immutable review assets to $review_branch. Do not auto-merge stale state.json."
+            echo "Review assets preserved on \`$review_branch\`; reconcile against current pipeline state before merging." >> "$GITHUB_STEP_SUMMARY"
+          fi

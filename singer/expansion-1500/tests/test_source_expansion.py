@@ -10,7 +10,7 @@ from pathlib import Path
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import EntityPortraits, HTTP, SourceError, rights
+from media_pipeline.sources import CommonsSearch, EntityPortraits, HTTP, SourceError, rights
 
 
 def entity(qid='Q123', human=True, english='Test Artist'):
@@ -152,6 +152,46 @@ class SourceExpansionTest(unittest.TestCase):
         rows = list(EntityPortraits().search(self.person, api))
         self.assertTrue(any(row.get('source', '').startswith('https://photos.example.org/') for row in rows))
         self.assertTrue(any('openverse.org' in url for url, _ in api.calls))
+
+
+class CommonsQueryPriorityTest(unittest.TestCase):
+    def test_exact_chinese_name_precedes_verified_english_aliases(self):
+        from media_pipeline.sources import identity_key
+        class EmptyCommonsAPI:
+            def __init__(self):
+                context = {'aliases': ['測試人物', 'Test Artist'],
+                           'englishAliases': ['Test Artist', 'Other Artist'],
+                           'evidence': {'wikidataId': 'Q123', 'entityTypeEvidence': 'P31=Q5'}}
+                self.verified_identities = {identity_key({'name': '測試人物'}): context}
+                self.search_queries = []
+
+            def json(self, url, **params):
+                if params.get('generator') == 'search':
+                    self.search_queries.append(params['gsrsearch'])
+                    return {'query': {'pages': []}}
+                raise AssertionError('Unexpected request: ' + str(params))
+
+        api = EmptyCommonsAPI()
+        person = {'name': '測試人物', 'reviewSearchQuery': '測試人物 演員'}
+        self.assertEqual(list(CommonsSearch().search(person, api)), [])
+        self.assertEqual(api.search_queries, [
+            '"測試人物" filetype:bitmap',
+            '"測試人物 演員" filetype:bitmap',
+            '"Test Artist" filetype:bitmap',
+            '"Other Artist" filetype:bitmap',
+        ])
+
+    def test_unverified_english_aliases_are_not_promoted(self):
+        class EmptyCommonsAPI:
+            verified_identities = {}
+            def __init__(self):
+                self.search_queries = []
+            def json(self, url, **params):
+                self.search_queries.append(params['gsrsearch'])
+                return {'query': {'pages': []}}
+        api = EmptyCommonsAPI()
+        list(CommonsSearch().search({'name': '韓瑜', 'aliases': ['Han Yu']}, api))
+        self.assertEqual(api.search_queries, ['"韓瑜" filetype:bitmap'])
 
 
 class Response:

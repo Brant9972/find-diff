@@ -1,27 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-commons-chinese-first-hk-10",
-  "targetPeople": 10,
-  "plannedPersonIds": [
-    "t1500_0562",
-    "t1500_0564",
-    "t1500_0565",
-    "t1500_0577",
-    "t1500_0579",
-    "t1500_0582",
-    "t1500_0589",
-    "t1500_0583",
-    "t1500_0584",
-    "t1500_0586"
-  ],
-  "retryFailed": true,
-  "providers": [
-    "entity",
-    "commons"
-  ],
-  "maxMinutes": 22,
-  "personSeconds": 120,
-  "workers": 2,
-  "maxCandidates": 2,
-  "purpose": "New distinct selectedNew Hong Kong film/TV artists after PR #7 Chinese-name-first Commons source fix. 張達明 葛民輝 謝天華 張兆輝 黃浩然 郭政鴻 袁潔瑩 江華 魏駿傑 向海嵐. All absent from main and not previously published; prioritize exact native-name / verified P18 source, CC reusable metadata, source caption, single clear face. DRAFT ONLY; no automatic approval or deploy."
+  "requestId": "20261030-hk-manual-recrop-two",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-hk.json",
+  "targetPeople": 2,
+  "purpose": "Draft-only manual recrop of 張兆輝 and 黃浩然 from immutable 40947628651 source pixels. No automatic approval or deployment. All 600x720/five-stage crops, source identity, copyright and work hints require human review."
 }

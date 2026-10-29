@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+  "sourceRun": "20261029T201720Z-9c28875a",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Stage only two visually promising single-face photos from Hong Kong 10-person batch; no automatic identity/rights approval or live publication. Every 600x720 crop and five stages require human QA.",
+  "items": [
+    {
+      "personId": "t1500_0577",
+      "sourceCandidateId": "bf90b9c5bde0fdea7421",
+      "sourceSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+      "box": [
+        0,
+        80,
+        1200,
+        1520
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.32,
+          0.92,
+          0.48
+        ],
+        "nose": [
+          0.08,
+          0.32,
+          0.92,
+          0.57
+        ],
+        "mouth": [
+          0.08,
+          0.32,
+          0.92,
+          0.69
+        ],
+        "chin": [
+          0.08,
+          0.32,
+          0.92,
+          0.84
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "張兆輝: single high-resolution 1208x1669 face, eyes nose mouth chin unobstructed, slight three-quarter view. Source am730 event image; Commons attribution/license review still requires independent confirmation. Draft only."
+    },
+    {
+      "personId": "t1500_0579",
+      "sourceCandidateId": "0f354b84f8a2efa7aea8",
+      "sourceSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+      "box": [
+        65,
+        80,
+        1065,
+        1280
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.22,
+          0.92,
+          0.41
+        ],
+        "nose": [
+          0.08,
+          0.22,
+          0.92,
+          0.52
+        ],
+        "mouth": [
+          0.08,
+          0.22,
+          0.92,
+          0.62
+        ],
+        "chin": [
+          0.08,
+          0.22,
+          0.92,
+          0.75
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "黃浩然: single near-frontal face 1065x1503, eyes/nose/mouth/chin clear. am730 Commons source license CC BY 3.0 reviewed by Puramyun31 on 2019-08-14. Automated sharpness rejected; check staged 600x720 and all five reveal stages visually before approving. Draft only."
+    }
+  ]
+}

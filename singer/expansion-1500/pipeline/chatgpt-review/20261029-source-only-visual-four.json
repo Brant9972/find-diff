@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "human_visual_source_screening",
+  "reviewedDate": "2026-10-29",
+  "assetCommit": "62dc7798379c38cf6812ee96b8afcafc1bc7e830",
+  "sourceRun": "20261029T153620Z-8fce98c4",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "visualInspected": true,
+  "decisions": [
+    {
+      "personId": "t1500_0297",
+      "name": "李香琴",
+      "sourceSha256": "6c16c7872fe867743aa8ddb4e16ae5f4aa61a61e18f404a2bd49443abe6ad8fb",
+      "decision": "reject_source_for_portrait",
+      "reason": "Visual inspection confirms the photograph depicts a displayed opera costume on a stand with background display boards, not the performer. Filename contains artist's name but image has no face."
+    },
+    {
+      "personId": "t1500_0333",
+      "name": "秦沛",
+      "sourceSha256": "b54d7984c6c746b19e5343d66d54e8ac4b78831d759453c60a65105ebac0fc3a",
+      "decision": "reject_source_for_portrait",
+      "reason": "Visual inspection confirms a wide Causeway Bay street/minibus scene. No sufficiently visible, recognizable individual face; source caption name is not proof the actor is visually identifiable."
+    },
+    {
+      "personId": "t1500_0334",
+      "name": "田蕊妮",
+      "sourceSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+      "decision": "source_approved_and_v2_crop_approved",
+      "gameCandidateId": "manualrecrop-a53825f84cdf412a6343",
+      "gameSha256": "a53825f84cdf412a6343cc2bf723d339c2be790ce9d108f779947b2dbfb553ec",
+      "reason": "Visual inspection confirms sharp single face with all features. v1 reveal cut eye/nose/lip; v2 five-stage fully visible. Commons source says am730 YouTube interview CC BY 3.0, independently license-reviewed by Techyan on 2019-09-15; Wikimedia depicts Kristal Tin, Wikidata Q6437706 P18. See separate exact-SHA visual-reviewed record.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg"
+    },
+    {
+      "personId": "t1500_0339",
+      "name": "陳錦鴻",
+      "sourceSha256": "62de610120caf5178dbb3f7167c47cda7e798853d8ad1dfffd782f880c28d12b",
+      "decision": "reject_source_for_portrait",
+      "reason": "Visual inspection confirms person holding a microphone directly at mouth, source only 268x401 pixels. Mouth stage would be obstructed and 600x720 upscale low quality."
+    }
+  ],
+  "notes": [
+    "The three rejected source images must not be reused as portraits or counted; seek new originals.",
+    "The approved v2 crop is not automatically live: integrate on review branch and require Singer Mobile QA, Verify work hints, Pages build/live QA and public JSON check.",
+    "No YouTuber creator bank changes."
+  ]
+}

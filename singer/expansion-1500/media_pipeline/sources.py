@@ -451,7 +451,9 @@ class EntityPortraits:
         english = [entity.get('labels', {}).get('en', {}).get('value', '')]
         english.extend(row.get('value', '') for row in entity.get('aliases', {}).get('en', []))
         # Short English fragments can match unrelated filenames. Keep complete names.
-        english = [value for value in dict.fromkeys(english) if re.search('[A-Za-z]', value) and len(norm(value)) >= 5][:4]
+        blocked_english = {norm(value) for value in person.get('photoSearchBlockedEnglishAliases', [])}
+        english = [value for value in dict.fromkeys(english) if re.search('[A-Za-z]', value)
+                   and len(norm(value)) >= 5 and norm(value) not in blocked_english][:4]
         aliases = list(dict.fromkeys([person['name'], *matched, *english]))
         evidence = {'wikidataId': qid, 'mappingSource': 'https://www.wikidata.org/wiki/' + qid,
                     'exactChineseAliases': matched, 'verifiedSearchAliases': aliases,

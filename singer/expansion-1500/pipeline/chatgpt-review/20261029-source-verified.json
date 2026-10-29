@@ -242,9 +242,38 @@
       "releaseChecks": {
         "hints": "success",
         "mobile": "success",
-        "pages": "pending_at_review_recording"
+        "pages": "success"
       },
-      "eligibleForLiveAfterQA": true
+      "eligibleForLiveAfterQA": true,
+      "liveVerified": true,
+      "liveUrl": "https://brant9972.github.io/find-diff/singer/"
     }
-  ]
+  ],
+  "additionalRejectedAlternatePhotos": [
+    {
+      "personId": "t1500_0474",
+      "name": "蔡黃汝",
+      "source": "https://commons.wikimedia.org/wiki/File:Tsai_Huang_Ru.jpg",
+      "decision": "reject_photo_2024_alternative",
+      "reason": "Explicit Tainan City Government 2024 photo has microphone directly over the mouth (unusable mouth-stage reveal), and a second giant projected face in background; don't use despite source identifying the singer and GWOIA attribution permission for adaptations.",
+      "license": "Tainan City Government Website Open Information Announcement (attribution only)",
+      "status": "visual_reviewed_rejected"
+    }
+  ],
+  "lastLiveVerification": {
+    "uniquePeople": 1063,
+    "target": 1100,
+    "remaining": 37,
+    "mainCommit": "9301c0736d7de138ba9656119c3a862419ad50bf",
+    "mobileQa": "https://github.com/Brant9972/find-diff/actions/runs/40875946910",
+    "hintsQa": "https://github.com/Brant9972/find-diff/actions/runs/40875947002",
+    "pagesBuild": "https://github.com/Brant9972/find-diff/actions/runs/40875945809",
+    "liveQa": "https://github.com/Brant9972/find-diff/actions/runs/40875946920",
+    "publicVerifiedActorCount": 563,
+    "publicVerifiedPerson": {
+      "id": "t1500_0360",
+      "name": "林德信",
+      "photo": "photos/t1500_0360_review20261029.jpg"
+    }
+  }
 }

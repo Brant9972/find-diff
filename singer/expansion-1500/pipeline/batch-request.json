@@ -1,23 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-hk-veteran-ten-0738",
-  "mode": "search",
-  "targetPeople": 10,
-  "plannedPersonIds": [
-    "t1500_0549",
-    "t1500_0551",
-    "t1500_0552",
-    "t1500_0555",
-    "t1500_0557",
-    "t1500_0558",
-    "t1500_0559",
-    "t1500_0566",
-    "t1500_0567",
-    "t1500_0568"
-  ],
-  "retryFailed": true,
-  "providers": [
-    "commons"
-  ],
-  "purpose": "One diagnostic batch of ten different existing expansion-1500 HK veteran candidates (謝賢, 曾江, 石修, 湯鎮業, 陶大宇, 蔡一智, 蔡一傑, 董驃, 羅蘭, 李司棋), not previously used in recent 10/20-person runs. Use Chinese-first and strict caption/QID guard; draft-only, no live release without full source, license, five-stage and hint QA."
+  "requestId": "20261030-tao-manual-crop-v1",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-tao.json",
+  "targetPeople": 1,
+  "purpose": "Draft-only source-pixel manual crop for 陶大宇, Commons CC BY 3.0 license independently reviewed. Five stages must be visually checked; no live approval."
 }

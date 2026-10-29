@@ -45,22 +45,34 @@ jobs:
           import json, os, subprocess
           from pathlib import Path
           request = json.loads(Path('singer/expansion-1500/pipeline/batch-request.json').read_text())
-          limit = int(os.environ.get('REQUEST_LIMIT') or request.get('targetPeople', 40))
-          if not 1 <= limit <= 50:
-              raise ValueError('Diagnostic batch limit must be 1..50')
-          args = ['python', 'singer/expansion-1500/prepare_media.py', '--limit', str(limit),
-                  '--workers', '1', '--max-minutes', '25', '--person-seconds', '90',
-                  '--live-ref', 'origin/main']
-          # Explicit planned IDs are authoritative; do not silently run another
-          # 40 random people when a 10-person diagnostic was requested.
-          for pid in request.get('plannedPersonIds', [])[:limit]:
-              args += ['--person-id', pid]
-          if request.get('retryFailed'):
-              args.append('--retry-failed')
-          if request.get('providers'):
-              args += ['--providers', request['providers']]
-          print('Collecting', limit, 'people; explicit IDs:', request.get('plannedPersonIds', [])[:limit], flush=True)
-          subprocess.run(args, check=True)
+          if request.get('mode') == 'manual_recrop':
+              spec = Path('singer/expansion-1500/pipeline/manual-crop-request-20261029.json')
+              manual = json.loads(spec.read_text())
+              subprocess.run(['git', 'fetch', '--no-tags', '--depth=1',
+                              'origin', manual['sourceCommit']], check=True)
+              args = ['python', 'singer/expansion-1500/prepare_media.py',
+                      '--limit', '0', '--manual-recrop-request', str(spec),
+                      '--live-ref', 'origin/main']
+              print('Staging source-only manual crops from', manual['sourceCommit'],
+                    'items:', len(manual['items']), flush=True)
+              subprocess.run(args, check=True)
+          else:
+              limit = int(os.environ.get('REQUEST_LIMIT') or request.get('targetPeople', 40))
+              if not 1 <= limit <= 50:
+                  raise ValueError('Diagnostic batch limit must be 1..50')
+              args = ['python', 'singer/expansion-1500/prepare_media.py', '--limit', str(limit),
+                      '--workers', '1', '--max-minutes', '25', '--person-seconds', '90',
+                      '--live-ref', 'origin/main']
+              # Explicit planned IDs are authoritative; do not silently run another
+              # 40 random people when a 10-person diagnostic was requested.
+              for pid in request.get('plannedPersonIds', [])[:limit]:
+                  args += ['--person-id', pid]
+              if request.get('retryFailed'):
+                  args.append('--retry-failed')
+              if request.get('providers'):
+                  args += ['--providers', request['providers']]
+              print('Collecting', limit, 'people; explicit IDs:', request.get('plannedPersonIds', [])[:limit], flush=True)
+              subprocess.run(args, check=True)
           PY
       - run: python singer/expansion-1500/validate_pipeline.py
       - name: Assert only draft outputs changed

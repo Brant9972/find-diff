@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30T07:19:00+08:00",
+  "reviewType": "human_visual_qa_and_source_metadata",
+  "assetCommit": "9e31b608303d036b59c7e37ba3e8afc0d667f981",
+  "sourceRun": "20261029T224621Z-0d0d0ed8",
+  "releaseGate": "DRAFT_ONLY_NO_LIVE",
+  "mainAtReview": "4abec82dac5ff2e81e9ec0b6b83cf0d6b664b7fb",
+  "reviewedPeople": [
+    {
+      "personId": "t1500_0577",
+      "name": "張兆輝",
+      "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
+      "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+      "visual": {
+        "candidate": "pass_single_clear_face_slight_angle",
+        "eyes": "pass_both_eyes_visible",
+        "nose": "pass_nose_revealed_without_full_mouth",
+        "mouth": "pass_mouth_visible",
+        "chin": "pass_chin_visible",
+        "full": "pass",
+        "notes": "Background includes a partial poster/hair-like shape but no second visible face. Main face is clear, recognizable, unobstructed."
+      },
+      "source": {
+        "file": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+        "authorClaim": "am730",
+        "captionClaim": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
+        "wikidata": "Q701359",
+        "licenseClaim": "CC BY 3.0",
+        "licenseReview": "not independently confirmed; Commons source page inaccessible to review tool",
+        "rightsApproved": false,
+        "identityApproved": false
+      },
+      "decision": "hold_pending_exact_source_license_and_caption_alignment",
+      "publish": false
+    },
+    {
+      "personId": "t1500_0579",
+      "name": "黃浩然",
+      "candidateId": "manualrecrop-094dad3cbd9776fe71bb",
+      "gameSha256": "094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e",
+      "visual": {
+        "candidate": "pass_single_near_frontal_clear_face",
+        "eyes": "original_eye_window_too_tall",
+        "nose": "fail_original_nose_window_exposes_entire_mouth",
+        "mouth": "fail_original_nose_and_mouth_stages_too_similar",
+        "chin": "pass_chin_visible_but_much_torso",
+        "full": "pass",
+        "notes": "New reveal y-boundaries eyes .23-.35; nose .23-.43; mouth .23-.53; chin .23-.64 require regeneration and fresh visual review."
+      },
+      "source": {
+        "file": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+        "author": "am730",
+        "video": "https://www.youtube.com/watch?v=ZQ25N1N8AkM",
+        "wikidata": "Q5353698",
+        "license": "CC BY 3.0",
+        "licenseReviewedOn": "2019-08-14",
+        "licenseReviewer": "Puramyun31",
+        "rightsApprovedForCrop": true,
+        "captionIssue": "Pipeline caption '2019年萬千星輝頒獎典禮飛躍進步男藝員' conflicts with Commons description '2010年...'; use article/video source and avoid award caption as identity evidence.",
+        "identityApproved": false
+      },
+      "decision": "re_render_then_review_five_stages_and_caption_before_publish",
+      "publish": false
+    }
+  ],
+  "requiredNextSteps": [
+    "Merge only after pipeline branch QA succeeds; do not touch main or creators.",
+    "Re-run manual crop with updated reveal bounds, inspect 600x720 and five stage PNGs visually.",
+    "Resolve 張兆輝 source-page license and video-caption evidence before approving.",
+    "Confirm 黃浩然 image caption aligns with named person; use correct attribution and hint, then QA, merge, Pages live QA."
+  ]
+}

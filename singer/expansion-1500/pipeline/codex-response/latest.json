@@ -99,7 +99,7 @@
     "t1500_0584",
     "t1500_0589"
   ],
-  "reviewPublicationPending": true,
+  "reviewPublicationPending": false,
   "items": [
     {
       "personId": "t1500_0564",
@@ -1128,5 +1128,422 @@
         }
       ]
     }
-  ]
+  ],
+  "visualAssetCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
+  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
+  "publicVisualManifest": {
+    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/assets-index.json",
+    "contactSheets": [],
+    "manualContactSheets": [
+      {
+        "bytes": 85419,
+        "entries": [
+          {
+            "candidateId": "b2574981ba5e9e0689c3",
+            "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+            "personId": "t1500_0564",
+            "tile": 1
+          },
+          {
+            "candidateId": "0ad030ff729aa9963b03",
+            "originalSha256": "38e797c18dacaf45393205a14145aae4c067daeddc33eacd27c2258b9023e92e",
+            "personId": "t1500_0565",
+            "tile": 2
+          },
+          {
+            "candidateId": "bf90b9c5bde0fdea7421",
+            "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+            "personId": "t1500_0577",
+            "tile": 3
+          },
+          {
+            "candidateId": "0f354b84f8a2efa7aea8",
+            "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+            "personId": "t1500_0579",
+            "tile": 4
+          }
+        ],
+        "height": 315,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/manual-source-sheet-01.jpg",
+        "sha256": "4e25791ea20da3d8e493205d3b97edcba0d8c777c592f9cd6ff153d5e072671d",
+        "width": 960,
+        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/manual-source-sheet-01.jpg",
+        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/manual-source-sheet-01.jpg",
+        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/manual-source-sheet-01.jpg?raw=true"
+      }
+    ],
+    "manualSourceCount": 4,
+    "manualSourcePeopleCount": 4,
+    "manualSources": [
+      {
+        "candidateId": "b2574981ba5e9e0689c3",
+        "cropFailure": "Face is too tilted",
+        "eligibleForLive": false,
+        "gameSha256": null,
+        "metadata": {
+          "author": "Tksteven",
+          "caption": "Eric Kot(葛民輝)  was being the guest in the publicity on 2008.11",
+          "credit": "Selfwork",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "articleLookup": "exact title with redirects; not a search result",
+            "articleTitle": "葛民輝",
+            "captionAliasMatches": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot"
+            ],
+            "claim": "P18",
+            "discoveryWarnings": [],
+            "entityTypeEvidence": "P31=Q5",
+            "exactChineseAliases": [
+              "葛民輝",
+              "葛民辉",
+              "葛民辉",
+              "葛民辉"
+            ],
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+            "matchedAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot"
+            ],
+            "query": "Eric Kot",
+            "retrievedAt": "2026-10-29T20:17:22.511249+00:00",
+            "verifiedSearchAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot",
+              "Eric Kot Man Fai",
+              "Eric Kot Man-fai"
+            ],
+            "visualIdentityVerified": false,
+            "wikidataId": "Q590914"
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance has not been visually reviewed",
+            "representativeWorks": [
+              "百分百感覺"
+            ],
+            "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait."
+          },
+          "reviewerRequest": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ]
+        },
+        "name": "葛民輝",
+        "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+        "personId": "t1500_0564",
+        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+        "sourceImage": {
+          "bytes": 119749,
+          "displayHeight": 750,
+          "displayWidth": 1000,
+          "height": 750,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0001/original.jpg",
+          "sha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+          "width": 1000,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0001/original.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0001/original.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0001/original.jpg?raw=true"
+        },
+        "stageImages": {}
+      },
+      {
+        "candidateId": "0ad030ff729aa9963b03",
+        "cropFailure": "Face is too small",
+        "eligibleForLive": false,
+        "gameSha256": null,
+        "metadata": {
+          "author": "KTo288",
+          "caption": "Close crop of image of Michael Tse dancing at TVBS-Europe's Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre",
+          "credit": "Own work",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+            "articleLookup": "exact title with redirects; not a search result",
+            "articleTitle": "謝天華",
+            "captionAliasMatches": [
+              "Michael Tse"
+            ],
+            "claim": "P18",
+            "discoveryWarnings": [],
+            "entityTypeEvidence": "P31=Q5",
+            "exactChineseAliases": [
+              "谢天华",
+              "謝天華",
+              "謝天華",
+              "謝天華",
+              "谢天华"
+            ],
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+            "matchedAliases": [
+              "Michael Tse"
+            ],
+            "query": "Michael Tse",
+            "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+            "verifiedSearchAliases": [
+              "謝天華",
+              "谢天华",
+              "Michael Tse",
+              "Tse Tin Wah",
+              "Xie Tianhua",
+              "Michael Tse Tin Wah"
+            ],
+            "visualIdentityVerified": false,
+            "wikidataId": "Q903237"
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Michael_Tse_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Michael_Tse_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance has not been visually reviewed",
+            "representativeWorks": [
+              "潛行狙擊"
+            ],
+            "requestedReplacement": ""
+          },
+          "reviewerRequest": null,
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Michael_Tse_close_up.jpg",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ]
+        },
+        "name": "謝天華",
+        "originalSha256": "38e797c18dacaf45393205a14145aae4c067daeddc33eacd27c2258b9023e92e",
+        "personId": "t1500_0565",
+        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+        "sourceImage": {
+          "bytes": 23383,
+          "displayHeight": 468,
+          "displayWidth": 312,
+          "height": 468,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0002/original.jpg",
+          "sha256": "38e797c18dacaf45393205a14145aae4c067daeddc33eacd27c2258b9023e92e",
+          "width": 312,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0002/original.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0002/original.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0002/original.jpg?raw=true"
+        },
+        "stageImages": {}
+      },
+      {
+        "candidateId": "bf90b9c5bde0fdea7421",
+        "cropFailure": "No reliable frontal face",
+        "eligibleForLive": false,
+        "gameSha256": null,
+        "metadata": {
+          "author": "am730",
+          "caption": "​《黃金有罪》「發財迎新歲」記者會",
+          "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
+            "articleLookup": "exact title with redirects; not a search result",
+            "articleTitle": "張兆輝",
+            "captionAliasMatches": [
+              "張兆輝",
+              "张兆辉"
+            ],
+            "claim": "P18",
+            "discoveryWarnings": [],
+            "entityTypeEvidence": "P31=Q5",
+            "exactChineseAliases": [
+              "张兆辉",
+              "張兆輝",
+              "張兆輝"
+            ],
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701359",
+            "matchedAliases": [
+              "張兆輝",
+              "张兆辉"
+            ],
+            "query": "Cheung Siu-fai",
+            "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
+            "verifiedSearchAliases": [
+              "張兆輝",
+              "张兆辉",
+              "Cheung Siu-fai",
+              "Eddie Cheung",
+              "Eddie Cheung Siu-Fai",
+              "Zhang Zhao-Hui"
+            ],
+            "visualIdentityVerified": false,
+            "wikidataId": "Q701359"
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance has not been visually reviewed",
+            "representativeWorks": [
+              "黑社會"
+            ],
+            "requestedReplacement": ""
+          },
+          "reviewerRequest": null,
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ]
+        },
+        "name": "張兆輝",
+        "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+        "personId": "t1500_0577",
+        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+        "sourceImage": {
+          "bytes": 355697,
+          "displayHeight": 1669,
+          "displayWidth": 1208,
+          "height": 1669,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0003/original.jpg",
+          "sha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+          "width": 1208,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0003/original.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0003/original.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0003/original.jpg?raw=true"
+        },
+        "stageImages": {}
+      },
+      {
+        "candidateId": "0f354b84f8a2efa7aea8",
+        "cropFailure": "Blurred crop: sharpness below 65",
+        "eligibleForLive": false,
+        "gameSha256": null,
+        "metadata": {
+          "author": "am730",
+          "caption": "​2019年萬千星輝頒獎典禮飛躍進步男藝員",
+          "credit": "【娛樂】《法證先鋒IV》重拍 黃浩然提醒湯洛雯：要乖乖哋 2019-05-28",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "captionAliasMatches": [
+              "黃浩然"
+            ],
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "query": "黃浩然",
+            "visualIdentityVerified": false
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance must be reviewed",
+            "representativeWorks": [
+              "拳王"
+            ],
+            "requestedReplacement": ""
+          },
+          "reviewerRequest": null,
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ]
+        },
+        "name": "黃浩然",
+        "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+        "personId": "t1500_0579",
+        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+        "sourceImage": {
+          "bytes": 246312,
+          "displayHeight": 1503,
+          "displayWidth": 1065,
+          "height": 1503,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0004/original.jpg",
+          "sha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+          "width": 1065,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0004/original.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0004/original.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/source-only-0004/original.jpg?raw=true"
+        },
+        "stageImages": {}
+      }
+    ],
+    "peopleCount": 0,
+    "photoCount": 0,
+    "photos": [],
+    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+    "revealSheets": [],
+    "runId": "20261029T201720Z-9c28875a",
+    "schemaVersion": 1,
+    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+    "assetCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+    "assetManifest": {
+      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/assets-index.json",
+      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/assets-index.json",
+      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d/singer/expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/assets-index.json?raw=true"
+    },
+    "reviewInstructions": [
+      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
+      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
+      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
+      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
+    ]
+  }
 }

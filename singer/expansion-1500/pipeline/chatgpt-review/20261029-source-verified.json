@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-29",
+  "sourceReview": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
+  "baseReview": "pipeline/chatgpt-review/latest.json",
+  "method": "Locally opened 600x720 game photos; verified Commons file description, photographer, source, permission and work-credit where available.",
+  "releaseGate": "APPROVED_ITEMS_ONLY_TEST_BRANCH_NOT_MAIN",
+  "eighteenPersonSummary": {
+    "reviewed": 18,
+    "approved": 2,
+    "rejected": 15,
+    "pending": 1,
+    "note": "12 earlier rejections from baseReview unchanged; six pending decisions replaced below."
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0255",
+      "candidateId": "legacy-t1500_0255",
+      "gameSha256": "6a134ef7711679255a73964dd91847f95afe8eecd2acad0cb5023014562f536d",
+      "name": "林采緹",
+      "decision": "approve",
+      "identityEvidence": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg ; description names 林采緹 at 2017 板橋《美麗宣言》簽書會",
+      "license": "CC BY-SA 2.0",
+      "artist": "ChenTim0602",
+      "reason": "Face-centered, sharp; eyes/nose/mouth/chin visible; no mask or watermark. Must credit author and note crop.",
+      "testBranch": "release-1100-reviewed-20261029",
+      "eligibleForLiveAfterQA": true
+    },
+    {
+      "personId": "t1500_0307",
+      "candidateId": "legacy-t1500_0307",
+      "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
+      "name": "李妍瑾",
+      "decision": "pending",
+      "identityEvidence": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg ; description names Yuni Li and depicts Lee Yen-chin",
+      "license": "CC BY-SA 4.0 (one of author's offered licenses)",
+      "artist": "Rico Shen",
+      "reason": "Clear frontal features, but a second person's face remains in lower left; Codex should recrop and submit new candidateId, gameSha256 and five-stage preview. Old photo cannot go live.",
+      "eligibleForLiveAfterQA": false
+    },
+    {
+      "personId": "t1500_0360",
+      "candidateId": "legacy-t1500_0360",
+      "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
+      "name": "林德信",
+      "decision": "reject",
+      "reason": "Local game image is heavily noisy/grainy and dim; face angle and low detail fail recognizability. Find a brighter, sharp, iconic frontal portrait.",
+      "eligibleForLiveAfterQA": false
+    },
+    {
+      "personId": "t1500_0474",
+      "candidateId": "legacy-t1500_0474",
+      "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+      "name": "蔡黃汝",
+      "decision": "reject",
+      "reason": "2011 era photo is grainy and does not represent widely recognized contemporary appearance. Replace with a clear single-person 2020s portrait, all features uncovered.",
+      "eligibleForLiveAfterQA": false
+    },
+    {
+      "personId": "t1500_0563",
+      "candidateId": "legacy-t1500_0563",
+      "gameSha256": "a30ae8c1c1f91e870175de85d8f48372d88d4fbf287e6522811ecedde45425a5",
+      "name": "鄭丹瑞",
+      "decision": "approve",
+      "identityEvidence": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E4%B8%B9%E7%91%9E.jpg ; image source is DBC video explicitly titled 始終小男人鄭丹瑞『越界傾情』 and Commons license was reviewed",
+      "license": "CC BY 3.0",
+      "artist": "數碼電台DBC",
+      "reason": "Near frontal; transparent glasses still show eyes, nose/mouth/chin unobscured. Some video grain but identity remains clear.",
+      "testBranch": "release-1100-reviewed-20261029",
+      "eligibleForLiveAfterQA": true
+    },
+    {
+      "personId": "t1500_0564",
+      "candidateId": "legacy-t1500_0564",
+      "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
+      "name": "葛民輝",
+      "decision": "reject",
+      "reason": "Cap shades eyes, beard and microphone obscure the chin-stage reveal; seek recognizable front-facing photo without microphone or lower-face obstruction.",
+      "eligibleForLiveAfterQA": false
+    }
+  ],
+  "additionalRejectedFalseMatch": {
+    "personId": "t1500_0202",
+    "candidateId": "5357b32a0f75d9a1a20c",
+    "gameSha256": "1aec488b5feb1d9dfb98bc164e357ca0dda2e8503568d028666f6b6e151d9877",
+    "name": "喜翔",
+    "decision": "reject",
+    "source": "https://commons.wikimedia.org/wiki/File:Jason_King_moderating_Vibe_Revived.jpg",
+    "reason": "Caption identifies Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔; English alias collision. Never publish.",
+    "fix": "Require positive image-adjacent caption subject matching the specific Wikidata identity; filename or translated English alias alone must not be treated as proof."
+  },
+  "pipelineFixes": [
+    "Treat 403/proxy_access_denied as a blocked source, log host and retry-after; do not hammer the same endpoint or interpret it as no image.",
+    "Distinguish cirrussearch-too-busy-error from no results and back off with bounded retries.",
+    "Require subject-level visual/photo-adjacent caption evidence; reject ambiguous English names and article header-only matches.",
+    "Keep no-photo, image download failure, identity mismatch and license review concerns as separate statuses.",
+    "Generate per-candidate five-stage previews and contact sheets; do not auto-promote on face detection alone.",
+    "After acceptance, synchronize roster, eligibility-review, hint-candidates, hints, game bank, photo and attribution. Run prepare_hints and mobile QA before main."
+  ]
+}

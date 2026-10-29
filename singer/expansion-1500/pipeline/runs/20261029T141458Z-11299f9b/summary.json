@@ -1,0 +1,45 @@
+{
+  "runId": "20261029T141458Z-11299f9b",
+  "generatedAt": "2026-10-29T14:15:01.337023+00:00",
+  "scannedPeople": 4,
+  "peopleWithNewCandidates": 4,
+  "newCandidatePhotos": 4,
+  "scannedWithoutCandidates": 0,
+  "retryNeeded": 431,
+  "pendingReviewPeople": 4,
+  "licenseConcernCandidates": 209,
+  "statusCounts": {
+    "no_suitable_source": 227,
+    "download_failed": 193,
+    "rejected": 11,
+    "published": 76,
+    "pending_review": 4
+  },
+  "failureReasons": {
+    "network_error": 279,
+    "identity_unconfirmed": 243,
+    "image_validation_failed": 63,
+    "source_api_busy": 65,
+    "license_unclear": 55,
+    "source_api_error": 28,
+    "identity_ambiguous": 8,
+    "excluded_context": 6,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4
+  },
+  "batchFailureReasons": {},
+  "manualCropSources": 0,
+  "batchProviderStages": {},
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 4,
+    "processedPeople": 4,
+    "workers": 0,
+    "manualRecrop": true,
+    "sourceCommit": "700d65af86e66ed07325a2a346770a605fd75ae9"
+  }
+}

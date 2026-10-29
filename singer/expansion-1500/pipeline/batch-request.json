@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-commons-new-20-after-source-review-fix",
+  "requestId": "20261029-commons-new-20-after-source-review-fix-v2",
   "targetPeople": 20,
   "plannedPersonIds": [
     "t1500_0361",
@@ -25,9 +25,7 @@
     "t1500_0379"
   ],
   "retryFailed": false,
-  "providers": [
-    "commons"
-  ],
+  "providers": "commons",
   "maxMinutes": 25,
   "personSeconds": 60,
   "workers": 3,

@@ -130,6 +130,9 @@ class HTTP:
         self.blocked_hosts = blocked_hosts if blocked_hosts is not None else {}
         self.verified_identities = {}
         self.openverse_results = {}
+        # CirrusSearch overload is not a host-wide HTTP refusal. Keep its circuit
+        # separate so exact-title and prefix metadata lookups remain usable.
+        self.search_busy_until = {}
 
     def _seconds_left(self, deadline):
         if self.budget is not None and time.monotonic() >= self.budget:
@@ -229,6 +232,9 @@ class HTTP:
         raise SourceError('network_error', 'Request attempts exhausted')
 
     def json(self, url, **params):
+        is_search = params.get('generator') == 'search' or params.get('list') == 'search'
+        if is_search and self.search_busy_until.get(public_https(url), 0) > time.monotonic():
+            raise SourceError('source_api_busy', 'CirrusSearch cooling down; use a non-search lookup')
         try:
             data = json.loads(self.get(url, params or None))
         except (ValueError, UnicodeError) as exc:
@@ -239,8 +245,11 @@ class HTTP:
             message = code + ': ' + str(error.get('info', error))[:300]
             if code in {'cirrussearch-too-busy-error', 'maxlag', 'readonly'}:
                 host = public_https(url)
-                self.blocked_hosts[host] = {'code': 'source_api_busy', 'reason': message,
-                    'until': time.monotonic() + 30}
+                if code == 'cirrussearch-too-busy-error':
+                    self.search_busy_until[host] = time.monotonic() + 30
+                else:
+                    self.blocked_hosts[host] = {'code': 'source_api_busy', 'reason': message,
+                        'until': time.monotonic() + 30}
                 raise SourceError('source_api_busy', message)
             raise SourceError('source_api_error', message)
         return data
@@ -358,10 +367,30 @@ class CommonsSearch:
         if context:
             queries = [*context['englishAliases'][:2], *queries]
         seen=set()
+        busy_fallbacks=0
         for query in dict.fromkeys(queries):
-            data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
-                generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
-                prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
+            try:
+                data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
+                    generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
+                    prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
+            except SourceError as exc:
+                if exc.code != 'source_api_busy':
+                    raise
+                # allimages uses title-prefix enumeration, not CirrusSearch.
+                # Resolve a bounded set of exact files with normal imageinfo metadata.
+                # A prefix match is never proof of the depicted person's identity.
+                busy_fallbacks += 1
+                listing = http.json('https://commons.wikimedia.org/w/api.php', action='query',
+                    format='json', formatversion=2, list='allimages', aiprefix=str(query).strip(),
+                    ailimit=8, aiprop='canonicaltitle')
+                titles = [row.get('title') or ('File:' + row['name'])
+                    for row in listing.get('query', {}).get('allimages', [])
+                    if row.get('title') or row.get('name')]
+                if not titles:
+                    continue
+                data = http.json('https://commons.wikimedia.org/w/api.php', action='query',
+                    format='json', formatversion=2, titles='|'.join(titles),
+                    prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400)
             for page in data.get('query',{}).get('pages',[]):
                 for info in page.get('imageinfo',[]):
                     source=info.get('descriptionurl','')
@@ -381,6 +410,8 @@ class CommonsSearch:
                         'identityEvidence':evidence,
                         'recognitionEvidence':{'requestedReplacement':person.get('reviewReason'),'representativeWorks':person.get('representativeWorks',[]),'note':'Familiar appearance must be reviewed'},
                         'searchTime':now(),'width':info.get('width'),'height':info.get('height')}
+        if busy_fallbacks and not seen:
+            raise SourceError('source_api_busy', 'CirrusSearch busy; exact file-prefix lookups found no candidates')
 
 
 class EntityPortraits:

@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import CommonsSearch, Official, Openverse, Wikimedia, rights
+from media_pipeline.sources import CommonsSearch, HTTP, Official, Openverse, SourceError, Wikimedia, rights
 
 
 class FixtureHTTP:
@@ -57,6 +57,53 @@ class SourcesTest(unittest.TestCase):
         rows = list(adapter.search({'plannedQuestionId': 't1'}, None))
         self.assertEqual(len(rows), 1)
         self.assertEqual(rights(rows[0]), 'needs_review')
+
+
+    def test_busy_cirrus_falls_back_to_bounded_exact_file_prefix(self):
+        class Busy:
+            def __init__(self):
+                self.calls = []
+            def json(self, url, **params):
+                self.calls.append(params)
+                if params.get('generator') == 'search':
+                    raise SourceError('source_api_busy', 'cirrussearch-too-busy-error')
+                if params.get('list') == 'allimages':
+                    return {'query': {'allimages': [{'title': 'File:測試人物 portrait.jpg'}]}}
+                if params.get('titles'):
+                    return {'query': {'pages': [{'title': 'File:測試人物 portrait.jpg',
+                        'imageinfo': [{'descriptionurl': 'https://commons.wikimedia.org/wiki/File:測試人物_portrait.jpg',
+                            'url': 'https://upload.wikimedia.org/a.jpg', 'width': 1200, 'height': 1500,
+                            'extmetadata': {k: {'value': v} for k, v in {
+                                'Artist': 'Photo Author', 'LicenseShortName': 'CC BY 4.0',
+                                'LicenseUrl': 'https://creativecommons.org/licenses/by/4.0/',
+                                'ImageDescription': '測試人物肖像'}.items()}}]}]}}
+                raise AssertionError('Unexpected API parameters: ' + str(params))
+        api = Busy()
+        rows = list(CommonsSearch().search({'name': '測試人物'}, api))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rights(rows[0]), 'open_license_metadata')
+        self.assertEqual(rows[0]['caption'], '測試人物肖像')
+        self.assertTrue(any(x.get('list') == 'allimages' for x in api.calls))
+        self.assertTrue(any(x.get('titles') for x in api.calls))
+        self.assertNotEqual(rows[0]['identityEvidence'].get('visualIdentityVerified'), True)
+
+    def test_cirrus_busy_does_not_block_non_search_api(self):
+        client = HTTP(attempts=1, interval=0)
+        calls = []
+        def fake_get(url, params=None):
+            calls.append(params)
+            if params.get('generator') == 'search':
+                return b'{"error":{"code":"cirrussearch-too-busy-error","info":"Busy"}}'
+            return b'{"query":{"allimages":[]}}'
+        client.get = fake_get
+        url = 'https://commons.wikimedia.org/w/api.php'
+        with self.assertRaises(SourceError) as first:
+            client.json(url, action='query', generator='search')
+        self.assertEqual(first.exception.code, 'source_api_busy')
+        self.assertEqual(client.json(url, action='query', list='allimages')['query']['allimages'], [])
+        with self.assertRaises(SourceError):
+            client.json(url, action='query', generator='search')
+        self.assertEqual(len(calls), 2, 'Cooldown must skip Cirrus requests but permit prefix metadata')
 
 
 if __name__ == '__main__':

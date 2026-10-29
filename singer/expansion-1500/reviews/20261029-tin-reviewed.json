@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source-and-five-stage visual review",
+  "reviewedAt": "2026-10-29",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "6052dcd8d4f8d6330cb0e7cf9b08117645b9d609",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "notes": "Exact 600x720 image SHA approved after actual visual inspection; original am730 video CC BY 3.0 license reviewed by Wikimedia Commons on 2019-09-15. The prior crop with clipped mouth/eye was rejected. Not a claim of live deployment.",
+  "decisions": [
+    {
+      "personId": "t1500_0334",
+      "name": "田蕊妮",
+      "candidateId": "manualrecrop-a53825f84cdf412a6343",
+      "gameSha256": "a53825f84cdf412a6343cc2bf723d339c2be790ce9d108f779947b2dbfb553ec",
+      "originalSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+      "decision": "approved",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q6437706",
+      "originalVideo": "https://www.youtube.com/watch?v=Z2lsWhUCn-Y",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reason": "Actual 1490x2116 source and v2 600x720 image visually inspected: sharp, single unobstructed face; eyes, full nose, full lips, chin, and full face are clear in five successive previews. No watermark or second face. Commons file's structured depicts identifies Kristal Tin; Wikidata Q6437706 P18 points to this exact filename; Commons states am730 YouTube interview CC BY 3.0 and reviewer Techyan confirmed the license on 2019-09-15. Cropped source pixels only; attribution and modification notice required."
+    },
+    {
+      "personId": "t1500_0334",
+      "name": "田蕊妮",
+      "candidateId": "manualrecrop-fdcdfac335f177c7cc37",
+      "gameSha256": "fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828",
+      "decision": "rejected",
+      "reason": "Superseded by v2. First eye/nose/mouth stages cut lower eye, nose and lower lip. Keep immutable audit but do not publish this earlier crop."
+    }
+  ]
+}

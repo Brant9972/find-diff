@@ -52,7 +52,9 @@ jobs:
                               '--limit', '0', '--render-only', '--live-ref', 'origin/main'],
                              check=True)
           elif request.get('mode') == 'manual_recrop':
-              spec = Path('singer/expansion-1500/pipeline/manual-crop-request-20261029.json')
+              spec = Path(request.get('manualCropRequestPath', 'singer/expansion-1500/pipeline/manual-crop-request-20261029.json'))
+              if not str(spec).startswith('singer/expansion-1500/pipeline/manual-crop-request-') or spec.suffix != '.json' or '..' in spec.parts:
+                  raise ValueError('Manual crop spec must stay within the approved draft pipeline')
               manual = json.loads(spec.read_text())
               subprocess.run(['git', 'fetch', '--no-tags', '--depth=1',
                               'origin', manual['sourceCommit']], check=True)

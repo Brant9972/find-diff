@@ -11,7 +11,7 @@ import subprocess
 import time
 import uuid
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urlsplit
 
 from .sources import SourceError, identity, norm, now, rights, source_key
 from .rejection_pixels import matches_rejected
@@ -289,7 +289,35 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         checkpoint()
                     continue
                 try:
-                    blob = http.get(item['url'])
+                    # Commons thumbnail CDN and original file CDN can have independent
+                    # access/rate limits. A failed thumbnail must not discard an
+                    # otherwise properly licensed source without trying its
+                    # Wikimedia original URL. Never use arbitrary external mirrors.
+                    try:
+                        blob = http.get(item['url'])
+                    except SourceError as thumbnail_error:
+                        original = item.get('originalUrl', '')
+                        original_host = urlsplit(original).hostname
+                        eligible_fallback = (
+                            item.get('provider') in {'commons', 'wikimedia'}
+                            and original and original != item['url']
+                            and original_host in {'upload.wikimedia.org', 'thumb.wikimedia.org'}
+                            and thumbnail_error.code in {'http_403', 'http_429', 'proxy_access_denied', 'network_error'}
+                        )
+                        if not eligible_fallback:
+                            raise
+                        try:
+                            blob = http.get(original)
+                        except SourceError as original_error:
+                            errors.append({'provider': provider.name, 'source': item['source'],
+                                           'code': 'commons_original_fallback_failed',
+                                           'thumbnailError': thumbnail_error.code,
+                                           'originalError': original_error.code})
+                            raise
+                        candidate['downloadVariant'] = 'wikimedia_original_fallback'
+                        candidate['warnings'].append(
+                            'Thumbnail download failed (' + thumbnail_error.code
+                            + '); retrieved original from Wikimedia CDN for human review')
                     if matches_rejected(blob, rejected_pixels or []):
                         raise SourceError('rejected_photo_pixels', 'Pixels match a previously rejected source photograph')
                     digest = hashlib.sha256(blob).hexdigest()

@@ -5435,10 +5435,120 @@
       "candidateId": "c1500-0523",
       "name": "楊銘威",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:55.450865+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2023_Christmasland_in_New_Taipei_City%281%29.jpg/1920px-2023_Christmasland_in_New_Taipei_City%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/2023_Christmasland_in_New_Taipei_City%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(1).jpg",
+          "filename": "2023 Christmasland in New Taipei City(1).jpg",
+          "artist": "新北市政府觀光旅遊局",
+          "credit": "https://www.ntpc.gov.tw/ch/home.jsp?id=28&dataserno=202312100005",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023新北歡樂耶誕城「巨星耶誕演唱會－一起閃耀繽紛之夜」主持人Sandy吳姍儒與林莎及楊銘威",
+          "identityEvidence": {
+            "query": "楊銘威",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "楊銘威"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "我的寶貝四千金"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:54.192510+00:00",
+          "width": 4886,
+          "height": 3260,
+          "id": "ed07bc237a73872031bb",
+          "personId": "t1500_0523",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/2023_Christmasland_in_New_Taipei_City%282%29.jpg/1920px-2023_Christmasland_in_New_Taipei_City%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2023_Christmasland_in_New_Taipei_City%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(2).jpg",
+          "filename": "2023 Christmasland in New Taipei City(2).jpg",
+          "artist": "新北市政府觀光旅遊局",
+          "credit": "https://www.ntpc.gov.tw/ch/home.jsp?id=28&dataserno=202312100005",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023新北歡樂耶誕城「巨星耶誕演唱會－一起閃耀繽紛之夜」演唱會次日由Sandy吳姍儒與林莎及楊銘威搭檔主持。",
+          "identityEvidence": {
+            "query": "楊銘威",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "楊銘威"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "我的寶貝四千金"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:54.194363+00:00",
+          "width": 7795,
+          "height": 5128,
+          "id": "3ad8907bdb5cbeb922d1",
+          "personId": "t1500_0523",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:53.738245+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:55.450834+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:55.450852+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(1).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(2).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0523",
         "name": "楊銘威",
@@ -5456,10 +5566,30 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:53.658415+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(1).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(2).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:39:55.450878+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:55.452614+00:00"
     },
     "t1500_0121": {
       "personId": "t1500_0121",
@@ -19101,10 +19231,72 @@
       "candidateId": "c1500-0537",
       "name": "李鴻其",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:40:03.102715+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
+          "filename": "第52屆金馬「最佳新演員獎」得主李鴻其.jpg",
+          "artist": "張新偉",
+          "credit": "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=622026",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​第52屆金馬「最佳新演員獎」得主李鴻其 / 創作者：張新偉 / 數位物件授權：PDM / 建檔單位：中央通訊社 @ 國家文化記憶庫 https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=622026",
+          "identityEvidence": {
+            "query": "李鴻其",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "李鴻其"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "醉・生夢死"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:40:01.779733+00:00",
+          "width": 237,
+          "height": 341,
+          "id": "a227e19d89e8928418f9",
+          "personId": "t1500_0537",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:40:01.315819+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:40:03.102685+00:00"
+        },
+        {
+          "time": "2026-10-29T23:40:03.102703+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0537",
         "name": "李鴻其",
@@ -19122,10 +19314,24 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:40:01.242162+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:40:03.102728+00:00",
+      "workerFinishedAt": "2026-10-29T23:40:03.104567+00:00"
     },
     "t1500_0225": {
       "personId": "t1500_0225",
@@ -25899,10 +26105,22 @@
       "candidateId": "c1500-0518",
       "name": "黃騰浩",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:51.239800+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:49.642819+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:51.239772+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:51.239789+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0518",
         "name": "黃騰浩",
@@ -25920,10 +26138,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:49.565701+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:39:51.239812+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:51.241507+00:00"
     },
     "t1500_0213": {
       "personId": "t1500_0213",
@@ -26569,10 +26794,22 @@
       "candidateId": "c1500-0512",
       "name": "江宜蓉",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:47.243725+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:45.597234+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:47.243697+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:47.243714+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0512",
         "name": "江宜蓉",
@@ -26590,10 +26827,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:45.521304+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:39:47.243737+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:47.245379+00:00"
     },
     "t1500_0230": {
       "personId": "t1500_0230",
@@ -42847,10 +43091,300 @@
       "candidateId": "c1500-0504",
       "name": "錦榮",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:45.411534+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/HK_LoKamWing_2011.JPG/1920px-HK_LoKamWing_2011.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/HK_LoKamWing_2011.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_LoKamWing_2011.JPG",
+          "filename": "HK LoKamWing 2011.JPG",
+          "artist": "Chong Fat",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "​羅錦榮",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.084385+00:00",
+          "width": 2780,
+          "height": 2052,
+          "id": "dd610ad862bcd6b43e42",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Female_with_dog_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Female_with_dog_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Female_with_dog_20210223.png",
+          "filename": "Female with dog 20210223.png",
+          "artist": "立場新聞",
+          "credit": "https://www.facebook.com/standnewshk/videos/5095196320553168",
+          "license": "Copyrighted free use",
+          "licenseUrl": "",
+          "caption": "【新蒲崗錦榮街現場】2021.2.23 相隔 14 日政府又突襲　圍封錦榮街兩",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.089700+00:00",
+          "width": 1515,
+          "height": 859,
+          "id": "ab134a66b32b95a1e13c",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png",
+          "filename": "Sun Po Kwong Kam Wing Street lockdown 20210223.png",
+          "artist": "立場新聞",
+          "credit": "https://www.facebook.com/standnewshk/videos/5095196320553168",
+          "license": "Copyrighted free use",
+          "licenseUrl": "",
+          "caption": "【新蒲崗錦榮街現場】2021.2.23 相隔 14 日政府又突襲　圍封錦榮街兩",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.090802+00:00",
+          "width": 1527,
+          "height": 859,
+          "id": "e1466367de29edc7a422",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png",
+          "filename": "Sun Po Kwong Kam Wing Street police lockdown 20210223.png",
+          "artist": "立場新聞",
+          "credit": "https://www.facebook.com/standnewshk/videos/5095196320553168",
+          "license": "Copyrighted free use",
+          "licenseUrl": "",
+          "caption": "【新蒲崗錦榮街現場】2021.2.23 相隔 14 日政府又突襲　圍封錦榮街兩",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.092044+00:00",
+          "width": 1529,
+          "height": 859,
+          "id": "ebd5868f5dd0396eb1b6",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/24_Kam_Wing_Street%2C_San_Po_Kong_%282023%29.jpg/1920px-24_Kam_Wing_Street%2C_San_Po_Kong_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/24_Kam_Wing_Street%2C_San_Po_Kong_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:24_Kam_Wing_Street,_San_Po_Kong_(2023).jpg",
+          "filename": "24 Kam Wing Street, San Po Kong (2023).jpg",
+          "artist": "Wright",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "24 Kam Wing Street, San Po Kong, Kowloon",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.093163+00:00",
+          "width": 2304,
+          "height": 1536,
+          "id": "0c96a1d0705b14368ad5",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg",
+          "filename": "國慶大會美術組工作人員合照留影.jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "https://www.macaumemory.mo/entries_55e917cd29684a8baf43b6ad8ce27137",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​前排左起：龔維湘、鄭一平、張凱熾、黃劻華、陸曦、林餘昌、麥錦榮、陸波、李正剛、姚豐、呂培\n中排左起：潘錦玲、潘錦碧、吳樹倫、陸昌、盧錦、梁惠民、何其美、黎漢忠\n\n後排左起：朱洪、黃耀基、李九、張耀生、陳新、錢龍、黃鳳文、黎鷹、廖文暢、林偉民",
+          "identityEvidence": {
+            "query": "錦榮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "電影與綜藝"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:44.094355+00:00",
+          "width": 994,
+          "height": 624,
+          "id": "bc6fd0a5d1b9d09e6bca",
+          "personId": "t1500_0504",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:43.460499+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:45.411504+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:45.411520+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:HK_LoKamWing_2011.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Female_with_dog_20210223.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:24_Kam_Wing_Street,_San_Po_Kong_(2023).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0504",
         "name": "錦榮",
@@ -42868,10 +43402,54 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:43.383747+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_LoKamWing_2011.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Female_with_dog_20210223.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:24_Kam_Wing_Street,_San_Po_Kong_(2023).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:39:45.411546+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:45.413034+00:00"
     },
     "t1500_0444": {
       "personId": "t1500_0444",
@@ -67663,10 +68241,116 @@
       "candidateId": "c1500-0513",
       "name": "陳妤",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:49.457703+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chen_Yu_2023.jpg/1920px-Chen_Yu_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Chen_Yu_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu_2023.jpg",
+          "filename": "Chen Yu 2023.jpg",
+          "artist": "臺北市政府",
+          "credit": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=CC93475C7574626F",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023無限影展代言人陳妤，於影展首映會影片《阿波羅男孩》展現動人演技。",
+          "identityEvidence": {
+            "query": "陳妤",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "我們與惡的距離"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:47.845030+00:00",
+          "width": 4160,
+          "height": 6240,
+          "id": "20cfb310e90c556b09d4",
+          "personId": "t1500_0513",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chen_Yu--2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chen_Yu--2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu--2023.jpg",
+          "filename": "Chen Yu--2023.jpg",
+          "artist": "臺北市政府",
+          "credit": "Chen Yu 2023.jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023無限影展代言人陳妤",
+          "identityEvidence": {
+            "query": "陳妤",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "我們與惡的距離"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:39:47.846465+00:00",
+          "width": 1124,
+          "height": 1204,
+          "id": "46b5ebfe872069f31580",
+          "personId": "t1500_0513",
+          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:47.434946+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:49.457671+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:49.457690+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu_2023.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu--2023.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0513",
         "name": "陳妤",
@@ -67684,10 +68368,30 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:47.351915+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu_2023.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu--2023.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:39:49.457714+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:49.459455+00:00"
     },
     "t1500_0205": {
       "personId": "t1500_0205",
@@ -68276,10 +68980,22 @@
       "candidateId": "c1500-0533",
       "name": "李至正",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:40:01.056418+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:59.404487+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:40:01.056391+00:00"
+        },
+        {
+          "time": "2026-10-29T23:40:01.056408+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0533",
         "name": "李至正",
@@ -68297,10 +69013,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:59.329514+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:40:01.056429+00:00",
+      "workerFinishedAt": "2026-10-29T23:40:01.058318+00:00"
     },
     "t1500_0117": {
       "personId": "t1500_0117",
@@ -69456,10 +70179,22 @@
       "candidateId": "c1500-0524",
       "name": "是元介",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:57.376352+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:55.635265+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:57.376263+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:57.376333+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0524",
         "name": "是元介",
@@ -69477,10 +70212,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:55.558340+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:39:57.376369+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:57.378156+00:00"
     },
     "t1500_0221": {
       "personId": "t1500_0221",
@@ -75910,7 +76652,7 @@
       "personId": "t1500_0557",
       "candidateId": "c1500-0557",
       "name": "陶大宇",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -76790,10 +77532,22 @@
       "candidateId": "c1500-0521",
       "name": "王以綸",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:53.548664+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:51.425293+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:53.548638+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:53.548654+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0521",
         "name": "王以綸",
@@ -76811,10 +77565,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:51.348676+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:39:53.548675+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:53.550438+00:00"
     },
     "t1500_0170": {
       "personId": "t1500_0170",
@@ -78975,10 +79736,22 @@
       "candidateId": "c1500-0525",
       "name": "鍾承翰",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:39:59.219920+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:39:57.561376+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:39:59.219891+00:00"
+        },
+        {
+          "time": "2026-10-29T23:39:59.219909+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0525",
         "name": "鍾承翰",
@@ -78996,10 +79769,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:39:57.484971+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:39:59.219932+00:00",
+      "workerFinishedAt": "2026-10-29T23:39:59.221749+00:00"
     },
     "t1500_0531": {
       "personId": "t1500_0531",

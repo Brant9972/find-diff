@@ -19,7 +19,8 @@
     "不得以照片載入正常或既有自動欄位當作人工通過；不得修改 main、不得部署。",
     "完成後提交新候選與審核索引至工作分支，回報 commit SHA 供下一輪審核。",
     "2026-10-29: block false-positive English alias collision: Julie A. Su is not singer 蘇芮; former president 李登輝 is not singer 李炳輝; Minneapolis candidate Natalie Johnson Lee is not entertainer 李思捷. Check the depicted subject in the adjacent caption before considering visual acceptance.",
-    "2026-10-29 second review: source caption identifies USC Jason King, NOT Taiwanese 喜翔; three legacy low-quality/obstructed portraits rejected; 盛竹如 eye-only reveal fails because eyes nearly closed."
+    "2026-10-29 second review: source caption identifies USC Jason King, NOT Taiwanese 喜翔; three legacy low-quality/obstructed portraits rejected; 盛竹如 eye-only reveal fails because eyes nearly closed.",
+    "2026-10-29 third review: reject USC Jason King and Chen Muhua; release-plan explicitly blocks English homonym searches, do not treat CC license as identity evidence."
   ],
   "decisions": [
     {
@@ -253,6 +254,24 @@
       "decision": "reject",
       "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match.",
       "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0202",
+      "candidateId": "804eb13ece4bb3c7808a",
+      "gameSha256": "c8f0edc9da4700da0fd33809e1f819d7d17cb2e082877126438b713ac11cd782",
+      "name": "喜翔",
+      "decision": "reject",
+      "reason": "2026-10-29 source caption confirms USC Thornton Dean Jason King at 2025 Pop Conference, not Taiwanese actor 喜翔. Second distinct same-name wrong-person portrait; block English homonym photo queries, require Chinese caption and exact person.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0212",
+      "candidateId": "f0d9b01aaebbe985d7ea",
+      "gameSha256": "04b4d778ddb8717fc6ee9a68b33b9d0fde04cea6af7d2053f5ae55324aa7dfa7",
+      "name": "陳慕",
+      "decision": "reject",
+      "reason": "2026-10-29 source file Delegate_card_of_Chen_Muhua_for_the_1985_World_Conference_on_Women depicts Chinese politician Chen Muhua 陳慕華, not Taiwanese actor 陳慕. Source description 1985 Nairobi does not identify the actor; reject name collision.",
+      "eligibleForLive": false
     }
   ],
   "newBatchReview": {
@@ -310,6 +329,24 @@
           "personId": "t1500_0202",
           "name": "喜翔",
           "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match."
+        }
+      ]
+    },
+    {
+      "runId": "20261029T122444Z-c1893e6a",
+      "rejected": 2,
+      "approved": 0,
+      "method": "Original Commons captions checked against intended actor identities",
+      "details": [
+        {
+          "personId": "t1500_0202",
+          "name": "喜翔",
+          "reason": "2026-10-29 source caption confirms USC Thornton Dean Jason King at 2025 Pop Conference, not Taiwanese actor 喜翔. Second distinct same-name wrong-person portrait; block English homonym photo queries, require Chinese caption and exact person."
+        },
+        {
+          "personId": "t1500_0212",
+          "name": "陳慕",
+          "reason": "2026-10-29 source file Delegate_card_of_Chen_Muhua_for_the_1985_World_Conference_on_Women depicts Chinese politician Chen Muhua 陳慕華, not Taiwanese actor 陳慕. Source description 1985 Nairobi does not identify the actor; reject name collision."
         }
       ]
     }

@@ -48,8 +48,34 @@ def clean(value):
 
 
 def identity(person, text):
-    aliases = [person['name'], *person.get('aliases', []), *person.get('acceptedAnswers', [])]
-    return [x for x in aliases if len(norm(x)) >= 2 and norm(x) in norm(text)]
+    """Avoid partial matches such as 家家美食 or 黃玠瑋 for short stage names."""
+    hay = str(text or '')
+    hay = converter().convert(hay) if converter() else hay
+    hay = unicodedata.normalize('NFKC', hay).casefold()
+    prefixes = ('歌手', '歌星', '艺人', '演员', '主持人', '音乐人', '台湾', '台语', '专访')
+    suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场')
+    found = []
+    for alias in dict.fromkeys([person['name'], *person.get('aliases', []), *person.get('acceptedAnswers', [])]):
+        key = norm(alias)
+        if len(key) < 2:
+            continue
+        if re.fullmatch(r'[\u3400-\u9fff]{2}', key):
+            for match in re.finditer(re.escape(key), hay):
+                left, right = hay[:match.start()], hay[match.end():]
+                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
+                    continue
+                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
+                    continue
+                found.append(alias)
+                break
+        elif re.fullmatch(r'[a-z0-9]+', key):
+            words = re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKC', str(alias)).casefold())
+            pattern = r'(?<![a-z0-9])' + r'[\W_]*'.join(map(re.escape, words)) + r'(?![a-z0-9])'
+            if words and re.search(pattern, hay):
+                found.append(alias)
+        elif key in norm(text):
+            found.append(alias)
+    return found
 
 
 def identity_key(person):

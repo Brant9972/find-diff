@@ -102,7 +102,8 @@ jobs:
           # pipeline branch. Preserve the collected pixels on their original
           # source commit; never overwrite newer review decisions or state.
           saved=$(find /tmp/media-review -name media-source-commit.txt -type f)
-          test "$(printf '%s\\n' "$saved" | wc -l)" -eq 1
+          test -n "$saved"
+          test "$(find /tmp/media-review -name media-source-commit.txt -type f | wc -l)" -eq 1
           source_sha=$(cat "$saved")
           test "$source_sha" != ""
           git fetch --no-tags --depth=1 origin "$source_sha"

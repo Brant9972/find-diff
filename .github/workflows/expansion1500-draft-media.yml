@@ -38,10 +38,26 @@ jobs:
       - run: git rev-parse HEAD > /tmp/media-source-commit.txt
       - name: Collect a single 40-person batch, then build review assets once
         env:
-          REQUEST_LIMIT: ${{ inputs.limit || '40' }}
+          REQUEST_LIMIT: ${{ inputs.limit || '' }}
         run: |
           set -euo pipefail
-          python singer/expansion-1500/prepare_media.py --limit "$REQUEST_LIMIT" --workers 1 --max-minutes 25 --person-seconds 90 --live-ref origin/main
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          request = json.loads(Path('singer/expansion-1500/pipeline/batch-request.json').read_text())
+          limit = int(os.environ.get('REQUEST_LIMIT') or request.get('targetPeople', 40))
+          if not 1 <= limit <= 50:
+              raise ValueError('Diagnostic batch limit must be 1..50')
+          args = ['python', 'singer/expansion-1500/prepare_media.py', '--limit', str(limit),
+                  '--workers', '1', '--max-minutes', '25', '--person-seconds', '90',
+                  '--live-ref', 'origin/main']
+          # Explicit planned IDs are authoritative; do not silently run another
+          # 40 random people when a 10-person diagnostic was requested.
+          for pid in request.get('plannedPersonIds', [])[:limit]:
+              args += ['--person-id', pid]
+          print('Collecting', limit, 'people; explicit IDs:', request.get('plannedPersonIds', [])[:limit], flush=True)
+          subprocess.run(args, check=True)
+          PY
       - run: python singer/expansion-1500/validate_pipeline.py
       - name: Assert only draft outputs changed
         if: always()

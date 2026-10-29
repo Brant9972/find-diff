@@ -17,7 +17,8 @@
     "reject 重新搜尋；pending 補身分、來源圖說、作者、授權 URL、解析度及五階段揭露預覽，仍不可上線。",
     "改善 403、network_error 的重試、退避及來源替代策略；勿把網路失敗當作無照片。",
     "不得以照片載入正常或既有自動欄位當作人工通過；不得修改 main、不得部署。",
-    "完成後提交新候選與審核索引至工作分支，回報 commit SHA 供下一輪審核。"
+    "完成後提交新候選與審核索引至工作分支，回報 commit SHA 供下一輪審核。",
+    "2026-10-29: block false-positive English alias collision: Julie A. Su is not singer 蘇芮; former president 李登輝 is not singer 李炳輝; Minneapolis candidate Natalie Johnson Lee is not entertainer 李思捷. Check the depicted subject in the adjacent caption before considering visual acceptance."
   ],
   "decisions": [
     {
@@ -206,6 +207,57 @@
       "decision": "pending",
       "reason": "Codex 新裁切，尚未完成像素目視、五官揭露及來源頁人物圖說獨立核對",
       "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0141",
+      "candidateId": "23d02fedf4ee983033ca",
+      "gameSha256": "15735fdef4a5ba9844a6b73ca487122985c78604e7873f832a4decf00b0363f9",
+      "name": "蘇芮",
+      "decision": "reject",
+      "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Julie_Su_Portrait.jpg identifies U.S. Deputy Secretary of Labor Julie A. Su, not Taiwanese singer 蘇芮. Reject English alias collision; do not reuse image, search singer with Chinese name and confirmed adjacent caption.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0154",
+      "candidateId": "41a73831bde794f1179d",
+      "gameSha256": "0c0d2bfbe7d9ce574aafdc7f0335338b935e25bb586587ecf387d7550d51811f",
+      "name": "李炳輝",
+      "decision": "reject",
+      "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0335",
+      "candidateId": "ea11616f17192dd62c11",
+      "gameSha256": "df147dbed88ce7b25d0f22d09674ee82fa2e6797cdb333a60ac9f320b01cfc1b",
+      "name": "李思捷",
+      "decision": "reject",
+      "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject.",
+      "eligibleForLive": false
     }
-  ]
+  ],
+  "newBatchReview": {
+    "runId": "20261029T092519Z-5ad70788",
+    "assetCommit": "6269133bd6e27338f565274555b174b627dfa006",
+    "method": "Original Commons file captions and subject identities checked; three unambiguous wrong-person photos rejected before pixel approval",
+    "rejectedWrongPerson": 3,
+    "remainingCandidates": "All others remain pending until image pixels and five reveal stages are visually inspected",
+    "sources": [
+      {
+        "name": "蘇芮",
+        "personId": "t1500_0141",
+        "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Julie_Su_Portrait.jpg identifies U.S. Deputy Secretary of Labor Julie A. Su, not Taiwanese singer 蘇芮. Reject English alias collision; do not reuse image, search singer with Chinese name and confirmed adjacent caption."
+      },
+      {
+        "name": "李炳輝",
+        "personId": "t1500_0154",
+        "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption."
+      },
+      {
+        "name": "李思捷",
+        "personId": "t1500_0335",
+        "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject."
+      }
+    ]
+  }
 }

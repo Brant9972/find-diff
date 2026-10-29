@@ -1736,75 +1736,10 @@
       "personId": "t1500_0192",
       "candidateId": "c1500-0192",
       "name": "郭碧婷",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:20:11.870354+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:16:32.492718+00:00",
       "candidates": [
-        {
-          "provider": "commons",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
-          "filename": "Bea Hayden Kuo at the 100th episode of The Million Primary School 20100822.jpg",
-          "downloadVariant": "wikimedia_thumbnail_1400",
-          "artist": "The_100th_Episode_of_The_Million_Primary_School_Opening.JPG: 竹筍弟弟 (talk)\nderivative work: Demecoh (talk)",
-          "credit": "The_100th_Episode_of_The_Million_Primary_School_Opening.JPG",
-          "license": "Copyrighted free use",
-          "licenseUrl": "",
-          "caption": "Bea Hayden Kuo at the 100th episode of the game show The Million Primary School.",
-          "identityEvidence": {
-            "wikidataId": "Q8962182",
-            "mappingSource": "https://www.wikidata.org/wiki/Q8962182",
-            "exactChineseAliases": [
-              "郭碧婷",
-              "郭碧婷",
-              "郭碧婷",
-              "郭碧婷",
-              "郭碧婷"
-            ],
-            "verifiedSearchAliases": [
-              "郭碧婷",
-              "Kuo Bea-ting",
-              "Bea Hayden",
-              "Bea Kuo",
-              "Kuo Hsin-yen"
-            ],
-            "entityTypeEvidence": "P31=Q5",
-            "retrievedAt": "2026-10-29T12:20:10.225887+00:00",
-            "visualIdentityVerified": false,
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "article": "https://zh.wikipedia.org/wiki/%E9%83%AD%E7%A2%A7%E5%A9%B7",
-            "articleTitle": "郭碧婷",
-            "articleLookup": "exact title with redirects; not a search result",
-            "query": "Kuo Bea-ting",
-            "matchedAliases": [
-              "Bea Hayden"
-            ],
-            "discoveryWarnings": [],
-            "claim": "P18",
-            "captionAliasMatches": []
-          },
-          "recognitionEvidence": {
-            "representativeWorks": [
-              "小時代"
-            ],
-            "requestedReplacement": "",
-            "note": "Familiar appearance has not been visually reviewed"
-          },
-          "searchTime": "2026-10-29T12:20:10.374495+00:00",
-          "width": 237,
-          "height": 210,
-          "id": "cbd04d914aa59a87b56e",
-          "personId": "t1500_0192",
-          "rightsStatus": "needs_review",
-          "eligibleForLive": false,
-          "humanReview": null,
-          "status": "metadata_only",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "Licence insufficient: image not downloaded"
-          ]
-        },
         {
           "provider": "commons",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/The_100th_Episode_of_The_Million_Primary_School_Opening.JPG/1920px-The_100th_Episode_of_The_Million_Primary_School_Opening.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1866,6 +1801,74 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
+          "filename": "Bea Hayden Kuo at the 100th episode of The Million Primary School 20100822.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "The_100th_Episode_of_The_Million_Primary_School_Opening.JPG: 竹筍弟弟 (talk)\nderivative work: Demecoh (talk)",
+          "credit": "The_100th_Episode_of_The_Million_Primary_School_Opening.JPG",
+          "license": "Copyrighted free use",
+          "licenseUrl": "",
+          "caption": "Bea Hayden Kuo at the 100th episode of the game show The Million Primary School.",
+          "identityEvidence": {
+            "wikidataId": "Q8962182",
+            "mappingSource": "https://www.wikidata.org/wiki/Q8962182",
+            "exactChineseAliases": [
+              "郭碧婷",
+              "郭碧婷",
+              "郭碧婷",
+              "郭碧婷",
+              "郭碧婷"
+            ],
+            "verifiedSearchAliases": [
+              "郭碧婷",
+              "Kuo Bea-ting",
+              "Bea Hayden",
+              "Bea Kuo",
+              "Kuo Hsin-yen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:11.891853+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%83%AD%E7%A2%A7%E5%A9%B7",
+            "articleTitle": "郭碧婷",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kuo Bea-ting",
+            "matchedAliases": [
+              "Bea Hayden"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "Bea Hayden"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "小時代"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T18:16:12.075994+00:00",
+          "width": 237,
+          "height": 210,
+          "id": "cbd04d914aa59a87b56e",
+          "personId": "t1500_0192",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -1920,6 +1923,30 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "time": "2026-10-29T18:16:11.465654+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:28.037519+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:28.037594+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:32.492688+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:32.492706+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -1939,40 +1966,24 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:20:09.834200+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:11.393341+00:00",
       "lastErrors": [
         {
           "provider": "entity",
           "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:The_100th_Episode_of_The_Million_Primary_School_Opening.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_error",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
         }
       ],
-      "updatedAt": "2026-10-29T12:20:11.870364+00:00",
-      "workerFinishedAt": "2026-10-29T12:20:11.871819+00:00"
+      "updatedAt": "2026-10-29T18:16:32.492728+00:00",
+      "workerFinishedAt": "2026-10-29T18:16:32.494287+00:00"
     },
     "t1500_0441": {
       "personId": "t1500_0441",
@@ -11091,8 +11102,8 @@
       "candidateId": "c1500-0096",
       "name": "馬如龍",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:45:33.476937+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:16:07.895911+00:00",
       "candidates": [],
       "history": [
         {
@@ -11123,6 +11134,29 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T18:16:05.758473+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:06.126383+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:06.126408+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:07.895877+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:07.895896+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -11141,12 +11175,12 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:44:24.296772+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:05.690181+00:00",
       "lastErrors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "provider": "entity",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
         }
       ],
       "lastFailure": {
@@ -11154,7 +11188,11 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:45:33.476949+00:00"
+      "updatedAt": "2026-10-29T18:16:07.895923+00:00",
+      "lastRunId": "20261029T181547Z-7893e576",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-29T18:16:07.897390+00:00"
     },
     "t1500_0347": {
       "personId": "t1500_0347",
@@ -15687,8 +15725,8 @@
       "workerFinishedAt": "2026-10-28T18:54:11.704709+00:00"
     },
     "t1500_0224": {
-      "attempts": 5,
-      "nextRetryAt": "2026-10-30T17:25:32.323972+00:00",
+      "attempts": 6,
+      "nextRetryAt": "2026-11-01T10:16:05.588685+00:00",
       "candidateId": "c1500-0224",
       "chatgptReview": {
         "personId": "t1500_0224",
@@ -15704,11 +15742,11 @@
         "handoffCollection": "decisions"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T092519Z-5ad70788",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0224": {
@@ -15731,11 +15769,6 @@
           "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
         }
       ],
       "history": [
@@ -15964,6 +15997,30 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-29T18:15:49.334369+00:00",
+          "provider": "entity",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T18:16:02.457251+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:02.457283+00:00",
+          "provider": "commons",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T18:16:05.588648+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:05.588668+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "personId": "t1500_0224",
@@ -16163,7 +16220,7 @@
               "Ding Guo-lin"
             ],
             "entityTypeEvidence": "P31=Q5",
-            "retrievedAt": "2026-10-29T09:25:20.874781+00:00",
+            "retrievedAt": "2026-10-29T18:15:49.951214+00:00",
             "visualIdentityVerified": false,
             "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
             "article": "https://zh.wikipedia.org/wiki/%E4%B8%81%E5%9C%8B%E7%90%B3",
@@ -16171,14 +16228,11 @@
             "articleLookup": "exact title with redirects; not a search result",
             "query": "Ding Guo-lin",
             "matchedAliases": [
-              "丁國琳",
-              "丁國琳",
               "丁國琳"
             ],
             "discoveryWarnings": [],
             "claim": "P18",
             "captionAliasMatches": [
-              "丁國琳",
               "丁國琳"
             ]
           },
@@ -16189,11 +16243,12 @@
             "requestedReplacement": "麥克風遮嘴；找八點檔清晰正面照",
             "note": "Familiar appearance has not been visually reviewed"
           },
-          "searchTime": "2026-10-29T09:25:21.063691+00:00",
+          "searchTime": "2026-10-29T18:15:50.195868+00:00",
           "width": 3434,
           "height": 4580,
           "id": "a9201be0c1df2373750e",
           "personId": "t1500_0224",
+          "discoveryRunId": "20261029T181547Z-7893e576",
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
@@ -16204,7 +16259,7 @@
           ]
         }
       ],
-      "updatedAt": "2026-10-29T09:25:32.323979+00:00",
+      "updatedAt": "2026-10-29T18:16:05.588697+00:00",
       "name": "丁國琳",
       "legacyRecord": {
         "questionId": "t1500_0224",
@@ -16263,10 +16318,10 @@
           ]
         }
       },
-      "status": "download_failed",
-      "lastAttemptAt": "2026-10-29T09:25:20.387199+00:00",
+      "status": "no_suitable_source",
+      "lastAttemptAt": "2026-10-29T18:15:49.191337+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T09:25:32.324777+00:00"
+      "workerFinishedAt": "2026-10-29T18:16:05.590111+00:00"
     },
     "t1500_0281": {
       "personId": "t1500_0281",
@@ -19962,8 +20017,8 @@
       "candidateId": "c1500-0204",
       "name": "李立群",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:20:29.872827+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:17:07.493572+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -20201,6 +20256,29 @@
             }
           ],
           "candidatesTried": 3
+        },
+        {
+          "time": "2026-10-29T18:16:48.625381+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:04.370907+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:04.370948+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:07.493496+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:07.493517+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -20224,42 +20302,19 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:20:27.535362+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:48.551002+00:00",
       "lastErrors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:C_N_Yang_%26T_D_Lee_couples.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:TD_Lee-1.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:TD_Lee.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_error",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
           "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
-      "updatedAt": "2026-10-29T12:20:29.872836+00:00",
-      "workerFinishedAt": "2026-10-29T12:20:29.874243+00:00"
+      "updatedAt": "2026-10-29T18:17:07.493584+00:00",
+      "workerFinishedAt": "2026-10-29T18:17:07.495287+00:00"
     },
     "t1500_0479": {
       "personId": "t1500_0479",
@@ -36569,8 +36624,8 @@
       }
     },
     "t1500_0174": {
-      "attempts": 5,
-      "nextRetryAt": "2026-10-30T17:25:32.308302+00:00",
+      "attempts": 6,
+      "nextRetryAt": "2026-11-01T10:16:11.293677+00:00",
       "candidateId": "c1500-0174",
       "chatgptReview": {
         "personId": "t1500_0174",
@@ -36586,11 +36641,11 @@
         "handoffCollection": "decisions"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T092519Z-5ad70788",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0174": {
@@ -36607,18 +36662,7 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [
-        {
-          "provider": "commons",
-          "code": "source_api_error",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ],
+      "lastErrors": [],
       "history": [
         {
           "time": "2026-10-28T17:30:04.972650+00:00",
@@ -36815,6 +36859,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T18:15:49.329143+00:00",
+          "provider": "entity",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T18:16:06.617500+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:06.617590+00:00",
+          "provider": "commons",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T18:16:11.293636+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:11.293662+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "personId": "t1500_0174",
@@ -36956,7 +37017,7 @@
           ]
         }
       ],
-      "updatedAt": "2026-10-29T09:25:32.308313+00:00",
+      "updatedAt": "2026-10-29T18:16:11.293690+00:00",
       "name": "鳳小岳",
       "legacyRecord": {
         "questionId": "t1500_0174",
@@ -37015,10 +37076,10 @@
           ]
         }
       },
-      "status": "download_failed",
-      "lastAttemptAt": "2026-10-29T09:25:20.385869+00:00",
+      "status": "no_suitable_source",
+      "lastAttemptAt": "2026-10-29T18:15:49.190321+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T09:25:32.309437+00:00"
+      "workerFinishedAt": "2026-10-29T18:16:11.295033+00:00"
     },
     "t1500_0160": {
       "personId": "t1500_0160",
@@ -64479,8 +64540,8 @@
       "candidateId": "c1500-0193",
       "name": "曾珮瑜",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:20:23.784709+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:16:48.448487+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -64725,6 +64786,29 @@
             }
           ],
           "candidatesTried": 3
+        },
+        {
+          "time": "2026-10-29T18:16:28.565029+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:44.236077+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:44.236115+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:48.448450+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:48.448471+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -64748,47 +64832,19 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:20:11.351459+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:28.489685+00:00",
       "lastErrors": [
         {
           "provider": "entity",
           "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%81%9A%E5%B7%A5%E7%9A%84%E4%BA%BA-%E9%9B%BB%E5%BD%B1%E7%89%88%E9%96%8B%E9%8F%A1(1).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%81%9A%E5%B7%A5%E7%9A%84%E4%BA%BA-%E9%9B%BB%E5%BD%B1%E7%89%88%E9%96%8B%E9%8F%A1.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E5%81%9A%E5%B7%A5%E7%9A%84%E4%BA%BA_%E9%9B%BB%E5%BD%B1%E7%89%88%E3%80%8B%E9%A6%96%E6%98%A0%E6%9C%83(4).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_error",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
-      "updatedAt": "2026-10-29T12:20:23.784719+00:00",
-      "workerFinishedAt": "2026-10-29T12:20:23.786188+00:00"
+      "updatedAt": "2026-10-29T18:16:48.448500+00:00",
+      "workerFinishedAt": "2026-10-29T18:16:48.450185+00:00"
     },
     "t1500_0334": {
       "personId": "t1500_0334",
@@ -68985,8 +69041,8 @@
       "candidateId": "c1500-0115",
       "name": "謝佳見",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T20:54:24.702143+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:16:28.388397+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -69088,6 +69144,29 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-29T18:16:08.269299+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:24.190345+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:24.190379+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:28.388363+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:28.388383+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -69106,26 +69185,15 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastRunId": "20261028T185334Z-9220641c",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
-      "lastSearchRevision": 3,
-      "lastAttemptAt": "2026-10-28T18:54:14.330506+00:00",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T18:16:08.157972+00:00",
       "lastErrors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Image_from_page_161_of_%22Latter-day_Saint_biographical_encyclopedia_-_a_compilation_of_biographical_sketches_of_prominent_men_and_women_in_the_Church_of_Jesus_Christ_of_Latter-day_Saints%22_(1901).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_error",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
           "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
       "lastFailure": {
@@ -69133,8 +69201,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T18:54:24.702152+00:00",
-      "workerFinishedAt": "2026-10-28T18:54:24.703158+00:00"
+      "updatedAt": "2026-10-29T18:16:28.388410+00:00",
+      "workerFinishedAt": "2026-10-29T18:16:28.390033+00:00"
     },
     "t1500_0187": {
       "personId": "t1500_0187",
@@ -73032,8 +73100,8 @@
       "candidateId": "c1500-0217",
       "name": "賴慧如",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:25:09.353482+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:17:24.838453+00:00",
       "candidates": [],
       "history": [
         {
@@ -73080,6 +73148,34 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T18:17:07.667960+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:23.478681+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:23.478716+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:24.838421+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:24.838440+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -73103,29 +73199,24 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T122444Z-c1893e6a",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:25:08.715794+00:00",
+      "lastAttemptAt": "2026-10-29T18:17:07.594024+00:00",
       "lastErrors": [
         {
           "provider": "entity",
           "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         },
         {
           "provider": "commons",
           "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
         }
       ],
-      "updatedAt": "2026-10-29T12:25:09.353491+00:00",
-      "workerFinishedAt": "2026-10-29T12:25:09.354703+00:00"
+      "updatedAt": "2026-10-29T18:17:24.838466+00:00",
+      "workerFinishedAt": "2026-10-29T18:17:24.840259+00:00"
     },
     "t1500_0240": {
       "personId": "t1500_0240",
@@ -75785,8 +75876,8 @@
       "candidateId": "c1500-0194",
       "name": "朱芷瑩",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:20:23.633121+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:16:53.153180+00:00",
       "candidates": [],
       "history": [
         {
@@ -75828,6 +75919,29 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T18:16:32.665508+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:48.485444+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:48.485462+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:16:53.153147+00:00"
+        },
+        {
+          "time": "2026-10-29T18:16:53.153166+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -75851,24 +75965,19 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:20:11.484049+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:32.591789+00:00",
       "lastErrors": [
         {
           "provider": "entity",
           "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
-      "updatedAt": "2026-10-29T12:20:23.633134+00:00",
-      "workerFinishedAt": "2026-10-29T12:20:23.634687+00:00"
+      "updatedAt": "2026-10-29T18:16:53.153191+00:00",
+      "workerFinishedAt": "2026-10-29T18:16:53.154906+00:00"
     },
     "t1500_0385": {
       "personId": "t1500_0385",
@@ -78408,9 +78517,518 @@
       "candidateId": "c1500-0216",
       "name": "韓瑜",
       "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:25:08.945348+00:00",
-      "candidates": [],
+      "attempts": 2,
+      "nextRetryAt": "2026-10-29T22:17:17.254733+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg/1920px-Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg",
+          "filename": "Chaozhou Hanwengong Ci 2013.10.27 09-18-35.jpg",
+          "artist": "Zhangzhugang",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "潮州韩文公祠\n\n正殿",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.712359+00:00",
+          "width": 3648,
+          "height": 5472,
+          "id": "efd1ef6db81ce251bbc8",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg/1920px-Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg",
+          "filename": "Chaozhou Hanwengong Ci 2013.10.27 09-50-50.jpg",
+          "artist": "Zhangzhugang",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "潮州韩文公祠\n\n屋脊",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.714259+00:00",
+          "width": 5472,
+          "height": 3648,
+          "id": "ab32ad05cc018f3d098a",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg/1920px-Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg",
+          "filename": "Chaozhou Hanwengong Ci 2013.10.27 09-51-26.jpg",
+          "artist": "Zhangzhugang",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "潮州韩文公祠\n\n屋脊",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.718227+00:00",
+          "width": 5472,
+          "height": 3648,
+          "id": "8a5604dffb3ef13fabb8",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg/1920px-Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg",
+          "filename": "Phylogenetic tree and ten representative traits of 348 mei accessions.jpg",
+          "artist": "Figure by Qixiang Zhang et al.  Photographs within the figure by Tangren Cheng",
+          "credit": "Zhang, Qixiang; Zhang, He; Sun, Lidan; Fan, Guangyi; Ye, Meixia; Jiang, Libo; Liu, Xin; Ma, Kaifeng; Shi, Chengcheng; Bao, Fei; Guan, Rui; Han, Yu; Fu, Yuanyuan; Pan, Huitang; Chen, Zhaozhe; Li, Liangwei; Wang, Jia; Lv, Meiqi; Zheng, Tangchun; Yuan, Cunquan; Zhou, Yuzhen; Lee, Simon Ming-Yuen; Yan, Xiaolan; Xu, Xun; Wu, Rongling; Chen, Wenbin; Cheng, Tangren (27 April 2018). \"The genetic architecture of floral traits in the woody plant Prunus mume\". Nature Communications. 9 (1). doi:10.1038/s41467-018-04093-z.",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Description as given in the article: \n\nFig. 1 Phylogenetic tree and ten representative traits of 348 mei accessions. a The inner phylogenetic tree contains 16 subtrees and one outgroup. Different colors represent different subtrees. The clade color corresponds to the color of the outer circle with sample ID. The intermediate circles from the outer circle to the inner circle (A–L) represent population structure, cultivar group, and the traits petal color, stigma color, calyx color, bud color, staminal filament color, wood color, petal number, pistil character, bud aperture, and branching phenotype. The color in each circle represents the phenotype of the trait. b Images of several representative phenotypes of these 10 traits (photographed by T.R.C.)",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.720599+00:00",
+          "width": 3466,
+          "height": 3108,
+          "id": "8e0831d50532a46992be",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_%287477608580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_%287477608580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_(7477608580).jpg",
+          "filename": "鳳台靄隔三千界 (7477608580).jpg",
+          "artist": "Thomas Timlen from Singapore, Singapore",
+          "credit": "P1050321",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Shantou, Guangdong, China: Photos from a family visit in June 2012",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.723136+00:00",
+          "width": 960,
+          "height": 1280,
+          "id": "6ae06b008448c033db87",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Stele_in_Zhaoshan_Temple%2C_14_March_2021I.jpg/1920px-Stele_in_Zhaoshan_Temple%2C_14_March_2021I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Stele_in_Zhaoshan_Temple%2C_14_March_2021I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Stele_in_Zhaoshan_Temple,_14_March_2021I.jpg",
+          "filename": "Stele in Zhaoshan Temple, 14 March 2021I.jpg",
+          "artist": "曹孟其",
+          "credit": "Photo taken on March 14, 2021, on Mount Zhao, in Xiangtan, Hunan, China.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "A 1940 stele in Zhaoshan Temple. The meaning of the stele inscription is: Inscription on Zhaoshan Temple Stele, wrote by Cao Mengqi of Changsha. Zhaoshan lies to the north of Xiangtan County seat. Local chronicles describe it as \"rising abruptly from the waves, its emerald hue resembling the calyx of a flower.\" The \"Yongchu Notes on Mountains and Rivers\" records that King Zhao of Zhou perished here during his southern campaign; Han Yu, however, linked the name to the legend of King Zhao of Chu whose boat glued with wax sank in the Han River. Hence, the river was named Zhaotan Beach, the pool Zhaotan, and the mountain Zhaoshan. These names have ancient origins and require no further verification. The \"Shui Jing Zhu\" (\"Commentary on the Water Classic\") states: \"The Xiang River flows north past the western side of Zhaoshan. Beneath the mountain lies a swirling deep pool, unfathomable in depth, thus called Zhaotan.\" Locals still refer to it as \"bottomless\" to this day, and the river’s course has never changed. Since the Sui and Tang dynasties, records of Zhaoshan have multiplied, and the odes of travelers have spread its fame far and wide. Today, only the tomb of Liu Qi, Grand Commandant of the Song Dynasty, remains at the foot of Zhaoshan. At the summit, eight hundred steps above ground, stands a temple known as Zhaoyang Hall in the Song Dynasty. Now its name has changed, and the buildings lie in ruins. In the 21st year of the Republic of China (1932), committee members overseeing temple property, including Zou Mingyu and Zhou Xiaolu, petitioned first the county government and security corps, then the provincial government, to expel the monks for their misconduct. Local gentry such as Luo Yafu and Song Yingzhong then planned to restore the temple and develop Zhaoshan into a \"suburban park\" as seen in Europe and America. They initially raised 5,000 yuan, but political unrest prevented construction from commencing. Last year, Li Zhongyu, a counselor to the provincial government, and Wang Jihui, the county magistrate, passed through, met Luo Yafu, and climbed the mountain together. Moved by the sight, they resolved to revive the restoration project. Convening the gentry, they gained unanimous approval. Luo Yafu, Wu Zhiqing, and Chai Xiaoquan were elected chief supervisors, with Luo Yafu residing on the mountain to oversee operations; Peng Chengshu managed finances, Luo Yangwu served as supervisor, the two Zous supervised construction, and Zhang Dexing managed the guest house. An additional 10,000 yuan was raised, largely through Luo Yafu’s efforts. After months of construction, the project was completed. Only two or three old structures were preserved, while seven or eight new ones were built. Zhaoshan Biejing, Baiguo Pavilion, and Guanyue Shrine were all newly constructed where nothing had stood before. Though we have thus appeased the spirits of Zhaoshan, this falls far short of glorifying its legacy. Zhaoshan’s sheer cliffs pierce the sky, its scenery ever-changing; river waves surge like eagles striking the heavens, boats and carriages shuttle ceaselessly. The mountain’s spirit ought to command all this, yet it pales in comparison to Lushan to the distant north and Hengshan to the near south—a regret for this land and its people. I (Cao Mengqi) cherish Zhaoshan’s landscape and long to gather disciples to teach here, once consulting Luo Yafu on the matter. He said: \"I act somewhat brusquely, refusing to delegate tasks I can accomplish myself.\" Ah! This is the virtue of fortitude. Nourished by sincerity and steadfastness, it shall surely shine brilliantly. Our ancestors carved a path through thorns and brambles to clear these mountains, driven by this very spirit. Mastery of this spirit extends far beyond Zhaoshan—may all gentlemen strive together! Additionally, in the 10th year (1830) of the Daoguang reign of the Qing dynasty (1644–1911), Feng Tianxiang of Xiangtan, outraged by the oppression of local yamen runners and clerks, appealed twice to the provincial governor to eradicate these abuses. He erected a stele at Yijiawan to warn future generations to uphold these reforms forever. Over a century later, the inscriptions had faded beyond recognition, so the stone was moved here to carve the present Zhaoshan Temple Stele with the consent of Feng's descendants. I hold that Feng Tianxiang's actions, much like the expulsion of corrupt monks by Zou Mingyu and others, embody the virtue of fortitude. Appended here, this story serves to illuminate this righteous path.Erected respectfully in the Mid-Summer Month of the 29th Year of the Republic of China, Song Yingzhong. Note:Cao Mengqi wrote and published this regular script calligraphy artwork inscription in China in 1940 and died in 1949. The work has entered the public domain in China. However, in the United States, under the URAA, the work will enter the public domain only in 2036 (1940 + 95 + 1 = 2036).",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [
+              "Han Yu"
+            ],
+            "captionAliasMatches": [
+              "Han Yu"
+            ]
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.730710+00:00",
+          "width": 3968,
+          "height": 2976,
+          "id": "4962cc365024b190f593",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg/1920px-%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg",
+          "filename": "新刊五百家註音辯昌黎先生文集卷第一.jpg",
+          "artist": "松照庵",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "新刊五百家註音辯昌黎先生文集",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.738567+00:00",
+          "width": 3024,
+          "height": 4032,
+          "id": "cc85dbc5e05a3e6d16ad",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg",
+          "filename": "亜細亜大観 05 104 \"神としての韓文公 （昌黎）\".jpg",
+          "artist": "Black Dragon Society",
+          "credit": "亜細亜大観 第5冊",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "神としての韓文公 （昌黎）\n華かなりし唐朝有數の論客とし、又古今の文豪として不朽の名を有する朝愈字は退之先生は、昌黎なるその祠の正殿には、今日も猶威儀端然として鎭座ましますのだ。｜今薄暗い部屋の神壇上に之を仰ぐ。當年佛骨迎引の非を鳴らし、その所信の為には道途八千の潮州に貶せられ、雪の藍關を越ゆるをも辭せざりし彼の風貌が、何となくなつかしまれる。｜（一九二八、撮影）（印畫の複製を禁ず）",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:11.744420+00:00",
+          "width": 1588,
+          "height": 2217,
+          "id": "6c283f7c06e0f31d1be6",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg/1920px-In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg",
+          "filename": "In situ performance and stability tests of large-area flexible polymer solar cells on a stratospheric balloon.jpg",
+          "artist": "Authors of the study: Zihan Xu, Guoning Xu, Qun Luo, Yunfei Han, Yu Tang, Ying Miao, Yongxiang Li, Jian Qin, Jingbo Guo, Wusong Zha, Chao Gong, Kun Lu, Jianqi Zhang, Zhixiang Wei, Rong Cai, Yanchu Yang, Zhaojie Li, Chang-Qi Ma",
+          "credit": "https://academic.oup.com/nsr/article/10/4/nwac285/6912266",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "\"(a) Device structure, (b) the molecular structures of PBDB-T-2F and BTP-4F, (c) photographs and (d) the J−V characteristics of the FOSCs. (e–h) Evolution of the performance during irradiation under 365-nm UV illumination for 60 h.\"",
+          "identityEvidence": {
+            "query": "Han Yu",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9373116",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+            "exactChineseAliases": [
+              "韓瑜"
+            ],
+            "verifiedSearchAliases": [
+              "韓瑜",
+              "Angel Han",
+              "Han Yu"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+            "articleTitle": "韓瑜",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "意難忘"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T18:17:15.320759+00:00",
+          "width": 2008,
+          "height": 898,
+          "id": "dff64490f4308c82db0f",
+          "personId": "t1500_0216",
+          "discoveryRunId": "20261029T181547Z-7893e576",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
       "history": [
         {
           "time": "2026-10-29T12:25:06.164674+00:00",
@@ -78456,6 +79074,281 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T18:16:53.327311+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:08.987711+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:08.987747+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-29T18:17:17.254695+00:00"
+        },
+        {
+          "time": "2026-10-29T18:17:17.254715+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_(7477608580).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Stele_in_Zhaoshan_Temple,_14_March_2021I.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
+                "filename": "20230207 Temple of Han Yu 02.jpg",
+                "artist": "Windmemories",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "Temple of Han Yu in Chaozhou",
+                "identityEvidence": {
+                  "query": "Han Yu",
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "wikidataId": "Q9373116",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+                  "exactChineseAliases": [
+                    "韓瑜"
+                  ],
+                  "verifiedSearchAliases": [
+                    "韓瑜",
+                    "Angel Han",
+                    "Han Yu"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+                  "visualIdentityVerified": false,
+                  "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+                  "articleTitle": "韓瑜",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "matchedAliases": [
+                    "Han Yu"
+                  ],
+                  "captionAliasMatches": [
+                    "Han Yu"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "意難忘"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T18:17:11.746730+00:00",
+                "width": 1800,
+                "height": 1200,
+                "id": "23df2802a3fcccfd9fa4",
+                "personId": "t1500_0216",
+                "discoveryRunId": "20261029T181547Z-7893e576",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
+                "filename": "20230207 Temple of Han Yu 06.jpg",
+                "artist": "Windmemories",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "Temple of Han Yu in Chaozhou",
+                "identityEvidence": {
+                  "query": "Han Yu",
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "wikidataId": "Q9373116",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+                  "exactChineseAliases": [
+                    "韓瑜"
+                  ],
+                  "verifiedSearchAliases": [
+                    "韓瑜",
+                    "Angel Han",
+                    "Han Yu"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+                  "visualIdentityVerified": false,
+                  "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+                  "articleTitle": "韓瑜",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "matchedAliases": [
+                    "Han Yu"
+                  ],
+                  "captionAliasMatches": [
+                    "Han Yu"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "意難忘"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T18:17:12.653654+00:00",
+                "width": 1800,
+                "height": 1200,
+                "id": "98ef7867466cd5f5d06c",
+                "personId": "t1500_0216",
+                "discoveryRunId": "20261029T181547Z-7893e576",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
+                "filename": "20230207 Temple of Han Yu 08.jpg",
+                "artist": "Windmemories",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "Temple of Han Yu in Chaozhou",
+                "identityEvidence": {
+                  "query": "Han Yu",
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "wikidataId": "Q9373116",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+                  "exactChineseAliases": [
+                    "韓瑜"
+                  ],
+                  "verifiedSearchAliases": [
+                    "韓瑜",
+                    "Angel Han",
+                    "Han Yu"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+                  "visualIdentityVerified": false,
+                  "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+                  "articleTitle": "韓瑜",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "matchedAliases": [
+                    "Han Yu"
+                  ],
+                  "captionAliasMatches": [
+                    "Han Yu"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "意難忘"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T18:17:13.849351+00:00",
+                "width": 1800,
+                "height": 1200,
+                "id": "3b0a537fd21bcb346611",
+                "personId": "t1500_0216",
+                "discoveryRunId": "20261029T181547Z-7893e576",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 12
         }
       ],
       "legacyRecord": {
@@ -78479,29 +79372,271 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T122444Z-c1893e6a",
+      "lastRunId": "20261029T181547Z-7893e576",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:25:06.131327+00:00",
+      "lastAttemptAt": "2026-10-29T18:16:53.254909+00:00",
       "lastErrors": [
         {
           "provider": "entity",
           "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         },
         {
           "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         },
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_(7477608580).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Stele_in_Zhaoshan_Temple,_14_March_2021I.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
+            "filename": "20230207 Temple of Han Yu 02.jpg",
+            "artist": "Windmemories",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Temple of Han Yu in Chaozhou",
+            "identityEvidence": {
+              "query": "Han Yu",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "wikidataId": "Q9373116",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "exactChineseAliases": [
+                "韓瑜"
+              ],
+              "verifiedSearchAliases": [
+                "韓瑜",
+                "Angel Han",
+                "Han Yu"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "visualIdentityVerified": false,
+              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+              "articleTitle": "韓瑜",
+              "articleLookup": "exact title with redirects; not a search result",
+              "matchedAliases": [
+                "Han Yu"
+              ],
+              "captionAliasMatches": [
+                "Han Yu"
+              ]
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "意難忘"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T18:17:11.746730+00:00",
+            "width": 1800,
+            "height": 1200,
+            "id": "23df2802a3fcccfd9fa4",
+            "personId": "t1500_0216",
+            "discoveryRunId": "20261029T181547Z-7893e576",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
+            "filename": "20230207 Temple of Han Yu 06.jpg",
+            "artist": "Windmemories",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Temple of Han Yu in Chaozhou",
+            "identityEvidence": {
+              "query": "Han Yu",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "wikidataId": "Q9373116",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "exactChineseAliases": [
+                "韓瑜"
+              ],
+              "verifiedSearchAliases": [
+                "韓瑜",
+                "Angel Han",
+                "Han Yu"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "visualIdentityVerified": false,
+              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+              "articleTitle": "韓瑜",
+              "articleLookup": "exact title with redirects; not a search result",
+              "matchedAliases": [
+                "Han Yu"
+              ],
+              "captionAliasMatches": [
+                "Han Yu"
+              ]
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "意難忘"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T18:17:12.653654+00:00",
+            "width": 1800,
+            "height": 1200,
+            "id": "98ef7867466cd5f5d06c",
+            "personId": "t1500_0216",
+            "discoveryRunId": "20261029T181547Z-7893e576",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
+            "filename": "20230207 Temple of Han Yu 08.jpg",
+            "artist": "Windmemories",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Temple of Han Yu in Chaozhou",
+            "identityEvidence": {
+              "query": "Han Yu",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "wikidataId": "Q9373116",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "exactChineseAliases": [
+                "韓瑜"
+              ],
+              "verifiedSearchAliases": [
+                "韓瑜",
+                "Angel Han",
+                "Han Yu"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "visualIdentityVerified": false,
+              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
+              "articleTitle": "韓瑜",
+              "articleLookup": "exact title with redirects; not a search result",
+              "matchedAliases": [
+                "Han Yu"
+              ],
+              "captionAliasMatches": [
+                "Han Yu"
+              ]
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "意難忘"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T18:17:13.849351+00:00",
+            "width": 1800,
+            "height": 1200,
+            "id": "3b0a537fd21bcb346611",
+            "personId": "t1500_0216",
+            "discoveryRunId": "20261029T181547Z-7893e576",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
-      "updatedAt": "2026-10-29T12:25:08.945359+00:00",
-      "workerFinishedAt": "2026-10-29T12:25:08.946928+00:00"
+      "updatedAt": "2026-10-29T18:17:17.254744+00:00",
+      "workerFinishedAt": "2026-10-29T18:17:17.256482+00:00"
     },
     "t1500_0392": {
       "personId": "t1500_0392",

@@ -33,7 +33,7 @@ const pause=ms=>new Promise(r=>setTimeout(r,ms));
   assert.equal(await page.$('#quizMode option[value="creator"]'),null);
   const broken=await page.evaluate(async people=>(await Promise.all(people.map(q=>new Promise(resolve=>{
    const im=new Image();im.onload=()=>resolve(im.naturalWidth>=180?null:q.id);im.onerror=()=>resolve(q.id);im.src=q.photo;
-  })))).filter(Boolean),mixed.filter(q=>['t1500_0255','t1500_0563'].includes(q.id)));
+  })))).filter(Boolean),mixed.filter(q=>q.id.startsWith('t1500_')));
   assert.deepEqual(broken,[],'New images broken');
   for(const [mode,count] of [['singer',banks[0].length],['actor',banks[1].length],['variety',banks[2].length],['mixed',mixed.length]]){
    await page.select('#quizMode',mode);await page.select('#roundSize','all');await page.click('#startRound');
@@ -44,6 +44,6 @@ const pause=ms=>new Promise(r=>setTimeout(r,ms));
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile horizontal overflow');
   assert.deepEqual(errors,[],'Browser JS errors');
   fs.mkdirSync('qa-output',{recursive:true});await page.screenshot({path:'qa-output/live-mobile.png',fullPage:true});
-  console.log('PASS LIVE',JSON.stringify({uniquePeople:mixed.length,bankCounts:banks.map(b=>b.length),newPhotosChecked:2}));
+  console.log('PASS LIVE',JSON.stringify({uniquePeople:mixed.length,bankCounts:banks.map(b=>b.length),expansionPhotosChecked:mixed.filter(q=>q.id.startsWith('t1500_')).length}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -194,5 +194,39 @@ class DeliveryTest(unittest.TestCase):
         self.assertFalse(result['photos'][0]['metadata']['humanRightsVerifiedByExporter'])
 
 
+    def test_source_only_images_get_real_preview_links_without_approval(self):
+        candidate = self._person('t5', '待裁切人物', 'manual_crop_required')
+        candidate.pop('gamePath')
+        candidate.pop('gameSha256')
+        candidate.pop('reveal')
+        candidate['cropFailure'] = 'Face is too small'
+        self.state['people']['t5']['status'] = 'download_failed'
+        self.state['people']['t3']['status'] = 'published'
+        manifest = build_assets(self.root, self.directory, self.state, 'source-only')
+        self.assertEqual(manifest['photoCount'], 2)
+        self.assertEqual(manifest['manualSourceCount'], 1)
+        self.assertEqual(manifest['manualSourcePeopleCount'], 1)
+        source = manifest['manualSources'][0]
+        self.assertEqual(source['personId'], 't5')
+        self.assertFalse(source['eligibleForLive'])
+        self.assertIsNone(source['gameSha256'])
+        self.assertEqual(source['stageImages'], {})
+        self.assertTrue(source['sourceImage']['path'].endswith('.jpg'))
+        self.assertEqual(source['sourceImage']['sha256'], candidate['originalSha256'])
+        self.assertEqual(len(manifest['manualContactSheets']), 1)
+        sha = self._commit()
+        published = publish_links(self.root, self.directory, manifest, sha, repository='owner/project')
+        image = published['manualSources'][0]['sourceImage']
+        self.assertIn('/' + sha + '/', image['rawUrl'])
+        self.assertIn('source-only-0001', image['githubViewUrl'])
+        markdown = (self.directory / 'review-public/latest.md').read_text()
+        self.assertIn('原圖保留', markdown)
+        self.assertIn('待裁切人物', markdown)
+        self.assertIn('SOURCE_ONLY', markdown)
+        self.assertIn('Face is too small', markdown)
+        self.assertEqual(self.state['people']['t5']['status'], 'download_failed')
+        self.assertFalse((self.directory / 'reviews').exists())
+
+
 if __name__ == '__main__':
     unittest.main()

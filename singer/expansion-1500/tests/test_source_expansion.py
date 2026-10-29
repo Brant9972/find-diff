@@ -106,6 +106,27 @@ class SourceExpansionTest(unittest.TestCase):
             self.assertTrue(row['source'].startswith('https://'))
             self.assertTrue(row['artist'])
 
+    def test_blocked_english_alias_does_not_search_unrelated_historical_name(self):
+        # Actress 韓瑜 shares the romanization Han Yu with a historical poet.
+        # Do not retrieve temples, poems and monuments as her portraits.
+        api = EntityAPI(entities={'Q123': entity(english='Han Yu')})
+        person = {**self.person, 'photoSearchBlockedEnglishAliases': ['Han Yu']}
+        list(EntityPortraits().search(person, api))
+        search_queries = [str(params.get('gsrsearch', params.get('q', '')))
+                          for url, params in api.calls
+                          if 'commons.wikimedia.org' in url or 'openverse.org' in url]
+        self.assertTrue(search_queries)
+        self.assertFalse(any('Han Yu' in query for query in search_queries))
+
+    def test_han_yu_release_plan_has_identity_collision_guard(self):
+        import json
+        plan = json.loads((Path(__file__).resolve().parents[1] /
+                           'release-plan-20261028.json').read_text(encoding='utf-8'))
+        person = next(p for p in plan['selectedNew']
+                      if p['plannedQuestionId'] == 't1500_0216')
+        self.assertEqual(person['name'], '韓瑜')
+        self.assertIn('Han Yu', person['photoSearchBlockedEnglishAliases'])
+
     def test_ambiguous_same_name_humans_do_not_produce_portraits(self):
         self.rejected_identity(EntityAPI({'Q123': entity(), 'Q456': entity('Q456', english='Another Artist')}))
 

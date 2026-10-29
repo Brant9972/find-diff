@@ -1,0 +1,56 @@
+{
+  "runId": "20261029T233453Z-3305584e",
+  "generatedAt": "2026-10-29T23:34:54.385301+00:00",
+  "scannedPeople": 1,
+  "peopleWithNewCandidates": 1,
+  "newCandidatePhotos": 1,
+  "scannedWithoutCandidates": 0,
+  "retryNeeded": 425,
+  "pendingReviewPeople": 2,
+  "licenseConcernCandidates": 252,
+  "statusCounts": {
+    "no_suitable_source": 215,
+    "download_failed": 201,
+    "rejected": 9,
+    "published": 83,
+    "duplicate_existing": 1,
+    "pending_review": 2
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 310,
+    "image_validation_failed": 102,
+    "network_error": 285,
+    "source_api_busy": 70,
+    "license_unclear": 63,
+    "source_api_error": 25,
+    "identity_ambiguous": 12,
+    "excluded_context": 12,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4
+  },
+  "batchFailureReasons": {},
+  "manualCropSources": 17,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 1,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {}
+    }
+  },
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 1,
+    "processedPeople": 1,
+    "workers": 0,
+    "manualRecrop": true,
+    "sourceCommit": "2fb2b1335051895a948fed0016e0acf0c561c4a2"
+  }
+}

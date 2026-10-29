@@ -75910,9 +75910,9 @@
       "personId": "t1500_0557",
       "candidateId": "c1500-0557",
       "name": "陶大宇",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-30T01:32:21.089630+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -76159,6 +76159,158 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+          "filename": "陶大宇.jpg",
+          "artist": "am730",
+          "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《am730》專訪",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陶大宇"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:19.850847+00:00",
+          "width": 1325,
+          "height": 1837,
+          "id": "manualrecrop-d8d7ab0ca05ce28f3e7d",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0557/manualrecrop-d8d7ab0ca05ce28f3e7d/1e6d0e91d3e6/original.bin",
+          "originalSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0557/manualrecrop-d8d7ab0ca05ce28f3e7d/1e6d0e91d3e6/d8d7ab0ca05c.jpg",
+          "parentCandidateId": "c959cd5d155dec83066d",
+          "parentSourceSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+          "gameSha256": "d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.38,
+              0.92,
+              0.52
+            ],
+            "nose": [
+              0.08,
+              0.38,
+              0.92,
+              0.65
+            ],
+            "mouth": [
+              0.08,
+              0.38,
+              0.92,
+              0.76
+            ],
+            "chin": [
+              0.08,
+              0.38,
+              0.92,
+              0.89
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "2fb2b1335051895a948fed0016e0acf0c561c4a2",
+            "sourceCandidateId": "c959cd5d155dec83066d",
+            "sourceSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+            "sourceSize": [
+              1325,
+              1837
+            ],
+            "cropBox": [
+              0,
+              100,
+              1320,
+              1684
+            ],
+            "parentCropFailure": "No reliable frontal face",
+            "reviewerNotes": "陶大宇: 1325x1837 single face, CC BY 3.0 am730 source reviewed by GRuban 2020-07-24. Crop x0=0 y0=100 width1320 height1584 (5:6). Eye/nose/mouth/chin geometry provisional until rendered and inspected. Not approved."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723/chin.png",
+            "full": "expansion-1500/pipeline/evidence/d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "d8d7ab0ca05ce28f3e7d3d42b92ba36b8ef2a8b66c428460aa25e87a40659723",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.38,
+                0.92,
+                0.52
+              ],
+              "nose": [
+                0.08,
+                0.38,
+                0.92,
+                0.65
+              ],
+              "mouth": [
+                0.08,
+                0.38,
+                0.92,
+                0.76
+              ],
+              "chin": [
+                0.08,
+                0.38,
+                0.92,
+                0.89
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -76256,6 +76408,13 @@
             }
           ],
           "candidatesTried": 6
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261029T233453Z-3305584e",
+          "sourceCommit": "2fb2b1335051895a948fed0016e0acf0c561c4a2",
+          "candidateId": "manualrecrop-d8d7ab0ca05ce28f3e7d",
+          "sourceCandidateId": "c959cd5d155dec83066d"
         }
       ],
       "legacyRecord": {
@@ -76279,95 +76438,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T233204Z-215bf587",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261029T233453Z-3305584e",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-d8d7ab0ca05ce28f3e7d"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T23:32:19.413817+00:00",
-      "lastErrors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%B0%91%E7%A7%8B.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
-            "filename": "陶大宇.jpg",
-            "artist": "am730",
-            "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​《am730》專訪",
-            "identityEvidence": {
-              "query": "陶大宇",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "陶大宇"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "刑事偵緝檔案"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T23:32:19.850847+00:00",
-            "width": 1325,
-            "height": 1837,
-            "id": "c959cd5d155dec83066d",
-            "personId": "t1500_0557",
-            "discoveryRunId": "20261029T233204Z-215bf587",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0557/c959cd5d155dec83066d/1e6d0e91d3e6/original.bin",
-            "originalSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
-            "cropFailure": "No reliable frontal face",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(1).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(2).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(3).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(4).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-29T23:32:21.089652+00:00",
       "workerFinishedAt": "2026-10-29T23:32:21.091479+00:00"
     },

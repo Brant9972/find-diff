@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source-and-visual review",
+  "reviewedAt": "2026-10-29T14:17:00Z",
+  "sourceReviewBranch": "automation/photo-review-run-40889531143",
+  "sourceReviewCommit": "3d2be9adc22677e6faed710ffcbe5c0f6538b413",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "notes": "Approvals apply only to exact 600x720 game image SHA. Not a statement that game was deployed. Image identity is corroborated by source metadata, captions and structured depicts; visual review assesses framing and five-stage clarity.",
+  "decisions": [
+    {
+      "personId": "t1500_0295",
+      "name": "譚俊彥",
+      "candidateId": "manualrecrop-36e9a4429054d87de769",
+      "gameSha256": "36e9a4429054d87de769db599bfa7c315c4da0d25dd4605f80324a229ce4d938",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "decision": "approved",
+      "reason": "Commons file and image-adjacent am730 caption explicitly name 譚俊彥; frontal single face, eyes/nose/mouth/chin all visible, five reveal stages manually inspected; cropped from same licensed source, no watermark."
+    },
+    {
+      "personId": "t1500_0332",
+      "name": "劉真",
+      "candidateId": "manualrecrop-78836fecb926cf87a089",
+      "gameSha256": "78836fecb926cf87a089aba51754ed561c3c829ab4f8328aa9fa8b0c661052fd",
+      "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
+      "artist": "Gene Wang",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "decision": "approved",
+      "reason": "Commons image caption explicitly identifies 劉真 at a baseball first-pitch appearance; image listed in Serena Liu Commons category; frontal clear face and all five reveal stages inspected; baseball beside face does not obstruct eyes/nose/mouth/chin."
+    },
+    {
+      "personId": "t1500_0341",
+      "name": "劉心悠",
+      "candidateId": "manualrecrop-3089973f09786cb10988",
+      "gameSha256": "3089973f09786cb10988dcb5f504f88c45053328663ea3af19cb864adacff36e",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E5%BF%83%E6%82%A0.jpg",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "decision": "approved",
+      "reason": "Chinese-titled Commons photo mapped to actress 劉心悠 via Wikidata Q700171 P18; not the rejected English homonym uploader photo. Single frontal clear face, five stages manually inspected, no watermark; caption identifies movie premiere and rights metadata credits am730."
+    },
+    {
+      "personId": "t1500_0348",
+      "name": "雷嘉汭",
+      "candidateId": "manualrecrop-cf307f1afa4a153b2099",
+      "gameSha256": "cf307f1afa4a153b20993b5d5d3ff4b78323ab5884cac8c3dfe2e143c335ff44",
+      "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
+      "artist": "Elle Taiwan",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "decision": "approved",
+      "reason": "Commons file structured depicts Regina Lei Q104723720 and YouTube CC BY license reviewed by Wikimedia reviewer 2025-09-01; Elle Taiwan source. Face turned slightly but both eyes, nose, mouth and chin remain clear in all five stage previews, no watermark."
+    }
+  ]
+}

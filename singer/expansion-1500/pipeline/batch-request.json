@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-source-only-review-package-v1",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "purpose": "Render all retained, unapproved manual_crop_required original pixels as immutable JPEG/PNG previews and contact sheets; do not discover, approve, change live questions, or deploy."
+  "requestId": "20261029-tin-manual-recrop-source-sha-v1",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261029-tin.json",
+  "targetPeople": 1,
+  "plannedPersonIds": [
+    "t1500_0334"
+  ],
+  "purpose": "Source-SHA pinned 600x720 draft crop for 田蕊妮 only. Do not approve, change live questions, or deploy; require five-stage, identity and license QA."
 }

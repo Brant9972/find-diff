@@ -266,8 +266,8 @@
       }
     },
     "t1500_0559": {
-      "attempts": 5,
-      "nextRetryAt": "2026-10-30T17:25:47.826311+00:00",
+      "attempts": 6,
+      "nextRetryAt": "2026-11-01T15:32:08.094182+00:00",
       "candidateId": "c1500-0559",
       "chatgptReview": {
         "personId": "t1500_0559",
@@ -283,11 +283,11 @@
         "handoffCollection": "decisions"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T092519Z-5ad70788",
+      "lastRunId": "20261029T233204Z-215bf587",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0559": {
@@ -304,13 +304,7 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ],
+      "lastErrors": [],
       "history": [
         {
           "time": "2026-10-28T17:30:07.823139+00:00",
@@ -506,6 +500,17 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-29T23:32:06.581807+00:00",
+          "provider": "commons",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T23:32:08.094153+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:08.094170+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "personId": "t1500_0559",
@@ -605,7 +610,7 @@
           }
         }
       ],
-      "updatedAt": "2026-10-29T09:25:47.826320+00:00",
+      "updatedAt": "2026-10-29T23:32:08.094195+00:00",
       "name": "蔡一傑",
       "legacyRecord": {
         "questionId": "t1500_0559",
@@ -664,10 +669,10 @@
           ]
         }
       },
-      "status": "download_failed",
-      "lastAttemptAt": "2026-10-29T09:25:42.672796+00:00",
+      "status": "no_suitable_source",
+      "lastAttemptAt": "2026-10-29T23:32:06.508740+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T09:25:47.827411+00:00"
+      "workerFinishedAt": "2026-10-29T23:32:08.095893+00:00"
     },
     "t1500_0367": {
       "personId": "t1500_0367",
@@ -28146,10 +28151,309 @@
       "candidateId": "c1500-0551",
       "name": "曾江",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:14.851500+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Natsuko-2136-r1.jpg/1920px-Natsuko-2136-r1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Natsuko-2136-r1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Natsuko-2136-r1.jpg",
+          "filename": "Natsuko-2136-r1.jpg",
+          "artist": "河川一等兵",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Dam",
+          "identityEvidence": {
+            "query": "曾江",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "英雄本色"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:13.571356+00:00",
+          "width": 3072,
+          "height": 2304,
+          "id": "322d12264e2656e9b008",
+          "personId": "t1500_0551",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/ROCN_PGG-608_in_Port_of_Keelung_20100131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/ROCN_PGG-608_in_Port_of_Keelung_20100131.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:ROCN_PGG-608_in_Port_of_Keelung_20100131.jpg",
+          "filename": "ROCN PGG-608 in Port of Keelung 20100131.jpg",
+          "artist": "Mnb at Chinese Wikipedia",
+          "credit": "Own work;Transferred from zh.wikipedia to Commons by Pbdragonwang using CommonsHelper.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "PGG-608 in Port of Keelung.",
+          "identityEvidence": {
+            "query": "曾江",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "英雄本色"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:13.572654+00:00",
+          "width": 876,
+          "height": 548,
+          "id": "0f63c032e820feda052b",
+          "personId": "t1500_0551",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/HK_TST_Promenade_Avenue_of_Stars_Mr_Kenneth_Tsang_Aug-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/HK_TST_Promenade_Avenue_of_Stars_Mr_Kenneth_Tsang_Aug-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_TST_Promenade_Avenue_of_Stars_Mr_Kenneth_Tsang_Aug-2012.jpg",
+          "filename": "HK TST Promenade Avenue of Stars Mr Kenneth Tsang Aug-2012.jpg",
+          "artist": "Aleniromswit",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "",
+          "identityEvidence": {
+            "query": "曾江",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "英雄本色"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:13.573691+00:00",
+          "width": 640,
+          "height": 480,
+          "id": "eed87fe993a5c61a3a55",
+          "personId": "t1500_0551",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/HK_actor_Kenneth_Tsang%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/HK_actor_Kenneth_Tsang%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_actor_Kenneth_Tsang%27s_autograph.png",
+          "filename": "HK actor Kenneth Tsang's autograph.png",
+          "artist": "曾江（由Elmond調整）",
+          "credit": "https://archive.ph/2WERz  星光大道管理有限公司 曾江介紹",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​這是香港藝人曾江的簽名。",
+          "identityEvidence": {
+            "query": "曾江",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "曾江"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "英雄本色"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:13.574908+00:00",
+          "width": 426,
+          "height": 586,
+          "id": "7da31326dbcc84ffaba7",
+          "personId": "t1500_0551",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg",
+          "filename": "HK MTR passageway poster film 源生罪 Deliverance by 岑嘉彥、黃永峯，任達華、曾江、鮑起靜、吳婉儀、吳家麗、吳卓羲、陳紫萱、張建聲、郭奕芯、岑珈其 January 2024 R12S.jpg",
+          "artist": "SWsky6C15DZTLia",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "HK MTR passageway poster film zh:源生罪 Deliverance by zh:岑嘉彥、zh:黃永峯，zh:任達華、zh:曾江、zh:鮑起靜、zh:吳婉儀、zh:吳家麗、zh:吳卓羲、陳紫萱、zh:張建聲、zh:郭奕芯、zh:岑珈其 in January 2024",
+          "identityEvidence": {
+            "query": "曾江",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "曾江"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "英雄本色"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:13.576108+00:00",
+          "width": 4000,
+          "height": 3000,
+          "id": "293d47c882d341f7eac1",
+          "personId": "t1500_0551",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0551/293d47c882d341f7eac1/fd91367e7ba1/original.bin",
+          "originalSha256": "fd91367e7ba1509f33db1ea4e52627443f516e4d21750166352e3ef94d4cda5e",
+          "cropFailure": "No reliable frontal face",
+          "gamePath": null
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:12.686103+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:14.851458+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:14.851480+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Natsuko-2136-r1.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:ROCN_PGG-608_in_Port_of_Keelung_20100131.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:HK_TST_Promenade_Avenue_of_Stars_Mr_Kenneth_Tsang_Aug-2012.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:HK_actor_Kenneth_Tsang%27s_autograph.png",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg",
+                "filename": "HK MTR passageway poster film 源生罪 Deliverance by 岑嘉彥、黃永峯，任達華、曾江、鮑起靜、吳婉儀、吳家麗、吳卓羲、陳紫萱、張建聲、郭奕芯、岑珈其 January 2024 R12S.jpg",
+                "artist": "SWsky6C15DZTLia",
+                "credit": "Own work",
+                "license": "CC0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "caption": "HK MTR passageway poster film zh:源生罪 Deliverance by zh:岑嘉彥、zh:黃永峯，zh:任達華、zh:曾江、zh:鮑起靜、zh:吳婉儀、zh:吳家麗、zh:吳卓羲、陳紫萱、zh:張建聲、zh:郭奕芯、zh:岑珈其 in January 2024",
+                "identityEvidence": {
+                  "query": "曾江",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "曾江"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "英雄本色"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T23:32:13.576108+00:00",
+                "width": 4000,
+                "height": 3000,
+                "id": "293d47c882d341f7eac1",
+                "personId": "t1500_0551",
+                "discoveryRunId": "20261029T233204Z-215bf587",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0551/293d47c882d341f7eac1/fd91367e7ba1/original.bin",
+                "originalSha256": "fd91367e7ba1509f33db1ea4e52627443f516e4d21750166352e3ef94d4cda5e",
+                "cropFailure": "No reliable frontal face",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            }
+          ],
+          "candidatesTried": 5
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0551",
         "name": "曾江",
@@ -28167,10 +28471,95 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No reliable frontal face",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:12.627698+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Natsuko-2136-r1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:ROCN_PGG-608_in_Port_of_Keelung_20100131.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_TST_Promenade_Avenue_of_Stars_Mr_Kenneth_Tsang_Aug-2012.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_actor_Kenneth_Tsang%27s_autograph.png",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:HK_MTR_passageway_poster_film_%E6%BA%90%E7%94%9F%E7%BD%AA_Deliverance_by_%E5%B2%91%E5%98%89%E5%BD%A5%E3%80%81%E9%BB%83%E6%B0%B8%E5%B3%AF%EF%BC%8C%E4%BB%BB%E9%81%94%E8%8F%AF%E3%80%81%E6%9B%BE%E6%B1%9F%E3%80%81%E9%AE%91%E8%B5%B7%E9%9D%9C%E3%80%81%E5%90%B3%E5%A9%89%E5%84%80%E3%80%81%E5%90%B3%E5%AE%B6%E9%BA%97%E3%80%81%E5%90%B3%E5%8D%93%E7%BE%B2%E3%80%81%E9%99%B3%E7%B4%AB%E8%90%B1%E3%80%81%E5%BC%B5%E5%BB%BA%E8%81%B2%E3%80%81%E9%83%AD%E5%A5%95%E8%8A%AF%E3%80%81%E5%B2%91%E7%8F%88%E5%85%B6_January_2024_R12S.jpg",
+            "filename": "HK MTR passageway poster film 源生罪 Deliverance by 岑嘉彥、黃永峯，任達華、曾江、鮑起靜、吳婉儀、吳家麗、吳卓羲、陳紫萱、張建聲、郭奕芯、岑珈其 January 2024 R12S.jpg",
+            "artist": "SWsky6C15DZTLia",
+            "credit": "Own work",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "caption": "HK MTR passageway poster film zh:源生罪 Deliverance by zh:岑嘉彥、zh:黃永峯，zh:任達華、zh:曾江、zh:鮑起靜、zh:吳婉儀、zh:吳家麗、zh:吳卓羲、陳紫萱、zh:張建聲、zh:郭奕芯、zh:岑珈其 in January 2024",
+            "identityEvidence": {
+              "query": "曾江",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "曾江"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "英雄本色"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T23:32:13.576108+00:00",
+            "width": 4000,
+            "height": 3000,
+            "id": "293d47c882d341f7eac1",
+            "personId": "t1500_0551",
+            "discoveryRunId": "20261029T233204Z-215bf587",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0551/293d47c882d341f7eac1/fd91367e7ba1/original.bin",
+            "originalSha256": "fd91367e7ba1509f33db1ea4e52627443f516e4d21750166352e3ef94d4cda5e",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:32:14.851515+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:14.853444+00:00"
     },
     "t1500_0327": {
       "personId": "t1500_0327",
@@ -29057,10 +29446,22 @@
       "candidateId": "c1500-0558",
       "name": "蔡一智",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:22.853974+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:21.263105+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:22.853951+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:22.853965+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0558",
         "name": "蔡一智",
@@ -29078,10 +29479,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:21.203349+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:32:22.853986+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:22.855765+00:00"
     },
     "t1500_0445": {
       "personId": "t1500_0445",
@@ -32364,8 +32772,8 @@
       "workerFinishedAt": "2026-10-29T20:17:44.773406+00:00"
     },
     "t1500_0568": {
-      "attempts": 5,
-      "nextRetryAt": "2026-10-30T17:25:48.376365+00:00",
+      "attempts": 6,
+      "nextRetryAt": "2026-11-01T15:32:10.235173+00:00",
       "candidateId": "c1500-0568",
       "chatgptReview": {
         "personId": "t1500_0568",
@@ -32381,11 +32789,11 @@
         "handoffCollection": "decisions"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T092519Z-5ad70788",
+      "lastRunId": "20261029T233204Z-215bf587",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0568": {
@@ -32402,61 +32810,7 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Mme._Louise_Lee_-_DPLA_-_db1f021fcd3b11fc859a9454bfc90ae2_(page_2).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_Grave.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee%27s_star_on_Hollywood_walk_of_fame_(15992401828).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(1).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_2.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Frank_Rasky_with_Gypsy_Rose_Lee.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1_(cropped).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ],
+      "lastErrors": [],
       "history": [
         {
           "time": "2026-10-28T17:30:08.632553+00:00",
@@ -32998,6 +33352,17 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-29T23:32:08.272516+00:00",
+          "provider": "commons",
+          "attempt": 6,
+          "finishedAt": "2026-10-29T23:32:10.235133+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:10.235151+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "personId": "t1500_0568",
@@ -34231,7 +34596,7 @@
           ]
         }
       ],
-      "updatedAt": "2026-10-29T09:25:48.376373+00:00",
+      "updatedAt": "2026-10-29T23:32:10.235184+00:00",
       "name": "李司棋",
       "legacyRecord": {
         "questionId": "t1500_0568",
@@ -34290,10 +34655,10 @@
           ]
         }
       },
-      "status": "download_failed",
-      "lastAttemptAt": "2026-10-29T09:25:43.416880+00:00",
+      "status": "no_suitable_source",
+      "lastAttemptAt": "2026-10-29T23:32:08.199739+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T09:25:48.377477+00:00"
+      "workerFinishedAt": "2026-10-29T23:32:10.236639+00:00"
     },
     "t1500_0397": {
       "personId": "t1500_0397",
@@ -55337,7 +55702,7 @@
       "personId": "t1500_0579",
       "candidateId": "c1500-0579",
       "name": "黃浩然",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -72715,10 +73080,583 @@
       "candidateId": "c1500-0552",
       "name": "石修",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:17.302627+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Sam_Chan.jpg/1920px-Sam_Chan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sam_Chan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Sam_Chan.jpg",
+          "filename": "Sam Chan.jpg",
+          "artist": "Magicallyawkward",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Sam Chan and his father Shek Sau in 2016",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.023002+00:00",
+          "width": 2448,
+          "height": 3264,
+          "id": "f59075bc0054a9b3387e",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg/1920px-%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg",
+          "filename": "杜恩石修院 Durnstein Monastery - panoramio.jpg",
+          "artist": "lienyuan lee",
+          "credit": "https://web.archive.org/web/20161020023437/http://www.panoramio.com/photo/66411710",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "杜恩石修院 Durnstein Monastery",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.024704+00:00",
+          "width": 2560,
+          "height": 1792,
+          "id": "0dcfc96e7aff34922b49",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg/1920px-Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg",
+          "filename": "Stift Durnstein 杜恩石修院 - panoramio.jpg",
+          "artist": "lienyuan lee",
+          "credit": "https://web.archive.org/web/20161020023521/http://www.panoramio.com/photo/66411712",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "Stift Durnstein 杜恩石修院",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.026079+00:00",
+          "width": 2375,
+          "height": 1663,
+          "id": "4405553b21d8611a2bfa",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_%281%29.jpg/1920px-Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_(1).jpg",
+          "filename": "Stift Durnstein 杜恩石修院 - panoramio (1).jpg",
+          "artist": "lienyuan lee",
+          "credit": "https://web.archive.org/web/20161023005612/http://www.panoramio.com/photo/66411696",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "Stift Durnstein  杜恩石修院",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.027313+00:00",
+          "width": 2556,
+          "height": 1796,
+          "id": "3c79e75edc0f437b9cb5",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Sam_Golden_Flower_Awards_2016.jpg/1920px-Sam_Golden_Flower_Awards_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Sam_Golden_Flower_Awards_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Sam_Golden_Flower_Awards_2016.jpg",
+          "filename": "Sam Golden Flower Awards 2016.jpg",
+          "artist": "Magicallyawkward",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Sam and his father, Shek Sau, at the 2016 Golden Flower Awards",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.028741+00:00",
+          "width": 2048,
+          "height": 1536,
+          "id": "97c423194ba5d54de5bf",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+          "filename": "石修.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】臨演劉何志離世 王浩信做帛金盡心意 2019-01-25",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《反黑路人甲》拜神儀式",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "石修"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.030206+00:00",
+          "width": 855,
+          "height": 1205,
+          "id": "40167bc4d98768ba947b",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0552/40167bc4d98768ba947b/51071ffafdaf/original.bin",
+          "originalSha256": "51071ffafdafd7d505a87372b4b4e19dac3f058716d7cac9ba8e895786023454",
+          "cropFailure": "No reliable frontal face",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Chan_Shek_Sau%27s_signature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Chan_Shek_Sau%27s_signature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature.jpg",
+          "filename": "Chan Shek Sau's signature.jpg",
+          "artist": "石修",
+          "credit": "https://weibo.com/1739778063/A5Cx8c1SR?refer_flag=1001030103_&type=comment#_rnd1599727413015",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "This is Chan Shek Sau's signature.",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.375503+00:00",
+          "width": 246,
+          "height": 294,
+          "id": "a9451d9e5b131b816cde",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Chan_Shek_Sau%27s_signature_%28modified%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Chan_Shek_Sau%27s_signature_%28modified%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature_(modified).png",
+          "filename": "Chan Shek Sau's signature (modified).png",
+          "artist": "石修",
+          "credit": "《石修寫》新書簽名會",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "This is Chan Shek Sau's signature.",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.376902+00:00",
+          "width": 1025,
+          "height": 1225,
+          "id": "bc57224fc799be1b1867",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Osamu_Hayaishi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Osamu_Hayaishi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi.jpg",
+          "filename": "Osamu Hayaishi.jpg",
+          "artist": "日本学士院",
+          "credit": "https://www.japan-acad.go.jp/japanese/members/bukko/h_gyo/hayaishi_osamu.html",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "日本学士院 物故会員\n早石修 （はやいし おさむ）",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.378155+00:00",
+          "width": 320,
+          "height": 427,
+          "id": "515c399cfba05ff3533a",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Osamu_Hayaishi_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Osamu_Hayaishi_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi_(cropped).jpg",
+          "filename": "Osamu Hayaishi (cropped).jpg",
+          "artist": "日本学士院",
+          "credit": "https://www.japan-acad.go.jp/japanese/members/bukko/h_gyo/hayaishi_osamu.html",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "日本学士院 物故会員\n早石修 （はやいし おさむ）",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.379581+00:00",
+          "width": 270,
+          "height": 401,
+          "id": "a19a53f3d989abdeb001",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%E6%98%8E%E5%A4%8F%E6%98%B6%E5%A5%87%E7%9F%B3%E4%BF%AE%E7%AF%81%E5%9C%96_%E8%BB%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%E6%98%8E%E5%A4%8F%E6%98%B6%E5%A5%87%E7%9F%B3%E4%BF%AE%E7%AF%81%E5%9C%96_%E8%BB%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E5%A4%8F%E6%98%B6%E5%A5%87%E7%9F%B3%E4%BF%AE%E7%AF%81%E5%9C%96_%E8%BB%B8.jpg",
+          "filename": "明夏昶奇石修篁圖 軸.jpg",
+          "artist": "國立故宮博物院",
+          "credit": "https://digitalarchive.npm.gov.tw/Collection/Detail?id=3589&dep=P",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "​夏昶（西元一三八八－一四七○年），江蘇崑山人。字仲昭，號自在居士，又號玉峰。擅長畫墨竹，畫法學自王紱（一三六二－一四一六）、陳繼（一三七○－一四三四）。 　　本幅畫水濱竹三竿，婷立於斜坡之上。竹桿落筆穩健，墨色潤厚。竹葉、小草挺勁鋒利，畫石則筆法扭轉靈動。夏氏妙於運筆使墨，極得飄灑清妍之趣，此作堪為例證。",
+          "identityEvidence": {
+            "query": "石修",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:16.380919+00:00",
+          "width": 770,
+          "height": 1949,
+          "id": "dec0157b31cd4885780a",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:15.008678+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:17.302588+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:17.302603+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sam_Chan.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_(1).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sam_Golden_Flower_Awards_2016.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+                "filename": "石修.jpg",
+                "artist": "am730",
+                "credit": "【娛樂】臨演劉何志離世 王浩信做帛金盡心意 2019-01-25",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​《反黑路人甲》拜神儀式",
+                "identityEvidence": {
+                  "query": "石修",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "石修"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "香港電視劇"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T23:32:16.030206+00:00",
+                "width": 855,
+                "height": 1205,
+                "id": "40167bc4d98768ba947b",
+                "personId": "t1500_0552",
+                "discoveryRunId": "20261029T233204Z-215bf587",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0552/40167bc4d98768ba947b/51071ffafdaf/original.bin",
+                "originalSha256": "51071ffafdafd7d505a87372b4b4e19dac3f058716d7cac9ba8e895786023454",
+                "cropFailure": "No reliable frontal face",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature_(modified).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi_(cropped).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E5%A4%8F%E6%98%B6%E5%A5%87%E7%9F%B3%E4%BF%AE%E7%AF%81%E5%9C%96_%E8%BB%B8.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 11
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0552",
         "name": "石修",
@@ -72736,10 +73674,131 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:14.958923+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sam_Chan.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_Durnstein_Monastery_-_panoramio.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Stift_Durnstein_%E6%9D%9C%E6%81%A9%E7%9F%B3%E4%BF%AE%E9%99%A2_-_panoramio_(1).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sam_Golden_Flower_Awards_2016.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E7%9F%B3%E4%BF%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+            "filename": "石修.jpg",
+            "artist": "am730",
+            "credit": "【娛樂】臨演劉何志離世 王浩信做帛金盡心意 2019-01-25",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​《反黑路人甲》拜神儀式",
+            "identityEvidence": {
+              "query": "石修",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "石修"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "香港電視劇"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T23:32:16.030206+00:00",
+            "width": 855,
+            "height": 1205,
+            "id": "40167bc4d98768ba947b",
+            "personId": "t1500_0552",
+            "discoveryRunId": "20261029T233204Z-215bf587",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0552/40167bc4d98768ba947b/51071ffafdaf/original.bin",
+            "originalSha256": "51071ffafdafd7d505a87372b4b4e19dac3f058716d7cac9ba8e895786023454",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chan_Shek_Sau%27s_signature_(modified).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Osamu_Hayaishi_(cropped).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E5%A4%8F%E6%98%B6%E5%A5%87%E7%9F%B3%E4%BF%AE%E7%AF%81%E5%9C%96_%E8%BB%B8.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:32:17.302639+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:17.304411+00:00"
     },
     "t1500_0275": {
       "personId": "t1500_0275",
@@ -74852,10 +75911,353 @@
       "candidateId": "c1500-0557",
       "name": "陶大宇",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:21.089630+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E9%84%AD%E5%B0%91%E7%A7%8B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E9%84%AD%E5%B0%91%E7%A7%8B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%B0%91%E7%A7%8B.jpg",
+          "filename": "鄭少秋.jpg",
+          "artist": "am730",
+          "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​鄭少秋接受《am730》專訪",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:19.849439+00:00",
+          "width": 1337,
+          "height": 1878,
+          "id": "68b41782b7d6210c4c51",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+          "filename": "陶大宇.jpg",
+          "artist": "am730",
+          "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《am730》專訪",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陶大宇"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:19.850847+00:00",
+          "width": 1325,
+          "height": 1837,
+          "id": "c959cd5d155dec83066d",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0557/c959cd5d155dec83066d/1e6d0e91d3e6/original.bin",
+          "originalSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+          "cropFailure": "No reliable frontal face",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rebecca_Lim_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rebecca_Lim_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(1).png",
+          "filename": "Rebecca Lim (1).png",
+          "artist": "TV Know More",
+          "credit": "南丫島、中上環悠閒一日遊| 南丫島特色小店| 上環古董街、東街壁畫| 周群達、林慧玲、陶大宇 | 旅遊者們: 香港篇",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​香港有很多大大小小的島嶼，其中以長洲、南丫島最為有名。 只要在中環乘搭渡輪出發，短短半小時就能到達南丫島，Duncan周群達和來自新加坡的Rebecca林慧玲，將會漫遊南丫島，到訪島上香港首個風力發電設施，大風車亦成了南丫島的地標之一。 回到市區逛逛古董街「摩羅上街」，這裡會看到很多70年代的海報及物品，喜歡收集古董的朋友，必定會樂而忘返。",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:20.366699+00:00",
+          "width": 501,
+          "height": 611,
+          "id": "1e54774c037093ffcd11",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rebecca_Lim_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rebecca_Lim_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(2).png",
+          "filename": "Rebecca Lim (2).png",
+          "artist": "TV Know More",
+          "credit": "南丫島、中上環悠閒一日遊| 南丫島特色小店| 上環古董街、東街壁畫| 周群達、林慧玲、陶大宇 | 旅遊者們: 香港篇",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​香港有很多大大小小的島嶼，其中以長洲、南丫島最為有名。 只要在中環乘搭渡輪出發，短短半小時就能到達南丫島，Duncan周群達和來自新加坡的Rebecca林慧玲，將會漫遊南丫島，到訪島上香港首個風力發電設施，大風車亦成了南丫島的地標之一。 回到市區逛逛古董街「摩羅上街」，這裡會看到很多70年代的海報及物品，喜歡收集古董的朋友，必定會樂而忘返。",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:20.368699+00:00",
+          "width": 542,
+          "height": 636,
+          "id": "2c596df4dddc0765babf",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Rebecca_Lim_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Rebecca_Lim_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(3).png",
+          "filename": "Rebecca Lim (3).png",
+          "artist": "TV Know More",
+          "credit": "南丫島、中上環悠閒一日遊| 南丫島特色小店| 上環古董街、東街壁畫| 周群達、林慧玲、陶大宇 | 旅遊者們: 香港篇",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​香港有很多大大小小的島嶼，其中以長洲、南丫島最為有名。 只要在中環乘搭渡輪出發，短短半小時就能到達南丫島，Duncan周群達和來自新加坡的Rebecca林慧玲，將會漫遊南丫島，到訪島上香港首個風力發電設施，大風車亦成了南丫島的地標之一。 回到市區逛逛古董街「摩羅上街」，這裡會看到很多70年代的海報及物品，喜歡收集古董的朋友，必定會樂而忘返。",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:20.370714+00:00",
+          "width": 769,
+          "height": 970,
+          "id": "7b52f7827c10d9cfd979",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rebecca_Lim_%284%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rebecca_Lim_%284%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(4).png",
+          "filename": "Rebecca Lim (4).png",
+          "artist": "TV Know More",
+          "credit": "南丫島、中上環悠閒一日遊| 南丫島特色小店| 上環古董街、東街壁畫| 周群達、林慧玲、陶大宇 | 旅遊者們: 香港篇",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​香港有很多大大小小的島嶼，其中以長洲、南丫島最為有名。 只要在中環乘搭渡輪出發，短短半小時就能到達南丫島，Duncan周群達和來自新加坡的Rebecca林慧玲，將會漫遊南丫島，到訪島上香港首個風力發電設施，大風車亦成了南丫島的地標之一。 回到市區逛逛古董街「摩羅上街」，這裡會看到很多70年代的海報及物品，喜歡收集古董的朋友，必定會樂而忘返。",
+          "identityEvidence": {
+            "query": "陶大宇",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "刑事偵緝檔案"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:20.372718+00:00",
+          "width": 650,
+          "height": 777,
+          "id": "f91cf8d07cd1ccb5df65",
+          "personId": "t1500_0557",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:19.480225+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:21.089596+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:21.089614+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%B0%91%E7%A7%8B.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+                "filename": "陶大宇.jpg",
+                "artist": "am730",
+                "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​《am730》專訪",
+                "identityEvidence": {
+                  "query": "陶大宇",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陶大宇"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "刑事偵緝檔案"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T23:32:19.850847+00:00",
+                "width": 1325,
+                "height": 1837,
+                "id": "c959cd5d155dec83066d",
+                "personId": "t1500_0557",
+                "discoveryRunId": "20261029T233204Z-215bf587",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0557/c959cd5d155dec83066d/1e6d0e91d3e6/original.bin",
+                "originalSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+                "cropFailure": "No reliable frontal face",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(1).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(2).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(3).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(4).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 6
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0557",
         "name": "陶大宇",
@@ -74873,10 +76275,101 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No reliable frontal face",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:19.413817+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%B0%91%E7%A7%8B.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B6%E5%A4%A7%E5%AE%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
+            "filename": "陶大宇.jpg",
+            "artist": "am730",
+            "credit": "【專訪】丁蟹父子演《詭探前傳》 秋官爆陶大宇勁惡死",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​《am730》專訪",
+            "identityEvidence": {
+              "query": "陶大宇",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陶大宇"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "刑事偵緝檔案"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T23:32:19.850847+00:00",
+            "width": 1325,
+            "height": 1837,
+            "id": "c959cd5d155dec83066d",
+            "personId": "t1500_0557",
+            "discoveryRunId": "20261029T233204Z-215bf587",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0557/c959cd5d155dec83066d/1e6d0e91d3e6/original.bin",
+            "originalSha256": "1e6d0e91d3e62f2f99c8d0278286a8809b0c76535104726759220832f10b2ef8",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(1).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(2).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(3).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Rebecca_Lim_(4).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:32:21.089652+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:21.091479+00:00"
     },
     "t1500_0217": {
       "personId": "t1500_0217",
@@ -75925,10 +77418,22 @@
       "candidateId": "c1500-0555",
       "name": "湯鎮業",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:19.306942+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:17.476908+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:19.306911+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:19.306929+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0555",
         "name": "湯鎮業",
@@ -75946,10 +77451,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:17.410602+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:32:19.306956+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:19.308732+00:00"
     },
     "t1500_0299": {
       "personId": "t1500_0299",
@@ -78183,10 +79695,576 @@
       "candidateId": "c1500-0567",
       "name": "羅蘭",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:27.133254+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Budape%C5%A1%C5%A5_1233.jpg/1920px-Budape%C5%A1%C5%A5_1233.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Budape%C5%A1%C5%A5_1233.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Budape%C5%A1%C5%A5_1233.jpg",
+          "filename": "Budapešť 1233.jpg",
+          "artist": "Dezidor",
+          "credit": "Own work",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "Budapešť",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.873574+00:00",
+          "width": 2816,
+          "height": 2112,
+          "id": "75f2bdaaf685691e66a4",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg",
+          "filename": "Budapesti Tudomanyegyetem nagy pecsetje Orszag Vilag 1880 XIII sz.jpg",
+          "artist": "http://hu.wikipedia.org/wiki/F%C3%A1jl:Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg",
+          "credit": "Ország Világ c. hetilap, 1880. XIII. füzet",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Grand Sceau de l'Université de Budapest",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.875167+00:00",
+          "width": 1623,
+          "height": 1632,
+          "id": "e0abb99951af4b0dfd03",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/ElteFotoThalerTamas2.jpg/1920px-ElteFotoThalerTamas2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/ElteFotoThalerTamas2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:ElteFotoThalerTamas2.jpg",
+          "filename": "ElteFotoThalerTamas2.jpg",
+          "artist": "Thaler Tamas",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "ELTE jogi kar",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.876477+00:00",
+          "width": 3464,
+          "height": 2073,
+          "id": "0660cfeaf15947a18549",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra%2C_Olaj_utcai_kapu%2C_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91%2C_2018_K%C5%91b%C3%A1nya.jpg/1920px-E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra%2C_Olaj_utcai_kapu%2C_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91%2C_2018_K%C5%91b%C3%A1nya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra%2C_Olaj_utcai_kapu%2C_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91%2C_2018_K%C5%91b%C3%A1nya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra,_Olaj_utcai_kapu,_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91,_2018_K%C5%91b%C3%A1nya.jpg",
+          "filename": "Eötvös Loránd Tudományegyetem Levéltára, Olaj utcai kapu, Téglagyárdűlő, 2018 Kőbánya.jpg",
+          "artist": "Globetrotter19",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": ": University Archives, Directorate-General for Economic and Technical Affairs site of the Eötvös Loránd University. - #8 Maglódi út, #35 Téglavető St., corner, Téglagyárdűlő neighborhood, 10th District of Budapest.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.877695+00:00",
+          "width": 2272,
+          "height": 1704,
+          "id": "7dd45a0a27352e0320b4",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif/lossy-page1-1920px-A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif",
+          "filename": "A Rektor és a Professzori Kar bevonulása.tif",
+          "artist": "Unknown photographer",
+          "credit": "",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "A Pázmány Péter Tudományegyetem Tercenáriuma 1635 - 1935. A felvétel 1935 május hó 12-én készült az Egyetem téren, Budapest Belvárosában. Ismeretlen fényképész felvétele. A Rektor és a Professzori Kar bevonulása. A képeslap hátoldalán (2) feltüntetett szövegː INGRESSUS RECTORIS MAGNIFICIS ET COLLEGII    PROFESSORUM IN ECCLESIAM UNIVERSITATIS. 12. V. 1935   TERCENARIUM 1635 - 1935 Universitatis  P. Pázmány, Budapest.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.879234+00:00",
+          "width": 3238,
+          "height": 2119,
+          "id": "8b8b6c24e7b4b99d8212",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros%2C_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif/lossy-page1-1920px-Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros%2C_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros%2C_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros,_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif",
+          "filename": "Serédi Jusztinián bíboros, hercegprímás bevonulása.tif",
+          "artist": "Unknown photographer",
+          "credit": "Yotel 1075 DVD Scan of the original photograph (digitized by: Elekes Andor)",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "A Pázmány Péter Tudományegyetem Tercenáriuma 1635 - 1935. A felvétel 1935 május hó 12-én készült az Egyetem téren, Budapest Belvárosában. Ismeretlen fényképész felvétele. Serédi Jusztinián bíboros, hercegprimás bevonulása. A képeslap hátoldalán (2) feltüntetett szövegː INGRESSUS IUSTINIANI CARD. SERÉDI PRINC. PRIMATIS ARCHIEP. IN ECCLESIAM UNIVERSITATIS. 12. V. 1935   TERCENARIUM 1635 - 1935 Universitatis  P. Pázmány, Budapest.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.881090+00:00",
+          "width": 3265,
+          "height": 2182,
+          "id": "3c9c97210ff23634c09a",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%281%29.jpg/1920px-E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(1).jpg",
+          "filename": "Eötvös klubigazolvány 1969 - 1974 (1).jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "Scan of the original photograph (digitized by: Elekes Andor)",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Az Eötvös Loránd Tudományegyetem Eötvös Klubjának (Hordó) klubigazolványa.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.882945+00:00",
+          "width": 4140,
+          "height": 2987,
+          "id": "171d4d653a5491180167",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-1975_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-1975_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-1975_(1).jpg",
+          "filename": "Eötvös klubigazolvány 1974 -1975 (1).jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "Scan of the original photograph (digitized by: Elekes Andor)",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Az Eötvös Loránd Tudományegyetem Eötvös Klubjának (Hordó) klubigazolványa.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.884386+00:00",
+          "width": 1856,
+          "height": 2533,
+          "id": "352a080852dba13adb2b",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%282%29.jpg/1920px-E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(2).jpg",
+          "filename": "Eötvös klubigazolvány 1969 - 1974 (2).jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "Scan of the original photograph (digitized by: Elekes Andor)",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Az Eötvös Loránd Tudományegyetem Eötvös Klubjának (Hordó) klubigazolványa.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.885822+00:00",
+          "width": 4156,
+          "height": 3003,
+          "id": "f8595cf73d60e83656c4",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-_1975_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-_1975_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-_1975_(2).jpg",
+          "filename": "Eötvös klubigazolvány 1974 - 1975 (2).jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "Scan of the original photograph (digitized by: Elekes Andor)",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Az Eötvös Loránd Tudományegyetem Eötvös Klubjának (Hordó) klubigazolványa.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.887261+00:00",
+          "width": 1803,
+          "height": 2539,
+          "id": "a4327815aec2333c3cf8",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Salkahazi_Sara_rkp_2014.jpg/1920px-Salkahazi_Sara_rkp_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Salkahazi_Sara_rkp_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Salkahazi_Sara_rkp_2014.jpg",
+          "filename": "Salkahazi Sara rkp 2014.jpg",
+          "artist": "Perituss",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "Salkaházi Sára rakpart in Budapest, Hungary as of May 2014.",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.888820+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "eb7c609c0c4f039f940f",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Erzs%C3%A9bet_Ill%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Erzs%C3%A9bet_Ill%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Erzs%C3%A9bet_Ill%C3%A9s.jpg",
+          "filename": "Erzsébet Illés.jpg",
+          "artist": "Ildikó Mészáros",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Erzsébet Illés giving a lecture at MTA Geonomy and Planetology Subcommitee 2018",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:25.890279+00:00",
+          "width": 1024,
+          "height": 678,
+          "id": "ac26b4655153f7cf1f89",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:24.669278+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:27.133213+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:27.133232+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Budape%C5%A1%C5%A5_1233.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:ElteFotoThalerTamas2.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra,_Olaj_utcai_kapu,_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91,_2018_K%C5%91b%C3%A1nya.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros,_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(1).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-1975_(1).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(2).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-_1975_(2).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Salkahazi_Sara_rkp_2014.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Erzs%C3%A9bet_Ill%C3%A9s.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 12
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0567",
         "name": "羅蘭",
@@ -78204,10 +80282,90 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:24.613415+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Budape%C5%A1%C5%A5_1233.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Budapesti_Tudomanyegyetem_nagy_pecsetje_Orszag_Vilag_1880_XIII_sz.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:ElteFotoThalerTamas2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_Lor%C3%A1nd_Tudom%C3%A1nyegyetem_Lev%C3%A9lt%C3%A1ra,_Olaj_utcai_kapu,_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91,_2018_K%C5%91b%C3%A1nya.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:A_Rektor_%C3%A9s_a_Professzori_Kar_bevonul%C3%A1sa.tif",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ser%C3%A9di_Jusztini%C3%A1n_b%C3%ADboros,_hercegpr%C3%ADm%C3%A1s_bevonul%C3%A1sa.tif",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(1).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-1975_(1).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1969_-_1974_(2).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:E%C3%B6tv%C3%B6s_klubigazolv%C3%A1ny_1974_-_1975_(2).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Salkahazi_Sara_rkp_2014.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Erzs%C3%A9bet_Ill%C3%A9s.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:32:27.133267+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:27.135143+00:00"
     },
     "t1500_0235": {
       "personId": "t1500_0235",
@@ -81817,10 +83975,401 @@
       "candidateId": "c1500-0549",
       "name": "謝賢",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:12.520167+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+          "filename": "謝賢.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】唔稀罕大利是 謝賢揚言擸晒霆鋒啲錢 2019-01-22",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《法證先鋒IV》拜神儀式",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "謝賢"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.056974+00:00",
+          "width": 1312,
+          "height": 1780,
+          "id": "0919a0a0f1965380bfee",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0549/0919a0a0f1965380bfee/fe963e0615fa/original.bin",
+          "originalSha256": "fe963e0615fa3dd38dbf44c12e054600156d096ee579404ab52b0682868d88c3",
+          "cropFailure": "No reliable frontal face",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+          "filename": "謝老四.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】四哥重返無綫拍劇 小青姐劇透《法證IV》 2018-10-25",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《法證先鋒IV》試造型記者會",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.993669+00:00",
+          "width": 1000,
+          "height": 1363,
+          "id": "228c39b77373f921696c",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg",
+          "filename": "1080712 甄愛高雄群星會群星相見歡通稿-02.jpg",
+          "artist": "高雄市政府新聞局",
+          "credit": "https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&sms=E45F85B23802FCDF&ss=75CF83256F7D26C6",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "甄愛高雄群星會 呂良偉、謝賢、甄珍、秦祥林、秦沛",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "謝賢"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.994908+00:00",
+          "width": 1568,
+          "height": 1044,
+          "id": "f59cabbe13bbe932c373",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-01.jpg",
+          "filename": "1080712 甄愛高雄群星會群星相見歡通稿-01.jpg",
+          "artist": "高雄市政府新聞局",
+          "credit": "https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&sms=E45F85B23802FCDF&ss=75CF83256F7D26C6\n\nhttps://kcginfonews.kcg.gov.tw/upload/RelPic/3334/b59e9df0-3e5d-4d81-976c-566d2ba29977.jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "甄愛高雄群星會",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.996102+00:00",
+          "width": 1568,
+          "height": 1044,
+          "id": "7832816a52abd83e73d2",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-03.jpg",
+          "filename": "1080712 甄愛高雄群星會群星相見歡通稿-03.jpg",
+          "artist": "高雄市政府新聞局",
+          "credit": "https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&sms=E45F85B23802FCDF&ss=75CF83256F7D26C6\n\nhttps://kcginfonews.kcg.gov.tw/upload/RelPic/3334/b59e9df0-3e5d-4d81-976c-566d2ba29977.jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "甄愛高雄群星會",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.997663+00:00",
+          "width": 1568,
+          "height": 1044,
+          "id": "12658c4a576158e4a738",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Tse_Yin%27s_signature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Tse_Yin%27s_signature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature.jpg",
+          "filename": "Tse Yin's signature.jpg",
+          "artist": "謝賢",
+          "credit": "https://weibo.com/1769134850/xA9iUaYtm?refer_flag=1001030103_&type=comment#_rnd1596070916463",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "This is Tse Yin's signature.",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:11.998963+00:00",
+          "width": 975,
+          "height": 901,
+          "id": "52e1e89b7022eb74e85d",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tse_Yin%27s_signature_no_background.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tse_Yin%27s_signature_no_background.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature_no_background.png",
+          "filename": "Tse Yin's signature no background.png",
+          "artist": "Patrick Tse",
+          "credit": "This file was derived from:  Tse Yin's signature.jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Tse Yin's signature",
+          "identityEvidence": {
+            "query": "謝賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "千王之王"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T23:32:12.000197+00:00",
+          "width": 520,
+          "height": 480,
+          "id": "722133a2996a5ef01d41",
+          "personId": "t1500_0549",
+          "discoveryRunId": "20261029T233204Z-215bf587",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:10.419576+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:12.520127+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:12.520148+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+                "filename": "謝賢.jpg",
+                "artist": "am730",
+                "credit": "【娛樂】唔稀罕大利是 謝賢揚言擸晒霆鋒啲錢 2019-01-22",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​《法證先鋒IV》拜神儀式",
+                "identityEvidence": {
+                  "query": "謝賢",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "謝賢"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "千王之王"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T23:32:11.056974+00:00",
+                "width": 1312,
+                "height": 1780,
+                "id": "0919a0a0f1965380bfee",
+                "personId": "t1500_0549",
+                "discoveryRunId": "20261029T233204Z-215bf587",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0549/0919a0a0f1965380bfee/fe963e0615fa/original.bin",
+                "originalSha256": "fe963e0615fa3dd38dbf44c12e054600156d096ee579404ab52b0682868d88c3",
+                "cropFailure": "No reliable frontal face",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-01.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-03.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature_no_background.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 7
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0549",
         "name": "謝賢",
@@ -81838,10 +84387,107 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No reliable frontal face",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:10.342835+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E8%AC%9D%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+            "filename": "謝賢.jpg",
+            "artist": "am730",
+            "credit": "【娛樂】唔稀罕大利是 謝賢揚言擸晒霆鋒啲錢 2019-01-22",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​《法證先鋒IV》拜神儀式",
+            "identityEvidence": {
+              "query": "謝賢",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "謝賢"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "千王之王"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T23:32:11.056974+00:00",
+            "width": 1312,
+            "height": 1780,
+            "id": "0919a0a0f1965380bfee",
+            "personId": "t1500_0549",
+            "discoveryRunId": "20261029T233204Z-215bf587",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0549/0919a0a0f1965380bfee/fe963e0615fa/original.bin",
+            "originalSha256": "fe963e0615fa3dd38dbf44c12e054600156d096ee579404ab52b0682868d88c3",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-03.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Tse_Yin%27s_signature_no_background.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T23:32:12.520182+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:12.521989+00:00"
     },
     "t1500_0393": {
       "attempts": 5,
@@ -85154,10 +87800,22 @@
       "candidateId": "c1500-0566",
       "name": "董驃",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T01:32:24.497321+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T23:32:23.026644+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T23:32:24.497289+00:00"
+        },
+        {
+          "time": "2026-10-29T23:32:24.497308+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0566",
         "name": "董驃",
@@ -85175,10 +87833,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T23:32:22.961832+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T23:32:24.497336+00:00",
+      "workerFinishedAt": "2026-10-29T23:32:24.500138+00:00"
     },
     "t1500_0448": {
       "personId": "t1500_0448",

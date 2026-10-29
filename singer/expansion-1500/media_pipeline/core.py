@@ -329,7 +329,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
     if ready(row):
         row['status'], row['nextRetryAt'] = 'pending_review', None
     else:
-        network_codes = {'network_error', 'time_budget', 'proxy_access_denied', 'download_failed', 'http_429', 'http_403', 'http_500', 'http_502', 'http_503', 'http_504', 'processor_unavailable'}
+        network_codes = {'network_error', 'time_budget', 'proxy_access_denied', 'download_failed', 'http_429', 'http_403', 'http_500', 'http_502', 'http_503', 'http_504', 'source_api_error', 'source_api_busy', 'processor_unavailable'}
         row['status'] = 'download_failed' if any(e['code'] in network_codes for e in errors) else 'no_suitable_source'
         row['nextRetryAt'] = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=min(24 * 7, 2 ** min(row['attempts'], 7)))).isoformat()
         row['lastFailure'] = {'code': row['status'], 'retryable': True, 'message': 'See lastErrors' if errors else 'No usable candidates returned by sources'}

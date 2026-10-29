@@ -54,7 +54,7 @@ def run_batch(root,directory,state,people,queue,providers,crop,rejected,active,r
         checkpoint=directory/'checkpoints'/(pid+'.json')
         def save():atomic(checkpoint,{'personId':pid,'runId':run_id,'baseRowSha256':baseline,'row':row})
         budget=min(deadline,time.monotonic()+person_seconds)
-        http=http_factory(attempts=1,timeout=8,interval=.5,budget=budget,blocked_hosts=blocked_hosts)
+        http=http_factory(attempts=2,timeout=15,interval=1,budget=budget,blocked_hosts=blocked_hosts)
         try:
             process(people[pid],row,root,directory,providers,http,crop,rejected,max_candidates=max_candidates,max_attempts=18,deadline=budget,checkpoint=save,active=active,rejected_pixels=rejected_pixels)
         except Exception as exc:

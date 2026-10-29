@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "5c20f314873f958be4a836431315e2a2835f09a3",
+  "sourceRun": "20261029T143031Z-cb626fef",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Replace the too-tight eye/nose/mouth reveal with full-feature five-stage draft; do not deploy before final human approval.",
+  "items": [
+    {
+      "personId": "t1500_0334",
+      "sourceCandidateId": "6b25e8bdda3d6c397452",
+      "sourceSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+      "box": [
+        250,
+        218,
+        1420,
+        1622
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27,
+          0.96,
+          0.52
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.96,
+          0.67
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.96,
+          0.84
+        ],
+        "chin": [
+          0.08,
+          0.27,
+          0.96,
+          0.97
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Visual QA of v1 revealed truncated lower eye/lip. v2 retains same licensed original source pixels with 2px shifted crop and wider stages. Source Commons File:田蕊妮.jpg, author am730, original YouTube interview CC BY 3.0 license independently reviewed on 2019-09-15 by Commons reviewer Techyan; Wikidata Q6437706 P18 and Commons depicts Kristal Tin. Must recheck v2 five-stage before approval."
+    }
+  ]
+}

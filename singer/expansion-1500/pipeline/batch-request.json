@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029-5person-postfix-source-check-v2",
+  "requestId": "20261029-5person-manual-recrop-salvage-v3",
   "targetPeople": 5,
   "workers": 1,
   "personSeconds": 90,
   "searchRevision": 4,
   "retryFailed": true,
   "providers": "entity,commons,openverse",
-  "purpose": "Verify corrected checkpoint SHA preflight, Wikimedia original fallback and blocked Shotgun/Ian Chen homonyms on five existing high-evidence cases; draft only, no deploy",
+  "purpose": "Verify one-per-person licensed source-only salvage for recoverable crop failures, exact excluded Annie Liu false source, checkpoint isolation and unit tests; never release without 600x720 stages",
   "plannedPersonIds": [
-    "t1500_0002",
-    "t1500_0016",
     "t1500_0295",
+    "t1500_0312",
     "t1500_0332",
+    "t1500_0341",
     "t1500_0348"
   ]
 }

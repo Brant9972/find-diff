@@ -68,8 +68,13 @@ jobs:
               limit = int(os.environ.get('REQUEST_LIMIT') or request.get('targetPeople', 40))
               if not 1 <= limit <= 50:
                   raise ValueError('Diagnostic batch limit must be 1..50')
+              workers = max(1, min(4, int(request.get('workers', 1))))
+              minutes = max(1, min(30, int(request.get('maxMinutes', 25))))
+              seconds = max(10, min(120, int(request.get('personSeconds', 90))))
+              max_candidates = max(1, min(3, int(request.get('maxCandidates', 3))))
               args = ['python', 'singer/expansion-1500/prepare_media.py', '--limit', str(limit),
-                      '--workers', '1', '--max-minutes', '25', '--person-seconds', '90',
+                      '--workers', str(workers), '--max-minutes', str(minutes),
+                      '--person-seconds', str(seconds), '--max-candidates', str(max_candidates),
                       '--live-ref', 'origin/main']
               # Explicit planned IDs are authoritative; do not silently run another
               # 40 random people when a 10-person diagnostic was requested.
@@ -77,8 +82,11 @@ jobs:
                   args += ['--person-id', pid]
               if request.get('retryFailed'):
                   args.append('--retry-failed')
-              if request.get('providers'):
-                  args += ['--providers', request['providers']]
+              providers = request.get('providers')
+              if isinstance(providers, list):
+                  providers = ','.join(providers)
+              if providers:
+                  args += ['--providers', str(providers)]
               print('Collecting', limit, 'people; explicit IDs:', request.get('plannedPersonIds', [])[:limit], flush=True)
               subprocess.run(args, check=True)
           PY

@@ -67,6 +67,7 @@ def report(root, directory, state, run_id, scanned):
                                                   c.get('identityEvidence', {}).get('claim') == 'P18') for c in entries),
             'openLicenseMetadata': sum(c.get('rightsStatus') == 'open_license_metadata' for c in entries),
             'downloadedForHumanReview': sum(c.get('status') == 'pending_review' and bool(c.get('gamePath')) for c in entries),
+            'savedForManualCrop': sum(c.get('status') == 'manual_crop_required' and bool(c.get('originalPath')) for c in entries),
             'errors': dict(collections.Counter(e.get('code', 'unknown') for e in errors))}
     summary = {'runId': run_id, 'generatedAt': now(), 'scannedPeople': len(scanned),
                'peopleWithNewCandidates': sum(bool(p.get('lastRunNewCandidateIds')) for p in selected),
@@ -77,6 +78,7 @@ def report(root, directory, state, run_id, scanned):
                'statusCounts': dict(collections.Counter(p['status'] for p in people)),
                'failureReasons': dict(collections.Counter(e['code'] for p in failures for e in p['errors'])),
                'batchFailureReasons': dict(collections.Counter(e.get('code', 'unknown') for e in batch_errors)),
+               'manualCropSources': sum(c.get('status') == 'manual_crop_required' for p in people for c in p['candidates']),
                'batchProviderStages': provider_stages,
                'contactSheets': sheets, 'modifiedProduction': False, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE'}
     atomic(out / 'summary.json', summary)

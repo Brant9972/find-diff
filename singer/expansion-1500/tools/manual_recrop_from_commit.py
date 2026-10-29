@@ -52,6 +52,14 @@ def stage_manual_recrops(root, directory, state, request, run_id, live):
         raw = _git_file(commit, 'singer/' + source['originalPath'])
         if hashlib.sha256(raw).hexdigest() != item['sourceSha256']:
             raise ValueError('Source image bytes differ: ' + pid)
+        if not any(c['id'] == source['id'] for c in row['candidates']):
+            source_path = directory / 'assets' / pid / source['id'] / item['sourceSha256'][:12] / 'original.bin'
+            immutable_bytes(source_path, raw)
+            source_copy = copy.deepcopy(source)
+            source_copy['originalPath'] = str(source_path.relative_to(root))
+            source_copy['eligibleForLive'] = False
+            source_copy['humanReview'] = None
+            row['candidates'].append(source_copy)
         image = ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
         x0, y0, x1, y1 = item['box']
         if not (0 <= x0 < x1 <= image.width and 0 <= y0 < y1 <= image.height):

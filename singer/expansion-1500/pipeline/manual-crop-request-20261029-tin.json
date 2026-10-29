@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "5c20f314873f958be4a836431315e2a2835f09a3",
+  "sourceRun": "20261029T143031Z-cb626fef",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Stage a single visually inspected source-only portrait of 田蕊妮 as a draft 600x720 crop; five-stage, Commons license and identity still require independent final review.",
+  "items": [
+    {
+      "personId": "t1500_0334",
+      "sourceCandidateId": "6b25e8bdda3d6c397452",
+      "sourceSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+      "box": [
+        250,
+        220,
+        1420,
+        1624
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.32,
+          0.96,
+          0.47
+        ],
+        "nose": [
+          0.08,
+          0.32,
+          0.96,
+          0.6
+        ],
+        "mouth": [
+          0.08,
+          0.32,
+          0.96,
+          0.77
+        ],
+        "chin": [
+          0.08,
+          0.32,
+          0.96,
+          0.94
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Original Commons source pixels visibly show a sharp, unobstructed single woman with both eyes, nose, mouth and chin. Wikidata Q6437706 P18 points to 田蕊妮.jpg; source metadata credits am730 CC BY 3.0. Image is angled and must be inspected in actual 600x720 five-stage previews; source license provenance must be independently confirmed before any approval."
+    }
+  ]
+}

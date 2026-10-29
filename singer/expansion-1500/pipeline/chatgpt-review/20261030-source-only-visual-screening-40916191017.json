@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_only_pixel_and_caption_screening_not_live_approval",
+  "reviewedAt": "2026-10-30",
+  "sourceRun": "20261029T165506Z-5e048a31",
+  "sourceBranch": "automation/celebrity-photo-pipeline",
+  "sourceContactSheet": "expansion-1500/pipeline/review-assets/20261029T165506Z-5e048a31/manual-source-sheet-01.jpg",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "sourceOnly": 7,
+    "previouslyScreenedUnchanged": 3,
+    "newScreeningDecisions": 4,
+    "approvedForGame": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0376",
+      "name": "曾淑勤",
+      "candidateId": "f49261751e2b5f89dce3",
+      "originalSha256": "6e0820de3c66adea31eeae10cca70b518e06a55e6a83687560a87c203687441c",
+      "decision": "reject_as_game_portrait",
+      "reason": "The retained contact sheet shows a distant stage performer holding a guitar, with a microphone directly over the mouth and a very small face. No 600x720 clear eye/nose/mouth reveal is possible without substantial upscaling. Caption names 曾淑勤, but composition is unsuitable.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A-vai_Tzeng_20101029.jpg",
+      "caption": "​臺灣女歌手曾淑勤。",
+      "artist": "Max Chang",
+      "licenseMetadata": "CC BY 2.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "source_contact_sheet_pixel_inspected",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0390",
+      "name": "家家",
+      "candidateId": "4a0daf851facfd8ed183",
+      "originalSha256": "f4f3f7ff62e8b4bb624e40029df415c568792d4f8b6730ac0a3774a5d5cf22b5",
+      "decision": "reject_as_game_portrait",
+      "reason": "This is a restaurant-food photograph. Caption explicitly describes 家家美食 Ka Ka Cuisine Restaurant in Wong Tai Sin, not singer 家家. Zero human faces. Reject as an unrelated name collision, not an artist portrait.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:HK_WTS_%E9%BB%83%E5%A4%A7%E4%BB%99_Wong_Tai_Sin_%E9%9B%99%E9%B3%B3%E8%A1%97_Sheung_Fung_Street_shop_%E5%AE%B6%E5%AE%B6%E7%BE%8E%E9%A3%9F_Ka_Ka_Cuisine_Restaurant_food_September_2021_SS2_04.jpg",
+      "caption": "HK WTS zh:黃大仙 Wong Tai Sin zh:雙鳳街 Sheung Fung Street shop 家家美食 Ka Ka Cuisine Restaurant food September 2021",
+      "artist": "Fraxaer SI38F8",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "source_contact_sheet_pixel_inspected",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0392",
+      "name": "以莉高露",
+      "candidateId": "3f7f2fcfdb1055d3b40a",
+      "originalSha256": "59dccd4696ee97770666a4ee6e3470f061302f0db724b9a52b02689b587e3f89",
+      "decision": "reject_as_game_portrait",
+      "reason": "Source caption names 陳冠宇 and 以莉高露 together; retained contact sheet shows two prominent people in an indoor portrait. Neither is an approved isolated 600x720 face crop. Keep source for audit but reject as-is and seek a clear solo portrait of 以莉高露.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Guanyuchen%26Ilid-Kaolo.jpg",
+      "caption": "​陳冠宇與以莉高露",
+      "artist": "Alltonight",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "source_contact_sheet_pixel_inspected",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0394",
+      "name": "黃玠",
+      "candidateId": "39edee5c5db174c3163b",
+      "originalSha256": "131d16619655716ac3bbe7ee9252273dda1a28c0ccaf21d2fc36f92b8c670901",
+      "decision": "reject_as_game_portrait",
+      "reason": "Source explicitly depicts singer 黃玠瑋 (Zooey Wonder), NOT singer 黃玠. Distinct performers with overlapping Chinese name substring. Reject for wrong identity regardless of open-license metadata or crop quality.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2024_%E9%BB%83%E7%8E%A0%E7%91%8B_Zooey_Wonder_%EF%BC%A0The_Wall_Taipei.jpg",
+      "caption": "2024 黃玠瑋 Zooey Wonder ＠The Wall Taipei",
+      "artist": "Yukiwu0705",
+      "licenseMetadata": "CC BY 4.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "source_contact_sheet_pixel_inspected",
+      "eligibleForLive": false
+    }
+  ],
+  "previouslyScreenedSourceOnly": [
+    "t1500_0297",
+    "t1500_0333",
+    "t1500_0339"
+  ],
+  "notes": [
+    "These are source-only assets, not playable 600x720 crops; do not import as game approvals.",
+    "False positive names must be blocked before any future automatic photo approval: 家家美食 restaurant is not singer 家家; 黃玠瑋 is not 黃玠.",
+    "Retain source SHA and do not repeat the three older reviews."
+  ]
+}

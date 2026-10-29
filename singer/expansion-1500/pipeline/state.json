@@ -21632,7 +21632,7 @@
       "personId": "t1500_0259",
       "candidateId": "c1500-0259",
       "name": "羅璧玲",
-      "status": "rejected",
+      "status": "duplicate_existing",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -62947,9 +62947,9 @@
       "personId": "t1500_0334",
       "candidateId": "c1500-0334",
       "name": "田蕊妮",
-      "status": "download_failed",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-29T16:41:04.930074+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "id": "legacy-t1500_0334",
@@ -63092,6 +63092,158 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
+          "filename": "田蕊妮.jpg",
+          "artist": "am730",
+          "credit": "【專訪】女人四十‧田蕊妮︰母女是互不放過大家的",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​2013年萬千星輝頒獎典禮最佳女主角",
+          "identityEvidence": {
+            "query": "田蕊妮",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "田蕊妮",
+              "田蕊妮"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "巨輪"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T14:40:30.940339+00:00",
+          "width": 1490,
+          "height": 2116,
+          "id": "manualrecrop-fdcdfac335f177c7cc37",
+          "personId": "t1500_0334",
+          "discoveryRunId": "20261029T143031Z-cb626fef",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0334/manualrecrop-fdcdfac335f177c7cc37/1c838968f1b0/original.bin",
+          "originalSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0334/manualrecrop-fdcdfac335f177c7cc37/1c838968f1b0/fdcdfac335f1.jpg",
+          "parentCandidateId": "6b25e8bdda3d6c397452",
+          "parentSourceSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+          "gameSha256": "fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.32,
+              0.96,
+              0.47
+            ],
+            "nose": [
+              0.08,
+              0.32,
+              0.96,
+              0.6
+            ],
+            "mouth": [
+              0.08,
+              0.32,
+              0.96,
+              0.77
+            ],
+            "chin": [
+              0.08,
+              0.32,
+              0.96,
+              0.94
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "5c20f314873f958be4a836431315e2a2835f09a3",
+            "sourceCandidateId": "6b25e8bdda3d6c397452",
+            "sourceSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+            "sourceSize": [
+              1490,
+              2116
+            ],
+            "cropBox": [
+              250,
+              220,
+              1420,
+              1624
+            ],
+            "parentCropFailure": "No reliable frontal face",
+            "reviewerNotes": "Original Commons source pixels visibly show a sharp, unobstructed single woman with both eyes, nose, mouth and chin. Wikidata Q6437706 P18 points to 田蕊妮.jpg; source metadata credits am730 CC BY 3.0. Image is angled and must be inspected in actual 600x720 five-stage previews; source license provenance must be independently confirmed before any approval."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828/chin.png",
+            "full": "expansion-1500/pipeline/evidence/fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "fdcdfac335f177c7cc372c09ee66934f01b8c72838f55d1b97ff3fbfc2caa828",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.32,
+                0.96,
+                0.47
+              ],
+              "nose": [
+                0.08,
+                0.32,
+                0.96,
+                0.6
+              ],
+              "mouth": [
+                0.08,
+                0.32,
+                0.96,
+                0.77
+              ],
+              "chin": [
+                0.08,
+                0.32,
+                0.96,
+                0.94
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -63183,6 +63335,13 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261029T153929Z-8af92057",
+          "sourceCommit": "5c20f314873f958be4a836431315e2a2835f09a3",
+          "candidateId": "manualrecrop-fdcdfac335f177c7cc37",
+          "sourceCandidateId": "6b25e8bdda3d6c397452"
         }
       ],
       "legacyRecord": {
@@ -63243,77 +63402,13 @@
         },
         "reviewNote": "田蕊妮候選照片檔名田明慧，身分不符"
       },
-      "lastRunId": "20261029T143031Z-cb626fef",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261029T153929Z-8af92057",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-fdcdfac335f177c7cc37"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T14:40:30.537668+00:00",
-      "lastErrors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
-            "filename": "田蕊妮.jpg",
-            "artist": "am730",
-            "credit": "【專訪】女人四十‧田蕊妮︰母女是互不放過大家的",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​2013年萬千星輝頒獎典禮最佳女主角",
-            "identityEvidence": {
-              "query": "田蕊妮",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "田蕊妮",
-                "田蕊妮"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "巨輪"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T14:40:30.940339+00:00",
-            "width": 1490,
-            "height": 2116,
-            "id": "6b25e8bdda3d6c397452",
-            "personId": "t1500_0334",
-            "discoveryRunId": "20261029T143031Z-cb626fef",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0334/6b25e8bdda3d6c397452/1c838968f1b0/original.bin",
-            "originalSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
-            "cropFailure": "No reliable frontal face",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Krystal_Tin%27s_signature.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "Per-request wall time budget reached"
-        }
-      ],
+      "lastErrors": [],
       "lastFailure": {
         "code": "download_failed",
         "retryable": true,

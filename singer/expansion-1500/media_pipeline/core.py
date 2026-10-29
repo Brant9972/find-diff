@@ -253,7 +253,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 if not item.get('source') or not item.get('url'):
                     errors.append({'provider': provider.name, 'code': 'invalid_metadata', 'message': 'Missing image URL or source page'})
                     continue
-                if key in seen or key in rejected or key in used:
+                if key in seen or key in rejected or key in used or key in {source_key(url) for url in person.get('excludedPhotoSources', [])}:
                     continue
                 seen.add(key)
                 tried += 1

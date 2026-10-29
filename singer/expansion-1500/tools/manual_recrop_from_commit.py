@@ -75,8 +75,23 @@ def stage_manual_recrops(root, directory, state, request, run_id, live):
         game = output.getvalue()
         game_sha = hashlib.sha256(game).hexdigest()
         cid = 'manualrecrop-' + game_sha[:20]
-        if any(c['id'] == cid for c in row['candidates']):
-            continue
+        preview_variant = None
+        existing = next((c for c in row['candidates'] if c['id'] == cid), None)
+        if existing:
+            if existing.get('reveal') == reveal:
+                continue
+            if existing.get('status') in {'approved', 'published'}:
+                raise ValueError('Cannot silently replace an approved manual crop: ' + pid)
+            # Same JPEG pixels can have different masks. Never treat a new reveal
+            # as a duplicate, and never overwrite immutable stage preview bytes.
+            reveal_sha = hashlib.sha256(json.dumps(reveal, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+            cid = 'manualrecrop-' + game_sha[:12] + '-' + reveal_sha[:8]
+            preview_variant = reveal_sha[:12]
+            if any(c['id'] == cid for c in row['candidates']):
+                continue
+            existing['status'] = 'superseded'
+            existing['eligibleForLive'] = False
+            existing['supersededBy'] = cid
         base = directory / 'assets' / pid / cid / item['sourceSha256'][:12]
         raw_path, game_path = base / 'original.bin', base / (game_sha[:12] + '.jpg')
         immutable_bytes(raw_path, raw)
@@ -93,6 +108,7 @@ def stage_manual_recrops(root, directory, state, request, run_id, live):
             'gamePath': str(game_path.relative_to(root)),
             'gameSha256': game_sha,
             'reveal': reveal,
+            'previewVariantKey': preview_variant,
             'validation': {'decoded': True, 'size': [600, 720],
                            'manualGeometryRequiresHumanVisualQA': True},
             'manualCropEvidence': {'sourceCommit': commit, 'sourceCandidateId': source['id'],

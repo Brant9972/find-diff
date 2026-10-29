@@ -44,6 +44,30 @@ def report(root, directory, state, run_id, scanned):
     selected = [state['people'][pid] for pid in scanned]
     sheets = contact_sheets(root, out, people)
     failures = [{'personId': p['personId'], 'name': p['name'], 'status': p['status'], 'nextRetryAt': p.get('nextRetryAt'), 'errors': p.get('lastErrors', []), 'legacyFailure': p.get('lastFailure')} for p in people if p['status'] in {'download_failed', 'no_suitable_source', 'rejected'}]
+    # Historical failureReasons below covers the entire durable roster. The
+    # batch-only diagnostics must not accidentally count old failed searches.
+    batch_errors = [e for p in selected for e in p.get('lastErrors', [])]
+    batch_candidates = [(p, c) for p in selected for c in p.get('candidates', [])
+                        if c.get('discoveryRunId') == run_id]
+    provider_names = sorted({e.get('provider', 'unknown') for e in batch_errors} |
+                            {c.get('provider', 'unknown') for _, c in batch_candidates} |
+                            {h['provider'] for p in selected for h in p.get('history', [])
+                             if h.get('provider') and h.get('time', '') >= p.get('lastAttemptAt', '9999')})
+    provider_stages = {}
+    for provider in provider_names:
+        entries = [c for _, c in batch_candidates if c.get('provider', 'unknown') == provider]
+        errors = [e for e in batch_errors if e.get('provider', 'unknown') == provider]
+        attempted = {p['personId'] for p in selected for h in p.get('history', [])
+                     if h.get('provider') == provider and h.get('time', '') >= p.get('lastAttemptAt', '9999')}
+        provider_stages[provider] = {
+            'attemptedPeople': len(attempted),
+            'metadataCandidates': len(entries),
+            'identitySupportedMetadata': sum(bool(c.get('identityEvidence', {}).get('captionAliasMatches') or
+                                                  c.get('identityEvidence', {}).get('matchedAliases') or
+                                                  c.get('identityEvidence', {}).get('claim') == 'P18') for c in entries),
+            'openLicenseMetadata': sum(c.get('rightsStatus') == 'open_license_metadata' for c in entries),
+            'downloadedForHumanReview': sum(c.get('status') == 'pending_review' and bool(c.get('gamePath')) for c in entries),
+            'errors': dict(collections.Counter(e.get('code', 'unknown') for e in errors))}
     summary = {'runId': run_id, 'generatedAt': now(), 'scannedPeople': len(scanned),
                'peopleWithNewCandidates': sum(bool(p.get('lastRunNewCandidateIds')) for p in selected),
                'newCandidatePhotos': sum(len(p.get('lastRunNewCandidateIds', [])) for p in selected),
@@ -52,6 +76,8 @@ def report(root, directory, state, run_id, scanned):
                'licenseConcernCandidates': sum(c.get('rightsStatus') == 'needs_review' for p in people for c in p['candidates'] if c.get('status') not in {'rejected','superseded'} and p['status'] != 'published'),
                'statusCounts': dict(collections.Counter(p['status'] for p in people)),
                'failureReasons': dict(collections.Counter(e['code'] for p in failures for e in p['errors'])),
+               'batchFailureReasons': dict(collections.Counter(e.get('code', 'unknown') for e in batch_errors)),
+               'batchProviderStages': provider_stages,
                'contactSheets': sheets, 'modifiedProduction': False, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE'}
     atomic(out / 'summary.json', summary)
     atomic(out / 'failures.json', failures)

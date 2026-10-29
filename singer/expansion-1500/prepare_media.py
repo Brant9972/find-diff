@@ -22,7 +22,7 @@ def select_people(state,people,handoff,limit,review_only=False,retry_failed=Fals
         if person_ids and pid not in person_ids:continue
         if review_only and pid not in reviewed:continue
         # Already staged reviewable pixels do not need another source search.
-        if row['status'] in {'approved','published','pending_review','candidate_ready'}:continue
+        if row['status'] in {'approved','published','pending_review','candidate_ready','duplicate_existing'}:continue
         if retry_failed and row['status'] not in {'download_failed','no_suitable_source','rejected','searching'}:continue
         retry=row.get('nextRetryAt')
         if retry and row.get('lastSearchRevision')==SEARCH_REVISION and not retry_failed:

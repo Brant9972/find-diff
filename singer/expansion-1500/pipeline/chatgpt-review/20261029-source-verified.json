@@ -96,6 +96,25 @@
     "testCommit": "45f3b5c6065848dfee641f996d918a988a1918ca",
     "eligibleForLiveAfterQA": true
   },
+  "additionalApprovedFromNewPipelineRun": [
+    {
+      "personId": "t1500_0323",
+      "candidateId": "fc9d63cf2b62f5c95318",
+      "gameSha256": "4a285732bed5f190d7783498a09685593b72ab996cf2be97234cc27697f0658d",
+      "originalSha256": "68f11cce42987731a82af6dcf71fa9ef204bfd648b0dbf4bb6ace94430e8c6e2",
+      "name": "阿喜",
+      "decision": "approve",
+      "source": "https://commons.wikimedia.org/wiki/File:Lin_Yu-pin_standing_(11146907725).jpg",
+      "identityEvidence": "Original Commons description says 林育品（阿喜）擔任金士頓科技廣告代言人; used on 林育品 biography and depicts this person.",
+      "license": "CC BY 2.0",
+      "artist": "Gene Wang",
+      "originalSource": "https://www.flickr.com/photos/gene_wang/11146907725",
+      "reason": "600x720 face crop with readable eyes (gaze up), nose, mouth and chin; no sunglasses, mask, microphone, second face or watermark; recognition from 2013 public appearance.",
+      "testBranch": "release-1100-reviewed-20261029",
+      "testCommit": "b0746f679bf6c616b4409bcce88e5d274bdbf06f",
+      "eligibleForLiveAfterQA": true
+    }
+  ],
   "additionalRejectedFalseMatch": {
     "personId": "t1500_0202",
     "candidateId": "5357b32a0f75d9a1a20c",

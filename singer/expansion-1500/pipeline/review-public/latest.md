@@ -1,43 +1,43 @@
 # 照片視覺審核入口
 
-批次 `20261029T232310Z-e7a1c2af`：2 位人物、2 張現行待審圖。
-所有圖片固定於資產 Commit `ac1b6acf919a1a6d84db274d487a16fa2788f50f`。沒有修改正式題庫或自動核准照片。
+批次 `20261029T232610Z-3f239814`：2 位人物、2 張現行待審圖。
+所有圖片固定於資產 Commit `6aa7c4bdb88132a588a8268a536826d5345118c0`。沒有修改正式題庫或自動核准照片。
 
 請先看總覽，再開每張候選圖與五階段預覽。若圖片工具無法開啟 raw 連結，使用旁邊的 GitHub 看圖頁；無法取得像素時保留待審，不得視為已目視。
 
 ## 照片總覽 1
 
-![照片總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/contact-sheet-01.jpg)
+![照片總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/contact-sheet-01.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/contact-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/contact-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/contact-sheet-01.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/contact-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/contact-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/contact-sheet-01.jpg?raw=true)
 
 ## 五階段總覽 1
 
-![五階段總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/reveal-sheet-01.jpg)
+![五階段總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/reveal-sheet-01.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/reveal-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/reveal-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/reveal-sheet-01.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/reveal-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/reveal-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/reveal-sheet-01.jpg?raw=true)
 
 ## 張兆輝 · `t1500_0577` · `manualrecrop-1f29f8e5e8cae1f71d69`
 
 照片 SHA-256：`1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9`；狀態：`pending_review`。
 
-![張兆輝 候選照片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/candidate.jpg)
+![張兆輝 候選照片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/candidate.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/candidate.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/candidate.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/candidate.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/candidate.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/candidate.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/candidate.jpg?raw=true)
 
 | 眼睛 | 鼻子 | 嘴巴 | 下巴 | 全臉 |
 | --- | --- | --- | --- | --- |
-| ![眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/eyes.png) | ![鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/nose.png) | ![嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/mouth.png) | ![下巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/chin.png) | ![全臉](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/full.png) |
+| ![眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/eyes.png) | ![鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/nose.png) | ![嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/mouth.png) | ![下巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/chin.png) | ![全臉](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/full.png) |
 
-五階段直接圖片：[眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/eyes.png) · [鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/nose.png) · [嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/mouth.png) · [下巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/chin.png) · [全臉](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/full.png)
+五階段直接圖片：[眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/eyes.png) · [鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/nose.png) · [嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/mouth.png) · [下巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/chin.png) · [全臉](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/full.png)
 
 ### 張兆輝 · 已保存來源圖片
 
 下載副本 1208×1669；保留來源位元組，並非宣稱其為全尺寸原檔。
 
-![張兆輝 來源圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/source.jpg)
+![張兆輝 來源圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/source.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/source.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/source.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0001/source.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/source.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/source.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0001/source.jpg?raw=true)
 
 - [來源頁](<https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg>)
 - [下載圖片網址](<https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled>)
@@ -65,27 +65,27 @@
 - 辨識度搜尋紀錄（待核）：{"note": "Familiar appearance has not been visually reviewed", "representativeWorks": \["黑社會"\], "requestedReplacement": ""}
 - 來源像素對應：尚無自動對應證據；需目視核對候選裁切與保存來源圖。
 
-## 黃浩然 · `t1500_0579` · `manualrecrop-094dad3cbd9776fe71bb`
+## 黃浩然 · `t1500_0579` · `manualrecrop-094dad3cbd97-8175042f`
 
 照片 SHA-256：`094dad3cbd9776fe71bb2a857441d721718ab66b65a2402761573d6b1f2e8f0e`；狀態：`pending_review`。
 
-![黃浩然 候選照片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/candidate.jpg)
+![黃浩然 候選照片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/candidate.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/candidate.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/candidate.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/candidate.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/candidate.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/candidate.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/candidate.jpg?raw=true)
 
 | 眼睛 | 鼻子 | 嘴巴 | 下巴 | 全臉 |
 | --- | --- | --- | --- | --- |
-| ![眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/eyes.png) | ![鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/nose.png) | ![嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/mouth.png) | ![下巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/chin.png) | ![全臉](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/full.png) |
+| ![眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/eyes.png) | ![鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/nose.png) | ![嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/mouth.png) | ![下巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/chin.png) | ![全臉](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/full.png) |
 
-五階段直接圖片：[眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/eyes.png) · [鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/nose.png) · [嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/mouth.png) · [下巴](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/chin.png) · [全臉](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/full.png)
+五階段直接圖片：[眼睛](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/eyes.png) · [鼻子](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/nose.png) · [嘴巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/mouth.png) · [下巴](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/chin.png) · [全臉](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/full.png)
 
 ### 黃浩然 · 已保存來源圖片
 
 下載副本 1065×1503；保留來源位元組，並非宣稱其為全尺寸原檔。
 
-![黃浩然 來源圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/source.jpg)
+![黃浩然 來源圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/source.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/source.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/source.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/photo-0002/source.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/source.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/source.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/photo-0002/source.jpg?raw=true)
 
 - [來源頁](<https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg>)
 - [下載圖片網址](<https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled>)
@@ -105,7 +105,7 @@
 - 辨識度搜尋紀錄（待核）：{"note": "Familiar appearance must be reviewed", "representativeWorks": \["拳王"\], "requestedReplacement": ""}
 - 來源像素對應：尚無自動對應證據；需目視核對候選裁切與保存來源圖。
 
-[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/ac1b6acf919a1a6d84db274d487a16fa2788f50f/singer/expansion-1500/pipeline/review-assets/20261029T232310Z-e7a1c2af/assets-index.json)
+[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/6aa7c4bdb88132a588a8268a536826d5345118c0/singer/expansion-1500/pipeline/review-assets/20261029T232610Z-3f239814/assets-index.json)
 
 請將下一輪審核結果寫入分支 `automation/celebrity-photo-pipeline` 的固定檔案 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。
 

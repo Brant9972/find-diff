@@ -157,6 +157,32 @@ def build_assets(root, directory, state, run_id):
                            'reviewStatus': candidate['status'], 'eligibleForLive': False,
                            'candidateImage': game, 'stageImages': stages, 'sourceImage': original,
                            'reveal': copy.deepcopy(candidate['reveal']), 'metadata': _metadata(person, candidate)})
+    # SOURCE-ONLY photos remain ineligible for game release until cropped and reviewed.
+    manual_sources = []
+    for person_id, person in sorted(state['people'].items()):
+        if person.get('status') in {'published', 'approved', 'duplicate_existing'}:
+            continue
+        for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
+            if candidate.get('status') != 'manual_crop_required' or not candidate.get('originalPath'):
+                continue
+            if not candidate.get('originalSha256'):
+                raise ValueError('Source-only candidate requires immutable source SHA-256')
+            number = len(manual_sources) + 1
+            source = _copy_image(root, contained(root, candidate['originalPath']),
+                                 output / f'source-only-{number:04}' / 'original',
+                                 candidate['originalSha256'])
+            manual_sources.append({
+                'personId': person_id, 'name': person.get('name', ''),
+                'candidateId': candidate['id'], 'originalSha256': candidate['originalSha256'],
+                'sourceImage': source, 'cropFailure': candidate.get('cropFailure'),
+                'reviewStatus': 'SOURCE_ONLY_MANUAL_CROP_REQUIRED',
+                'eligibleForLive': False, 'gameSha256': None, 'stageImages': {},
+                'metadata': _metadata(person, candidate),
+            })
+            if len(manual_sources) >= 60:
+                break
+        if len(manual_sources) >= 60:
+            break
     font, small_font = _font(18), _font(14)
     contacts, reveal_sheets = [], []
     for offset in range(0, len(photos), 20):
@@ -195,12 +221,38 @@ def build_assets(root, directory, state, run_id):
         item = _rendered_asset(root, output / f'reveal-sheet-{offset // 6 + 1:02}.jpg', sheet)
         item['entries'] = entries
         reveal_sheets.append(item)
+    manual_contacts = []
+    for offset in range(0, len(manual_sources), 20):
+        page = manual_sources[offset:offset + 20]
+        sheet = Image.new('RGB', (960, ((len(page) + 3) // 4) * 315), '#17151f')
+        draw = ImageDraw.Draw(sheet)
+        entries = []
+        for index, source in enumerate(page):
+            x, y = index % 4 * 240, index // 4 * 315
+            draw.text((x + 7, y + 4), f"{offset + index + 1}. {source['name']}",
+                      font=font, fill='white')
+            draw.text((x + 7, y + 29), source['personId'], font=small_font, fill='white')
+            with Image.open(contained(root, source['sourceImage']['path'])) as image:
+                image = ImageOps.exif_transpose(image).convert('RGB')
+                thumb = ImageOps.contain(image, (210, 235))
+                sheet.paste(thumb, (x + 15 + (210 - thumb.width) // 2,
+                                    y + 55 + (235 - thumb.height) // 2))
+            draw.text((x + 7, y + 292), (source['cropFailure'] or 'Needs manual crop')[:31],
+                      font=small_font, fill='#ffd183')
+            entries.append({'tile': index + 1, 'personId': source['personId'],
+                            'candidateId': source['candidateId'],
+                            'originalSha256': source['originalSha256']})
+        item = _rendered_asset(root, output / f'manual-source-sheet-{offset // 20 + 1:02}.jpg', sheet)
+        item['entries'] = entries
+        manual_contacts.append(item)
     manifest_path = output / 'assets-index.json'
     manifest = {'schemaVersion': 1, 'runId': run_id, 'releaseGate': 'DRAFT_ONLY_NOT_PLAYABLE',
                 'assetManifestPath': str(manifest_path.relative_to(root)),
                 'sourceReviewSha256': state.get('chatgptReview', {}).get('sha256'),
                 'peopleCount': len({p['personId'] for p in photos}), 'photoCount': len(photos),
-                'contactSheets': contacts, 'revealSheets': reveal_sheets, 'photos': photos}
+                'contactSheets': contacts, 'revealSheets': reveal_sheets, 'photos': photos,
+                'manualSourceCount': len(manual_sources), 'manualSourcePeopleCount': len({p['personId'] for p in manual_sources}),
+                'manualContactSheets': manual_contacts, 'manualSources': manual_sources}
     immutable_bytes(manifest_path, _json_bytes(manifest))
     return manifest
 
@@ -353,6 +405,24 @@ def publish_links(root, directory, manifest, asset_commit, repository='Brant9972
         lines += [f'## 照片總覽 {number}', ''] + image_line('照片總覽 ' + str(number), sheet)
     for number, sheet in enumerate(result['revealSheets'], 1):
         lines += [f'## 五階段總覽 {number}', ''] + image_line('五階段總覽 ' + str(number), sheet)
+    if result.get('manualSources'):
+        lines += ['## 原圖保留：尚無合格 600×720 裁切（不可當作新題）', '',
+                  '以下僅是已下載的來源圖片，沒有遊戲裁切、五階段預覽或人工核准。請先核對是否真的是該人物，再判斷能否手動裁切。', '']
+        for number, sheet in enumerate(result.get('manualContactSheets', []), 1):
+            lines += [f'### 原圖總覽 {number}', ''] + image_line('原圖總覽 ' + str(number), sheet)
+        for source in result['manualSources']:
+            metadata = source['metadata']
+            lines += [f"### {_markdown_text(source['name'])} · {source['personId']} · {_markdown_text(source['candidateId'])}", '',
+                      f"原圖 SHA-256：{source['originalSha256']}；裁切失敗：{_markdown_text(source.get('cropFailure'))}。", '']
+            lines += image_line(source['name'] + ' 待人工裁切原圖', source['sourceImage'])
+            for title, key in [('來源頁', 'sourcePage'), ('授權條款', 'licenseUrl')]:
+                link = _markdown_link(title, metadata.get(key))
+                if link:
+                    lines.append('- ' + link)
+            lines += [f"- 作者：{_markdown_text(metadata.get('author') or '待確認')}",
+                      f"- 授權：{_markdown_text(metadata.get('license') or '待確認')}（需人工核對）",
+                      f"- 來源圖說：{_markdown_text(metadata.get('caption') or '未提供')}",
+                      '- 狀態：SOURCE_ONLY；不可計入人數、不可部署。', '']
     for photo in result['photos']:
         name, cid, metadata = photo['name'], photo['candidateId'], photo['metadata']
         lines += [f"## {_markdown_text(name)} · `{photo['personId']}` · `{_markdown_text(cid)}`", '',

@@ -1,0 +1,80 @@
+{
+  "runId": "20261029T201720Z-9c28875a",
+  "generatedAt": "2026-10-29T20:18:57.691615+00:00",
+  "scannedPeople": 10,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 10,
+  "retryNeeded": 428,
+  "pendingReviewPeople": 0,
+  "licenseConcernCandidates": 235,
+  "statusCounts": {
+    "no_suitable_source": 216,
+    "download_failed": 203,
+    "rejected": 9,
+    "published": 82,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "network_error": 287,
+    "identity_unconfirmed": 288,
+    "image_validation_failed": 101,
+    "source_api_busy": 70,
+    "license_unclear": 62,
+    "source_api_error": 25,
+    "identity_ambiguous": 13,
+    "excluded_context": 12,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4
+  },
+  "batchFailureReasons": {
+    "image_validation_failed": 11,
+    "source_api_error": 2,
+    "license_unclear": 2,
+    "identity_ambiguous": 2,
+    "identity_unconfirmed": 12,
+    "network_error": 3
+  },
+  "manualCropSources": 13,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 10,
+      "metadataCandidates": 18,
+      "identitySupportedMetadata": 6,
+      "openLicenseMetadata": 13,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 4,
+      "errors": {
+        "source_api_error": 1,
+        "image_validation_failed": 1,
+        "identity_unconfirmed": 12,
+        "license_unclear": 1
+      }
+    },
+    "entity": {
+      "attemptedPeople": 10,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {
+        "image_validation_failed": 10,
+        "source_api_error": 1,
+        "license_unclear": 1,
+        "identity_ambiguous": 2,
+        "network_error": 3
+      }
+    }
+  },
+  "contactSheets": [],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 10,
+    "processedPeople": 10,
+    "workers": 2,
+    "elapsedSeconds": 96.44,
+    "stoppedForBudget": false
+  }
+}

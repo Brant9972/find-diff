@@ -2,59 +2,60 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261029T181547Z-7893e576",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261029T181547Z-7893e576/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261029T181547Z-7893e576/assets-index.json",
+  "runId": "20261029T201720Z-9c28875a",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261029T201720Z-9c28875a/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261029T201720Z-9c28875a/assets-index.json",
   "summary": {
-    "runId": "20261029T181547Z-7893e576",
-    "generatedAt": "2026-10-29T18:17:25.324122+00:00",
+    "runId": "20261029T201720Z-9c28875a",
+    "generatedAt": "2026-10-29T20:18:57.691615+00:00",
     "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
     "scannedWithoutCandidates": 10,
     "retryNeeded": 428,
     "pendingReviewPeople": 0,
-    "licenseConcernCandidates": 230,
+    "licenseConcernCandidates": 235,
     "statusCounts": {
-      "no_suitable_source": 218,
-      "download_failed": 201,
+      "no_suitable_source": 216,
+      "download_failed": 203,
       "rejected": 9,
       "published": 82,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "network_error": 286,
-      "identity_unconfirmed": 276,
-      "image_validation_failed": 91,
-      "source_api_busy": 71,
-      "license_unclear": 60,
-      "source_api_error": 23,
-      "identity_ambiguous": 11,
+      "network_error": 287,
+      "identity_unconfirmed": 288,
+      "image_validation_failed": 101,
+      "source_api_busy": 70,
+      "license_unclear": 62,
+      "source_api_error": 25,
+      "identity_ambiguous": 13,
       "excluded_context": 12,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "license_unclear": 3,
-      "source_api_busy": 2,
-      "network_error": 6,
-      "identity_unconfirmed": 8,
-      "image_validation_failed": 3
+      "image_validation_failed": 11,
+      "source_api_error": 2,
+      "license_unclear": 2,
+      "identity_ambiguous": 2,
+      "identity_unconfirmed": 12,
+      "network_error": 3
     },
-    "manualCropSources": 9,
+    "manualCropSources": 13,
     "batchProviderStages": {
       "commons": {
         "attemptedPeople": 10,
-        "metadataCandidates": 11,
-        "identitySupportedMetadata": 3,
-        "openLicenseMetadata": 7,
+        "metadataCandidates": 18,
+        "identitySupportedMetadata": 6,
+        "openLicenseMetadata": 13,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
+        "savedForManualCrop": 4,
         "errors": {
-          "identity_unconfirmed": 8,
-          "license_unclear": 1,
-          "image_validation_failed": 3,
-          "source_api_busy": 1
+          "source_api_error": 1,
+          "image_validation_failed": 1,
+          "identity_unconfirmed": 12,
+          "license_unclear": 1
         }
       },
       "entity": {
@@ -65,9 +66,11 @@
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "license_unclear": 2,
-          "source_api_busy": 1,
-          "network_error": 6
+          "image_validation_failed": 10,
+          "source_api_error": 1,
+          "license_unclear": 1,
+          "identity_ambiguous": 2,
+          "network_error": 3
         }
       }
     },
@@ -78,372 +81,378 @@
       "targetPeople": 10,
       "processedPeople": 10,
       "workers": 2,
-      "elapsedSeconds": 97.02,
+      "elapsedSeconds": 96.44,
       "stoppedForBudget": false
     }
   },
   "visualPeople": 0,
   "visualPhotos": 0,
   "batchPeople": [
-    "t1500_0224",
-    "t1500_0096",
-    "t1500_0174",
-    "t1500_0115",
-    "t1500_0192",
-    "t1500_0193",
-    "t1500_0194",
-    "t1500_0204",
-    "t1500_0216",
-    "t1500_0217"
+    "t1500_0564",
+    "t1500_0586",
+    "t1500_0562",
+    "t1500_0577",
+    "t1500_0565",
+    "t1500_0579",
+    "t1500_0583",
+    "t1500_0582",
+    "t1500_0584",
+    "t1500_0589"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0224",
-      "name": "丁國琳",
+      "personId": "t1500_0564",
+      "name": "葛民輝",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%81%E5%9C%8B%E7%90%B3_(2).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+            "filename": "Eric Kot 200812.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Tksteven",
+            "credit": "Selfwork",
+            "license": "CC BY 2.5",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+            "caption": "Eric Kot(葛民輝)  was being the guest in the publicity on 2008.11",
+            "identityEvidence": {
+              "wikidataId": "Q590914",
+              "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+              "exactChineseAliases": [
+                "葛民輝",
+                "葛民辉",
+                "葛民辉",
+                "葛民辉"
+              ],
+              "verifiedSearchAliases": [
+                "葛民輝",
+                "葛民辉",
+                "Eric Kot",
+                "Eric Kot Man Fai",
+                "Eric Kot Man-fai"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:22.511249+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+              "articleTitle": "葛民輝",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Eric Kot",
+              "matchedAliases": [
+                "葛民輝",
+                "葛民辉",
+                "Eric Kot"
+              ],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": [
+                "葛民輝",
+                "葛民辉",
+                "Eric Kot"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "百分百感覺"
+              ],
+              "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:22.653131+00:00",
+            "width": 1000,
+            "height": 750,
+            "id": "b2574981ba5e9e0689c3",
+            "personId": "t1500_0564",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0564/b2574981ba5e9e0689c3/d6dbf1a6c343/original.bin",
+            "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+            "cropFailure": "Face is too tilted",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
         }
       ]
     },
     {
-      "personId": "t1500_0096",
-      "name": "馬如龍",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0174",
-      "name": "鳳小岳",
+      "personId": "t1500_0586",
+      "name": "向海嵐",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": []
     },
     {
-      "personId": "t1500_0115",
-      "name": "謝佳見",
+      "personId": "t1500_0562",
+      "name": "張達明",
       "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
+          "code": "source_api_error",
+          "message": "internal_api_error_DBConnectionError: [835ff971-e528-4d77-a573-39e1159929b9] Caught exception of type Wikimedia\\Rdbms\\DBConnectionError"
+        },
+        {
+          "provider": "commons",
+          "code": "source_api_error",
+          "message": "internal_api_error_DBConnectionError: [702edee0-b630-410f-980f-f2880215c64e] Caught exception of type Wikimedia\\Rdbms\\DBConnectionError"
         }
       ]
     },
     {
-      "personId": "t1500_0192",
-      "name": "郭碧婷",
+      "personId": "t1500_0577",
+      "name": "張兆輝",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0193",
-      "name": "曾珮瑜",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0194",
-      "name": "朱芷瑩",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0204",
-      "name": "李立群",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0216",
-      "name": "韓瑜",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-18-35.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-50-50.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chaozhou_Hanwengong_Ci_2013.10.27_09-51-26.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_and_ten_representative_traits_of_348_mei_accessions.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%B3%E5%8F%B0%E9%9D%84%E9%9A%94%E4%B8%89%E5%8D%83%E7%95%8C_(7477608580).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Stele_in_Zhaoshan_Temple,_14_March_2021I.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%88%8A%E4%BA%94%E7%99%BE%E5%AE%B6%E8%A8%BB%E9%9F%B3%E8%BE%AF%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E6%96%87%E9%9B%86%E5%8D%B7%E7%AC%AC%E4%B8%80.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_05_104_%22%E7%A5%9E%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E9%9F%93%E6%96%87%E5%85%AC_%EF%BC%88%E6%98%8C%E9%BB%8E%EF%BC%89%22.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/20230207_Temple_of_Han_Yu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+            "filename": "張兆輝.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_02.jpg",
-            "filename": "20230207 Temple of Han Yu 02.jpg",
-            "artist": "Windmemories",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Temple of Han Yu in Chaozhou",
+            "artist": "am730",
+            "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​《黃金有罪》「發財迎新歲」記者會",
             "identityEvidence": {
-              "query": "Han Yu",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9373116",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "wikidataId": "Q701359",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701359",
               "exactChineseAliases": [
-                "韓瑜"
+                "张兆辉",
+                "張兆輝",
+                "張兆輝"
               ],
               "verifiedSearchAliases": [
-                "韓瑜",
-                "Angel Han",
-                "Han Yu"
+                "張兆輝",
+                "张兆辉",
+                "Cheung Siu-fai",
+                "Eddie Cheung",
+                "Eddie Cheung Siu-Fai",
+                "Zhang Zhao-Hui"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
               "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
-              "articleTitle": "韓瑜",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
+              "articleTitle": "張兆輝",
               "articleLookup": "exact title with redirects; not a search result",
+              "query": "Cheung Siu-fai",
               "matchedAliases": [
-                "Han Yu"
+                "張兆輝",
+                "张兆辉"
               ],
+              "discoveryWarnings": [],
+              "claim": "P18",
               "captionAliasMatches": [
-                "Han Yu"
+                "張兆輝",
+                "张兆辉"
               ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "",
               "representativeWorks": [
-                "意難忘"
+                "黑社會"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T18:17:11.746730+00:00",
-            "width": 1800,
-            "height": 1200,
-            "id": "23df2802a3fcccfd9fa4",
-            "personId": "t1500_0216",
-            "discoveryRunId": "20261029T181547Z-7893e576",
+            "searchTime": "2026-10-29T20:17:49.598664+00:00",
+            "width": 1208,
+            "height": 1669,
+            "id": "bf90b9c5bde0fdea7421",
+            "personId": "t1500_0577",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0577/bf90b9c5bde0fdea7421/cb78e00ef28c/original.bin",
+            "originalSha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "No reliable frontal face"
-        },
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0565",
+      "name": "謝天華",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_Tse_close_up.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Michael_Tse_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/20230207_Temple_of_Han_Yu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Michael_Tse_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Michael_Tse_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Michael_Tse_close_up.jpg",
+            "filename": "Michael Tse close up.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_06.jpg",
-            "filename": "20230207 Temple of Han Yu 06.jpg",
-            "artist": "Windmemories",
+            "artist": "KTo288",
             "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Temple of Han Yu in Chaozhou",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Close crop of image of Michael Tse dancing at TVBS-Europe's Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre",
             "identityEvidence": {
-              "query": "Han Yu",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9373116",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
               "exactChineseAliases": [
-                "韓瑜"
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
               ],
               "verifiedSearchAliases": [
-                "韓瑜",
-                "Angel Han",
-                "Han Yu"
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
               "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
-              "articleTitle": "韓瑜",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
               "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
               "matchedAliases": [
-                "Han Yu"
+                "Michael Tse"
               ],
+              "discoveryWarnings": [],
+              "claim": "P18",
               "captionAliasMatches": [
-                "Han Yu"
+                "Michael Tse"
               ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "",
               "representativeWorks": [
-                "意難忘"
+                "潛行狙擊"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T18:17:12.653654+00:00",
-            "width": 1800,
-            "height": 1200,
-            "id": "98ef7867466cd5f5d06c",
-            "personId": "t1500_0216",
-            "discoveryRunId": "20261029T181547Z-7893e576",
+            "searchTime": "2026-10-29T20:17:46.541729+00:00",
+            "width": 312,
+            "height": 468,
+            "id": "0ad030ff729aa9963b03",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0565/0ad030ff729aa9963b03/38e797c18dac/original.bin",
+            "originalSha256": "38e797c18dacaf45393205a14145aae4c067daeddc33eacd27c2258b9023e92e",
+            "cropFailure": "Face is too small",
+            "gamePath": null
           },
           "code": "image_validation_failed",
-          "message": "No reliable frontal face"
+          "message": "Face is too small"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Dance5.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Dance5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/20230207_Temple_of_Han_Yu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Dance5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Dance5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Dance5.jpg",
+            "filename": "Dance5.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:20230207_Temple_of_Han_Yu_08.jpg",
-            "filename": "20230207 Temple of Han Yu 08.jpg",
-            "artist": "Windmemories",
+            "artist": "KTo288",
             "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Temple of Han Yu in Chaozhou",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Michael Tse and Fala Chen dancing at Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
             "identityEvidence": {
-              "query": "Han Yu",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9373116",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9373116",
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
               "exactChineseAliases": [
-                "韓瑜"
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
               ],
               "verifiedSearchAliases": [
-                "韓瑜",
-                "Angel Han",
-                "Han Yu"
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T18:16:53.727656+00:00",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
               "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%9F%93%E7%91%9C",
-              "articleTitle": "韓瑜",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
               "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
               "matchedAliases": [
-                "Han Yu"
+                "Michael Tse"
               ],
+              "discoveryWarnings": [],
               "captionAliasMatches": [
-                "Han Yu"
+                "Michael Tse"
               ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "",
               "representativeWorks": [
-                "意難忘"
+                "潛行狙擊"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T18:17:13.849351+00:00",
-            "width": 1800,
-            "height": 1200,
-            "id": "3b0a537fd21bcb346611",
-            "personId": "t1500_0216",
-            "discoveryRunId": "20261029T181547Z-7893e576",
+            "searchTime": "2026-10-29T20:17:48.840562+00:00",
+            "width": 1144,
+            "height": 766,
+            "id": "2811348f8544efe5b1a8",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -456,16 +465,633 @@
           "message": "Face is too small"
         },
         {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah_02.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah_02.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah_02.jpg",
+            "filename": "GD 廣東 Guangdong 佛山 Foshan 西樵山 Xiqiaoshan 國藝影視城 National Arts Studio 孤箭 film location signs April 2018 IX2 陳小春 Jordan Chan Siu Chun n 謝天華 Michael Tse Tin Wah 02.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Henry Chun Chun Konghau",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "GD 廣東 Guangdong 佛山 Foshan 西樵山 Xiqiaoshan 國藝影視城 National Arts Studio 孤箭 film location April 2018 zh:陳小春 Jordan Chan Siu Chun n zh:謝天華 Michael Tse Tin Wah",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Michael Tse Tin Wah"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Michael Tse Tin Wah"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.841507+00:00",
+            "width": 3648,
+            "height": 2432,
+            "id": "accc4e53d10ca32536c2",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%BD%9B%E5%B1%B1_Foshan_%E8%A5%BF%E6%A8%B5%E5%B1%B1_Xiqiaoshan_%E5%9C%8B%E8%97%9D%E5%BD%B1%E8%A6%96%E5%9F%8E_National_Arts_Studio_%E5%AD%A4%E7%AE%AD_film_location_signs_April_2018_IX2_%E9%99%B3%E5%B0%8F%E6%98%A5_Jordan_Chan_Siu_Chun_n_%E8%AC%9D%E5%A4%A9%E8%8F%AF_Michael_Tse_Tin_Wah.jpg",
+            "filename": "GD 廣東 Guangdong 佛山 Foshan 西樵山 Xiqiaoshan 國藝影視城 National Arts Studio 孤箭 film location signs April 2018 IX2 陳小春 Jordan Chan Siu Chun n 謝天華 Michael Tse Tin Wah.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Henry Chun Chun Konghau",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "GD 廣東 Guangdong 佛山 Foshan 西樵山 Xiqiaoshan 國藝影視城 National Arts Studio 孤箭 film location April 2018 IX2 zh:陳小春 Jordan Chan Siu Chun n zh:謝天華 Michael Tse Tin Wah",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Michael Tse Tin Wah"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Michael Tse Tin Wah"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.842990+00:00",
+            "width": 3648,
+            "height": 2432,
+            "id": "2d55d367536a0d079648",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_Dance_2.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Michael_and_Fala_Dance_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Michael_and_Fala_Dance_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Michael_and_Fala_Dance_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_Dance_2.jpg",
+            "filename": "Michael and Fala Dance 2.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "KTo288",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Michael Tse and Fala Chen dancing at Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "Michael Tse"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Michael Tse"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.843590+00:00",
+            "width": 973,
+            "height": 1460,
+            "id": "579c0a9fe1e0a5f53767",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_Dance_7.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Michael_and_Fala_Dance_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Michael_and_Fala_Dance_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Michael_and_Fala_Dance_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_Dance_7.jpg",
+            "filename": "Michael and Fala Dance 7.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "KTo288",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Michael Tse and Fala Chen dancing at Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "Michael Tse"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Michael Tse"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.844025+00:00",
+            "width": 899,
+            "height": 1349,
+            "id": "6049c2e9a267f5de48fe",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_dance_1.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Michael_and_Fala_dance_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Michael_and_Fala_dance_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Michael_and_Fala_dance_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_dance_1.jpg",
+            "filename": "Michael and Fala dance 1.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "KTo288",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Michael Tse and Fala Chen dancing at Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "Michael Tse"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Michael Tse"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.844450+00:00",
+            "width": 973,
+            "height": 1460,
+            "id": "533b21b1dfef08d5c8a7",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_dance_3.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Michael_and_Fala_dance_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Michael_and_Fala_dance_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Michael_and_Fala_dance_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_dance_3.jpg",
+            "filename": "Michael and Fala dance 3.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "KTo288",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Michael Tse and Fala Chen dancing at Happy Family Gala 2008. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+            "identityEvidence": {
+              "wikidataId": "Q903237",
+              "mappingSource": "https://www.wikidata.org/wiki/Q903237",
+              "exactChineseAliases": [
+                "谢天华",
+                "謝天華",
+                "謝天華",
+                "謝天華",
+                "谢天华"
+              ],
+              "verifiedSearchAliases": [
+                "謝天華",
+                "谢天华",
+                "Michael Tse",
+                "Tse Tin Wah",
+                "Xie Tianhua",
+                "Michael Tse Tin Wah"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T20:17:46.438382+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E5%A4%A9%E8%8F%AF",
+              "articleTitle": "謝天華",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Michael Tse",
+              "matchedAliases": [
+                "Michael Tse"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Michael Tse"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "潛行狙擊"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T20:17:48.844876+00:00",
+            "width": 968,
+            "height": 1451,
+            "id": "0be76263ae1719a139c1",
+            "personId": "t1500_0565",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Michael_and_Fala_dance_6.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0579",
+      "name": "黃浩然",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 5"
+        },
+        {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:In_situ_performance_and_stability_tests_of_large-area_flexible_polymer_solar_cells_on_a_stratospheric_balloon.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E9%BB%83%E6%B5%A9%E7%84%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
+            "filename": "黃浩然.jpg",
+            "artist": "am730",
+            "credit": "【娛樂】《法證先鋒IV》重拍 黃浩然提醒湯洛雯：要乖乖哋 2019-05-28",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​2019年萬千星輝頒獎典禮飛躍進步男藝員",
+            "identityEvidence": {
+              "query": "黃浩然",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "黃浩然"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "拳王"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T20:18:17.869951+00:00",
+            "width": 1065,
+            "height": 1503,
+            "id": "0f354b84f8a2efa7aea8",
+            "personId": "t1500_0579",
+            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0579/0f354b84f8a2efa7aea8/e4dfd6bfc98a/original.bin",
+            "originalSha256": "e4dfd6bfc98abd4f720fa5e082afaf5c124a33282e84382106dad43f61c0af4a",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Amos_Wong_20230622.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         }
       ]
     },
     {
-      "personId": "t1500_0217",
-      "name": "賴慧如",
+      "personId": "t1500_0583",
+      "name": "江華",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 3"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:MG_7909_(2751958253).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Jianghua_-_Beijing_2008_Olympics_(2752109255)_(cropped).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ganghwa_Bridge.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:PingTou_Rock.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ganghwa_Sanseong_Jinsongnu_20160816180759.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Wau_Kau_Kong.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%B1%B8%E5%B1%B1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EC%9B%90%EC%B0%AC_(1932).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%EA%B0%95%ED%99%94_%EA%B3%A0%EB%8C%80%EC%84%AD_%EA%B0%80%EC%98%A5.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ganghwa_Anglican_Church_interior.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E5%8D%8E%E5%92%8C%E5%A4%AB%E4%BA%BA.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%95%B7%E6%85%B6%E5%85%83%E5%B9%B4%EF%BC%88821%EF%BC%89%E9%99%B3%E8%AB%AB%E7%AD%89%E6%B1%9F%E8%8F%AF%E7%B8%A3%E3%80%8A%E8%8F%AF%E5%9A%B4%E5%AF%BA%E8%A8%98%E3%80%8B.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0582",
+      "name": "郭政鴻",
       "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
@@ -473,44 +1099,34 @@
           "provider": "entity",
           "code": "network_error",
           "message": "No catalogue response: Per-request wall time budget reached"
-        },
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0584",
+      "name": "魏駿傑",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
         {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0589",
+      "name": "袁潔瑩",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ]
     }
-  ],
-  "visualAssetCommit": "67e1a35d85c80c01c38998be98025f47579c45f1",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261029T181547Z-7893e576/assets-index.json",
-    "contactSheets": [],
-    "manualContactSheets": [],
-    "manualSourceCount": 0,
-    "manualSourcePeopleCount": 0,
-    "manualSources": [],
-    "peopleCount": 0,
-    "photoCount": 0,
-    "photos": [],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [],
-    "runId": "20261029T181547Z-7893e576",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "67e1a35d85c80c01c38998be98025f47579c45f1",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/67e1a35d85c80c01c38998be98025f47579c45f1/singer/expansion-1500/pipeline/review-assets/20261029T181547Z-7893e576/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/67e1a35d85c80c01c38998be98025f47579c45f1/singer/expansion-1500/pipeline/review-assets/20261029T181547Z-7893e576/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/67e1a35d85c80c01c38998be98025f47579c45f1/singer/expansion-1500/pipeline/review-assets/20261029T181547Z-7893e576/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

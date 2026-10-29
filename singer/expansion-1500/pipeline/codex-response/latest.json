@@ -100,7 +100,7 @@
     "t1500_0341",
     "t1500_0348"
   ],
-  "reviewPublicationPending": true,
+  "reviewPublicationPending": false,
   "items": [
     {
       "personId": "t1500_0295",
@@ -1205,5 +1205,32 @@
         }
       ]
     }
-  ]
+  ],
+  "visualAssetCommit": "3d2622ec9dbc56a0320657cc1400044204d59f9d",
+  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
+  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
+  "publicVisualManifest": {
+    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261029T140656Z-6920e201/assets-index.json",
+    "contactSheets": [],
+    "peopleCount": 0,
+    "photoCount": 0,
+    "photos": [],
+    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+    "revealSheets": [],
+    "runId": "20261029T140656Z-6920e201",
+    "schemaVersion": 1,
+    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+    "assetCommit": "3d2622ec9dbc56a0320657cc1400044204d59f9d",
+    "assetManifest": {
+      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/3d2622ec9dbc56a0320657cc1400044204d59f9d/singer/expansion-1500/pipeline/review-assets/20261029T140656Z-6920e201/assets-index.json",
+      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/3d2622ec9dbc56a0320657cc1400044204d59f9d/singer/expansion-1500/pipeline/review-assets/20261029T140656Z-6920e201/assets-index.json",
+      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/3d2622ec9dbc56a0320657cc1400044204d59f9d/singer/expansion-1500/pipeline/review-assets/20261029T140656Z-6920e201/assets-index.json?raw=true"
+    },
+    "reviewInstructions": [
+      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
+      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
+      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
+      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
+    ]
+  }
 }

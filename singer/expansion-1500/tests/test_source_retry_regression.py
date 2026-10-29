@@ -125,6 +125,16 @@ class SourceRetryRegressionTest(unittest.TestCase):
         self.assertIsNot(rows[0]['identityEvidence'].get('visualIdentityVerified'), True)
         self.assertEqual(rights(rows[0]), 'open_license_metadata')
 
+    def test_blocked_homonym_english_aliases_do_not_drive_photo_search(self):
+        api = RetryAPI()
+        person = {**self.person, 'photoSearchBlockedEnglishAliases': ['Test Artist', 'Artist Test']}
+        list(EntityPortraits().search(person, api))
+        queries = [params['gsrsearch'] for url, params in api.calls
+                   if 'commons.wikimedia.org' in url and 'gsrsearch' in params]
+        self.assertTrue(queries)
+        self.assertTrue(all('Test Artist' not in q and 'Artist Test' not in q for q in queries))
+        self.assertTrue(any(person['name'] in q for q in queries))
+
     def test_verified_english_commons_query_is_complete_name_phrase(self):
         api = RetryAPI()
         list(EntityPortraits().search(self.person, api))

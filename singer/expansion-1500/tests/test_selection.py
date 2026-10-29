@@ -10,7 +10,7 @@ from media_pipeline.batch import SEARCH_REVISION
 
 class SelectionTest(unittest.TestCase):
     def setUp(self):
-        self.people = {key: {'priority': 'A'} for key in ('live', 'approved', 'waiting', 'ready', 'reviewed', 'fresh', 'old', 'cooldown')}
+        self.people = {key: {'priority': 'A'} for key in ('live', 'approved', 'waiting', 'ready', 'duplicate', 'reviewed', 'fresh', 'old', 'cooldown')}
         self.state = {'people': {key: {'personId': key, 'status': 'no_suitable_source', 'attempts': 0} for key in self.people}}
         for key, status in [('live', 'published'), ('approved', 'approved'), ('waiting', 'pending_review'), ('ready', 'candidate_ready')]:
             self.state['people'][key]['status'] = status

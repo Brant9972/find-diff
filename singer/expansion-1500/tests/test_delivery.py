@@ -194,12 +194,32 @@ class DeliveryTest(unittest.TestCase):
         self.assertFalse(result['photos'][0]['metadata']['humanRightsVerifiedByExporter'])
 
 
+    def test_source_only_review_assets_do_not_repeat_old_batches(self):
+        candidate = self._person('t5', '新批次人物', 'manual_crop_required')
+        candidate.pop('gamePath')
+        candidate.pop('gameSha256')
+        candidate.pop('reveal')
+        candidate['discoveryRunId'] = 'old-batch'
+        candidate['cropFailure'] = 'Multiple prominent faces'
+        self.state['people']['t5']['status'] = 'download_failed'
+
+        current = build_assets(self.root, self.directory, self.state, 'new-batch')
+        self.assertEqual(current['manualSourceCount'], 0)
+        self.assertEqual(current['manualContactSheets'], [])
+
+        retained = build_assets(self.root, self.directory, self.state, 'render-batch',
+                                include_retained_sources=True)
+        self.assertEqual(retained['manualSourceCount'], 1)
+        self.assertEqual(retained['manualSources'][0]['personId'], 't5')
+        self.assertFalse(retained['manualSources'][0]['eligibleForLive'])
+
     def test_source_only_images_get_real_preview_links_without_approval(self):
         candidate = self._person('t5', '待裁切人物', 'manual_crop_required')
         candidate.pop('gamePath')
         candidate.pop('gameSha256')
         candidate.pop('reveal')
         candidate['cropFailure'] = 'Face is too small'
+        candidate['discoveryRunId'] = 'source-only'
         self.state['people']['t5']['status'] = 'download_failed'
         self.state['people']['t3']['status'] = 'published'
         manifest = build_assets(self.root, self.directory, self.state, 'source-only')

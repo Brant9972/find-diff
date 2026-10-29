@@ -8,6 +8,8 @@ from .core import atomic, read, process
 from .sources import HTTP, now
 from .rejection_pixels import rejected_fingerprints
 
+SEARCH_REVISION = 4  # Exact Wikipedia identity fallback and quoted bilingual catalogue search.
+
 
 def row_hash(row):
     return hashlib.sha256(json.dumps(row,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
@@ -48,7 +50,7 @@ def run_batch(root,directory,state,people,queue,providers,crop,rejected,active,r
     rejected_pixels=rejected_fingerprints(root,state)
     def worker(pid):
         row=copy.deepcopy(state['people'][pid]);baseline=row_hash(row);prior={c['id'] for c in row['candidates'] if c.get('gamePath')}
-        row['lastRunId']=run_id;row['lastRunNewCandidateIds']=[];row['lastSearchRevision']=3
+        row['lastRunId']=run_id;row['lastRunNewCandidateIds']=[];row['lastSearchRevision']=SEARCH_REVISION
         checkpoint=directory/'checkpoints'/(pid+'.json')
         def save():atomic(checkpoint,{'personId':pid,'runId':run_id,'baseRowSha256':baseline,'row':row})
         budget=min(deadline,time.monotonic()+person_seconds)

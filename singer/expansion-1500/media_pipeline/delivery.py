@@ -223,6 +223,82 @@ def _markdown_text(value):
     return text
 
 
+def _markdown_link(title, value):
+    url = _safe_https(value)
+    if not url:
+        return None
+    url = url.replace('>', '%3E').replace('<', '%3C').replace('\n', '%0A').replace('\r', '%0D')
+    return f'[{_markdown_text(title)}](<{url}>)'
+
+
+def _evidence_markdown(metadata):
+    """Expose saved evidence for reviewers; never turn a name match into approval."""
+    identity = metadata.get('identityEvidence')
+    identity = identity if isinstance(identity, dict) else {}
+    supplement = metadata.get('evidenceSupplement')
+    supplement = supplement if isinstance(supplement, dict) else {}
+    nodes = [identity]
+    for biography in (identity.get('biography'), supplement.get('biography')):
+        if isinstance(biography, dict) and biography not in nodes:
+            nodes.append(biography)
+    lines = ['- 身分映射：以下僅為已保存的名稱、人物資料及圖說證據，尚未目視確認照片中的人物。']
+    seen = set()
+    for node in nodes:
+        for key, title in [('article', 'Wikipedia／人物資料頁'), ('mappingSource', '身分映射來源')]:
+            link = _markdown_link(title, node.get(key))
+            if link and link not in seen:
+                lines.append('- ' + link)
+                seen.add(link)
+        for key, title in [('wikidataId', 'Wikidata ID'), ('excerpt', '人物資料摘錄'),
+                           ('exactChineseAliases', '精確中文名稱對照'),
+                           ('verifiedSearchAliases', '搜尋別名對照'), ('matchedAliases', '名稱相符紀錄'),
+                           ('captionAliasMatches', '圖說名稱相符紀錄'), ('query', '搜尋詞'),
+                           ('entityTypeEvidence', '實體類型紀錄'), ('claim', '圖片屬性紀錄'),
+                           ('identityWarning', '身分證據限制')]:
+            value = node.get(key)
+            if value:
+                if isinstance(value, list):
+                    value = '、'.join(str(item) for item in dict.fromkeys(str(item) for item in value))
+                entry = f'- {title}：{_markdown_text(value)}'
+                if entry not in seen:
+                    lines.append(entry)
+                    seen.add(entry)
+    external = list(metadata.get('externalSourceLinks') or [])
+    external += list(identity.get('externalSourceLinks') or [])
+    source = supplement.get('sourceMetadata')
+    if isinstance(source, dict):
+        external += list(source.get('externalSourceLinks') or [])
+    credit_link = _markdown_link('署名／出處連結', metadata.get('credit'))
+    if credit_link:
+        lines.append('- ' + credit_link)
+    for url in dict.fromkeys(value for value in external if isinstance(value, str)):
+        link = _markdown_link('外部原始來源', url)
+        if link:
+            lines.append('- ' + link)
+    lines.append('- 辨識度：尚未經 ChatGPT 目視驗證；名稱或代表作品的搜尋相符不代表玩家能辨認。')
+    recognition = metadata.get('recognitionEvidence')
+    if recognition:
+        lines.append('- 辨識度搜尋紀錄（待核）：' + _markdown_text(json.dumps(recognition, ensure_ascii=False, sort_keys=True)))
+    alignment = metadata.get('sourceAlignmentEvidence')
+    if isinstance(alignment, dict) and alignment:
+        lines.append('- 來源像素對應：僅表示同張照片的像素對應紀錄，不能確認人物、權利或裁切適用性。')
+        for key, title in [('method', '像素對應方法'), ('matches', '特徵配對數'),
+                           ('inliers', '一致配對數'), ('inlierRatio', '一致配對比例'),
+                           ('sourceImageSize', '對應來源尺寸'), ('sourceSha256', '對應來源 SHA-256'),
+                           ('cropBoxInParent', '舊裁切範圍'), ('cropCornersInSource', '來源裁切角點'),
+                           ('note', '對應證據限制')]:
+            if alignment.get(key) is not None:
+                value = alignment[key]
+                if isinstance(value, (list, dict)):
+                    value = json.dumps(value, ensure_ascii=False, sort_keys=True)
+                lines.append(f'- {title}：{_markdown_text(value)}')
+        if metadata.get('parentCandidateId'):
+            lines.append('- 母候選 ID：' + _markdown_text(metadata['parentCandidateId']))
+    else:
+        lines.append('- 來源像素對應：尚無自動對應證據；需目視核對候選裁切與保存來源圖。')
+    return lines
+
+
 def publish_links(root, directory, manifest, asset_commit, repository='Brant9972/find-diff'):
     """Verify committed image bytes and publish fixed absolute image/metadata links.
 
@@ -264,7 +340,7 @@ def publish_links(root, directory, manifest, asset_commit, repository='Brant9972
         'These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.',
         'Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.',
         'Match decisions to personId + candidateId + gameSha256. Do not approve by list position.',
-        'Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on the work branch.',
+        'Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline.',
     ]
     lines = ['# 照片視覺審核入口', '',
              f"批次 `{manifest['runId']}`：{manifest['peopleCount']} 位人物、{manifest['photoCount']} 張現行待審圖。",
@@ -294,14 +370,18 @@ def publish_links(root, directory, manifest, asset_commit, repository='Brant9972
             lines += ['來源圖片尚未保存；請核對下方來源頁，不可把候選裁切當成原圖證據。', '']
         for title, key in [('來源頁', 'sourcePage'), ('下載圖片網址', 'imageUrl'), ('原始來源網址', 'originalSourceUrl'), ('授權條款', 'licenseUrl')]:
             if metadata.get(key):
-                url = metadata[key].replace('>', '%3E').replace('<', '%3C').replace('\n', '%0A').replace('\r', '%0D')
-                lines.append(f'- [{title}](<{url}>)')
+                link = _markdown_link(title, metadata[key])
+                if link:
+                    lines.append('- ' + link)
         lines += [f"- 作者／提供者：{_markdown_text(metadata.get('author') or '待確認')}",
+                  f"- 署名／出處紀錄：{_markdown_text(metadata.get('credit') or '待確認')}",
                   f"- 授權紀錄：{_markdown_text(metadata.get('license') or '待確認')}；仍需人工核對來源是否適用。",
                   f"- 人物圖說：{_markdown_text(metadata.get('caption') or '來源未提供具名圖說，需補核')} ",
                   f"- 審核要求：{_markdown_text(metadata.get('reviewerRequest') or '核對人物、辨識度、來源權利與五階段')} ",
-                  f"- 風險：{_markdown_text('；'.join(str(x) for x in metadata.get('warnings', []) if x) or '仍需獨立視覺與來源審核')}", '']
+                  f"- 風險：{_markdown_text('；'.join(str(x) for x in metadata.get('warnings', []) if x) or '仍需獨立視覺與來源審核')}"]
+        lines += _evidence_markdown(metadata) + ['']
     lines += [f"[固定資產索引 JSON]({result['assetManifest']['rawUrl']})", '',
+              '請將下一輪審核結果寫入分支 `automation/celebrity-photo-pipeline` 的固定檔案 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。', '',
               '本頁只有待審成果。所有決定需綁定人物 ID、候選 ID 與照片 SHA；不得自動整合 main 或部署。', '']
     output = directory / 'review-public'
     atomic(output / 'latest.json', result)

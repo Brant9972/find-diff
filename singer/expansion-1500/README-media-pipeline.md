@@ -29,7 +29,7 @@ python -m unittest discover -s singer/expansion-1500/tests -q
 
 搜尋優先處理退件人物與未完成候選，跳過已上線、已核准及已經等待目視的照片。6 位舊 pending 與新裁切會保留在視覺審核包，不在每次批次重抓來源。`--evidence-only` 是明確要求重新補證時的選項；`--review-round` 只限舊審核名單，不是一般大量批次的預設。
 
-Wikidata 會先以精確中文姓名／別名與 P31=Q5 確認唯一人物映射，取得可追溯英文搜尋別名，再查 Commons 與 Openverse。英文別名與圖片檔名／圖說必須有對應，不把查詢命中直接當成視覺身分驗證。官方素材可經 `--official-sources` 載入明確來源與授權清單，未提供清單的官方網站不宣稱已全面爬取。
+先從 Wikipedia 精確人物頁取得 QID；頁面缺失或不可用時再查 Wikidata 搜尋。兩條路徑都必須通過精確中文姓名／別名與 P31=Q5 檢查，才能取得可追溯英文搜尋別名。Commons 使用完整姓名短語，獨立 Openverse 也沿用同一人的已驗證別名，不因前一個 provider 提早結束而遺失。英文別名與圖片檔名／圖說必須有對應，不把查詢命中直接當成視覺身分驗證。官方素材可經 `--official-sources` 載入明確來源與授權清單，未提供清單的官方網站不宣稱已全面爬取。
 
 授權不明／不允許修改的來源只記錄中繼資料，不作為合格照片。新下載的照片沿用 YuNet、600×720 與現有 reveal 座標格式，檢查解析度、人臉、清晰度及曝光；閉眼、遮擋、浮水印、熟悉形象與權利仍由 ChatGPT 最後審核。
 
@@ -61,5 +61,7 @@ python singer/expansion-1500/tools/publish_review_links.py --asset-commit <完�
 若執行期間分支又有別人提交，checkpoint 拒絕覆蓋並保留 artifact。需要先逐欄合併進度與審核歷史，不能直接選 ours/theirs 丟掉另一邊資料。已核准與已上線項目、候選 SHA 及審核歷史應另外驗證。
 
 ## 初步審核交接
+
+`pipeline/attempts/*-blocked.json` 保存特定時間點的未啟動紀錄，不能當成 completed run 或新照片成果。恢復 GitHub 認證後，先確認遠端沒有新的人工審核或並行提交，再推送工作分支。這次 `batch-request.json` 變更會啟動一輪 40 人工作；實際最新成果仍以 `codex-response/latest.json` 為準，既有失敗紀錄保留。
 
 `decisions` 與 `newCandidates` 都依 personId + candidateId + gameSha256 驗證；每人只出現一次，但可有多張照片。證據說明或來源 SHA 更新不會重設相同退件的搜尋進度。初步交接接受 reject/pending；所有圖片 `eligibleForLive` 保持 false，最終核准與整合仍由獨立審核流程處理。

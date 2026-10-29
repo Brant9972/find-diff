@@ -34,6 +34,8 @@ class EntityAPI:
 
     def json(self, url, **params):
         self.calls.append((url, params))
+        if 'zh.wikipedia.org' in url:
+            return {'query': {'pages': [{'title': '測試人物', 'missing': True}]}}
         if params.get('action') == 'wbsearchentities':
             return {'search': [{'id': qid, 'label': row['labels']['zh']['value'],
                                 'description': '演員與歌手',

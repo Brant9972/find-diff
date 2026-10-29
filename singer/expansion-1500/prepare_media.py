@@ -10,7 +10,7 @@ from pathlib import Path
 from media_pipeline.core import Cropper,apply_rejections,atomic,initialise,live_people,lock,protected,read,rejection_keys
 from media_pipeline.handoff import consume
 from media_pipeline.sources import CommonsSearch,EntityPortraits,Official,Openverse,Wikimedia,norm,source_key,HTTP
-from media_pipeline.batch import recover_checkpoints,run_batch
+from media_pipeline.batch import SEARCH_REVISION,recover_checkpoints,run_batch
 from media_pipeline.evidence import supplement
 from media_pipeline.review import report
 from media_pipeline.delivery import build_assets
@@ -25,7 +25,7 @@ def select_people(state,people,handoff,limit,review_only=False,retry_failed=Fals
         if row['status'] in {'approved','published','pending_review','candidate_ready'}:continue
         if retry_failed and row['status'] not in {'download_failed','no_suitable_source','rejected','searching'}:continue
         retry=row.get('nextRetryAt')
-        if retry and row.get('lastSearchRevision')==3 and not retry_failed:
+        if retry and row.get('lastSearchRevision')==SEARCH_REVISION and not retry_failed:
             if datetime.datetime.fromisoformat(retry)>datetime.datetime.now(datetime.timezone.utc):continue
         queue.append(pid)
     queue.sort(key=lambda pid:(pid not in reviewed, state['people'][pid].get('attempts',0)>0,people[pid].get('priority')!='A',state['people'][pid].get('attempts',0),pid))

@@ -150,6 +150,49 @@ class DeliveryTest(unittest.TestCase):
         self.assertIsNone(manifest['photos'][0]['metadata']['sourcePage'])
         self.assertIsNone(manifest['photos'][0]['metadata']['licenseUrl'])
 
+    def test_markdown_exposes_existing_evidence_without_claiming_human_verification(self):
+        candidate = self.state['people']['t1']['candidates'][0]
+        candidate.update({
+            'credit': 'Provided by original photographer',
+            'externalSourceLinks': ['https://www.flickr.com/photos/example/123/', 'javascript:alert(1)'],
+            'identityEvidence': {
+                'article': 'https://zh.wikipedia.org/wiki/Example',
+                'mappingSource': 'https://www.wikidata.org/wiki/Q123', 'wikidataId': 'Q123',
+                'verifiedSearchAliases': ['測試人物', 'Example Person'],
+                'captionAliasMatches': ['測試人物'], 'entityTypeEvidence': 'P31=Q5',
+                'identityWarning': 'Only a name match <not approved>',
+                'biography': {'article': 'https://zh.wikipedia.org/wiki/Example', 'excerpt': 'Example biography'},
+                'externalSourceLinks': ['https://www.flickr.com/photos/example/123/'],
+            },
+            'recognitionEvidence': {'representativeWorks': ['Example Work'], 'note': 'Search context only'},
+            'parentCandidateId': 'older-crop',
+            'sourceAlignmentEvidence': {'method': 'ORB + RANSAC', 'matches': 49, 'inliers': 34,
+                                        'inlierRatio': 34 / 49, 'sourceImageSize': [900, 1200],
+                                        'sourceSha256': 'a' * 64, 'cropBoxInParent': [10, 20, 300, 400],
+                                        'note': 'Same-photo pixels only'},
+        })
+        before = copy.deepcopy(self.state)
+        manifest = build_assets(self.root, self.directory, self.state, 'visible-evidence')
+        sha = self._commit()
+        result = publish_links(self.root, self.directory, manifest, sha)
+        markdown = (self.directory / 'review-public/latest.md').read_text()
+        for expected in ['https://zh.wikipedia.org/wiki/Example', 'https://www.wikidata.org/wiki/Q123',
+                         'Example Person', 'Example biography', '圖說名稱相符紀錄：測試人物',
+                         'Provided by original photographer', 'https://www.flickr.com/photos/example/123/',
+                         '辨識度：尚未經 ChatGPT 目視驗證', 'Example Work', 'ORB + RANSAC',
+                         '特徵配對數：49', '一致配對數：34', '對應來源 SHA-256：' + 'a' * 64,
+                         '母候選 ID：older-crop', '不能確認人物、權利或裁切適用性',
+                         '來源像素對應：尚無自動對應證據',
+                         'singer/expansion-1500/pipeline/chatgpt-review/latest.json',
+                         'automation/celebrity-photo-pipeline']:
+            self.assertIn(expected, markdown)
+        self.assertEqual(markdown.count('[外部原始來源](<https://www.flickr.com/photos/example/123/>)'), 1)
+        self.assertNotIn('javascript:alert', markdown)
+        self.assertNotIn('<not approved>', markdown)
+        self.assertEqual(self.state, before)
+        self.assertFalse(result['photos'][0]['metadata']['humanIdentityVerifiedByExporter'])
+        self.assertFalse(result['photos'][0]['metadata']['humanRightsVerifiedByExporter'])
+
 
 if __name__ == '__main__':
     unittest.main()

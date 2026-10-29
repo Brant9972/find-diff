@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-hk-manual-recrop-reveal-v2",
+  "requestId": "20261030-hk-manual-recrop-reveal-v3",
   "mode": "manual_recrop",
   "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-hk.json",
   "targetPeople": 2,
-  "purpose": "Draft-only rerender of 張兆輝 and 黃浩然 using corrected Huang reveal boundaries after actual five-stage human QA (PR #9). Zhang source rights pending; Huang caption and new reveal stages pending. No automatic approval or deployment."
+  "purpose": "Draft-only rerender with mask-variant fix from PR #10: previously identical JPEG SHA caused changed Huang nose/mouth reveal to be skipped. Must produce distinct immutable reveal candidate; human visual QA and licensing/caption gates still required. No live deployment."
 }

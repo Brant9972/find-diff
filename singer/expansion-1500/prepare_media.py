@@ -43,6 +43,7 @@ def main(argv=None):
     parser.add_argument('--person-id',action='append',default=[])
     parser.add_argument('--retry-failed',action='store_true')
     parser.add_argument('--render-only',action='store_true')
+    parser.add_argument('--manual-recrop-request',type=Path,help='Stage immutable source-only review photos with supplied crop geometry; never deploy')
     parser.add_argument('--import-review',type=Path)
     parser.add_argument('--official-sources',type=Path)
     parser.add_argument('--evidence-only',action='store_true',help='Explicitly refresh pending source evidence; not run on every batch')
@@ -73,7 +74,14 @@ def main(argv=None):
         atomic(directory/'state.json',state)
         scanned=[];batch_result={'targetPeople':0,'processedPeople':0,'workers':args.workers}
         try:
-            if not args.render_only and not args.import_review:
+            if args.manual_recrop_request:
+                from tools.manual_recrop_from_commit import stage_manual_recrops
+                scanned = stage_manual_recrops(root, directory, state, read(args.manual_recrop_request), run_id, active)
+                batch_result = {'targetPeople': len(args.person_id) or len(read(args.manual_recrop_request)['items']),
+                                'processedPeople': len(scanned), 'workers': 0, 'manualRecrop': True,
+                                'sourceCommit': read(args.manual_recrop_request)['sourceCommit']}
+                atomic(directory/'state.json', state)
+            elif not args.render_only and not args.import_review:
                 deadline=time.monotonic()+args.max_minutes*60
                 if args.evidence_only:
                     for pid in handoff['personIds']:

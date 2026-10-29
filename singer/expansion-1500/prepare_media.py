@@ -109,7 +109,7 @@ def main(argv=None):
             summary['batch']=batch_result
             atomic(directory/'runs'/run_id/'summary.json',summary)
             # Build pictures and contact sheets exactly once after collecting the batch.
-            manifest=build_assets(root,directory,state,run_id)
+            manifest=build_assets(root,directory,state,run_id, include_retained_sources=args.render_only)
             response={'schemaVersion':2,'sourceReviewSha256':(handoff or {}).get('sha256'),'releaseGate':'DRAFT_ONLY_NOT_PLAYABLE','runId':run_id,'reviewIndex':f'expansion-1500/pipeline/runs/{run_id}/review-index.json','visualAssetManifest':manifest['assetManifestPath'],'summary':summary,'visualPeople':manifest['peopleCount'],'visualPhotos':manifest['photoCount'],'batchPeople':scanned,'reviewPublicationPending':True,'items':[{'personId':pid,'name':state['people'][pid]['name'],'status':state['people'][pid]['status'],'newCandidateIds':state['people'][pid].get('lastRunNewCandidateIds',[]),'errors':state['people'][pid].get('lastErrors',[])} for pid in scanned]}
             atomic(directory/'codex-response/latest.json',response)
             print('BATCH SUMMARY',summary,flush=True);print('Visual assets:',manifest['assetManifestPath'],flush=True)

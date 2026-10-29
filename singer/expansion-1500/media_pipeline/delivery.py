@@ -108,12 +108,15 @@ def _metadata(person, candidate):
     }
 
 
-def build_assets(root, directory, state, run_id):
+def build_assets(root, directory, state, run_id, include_retained_sources=False):
     """Build one immutable visual package after the batch, without mutating state.
 
     root is the singer directory. Return a deterministic manifest whose paths are
     relative to it. All active pending candidates are included, including retained
     candidates from previous batches; rejected/superseded/approved/live ones are not.
+    Source-only images default to the current discovery run, preventing repeated
+    re-export of old rejected-looking sources. Explicit render-only mode may
+    include retained sources for a dedicated manual review.
     """
     root, directory = Path(root).resolve(), Path(directory).resolve()
     if not directory.is_relative_to(root):
@@ -164,6 +167,8 @@ def build_assets(root, directory, state, run_id):
             continue
         for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
             if candidate.get('status') != 'manual_crop_required' or not candidate.get('originalPath'):
+                continue
+            if not include_retained_sources and candidate.get('discoveryRunId') != run_id:
                 continue
             if not candidate.get('originalSha256'):
                 raise ValueError('Source-only candidate requires immutable source SHA-256')

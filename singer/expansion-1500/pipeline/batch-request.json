@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-hk-manual-recrop-two",
+  "requestId": "20261030-hk-manual-recrop-reveal-v2",
   "mode": "manual_recrop",
   "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-hk.json",
   "targetPeople": 2,
-  "purpose": "Draft-only manual recrop of 張兆輝 and 黃浩然 from immutable 40947628651 source pixels. No automatic approval or deployment. All 600x720/five-stage crops, source identity, copyright and work hints require human review."
+  "purpose": "Draft-only rerender of 張兆輝 and 黃浩然 using corrected Huang reveal boundaries after actual five-stage human QA (PR #9). Zhang source rights pending; Huang caption and new reveal stages pending. No automatic approval or deployment."
 }

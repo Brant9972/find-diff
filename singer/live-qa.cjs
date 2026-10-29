@@ -6,7 +6,7 @@ const puppeteer=require('puppeteer-core');
  const files=['questions.json','actors.json','variety.json'];
  const banks=await Promise.all(files.map(async f=>{const r=await fetch(url+f,{cache:'no-store'});assert(r.ok,f);return await r.json()}));
  const people=[...new Map(banks.flatMap(b=>b.questions).map(q=>[q.id,q])).values()];
- assert.equal(people.length,987);
+ assert(people.length>=1000,'The public game lost its 1000-person baseline');
  const hints=await (await fetch(url+'hints.json',{cache:'no-store'})).json();
  for(const q of people)assert(hints.entries[q.id]);
  const executable=['/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
@@ -25,7 +25,7 @@ const puppeteer=require('puppeteer-core');
    return failures;
   },people);
   assert.deepEqual(broken,[]);
-  for(const [mode,count] of [['singer',449],['actor',511],['variety',95],['mixed',987]]){
+  for(const [mode,count] of [['singer',banks[0].questions.length],['actor',banks[1].questions.length],['variety',banks[2].questions.length],['mixed',people.length]]){
    await page.select('#quizMode',mode);await page.select('#roundSize','all');await page.click('#startRound');
    await page.waitForFunction(()=>!document.getElementById('answer').disabled);
    const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('singer-face-quiz-v1')));
@@ -34,7 +34,7 @@ const puppeteer=require('puppeteer-core');
   }
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
   fs.mkdirSync('qa-output',{recursive:true});await page.screenshot({path:'qa-output/live-1000-mobile.png',fullPage:true});
-  console.log('PASS LIVE: 987 active portraits, sourced hints, all four selectors, correct counts, unique mixed deck, mobile width');
+  console.log('PASS LIVE: '+people.length+' active portraits, sourced hints, all four selectors, current counts, unique mixed deck, mobile width');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});
 

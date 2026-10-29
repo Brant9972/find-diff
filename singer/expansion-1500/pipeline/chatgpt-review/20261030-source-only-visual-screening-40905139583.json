@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_only_pixel_screening_not_live_approval",
+  "reviewedAt": "2026-10-30T00:50:00+08:00",
+  "sourceRun": "20261029T154808Z-d703ea7b",
+  "sourceBranch": "automation/photo-review-run-40905139583",
+  "sourceCommit": "3af2cd27fce20348f932b2d5f01aca42149832ec",
+  "sourceContactSheet": "singer/expansion-1500/pipeline/review-assets/20261029T154808Z-d703ea7b/manual-source-sheet-01.jpg",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "sourceOnly": 5,
+    "previouslyScreenedUnchanged": 3,
+    "newScreeningDecisions": 2,
+    "approvedForGame": 0,
+    "needReplacementPortrait": 2
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0351",
+      "name": "陳建年",
+      "candidateId": "f1c260166206db5e9b3b",
+      "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+      "decision": "reject_as_game_portrait",
+      "reason": "Inspected full 1920x1440 source pixels: target performer is distant and in left-facing profile under strong blue stage light; the audience blocks the central image and another person's face is visible at right. Eyes/nose/mouth cannot be reliably revealed as a sharp frontal 600x720 single-face game crop. Source caption names the performer but this does not rescue crop suitability.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+      "artist": "Taiwania_Justo",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "full_original_pixel_inspected",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0387",
+      "name": "吳佩慈",
+      "candidateId": "33710c0b46bf108082fa",
+      "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+      "decision": "reject_as_game_portrait",
+      "reason": "Inspected retained source contact-sheet pixels: a stage performance with two prominent faces (伍佰 and 吳佩慈), rather than a clean single-person portrait; both are relatively small and stage-lit. The detector also flags multiple prominent faces. No verified 600x720 single-face crop or five-stage reveal; do not use as-is. Original full-size fetch was unavailable, so this is a conservative composition rejection, not a positive identity verification.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+      "artist": "音樂雯 from Taipei",
+      "licenseMetadata": "CC BY-SA 2.0",
+      "rightsStatus": "metadata_only_not_independently_reverified",
+      "visualEvidence": "contact_sheet_pixel_inspected_original_fetch_unavailable",
+      "eligibleForLive": false
+    }
+  ],
+  "previouslyScreenedSourceOnly": [
+    "t1500_0297",
+    "t1500_0333",
+    "t1500_0339"
+  ],
+  "notes": [
+    "Do not import source-only decisions through the gameSha256 review importer; no 600x720 game image exists.",
+    "Prior three source-only items were screened in 20261029-source-only-screening-40892100821.json and are not re-reviewed here.",
+    "Do not modify live banks or archived creators; search new licensed clean portraits for the two newly rejected items."
+  ]
+}

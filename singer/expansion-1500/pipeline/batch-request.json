@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261029T075800Z-quoted-identity-bulk40",
+  "requestId": "20261029-cooldown-slow-bulk40-v1",
   "targetPeople": 40,
-  "workers": 3,
-  "personSeconds": 60,
+  "workers": 1,
+  "personSeconds": 90,
   "searchRevision": 4,
-  "purpose": "Regression batch after exact Wikipedia identity fallback and complete-name catalogue search; never deploy",
+  "purpose": "Retry 40 with one-worker Commons API pacing, 30s busy cooldown, bounded network retries, exact alias-dedup and no production deploy",
   "plannedPersonIds": [
     "t1500_0174",
     "t1500_0196",

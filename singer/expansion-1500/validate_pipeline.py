@@ -18,7 +18,14 @@ def validate(root):
         for candidate in person['candidates']:
             assert candidate.get('eligibleForLive') is False, candidate['id']
             if not candidate.get('gamePath'):
-                assert candidate.get('status') in {'metadata_only', 'rejected'}
+                assert candidate.get('status') in {'metadata_only', 'rejected', 'manual_crop_required'}
+                if candidate.get('status') == 'manual_crop_required':
+                    assert candidate.get('originalPath') and candidate.get('originalSha256')
+                    raw = contained(root, candidate['originalPath'])
+                    assert hashlib.sha256(raw.read_bytes()).hexdigest() == candidate['originalSha256']
+                    with Image.open(raw) as image:
+                        image.verify()
+                    assert candidate.get('humanReview') is None
                 continue
             path = contained(root, candidate['gamePath'])
             assert path.is_file(), path

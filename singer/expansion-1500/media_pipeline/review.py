@@ -52,13 +52,13 @@ def report(root, directory, state, run_id, scanned):
     provider_names = sorted({e.get('provider', 'unknown') for e in batch_errors} |
                             {c.get('provider', 'unknown') for _, c in batch_candidates} |
                             {h['provider'] for p in selected for h in p.get('history', [])
-                             if h.get('provider') and h.get('time', '') >= p.get('lastAttemptAt', '9999')})
+                             if h.get('provider') and h.get('time', '') >= (p.get('lastAttemptAt') or '9999')})
     provider_stages = {}
     for provider in provider_names:
         entries = [c for _, c in batch_candidates if c.get('provider', 'unknown') == provider]
         errors = [e for e in batch_errors if e.get('provider', 'unknown') == provider]
         attempted = {p['personId'] for p in selected for h in p.get('history', [])
-                     if h.get('provider') == provider and h.get('time', '') >= p.get('lastAttemptAt', '9999')}
+                     if h.get('provider') == provider and h.get('time', '') >= (p.get('lastAttemptAt') or '9999')}
         provider_stages[provider] = {
             'attemptedPeople': len(attempted),
             'metadataCandidates': len(entries),

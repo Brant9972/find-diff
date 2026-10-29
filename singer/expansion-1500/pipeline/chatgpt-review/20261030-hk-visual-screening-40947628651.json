@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_only_human_pixel_screening_not_approval",
+  "reviewedAt": "2026-10-30",
+  "sourceRun": "20261029T201720Z-9c28875a",
+  "sourceCommit": "9cb6d0a186ba4bdcb1bbb284cc3805bb69aeef4d",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "scannedPeople": 10,
+    "newGameCrops": 0,
+    "newManualSources": 4,
+    "manualRecropSuggested": 2,
+    "manualRecropRejected": 2
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0564",
+      "name": "葛民輝",
+      "candidateId": "b2574981ba5e9e0689c3",
+      "decision": "REJECT_THIS_SOURCE",
+      "reason": "Head tilted down; cap/angle and beard plus mic make five-stage eyes and mouth/chin reveal poor. Prior reviewer replacement warning agrees. Do not manually crop this file."
+    },
+    {
+      "personId": "t1500_0565",
+      "name": "謝天華",
+      "candidateId": "0ad030ff729aa9963b03",
+      "decision": "REJECT_THIS_SOURCE",
+      "reason": "Original 312x468 image; tiny soft face, sideways dancing pose. 600x720 would upscale with poor facial details. Seek a higher-resolution frontal portrait."
+    },
+    {
+      "personId": "t1500_0577",
+      "name": "張兆輝",
+      "candidateId": "bf90b9c5bde0fdea7421",
+      "decision": "MANUAL_RECROP_DRAFT_ONLY",
+      "reason": "Viewed original 1208x1669 single recognizable face, no obstruction, slight angle; auto face detection failed. Geometry supplied for draft. Confirm original am730 license review, identity and five stages before any live use.",
+      "license": "CC BY 3.0 metadata only",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg"
+    },
+    {
+      "personId": "t1500_0579",
+      "name": "黃浩然",
+      "candidateId": "0f354b84f8a2efa7aea8",
+      "decision": "MANUAL_RECROP_DRAFT_ONLY",
+      "reason": "Viewed original 1065x1503 single near-frontal face, visible eyes nose mouth chin; automatic sharpness threshold rejected despite usable visual face. Stage draft for visual five-step QA; no automatic live approval.",
+      "license": "CC BY 3.0, Commons reviewer Puramyun31 confirmed 2019-08-14",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg"
+    }
+  ],
+  "pipelineObservations": {
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 10,
+        "metadataCandidates": 18,
+        "identitySupportedMetadata": 6,
+        "openLicenseMetadata": 13,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 4
+      },
+      "entity": {
+        "attemptedPeople": 10,
+        "metadataCandidates": 0
+      }
+    },
+    "batchFailureReasons": {
+      "image_validation_failed": 11,
+      "identity_unconfirmed": 12,
+      "network_error": 3,
+      "source_api_error": 2,
+      "license_unclear": 2,
+      "identity_ambiguous": 2
+    },
+    "nextStep": "Run manual_recrop staging for 2 photos on review branch, inspect 600x720 + eyes/nose/mouth/chin/full, verify exact Commons identity/rights and representative works; only then separate game PR and QA. Do not change main or creators."
+  }
+}

@@ -1,873 +1,1387 @@
 {
   "schemaVersion": 2,
-  "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
+  "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261029T123128Z-e72f4f1b",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261029T123128Z-e72f4f1b/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/assets-index.json",
+  "runId": "20261029T143031Z-cb626fef",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261029T143031Z-cb626fef/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261029T143031Z-cb626fef/assets-index.json",
   "summary": {
-    "runId": "20261029T123128Z-e72f4f1b",
-    "generatedAt": "2026-10-29T12:32:07.263320+00:00",
-    "scannedPeople": 40,
-    "peopleWithNewCandidates": 1,
-    "newCandidatePhotos": 1,
-    "scannedWithoutCandidates": 39,
-    "retryNeeded": 436,
-    "pendingReviewPeople": 1,
-    "licenseConcernCandidates": 209,
+    "runId": "20261029T143031Z-cb626fef",
+    "generatedAt": "2026-10-29T14:42:46.105244+00:00",
+    "scannedPeople": 20,
+    "peopleWithNewCandidates": 0,
+    "newCandidatePhotos": 0,
+    "scannedWithoutCandidates": 20,
+    "retryNeeded": 431,
+    "pendingReviewPeople": 0,
+    "licenseConcernCandidates": 221,
     "statusCounts": {
-      "no_suitable_source": 231,
-      "download_failed": 194,
-      "rejected": 11,
-      "published": 74,
-      "pending_review": 1
+      "no_suitable_source": 212,
+      "download_failed": 209,
+      "rejected": 10,
+      "published": 80
     },
     "failureReasons": {
-      "network_error": 279,
-      "identity_unconfirmed": 243,
-      "image_validation_failed": 63,
-      "source_api_busy": 65,
-      "license_unclear": 55,
+      "network_error": 302,
+      "identity_unconfirmed": 265,
+      "image_validation_failed": 78,
+      "source_api_busy": 70,
+      "license_unclear": 62,
       "source_api_error": 28,
-      "identity_ambiguous": 8,
-      "excluded_context": 3,
+      "identity_ambiguous": 10,
+      "excluded_context": 6,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
-    "contactSheets": [
-      "contact-sheet-01.jpg"
-    ],
+    "batchFailureReasons": {
+      "source_api_busy": 5,
+      "network_error": 25,
+      "image_validation_failed": 15,
+      "license_unclear": 7,
+      "identity_unconfirmed": 22,
+      "identity_ambiguous": 2
+    },
+    "manualCropSources": 4,
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 20,
+        "metadataCandidates": 33,
+        "identitySupportedMetadata": 11,
+        "openLicenseMetadata": 21,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 4,
+        "errors": {
+          "source_api_busy": 5,
+          "image_validation_failed": 7,
+          "license_unclear": 7,
+          "identity_unconfirmed": 20
+        }
+      },
+      "entity": {
+        "attemptedPeople": 20,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "network_error": 8,
+          "identity_unconfirmed": 2,
+          "identity_ambiguous": 2,
+          "image_validation_failed": 8
+        }
+      },
+      "openverse": {
+        "attemptedPeople": 20,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "network_error": 17
+        }
+      }
+    },
+    "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 40,
-      "processedPeople": 40,
-      "workers": 3,
-      "elapsedSeconds": 38.39,
+      "targetPeople": 20,
+      "processedPeople": 20,
+      "workers": 1,
+      "elapsedSeconds": 733.99,
       "stoppedForBudget": false
     }
   },
-  "visualPeople": 1,
-  "visualPhotos": 1,
+  "visualPeople": 0,
+  "visualPhotos": 0,
   "batchPeople": [
-    "t1500_0248",
-    "t1500_0212",
-    "t1500_0202",
-    "t1500_0250",
-    "t1500_0252",
-    "t1500_0249",
-    "t1500_0253",
-    "t1500_0257",
-    "t1500_0251",
-    "t1500_0260",
-    "t1500_0259",
-    "t1500_0258",
-    "t1500_0261",
-    "t1500_0262",
-    "t1500_0264",
-    "t1500_0263",
-    "t1500_0265",
-    "t1500_0268",
-    "t1500_0270",
-    "t1500_0267",
-    "t1500_0273",
-    "t1500_0272",
-    "t1500_0271",
-    "t1500_0275",
-    "t1500_0274",
-    "t1500_0277",
-    "t1500_0278",
-    "t1500_0276",
-    "t1500_0279",
-    "t1500_0281",
-    "t1500_0282",
-    "t1500_0283",
-    "t1500_0284",
-    "t1500_0285",
-    "t1500_0286",
-    "t1500_0287",
-    "t1500_0288",
-    "t1500_0290",
-    "t1500_0292",
-    "t1500_0294"
+    "t1500_0308",
+    "t1500_0296",
+    "t1500_0297",
+    "t1500_0302",
+    "t1500_0303",
+    "t1500_0304",
+    "t1500_0305",
+    "t1500_0306",
+    "t1500_0310",
+    "t1500_0311",
+    "t1500_0312",
+    "t1500_0313",
+    "t1500_0319",
+    "t1500_0328",
+    "t1500_0333",
+    "t1500_0334",
+    "t1500_0337",
+    "t1500_0338",
+    "t1500_0339",
+    "t1500_0346"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0248",
-      "name": "斯容",
+      "personId": "t1500_0308",
+      "name": "曹晏豪",
       "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
-        {
-          "provider": "entity",
-          "code": "identity_not_found",
-          "message": "No Wikidata entity candidates for the exact person name"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Brugblaauw-7wageningen.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Woningbouw_-_Housing_Orteliusstraat_Amsterdam_(6828948381).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Wendingen1923JessurundeMesquita.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Wendingen1918Blaauw.jpeg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0212",
-      "name": "陳慕",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0202",
-      "name": "喜翔",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Japanese_troops_crossing_the_Han_River_during_the_Hsiang-hsi_Operation.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%AD%94%E7%A5%A5%E7%86%993.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%AD%94%E7%A5%A5%E7%86%994.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Kung_and_hitler_(cropped).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0250",
-      "name": "逸祥",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "identity_unconfirmed",
-          "message": "Expected exactly one exact-name Q5 human; found 0"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0252",
-      "name": "崔麗心",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
         {
           "provider": "commons",
           "code": "source_api_busy",
           "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
         },
         {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
           "provider": "openverse",
           "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "Per-request wall time budget reached"
         }
       ]
     },
     {
-      "personId": "t1500_0249",
-      "name": "茵芙",
+      "personId": "t1500_0296",
+      "name": "熊欣欣",
       "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
           "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
+          "message": "No catalogue response: Per-request wall time budget reached"
         },
         {
           "provider": "openverse",
           "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "Per-request wall time budget reached"
         }
       ]
     },
     {
-      "personId": "t1500_0253",
-      "name": "陳今佩",
+      "personId": "t1500_0297",
+      "name": "李香琴",
       "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
-        {
-          "provider": "entity",
-          "code": "identity_not_found",
-          "message": "No Wikidata entity candidates for the exact person name"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0257",
-      "name": "汪建民",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2310871018).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2310877838).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2311285421).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2312093978).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_on_March_2,_2013_(3).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2312095486).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(3425744610).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2312094522).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0251",
-      "name": "郭靜純",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0260",
-      "name": "蔡頭",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg/1920px-%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg/1920px-%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg/1920px-%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%B2%E6%AD%87%E6%A5%AD%E7%9A%84%E8%9B%8B%E4%B9%8B%E8%97%9D%E5%8D%9A%E7%89%A9%E9%A4%A8%E8%94%A1%E9%A0%AD%E8%BE%B2%E5%A0%B4.jpg",
-            "filename": "已歇業的蛋之藝博物館蔡頭農場.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg/1920px-%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Outlookxp",
+            "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg",
+            "filename": "李香琴白底绿胶片大靠 20240206.jpg",
+            "artist": "Uuongkinghe",
             "credit": "Own work",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​已歇業的蛋之藝博物館蔡頭農場",
+            "caption": "​粤剧名伶李香琴穿用的白底绿胶片大靠",
             "identityEvidence": {
-              "wikidataId": "Q30946331",
-              "mappingSource": "https://www.wikidata.org/wiki/Q30946331",
+              "query": "李香琴",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "李香琴",
+                "李香琴"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "香港經典電影"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:32:09.132847+00:00",
+            "width": 2621,
+            "height": 3934,
+            "id": "d7fc094c0949e28fecd3",
+            "personId": "t1500_0297",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0297/d7fc094c0949e28fecd3/6c16c7872fe8/original.bin",
+            "originalSha256": "6c16c7872fe867743aa8ddb4e16ae5f4aa61a61e18f404a2bd49443abe6ad8fb",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BC%94%E5%93%A1%E6%9D%8E%E9%A6%99%E7%90%B4%E7%B0%BD%E5%90%8D.png",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Antarctic_Women_Hong_Kum_Lee.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0302",
+      "name": "劉丹",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_Sheung_Wan_Mee_Lun_Lane_Drama_1.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_Sheung_Wan_Mee_Lun_Lane_Drama_2.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Lau_Dan.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BB%95%E9%BA%97%E5%90%8D.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%A6%99%E6%B8%AF%E8%97%9D%E4%BA%BA%E5%8A%89%E4%B8%B9%E7%B0%BD%E5%90%8D.png",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:He_Guofeng,_Liu_Dan,_Huang_MiYi_at_2026_Shanghai_International_Film_Festival_01.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 5"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0303",
+      "name": "賴薇如",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0304",
+      "name": "林玟誼",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        },
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0305",
+      "name": "許傑輝",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        },
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0306",
+      "name": "劉香慈",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        },
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0310",
+      "name": "黃尚禾",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E8%A7%92%E9%A0%AD2%EF%BC%9A%E7%8E%8B%E8%80%85%E5%86%8D%E8%B5%B7%E3%80%8B%E5%8A%87%E7%B5%84%E8%B5%B0%E7%AC%AC55%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%98%9F%E5%85%89%E5%A4%A7%E9%81%93.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0311",
+      "name": "黃遠",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2419_(8000375063).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Lee-Sean_Huang_IMG_2419_%288000375063%29.jpg/1920px-Lee-Sean_Huang_IMG_2419_%288000375063%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Lee-Sean_Huang_IMG_2419_%288000375063%29.jpg/1920px-Lee-Sean_Huang_IMG_2419_%288000375063%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Lee-Sean_Huang_IMG_2419_%288000375063%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2419_(8000375063).jpg",
+            "filename": "Lee-Sean Huang IMG 2419 (8000375063).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2419",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2419",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
               "exactChineseAliases": [
-                "蔡頭"
+                "黃遠"
               ],
               "verifiedSearchAliases": [
-                "蔡頭"
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:44.757125+00:00",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%A0%AD",
-              "articleTitle": "蔡頭",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "蔡頭",
+              "query": "Sean Huang",
               "matchedAliases": [
-                "蔡頭",
-                "蔡頭",
-                "蔡頭"
+                "Sean Huang"
               ],
               "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "蔡頭",
-                "蔡頭"
-              ]
+              "captionAliasMatches": []
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "紅白勝利"
+                "一頁台北"
               ],
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T12:31:45.229558+00:00",
+            "searchTime": "2026-10-29T14:37:43.055827+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "89964ca41c5d06392271",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2462_(8000413017).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Lee-Sean_Huang_IMG_2462_%288000413017%29.jpg/1920px-Lee-Sean_Huang_IMG_2462_%288000413017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Lee-Sean_Huang_IMG_2462_%288000413017%29.jpg/1920px-Lee-Sean_Huang_IMG_2462_%288000413017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Lee-Sean_Huang_IMG_2462_%288000413017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2462_(8000413017).jpg",
+            "filename": "Lee-Sean Huang IMG 2462 (8000413017).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2462",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2462",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
+              "exactChineseAliases": [
+                "黃遠"
+              ],
+              "verifiedSearchAliases": [
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Sean Huang",
+              "matchedAliases": [
+                "Sean Huang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "一頁台北"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:37:43.056396+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "98a50cc70d23a4f72e73",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2620_(8000747778).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lee-Sean_Huang_IMG_2620_%288000747778%29.jpg/1920px-Lee-Sean_Huang_IMG_2620_%288000747778%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lee-Sean_Huang_IMG_2620_%288000747778%29.jpg/1920px-Lee-Sean_Huang_IMG_2620_%288000747778%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lee-Sean_Huang_IMG_2620_%288000747778%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2620_(8000747778).jpg",
+            "filename": "Lee-Sean Huang IMG 2620 (8000747778).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2620",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2620",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
+              "exactChineseAliases": [
+                "黃遠"
+              ],
+              "verifiedSearchAliases": [
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Sean Huang",
+              "matchedAliases": [
+                "Sean Huang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "一頁台北"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:37:43.056979+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "ebf5ffc6ef2ca24a6cfb",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2632_(8000780261).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lee-Sean_Huang_IMG_2632_%288000780261%29.jpg/1920px-Lee-Sean_Huang_IMG_2632_%288000780261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lee-Sean_Huang_IMG_2632_%288000780261%29.jpg/1920px-Lee-Sean_Huang_IMG_2632_%288000780261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Lee-Sean_Huang_IMG_2632_%288000780261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2632_(8000780261).jpg",
+            "filename": "Lee-Sean Huang IMG 2632 (8000780261).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2632",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2632",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
+              "exactChineseAliases": [
+                "黃遠"
+              ],
+              "verifiedSearchAliases": [
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Sean Huang",
+              "matchedAliases": [
+                "Sean Huang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "一頁台北"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:37:43.057544+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "95a54e8f099a29e73c73",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2657_(8000843640).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Lee-Sean_Huang_IMG_2657_%288000843640%29.jpg/1920px-Lee-Sean_Huang_IMG_2657_%288000843640%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Lee-Sean_Huang_IMG_2657_%288000843640%29.jpg/1920px-Lee-Sean_Huang_IMG_2657_%288000843640%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Lee-Sean_Huang_IMG_2657_%288000843640%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2657_(8000843640).jpg",
+            "filename": "Lee-Sean Huang IMG 2657 (8000843640).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2657",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2657",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
+              "exactChineseAliases": [
+                "黃遠"
+              ],
+              "verifiedSearchAliases": [
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Sean Huang",
+              "matchedAliases": [
+                "Sean Huang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "一頁台北"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:37:43.058124+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "89b6a9c889662009aa16",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2683_(8000903073).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lee-Sean_Huang_IMG_2683_%288000903073%29.jpg/1920px-Lee-Sean_Huang_IMG_2683_%288000903073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lee-Sean_Huang_IMG_2683_%288000903073%29.jpg/1920px-Lee-Sean_Huang_IMG_2683_%288000903073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Lee-Sean_Huang_IMG_2683_%288000903073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee-Sean_Huang_IMG_2683_(8000903073).jpg",
+            "filename": "Lee-Sean Huang IMG 2683 (8000903073).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lee-Sean Huang from Providence, RI, USA",
+            "credit": "IMG_2683",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "IMG_2683",
+            "identityEvidence": {
+              "wikidataId": "Q9455192",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9455192",
+              "exactChineseAliases": [
+                "黃遠"
+              ],
+              "verifiedSearchAliases": [
+                "黃遠",
+                "Sean Huang",
+                "Huang Shih-hsiang",
+                "Huang Yuan"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T14:37:12.664105+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%81%A0",
+              "articleTitle": "黃遠",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Sean Huang",
+              "matchedAliases": [
+                "Sean Huang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "一頁台北"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T14:37:43.058701+00:00",
+            "width": 4416,
+            "height": 3312,
+            "id": "d517c40c938b91ad90ae",
+            "personId": "t1500_0311",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0312",
+      "name": "劉修甫",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0313",
+      "name": "謝沛恩",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0319",
+      "name": "林美貞",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0328",
+      "name": "無尊",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0333",
+      "name": "秦沛",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg/1920px-HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg/1920px-HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg",
+            "filename": "HK CWB 銅鑼灣 Causeway Bay 糖街 Sugar Street July 2018 SSG construction site n minibus public light bus strand 01.jpg",
+            "artist": "100 Hangheng Kam",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "HK CWB zh:銅鑼灣 Causeway Bay zh:糖街 Sugar Street in July 2018 Paul Chun Pui 秦沛",
+            "identityEvidence": {
+              "query": "秦沛",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "秦沛",
+                "秦沛"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "新不了情"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:39:55.991177+00:00",
             "width": 3264,
             "height": 2448,
-            "id": "dc73cf16a03776d13aee",
-            "personId": "t1500_0260",
+            "id": "c7cf2ad638f9356eb595",
+            "personId": "t1500_0333",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0259",
-      "name": "羅璧玲",
-      "status": "pending_review",
-      "newCandidateIds": [
-        "79adef831d2d0f56d48e"
-      ],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Luo_Pei-ying_(cropped).jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Luo_Pei-ying_%28cropped%29.jpg/1920px-Luo_Pei-ying_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Luo_Pei-ying_%28cropped%29.jpg/1920px-Luo_Pei-ying_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Luo_Pei-ying_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Luo_Pei-ying_(cropped).jpg",
-            "filename": "Luo Pei-ying (cropped).jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Hsu chienli",
-            "credit": "Own work",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "​民國71年在台北上前號處上專業攝影課  配合周丹葳清秀佳人模特兒般拍的照片  距今32年",
-            "identityEvidence": {
-              "wikidataId": "Q9000070",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9000070",
-              "exactChineseAliases": [
-                "羅璧玲",
-                "罗璧玲",
-                "罗璧玲",
-                "羅璧玲"
-              ],
-              "verifiedSearchAliases": [
-                "羅璧玲",
-                "罗璧玲",
-                "Luo Pei-ying",
-                "Luo Peiying",
-                "Luo Biling",
-                "Pei-Ying Lo"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:44.711940+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E7%BE%85%E9%9C%88%E7%A9%8E",
-              "articleTitle": "羅霈穎",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Luo Pei-ying",
-              "matchedAliases": [
-                "Luo Pei-ying",
-                "Luo Peiying"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": []
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "台灣綜藝"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-29T12:31:45.776018+00:00",
-            "width": 2148,
-            "height": 2864,
-            "id": "2af4dd3932bbbd8155fd",
-            "personId": "t1500_0259",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Journalists_outside_of_Melon_Life_Travel_20200809.jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Male_photojournalists_at_Melon_Life_Travel_main_entrance_20200809.jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Melon_Life_Travel_and_FTV_News_588-BU_20200809.jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0258",
-      "name": "陳凱倫",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E5%87%B1%E5%80%AB.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B3%E5%87%B1%E5%80%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B3%E5%87%B1%E5%80%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%99%B3%E5%87%B1%E5%80%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E5%87%B1%E5%80%AB.jpg",
-            "filename": "陳凱倫.jpg",
-            "artist": "P5693852",
-            "credit": "Own work",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "Chen at a baseball game of Taoyuan of Taiwan in Septemper 19, 2013.",
-            "identityEvidence": {
-              "query": "陳凱倫",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9366803",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9366803",
-              "exactChineseAliases": [
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "verifiedSearchAliases": [
-                "陳凱倫",
-                "Chan Hoi-Lun"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:43.753743+00:00",
-              "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%87%B1%E5%80%AB",
-              "articleTitle": "陳凱倫",
-              "articleLookup": "exact title with redirects; not a search result",
-              "matchedAliases": [
-                "陳凱倫",
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "captionAliasMatches": [
-                "陳凱倫",
-                "陳凱倫"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "台灣綜藝"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T12:31:47.356058+00:00",
-            "width": 524,
-            "height": 682,
-            "id": "c3f3e247bbe8de56018e",
-            "personId": "t1500_0258",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0333/c7cf2ad638f9356eb595/b54d7984c6c7/original.bin",
+            "originalSha256": "b54d7984c6c746b19e5343d66d54e8ac4b78831d759453c60a65105ebac0fc3a",
+            "cropFailure": "Face is too small",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Face is too small"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6,_2014_(14893544048).jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29.jpg/1920px-%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29.jpg/1920px-%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E5%9C%8B%E9%BE%8D_%E9%99%B3%E5%87%B1%E5%80%AB_July_6,_2014_(14893544048).jpg",
-            "filename": "羅國龍 陳凱倫 July 6, 2014 (14893544048).jpg",
-            "artist": "Ming-Chu Chu from Taipei, Taiwan",
-            "credit": "7/6 獅犀 @ 新莊",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "統一獅 義大犀牛",
-            "identityEvidence": {
-              "query": "陳凱倫",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9366803",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9366803",
-              "exactChineseAliases": [
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "verifiedSearchAliases": [
-                "陳凱倫",
-                "Chan Hoi-Lun"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:43.753743+00:00",
-              "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%87%B1%E5%80%AB",
-              "articleTitle": "陳凱倫",
-              "articleLookup": "exact title with redirects; not a search result",
-              "matchedAliases": [
-                "陳凱倫",
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "captionAliasMatches": [
-                "陳凱倫",
-                "陳凱倫"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "台灣綜藝"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T12:31:47.557129+00:00",
-            "width": 4896,
-            "height": 3672,
-            "id": "b89cffc108e74c07401f",
-            "personId": "t1500_0258",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too small"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E5%9C%8B%E9%BE%8D_July_6,_2014_(14893544048)_(cropped).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E5%87%B1%E5%80%AB_July_6,_2014_(14893544048)_(cropped).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%E9%99%B3%E5%87%B1%E5%80%AB_July_6%2C_2014_%2814893544048%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E5%87%B1%E5%80%AB_July_6,_2014_(14893544048)_(cropped).jpg",
-            "filename": "陳凱倫 July 6, 2014 (14893544048) (cropped).jpg",
-            "artist": "Ming-Chu Chu from Taipei, Taiwan",
-            "credit": "7/6 獅犀 @ 新莊",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "統一獅 義大犀牛",
-            "identityEvidence": {
-              "query": "陳凱倫",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "wikidataId": "Q9366803",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9366803",
-              "exactChineseAliases": [
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "verifiedSearchAliases": [
-                "陳凱倫",
-                "Chan Hoi-Lun"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:43.753743+00:00",
-              "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%87%B1%E5%80%AB",
-              "articleTitle": "陳凱倫",
-              "articleLookup": "exact title with redirects; not a search result",
-              "matchedAliases": [
-                "陳凱倫",
-                "陳凱倫",
-                "陳凱倫"
-              ],
-              "captionAliasMatches": [
-                "陳凱倫",
-                "陳凱倫"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "台灣綜藝"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-29T12:31:50.388499+00:00",
-            "width": 1673,
-            "height": 1960,
-            "id": "6fd881c6a81b51d55763",
-            "personId": "t1500_0258",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0261",
-      "name": "脫線",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Bottle_Rocket_movie_title.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%B1%A4%E5%A4%A7%E7%87%88%E7%B1%A0.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712_%E7%94%84%E6%84%9B%E9%AB%98%E9%9B%84%E7%BE%A4%E6%98%9F%E6%9C%83%E7%BE%A4%E6%98%9F%E7%9B%B8%E8%A6%8B%E6%AD%A1%E9%80%9A%E7%A8%BF-02.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%9B%99%E5%B1%A4%E5%A4%A7%E5%9E%8B%E7%87%88%E7%B1%A0.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%A6%E6%B2%9B%E3%80%81%E6%9D%8E%E7%90%B3%E7%90%B3%E3%80%81%E5%90%B3%E6%80%9D%E9%81%A0%E3%80%81%E5%A7%9C%E5%A4%A7%E8%A1%9B.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%93%E7%AD%92%E5%BD%A2%E7%87%88%E7%BD%A9%E7%87%88%E7%B1%A0%E4%BD%9C%E5%93%81.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%A6%E6%B2%9B_(cropped).jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0262",
-      "name": "文英",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg/1920px-Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%A8%B1%E9%9E%8D%E8%8F%AF%E3%80%81%E7%A7%A6%E6%B2%9B%E3%80%81%E5%BC%B5%E5%AF%B6%E8%8F%AF%E3%80%81%E6%A2%81%E6%B4%9B%E6%96%BD%E3%80%81%E9%BB%8E%E8%8A%B7%E7%8F%8A%E5%87%BA%E5%B8%AD%E9%9B%BB%E5%BD%B1%E7%AC%AC%E4%B8%80%E7%88%90%E9%A6%99%E9%A6%99%E6%B8%AF%E9%A6%96%E6%98%A0%E7%A6%AE.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/%E8%A8%B1%E9%9E%8D%E8%8F%AF%E3%80%81%E7%A7%A6%E6%B2%9B%E3%80%81%E5%BC%B5%E5%AF%B6%E8%8F%AF%E3%80%81%E6%A2%81%E6%B4%9B%E6%96%BD%E3%80%81%E9%BB%8E%E8%8A%B7%E7%8F%8A%E5%87%BA%E5%B8%AD%E9%9B%BB%E5%BD%B1%E7%AC%AC%E4%B8%80%E7%88%90%E9%A6%99%E9%A6%99%E6%B8%AF%E9%A6%96%E6%98%A0%E7%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg/1920px-Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8663.jpg",
-            "filename": "Wen Y. – Biathlon 2023 Nove Mesto 8663.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/%E8%A8%B1%E9%9E%8D%E8%8F%AF%E3%80%81%E7%A7%A6%E6%B2%9B%E3%80%81%E5%BC%B5%E5%AF%B6%E8%8F%AF%E3%80%81%E6%A2%81%E6%B4%9B%E6%96%BD%E3%80%81%E9%BB%8E%E8%8A%B7%E7%8F%8A%E5%87%BA%E5%B8%AD%E9%9B%BB%E5%BD%B1%E7%AC%AC%E4%B8%80%E7%88%90%E9%A6%99%E9%A6%99%E6%B8%AF%E9%A6%96%E6%98%A0%E7%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/%E8%A8%B1%E9%9E%8D%E8%8F%AF%E3%80%81%E7%A7%A6%E6%B2%9B%E3%80%81%E5%BC%B5%E5%AF%B6%E8%8F%AF%E3%80%81%E6%A2%81%E6%B4%9B%E6%96%BD%E3%80%81%E9%BB%8E%E8%8A%B7%E7%8F%8A%E5%87%BA%E5%B8%AD%E9%9B%BB%E5%BD%B1%E7%AC%AC%E4%B8%80%E7%88%90%E9%A6%99%E9%A6%99%E6%B8%AF%E9%A6%96%E6%98%A0%E7%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Pavel Hrdlička (Czech Wikipedia user Packa)",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%A8%B1%E9%9E%8D%E8%8F%AF%E3%80%81%E7%A7%A6%E6%B2%9B%E3%80%81%E5%BC%B5%E5%AF%B6%E8%8F%AF%E3%80%81%E6%A2%81%E6%B4%9B%E6%96%BD%E3%80%81%E9%BB%8E%E8%8A%B7%E7%8F%8A%E5%87%BA%E5%B8%AD%E9%9B%BB%E5%BD%B1%E7%AC%AC%E4%B8%80%E7%88%90%E9%A6%99%E9%A6%99%E6%B8%AF%E9%A6%96%E6%98%A0%E7%A6%AE.jpg",
+            "filename": "許鞍華、秦沛、張寶華、梁洛施、黎芷珊出席電影第一爐香香港首映禮.jpg",
+            "artist": "Littleguy",
             "credit": "Own work",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Biathlon World Cup in Nové Město na Moravě 2023 – Wen Ying.",
+            "caption": "2021年11月18日，第一爐香導演許鞍華，以及演員秦沛、梁洛施、黎芷珊和張寶華，出席為香港大學籌款嘅慈善首映",
             "identityEvidence": {
-              "wikidataId": "Q7231425",
-              "mappingSource": "https://www.wikidata.org/wiki/Q7231425",
+              "query": "秦沛",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "秦沛",
+                "秦沛"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "新不了情"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:39:56.609454+00:00",
+            "width": 1125,
+            "height": 748,
+            "id": "a1e98eaf665ffa8cf635",
+            "personId": "t1500_0333",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC23%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E7%94%B7%E9%85%8D%E8%A7%92%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E7%A7%A6%E6%B2%9B.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0334",
+      "name": "田蕊妮",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E7%94%B0%E8%95%8A%E5%A6%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
+            "filename": "田蕊妮.jpg",
+            "artist": "am730",
+            "credit": "【專訪】女人四十‧田蕊妮︰母女是互不放過大家的",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​2013年萬千星輝頒獎典禮最佳女主角",
+            "identityEvidence": {
+              "query": "田蕊妮",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "田蕊妮",
+                "田蕊妮"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "巨輪"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:40:30.940339+00:00",
+            "width": 1490,
+            "height": 2116,
+            "id": "6b25e8bdda3d6c397452",
+            "personId": "t1500_0334",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0334/6b25e8bdda3d6c397452/1c838968f1b0/original.bin",
+            "originalSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+            "cropFailure": "No reliable frontal face",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Krystal_Tin%27s_signature.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0337",
+      "name": "唐寧",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Ministru_prezidents_piedal%C4%81s_Lielbrit%C4%81nijas_premjerministra_r%C4%ABkotaj%C4%81_pie%C5%86em%C5%A1an%C4%81_(5371668777).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:President_Trump_at_No._10_Downing_Street_(48000826963).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:London_-_Westminster_-_Downing_Street_(geograph_5058812).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Downing_Street_through_the_gates.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:US_Secretary_of_State_John_Kerry_(28314415602).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_and_Prime_Minister_Margaret_Thatcher_Standing_in_Front_of_Painting_of_Winston_Churchill_During_Visit_to_The_United_Kingdom_at_10_Downing_Street_in_London_-_DPLA_-_7ec3dd3db355756fe70b10135180aeda.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 4"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0338",
+      "name": "梁小冰",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sabrina_Leung_Siu_Bing%27s_autograph.png",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0339",
+      "name": "陳錦鴻",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_1.1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_1.2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.0.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.2.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sunny_Chan_2.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sunny_Chan_2.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sunny_Chan_2.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.2.jpg",
+            "filename": "Sunny Chan 2.2.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "KTo288",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "Sunny Chan in Brent Cross as guest compere of a TVB-Europe promotional event. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+            "identityEvidence": {
+              "wikidataId": "Q86441",
+              "mappingSource": "https://www.wikidata.org/wiki/Q86441",
               "exactChineseAliases": [
-                "文英",
-                "文英",
-                "文英"
+                "陈锦鸿",
+                "陳錦鴻",
+                "陈锦鸿",
+                "陳錦鴻",
+                "陳錦鴻"
               ],
               "verifiedSearchAliases": [
-                "文英",
-                "Wen-ying",
-                "Bun-eng",
-                "Bun-ing",
-                "Bun'ei"
+                "陳錦鴻",
+                "陈锦鸿",
+                "Sunny Chan",
+                "Chan Kam Hung, Sunny",
+                "Sunny Chan Kam Hung",
+                "Sunny Chan Kam-hung"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:50.694585+00:00",
+              "retrievedAt": "2026-10-29T14:41:58.149892+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%96%87%E8%8B%B1",
-              "articleTitle": "文英",
+              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E9%8C%A6%E9%B4%BB",
+              "articleTitle": "陳錦鴻",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "Wen-ying",
+              "query": "Sunny Chan",
               "matchedAliases": [
-                "Wen-ying"
+                "Sunny Chan"
               ],
               "discoveryWarnings": [],
+              "claim": "P18",
               "captionAliasMatches": []
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "稻草人"
+                "創世紀"
               ],
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T12:31:52.283735+00:00",
-            "width": 2152,
-            "height": 2804,
-            "id": "79b7836369df520747e3",
-            "personId": "t1500_0262",
+            "searchTime": "2026-10-29T14:41:58.911541+00:00",
+            "width": 268,
+            "height": 401,
+            "id": "c2637ed92a68887159af",
+            "personId": "t1500_0339",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0339/c2637ed92a68887159af/62de610120ca/original.bin",
+            "originalSha256": "62de610120caf5178dbb3f7167c47cda7e798853d8ad1dfffd782f880c28d12b",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0346",
+      "name": "陳怡叡",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_03.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/221123_Yuri_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/221123_Yuri_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/221123_Yuri_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_03.png",
+            "filename": "221123 Yuri 03.png",
+            "artist": "娛樂星聞",
+            "credit": "YouTube: https://www.youtube.com/watch?v=LJtFszxH0KM&ab_channel=%E5%A8%9B%E6%A8%82%E6%98%9F%E8%81%9E – View/save archived versions on archive.org",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​Yuri《全明星》苦到想嫁人 于成炘歸類「醜帥」孝太「觀賞用」｜娛樂星聞",
+            "identityEvidence": {
+              "query": "陳怡叡",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "Yuri",
+                "Yuri"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "樂天女孩"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:42:30.877489+00:00",
+            "width": 623,
+            "height": 934,
+            "id": "1eae45f989f2ef41bd20",
+            "personId": "t1500_0346",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_01.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/221123_Yuri_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/221123_Yuri_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/221123_Yuri_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_01.png",
+            "filename": "221123 Yuri 01.png",
+            "artist": "娛樂星聞",
+            "credit": "YouTube: https://www.youtube.com/watch?v=LJtFszxH0KM&ab_channel=%E5%A8%9B%E6%A8%82%E6%98%9F%E8%81%9E – View/save archived versions on archive.org",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​Yuri《全明星》苦到想嫁人 于成炘歸類「醜帥」孝太「觀賞用」｜娛樂星聞",
+            "identityEvidence": {
+              "query": "陳怡叡",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "Yuri",
+                "Yuri"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "樂天女孩"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T14:42:31.302832+00:00",
+            "width": 1202,
+            "height": 801,
+            "id": "7d516bf07aae97164b22",
+            "personId": "t1500_0346",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -880,62 +1394,43 @@
           "message": "Blurred crop: sharpness below 65"
         },
         {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg/1920px-Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_02.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/221123_Yuri_02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg/1920px-Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Wen_Y._%E2%80%93_Biathlon_2023_Nove_Mesto_8664.jpg",
-            "filename": "Wen Y. – Biathlon 2023 Nove Mesto 8664.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/221123_Yuri_02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/221123_Yuri_02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Pavel Hrdlička (Czech Wikipedia user Packa)",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Biathlon World Cup in Nové Město na Moravě 2023 – Wen Ying.",
+            "source": "https://commons.wikimedia.org/wiki/File:221123_Yuri_02.png",
+            "filename": "221123 Yuri 02.png",
+            "artist": "娛樂星聞",
+            "credit": "YouTube – View/save archived versions on archive.org&ab_channel=%E5%A8%9B%E6%A8%82%E6%98%9F%E8%81%9E",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​Yuri《全明星》苦到想嫁人 于成炘歸類「醜帥」孝太「觀賞用」｜娛樂星聞",
             "identityEvidence": {
-              "wikidataId": "Q7231425",
-              "mappingSource": "https://www.wikidata.org/wiki/Q7231425",
-              "exactChineseAliases": [
-                "文英",
-                "文英",
-                "文英"
+              "query": "陳怡叡",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "Yuri",
+                "Yuri"
               ],
-              "verifiedSearchAliases": [
-                "文英",
-                "Wen-ying",
-                "Bun-eng",
-                "Bun-ing",
-                "Bun'ei"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:50.694585+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%96%87%E8%8B%B1",
-              "articleTitle": "文英",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Wen-ying",
-              "matchedAliases": [
-                "Wen-ying"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": []
+              "visualIdentityVerified": false
             },
             "recognitionEvidence": {
-              "representativeWorks": [
-                "稻草人"
-              ],
               "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
+              "representativeWorks": [
+                "樂天女孩"
+              ],
+              "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-29T12:31:52.284903+00:00",
-            "width": 2640,
-            "height": 3161,
-            "id": "b1d0ea0cee0efb99eebb",
-            "personId": "t1500_0262",
+            "searchTime": "2026-10-29T14:42:32.674515+00:00",
+            "width": 1164,
+            "height": 873,
+            "id": "d4fd2d225b7959c924a3",
+            "personId": "t1500_0346",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -945,70 +1440,64 @@
             ]
           },
           "code": "image_validation_failed",
-          "message": "No reliable frontal face"
+          "message": "Face is too tilted"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%96%87%E8%8B%B1%E9%A4%A82.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%E6%96%87%E8%8B%B1%E9%A4%A82.jpg/1920px-%E6%96%87%E8%8B%B1%E9%A4%A82.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E8%95%8A%E8%95%8A,_Yuri_Chan.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%E9%99%B3%E8%95%8A%E8%95%8A%2C_Yuri_Chan.jpg/1920px-%E9%99%B3%E8%95%8A%E8%95%8A%2C_Yuri_Chan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%E6%96%87%E8%8B%B1%E9%A4%A82.jpg/1920px-%E6%96%87%E8%8B%B1%E9%A4%A82.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E6%96%87%E8%8B%B1%E9%A4%A82.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E6%96%87%E8%8B%B1%E9%A4%A82.jpg",
-            "filename": "文英館2.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%E9%99%B3%E8%95%8A%E8%95%8A%2C_Yuri_Chan.jpg/1920px-%E9%99%B3%E8%95%8A%E8%95%8A%2C_Yuri_Chan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/%E9%99%B3%E8%95%8A%E8%95%8A%2C_Yuri_Chan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E8%95%8A%E8%95%8A,_Yuri_Chan.jpg",
+            "filename": "陳蕊蕊, Yuri Chan.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Encore",
+            "artist": "Tsz Ho Kam",
             "credit": "Own work",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​文英館正面右側外觀。",
+            "caption": "​2004年入讀無綫電視第9期舞蹈藝員訓練班而踏足娛樂圈；2009年在翡翠台綜藝節目《耳分高下》裡，擔任「Sing之天使」其一「柑桔」而開始受人注目。2009年11月至2016年5月初曾加入唱片公司「自由行娛樂（Freeway Entertainment）」，並簡化藝名為「蕊蕊」，以及於2014年4月與鄧詠雪、陶枳樽和何麗娟組成女子歌唱組合「HunterZ」。但個人發展不太順利之餘，組合成立不足兩年亦自行解散。2016年5月初離開自由行娛樂和簽約新公司後，2017年便投資逾十萬元跟友人開辦「香港美人魚明星學院」，希望在演藝營商兩方面同時發展。",
             "identityEvidence": {
-              "wikidataId": "Q7231425",
-              "mappingSource": "https://www.wikidata.org/wiki/Q7231425",
+              "wikidataId": "Q85885122",
+              "mappingSource": "https://www.wikidata.org/wiki/Q85885122",
               "exactChineseAliases": [
-                "文英",
-                "文英",
-                "文英"
+                "陳怡叡"
               ],
               "verifiedSearchAliases": [
-                "文英",
-                "Wen-ying",
-                "Bun-eng",
-                "Bun-ing",
-                "Bun'ei"
+                "陳怡叡",
+                "Yuri Chen"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:31:50.694585+00:00",
+              "retrievedAt": "2026-10-29T14:42:34.829333+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%96%87%E8%8B%B1",
-              "articleTitle": "文英",
+              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%80%A1%E5%8F%A1",
+              "articleTitle": "陳怡叡",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "Wen-ying",
+              "query": "Yuri Chen",
               "matchedAliases": [
-                "文英",
-                "文英",
-                "文英"
+                "Yuri"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "文英",
-                "文英"
+                "Yuri",
+                "Yuri"
               ]
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "稻草人"
+                "樂天女孩"
               ],
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T12:31:52.285942+00:00",
-            "width": 3264,
-            "height": 1840,
-            "id": "17169b61a8a4b220381c",
-            "personId": "t1500_0262",
+            "searchTime": "2026-10-29T14:42:36.847256+00:00",
+            "width": 2160,
+            "height": 3172,
+            "id": "1d7def2a508feed020fc",
+            "personId": "t1500_0346",
+            "discoveryRunId": "20261029T143031Z-cb626fef",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -1018,1051 +1507,9 @@
             ]
           },
           "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Pelliot_chinois_2567_(%2B_2552)_-_btv1b8304029j_(01_of_30).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Tsai_system1MoMA.jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E6%BA%AB%E9%B7%B9.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chang_Wen-ing_20160119.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2023-02-10_BMW_IBU_World_Championships_Biathlon_Oberhof_2023_%E2%80%93_Women_7.5_km_Sprint_by_Sandro_Halank%E2%80%93197.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0264",
-      "name": "甄莉",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "identity_not_found",
-          "message": "No Wikidata entity candidates for the exact person name"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0263",
-      "name": "吳姍儒",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Sandy_Wu_2023.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(1).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(2).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(3).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:No._72-29,_Section_1,_Zhongxiao_West_Road_20210207.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Ladies_lingerie_display_at_Enjoy_Yuanlin_Store_on_24_November_2021_(cropped).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Ladies_lingerie_display_at_Enjoy_Yuanlin_Store_on_24_November_2021.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0265",
-      "name": "紀言愷",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Bowie_Tsang_%26_JR_at_Next_Magazine_Entertainment_Awards_20120815a.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Bowie_Tsang_%26_JR_at_Next_Magazine_Entertainment_Awards_20120815b.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0268",
-      "name": "何孟遠",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0270",
-      "name": "廖科溢",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0267",
-      "name": "胡釋安",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%9B%BB%E5%BD%B1%E3%80%8A%E5%A5%B3%E9%AC%BC%E6%A9%8B2%E3%80%8B%E5%8A%87%E7%B5%84.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0273",
-      "name": "楊麗花",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Yang_Li-hua_at_TTV_1990s_by_Li_Min.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0272",
-      "name": "唐美雲",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:SKL24thRunUp_MeiyunTang.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SKL24thRunUp_MeiyunTang.jpg/1920px-SKL24thRunUp_MeiyunTang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SKL24thRunUp_MeiyunTang.jpg/1920px-SKL24thRunUp_MeiyunTang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/SKL24thRunUp_MeiyunTang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:SKL24thRunUp_MeiyunTang.jpg",
-            "filename": "SKL24thRunUp MeiyunTang.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Rico Shen",
-            "credit": "Own work",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "caption": "Meiyun Tang, founder of Tang Mei Yun Taiwanese Opera Company.",
-            "identityEvidence": {
-              "wikidataId": "Q9051294",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9051294",
-              "exactChineseAliases": [
-                "唐美雲"
-              ],
-              "verifiedSearchAliases": [
-                "唐美雲",
-                "Tang Mei-yun",
-                "Tn̂g Bí-hûn"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:32:00.765038+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E5%94%90%E7%BE%8E%E9%9B%B2",
-              "articleTitle": "唐美雲",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Tang Mei-yun",
-              "matchedAliases": [
-                "Tang Mei-yun"
-              ],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": []
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "歌仔戲"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-29T12:32:00.886067+00:00",
-            "width": 2304,
-            "height": 3072,
-            "id": "ecf8d1f190746c6a8138",
-            "personId": "t1500_0272",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Multiple prominent faces"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:1011031%E9%A6%AC%E8%8B%B1%E4%B9%9D%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E7%AC%AC16%E5%B1%86%E3%80%8C%E5%9C%8B%E5%AE%B6%E6%96%87%E8%97%9D%E7%8D%8E%E3%80%8D%E9%A0%92%E7%8D%8E%E5%85%B8%E7%A6%AE_(8141063157).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:1011031%E9%A6%AC%E8%8B%B1%E4%B9%9D%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E7%AC%AC16%E5%B1%86%E3%80%8C%E5%9C%8B%E5%AE%B6%E6%96%87%E8%97%9D%E7%8D%8E%E3%80%8D%E9%A0%92%E7%8D%8E%E5%85%B8%E7%A6%AE_(8141093138).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E5%8A%87-%E8%A5%BF%E9%81%8A%E8%A8%98_(50658131133).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0271",
-      "name": "孫翠鳳",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Tsui-feng_Sun_and_Hsiao-yen_Chang_at_The_Primary_School_20101226.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Sun_Tsui-feng_2023.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:1000925%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C%E7%B3%96%E5%80%89%E9%96%8B%E9%96%80%E3%80%81%E8%97%9D%E6%B0%A3%E9%A2%A8%E7%99%BC%EF%BC%9A%E7%B3%96%E5%BB%8D%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80%E6%AD%A3%E5%BC%8F%E9%96%8B%E5%9C%92%E6%B4%BB%E5%8B%95%E3%80%8D_(6188082824).jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2010_08_28_%E9%9A%A8%E6%8B%8D_~%E3%80%90%E6%98%8E%E8%8F%AF%E5%9C%92%E3%80%91_(4934339307).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E8%8F%AF%E5%9C%92%E5%85%AC%E6%BC%94_(5263155242).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E8%8F%AF%E5%9C%92%E5%85%AC%E6%BC%94_(5265276246).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:981108%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%BB%BA%E5%9C%8B%E4%B8%80%E7%99%BE%E5%B9%B4%E6%85%B6%E7%A5%9D%E6%B4%BB%E5%8B%95%E7%B1%8C%E5%82%99%E5%A7%94%E5%93%A1%E6%9C%83%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%85%A8%E9%AB%94%E5%A7%94%E5%93%A1%E6%9C%83%E8%AD%B0%E3%80%8D%E3%80%82_(4099779548).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0275",
-      "name": "陳美雲",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0274",
-      "name": "葉青",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 5"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gardenology.org-IMG_7798_qsbg11mar.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gardenology.org-IMG_7799_qsbg11mar.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Gardenology.org-IMG_7800_qsbg11mar.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Guduchi_(Tinospora_crispa)_1.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0277",
-      "name": "何欣穗",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0278",
-      "name": "何景揚",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0276",
-      "name": "許書豪",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0279",
-      "name": "楊士弘",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0281",
-      "name": "劉家凱",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0282",
-      "name": "戴曉君",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: The read operation timed out"
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0283",
-      "name": "陳霆",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0284",
-      "name": "關勇",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0285",
-      "name": "林柏叡",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0286",
-      "name": "陳又瑄",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0287",
-      "name": "潘綱大",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0288",
-      "name": "蔡明修",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0290",
-      "name": "馬世莉",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0292",
-      "name": "黃喬歆",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0294",
-      "name": "錦雯",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "Face is too tilted"
         }
       ]
     }
-  ],
-  "visualAssetCommit": "2dd812c814412563a702c1ed5a486d1e8fc9bc97",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/assets-index.json",
-    "contactSheets": [
-      {
-        "bytes": 22681,
-        "entries": [
-          {
-            "candidateId": "79adef831d2d0f56d48e",
-            "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
-            "personId": "t1500_0259",
-            "tile": 1
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/contact-sheet-01.jpg",
-        "sha256": "e6496e179aa8cc4194d91a256e5168948116d098216aa603f372367a75f68474",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/contact-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/contact-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/contact-sheet-01.jpg?raw=true"
-      }
-    ],
-    "peopleCount": 1,
-    "photoCount": 1,
-    "photos": [
-      {
-        "candidateId": "79adef831d2d0f56d48e",
-        "candidateImage": {
-          "bytes": 90957,
-          "displayHeight": 720,
-          "displayWidth": 600,
-          "height": 720,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/candidate.jpg",
-          "sha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
-          "width": 600,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/candidate.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/candidate.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/candidate.jpg?raw=true"
-        },
-        "eligibleForLive": false,
-        "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
-        "metadata": {
-          "author": "Hsu chienli",
-          "caption": "​民國71年在台北上前號處上專業攝影課  配合周丹葳清秀佳人模特兒般拍的照片  距今32年",
-          "credit": "Own work",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E7%BE%85%E9%9C%88%E7%A9%8E",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "羅霈穎",
-            "captionAliasMatches": [],
-            "claim": "P18",
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "羅璧玲",
-              "罗璧玲",
-              "罗璧玲",
-              "羅璧玲"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q9000070",
-            "matchedAliases": [],
-            "query": "Luo Pei-ying",
-            "retrievedAt": "2026-10-29T12:31:44.711940+00:00",
-            "verifiedSearchAliases": [
-              "羅璧玲",
-              "罗璧玲",
-              "Luo Pei-ying",
-              "Luo Peiying",
-              "Luo Biling",
-              "Pei-Ying Lo"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q9000070"
-          },
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/%E7%BE%85%E9%9C%88%E7%A9%8E.JPG/1920px-%E7%BE%85%E9%9C%88%E7%A9%8E.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/%E7%BE%85%E9%9C%88%E7%A9%8E.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "台灣綜藝"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E9%9C%88%E7%A9%8E.JPG",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-          ]
-        },
-        "name": "羅璧玲",
-        "personId": "t1500_0259",
-        "reveal": {
-          "chin": [
-            0.08,
-            0.2833378287274946,
-            0.92,
-            0.7775247436715071
-          ],
-          "eyes": [
-            0.08,
-            0.2833378287274946,
-            0.92,
-            0.4218294991054565
-          ],
-          "full": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "mouth": [
-            0.08,
-            0.2833378287274946,
-            0.92,
-            0.6452779485442013
-          ],
-          "nose": [
-            0.08,
-            0.2833378287274946,
-            0.92,
-            0.5340851165436127
-          ]
-        },
-        "reviewStatus": "pending_review",
-        "sourceImage": {
-          "bytes": 505029,
-          "displayHeight": 1440,
-          "displayWidth": 1920,
-          "height": 1440,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/source.jpg",
-          "sha256": "cb78f8c9e1053c48befcf06b402f692a6551486a584ebae92eeb49275d61ec9d",
-          "width": 1920,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/source.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/source.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/source.jpg?raw=true"
-        },
-        "stageImages": {
-          "chin": {
-            "bytes": 231950,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/chin.png",
-            "sha256": "d6168e04ec3eb1bef644913e13a63ad1fea43abdf55d5d56e73d7760d8b9f8d9",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/chin.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/chin.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/chin.png?raw=true"
-          },
-          "eyes": {
-            "bytes": 68830,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/eyes.png",
-            "sha256": "ad4557c971616c5c08ad7c09659cd8f2e8589ddfdf1ffd5915bf550af01e8d98",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/eyes.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/eyes.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/eyes.png?raw=true"
-          },
-          "full": {
-            "bytes": 486176,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/full.png",
-            "sha256": "3d5210c291ac734fb96c87a2e83c9d63d35e7a275d8da1e16acf7ac2505bb560",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/full.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/full.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/full.png?raw=true"
-          },
-          "mouth": {
-            "bytes": 172412,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/mouth.png",
-            "sha256": "f038c2e3608c4b074ca769a4a1dda35995b95232b1a452e914acbf4f9214a9e6",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/mouth.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/mouth.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/mouth.png?raw=true"
-          },
-          "nose": {
-            "bytes": 119081,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/nose.png",
-            "sha256": "c08ec7bf816b4ac1826b44f678bb34e2444a37982c01cb47d64a9bc2b92a5c6e",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/nose.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/nose.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/photo-0001/nose.png?raw=true"
-          }
-        }
-      }
-    ],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [
-      {
-        "bytes": 35043,
-        "entries": [
-          {
-            "candidateId": "79adef831d2d0f56d48e",
-            "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
-            "personId": "t1500_0259",
-            "row": 1
-          }
-        ],
-        "height": 280,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/reveal-sheet-01.jpg",
-        "sha256": "7b7948b2796d61bf047813eb34b2286f2470e6eb1c96fb8767b55692ebf51854",
-        "width": 1000,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/reveal-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/reveal-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/reveal-sheet-01.jpg?raw=true"
-      }
-    ],
-    "runId": "20261029T123128Z-e72f4f1b",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "bd7766deaa9a2f953c7903e4cf7d9c268a5d6b57afeb09d652e7a4f9af48f08f",
-    "assetCommit": "2dd812c814412563a702c1ed5a486d1e8fc9bc97",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/2dd812c814412563a702c1ed5a486d1e8fc9bc97/singer/expansion-1500/pipeline/review-assets/20261029T123128Z-e72f4f1b/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

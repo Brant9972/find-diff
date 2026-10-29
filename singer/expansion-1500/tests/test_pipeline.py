@@ -91,6 +91,49 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse(self.row['candidates'][0]['eligibleForLive'])
         self.assertEqual(self.row['lastErrors'][0]['code'], 'license_unclear')
 
+    def test_commons_thumbnail_403_falls_back_to_original_without_approving(self):
+        photo = candidate('wikimedia')
+        photo.update({
+            'provider': 'commons',
+            'url': 'https://thumb.wikimedia.org/thumb/a.jpg',
+            'originalUrl': 'https://upload.wikimedia.org/original/a.jpg',
+        })
+        calls = []
+        class ThumbBlocked:
+            def get(self, url):
+                calls.append(url)
+                if url.startswith('https://thumb.wikimedia.org/'):
+                    raise SourceError('http_403', 'thumbnail CDN refused request')
+                return b'valid Wikimedia original bytes'
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([photo])], ThumbBlocked(), self.crop, set())
+        self.assertEqual(calls, [photo['url'], photo['originalUrl']])
+        self.assertEqual(self.row['status'], 'pending_review')
+        result = self.row['candidates'][0]
+        self.assertEqual(result['downloadVariant'], 'wikimedia_original_fallback')
+        self.assertFalse(result['eligibleForLive'])
+        self.assertIsNone(result['humanReview'])
+        self.assertEqual(result['originalSha256'],
+                         hashlib.sha256(b'valid Wikimedia original bytes').hexdigest())
+
+    def test_non_commons_sources_cannot_use_wikimedia_original_fallback(self):
+        photo = candidate('untrusted')
+        photo.update({
+            'provider': 'openverse',
+            'url': 'https://photos.example.org/a.jpg',
+            'originalUrl': 'https://upload.wikimedia.org/unrelated.jpg',
+        })
+        calls = []
+        class Refused:
+            def get(self, url):
+                calls.append(url)
+                raise SourceError('http_403', 'source refused')
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([photo])], Refused(), self.crop, set())
+        self.assertEqual(calls, [photo['url']])
+        self.assertEqual(self.row['status'], 'download_failed')
+        self.assertFalse(any(c.get('status') == 'pending_review' for c in self.row['candidates']))
+
     def test_rejected_source_blocked_after_review(self):
         self.run_person([Provider([candidate()])])
         c = self.row['candidates'][0]

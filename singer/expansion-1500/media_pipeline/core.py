@@ -16,7 +16,7 @@ from urllib.parse import unquote
 from .sources import SourceError, identity, norm, now, rights, source_key
 from .rejection_pixels import matches_rejected
 
-STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published'}
+STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published', 'duplicate_existing'}
 BLOCKED = ('funeral', 'mourning', 'memorial', 'obituary', 'waxwork', 'statue', 'sculpture', 'tussauds', '葬禮', '丧礼', '喪禮', '追思', '告別式', '告别式', '蠟像', '蜡像', '雕像', 'ai-generated', 'ai generated')
 
 

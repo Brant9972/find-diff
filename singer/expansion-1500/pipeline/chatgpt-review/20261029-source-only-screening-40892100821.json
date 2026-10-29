@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_metadata_screening_not_visual_approval",
+  "sourceRun": "20261029T143031Z-cb626fef",
+  "sourceCommit": "5c20f314873f958be4a836431315e2a2835f09a3",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "searched": 20,
+    "sourceOnly": 4,
+    "gameReady": 0,
+    "rejectedAtMetadata": 2,
+    "visualPending": 2
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0297",
+      "name": "李香琴",
+      "candidateId": "d7fc094c0949e28fecd3",
+      "originalSha256": "6c16c7872fe867743aa8ddb4e16ae5f4aa61a61e18f404a2bd49443abe6ad8fb",
+      "decision": "reject_as_game_portrait",
+      "reason": "Source caption says 粵劇名伶李香琴穿用的白底綠膠片大靠, i.e. a costume/object worn by the artist, not a verified photograph of the artist's face. Filename contains the name but does not prove the depicted person. No face crop. Do not stage or count.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg",
+      "rightsStatus": "open_license_metadata_not_independently_verified",
+      "visualVerified": false
+    },
+    {
+      "personId": "t1500_0333",
+      "name": "秦沛",
+      "candidateId": "c7cf2ad638f9356eb595",
+      "originalSha256": "b54d7984c6c746b19e5343d66d54e8ac4b78831d759453c60a65105ebac0fc3a",
+      "decision": "pending_pixel_and_crop_review",
+      "reason": "Caption explicitly mentions Paul Chun Pui 秦沛, but image is a Causeway Bay street/minibus scene and automatic detector says face too small. Must inspect actual saved pixels, target location, source page, and 600x720 eye/nose/mouth/chin/full crop before considering. No game crop.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E7%B3%96%E8%A1%97_Sugar_Street_July_2018_SSG_construction_site_n_minibus_public_light_bus_strand_01.jpg",
+      "rightsStatus": "open_license_metadata_not_independently_verified",
+      "visualVerified": false
+    },
+    {
+      "personId": "t1500_0334",
+      "name": "田蕊妮",
+      "candidateId": "6b25e8bdda3d6c397452",
+      "originalSha256": "1c838968f1b0149caf4b6cfc5551463193530077999d811070738348b8fe2c01",
+      "decision": "pending_pixel_identity_rights_and_crop_review",
+      "reason": "Original 1490x2116 and filename 田蕊妮.jpg, but caption is only 2013萬千星輝頒獎典禮最佳女主角; confirm photo actually depicts the actress, am730's underlying CC BY 3.0 license/source, and a usable frontal 600x720 crop. No face auto-crop.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
+      "rightsStatus": "open_license_metadata_not_independently_verified",
+      "visualVerified": false
+    },
+    {
+      "personId": "t1500_0339",
+      "name": "陳錦鴻",
+      "candidateId": "c2637ed92a68887159af",
+      "originalSha256": "62de610120caf5178dbb3f7167c47cda7e798853d8ad1dfffd782f880c28d12b",
+      "decision": "reject_as_game_portrait",
+      "reason": "Original only 268x401 pixels, below 600x720 game target; detector reports face too small. Even if the caption and Wikidata P18 point to actor 陳錦鴻, upscaling would not provide adequate eye-only recognizability. Seek a sharper licensed portrait.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.2.jpg",
+      "rightsStatus": "open_license_metadata_not_independently_verified",
+      "visualVerified": false
+    }
+  ],
+  "notes": [
+    "These are source metadata screening decisions, NOT human pixel identity approvals. Do not import via import_decisions (requires gameSha256 and actual 600x720 pixels).",
+    "The 20-person batch has zero game-ready candidates. Do not increase live count. Human review must use the immutable source-only preview package once available.",
+    "Keep source-only assets for audit. Do not overwrite the live questions, existing aliases, creators archive or prior 18 reviews."
+  ]
+}

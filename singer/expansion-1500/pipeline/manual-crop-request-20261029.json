@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "700d65af86e66ed07325a2a346770a605fd75ae9",
+  "sourceRun": "20261029T140656Z-6920e201",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Create pixel-faithful 600x720 draft crops from four licensed source-only files, then require full human identity/source/visual/hint QA before release.",
+  "items": [
+    {
+      "personId": "t1500_0295",
+      "sourceCandidateId": "5760656be14a6cc9d8ee",
+      "sourceSha256": "ea509ba982257977e014a4374051744618d71532c2264691b93d2118fa864d74",
+      "box": [
+        45,
+        160,
+        1045,
+        1360
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27,
+          0.92,
+          0.47
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.92,
+          0.58
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.92,
+          0.72
+        ],
+        "chin": [
+          0.08,
+          0.27,
+          0.92,
+          0.9
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Single frontal portrait, no obvious occlusion; source caption explicitly names 譚俊彥."
+    },
+    {
+      "personId": "t1500_0332",
+      "sourceCandidateId": "9487d47aea06627be4d8",
+      "sourceSha256": "49ad4c26def5628f8bb334d6b10f55c5463405317e1cfee0c4f45325b51e7ff7",
+      "box": [
+        610,
+        70,
+        1320,
+        922
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.21,
+          0.92,
+          0.39
+        ],
+        "nose": [
+          0.08,
+          0.21,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.21,
+          0.92,
+          0.6
+        ],
+        "chin": [
+          0.08,
+          0.21,
+          0.92,
+          0.75
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Baseball in left hand beside face, no eye/mouth occlusion; source caption explicitly names 劉真."
+    },
+    {
+      "personId": "t1500_0341",
+      "sourceCandidateId": "93e19efc195d94435721",
+      "sourceSha256": "194c9950f91b752366abf799b4a7b47e2d34eb719b5e76c3abb183d12297d933",
+      "box": [
+        150,
+        260,
+        1180,
+        1496
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.26,
+          0.92,
+          0.47
+        ],
+        "nose": [
+          0.08,
+          0.26,
+          0.92,
+          0.58
+        ],
+        "mouth": [
+          0.08,
+          0.26,
+          0.92,
+          0.72
+        ],
+        "chin": [
+          0.08,
+          0.26,
+          0.92,
+          0.9
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Chinese-titled Wikidata P18 file 劉心悠.jpg, not rejected English homonym profile picture; source title and actress category need final check."
+    },
+    {
+      "personId": "t1500_0348",
+      "sourceCandidateId": "7110f9dae3076a316fba",
+      "sourceSha256": "571bbad3b1b07161d1c1932cfd538ff3c54de90b076300a7a6cb851a07d3e031",
+      "box": [
+        120,
+        140,
+        1020,
+        1220
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.24,
+          0.92,
+          0.46
+        ],
+        "nose": [
+          0.08,
+          0.24,
+          0.92,
+          0.57
+        ],
+        "mouth": [
+          0.08,
+          0.24,
+          0.92,
+          0.74
+        ],
+        "chin": [
+          0.08,
+          0.24,
+          0.92,
+          0.89
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "2025 Elle Taiwan portrait; CC BY 3.0 reviewed by Commons. Face slightly angled, require final five-stage recognizability check."
+    }
+  ]
+}

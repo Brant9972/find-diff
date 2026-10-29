@@ -5879,10 +5879,22 @@
       "candidateId": "c1500-0388",
       "name": "林宇中",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:49.820035+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:17.674445+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:49.820004+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:49.820024+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0388",
         "name": "林宇中",
@@ -5900,10 +5912,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:17.617855+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:48:49.820048+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:49.821890+00:00"
     },
     "t1500_0598": {
       "personId": "t1500_0598",
@@ -11661,11 +11680,29 @@
       "personId": "t1500_0420",
       "candidateId": "c1500-0420",
       "name": "何家勁",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:48.133588+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:42.615182+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:48.133560+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:48.133578+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0420",
         "name": "何家勁",
@@ -11683,10 +11720,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:42.566908+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:48.133598+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:48.135303+00:00"
     },
     "t1500_0292": {
       "personId": "t1500_0292",
@@ -24350,11 +24400,29 @@
       "personId": "t1500_0365",
       "candidateId": "c1500-0365",
       "name": "駱應鈞",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:16.206973+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:14.637560+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:16.206941+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:16.206961+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0365",
         "name": "駱應鈞",
@@ -24370,10 +24438,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:14.587707+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:16.206986+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:16.208751+00:00"
     },
     "t1500_0518": {
       "personId": "t1500_0518",
@@ -25018,11 +25099,76 @@
       "personId": "t1500_0434",
       "candidateId": "c1500-0434",
       "name": "田麗",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:23.842514+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Jeon_Yeo-ok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Jeon_Yeo-ok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Jeon_Yeo-ok.jpg",
+          "filename": "Jeon Yeo-ok.jpg",
+          "artist": "MBC PD수첩",
+          "credit": "YouTube: [Full] 사라진 꿈, 여성 총리_MBC 2002년 8월 20일 방송 – View/save archived versions on archive.org",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "2002년 8월 20일에 방영된 MBC 《PD수첩》 인터뷰에 출연한 전여옥",
+          "identityEvidence": {
+            "query": "田麗",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "風雲"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:49:22.643520+00:00",
+          "width": 1274,
+          "height": 1080,
+          "id": "73c50880076840f40d79",
+          "personId": "t1500_0434",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:22.298773+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:23.842483+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:23.842501+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Jeon_Yeo-ok.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0434",
         "name": "田麗",
@@ -25040,10 +25186,29 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:22.246534+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jeon_Yeo-ok.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:49:23.842524+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:23.844473+00:00"
     },
     "t1500_0512": {
       "personId": "t1500_0512",
@@ -26884,11 +27049,29 @@
       "personId": "t1500_0442",
       "candidateId": "c1500-0442",
       "name": "范瑞君",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:23.801285+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:22.439637+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:23.801251+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:23.801272+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0442",
         "name": "范瑞君",
@@ -26906,10 +27089,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:22.391406+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:49:23.801297+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:23.803145+00:00"
     },
     "t1500_0214": {
       "personId": "t1500_0214",
@@ -27536,11 +27732,29 @@
       "personId": "t1500_0445",
       "candidateId": "c1500-0445",
       "name": "張懷秋",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:25.111164+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:23.723867+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:25.111127+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:25.111151+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0445",
         "name": "張懷秋",
@@ -27558,10 +27772,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:23.673209+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:49:25.111175+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:25.113023+00:00"
     },
     "t1500_0136": {
       "personId": "t1500_0136",
@@ -40016,11 +40243,29 @@
       "personId": "t1500_0425",
       "candidateId": "c1500-0425",
       "name": "林瑞陽",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:50.311586+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:49.966820+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:50.311554+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:50.311574+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0425",
         "name": "林瑞陽",
@@ -40038,10 +40283,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:49.917784+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:50.311596+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:50.313402+00:00"
     },
     "t1500_0223": {
       "personId": "t1500_0223",
@@ -47621,10 +47879,22 @@
       "candidateId": "c1500-0431",
       "name": "王耿豪",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:22.006274+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:18.684795+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:22.006251+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:22.006266+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0431",
         "name": "王耿豪",
@@ -47642,10 +47912,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:18.635597+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:49:22.006284+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:22.008178+00:00"
     },
     "t1500_0227": {
       "personId": "t1500_0227",
@@ -48293,10 +48570,22 @@
       "candidateId": "c1500-0432",
       "name": "王靜瑩",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:23.558567+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:22.146743+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:23.558539+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:23.558557+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0432",
         "name": "王靜瑩",
@@ -48314,10 +48603,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:22.091971+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:49:23.558578+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:23.560437+00:00"
     },
     "t1500_0234": {
       "personId": "t1500_0234",
@@ -54035,11 +54331,29 @@
       "personId": "t1500_0379",
       "candidateId": "c1500-0379",
       "name": "李建復",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:17.520739+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:15.899048+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:17.520707+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:17.520726+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0379",
         "name": "李建復",
@@ -54057,10 +54371,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:15.849849+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:17.520749+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:17.522491+00:00"
     },
     "t1500_0226": {
       "personId": "t1500_0226",
@@ -54908,11 +55235,180 @@
       "personId": "t1500_0387",
       "candidateId": "c1500-0387",
       "name": "吳佩慈",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:48.052552+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+          "filename": "伍佰、吳佩慈 (5248547704).jpg",
+          "artist": "音樂雯 from Taipei",
+          "credit": "伍佰、吳佩慈",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "伍佰、吳佩慈",
+          "identityEvidence": {
+            "query": "吳佩慈",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "吳佩慈",
+              "吳佩慈"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Candies"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:48:16.855814+00:00",
+          "width": 1403,
+          "height": 2086,
+          "id": "33710c0b46bf108082fa",
+          "personId": "t1500_0387",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+          "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+          "cropFailure": "Multiple prominent faces",
+          "gamePath": null
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:16.352502+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:48.052520+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:48.052539+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+                "filename": "伍佰、吳佩慈 (5248547704).jpg",
+                "artist": "音樂雯 from Taipei",
+                "credit": "伍佰、吳佩慈",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "伍佰、吳佩慈",
+                "identityEvidence": {
+                  "query": "吳佩慈",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "吳佩慈",
+                    "吳佩慈"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "Candies"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T15:48:16.855814+00:00",
+                "width": 1403,
+                "height": 2086,
+                "id": "33710c0b46bf108082fa",
+                "personId": "t1500_0387",
+                "discoveryRunId": "20261029T154808Z-d703ea7b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+                "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+                "cropFailure": "Multiple prominent faces",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+                "filename": "吳佩慈 (5247944389).jpg",
+                "artist": "音樂雯 from Taipei",
+                "credit": "吳佩慈",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "吳佩慈",
+                "identityEvidence": {
+                  "query": "吳佩慈",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "吳佩慈",
+                    "吳佩慈"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "Candies"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T15:48:17.430751+00:00",
+                "width": 1664,
+                "height": 2496,
+                "id": "f977fc67c8e77b6940d0",
+                "personId": "t1500_0387",
+                "discoveryRunId": "20261029T154808Z-d703ea7b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0387",
         "name": "吳佩慈",
@@ -54930,10 +55426,126 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:16.304045+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+            "filename": "伍佰、吳佩慈 (5248547704).jpg",
+            "artist": "音樂雯 from Taipei",
+            "credit": "伍佰、吳佩慈",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "伍佰、吳佩慈",
+            "identityEvidence": {
+              "query": "吳佩慈",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "吳佩慈",
+                "吳佩慈"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "Candies"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T15:48:16.855814+00:00",
+            "width": 1403,
+            "height": 2086,
+            "id": "33710c0b46bf108082fa",
+            "personId": "t1500_0387",
+            "discoveryRunId": "20261029T154808Z-d703ea7b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+            "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+            "cropFailure": "Multiple prominent faces",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Multiple prominent faces"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+            "filename": "吳佩慈 (5247944389).jpg",
+            "artist": "音樂雯 from Taipei",
+            "credit": "吳佩慈",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "吳佩慈",
+            "identityEvidence": {
+              "query": "吳佩慈",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "吳佩慈",
+                "吳佩慈"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "Candies"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T15:48:17.430751+00:00",
+            "width": 1664,
+            "height": 2496,
+            "id": "f977fc67c8e77b6940d0",
+            "personId": "t1500_0387",
+            "discoveryRunId": "20261029T154808Z-d703ea7b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:48.052562+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:48.054298+00:00"
     },
     "t1500_0591": {
       "personId": "t1500_0591",
@@ -62947,7 +63559,7 @@
       "personId": "t1500_0334",
       "candidateId": "c1500-0334",
       "name": "田蕊妮",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -66869,10 +67481,272 @@
       "candidateId": "c1500-0351",
       "name": "陳建年",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:14.490501+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+          "filename": "Pur-dull in Hsinchu.jpg",
+          "artist": "Taiwania_Justo",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "陳建年於原新竹風城願景館演唱",
+          "identityEvidence": {
+            "query": "陳建年",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陳建年",
+              "陳建年"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "海洋"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:48:11.104915+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "f1c260166206db5e9b3b",
+          "personId": "t1500_0351",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+          "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+          "cropFailure": "Face is too small",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+          "filename": "第十三屆台東縣縣長候選人陳建年.jpg",
+          "artist": "中央選舉委員會",
+          "credit": "台灣省台東縣第十三屆縣長選舉選舉公報，在線版本於此處參閱。",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​陳建年先生",
+          "identityEvidence": {
+            "query": "陳建年",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陳建年",
+              "陳建年"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "海洋"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:48:14.309379+00:00",
+          "width": 168,
+          "height": 230,
+          "id": "f5b3d81e2b2bc0ef2d4d",
+          "personId": "t1500_0351",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:10.721926+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:14.490465+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:14.490485+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+                "filename": "Pur-dull in Hsinchu.jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於原新竹風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T15:48:11.104915+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "f1c260166206db5e9b3b",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T154808Z-d703ea7b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+                "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+                "cropFailure": "Face is too small",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+                "filename": "Pur-dull in Hsinchu 2.jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於新竹原風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T15:48:12.169524+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "6d8025e458c47cf50835",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T154808Z-d703ea7b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+                "filename": "Pur-dull in Hsinchu (cropped).jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於原新竹風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T15:48:13.006680+00:00",
+                "width": 1308,
+                "height": 1589,
+                "id": "48cbc21485aada6a9a4b",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T154808Z-d703ea7b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 4
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0351",
         "name": "陳建年",
@@ -66890,10 +67764,176 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:10.546026+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+            "filename": "Pur-dull in Hsinchu.jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於原新竹風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T15:48:11.104915+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "f1c260166206db5e9b3b",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T154808Z-d703ea7b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+            "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+            "filename": "Pur-dull in Hsinchu 2.jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於新竹原風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T15:48:12.169524+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "6d8025e458c47cf50835",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T154808Z-d703ea7b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+            "filename": "Pur-dull in Hsinchu (cropped).jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於原新竹風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T15:48:13.006680+00:00",
+            "width": 1308,
+            "height": 1589,
+            "id": "48cbc21485aada6a9a4b",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T154808Z-d703ea7b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:14.490514+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:14.492012+00:00"
     },
     "t1500_0120": {
       "personId": "t1500_0120",
@@ -68501,11 +69541,29 @@
       "personId": "t1500_0423",
       "candidateId": "c1500-0423",
       "name": "劉德凱",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:18.383746+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:48.205390+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:18.383702+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:18.383728+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0423",
         "name": "劉德凱",
@@ -68523,10 +69581,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:48.154258+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:49:18.383764+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:18.385642+00:00"
     },
     "t1500_0455": {
       "personId": "t1500_0455",
@@ -69907,10 +70978,22 @@
       "candidateId": "c1500-0361",
       "name": "陳鍵鋒",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:15.755356+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:12.813403+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:15.755326+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:15.755345+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0361",
         "name": "陳鍵鋒",
@@ -69926,10 +71009,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:12.748428+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:48:15.755366+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:15.756949+00:00"
     },
     "t1500_0298": {
       "personId": "t1500_0298",
@@ -70118,10 +71208,22 @@
       "candidateId": "c1500-0430",
       "name": "陳孝萱",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:21.990410+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:49:18.547028+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:21.990378+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:21.990399+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0430",
         "name": "陳孝萱",
@@ -70139,10 +71241,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:49:18.495943+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:49:21.990423+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:21.992334+00:00"
     },
     "t1500_0195": {
       "personId": "t1500_0195",
@@ -72149,10 +73258,22 @@
       "candidateId": "c1500-0427",
       "name": "林千鈺",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:22.148340+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:50.457360+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:22.148323+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:22.148332+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0427",
         "name": "林千鈺",
@@ -72170,10 +73291,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:50.408432+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-29T15:49:22.148350+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:22.149990+00:00"
     },
     "t1500_0376": {
       "personId": "t1500_0376",
@@ -77600,11 +78728,29 @@
       "personId": "t1500_0355",
       "candidateId": "c1500-0355",
       "name": "黃智賢",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:42.469141+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:12.383133+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:42.469042+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:42.469067+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0355",
         "name": "黃智賢",
@@ -77620,10 +78766,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:12.317011+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:42.469167+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:42.470653+00:00"
     },
     "t1500_0106": {
       "personId": "t1500_0106",
@@ -79559,11 +80718,29 @@
       "personId": "t1500_0352",
       "candidateId": "c1500-0352",
       "name": "陳建騏",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:12.218896+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:10.638172+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:12.218860+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:12.218879+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0352",
         "name": "陳建騏",
@@ -79581,10 +80758,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:10.546487+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:12.218909+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:12.220357+00:00"
     },
     "t1500_0592": {
       "personId": "t1500_0592",
@@ -80715,10 +81905,116 @@
       "candidateId": "c1500-0353",
       "name": "謝宇威",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:48:12.651187+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_%2850003653156%29.jpg/1920px-06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_%2850003653156%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_%2850003653156%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_(50003653156).jpg",
+          "filename": "06.14 總統主持「追頒總統府前資政、文壇耆宿鍾肇政一等景星勳章暨頒贈褒揚令」 (50003653156).jpg",
+          "artist": "總統府",
+          "credit": "06.14 總統主持「追頒總統府前資政、文壇耆宿鍾肇政一等景星勳章暨頒贈褒揚令」",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Official Photo by Mori / Office of the President\n\nImage from the official President of Taiwan Flickr stream",
+          "identityEvidence": {
+            "query": "謝宇威",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "客語音樂"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:48:11.248262+00:00",
+          "width": 2048,
+          "height": 1152,
+          "id": "7e036f82d0cbe9cfbdef",
+          "personId": "t1500_0353",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_%2844794492432%29.jpg/1920px-09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_%2844794492432%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_%2844794492432%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_(44794492432).jpg",
+          "filename": "09.22 副總統出席「2018古厝中秋月夜樂未眠-第廿一週年音樂會」 (44794492432).jpg",
+          "artist": "總統府",
+          "credit": "09.22 副總統出席「2018古厝中秋月夜樂未眠-第廿一週年音樂會」",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Official Photo by Simon Liu / Office of the President",
+          "identityEvidence": {
+            "query": "謝宇威",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "客語音樂"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T15:48:11.250282+00:00",
+          "width": 5400,
+          "height": 3600,
+          "id": "7d640200f005762ed59c",
+          "personId": "t1500_0353",
+          "discoveryRunId": "20261029T154808Z-d703ea7b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:10.760335+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:48:12.651150+00:00"
+        },
+        {
+          "time": "2026-10-29T15:48:12.651171+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_(50003653156).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_(44794492432).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0353",
         "name": "謝宇威",
@@ -80736,10 +82032,30 @@
         "error": "Face is too tilted"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too tilted",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:10.546988+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:06.14_%E7%B8%BD%E7%B5%B1%E4%B8%BB%E6%8C%81%E3%80%8C%E8%BF%BD%E9%A0%92%E7%B8%BD%E7%B5%B1%E5%BA%9C%E5%89%8D%E8%B3%87%E6%94%BF%E3%80%81%E6%96%87%E5%A3%87%E8%80%86%E5%AE%BF%E9%8D%BE%E8%82%87%E6%94%BF%E4%B8%80%E7%AD%89%E6%99%AF%E6%98%9F%E5%8B%B3%E7%AB%A0%E6%9A%A8%E9%A0%92%E8%B4%88%E8%A4%92%E6%8F%9A%E4%BB%A4%E3%80%8D_(50003653156).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:09.22_%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C2018%E5%8F%A4%E5%8E%9D%E4%B8%AD%E7%A7%8B%E6%9C%88%E5%A4%9C%E6%A8%82%E6%9C%AA%E7%9C%A0-%E7%AC%AC%E5%BB%BF%E4%B8%80%E9%80%B1%E5%B9%B4%E9%9F%B3%E6%A8%82%E6%9C%83%E3%80%8D_(44794492432).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-29T15:48:12.651202+00:00",
+      "workerFinishedAt": "2026-10-29T15:48:12.652696+00:00"
     },
     "t1500_0363": {
       "personId": "t1500_0363",
@@ -80959,11 +82275,29 @@
       "personId": "t1500_0424",
       "candidateId": "c1500-0424",
       "name": "甄珍",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T17:49:18.385881+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T15:48:48.344058+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T15:49:18.385757+00:00"
+        },
+        {
+          "time": "2026-10-29T15:49:18.385767+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0424",
         "name": "甄珍",
@@ -80981,10 +82315,23 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T154808Z-d703ea7b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T15:48:48.296286+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        }
+      ],
+      "updatedAt": "2026-10-29T15:49:18.385893+00:00",
+      "workerFinishedAt": "2026-10-29T15:49:18.387727+00:00"
     },
     "t1500_0245": {
       "personId": "t1500_0245",

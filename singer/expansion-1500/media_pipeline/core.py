@@ -257,7 +257,6 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     continue
                 seen.add(key)
                 tried += 1
-                provider_tried += 1
                 text = unquote(' '.join(str(item.get(k, '')) for k in ('source', 'url', 'caption', 'filename'))).casefold()
                 if any(norm(name) in norm(text) for name in person.get('excludedCaptionNames', [])):
                     errors.append({'provider': provider.name, 'source': item['source'], 'code': 'review_identity_conflict', 'message': 'Caption/file refers to a different person named in the rejection'})
@@ -269,9 +268,14 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 candidate = {**item, 'id': cid, 'personId': row['personId'], 'discoveryRunId': row.get('lastRunId'), 'rightsStatus': rights(item), 'eligibleForLive': False,
                              'humanReview': None, 'status': 'metadata_only', 'warnings': ['Identity, iconic appearance, eyes/occlusion and watermark require human review']}
                 evidence = candidate.get('identityEvidence', {})
-                matches = identity(person, item.get('caption', '') + ' ' + item.get('filename', '') + ' ' + evidence.get('caption', ''))
+                # Only names actually present in THIS file's caption/title count.
+                # An article excerpt, query, or QID alias mapping alone cannot
+                # identify an unrelated photograph.
+                verified_aliases = evidence.get('verifiedSearchAliases', [])
+                matches = identity({**person, 'aliases': [*person.get('aliases', []), *verified_aliases]},
+                                   item.get('caption', '') + ' ' + item.get('filename', ''))
                 candidate['identityEvidence'] = {**evidence, 'captionAliasMatches': matches, 'visualIdentityVerified': False}
-                identity_supported = bool(matches or evidence.get('matchedAliases') or (evidence.get('wikidataId') and evidence.get('claim') == 'P18'))
+                identity_supported = bool(matches or (evidence.get('wikidataId') and evidence.get('claim') == 'P18'))
                 # Refresh metadata for the same immutable URL pair, without touching reviewed/downloaded candidates.
                 row['candidates'] = [c for c in row['candidates'] if not (c['id'] == cid and c.get('status') == 'metadata_only')]
                 if not identity_supported:
@@ -288,6 +292,9 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     if checkpoint:
                         checkpoint()
                     continue
+                # Do not spend the per-provider image-processing quota on
+                # unrelated search hits or sources without reusable metadata.
+                provider_tried += 1
                 crop_started = False
                 try:
                     # Commons thumbnail CDN and original file CDN can have independent

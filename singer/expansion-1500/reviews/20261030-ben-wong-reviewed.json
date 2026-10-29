@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source, license and five-stage pixel review",
+  "reviewedAt": "2026-10-30",
+  "sourceReviewBranch": "automation/photo-review-run-40914664865",
+  "sourceReviewCommit": "616a29a2020212b39811b6643ed56cb47a92399f",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "decisions": [
+    {
+      "personId": "t1500_0355",
+      "name": "黃智賢",
+      "candidateId": "fe4622bc4dae9e25793c",
+      "gameSha256": "8202cd4588504cb0ab2effa3bc5333935bb5f792ed771cc0c2e572d2cf0c440f",
+      "sourceSha256": "d413e4c0ac56982e92da438d3b0d36e4e5b80b898319e0d64903b1c91436e134",
+      "decision": "approved",
+      "source": "https://commons.wikimedia.org/wiki/File:20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2,_%22The_Ghetto-Fabulous_Lady%22_press_event,_am730_screenshot_(00m12s).jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q701907",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reason": "2019 am730《福爾摩師奶》宣傳活動畫面；Commons 圖說及 depicts 指向香港演員黃智賢／Wikidata Q701907，原影片於 2021-09-23 經 YouTubeReviewBot 確認 CC BY 3.0 並由 Yeeno 人工審查。實際檢查 600×720 原裁切及眼／鼻／嘴／下巴／全臉五階段，五官清晰完整、無遮擋、無浮水印及第二張臉；略側臉仍具辨識度。",
+      "work": "潛行狙擊",
+      "workSource": "https://zh.wikipedia.org/wiki/%E6%BD%9B%E8%A1%8C%E7%8B%99%E6%93%8A"
+    }
+  ],
+  "notes": [
+    "Not a production claim until GitHub branch QA, main merge, Pages build and live QA succeed."
+  ]
+}

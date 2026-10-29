@@ -1,84 +1,38 @@
 {
-  "runId": "20261029T143031Z-cb626fef",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261029T143031Z-cb626fef/review-index.json",
+  "runId": "20261029T153620Z-8fce98c4",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261029T153620Z-8fce98c4/review-index.json",
   "summary": {
-    "runId": "20261029T143031Z-cb626fef",
-    "generatedAt": "2026-10-29T14:42:46.105244+00:00",
-    "scannedPeople": 20,
+    "runId": "20261029T153620Z-8fce98c4",
+    "generatedAt": "2026-10-29T15:36:20.618900+00:00",
+    "scannedPeople": 0,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 20,
-    "retryNeeded": 431,
+    "scannedWithoutCandidates": 0,
+    "retryNeeded": 430,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 221,
     "statusCounts": {
       "no_suitable_source": 212,
       "download_failed": 209,
-      "rejected": 10,
-      "published": 80
+      "rejected": 9,
+      "published": 80,
+      "duplicate_existing": 1
     },
     "failureReasons": {
-      "network_error": 302,
+      "network_error": 301,
       "identity_unconfirmed": 265,
-      "image_validation_failed": 78,
+      "image_validation_failed": 77,
       "source_api_busy": 70,
       "license_unclear": 62,
       "source_api_error": 28,
       "identity_ambiguous": 10,
-      "excluded_context": 6,
+      "excluded_context": 3,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
-    "batchFailureReasons": {
-      "source_api_busy": 5,
-      "network_error": 25,
-      "image_validation_failed": 15,
-      "license_unclear": 7,
-      "identity_unconfirmed": 22,
-      "identity_ambiguous": 2
-    },
+    "batchFailureReasons": {},
     "manualCropSources": 4,
-    "batchProviderStages": {
-      "commons": {
-        "attemptedPeople": 20,
-        "metadataCandidates": 33,
-        "identitySupportedMetadata": 11,
-        "openLicenseMetadata": 21,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 4,
-        "errors": {
-          "source_api_busy": 5,
-          "image_validation_failed": 7,
-          "license_unclear": 7,
-          "identity_unconfirmed": 20
-        }
-      },
-      "entity": {
-        "attemptedPeople": 20,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "network_error": 8,
-          "identity_unconfirmed": 2,
-          "identity_ambiguous": 2,
-          "image_validation_failed": 8
-        }
-      },
-      "openverse": {
-        "attemptedPeople": 20,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "network_error": 17
-        }
-      }
-    },
+    "batchProviderStages": {},
     "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"

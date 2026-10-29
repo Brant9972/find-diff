@@ -228,7 +228,14 @@ class HTTP:
             raise SourceError('invalid_metadata', 'Source returned invalid JSON') from exc
         if isinstance(data, dict) and data.get('error'):
             error = data['error']
-            raise SourceError('source_api_error', str(error.get('code', 'unknown')) + ': ' + str(error.get('info', error))[:300])
+            code = str(error.get('code', 'unknown'))
+            message = code + ': ' + str(error.get('info', error))[:300]
+            if code in {'cirrussearch-too-busy-error', 'maxlag', 'readonly'}:
+                host = public_https(url)
+                self.blocked_hosts[host] = {'code': 'source_api_busy', 'reason': message,
+                    'until': time.monotonic() + 30}
+                raise SourceError('source_api_busy', message)
+            raise SourceError('source_api_error', message)
         return data
 
 

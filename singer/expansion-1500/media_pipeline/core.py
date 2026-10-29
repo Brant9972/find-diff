@@ -266,7 +266,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     errors.append({'provider': provider.name, 'source': item['source'], 'code': 'excluded_context', 'message': 'Disallowed memorial/statue/generated context'})
                     continue
                 cid = hashlib.sha256((row['personId'] + '\n' + item['source'] + '\n' + item['url']).encode()).hexdigest()[:20]
-                candidate = {**item, 'id': cid, 'personId': row['personId'], 'rightsStatus': rights(item), 'eligibleForLive': False,
+                candidate = {**item, 'id': cid, 'personId': row['personId'], 'discoveryRunId': row.get('lastRunId'), 'rightsStatus': rights(item), 'eligibleForLive': False,
                              'humanReview': None, 'status': 'metadata_only', 'warnings': ['Identity, iconic appearance, eyes/occlusion and watermark require human review']}
                 evidence = candidate.get('identityEvidence', {})
                 matches = identity(person, item.get('caption', '') + ' ' + item.get('filename', '') + ' ' + evidence.get('caption', ''))

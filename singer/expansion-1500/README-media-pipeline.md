@@ -69,3 +69,12 @@ python singer/expansion-1500/tools/publish_review_links.py --asset-commit <完�
 `pipeline/attempts/*-blocked.json` 保存特定時間點的未啟動紀錄，不能當成 completed run 或新照片成果。恢復 GitHub 認證後，先確認遠端沒有新的人工審核或並行提交，再推送工作分支。這次 `batch-request.json` 變更會啟動一輪 40 人工作；實際最新成果仍以 `codex-response/latest.json` 為準，既有失敗紀錄保留。
 
 `decisions` 與 `newCandidates` 都依 personId + candidateId + gameSha256 驗證；每人只出現一次，但可有多張照片。證據說明或來源 SHA 更新不會重設相同退件的搜尋進度。初步交接接受 reject/pending；所有圖片 `eligibleForLive` 保持 false，最終核准與整合仍由獨立審核流程處理。
+
+
+## 2026-10-29 原圖保留／人工重裁切隊列
+
+當授權中繼資料合格、人物來源有 Wikidata P18 或中文具名線索、來源圖成功下載，但 YuNet 因「找不到可靠正臉／多人／臉太小／側臉／模糊」無法自動裁切時，管線**每人最多保留一張原圖**於 `pipeline/assets/<personId>/<candidateId>/<sourceSHA>/original.bin`，候選狀態設為 `manual_crop_required`。此狀態**沒有** `gamePath`、`gameSha256` 或五階段揭露，`eligibleForLive=false`，不計入 `newCandidatePhotos`，不得匯入正式題庫。
+
+在 `pipeline/runs/<runId>/review-index.json` 及 `state.json` 可查 `originalPath`、`originalSha256`、`cropFailure`、來源頁、攝影者與授權。報告另有 `manualCropSources`、各來源 `savedForManualCrop`。Codex 應優先檢視這些**原始像素**，人工選定真正單人正面且具名的來源，再使用獨立裁切工具製作 600×720 和五階段；不得直接把 `manual_crop_required` 改為 `pending_review` 或 `approved`，也不得假設 P18 自動證明畫面身分。
+
+失敗圖片如果是槍械、雕像、多人、同名人物等，仍需直接退件，不因「成功保存原圖」而視為照片品質進度。若收集時工作分支已有新提交，來源原圖只在 `automation/photo-review-run-<runId>`，不可用該分支的舊 `state.json` 覆蓋目前進度。

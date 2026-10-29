@@ -8,9 +8,10 @@
   "eighteenPersonSummary": {
     "reviewed": 18,
     "approved": 2,
-    "rejected": 15,
-    "pending": 1,
-    "note": "12 earlier rejections from baseReview unchanged; six pending decisions replaced below."
+    "rejected": 16,
+    "pending": 0,
+    "approvedPeopleIncludingReplacement": 3,
+    "note": "Among the ORIGINAL 18 photos: 12 earlier rejections unchanged, two approvals and four new rejections. A SEPARATE 2026 portrait for 李妍瑾 is additionally approved, so three distinct people are staged."
   },
   "decisions": [
     {
@@ -31,11 +32,11 @@
       "candidateId": "legacy-t1500_0307",
       "gameSha256": "4d6037ef1d7589a7481db6c661d4404e6cc9f7d44d591bba69a5fb75d5334453",
       "name": "李妍瑾",
-      "decision": "pending",
+      "decision": "reject",
       "identityEvidence": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day4_CharityBid_YuniLi.jpg ; description names Yuni Li and depicts Lee Yen-chin",
       "license": "CC BY-SA 4.0 (one of author's offered licenses)",
       "artist": "Rico Shen",
-      "reason": "Clear frontal features, but a second person's face remains in lower left; Codex should recrop and submit new candidateId, gameSha256 and five-stage preview. Old photo cannot go live.",
+      "reason": "Clear frontal features, but a second person's face remains in lower left. Superseded by VRT-approved 2026 portrait listed in replacementApproved.",
       "eligibleForLiveAfterQA": false
     },
     {
@@ -79,6 +80,22 @@
       "eligibleForLiveAfterQA": false
     }
   ],
+  "replacementApproved": {
+    "personId": "t1500_0307",
+    "candidateId": "review20261029-t1500_0307",
+    "gameSha256": "d25524afb0109f740a3f5e1674fba27d3923223ada1189ec153e8779e89bee90",
+    "originalSha256": "045b661f1d50f3493c7687ad3891435b5e85c49e96e186d66929e6887e041821",
+    "name": "李妍瑾",
+    "decision": "approve",
+    "source": "https://commons.wikimedia.org/wiki/File:李妍瑾Yuni_Li_2026形象照-1.jpg",
+    "license": "CC BY 4.0",
+    "artist": "ChiYLin",
+    "vrtTicket": "2026082610007408",
+    "reason": "2026 studio front-facing single-person portrait, no obstruction or second face, 600x720 automated face crop reviewed. Automatic Laplacian sharpness ~27.6 is artificially low on smoothed studio photography, but eyes, nose, lips and chin are distinctly visible by human review. Exempt this specific photo from the 65 blanket threshold only with human approval; do not globally loosen quality gate.",
+    "testBranch": "release-1100-reviewed-20261029",
+    "testCommit": "45f3b5c6065848dfee641f996d918a988a1918ca",
+    "eligibleForLiveAfterQA": true
+  },
   "additionalRejectedFalseMatch": {
     "personId": "t1500_0202",
     "candidateId": "5357b32a0f75d9a1a20c",

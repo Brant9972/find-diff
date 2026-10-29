@@ -20,12 +20,12 @@
     "novelTargets": 518,
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
-    "targetUniqueAfterFullPass": 1498,
-    "currentlyLiveUnique": 1057,
-    "publishedFromPlan": 70,
-    "remainingSelectedNovel": 441,
+    "targetUniqueAfterFullPass": 1497,
+    "currentlyLiveUnique": 1063,
+    "publishedFromPlan": 76,
+    "remainingSelectedNovel": 434,
     "targetGoal": 1500,
-    "replacementCandidatesNeeded": 2
+    "replacementCandidatesNeeded": 3
   },
   "criteria": {
     "image": [
@@ -1128,7 +1128,9 @@
       "plannedQuestionId": "t1500_0002",
       "name": "陳建寧",
       "aliases": [],
-      "photoSearchBlockedEnglishAliases": ["Ian Chen"],
+      "photoSearchBlockedEnglishAliases": [
+        "Ian Chen"
+      ],
       "acceptedAnswers": [
         "陳建寧"
       ],
@@ -1405,7 +1407,9 @@
       "aliases": [
         "康哥"
       ],
-      "photoSearchBlockedEnglishAliases": ["Shotgun"],
+      "photoSearchBlockedEnglishAliases": [
+        "Shotgun"
+      ],
       "acceptedAnswers": [
         "庹宗康",
         "康哥"
@@ -18317,7 +18321,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 70,
+    "published": 76,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18388,9 +18392,16 @@
       "林美照",
       "江若琳",
       "陳鳳桂",
-      "葉子楣"
+      "葉子楣",
+      "林采緹",
+      "李妍瑾",
+      "阿喜",
+      "林德信",
+      "鄭丹瑞",
+      "鄭裕玲"
     ],
-    "pendingPhotoAndHintReview": 441,
-    "latestCommit": "pending-batch11"
+    "pendingPhotoAndHintReview": 434,
+    "latestCommit": "9301c0736d7de138ba9656119c3a862419ad50bf",
+    "note": "One planned person t1500_0259 羅璧玲 is existing 羅霈穎; 435 unpublished IDs include this duplicate, leaving 434 novel candidates; 3+ backup/deferred needed for 1500."
   }
 }

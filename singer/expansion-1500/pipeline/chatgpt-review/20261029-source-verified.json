@@ -131,6 +131,62 @@
     "Require subject-level visual/photo-adjacent caption evidence; reject ambiguous English names and article header-only matches.",
     "Keep no-photo, image download failure, identity mismatch and license review concerns as separate statuses.",
     "Generate per-candidate five-stage previews and contact sheets; do not auto-promote on face detection alone.",
-    "After acceptance, synchronize roster, eligibility-review, hint-candidates, hints, game bank, photo and attribution. Run prepare_hints and mobile QA before main."
-  ]
+    "After acceptance, synchronize roster, eligibility-review, hint-candidates, hints, game bank, photo and attribution. Run prepare_hints and mobile QA before main.",
+    "Critically: t1500_0259 羅璧玲 is same person as live x1000_p0217 羅霈穎. Cross-bank alias/entity dedup before photo search; don't count as a new person."
+  ],
+  "additionalRejectedDuplicate": {
+    "personId": "t1500_0259",
+    "candidateId": "79adef831d2d0f56d48e",
+    "gameSha256": "0079c314fc1ad7a589296868d0cefcf35dd09860eeb8282d076ae7e7add54046",
+    "name": "羅璧玲",
+    "status": "reject_for_eligibility_not_photo",
+    "reason": "羅璧玲 is the earlier name of existing 羅霈穎 (existing actor id x1000_p0217), NOT a new unique quiz person. Main now includes aliases 羅霈穎/羅璧玲/東區羅姐. Exclude this candidate from 1100 new-person counter. Commons file caption also references 周丹葳, so image-subject confirmation would require further evidence if ever used as a replacement portrait.",
+    "existingPersonId": "x1000_p0217",
+    "source": "https://commons.wikimedia.org/wiki/File:羅霈穎.JPG",
+    "mainAliasFixCommit": "81c3392a91b7596ec355fea1c9bec6da8e564ee8",
+    "verifiedBy": "GitHub main actors.json and Wikidata Q9000070; Commons file description",
+    "note": "Candidate is not rejected for its technical image quality; no further photo work should be spent on this duplicate."
+  },
+  "pipelineRunDiagnosis": {
+    "lastCodexRun": "20261029T123128Z-e72f4f1b",
+    "lastCodexBatch": {
+      "scanned": 40,
+      "newCandidatePhotos": 1,
+      "usableNewDistinctPeople": 0,
+      "withoutCandidate": 39,
+      "network_error": 279,
+      "identity_unconfirmed": 243,
+      "image_validation_failed": 63,
+      "source_api_busy": 65,
+      "license_unclear": 55,
+      "source_api_error": 28,
+      "proxy_access_denied": 4
+    },
+    "independentLocalRun": "20261029T121101Z-dd23b3de",
+    "localBatch": {
+      "scanned": 200,
+      "newCandidatePhotos": 1,
+      "approvedAndAlreadyPublished": "t1500_0323",
+      "withoutCandidate": 199,
+      "retryNeeded": 429,
+      "network_error": 557,
+      "http403": 95,
+      "source_api_error": 59,
+      "identity_unconfirmed": 348,
+      "license_unclear": 66,
+      "image_validation_failed": 57
+    },
+    "target": 1100,
+    "lastVerifiedMainUnique": 1062,
+    "remaining": 38,
+    "mainCommitAtAudit": "81c3392a91b7596ec355fea1c9bec6da8e564ee8",
+    "conclusions": [
+      "New-candidate yield is at most 1/40 and 1/200, with one /40 a duplicate; fix provider effectiveness and dedup before doing more expensive retries.",
+      "Normalize person matching with all live main people across questions/actors/variety and all aliases, linked Wikidata QID, traditional/simplified names and romanizations BEFORE querying image sources.",
+      "Validate image-adjacent caption depicts target person; the 羅霈穎.JPG caption references 周丹葳, so Commons file title alone cannot establish person identity.",
+      "Independent source fetches confirmed existing Commons photos for 唐美雲 and 王耀慶 although pipeline marked download_failed. Inspect actual HTTP status and handle thumbnail URLs and redirects. However the personally inspected respective images are unsuitable: 唐美雲 2007 chef-hat and other people, 王耀慶 2011 dim grainy squinting. Seek more iconic front-facing portraits.",
+      "Before next 200-person sweep, run 10-person diagnostic batch with per-provider successful requests/eligible image counts and recorded reasons for each 403, 429, timeout, missing caption or bad crop.",
+      "Continue the 1100 goal only after source-caption-photo-license-human-review alignment. Main merges must pass Singer QA, hints QA, mobile QA and live Pages QA."
+    ]
+  }
 }

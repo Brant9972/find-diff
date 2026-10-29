@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-10-29",
+  "scope": "Wikimedia Commons only; matched existing 1500 expansion roster",
+  "stage": "source_verified_not_downloaded_not_cropped_not_published",
+  "items": [
+    {
+      "candidateId": "c1500-0499",
+      "name": "陳鳳桂",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:陳鳳桂肖像.jpg",
+      "originalDimensions": "1170x1611",
+      "author": "中華民國總統府",
+      "license": "Attribution-only permission; Commons page also lists CC BY 2.0 structured metadata",
+      "sourceDescription": "2024 National Award for Arts ceremony portrait",
+      "reviewStatus": "source_record_checked_image_pixels_not_inspected",
+      "requiredNextSteps": [
+        "download original",
+        "visually inspect whether image is single-person face suitable for reveal",
+        "crop portrait",
+        "record required attribution and modification notice",
+        "stage in work branch only"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "許哲珮",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Peggy_Hsu_2025_promotional_portrait_01.jpg",
+      "reason": "Commons page explicitly warns Do not reuse (yet), permission verification pending"
+    }
+  ],
+  "productionModified": false
+}

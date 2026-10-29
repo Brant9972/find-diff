@@ -1,0 +1,30 @@
+name: Celebrity photo identity and source QA
+on:
+  push:
+    branches:
+      - 'automation/celebrity-photo-pipeline'
+      - 'fix/strict-caption-identity-*'
+    paths:
+      - 'singer/expansion-1500/media_pipeline/**'
+      - 'singer/expansion-1500/tests/**'
+      - '.github/workflows/celebrity-source-qa.yml'
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/media_pipeline/**'
+      - 'singer/expansion-1500/tests/**'
+      - '.github/workflows/celebrity-source-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r singer/expansion-1500/requirements-media.txt
+      - run: python -m compileall -q singer/expansion-1500/media_pipeline singer/expansion-1500/tests
+      - run: python -m unittest discover -s singer/expansion-1500/tests -q

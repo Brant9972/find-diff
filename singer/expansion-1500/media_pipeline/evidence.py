@@ -23,7 +23,13 @@ def previews(root, directory, candidate):
             box=(round(x0*image.width),round(y0*image.height),round(x1*image.width),round(y1*image.height))
             canvas.paste(image.crop(box),box[:2])
             buf=io.BytesIO();canvas.save(buf,'PNG')
-            output=directory/'evidence'/digest/(key+'.png')
+            # Only manual reveal variants use a separate immutable namespace;
+            # existing evidence URLs for all other candidates stay unchanged.
+            variant = candidate.get('previewVariantKey')
+            output = directory/'evidence'/digest
+            if variant:
+                output = output/variant
+            output = output/(key+'.png')
             immutable_bytes(output,buf.getvalue())
             result[key]=str(output.relative_to(root))
     candidate['stagePreviews']=result

@@ -167,6 +167,13 @@ class HTTP:
         if params:
             url += ('&' if '?' in url else '?') + urllib.parse.urlencode(params)
         host = public_https(url)
+        blocked = self.blocked_hosts.get(host)
+        if blocked and blocked.get('code') == 'source_api_busy' and blocked.get('until'):
+            remaining = blocked['until'] - time.monotonic()
+            if remaining > 0:
+                if self.budget is not None and time.monotonic() + remaining + 1 >= self.budget:
+                    raise SourceError('source_api_busy', 'Commons busy; preserve retry status until cooldown expires')
+                time.sleep(remaining + 0.25)
         self._refusal(host)
         # Retries share one wall budget; slow downloads cannot multiply socket timeout by attempts.
         deadline = time.monotonic() + self.timeout

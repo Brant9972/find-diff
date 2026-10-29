@@ -5,13 +5,13 @@
 <meta name="theme-color" content="#12111d">
 <title>猜明星・五官挑戰</title>
 <meta name="description" content="歌手、演員、綜藝或全部混合模式。輸入名字，從五官線索猜出熟悉的明星。">
-<link rel="stylesheet" href="./style.css?v=no-repeat-20261025">
-<script defer src="./game.js?v=no-repeat-20261025"></script>
+<link rel="stylesheet" href="./style.css?v=reveal-more-20261029">
+<script defer src="./game.js?v=reveal-more-20261029"></script>
 </head>
 <body>
 <main>
 <header><a class="brand" href="./">FACE<span>／</span>STAR</a><span class="edition">華語歌手篇</span></header>
-<section class="intro"><p class="eyebrow">看五官，猜聲音</p><h1>這雙眼睛，<br>你認得嗎？</h1><p class="sub">輸入歌手名字。猜錯一次，就多露出一點。</p></section>
+<section class="intro"><p class="eyebrow">看五官，猜聲音</p><h1>這雙眼睛，<br>你認得嗎？</h1><p class="sub">輸入名字，或扣分直接揭露更多五官。</p></section>
 <section class="mode-options" aria-label="遊戲類別"><label for="quizMode">挑戰類別</label><select id="quizMode" disabled><option value="singer">歌手</option><option value="actor">演員</option><option value="variety">綜藝</option><option value="mixed">全部混合</option></select><p>選擇類別與關數，按「開始新回合」套用。</p></section>
 <section class="round-options" aria-label="每回合關數">
 <label for="roundSize">每回合</label>
@@ -44,7 +44,7 @@
 <label for="answer" class="sr-only">人物姓名</label>
 <div class="answer-row"><input id="answer" name="answer" type="text" maxlength="60" placeholder="他／她是誰？" enterkeyhint="go" autocapitalize="off" spellcheck="false" disabled><button id="submit" type="submit" disabled>猜！</button></div>
 </form>
-<div class="actions"><button id="giveup" class="quiet" type="button" disabled>想不到，揭曉答案</button><button id="next" type="button" hidden>下一位 <span aria-hidden="true">→</span></button></div>
+<div class="actions"><button id="revealMore" type="button" disabled>扣 20 分，揭露鼻子</button><button id="giveup" class="quiet" type="button" disabled>想不到，揭曉答案</button><button id="next" type="button" hidden>下一位 <span aria-hidden="true">→</span></button></div>
 <div id="result" class="result" hidden></div>
 <details id="credits" hidden><summary>照片來源與授權</summary><p id="creditText"></p><a id="creditLink" target="_blank" rel="noopener noreferrer">查看原始照片</a><p class="credit-note">照片經過裁切、縮放，並分階段揭露。</p></details>
 </section>

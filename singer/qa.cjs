@@ -169,6 +169,37 @@ const server=http.createServer((req,res)=>{
   await page.click("#next");
   assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),"Mobile layout overflows");
+  // Players can spend this question's potential points to reveal features without guessing.
+  await page.evaluate(()=>localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,mode:"singer",roundSize:10,deck:["qa1","qa2"],pos:0,stage:0,hintUsed:false,tried:[],finished:false,won:false,score:0,correct:0,completed:0})));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("revealMore").disabled);
+  assert(await page.$eval("#revealMore",e=>e.textContent.includes("扣 20 分，揭露鼻子")));
+  await page.click("#revealMore");
+  assert.equal((await snapshot()).stage,1,"Reveal button did not advance to nose");
+  assert.deepEqual((await snapshot()).tried,[],"Reveal button recorded a fake wrong answer");
+  assert.equal((await snapshot()).score,0,"Reveal button deducted previously earned points");
+  assert(await page.$eval("#photoTag",e=>e.textContent.includes("鼻子")));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("answer").disabled);
+  assert.equal((await snapshot()).stage,1,"Reveal button clue was lost on reload");
+  await guess("TEST-SINGER");
+  assert.equal((await snapshot()).score,80,"Reveal button changed wrong-guess penalty");
+  assert(await page.$eval("#revealMore",e=>e.hidden),"Reveal button remained after answer");
+  await page.click("#next");await page.waitForFunction(()=>!document.getElementById("revealMore").disabled);
+  for(let i=0;i<4;i++)await page.click("#revealMore");
+  assert.equal((await snapshot()).stage,4,"Reveal button skipped the full-face clue");
+  assert.equal((await snapshot()).finished,false,"Full-face clue finished prematurely");
+  assert(await page.$eval("#revealMore",e=>e.textContent.includes("看答案")));
+  await page.click("#revealMore");
+  assert.equal((await snapshot()).finished,true,"Full-face reveal did not let player skip");
+  assert.equal((await snapshot()).score,80,"Skipping changed accumulated score");
+  assert.equal((await snapshot()).correct,1);
+  await page.click("#next");
+  assert(await page.$eval("#roundSummary",e=>!e.hidden),"Reveal flow skipped round summary");
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"Reveal control overflows mobile width");
+  await page.evaluate(()=>localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,mode:"singer",roundSize:10,deck:["qa1"],pos:0,stage:3,hintUsed:true,tried:[],finished:false,won:false,score:0,correct:0,completed:0})));
+  await page.reload();await page.waitForFunction(()=>!document.getElementById("revealMore").disabled);
+  assert(await page.$eval("#revealMore",e=>e.textContent.includes("扣 10 分，揭露全臉")),"Clue button ignored the work-hint score floor");
+  await page.click("#revealMore");await guess("測試甲");
+  assert.equal((await snapshot()).score,10,"Work hint plus feature reveal broke the minimum score");
   // A restored finished answer must not grant points for a second submission.
   await page.evaluate(()=>{
    localStorage.setItem("singer-face-quiz-v1",JSON.stringify({version:1,deck:["qa1","qa2"],pos:0,stage:0,tried:[],finished:true,won:true,score:100,correct:1,completed:1}));

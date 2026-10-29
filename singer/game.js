@@ -3,7 +3,7 @@
 const KEY="singer-face-quiz-v1",HISTORY_KEY="singer-face-quiz-seen-v1";
 let seen=[];
 const $=id=>document.getElementById(id);
-const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote","roundSummary","summaryTitle","summaryMode","summaryScore","summaryCorrect","summaryRate","summaryRestart","photoCard"])el[id]=$(id);
+const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","revealMore","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote","roundSummary","summaryTitle","summaryMode","summaryScore","summaryCorrect","summaryRate","summaryRestart","photoCard"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
 let bank=[],singerBank=[],actorBank=[],varietyBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
@@ -50,7 +50,7 @@ function showMode(){
  const mode=state.mode,label=modeLabels[mode];
  document.querySelector(".edition").textContent=mode==="mixed"?"全部明星":"華語"+label+"篇";
  document.querySelector(".eyebrow").textContent="看五官，猜"+(mode==="singer"?"聲音":"明星");
- document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"明星":label)+"名字。猜錯一次，就多露出一點。";
+ document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"明星":label)+"名字；猜錯或按揭露按鈕，都能看到更多五官。";
  document.querySelector(".play").setAttribute("aria-label","猜"+(mode==="mixed"?"明星":label)+"遊戲");
  el.portrait.alt="本題"+(mode==="mixed"?"明星":label)+"的五官線索";
  el.poolInfo.textContent=label+"模式 · "+bank.length+" 位 · 優先出未看過的人 · 自動記錄進度";
@@ -134,8 +134,13 @@ function render(){
  el.round.textContent=state?String(Math.min(state.pos+1,state.deck.length))+"／"+state.deck.length:"—";
  el.correct.textContent=state?.correct||0;el.score.textContent=state?.score||0;
  const q=question(),active=!!q&&!state.finished&&!loading;
- el.answer.disabled=!active;el.submit.disabled=!active;el.giveup.disabled=!active;
- el.guessForm.hidden=!!state?.finished;el.giveup.hidden=!!state?.finished;
+ el.answer.disabled=!active;el.submit.disabled=!active;el.revealMore.disabled=!active;el.giveup.disabled=!active;
+ el.guessForm.hidden=!!state?.finished;el.revealMore.hidden=!!state?.finished;el.giveup.hidden=!!state?.finished;
+ if(state&&!state.finished){
+  const nextPoints=Math.max(10,(4-state.stage)*20-(state.hintUsed?20:0));
+  const penalty=points()-nextPoints;
+  el.revealMore.textContent=state.stage===4?"看答案（本題 0 分）":"扣 "+penalty+" 分，揭露"+labels[state.stage+1];
+ }
  el.next.textContent=state?.pos===state?.deck.length-1?"查看本回合結算 →":"下一位 →";
  el.next.hidden=!state?.finished||!q;el.result.hidden=!state?.finished||!q;
  if(!state?.finished)el.credits.hidden=true;
@@ -158,7 +163,7 @@ function end(){
  el.summaryScore.textContent=state.score;
  el.summaryCorrect.textContent=state.correct+"／"+state.deck.length;
  el.summaryRate.textContent=Math.round(state.correct/state.deck.length*100)+"%";
- el.guessForm.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
+ el.guessForm.hidden=true;el.revealMore.hidden=true;el.giveup.hidden=true;el.next.hidden=true;el.credits.hidden=true;
  el.result.hidden=true;
  el.summaryTitle.focus({preventScroll:true});
  el.roundSummary.scrollIntoView({block:"center",behavior:"instant"});
@@ -179,7 +184,7 @@ function loadQuestion(){
  el.portrait.onload=ready;
  el.portrait.onerror=()=>{
   if(token!==photoToken)return;loading=true;el.photoMessage.textContent="這張照片暫時無法載入。";message("點「下一位」跳過，不扣分。","error");
-  el.next.hidden=false;el.next.disabled=false;el.giveup.hidden=true;el.guessForm.hidden=true;
+  el.next.hidden=false;el.next.disabled=false;el.revealMore.hidden=true;el.giveup.hidden=true;el.guessForm.hidden=true;
  };
  el.portrait.src=q.photo;
  if(el.portrait.complete&&el.portrait.naturalWidth)ready();
@@ -194,6 +199,11 @@ el.guessForm.addEventListener("submit",event=>{
  if(state.stage===4){finish(false);return;}
  state.stage++;save();render();message("還不是喔，多給你一個線索："+labels[state.stage]+"。","error");
  el.answer.select();
+});
+el.revealMore.addEventListener("click",()=>{
+ if(loading||state.finished||!question())return;
+ if(state.stage===4){finish(false);return;}
+ state.stage++;save();render();message("已扣除本題可得分數，現在揭露"+labels[state.stage]+"。");
 });
 el.giveup.addEventListener("click",()=>finish(false));
 el.next.addEventListener("click",()=>{

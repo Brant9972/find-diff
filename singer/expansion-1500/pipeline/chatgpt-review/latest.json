@@ -18,7 +18,8 @@
     "改善 403、network_error 的重試、退避及來源替代策略；勿把網路失敗當作無照片。",
     "不得以照片載入正常或既有自動欄位當作人工通過；不得修改 main、不得部署。",
     "完成後提交新候選與審核索引至工作分支，回報 commit SHA 供下一輪審核。",
-    "2026-10-29: block false-positive English alias collision: Julie A. Su is not singer 蘇芮; former president 李登輝 is not singer 李炳輝; Minneapolis candidate Natalie Johnson Lee is not entertainer 李思捷. Check the depicted subject in the adjacent caption before considering visual acceptance."
+    "2026-10-29: block false-positive English alias collision: Julie A. Su is not singer 蘇芮; former president 李登輝 is not singer 李炳輝; Minneapolis candidate Natalie Johnson Lee is not entertainer 李思捷. Check the depicted subject in the adjacent caption before considering visual acceptance.",
+    "2026-10-29 second review: source caption identifies USC Jason King, NOT Taiwanese 喜翔; three legacy low-quality/obstructed portraits rejected; 盛竹如 eye-only reveal fails because eyes nearly closed."
   ],
   "decisions": [
     {
@@ -102,8 +103,8 @@
       "candidateId": "legacy-t1500_0360",
       "gameSha256": "8aef9f784ba730b7033ba54d12abcdd59b75df3744387ab230eed8eb769cc1e3",
       "name": "林德信",
-      "decision": "pending",
-      "reason": "補來源授權、人物證據、正面五官預覽",
+      "decision": "reject",
+      "reason": "Visual contact-sheet and source/crop review: 2023 Alex Lam photograph is visibly noisy, dim, side-angled and soft; eyes/nose/mouth reveal lacks sharp recognizable detail. Search clean front-facing portrait.",
       "eligibleForLive": false,
       "evidenceRun": "20261028T175736Z-a138bf90",
       "evidenceStatus": "source_image_map_available_visual_not_verified"
@@ -122,8 +123,8 @@
       "candidateId": "legacy-t1500_0474",
       "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
       "name": "蔡黃汝",
-      "decision": "pending",
-      "reason": "確認舊照解析度、來源授權與辨識度",
+      "decision": "reject",
+      "reason": "Visual contact-sheet review: 2011 concert image is low-resolution/grainy and far from contemporary familiar appearance; reject for recognizability, seek sharp single-person recent image.",
       "eligibleForLive": false,
       "evidenceRun": "20261028T175736Z-a138bf90",
       "evidenceStatus": "source_image_map_available_visual_not_verified"
@@ -171,8 +172,8 @@
       "candidateId": "legacy-t1500_0564",
       "gameSha256": "5d97f900ed14b2bccd045ab44e565f82e2e96607bdea1f8028e3708cfa66ea03",
       "name": "葛民輝",
-      "decision": "pending",
-      "reason": "測試鬍鬚遮下巴、麥克風位置與授權",
+      "decision": "reject",
+      "reason": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
       "eligibleForLive": false,
       "evidenceRun": "20261028T175736Z-a138bf90",
       "evidenceStatus": "source_image_map_available_visual_not_verified"
@@ -234,6 +235,24 @@
       "decision": "reject",
       "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject.",
       "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0140",
+      "candidateId": "0a6bea9894d8208d6904",
+      "gameSha256": "8e1b72c419aeee14fb79634b9d1bde0cf4281016a4d0712c848af90a705ea8a7",
+      "name": "盛竹如",
+      "decision": "reject",
+      "reason": "Actual 600x720 portrait and five reveal PNGs inspected: although Commons caption names 盛竹如 and photographer JeanHavoc CC BY-SA 3.0, eyes are nearly shut behind glasses in first reveal and face is slightly blurred. Reject as weak eye-only quiz image; find open-eyed, sharp frontal photo.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0202",
+      "candidateId": "5357b32a0f75d9a1a20c",
+      "gameSha256": "1aec488b5feb1d9dfb98bc164e357ca0dda2e8503568d028666f6b6e151d9877",
+      "name": "喜翔",
+      "decision": "reject",
+      "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match.",
+      "eligibleForLive": false
     }
   ],
   "newBatchReview": {
@@ -259,5 +278,40 @@
         "reason": "SOURCE CAPTION IDENTITY MISMATCH: Commons North_Minneapolis_5th_Ward_City_Council_Candidate_Forum_(4015126923).jpg captions Natalie Johnson Lee and other Minneapolis council candidates, not Hong Kong entertainer 李思捷 (Johnson Lee). English alias alone is insufficient; reject."
       }
     ]
-  }
+  },
+  "reviewRounds": [
+    {
+      "runId": "20261029T121933Z-4ee9dcdd",
+      "method": "Reviewed source captions and downloaded 600x720 photo/contact sheet/five-stage PNG previews from GitHub Actions artifact",
+      "rejected": 5,
+      "approved": 0,
+      "details": [
+        {
+          "personId": "t1500_0360",
+          "name": "林德信",
+          "reason": "Visual contact-sheet and source/crop review: 2023 Alex Lam photograph is visibly noisy, dim, side-angled and soft; eyes/nose/mouth reveal lacks sharp recognizable detail. Search clean front-facing portrait."
+        },
+        {
+          "personId": "t1500_0474",
+          "name": "蔡黃汝",
+          "reason": "Visual contact-sheet review: 2011 concert image is low-resolution/grainy and far from contemporary familiar appearance; reject for recognizability, seek sharp single-person recent image."
+        },
+        {
+          "personId": "t1500_0564",
+          "name": "葛民輝",
+          "reason": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait."
+        },
+        {
+          "personId": "t1500_0140",
+          "name": "盛竹如",
+          "reason": "Actual 600x720 portrait and five reveal PNGs inspected: although Commons caption names 盛竹如 and photographer JeanHavoc CC BY-SA 3.0, eyes are nearly shut behind glasses in first reveal and face is slightly blurred. Reject as weak eye-only quiz image; find open-eyed, sharp frontal photo."
+        },
+        {
+          "personId": "t1500_0202",
+          "name": "喜翔",
+          "reason": "SOURCE CAPTION IDENTITY MISMATCH, verified again 2026-10-29: File:Jason_King_moderating_Vibe_Revived.jpg depicts Jason King, Dean of USC Thornton School of Music, not Taiwanese actor 喜翔. Never accept alias collision as face match."
+        }
+      ]
+    }
+  ]
 }

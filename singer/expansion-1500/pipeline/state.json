@@ -5878,11 +5878,41 @@
       "personId": "t1500_0388",
       "candidateId": "c1500-0388",
       "name": "林宇中",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:47:44.925333+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T16:47:09.848035+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:27.011507+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:27.011539+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:29.885014+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:29.885044+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:44.925293+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:44.925317+00:00",
+          "errors": [
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0388",
         "name": "林宇中",
@@ -5900,10 +5930,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:47:09.789676+00:00",
+      "lastErrors": [
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:47:44.925348+00:00",
+      "workerFinishedAt": "2026-10-29T16:47:44.928159+00:00"
     },
     "t1500_0598": {
       "personId": "t1500_0598",
@@ -11661,11 +11704,602 @@
       "personId": "t1500_0420",
       "candidateId": "c1500-0420",
       "name": "何家勁",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:47:47.668404+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Wah_Ming_Estate_bus_service.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Wah_Ming_Estate_bus_service.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Wah_Ming_Estate_bus_service.jpg",
+          "filename": "Wah Ming Estate bus service.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kv9033 at English Wikipedia",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Bus services is provided in Wah Ming Estate. (By Kenny Ho--kv9033)",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [
+              "Kenny Ho"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.185735+00:00",
+          "width": 1600,
+          "height": 1200,
+          "id": "09c6f1e97e6710e3b9ef",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aidan_Turner_bearded.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aidan_Turner_bearded.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Aidan_Turner_bearded.jpg",
+          "filename": "Aidan Turner bearded.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kenny Ho",
+          "credit": "William Morris Endeavor Agency",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Irish actor Aidan Turner",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.174000+00:00",
+          "width": 800,
+          "height": 948,
+          "id": "6a8b16d073f89c1628a7",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Facade_of_the_Old_Mental_Hospital.jpg/1920px-Facade_of_the_Old_Mental_Hospital.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Facade_of_the_Old_Mental_Hospital.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Facade_of_the_Old_Mental_Hospital.jpg",
+          "filename": "Facade of the Old Mental Hospital.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Facade of the Old Mental Hospital",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.174744+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "7fc7d3a5d8f910ca8e7c",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/From_the_Eastern_Street.jpg/1920px-From_the_Eastern_Street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/From_the_Eastern_Street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_the_Eastern_Street.jpg",
+          "filename": "From the Eastern Street.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Slope of KGVMP, HK, from Eastern Street",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.175483+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "b6434e48d69862979d74",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg/1920px-Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg",
+          "filename": "Hong Kong Society for the Protection of Children Thomas Tam Nursery School.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Hong Kong Society for the Protection of Children Thomas Tam Nursery School",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.176775+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "5341d30aafb07c6aaf5f",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Light_Lantern_in_KGVMP_HK.jpg/1920px-Light_Lantern_in_KGVMP_HK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Light_Lantern_in_KGVMP_HK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Light_Lantern_in_KGVMP_HK.jpg",
+          "filename": "Light Lantern in KGVMP HK.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Light Lantern in British style in KGVMP, Hong kong",
+          "identityEvidence": {
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Kenny Ho",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "包青天"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:17.177591+00:00",
+          "width": 3024,
+          "height": 4032,
+          "id": "016487899c317ab44601",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Map_of_the_KGVMP%2C_Hong_Kong.jpg/1920px-Map_of_the_KGVMP%2C_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Map_of_the_KGVMP%2C_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Map_of_the_KGVMP,_Hong_Kong.jpg",
+          "filename": "Map of the KGVMP, Hong Kong.jpg",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Map of the KGVMP, Hong Kong",
+          "identityEvidence": {
+            "query": "Kenny Ho",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "包青天"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:32.616123+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "31b0eb828cd4c848ced4",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Sign_of_KGVMP_04.jpg/1920px-Sign_of_KGVMP_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sign_of_KGVMP_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Sign_of_KGVMP_04.jpg",
+          "filename": "Sign of KGVMP 04.jpg",
+          "artist": "Kenny Ho",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Sign of KGVMP_04",
+          "identityEvidence": {
+            "query": "Kenny Ho",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q1185807",
+            "mappingSource": "https://www.wikidata.org/wiki/Q1185807",
+            "exactChineseAliases": [
+              "何家劲",
+              "何家勁",
+              "何家勁",
+              "何家劲"
+            ],
+            "verifiedSearchAliases": [
+              "何家勁",
+              "何家劲",
+              "Kenny Ho",
+              "Kenny Ho Kar-king"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:15.691994+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%AE%B6%E5%8B%81",
+            "articleTitle": "何家勁",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "包青天"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:32.619767+00:00",
+          "width": 3024,
+          "height": 4032,
+          "id": "67efcf3304963fed8bf6",
+          "personId": "t1500_0420",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T16:47:15.278263+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:32.242121+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:32.242146+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:32.621982+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:32.621995+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:47.668358+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:47.668381+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Wah_Ming_Estate_bus_service.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Aidan_Turner_bearded.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Facade_of_the_Old_Mental_Hospital.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_the_Eastern_Street.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Light_Lantern_in_KGVMP_HK.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sign_in_King_George_V_Memorial_Park,_Hong_Kong_01.jpg",
+              "code": "excluded_context",
+              "message": "Disallowed memorial/statue/generated context"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Old_Trees,_King_George_V_Memorial_Park,_Hong_Kong.jpg",
+              "code": "excluded_context",
+              "message": "Disallowed memorial/statue/generated context"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sign_in_King_George_V_Memorial_Park,_Hong_Kong_02.jpg",
+              "code": "excluded_context",
+              "message": "Disallowed memorial/statue/generated context"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Old_tree_in_King_George_V_Memorial_Park,_Hong_Kong,_south_east_entry.jpg",
+              "code": "excluded_context",
+              "message": "Disallowed memorial/statue/generated context"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Map_of_the_KGVMP,_Hong_Kong.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Sign_of_KGVMP_04.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 12
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0420",
         "name": "何家勁",
@@ -11683,10 +12317,95 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:47:15.230247+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Wah_Ming_Estate_bus_service.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Aidan_Turner_bearded.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Facade_of_the_Old_Mental_Hospital.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_the_Eastern_Street.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Society_for_the_Protection_of_Children_Thomas_Tam_Nursery_School.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Light_Lantern_in_KGVMP_HK.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sign_in_King_George_V_Memorial_Park,_Hong_Kong_01.jpg",
+          "code": "excluded_context",
+          "message": "Disallowed memorial/statue/generated context"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Old_Trees,_King_George_V_Memorial_Park,_Hong_Kong.jpg",
+          "code": "excluded_context",
+          "message": "Disallowed memorial/statue/generated context"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sign_in_King_George_V_Memorial_Park,_Hong_Kong_02.jpg",
+          "code": "excluded_context",
+          "message": "Disallowed memorial/statue/generated context"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Old_tree_in_King_George_V_Memorial_Park,_Hong_Kong,_south_east_entry.jpg",
+          "code": "excluded_context",
+          "message": "Disallowed memorial/statue/generated context"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Map_of_the_KGVMP,_Hong_Kong.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Sign_of_KGVMP_04.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:47:47.668418+00:00",
+      "workerFinishedAt": "2026-10-29T16:47:47.670184+00:00"
     },
     "t1500_0292": {
       "personId": "t1500_0292",
@@ -24350,11 +25069,46 @@
       "personId": "t1500_0365",
       "candidateId": "c1500-0365",
       "name": "駱應鈞",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:46:37.669934+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T16:46:02.544814+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:18.384737+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:18.384768+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:22.621613+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:22.621641+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:37.669895+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:37.669919+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0365",
         "name": "駱應鈞",
@@ -24370,10 +25124,28 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:46:02.499744+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:46:37.669952+00:00",
+      "workerFinishedAt": "2026-10-29T16:46:37.671551+00:00"
     },
     "t1500_0518": {
       "personId": "t1500_0518",
@@ -27536,11 +28308,110 @@
       "personId": "t1500_0445",
       "candidateId": "c1500-0445",
       "name": "張懷秋",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:48:29.090778+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T16:47:47.815723+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:09.933067+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:09.933100+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:14.052976+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:14.053003+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:29.090738+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:29.090762+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
+                "filename": "Harry Chang 79th Locarno Film Festival - Red Carpet-16.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "LucaFazPhoto",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "Harry Chang 79th Locarno Film Festival",
+                "identityEvidence": {
+                  "wikidataId": "Q9138397",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9138397",
+                  "exactChineseAliases": [
+                    "張懷秋",
+                    "張懷秋",
+                    "張懷秋"
+                  ],
+                  "verifiedSearchAliases": [
+                    "張懷秋",
+                    "Harry Chang",
+                    "Chang Huai-chiu",
+                    "Zhang Huai Qiu",
+                    "Harry Zhang"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T16:47:48.255573+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%87%B7%E7%A7%8B",
+                  "articleTitle": "張懷秋",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Harry Chang",
+                  "matchedAliases": [
+                    "Harry Chang"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "大嘴巴"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T16:47:49.784825+00:00",
+                "width": 3543,
+                "height": 5314,
+                "id": "e883ab9070f9acabef8b",
+                "personId": "t1500_0445",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0445",
         "name": "張懷秋",
@@ -27558,10 +28429,92 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:47:47.768053+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
+            "filename": "Harry Chang 79th Locarno Film Festival - Red Carpet-16.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "LucaFazPhoto",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Harry Chang 79th Locarno Film Festival",
+            "identityEvidence": {
+              "wikidataId": "Q9138397",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9138397",
+              "exactChineseAliases": [
+                "張懷秋",
+                "張懷秋",
+                "張懷秋"
+              ],
+              "verifiedSearchAliases": [
+                "張懷秋",
+                "Harry Chang",
+                "Chang Huai-chiu",
+                "Zhang Huai Qiu",
+                "Harry Zhang"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T16:47:48.255573+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%87%B7%E7%A7%8B",
+              "articleTitle": "張懷秋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Harry Chang",
+              "matchedAliases": [
+                "Harry Chang"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "大嘴巴"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T16:47:49.784825+00:00",
+            "width": 3543,
+            "height": 5314,
+            "id": "e883ab9070f9acabef8b",
+            "personId": "t1500_0445",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:48:29.090792+00:00",
+      "workerFinishedAt": "2026-10-29T16:48:29.092600+00:00"
     },
     "t1500_0136": {
       "personId": "t1500_0136",
@@ -54035,11 +54988,46 @@
       "personId": "t1500_0379",
       "candidateId": "c1500-0379",
       "name": "李建復",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:47:09.688164+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T16:46:35.912561+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:51.758526+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:51.758561+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:54.639325+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:54.639355+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:09.688130+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:09.688151+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0379",
         "name": "李建復",
@@ -54057,10 +55045,28 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:46:35.851811+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:47:09.688176+00:00",
+      "workerFinishedAt": "2026-10-29T16:47:09.690238+00:00"
     },
     "t1500_0226": {
       "personId": "t1500_0226",
@@ -54908,11 +55914,270 @@
       "personId": "t1500_0387",
       "candidateId": "c1500-0387",
       "name": "吳佩慈",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:47:15.132141+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+          "filename": "伍佰、吳佩慈 (5248547704).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "音樂雯 from Taipei",
+          "credit": "伍佰、吳佩慈",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "伍佰、吳佩慈",
+          "identityEvidence": {
+            "wikidataId": "Q709773",
+            "mappingSource": "https://www.wikidata.org/wiki/Q709773",
+            "exactChineseAliases": [
+              "吴佩慈",
+              "吳佩慈",
+              "吳佩慈",
+              "吴佩慈"
+            ],
+            "verifiedSearchAliases": [
+              "吳佩慈",
+              "吴佩慈",
+              "Pace Wu",
+              "Wu Pei Ci"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:46:38.314709+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BD%A9%E6%85%88",
+            "articleTitle": "吳佩慈",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Pace Wu",
+            "matchedAliases": [
+              "吳佩慈",
+              "吳佩慈",
+              "吴佩慈",
+              "吳佩慈"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "吳佩慈",
+              "吳佩慈"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "Candies"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:46:38.737770+00:00",
+          "width": 1403,
+          "height": 2086,
+          "id": "33710c0b46bf108082fa",
+          "personId": "t1500_0387",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+          "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+          "cropFailure": "Multiple prominent faces",
+          "gamePath": null
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T16:46:37.812813+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:55.808468+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:55.808501+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:00.087177+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:00.087206+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:47:15.132099+00:00"
+        },
+        {
+          "time": "2026-10-29T16:47:15.132123+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+                "filename": "伍佰、吳佩慈 (5248547704).jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "音樂雯 from Taipei",
+                "credit": "伍佰、吳佩慈",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "伍佰、吳佩慈",
+                "identityEvidence": {
+                  "wikidataId": "Q709773",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q709773",
+                  "exactChineseAliases": [
+                    "吴佩慈",
+                    "吳佩慈",
+                    "吳佩慈",
+                    "吴佩慈"
+                  ],
+                  "verifiedSearchAliases": [
+                    "吳佩慈",
+                    "吴佩慈",
+                    "Pace Wu",
+                    "Wu Pei Ci"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T16:46:38.314709+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BD%A9%E6%85%88",
+                  "articleTitle": "吳佩慈",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Pace Wu",
+                  "matchedAliases": [
+                    "吳佩慈",
+                    "吳佩慈",
+                    "吴佩慈",
+                    "吳佩慈"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "吳佩慈",
+                    "吳佩慈"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "Candies"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T16:46:38.737770+00:00",
+                "width": 1403,
+                "height": 2086,
+                "id": "33710c0b46bf108082fa",
+                "personId": "t1500_0387",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+                "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+                "cropFailure": "Multiple prominent faces",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+                "filename": "吳佩慈 (5247944389).jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "音樂雯 from Taipei",
+                "credit": "吳佩慈",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "吳佩慈",
+                "identityEvidence": {
+                  "wikidataId": "Q709773",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q709773",
+                  "exactChineseAliases": [
+                    "吴佩慈",
+                    "吳佩慈",
+                    "吳佩慈",
+                    "吴佩慈"
+                  ],
+                  "verifiedSearchAliases": [
+                    "吳佩慈",
+                    "吴佩慈",
+                    "Pace Wu",
+                    "Wu Pei Ci"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-29T16:46:38.314709+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BD%A9%E6%85%88",
+                  "articleTitle": "吳佩慈",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Pace Wu",
+                  "matchedAliases": [
+                    "吳佩慈",
+                    "吳佩慈",
+                    "吴佩慈",
+                    "吳佩慈"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "吳佩慈",
+                    "吳佩慈"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "Candies"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-29T16:46:38.738256+00:00",
+                "width": 1664,
+                "height": 2496,
+                "id": "f977fc67c8e77b6940d0",
+                "personId": "t1500_0387",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 2
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0387",
         "name": "吳佩慈",
@@ -54930,10 +56195,178 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:46:37.765727+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_%285248547704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%8D%E4%BD%B0%E3%80%81%E5%90%B3%E4%BD%A9%E6%85%88_(5248547704).jpg",
+            "filename": "伍佰、吳佩慈 (5248547704).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "音樂雯 from Taipei",
+            "credit": "伍佰、吳佩慈",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "伍佰、吳佩慈",
+            "identityEvidence": {
+              "wikidataId": "Q709773",
+              "mappingSource": "https://www.wikidata.org/wiki/Q709773",
+              "exactChineseAliases": [
+                "吴佩慈",
+                "吳佩慈",
+                "吳佩慈",
+                "吴佩慈"
+              ],
+              "verifiedSearchAliases": [
+                "吳佩慈",
+                "吴佩慈",
+                "Pace Wu",
+                "Wu Pei Ci"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T16:46:38.314709+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BD%A9%E6%85%88",
+              "articleTitle": "吳佩慈",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Pace Wu",
+              "matchedAliases": [
+                "吳佩慈",
+                "吳佩慈",
+                "吴佩慈",
+                "吳佩慈"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "吳佩慈",
+                "吳佩慈"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "Candies"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T16:46:38.737770+00:00",
+            "width": 1403,
+            "height": 2086,
+            "id": "33710c0b46bf108082fa",
+            "personId": "t1500_0387",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0387/33710c0b46bf108082fa/071fde7f0c1e/original.bin",
+            "originalSha256": "071fde7f0c1ea8ffed2712fccc11e2a03a2b6a70c282be8afc26dd4bf7a95e2f",
+            "cropFailure": "Multiple prominent faces",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Multiple prominent faces"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E5%90%B3%E4%BD%A9%E6%85%88_%285247944389%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E4%BD%A9%E6%85%88_(5247944389).jpg",
+            "filename": "吳佩慈 (5247944389).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "音樂雯 from Taipei",
+            "credit": "吳佩慈",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "吳佩慈",
+            "identityEvidence": {
+              "wikidataId": "Q709773",
+              "mappingSource": "https://www.wikidata.org/wiki/Q709773",
+              "exactChineseAliases": [
+                "吴佩慈",
+                "吳佩慈",
+                "吳佩慈",
+                "吴佩慈"
+              ],
+              "verifiedSearchAliases": [
+                "吳佩慈",
+                "吴佩慈",
+                "Pace Wu",
+                "Wu Pei Ci"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-29T16:46:38.314709+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BD%A9%E6%85%88",
+              "articleTitle": "吳佩慈",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Pace Wu",
+              "matchedAliases": [
+                "吳佩慈",
+                "吳佩慈",
+                "吴佩慈",
+                "吳佩慈"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "吳佩慈",
+                "吳佩慈"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "Candies"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-29T16:46:38.738256+00:00",
+            "width": 1664,
+            "height": 2496,
+            "id": "f977fc67c8e77b6940d0",
+            "personId": "t1500_0387",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:47:15.132156+00:00",
+      "workerFinishedAt": "2026-10-29T16:47:15.133865+00:00"
     },
     "t1500_0591": {
       "personId": "t1500_0591",
@@ -62947,7 +64380,7 @@
       "personId": "t1500_0334",
       "candidateId": "c1500-0334",
       "name": "田蕊妮",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -66868,11 +68301,295 @@
       "personId": "t1500_0351",
       "candidateId": "c1500-0351",
       "name": "陳建年",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:46:02.400080+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+          "filename": "Pur-dull in Hsinchu.jpg",
+          "artist": "Taiwania_Justo",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "陳建年於原新竹風城願景館演唱",
+          "identityEvidence": {
+            "query": "陳建年",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陳建年",
+              "陳建年"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "海洋"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:43.296441+00:00",
+          "width": 4032,
+          "height": 3024,
+          "id": "f1c260166206db5e9b3b",
+          "personId": "t1500_0351",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+          "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+          "cropFailure": "Face is too small",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+          "filename": "第十三屆台東縣縣長候選人陳建年.jpg",
+          "artist": "中央選舉委員會",
+          "credit": "台灣省台東縣第十三屆縣長選舉選舉公報，在線版本於此處參閱。",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​陳建年先生",
+          "identityEvidence": {
+            "query": "陳建年",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "陳建年",
+              "陳建年"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "海洋"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:46.501227+00:00",
+          "width": 168,
+          "height": 230,
+          "id": "f5b3d81e2b2bc0ef2d4d",
+          "personId": "t1500_0351",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T16:45:41.037626+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:45:42.928275+00:00"
+        },
+        {
+          "time": "2026-10-29T16:45:42.928289+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:45:47.370488+00:00"
+        },
+        {
+          "time": "2026-10-29T16:45:47.370521+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:02.400044+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:02.400062+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "identity_ambiguous",
+              "message": "Expected exactly one exact-name Q5 human; found 2"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+                "filename": "Pur-dull in Hsinchu.jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於原新竹風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T16:45:43.296441+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "f1c260166206db5e9b3b",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+                "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+                "cropFailure": "Face is too small",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+                "filename": "Pur-dull in Hsinchu 2.jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於新竹原風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T16:45:44.118921+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "6d8025e458c47cf50835",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+                "filename": "Pur-dull in Hsinchu (cropped).jpg",
+                "artist": "Taiwania_Justo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "陳建年於原新竹風城願景館演唱",
+                "identityEvidence": {
+                  "query": "陳建年",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "陳建年",
+                    "陳建年"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "海洋"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T16:45:45.186130+00:00",
+                "width": 1308,
+                "height": 1589,
+                "id": "48cbc21485aada6a9a4b",
+                "personId": "t1500_0351",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 4
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0351",
         "name": "陳建年",
@@ -66890,10 +68607,186 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:45:40.906678+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 2"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Pur-dull_in_Hsinchu.jpg/1920px-Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pur-dull_in_Hsinchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu.jpg",
+            "filename": "Pur-dull in Hsinchu.jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於原新竹風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T16:45:43.296441+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "f1c260166206db5e9b3b",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0351/f1c260166206db5e9b3b/9579419680bb/original.bin",
+            "originalSha256": "9579419680bbca48822520f27758bdffbb6e6362dc7d24511a666ff32c80bc25",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pur-dull_in_Hsinchu_2.jpg/1920px-Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pur-dull_in_Hsinchu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_2.jpg",
+            "filename": "Pur-dull in Hsinchu 2.jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於新竹原風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T16:45:44.118921+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "6d8025e458c47cf50835",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg/1280px-Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pur-dull_in_Hsinchu_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Pur-dull_in_Hsinchu_(cropped).jpg",
+            "filename": "Pur-dull in Hsinchu (cropped).jpg",
+            "artist": "Taiwania_Justo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "陳建年於原新竹風城願景館演唱",
+            "identityEvidence": {
+              "query": "陳建年",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "陳建年",
+                "陳建年"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "海洋"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T16:45:45.186130+00:00",
+            "width": 1308,
+            "height": 1589,
+            "id": "48cbc21485aada6a9a4b",
+            "personId": "t1500_0351",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%86%E5%8F%B0%E6%9D%B1%E7%B8%A3%E7%B8%A3%E9%95%B7%E5%80%99%E9%81%B8%E4%BA%BA%E9%99%B3%E5%BB%BA%E5%B9%B4.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:46:02.400093+00:00",
+      "workerFinishedAt": "2026-10-29T16:46:02.401372+00:00"
     },
     "t1500_0120": {
       "personId": "t1500_0120",
@@ -69906,11 +71799,46 @@
       "personId": "t1500_0361",
       "candidateId": "c1500-0361",
       "name": "陳鍵鋒",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:46:35.755366+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-29T16:46:02.135490+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:17.967095+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:17.967127+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:20.714999+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:20.715028+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:35.755325+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:35.755348+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0361",
         "name": "陳鍵鋒",
@@ -69926,10 +71854,28 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:46:02.079629+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:46:35.755381+00:00",
+      "workerFinishedAt": "2026-10-29T16:46:35.756812+00:00"
     },
     "t1500_0298": {
       "personId": "t1500_0298",
@@ -77600,11 +79546,412 @@
       "personId": "t1500_0355",
       "candidateId": "c1500-0355",
       "name": "黃智賢",
-      "status": "no_suitable_source",
-      "attempts": 0,
+      "status": "pending_review",
+      "attempts": 1,
       "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/180212_%ED%99%A9%EC%A7%80%ED%98%84.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/180212_%ED%99%A9%EC%A7%80%ED%98%84.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:180212_%ED%99%A9%EC%A7%80%ED%98%84.png",
+          "filename": "180212 황지현.png",
+          "artist": "뉴스인스타",
+          "credit": "YouTube: https://www.youtube.com/watch?v=F-3ZkxDZZEU – View/save archived versions on archive.org",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "영화 '흥부' VIP시사회 포토월",
+          "identityEvidence": {
+            "query": "黃智賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:43.575123+00:00",
+          "width": 877,
+          "height": 877,
+          "id": "11d0f42994281f1eb6c4",
+          "personId": "t1500_0355",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/%E6%B1%9F%E7%BE%8E%E5%84%80_-_Elena_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/%E6%B1%9F%E7%BE%8E%E5%84%80_-_Elena_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E7%BE%8E%E5%84%80_-_Elena_Kong.jpg",
+          "filename": "江美儀 - Elena Kong.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】江美儀：黃智賢煮嘢超勁",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《女人必學100道菜》開鏡拜神活動",
+          "identityEvidence": {
+            "query": "黃智賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:43.576603+00:00",
+          "width": 1046,
+          "height": 1403,
+          "id": "781ee119fc3c8397f528",
+          "personId": "t1500_0355",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%E5%BC%B5%E5%BF%97%E6%98%8E.jpg/1920px-%E5%BC%B5%E5%BF%97%E6%98%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E5%BC%B5%E5%BF%97%E6%98%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%BF%97%E6%98%8E.jpg",
+          "filename": "張志明.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】江美儀：黃智賢煮嘢超勁",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《女人必學100道菜》開鏡拜神活動",
+          "identityEvidence": {
+            "query": "黃智賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:43.577894+00:00",
+          "width": 2096,
+          "height": 2870,
+          "id": "19f81c6f6c6584b186a6",
+          "personId": "t1500_0355",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Huang_Chih-hsien.jpg",
+          "filename": "Huang Chih-hsien.jpg",
+          "artist": "中国新闻网",
+          "credit": "https://m.youtube.com/watch?v=iXiawtJvoKM",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​台湾媒体人物、政治人物黄智贤",
+          "identityEvidence": {
+            "query": "黃智賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃智賢",
+              "黃智賢"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:43.579093+00:00",
+          "width": 716,
+          "height": 954,
+          "id": "28259651343b2a2f23b5",
+          "personId": "t1500_0355",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0355/28259651343b2a2f23b5/89e202c7f2a7/original.bin",
+          "originalSha256": "89e202c7f2a76efebb23f0a8973f7e3d9fbdec9615378d56fea21a7291cd60ac",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2%2C_%22The_Ghetto-Fabulous_Lady%22_press_event%2C_am730_screenshot_%2800m12s%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2%2C_%22The_Ghetto-Fabulous_Lady%22_press_event%2C_am730_screenshot_%2800m12s%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2,_%22The_Ghetto-Fabulous_Lady%22_press_event,_am730_screenshot_(00m12s).jpg",
+          "filename": "20190304—Ben Wong Chi-yin 黃智賢, \"The Ghetto-Fabulous Lady\" press event, am730 screenshot (00m12s).jpg",
+          "artist": "am730",
+          "credit": "YouTube – View/save archived versions on archive.org",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "Actor Ben Wong at a \"The Ghetto-Fabulous Lady\" event in March 2019 as seen in an am730 video",
+          "identityEvidence": {
+            "query": "黃智賢",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃智賢",
+              "黃智賢"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:45:44.024855+00:00",
+          "width": 850,
+          "height": 1274,
+          "id": "fe4622bc4dae9e25793c",
+          "personId": "t1500_0355",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0355/fe4622bc4dae9e25793c/d413e4c0ac56/original.bin",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0355/fe4622bc4dae9e25793c/d413e4c0ac56/8202cd458850.jpg",
+          "originalSha256": "d413e4c0ac56982e92da438d3b0d36e4e5b80b898319e0d64903b1c91436e134",
+          "gameSha256": "8202cd4588504cb0ab2effa3bc5333935bb5f792ed771cc0c2e572d2cf0c440f",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.2780240078204073,
+              0.92,
+              0.43081854486915905
+            ],
+            "nose": [
+              0.08,
+              0.2780240078204073,
+              0.92,
+              0.5665044540014023
+            ],
+            "mouth": [
+              0.08,
+              0.2780240078204073,
+              0.92,
+              0.7077036663266489
+            ],
+            "chin": [
+              0.08,
+              0.2780240078204073,
+              0.92,
+              0.8655209041703568
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "originalSize": [
+              850,
+              1274
+            ],
+            "sharpness": 70.6,
+            "overexposedFraction": 0.0026041666666666665
+          }
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T16:45:41.032290+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:45:42.922743+00:00"
+        },
+        {
+          "time": "2026-10-29T16:45:42.922769+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:45:46.767317+00:00"
+        },
+        {
+          "time": "2026-10-29T16:45:46.767333+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:46:01.980475+00:00"
+        },
+        {
+          "time": "2026-10-29T16:46:01.980500+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "identity_ambiguous",
+              "message": "Expected exactly one exact-name Q5 human; found 2"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:180212_%ED%99%A9%EC%A7%80%ED%98%84.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E7%BE%8E%E5%84%80_-_Elena_Kong.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%BF%97%E6%98%8E.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Huang_Chih-hsien.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Huang_Chih-hsien.jpg",
+                "filename": "Huang Chih-hsien.jpg",
+                "artist": "中国新闻网",
+                "credit": "https://m.youtube.com/watch?v=iXiawtJvoKM",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​台湾媒体人物、政治人物黄智贤",
+                "identityEvidence": {
+                  "query": "黃智賢",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "黃智賢",
+                    "黃智賢"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T16:45:43.579093+00:00",
+                "width": 716,
+                "height": 954,
+                "id": "28259651343b2a2f23b5",
+                "personId": "t1500_0355",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0355/28259651343b2a2f23b5/89e202c7f2a7/original.bin",
+                "originalSha256": "89e202c7f2a76efebb23f0a8973f7e3d9fbdec9615378d56fea21a7291cd60ac",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%99%BA%E8%B3%A2.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%99%BA%E8%B3%A2.jpg",
+                "filename": "黃智賢.jpg",
+                "artist": "am730",
+                "credit": "YouTube: 【娛樂】陳松伶新劇吊威也超辛苦 2019-03-04 – View/save archived versions on archive.org 12s",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​「偵探育成之路」宣傳活動",
+                "identityEvidence": {
+                  "query": "黃智賢",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "黃智賢",
+                    "黃智賢"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-29T16:45:45.384136+00:00",
+                "width": 1108,
+                "height": 1633,
+                "id": "98bfadfcdc1ae4c15893",
+                "personId": "t1500_0355",
+                "discoveryRunId": "20261029T164539Z-00a79f8c",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 6
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0355",
         "name": "黃智賢",
@@ -77623,7 +79970,144 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [
+        "fe4622bc4dae9e25793c"
+      ],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:45:40.907052+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 2"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:180212_%ED%99%A9%EC%A7%80%ED%98%84.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E7%BE%8E%E5%84%80_-_Elena_Kong.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%BF%97%E6%98%8E.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Huang_Chih-hsien.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Huang_Chih-hsien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Huang_Chih-hsien.jpg",
+            "filename": "Huang Chih-hsien.jpg",
+            "artist": "中国新闻网",
+            "credit": "https://m.youtube.com/watch?v=iXiawtJvoKM",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​台湾媒体人物、政治人物黄智贤",
+            "identityEvidence": {
+              "query": "黃智賢",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "黃智賢",
+                "黃智賢"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T16:45:43.579093+00:00",
+            "width": 716,
+            "height": 954,
+            "id": "28259651343b2a2f23b5",
+            "personId": "t1500_0355",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0355/28259651343b2a2f23b5/89e202c7f2a7/original.bin",
+            "originalSha256": "89e202c7f2a76efebb23f0a8973f7e3d9fbdec9615378d56fea21a7291cd60ac",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%99%BA%E8%B3%A2.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E9%BB%83%E6%99%BA%E8%B3%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%99%BA%E8%B3%A2.jpg",
+            "filename": "黃智賢.jpg",
+            "artist": "am730",
+            "credit": "YouTube: 【娛樂】陳松伶新劇吊威也超辛苦 2019-03-04 – View/save archived versions on archive.org 12s",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​「偵探育成之路」宣傳活動",
+            "identityEvidence": {
+              "query": "黃智賢",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "黃智賢",
+                "黃智賢"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-29T16:45:45.384136+00:00",
+            "width": 1108,
+            "height": 1633,
+            "id": "98bfadfcdc1ae4c15893",
+            "personId": "t1500_0355",
+            "discoveryRunId": "20261029T164539Z-00a79f8c",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:46:01.980512+00:00",
+      "workerFinishedAt": "2026-10-29T16:46:01.981811+00:00"
     },
     "t1500_0106": {
       "personId": "t1500_0106",
@@ -80959,11 +83443,824 @@
       "personId": "t1500_0424",
       "candidateId": "c1500-0424",
       "name": "甄珍",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-29T18:48:19.080927+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/1080712%E7%94%84%E7%8F%8D%E9%AB%98%E9%9B%84%E5%BD%B1%E5%B1%95%E9%96%8B%E5%B9%95-8_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/1080712%E7%94%84%E7%8F%8D%E9%AB%98%E9%9B%84%E5%BD%B1%E5%B1%95%E9%96%8B%E5%B9%95-8_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712%E7%94%84%E7%8F%8D%E9%AB%98%E9%9B%84%E5%BD%B1%E5%B1%95%E9%96%8B%E5%B9%95-8_(cropped).jpg",
+          "filename": "1080712甄珍高雄影展開幕-8 (cropped).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "高雄市政府新聞局",
+          "credit": "https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&sms=36A0BB334ECB4011&ss=17C36B0EEE3BA5B8\n\nhttps://kcginfonews.kcg.gov.tw/upload/RelPic/3341/472ca719-7fbc-4efa-b661-1e0acd65b03f.jpg",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "甄愛高雄群星會今(12)晚盛大開幕",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "甄珍",
+              "甄珍"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:45.897329+00:00",
+          "width": 1476,
+          "height": 1980,
+          "id": "f0fd410aaa0b0f0d7aab",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bust_of_Chen_Youding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bust_of_Chen_Youding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Chen_Youding.jpg",
+          "filename": "Bust of Chen Youding.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Perinbaba",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "A modern bust of Chen Youding, located on the streets of Mingxi County, Fujian Province, China.",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:48.213643+00:00",
+          "width": 359,
+          "height": 339,
+          "id": "3fc7781eb59645863a74",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chen_Miner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chen_Miner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Miner.jpg",
+          "filename": "Chen Miner.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "中国新闻网",
+          "credit": "This image has been extracted from another file",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​中央政治局委员陈敏尔在十三届全国人大三次会议上，2020年5月22日。",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:48.214143+00:00",
+          "width": 356,
+          "height": 471,
+          "id": "abbeb33b378f829ade71",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Jim_Chen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Jim_Chen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Jim_Chen.jpg",
+          "filename": "Jim Chen.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chenurban",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Jim Chen, Associate of Chen Urban Realty Group",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:48.217061+00:00",
+          "width": 1632,
+          "height": 1518,
+          "id": "b0dbb21f4af16a02627c",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg/1920px-%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg",
+          "filename": "海寧陳氏世系.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Urga",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​海寧陳氏世系圖",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:48.218028+00:00",
+          "width": 31267,
+          "height": 8744,
+          "id": "a9fcfcd4c30edbdabf7d",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg/1920px-%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg",
+          "filename": "陳明珠202210.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "TOMO0208",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​陳明珠於督洋生技台中大遠百專櫃擔任一日店長。",
+          "identityEvidence": {
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chen Chen",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-29T16:47:48.221172+00:00",
+          "width": 5760,
+          "height": 8640,
+          "id": "ce0bfbf182cce8553b51",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Chun_Jan_Yut%2C_%2214_years_old%2C%22_with_his_sister%2C_Chun_Mew_Sim_-_NARA_-_296485.jpg/1920px-Chun_Jan_Yut%2C_%2214_years_old%2C%22_with_his_sister%2C_Chun_Mew_Sim_-_NARA_-_296485.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Chun_Jan_Yut%2C_%2214_years_old%2C%22_with_his_sister%2C_Chun_Mew_Sim_-_NARA_-_296485.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chun_Jan_Yut,_%2214_years_old,%22_with_his_sister,_Chun_Mew_Sim_-_NARA_-_296485.jpg",
+          "filename": "Chun Jan Yut, \"14 years old,\" with his sister, Chun Mew Sim - NARA - 296485.jpg",
+          "artist": "Unknown authorUnknown author or not provided",
+          "credit": "U.S. National Archives and Records Administration",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Scope and content:  In addition to records generated by federal agencies, immigration agency investigative case files related to the Chinese Exclusion Acts (1882-1943) frequently contain documents collected by the agencies as evidence, such as individual and family photographs. This is one of 4 photographs of Chun Jan Yut taken at 1, 7, 14, and 22 years of age.",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.034636+00:00",
+          "width": 2011,
+          "height": 3000,
+          "id": "d725d2120a8c0a5b7904",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E4%B8%83%E5%8D%81%E4%B8%80%E4%BB%A3%E8%A1%8D%E8%81%96%E5%85%AC_%E5%85%83%E9%85%8D%E9%99%B3%E5%A4%AB%E4%BA%BA%E8%A1%A3%E5%86%A0%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E4%B8%83%E5%8D%81%E4%B8%80%E4%BB%A3%E8%A1%8D%E8%81%96%E5%85%AC_%E5%85%83%E9%85%8D%E9%99%B3%E5%A4%AB%E4%BA%BA%E8%A1%A3%E5%86%A0%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%83%E5%8D%81%E4%B8%80%E4%BB%A3%E8%A1%8D%E8%81%96%E5%85%AC_%E5%85%83%E9%85%8D%E9%99%B3%E5%A4%AB%E4%BA%BA%E8%A1%A3%E5%86%A0%E5%83%8F.jpg",
+          "filename": "七十一代衍聖公 元配陳夫人衣冠像.jpg",
+          "artist": "Unknown authorUnknown author",
+          "credit": "http://blog.163.com/ylfangok@126/album/#m=1&aid=110130334&p=1",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​七十一代衍聖公孔昭煥元配陳夫人（陳珠，1735年—1761年）衣冠像。",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.038187+00:00",
+          "width": 406,
+          "height": 749,
+          "id": "bf88561363e3af61d198",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg/1920px-%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg",
+          "filename": "陳海山（右）.jpg",
+          "artist": "澎湖縣政府",
+          "credit": "https://www.penghu.gov.tw/general/home.jsp?id=191&act=view&dataserno=201709240003&mserno=201111090001",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​彩繪人生協會24日下午於倫宅烘培坊舉辦「月圓人好慶團圓暨慶生會」，縣長陳光復、議長劉陳昭玲、議員陳海山和衛生局副局長樓亞洲到場對生命勇士給予關懷和鼓勵。",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.041190+00:00",
+          "width": 2992,
+          "height": 2000,
+          "id": "d57ee4035a094660f09c",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E9%99%B3%E9%9B%85%E7%90%B3%E8%A7%80%E5%BE%8C%E6%84%9F%E8%AC%9B%E5%BA%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E9%99%B3%E9%9B%85%E7%90%B3%E8%A7%80%E5%BE%8C%E6%84%9F%E8%AC%9B%E5%BA%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E9%9B%85%E7%90%B3%E8%A7%80%E5%BE%8C%E6%84%9F%E8%AC%9B%E5%BA%A7.jpg",
+          "filename": "陳雅琳觀後感講座.jpg",
+          "artist": "​江逸萍",
+          "credit": "https://youtube.com/watch/yHOhlm-GvCc",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​陳雅琳觀後感講座",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.044448+00:00",
+          "width": 545,
+          "height": 634,
+          "id": "1902671310d2df276d2f",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E8%98%87%E9%99%B3%E7%B6%89%E8%89%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E8%98%87%E9%99%B3%E7%B6%89%E8%89%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E8%98%87%E9%99%B3%E7%B6%89%E8%89%B2.jpg",
+          "filename": "澎湖縣第19屆議員：蘇陳綉色.jpg",
+          "artist": "中華民國內政部",
+          "credit": "Own work\n\nhttps://www.moi.gov.tw/LocalOfficial_Content.aspx?n=574&_PARENT_ID=ER10712XB00017&_TYP=REP",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​澎湖縣第19屆議員（2018-2022）",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.046563+00:00",
+          "width": 1576,
+          "height": 2552,
+          "id": "ad1076039564b6c715a0",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E9%99%B3%E6%8C%AF%E4%B8%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E9%99%B3%E6%8C%AF%E4%B8%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E9%99%B3%E6%8C%AF%E4%B8%AD.jpg",
+          "filename": "澎湖縣第19屆議員：陳振中.jpg",
+          "artist": "中華民國內政部",
+          "credit": "https://www.moi.gov.tw/LocalOfficial_Content.aspx?n=574&_PARENT_ID=ER10712XB00011&_TYP=REP",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​澎湖縣第19屆議員（2018-2022）",
+          "identityEvidence": {
+            "query": "Chen Chen",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q9087527",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9087527",
+            "exactChineseAliases": [
+              "甄珍",
+              "甄珍",
+              "甄珍",
+              "甄珍"
+            ],
+            "verifiedSearchAliases": [
+              "甄珍",
+              "Chen Chen"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-29T16:47:45.668771+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%94%84%E7%8F%8D",
+            "articleTitle": "甄珍",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "彩雲飛"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-29T16:48:04.048907+00:00",
+          "width": 1416,
+          "height": 2176,
+          "id": "db6102a3e173a31ae8cb",
+          "personId": "t1500_0424",
+          "discoveryRunId": "20261029T164539Z-00a79f8c",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-29T16:47:45.079812+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:03.271601+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:03.271626+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:04.051378+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:04.051392+00:00",
+          "provider": "openverse",
+          "attempt": 1,
+          "finishedAt": "2026-10-29T16:48:19.080831+00:00"
+        },
+        {
+          "time": "2026-10-29T16:48:19.080902+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:1080712%E7%94%84%E7%8F%8D%E9%AB%98%E9%9B%84%E5%BD%B1%E5%B1%95%E9%96%8B%E5%B9%95-8_(cropped).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Chen_Youding.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Chen_Miner.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Jim_Chen.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Chun_Jan_Yut,_%2214_years_old,%22_with_his_sister,_Chun_Mew_Sim_-_NARA_-_296485.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%83%E5%8D%81%E4%B8%80%E4%BB%A3%E8%A1%8D%E8%81%96%E5%85%AC_%E5%85%83%E9%85%8D%E9%99%B3%E5%A4%AB%E4%BA%BA%E8%A1%A3%E5%86%A0%E5%83%8F.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E9%9B%85%E7%90%B3%E8%A7%80%E5%BE%8C%E6%84%9F%E8%AC%9B%E5%BA%A7.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E8%98%87%E9%99%B3%E7%B6%89%E8%89%B2.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E9%99%B3%E6%8C%AF%E4%B8%AD.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "openverse",
+              "code": "network_error",
+              "message": "Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 12
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0424",
         "name": "甄珍",
@@ -80981,10 +84278,95 @@
         "error": "Face is too small"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "Face is too small",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261029T164539Z-00a79f8c",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-29T16:47:45.024758+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:1080712%E7%94%84%E7%8F%8D%E9%AB%98%E9%9B%84%E5%BD%B1%E5%B1%95%E9%96%8B%E5%B9%95-8_(cropped).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Chen_Youding.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Miner.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Jim_Chen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E5%AF%A7%E9%99%B3%E6%B0%8F%E4%B8%96%E7%B3%BB.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%98%8E%E7%8F%A0202210.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chun_Jan_Yut,_%2214_years_old,%22_with_his_sister,_Chun_Mew_Sim_-_NARA_-_296485.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%83%E5%8D%81%E4%B8%80%E4%BB%A3%E8%A1%8D%E8%81%96%E5%85%AC_%E5%85%83%E9%85%8D%E9%99%B3%E5%A4%AB%E4%BA%BA%E8%A1%A3%E5%86%A0%E5%83%8F.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%B5%B7%E5%B1%B1%EF%BC%88%E5%8F%B3%EF%BC%89.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E9%9B%85%E7%90%B3%E8%A7%80%E5%BE%8C%E6%84%9F%E8%AC%9B%E5%BA%A7.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E8%98%87%E9%99%B3%E7%B6%89%E8%89%B2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%BE%8E%E6%B9%96%E7%B8%A3%E7%AC%AC19%E5%B1%86%E8%AD%B0%E5%93%A1%EF%BC%9A%E9%99%B3%E6%8C%AF%E4%B8%AD.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "openverse",
+          "code": "network_error",
+          "message": "Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-29T16:48:19.080942+00:00",
+      "workerFinishedAt": "2026-10-29T16:48:19.082687+00:00"
     },
     "t1500_0245": {
       "personId": "t1500_0245",

@@ -288,6 +288,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     if checkpoint:
                         checkpoint()
                     continue
+                crop_started = False
                 try:
                     # Commons thumbnail CDN and original file CDN can have independent
                     # access/rate limits. A failed thumbnail must not discard an
@@ -321,6 +322,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     if matches_rejected(blob, rejected_pixels or []):
                         raise SourceError('rejected_photo_pixels', 'Pixels match a previously rejected source photograph')
                     digest = hashlib.sha256(blob).hexdigest()
+                    crop_started = True
                     image, reveal, validation = crop(blob)
                     if matches_rejected(image, rejected_pixels or []):
                         raise SourceError('rejected_photo_pixels', 'Crop matches a previously rejected game photograph')
@@ -345,7 +347,39 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     row['candidates'].append(candidate)
                 except (SourceError, ValueError, OSError, ImportError) as exc:
                     code = getattr(exc, 'code', 'image_validation_failed' if not isinstance(exc, ImportError) else 'processor_unavailable')
-                    errors.append({'provider': provider.name, 'source': item['source'], 'url': item['url'], 'candidateMetadata': candidate, 'code': code, 'message': str(exc)[:400]})
+                    # Preserve at most one *source-only* image per person for a
+                    # human to recrop when the automatic landmark crop fails.
+                    # Never mistake this for a playable or approved photograph.
+                    # Require the exact Wikidata P18 claim or a Chinese name
+                    # explicitly present in the source caption/filename.
+                    crop_reason = str(exc)
+                    source_named = (
+                        evidence.get('claim') == 'P18'
+                        or any(re.search(r'[\\u4e00-\\u9fff]', match)
+                               for match in candidate['identityEvidence'].get('captionAliasMatches', []))
+                    )
+                    crop_recoverable = any(token in crop_reason for token in (
+                        'No reliable frontal face', 'Multiple prominent faces',
+                        'Face is too small', 'Face is too tilted',
+                        'Blurred crop', 'Overexposed crop'))
+                    already_saved = any(c.get('status') == 'manual_crop_required'
+                                        for c in row['candidates'])
+                    if (crop_started and isinstance(exc, ValueError) and
+                            source_named and crop_recoverable and not already_saved):
+                        raw_path = directory / 'assets' / row['personId'] / cid / digest[:12] / 'original.bin'
+                        immutable_bytes(raw_path, blob)
+                        candidate.update({
+                            'status': 'manual_crop_required',
+                            'originalPath': str(raw_path.relative_to(root)),
+                            'originalSha256': digest,
+                            'cropFailure': crop_reason[:300],
+                            'eligibleForLive': False,
+                            'gamePath': None,
+                        })
+                        candidate['warnings'].append(
+                            'SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required')
+                        row['candidates'].append(candidate)
+                    errors.append({'provider': provider.name, 'source': item['source'], 'url': item['url'], 'candidateMetadata': candidate, 'code': code, 'message': crop_reason[:400]})
                 # Checkpoint candidates immediately; a later failed source must not lose them.
                 if checkpoint:
                     checkpoint()

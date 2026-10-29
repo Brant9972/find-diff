@@ -41,7 +41,7 @@ jobs:
           REQUEST_LIMIT: ${{ inputs.limit || '40' }}
         run: |
           set -euo pipefail
-          python singer/expansion-1500/prepare_media.py --limit "$REQUEST_LIMIT" --workers 3 --max-minutes 25 --person-seconds 60 --live-ref origin/main
+          python singer/expansion-1500/prepare_media.py --limit "$REQUEST_LIMIT" --workers 1 --max-minutes 25 --person-seconds 90 --live-ref origin/main
       - run: python singer/expansion-1500/validate_pipeline.py
       - name: Assert only draft outputs changed
         if: always()

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-29",
+  "reviewType": "recovered_artifact_source_identity_review",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "artifact": {
+    "workflowRun": 40874949781,
+    "artifactId": 12899486861,
+    "collectionRunId": "20261029T123859Z-acd65b92",
+    "collectStatus": "success",
+    "checkpointStatus": "failure",
+    "cause": "pipeline branch advanced during 25-minute collection; prior workflow discarded assets"
+  },
+  "collection": {
+    "scannedPeople": 39,
+    "newCandidatePhotos": 1,
+    "summary": "39 scanned, only one new candidate; source identity unverified; no release"
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0341",
+      "name": "劉心悠",
+      "candidateId": "b6916b3d1879b9a3a0bd",
+      "gameSha256": "6a32edb81977c649dfeebe135aea245a1e784f4fdf297157f9a96ad9ff1cb223",
+      "source": "https://commons.wikimedia.org/wiki/File:Annie_Liu_Profile_Picture_9-13-22.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "AnnieLiu13",
+      "sourceCaption": "Profile picture",
+      "decision": "reject",
+      "reasonCode": "identity_unverified_english_homonym",
+      "reason": "Commons image metadata only says 'Profile picture', uploader AnnieLiu13; English file name 'Annie Liu' alone does not establish that the pictured person is the Taiwanese actress 劉心悠. Wikimedia Commons actress category lists different photographs; no reliable image-adjacent identity attribution for this candidate. Do not infer identity from a shared English name.",
+      "sourceCrossCheck": "https://commons.wikimedia.org/wiki/Category:Annie_Liu",
+      "expectedWikidata": "https://www.wikidata.org/wiki/Q700171",
+      "visualQuality": "600x720 crop is sharp and unobstructed, but this cannot override missing subject identification.",
+      "eligibleForLive": false
+    }
+  ],
+  "instructions": [
+    "Do not merge stale state.json from either failed checkpoint run.",
+    "When the same candidate resurfaces, match personId+candidateId+gameSha256 and reject it; keep the image source as a negative identity example.",
+    "Keep official game unchanged until a source-verified, licensed, recognizable replacement passes five-stage visual QA."
+  ]
+}

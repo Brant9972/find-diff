@@ -389,9 +389,14 @@ class CommonsSearch:
 
     def search(self, person, http, round_number=0):
         context = verified_identity(person, http)
+        # Search the exact Chinese name before romanizations. Previously verified
+        # English aliases were prepended, so rate limits / the per-person deadline
+        # could be exhausted on homonyms before the native-name query ran.
+        # Wikidata Q5 confirms the *alias mapping*, not a photo's subject.
         queries = [person['name'], person.get('reviewSearchQuery') or person.get('preferredImageQuery') or person['name']]
         if context:
-            queries = [*context['englishAliases'][:2], *queries]
+            queries.extend(context['englishAliases'][:2])
+        queries = list(dict.fromkeys(q for q in queries if str(q).strip()))
         seen=set()
         busy_fallbacks=0
         for query in dict.fromkeys(queries):

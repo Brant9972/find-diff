@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-29",
+  "releaseGate": "BACKUP_PRESELECTION_ONLY_NOT_PLAYABLE",
+  "sourcePlan": "singer/expansion-1500/taiwan-first-candidates-20261028.json",
+  "context": {
+    "liveUnique": 1063,
+    "selectedNew": 511,
+    "alreadyPublished": 76,
+    "knownDuplicateSelected": 1,
+    "remainingNovelSelected": 434,
+    "projectedMaxFromSelected": 1497,
+    "minimumBackupNeeded": 3
+  },
+  "selectionMethod": "Select three already-listed backup candidates with concrete Taiwan television/film credits; none appears in main questions/actors/variety canonical names or known aliases. Portrait provenance, rights, face crop and audience familiarity still require review.",
+  "candidates": [
+    {
+      "candidateId": "c1500-0604",
+      "name": "潘親御",
+      "category": "演員",
+      "proposedBank": "actors.json",
+      "status": "eligible_for_photo_search_not_approved",
+      "priority": "first",
+      "representativeWorks": [
+        {
+          "title": "囧男孩",
+          "source": "https://app2.atmovies.com.tw/star/sDD0089405/"
+        },
+        {
+          "title": "返校",
+          "source": "https://zh.wikipedia.org/wiki/潘親御"
+        }
+      ],
+      "aliasesToVerify": [
+        "Pan Chin-yu"
+      ],
+      "risk": "Must verify actor photo, exact spelling and release rights; do not confuse with other Pan surname actors."
+    },
+    {
+      "candidateId": "c1500-0618",
+      "name": "柳丁哥哥",
+      "category": "綜藝",
+      "proposedBank": "variety.json",
+      "status": "eligible_for_photo_search_not_approved",
+      "priority": "second",
+      "representativeWorks": [
+        {
+          "title": "YOYO點點名",
+          "source": "https://zh.wikipedia.org/wiki/YoYo點點名"
+        }
+      ],
+      "aliasesToVerify": [
+        "甘庭峰",
+        "甘子禾"
+      ],
+      "risk": "Different published stage/legal names need primary-source cross-check; children's TV presenter identity and photo copyright require verification."
+    },
+    {
+      "candidateId": "c1500-0619",
+      "name": "蘋果姐姐",
+      "category": "綜藝",
+      "proposedBank": "variety.json",
+      "status": "eligible_for_photo_search_not_approved",
+      "priority": "third",
+      "representativeWorks": [
+        {
+          "title": "YOYO點點名",
+          "source": "https://zh.wikipedia.org/wiki/YoYo點點名"
+        }
+      ],
+      "aliasesToVerify": [
+        "彭薇霖"
+      ],
+      "risk": "Historical presenter: confirm specific generation and person; do not confuse with later presenters using the same fruit-themed stage names."
+    }
+  ],
+  "reviewRequirements": [
+    "Cross-check against current main and all aliases/QIDs again before release.",
+    "Use actual original photo source with image-adjacent identity evidence, CC author and crop permission.",
+    "600x720 five-stage game crop must show clear eyes, nose, mouth, chin and full face.",
+    "Concrete work hints need attributable source URLs.",
+    "This list does not increase official count or change selectedNew until individually approved."
+  ]
+}

@@ -45,7 +45,13 @@ jobs:
           import json, os, subprocess
           from pathlib import Path
           request = json.loads(Path('singer/expansion-1500/pipeline/batch-request.json').read_text())
-          if request.get('mode') == 'manual_recrop':
+          if request.get('mode') == 'render_only':
+              # Re-package retained source pixels for human review without
+              # searching providers, approving, or touching production.
+              subprocess.run(['python', 'singer/expansion-1500/prepare_media.py',
+                              '--limit', '0', '--render-only', '--live-ref', 'origin/main'],
+                             check=True)
+          elif request.get('mode') == 'manual_recrop':
               spec = Path('singer/expansion-1500/pipeline/manual-crop-request-20261029.json')
               manual = json.loads(spec.read_text())
               subprocess.run(['git', 'fetch', '--no-tags', '--depth=1',

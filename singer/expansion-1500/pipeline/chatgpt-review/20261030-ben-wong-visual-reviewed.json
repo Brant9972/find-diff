@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source, license and five-stage pixel review",
+  "reviewedAt": "2026-10-30",
+  "sourceReviewBranch": "automation/photo-review-run-40914664865",
+  "sourceReviewCommit": "616a29a2020212b39811b6643ed56cb47a92399f",
+  "sourceRun": "20261029T164539Z-00a79f8c",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "decisions": [
+    {
+      "personId": "t1500_0355",
+      "name": "黃智賢",
+      "candidateId": "fe4622bc4dae9e25793c",
+      "gameSha256": "8202cd4588504cb0ab2effa3bc5333935bb5f792ed771cc0c2e572d2cf0c440f",
+      "sourceSha256": "d413e4c0ac56982e92da438d3b0d36e4e5b80b898319e0d64903b1c91436e134",
+      "decision": "approved",
+      "source": "https://commons.wikimedia.org/wiki/File:20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2,_%22The_Ghetto-Fabulous_Lady%22_press_event,_am730_screenshot_(00m12s).jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q701907",
+      "originalVideo": "https://www.youtube.com/watch?v=-0EyVYF9Ztw",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reason": "2019-03-04 am730 source still of Ben Wong Chi-yin; Commons page explicitly identifies actor 黃智賢, structured depicts Ben Wong, linked Wikidata Q701907 and original YouTube video. YouTubeReviewBot checked original CC BY 3.0 on 2021-09-23, followed by manual Commons review by Yeeno. Visually inspected actual 600x720 JPEG plus eyes/nose/mouth/chin/full PNG: one clear 3/4-view face, both eyes and brows, full nose, full lips, chin visible progressively; no microphone, watermark, secondary face or obvious pixel defects. Hairline is tight but face remains recognizable. Existing live banks and aliases checked for duplicates; none found. Attribution to am730 and crop modification notice required.",
+      "representativeWork": "潛行狙擊",
+      "workSource": "https://zh.wikipedia.org/wiki/%E6%BD%9B%E8%A1%8C%E7%8B%99%E6%93%8A",
+      "eligibleForLiveAfterQA": true
+    }
+  ],
+  "notes": [
+    "Exact SHA and crop approval only; no claim of production deployment until branch QA, main merge, Pages build and live QA pass.",
+    "Source CC BY 3.0 permits cropping with attribution and modification notice.",
+    "Do not auto-approve other source-only photos."
+  ]
+}

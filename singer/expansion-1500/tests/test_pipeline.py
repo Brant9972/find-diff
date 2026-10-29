@@ -175,6 +175,17 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse(any(c.get('status') == 'manual_crop_required'
                              for c in self.row['candidates']))
 
+    def test_person_specific_false_identity_source_is_not_downloaded(self):
+        bad = candidate('english-homonym')
+        self.person['excludedPhotoSources'] = [bad['source']]
+        class NoDownload:
+            def get(self, url):
+                raise AssertionError('Rejected identity source must not be downloaded')
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([bad])], NoDownload(), self.crop, set())
+        self.assertFalse(self.row['candidates'])
+        self.assertEqual(self.row['status'], 'no_suitable_source')
+
     def test_rejected_source_blocked_after_review(self):
         self.run_person([Provider([candidate()])])
         c = self.row['candidates'][0]

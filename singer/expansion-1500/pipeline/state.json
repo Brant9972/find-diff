@@ -43629,8 +43629,8 @@
     },
     "t1500_0564": {
       "personId": "t1500_0564",
-      "attempts": 7,
-      "nextRetryAt": "2026-11-04T21:55:17.499313+00:00",
+      "attempts": 8,
+      "nextRetryAt": "2026-11-04T21:58:54.961105+00:00",
       "candidateId": "c1500-0564",
       "chatgptReview": {
         "personId": "t1500_0564",
@@ -43648,7 +43648,7 @@
         "handoffCollection": "decisions"
       },
       "lastEvidenceAttemptAt": "2026-10-28T18:32:16.632266+00:00",
-      "lastRunId": "20261030T135504Z-29b2a734",
+      "lastRunId": "20261030T135842Z-972155b1",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0564": {
@@ -43667,105 +43667,7 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
-            "filename": "EricKot2007.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Pete Yeung",
-            "credit": "originally posted to Flickr as McConcert043",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "Eric Kot",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "wikidataId": "Q590914",
-              "mappingSource": "https://www.wikidata.org/wiki/Q590914",
-              "exactChineseAliases": [
-                "葛民輝",
-                "葛民辉",
-                "葛民辉",
-                "葛民辉"
-              ],
-              "verifiedSearchAliases": [
-                "葛民輝",
-                "葛民辉",
-                "Eric Kot",
-                "Eric Kot Man Fai",
-                "Eric Kot Man-fai"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
-              "articleTitle": "葛民輝",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "葛民輝",
-              "matchedAliases": [
-                "Eric Kot"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "Eric Kot"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "百分百感覺"
-              ],
-              "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T13:55:08.321342+00:00",
-            "width": 582,
-            "height": 703,
-            "id": "cad3208d7ed5ebd101df",
-            "personId": "t1500_0564",
-            "discoveryRunId": "20261030T135504Z-29b2a734",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too small"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206625630).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206626223).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Wedding...%3F%3F%3F_(206958255).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastErrors": [],
       "candidates": [
         {
           "warnings": [
@@ -44714,18 +44616,35 @@
             }
           ],
           "candidatesTried": 5
+        },
+        {
+          "time": "2026-10-30T13:58:44.518937+00:00",
+          "provider": "entity",
+          "attempt": 8,
+          "finishedAt": "2026-10-30T13:58:49.164956+00:00"
+        },
+        {
+          "time": "2026-10-30T13:58:49.164978+00:00",
+          "provider": "commons",
+          "attempt": 8,
+          "finishedAt": "2026-10-30T13:58:54.961051+00:00"
+        },
+        {
+          "time": "2026-10-30T13:58:54.961093+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "status": "no_suitable_source",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T13:55:05.911841+00:00",
+      "lastAttemptAt": "2026-10-30T13:58:44.429508+00:00",
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T13:55:17.499328+00:00",
-      "workerFinishedAt": "2026-10-30T13:55:17.501269+00:00"
+      "updatedAt": "2026-10-30T13:58:54.961118+00:00",
+      "workerFinishedAt": "2026-10-30T13:58:54.962865+00:00"
     },
     "t1500_0568": {
       "attempts": 7,

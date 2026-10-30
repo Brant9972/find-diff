@@ -45,7 +45,8 @@ class SourcesTest(unittest.TestCase):
         class Bulk:
             def json(self,url,**params):
                 assert url=='https://commons.wikimedia.org/w/api.php'
-                assert params['prop']=='imageinfo'
+                assert params['prop']=='imageinfo|categories'
+                assert 'Category:License review needed' in params['clcategories']
                 return {'query':{'pages':[{'title':'File:測試人物.jpg','imageinfo':[{'descriptionurl':'https://commons.wikimedia.org/wiki/File:測試人物.jpg','url':'https://upload.wikimedia.org/a.jpg','extmetadata':{'Artist':{'value':'Photographer'},'LicenseShortName':{'value':'CC BY 4.0'},'LicenseUrl':{'value':'http://creativecommons.org/licenses/by/4.0/'}}}]}]}}
         rows=list(CommonsSearch().search({'name':'測試人物'},Bulk()))
         self.assertEqual(len(rows),1)

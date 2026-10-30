@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_caption_and_identity_screening_no_visual_approval",
+  "date": "2026-10-30",
+  "runId": 40998681057,
+  "sourceRunId": "20261030T034045Z-29d66930",
+  "sourceBranchCommit": "f53b36196aaa37ec50e211bf545a3af1883a242a",
+  "mainShaAtReview": "4eec7030ee54552debc91490c890080ad1b7a9ba",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batchSummary": {
+    "scannedPeople": 8,
+    "newCandidatePhotos": 0,
+    "manualCropSources": 2,
+    "providerMetadataCommons": 11,
+    "commonsIdentitySupportedMetadata": 4,
+    "commonsOpenLicenseMetadata": 5,
+    "entityMetadata": 0,
+    "batchFailureReasons": {
+      "image_validation_failed": 6,
+      "identity_unconfirmed": 8,
+      "license_unclear": 2,
+      "network_error": 2
+    }
+  },
+  "reviewed": [
+    {
+      "personId": "t1500_0588",
+      "name": "苗可秀",
+      "candidateId": "bfd3d32d7f9493dca299",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+      "sourceCaption": "中國青年黨黨員苗可秀",
+      "targetWikidataQid": "Q702088",
+      "status": "REJECT_WRONG_PERSON",
+      "reason": "Source caption identifies the historical male Young China Party member and resistance commander 苗可秀 (born 1906), not Hong Kong actress Nora Miao (born 1952). Exact Chinese name is a homonym, not image identity evidence. 230x288 also below crop quality threshold. Block this source and military-person caption from future searches.",
+      "humanVisualApproved": false,
+      "rightsApproved": false,
+      "gameCropApproved": false
+    },
+    {
+      "personId": "t1500_0568",
+      "name": "李司棋",
+      "candidateId": "3a5772a3bc683ad8d993",
+      "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+      "sourceCaption": "李司棋",
+      "sourceLicenseMetadata": "CC BY-SA 3.0",
+      "status": "SOURCE_ONLY_RETAKE_NEEDED",
+      "reason": "Only 480x640 original; automatic 600x720 crop rejected as blurred/sharpness below 65. No five-stage images generated. Source identity and rights not independently approved; do not promote. Seek higher resolution portrait.",
+      "humanVisualApproved": false,
+      "rightsApproved": false,
+      "gameCropApproved": false
+    },
+    {
+      "personId": "t1500_0549",
+      "name": "謝賢",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "No suitable image from exact Commons leads; inspect failure provenance before retry."
+    },
+    {
+      "personId": "t1500_0551",
+      "name": "曾江",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "download_failed; diagnose URL/thumbnail/original and network errors."
+    },
+    {
+      "personId": "t1500_0552",
+      "name": "石修",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "no_suitable_source"
+    },
+    {
+      "personId": "t1500_0555",
+      "name": "湯鎮業",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "download_failed; diagnose original file fetch and image validation."
+    },
+    {
+      "personId": "t1500_0566",
+      "name": "董驃",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "no_suitable_source"
+    },
+    {
+      "personId": "t1500_0589",
+      "name": "袁潔瑩",
+      "status": "NO_PLAYABLE_CANDIDATE",
+      "reason": "no_suitable_source"
+    }
+  ],
+  "requiredNextActions": [
+    "Exclude unrelated historical homonym from 苗可秀 candidate pool and add regression test",
+    "Improve identity confidence with QID plus occupation/birth year and source-local subject captions; do not trust name alone",
+    "Diagnose exact-file 謝賢 source outcome and entity provider zero-metadata issue; avoid same ineffective 8-person rerun",
+    "No changes to playable banks, creators, or Pages without full five-stage visual/rights/hints QA"
+  ]
+}

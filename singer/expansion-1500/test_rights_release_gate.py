@@ -7,6 +7,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from PIL import Image
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rights_release_gate import validate
 
@@ -17,11 +19,12 @@ class ReleaseGateTests(unittest.TestCase):
         self.root = Path(self.tmp.name)
         (self.root / "singer/expansion-1500").mkdir(parents=True)
         (self.root / "singer/photos").mkdir(parents=True)
-        (self.root / "singer/photos/new.jpg").write_bytes(b"test-portrait-bytes")
+        self.photo = self.root / "singer/photos/new.jpg"
+        Image.new("RGB", (600, 720), (80, 90, 100)).save(self.photo, format="JPEG")
         self.q = {
             "id": "new001", "name": "新人物", "aliases": ["新人物"],
             "photo": "photos/new.jpg",
-            "gameSha256": hashlib.sha256(b"test-portrait-bytes").hexdigest(),
+            "gameSha256": hashlib.sha256(self.photo.read_bytes()).hexdigest(),
             "humanReviewed": True, "photoStatus": "manually_reviewed_source_and_photo",
             "recognitionContext": "Actual source portrait and five stages reviewed by human, with no obstruction.",
             "wikidataId": "Q123456789",
@@ -77,6 +80,18 @@ class ReleaseGateTests(unittest.TestCase):
         self.q["gameSha256"] = "0" * 64
         self.save()
         self.assert_fail("does not match file")
+
+    def test_wrong_photo_dimensions_fail_even_with_matching_hash(self):
+        Image.new("RGB", (599, 720), (80, 90, 100)).save(self.photo, format="JPEG")
+        self.q["gameSha256"] = hashlib.sha256(self.photo.read_bytes()).hexdigest()
+        self.save()
+        self.assert_fail("game photo must be 600x720")
+
+    def test_corrupt_photo_fails_even_with_matching_hash(self):
+        self.photo.write_bytes(b"not a decodable image")
+        self.q["gameSha256"] = hashlib.sha256(self.photo.read_bytes()).hexdigest()
+        self.save()
+        self.assert_fail("game photo cannot be decoded")
 
     def test_no_human_review_fails(self):
         self.q["humanReviewed"] = False

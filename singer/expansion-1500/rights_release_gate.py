@@ -15,6 +15,8 @@ import unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
 
+from PIL import Image, UnidentifiedImageError
+
 BANKS = (("singer", "singer/questions.json"),
          ("actors", "singer/actors.json"),
          ("variety", "singer/variety.json"))
@@ -113,6 +115,17 @@ def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]
                 errors.append(f"{pid}: missing 64-character game photo SHA256")
             elif hashlib.sha256(target.read_bytes()).hexdigest() != digest:
                 errors.append(f"{pid}: game photo SHA256 does not match file")
+            # The hash alone cannot establish that the game can decode the
+            # photo, nor that the five reveal rectangles use 600x720 pixels.
+            try:
+                with Image.open(target) as image:
+                    if image.format not in ("JPEG", "PNG", "WEBP"):
+                        errors.append(f"{pid}: unsupported game photo format")
+                    if image.size != (600, 720):
+                        errors.append(f"{pid}: game photo must be 600x720, got {image.size}")
+                    image.load()  # Reject truncated/undecodable image data.
+            except (OSError, ValueError, UnidentifiedImageError) as exc:
+                errors.append(f"{pid}: game photo cannot be decoded: {exc}")
         reveal = q.get("reveal") or {}
         try:
             stages = [reveal[s] for s in STAGES]

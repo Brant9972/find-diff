@@ -46,6 +46,18 @@ class NativeNameIdentityTest(unittest.TestCase):
         self.assertIn('Darren Wang', aliases)
         self.assertEqual(files, ['TaLu.jpg'])
 
+    def test_wang_talu_lead_remains_draft_and_pinned(self):
+        import json
+        root = Path(__file__).resolve().parents[1]
+        plan = json.loads((root / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+        row = next(p for p in plan['selectedNew']
+                   if p['plannedQuestionId'] == 't1500_0181')
+        self.assertEqual(row['wikidataId'], 'Q15938098')
+        self.assertEqual(row['reviewExactCommonsFiles'], ['TaLu.jpg'])
+        self.assertNotEqual(row['photoStatus'], 'published')
+        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+        self.assertFalse(row['imageVerification']['imageAdjacentCaptionVerified'])
+
     def test_nonmatching_native_name_does_not_override_identity(self):
         person = {'name': '王大陸', 'wikidataId': 'Q15938098'}
         for text, language, rank in [

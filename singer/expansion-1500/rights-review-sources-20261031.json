@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "releaseGate": "STAGING_ONLY_NOT_LIVE_OR_APPROVED",
+  "baselineMainSha": "c3bbe2c2e93aa688a3cff051df48f182d943c7d7",
+  "purpose": "Replace legacy photos lacking open-reuse rights evidence; never change live banks until identity, rights, 600x720 and five-stage manual QA, hint checks and Pages verification pass.",
+  "items": [
+    {
+      "id": "s002",
+      "name": "林俊傑",
+      "bank": "singer",
+      "wikidataQid": "Q716022",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+      "sourceCaption": "Portraits taken at Shaping Hearts Award 2025 ceremony",
+      "author": "Robert Sim (Robertsky)",
+      "date": "2025-09-25",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceProvenance": "Own work; Commons file used on Wikidata Q716022",
+      "fetchUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg/1200px-JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+      "expectedSize": [
+        1200,
+        1600
+      ],
+      "cropBox": [
+        250,
+        0,
+        1050,
+        960
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.22,
+          0.92,
+          0.35
+        ],
+        "nose": [
+          0.08,
+          0.22,
+          0.92,
+          0.45
+        ],
+        "mouth": [
+          0.08,
+          0.22,
+          0.92,
+          0.56
+        ],
+        "chin": [
+          0.08,
+          0.22,
+          0.92,
+          0.7
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Potential background faces at image edges and foreground microphones: verify excluded from final crop. Eyes look to the side; inspect recognisability. ShareAlike applies to crop; retain credit and adaptation notice."
+    },
+    {
+      "id": "a741",
+      "name": "林志玲",
+      "bank": "actors",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lin_Chi-Ling_(cropped)_(cropped).jpg",
+      "sourceCaption": "Lin Chi-ling at LG New Chocolate Phone launch, Hong Kong 2009-11-04",
+      "author": "LGEPR (LG Electronics official Flickr)",
+      "date": "2009-11-04",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceProvenance": "Official LG Flickr; extracted from Commons image, 2009 Flickr license review on parent",
+      "fetchUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Lin_Chi-Ling_%28cropped%29_%28cropped%29.jpg",
+      "expectedSize": [
+        800,
+        1040
+      ],
+      "cropBox": [
+        0,
+        0,
+        800,
+        960
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.18,
+          0.92,
+          0.31
+        ],
+        "nose": [
+          0.08,
+          0.18,
+          0.92,
+          0.42
+        ],
+        "mouth": [
+          0.08,
+          0.18,
+          0.92,
+          0.54
+        ],
+        "chin": [
+          0.08,
+          0.18,
+          0.92,
+          0.67
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Single prominent face, visible eyes, nose, mouth and chin in source preview; ensure cropped stage retains full face, and preserve attribution to LGEPR."
+    }
+  ]
+}

@@ -111042,8 +111042,8 @@
       "candidateId": "c1500-0604",
       "name": "潘親御",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T17:52:57.299611+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T19:57:16.985394+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -111156,25 +111156,203 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "time": "2026-10-30T15:57:12.387986+00:00",
+          "provider": "curated",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T15:57:14.285461+00:00"
+        },
+        {
+          "time": "2026-10-30T15:57:14.285493+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T15:57:16.985358+00:00"
+        },
+        {
+          "time": "2026-10-30T15:57:16.985379+00:00",
+          "errors": [
+            {
+              "provider": "curated",
+              "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+              "candidateMetadata": {
+                "provider": "commons",
+                "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+                "downloadVariant": "wikimedia_thumbnail_curated",
+                "filename": "潘親御演員.jpg",
+                "caption": "潘親御演員照片",
+                "artist": "Jimmy89119",
+                "license": "CC0 1.0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "curatedOriginalMetadataOnly": true,
+                  "verifiedAt": "2026-10-30",
+                  "verificationUrl": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+                  "verifiedSearchAliases": [
+                    "潘親御"
+                  ],
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+                  "captionAliasMatches": [
+                    "潘親御"
+                  ]
+                },
+                "id": "2c6574ba9da16fd4a6c6",
+                "personId": "t1500_0604",
+                "discoveryRunId": "20261030T155710Z-53a33eae",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "http_404",
+              "message": "HTTP Error 404: Not Found"
+            },
+            {
+              "provider": "curated",
+              "source": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+              "candidateMetadata": {
+                "provider": "commons",
+                "source": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+                "downloadVariant": "wikimedia_thumbnail_curated",
+                "filename": "潘親御演員照.jpg",
+                "caption": "潘親御演員照片",
+                "artist": "Jimmy89119",
+                "license": "CC0 1.0",
+                "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "curatedOriginalMetadataOnly": true,
+                  "verifiedAt": "2026-10-30",
+                  "verificationUrl": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+                  "verifiedSearchAliases": [
+                    "潘親御"
+                  ],
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+                  "captionAliasMatches": [
+                    "潘親御"
+                  ]
+                },
+                "id": "f9a5e357815852745840",
+                "personId": "t1500_0604",
+                "discoveryRunId": "20261030T155710Z-53a33eae",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "http_404",
+              "message": "HTTP Error 404: Not Found"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "backupSearchOnly": true,
-      "lastRunId": "20261030T155252Z-78c1ac10",
+      "lastRunId": "20261030T155710Z-53a33eae",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T15:52:53.980839+00:00",
+      "lastAttemptAt": "2026-10-30T15:57:12.290487+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Child_Stars_of_the_Taiwanese_Film_%22ORZboyz%22_2008-9-12.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "curated",
+          "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+          "candidateMetadata": {
+            "provider": "commons",
+            "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1.jpg",
+            "downloadVariant": "wikimedia_thumbnail_curated",
+            "filename": "潘親御演員.jpg",
+            "caption": "潘親御演員照片",
+            "artist": "Jimmy89119",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "curatedOriginalMetadataOnly": true,
+              "verifiedAt": "2026-10-30",
+              "verificationUrl": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+              "verifiedSearchAliases": [
+                "潘親御"
+              ],
+              "visualIdentityVerified": false,
+              "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+              "captionAliasMatches": [
+                "潘親御"
+              ]
+            },
+            "id": "2c6574ba9da16fd4a6c6",
+            "personId": "t1500_0604",
+            "discoveryRunId": "20261030T155710Z-53a33eae",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "http_404",
+          "message": "HTTP Error 404: Not Found"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%EF%BC%88%E5%B7%A6-%E5%8F%B3%EF%BC%89%E6%BD%98%E8%A6%AA%E5%BE%A1%E3%80%81%E5%B7%AB%E5%BB%BA%E5%92%8C%E3%80%81%E5%B0%8E%E6%BC%94%E6%B8%B8%E6%99%BA%E6%B6%B5%E3%80%81%E9%BB%83%E6%B9%98%E5%A9%B7%E3%80%81%E9%BB%83%E8%81%96%E7%90%83%E3%80%81%E9%8D%BE%E5%AE%B6%E9%A7%BF.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
+          "provider": "curated",
+          "source": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+          "candidateMetadata": {
+            "provider": "commons",
+            "source": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg/960px-%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/%E6%BD%98%E8%A6%AA%E5%BE%A1%E6%BC%94%E5%93%A1%E7%85%A7.jpg",
+            "downloadVariant": "wikimedia_thumbnail_curated",
+            "filename": "潘親御演員照.jpg",
+            "caption": "潘親御演員照片",
+            "artist": "Jimmy89119",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "curatedOriginalMetadataOnly": true,
+              "verifiedAt": "2026-10-30",
+              "verificationUrl": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+              "verifiedSearchAliases": [
+                "潘親御"
+              ],
+              "visualIdentityVerified": false,
+              "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+              "captionAliasMatches": [
+                "潘親御"
+              ]
+            },
+            "id": "f9a5e357815852745840",
+            "personId": "t1500_0604",
+            "discoveryRunId": "20261030T155710Z-53a33eae",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "http_404",
+          "message": "HTTP Error 404: Not Found"
         }
       ],
       "lastFailure": {
@@ -111182,8 +111360,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-30T15:52:57.299678+00:00",
-      "workerFinishedAt": "2026-10-30T15:52:57.301756+00:00"
+      "updatedAt": "2026-10-30T15:57:16.985407+00:00",
+      "workerFinishedAt": "2026-10-30T15:57:16.987508+00:00"
     }
   }
 }

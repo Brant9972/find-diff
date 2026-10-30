@@ -53,7 +53,9 @@ class NativeNameIdentityTest(unittest.TestCase):
         row = next(p for p in plan['selectedNew']
                    if p['plannedQuestionId'] == 't1500_0181')
         self.assertEqual(row['wikidataId'], 'Q15938098')
-        self.assertEqual(row['reviewExactCommonsFiles'], ['TaLu.jpg'])
+        self.assertIn('https://commons.wikimedia.org/wiki/File:TaLu.jpg',
+                      row['excludedPhotoSources'])
+        self.assertFalse(row.get('reviewExactCommonsFiles'))
         self.assertNotEqual(row['photoStatus'], 'published')
         self.assertFalse(row['imageVerification']['finalCropReviewed'])
         self.assertFalse(row['imageVerification']['imageAdjacentCaptionVerified'])

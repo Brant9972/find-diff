@@ -1,20 +1,17 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-3-qid-english-aliases-taiwan-actors",
+  "requestId": "20261030-preselected-backup-pan-chinyu-exact-commons",
   "mode": "search",
-  "targetPeople": 3,
+  "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0093",
-    "t1500_0092",
-    "t1500_0094"
+    "t1500_0604"
   ],
-  "retryFailed": true,
+  "retryFailed": false,
   "providers": [
-    "entity",
     "commons"
   ],
-  "maxMinutes": 15,
+  "maxMinutes": 8,
   "personSeconds": 120,
   "maxCandidates": 2,
-  "purpose": "Source-root improvement: exact Wikidata QIDs plus confirmed English names for three previously low-yield existing Taiwanese priority-A actors 郭品超 (Dylan Kuo Q710553), 江祖平 (Amigo Chiang Q8975739), 寇世勳 (Johnny Kou Q8980013). Do not rerun unrelated cohorts or any published person. Metadata and open licenses are NOT approval; human five-stage visual gates and caption/author/license/crop review remain mandatory before any main release."
+  "purpose": "Search preselected backup actor 潘親御 (c1500-0604) using two exact Commons filenames with uploader-claimed CC0 and named captions. Search and download metadata only; do not treat uploader copyright claim or a face match as approval. 600x720 five-stage human review, original rights and independent identity evidence remain mandatory. No change to main, selectedNew=511, or creators."
 }

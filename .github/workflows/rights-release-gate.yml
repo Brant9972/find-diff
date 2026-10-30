@@ -1,0 +1,39 @@
+name: New celebrity portrait release evidence gate
+on:
+  pull_request:
+    paths:
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/hints.json'
+      - 'singer/expansion-1500/rights_release_gate.py'
+      - 'singer/expansion-1500/test_rights_release_gate.py'
+      - 'singer/expansion-1500/rights-release-baseline-20261031.json'
+      - '.github/workflows/rights-release-gate.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/hints.json'
+      - 'singer/expansion-1500/rights_release_gate.py'
+      - 'singer/expansion-1500/test_rights_release_gate.py'
+      - 'singer/expansion-1500/rights-release-baseline-20261031.json'
+      - '.github/workflows/rights-release-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit regressions
+        run: python -m unittest singer/expansion-1500/test_rights_release_gate.py -v
+      - name: Check live bank against immutable pre-existing IDs
+        run: python singer/expansion-1500/rights_release_gate.py

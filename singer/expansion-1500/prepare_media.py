@@ -16,6 +16,49 @@ from media_pipeline.review import report
 from media_pipeline.delivery import build_assets
 
 
+
+def load_preselected_backup_search_people(root):
+    """Search only already-listed, separately preselected backup people.
+
+    This adds a *draft search row*, never a released person or a change to the
+    511 selectedNew release arithmetic. The source lead is not human approval.
+    """
+    directory = root / 'expansion-1500'
+    spec = read(directory / 'pipeline/backup-photo-leads-20261030.json', {'people': []})
+    if spec.get('releaseGate') != 'BACKUP_PHOTO_SEARCH_ONLY_NOT_PLAYABLE':
+        raise ValueError('Backup search release gate must remain draft-only')
+    original = {row['candidateId']: row for row in
+                read(directory / 'taiwan-first-candidates-20261028.json')['candidates']
+                if row.get('purpose') == 'backup'}
+    preselected = {row['candidateId']: row for row in
+                   read(directory / 'pipeline/backup-eligibility-review-20261029.json')['candidates']}
+    result = {}
+    for lead in spec['people']:
+        candidate_id = lead['candidateId']
+        base = original.get(candidate_id)
+        reviewed = preselected.get(candidate_id)
+        match = re.fullmatch(r'c1500-(\\d{4})', candidate_id)
+        if not match or not base or not reviewed or base['name'] != lead['name'] or reviewed['name'] != lead['name']:
+            raise ValueError('Backup lead is not an existing preselected candidate')
+        pid = 't1500_' + match.group(1)
+        if lead.get('plannedQuestionId') != pid or lead.get('proposedPrimaryBank') != reviewed['proposedBank']:
+            raise ValueError('Backup lead has inconsistent person ID or bank')
+        filenames = lead.get('reviewExactCommonsFiles', [])
+        if not 1 <= len(filenames) <= 3 or any(
+                not re.fullmatch(r'[^/\\\\\\r\\n]{1,200}\\.(?:jpg|jpeg|png|webp)', f, re.I)
+                for f in filenames):
+            raise ValueError('Backup source filenames must be bounded image names')
+        if pid in result:
+            raise ValueError('Duplicate backup search person ID')
+        person = copy.deepcopy(base)
+        person.update(plannedQuestionId=pid, proposedPrimaryBank=reviewed['proposedBank'],
+                      representativeWorks=lead.get('representativeWorks', []),
+                      reviewExactCommonsFiles=filenames,
+                      backupSearchOnly=True, photoStatus='not_prepared', qaStatus='not_releasable')
+        result[pid] = person
+    return result
+
+
 def select_people(state,people,handoff,limit,review_only=False,retry_failed=False,person_ids=()):
     reviewed=set((handoff or {}).get('personIds',[]));queue=[]
     for pid,row in state['people'].items():
@@ -58,6 +101,18 @@ def main(argv=None):
     with lock(directory):
         active=live_people(root,args.live_ref);state=initialise(root,directory,active=active)
         people={p['plannedQuestionId']:p for p in read(root/'expansion-1500/release-plan-20261028.json')['selectedNew']}
+        backups=load_preselected_backup_search_people(root)
+        if set(backups)&set(people):raise ValueError('Backup ID collides with selectedNew')
+        people.update(backups)
+        for pid,person in backups.items():
+            if pid not in state['people']:
+                state['people'][pid]={'personId':pid,'candidateId':person['candidateId'],
+                                     'name':person['name'],'status':'not_started','attempts':0,
+                                     'nextRetryAt':None,'candidates':[],'history':[],
+                                     'backupSearchOnly':True}
+            elif (state['people'][pid].get('candidateId') != person['candidateId']
+                  or state['people'][pid].get('name') != person['name']):
+                raise ValueError('Backup state identity mismatch')
         if set(args.person_id)-people.keys():parser.error('Unknown person ID')
         active_names={norm(q['name']) for q in active.values()}
         for pid,row in state['people'].items():

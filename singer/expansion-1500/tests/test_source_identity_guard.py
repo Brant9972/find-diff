@@ -37,6 +37,56 @@ class IdentityGuardTest(unittest.TestCase):
                 self.assertTrue(all(source.startswith('https://commons.wikimedia.org/wiki/File:')
                                     for source in sources))
 
+    def test_relative_only_caption_does_not_identify_pictured_parent(self):
+        person = {'name': '黃日華', 'plannedQuestionId': 't1500_0554'}
+        class Provider:
+            name = 'commons'
+            def search(self, person, http, round_number=0):
+                for filename, caption in [
+                    ('黃芷晴.jpg', '無綫五虎將黃日華的女兒黃芷晴'),
+                    ('黃日華.jpg', '黃日華接受專訪'),
+                ]:
+                    yield {
+                        'provider': 'commons',
+                        'source': 'https://commons.wikimedia.org/wiki/File:' + filename,
+                        'url': 'https://upload.wikimedia.org/' + filename,
+                        'filename': filename, 'caption': caption,
+                        'license': 'CC BY 4.0',
+                        'licenseUrl': 'https://creativecommons.org/licenses/by/4.0/',
+                        'artist': 'Fixture photographer',
+                        'identityEvidence': {},
+                    }
+        class HTTP:
+            budget = None
+            def get(self, url): return b'fixture image bytes'
+        def crop(blob):
+            return b'fixture cropped jpeg', {
+                'eyes': [0, 0, 1, .2], 'nose': [0, 0, 1, .4],
+                'mouth': [0, 0, 1, .6], 'chin': [0, 0, 1, .8],
+                'full': [0, 0, 1, 1],
+            }, {'size': [600, 720]}
+        row = {'personId': 't1500_0554', 'status': 'not_started',
+               'attempts': 0, 'candidates': [], 'history': []}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            directory = root / 'expansion-1500' / 'pipeline'
+            process(person, row, root, directory, [Provider()], HTTP(), crop,
+                    set(), max_candidates=1, max_attempts=1, active={},
+                    rejected_pixels=[])
+        ready = [c for c in row['candidates'] if c.get('status') == 'pending_review']
+        self.assertEqual([c['filename'] for c in ready], ['黃日華.jpg'])
+        self.assertTrue(any(e['code'] == 'identity_context_only'
+                            for e in row['lastErrors']))
+
+    def test_huang_yat_wah_plan_excludes_daughter_sources(self):
+        import json
+        plan = json.loads((Path(__file__).resolve().parents[1] /
+                           'release-plan-20261028.json').read_text(encoding='utf-8'))
+        person = next(row for row in plan['selectedNew']
+                      if row['plannedQuestionId'] == 't1500_0554')
+        self.assertIn('黃芷晴', person['excludedCaptionNames'])
+        self.assertEqual(len(person['excludedPhotoSources']), 2)
+
     def test_wrong_search_result_does_not_consume_image_quota(self):
         person = {'name': '家家', 'plannedQuestionId': 't1'}
         class Provider:

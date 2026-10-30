@@ -16490,11 +16490,11 @@
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
       "preferredImageQuery": "謝賢 千王之王 角色 劇照 正面 清晰 無浮水印",
-      "reviewExactCommonsFiles": [
-        "謝賢.jpg",
-        "謝老四.jpg"
-      ],
-      "reviewReason": "優先核對 2019 am730《謝賢.jpg》與 2018 am730《謝老四.jpg》單人肖像；兩者 Commons GRuban 2020-07-24 CC BY 3.0 授權審核已確認，但仍須實際裁切與五階段目視，不能自動核准"
+      "reviewReason": "2026-10-30 visual screening: Commons 謝賢.jpg (1312x1780) and 謝老四.jpg (1000x1363), am730 CC BY 3.0 reviewed by GRuban 2020-07-24, show the actor wearing large tinted sunglasses across both eyes. Even though identity and reuse license are supported, eyes reveal stage cannot work. Reject both and seek an unobstructed portrait; no live promotion.",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg"
+      ]
     },
     {
       "candidateId": "c1500-0550",
@@ -17834,9 +17834,12 @@
       "candidateId": "c1500-0588",
       "plannedQuestionId": "t1500_0588",
       "name": "苗可秀",
-      "aliases": [],
+      "aliases": [
+        "Nora Miao"
+      ],
       "acceptedAnswers": [
-        "苗可秀"
+        "苗可秀",
+        "Nora Miao"
       ],
       "categories": [
         "演員"
@@ -17861,7 +17864,15 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "苗可秀 精武門 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "苗可秀 精武門 角色 劇照 正面 清晰 無浮水印",
+      "wikidataId": "Q702088",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg"
+      ],
+      "excludedCaptionNames": [
+        "中國青年黨黨員苗可秀"
+      ],
+      "reviewReason": "2026-10-30 run 40998681057 source-only file 苗可秀.jpg describes 中國青年黨黨員苗可秀 (male historical figure, born 1906), NOT Hong Kong actress Nora Miao (Wikidata Q702088). Exact-name Commons search is not identity proof. Exclude source and caption; seek actress-specific source, 600x720 five-stage and rights verification."
     },
     {
       "candidateId": "c1500-0589",

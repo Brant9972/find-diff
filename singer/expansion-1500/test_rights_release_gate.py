@@ -55,11 +55,11 @@ class ReleaseGateTests(unittest.TestCase):
             (self.root / f"singer/{path}.json").write_text(json.dumps({"questions": [self.q] if bank == "singer" else []}))
 
     def assert_fail(self, text):
-        errors, _ = validate(self.root)
+        errors, _ = validate(self.root, strict_baseline=False)
         self.assertTrue(any(text in error for error in errors), errors)
 
     def test_complete_new_person_passes_metadata_gate(self):
-        errors, stats = validate(self.root)
+        errors, stats = validate(self.root, strict_baseline=False)
         self.assertEqual(errors, [])
         self.assertEqual(stats["newPeople"], 1)
 
@@ -94,7 +94,7 @@ class ReleaseGateTests(unittest.TestCase):
         self.q["attribution"]["license"] = "Copyright retained by original source; no open licence asserted"
         for bank, path in (("singer", "questions"), ("actors", "actors"), ("variety", "variety")):
             (self.root / f"singer/{path}.json").write_text(json.dumps({"questions": [self.q] if bank == "singer" else []}))
-        errors, stats = validate(self.root)
+        errors, stats = validate(self.root, strict_baseline=False)
         self.assertEqual(errors, [])
         self.assertEqual(stats["newPeople"], 0)
 

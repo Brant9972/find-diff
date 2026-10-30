@@ -1,0 +1,35 @@
+name: Legacy portrait rights metadata audit
+on:
+  pull_request:
+    paths:
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/expansion-1500/rights_audit.py'
+      - 'singer/expansion-1500/rights-audit-20261031.json'
+      - '.github/workflows/legacy-rights-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/expansion-1500/rights_audit.py'
+      - 'singer/expansion-1500/rights-audit-20261031.json'
+      - '.github/workflows/legacy-rights-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify syntax
+        run: python -m py_compile singer/expansion-1500/rights_audit.py
+      - name: Verify unique identities and rights evidence inventory
+        run: python singer/expansion-1500/rights_audit.py --check

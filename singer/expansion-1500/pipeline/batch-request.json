@@ -1,27 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-source-verified-zhenghongyi-fresh10-1510",
-  "mode": "search",
-  "targetPeople": 10,
-  "plannedPersonIds": [
-    "t1500_0491",
-    "t1500_0420",
-    "t1500_0457",
-    "t1500_0434",
-    "t1500_0470",
-    "t1500_0445",
-    "t1500_0318",
-    "t1500_0365",
-    "t1500_0475",
-    "t1500_0534"
-  ],
-  "retryFailed": true,
-  "providers": [
-    "entity",
-    "commons"
-  ],
-  "maxMinutes": 25,
-  "personSeconds": 100,
-  "maxCandidates": 2,
-  "purpose": "Fresh existing selectedNew people with zero current attempts, Taiwan/HK audience relevance. Priority 鄭弘儀 has exact own-work Commons source CC BY-SA 4.0, but original includes background faces: source-only until human verifies single-face crop and all five stages. PR #26 removed implicit Openverse from Commons-only provider registry; do not rerun old veteran-8/20/40/200. No deployment or automatic approval."
+  "requestId": "20261030-manual-recrops-sunpeng-zhenghongyi-1510",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-sunpeng-zhenghongyi.json",
+  "targetPeople": 2,
+  "purpose": "No provider rerun. Reuse immutable source-only originals from run 41017698407 for two visually promising existing selectedNew. Render draft 600x720 and five reveal masks, verify pixel quality and exact identity/license manually before any live release. Do not touch main or creators."
 }

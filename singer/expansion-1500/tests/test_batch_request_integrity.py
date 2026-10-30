@@ -10,7 +10,13 @@ class BatchRequestIntegrityTest(unittest.TestCase):
     def test_explicit_request_is_unique_selected_and_unpublished(self):
         request = json.loads((ROOT / 'pipeline/batch-request.json').read_text(encoding='utf-8'))
         plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))
-        ids = request.get('plannedPersonIds', [])
+        if request.get('mode') == 'manual_recrop':
+            spec_path = ROOT / 'pipeline' / Path(request['manualCropRequestPath']).name
+            spec = json.loads(spec_path.read_text(encoding='utf-8'))
+            self.assertEqual(spec['releaseGate'], 'MANUAL_CROP_STAGING_ONLY_NO_LIVE')
+            ids = [item['personId'] for item in spec['items']]
+        else:
+            ids = request.get('plannedPersonIds', [])
         self.assertEqual(len(ids), request['targetPeople'])
         self.assertEqual(len(ids), len(set(ids)), 'Do not search the same person twice')
         selected = {row['plannedQuestionId']: row for row in plan['selectedNew']}

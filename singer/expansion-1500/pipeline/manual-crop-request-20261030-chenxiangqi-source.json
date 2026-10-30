@@ -3,7 +3,7 @@
   "sourceCommit": "dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629",
   "sourceRun": "20261030T094146Z-a2a94968",
   "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
-  "purpose": "Produce one source-pixel 600x720 draft for 陳湘琪 from exact 2014 CNA Golden Horse Commons file after auto crop rejected it as blurry. No production, identity, license or five-stage approval. Original YouTube CC grant remains independently unverified; retain as pending.",
+  "purpose": "Correct the first visually inspected Chen Shiang-chyi draft: eyes stage leaked nose and mouth; render new five-stage boundaries from identical immutable source pixels. Draft only; no rights or identity approval.",
   "items": [
     {
       "personId": "t1500_0171",
@@ -18,27 +18,27 @@
       "reveal": {
         "eyes": [
           0.08,
-          0.3,
+          0.27,
           0.92,
-          0.48
+          0.37
         ],
         "nose": [
           0.08,
-          0.3,
+          0.27,
           0.92,
-          0.58
+          0.44
         ],
         "mouth": [
           0.08,
-          0.3,
+          0.27,
           0.92,
-          0.69
+          0.55
         ],
         "chin": [
           0.08,
-          0.3,
+          0.27,
           0.92,
-          0.83
+          0.63
         ],
         "full": [
           0,
@@ -47,7 +47,7 @@
           1
         ]
       },
-      "notes": "Original 2468x2260 video screenshot; visual original shows one identifiable woman with both eyes, nose and mouth unobstructed, microphone below mouth, soft detail. 1250x1500 (5:6) crop roughly centers face and excludes backdrop. Geometry is provisional: inspect all 5 stages and pixel sharpness, reject if soft or microphone intrudes. Commons states CC BY 3.0, author CNA Taiwan, YouTube video ffxdss7Xk6Y; license on original video not independently verified, so do not approve until verified."
+      "notes": "Original 2468x2260 video screenshot; visual original shows one identifiable woman with both eyes, nose and mouth unobstructed, microphone below mouth, soft detail. 1250x1500 (5:6) crop roughly centers face and excludes backdrop. Geometry is provisional: inspect all 5 stages and pixel sharpness, reject if soft or microphone intrudes. Commons states CC BY 3.0, author CNA Taiwan, YouTube video ffxdss7Xk6Y; license on original video not independently verified, so do not approve until verified. First draft manualrecrop-f186fd95e6ed3d7592fd was visually rejected for stage geometry: eyes preview included nose and partial lips; new masks must expose only eyes, then nose, mouth, chin sequentially. Original image shows a single face and microphone below mouth; source YouTube CC grant still unverified."
     }
   ]
 }

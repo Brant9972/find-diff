@@ -399,12 +399,31 @@ class CommonsSearch:
         queries = list(dict.fromkeys(q for q in queries if str(q).strip()))
         seen=set()
         busy_fallbacks=0
-        for query in dict.fromkeys(queries):
+        # Human-curated exact Commons file titles are discovery hints only.
+        # Never infer identity, rights or visual approval from this field.
+        # Exact imageinfo bypasses noisy CirrusSearch and is capped at 3 files.
+        exact_files = []
+        for raw in person.get('reviewExactCommonsFiles', [])[:3]:
+            filename = str(raw).strip().removeprefix('File:')
+            if re.fullmatch(r'[^/\\\\\r\n]{1,200}\\.(?:jpg|jpeg|png|webp)', filename, re.I):
+                exact_files.append(filename)
+        requests = ([('exact', person['name'])] if exact_files else [])
+        requests.extend(('search', query) for query in dict.fromkeys(queries))
+        for mode, query in requests:
             try:
-                data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
-                    generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
-                    prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
+                if mode == 'exact':
+                    data = http.json('https://commons.wikimedia.org/w/api.php',
+                        action='query', format='json', formatversion=2,
+                        titles='|'.join('File:' + name for name in exact_files),
+                        prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400)
+                else:
+                    data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
+                        generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
+                        prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
             except SourceError as exc:
+                # An unavailable exact-file lookup must not suppress normal search.
+                if mode == 'exact':
+                    continue
                 if exc.code != 'source_api_busy':
                     raise
                 # allimages uses title-prefix enumeration, not CirrusSearch.
@@ -431,6 +450,9 @@ class CommonsSearch:
                     license_url=val('LicenseUrl')
                     if license_url.startswith('http://creativecommons.org/'):license_url='https://'+license_url[7:]
                     evidence={'query':query,'identityWarning':'Caption/name match is preliminary evidence only'}
+                    if mode == 'exact':
+                        evidence['curatedExactFileHint'] = True
+                        evidence['identityWarning'] = 'Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity'
                     if context:
                         evidence.update(context['evidence'])
                         evidence['matchedAliases']=identity({**person,'aliases':context['aliases']},page.get('title','')+' '+val('ImageDescription'))

@@ -48,7 +48,7 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertEqual(request['plannedPersonIds'], ['t1500_0604'])
         self.assertEqual(request['targetPeople'], 1)
         self.assertEqual(request['mode'], 'search')
-        self.assertEqual(request['providers'], ['commons'])
+        self.assertEqual(request['providers'], ['curated', 'commons'])
         self.assertIn('five-stage', request['purpose'])
         self.assertIn('preselected backup', request['purpose'])
 

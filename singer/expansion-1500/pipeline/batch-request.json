@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-preselected-backup-pan-chinyu-exact-commons",
+  "requestId": "20261030-preselected-backup-pan-chinyu-curated-960px",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0604"
   ],
-  "retryFailed": false,
+  "retryFailed": true,
   "providers": [
+    "curated",
     "commons"
   ],
   "maxMinutes": 8,
   "personSeconds": 120,
   "maxCandidates": 2,
-  "purpose": "Search preselected backup actor 潘親御 (c1500-0604) using two exact Commons filenames with uploader-claimed CC0 and named captions. Search and download metadata only; do not treat uploader copyright claim or a face match as approval. 600x720 five-stage human review, original rights and independent identity evidence remain mandatory. No change to main, selectedNew=511, or creators."
+  "purpose": "Source-root fix: preselected backup 潘親御 has two exact uploader-claimed CC0 Commons pages whose original files exceed 14MB and whose imageinfo exact lookup returned no metadata. Use strictly hashed 960px Wikimedia thumbnails as review-only curated fallback, then Commons. This is a new source variant, not an unmodified retry. Independent author/identity/copyright verification and 600x720 five-stage visual gates remain mandatory; no main or creators changes."
 }

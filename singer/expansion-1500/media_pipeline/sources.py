@@ -1,6 +1,7 @@
 """Bounded, auditable source adapters. Public availability is not a licence."""
 import datetime
 import html
+import hashlib
 import ipaddress
 import json
 import re
@@ -442,7 +443,7 @@ class CuratedCommons:
             src = urllib.parse.urlsplit(source)
             original = urllib.parse.urlsplit(url)
             src_path = urllib.parse.unquote(src.path).replace('_', ' ')
-            file_path = urllib.parse.unquote(original.path).replace('_', ' ')
+            file_path = urllib.parse.unquote(original.path)
             if not filename or norm(filename) not in exact:
                 continue
             if (src.scheme != 'https' or src.hostname != 'commons.wikimedia.org'
@@ -450,10 +451,21 @@ class CuratedCommons:
                     or norm(src_path.split('/wiki/File:', 1)[1]) != norm(filename)
                     or src.query or src.fragment):
                 continue
+            # Wikimedia hashes the underscore-normalized filename into two
+            # path segments. Validate the COMPLETE path, not just its suffix:
+            # a malicious or unrelated image must never inherit a Commons
+            # caption/license merely because its basename looks similar.
+            canonical = filename.replace(' ', '_')
+            digest = hashlib.md5(canonical.encode('utf-8')).hexdigest()
+            original_path = f'/wikipedia/commons/{digest[0]}/{digest[:2]}/{canonical}'
+            allowed_thumbs = {
+                f'/wikipedia/commons/thumb/{digest[0]}/{digest[:2]}/{canonical}/{width}px-{canonical}'
+                for width in (960, 1400)
+            }
+            is_thumbnail = file_path in allowed_thumbs
             if (original.scheme != 'https'
                     or original.hostname != 'upload.wikimedia.org'
-                    or not file_path.startswith('/wikipedia/commons/')
-                    or norm(file_path.rsplit('/', 1)[-1]) != norm(filename)
+                    or file_path not in ({original_path} | allowed_thumbs)
                     or original.query or original.fragment):
                 continue
             if (not item.get('artist') or not item.get('caption')
@@ -464,7 +476,10 @@ class CuratedCommons:
                 continue
             candidate = {
                 'provider': 'commons', 'source': source, 'url': url,
-                'originalUrl': url, 'filename': filename,
+                'originalUrl': ('https://upload.wikimedia.org' + urllib.parse.quote(original_path, safe='/')
+                                if is_thumbnail else url),
+                'downloadVariant': ('wikimedia_thumbnail_curated' if is_thumbnail else 'original'),
+                'filename': filename,
                 'caption': item['caption'], 'artist': item['artist'],
                 'license': item.get('license', ''),
                 'licenseUrl': item.get('licenseUrl', ''),

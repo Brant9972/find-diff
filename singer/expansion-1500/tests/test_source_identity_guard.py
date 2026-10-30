@@ -121,7 +121,7 @@ class IdentityGuardTest(unittest.TestCase):
         else:
             ids = request['plannedPersonIds']
             self.assertEqual(request['targetPeople'], len(ids))
-            self.assertIn(request['providers'], (['curated'], ['entity', 'commons'], ['commons']))
+            self.assertIn(request['providers'], (['curated'], ['entity', 'commons'], ['commons'], ['curated', 'commons']))
             if request['providers'] == ['curated']:
                 self.assertTrue(all(people[pid].get('reviewVerifiedOriginalSources') for pid in ids))
         self.assertEqual(len(ids), len(set(ids)))

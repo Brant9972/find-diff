@@ -520,6 +520,20 @@ class EntityPortraits:
                                  'articleTitle': title, 'articleLookup': 'exact title with redirects; not a search result'}
         except SourceError as exc:
             lookup_failures.append({'provider': 'wikipedia_exact', 'code': exc.code, 'message': str(exc)[:300]})
+        # An exact Wikipedia title may belong to a namesake (e.g. the
+        # historical 苗可秀 rather than actress Nora Miao). A curator-pinned
+        # QID is a stronger entity selector, but it must STILL pass the
+        # exact Chinese-name and P31=Q5 checks below. Never attach the
+        # namesake's Wikipedia article as evidence for the pinned person.
+        pinned_qid = person.get('wikidataId')
+        if pinned_qid:
+            if not re.fullmatch(r'Q[1-9][0-9]*', str(pinned_qid)):
+                raise SourceError('identity_entity_mismatch', 'Invalid pinned Wikidata QID')
+            if ids and pinned_qid not in ids:
+                lookup_failures.append({
+                    'provider': 'wikipedia_exact', 'code': 'homonym_page_ignored',
+                    'message': 'Exact-title Wikipedia entity differs from curated QID; use pinned QID with independent Q5/name validation'})
+            ids = [pinned_qid]
         if not ids:
             result = http.json(self.wikidata_api, action='wbsearchentities', format='json',
                                search=person['name'], language='zh', uselang='zh', type='item', limit=5)

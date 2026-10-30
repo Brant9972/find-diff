@@ -121,7 +121,55 @@ class IdentityGuardTest(unittest.TestCase):
                 raise AssertionError('Unexpected URL: ' + url)
         with self.assertRaises(SourceError) as caught:
             EntityPortraits()._resolve(person, HTTP())
-        self.assertEqual(caught.exception.code, 'identity_entity_mismatch')
+        # The pinned entity is absent from the mocked Wikidata response.
+        # It must be rejected, not silently replaced with the namesake.
+        self.assertEqual(caught.exception.code, 'identity_unconfirmed')
+
+    def test_pinned_qid_recovers_actress_when_exact_wikipedia_title_is_namesake(self):
+        person = {'name': '苗可秀', 'acceptedAnswers': ['苗可秀', 'Nora Miao'],
+                  'wikidataId': 'Q702088'}
+        class HTTP:
+            def json(self, url, **kwargs):
+                if 'zh.wikipedia.org' in url:
+                    return {'query': {'pages': [{
+                        'title': '苗可秀',
+                        'pageprops': {'wikibase_item': 'Q999999'},
+                        'fullurl': 'https://zh.wikipedia.org/wiki/苗可秀'}]}}
+                if kwargs.get('action') == 'wbgetentities':
+                    assert kwargs['ids'] == 'Q702088'
+                    return {'entities': {'Q702088': {
+                        'labels': {'zh': {'value': '苗可秀'},
+                                   'en': {'value': 'Nora Miao'}},
+                        'claims': {
+                            'P31': [{'mainsnak': {'datavalue': {
+                                'value': {'id': 'Q5'}}}}],
+                            'P18': [{'mainsnak': {'datavalue': {
+                                'value': 'Nora Miao portrait.jpg'}}}]
+                        }}}}
+                raise AssertionError('Unexpected request: ' + url)
+        aliases, query, evidence, files = EntityPortraits()._resolve(person, HTTP())
+        self.assertEqual(evidence['wikidataId'], 'Q702088')
+        self.assertEqual(query, '苗可秀')
+        self.assertIn('Nora Miao', aliases)
+        self.assertEqual(files, ['Nora Miao portrait.jpg'])
+        self.assertNotIn('article', evidence)
+        self.assertEqual(evidence['lookupWarnings'][0]['code'], 'homonym_page_ignored')
+
+    def test_pinned_qid_still_requires_matching_chinese_name_and_human(self):
+        person = {'name': '苗可秀', 'wikidataId': 'Q702088'}
+        class HTTP:
+            def json(self, url, **kwargs):
+                if 'zh.wikipedia.org' in url:
+                    return {'query': {'pages': []}}
+                if kwargs.get('action') == 'wbgetentities':
+                    return {'entities': {'Q702088': {
+                        'labels': {'zh': {'value': '不同名字'}},
+                        'claims': {'P31': [{'mainsnak': {'datavalue': {
+                            'value': {'id': 'Q5'}}}}]}}}}
+                raise AssertionError('Unexpected request')
+        with self.assertRaises(SourceError) as caught:
+            EntityPortraits()._resolve(person, HTTP())
+        self.assertEqual(caught.exception.code, 'identity_unconfirmed')
 
     def test_nora_miao_military_homonym_is_excluded_before_download(self):
         """An exact Chinese name may refer to a different person (1906 vs 1952)."""

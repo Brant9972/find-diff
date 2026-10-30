@@ -21868,8 +21868,8 @@
       "candidateId": "c1500-0108",
       "name": "黃少谷",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T12:14:02.888706+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T07:09:00.040942+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -22313,6 +22313,30 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "time": "2026-10-30T23:08:57.294427+00:00",
+          "provider": "curated",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T23:08:57.296291+00:00"
+        },
+        {
+          "time": "2026-10-30T23:08:57.296302+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T23:09:00.040905+00:00"
+        },
+        {
+          "time": "2026-10-30T23:09:00.040929+00:00",
+          "errors": [
+            {
+              "provider": "curated",
+              "source": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+              "code": "curated_already_retained",
+              "message": "Curated source already rejected/retained/excluded; find a different image or review retained pixels"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -22331,142 +22355,16 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastRunId": "20261030T081340Z-23adfada",
+      "lastRunId": "20261030T230855Z-1bb4280d",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T08:13:54.598412+00:00",
+      "lastAttemptAt": "2026-10-30T23:08:57.215502+00:00",
       "lastErrors": [
         {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
-            "filename": "黃少谷 20171015誠品唱談會.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Lidian192847",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​黃少谷《未來》專輯簽唱會",
-            "identityEvidence": {
-              "wikidataId": "Q28408495",
-              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
-              "exactChineseAliases": [
-                "黃少谷"
-              ],
-              "verifiedSearchAliases": [
-                "黃少谷",
-                "Huang Shao-Ku"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "query": "黃少谷",
-              "matchedAliases": [
-                "黃少谷"
-              ],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": [
-                "黃少谷"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "強辯樂團"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T08:13:55.684354+00:00",
-            "width": 2457,
-            "height": 2448,
-            "id": "a4ed6e44e9b1698b677f",
-            "personId": "t1500_0108",
-            "discoveryRunId": "20261030T081340Z-23adfada",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0108/a4ed6e44e9b1698b677f/4b0e7a9a196d/original.bin",
-            "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
-            "filename": "Huang Shao-gu.jpg",
-            "artist": "喜歡音樂 (Enjoy Music)",
-            "credit": "own work by the original uploader",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​黃少谷「遊戲人生」演唱會照片（攝於台北三創五樓）",
-            "identityEvidence": {
-              "query": "黃少谷",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "curatedExactFileHint": true,
-              "wikidataId": "Q28408495",
-              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
-              "exactChineseAliases": [
-                "黃少谷"
-              ],
-              "verifiedSearchAliases": [
-                "黃少谷",
-                "Huang Shao-Ku"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
-              "visualIdentityVerified": false,
-              "matchedAliases": [
-                "黃少谷"
-              ],
-              "captionAliasMatches": [
-                "黃少谷"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "強辯樂團"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-30T08:13:59.541885+00:00",
-            "width": 5184,
-            "height": 3456,
-            "id": "39f0f120c8a3eba5a957",
-            "personId": "t1500_0108",
-            "discoveryRunId": "20261030T081340Z-23adfada",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too small"
+          "provider": "curated",
+          "source": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+          "code": "curated_already_retained",
+          "message": "Curated source already rejected/retained/excluded; find a different image or review retained pixels"
         }
       ],
       "lastFailure": {
@@ -22474,8 +22372,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-30T08:14:02.888718+00:00",
-      "workerFinishedAt": "2026-10-30T08:14:02.891432+00:00"
+      "updatedAt": "2026-10-30T23:09:00.040953+00:00",
+      "workerFinishedAt": "2026-10-30T23:09:00.042803+00:00"
     },
     "t1500_0224": {
       "attempts": 6,

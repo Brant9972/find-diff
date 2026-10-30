@@ -1,13 +1,13 @@
 {
-  "runId": "20261030T230505Z-cca83c34",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T230505Z-cca83c34/review-index.json",
+  "runId": "20261030T230855Z-1bb4280d",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T230855Z-1bb4280d/review-index.json",
   "summary": {
-    "runId": "20261030T230505Z-cca83c34",
-    "generatedAt": "2026-10-30T23:05:07.016096+00:00",
-    "scannedPeople": 0,
+    "runId": "20261030T230855Z-1bb4280d",
+    "generatedAt": "2026-10-30T23:09:00.489500+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 420,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 293,
@@ -21,20 +21,44 @@
     },
     "failureReasons": {
       "identity_unconfirmed": 306,
-      "image_validation_failed": 120,
+      "image_validation_failed": 118,
       "network_error": 261,
       "excluded_context": 17,
       "source_api_busy": 70,
       "license_unclear": 75,
       "source_api_error": 20,
       "identity_ambiguous": 11,
+      "curated_already_retained": 1,
       "identity_not_found": 5,
       "proxy_access_denied": 4,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "curated_already_retained": 1
+    },
     "manualCropSources": 34,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      },
+      "curated": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "curated_already_retained": 1
+        }
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

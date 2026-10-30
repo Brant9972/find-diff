@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent_source_rights_and_original_image_screening_not_final_crop_approval",
+  "reviewedAt": "2026-10-30",
+  "personId": "t1500_0596",
+  "name": "鄭融",
+  "aliases": [
+    "Stephanie Cheng",
+    "郑融"
+  ],
+  "wikidataId": "Q6135815",
+  "candidateId": "72b3c7ac919764ad557e",
+  "sourceRun": "20261030T045355Z-f535313a",
+  "gameSha256": "afb976dd53d8f23616e65993e06eac2c6d3b869d5e7a9f5ee2cb47158daad449",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:StephanieCheng2007.jpg",
+  "originalCaption": "Stephanie Cheng at SINA Music樂壇民意指數頒獎禮 2006 (hosted on 29 January 2007); 鄭融",
+  "author": "Ken Mau",
+  "sourcePlatform": "Flickr",
+  "originalPhotoDate": "2007-01-29",
+  "rights": {
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "verification": "Commons file page records Flickr upload bot and Benjwong review on 2007-12-26; license allows cropping with attribution and share-alike obligations",
+    "sourceVerified": true,
+    "sourceEvidence": "https://commons.wikimedia.org/wiki/File:StephanieCheng2007.jpg"
+  },
+  "identity": {
+    "sourceCaptionMatchesName": true,
+    "commonsStructuredDepicts": "Q6135815",
+    "wikidataMatchesPlan": true,
+    "originalSourceVisualScreen": "Single foreground performer; eyes, nose and mouth visibly unobstructed in the source image. Microphone and event placard are below the face; event signage behind her.",
+    "sourceIdentityEvidenceVerified": true
+  },
+  "image": {
+    "sourceDimensions": [
+      1066,
+      1600
+    ],
+    "cropDimensions": [
+      600,
+      720
+    ],
+    "cropSha256": "afb976dd53d8f23616e65993e06eac2c6d3b869d5e7a9f5ee2cb47158daad449",
+    "stageFilesProduced": true,
+    "actualCommittedCropAndFiveStagePixelsVisuallyInspected": false,
+    "recognizabilityApproved": false,
+    "notes": "The original was inspected from the Commons file page. The immutable GitHub 600x720 crop and five stage PNGs could not be visually loaded in this review environment. Do not infer stage quality from source pixels or metadata."
+  },
+  "hint": {
+    "proposedWork": "紅綠燈",
+    "independentlyVerified": true,
+    "primarySource": "https://music.apple.com/us/song/1501322393",
+    "secondarySource": "https://www.youtube.com/watch?v=dJtAKqETyVs",
+    "sourceDescription": "Apple Music credits 紅綠燈 to Stephanie Cheng; official artist YouTube channel also lists 鄭融 as performer.",
+    "status": "work_credit_verified_not_game_published"
+  },
+  "decision": "source_rights_and_work_hint_verified_crop_pending",
+  "eligibleForLive": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "nextSteps": [
+    "Inspect immutable 600x720 JPEG and all five stage PNGs by eye before any publication",
+    "Inspect immutable 600x720 JPEG and all five stage PNGs by eye",
+    "Check CC BY-SA attribution and adaptation/share-alike requirements before publishing",
+    "Check latest main SHA, aliases and QID deduplication before any PR"
+  ]
+}

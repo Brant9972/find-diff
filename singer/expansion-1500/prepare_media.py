@@ -101,7 +101,7 @@ def main(argv=None):
                         works=re.findall(r'《([^》]+)》',person['reviewReason'])+person.get('representativeWorks',[])
                         person['reviewSearchQuery']=person['name']+' '+' '.join(dict.fromkeys(works))+' portrait';enriched[pid]=person
                     records=read(args.official_sources,[]) if args.official_sources else []
-                    registry={'entity':EntityPortraits(),'commons':CommonsSearch(),'openverse':Openverse(),'wikimedia':Wikimedia(),'official':Official(records)}
+                    registry={'entity':EntityPortraits(allow_openverse=False),'commons':CommonsSearch(),'openverse':Openverse(),'wikimedia':Wikimedia(),'official':Official(records)}
                     scanned,batch_result=run_batch(root,directory,state,enriched,queue,[registry[n] for n in names],Cropper(root),rejected,active,run_id,deadline,args.workers,args.person_seconds,args.max_candidates)
         finally:
             if protected(root)!=before:raise RuntimeError('Production files changed; do not commit')

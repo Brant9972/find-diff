@@ -1,0 +1,63 @@
+{
+  "runId": "20261030T230505Z-cca83c34",
+  "generatedAt": "2026-10-30T23:05:07.016096+00:00",
+  "scannedPeople": 0,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 0,
+  "retryNeeded": 420,
+  "pendingReviewPeople": 1,
+  "licenseConcernCandidates": 293,
+  "statusCounts": {
+    "no_suitable_source": 234,
+    "download_failed": 180,
+    "published": 90,
+    "pending_review": 1,
+    "rejected": 6,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 306,
+    "image_validation_failed": 120,
+    "network_error": 261,
+    "excluded_context": 17,
+    "source_api_busy": 70,
+    "license_unclear": 75,
+    "source_api_error": 20,
+    "identity_ambiguous": 11,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4,
+    "http_404": 2
+  },
+  "batchFailureReasons": {},
+  "manualCropSources": 34,
+  "batchProviderStages": {},
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 0,
+    "processedPeople": 0,
+    "workers": 1,
+    "elapsedSeconds": 1.23,
+    "stoppedForBudget": false,
+    "requestedPeople": 2,
+    "skippedRequested": [
+      {
+        "personId": "t1500_0112",
+        "status": "no_suitable_source",
+        "reason": "cooldown",
+        "nextRetryAt": "2026-10-31T03:01:45.771094+00:00"
+      },
+      {
+        "personId": "t1500_0114",
+        "status": "no_suitable_source",
+        "reason": "cooldown",
+        "nextRetryAt": "2026-10-31T03:01:56.684810+00:00"
+      }
+    ],
+    "unprocessedSelected": []
+  }
+}

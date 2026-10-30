@@ -56,6 +56,7 @@ def load_preselected_backup_search_people(root):
         person.update(plannedQuestionId=pid, proposedPrimaryBank=reviewed['proposedBank'],
                       representativeWorks=lead.get('representativeWorks', []),
                       reviewExactCommonsFiles=filenames,
+                      reviewVerifiedOriginalSources=lead.get('reviewVerifiedOriginalSources', []),
                       backupSearchOnly=True, photoStatus='not_prepared', qaStatus='not_releasable')
         result[pid] = person
     return result

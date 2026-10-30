@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-preselected-backup-pan-chinyu-curated-960px",
-  "mode": "search",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0604"
-  ],
-  "retryFailed": true,
+  "requestId": "20261030-render-retained-source-only-after-404",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "curated",
     "commons"
@@ -14,5 +12,5 @@
   "maxMinutes": 8,
   "personSeconds": 120,
   "maxCandidates": 2,
-  "purpose": "Source-root fix: preselected backup 潘親御 has two exact uploader-claimed CC0 Commons pages whose original files exceed 14MB and whose imageinfo exact lookup returned no metadata. Use strictly hashed 960px Wikimedia thumbnails as review-only curated fallback, then Commons. This is a new source variant, not an unmodified retry. Independent author/identity/copyright verification and 600x720 five-stage visual gates remain mandatory; no main or creators changes."
+  "purpose": "Render retained source-only images for human five-stage review, without repeating failed downloads. Preselected backup 潘親御 exact Commons URLs are unavailable HTTP 404 and quarantined; do not retry. This pass only packages already-saved evidence and cannot approve or publish photos. Other existing selectedNew and backup candidates require new independently verified sources."
 }

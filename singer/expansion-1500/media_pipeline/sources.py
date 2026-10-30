@@ -48,7 +48,7 @@ def clean(value):
     # Strip style/script *with their contents*, not just the tags: leaving
     # `.mw-parser-output {...}` in the author field corrupts attribution.
     raw = str(value or '')
-    raw = re.sub(r'<\\s*(style|script)\\b[^>]*>.*?<\\s*/\\s*\\1\\s*>',
+    raw = re.sub(r'<\s*(style|script)\b[^>]*>.*?<\s*/\s*\1\s*>',
                  '', raw, flags=re.IGNORECASE | re.DOTALL)
     return html.unescape(re.sub('<[^>]+>', '', raw)).strip()
 

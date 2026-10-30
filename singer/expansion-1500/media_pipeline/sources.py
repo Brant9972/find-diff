@@ -198,10 +198,18 @@ class HTTP:
             except (TypeError, ValueError):
                 return default
 
-    def get(self, url, params=None):
+    def get(self, url, params=None, allow_wikimedia_original_retry=False):
         if params:
             url += ('&' if '?' in url else '?') + urllib.parse.urlencode(params)
         host = public_https(url)
+        # Commons thumbnail and original URLs often share upload.wikimedia.org.
+        # A 403 on one thumbnail path must not make the *one* original-file
+        # fallback unreachable. Never bypass a 429, proxy refusal, or any
+        # unrelated host; this opt-in is used only after a thumbnail 403.
+        if allow_wikimedia_original_retry and host != 'upload.wikimedia.org':
+            raise SourceError('invalid_fallback', 'Only Wikimedia originals may bypass a thumbnail 403')
+        bypass_refusal = (allow_wikimedia_original_retry and
+                          self.blocked_hosts.get(host, {}).get('code') == 'http_403')
         blocked = self.blocked_hosts.get(host)
         if blocked and blocked.get('code') == 'source_api_busy' and blocked.get('until'):
             remaining = blocked['until'] - time.monotonic()
@@ -209,14 +217,16 @@ class HTTP:
                 if self.budget is not None and time.monotonic() + remaining + 1 >= self.budget:
                     raise SourceError('source_api_busy', 'Commons busy; preserve retry status until cooldown expires')
                 time.sleep(remaining + 0.25)
-        self._refusal(host)
+        if not bypass_refusal:
+            self._refusal(host)
         # Retries share one wall budget; slow downloads cannot multiply socket timeout by attempts.
         deadline = time.monotonic() + self.timeout
         if self.budget is not None:
             deadline = min(deadline, self.budget)
         self._seconds_left(deadline)
         for attempt in range(self.attempts):
-            self._refusal(host)
+            if not bypass_refusal:
+                self._refusal(host)
             self._pause(max(0, self.interval - (time.monotonic() - self.last.get(host, 0))), deadline)
             try:
                 timeout = self._seconds_left(deadline)

@@ -1,27 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-p1559-new-portrait-diagnostic-10-qa-repaired",
+  "requestId": "20261031-p18-sodagreen-two-exact-portraits",
   "mode": "search",
-  "targetPeople": 10,
+  "targetPeople": 2,
   "plannedPersonIds": [
-    "t1500_0007",
-    "t1500_0009",
-    "t1500_0016",
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0096",
-    "t1500_0103",
-    "t1500_0104",
-    "t1500_0192"
+    "t1500_0112",
+    "t1500_0114"
   ],
   "retryFailed": false,
   "providers": [
-    "curated",
+    "entity",
     "commons"
   ],
-  "maxMinutes": 25,
+  "maxMinutes": 20,
   "personSeconds": 120,
   "maxCandidates": 2,
-  "purpose": "One new targeted diagnostic after PR #56 P1559 native-name fix; selectedNew only, favor named portraits. Some Commons files for 郭碧婷/馬如龍 are low resolution and require explicit reject if unusable. Skip all previously rejected sources, P18 eyewear, 404, and old 20/40/200 failed batches. Source metadata never implies identity, rights or visual approval. Draft only; no main/Pages/creators changes. Re-run this never-collected batch only after PR #57 repaired the pre-collection test; do not repeat if photos are rejected."
+  "purpose": "Draft only: two exact Wikidata P18 files pinned with person-specific QIDs and Commons filenames. The generic concert caption is NOT independent photo identity. Search with entity first to obtain QID/P18 evidence; Commons exact imageinfo is fallback only. Do not re-run old 10/20/40/200 batches. Check identity, license, source photo, watermark, 600x720 five-stage crop and hints before any approval; no main/Pages/creators changes."
 }

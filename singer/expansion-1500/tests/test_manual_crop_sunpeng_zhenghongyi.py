@@ -17,12 +17,18 @@ class ManualCropGeometryTest(unittest.TestCase):
         batch = json.loads(BATCH.read_text(encoding="utf-8"))
         self.assertEqual(spec["releaseGate"], "MANUAL_CROP_STAGING_ONLY_NO_LIVE")
         self.assertEqual(spec["sourceCommit"], "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc")
-        self.assertEqual(batch["mode"], "manual_recrop")
-        self.assertEqual(batch["mode"], "manual_recrop")
-        # This regression preserves the previous 2-person spec even after the
-        # active batch moves on to a one-person corrected reveal.
-        if batch["manualCropRequestPath"] == str(SPEC.relative_to(ROOT.parent.parent)).replace("\\", "/"):
-            self.assertEqual(batch["targetPeople"], 2)
+        # Historical crop regression must not require the active pipeline to
+        # remain in manual mode forever; new source-search batches are valid.
+        self.assertIn(batch["mode"], {"manual_recrop", "search"})
+        if batch["mode"] == "manual_recrop":
+            # Only assert the 2-person count if this historical spec is active.
+            if batch.get("manualCropRequestPath") == str(SPEC.relative_to(ROOT.parent.parent)).replace("\\", "/"):
+                self.assertEqual(batch["targetPeople"], 2)
+        else:
+            ids = batch["plannedPersonIds"]
+            self.assertEqual(len(ids), batch["targetPeople"])
+            self.assertEqual(len(ids), len(set(ids)))
+            self.assertTrue({"commons", "entity"}.issubset(set(batch["providers"])))
         self.assertEqual(
             {item["personId"] for item in spec["items"]},
             {"t1500_0470", "t1500_0491"},

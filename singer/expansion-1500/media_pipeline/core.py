@@ -321,6 +321,17 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     errors.append({'provider': provider.name, 'code': 'invalid_metadata', 'message': 'Missing image URL or source page'})
                     continue
                 if key in seen or key in rejected or key in used or key in {source_key(url) for url in person.get('excludedPhotoSources', [])}:
+                    # Curated sources are deliberately bounded. Explain no-op
+                    # requests instead of reporting zero metadata with no reason.
+                    # Never retry a rejected image or redownload retained pixels.
+                    if provider.name == 'curated':
+                        code = ('curated_already_rejected' if key in rejected else
+                                'curated_already_retained' if key in seen else
+                                'curated_already_live' if key in used else
+                                'curated_excluded_source')
+                        errors.append({'provider': provider.name, 'source': item['source'],
+                                       'code': code, 'message':
+                                       'Curated source already rejected/retained/excluded; find a different image or review retained pixels'})
                     continue
                 seen.add(key)
                 tried += 1

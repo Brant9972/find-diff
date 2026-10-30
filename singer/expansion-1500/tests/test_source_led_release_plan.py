@@ -45,7 +45,11 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         request = json.loads((root / 'pipeline' / 'batch-request.json')
                              .read_text(encoding='utf-8'))
-        self.assertEqual(request['providers'], ['curated', 'commons'])
+        if request.get('requestId') == '20261031-p18-sodagreen-two-exact-portraits':
+            self.assertEqual(request['providers'], ['entity', 'commons'])
+            self.assertEqual(request['plannedPersonIds'], ['t1500_0112', 't1500_0114'])
+        else:
+            self.assertEqual(request['providers'], ['curated', 'commons'])
         self.assertFalse(request['retryFailed'])
         self.assertIn(request['mode'], ('render_only', 'search'))
         ids = request['plannedPersonIds']

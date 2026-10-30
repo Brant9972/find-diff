@@ -1,0 +1,52 @@
+name: Draft-only legacy portrait visual review
+on:
+  push:
+    branches:
+      - automation/rights-photo-review-20261031
+    paths:
+      - singer/expansion-1500/rights-review-sources-20261031.json
+      - singer/expansion-1500/tools/prepare_rights_replacements.py
+      - .github/workflows/rights-photo-review-20261031.yml
+permissions:
+  contents: write
+concurrency:
+  group: rights-photo-review-20261031
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image renderer
+        run: python -m pip install 'Pillow>=10,<13'
+      - name: Validate bounded source list
+        run: python singer/expansion-1500/tools/prepare_rights_replacements.py --validate-only
+      - name: Fetch and render two source-verified draft portraits
+        run: python singer/expansion-1500/tools/prepare_rights_replacements.py
+      - name: Upload review images as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-portrait-review-20261031
+          path: singer/expansion-1500/rights-review-staging-20261031/
+          retention-days: 14
+      - name: Checkpoint only on review branch (never main)
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = "automation/rights-photo-review-20261031"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/expansion-1500/rights-review-staging-20261031/
+          if git diff --cached --quiet; then
+            echo "No draft changes"
+            exit 0
+          fi
+          git commit -m "Checkpoint two draft rights-review portraits and five-stage contact sheet"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"

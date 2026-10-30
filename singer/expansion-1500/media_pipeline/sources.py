@@ -108,7 +108,7 @@ def disputed_license_source(candidate):
     """
     text = ' '.join(str(candidate.get(key, '')) for key in
                     ('artist', 'credit', 'caption', 'filename', 'source'))
-    return bool(re.search(r'vogue[\\s._-]*taiwan|vogue[\\s._-]*臺灣|vogue[\\s._-]*台灣|(?:台灣|臺灣)版?\\s*vogue', text, re.I))
+    return bool(re.search(r'vogue[\s._-]*taiwan|vogue[\s._-]*臺灣|vogue[\s._-]*台灣|(?:台灣|臺灣)版?\s*vogue', text, re.I))
 
 
 def rights(candidate):

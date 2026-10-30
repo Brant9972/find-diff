@@ -1,17 +1,20 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-zhao-zhengping-own-work-p18",
+  "requestId": "20261030-3-qid-english-aliases-taiwan-actors",
   "mode": "search",
-  "targetPeople": 1,
+  "targetPeople": 3,
   "plannedPersonIds": [
-    "t1500_0102"
+    "t1500_0093",
+    "t1500_0092",
+    "t1500_0094"
   ],
   "retryFailed": true,
   "providers": [
-    "curated"
+    "entity",
+    "commons"
   ],
-  "maxMinutes": 12,
-  "personSeconds": 150,
-  "maxCandidates": 1,
-  "purpose": "One exact Commons own-work 2010 source for existing priority-A Taiwanese entertainer 趙正平, Wikidata Q9088389; block historical namesake Q10311663. Original caption and CC BY-SA 4.0 metadata verified on 2026-10-30. Background poster has multiple printed faces: require a tight 600x720 crop excluding all other faces and complete five-stage visual gates. Do not rerun unrelated cohorts. No release without source/identity/rights review, Mobile/Hints QA and live Pages QA; never modify creators."
+  "maxMinutes": 15,
+  "personSeconds": 120,
+  "maxCandidates": 2,
+  "purpose": "Source-root improvement: exact Wikidata QIDs plus confirmed English names for three previously low-yield existing Taiwanese priority-A actors 郭品超 (Dylan Kuo Q710553), 江祖平 (Amigo Chiang Q8975739), 寇世勳 (Johnny Kou Q8980013). Do not rerun unrelated cohorts or any published person. Metadata and open licenses are NOT approval; human five-stage visual gates and caption/author/license/crop review remain mandatory before any main release."
 }

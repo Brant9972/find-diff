@@ -21,9 +21,9 @@ class ZhaoZhengpingSourceIdentityTest(unittest.TestCase):
         person = self.person
         self.assertEqual(person['name'], '趙正平')
         self.assertEqual(person['wikidataId'], 'Q9088389')
-        self.assertEqual(person['photoStatus'], 'not_prepared')
-        self.assertFalse(person['imageVerification']['finalCropReviewed'])
-        self.assertFalse(person['imageVerification']['rightsDocumented'])
+        self.assertEqual(person['photoStatus'], 'published')
+        self.assertTrue(person['imageVerification']['finalCropReviewed'])
+        self.assertTrue(person['imageVerification']['rightsDocumented'])
         rows = list(CuratedCommons().search(person, None))
         self.assertEqual(len(rows), 1)
         row = rows[0]

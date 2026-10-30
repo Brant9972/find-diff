@@ -274,6 +274,21 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 verified_aliases = evidence.get('verifiedSearchAliases', [])
                 matches = identity({**person, 'aliases': [*person.get('aliases', []), *verified_aliases]},
                                    item.get('caption', '') + ' ' + item.get('filename', ''))
+                # A caption such as "黃日華的女兒黃芷晴" mentions the father
+                # but identifies the *daughter* as the pictured subject.
+                # Without a matching filename or exact P18 claim, kinship
+                # mentions are context, not evidence of depicted identity.
+                caption_key = norm(item.get('caption', ''))
+                filename_matches = identity({**person, 'aliases': [*person.get('aliases', []), *verified_aliases]},
+                                            item.get('filename', ''))
+                kinship_only = not filename_matches and any(
+                    re.search(re.escape(norm(alias)) + r'(?:的)?(?:女儿|儿子|妻子|丈夫|父亲|母亲|女婿|媳妇)', caption_key)
+                    for alias in [person['name'], *person.get('acceptedAnswers', [])]
+                    if len(norm(alias)) >= 2
+                )
+                if kinship_only and evidence.get('claim') != 'P18':
+                    matches = []
+                    candidate['warnings'].append('Caption identifies a relative of the target, not necessarily the pictured target')
                 candidate['identityEvidence'] = {**evidence, 'captionAliasMatches': matches, 'visualIdentityVerified': False}
                 identity_supported = bool(matches or (evidence.get('wikidataId') and evidence.get('claim') == 'P18'))
                 # Refresh metadata for the same immutable URL pair, without touching reviewed/downloaded candidates.
@@ -281,7 +296,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 if not identity_supported:
                     candidate['warnings'].append('No name-bearing caption/article/entity evidence: image not downloaded')
                     row['candidates'].append(candidate)
-                    errors.append({'provider': provider.name, 'source': item['source'], 'code': 'identity_unconfirmed', 'message': 'Search result alone does not establish depicted identity'})
+                    errors.append({'provider': provider.name, 'source': item['source'], 'code': 'identity_context_only' if kinship_only else 'identity_unconfirmed', 'message': 'Relative mentioned in caption is not proof of depicted target' if kinship_only else 'Search result alone does not establish depicted identity'})
                     if checkpoint:
                         checkpoint()
                     continue

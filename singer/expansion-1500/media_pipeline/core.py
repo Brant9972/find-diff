@@ -13,7 +13,7 @@ import uuid
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-from .sources import SourceError, identity, norm, now, rights, source_key
+from .sources import HTTP, SourceError, identity, norm, now, rights, source_key
 from .rejection_pixels import matches_rejected
 
 STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published', 'duplicate_existing'}
@@ -330,7 +330,22 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         if not eligible_fallback:
                             raise
                         try:
-                            blob = http.get(original)
+                            # The Commons thumbnail and original commonly live
+                            # on the same upload.wikimedia.org host. Its 403
+                            # circuit would otherwise reject the original
+                            # before making a network request. Permit exactly
+                            # one independently addressed original fallback;
+                            # preserve normal 429/proxy/other-host circuits.
+                            same_host_403 = (
+                                thumbnail_error.code == 'http_403'
+                                and original_host == 'upload.wikimedia.org'
+                                and urlsplit(item['url']).hostname == original_host
+                                and isinstance(http, HTTP)
+                            )
+                            if same_host_403:
+                                blob = http.get(original, allow_wikimedia_original_retry=True)
+                            else:
+                                blob = http.get(original)
                         except SourceError as original_error:
                             errors.append({'provider': provider.name, 'source': item['source'],
                                            'code': 'commons_original_fallback_failed',

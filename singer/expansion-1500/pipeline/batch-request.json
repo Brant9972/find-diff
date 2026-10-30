@@ -1,19 +1,27 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-curated-two-musicians-qid-exact-commons-after-403-fix",
+  "requestId": "20261030-taiwan-new10-chenxiangqi-exact-commons-1740",
   "mode": "search",
-  "targetPeople": 2,
+  "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0107",
-    "t1500_0108"
+    "t1500_0171",
+    "t1500_0172",
+    "t1500_0173",
+    "t1500_0191",
+    "t1500_0192",
+    "t1500_0203",
+    "t1500_0204",
+    "t1500_0312",
+    "t1500_0518",
+    "t1500_0525"
   ],
   "retryFailed": true,
   "providers": [
     "entity",
     "commons"
   ],
-  "maxMinutes": 18,
-  "personSeconds": 120,
+  "maxMinutes": 25,
+  "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "Controlled new 2-person diagnostic for previously unprocessed existing selectedNew singers 陳明章 (Q9474720) and 黃少谷 (Q28408495, not the politician). PR #36 fixed Wikimedia thumbnail-403 original fallback, PR #37 added exact Commons file titles. Do not count metadata as verified faces, respect rights and source-caption evidence, stage only draft pixels. Report provider stages and failure reasons; do not touch main/creators."
+  "purpose": "New 10-person Taiwan-focused cohort from existing selectedNew, no repeat of prior failed 8/10/20/40/200 batches. 陳湘琪 exact Commons image has a named 2014 Golden Horse caption, source CNA Taiwan YouTube, Commons CC BY 3.0 metadata but no visible independent license review: source-only until verified. Validate QID/P31=Q5, nearby caption, actual author and CC grant, 600x720 face + five reveal stages before any release. Verify representative work 迴光奏鳴曲 spelling. Draft only, no main/creators changes; report stage counts and failure reasons."
 }

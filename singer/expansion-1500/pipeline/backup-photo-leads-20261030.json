@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "releaseGate": "BACKUP_PHOTO_SEARCH_ONLY_NOT_PLAYABLE",
+  "sourceCandidateList": "singer/expansion-1500/taiwan-first-candidates-20261028.json",
+  "sourcePreselection": "singer/expansion-1500/pipeline/backup-eligibility-review-20261029.json",
+  "researchedAt": "2026-10-30",
+  "people": [
+    {
+      "candidateId": "c1500-0604",
+      "plannedQuestionId": "t1500_0604",
+      "name": "潘親御",
+      "proposedPrimaryBank": "actors.json",
+      "representativeWorks": [
+        "囧男孩",
+        "我們六個"
+      ],
+      "verifiedWorkSources": [
+        {
+          "title": "囧男孩",
+          "url": "https://ent.ebc.net.tw/tv/486305"
+        },
+        {
+          "title": "我們六個",
+          "url": "https://www.taisounds.com/news/content/106/296149"
+        }
+      ],
+      "reviewExactCommonsFiles": [
+        "潘親御演員.jpg",
+        "潘親御演員照.jpg"
+      ],
+      "sourceEvidence": [
+        {
+          "filename": "潘親御演員.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",
+          "caption": "潘親御演員照片",
+          "claimedAuthor": "Jimmy89119",
+          "claimedSource": "Own work",
+          "claimedLicense": "CC0 1.0",
+          "dimensions": [
+            4223,
+            6334
+          ],
+          "uploadDate": "2026-09-01",
+          "exifDate": "2025-08-26",
+          "reviewNote": "Commons self-published CC0 and camera EXIF are source claims, not independently confirmed ownership or visual identity. Original exceeds pipeline 14 MB limit; prefer imageinfo 1400px thumbnail for review."
+        },
+        {
+          "filename": "潘親御演員照.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:潘親御演員照.jpg",
+          "caption": "潘親御演員照片",
+          "claimedAuthor": "Jimmy89119",
+          "claimedSource": "Own work",
+          "claimedLicense": "CC0 1.0",
+          "dimensions": [
+            4264,
+            5685
+          ],
+          "uploadDate": "2026-09-01",
+          "exifDate": "2025-07-31",
+          "reviewNote": "Second distinct upload by same account; original exceeds 14 MB. Check that this is a genuine self-photograph rather than third-party publicity material."
+        }
+      ],
+      "reviewStatus": "SOURCE_METADATA_ONLY_NOT_VISUALLY_APPROVED",
+      "identityReview": "Cross-check pictured face with independently named 2025/2026 news photographs; Commons caption alone is insufficient.",
+      "rightsReview": "Verify author/uploader rights independently where possible. CC0 page label is not final copyright clearance.",
+      "visualReview": "Require actual 600x720 crop and eyes/nose/mouth/chin/full, no second faces or obstruction.",
+      "dedupeReview": "Not found by canonical name or known aliases in 2026-10-30 main 460/572/113 question banks; recheck immediately before release."
+    }
+  ]
+}

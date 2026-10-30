@@ -2,33 +2,32 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261030T024333Z-eebc173e",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T024333Z-eebc173e/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
+  "runId": "20261030T034045Z-29d66930",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T034045Z-29d66930/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json",
   "summary": {
-    "runId": "20261030T024333Z-eebc173e",
-    "generatedAt": "2026-10-30T02:43:39.837133+00:00",
-    "scannedPeople": 2,
-    "peopleWithNewCandidates": 1,
-    "newCandidatePhotos": 1,
-    "scannedWithoutCandidates": 1,
+    "runId": "20261030T034045Z-29d66930",
+    "generatedAt": "2026-10-30T03:43:29.924201+00:00",
+    "scannedPeople": 8,
+    "peopleWithNewCandidates": 0,
+    "newCandidatePhotos": 0,
+    "scannedWithoutCandidates": 8,
     "retryNeeded": 424,
-    "pendingReviewPeople": 2,
-    "licenseConcernCandidates": 274,
+    "pendingReviewPeople": 0,
+    "licenseConcernCandidates": 269,
     "statusCounts": {
-      "no_suitable_source": 215,
-      "download_failed": 202,
+      "no_suitable_source": 216,
+      "download_failed": 201,
       "rejected": 7,
-      "published": 84,
-      "duplicate_existing": 1,
-      "pending_review": 2
+      "published": 86,
+      "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 293,
-      "image_validation_failed": 108,
-      "network_error": 286,
+      "identity_unconfirmed": 296,
+      "image_validation_failed": 112,
+      "network_error": 285,
       "source_api_busy": 70,
-      "license_unclear": 74,
+      "license_unclear": 76,
       "excluded_context": 13,
       "source_api_error": 25,
       "identity_ambiguous": 12,
@@ -36,88 +35,137 @@
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "image_validation_failed": 2,
-      "license_unclear": 1
+      "image_validation_failed": 6,
+      "identity_unconfirmed": 8,
+      "license_unclear": 2,
+      "network_error": 2
     },
-    "manualCropSources": 21,
+    "manualCropSources": 23,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 2,
-        "metadataCandidates": 3,
-        "identitySupportedMetadata": 3,
-        "openLicenseMetadata": 2,
-        "downloadedForHumanReview": 1,
-        "savedForManualCrop": 1,
+        "attemptedPeople": 8,
+        "metadataCandidates": 11,
+        "identitySupportedMetadata": 4,
+        "openLicenseMetadata": 5,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 2,
         "errors": {
-          "image_validation_failed": 2,
           "license_unclear": 1
         }
+      },
+      "entity": {
+        "attemptedPeople": 8,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "image_validation_failed": 6,
+          "identity_unconfirmed": 8,
+          "license_unclear": 1,
+          "network_error": 2
+        }
+      },
+      "openverse": {
+        "attemptedPeople": 0,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
       }
     },
-    "contactSheets": [
-      "contact-sheet-01.jpg"
-    ],
+    "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 2,
-      "processedPeople": 2,
+      "targetPeople": 8,
+      "processedPeople": 8,
       "workers": 1,
-      "elapsedSeconds": 5.59,
+      "elapsedSeconds": 163.6,
       "stoppedForBudget": false
     }
   },
-  "visualPeople": 2,
-  "visualPhotos": 2,
+  "visualPeople": 0,
+  "visualPhotos": 0,
   "batchPeople": [
-    "t1500_0554",
-    "t1500_0567"
+    "t1500_0568",
+    "t1500_0588",
+    "t1500_0589",
+    "t1500_0549",
+    "t1500_0551",
+    "t1500_0552",
+    "t1500_0555",
+    "t1500_0566"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0554",
-      "name": "黃日華",
+      "personId": "t1500_0568",
+      "name": "李司棋",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+            "filename": "Lee Sze Kei 2.JPG",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
-            "filename": "黃芷晴.jpg",
-            "artist": "數碼電台DBC",
-            "credit": "YouTube - 20141031 黃芷晴",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​無綫五虎將黃日華的女兒",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
             "identityEvidence": {
-              "query": "黃日華",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃日華"
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
               ],
-              "visualIdentityVerified": false
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "側臉模糊；找經典角色正面照",
               "representativeWorks": [
-                "天龍八部"
+                "溏心風暴"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T02:43:36.403851+00:00",
-            "width": 3120,
-            "height": 1980,
-            "id": "d7d5204a9f1fb81044fb",
-            "personId": "t1500_0554",
-            "discoveryRunId": "20261030T024333Z-eebc173e",
+            "searchTime": "2026-10-30T03:40:49.657326+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "3a5772a3bc683ad8d993",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -126,8 +174,8 @@
               "Identity, iconic appearance, eyes/occlusion and watermark require human review",
               "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
             ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0554/d7d5204a9f1fb81044fb/10aae2fb1990/original.bin",
-            "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
+            "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
             "cropFailure": "Blurred crop: sharpness below 65",
             "gamePath": null
           },
@@ -135,48 +183,63 @@
           "message": "Blurred crop: sharpness below 65"
         },
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Felix_Wong_Yat_Wa%27s_autograph.png",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+            "filename": "Lee Sze Kei 3.JPG",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
-            "filename": "Adrian Wong Tsz-ching (黄芷晴) 2014 (cropped).jpg",
-            "artist": "數碼電台DBC",
-            "credit": "YouTube - 20141031 黃芷晴",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​無綫五虎將黃日華的女兒",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
             "identityEvidence": {
-              "query": "黃日華",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃日華"
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
               ],
-              "visualIdentityVerified": false
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "側臉模糊；找經典角色正面照",
               "representativeWorks": [
-                "天龍八部"
+                "溏心風暴"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T02:43:36.989629+00:00",
-            "width": 1402,
-            "height": 1868,
-            "id": "bfad33c13dcd53097e64",
-            "personId": "t1500_0554",
-            "discoveryRunId": "20261030T024333Z-eebc173e",
+            "searchTime": "2026-10-30T03:40:49.657563+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "9e0744bb3abd7a027087",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -187,544 +250,418 @@
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+            "filename": "Lee Sze Kei 4.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657743+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "a1c985ea4b85145d4fb1",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+            "filename": "Lee Sze Kei 5.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657911+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "87080ad753bdc008505c",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GR_Lee,_1937.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(2).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GypsyRoseLeeStageDoorCanteen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Neva_Patterson_1969.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_Andrews_Bacon.tif",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ]
     },
     {
-      "personId": "t1500_0567",
-      "name": "羅蘭",
-      "status": "pending_review",
-      "newCandidateIds": [
-        "ccc5cca075050da823d4"
-      ],
+      "personId": "t1500_0588",
+      "name": "苗可秀",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+            "filename": "苗可秀.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Ak47klo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​中國青年黨黨員苗可秀",
+            "identityEvidence": {
+              "wikidataId": "Q702088",
+              "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+              "exactChineseAliases": [
+                "苗可秀",
+                "苗可秀",
+                "苗可秀"
+              ],
+              "verifiedSearchAliases": [
+                "苗可秀",
+                "Nora Miao",
+                "Miao Kexiu",
+                "Nora Miao Ke-Hsiu",
+                "Chan Wing-Man"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+              "articleTitle": "苗可秀",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "苗可秀",
+              "matchedAliases": [
+                "苗可秀"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "苗可秀"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "精武門"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:41:16.123515+00:00",
+            "width": 230,
+            "height": 288,
+            "id": "bfd3d32d7f9493dca299",
+            "personId": "t1500_0588",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
+            "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0589",
+      "name": "袁潔瑩",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0549",
+      "name": "謝賢",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+            "filename": "謝老四.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "am730",
+            "credit": "【娛樂】四哥重返無綫拍劇 小青姐劇透《法證IV》 2018-10-25",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​《法證先鋒IV》試造型記者會",
+            "identityEvidence": {
+              "wikidataId": "Q2146157",
+              "mappingSource": "https://www.wikidata.org/wiki/Q2146157",
+              "exactChineseAliases": [
+                "謝賢",
+                "謝賢",
+                "谢贤",
+                "谢贤",
+                "謝賢",
+                "谢贤"
+              ],
+              "verifiedSearchAliases": [
+                "謝賢",
+                "谢贤",
+                "Patrick Tse",
+                "Xie Xian",
+                "Tse Ka-yuk",
+                "Patrick Tse Yin"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:41:46.164992+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E8%B3%A2",
+              "articleTitle": "謝賢",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "謝賢",
+              "matchedAliases": [],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "千王之王"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:41:46.374410+00:00",
+            "width": 1000,
+            "height": 1363,
+            "id": "228c39b77373f921696c",
+            "personId": "t1500_0549",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0551",
+      "name": "曾江",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0552",
+      "name": "石修",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "http://digitaltmuseum.org/011012763480",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0555",
+      "name": "湯鎮業",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0566",
+      "name": "董驃",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
       "errors": []
     }
-  ],
-  "visualAssetCommit": "af171f6380e3c86d159217d8d9a188e7ee1bb804",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
-    "contactSheets": [
-      {
-        "bytes": 50015,
-        "entries": [
-          {
-            "candidateId": "ccc5cca075050da823d4",
-            "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
-            "personId": "t1500_0567",
-            "tile": 1
-          },
-          {
-            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-            "personId": "t1500_0577",
-            "tile": 2
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
-        "sha256": "4029ff5e59df21071056e043c99513a3ce941e4cf442b61189fbb80118d82412",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualContactSheets": [
-      {
-        "bytes": 23312,
-        "entries": [
-          {
-            "candidateId": "d7d5204a9f1fb81044fb",
-            "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
-            "personId": "t1500_0554",
-            "tile": 1
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
-        "sha256": "988914e5f3d00f08078601c46702b626fc90d9d19da23867c3d854873ad92f00",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualSourceCount": 1,
-    "manualSourcePeopleCount": 1,
-    "manualSources": [
-      {
-        "candidateId": "d7d5204a9f1fb81044fb",
-        "cropFailure": "Blurred crop: sharpness below 65",
-        "eligibleForLive": false,
-        "gameSha256": null,
-        "metadata": {
-          "author": "數碼電台DBC",
-          "caption": "​無綫五虎將黃日華的女兒",
-          "credit": "YouTube - 20141031 黃芷晴",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "captionAliasMatches": [
-              "黃日華"
-            ],
-            "identityWarning": "Caption/name match is preliminary evidence only",
-            "query": "黃日華",
-            "visualIdentityVerified": false
-          },
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance must be reviewed",
-            "representativeWorks": [
-              "天龍八部"
-            ],
-            "requestedReplacement": "側臉模糊；找經典角色正面照"
-          },
-          "reviewerRequest": "側臉模糊；找經典角色正面照",
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-          ]
-        },
-        "name": "黃日華",
-        "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
-        "personId": "t1500_0554",
-        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
-        "sourceImage": {
-          "bytes": 216127,
-          "displayHeight": 1218,
-          "displayWidth": 1920,
-          "height": 1218,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
-          "sha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
-          "width": 1920,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg?raw=true"
-        },
-        "stageImages": {}
-      }
-    ],
-    "peopleCount": 2,
-    "photoCount": 2,
-    "photos": [
-      {
-        "candidateId": "ccc5cca075050da823d4",
-        "candidateImage": {
-          "bytes": 102914,
-          "displayHeight": 720,
-          "displayWidth": 600,
-          "height": 720,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
-          "sha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
-          "width": 600,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg?raw=true"
-        },
-        "eligibleForLive": false,
-        "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
-        "metadata": {
-          "author": "Yahoo Hong Kong",
-          "caption": "​第19屆香港電影金像獎最佳女主角",
-          "credit": "https://www.flickr.com/photos/yahoohongkong/14693697553/in/album-72157645321552460/",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "captionAliasMatches": [
-              "羅蘭"
-            ],
-            "curatedExactFileHint": true,
-            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
-            "query": "羅蘭",
-            "visualIdentityVerified": false
-          },
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "license": "CC BY 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance must be reviewed",
-            "representativeWorks": [
-              "陰陽路"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E8%98%AD.jpg",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-          ]
-        },
-        "name": "羅蘭",
-        "personId": "t1500_0567",
-        "reveal": {
-          "chin": [
-            0.08,
-            0.2776027550858058,
-            0.92,
-            0.8185108347689168
-          ],
-          "eyes": [
-            0.08,
-            0.2776027550858058,
-            0.92,
-            0.42567769597085675
-          ],
-          "full": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "mouth": [
-            0.08,
-            0.2776027550858058,
-            0.92,
-            0.6669812377472495
-          ],
-          "nose": [
-            0.08,
-            0.2776027550858058,
-            0.92,
-            0.5433222738544593
-          ]
-        },
-        "reviewStatus": "pending_review",
-        "sourceImage": {
-          "bytes": 743911,
-          "displayHeight": 2071,
-          "displayWidth": 1488,
-          "height": 2071,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
-          "sha256": "eabab9f84468b45c0d59ffcb1bdc4e49bc90dd1daf0906b4ef9d79cfa74485fb",
-          "width": 1488,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg?raw=true"
-        },
-        "stageImages": {
-          "chin": {
-            "bytes": 243233,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
-            "sha256": "cacc5ef8cc2374315622cf0adc19079088885a4a6f8137fb1aa009aa13993e8b",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png?raw=true"
-          },
-          "eyes": {
-            "bytes": 78884,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
-            "sha256": "d2b73cf5fe5724bf68e2021144cb1e959401ee96b1bfe4f0879244d8ea8c31f1",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png?raw=true"
-          },
-          "full": {
-            "bytes": 537766,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
-            "sha256": "49125451f812017c1b34434b3fd8ec36fc72d9d0f8bb6782ba7ebb3aec81d551",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png?raw=true"
-          },
-          "mouth": {
-            "bytes": 174822,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
-            "sha256": "f28d11b210608b9639784095ad5735ed25d6bc1d6e66c33bb228aac56527e9ed",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png?raw=true"
-          },
-          "nose": {
-            "bytes": 124718,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
-            "sha256": "7ca0229a0f26db234c44e4979e649cb063d97d5ae5f5ba3aea85110127641d2d",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png?raw=true"
-          }
-        }
-      },
-      {
-        "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-        "candidateImage": {
-          "bytes": 129467,
-          "displayHeight": 720,
-          "displayWidth": 600,
-          "height": 720,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
-          "sha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-          "width": 600,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg?raw=true"
-        },
-        "eligibleForLive": false,
-        "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-        "metadata": {
-          "author": "am730",
-          "caption": "​《黃金有罪》「發財迎新歲」記者會",
-          "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "張兆輝",
-            "captionAliasMatches": [
-              "張兆輝",
-              "张兆辉"
-            ],
-            "claim": "P18",
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "张兆辉",
-              "張兆輝",
-              "張兆輝"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q701359",
-            "matchedAliases": [
-              "張兆輝",
-              "张兆辉"
-            ],
-            "query": "Cheung Siu-fai",
-            "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
-            "verifiedSearchAliases": [
-              "張兆輝",
-              "张兆辉",
-              "Cheung Siu-fai",
-              "Eddie Cheung",
-              "Eddie Cheung Siu-Fai",
-              "Zhang Zhao-Hui"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q701359"
-          },
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": "bf90b9c5bde0fdea7421",
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "黑社會"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
-          "warnings": [
-            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
-          ]
-        },
-        "name": "張兆輝",
-        "personId": "t1500_0577",
-        "reveal": {
-          "chin": [
-            0.08,
-            0.32,
-            0.92,
-            0.84
-          ],
-          "eyes": [
-            0.08,
-            0.32,
-            0.92,
-            0.48
-          ],
-          "full": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "mouth": [
-            0.08,
-            0.32,
-            0.92,
-            0.69
-          ],
-          "nose": [
-            0.08,
-            0.32,
-            0.92,
-            0.57
-          ]
-        },
-        "reviewStatus": "pending_review",
-        "sourceImage": {
-          "bytes": 355697,
-          "displayHeight": 1669,
-          "displayWidth": 1208,
-          "height": 1669,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
-          "sha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
-          "width": 1208,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg?raw=true"
-        },
-        "stageImages": {
-          "chin": {
-            "bytes": 247971,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
-            "sha256": "bbf4550f3943ef97b9807e566d4cb6760d32f577c8a739083254b7fa6b16ba6b",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png?raw=true"
-          },
-          "eyes": {
-            "bytes": 85985,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
-            "sha256": "4a972dac235650ed8a0661fa518ec32b6c1cec7bb6620cf204de2e74691548d9",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png?raw=true"
-          },
-          "full": {
-            "bytes": 535221,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
-            "sha256": "89b2daa073b46a1106bffac5141ecacd248dca683587b44f5fdc34a0ff4959e4",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png?raw=true"
-          },
-          "mouth": {
-            "bytes": 182140,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
-            "sha256": "7f8b6e5ed2e5e65efcab9b5b1ca99b84634fc5722563aec56f11d3a29bb43849",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png?raw=true"
-          },
-          "nose": {
-            "bytes": 128668,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
-            "sha256": "4d50abe37ae156b516faaf40b72d6d8043a9d4bf354903c1477d74d956a1e5ea",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png?raw=true"
-          }
-        }
-      }
-    ],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [
-      {
-        "bytes": 81833,
-        "entries": [
-          {
-            "candidateId": "ccc5cca075050da823d4",
-            "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
-            "personId": "t1500_0567",
-            "row": 1
-          },
-          {
-            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-            "personId": "t1500_0577",
-            "row": 2
-          }
-        ],
-        "height": 515,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
-        "sha256": "493a443e4d70b5588eae573079dababbf4c1df7c005a26346a63ea7a07311aef",
-        "width": 1000,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg?raw=true"
-      }
-    ],
-    "runId": "20261030T024333Z-eebc173e",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "af171f6380e3c86d159217d8d9a188e7ee1bb804",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

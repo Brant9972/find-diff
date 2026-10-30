@@ -29714,9 +29714,9 @@
       "personId": "t1500_0551",
       "candidateId": "c1500-0551",
       "name": "曾江",
-      "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:37:39.508823+00:00",
+      "status": "download_failed",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T11:42:32.646530+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -30440,6 +30440,29 @@
             }
           ],
           "candidatesTried": 6
+        },
+        {
+          "time": "2026-10-30T03:42:10.676461+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:29.024905+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:29.024949+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:32.646482+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:32.646510+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -30459,119 +30482,23 @@
         "error": "No reliable frontal face"
       },
       "lastFailure": {
-        "code": "no_suitable_source",
+        "code": "download_failed",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:37:16.821675+00:00",
+      "lastAttemptAt": "2026-10-30T03:42:10.604290+00:00",
       "lastErrors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Fan_Chih-wei,_Xuan_Zhu,_Terri_Kwan,_Joseph_Chang,_Chiao_Chiao,_Kenneth_Tsang,_Jack_Kao_pour_le_film_-_Lei_Wangzi_(Prince_of_Tears)_66%C3%A8me_Festival_de_Venise_(Mostra)_2-2010-09-10.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Fan_Chih-wei%2C_Xuan_Zhu%2C_Terri_Kwan%2C_Joseph_Chang%2C_Chiao_Chiao%2C_Kenneth_Tsang%2C_Jack_Kao_pour_le_film_-_Lei_Wangzi_%28Prince_of_Tears%29_66%C3%A8me_Festival_de_Venise_%28Mostra%29_2-2010-09-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Fan_Chih-wei%2C_Xuan_Zhu%2C_Terri_Kwan%2C_Joseph_Chang%2C_Chiao_Chiao%2C_Kenneth_Tsang%2C_Jack_Kao_pour_le_film_-_Lei_Wangzi_%28Prince_of_Tears%29_66%C3%A8me_Festival_de_Venise_%28Mostra%29_2-2010-09-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Fan_Chih-wei%2C_Xuan_Zhu%2C_Terri_Kwan%2C_Joseph_Chang%2C_Chiao_Chiao%2C_Kenneth_Tsang%2C_Jack_Kao_pour_le_film_-_Lei_Wangzi_%28Prince_of_Tears%29_66%C3%A8me_Festival_de_Venise_%28Mostra%29_2-2010-09-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Fan_Chih-wei,_Xuan_Zhu,_Terri_Kwan,_Joseph_Chang,_Chiao_Chiao,_Kenneth_Tsang,_Jack_Kao_pour_le_film_-_Lei_Wangzi_(Prince_of_Tears)_66%C3%A8me_Festival_de_Venise_(Mostra)_2-2010-09-10.JPG",
-            "filename": "Fan Chih-wei, Xuan Zhu, Terri Kwan, Joseph Chang, Chiao Chiao, Kenneth Tsang, Jack Kao pour le film - Lei Wangzi (Prince of Tears) 66ème Festival de Venise (Mostra) 2-2010-09-10.JPG",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Fan_Chih-wei,_Xuan_Zhu,_Terri_Kwan,_Joseph_Chang,_Chiao_Chiao,_Kenneth_Tsang,_Jack_Kao_pour_le_film_-_Lei_Wangzi_(Prince_of_Tears)_66ème_Festival_de_Venise_(Mostra)_2.jpg: nicolas genin from Paris, France\nderivative work: Demecoh (talk)",
-            "credit": "Fan_Chih-wei,_Xuan_Zhu,_Terri_Kwan,_Joseph_Chang,_Chiao_Chiao,_Kenneth_Tsang,_Jack_Kao_pour_le_film_-_Lei_Wangzi_(Prince_of_Tears)_66ème_Festival_de_Venise_(Mostra)_2.jpg",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "Terri Kwan",
-            "identityEvidence": {
-              "wikidataId": "Q1140116",
-              "mappingSource": "https://www.wikidata.org/wiki/Q1140116",
-              "exactChineseAliases": [
-                "曾江",
-                "曾江",
-                "曾江"
-              ],
-              "verifiedSearchAliases": [
-                "曾江",
-                "Kenneth Tsang",
-                "Kenneth Tsang Kong",
-                "Tsang Kong",
-                "Zeng Jiang"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T02:37:17.482894+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E6%B1%9F",
-              "articleTitle": "曾江",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Kenneth Tsang",
-              "matchedAliases": [
-                "Kenneth Tsang"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "Kenneth Tsang"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "英雄本色"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T02:37:19.398301+00:00",
-            "width": 350,
-            "height": 594,
-            "id": "581c49a98473caa5c281",
-            "personId": "t1500_0551",
-            "discoveryRunId": "20261030T023511Z-d6593083",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chinakongstar_isuzu_lv423R_nl4081.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Chinakongstar_isuzu_lv423R.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_nicogenin_-_66%C3%A8me_Festival_de_Venise_(Mostra)_(4)-2.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_nicogenin_-_66%C3%A8me_Festival_de_Venise_(Mostra)_(4).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Half-seat.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
-      "updatedAt": "2026-10-30T02:37:39.508835+00:00",
-      "workerFinishedAt": "2026-10-30T02:37:39.510694+00:00"
+      "updatedAt": "2026-10-30T03:42:32.646542+00:00",
+      "workerFinishedAt": "2026-10-30T03:42:32.648558+00:00"
     },
     "t1500_0327": {
       "personId": "t1500_0327",
@@ -34784,8 +34711,8 @@
       "workerFinishedAt": "2026-10-29T20:17:44.773406+00:00"
     },
     "t1500_0568": {
-      "attempts": 6,
-      "nextRetryAt": "2026-11-01T15:32:10.235173+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-04T11:41:14.981146+00:00",
       "candidateId": "c1500-0568",
       "chatgptReview": {
         "personId": "t1500_0568",
@@ -34803,9 +34730,9 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
-      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0568": {
@@ -34822,7 +34749,331 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [],
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+            "filename": "Lee Sze Kei 2.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657326+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "3a5772a3bc683ad8d993",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
+            "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+            "filename": "Lee Sze Kei 3.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657563+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "9e0744bb3abd7a027087",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+            "filename": "Lee Sze Kei 4.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657743+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "a1c985ea4b85145d4fb1",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+            "filename": "Lee Sze Kei 5.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+            "credit": "User:Iflwlou self-made",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "李司棋",
+            "identityEvidence": {
+              "wikidataId": "Q701921",
+              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "exactChineseAliases": [
+                "李司棋",
+                "李司棋",
+                "李司棋"
+              ],
+              "verifiedSearchAliases": [
+                "李司棋",
+                "Louise Lee",
+                "Louise Lee Si-kei"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+              "articleTitle": "李司棋",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "李司棋",
+              "matchedAliases": [
+                "李司棋"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "李司棋"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "溏心風暴"
+              ],
+              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:40:49.657911+00:00",
+            "width": 480,
+            "height": 640,
+            "id": "87080ad753bdc008505c",
+            "personId": "t1500_0568",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GR_Lee,_1937.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(2).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:GypsyRoseLeeStageDoorCanteen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Neva_Patterson_1969.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_Andrews_Bacon.tif",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ],
       "history": [
         {
           "time": "2026-10-28T17:30:08.632553+00:00",
@@ -35375,6 +35626,347 @@
           "time": "2026-10-29T23:32:10.235151+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T03:40:47.280884+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T03:41:11.245614+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:11.245651+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T03:41:14.981091+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:14.981114+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+                "filename": "Lee Sze Kei 2.JPG",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+                "credit": "User:Iflwlou self-made",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "李司棋",
+                "identityEvidence": {
+                  "wikidataId": "Q701921",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+                  "exactChineseAliases": [
+                    "李司棋",
+                    "李司棋",
+                    "李司棋"
+                  ],
+                  "verifiedSearchAliases": [
+                    "李司棋",
+                    "Louise Lee",
+                    "Louise Lee Si-kei"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+                  "articleTitle": "李司棋",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "李司棋",
+                  "matchedAliases": [
+                    "李司棋"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "李司棋"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "溏心風暴"
+                  ],
+                  "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:40:49.657326+00:00",
+                "width": 480,
+                "height": 640,
+                "id": "3a5772a3bc683ad8d993",
+                "personId": "t1500_0568",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
+                "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
+                "filename": "Lee Sze Kei 3.JPG",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+                "credit": "User:Iflwlou self-made",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "李司棋",
+                "identityEvidence": {
+                  "wikidataId": "Q701921",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+                  "exactChineseAliases": [
+                    "李司棋",
+                    "李司棋",
+                    "李司棋"
+                  ],
+                  "verifiedSearchAliases": [
+                    "李司棋",
+                    "Louise Lee",
+                    "Louise Lee Si-kei"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+                  "articleTitle": "李司棋",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "李司棋",
+                  "matchedAliases": [
+                    "李司棋"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "李司棋"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "溏心風暴"
+                  ],
+                  "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:40:49.657563+00:00",
+                "width": 480,
+                "height": 640,
+                "id": "9e0744bb3abd7a027087",
+                "personId": "t1500_0568",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
+                "filename": "Lee Sze Kei 4.JPG",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+                "credit": "User:Iflwlou self-made",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "李司棋",
+                "identityEvidence": {
+                  "wikidataId": "Q701921",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+                  "exactChineseAliases": [
+                    "李司棋",
+                    "李司棋",
+                    "李司棋"
+                  ],
+                  "verifiedSearchAliases": [
+                    "李司棋",
+                    "Louise Lee",
+                    "Louise Lee Si-kei"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+                  "articleTitle": "李司棋",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "李司棋",
+                  "matchedAliases": [
+                    "李司棋"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "李司棋"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "溏心風暴"
+                  ],
+                  "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:40:49.657743+00:00",
+                "width": 480,
+                "height": 640,
+                "id": "a1c985ea4b85145d4fb1",
+                "personId": "t1500_0568",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
+                "filename": "Lee Sze Kei 5.JPG",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+                "credit": "User:Iflwlou self-made",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "李司棋",
+                "identityEvidence": {
+                  "wikidataId": "Q701921",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+                  "exactChineseAliases": [
+                    "李司棋",
+                    "李司棋",
+                    "李司棋"
+                  ],
+                  "verifiedSearchAliases": [
+                    "李司棋",
+                    "Louise Lee",
+                    "Louise Lee Si-kei"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+                  "articleTitle": "李司棋",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "李司棋",
+                  "matchedAliases": [
+                    "李司棋"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "李司棋"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "溏心風暴"
+                  ],
+                  "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:40:49.657911+00:00",
+                "width": 480,
+                "height": 640,
+                "id": "87080ad753bdc008505c",
+                "personId": "t1500_0568",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:GR_Lee,_1937.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(2).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:GypsyRoseLeeStageDoorCanteen.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Neva_Patterson_1969.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_Andrews_Bacon.tif",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 11
         }
       ],
       "personId": "t1500_0568",
@@ -36053,61 +36645,6 @@
         },
         {
           "provider": "commons",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lee_Sze_Kei_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lee_Sze_Kei_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
-          "filename": "Lee Sze Kei 1.JPG",
-          "downloadVariant": "wikimedia_thumbnail_1400",
-          "artist": "",
-          "credit": "",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-          "caption": "",
-          "identityEvidence": {
-            "wikidataId": "Q701921",
-            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
-            "exactChineseAliases": [
-              "李司棋",
-              "李司棋",
-              "李司棋"
-            ],
-            "verifiedSearchAliases": [
-              "李司棋",
-              "Louise Lee",
-              "Louise Lee Si-kei"
-            ],
-            "entityTypeEvidence": "P31=Q5",
-            "retrievedAt": "2026-10-28T18:53:55.783396+00:00",
-            "visualIdentityVerified": false,
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "query": "Louise Lee",
-            "matchedAliases": [],
-            "discoveryWarnings": [],
-            "captionAliasMatches": []
-          },
-          "recognitionEvidence": {
-            "representativeWorks": [
-              "溏心風暴"
-            ],
-            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
-            "note": "Familiar appearance has not been visually reviewed"
-          },
-          "searchTime": "2026-10-28T18:53:57.775783+00:00",
-          "width": 480,
-          "height": 640,
-          "id": "636f35bd6cc5bc3cf53e",
-          "personId": "t1500_0568",
-          "rightsStatus": "needs_review",
-          "eligibleForLive": false,
-          "humanReview": null,
-          "status": "metadata_only",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
-          ]
-        },
-        {
-          "provider": "commons",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Louise_Lee_LCCN2014712766.jpg/1920px-Louise_Lee_LCCN2014712766.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Louise_Lee_LCCN2014712766.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "downloadVariant": "wikimedia_thumbnail_1400",
@@ -36381,63 +36918,6 @@
         },
         {
           "provider": "commons",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Gypsy_Rose_Lee_NYWTS_1.jpg/1920px-Gypsy_Rose_Lee_NYWTS_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Gypsy_Rose_Lee_NYWTS_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "downloadVariant": "wikimedia_thumbnail_1400",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
-          "filename": "Gypsy Rose Lee NYWTS 1.jpg",
-          "artist": "New York World-Telegram and the Sun staff photographer: Fred Palumbo",
-          "credit": "Library of Congress Prints and Photographs Division. New York World-Telegram and the Sun Newspaper Photograph Collection.  http://hdl.loc.gov/loc.pnp/cph.3c12035",
-          "license": "Public domain",
-          "licenseUrl": "",
-          "caption": "Gypsy Rose Lee, full-length portrait, seated at typewriter, facing slightly right  / World Telegram & Sun photo by Fred Palumbo.",
-          "identityEvidence": {
-            "query": "Louise Lee",
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "wikidataId": "Q701921",
-            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
-            "exactChineseAliases": [
-              "李司棋",
-              "李司棋",
-              "李司棋"
-            ],
-            "verifiedSearchAliases": [
-              "李司棋",
-              "Louise Lee",
-              "Louise Lee Si-kei"
-            ],
-            "entityTypeEvidence": "P31=Q5",
-            "retrievedAt": "2026-10-29T09:25:43.820140+00:00",
-            "visualIdentityVerified": false,
-            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-            "articleTitle": "李司棋",
-            "articleLookup": "exact title with redirects; not a search result",
-            "matchedAliases": [],
-            "captionAliasMatches": []
-          },
-          "recognitionEvidence": {
-            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
-            "representativeWorks": [
-              "溏心風暴"
-            ],
-            "note": "Familiar appearance must be reviewed"
-          },
-          "searchTime": "2026-10-29T09:25:48.265763+00:00",
-          "width": 2079,
-          "height": 2685,
-          "id": "0fc930a745000269b45a",
-          "personId": "t1500_0568",
-          "rightsStatus": "needs_review",
-          "eligibleForLive": false,
-          "humanReview": null,
-          "status": "metadata_only",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
-          ]
-        },
-        {
-          "provider": "commons",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gypsy_Rose_Lee_NYWTS_2.jpg/1920px-Gypsy_Rose_Lee_NYWTS_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Gypsy_Rose_Lee_NYWTS_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "downloadVariant": "wikimedia_thumbnail_1400",
@@ -36606,9 +37086,492 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
+          "filename": "Lee Sze Kei 2.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
+          "credit": "User:Iflwlou self-made",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "李司棋",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "李司棋",
+            "matchedAliases": [
+              "李司棋"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "李司棋"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:49.657326+00:00",
+          "width": 480,
+          "height": 640,
+          "id": "3a5772a3bc683ad8d993",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
+          "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/GR_Lee%2C_1937.jpg/1920px-GR_Lee%2C_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/GR_Lee%2C_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:GR_Lee,_1937.jpg",
+          "filename": "GR Lee, 1937.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Los Angeles Daily News",
+          "credit": "https://digital.library.ucla.edu/catalog/ark:/21198/zz00288p57",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "1/2 length portrait of burlesque entertainer Gypsy Rose Lee carrying dog at train station, circa 1937",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Louise Lee",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:51.300347+00:00",
+          "width": 4557,
+          "height": 4396,
+          "id": "50eeac132fbefba3e865",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/MM00013951_%288091335494%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/MM00013951_%288091335494%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(2).jpg",
+          "filename": "MM00013951 (8091335494) (2).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Florida Keys--Public Libraries from Key West, Fla., USA",
+          "credit": "MM00013951",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "Gypsy Rose Lee at Key West International Airport. Photo from Jeff Broadhead Collection.",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Louise Lee",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:51.301795+00:00",
+          "width": 1259,
+          "height": 1371,
+          "id": "fe0a49d827f27fce53d5",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lee_Sze_Kei_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lee_Sze_Kei_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
+          "filename": "Lee Sze Kei 1.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "",
+          "credit": "",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "李司棋",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:49.657121+00:00",
+          "width": 480,
+          "height": 640,
+          "id": "636f35bd6cc5bc3cf53e",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Gypsy_Rose_Lee_NYWTS_1.jpg/1920px-Gypsy_Rose_Lee_NYWTS_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Gypsy_Rose_Lee_NYWTS_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
+          "filename": "Gypsy Rose Lee NYWTS 1.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "New York World-Telegram and the Sun staff photographer: Fred Palumbo",
+          "credit": "Library of Congress Prints and Photographs Division. New York World-Telegram and the Sun Newspaper Photograph Collection.  http://hdl.loc.gov/loc.pnp/cph.3c12035",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Gypsy Rose Lee, full-length portrait, seated at typewriter, facing slightly right  / World Telegram & Sun photo by Fred Palumbo.",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Louise Lee",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:51.300923+00:00",
+          "width": 2079,
+          "height": 2685,
+          "id": "0fc930a745000269b45a",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/GypsyRoseLeeStageDoorCanteen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/GypsyRoseLeeStageDoorCanteen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:GypsyRoseLeeStageDoorCanteen.jpg",
+          "filename": "GypsyRoseLeeStageDoorCanteen.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Film screenshot",
+          "credit": "Stage Door Canteen film",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Cropped screenshot of Gypsy Rose Lee from the film Stage Door Canteen (1943).",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Louise Lee",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:51.301337+00:00",
+          "width": 239,
+          "height": 267,
+          "id": "722346f377b8e9bdcb33",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Neva_Patterson_1969.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Neva_Patterson_1969.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Neva_Patterson_1969.JPG",
+          "filename": "Neva Patterson 1969.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "CBS Television",
+          "credit": "eBay item\nphoto front\n\nphoto back",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Photo of Neva Patterson.",
+          "identityEvidence": {
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Louise Lee",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:40:51.302025+00:00",
+          "width": 732,
+          "height": 953,
+          "id": "ba5d7639f531259d5cef",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Louise_Lee_Andrews_Bacon.tif/lossy-page1-1280px-Louise_Lee_Andrews_Bacon.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Louise_Lee_Andrews_Bacon.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_Andrews_Bacon.tif",
+          "filename": "Louise Lee Andrews Bacon.tif",
+          "artist": "the Critic",
+          "credit": "Louisa Lee Andrews Bacon",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "The Critic v.40 (1902) p 488",
+          "identityEvidence": {
+            "query": "Louise Lee",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q701921",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+            "exactChineseAliases": [
+              "李司棋",
+              "李司棋",
+              "李司棋"
+            ],
+            "verifiedSearchAliases": [
+              "李司棋",
+              "Louise Lee",
+              "Louise Lee Si-kei"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
+            "articleTitle": "李司棋",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [
+              "Louise Lee"
+            ],
+            "captionAliasMatches": [
+              "Louise Lee"
+            ]
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+            "representativeWorks": [
+              "溏心風暴"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T03:41:13.822198+00:00",
+          "width": 1890,
+          "height": 2688,
+          "id": "f4078d81d16f3d94a6c6",
+          "personId": "t1500_0568",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
-      "updatedAt": "2026-10-29T23:32:10.235184+00:00",
+      "updatedAt": "2026-10-30T03:41:14.981160+00:00",
       "name": "李司棋",
       "legacyRecord": {
         "questionId": "t1500_0568",
@@ -36668,9 +37631,9 @@
         }
       },
       "status": "no_suitable_source",
-      "lastAttemptAt": "2026-10-29T23:32:08.199739+00:00",
+      "lastAttemptAt": "2026-10-30T03:40:47.197422+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T23:32:10.236639+00:00"
+      "workerFinishedAt": "2026-10-30T03:41:14.982832+00:00"
     },
     "t1500_0397": {
       "personId": "t1500_0397",
@@ -66085,7 +67048,7 @@
       "personId": "t1500_0577",
       "candidateId": "c1500-0577",
       "name": "張兆輝",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -75379,10 +76342,313 @@
       "candidateId": "c1500-0588",
       "name": "苗可秀",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T05:41:31.539546+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+          "filename": "苗可秀.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Ak47klo",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​中國青年黨黨員苗可秀",
+          "identityEvidence": {
+            "wikidataId": "Q702088",
+            "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+            "exactChineseAliases": [
+              "苗可秀",
+              "苗可秀",
+              "苗可秀"
+            ],
+            "verifiedSearchAliases": [
+              "苗可秀",
+              "Nora Miao",
+              "Miao Kexiu",
+              "Nora Miao Ke-Hsiu",
+              "Chan Wing-Man"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+            "articleTitle": "苗可秀",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "苗可秀",
+            "matchedAliases": [
+              "苗可秀"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "苗可秀"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "精武門"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:41:16.123515+00:00",
+          "width": 230,
+          "height": 288,
+          "id": "bfd3d32d7f9493dca299",
+          "personId": "t1500_0588",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
+          "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
+          "filename": "《精武間》獲第10屆金馬獎「優等劇情片」 苗可秀代表上台領獎.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "馮國鏘",
+          "credit": "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=621408",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​《精武間》獲第10屆金馬獎「優等劇情片」 苗可秀代表上台領獎 / 創作者：馮國鏘 / 數位物件授權：PDM / 建檔單位：中央通訊社 @ 國家文化記憶庫 https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=621408",
+          "identityEvidence": {
+            "wikidataId": "Q702088",
+            "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+            "exactChineseAliases": [
+              "苗可秀",
+              "苗可秀",
+              "苗可秀"
+            ],
+            "verifiedSearchAliases": [
+              "苗可秀",
+              "Nora Miao",
+              "Miao Kexiu",
+              "Nora Miao Ke-Hsiu",
+              "Chan Wing-Man"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+            "articleTitle": "苗可秀",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "苗可秀",
+            "matchedAliases": [
+              "苗可秀"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "苗可秀"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "精武門"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:41:16.123211+00:00",
+          "width": 237,
+          "height": 157,
+          "id": "834c79f36608fc21630e",
+          "personId": "t1500_0588",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg/1920px-HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
+          "filename": "HKHM 沙田 Shatin 香港文化博物館 HK Heritage Museum Hong Kong Pop 60+ Exhibition August 2021 SS2 168.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Rroame LaOcM",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "HKHM 沙田 Shatin zh:香港文化博物館 HK Heritage Museum in August 2021\nzh:鄒文懷\nFists of Fury",
+          "identityEvidence": {
+            "wikidataId": "Q702088",
+            "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+            "exactChineseAliases": [
+              "苗可秀",
+              "苗可秀",
+              "苗可秀"
+            ],
+            "verifiedSearchAliases": [
+              "苗可秀",
+              "Nora Miao",
+              "Miao Kexiu",
+              "Nora Miao Ke-Hsiu",
+              "Chan Wing-Man"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+            "articleTitle": "苗可秀",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "苗可秀",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "精武門"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:41:16.122139+00:00",
+          "width": 3096,
+          "height": 4128,
+          "id": "622bb65fd69ec34e4923",
+          "personId": "t1500_0588",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-30T03:41:15.178738+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T03:41:27.824770+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:27.824798+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T03:41:31.539508+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:31.539529+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+                "filename": "苗可秀.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Ak47klo",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​中國青年黨黨員苗可秀",
+                "identityEvidence": {
+                  "wikidataId": "Q702088",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+                  "exactChineseAliases": [
+                    "苗可秀",
+                    "苗可秀",
+                    "苗可秀"
+                  ],
+                  "verifiedSearchAliases": [
+                    "苗可秀",
+                    "Nora Miao",
+                    "Miao Kexiu",
+                    "Nora Miao Ke-Hsiu",
+                    "Chan Wing-Man"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+                  "articleTitle": "苗可秀",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "苗可秀",
+                  "matchedAliases": [
+                    "苗可秀"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "苗可秀"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "精武門"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:41:16.123515+00:00",
+                "width": 230,
+                "height": 288,
+                "id": "bfd3d32d7f9493dca299",
+                "personId": "t1500_0588",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
+                "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 3
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0588",
         "name": "苗可秀",
@@ -75400,10 +76666,106 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261030T034045Z-29d66930",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T03:41:15.099964+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+            "filename": "苗可秀.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Ak47klo",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​中國青年黨黨員苗可秀",
+            "identityEvidence": {
+              "wikidataId": "Q702088",
+              "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+              "exactChineseAliases": [
+                "苗可秀",
+                "苗可秀",
+                "苗可秀"
+              ],
+              "verifiedSearchAliases": [
+                "苗可秀",
+                "Nora Miao",
+                "Miao Kexiu",
+                "Nora Miao Ke-Hsiu",
+                "Chan Wing-Man"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+              "articleTitle": "苗可秀",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "苗可秀",
+              "matchedAliases": [
+                "苗可秀"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "苗可秀"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "精武門"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T03:41:16.123515+00:00",
+            "width": 230,
+            "height": 288,
+            "id": "bfd3d32d7f9493dca299",
+            "personId": "t1500_0588",
+            "discoveryRunId": "20261030T034045Z-29d66930",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
+            "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-30T03:41:31.539561+00:00",
+      "workerFinishedAt": "2026-10-30T03:41:31.541340+00:00"
     },
     "t1500_0167": {
       "personId": "t1500_0167",
@@ -76249,8 +77611,8 @@
       "candidateId": "c1500-0552",
       "name": "石修",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:38:02.588172+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T11:42:52.500813+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -76697,6 +78059,64 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "openverse",
+          "url": "https://pdms.dimu.org/image/02SVzw51Ef?dimension=1200x1200",
+          "source": "http://digitaltmuseum.org/011012763480",
+          "filename": "02SVzw51Ef",
+          "artist": null,
+          "license": "CC PDM 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "caption": "Eksteriør, gardsbruk. Låven på Vetten gård, Jesnes, Ringsaker. Mann og seks barn med sau.",
+          "identityEvidence": {
+            "query": "Sau Sek",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "wikidataId": "Q7493219",
+            "mappingSource": "https://www.wikidata.org/wiki/Q7493219",
+            "exactChineseAliases": [
+              "石修",
+              "石修",
+              "石修",
+              "石修",
+              "石修"
+            ],
+            "verifiedSearchAliases": [
+              "石修",
+              "Shek Sau",
+              "Chan Shek Sau",
+              "Sau Sek"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T03:42:33.214248+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E7%9F%B3%E4%BF%AE",
+            "articleTitle": "石修",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "香港電視劇"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T03:42:48.864804+00:00",
+          "rightsWarning": "Aggregator metadata; original source licence must be checked by reviewer",
+          "id": "bb8704f6044b41437e12",
+          "personId": "t1500_0552",
+          "discoveryRunId": "20261030T034045Z-29d66930",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -76841,6 +78261,30 @@
           "time": "2026-10-30T02:38:02.588155+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T03:42:32.833257+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:48.867678+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:48.867700+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:52.500773+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:52.500793+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "http://digitaltmuseum.org/011012763480",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -76862,15 +78306,22 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:37:39.626015+00:00",
-      "lastErrors": [],
-      "updatedAt": "2026-10-30T02:38:02.588185+00:00",
-      "workerFinishedAt": "2026-10-30T02:38:02.590169+00:00"
+      "lastAttemptAt": "2026-10-30T03:42:32.765103+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "http://digitaltmuseum.org/011012763480",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-30T03:42:52.500823+00:00",
+      "workerFinishedAt": "2026-10-30T03:42:52.502877+00:00"
     },
     "t1500_0275": {
       "personId": "t1500_0275",
@@ -80951,8 +82402,8 @@
       "candidateId": "c1500-0555",
       "name": "湯鎮業",
       "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:38:24.729044+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T11:43:14.402262+00:00",
       "candidates": [],
       "history": [
         {
@@ -80988,6 +82439,29 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T03:42:52.685870+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:43:10.757826+00:00"
+        },
+        {
+          "time": "2026-10-30T03:43:10.757864+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:43:14.402226+00:00"
+        },
+        {
+          "time": "2026-10-30T03:43:14.402248+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -81011,10 +82485,10 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:38:02.703868+00:00",
+      "lastAttemptAt": "2026-10-30T03:42:52.618190+00:00",
       "lastErrors": [
         {
           "provider": "entity",
@@ -81022,8 +82496,8 @@
           "message": "No catalogue response: Per-request wall time budget reached"
         }
       ],
-      "updatedAt": "2026-10-30T02:38:24.729055+00:00",
-      "workerFinishedAt": "2026-10-30T02:38:24.731091+00:00"
+      "updatedAt": "2026-10-30T03:43:14.402272+00:00",
+      "workerFinishedAt": "2026-10-30T03:43:14.404351+00:00"
     },
     "t1500_0299": {
       "personId": "t1500_0299",
@@ -83275,7 +84749,7 @@
       "personId": "t1500_0567",
       "candidateId": "c1500-0567",
       "name": "羅蘭",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 3,
       "nextRetryAt": null,
       "candidates": [
@@ -88162,8 +89636,8 @@
       "candidateId": "c1500-0549",
       "name": "謝賢",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:37:16.706642+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T11:42:10.486985+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -88605,6 +90079,96 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-30T03:41:45.669859+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:05.644883+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:05.644921+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:42:10.486945+00:00"
+        },
+        {
+          "time": "2026-10-30T03:42:10.486971+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
+                "filename": "謝老四.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "am730",
+                "credit": "【娛樂】四哥重返無綫拍劇 小青姐劇透《法證IV》 2018-10-25",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​《法證先鋒IV》試造型記者會",
+                "identityEvidence": {
+                  "wikidataId": "Q2146157",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q2146157",
+                  "exactChineseAliases": [
+                    "謝賢",
+                    "謝賢",
+                    "谢贤",
+                    "谢贤",
+                    "謝賢",
+                    "谢贤"
+                  ],
+                  "verifiedSearchAliases": [
+                    "謝賢",
+                    "谢贤",
+                    "Patrick Tse",
+                    "Xie Xian",
+                    "Tse Ka-yuk",
+                    "Patrick Tse Yin"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T03:41:46.164992+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E8%B3%A2",
+                  "articleTitle": "謝賢",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "謝賢",
+                  "matchedAliases": [],
+                  "discoveryWarnings": [],
+                  "claim": "P18",
+                  "captionAliasMatches": []
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "千王之王"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T03:41:46.374410+00:00",
+                "width": 1000,
+                "height": 1363,
+                "id": "228c39b77373f921696c",
+                "personId": "t1500_0549",
+                "discoveryRunId": "20261030T034045Z-29d66930",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -88628,10 +90192,10 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:36:53.153104+00:00",
+      "lastAttemptAt": "2026-10-30T03:41:45.585075+00:00",
       "lastErrors": [
         {
           "provider": "entity",
@@ -88669,7 +90233,7 @@
                 "Patrick Tse Yin"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T02:36:53.726549+00:00",
+              "retrievedAt": "2026-10-30T03:41:46.164992+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
               "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E8%B3%A2",
@@ -88688,12 +90252,12 @@
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T02:36:53.883469+00:00",
+            "searchTime": "2026-10-30T03:41:46.374410+00:00",
             "width": 1000,
             "height": 1363,
             "id": "228c39b77373f921696c",
             "personId": "t1500_0549",
-            "discoveryRunId": "20261030T023511Z-d6593083",
+            "discoveryRunId": "20261030T034045Z-29d66930",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -88706,8 +90270,8 @@
           "message": "No reliable frontal face"
         }
       ],
-      "updatedAt": "2026-10-30T02:37:16.706654+00:00",
-      "workerFinishedAt": "2026-10-30T02:37:16.708545+00:00"
+      "updatedAt": "2026-10-30T03:42:10.486996+00:00",
+      "workerFinishedAt": "2026-10-30T03:42:10.488937+00:00"
     },
     "t1500_0393": {
       "attempts": 5,
@@ -92019,9 +93583,9 @@
       "personId": "t1500_0566",
       "candidateId": "c1500-0566",
       "name": "董驃",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:38:46.834115+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T11:43:29.387047+00:00",
       "candidates": [],
       "history": [
         {
@@ -92057,6 +93621,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T03:43:14.585038+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:43:25.753401+00:00"
+        },
+        {
+          "time": "2026-10-30T03:43:25.753490+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T03:43:29.387015+00:00"
+        },
+        {
+          "time": "2026-10-30T03:43:29.387037+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -92076,23 +93657,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:38:24.844723+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
-      "updatedAt": "2026-10-30T02:38:46.834126+00:00",
-      "workerFinishedAt": "2026-10-30T02:38:46.836115+00:00"
+      "lastAttemptAt": "2026-10-30T03:43:14.519002+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-30T03:43:29.387058+00:00",
+      "workerFinishedAt": "2026-10-30T03:43:29.389236+00:00"
     },
     "t1500_0448": {
       "personId": "t1500_0448",
@@ -94031,9 +95606,9 @@
       "personId": "t1500_0589",
       "candidateId": "c1500-0589",
       "name": "袁潔瑩",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T22:18:57.415634+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T07:41:45.467680+00:00",
       "candidates": [],
       "history": [
         {
@@ -94058,6 +95633,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T03:41:31.743777+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T03:41:41.842010+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:41.842043+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T03:41:45.467648+00:00"
+        },
+        {
+          "time": "2026-10-30T03:41:45.467670+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -94077,23 +95669,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T201720Z-9c28875a",
+      "lastRunId": "20261030T034045Z-29d66930",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T20:18:37.248457+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
-      "updatedAt": "2026-10-29T20:18:57.415642+00:00",
-      "workerFinishedAt": "2026-10-29T20:18:57.417359+00:00"
+      "lastAttemptAt": "2026-10-30T03:41:31.655420+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-30T03:41:45.467690+00:00",
+      "workerFinishedAt": "2026-10-30T03:41:45.469572+00:00"
     },
     "t1500_0562": {
       "personId": "t1500_0562",

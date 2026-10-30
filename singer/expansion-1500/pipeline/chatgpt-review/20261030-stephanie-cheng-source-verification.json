@@ -42,9 +42,16 @@
     ],
     "cropSha256": "afb976dd53d8f23616e65993e06eac2c6d3b869d5e7a9f5ee2cb47158daad449",
     "stageFilesProduced": true,
-    "actualCommittedCropAndFiveStagePixelsVisuallyInspected": false,
-    "recognizabilityApproved": false,
-    "notes": "The original was inspected from the Commons file page. The immutable GitHub 600x720 crop and five stage PNGs could not be visually loaded in this review environment. Do not infer stage quality from source pixels or metadata."
+    "actualCommittedCropAndFiveStagePixelsVisuallyInspected": true,
+    "recognizabilityApproved": true,
+    "notes": "2026-10-30: downloaded exact GitHub Actions artifact #12955377602; visually inspected source, 600x720 crop and five stage PNGs. All stages pass: eyes only, nose without mouth, mouth, chin, full. Clear face, no second face or watermark, microphone below cropped area.",
+    "stageSha256": {
+      "eyes": "4e9cfc47464c7eaf4503f039e04e7292a94ce26a1e2a86d2ee955d65017df07e",
+      "nose": "9856c6b9cc45f594441a00514c6fcbabd5e39a24c159eee918df389200cd88db",
+      "mouth": "8ece0aed6c231cb3f222618524030117bfa1755c720644b556b9fbd80c58c7d7",
+      "chin": "c7f36bab1fea2d56015331df326a792cce5504190fd29f6576a9e53e6bcfe69c",
+      "full": "81ff6974c81028bb951b3b1a2814a579170dd6bdb8447fdfee31c98ce450506b"
+    }
   },
   "hint": {
     "proposedWork": "紅綠燈",
@@ -54,13 +61,12 @@
     "sourceDescription": "Apple Music credits 紅綠燈 to Stephanie Cheng; official artist YouTube channel also lists 鄭融 as performer.",
     "status": "work_credit_verified_not_game_published"
   },
-  "decision": "source_rights_and_work_hint_verified_crop_pending",
+  "decision": "source_rights_work_and_crop_verified_pending_main_qa_and_live",
   "eligibleForLive": false,
-  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "releaseGate": "READY_FOR_MAIN_PR_QA_NOT_YET_LIVE",
   "nextSteps": [
-    "Inspect immutable 600x720 JPEG and all five stage PNGs by eye before any publication",
-    "Inspect immutable 600x720 JPEG and all five stage PNGs by eye",
-    "Check CC BY-SA attribution and adaptation/share-alike requirements before publishing",
-    "Check latest main SHA, aliases and QID deduplication before any PR"
+    "Await PR #27 Singer Mobile QA and Verify work hints, then merge main safely",
+    "Await Pages build and live QA, then verify public JSON",
+    "Retain CC BY-SA 2.0 attribution and adapted-image share-alike"
   ]
 }

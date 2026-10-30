@@ -537,7 +537,9 @@ class EntityPortraits:
         files = [value for value in files if isinstance(value, str)][:3]
         if not hasattr(http, 'verified_identities'):
             http.verified_identities = {}
-        query = english[0] if english else person['name']
+        # Keep verified English names as fallbacks, but prefer the native
+        # name to avoid spending the source budget on romanized homonyms.
+        query = person['name']
         http.verified_identities[identity_key(person)] = {'aliases': aliases, 'englishAliases': english,
                                                         'query': query, 'evidence': evidence, 'files': files}
         return aliases, query, evidence, files
@@ -546,12 +548,18 @@ class EntityPortraits:
         aliases, query, mapping, entity_files = self._resolve(person, http)
         enriched = {**person, 'aliases': aliases}
         failures, seen, commons, yielded = [], set(), [], False
+        # Exact Wikidata P18 first, then native-name Commons search, then
+        # up to two independently verified English names. Never promote a
+        # search hit to visual identity evidence without a matching caption.
         requests = []
         if entity_files:
-            requests.append({'titles': '|'.join('File:' + value for value in entity_files)})
-        requests.append({'generator': 'search', 'gsrsearch': phrase_query(query),
-                         'gsrnamespace': 6, 'gsrlimit': 15, 'gsroffset': (round_number % 3) * 15})
-        for request in requests:
+            requests.append((query, {'titles': '|'.join('File:' + value for value in entity_files)}))
+        english_fallbacks = [alias for alias in aliases if re.search(r'[A-Za-z]', alias)][:2]
+        for search_term in dict.fromkeys([query, *english_fallbacks]):
+            requests.append((search_term, {'generator': 'search',
+                'gsrsearch': phrase_query(search_term), 'gsrnamespace': 6,
+                'gsrlimit': 12, 'gsroffset': (round_number % 3) * 12}))
+        for source_query, request in requests:
             try:
                 data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
                                  prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
@@ -572,7 +580,7 @@ class EntityPortraits:
                         if license_url.startswith('http://creativecommons.org/'):
                             license_url = 'https://' + license_url[7:]
                         caption = val('ImageDescription')
-                        evidence = {**mapping, 'query': query,
+                        evidence = {**mapping, 'query': source_query,
                                     'matchedAliases': identity(enriched, filename + ' ' + caption),
                                     'discoveryWarnings': list(failures)}
                         if filename in entity_files:

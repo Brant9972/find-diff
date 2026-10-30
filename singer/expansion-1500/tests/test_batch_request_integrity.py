@@ -20,11 +20,20 @@ class BatchRequestIntegrityTest(unittest.TestCase):
         self.assertEqual(len(ids), request['targetPeople'])
         self.assertEqual(len(ids), len(set(ids)), 'Do not search the same person twice')
         selected = {row['plannedQuestionId']: row for row in plan['selectedNew']}
+        backup = json.loads((ROOT / 'pipeline/backup-photo-leads-20261030.json')
+                            .read_text(encoding='utf-8'))
+        self.assertEqual(backup['releaseGate'], 'BACKUP_PHOTO_SEARCH_ONLY_NOT_PLAYABLE')
+        backup_people = {row['plannedQuestionId']: row for row in backup['people']}
         published = set(plan['releaseProgress']['publishedNames'])
         for person_id in ids:
-            self.assertIn(person_id, selected)
-            self.assertNotEqual(selected[person_id].get('photoStatus'), 'published')
-            self.assertNotIn(selected[person_id]['name'], published)
+            self.assertIn(person_id, selected.keys() | backup_people.keys())
+            if person_id in selected:
+                self.assertNotEqual(selected[person_id].get('photoStatus'), 'published')
+                name = selected[person_id]['name']
+            else:
+                self.assertNotIn(person_id, selected)
+                name = backup_people[person_id]['name']
+            self.assertNotIn(name, published)
 
     def test_published_progress_matches_plan_flags_and_selected_arithmetic(self):
         plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))

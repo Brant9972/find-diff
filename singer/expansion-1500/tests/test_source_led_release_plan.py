@@ -16,6 +16,8 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertEqual(person['name'], '葛民輝')
         self.assertEqual(person['wikidataId'], 'Q590914')
         self.assertIn('Eric Kot', person['aliases'])
+        self.assertEqual(person['cachedMetadataRecheckToken'],
+                         '20261030-eric-kot-verified-alias')
         self.assertIn('Eric Kot', person['acceptedAnswers'])
         self.assertEqual(person['reviewExactCommonsFiles'], [
             'Eric Kot 20231029.jpg', 'Eric Kot 200812.JPG'])
@@ -46,8 +48,8 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertEqual(request['targetPeople'], 1)
         self.assertEqual(request['mode'], 'search')
         self.assertEqual(request['providers'], ['entity', 'commons'])
-        self.assertIn('five reveal stages', request['purpose'])
-        self.assertIn('No old cohort rerun', request['purpose'])
+        self.assertIn('five-stage visual gates', request['purpose'])
+        self.assertIn('without re-running unrelated cohorts', request['purpose'])
 
 
     def test_source_screening_records_no_approved_game_crop(self):

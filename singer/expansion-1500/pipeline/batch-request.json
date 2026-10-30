@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-eric-kot-verified-english-alias-retry",
+  "requestId": "20261030-eric-kot-one-shot-cached-exact-recheck",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -14,5 +14,5 @@
   "maxMinutes": 12,
   "personSeconds": 150,
   "maxCandidates": 3,
-  "purpose": "Retry ONLY planned t1500_0564 葛民輝 after a concrete identity-recall fix: first exact-source run 41067189501 found 4 Commons open-license metadata items but 0 identity-supported because selectedNew lacked English stage-name Eric Kot. Verified Q590914, en/zh Wikipedia and Commons source captions establish Eric Kot, Kot Man-fai. Two exact original photos (2023 Tombus20032000 CC BY-SA 4.0 and 2008 Tksteven CC BY 2.5) remain unapproved. Check 600x720 and all five reveal stages, caption/author/rights and hint before any release. No old cohort rerun, no main/creators change."
+  "purpose": "One-shot offline replay of retained Commons metadata-only exact sources for planned 葛民輝 t1500_0564 after verified Eric Kot alias correction. Prior run 41067189501 yielded 4 Commons metadata but no identity; follow-up 41067704064 yielded 0 fresh metadata due to transient API/no results. This run re-evaluates only cached curated exact file metadata with normal identity, rights, download and five-stage visual gates, without re-running unrelated cohorts or treating metadata as approval. No main/creators changes."
 }

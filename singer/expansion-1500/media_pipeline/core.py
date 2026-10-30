@@ -260,10 +260,42 @@ def ready(row):
     return [c for c in row['candidates'] if c.get('status') == 'pending_review']
 
 
+
+class CachedExactMetadata:
+    """One-shot offline replay of previously retained exact Commons metadata.
+
+    This is only enabled by an explicit plan token after a verified identity
+    correction. It does not trust a previous metadata-only row as approval.
+    All normal identity, licence, pixel and human-review gates still run.
+    """
+    name = 'cached_exact'
+
+    def __init__(self, items):
+        self.items = items
+
+    def search(self, person, http, round_number=0):
+        yield from self.items
+
+
 def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None, active=None, rejected_pixels=None):
     row['status'] = 'searching'
     row['attempts'] += 1
     row['lastAttemptAt'] = now()
+    # A source API may be temporarily unavailable on the next retry. If a
+    # curated Commons file was already retained as metadata_only, a verified
+    # alias correction should not require another network metadata lookup.
+    # The explicit token ensures one replay only, not an infinite retry loop.
+    token = str(person.get('cachedMetadataRecheckToken') or '')
+    if token and row.get('lastCachedRecheckToken') != token:
+        exact = {norm(str(name).removeprefix('File:'))
+                 for name in person.get('reviewExactCommonsFiles', [])[:3]}
+        cached = [dict(item) for item in row['candidates']
+                  if item.get('status') == 'metadata_only'
+                  and norm(item.get('filename', '')) in exact
+                  and str(item.get('source', '')).startswith('https://commons.wikimedia.org/wiki/File:')]
+        if cached:
+            providers = [CachedExactMetadata(cached)] + list(providers)
+        row['lastCachedRecheckToken'] = token
     if checkpoint:
         checkpoint()
     errors, seen, tried = [], {source_key(c.get('source')) for c in row['candidates'] if c.get('status') != 'metadata_only'}, 0

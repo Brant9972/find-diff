@@ -28,7 +28,7 @@ class ManualCropGeometryTest(unittest.TestCase):
             ids = batch["plannedPersonIds"]
             self.assertEqual(len(ids), batch["targetPeople"])
             self.assertEqual(len(ids), len(set(ids)))
-            self.assertTrue({"commons", "entity"}.issubset(set(batch["providers"])))
+            self.assertEqual(batch["providers"], ["curated"] if ids == ["t1500_0564"] else ["entity", "commons"])
         self.assertEqual(
             {item["personId"] for item in spec["items"]},
             {"t1500_0470", "t1500_0491"},

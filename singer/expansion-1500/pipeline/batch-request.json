@@ -1,27 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-entity-native-first-hk-ten-1040",
+  "requestId": "20261030-two-curated-commons-exact-1050",
   "mode": "search",
-  "targetPeople": 10,
+  "targetPeople": 2,
   "plannedPersonIds": [
-    "t1500_0554",
     "t1500_0567",
-    "t1500_0552",
-    "t1500_0551",
-    "t1500_0549",
-    "t1500_0555",
-    "t1500_0561",
-    "t1500_0566",
-    "t1500_0571",
-    "t1500_0587"
+    "t1500_0554"
   ],
   "retryFailed": true,
   "providers": [
-    "entity",
     "commons"
   ],
-  "maxMinutes": 25,
+  "maxMinutes": 10,
   "personSeconds": 90,
-  "maxCandidates": 2,
-  "purpose": "Post-PR15 Chinese-first entity provider diagnostic, only 10 existing selectedNew not in main. Target known Commons open-license portrait metadata for 羅蘭 (File:羅蘭.jpg, Flickr-reviewed CC BY 2.0) and 黃日華 (File:Wong Yat Wah Felix.JPG, CC BY-SA 3.0), plus 8 distinct HK actors. Verify captions, authors, full licence, image pixels and five reveals manually; draft-only, never publish automatically. Do not reuse previously rejected photos."
+  "maxCandidates": 1,
+  "purpose": "Post-PR16 exact Commons file lookup verification: 羅蘭 File:羅蘭.jpg (Flickr-reviewed CC BY 2.0) and 黃日華 File:Wong Yat Wah Felix.JPG (own-work CC BY-SA 3.0). Existing selectedNew only, no live duplicates. Require source identity, licence, clear 600x720 eyes/nose/mouth/chin/full and human review before any main deploy. Draft-only."
 }

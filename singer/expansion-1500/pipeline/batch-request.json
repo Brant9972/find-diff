@@ -1,27 +1,11 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-taiwan-new10-chenxiangqi-exact-commons-1740",
-  "mode": "search",
-  "targetPeople": 10,
+  "requestId": "20261030-chenxiangqi-manual-source-recrop-1804",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-chenxiangqi-source.json",
+  "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0171",
-    "t1500_0172",
-    "t1500_0173",
-    "t1500_0191",
-    "t1500_0192",
-    "t1500_0203",
-    "t1500_0204",
-    "t1500_0312",
-    "t1500_0518",
-    "t1500_0525"
+    "t1500_0171"
   ],
-  "retryFailed": true,
-  "providers": [
-    "entity",
-    "commons"
-  ],
-  "maxMinutes": 25,
-  "personSeconds": 105,
-  "maxCandidates": 3,
-  "purpose": "New 10-person Taiwan-focused cohort from existing selectedNew, no repeat of prior failed 8/10/20/40/200 batches. 陳湘琪 exact Commons image has a named 2014 Golden Horse caption, source CNA Taiwan YouTube, Commons CC BY 3.0 metadata but no visible independent license review: source-only until verified. Validate QID/P31=Q5, nearby caption, actual author and CC grant, 600x720 face + five reveal stages before any release. Verify representative work 迴光奏鳴曲 spelling. Draft only, no main/creators changes; report stage counts and failure reasons."
+  "purpose": "Draft-only manual recrop of exact immutable Commons source pixels for 陳湘琪. No new search, no human/rights approval, no main or creators changes. Inspect 600x720 and five stages; verify original CNA YouTube CC BY grant before release."
 }

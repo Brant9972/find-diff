@@ -118,6 +118,14 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertTrue(all(pid in people for pid in ids))
         self.assertNotIn('t1500_0596', ids, 'Already published 鄭融 must not be searched again')
         self.assertEqual(request['providers'], ['entity', 'commons'])
+        progress = plan['releaseProgress']
+        arithmetic = plan['arithmetic']
+        self.assertEqual(arithmetic['publishedFromPlan'], progress['published'])
+        self.assertEqual(len(set(progress['publishedNames'])), progress['published'])
+        self.assertEqual(arithmetic['currentlyLiveUnique'],
+                         plan['baseline']['uniquePeople'] + progress['published'])
+        self.assertEqual(arithmetic['remainingSelectedNovel'],
+                         arithmetic['selectedNovel'] - progress['published'] - 1)
 
     def test_pinned_qid_rejects_wrong_same_name_human(self):
         person = {'name': '苗可秀', 'acceptedAnswers': ['苗可秀'],

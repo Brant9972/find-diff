@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "reviewType": "targeted_p18_source_metadata_search_only",
+  "reviewType": "source_only_pixel_screening_rejected_not_live",
   "researchedAt": "2026-10-31",
   "mainBaselineSha": "c6161805c8cc54869e01fa2cb6a6637b542f2207",
   "pipelineBaselineSha": "351527b122dea8c930f97121f9249d7a9d918df8",
-  "releaseGate": "NOT_APPROVED_NOT_PLAYABLE",
+  "releaseGate": "REJECTED_SOURCES_NOT_PLAYABLE",
   "people": [
     {
       "personId": "t1500_0112",
@@ -27,13 +27,26 @@
         "Commons cropped file belongs to the person's Commons category",
         "Original Flickr caption describes Sodagreen concert but does not name the individual performer; P18/category alone cannot substitute independent visual comparison"
       ],
-      "humanFaceReview": "PENDING",
+      "humanFaceReview": "SOURCE_ONLY_VISUAL_REJECTED",
       "sourceAdjacentCaptionReview": "PENDING_INDEPENDENT_PERSON_SPECIFIC_CAPTION",
       "sourceImageDownloaded": false,
       "gameCropReviewed": false,
       "fiveStageReviewed": false,
       "gameSha256": null,
-      "approvedForLive": false
+      "approvedForLive": false,
+      "visualReview": {
+        "decision": "REJECT_AS_GAME_PORTRAIT",
+        "sourceOnlyPixelInspected": true,
+        "reason": "Actual original Commons 31 (cropped) pixels show downward gaze with both eyes closed/nearly closed; a headset microphone reaches the lower cheek beside the mouth. Cannot create a clear eyes reveal; facial expression/angle are weak for recognition. No five-stage crop approved.",
+        "otherRejected": [
+          {
+            "filename": "2014 蘇打綠10週年世界巡回演唱會-空氣中的視聽與幻覺 - 15.jpg",
+            "sourcePage": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_15.jpg",
+            "reason": "Wide stage shot, tiny upward-looking face, harsh overexposure and visible photographer watermark. Cropping to 600x720 would not preserve detailed facial features."
+          }
+        ]
+      },
+      "nextStep": "Find a DIFFERENT licensed photo with eyes open and unobstructed mouth; do not retry these exact Commons files."
     },
     {
       "personId": "t1500_0114",
@@ -56,20 +69,25 @@
         "Commons cropped file belongs to the person's Commons category",
         "Original Flickr caption describes Sodagreen concert but does not name the individual performer; P18/category alone cannot substitute independent visual comparison"
       ],
-      "humanFaceReview": "PENDING",
+      "humanFaceReview": "SOURCE_ONLY_VISUAL_REJECTED",
       "sourceAdjacentCaptionReview": "PENDING_INDEPENDENT_PERSON_SPECIFIC_CAPTION",
       "sourceImageDownloaded": false,
       "gameCropReviewed": false,
       "fiveStageReviewed": false,
       "gameSha256": null,
-      "approvedForLive": false
+      "approvedForLive": false,
+      "visualReview": {
+        "decision": "REJECT_AS_GAME_PORTRAIT",
+        "sourceOnlyPixelInspected": true,
+        "reason": "Actual original Commons 24 (cropped) pixels show eyes closed tightly and violin/bow cutting across lower face near mouth. Low-angle stage pose prevents recognizable five-stage eye/nose/mouth reveal. No five-stage crop approved.",
+        "otherRejected": []
+      },
+      "nextStep": "Find a DIFFERENT licensed photo with eyes open and unobstructed mouth; do not retry these exact Commons files."
     }
   ],
   "nextActions": [
-    "Run entity+commons provider on these two pinned QIDs, not old 20/40/200 batches; collect immutable original and 600x720 crops.",
-    "Verify face against independently captioned portraits, not just Wikidata P18 or generic concert caption.",
-    "Inspect source crop and eyes/nose/mouth/chin/full at actual pixels, obstruction, second faces, watermark and iconic appearance.",
-    "Check image file current license and attribution, then verify work hints, aliases, roster and all release-gate fields before any main PR.",
-    "Do not count either person as published until PR QA, main merge, Pages build and independent live JSON/image QA pass."
+    "Do not retry these exact P18 Commons files; source-only pixel inspection found eyes closed/occluded.",
+    "Keep QIDs for identity search, search other genuinely different sources only.",
+    "Any future image must pass separate adjacent caption, license, actual 600x720 five-stage human review and full QA before publication."
   ]
 }

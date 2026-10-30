@@ -31,19 +31,23 @@ class SodagreenP18LeadsTest(unittest.TestCase):
             person = selected[pid]
             self.assertEqual((lead["name"], lead["wikidataQid"]), (name, qid))
             self.assertEqual(person["wikidataId"], qid)
-            self.assertEqual(person["reviewExactCommonsFiles"], [lead["filename"]])
+            self.assertEqual(person["reviewExactCommonsFiles"], [])
+            self.assertIn(lead["sourcePage"], person["excludedPhotoSources"])
             self.assertIn(f" - {photo_num} (cropped).jpg", lead["filename"])
             self.assertNotIn(pid, live_ids)
             self.assertNotIn(name, live_names)
 
     def test_discovery_metadata_is_never_release_approval(self):
-        self.assertEqual(self.leads["releaseGate"], "NOT_APPROVED_NOT_PLAYABLE")
+        self.assertEqual(self.leads["releaseGate"], "REJECTED_SOURCES_NOT_PLAYABLE")
         for lead in self.leads["people"]:
             self.assertFalse(lead["approvedForLive"])
             self.assertFalse(lead["sourceImageDownloaded"])
             self.assertFalse(lead["gameCropReviewed"])
             self.assertFalse(lead["fiveStageReviewed"])
             self.assertIsNone(lead["gameSha256"])
+            self.assertEqual(lead["humanFaceReview"], "SOURCE_ONLY_VISUAL_REJECTED")
+            self.assertTrue(lead["visualReview"]["sourceOnlyPixelInspected"])
+            self.assertEqual(lead["visualReview"]["decision"], "REJECT_AS_GAME_PORTRAIT")
             self.assertEqual(lead["sourceLicense"], "CC BY-SA 2.0")
             self.assertEqual(lead["licenseUrl"], "https://creativecommons.org/licenses/by-sa/2.0/")
             self.assertTrue(lead["sourcePage"].startswith("https://commons.wikimedia.org/wiki/File:"))

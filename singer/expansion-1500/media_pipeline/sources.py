@@ -460,7 +460,7 @@ class CuratedCommons:
                     or item.get('sourceType') != 'uploader_own_work'
                     or item.get('verificationUrl') != source
                     or not item.get('verifiedAt')
-                    or not identity(person, item['caption'] + ' ' + filename)):
+                    or not identity(person, item['caption'])):
                 continue
             candidate = {
                 'provider': 'commons', 'source': source, 'url': url,

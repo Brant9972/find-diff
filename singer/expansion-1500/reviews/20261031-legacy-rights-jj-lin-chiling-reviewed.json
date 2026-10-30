@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "reviewType": "human_visual_and_source_rights_review",
+  "baselineMainSha": "c3bbe2c2e93aa688a3cff051df48f182d943c7d7",
+  "releaseGate": "REVIEW_BRANCH_QA_REQUIRED_NOT_LIVE",
+  "manualReviewEvidence": "https://github.com/Brant9972/find-diff/blob/automation/rights-photo-review-20261031/singer/expansion-1500/rights-review-staging-20261031/five-stage-contact-sheet.jpg",
+  "sourceRun": "https://github.com/Brant9972/find-diff/actions/runs/41129798363",
+  "notes": "Two existing IDs only; no new unique people, no creators changes. Attribution rights based on cited Commons source/author/license and parent Flickr review; legal rights beyond published evidence not guaranteed. Before release require Singer Mobile QA, Verify work hints, rights metadata audit, Pages deployment and live JSON.",
+  "decisions": [
+    {
+      "personId": "s002",
+      "name": "林俊傑",
+      "bank": "singer",
+      "decision": "source_and_five_stage_visual_pass_for_QA",
+      "identityEvidence": "https://commons.wikimedia.org/wiki/File:JJ_Lin_at_Shaping_Hearts_Award_2025_ceremony.jpg",
+      "sourceCaption": "Portraits taken at Shaping Hearts Award 2025 ceremony",
+      "author": "Robert Sim (Robertsky)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceSha256": "4464df4ba165bb7737d3d1e48b8e97fa0815aa9f9327844b689454cdc3e4c24a",
+      "gameSha256": "9cb73da63996d6b301ffd619f63e91f7e5023813ef390e5f34fb233d83dc2423",
+      "cropBox": [
+        300,
+        100,
+        900,
+        820
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.43,
+          0.92,
+          0.55
+        ],
+        "nose": [
+          0.08,
+          0.43,
+          0.92,
+          0.65
+        ],
+        "mouth": [
+          0.08,
+          0.43,
+          0.92,
+          0.8
+        ],
+        "chin": [
+          0.08,
+          0.43,
+          0.92,
+          0.96
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "visualReview": "Actual 600x720 JPEG and five-stage contact sheet inspected: eyes, nose, mouth and chin progressively revealed; face sharp, recognisable, no microphone covering face and no second identifiable face inside final crop. Top of hair slightly cropped; acceptable for quiz.",
+      "workHint": "江南",
+      "workHintEvidence": "https://music.apple.com/us/song/1071753628"
+    },
+    {
+      "personId": "a741",
+      "name": "林志玲",
+      "bank": "actors",
+      "decision": "source_and_five_stage_visual_pass_for_QA",
+      "identityEvidence": "https://commons.wikimedia.org/wiki/File:Lin_Chi-Ling_(cropped)_(cropped).jpg",
+      "sourceCaption": "Lin Chi-ling at LG New Chocolate Phone launch, Hong Kong",
+      "author": "LGEPR (LG Electronics)",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceSha256": "101a7ce79f320341c35190c580d77fb75cb40b8db29b392b420af3a2cb70be27",
+      "gameSha256": "e099b9a3e38edf69ce7ef742bac184a78cd81bbe64cbbb4b10d41ce2bd5abba8",
+      "cropBox": [
+        0,
+        0,
+        800,
+        960
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.19,
+          0.92,
+          0.27
+        ],
+        "nose": [
+          0.08,
+          0.19,
+          0.92,
+          0.32
+        ],
+        "mouth": [
+          0.08,
+          0.19,
+          0.92,
+          0.39
+        ],
+        "chin": [
+          0.08,
+          0.19,
+          0.92,
+          0.46
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "visualReview": "Actual 600x720 JPEG and five-stage contact sheet inspected: eyes, nose, mouth and chin clearly visible in correct progression; single recognisable person, no face obstruction or second face. Phone and event backdrop appear only in lower/full reveal.",
+      "workHint": "赤壁",
+      "workHintEvidence": "https://www.imdb.com/title/tt0425637/fullcredits/"
+    }
+  ]
+}

@@ -22,6 +22,8 @@ LICENSE_RE = re.compile(r"^(?:CC (?:BY|BY-SA) (?:2\.0|2\.5|3\.0|4\.0)|CC0(?: 1\.
 SHA_RE = re.compile(r"^[a-f0-9]{64}$")
 QID_RE = re.compile(r"^Q[1-9][0-9]*$")
 STAGES = ("eyes", "nose", "mouth", "chin", "full")
+FROZEN_BASELINE_GIT_BLOB = "275d1fa0ccd4228c1f3637a4f9e61c13c86b45e8"
+FROZEN_MAIN_SHA = "94e3db2a48fbed8316ae838e43e48627e01ba6ac"
 
 
 def normal(value: str) -> str:
@@ -33,9 +35,13 @@ def is_https(value: str) -> bool:
     return parsed.scheme == "https" and bool(parsed.netloc)
 
 
-def validate(root: Path) -> tuple[list[str], dict]:
+def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]:
     errors: list[str] = []
-    base = json.loads((root / "singer/expansion-1500/rights-release-baseline-20261031.json").read_text(encoding="utf-8"))
+    baseline_bytes = (root / "singer/expansion-1500/rights-release-baseline-20261031.json").read_bytes()
+    base = json.loads(baseline_bytes)
+    blob_payload = b"blob " + str(len(baseline_bytes)).encode("ascii") + b"\0" + baseline_bytes
+    if strict_baseline and (hashlib.sha1(blob_payload).hexdigest() != FROZEN_BASELINE_GIT_BLOB or base.get("baselineMainSha") != FROZEN_MAIN_SHA):
+        errors.append("immutable 2026-10-31 baseline was altered; manual review required")
     frozen = base["ids"]
     if len(frozen) != len(set(frozen)) or len(frozen) != base["uniquePeople"] or frozen != sorted(frozen):
         errors.append("frozen baseline is not a sorted unique ID inventory")
@@ -43,7 +49,7 @@ def validate(root: Path) -> tuple[list[str], dict]:
     hints = json.loads((root / "singer/hints.json").read_text(encoding="utf-8")).get("entries", {})
     people: dict[str, dict] = {}
     qids: dict[str, str] = {}
-    names: dict[str, str] = {}
+    names: dict[str, set[str]] = {}
     for bank, path in BANKS:
         for q in json.loads((root / path).read_text(encoding="utf-8"))["questions"]:
             pid = str(q["id"])
@@ -56,9 +62,7 @@ def validate(root: Path) -> tuple[list[str], dict]:
             else:
                 people[pid] = {"q": q, "banks": {bank}}
             name_key = normal(q.get("name", ""))
-            if name_key in names and names[name_key] != pid and pid not in old:
-                errors.append(f"{pid}: canonical name collides with {names[name_key]}")
-            names.setdefault(name_key, pid)
+            names.setdefault(name_key, set()).add(pid)
             qid = q.get("wikidataId") or ""
             if qid:
                 if not QID_RE.fullmatch(qid):
@@ -68,6 +72,9 @@ def validate(root: Path) -> tuple[list[str], dict]:
                 qids.setdefault(qid, pid)
 
     new_ids = sorted(set(people) - old)
+    for key, ids in names.items():
+        if key and len(ids) > 1 and any(pid in new_ids for pid in ids):
+            errors.append(f"canonical name collision among IDs: {sorted(ids)}")
     for pid in new_ids:
         q, banks = people[pid]["q"], people[pid]["banks"]
         attr = q.get("attribution") or {}
@@ -78,12 +85,9 @@ def validate(root: Path) -> tuple[list[str], dict]:
         if not is_https(url):
             errors.append(f"{pid}: missing HTTPS licence evidence URL")
         elif lic.startswith("CC BY"):
-            suffix = lic.replace("CC ", "").lower().replace(" ", "/") + "/"
-            if urlparse(url).hostname != "creativecommons.org" or f"/licenses/{suffix}" not in urlparse(url).path + "/":
-                # Compare canonical segments, allowing a trailing slash.
-                expected = f"/licenses/{lic.split()[1].lower()}/{lic.split()[2]}/"
-                if not (urlparse(url).hostname == "creativecommons.org" and urlparse(url).path.rstrip("/") == expected.rstrip("/")):
-                    errors.append(f"{pid}: licence URL does not match {lic}")
+            expected = f"/licenses/{lic.split()[1].lower()}/{lic.split()[2]}"
+            if urlparse(url).hostname != "creativecommons.org" or urlparse(url).path.rstrip("/") != expected:
+                errors.append(f"{pid}: licence URL does not match {lic}")
         elif lic.startswith("CC0") and not (urlparse(url).hostname == "creativecommons.org" and urlparse(url).path.rstrip("/") == "/publicdomain/zero/1.0"):
             errors.append(f"{pid}: CC0 licence URL mismatch")
         for field in ("source", "artist", "credit", "attribution"):

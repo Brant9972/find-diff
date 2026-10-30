@@ -43629,8 +43629,8 @@
     },
     "t1500_0564": {
       "personId": "t1500_0564",
-      "attempts": 9,
-      "nextRetryAt": "2026-11-04T22:02:59.469997+00:00",
+      "attempts": 10,
+      "nextRetryAt": "2026-11-04T22:11:45.089213+00:00",
       "candidateId": "c1500-0564",
       "chatgptReview": {
         "personId": "t1500_0564",
@@ -43648,7 +43648,7 @@
         "handoffCollection": "decisions"
       },
       "lastEvidenceAttemptAt": "2026-10-28T18:32:16.632266+00:00",
-      "lastRunId": "20261030T140247Z-63f87159",
+      "lastRunId": "20261030T141143Z-0e253524",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0564": {
@@ -44650,18 +44650,29 @@
           "time": "2026-10-30T14:02:59.469983+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:11:45.085804+00:00",
+          "provider": "curated",
+          "attempt": 10,
+          "finishedAt": "2026-10-30T14:11:45.089197+00:00"
+        },
+        {
+          "time": "2026-10-30T14:11:45.089205+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "status": "no_suitable_source",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T14:02:48.775439+00:00",
+      "lastAttemptAt": "2026-10-30T14:11:44.995302+00:00",
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T14:02:59.470009+00:00",
-      "workerFinishedAt": "2026-10-30T14:02:59.471883+00:00",
+      "updatedAt": "2026-10-30T14:11:45.089224+00:00",
+      "workerFinishedAt": "2026-10-30T14:11:45.090340+00:00",
       "lastCachedRecheckToken": "20261030-eric-kot-verified-alias"
     },
     "t1500_0568": {

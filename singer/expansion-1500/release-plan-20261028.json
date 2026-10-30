@@ -5323,7 +5323,17 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "乾德門 新白娘子傳奇 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "乾德門 新白娘子傳奇 角色 劇照 正面 清晰 無浮水印",
+      "excludedCaptionNames": [
+        "乾德樓",
+        "Qiande Gate",
+        "archaeological dig"
+      ],
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:HK_KinTakHouse_KinTakMun.JPG",
+        "https://commons.wikimedia.org/wiki/File:Liao_Shangjing_2017_north_wall_archaeological_dig.jpg"
+      ],
+      "reviewReason": "Reject place-name homonyms (乾德門 gate / building) even when file caption contains actor name. Source photo must independently depict actor Chien Te-men."
     },
     {
       "candidateId": "c1500-0209",

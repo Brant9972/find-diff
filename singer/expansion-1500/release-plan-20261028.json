@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1076,
-    "publishedFromPlan": 89,
-    "remainingSelectedNovel": 421,
+    "currentlyLiveUnique": 1077,
+    "publishedFromPlan": 90,
+    "remainingSelectedNovel": 420,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -1816,9 +1816,16 @@
       "candidateId": "c1500-0102",
       "plannedQuestionId": "t1500_0102",
       "name": "趙正平",
-      "aliases": [],
+      "aliases": [
+        "赵正平",
+        "David Chao",
+        "趙哥"
+      ],
       "acceptedAnswers": [
-        "趙正平"
+        "趙正平",
+        "赵正平",
+        "David Chao",
+        "趙哥"
       ],
       "categories": [
         "綜藝"
@@ -1831,19 +1838,30 @@
       "photoSearchKeywords": [
         "趙正平 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "趙正平 康熙來了 綜藝 節目 單人 特寫 正面 無浮水印"
+      "hintsStatus": "tvbs_20240521_kangxi_guest_verified",
+      "identityStatus": "wikidata_commons_caption_human_verified",
+      "qaStatus": "ready_for_pr_qa_not_live",
+      "preferredImageQuery": "趙正平 康熙來了 綜藝 節目 單人 特寫 正面 無浮水印",
+      "wikidataId": "Q9088389",
+      "verifiedWorkSource": "https://news.tvbs.com.tw/entertainment/2493183",
+      "reviewedPhotoSource": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+      "reviewedPhotoSha256": "cdcac5381dcb7a2dbbaa4af10fb02fdb00033a6d21ad5ca89e54be0d269b0d52",
+      "reviewExactCommonsFiles": [
+        "David Chao at Kinokuniya Taipei Breeze Store 20100102.jpg"
+      ],
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Zhao_Zhengping.jpg",
+        "https://commons.wikimedia.org/wiki/File:Zhao_Zhengping.JPG"
+      ]
     },
     {
       "candidateId": "c1500-0103",
@@ -18327,7 +18345,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 89,
+    "published": 90,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18417,9 +18435,10 @@
       "吳雨霏",
       "周柏豪",
       "林美照",
-      "鄭弘儀"
+      "鄭弘儀",
+      "趙正平"
     ],
-    "pendingPhotoAndHintReview": 422,
-    "latestCommit": "pending-zhenghongyi-pr-qa"
+    "pendingPhotoAndHintReview": 421,
+    "latestCommit": "pending-zhaozhengping-pr-qa"
   }
 }

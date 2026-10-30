@@ -70400,9 +70400,9 @@
       "personId": "t1500_0094",
       "candidateId": "c1500-0094",
       "name": "寇世勳",
-      "status": "no_suitable_source",
-      "attempts": 3,
-      "nextRetryAt": "2026-10-30T15:42:19.442279+00:00",
+      "status": "download_failed",
+      "attempts": 4,
+      "nextRetryAt": "2026-10-31T06:54:09.318774+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -70516,6 +70516,34 @@
           "time": "2026-10-30T07:42:19.442269+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:54:00.184683+00:00",
+          "provider": "entity",
+          "attempt": 4,
+          "finishedAt": "2026-10-30T14:54:04.507035+00:00"
+        },
+        {
+          "time": "2026-10-30T14:54:04.507066+00:00",
+          "provider": "commons",
+          "attempt": 4,
+          "finishedAt": "2026-10-30T14:54:09.318741+00:00"
+        },
+        {
+          "time": "2026-10-30T14:54:09.318761+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "source_api_busy",
+              "message": "No catalogue response: cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+            },
+            {
+              "provider": "commons",
+              "code": "source_api_busy",
+              "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -70534,18 +70562,29 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T07:42:10.481937+00:00",
-      "lastErrors": [],
+      "lastAttemptAt": "2026-10-30T14:54:00.115652+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "source_api_busy",
+          "message": "No catalogue response: cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
+        },
+        {
+          "provider": "commons",
+          "code": "source_api_busy",
+          "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
+        }
+      ],
       "lastFailure": {
-        "code": "no_suitable_source",
+        "code": "download_failed",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-30T07:42:19.442288+00:00",
-      "lastRunId": "20261030T074115Z-090da76b",
+      "updatedAt": "2026-10-30T14:54:09.318786+00:00",
+      "lastRunId": "20261030T145342Z-4edc1047",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T07:42:19.444516+00:00"
+      "workerFinishedAt": "2026-10-30T14:54:09.320898+00:00"
     },
     "t1500_0379": {
       "personId": "t1500_0379",
@@ -71210,8 +71249,8 @@
       "candidateId": "c1500-0093",
       "name": "郭品超",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T11:41:49.525258+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T22:53:51.391958+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -71386,6 +71425,23 @@
           "time": "2026-10-30T07:41:49.525247+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:53:44.065831+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T14:53:47.908610+00:00"
+        },
+        {
+          "time": "2026-10-30T14:53:47.908647+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T14:53:51.391926+00:00"
+        },
+        {
+          "time": "2026-10-30T14:53:51.391946+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -71404,18 +71460,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T07:41:44.027537+00:00",
+      "lastAttemptAt": "2026-10-30T14:53:44.007250+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T07:41:49.525268+00:00",
-      "lastRunId": "20261030T074115Z-090da76b",
+      "updatedAt": "2026-10-30T14:53:51.391970+00:00",
+      "lastRunId": "20261030T145342Z-4edc1047",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T07:41:49.527466+00:00"
+      "workerFinishedAt": "2026-10-30T14:53:51.394089+00:00"
     },
     "t1500_0387": {
       "personId": "t1500_0387",
@@ -78424,8 +78480,8 @@
       "candidateId": "c1500-0092",
       "name": "江祖平",
       "status": "no_suitable_source",
-      "attempts": 3,
-      "nextRetryAt": "2026-10-30T15:42:10.281169+00:00",
+      "attempts": 4,
+      "nextRetryAt": "2026-10-31T06:54:00.003873+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -78539,6 +78595,23 @@
           "time": "2026-10-30T07:42:10.281159+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:53:51.554247+00:00",
+          "provider": "entity",
+          "attempt": 4,
+          "finishedAt": "2026-10-30T14:53:55.400009+00:00"
+        },
+        {
+          "time": "2026-10-30T14:53:55.400041+00:00",
+          "provider": "commons",
+          "attempt": 4,
+          "finishedAt": "2026-10-30T14:54:00.003834+00:00"
+        },
+        {
+          "time": "2026-10-30T14:54:00.003857+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -78557,18 +78630,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T07:42:00.337155+00:00",
+      "lastAttemptAt": "2026-10-30T14:53:51.478357+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T07:42:10.281179+00:00",
-      "lastRunId": "20261030T074115Z-090da76b",
+      "updatedAt": "2026-10-30T14:54:00.003888+00:00",
+      "lastRunId": "20261030T145342Z-4edc1047",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T07:42:10.283401+00:00"
+      "workerFinishedAt": "2026-10-30T14:54:00.006017+00:00"
     },
     "t1500_0507": {
       "personId": "t1500_0507",
@@ -108218,7 +108291,7 @@
       "personId": "t1500_0102",
       "candidateId": "c1500-0102",
       "name": "趙正平",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 4,
       "nextRetryAt": null,
       "candidates": [

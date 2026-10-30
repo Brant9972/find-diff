@@ -15030,9 +15030,9 @@
       "personId": "t1500_0171",
       "candidateId": "c1500-0171",
       "name": "陳湘琪",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 3,
-      "nextRetryAt": "2026-10-30T17:42:45.059469+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -15224,6 +15224,179 @@
           "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
           "cropFailure": "Blurred crop: sharpness below 65",
           "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+          "filename": "Chen Shiang-chyi (陳湘琪) at the 51st Golden Horse Awards in November 2014.jpg",
+          "artist": "CNA Taiwan - 中央社",
+          "credit": "陳建斌陳湘琪 金馬稱王封后",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+          "identityEvidence": {
+            "query": "陳湘琪",
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "curatedExactFileHint": true,
+            "wikidataId": "Q5090886",
+            "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
+            "exactChineseAliases": [
+              "陳湘琪"
+            ],
+            "verifiedSearchAliases": [
+              "陳湘琪",
+              "Chen Shiang-chyi",
+              "Chén Xiāngqí"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
+            "articleTitle": "陳湘琪",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [
+              "陳湘琪",
+              "Chen Shiang-chyi"
+            ],
+            "captionAliasMatches": [
+              "陳湘琪",
+              "Chen Shiang-chyi"
+            ]
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "迴光奏鳴曲"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T09:42:40.379454+00:00",
+          "width": 2468,
+          "height": 2260,
+          "id": "manualrecrop-f186fd95e6ed3d7592fd",
+          "personId": "t1500_0171",
+          "discoveryRunId": "20261030T094146Z-a2a94968",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0171/manualrecrop-f186fd95e6ed3d7592fd/359bc6b4efc7/original.bin",
+          "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0171/manualrecrop-f186fd95e6ed3d7592fd/359bc6b4efc7/f186fd95e6ed.jpg",
+          "parentCandidateId": "11cfabb73b01aa6bd121",
+          "parentSourceSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+          "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.3,
+              0.92,
+              0.48
+            ],
+            "nose": [
+              0.08,
+              0.3,
+              0.92,
+              0.58
+            ],
+            "mouth": [
+              0.08,
+              0.3,
+              0.92,
+              0.69
+            ],
+            "chin": [
+              0.08,
+              0.3,
+              0.92,
+              0.83
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629",
+            "sourceCandidateId": "11cfabb73b01aa6bd121",
+            "sourceSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+            "sourceSize": [
+              1920,
+              1758
+            ],
+            "cropBox": [
+              500,
+              0,
+              1750,
+              1500
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "Original 2468x2260 video screenshot; visual original shows one identifiable woman with both eyes, nose and mouth unobstructed, microphone below mouth, soft detail. 1250x1500 (5:6) crop roughly centers face and excludes backdrop. Geometry is provisional: inspect all 5 stages and pixel sharpness, reject if soft or microphone intrudes. Commons states CC BY 3.0, author CNA Taiwan, YouTube video ffxdss7Xk6Y; license on original video not independently verified, so do not approve until verified."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4/chin.png",
+            "full": "expansion-1500/pipeline/evidence/f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.3,
+                0.92,
+                0.48
+              ],
+              "nose": [
+                0.08,
+                0.3,
+                0.92,
+                0.58
+              ],
+              "mouth": [
+                0.08,
+                0.3,
+                0.92,
+                0.69
+              ],
+              "chin": [
+                0.08,
+                0.3,
+                0.92,
+                0.83
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -15465,6 +15638,13 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261030T100655Z-7ec385a3",
+          "sourceCommit": "dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629",
+          "candidateId": "manualrecrop-f186fd95e6ed3d7592fd",
+          "sourceCandidateId": "11cfabb73b01aa6bd121"
         }
       ],
       "legacyRecord": {
@@ -15488,92 +15668,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T094146Z-a2a94968",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261030T100655Z-7ec385a3",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-f186fd95e6ed3d7592fd"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-30T09:42:34.317324+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC51%E5%B1%86%E9%87%91%E9%A6%AC%E5%BD%B1%E5%90%8E%E9%99%B3%E6%B9%98%E7%90%AA.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
-            "filename": "Chen Shiang-chyi (陳湘琪) at the 51st Golden Horse Awards in November 2014.jpg",
-            "artist": "CNA Taiwan - 中央社",
-            "credit": "陳建斌陳湘琪 金馬稱王封后",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
-            "identityEvidence": {
-              "query": "陳湘琪",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "curatedExactFileHint": true,
-              "wikidataId": "Q5090886",
-              "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
-              "exactChineseAliases": [
-                "陳湘琪"
-              ],
-              "verifiedSearchAliases": [
-                "陳湘琪",
-                "Chen Shiang-chyi",
-                "Chén Xiāngqí"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
-              "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
-              "articleTitle": "陳湘琪",
-              "articleLookup": "exact title with redirects; not a search result",
-              "matchedAliases": [
-                "陳湘琪",
-                "Chen Shiang-chyi"
-              ],
-              "captionAliasMatches": [
-                "陳湘琪",
-                "Chen Shiang-chyi"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "迴光奏鳴曲"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-30T09:42:40.379454+00:00",
-            "width": 2468,
-            "height": 2260,
-            "id": "11cfabb73b01aa6bd121",
-            "personId": "t1500_0171",
-            "discoveryRunId": "20261030T094146Z-a2a94968",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0171/11cfabb73b01aa6bd121/359bc6b4efc7/original.bin",
-            "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-30T09:42:45.059479+00:00",
       "workerFinishedAt": "2026-10-30T09:42:45.061504+00:00"
     },

@@ -52,8 +52,18 @@
     {
       "personId": "t1500_0549",
       "name": "謝賢",
-      "status": "NO_PLAYABLE_CANDIDATE",
-      "reason": "No suitable image from exact Commons leads; inspect failure provenance before retry."
+      "status": "REJECT_TWO_EYE_OBSCURED_SOURCES",
+      "reason": "Original Commons images opened and visually inspected: 謝賢.jpg (1312x1780) and 謝老四.jpg (1000x1363) depict the expected actor, but both have large brown tinted glasses obscuring eyes. This violates the game's eyes-first reveal; no usable five-stage crop. Commons credits am730 and records GRuban's 2020-07-24 CC BY 3.0 review; license alone does not override visual rejection. Exclude both exact file hints, retain person for alternative sources.",
+      "sourcePages": [
+        "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%B3%A2.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg"
+      ],
+      "license": "CC BY 3.0",
+      "licenseReviewedAt": "2020-07-24",
+      "author": "am730",
+      "humanVisualApproved": false,
+      "gameCropApproved": false,
+      "rightsMetadataSupported": true
     },
     {
       "personId": "t1500_0551",
@@ -90,6 +100,7 @@
     "Exclude unrelated historical homonym from 苗可秀 candidate pool and add regression test",
     "Improve identity confidence with QID plus occupation/birth year and source-local subject captions; do not trust name alone",
     "Diagnose exact-file 謝賢 source outcome and entity provider zero-metadata issue; avoid same ineffective 8-person rerun",
-    "No changes to playable banks, creators, or Pages without full five-stage visual/rights/hints QA"
+    "No changes to playable banks, creators, or Pages without full five-stage visual/rights/hints QA",
+    "Do not rescan the two rejected 謝賢 am730 portraits; tinted glasses hide the eyes, regardless of CC BY 3.0 license"
   ]
 }

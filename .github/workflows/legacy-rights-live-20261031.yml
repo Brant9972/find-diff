@@ -1,0 +1,62 @@
+name: Verify two legacy rights replacement portraits on live Pages
+on:
+  push:
+    branches: [qa/legacy-rights-live-20261031]
+    paths: [.github/workflows/legacy-rights-live-20261031.yml]
+permissions:
+  contents: read
+jobs:
+  live-portraits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Verify public JSON, actual JPEG bytes and five-stage image dimensions
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, time, urllib.request
+          from PIL import Image
+          base = 'https://brant9972.github.io/find-diff/singer/'
+          targets = {
+            's002': ('questions.json', 'photos/s002_cc_20261031.jpg', '9cb73da63996d6b301ffd619f63e91f7e5023813ef390e5f34fb233d83dc2423'),
+            'a741': ('actors.json', 'photos/a741_cc_20261031.jpg', 'e099b9a3e38edf69ce7ef742bac184a78cd81bbe64cbbb4b10d41ce2bd5abba8')
+          }
+          def get(path, n):
+            req = urllib.request.Request(base + path + '?audit=20261031&attempt=' + str(n),
+                headers={'User-Agent': 'FindDiffRightsLiveQA/1.0', 'Cache-Control':'no-cache'})
+            with urllib.request.urlopen(req, timeout=20) as response:
+              assert response.status == 200, (path, response.status)
+              return response.read()
+          last_error = None
+          for attempt in range(35):
+            try:
+              banks = {}
+              for f in ('questions.json', 'actors.json', 'variety.json'):
+                banks[f] = json.loads(get(f, attempt))
+              people = {q['id'] for b in banks.values() for q in b['questions']}
+              assert len(people) == 1077, len(people)
+              for person_id, (bank, photo, expected_hash) in targets.items():
+                q = next(x for x in banks[bank]['questions'] if x['id'] == person_id)
+                assert q['photo'] == photo, (person_id, q['photo'])
+                assert q['attribution']['licenseUrl'].startswith('https://creativecommons.org/licenses/')
+                image_data = get(photo, attempt)
+                assert hashlib.sha256(image_data).hexdigest() == expected_hash, person_id + ' sha mismatch'
+                with Image.open(io.BytesIO(image_data)) as im:
+                  assert im.size == (600, 720), (person_id, im.size)
+                  assert im.format == 'JPEG', (person_id, im.format)
+                assert set(q['reveal']) == {'eyes','nose','mouth','chin','full'}
+                print('PASS LIVE PHOTO', person_id, photo, expected_hash, len(image_data))
+              print('PASS LIVE RIGHTS REPLACEMENTS', len(people), 'unique people, 2 source-backed photos')
+              break
+            except Exception as exc:
+              last_error = exc
+              print('Waiting for Pages', attempt + 1, str(exc)[:180], flush=True)
+              time.sleep(10)
+          else:
+            raise AssertionError('Live Pages did not serve verified photos: ' + str(last_error))
+          PY

@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import CommonsSearch, HTTP, Official, Openverse, SourceError, Wikimedia, rights
+from media_pipeline.sources import CommonsSearch, HTTP, Official, Openverse, SourceError, Wikimedia, clean, rights
 
 
 class FixtureHTTP:
@@ -21,6 +21,14 @@ class FixtureHTTP:
 
 
 class SourcesTest(unittest.TestCase):
+    def test_commons_artist_html_removes_template_css_not_author(self):
+        raw = ('<style type="text/css">.mw-parser-output .ubx-floatleft'
+               '{float:left} .mw-parser-output .ubx-floatnone{float:none}</style>'
+               '<span class="mw-content">Iflwlou</span>拍攝')
+        self.assertEqual(clean(raw), 'Iflwlou拍攝')
+        self.assertEqual(clean('<script>evil()</script>am730 &amp; partners'),
+                         'am730 & partners')
+
     def test_wikimedia_combines_article_entity_and_search_without_duplicate(self):
         http = FixtureHTTP()
         rows = list(Wikimedia().search({'name': '測試人物', 'representativeWorks': ['代表作'], 'preferredImageQuery': '測試人物 代表作'}, http))

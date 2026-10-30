@@ -43629,8 +43629,8 @@
     },
     "t1500_0564": {
       "personId": "t1500_0564",
-      "attempts": 8,
-      "nextRetryAt": "2026-11-04T21:58:54.961105+00:00",
+      "attempts": 9,
+      "nextRetryAt": "2026-11-04T22:02:59.469997+00:00",
       "candidateId": "c1500-0564",
       "chatgptReview": {
         "personId": "t1500_0564",
@@ -43648,7 +43648,7 @@
         "handoffCollection": "decisions"
       },
       "lastEvidenceAttemptAt": "2026-10-28T18:32:16.632266+00:00",
-      "lastRunId": "20261030T135842Z-972155b1",
+      "lastRunId": "20261030T140247Z-63f87159",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0564": {
@@ -44633,18 +44633,36 @@
           "time": "2026-10-30T13:58:54.961093+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:02:48.834207+00:00",
+          "provider": "entity",
+          "attempt": 9,
+          "finishedAt": "2026-10-30T14:02:53.745002+00:00"
+        },
+        {
+          "time": "2026-10-30T14:02:53.745029+00:00",
+          "provider": "commons",
+          "attempt": 9,
+          "finishedAt": "2026-10-30T14:02:59.469961+00:00"
+        },
+        {
+          "time": "2026-10-30T14:02:59.469983+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "status": "no_suitable_source",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T13:58:44.429508+00:00",
+      "lastAttemptAt": "2026-10-30T14:02:48.775439+00:00",
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T13:58:54.961118+00:00",
-      "workerFinishedAt": "2026-10-30T13:58:54.962865+00:00"
+      "updatedAt": "2026-10-30T14:02:59.470009+00:00",
+      "workerFinishedAt": "2026-10-30T14:02:59.471883+00:00",
+      "lastCachedRecheckToken": "20261030-eric-kot-verified-alias"
     },
     "t1500_0568": {
       "attempts": 7,

@@ -364,7 +364,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 candidate['identityEvidence'] = {**evidence, 'captionAliasMatches': matches, 'visualIdentityVerified': False}
                 identity_supported = bool(matches or (evidence.get('wikidataId') and evidence.get('claim') == 'P18'))
                 # Refresh metadata for the same immutable URL pair, without touching reviewed/downloaded candidates.
-                row['candidates'] = [c for c in row['candidates'] if not (c['id'] == cid and c.get('status') == 'metadata_only')]
+                row['candidates'] = [c for c in row['candidates'] if not (source_key(c.get('source')) == key and c.get('status') == 'metadata_only')]
                 if not identity_supported:
                     candidate['warnings'].append('No name-bearing caption/article/entity evidence: image not downloaded')
                     row['candidates'].append(candidate)

@@ -106,6 +106,37 @@ class SourceExpansionTest(unittest.TestCase):
             self.assertTrue(row['source'].startswith('https://'))
             self.assertTrue(row['artist'])
 
+    def test_entity_p18_and_native_name_are_checked_before_english_homonyms(self):
+        # A verified romanization may name many other people. Exact P18
+        # lookup is first, Chinese native-name search second, English last.
+        row = entity(english='Test Artist')
+        row['claims']['P18'] = [{
+            'mainsnak': {'datavalue': {'value': 'Test Artist portrait.jpg'}}
+        }]
+        api = EntityAPI(entities={'Q123': row})
+        list(EntityPortraits().search(self.person, api))
+        commons = [params for url, params in api.calls
+                   if 'commons.wikimedia.org' in url]
+        self.assertEqual(commons[0].get('titles'), 'File:Test Artist portrait.jpg')
+        searches = [params['gsrsearch'] for params in commons
+                    if params.get('generator') == 'search']
+        self.assertEqual(searches[:2], [
+            '"測試人物" filetype:bitmap',
+            '"Test Artist" filetype:bitmap',
+        ])
+        self.assertEqual(searches.count('"測試人物" filetype:bitmap'), 1)
+        self.assertTrue(all(params['gsrlimit'] <= 12 for params in commons
+                            if params.get('generator') == 'search'))
+
+    def test_entity_without_p18_still_queries_native_name_first(self):
+        api = EntityAPI()
+        list(EntityPortraits().search(self.person, api))
+        searches = [params['gsrsearch'] for url, params in api.calls
+                    if 'commons.wikimedia.org' in url and
+                    params.get('generator') == 'search']
+        self.assertEqual(searches[0], '"測試人物" filetype:bitmap')
+        self.assertIn('"Test Artist" filetype:bitmap', searches[1:])
+
     def test_blocked_english_alias_does_not_search_unrelated_historical_name(self):
         # Actress 韓瑜 shares the romanization Han Yu with a historical poet.
         # Do not retrieve temples, poems and monuments as her portraits.

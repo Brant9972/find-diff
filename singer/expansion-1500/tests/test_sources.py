@@ -43,6 +43,56 @@ class SourcesTest(unittest.TestCase):
         self.assertEqual(len(rows),1)
         self.assertEqual(rights(rows[0]),'open_license_metadata')
 
+    def test_exact_commons_hint_precedes_search_but_never_proves_identity(self):
+        class Exact:
+            def __init__(self): self.calls = []
+            def json(self, url, **params):
+                self.calls.append(params)
+                if params.get('titles') == 'File:羅蘭.jpg':
+                    return {'query': {'pages': [{
+                        'title': 'File:羅蘭.jpg',
+                        'imageinfo': [{
+                            'descriptionurl': 'https://commons.wikimedia.org/wiki/File:羅蘭.jpg',
+                            'url': 'https://upload.wikimedia.org/roland.jpg',
+                            'width': 1488, 'height': 2071,
+                            'extmetadata': {key: {'value': value} for key, value in {
+                                'Artist': 'Yahoo Hong Kong',
+                                'LicenseShortName': 'CC BY 2.0',
+                                'LicenseUrl': 'https://creativecommons.org/licenses/by/2.0/',
+                                'ImageDescription': '香港女藝人',
+                            }.items()},
+                        }],
+                    }]}}
+                if params.get('generator') == 'search':
+                    return {'query': {'pages': []}}
+                raise AssertionError('Unexpected lookup: ' + str(params))
+        api = Exact()
+        rows = list(CommonsSearch().search({
+            'name': '羅蘭', 'reviewExactCommonsFiles': ['File:羅蘭.jpg'],
+        }, api))
+        self.assertEqual(api.calls[0]['titles'], 'File:羅蘭.jpg')
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['filename'], '羅蘭.jpg')
+        self.assertEqual(rights(rows[0]), 'open_license_metadata')
+        self.assertTrue(rows[0]['identityEvidence']['curatedExactFileHint'])
+        self.assertIsNot(rows[0]['identityEvidence'].get('visualIdentityVerified'), True)
+
+    def test_invalid_exact_hint_is_ignored_and_exact_refusal_is_isolated(self):
+        class Refusal:
+            def __init__(self): self.calls = []
+            def json(self, url, **params):
+                self.calls.append(params)
+                if params.get('titles'):
+                    raise SourceError('http_403', 'Exact lookup temporarily refused')
+                return {'query': {'pages': []}}
+        api = Refusal()
+        self.assertEqual(list(CommonsSearch().search({
+            'name': '羅蘭', 'reviewExactCommonsFiles': [
+                '../unrelated.jpg', 'File:羅蘭.jpg'],
+        }, api)), [])
+        self.assertEqual(api.calls[0]['titles'], 'File:羅蘭.jpg')
+        self.assertTrue(any(p.get('generator') == 'search' for p in api.calls))
+
     def test_openverse_preserves_original_landing_page_and_rights_warning(self):
         class API:
             def json(self, *args, **kwargs):

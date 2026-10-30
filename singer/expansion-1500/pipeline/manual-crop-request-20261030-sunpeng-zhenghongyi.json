@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+  "sourceRun": "20261030T070335Z-baa19623",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Stage only two source-only images from run 41017698407 for manual 600x720 + five-stage review. Visual pre-screen of committed contact sheet and original 孫鵬 confirmed face, caption, and crop feasibility; source license/attribution and all rendered stages still require independent approval. No live or automatic approval.",
+  "items": [
+    {
+      "personId": "t1500_0470",
+      "sourceCandidateId": "f971182399d1b7c928b6",
+      "sourceSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+      "box": [
+        900,
+        0,
+        1740,
+        1008
+      ],
+      "reveal": {
+        "eyes": [
+          0.14,
+          0.26,
+          0.82,
+          0.36
+        ],
+        "nose": [
+          0.14,
+          0.26,
+          0.82,
+          0.43
+        ],
+        "mouth": [
+          0.14,
+          0.26,
+          0.82,
+          0.54
+        ],
+        "chin": [
+          0.14,
+          0.26,
+          0.82,
+          0.64
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "孫鵬: original 1920x1440 CC BY-SA 3.0 Rico Shen File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg. Adjacent caption explicitly says Di Ying left / Sun Peng right. Visually inspected actual original: Sun Peng is on the right, eyes/nose/mouth/chin unobstructed, dark sunglasses are on cap above eyes, not over eyes. 840x1008 crop excludes Di Ying face (left), but check interviewer microphones and all five masks before approval. DRAFT ONLY."
+    },
+    {
+      "personId": "t1500_0491",
+      "sourceCandidateId": "b2d56a194f8be54e5371",
+      "sourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+      "box": [
+        230,
+        60,
+        930,
+        900
+      ],
+      "reveal": {
+        "eyes": [
+          0.1,
+          0.27,
+          0.9,
+          0.44
+        ],
+        "nose": [
+          0.1,
+          0.27,
+          0.9,
+          0.6
+        ],
+        "mouth": [
+          0.1,
+          0.27,
+          0.9,
+          0.78
+        ],
+        "chin": [
+          0.1,
+          0.27,
+          0.9,
+          0.92
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "鄭弘儀: 1170x1632 self-photographed CC BY-SA 4.0 Commons File:鄭弘儀.jpg, caption explicitly identifies him; 5:6 crop intended to exclude both background faces. The source-only contact sheet looks recognizable, but automated sharpness below 65 and original >1MB could not be inspected full-resolution in this review. DRAFT ONLY; reject if rendered 600x720 looks blurred or masks reveal wrong features."
+    }
+  ]
+}

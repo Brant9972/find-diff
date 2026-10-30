@@ -112,12 +112,19 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertIn('鄭弘儀.jpg', host['reviewExactCommonsFiles'])
         self.assertIn('background', host['reviewReason'])
         request = json.loads((root / 'pipeline' / 'batch-request.json').read_text(encoding='utf-8'))
-        ids = request['plannedPersonIds']
-        self.assertEqual(request['targetPeople'], len(ids))
+        if request.get('mode') == 'manual_recrop':
+            spec = json.loads((root / 'pipeline' /
+                               Path(request['manualCropRequestPath']).name).read_text(encoding='utf-8'))
+            ids = [item['personId'] for item in spec['items']]
+            self.assertEqual(spec['releaseGate'], 'MANUAL_CROP_STAGING_ONLY_NO_LIVE')
+            self.assertEqual(request['targetPeople'], len(ids))
+        else:
+            ids = request['plannedPersonIds']
+            self.assertEqual(request['targetPeople'], len(ids))
+            self.assertEqual(request['providers'], ['entity', 'commons'])
         self.assertEqual(len(ids), len(set(ids)))
         self.assertTrue(all(pid in people for pid in ids))
         self.assertNotIn('t1500_0596', ids, 'Already published 鄭融 must not be searched again')
-        self.assertEqual(request['providers'], ['entity', 'commons'])
         progress = plan['releaseProgress']
         arithmetic = plan['arithmetic']
         self.assertEqual(arithmetic['publishedFromPlan'], progress['published'])

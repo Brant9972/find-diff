@@ -2,55 +2,74 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261029T233941Z-7bada67f",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261029T233941Z-7bada67f/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/assets-index.json",
+  "runId": "20261030T002126Z-772d131d",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T002126Z-772d131d/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T002126Z-772d131d/assets-index.json",
   "summary": {
-    "runId": "20261029T233941Z-7bada67f",
-    "generatedAt": "2026-10-29T23:40:03.627490+00:00",
+    "runId": "20261030T002126Z-772d131d",
+    "generatedAt": "2026-10-30T00:24:28.620999+00:00",
     "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
     "scannedWithoutCandidates": 10,
     "retryNeeded": 425,
     "pendingReviewPeople": 1,
-    "licenseConcernCandidates": 261,
+    "licenseConcernCandidates": 285,
     "statusCounts": {
-      "no_suitable_source": 215,
-      "download_failed": 201,
+      "no_suitable_source": 220,
+      "download_failed": 196,
       "rejected": 9,
       "published": 84,
       "duplicate_existing": 1,
       "pending_review": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 318,
-      "image_validation_failed": 102,
-      "network_error": 285,
-      "source_api_busy": 70,
-      "license_unclear": 66,
+      "identity_unconfirmed": 346,
+      "image_validation_failed": 105,
+      "network_error": 276,
+      "source_api_busy": 66,
+      "license_unclear": 72,
       "source_api_error": 25,
       "identity_ambiguous": 12,
-      "excluded_context": 12,
+      "excluded_context": 11,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "identity_unconfirmed": 8,
-      "license_unclear": 3
+      "network_error": 4,
+      "identity_ambiguous": 1,
+      "identity_unconfirmed": 45,
+      "image_validation_failed": 4,
+      "license_unclear": 10
     },
-    "manualCropSources": 17,
+    "manualCropSources": 18,
     "batchProviderStages": {
       "commons": {
         "attemptedPeople": 10,
-        "metadataCandidates": 11,
-        "identitySupportedMetadata": 3,
-        "openLicenseMetadata": 2,
+        "metadataCandidates": 56,
+        "identitySupportedMetadata": 11,
+        "openLicenseMetadata": 29,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 1,
+        "errors": {
+          "identity_unconfirmed": 33,
+          "license_unclear": 6,
+          "image_validation_failed": 1
+        }
+      },
+      "entity": {
+        "attemptedPeople": 10,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "identity_unconfirmed": 8,
-          "license_unclear": 3
+          "network_error": 4,
+          "identity_ambiguous": 1,
+          "image_validation_failed": 3,
+          "license_unclear": 4,
+          "identity_unconfirmed": 12
         }
       }
     },
@@ -63,76 +82,649 @@
       "targetPeople": 10,
       "processedPeople": 10,
       "workers": 1,
-      "elapsedSeconds": 21.1,
+      "elapsedSeconds": 181.31,
       "stoppedForBudget": false
     }
   },
   "visualPeople": 1,
   "visualPhotos": 1,
   "batchPeople": [
-    "t1500_0504",
-    "t1500_0512",
+    "t1500_0203",
+    "t1500_0205",
+    "t1500_0207",
+    "t1500_0210",
+    "t1500_0271",
+    "t1500_0273",
+    "t1500_0278",
+    "t1500_0281",
     "t1500_0513",
-    "t1500_0518",
-    "t1500_0521",
-    "t1500_0523",
-    "t1500_0524",
-    "t1500_0525",
-    "t1500_0533",
-    "t1500_0537"
+    "t1500_0204"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0504",
-      "name": "錦榮",
+      "personId": "t1500_0203",
+      "name": "陳松勇",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0205",
+      "name": "趙自強",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0207",
+      "name": "孫越",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:HK_LoKamWing_2011.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "provider": "entity",
+          "code": "identity_ambiguous",
+          "message": "Expected exactly one exact-name Q5 human; found 3"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Female_with_dog_20210223.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_lockdown_20210223.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Sun_Po_Kwong_Kam_Wing_Street_police_lockdown_20210223.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:24_Kam_Wing_Street,_San_Po_Kong_(2023).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E6%85%B6%E5%A4%A7%E6%9C%83%E7%BE%8E%E8%A1%93%E7%B5%84%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%93%A1%E5%90%88%E7%85%A7%E7%95%99%E5%BD%B1.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         }
       ]
     },
     {
-      "personId": "t1500_0512",
-      "name": "江宜蓉",
+      "personId": "t1500_0210",
+      "name": "張世",
       "status": "no_suitable_source",
       "newCandidateIds": [],
-      "errors": []
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg/1920px-Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg/1920px-Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_01.jpg",
+            "filename": "Chang Shih-Ying at the 2026 Busan International Film Festival 01.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "1treeinaforest",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Chang Shih-Ying, actress, at the 2026 Busan International Film Festival (BIFF) in Busan, South Korea for \"To Be Ordinary\".",
+            "identityEvidence": {
+              "wikidataId": "Q8936787",
+              "mappingSource": "https://www.wikidata.org/wiki/Q8936787",
+              "exactChineseAliases": [
+                "张世",
+                "張世",
+                "张世",
+                "张世",
+                "張世",
+                "張世"
+              ],
+              "verifiedSearchAliases": [
+                "張世",
+                "张世",
+                "Chang Shih",
+                "Zhang Shi"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T00:22:10.757835+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%B8%96",
+              "articleTitle": "张世",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Chang Shih",
+              "matchedAliases": [
+                "Chang Shih"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Chang Shih"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "粉紅女郎"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T00:22:12.138681+00:00",
+            "width": 3809,
+            "height": 5275,
+            "id": "b313244501f33d5bfc29",
+            "personId": "t1500_0210",
+            "discoveryRunId": "20261030T002126Z-772d131d",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg/1920px-Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg/1920px-Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Chang_Shih-Ying_at_the_2026_Busan_International_Film_Festival_02.jpg",
+            "filename": "Chang Shih-Ying at the 2026 Busan International Film Festival 02.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "1treeinaforest",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "Chang Shih-Ying, actress, at the 2026 Busan International Film Festival (BIFF) in Busan, South Korea for \"To Be Ordinary\".",
+            "identityEvidence": {
+              "wikidataId": "Q8936787",
+              "mappingSource": "https://www.wikidata.org/wiki/Q8936787",
+              "exactChineseAliases": [
+                "张世",
+                "張世",
+                "张世",
+                "张世",
+                "張世",
+                "張世"
+              ],
+              "verifiedSearchAliases": [
+                "張世",
+                "张世",
+                "Chang Shih",
+                "Zhang Shi"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T00:22:10.757835+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%B8%96",
+              "articleTitle": "张世",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Chang Shih",
+              "matchedAliases": [
+                "Chang Shih"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Chang Shih"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "粉紅女郎"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T00:22:12.138887+00:00",
+            "width": 2753,
+            "height": 3911,
+            "id": "91ca2637efb803bd2c89",
+            "personId": "t1500_0210",
+            "discoveryRunId": "20261030T002126Z-772d131d",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Branch_of_Blossoming_Plum_Wu_Chang-shih.JPG",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Breviturma_krohi_(10.5852-ejt.2025.997.2919)_Figure_6_(cropped-E).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Breviturma_krohi_(10.5852-ejt.2025.997.2919)_Figure_6_(cropped-F).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Breviturma_krohi_(10.5852-ejt.2025.997.2919)_Figure_6_(cropped-H).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Breviturma_securis_(10.5852-ejt.2025.997.2919)_Figure_4_(cropped-D).png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_and_Misa_Chiang_standing_on_the_stage_20230514.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_and_her_Nero_Claudius_clothing_on_the_stage_20260725_130701.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_and_her_Nero_Claudius_clothing_on_the_stage_20260725_130825.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_as_Makima_singing_on_the_stage,_left_side_20230514a.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang%27s_Kafka_clothing,_Magical_DoReMi_mirror_and_Bangboo_on_the_stage_20260725.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Cosir_at_Chainsaw_Man_exhibition_area_20221106d.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Princess_Connect!_Re-Dive_official_cosplayers_at_the_photo_area_20220731e.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Princess_Connect!_Re-Dive_official_cosplayers_on_the_stage_20220730c.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E5%9C%8B%E4%B8%83%E5%B9%B4%E8%A9%B9%E5%A4%A9%E4%BD%91%E8%88%87%E4%BA%AC%E7%B6%8F%E8%B7%AF%E5%90%8C%E4%BB%81%E5%90%88%E5%BD%B1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E5%9C%8B%E4%B8%89%E5%B9%B4%E6%BC%A2%E7%B2%B5%E5%B7%9D%E9%90%B5%E8%B7%AF%E7%9D%A3%E8%BE%A6%E5%85%AC%E7%BD%B2%E5%90%8C%E4%BB%81.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E5%9C%8B%E5%8D%81%E4%B8%80%E5%B9%B4%E8%B6%99%E5%B9%BC%E6%A2%85.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%B0%91%E5%9C%8B%E4%BA%94%E5%B9%B4%E6%BC%A2%E7%B2%B5%E5%B7%9D%E9%90%B5%E8%B7%AF%E5%90%8C%E4%BB%81%E5%90%88%E5%BD%B1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%A3%E7%B5%B1%E4%B8%89%E5%B9%B4%E8%B6%99%E5%B9%BC%E6%A2%85%E7%8E%8B%E7%B4%B9%E6%96%87%E5%BC%B5%E4%B8%96%E8%86%BA%E7%8E%8B%E8%BC%94%E5%AE%9C%E8%B6%99%E5%B2%B7%E6%9D%B1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%A3%E7%B5%B1%E5%85%83%E5%B9%B4%E7%8E%8B%E8%BC%94%E5%AE%9C%E9%AD%8F%E9%98%9C%E7%94%8C%E5%8A%89%E7%A8%9A%E9%99%B5%E7%8E%8B%E7%B4%B9%E8%99%8E%E8%B6%99%E5%B9%BC%E6%A2%85%E8%94%A1%E4%BF%8A%E4%B8%89%E7%8E%8B%E7%B4%B9%E6%96%87%E9%90%98%E6%BB%8C%E6%BA%90%E6%94%9D%E6%96%BC%E6%9D%B1%E4%BA%AC.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%B6%99%E5%B9%BC%E6%A2%85%E5%AE%B6%E5%BA%AD%E7%85%A72.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%B6%99%E5%B9%BC%E6%A2%85%E5%AE%B6%E5%BA%AD%E7%85%A7.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E4%B8%96%E4%B9%8B%E5%8D%B0-Seal_MET_24_13_53_O2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E8%83%A1%E6%98%8E%E5%BE%A9.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E6%8F%90%E6%91%A9%E5%A4%AA.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%85%94%E9%89%9B%E7%AD%86%E5%AD%B8%E6%A0%A1.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Princess_Connect!_Re-Dive_official_cosplayers_at_the_photo_area_20220731d.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_as_Makima_singing_on_the_stage,_left_side_20230514b.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chihiro_Chang_and_her_Nero_Claudius_clothing_on_the_stage_20260725_130834.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuelu_Academy_103.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuelu_Academy_104.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Korea,_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Korea%2C_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg/1920px-Korea%2C_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Korea%2C_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg/1920px-Korea%2C_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Korea%2C_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Korea,_Joseon_dynasty_-_Painting_of_One_Hundred_Themes_-_1998.286.a_-_Cleveland_Museum_of_Art.jpg",
+            "filename": "Korea, Joseon dynasty - Painting of One Hundred Themes - 1998.286.a - Cleveland Museum of Art.jpg",
+            "artist": "anonymous",
+            "credit": "https://clevelandart.org/art/1998.286.a",
+            "license": "CC0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "caption": "This screen depicts paintings on one side and poems on the other-an economical format often used in Korea to allow the viewer to enjoy both sides of one screen. The front features an assortment of bird-and-flower, landscape, and figural album leaf format paintings executed according to the brush manner of more than 50 artists. A calligrapher has brushed several Chinese poems about the four seasons on the reverse side, among them \"Composing in the Daytime of Summer\" by Tang poet Liu Zongyuan (773-819) and \"Composing when Spring Begins\" by Song scholar Zhang Shi (1133-1180).",
+            "identityEvidence": {
+              "query": "Zhang Shi",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "wikidataId": "Q8936787",
+              "mappingSource": "https://www.wikidata.org/wiki/Q8936787",
+              "exactChineseAliases": [
+                "张世",
+                "張世",
+                "张世",
+                "张世",
+                "張世",
+                "張世"
+              ],
+              "verifiedSearchAliases": [
+                "張世",
+                "张世",
+                "Chang Shih",
+                "Zhang Shi"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T00:22:10.757835+00:00",
+              "visualIdentityVerified": false,
+              "article": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%B8%96",
+              "articleTitle": "张世",
+              "articleLookup": "exact title with redirects; not a search result",
+              "matchedAliases": [
+                "Zhang Shi"
+              ],
+              "captionAliasMatches": [
+                "Zhang Shi"
+              ]
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "粉紅女郎"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-30T00:22:35.622617+00:00",
+            "width": 3400,
+            "height": 1272,
+            "id": "25e339f2be870a31c923",
+            "personId": "t1500_0210",
+            "discoveryRunId": "20261030T002126Z-772d131d",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Zhou_Gong.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Shenzhi_2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Xizhi_(cropped).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E9%81%A9_%E5%91%89%E9%83%A1%E5%90%8D%E8%B3%A2%E5%9B%B3%E8%B3%9B.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pengchong_Zhang_-_7aa4ac0b7d.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pelliot_chinois_3556_-_btv1b8302524k_(17_of_32).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pelliot_chinois_3556_-_btv1b8302524k_(31_of_32).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Pelliot_chinois_3556_-_btv1b100965978_(09_of_28).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0271",
+      "name": "孫翠鳳",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Tsui-feng_Sun_and_Hsiao-yen_Chang_at_The_Primary_School_20101226.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0273",
+      "name": "楊麗花",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Yang_Li-hua_at_TTV_1990s_by_Li_Min.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0278",
+      "name": "何景揚",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_19_(cropped).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_19_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_19_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_19_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_19_(cropped).jpg",
+            "filename": "2014 蘇打綠10週年世界巡回演唱會-空氣中的視聽與幻覺 - 19 (cropped).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Lionel Leong",
+            "credit": "https://www.flickr.com/photos/lionel-arts/15045636397/",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "​2014年苏打绿10周年空气中的视听与幻觉世界巡回演唱会-新加坡站",
+            "identityEvidence": {
+              "wikidataId": "Q15941744",
+              "mappingSource": "https://www.wikidata.org/wiki/Q15941744",
+              "exactChineseAliases": [
+                "何景揚",
+                "何景揚"
+              ],
+              "verifiedSearchAliases": [
+                "何景揚",
+                "Ho Jing-Yang",
+                "A-Fu Ho"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T00:23:05.735011+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E4%BD%95%E6%99%AF%E6%8F%9A",
+              "articleTitle": "何景揚",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Ho Jing-Yang",
+              "matchedAliases": [],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": []
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "蘇打綠"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T00:23:05.889106+00:00",
+            "width": 1764,
+            "height": 2269,
+            "id": "ef6bd2196561d8f2011c",
+            "personId": "t1500_0278",
+            "discoveryRunId": "20261030T002126Z-772d131d",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0278/ef6bd2196561d8f2011c/99b28e58a622/original.bin",
+            "originalSha256": "99b28e58a6228139b0cd33f9ca4eba65a1b01fbe796481cc2d9f1ade51175974",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0281",
+      "name": "劉家凱",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
     },
     {
       "personId": "t1500_0513",
@@ -141,350 +733,97 @@
       "newCandidateIds": [],
       "errors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu_2023.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
+          "provider": "entity",
           "source": "https://commons.wikimedia.org/wiki/File:Chen_Yu--2023.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2008TIBE_Day5_Hall1_ActivityCenter2_Yu-huei_Jenfeng_Chen.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_1st_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93031.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_1st_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93032.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_1st_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93034.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_1st_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93035.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93024.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93025.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93027.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93028.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93029.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93030.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2020-01-20_2nd_run_Men%27s_Monobob_(2020_Winter_Youth_Olympics)_by_Sandro_Halank%E2%80%93031.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         }
       ]
     },
     {
-      "personId": "t1500_0518",
-      "name": "黃騰浩",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0521",
-      "name": "王以綸",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0523",
-      "name": "楊銘威",
-      "status": "no_suitable_source",
+      "personId": "t1500_0204",
+      "name": "李立群",
+      "status": "download_failed",
       "newCandidateIds": [],
       "errors": [
         {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(1).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_Christmasland_in_New_Taipei_City(2).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0524",
-      "name": "是元介",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0525",
-      "name": "鍾承翰",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0533",
-      "name": "李至正",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0537",
-      "name": "李鴻其",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
         }
       ]
     }
-  ],
-  "visualAssetCommit": "34e8c0dfe5c9a270cadb04ce670ac65605053f45",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/assets-index.json",
-    "contactSheets": [
-      {
-        "bytes": 26803,
-        "entries": [
-          {
-            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-            "personId": "t1500_0577",
-            "tile": 1
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/contact-sheet-01.jpg",
-        "sha256": "55e6708038745d73fce440d45291b8c8033251639847ca4c65351520c9032181",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/contact-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/contact-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/contact-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualContactSheets": [],
-    "manualSourceCount": 0,
-    "manualSourcePeopleCount": 0,
-    "manualSources": [],
-    "peopleCount": 1,
-    "photoCount": 1,
-    "photos": [
-      {
-        "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-        "candidateImage": {
-          "bytes": 129467,
-          "displayHeight": 720,
-          "displayWidth": 600,
-          "height": 720,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/candidate.jpg",
-          "sha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-          "width": 600,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/candidate.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/candidate.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/candidate.jpg?raw=true"
-        },
-        "eligibleForLive": false,
-        "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-        "metadata": {
-          "author": "am730",
-          "caption": "​《黃金有罪》「發財迎新歲」記者會",
-          "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "張兆輝",
-            "captionAliasMatches": [
-              "張兆輝",
-              "张兆辉"
-            ],
-            "claim": "P18",
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "张兆辉",
-              "張兆輝",
-              "張兆輝"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q701359",
-            "matchedAliases": [
-              "張兆輝",
-              "张兆辉"
-            ],
-            "query": "Cheung Siu-fai",
-            "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
-            "verifiedSearchAliases": [
-              "張兆輝",
-              "张兆辉",
-              "Cheung Siu-fai",
-              "Eddie Cheung",
-              "Eddie Cheung Siu-Fai",
-              "Zhang Zhao-Hui"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q701359"
-          },
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": "bf90b9c5bde0fdea7421",
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "黑社會"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
-          "warnings": [
-            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
-          ]
-        },
-        "name": "張兆輝",
-        "personId": "t1500_0577",
-        "reveal": {
-          "chin": [
-            0.08,
-            0.32,
-            0.92,
-            0.84
-          ],
-          "eyes": [
-            0.08,
-            0.32,
-            0.92,
-            0.48
-          ],
-          "full": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "mouth": [
-            0.08,
-            0.32,
-            0.92,
-            0.69
-          ],
-          "nose": [
-            0.08,
-            0.32,
-            0.92,
-            0.57
-          ]
-        },
-        "reviewStatus": "pending_review",
-        "sourceImage": {
-          "bytes": 355697,
-          "displayHeight": 1669,
-          "displayWidth": 1208,
-          "height": 1669,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/source.jpg",
-          "sha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
-          "width": 1208,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/source.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/source.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/source.jpg?raw=true"
-        },
-        "stageImages": {
-          "chin": {
-            "bytes": 247971,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/chin.png",
-            "sha256": "bbf4550f3943ef97b9807e566d4cb6760d32f577c8a739083254b7fa6b16ba6b",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/chin.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/chin.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/chin.png?raw=true"
-          },
-          "eyes": {
-            "bytes": 85985,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/eyes.png",
-            "sha256": "4a972dac235650ed8a0661fa518ec32b6c1cec7bb6620cf204de2e74691548d9",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/eyes.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/eyes.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/eyes.png?raw=true"
-          },
-          "full": {
-            "bytes": 535221,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/full.png",
-            "sha256": "89b2daa073b46a1106bffac5141ecacd248dca683587b44f5fdc34a0ff4959e4",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/full.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/full.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/full.png?raw=true"
-          },
-          "mouth": {
-            "bytes": 182140,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/mouth.png",
-            "sha256": "7f8b6e5ed2e5e65efcab9b5b1ca99b84634fc5722563aec56f11d3a29bb43849",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/mouth.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/mouth.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/mouth.png?raw=true"
-          },
-          "nose": {
-            "bytes": 128668,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/nose.png",
-            "sha256": "4d50abe37ae156b516faaf40b72d6d8043a9d4bf354903c1477d74d956a1e5ea",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/nose.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/nose.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/photo-0001/nose.png?raw=true"
-          }
-        }
-      }
-    ],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [
-      {
-        "bytes": 42992,
-        "entries": [
-          {
-            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
-            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
-            "personId": "t1500_0577",
-            "row": 1
-          }
-        ],
-        "height": 280,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/reveal-sheet-01.jpg",
-        "sha256": "632cdfb18d752e388fd69828ed39a3b72042a3a704fadaa1bf77d7d9a8a1ab6d",
-        "width": 1000,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/reveal-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/reveal-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/reveal-sheet-01.jpg?raw=true"
-      }
-    ],
-    "runId": "20261029T233941Z-7bada67f",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "34e8c0dfe5c9a270cadb04ce670ac65605053f45",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/34e8c0dfe5c9a270cadb04ce670ac65605053f45/singer/expansion-1500/pipeline/review-assets/20261029T233941Z-7bada67f/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

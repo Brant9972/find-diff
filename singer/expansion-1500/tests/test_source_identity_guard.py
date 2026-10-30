@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from media_pipeline.core import process
-from media_pipeline.sources import identity
+from media_pipeline.sources import EntityPortraits, SourceError, identity
 
 
 class IdentityGuardTest(unittest.TestCase):
@@ -86,6 +86,27 @@ class IdentityGuardTest(unittest.TestCase):
                       if row['plannedQuestionId'] == 't1500_0554')
         self.assertIn('黃芷晴', person['excludedCaptionNames'])
         self.assertEqual(len(person['excludedPhotoSources']), 2)
+
+    def test_pinned_qid_rejects_wrong_same_name_human(self):
+        person = {'name': '苗可秀', 'acceptedAnswers': ['苗可秀'],
+                  'wikidataId': 'Q702088'}
+        class HTTP:
+            def json(self, url, **kwargs):
+                if 'zh.wikipedia.org' in url:
+                    return {'query': {'pages': [{
+                        'title': '苗可秀', 'pageprops': {'wikibase_item': 'Q999999'},
+                        'fullurl': 'https://zh.wikipedia.org/wiki/苗可秀'}]}}
+                if kwargs.get('action') == 'wbgetentities':
+                    return {'entities': {'Q999999': {
+                        'labels': {'zh': {'value': '苗可秀'},
+                                   'en': {'value': 'Other Miao'}},
+                        'claims': {'P31': [{
+                            'mainsnak': {'datavalue': {'value': {'id': 'Q5'}}}}]}
+                    }}}
+                raise AssertionError('Unexpected URL: ' + url)
+        with self.assertRaises(SourceError) as caught:
+            EntityPortraits()._resolve(person, HTTP())
+        self.assertEqual(caught.exception.code, 'identity_entity_mismatch')
 
     def test_nora_miao_military_homonym_is_excluded_before_download(self):
         """An exact Chinese name may refer to a different person (1906 vs 1952)."""

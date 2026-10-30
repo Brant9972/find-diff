@@ -483,6 +483,9 @@ class EntityPortraits:
     name = 'entity'
     wikidata_api = 'https://www.wikidata.org/w/api.php'
 
+    def __init__(self, allow_openverse=True):
+        self.allow_openverse = allow_openverse
+
     def _resolve(self, person, http):
         cached = verified_identity(person, http)
         if cached:
@@ -658,10 +661,28 @@ class EntityPortraits:
         for candidate in supported[:3]:
             yielded = True
             yield candidate
-        # Keep provider selection explicit. Openverse is a separate adapter in
-        # prepare_media.py; invoking it implicitly here used network time and
-        # recorded errors even in Commons-only diagnostic batches. The caller
-        # can opt into Openverse after this provider (including on refusal).
+        # The standalone pipeline explicitly selects providers. Its entity
+        # adapter must not silently call Openverse during Commons-only runs.
+        # Keep the legacy fallback opt-in for other callers and fixtures.
+        if self.allow_openverse:
+            # A refused Commons host must not prevent an independent catalogue search.
+            # Limit the first Commons tranche to three, so even a four-item consumer
+            # quota reaches the independent source. The separate Openverse provider
+            # also retains the verified aliases if this generator is closed early.
+            try:
+                for candidate in Openverse().search(person, http, round_number):
+                    if not candidate.get('source') or source_key(candidate['source']) in seen:
+                        continue
+                    seen.add(source_key(candidate['source']))
+                    candidate['identityEvidence'] = {**candidate['identityEvidence'],
+                        'matchedAliases': identity(enriched, candidate.get('filename', '') + ' ' + candidate.get('caption', '')),
+                        'discoveryWarnings': list(failures)}
+                    candidate['recognitionEvidence'] = {'representativeWorks': person.get('representativeWorks', []),
+                        'requestedReplacement': person.get('reviewReason'), 'note': 'Familiar appearance has not been visually reviewed'}
+                    yielded = True
+                    yield candidate
+            except SourceError as exc:
+                failures.append({'provider': 'openverse', 'code': exc.code, 'message': str(exc)[:300]})
         first = {source_key(candidate['source']) for candidate in supported[:3]}
         for candidate in commons:
             if source_key(candidate['source']) in first:

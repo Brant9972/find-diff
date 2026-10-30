@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-chenxiangqi-manual-source-recrop-1804",
+  "requestId": "20261030-chenxiangqi-manual-source-recrop-v2-eyes-nose-fix",
   "mode": "manual_recrop",
   "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-chenxiangqi-source.json",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0171"
   ],
-  "purpose": "Draft-only manual recrop of exact immutable Commons source pixels for 陳湘琪. No new search, no human/rights approval, no main or creators changes. Inspect 600x720 and five stages; verify original CNA YouTube CC BY grant before release."
+  "purpose": "Correct visually detected leak of nose/mouth in eyes-only stage of previous Chen Shiang-chyi draft; same 600x720 JPEG source pixels, revised masks. No search, no approval, no main/creators changes. Independently verify YouTube CC license before any publication."
 }

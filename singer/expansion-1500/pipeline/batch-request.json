@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-p1559-new-portrait-diagnostic-10",
+  "requestId": "20261031-p1559-new-portrait-diagnostic-10-qa-repaired",
   "mode": "search",
   "targetPeople": 10,
   "plannedPersonIds": [
@@ -23,5 +23,5 @@
   "maxMinutes": 25,
   "personSeconds": 120,
   "maxCandidates": 2,
-  "purpose": "One new targeted diagnostic after PR #56 P1559 native-name fix; selectedNew only, favor named portraits. Some Commons files for 郭碧婷/馬如龍 are low resolution and require explicit reject if unusable. Skip all previously rejected sources, P18 eyewear, 404, and old 20/40/200 failed batches. Source metadata never implies identity, rights or visual approval. Draft only; no main/Pages/creators changes."
+  "purpose": "One new targeted diagnostic after PR #56 P1559 native-name fix; selectedNew only, favor named portraits. Some Commons files for 郭碧婷/馬如龍 are low resolution and require explicit reject if unusable. Skip all previously rejected sources, P18 eyewear, 404, and old 20/40/200 failed batches. Source metadata never implies identity, rights or visual approval. Draft only; no main/Pages/creators changes. Re-run this never-collected batch only after PR #57 repaired the pre-collection test; do not repeat if photos are rejected."
 }

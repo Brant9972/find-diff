@@ -11802,9 +11802,9 @@
       "personId": "t1500_0470",
       "candidateId": "c1500-0470",
       "name": "孫鵬",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-30T09:04:29.689797+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -11891,6 +11891,158 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2007AlconTaiwanHiking_DiYing_SunPeng.jpg/1920px-2007AlconTaiwanHiking_DiYing_SunPeng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/2007AlconTaiwanHiking_DiYing_SunPeng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg",
+          "filename": "2007AlconTaiwanHiking DiYing SunPeng.jpg",
+          "artist": "Rico Shen",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "Famous Taiwanese entertainers Di Ying (狄鶯, left) and Sun Peng (孫鵬, right) at 2007 Alcon Taiwan Hiking.",
+          "identityEvidence": {
+            "query": "孫鵬",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "孫鵬"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "國光幫幫忙"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T07:04:27.813875+00:00",
+          "width": 3500,
+          "height": 2625,
+          "id": "manualrecrop-83351dc924645475e36d",
+          "personId": "t1500_0470",
+          "discoveryRunId": "20261030T070335Z-baa19623",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0470/manualrecrop-83351dc924645475e36d/45fef4ef658e/original.bin",
+          "originalSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0470/manualrecrop-83351dc924645475e36d/45fef4ef658e/83351dc92464.jpg",
+          "parentCandidateId": "f971182399d1b7c928b6",
+          "parentSourceSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+          "gameSha256": "83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82",
+          "reveal": {
+            "eyes": [
+              0.14,
+              0.26,
+              0.82,
+              0.36
+            ],
+            "nose": [
+              0.14,
+              0.26,
+              0.82,
+              0.43
+            ],
+            "mouth": [
+              0.14,
+              0.26,
+              0.82,
+              0.54
+            ],
+            "chin": [
+              0.14,
+              0.26,
+              0.82,
+              0.64
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+            "sourceCandidateId": "f971182399d1b7c928b6",
+            "sourceSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+            "sourceSize": [
+              1920,
+              1440
+            ],
+            "cropBox": [
+              900,
+              0,
+              1740,
+              1008
+            ],
+            "parentCropFailure": "Multiple prominent faces",
+            "reviewerNotes": "孫鵬: original 1920x1440 CC BY-SA 3.0 Rico Shen File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg. Adjacent caption explicitly says Di Ying left / Sun Peng right. Visually inspected actual original: Sun Peng is on the right, eyes/nose/mouth/chin unobstructed, dark sunglasses are on cap above eyes, not over eyes. 840x1008 crop excludes Di Ying face (left), but check interviewer microphones and all five masks before approval. DRAFT ONLY."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82/chin.png",
+            "full": "expansion-1500/pipeline/evidence/83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.14,
+                0.26,
+                0.82,
+                0.36
+              ],
+              "nose": [
+                0.14,
+                0.26,
+                0.82,
+                0.43
+              ],
+              "mouth": [
+                0.14,
+                0.26,
+                0.82,
+                0.54
+              ],
+              "chin": [
+                0.14,
+                0.26,
+                0.82,
+                0.64
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -11975,6 +12127,13 @@
             }
           ],
           "candidatesTried": 2
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261030T071529Z-e498fa1f",
+          "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+          "candidateId": "manualrecrop-83351dc924645475e36d",
+          "sourceCandidateId": "f971182399d1b7c928b6"
         }
       ],
       "legacyRecord": {
@@ -11998,76 +12157,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T070335Z-baa19623",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261030T071529Z-e498fa1f",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-83351dc924645475e36d"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-30T07:04:25.931575+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 5"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2007AlconTaiwanHiking_DiYing_SunPeng.jpg/1920px-2007AlconTaiwanHiking_DiYing_SunPeng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2007AlconTaiwanHiking_DiYing_SunPeng.jpg/1920px-2007AlconTaiwanHiking_DiYing_SunPeng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/2007AlconTaiwanHiking_DiYing_SunPeng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg",
-            "filename": "2007AlconTaiwanHiking DiYing SunPeng.jpg",
-            "artist": "Rico Shen",
-            "credit": "Own work",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "caption": "Famous Taiwanese entertainers Di Ying (狄鶯, left) and Sun Peng (孫鵬, right) at 2007 Alcon Taiwan Hiking.",
-            "identityEvidence": {
-              "query": "孫鵬",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "孫鵬"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "國光幫幫忙"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-30T07:04:27.813875+00:00",
-            "width": 3500,
-            "height": 2625,
-            "id": "f971182399d1b7c928b6",
-            "personId": "t1500_0470",
-            "discoveryRunId": "20261030T070335Z-baa19623",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0470/f971182399d1b7c928b6/45fef4ef658e/original.bin",
-            "originalSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
-            "cropFailure": "Multiple prominent faces",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Multiple prominent faces"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_SunPeng.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-30T07:04:29.689810+00:00",
       "workerFinishedAt": "2026-10-30T07:04:29.691819+00:00"
     },
@@ -38128,9 +38224,9 @@
       "personId": "t1500_0491",
       "candidateId": "c1500-0491",
       "name": "鄭弘儀",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 1,
-      "nextRetryAt": "2026-10-30T09:04:48.582488+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -38889,6 +38985,184 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
+          "filename": "鄭弘儀.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "荻原ホシ",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​三立新聞政論節目《鄭知道了》主持人鄭弘儀（由荻原星拍攝）",
+          "identityEvidence": {
+            "wikidataId": "Q8272691",
+            "mappingSource": "https://www.wikidata.org/wiki/Q8272691",
+            "exactChineseAliases": [
+              "鄭弘儀",
+              "郑弘仪",
+              "鄭弘儀",
+              "郑弘仪"
+            ],
+            "verifiedSearchAliases": [
+              "鄭弘儀",
+              "郑弘仪",
+              "Eric Cheng",
+              "Cheng Hong-yi",
+              "Zheng Hongyi"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:04:39.457191+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E5%BC%98%E5%84%80",
+            "articleTitle": "鄭弘儀",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "鄭弘儀",
+            "matchedAliases": [
+              "鄭弘儀",
+              "郑弘仪"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "鄭弘儀",
+              "郑弘仪"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "新聞挖挖哇"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:04:39.773018+00:00",
+          "width": 1170,
+          "height": 1632,
+          "id": "manualrecrop-5761b17aa85c1f1eaf3a",
+          "personId": "t1500_0491",
+          "discoveryRunId": "20261030T070335Z-baa19623",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0491/manualrecrop-5761b17aa85c1f1eaf3a/a3c6cbe1e6ad/original.bin",
+          "originalSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0491/manualrecrop-5761b17aa85c1f1eaf3a/a3c6cbe1e6ad/5761b17aa85c.jpg",
+          "parentCandidateId": "b2d56a194f8be54e5371",
+          "parentSourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+          "gameSha256": "5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead",
+          "reveal": {
+            "eyes": [
+              0.1,
+              0.27,
+              0.9,
+              0.44
+            ],
+            "nose": [
+              0.1,
+              0.27,
+              0.9,
+              0.6
+            ],
+            "mouth": [
+              0.1,
+              0.27,
+              0.9,
+              0.78
+            ],
+            "chin": [
+              0.1,
+              0.27,
+              0.9,
+              0.92
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+            "sourceCandidateId": "b2d56a194f8be54e5371",
+            "sourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+            "sourceSize": [
+              1170,
+              1632
+            ],
+            "cropBox": [
+              230,
+              60,
+              930,
+              900
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "鄭弘儀: 1170x1632 self-photographed CC BY-SA 4.0 Commons File:鄭弘儀.jpg, caption explicitly identifies him; 5:6 crop intended to exclude both background faces. The source-only contact sheet looks recognizable, but automated sharpness below 65 and original >1MB could not be inspected full-resolution in this review. DRAFT ONLY; reject if rendered 600x720 looks blurred or masks reveal wrong features."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/chin.png",
+            "full": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.1,
+                0.27,
+                0.9,
+                0.44
+              ],
+              "nose": [
+                0.1,
+                0.27,
+                0.9,
+                0.6
+              ],
+              "mouth": [
+                0.1,
+                0.27,
+                0.9,
+                0.78
+              ],
+              "chin": [
+                0.1,
+                0.27,
+                0.9,
+                0.92
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -39054,6 +39328,13 @@
             }
           ],
           "candidatesTried": 12
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261030T071529Z-e498fa1f",
+          "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+          "candidateId": "manualrecrop-5761b17aa85c1f1eaf3a",
+          "sourceCandidateId": "b2d56a194f8be54e5371"
         }
       ],
       "legacyRecord": {
@@ -39077,157 +39358,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T070335Z-baa19623",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261030T071529Z-e498fa1f",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-5761b17aa85c1f1eaf3a"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-30T07:04:39.167686+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
-            "filename": "鄭弘儀.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "荻原ホシ",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​三立新聞政論節目《鄭知道了》主持人鄭弘儀（由荻原星拍攝）",
-            "identityEvidence": {
-              "wikidataId": "Q8272691",
-              "mappingSource": "https://www.wikidata.org/wiki/Q8272691",
-              "exactChineseAliases": [
-                "鄭弘儀",
-                "郑弘仪",
-                "鄭弘儀",
-                "郑弘仪"
-              ],
-              "verifiedSearchAliases": [
-                "鄭弘儀",
-                "郑弘仪",
-                "Eric Cheng",
-                "Cheng Hong-yi",
-                "Zheng Hongyi"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T07:04:39.457191+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E5%BC%98%E5%84%80",
-              "articleTitle": "鄭弘儀",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "鄭弘儀",
-              "matchedAliases": [
-                "鄭弘儀",
-                "郑弘仪"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "鄭弘儀",
-                "郑弘仪"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "新聞挖挖哇"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T07:04:39.773018+00:00",
-            "width": 1170,
-            "height": 1632,
-            "id": "b2d56a194f8be54e5371",
-            "personId": "t1500_0491",
-            "discoveryRunId": "20261030T070335Z-baa19623",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0491/b2d56a194f8be54e5371/a3c6cbe1e6ad/original.bin",
-            "originalSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:RagnarTh_Holuhraunseldar_20_sept_2014-296.JPG",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:07_US_trip_(Oscar_Academy_Awards).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:96_Street_2010_vc.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Church_of_the_Light_Osaka_prefecture_Wikivoyage_banner.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:First_sign_we_saw_in_Louisiana_-_No_Swimming_because_of_alligators.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Independence_Hall_-_January_14,_2011_(5354175098).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Japanese_Bands_Poster.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Mother%27s_Restaurant,_New_Orleans_-_Sign_at_night,_June_2008.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Please_tell_me_why_Hot_Dog_is_lucky_here_-_New_Orleans_French_Quarter.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Woman_with_Mint_Julep_at_Pat_O%27Brien%27s,_New_Orleans.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%95%9F%E6%B3%B0.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-30T07:04:48.582500+00:00",
       "workerFinishedAt": "2026-10-30T07:04:48.584540+00:00"
     },

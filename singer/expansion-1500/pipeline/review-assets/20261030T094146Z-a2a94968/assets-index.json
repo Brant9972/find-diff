@@ -1,0 +1,118 @@
+{
+  "assetManifestPath": "expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/assets-index.json",
+  "contactSheets": [],
+  "manualContactSheets": [
+    {
+      "bytes": 27026,
+      "entries": [
+        {
+          "candidateId": "11cfabb73b01aa6bd121",
+          "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+          "personId": "t1500_0171",
+          "tile": 1
+        }
+      ],
+      "height": 315,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/manual-source-sheet-01.jpg",
+      "sha256": "767bdb1709291fca6453fc6f49e41a9ce09008029ff562479a4f21c74042161a",
+      "width": 960
+    }
+  ],
+  "manualSourceCount": 1,
+  "manualSourcePeopleCount": 1,
+  "manualSources": [
+    {
+      "candidateId": "11cfabb73b01aa6bd121",
+      "cropFailure": "Blurred crop: sharpness below 65",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "CNA Taiwan - 中央社",
+        "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+        "credit": "陳建斌陳湘琪 金馬稱王封后",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "陳湘琪",
+          "captionAliasMatches": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "curatedExactFileHint": true,
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "陳湘琪"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
+          "matchedAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "query": "陳湘琪",
+          "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
+          "verifiedSearchAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi",
+            "Chén Xiāngqí"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q5090886"
+        },
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance must be reviewed",
+          "representativeWorks": [
+            "迴光奏鳴曲"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "陳湘琪",
+      "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+      "personId": "t1500_0171",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 291361,
+        "displayHeight": 1758,
+        "displayWidth": 1920,
+        "height": 1758,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/source-only-0001/original.jpg",
+        "sha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+        "width": 1920
+      },
+      "stageImages": {}
+    }
+  ],
+  "peopleCount": 0,
+  "photoCount": 0,
+  "photos": [],
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "revealSheets": [],
+  "runId": "20261030T094146Z-a2a94968",
+  "schemaVersion": 1,
+  "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c"
+}

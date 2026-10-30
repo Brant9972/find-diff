@@ -1,62 +1,61 @@
 {
-  "runId": "20261030T081340Z-23adfada",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T081340Z-23adfada/review-index.json",
+  "runId": "20261030T094146Z-a2a94968",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T094146Z-a2a94968/review-index.json",
   "summary": {
-    "runId": "20261030T081340Z-23adfada",
-    "generatedAt": "2026-10-30T08:14:03.455847+00:00",
-    "scannedPeople": 2,
+    "runId": "20261030T094146Z-a2a94968",
+    "generatedAt": "2026-10-30T09:43:12.328661+00:00",
+    "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 2,
+    "scannedWithoutCandidates": 10,
     "retryNeeded": 421,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 287,
     "statusCounts": {
-      "no_suitable_source": 222,
-      "download_failed": 193,
+      "no_suitable_source": 228,
+      "download_failed": 187,
       "published": 89,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 321,
-      "image_validation_failed": 127,
-      "network_error": 277,
+      "identity_unconfirmed": 319,
+      "image_validation_failed": 128,
+      "network_error": 268,
       "excluded_context": 17,
-      "source_api_busy": 70,
-      "license_unclear": 80,
-      "source_api_error": 25,
+      "source_api_busy": 69,
+      "license_unclear": 78,
+      "source_api_error": 24,
       "identity_ambiguous": 11,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "image_validation_failed": 3,
-      "license_unclear": 1
+      "license_unclear": 2,
+      "image_validation_failed": 1
     },
-    "manualCropSources": 30,
+    "manualCropSources": 31,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 2,
-        "metadataCandidates": 2,
-        "identitySupportedMetadata": 2,
+        "attemptedPeople": 10,
+        "metadataCandidates": 3,
+        "identitySupportedMetadata": 3,
         "openLicenseMetadata": 1,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 1,
         "errors": {
-          "image_validation_failed": 2,
-          "license_unclear": 1
+          "image_validation_failed": 1
         }
       },
       "entity": {
-        "attemptedPeople": 2,
+        "attemptedPeople": 10,
         "metadataCandidates": 0,
         "identitySupportedMetadata": 0,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "image_validation_failed": 1
+          "license_unclear": 2
         }
       }
     },

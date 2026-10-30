@@ -2,65 +2,64 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261030T081340Z-23adfada",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T081340Z-23adfada/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json",
+  "runId": "20261030T094146Z-a2a94968",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T094146Z-a2a94968/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/assets-index.json",
   "summary": {
-    "runId": "20261030T081340Z-23adfada",
-    "generatedAt": "2026-10-30T08:14:03.455847+00:00",
-    "scannedPeople": 2,
+    "runId": "20261030T094146Z-a2a94968",
+    "generatedAt": "2026-10-30T09:43:12.328661+00:00",
+    "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 2,
+    "scannedWithoutCandidates": 10,
     "retryNeeded": 421,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 287,
     "statusCounts": {
-      "no_suitable_source": 222,
-      "download_failed": 193,
+      "no_suitable_source": 228,
+      "download_failed": 187,
       "published": 89,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 321,
-      "image_validation_failed": 127,
-      "network_error": 277,
+      "identity_unconfirmed": 319,
+      "image_validation_failed": 128,
+      "network_error": 268,
       "excluded_context": 17,
-      "source_api_busy": 70,
-      "license_unclear": 80,
-      "source_api_error": 25,
+      "source_api_busy": 69,
+      "license_unclear": 78,
+      "source_api_error": 24,
       "identity_ambiguous": 11,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "image_validation_failed": 3,
-      "license_unclear": 1
+      "license_unclear": 2,
+      "image_validation_failed": 1
     },
-    "manualCropSources": 30,
+    "manualCropSources": 31,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 2,
-        "metadataCandidates": 2,
-        "identitySupportedMetadata": 2,
+        "attemptedPeople": 10,
+        "metadataCandidates": 3,
+        "identitySupportedMetadata": 3,
         "openLicenseMetadata": 1,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 1,
         "errors": {
-          "image_validation_failed": 2,
-          "license_unclear": 1
+          "image_validation_failed": 1
         }
       },
       "entity": {
-        "attemptedPeople": 2,
+        "attemptedPeople": 10,
         "metadataCandidates": 0,
         "identitySupportedMetadata": 0,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "image_validation_failed": 1
+          "license_unclear": 2
         }
       }
     },
@@ -68,167 +67,141 @@
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 2,
-      "processedPeople": 2,
+      "targetPeople": 10,
+      "processedPeople": 10,
       "workers": 1,
-      "elapsedSeconds": 21.77,
+      "elapsedSeconds": 85.2,
       "stoppedForBudget": false
     }
   },
   "visualPeople": 0,
   "visualPhotos": 0,
   "batchPeople": [
-    "t1500_0107",
-    "t1500_0108"
+    "t1500_0173",
+    "t1500_0191",
+    "t1500_0203",
+    "t1500_0312",
+    "t1500_0518",
+    "t1500_0525",
+    "t1500_0171",
+    "t1500_0172",
+    "t1500_0192",
+    "t1500_0204"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0107",
-      "name": "陳明章",
+      "personId": "t1500_0173",
+      "name": "李亦捷",
       "status": "no_suitable_source",
       "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
-            "filename": "2022-03-06 Chen Ming-chang 01.jpg",
-            "artist": "總統府",
-            "credit": "https://www.flickr.com/photos/presidentialoffice/51921131036/",
-            "license": "CC BY 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-            "caption": "Official Photo by Simon Liu / Office of the President",
-            "identityEvidence": {
-              "query": "陳明章",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "curatedExactFileHint": true,
-              "wikidataId": "Q9474720",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9474720",
-              "exactChineseAliases": [
-                "陳明章",
-                "陈明章",
-                "陳明章",
-                "陈明章"
-              ],
-              "verifiedSearchAliases": [
-                "陳明章",
-                "陈明章",
-                "Chen Ming-chang",
-                "Chen Mingchang",
-                "Chen Mingzhang",
-                "Tân Bîng-tsiong"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T08:13:43.142792+00:00",
-              "visualIdentityVerified": false,
-              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%98%8E%E7%AB%A0",
-              "articleTitle": "陳明章",
-              "articleLookup": "exact title with redirects; not a search result",
-              "matchedAliases": [
-                "Chen Ming-chang"
-              ],
-              "captionAliasMatches": [
-                "Chen Ming-chang"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "流浪到淡水"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-30T08:13:49.296564+00:00",
-            "width": 2508,
-            "height": 1672,
-            "id": "ce176370fc6663c8c50b",
-            "personId": "t1500_0107",
-            "discoveryRunId": "20261030T081340Z-23adfada",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too tilted"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        }
-      ]
+      "errors": []
     },
     {
-      "personId": "t1500_0108",
-      "name": "黃少谷",
+      "personId": "t1500_0191",
+      "name": "姚愛寗",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0203",
+      "name": "陳松勇",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0312",
+      "name": "劉修甫",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0518",
+      "name": "黃騰浩",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0525",
+      "name": "鍾承翰",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC51%E5%B1%86%E9%87%91%E9%A6%AC%E5%BD%B1%E5%90%8E%E9%99%B3%E6%B9%98%E7%90%AA.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
-            "filename": "黃少谷 20171015誠品唱談會.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Lidian192847",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​黃少谷《未來》專輯簽唱會",
+            "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+            "filename": "Chen Shiang-chyi (陳湘琪) at the 51st Golden Horse Awards in November 2014.jpg",
+            "artist": "CNA Taiwan - 中央社",
+            "credit": "陳建斌陳湘琪 金馬稱王封后",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
             "identityEvidence": {
-              "wikidataId": "Q28408495",
-              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+              "query": "陳湘琪",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "curatedExactFileHint": true,
+              "wikidataId": "Q5090886",
+              "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
               "exactChineseAliases": [
-                "黃少谷"
+                "陳湘琪"
               ],
               "verifiedSearchAliases": [
-                "黃少谷",
-                "Huang Shao-Ku"
+                "陳湘琪",
+                "Chen Shiang-chyi",
+                "Chén Xiāngqí"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+              "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
               "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "query": "黃少谷",
+              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
+              "articleTitle": "陳湘琪",
+              "articleLookup": "exact title with redirects; not a search result",
               "matchedAliases": [
-                "黃少谷"
+                "陳湘琪",
+                "Chen Shiang-chyi"
               ],
-              "discoveryWarnings": [],
-              "claim": "P18",
               "captionAliasMatches": [
-                "黃少谷"
+                "陳湘琪",
+                "Chen Shiang-chyi"
               ]
             },
             "recognitionEvidence": {
-              "representativeWorks": [
-                "強辯樂團"
-              ],
               "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
+              "representativeWorks": [
+                "迴光奏鳴曲"
+              ],
+              "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-30T08:13:55.684354+00:00",
-            "width": 2457,
-            "height": 2448,
-            "id": "a4ed6e44e9b1698b677f",
-            "personId": "t1500_0108",
-            "discoveryRunId": "20261030T081340Z-23adfada",
+            "searchTime": "2026-10-30T09:42:40.379454+00:00",
+            "width": 2468,
+            "height": 2260,
+            "id": "11cfabb73b01aa6bd121",
+            "personId": "t1500_0171",
+            "discoveryRunId": "20261030T094146Z-a2a94968",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -237,212 +210,43 @@
               "Identity, iconic appearance, eyes/occlusion and watermark require human review",
               "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
             ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0108/a4ed6e44e9b1698b677f/4b0e7a9a196d/original.bin",
-            "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0171/11cfabb73b01aa6bd121/359bc6b4efc7/original.bin",
+            "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
             "cropFailure": "Blurred crop: sharpness below 65",
             "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
-            "filename": "Huang Shao-gu.jpg",
-            "artist": "喜歡音樂 (Enjoy Music)",
-            "credit": "own work by the original uploader",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​黃少谷「遊戲人生」演唱會照片（攝於台北三創五樓）",
-            "identityEvidence": {
-              "query": "黃少谷",
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "curatedExactFileHint": true,
-              "wikidataId": "Q28408495",
-              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
-              "exactChineseAliases": [
-                "黃少谷"
-              ],
-              "verifiedSearchAliases": [
-                "黃少谷",
-                "Huang Shao-Ku"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
-              "visualIdentityVerified": false,
-              "matchedAliases": [
-                "黃少谷"
-              ],
-              "captionAliasMatches": [
-                "黃少谷"
-              ]
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "強辯樂團"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-30T08:13:59.541885+00:00",
-            "width": 5184,
-            "height": 3456,
-            "id": "39f0f120c8a3eba5a957",
-            "personId": "t1500_0108",
-            "discoveryRunId": "20261030T081340Z-23adfada",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too small"
         }
       ]
-    }
-  ],
-  "visualAssetCommit": "0981d2cd1dbd51983851c271316018d54feb59ba",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json",
-    "contactSheets": [],
-    "manualContactSheets": [
-      {
-        "bytes": 29749,
-        "entries": [
-          {
-            "candidateId": "a4ed6e44e9b1698b677f",
-            "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
-            "personId": "t1500_0108",
-            "tile": 1
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg",
-        "sha256": "ef9380fe10ee68152b83b02d8825eee91a500138612310728a356670a1fecbaf",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualSourceCount": 1,
-    "manualSourcePeopleCount": 1,
-    "manualSources": [
-      {
-        "candidateId": "a4ed6e44e9b1698b677f",
-        "cropFailure": "Blurred crop: sharpness below 65",
-        "eligibleForLive": false,
-        "gameSha256": null,
-        "metadata": {
-          "author": "Lidian192847",
-          "caption": "​黃少谷《未來》專輯簽唱會",
-          "credit": "Own work",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "captionAliasMatches": [
-              "黃少谷"
-            ],
-            "claim": "P18",
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "黃少谷"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
-            "matchedAliases": [
-              "黃少谷"
-            ],
-            "query": "黃少谷",
-            "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
-            "verifiedSearchAliases": [
-              "黃少谷",
-              "Huang Shao-Ku"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q28408495"
-          },
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "強辯樂團"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-          ]
-        },
-        "name": "黃少谷",
-        "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
-        "personId": "t1500_0108",
-        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
-        "sourceImage": {
-          "bytes": 385060,
-          "displayHeight": 1913,
-          "displayWidth": 1920,
-          "height": 1913,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg",
-          "sha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
-          "width": 1920,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg?raw=true"
-        },
-        "stageImages": {}
-      }
-    ],
-    "peopleCount": 0,
-    "photoCount": 0,
-    "photos": [],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [],
-    "runId": "20261030T081340Z-23adfada",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "0981d2cd1dbd51983851c271316018d54feb59ba",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json?raw=true"
     },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+    {
+      "personId": "t1500_0172",
+      "name": "陸弈靜",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0192",
+      "name": "郭碧婷",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Bea_Hayden_Kuo_at_the_100th_episode_of_The_Million_Primary_School_20100822.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0204",
+      "name": "李立群",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    }
+  ]
 }

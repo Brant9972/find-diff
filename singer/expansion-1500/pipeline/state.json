@@ -11802,7 +11802,7 @@
       "personId": "t1500_0470",
       "candidateId": "c1500-0470",
       "name": "孫鵬",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -39048,7 +39048,7 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "pending_review",
+          "status": "superseded",
           "warnings": [
             "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
           ],
@@ -39153,6 +39153,185 @@
                 0.27,
                 0.9,
                 0.92
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "supersededBy": "manualrecrop-5761b17aa85c-66ed178b"
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E5%BC%98%E5%84%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
+          "filename": "鄭弘儀.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "荻原ホシ",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​三立新聞政論節目《鄭知道了》主持人鄭弘儀（由荻原星拍攝）",
+          "identityEvidence": {
+            "wikidataId": "Q8272691",
+            "mappingSource": "https://www.wikidata.org/wiki/Q8272691",
+            "exactChineseAliases": [
+              "鄭弘儀",
+              "郑弘仪",
+              "鄭弘儀",
+              "郑弘仪"
+            ],
+            "verifiedSearchAliases": [
+              "鄭弘儀",
+              "郑弘仪",
+              "Eric Cheng",
+              "Cheng Hong-yi",
+              "Zheng Hongyi"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:04:39.457191+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E5%BC%98%E5%84%80",
+            "articleTitle": "鄭弘儀",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "鄭弘儀",
+            "matchedAliases": [
+              "鄭弘儀",
+              "郑弘仪"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "鄭弘儀",
+              "郑弘仪"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "新聞挖挖哇"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:04:39.773018+00:00",
+          "width": 1170,
+          "height": 1632,
+          "id": "manualrecrop-5761b17aa85c-66ed178b",
+          "personId": "t1500_0491",
+          "discoveryRunId": "20261030T070335Z-baa19623",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0491/manualrecrop-5761b17aa85c-66ed178b/a3c6cbe1e6ad/original.bin",
+          "originalSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0491/manualrecrop-5761b17aa85c-66ed178b/a3c6cbe1e6ad/5761b17aa85c.jpg",
+          "parentCandidateId": "b2d56a194f8be54e5371",
+          "parentSourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+          "gameSha256": "5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead",
+          "reveal": {
+            "eyes": [
+              0.1,
+              0.35,
+              0.9,
+              0.55
+            ],
+            "nose": [
+              0.1,
+              0.35,
+              0.9,
+              0.69
+            ],
+            "mouth": [
+              0.1,
+              0.35,
+              0.9,
+              0.83
+            ],
+            "chin": [
+              0.1,
+              0.35,
+              0.9,
+              0.96
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": "66ed178b210d",
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+            "sourceCandidateId": "b2d56a194f8be54e5371",
+            "sourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+            "sourceSize": [
+              1170,
+              1632
+            ],
+            "cropBox": [
+              230,
+              60,
+              930,
+              900
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "2023 Commons File:鄭弘儀.jpg 1170x1632, CC BY-SA 4.0 self-work 荻原ホシ. Original source and first 600x720 crop visually checked: subject recognizable and no second face; however eyes.png first version only forehead and nose.png only eyes. New y limits target both eyes, nose tip, complete mouth and chin sequentially. All five output pixels require independent review before main."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/66ed178b210d/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/66ed178b210d/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/66ed178b210d/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/66ed178b210d/chin.png",
+            "full": "expansion-1500/pipeline/evidence/5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead/66ed178b210d/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.1,
+                0.35,
+                0.9,
+                0.55
+              ],
+              "nose": [
+                0.1,
+                0.35,
+                0.9,
+                0.69
+              ],
+              "mouth": [
+                0.1,
+                0.35,
+                0.9,
+                0.83
+              ],
+              "chin": [
+                0.1,
+                0.35,
+                0.9,
+                0.96
               ],
               "full": [
                 0,
@@ -39335,6 +39514,13 @@
           "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
           "candidateId": "manualrecrop-5761b17aa85c1f1eaf3a",
           "sourceCandidateId": "b2d56a194f8be54e5371"
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261030T072843Z-d2575cf8",
+          "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+          "candidateId": "manualrecrop-5761b17aa85c-66ed178b",
+          "sourceCandidateId": "b2d56a194f8be54e5371"
         }
       ],
       "legacyRecord": {
@@ -39358,9 +39544,9 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T071529Z-e498fa1f",
+      "lastRunId": "20261030T072843Z-d2575cf8",
       "lastRunNewCandidateIds": [
-        "manualrecrop-5761b17aa85c1f1eaf3a"
+        "manualrecrop-5761b17aa85c-66ed178b"
       ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-30T07:04:39.167686+00:00",

@@ -17105,8 +17105,34 @@
         "Eric Kot 200812.JPG"
       ],
       "reviewSearchQuery": "葛民輝 Eric Kot",
-      "reviewSourceResearchNote": "2026-10-30 manually checked Commons Category:Eric Kot (Wikidata Q590914). 2023 file: https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg, original photographer Tombus20032000, CC BY-SA 4.0, 2708x3611, one person, eyes and mouth visible; cap, beard and microphone require strict five-stage crop review. Fallback 2008 file: https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG, uploader Tksteven, CC BY 2.5 or CC BY-SA 3.0, 1000x750, microphone below mouth, face angled. Both are source leads only, NOT approved game crops. 2026-10-30 targeted run 41067189501 returned Commons metadata=4 but identitySupportedMetadata=0 because plan omitted the independently verified English stage name; Q590914/zhwiki and Commons file captions confirm Eric Kot. Added English aliases before retry. This is a source-identity fix, not approval. 2026-10-30 second run 41067704064 yielded zero metadata (transient Commons/API no result) despite prior 4 cached Commons records; one-shot exact-file metadata replay is required before any further network retry.",
-      "cachedMetadataRecheckToken": "20261030-eric-kot-verified-alias"
+      "reviewSourceResearchNote": "2026-10-30 manually checked Commons Category:Eric Kot (Wikidata Q590914). 2023 file: https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg, original photographer Tombus20032000, CC BY-SA 4.0, 2708x3611, one person, eyes and mouth visible; cap, beard and microphone require strict five-stage crop review. Fallback 2008 file: https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG, uploader Tksteven, CC BY 2.5 or CC BY-SA 3.0, 1000x750, microphone below mouth, face angled. Both are source leads only, NOT approved game crops. 2026-10-30 targeted run 41067189501 returned Commons metadata=4 but identitySupportedMetadata=0 because plan omitted the independently verified English stage name; Q590914/zhwiki and Commons file captions confirm Eric Kot. Added English aliases before retry. This is a source-identity fix, not approval. 2026-10-30 second run 41067704064 yielded zero metadata (transient Commons/API no result) despite prior 4 cached Commons records; one-shot exact-file metadata replay is required before any further network retry. 2026-10-30 source API intermittently returns zero exact-file metadata; reviewer-verified Commons original URL/artist/CC page evidence recorded for strict curated fallback. This only authorizes source-level diagnostic download, NOT release or five-stage approval.",
+      "cachedMetadataRecheckToken": "20261030-eric-kot-verified-alias",
+      "reviewVerifiedOriginalSources": [
+        {
+          "filename": "Eric Kot 20231029.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Eric_Kot_20231029.jpg",
+          "caption": "葛民輝在Cinema City 朗豪坊參與電影《夜校》謝票。 Eric Kot is in Langham Place.",
+          "artist": "Tombus20032000",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceType": "uploader_own_work",
+          "verificationUrl": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
+          "verifiedAt": "2026-10-30"
+        },
+        {
+          "filename": "Eric Kot 200812.JPG",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG",
+          "caption": "Eric Kot (葛民輝) was the guest at a publicity event in 2008.",
+          "artist": "Tksteven",
+          "license": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "sourceType": "uploader_own_work",
+          "verificationUrl": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+          "verifiedAt": "2026-10-30"
+        }
+      ]
     },
     {
       "candidateId": "c1500-0565",

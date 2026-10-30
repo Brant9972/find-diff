@@ -45,12 +45,13 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         request = json.loads((root / 'pipeline' / 'batch-request.json')
                              .read_text(encoding='utf-8'))
-        self.assertEqual(request['plannedPersonIds'], ['t1500_0604'])
-        self.assertEqual(request['targetPeople'], 1)
-        self.assertEqual(request['mode'], 'search')
+        self.assertEqual(request['plannedPersonIds'], [])
+        self.assertEqual(request['targetPeople'], 0)
+        self.assertEqual(request['mode'], 'render_only')
         self.assertEqual(request['providers'], ['curated', 'commons'])
         self.assertIn('five-stage', request['purpose'])
-        self.assertIn('preselected backup', request['purpose'])
+        self.assertIn('Preselected backup', request['purpose'])
+        self.assertIn('HTTP 404', request['purpose'])
 
 
     def test_source_screening_records_no_approved_game_crop(self):

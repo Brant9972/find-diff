@@ -85,7 +85,10 @@ class IdentityGuardTest(unittest.TestCase):
         person = next(row for row in plan['selectedNew']
                       if row['plannedQuestionId'] == 't1500_0554')
         self.assertIn('黃芷晴', person['excludedCaptionNames'])
-        self.assertEqual(len(person['excludedPhotoSources']), 2)
+        self.assertEqual(len(person['excludedPhotoSources']), 3)
+        self.assertTrue(any('Wong_Yat_Wah_Felix.JPG' in source
+                            for source in person['excludedPhotoSources']))
+        self.assertFalse(person.get('reviewExactCommonsFiles'))
 
     def test_patrick_tse_eye_obscured_exact_leads_are_blocked(self):
         import json

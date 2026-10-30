@@ -121,7 +121,9 @@ class IdentityGuardTest(unittest.TestCase):
         else:
             ids = request['plannedPersonIds']
             self.assertEqual(request['targetPeople'], len(ids))
-            self.assertEqual(request['providers'], ['curated'] if ids == ['t1500_0564'] else ['entity', 'commons'])
+            self.assertIn(request['providers'], (['curated'], ['entity', 'commons']))
+            if request['providers'] == ['curated']:
+                self.assertTrue(all(people[pid].get('reviewVerifiedOriginalSources') for pid in ids))
         self.assertEqual(len(ids), len(set(ids)))
         self.assertTrue(all(pid in people for pid in ids))
         self.assertNotIn('t1500_0596', ids, 'Already published 鄭融 must not be searched again')

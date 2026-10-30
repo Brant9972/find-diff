@@ -1,8 +1,27 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-zhenghongyi-v2-five-stage-visual-fix",
-  "mode": "manual_recrop",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-zhenghongyi-v2.json",
-  "targetPeople": 1,
-  "purpose": "Re-render only one existing source-verified 2023 鄭弘儀 photo with corrected eyes/nose/mouth/chin masks. No provider search, no duplicate 孫鵬 rerender, no main deployment or automatic approval."
+  "requestId": "20261030-taiwan-highpriority-distinct10-1539",
+  "mode": "search",
+  "targetPeople": 10,
+  "plannedPersonIds": [
+    "t1500_0007",
+    "t1500_0009",
+    "t1500_0016",
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094",
+    "t1500_0099",
+    "t1500_0102",
+    "t1500_0103",
+    "t1500_0104"
+  ],
+  "retryFailed": true,
+  "providers": [
+    "entity",
+    "commons"
+  ],
+  "maxMinutes": 25,
+  "personSeconds": 100,
+  "maxCandidates": 2,
+  "purpose": "Ten distinct existing selectedNew Taiwan high-priority personalities (A); no rerun of 8/20/40/200 old batches. Search QID/P18 exact and adjacent source caption first, enforce alias/QID pre-dedup, reject substring/other-entity false matches, keep source-only if identity/license/face unclear. Report provider metadata/identity/open-license/download/stage counts. Human approval and main release are separate; no creators changes."
 }

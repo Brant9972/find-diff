@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-taiwan-highpriority-distinct10-1539",
+  "requestId": "20261030-taiwan-highpriority-distinct10-after-test-fix",
   "mode": "search",
   "targetPeople": 10,
   "plannedPersonIds": [
@@ -23,5 +23,5 @@
   "maxMinutes": 25,
   "personSeconds": 100,
   "maxCandidates": 2,
-  "purpose": "Ten distinct existing selectedNew Taiwan high-priority personalities (A); no rerun of 8/20/40/200 old batches. Search QID/P18 exact and adjacent source caption first, enforce alias/QID pre-dedup, reject substring/other-entity false matches, keep source-only if identity/license/face unclear. Report provider metadata/identity/open-license/download/stage counts. Human approval and main release are separate; no creators changes."
+  "purpose": "Ten distinct existing selectedNew Taiwan high-priority personalities (A); no rerun of 8/20/40/200 old batches. Search QID/P18 exact and adjacent source caption first, enforce alias/QID pre-dedup, reject substring/other-entity false matches, keep source-only if identity/license/face unclear. Report provider metadata/identity/open-license/download/stage counts. Human approval and main release are separate; no creators changes. Retry the exact same 10 only because previous Actions 41021328865 failed before collection due stale hardcoded manual-mode regression; PR #34 fixed it. Do not expand or change targets."
 }

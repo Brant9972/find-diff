@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30T10:15:00Z",
+  "reviewType": "actual_pixel_and_five_stage_visual_review",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "sourceRun": "20261030T100905Z-419b191d",
+  "assetCommit": "f9bf993e76ad0413cdfc77d01c980e28e1abe372",
+  "personId": "t1500_0171",
+  "name": "陳湘琪",
+  "wikidataId": "Q5090886",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+  "originalSource": "https://www.youtube.com/watch?v=ffxdss7Xk6Y",
+  "sourceAuthor": "CNA Taiwan - 中央社",
+  "sourceLicenseClaim": "CC BY 3.0 (Commons page; not independently confirmed at original YouTube source)",
+  "originalSourceSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+  "decisions": [
+    {
+      "personId": "t1500_0171",
+      "candidateId": "manualrecrop-f186fd95e6ed3d7592fd",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "decision": "rejected",
+      "eligibleForLive": false,
+      "reason": "Actual 600x720 JPEG and all five PNG stages inspected. First eyes reveal incorrectly included nose and partial mouth; violates eye-first progression. Replaced with corrected reveal variant, same game JPEG pixels."
+    },
+    {
+      "personId": "t1500_0171",
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "decision": "pending",
+      "eligibleForLive": false,
+      "reason": "Actual 600x720 JPEG and eyes/nose/mouth/chin/full PNGs inspected. V2 masks now correctly reveal eyes only, then nose tip, complete mouth, chin, full face. Single woman; both eyes open and clearly visible, no second face or watermark, microphone below/left of mouth and not obscuring features. Moderate video-screenshot softness but face appears recognizable. Commons caption identifies Chen Shiang-chyi at 2014 Golden Horse Awards, author CNA Taiwan; independently verify original YouTube video's CC BY grant and subject/source correspondence before final identity/rights approval. Not eligible for main until rights, attribution, hints and branch QA pass."
+    }
+  ],
+  "stageVisualReview": {
+    "eyes": "pass: both eyes visible; nose and mouth hidden",
+    "nose": "pass: nose tip revealed; lips still hidden",
+    "mouth": "pass: lips fully revealed, chin mostly hidden",
+    "chin": "pass: chin revealed; microphone does not obscure mouth",
+    "full": "pass: 600x720 single recognizable portrait, no second face; slight softness"
+  },
+  "nextActions": [
+    "Verify original CNA Taiwan YouTube video ffxdss7Xk6Y CC BY licensing, or obtain independent Commons review record; Commons metadata alone insufficient for final approval.",
+    "Cross-check face with another independently captioned photograph if available.",
+    "After rights and identity confirmation, sync aliases, representative work 《迴光奏鳴曲》, attribution, roster, hint-candidates and eligibility-review on a review branch; run mobile/hints QA then merge main and verify Pages live."
+  ],
+  "notes": "Source-only original failed automatic Laplacian sharpness<65; manual crop does not waive human image-quality review. This review supersedes only the initial v1 reveal geometry, not any other people or prior approvals."
+}

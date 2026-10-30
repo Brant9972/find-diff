@@ -303,7 +303,11 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 if candidate['rightsStatus'] != 'open_license_metadata':
                     candidate['warnings'].append('Licence insufficient: image not downloaded')
                     row['candidates'].append(candidate)
-                    errors.append({'provider': provider.name, 'source': item['source'], 'code': 'license_unclear', 'message': 'Source metadata retained; no download without reusable licence metadata'})
+                    disputed = candidate['rightsStatus'] == 'rights_disputed'
+                    errors.append({'provider': provider.name, 'source': item['source'],
+                                   'code': 'license_disputed' if disputed else 'license_unclear',
+                                   'message': 'VOGUE Taiwan YouTube CC licence disputed by rights holder; no download or game use'
+                                   if disputed else 'Source metadata retained; no download without reusable licence metadata'})
                     if checkpoint:
                         checkpoint()
                     continue

@@ -98,8 +98,23 @@ def phrase_query(value):
     return '"' + str(value).replace('"', ' ').strip() + '" filetype:bitmap'
 
 
+def disputed_license_source(candidate):
+    """VOGUE Taiwan video stills have an independently documented rights conflict.
+
+    Wikimedia Foundation Legal reported in March 2025 that Condé Nast said
+    VOGUE Taiwan's YouTube CC settings were erroneous and its videos were not
+    authorized for reuse. Do not rely on the Commons CC metadata for these.
+    https://commons.wikimedia.org/wiki/Commons:Village_pump/Archive/2025/03
+    """
+    text = ' '.join(str(candidate.get(key, '')) for key in
+                    ('artist', 'credit', 'caption', 'filename', 'source'))
+    return bool(re.search(r'vogue[\s._-]*taiwan|vogue[\s._-]*臺灣|vogue[\s._-]*台灣|(?:台灣|臺灣)版?\s*vogue', text, re.I))
+
+
 def rights(candidate):
     """Conservative machine eligibility, never a final legal or human approval."""
+    if disputed_license_source(candidate):
+        return 'rights_disputed'
     name = candidate.get('license', '').strip().casefold().replace('_', '-')
     url = candidate.get('licenseUrl', '')
     p = urllib.parse.urlsplit(url)

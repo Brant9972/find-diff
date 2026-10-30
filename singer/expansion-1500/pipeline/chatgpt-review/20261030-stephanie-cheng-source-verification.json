@@ -48,14 +48,18 @@
   },
   "hint": {
     "proposedWork": "紅綠燈",
-    "independentlyVerified": false
+    "independentlyVerified": true,
+    "primarySource": "https://music.apple.com/us/song/1501322393",
+    "secondarySource": "https://www.youtube.com/watch?v=dJtAKqETyVs",
+    "sourceDescription": "Apple Music credits 紅綠燈 to Stephanie Cheng; official artist YouTube channel also lists 鄭融 as performer.",
+    "status": "work_credit_verified_not_game_published"
   },
-  "decision": "source_and_rights_verified_crop_and_hint_pending",
+  "decision": "source_rights_and_work_hint_verified_crop_pending",
   "eligibleForLive": false,
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
   "nextSteps": [
+    "Inspect immutable 600x720 JPEG and all five stage PNGs by eye before any publication",
     "Inspect immutable 600x720 JPEG and all five stage PNGs by eye",
-    "Verify concrete song credit from reliable music source",
     "Check CC BY-SA attribution and adaptation/share-alike requirements before publishing",
     "Check latest main SHA, aliases and QID deduplication before any PR"
   ]

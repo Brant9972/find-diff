@@ -121,11 +121,16 @@ class IdentityGuardTest(unittest.TestCase):
         else:
             ids = request['plannedPersonIds']
             self.assertEqual(request['targetPeople'], len(ids))
-            self.assertIn(request['providers'], (['curated'], ['entity', 'commons']))
+            self.assertIn(request['providers'], (['curated'], ['entity', 'commons'], ['commons']))
             if request['providers'] == ['curated']:
                 self.assertTrue(all(people[pid].get('reviewVerifiedOriginalSources') for pid in ids))
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertTrue(all(pid in people for pid in ids))
+        backup_spec = json.loads((root / 'pipeline/backup-photo-leads-20261030.json')
+                                 .read_text(encoding='utf-8'))
+        self.assertEqual(backup_spec['releaseGate'], 'BACKUP_PHOTO_SEARCH_ONLY_NOT_PLAYABLE')
+        backup_ids = {p['plannedQuestionId'] for p in backup_spec['people']}
+        self.assertTrue(all(pid in people or pid in backup_ids for pid in ids))
+        self.assertTrue(all(pid not in people for pid in backup_ids))
         self.assertNotIn('t1500_0596', ids, 'Already published 鄭融 must not be searched again')
         progress = plan['releaseProgress']
         arithmetic = plan['arithmetic']

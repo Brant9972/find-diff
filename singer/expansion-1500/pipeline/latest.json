@@ -1,30 +1,30 @@
 {
-  "runId": "20261030T160400Z-7999bf7e",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T160400Z-7999bf7e/review-index.json",
+  "runId": "20261030T172637Z-1037371b",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T172637Z-1037371b/review-index.json",
   "summary": {
-    "runId": "20261030T160400Z-7999bf7e",
-    "generatedAt": "2026-10-30T16:04:00.942362+00:00",
-    "scannedPeople": 0,
+    "runId": "20261030T172637Z-1037371b",
+    "generatedAt": "2026-10-30T17:26:51.814774+00:00",
+    "scannedPeople": 6,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 6,
     "retryNeeded": 420,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 293,
     "statusCounts": {
-      "no_suitable_source": 231,
-      "download_failed": 183,
+      "no_suitable_source": 232,
+      "download_failed": 182,
       "published": 90,
       "pending_review": 1,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 320,
-      "image_validation_failed": 120,
+      "identity_unconfirmed": 310,
+      "image_validation_failed": 119,
       "network_error": 263,
       "excluded_context": 17,
-      "source_api_busy": 71,
+      "source_api_busy": 70,
       "license_unclear": 75,
       "source_api_error": 22,
       "identity_ambiguous": 11,
@@ -32,9 +32,32 @@
       "proxy_access_denied": 4,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "license_unclear": 1
+    },
     "manualCropSources": 33,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 6,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "license_unclear": 1
+        }
+      },
+      "curated": {
+        "attemptedPeople": 6,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

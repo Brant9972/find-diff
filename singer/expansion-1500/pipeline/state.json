@@ -21265,9 +21265,9 @@
       "personId": "t1500_0108",
       "candidateId": "c1500-0108",
       "name": "黃少谷",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T20:54:11.703752+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T12:14:02.888706+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -21307,6 +21307,68 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
+          "filename": "黃少谷 20171015誠品唱談會.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Lidian192847",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​黃少谷《未來》專輯簽唱會",
+          "identityEvidence": {
+            "wikidataId": "Q28408495",
+            "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+            "exactChineseAliases": [
+              "黃少谷"
+            ],
+            "verifiedSearchAliases": [
+              "黃少谷",
+              "Huang Shao-Ku"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "query": "黃少谷",
+            "matchedAliases": [
+              "黃少谷"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "黃少谷"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "強辯樂團"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T08:13:55.684354+00:00",
+          "width": 2457,
+          "height": 2448,
+          "id": "a4ed6e44e9b1698b677f",
+          "personId": "t1500_0108",
+          "discoveryRunId": "20261030T081340Z-23adfada",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0108/a4ed6e44e9b1698b677f/4b0e7a9a196d/original.bin",
+          "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
         }
       ],
       "history": [
@@ -21499,6 +21561,156 @@
             }
           ],
           "candidatesTried": 4
+        },
+        {
+          "time": "2026-10-30T08:13:54.666897+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T08:13:59.037714+00:00"
+        },
+        {
+          "time": "2026-10-30T08:13:59.037763+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T08:14:02.888660+00:00"
+        },
+        {
+          "time": "2026-10-30T08:14:02.888690+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
+                "filename": "黃少谷 20171015誠品唱談會.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Lidian192847",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​黃少谷《未來》專輯簽唱會",
+                "identityEvidence": {
+                  "wikidataId": "Q28408495",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+                  "exactChineseAliases": [
+                    "黃少谷"
+                  ],
+                  "verifiedSearchAliases": [
+                    "黃少谷",
+                    "Huang Shao-Ku"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "query": "黃少谷",
+                  "matchedAliases": [
+                    "黃少谷"
+                  ],
+                  "discoveryWarnings": [],
+                  "claim": "P18",
+                  "captionAliasMatches": [
+                    "黃少谷"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "強辯樂團"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T08:13:55.684354+00:00",
+                "width": 2457,
+                "height": 2448,
+                "id": "a4ed6e44e9b1698b677f",
+                "personId": "t1500_0108",
+                "discoveryRunId": "20261030T081340Z-23adfada",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0108/a4ed6e44e9b1698b677f/4b0e7a9a196d/original.bin",
+                "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Huang_Shao-gu.jpg/1920px-Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Huang_Shao-gu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
+                "filename": "Huang Shao-gu.jpg",
+                "artist": "喜歡音樂 (Enjoy Music)",
+                "credit": "own work by the original uploader",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​黃少谷「遊戲人生」演唱會照片（攝於台北三創五樓）",
+                "identityEvidence": {
+                  "query": "黃少谷",
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "curatedExactFileHint": true,
+                  "wikidataId": "Q28408495",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+                  "exactChineseAliases": [
+                    "黃少谷"
+                  ],
+                  "verifiedSearchAliases": [
+                    "黃少谷",
+                    "Huang Shao-Ku"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+                  "visualIdentityVerified": false,
+                  "matchedAliases": [
+                    "黃少谷"
+                  ],
+                  "captionAliasMatches": [
+                    "黃少谷"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "強辯樂團"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-30T08:13:59.541885+00:00",
+                "width": 5184,
+                "height": 3456,
+                "id": "39f0f120c8a3eba5a957",
+                "personId": "t1500_0108",
+                "discoveryRunId": "20261030T081340Z-23adfada",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "legacyRecord": {
@@ -21517,114 +21729,76 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastRunId": "20261028T185334Z-9220641c",
+      "lastRunId": "20261030T081340Z-23adfada",
       "lastRunNewCandidateIds": [],
-      "lastSearchRevision": 3,
-      "lastAttemptAt": "2026-10-28T18:54:07.770165+00:00",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T08:13:54.598412+00:00",
       "lastErrors": [
         {
           "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 2"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Huanggu_District_Govenment_Headquarters_359.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20150926%E4%B8%89%E6%98%8E%E4%B8%89%E6%9A%97%E6%BC%94%E5%94%B1%E6%9C%83.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E9%BB%83%E5%B0%91%E8%B0%B7_20150926%E4%B8%89%E6%98%8E%E4%B8%89%E6%9A%97%E6%BC%94%E5%94%B1%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E9%BB%83%E5%B0%91%E8%B0%B7_20150926%E4%B8%89%E6%98%8E%E4%B8%89%E6%9A%97%E6%BC%94%E5%94%B1%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E9%BB%83%E5%B0%91%E8%B0%B7_20150926%E4%B8%89%E6%98%8E%E4%B8%89%E6%9A%97%E6%BC%94%E5%94%B1%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20150926%E4%B8%89%E6%98%8E%E4%B8%89%E6%9A%97%E6%BC%94%E5%94%B1%E6%9C%83.jpg",
-            "filename": "黃少谷 20150926三明三暗演唱會.jpg",
-            "artist": "高菜菜",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​強辯樂團《三明三暗》巡迴演唱會台北場",
-            "identityEvidence": {
-              "query": "黃少谷",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃少谷",
-                "黃少谷"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "強辯樂團"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-28T18:54:10.225994+00:00",
-            "width": 480,
-            "height": 721,
-            "id": "3c5b76209b3aeccf8f9c",
-            "personId": "t1500_0108",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
           "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
             "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
             "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
             "filename": "黃少谷 20171015誠品唱談會.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
             "artist": "Lidian192847",
             "credit": "Own work",
             "license": "CC BY-SA 4.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
             "caption": "​黃少谷《未來》專輯簽唱會",
             "identityEvidence": {
-              "query": "黃少谷",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃少谷",
+              "wikidataId": "Q28408495",
+              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+              "exactChineseAliases": [
                 "黃少谷"
               ],
-              "visualIdentityVerified": false
+              "verifiedSearchAliases": [
+                "黃少谷",
+                "Huang Shao-Ku"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "query": "黃少谷",
+              "matchedAliases": [
+                "黃少谷"
+              ],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": [
+                "黃少谷"
+              ]
             },
             "recognitionEvidence": {
-              "requestedReplacement": "",
               "representativeWorks": [
                 "強辯樂團"
               ],
-              "note": "Familiar appearance must be reviewed"
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-28T18:54:10.436378+00:00",
+            "searchTime": "2026-10-30T08:13:55.684354+00:00",
             "width": 2457,
             "height": 2448,
             "id": "a4ed6e44e9b1698b677f",
             "personId": "t1500_0108",
+            "discoveryRunId": "20261030T081340Z-23adfada",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0108/a4ed6e44e9b1698b677f/4b0e7a9a196d/original.bin",
+            "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
@@ -21647,12 +21821,26 @@
             "caption": "​黃少谷「遊戲人生」演唱會照片（攝於台北三創五樓）",
             "identityEvidence": {
               "query": "黃少谷",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃少谷",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "curatedExactFileHint": true,
+              "wikidataId": "Q28408495",
+              "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+              "exactChineseAliases": [
                 "黃少谷"
               ],
-              "visualIdentityVerified": false
+              "verifiedSearchAliases": [
+                "黃少谷",
+                "Huang Shao-Ku"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+              "visualIdentityVerified": false,
+              "matchedAliases": [
+                "黃少谷"
+              ],
+              "captionAliasMatches": [
+                "黃少谷"
+              ]
             },
             "recognitionEvidence": {
               "requestedReplacement": "",
@@ -21661,11 +21849,12 @@
               ],
               "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-28T18:54:10.951964+00:00",
+            "searchTime": "2026-10-30T08:13:59.541885+00:00",
             "width": 5184,
             "height": 3456,
             "id": "39f0f120c8a3eba5a957",
             "personId": "t1500_0108",
+            "discoveryRunId": "20261030T081340Z-23adfada",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -21676,20 +21865,15 @@
           },
           "code": "image_validation_failed",
           "message": "Face is too small"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T18:54:11.703761+00:00",
-      "workerFinishedAt": "2026-10-28T18:54:11.704709+00:00"
+      "updatedAt": "2026-10-30T08:14:02.888718+00:00",
+      "workerFinishedAt": "2026-10-30T08:14:02.891432+00:00"
     },
     "t1500_0224": {
       "attempts": 6,
@@ -30990,9 +31174,9 @@
       "personId": "t1500_0107",
       "candidateId": "c1500-0107",
       "name": "陳明章",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T20:54:09.499325+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T12:13:54.464791+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0107",
@@ -31168,21 +31352,50 @@
         },
         {
           "provider": "commons",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "downloadVariant": "wikimedia_thumbnail_1400",
-          "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
-          "filename": "2022-03-06 Chen Ming-chang 01.jpg",
-          "artist": "總統府",
-          "credit": "https://www.flickr.com/photos/presidentialoffice/51921131036/",
-          "license": "CC BY 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-          "caption": "Official Photo by Simon Liu / Office of the President",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
+          "filename": "2023 TTXC高雄電影節-陳明章.jpg",
+          "artist": "高雄市政府文化局",
+          "credit": "https://www.kff.tw/content/kff-FreeBeatsTheMusicalJo",
+          "license": "Attribution",
+          "licenseUrl": "",
+          "caption": "​2023 TTXC高雄電影節-陳明章",
           "identityEvidence": {
             "query": "陳明章",
-            "identityWarning": "Caption/name match is preliminary evidence only",
-            "captionAliasMatches": [],
-            "visualIdentityVerified": false
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "curatedExactFileHint": true,
+            "wikidataId": "Q9474720",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9474720",
+            "exactChineseAliases": [
+              "陳明章",
+              "陈明章",
+              "陳明章",
+              "陈明章"
+            ],
+            "verifiedSearchAliases": [
+              "陳明章",
+              "陈明章",
+              "Chen Ming-chang",
+              "Chen Mingchang",
+              "Chen Mingzhang",
+              "Tân Bîng-tsiong"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T08:13:43.142792+00:00",
+            "visualIdentityVerified": false,
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%98%8E%E7%AB%A0",
+            "articleTitle": "陳明章",
+            "articleLookup": "exact title with redirects; not a search result",
+            "matchedAliases": [
+              "陳明章",
+              "陈明章"
+            ],
+            "captionAliasMatches": [
+              "陳明章",
+              "陈明章"
+            ]
           },
           "recognitionEvidence": {
             "requestedReplacement": "",
@@ -31191,18 +31404,19 @@
             ],
             "note": "Familiar appearance must be reviewed"
           },
-          "searchTime": "2026-10-28T18:54:09.498222+00:00",
-          "width": 2508,
-          "height": 1672,
-          "id": "ce176370fc6663c8c50b",
+          "searchTime": "2026-10-30T08:13:51.121887+00:00",
+          "width": 1920,
+          "height": 1280,
+          "id": "772a3db15679686b4e09",
           "personId": "t1500_0107",
-          "rightsStatus": "open_license_metadata",
+          "discoveryRunId": "20261030T081340Z-23adfada",
+          "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
           "status": "metadata_only",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "Licence insufficient: image not downloaded"
           ]
         }
       ],
@@ -31265,6 +31479,103 @@
             }
           ],
           "candidatesTried": 4
+        },
+        {
+          "time": "2026-10-30T08:13:42.650705+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T08:13:48.076443+00:00"
+        },
+        {
+          "time": "2026-10-30T08:13:48.076473+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T08:13:54.464753+00:00"
+        },
+        {
+          "time": "2026-10-30T08:13:54.464774+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+                "filename": "2022-03-06 Chen Ming-chang 01.jpg",
+                "artist": "總統府",
+                "credit": "https://www.flickr.com/photos/presidentialoffice/51921131036/",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "Official Photo by Simon Liu / Office of the President",
+                "identityEvidence": {
+                  "query": "陳明章",
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "curatedExactFileHint": true,
+                  "wikidataId": "Q9474720",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9474720",
+                  "exactChineseAliases": [
+                    "陳明章",
+                    "陈明章",
+                    "陳明章",
+                    "陈明章"
+                  ],
+                  "verifiedSearchAliases": [
+                    "陳明章",
+                    "陈明章",
+                    "Chen Ming-chang",
+                    "Chen Mingchang",
+                    "Chen Mingzhang",
+                    "Tân Bîng-tsiong"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T08:13:43.142792+00:00",
+                  "visualIdentityVerified": false,
+                  "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%98%8E%E7%AB%A0",
+                  "articleTitle": "陳明章",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "matchedAliases": [
+                    "Chen Ming-chang"
+                  ],
+                  "captionAliasMatches": [
+                    "Chen Ming-chang"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "流浪到淡水"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-30T08:13:49.296564+00:00",
+                "width": 2508,
+                "height": 1672,
+                "id": "ce176370fc6663c8c50b",
+                "personId": "t1500_0107",
+                "discoveryRunId": "20261030T081340Z-23adfada",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "legacyRecord": {
@@ -31325,48 +31636,98 @@
         },
         "reviewNote": "陳明章草稿眼睛閉合，眼部揭露無法辨認"
       },
-      "lastRunId": "20261028T185334Z-9220641c",
+      "lastRunId": "20261030T081340Z-23adfada",
       "lastRunNewCandidateIds": [],
-      "lastSearchRevision": 3,
-      "lastAttemptAt": "2026-10-28T18:54:05.640157+00:00",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T08:13:42.553408+00:00",
       "lastErrors": [
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:830%E9%81%8A%E8%A1%8C_MiNe-10D_372-7257FG_(2814469931).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:830%E9%81%8A%E8%A1%8C_MiNe-10D_372-7272FG_(2815321102).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:06.25_%E7%B8%BD%E7%B5%B1%E5%81%95%E5%90%8C%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C%E7%AB%AF%E5%8D%88%E8%AC%9D%E5%B9%B3%E5%AE%89_%E8%97%9D%E6%96%87%E5%A4%A7%E5%8C%AF%E6%BC%94%E3%80%8D%E6%B4%BB%E5%8B%95_(50044409142).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
           "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022-03-06_Chen_Ming-chang_01.jpg/1920px-2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2022-03-06_Chen_Ming-chang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+            "filename": "2022-03-06 Chen Ming-chang 01.jpg",
+            "artist": "總統府",
+            "credit": "https://www.flickr.com/photos/presidentialoffice/51921131036/",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "Official Photo by Simon Liu / Office of the President",
+            "identityEvidence": {
+              "query": "陳明章",
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "curatedExactFileHint": true,
+              "wikidataId": "Q9474720",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9474720",
+              "exactChineseAliases": [
+                "陳明章",
+                "陈明章",
+                "陳明章",
+                "陈明章"
+              ],
+              "verifiedSearchAliases": [
+                "陳明章",
+                "陈明章",
+                "Chen Ming-chang",
+                "Chen Mingchang",
+                "Chen Mingzhang",
+                "Tân Bîng-tsiong"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T08:13:43.142792+00:00",
+              "visualIdentityVerified": false,
+              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%98%8E%E7%AB%A0",
+              "articleTitle": "陳明章",
+              "articleLookup": "exact title with redirects; not a search result",
+              "matchedAliases": [
+                "Chen Ming-chang"
+              ],
+              "captionAliasMatches": [
+                "Chen Ming-chang"
+              ]
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "流浪到淡水"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-30T08:13:49.296564+00:00",
+            "width": 2508,
+            "height": 1672,
+            "id": "ce176370fc6663c8c50b",
+            "personId": "t1500_0107",
+            "discoveryRunId": "20261030T081340Z-23adfada",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too tilted"
         },
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T18:54:09.499333+00:00",
-      "workerFinishedAt": "2026-10-28T18:54:09.500224+00:00"
+      "updatedAt": "2026-10-30T08:13:54.464803+00:00",
+      "workerFinishedAt": "2026-10-30T08:13:54.466881+00:00"
     },
     "t1500_0476": {
       "personId": "t1500_0476",

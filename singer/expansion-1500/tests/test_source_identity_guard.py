@@ -20,6 +20,23 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertEqual(identity({'name': 'Ben Wong'}, 'Ben Wongster portrait'), [])
         self.assertEqual(identity({'name': 'Ben Wong'}, 'Ben-Wong portrait'), ['Ben Wong'])
 
+    def test_three_pixel_rejected_sources_are_excluded_from_release_plan(self):
+        import json
+        plan = json.loads((Path(__file__).resolve().parents[1] /
+                           'release-plan-20261028.json').read_text(encoding='utf-8'))
+        people = {row['plannedQuestionId']: row for row in plan['selectedNew']}
+        expected = {
+            't1500_0561': '2010_Hong_Kong_International_Film_Festival_',
+            't1500_0571': 'China_Guardian_Autumn_Auction_',
+            't1500_0587': '%E5%BB%96%E5%95%9F%E6%99%BA2019.jpg',
+        }
+        for person_id, filename_fragment in expected.items():
+            with self.subTest(person_id=person_id):
+                sources = people[person_id].get('excludedPhotoSources', [])
+                self.assertTrue(any(filename_fragment in source for source in sources))
+                self.assertTrue(all(source.startswith('https://commons.wikimedia.org/wiki/File:')
+                                    for source in sources))
+
     def test_wrong_search_result_does_not_consume_image_quota(self):
         person = {'name': '家家', 'plannedQuestionId': 't1'}
         class Provider:

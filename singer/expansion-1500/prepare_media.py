@@ -37,7 +37,7 @@ def load_preselected_backup_search_people(root):
         candidate_id = lead['candidateId']
         base = original.get(candidate_id)
         reviewed = preselected.get(candidate_id)
-        match = re.fullmatch(r'c1500-(\\d{4})', candidate_id)
+        match = re.fullmatch(r'c1500-([0-9]{4})', candidate_id)
         if not match or not base or not reviewed or base['name'] != lead['name'] or reviewed['name'] != lead['name']:
             raise ValueError('Backup lead is not an existing preselected candidate')
         pid = 't1500_' + match.group(1)
@@ -45,7 +45,9 @@ def load_preselected_backup_search_people(root):
             raise ValueError('Backup lead has inconsistent person ID or bank')
         filenames = lead.get('reviewExactCommonsFiles', [])
         if not 1 <= len(filenames) <= 3 or any(
-                not re.fullmatch(r'[^/\\\\\\r\\n]{1,200}\\.(?:jpg|jpeg|png|webp)', f, re.I)
+                not (isinstance(f, str) and 1 <= len(f) <= 200
+                     and f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))
+                     and all(ch not in f for ch in ('/', chr(92), chr(10), chr(13))))
                 for f in filenames):
             raise ValueError('Backup source filenames must be bounded image names')
         if pid in result:

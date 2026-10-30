@@ -1,5 +1,6 @@
 """Regression coverage for safely resuming bulk work after a strategy change."""
 import datetime
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -31,6 +32,31 @@ class SelectionTest(unittest.TestCase):
     def test_legacy_review_scope_and_explicit_id_filter(self):
         self.assertEqual(select_people(self.state, self.people, self.handoff, 40, review_only=True), ['reviewed'])
         self.assertEqual(select_people(self.state, self.people, self.handoff, 40, person_ids=['old']), ['old'])
+
+    def test_curated_exact_commons_hints_remain_draft_only(self):
+        plan_path = Path(__file__).resolve().parents[1] / 'release-plan-20261028.json'
+        plan = json.loads(plan_path.read_text(encoding='utf-8'))
+        row = next(person for person in plan['selectedNew']
+                   if person['plannedQuestionId'] == 't1500_0107')
+        self.assertEqual(row['name'], '陳明章')
+        self.assertEqual(row['wikidataId'], 'Q9474720')
+        self.assertEqual(len(row['reviewExactCommonsFiles']), 3)
+        self.assertTrue(all(filename.lower().endswith('.jpg')
+                            for filename in row['reviewExactCommonsFiles']))
+        self.assertNotEqual(row['photoStatus'], 'published')
+        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+        self.assertNotEqual(row['qaStatus'], 'releasable')
+
+    def test_musician_huang_shaoku_cannot_use_politician_qid(self):
+        plan_path = Path(__file__).resolve().parents[1] / 'release-plan-20261028.json'
+        plan = json.loads(plan_path.read_text(encoding='utf-8'))
+        row = next(person for person in plan['selectedNew']
+                   if person['plannedQuestionId'] == 't1500_0108')
+        self.assertEqual(row['name'], '黃少谷')
+        self.assertEqual(row['wikidataId'], 'Q28408495')
+        self.assertIn('Huang Shao-gu.jpg', row['reviewExactCommonsFiles'])
+        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+        self.assertNotEqual(row['photoStatus'], 'published')
 
     def test_limit_applies_after_review_priority(self):
         self.assertEqual(select_people(self.state, self.people, self.handoff, 1), ['reviewed'])

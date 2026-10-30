@@ -78,6 +78,52 @@ def select_people(state,people,handoff,limit,review_only=False,retry_failed=Fals
     return queue[:limit]
 
 
+
+def requested_selection_audit(state, requested_ids, selected_ids, retry_failed=False,
+                              revision=SEARCH_REVISION, current_time=None):
+    """Explain why explicit targets did not enter a source-search queue.
+
+    Diagnostic only: never overrides cooldowns, retries a rejected image,
+    approves a photo, or changes the selected person IDs.
+    """
+    current_time = current_time or datetime.datetime.now(datetime.timezone.utc)
+    selected = set(selected_ids)
+    skipped = []
+    for pid in requested_ids:
+        if pid in selected:
+            continue
+        row = state['people'].get(pid)
+        if row is None:
+            reason, status = 'unknown_person', None
+        else:
+            status = row.get('status')
+            if status in {'approved', 'published', 'pending_review',
+                          'candidate_ready', 'duplicate_existing'}:
+                reason = 'already_staged_or_published'
+            elif retry_failed and status not in {
+                    'download_failed', 'no_suitable_source', 'rejected', 'searching'}:
+                reason = 'retry_failed_status_filter'
+            elif (not retry_failed and row.get('lastSearchRevision') == revision
+                  and row.get('nextRetryAt')):
+                try:
+                    retry_at = datetime.datetime.fromisoformat(row['nextRetryAt'])
+                    if retry_at.tzinfo is None:
+                        reason = 'invalid_retry_timestamp'
+                    elif retry_at > current_time:
+                        reason = 'cooldown'
+                    else:
+                        reason = 'other_selection_filter'
+                except (TypeError, ValueError):
+                    reason = 'invalid_retry_timestamp'
+            else:
+                reason = 'other_selection_filter'
+        item = {'personId': pid, 'status': status, 'reason': reason}
+        if row and row.get('nextRetryAt'):
+            item['nextRetryAt'] = row['nextRetryAt']
+        skipped.append(item)
+    return skipped
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--limit',type=int,default=40)
@@ -152,6 +198,7 @@ def main(argv=None):
                     batch_result.update({'targetPeople':len(scanned),'processedPeople':len(scanned)})
                 else:
                     queue=select_people(state,people,handoff,args.limit,args.review_round,args.retry_failed,args.person_id)
+                    selection_audit=requested_selection_audit(state,args.person_id,queue,args.retry_failed)
                     enriched={}
                     for pid in queue:
                         person=copy.deepcopy(people[pid]);review=state['people'][pid].get('chatgptReview',{})
@@ -161,6 +208,9 @@ def main(argv=None):
                     records=read(args.official_sources,[]) if args.official_sources else []
                     registry={'curated':CuratedCommons(),'entity':EntityPortraits(allow_openverse=False),'commons':CommonsSearch(),'openverse':Openverse(),'wikimedia':Wikimedia(),'official':Official(records)}
                     scanned,batch_result=run_batch(root,directory,state,enriched,queue,[registry[n] for n in names],Cropper(root),rejected,active,run_id,deadline,args.workers,args.person_seconds,args.max_candidates)
+                    batch_result['requestedPeople']=len(args.person_id)
+                    batch_result['skippedRequested']=selection_audit
+                    batch_result['unprocessedSelected']=[pid for pid in queue if pid not in scanned]
         finally:
             if protected(root)!=before:raise RuntimeError('Production files changed; do not commit')
             summary=report(root,directory,state,run_id,scanned)

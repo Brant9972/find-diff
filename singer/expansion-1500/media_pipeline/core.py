@@ -19,6 +19,41 @@ from .rejection_pixels import matches_rejected
 STATUSES = {'not_started', 'searching', 'download_failed', 'no_suitable_source', 'candidate_ready', 'pending_review', 'rejected', 'approved', 'published', 'duplicate_existing'}
 BLOCKED = ('funeral', 'mourning', 'memorial', 'obituary', 'waxwork', 'statue', 'sculpture', 'tussauds', '葬禮', '丧礼', '喪禮', '追思', '告別式', '告别式', '蠟像', '蜡像', '雕像', 'ai-generated', 'ai generated')
 
+# These are strong *scene subject* clues in filenames, not a general ban on
+# taking portraits at venues. A clear person/portrait cue overrides the filter.
+# A Wikidata Q5 match for "Dayuan" must not turn Dayuan Township scenery into
+# a photograph of singer 大元; the same applies to 乾德門/temples and 李銓/schools.
+NONPORTRAIT_FILENAME = re.compile(
+    r'(?i)(?<![a-z])(?:township|district|temple|restaurant|street|bridge|'
+    r'archaeological|construction|harbor|harbour|railway|station|palace|'
+    r'university|campus|shrine|museum|airport|shopping|auction|market|'
+    r'skyline|landscape|town\s+hall|river\s+bridge)(?![a-z])'
+    r'|(?:美食|餐廳|餐馆|店面|古城|考古|橋樑|桥梁|車站|车站|寺廟|寺庙|'
+    r'神社|靈堂|灵堂|大學|大学|建築|建筑|拍賣|拍卖|公園|公园|'
+    r'博物館|博物馆|校園|校园|河橋|河桥)'
+)
+PORTRAIT_CONTEXT = re.compile(
+    r'(?i)(?<![a-z])(?:portrait|headshot|close[- ]?up|actor|actress|'
+    r'singer|performer|interview|press\s+conference|red\s+carpet)(?![a-z])'
+    r'|(?:肖像|人像|特寫|特写|演員|演员|歌手|藝人|艺人|主持人|'
+    r'專訪|专访|演唱會|演唱会|出席|受訪|受访|記者會|记者会|合照|自拍)'
+)
+
+
+def obvious_nonportrait_scene(item):
+    """Reject obvious place/food/building images before costly face detection.
+
+    The rule only examines scene words in the filename. A caption merely
+    mentioning a person cannot prove that a building photo depicts them.
+    Conversely, an explicitly labelled portrait at a venue remains eligible
+    for subsequent identity, licence and *human* image review.
+    """
+    filename = unquote(str(item.get('filename') or ''))
+    if not NONPORTRAIT_FILENAME.search(filename):
+        return False
+    return not bool(PORTRAIT_CONTEXT.search(filename + ' ' + str(item.get('caption') or '')))
+
+
 
 def read(path, default=None):
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else default
@@ -263,6 +298,11 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     continue
                 if any(word in text for word in BLOCKED):
                     errors.append({'provider': provider.name, 'source': item['source'], 'code': 'excluded_context', 'message': 'Disallowed memorial/statue/generated context'})
+                    continue
+                if obvious_nonportrait_scene(item):
+                    errors.append({'provider': provider.name, 'source': item['source'],
+                                   'code': 'nonportrait_scene',
+                                   'message': 'Filename indicates a place, business or building rather than a person; image not downloaded'})
                     continue
                 cid = hashlib.sha256((row['personId'] + '\n' + item['source'] + '\n' + item['url']).encode()).hexdigest()[:20]
                 candidate = {**item, 'id': cid, 'personId': row['personId'], 'discoveryRunId': row.get('lastRunId'), 'rightsStatus': rights(item), 'eligibleForLive': False,

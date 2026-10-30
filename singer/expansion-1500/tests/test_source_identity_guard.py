@@ -296,7 +296,7 @@ class IdentityGuardTest(unittest.TestCase):
         ready = [c for c in row['candidates'] if c.get('status') == 'pending_review']
         self.assertEqual(len(ready), 1)
         self.assertEqual(ready[0]['filename'], 'portrait.jpg')
-        self.assertTrue(any(e['code'] == 'identity_unconfirmed' for e in row['lastErrors']))
+        self.assertTrue(any(e['code'] == 'nonportrait_scene' for e in row['lastErrors']))
 
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ import uuid
 from pathlib import Path
 from media_pipeline.core import Cropper,apply_rejections,atomic,initialise,live_people,lock,protected,read,rejection_keys
 from media_pipeline.handoff import consume
-from media_pipeline.sources import CommonsSearch,EntityPortraits,Official,Openverse,Wikimedia,norm,source_key,HTTP
+from media_pipeline.sources import CommonsSearch,CuratedCommons,EntityPortraits,Official,Openverse,Wikimedia,norm,source_key,HTTP
 from media_pipeline.batch import SEARCH_REVISION,recover_checkpoints,run_batch
 from media_pipeline.evidence import supplement
 from media_pipeline.review import report
@@ -52,7 +52,7 @@ def main(argv=None):
     args=parser.parse_args(argv)
     if not 0<=args.limit<=300 or not 1<=args.workers<=6 or not 0<args.max_minutes<=120 or not 1<=args.person_seconds<=300:parser.error('Invalid batch/time/worker limits')
     names=args.providers.split(',')
-    if not names or set(names)-{'entity','commons','openverse','wikimedia','official'}:parser.error('Unknown/empty provider')
+    if not names or set(names)-{'entity','commons','openverse','wikimedia','official','curated'}:parser.error('Unknown/empty provider')
     root=Path(__file__).resolve().parents[1];directory=root/'expansion-1500/pipeline';before=protected(root)
     run_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]
     with lock(directory):
@@ -101,7 +101,7 @@ def main(argv=None):
                         works=re.findall(r'《([^》]+)》',person['reviewReason'])+person.get('representativeWorks',[])
                         person['reviewSearchQuery']=person['name']+' '+' '.join(dict.fromkeys(works))+' portrait';enriched[pid]=person
                     records=read(args.official_sources,[]) if args.official_sources else []
-                    registry={'entity':EntityPortraits(allow_openverse=False),'commons':CommonsSearch(),'openverse':Openverse(),'wikimedia':Wikimedia(),'official':Official(records)}
+                    registry={'curated':CuratedCommons(),'entity':EntityPortraits(allow_openverse=False),'commons':CommonsSearch(),'openverse':Openverse(),'wikimedia':Wikimedia(),'official':Official(records)}
                     scanned,batch_result=run_batch(root,directory,state,enriched,queue,[registry[n] for n in names],Cropper(root),rejected,active,run_id,deadline,args.workers,args.person_seconds,args.max_candidates)
         finally:
             if protected(root)!=before:raise RuntimeError('Production files changed; do not commit')

@@ -421,6 +421,67 @@ class Openverse:
                    'rightsWarning': 'Aggregator metadata; original source licence must be checked by reviewer'}
 
 
+
+class CuratedCommons:
+    """Bounded original-file fallback for human-verified Commons file pages.
+
+    This avoids relying on transient Commons search/imageinfo when a reviewer
+    already checked the original file's caption, uploader and licence page.
+    It does NOT approve the image: the normal rights, crop, face, dedupe and
+    five-stage human-review gates still apply. All URLs are strict allowlists.
+    """
+    name = 'curated'
+
+    def search(self, person, http, round_number=0):
+        exact = {norm(str(name).removeprefix('File:'))
+                 for name in person.get('reviewExactCommonsFiles', [])[:3]}
+        for item in person.get('reviewVerifiedOriginalSources', [])[:3]:
+            filename = str(item.get('filename', '')).strip()
+            source = str(item.get('source', '')).strip()
+            url = str(item.get('url', '')).strip()
+            src = urllib.parse.urlsplit(source)
+            original = urllib.parse.urlsplit(url)
+            src_path = urllib.parse.unquote(src.path).replace('_', ' ')
+            file_path = urllib.parse.unquote(original.path).replace('_', ' ')
+            if not filename or norm(filename) not in exact:
+                continue
+            if (src.scheme != 'https' or src.hostname != 'commons.wikimedia.org'
+                    or not src_path.startswith('/wiki/File:')
+                    or norm(src_path.split('/wiki/File:', 1)[1]) != norm(filename)
+                    or src.query or src.fragment):
+                continue
+            if (original.scheme != 'https'
+                    or original.hostname != 'upload.wikimedia.org'
+                    or not file_path.startswith('/wikipedia/commons/')
+                    or norm(file_path.rsplit('/', 1)[-1]) != norm(filename)
+                    or original.query or original.fragment):
+                continue
+            if (not item.get('artist') or not item.get('caption')
+                    or item.get('sourceType') != 'uploader_own_work'
+                    or item.get('verificationUrl') != source
+                    or not item.get('verifiedAt')
+                    or not identity(person, item['caption'])):
+                continue
+            candidate = {
+                'provider': 'commons', 'source': source, 'url': url,
+                'originalUrl': url, 'filename': filename,
+                'caption': item['caption'], 'artist': item['artist'],
+                'license': item.get('license', ''),
+                'licenseUrl': item.get('licenseUrl', ''),
+                'licenseReviewStatus': 'not_checked',
+                'identityEvidence': {
+                    'curatedOriginalMetadataOnly': True,
+                    'verifiedAt': item['verifiedAt'],
+                    'verificationUrl': source,
+                    'verifiedSearchAliases': [person['name'], *person.get('aliases', [])],
+                    'visualIdentityVerified': False,
+                    'identityWarning': 'Curated source metadata is NOT photo identity, rights or game crop approval',
+                },
+            }
+            if rights(candidate) == 'open_license_metadata':
+                yield candidate
+
+
 class Official:
     """Explicitly curated official/media source URLs; no implied reuse permission."""
     name = 'official'

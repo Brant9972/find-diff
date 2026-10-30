@@ -21,6 +21,7 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertIn('Eric Kot', person['acceptedAnswers'])
         self.assertEqual(person['reviewExactCommonsFiles'], [
             'Eric Kot 20231029.jpg', 'Eric Kot 200812.JPG'])
+        self.assertEqual(len(person['reviewVerifiedOriginalSources']), 2)
         self.assertEqual(person['qaStatus'], 'not_releasable')
         self.assertFalse(person['imageVerification']['finalCropReviewed'])
         self.assertFalse(person['imageVerification']['rightsDocumented'])
@@ -47,9 +48,9 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertEqual(request['plannedPersonIds'], ['t1500_0564'])
         self.assertEqual(request['targetPeople'], 1)
         self.assertEqual(request['mode'], 'search')
-        self.assertEqual(request['providers'], ['entity', 'commons'])
+        self.assertEqual(request['providers'], ['curated'])
         self.assertIn('five-stage visual gates', request['purpose'])
-        self.assertIn('without re-running unrelated cohorts', request['purpose'])
+        self.assertIn('Do not rerun unrelated cohorts', request['purpose'])
 
 
     def test_source_screening_records_no_approved_game_crop(self):

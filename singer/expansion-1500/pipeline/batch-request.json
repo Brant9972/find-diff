@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-eric-kot-one-shot-cached-exact-recheck",
+  "requestId": "20261030-eric-kot-curated-original-no-api",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -8,11 +8,10 @@
   ],
   "retryFailed": true,
   "providers": [
-    "entity",
-    "commons"
+    "curated"
   ],
   "maxMinutes": 12,
   "personSeconds": 150,
   "maxCandidates": 3,
-  "purpose": "One-shot offline replay of retained Commons metadata-only exact sources for planned 葛民輝 t1500_0564 after verified Eric Kot alias correction. Prior run 41067189501 yielded 4 Commons metadata but no identity; follow-up 41067704064 yielded 0 fresh metadata due to transient API/no results. This run re-evaluates only cached curated exact file metadata with normal identity, rights, download and five-stage visual gates, without re-running unrelated cohorts or treating metadata as approval. No main/creators changes."
+  "purpose": "Strict original-file curated Commons fallback for existing selectedNew 葛民輝 t1500_0564 only after two exact Commons API no-result diagnostics. Original source URLs, uploader authors and CC license pages independently checked on 2026-10-30; source metadata is not image approval. Do not rerun unrelated cohorts. Keep five-stage visual gates, identity, rights, 600x720 crop, QA and Pages checks before any release. No main/creators change."
 }

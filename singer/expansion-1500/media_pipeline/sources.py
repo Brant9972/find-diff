@@ -540,6 +540,14 @@ class EntityPortraits:
             code = 'identity_ambiguous' if len(eligible) > 1 else 'identity_unconfirmed'
             raise SourceError(code, 'Expected exactly one exact-name Q5 human; found ' + str(len(eligible)))
         qid, entity, matched = eligible[0]
+        # A matching name and P31=Q5 are insufficient for known homonyms.
+        # A human-curated QID in the existing roster must match the resolved
+        # entity before its P18, English aliases or photo searches are used.
+        pinned_qid = person.get('wikidataId')
+        if pinned_qid and qid != pinned_qid:
+            raise SourceError('identity_entity_mismatch',
+                              'Resolved ' + qid + ' differs from pinned ' + pinned_qid +
+                              ' for ' + person['name'])
         english = [entity.get('labels', {}).get('en', {}).get('value', '')]
         english.extend(row.get('value', '') for row in entity.get('aliases', {}).get('en', []))
         # Short English fragments can match unrelated filenames. Keep complete names.

@@ -26,6 +26,26 @@ class BatchRequestIntegrityTest(unittest.TestCase):
             self.assertNotEqual(selected[person_id].get('photoStatus'), 'published')
             self.assertNotIn(selected[person_id]['name'], published)
 
+    def test_published_progress_matches_plan_flags_and_selected_arithmetic(self):
+        plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+        selected = plan['selectedNew']
+        published = [row for row in selected if row.get('photoStatus') == 'published']
+        self.assertEqual(len(published), plan['releaseProgress']['published'])
+        self.assertEqual(len(published), plan['arithmetic']['publishedFromPlan'])
+        self.assertEqual({row['name'] for row in published},
+                         set(plan['releaseProgress']['publishedNames']))
+        duplicates = [row for row in selected if row.get('duplicateExistingCanonicalId')]
+        self.assertEqual(len(duplicates), 1)
+        remaining = len(selected) - len(published) - len(duplicates)
+        self.assertEqual(remaining, plan['arithmetic']['remainingSelectedNovel'])
+        self.assertEqual(remaining, plan['releaseProgress']['pendingPhotoAndHintReview'])
+        # Known previously-published people must not be searched again even if
+        # their old staging flags were stale before this reconciliation.
+        for person_id in ('t1500_0255', 't1500_0355', 't1500_0491',
+                          't1500_0557', 't1500_0579', 't1500_0596'):
+            row = next(p for p in selected if p['plannedQuestionId'] == person_id)
+            self.assertEqual(row['photoStatus'], 'published')
+
     def test_exact_commons_leads_remain_bounded_metadata_only(self):
         plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))
         for row in plan['selectedNew']:

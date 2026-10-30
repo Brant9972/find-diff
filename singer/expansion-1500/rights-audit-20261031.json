@@ -11,11 +11,11 @@
     "bankEntries": 1145,
     "duplicateIdEntries": 68,
     "uniquePeopleById": 1077,
-    "rightsUnresolved": 580,
-    "otherLicenseClaimsNotIndependentlyVerified": 497,
-    "unresolvedMissingArtist": 578,
-    "unresolvedMissingLicenseUrl": 580,
-    "unresolvedMissingPhotoSha256": 580
+    "rightsUnresolved": 578,
+    "otherLicenseClaimsNotIndependentlyVerified": 499,
+    "unresolvedMissingArtist": 576,
+    "unresolvedMissingLicenseUrl": 578,
+    "unresolvedMissingPhotoSha256": 578
   },
   "records": [
     {
@@ -1261,24 +1261,6 @@
       "rightsStatus": "unresolved_no_open_reuse_claim"
     },
     {
-      "id": "a741",
-      "name": "林志玲",
-      "banks": [
-        "actors"
-      ],
-      "photo": "photos/a741_r2.jpg",
-      "photoSha256": null,
-      "source": "https://www.listal.com/viewimage/10352412h",
-      "sourceHost": "www.listal.com",
-      "artist": "",
-      "credit": "Lin Chi Ling",
-      "license": "Copyright retained by original source; no open licence asserted",
-      "licenseUrl": "",
-      "photoStatus": "reviewed",
-      "humanReviewedFlag": true,
-      "rightsStatus": "unresolved_no_open_reuse_claim"
-    },
-    {
       "id": "a764",
       "name": "朴恩惠",
       "banks": [
@@ -1452,24 +1434,6 @@
       "sourceHost": "stars.udn.com",
       "artist": "",
       "credit": "張善為癱瘓13年原因曝！頸椎受傷、排尿失控拖10年 許聖梅揭驚人內幕 | 藝人動態 | 噓！星聞",
-      "license": "Copyright retained by original source; no open licence asserted",
-      "licenseUrl": "",
-      "photoStatus": "reviewed",
-      "humanReviewedFlag": true,
-      "rightsStatus": "unresolved_no_open_reuse_claim"
-    },
-    {
-      "id": "s002",
-      "name": "林俊傑",
-      "banks": [
-        "singer"
-      ],
-      "photo": "photos/s002_r2.jpg",
-      "photoSha256": null,
-      "source": "https://www.asiaone.com/lifestyle/things-do-stayhome-weekend-make-mcbreakfast-catch-sporean-artists-perform-more",
-      "sourceHost": "www.asiaone.com",
-      "artist": "",
-      "credit": "Things to do this #StayHome weekend: Catch JJ Lin in concert online, watch a magic show & more, Lifestyle News - AsiaOne",
       "license": "Copyright retained by original source; no open licence asserted",
       "licenseUrl": "",
       "photoStatus": "reviewed",
@@ -10470,5 +10434,7 @@
       "humanReviewedFlag": true,
       "rightsStatus": "unresolved_no_open_reuse_claim"
     }
-  ]
+  ],
+  "lastReviewBranch": "review/legacy-rights-jj-lin-chiling-20261031",
+  "lastRemediation": "2026-10-31: two existing portraits moved to source-backed CC claims; 499 claims remain subject to independent review."
 }

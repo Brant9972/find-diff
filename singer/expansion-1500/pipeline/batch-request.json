@@ -1,25 +1,27 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-veteran-8-exact-and-p18-1139",
+  "requestId": "20261030-qid-homonym-recovery-new10-1255",
   "mode": "search",
-  "targetPeople": 8,
+  "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0549",
-    "t1500_0551",
-    "t1500_0552",
-    "t1500_0555",
-    "t1500_0566",
-    "t1500_0568",
     "t1500_0588",
-    "t1500_0589"
+    "t1500_0531",
+    "t1500_0537",
+    "t1500_0538",
+    "t1500_0546",
+    "t1500_0558",
+    "t1500_0559",
+    "t1500_0561",
+    "t1500_0572",
+    "t1500_0596"
   ],
   "retryFailed": true,
   "providers": [
     "entity",
     "commons"
   ],
-  "maxMinutes": 24,
+  "maxMinutes": 25,
   "personSeconds": 110,
   "maxCandidates": 2,
-  "purpose": "Distinct existing selectedNew HK veteran actors, no published people. One manually source-verified exact Commons lead for 謝賢 (two CC BY 3.0 GRuban-reviewed files), remaining candidates Wikidata Q5/P18 + Chinese-name Commons. This is a new cohort and targeted source strategy, not rerunning old 40/200. Identity, caption, rights, 600x720 and five stages must pass human review; draft only."
+  "purpose": "Verify the pinned-QID Wikipedia-homonym recovery fix for Nora Miao plus nine distinct unpublished selectedNew people, using Q5/P18, Chinese-first Commons and source-local captions. New cohort; do not replay the previous failed veteran-8/20/40/200 batches. All output draft-only; human identity, rights, 600x720 and five-stage review required."
 }

@@ -73,7 +73,7 @@
     "t1500_0554",
     "t1500_0567"
   ],
-  "reviewPublicationPending": true,
+  "reviewPublicationPending": false,
   "items": [
     {
       "personId": "t1500_0554",
@@ -199,5 +199,532 @@
       ],
       "errors": []
     }
-  ]
+  ],
+  "visualAssetCommit": "af171f6380e3c86d159217d8d9a188e7ee1bb804",
+  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
+  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
+  "publicVisualManifest": {
+    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
+    "contactSheets": [
+      {
+        "bytes": 50015,
+        "entries": [
+          {
+            "candidateId": "ccc5cca075050da823d4",
+            "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
+            "personId": "t1500_0567",
+            "tile": 1
+          },
+          {
+            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
+            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+            "personId": "t1500_0577",
+            "tile": 2
+          }
+        ],
+        "height": 315,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
+        "sha256": "4029ff5e59df21071056e043c99513a3ce941e4cf442b61189fbb80118d82412",
+        "width": 960,
+        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
+        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg",
+        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/contact-sheet-01.jpg?raw=true"
+      }
+    ],
+    "manualContactSheets": [
+      {
+        "bytes": 23312,
+        "entries": [
+          {
+            "candidateId": "d7d5204a9f1fb81044fb",
+            "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+            "personId": "t1500_0554",
+            "tile": 1
+          }
+        ],
+        "height": 315,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
+        "sha256": "988914e5f3d00f08078601c46702b626fc90d9d19da23867c3d854873ad92f00",
+        "width": 960,
+        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
+        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg",
+        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/manual-source-sheet-01.jpg?raw=true"
+      }
+    ],
+    "manualSourceCount": 1,
+    "manualSourcePeopleCount": 1,
+    "manualSources": [
+      {
+        "candidateId": "d7d5204a9f1fb81044fb",
+        "cropFailure": "Blurred crop: sharpness below 65",
+        "eligibleForLive": false,
+        "gameSha256": null,
+        "metadata": {
+          "author": "數碼電台DBC",
+          "caption": "​無綫五虎將黃日華的女兒",
+          "credit": "YouTube - 20141031 黃芷晴",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "captionAliasMatches": [
+              "黃日華"
+            ],
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "query": "黃日華",
+            "visualIdentityVerified": false
+          },
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance must be reviewed",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "requestedReplacement": "側臉模糊；找經典角色正面照"
+          },
+          "reviewerRequest": "側臉模糊；找經典角色正面照",
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ]
+        },
+        "name": "黃日華",
+        "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+        "personId": "t1500_0554",
+        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+        "sourceImage": {
+          "bytes": 216127,
+          "displayHeight": 1218,
+          "displayWidth": 1920,
+          "height": 1218,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
+          "sha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+          "width": 1920,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/source-only-0001/original.jpg?raw=true"
+        },
+        "stageImages": {}
+      }
+    ],
+    "peopleCount": 2,
+    "photoCount": 2,
+    "photos": [
+      {
+        "candidateId": "ccc5cca075050da823d4",
+        "candidateImage": {
+          "bytes": 102914,
+          "displayHeight": 720,
+          "displayWidth": 600,
+          "height": 720,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
+          "sha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
+          "width": 600,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/candidate.jpg?raw=true"
+        },
+        "eligibleForLive": false,
+        "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
+        "metadata": {
+          "author": "Yahoo Hong Kong",
+          "caption": "​第19屆香港電影金像獎最佳女主角",
+          "credit": "https://www.flickr.com/photos/yahoohongkong/14693697553/in/album-72157645321552460/",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "captionAliasMatches": [
+              "羅蘭"
+            ],
+            "curatedExactFileHint": true,
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "query": "羅蘭",
+            "visualIdentityVerified": false
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": null,
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance must be reviewed",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "requestedReplacement": ""
+          },
+          "reviewerRequest": null,
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E8%98%AD.jpg",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+          ]
+        },
+        "name": "羅蘭",
+        "personId": "t1500_0567",
+        "reveal": {
+          "chin": [
+            0.08,
+            0.2776027550858058,
+            0.92,
+            0.8185108347689168
+          ],
+          "eyes": [
+            0.08,
+            0.2776027550858058,
+            0.92,
+            0.42567769597085675
+          ],
+          "full": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "mouth": [
+            0.08,
+            0.2776027550858058,
+            0.92,
+            0.6669812377472495
+          ],
+          "nose": [
+            0.08,
+            0.2776027550858058,
+            0.92,
+            0.5433222738544593
+          ]
+        },
+        "reviewStatus": "pending_review",
+        "sourceImage": {
+          "bytes": 743911,
+          "displayHeight": 2071,
+          "displayWidth": 1488,
+          "height": 2071,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
+          "sha256": "eabab9f84468b45c0d59ffcb1bdc4e49bc90dd1daf0906b4ef9d79cfa74485fb",
+          "width": 1488,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/source.jpg?raw=true"
+        },
+        "stageImages": {
+          "chin": {
+            "bytes": 243233,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
+            "sha256": "cacc5ef8cc2374315622cf0adc19079088885a4a6f8137fb1aa009aa13993e8b",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/chin.png?raw=true"
+          },
+          "eyes": {
+            "bytes": 78884,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
+            "sha256": "d2b73cf5fe5724bf68e2021144cb1e959401ee96b1bfe4f0879244d8ea8c31f1",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/eyes.png?raw=true"
+          },
+          "full": {
+            "bytes": 537766,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
+            "sha256": "49125451f812017c1b34434b3fd8ec36fc72d9d0f8bb6782ba7ebb3aec81d551",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/full.png?raw=true"
+          },
+          "mouth": {
+            "bytes": 174822,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
+            "sha256": "f28d11b210608b9639784095ad5735ed25d6bc1d6e66c33bb228aac56527e9ed",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/mouth.png?raw=true"
+          },
+          "nose": {
+            "bytes": 124718,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
+            "sha256": "7ca0229a0f26db234c44e4979e649cb063d97d5ae5f5ba3aea85110127641d2d",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0001/nose.png?raw=true"
+          }
+        }
+      },
+      {
+        "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
+        "candidateImage": {
+          "bytes": 129467,
+          "displayHeight": 720,
+          "displayWidth": 600,
+          "height": 720,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
+          "sha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+          "width": 600,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/candidate.jpg?raw=true"
+        },
+        "eligibleForLive": false,
+        "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+        "metadata": {
+          "author": "am730",
+          "caption": "​《黃金有罪》「發財迎新歲」記者會",
+          "credit": "【娛樂】張兆輝為宣傳 生日要留港 2020-01-23",
+          "evidenceSupplement": {},
+          "externalSourceLinks": [],
+          "humanIdentityVerifiedByExporter": false,
+          "humanRightsVerifiedByExporter": false,
+          "identityEvidence": {
+            "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%85%86%E8%BC%9D",
+            "articleLookup": "exact title with redirects; not a search result",
+            "articleTitle": "張兆輝",
+            "captionAliasMatches": [
+              "張兆輝",
+              "张兆辉"
+            ],
+            "claim": "P18",
+            "discoveryWarnings": [],
+            "entityTypeEvidence": "P31=Q5",
+            "exactChineseAliases": [
+              "张兆辉",
+              "張兆輝",
+              "張兆輝"
+            ],
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "mappingSource": "https://www.wikidata.org/wiki/Q701359",
+            "matchedAliases": [
+              "張兆輝",
+              "张兆辉"
+            ],
+            "query": "Cheung Siu-fai",
+            "retrievedAt": "2026-10-29T20:17:49.501196+00:00",
+            "verifiedSearchAliases": [
+              "張兆輝",
+              "张兆辉",
+              "Cheung Siu-fai",
+              "Eddie Cheung",
+              "Eddie Cheung Siu-Fai",
+              "Zhang Zhao-Hui"
+            ],
+            "visualIdentityVerified": false,
+            "wikidataId": "Q701359"
+          },
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "originalDimensionsFromMetadata": [
+            null,
+            null
+          ],
+          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%E5%BC%B5%E5%85%86%E8%BC%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "parentCandidateId": "bf90b9c5bde0fdea7421",
+          "parentGameSha256": null,
+          "recognitionEvidence": {
+            "note": "Familiar appearance has not been visually reviewed",
+            "representativeWorks": [
+              "黑社會"
+            ],
+            "requestedReplacement": ""
+          },
+          "reviewerRequest": null,
+          "rightsStatus": "open_license_metadata",
+          "sourceAlignmentEvidence": null,
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ]
+        },
+        "name": "張兆輝",
+        "personId": "t1500_0577",
+        "reveal": {
+          "chin": [
+            0.08,
+            0.32,
+            0.92,
+            0.84
+          ],
+          "eyes": [
+            0.08,
+            0.32,
+            0.92,
+            0.48
+          ],
+          "full": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "mouth": [
+            0.08,
+            0.32,
+            0.92,
+            0.69
+          ],
+          "nose": [
+            0.08,
+            0.32,
+            0.92,
+            0.57
+          ]
+        },
+        "reviewStatus": "pending_review",
+        "sourceImage": {
+          "bytes": 355697,
+          "displayHeight": 1669,
+          "displayWidth": 1208,
+          "height": 1669,
+          "mimeType": "image/jpeg",
+          "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
+          "sha256": "cb78e00ef28c13a53c1a777217fbecfb8628524bd03f4ce67a94246489c237cf",
+          "width": 1208,
+          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
+          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg",
+          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/source.jpg?raw=true"
+        },
+        "stageImages": {
+          "chin": {
+            "bytes": 247971,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
+            "sha256": "bbf4550f3943ef97b9807e566d4cb6760d32f577c8a739083254b7fa6b16ba6b",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/chin.png?raw=true"
+          },
+          "eyes": {
+            "bytes": 85985,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
+            "sha256": "4a972dac235650ed8a0661fa518ec32b6c1cec7bb6620cf204de2e74691548d9",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/eyes.png?raw=true"
+          },
+          "full": {
+            "bytes": 535221,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
+            "sha256": "89b2daa073b46a1106bffac5141ecacd248dca683587b44f5fdc34a0ff4959e4",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/full.png?raw=true"
+          },
+          "mouth": {
+            "bytes": 182140,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
+            "sha256": "7f8b6e5ed2e5e65efcab9b5b1ca99b84634fc5722563aec56f11d3a29bb43849",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/mouth.png?raw=true"
+          },
+          "nose": {
+            "bytes": 128668,
+            "height": 720,
+            "mimeType": "image/png",
+            "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
+            "sha256": "4d50abe37ae156b516faaf40b72d6d8043a9d4bf354903c1477d74d956a1e5ea",
+            "width": 600,
+            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
+            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png",
+            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/photo-0002/nose.png?raw=true"
+          }
+        }
+      }
+    ],
+    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+    "revealSheets": [
+      {
+        "bytes": 81833,
+        "entries": [
+          {
+            "candidateId": "ccc5cca075050da823d4",
+            "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
+            "personId": "t1500_0567",
+            "row": 1
+          },
+          {
+            "candidateId": "manualrecrop-1f29f8e5e8cae1f71d69",
+            "gameSha256": "1f29f8e5e8cae1f71d698bfbabdd21ab57161a6ca3cf3119c6363e1a5d892fe9",
+            "personId": "t1500_0577",
+            "row": 2
+          }
+        ],
+        "height": 515,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
+        "sha256": "493a443e4d70b5588eae573079dababbf4c1df7c005a26346a63ea7a07311aef",
+        "width": 1000,
+        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
+        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg",
+        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/reveal-sheet-01.jpg?raw=true"
+      }
+    ],
+    "runId": "20261030T024333Z-eebc173e",
+    "schemaVersion": 1,
+    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
+    "assetCommit": "af171f6380e3c86d159217d8d9a188e7ee1bb804",
+    "assetManifest": {
+      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
+      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json",
+      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/af171f6380e3c86d159217d8d9a188e7ee1bb804/singer/expansion-1500/pipeline/review-assets/20261030T024333Z-eebc173e/assets-index.json?raw=true"
+    },
+    "reviewInstructions": [
+      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
+      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
+      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
+      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
+    ]
+  }
 }

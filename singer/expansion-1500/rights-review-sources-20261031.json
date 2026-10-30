@@ -22,35 +22,35 @@
         1280
       ],
       "cropBox": [
-        200,
-        0,
-        840,
-        768
+        300,
+        100,
+        900,
+        820
       ],
       "reveal": {
         "eyes": [
           0.08,
-          0.22,
+          0.43,
           0.92,
-          0.35
+          0.55
         ],
         "nose": [
           0.08,
-          0.22,
+          0.43,
           0.92,
-          0.45
+          0.65
         ],
         "mouth": [
           0.08,
-          0.22,
+          0.43,
           0.92,
-          0.56
+          0.8
         ],
         "chin": [
           0.08,
-          0.22,
+          0.43,
           0.92,
-          0.7
+          0.96
         ],
         "full": [
           0,
@@ -59,7 +59,7 @@
           1
         ]
       },
-      "notes": "Potential background faces at image edges and foreground microphones: verify excluded from final crop. Eyes look to the side; inspect recognisability. ShareAlike applies to crop; retain credit and adaptation notice. Use Commons-supported 960px thumbnail (1200px returned HTTP 400)."
+      "notes": "Potential background faces at image edges and foreground microphones: verify excluded from final crop. Eyes look to the side; inspect recognisability. ShareAlike applies to crop; retain credit and adaptation notice. Use Commons-supported 960px thumbnail (1200px returned HTTP 400). First rendered crop exposed another person's blurred face on left and cut off chin; shifted crop right and down. Five-stage geometry remains provisional until next render."
     },
     {
       "id": "a741",
@@ -86,27 +86,27 @@
       "reveal": {
         "eyes": [
           0.08,
-          0.18,
+          0.19,
           0.92,
-          0.31
+          0.27
         ],
         "nose": [
           0.08,
-          0.18,
+          0.19,
           0.92,
-          0.42
+          0.32
         ],
         "mouth": [
           0.08,
-          0.18,
+          0.19,
           0.92,
-          0.54
+          0.39
         ],
         "chin": [
           0.08,
-          0.18,
+          0.19,
           0.92,
-          0.67
+          0.46
         ],
         "full": [
           0,

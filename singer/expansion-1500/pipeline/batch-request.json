@@ -1,23 +1,24 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-taiwan-actors-ten-0750",
+  "requestId": "20261030-entity-p18-targeted-ten-0818",
   "mode": "search",
   "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0504",
-    "t1500_0512",
     "t1500_0513",
-    "t1500_0518",
-    "t1500_0521",
-    "t1500_0523",
-    "t1500_0524",
-    "t1500_0525",
-    "t1500_0533",
-    "t1500_0537"
+    "t1500_0204",
+    "t1500_0203",
+    "t1500_0207",
+    "t1500_0210",
+    "t1500_0273",
+    "t1500_0271",
+    "t1500_0278",
+    "t1500_0281",
+    "t1500_0205"
   ],
   "retryFailed": true,
   "providers": [
+    "entity",
     "commons"
   ],
-  "purpose": "New 10-person Taiwanese actor source diagnostic (錦榮、江宜蓉、陳妤、黃騰浩、王以綸、楊銘威、是元介、鍾承翰、李至正、李鴻其). All from existing expansion-1500 selectedNew, not in prior 20/40/200 diagnostics, 0 prior actual search attempts; Chinese-first exact-caption identity and license prefilter. Draft-only; no automatic release."
+  "purpose": "Targeted P18-first and Commons Chinese-name diagnostic on 10 existing selectedNew people, none in main. Distinct provider strategy from previous Commons-only 10-person run: prioritize exact Wikidata Q5/P18 imageinfo and source captions; human review required for identity, CC rights, 600x720 and all five stages. Draft-only, never publish automatically. Avoid old 20/40/200 repeat."
 }

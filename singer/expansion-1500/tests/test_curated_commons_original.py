@@ -87,10 +87,11 @@ class CuratedCommonsOriginalTest(unittest.TestCase):
             'reviewVerifiedOriginalSources': backup['reviewVerifiedOriginalSources'],
         }
         rows = list(CuratedCommons().search(person, None))
-        self.assertEqual(len(rows), 2)
-        self.assertTrue(all(rights(row) == 'open_license_metadata' for row in rows))
-        self.assertTrue(all(not row['identityEvidence']['visualIdentityVerified'] for row in rows))
-        self.assertEqual(backup['reviewStatus'], 'SOURCE_METADATA_ONLY_NOT_VISUALLY_APPROVED')
+        self.assertEqual(rows, [], 'Unreachable Commons URLs must not be retried as curated leads')
+        self.assertEqual(backup['reviewStatus'], 'SOURCE_UNAVAILABLE_HTTP_404_NOT_APPROVED')
+        self.assertEqual(len(backup['unavailableThumbnailLeads']), 2)
+        self.assertEqual(backup['availabilityReview']['result'],
+                         'BOTH_THUMBNAILS_HTTP_404_AND_COMMONS_PAGE_NOT_ACCESSIBLE')
 
     def test_replaces_same_source_metadata_even_if_url_variant_changes(self):
         old_url = self.original + '?utm_source=commons'

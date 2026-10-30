@@ -1,7 +1,7 @@
 # 照片視覺審核入口
 
-批次 `20261030T081340Z-23adfada`：0 位人物、0 張現行待審圖。
-所有圖片固定於資產 Commit `0981d2cd1dbd51983851c271316018d54feb59ba`。沒有修改正式題庫或自動核准照片。
+批次 `20261030T094146Z-a2a94968`：0 位人物、0 張現行待審圖。
+所有圖片固定於資產 Commit `dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629`。沒有修改正式題庫或自動核准照片。
 
 請先看總覽，再開每張候選圖與五階段預覽。若圖片工具無法開啟 raw 連結，使用旁邊的 GitHub 看圖頁；無法取得像素時保留待審，不得視為已目視。
 
@@ -11,26 +11,26 @@
 
 ### 原圖總覽 1
 
-![原圖總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg)
+![原圖總覽 1](https://raw.githubusercontent.com/Brant9972/find-diff/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/manual-source-sheet-01.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/manual-source-sheet-01.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/manual-source-sheet-01.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/manual-source-sheet-01.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/manual-source-sheet-01.jpg?raw=true)
 
-### 黃少谷 · t1500_0108 · a4ed6e44e9b1698b677f
+### 陳湘琪 · t1500_0171 · 11cfabb73b01aa6bd121
 
-原圖 SHA-256：4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f；裁切失敗：Blurred crop: sharpness below 65。
+原圖 SHA-256：359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04；裁切失敗：Blurred crop: sharpness below 65。
 
-![黃少谷 待人工裁切原圖](https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg)
+![陳湘琪 待人工裁切原圖](https://raw.githubusercontent.com/Brant9972/find-diff/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/source-only-0001/original.jpg)
 
-[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg?raw=true)
+[直接圖片](https://raw.githubusercontent.com/Brant9972/find-diff/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/source-only-0001/original.jpg) · [GitHub 看圖頁](https://github.com/Brant9972/find-diff/blob/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/source-only-0001/original.jpg) · [GitHub 原圖](https://github.com/Brant9972/find-diff/blob/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/source-only-0001/original.jpg?raw=true)
 
-- [來源頁](<https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg>)
-- [授權條款](<https://creativecommons.org/licenses/by-sa/4.0>)
-- 作者：Lidian192847
-- 授權：CC BY-SA 4.0（需人工核對）
-- 來源圖說：​黃少谷《未來》專輯簽唱會
+- [來源頁](<https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg>)
+- [授權條款](<https://creativecommons.org/licenses/by/3.0>)
+- 作者：CNA Taiwan - 中央社
+- 授權：CC BY 3.0（需人工核對）
+- 來源圖說：Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014
 - 狀態：SOURCE_ONLY；不可計入人數、不可部署。
 
-[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/0981d2cd1dbd51983851c271316018d54feb59ba/singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/assets-index.json)
+[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/dc7f3e56e91b42ba6f86af9dd4226bc9cc64a629/singer/expansion-1500/pipeline/review-assets/20261030T094146Z-a2a94968/assets-index.json)
 
 請將下一輪審核結果寫入分支 `automation/celebrity-photo-pipeline` 的固定檔案 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。
 

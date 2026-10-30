@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc",
+  "sourceRun": "20261030T070335Z-baa19623",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Fix human-detected reveal-stage error in first 鄭弘儀 manual crop. The previous eyes stage showed only forehead/brows and nose stage did not expose nose tip; re-render same source pixels with corrected boundaries, without provider search or live approval.",
+  "items": [
+    {
+      "personId": "t1500_0491",
+      "sourceCandidateId": "b2d56a194f8be54e5371",
+      "sourceSha256": "a3c6cbe1e6ad32128ab4a7950b36ba82beeaeb2a856cec2c2a9446c4bc89e523",
+      "box": [
+        230,
+        60,
+        930,
+        900
+      ],
+      "reveal": {
+        "eyes": [
+          0.1,
+          0.35,
+          0.9,
+          0.55
+        ],
+        "nose": [
+          0.1,
+          0.35,
+          0.9,
+          0.69
+        ],
+        "mouth": [
+          0.1,
+          0.35,
+          0.9,
+          0.83
+        ],
+        "chin": [
+          0.1,
+          0.35,
+          0.9,
+          0.96
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "2023 Commons File:鄭弘儀.jpg 1170x1632, CC BY-SA 4.0 self-work 荻原ホシ. Original source and first 600x720 crop visually checked: subject recognizable and no second face; however eyes.png first version only forehead and nose.png only eyes. New y limits target both eyes, nose tip, complete mouth and chin sequentially. All five output pixels require independent review before main."
+    }
+  ]
+}

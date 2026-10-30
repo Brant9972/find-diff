@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-qid-homonym-recovery-new10-1255",
+  "requestId": "20261030-source-verified-zhenghongyi-fresh10-1510",
   "mode": "search",
   "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0588",
-    "t1500_0531",
-    "t1500_0537",
-    "t1500_0538",
-    "t1500_0546",
-    "t1500_0558",
-    "t1500_0559",
-    "t1500_0561",
-    "t1500_0572",
-    "t1500_0596"
+    "t1500_0491",
+    "t1500_0420",
+    "t1500_0457",
+    "t1500_0434",
+    "t1500_0470",
+    "t1500_0445",
+    "t1500_0318",
+    "t1500_0365",
+    "t1500_0475",
+    "t1500_0534"
   ],
   "retryFailed": true,
   "providers": [
@@ -21,7 +21,7 @@
     "commons"
   ],
   "maxMinutes": 25,
-  "personSeconds": 110,
+  "personSeconds": 100,
   "maxCandidates": 2,
-  "purpose": "Verify the pinned-QID Wikipedia-homonym recovery fix for Nora Miao plus nine distinct unpublished selectedNew people, using Q5/P18, Chinese-first Commons and source-local captions. New cohort; do not replay the previous failed veteran-8/20/40/200 batches. All output draft-only; human identity, rights, 600x720 and five-stage review required."
+  "purpose": "Fresh existing selectedNew people with zero current attempts, Taiwan/HK audience relevance. Priority 鄭弘儀 has exact own-work Commons source CC BY-SA 4.0, but original includes background faces: source-only until human verifies single-face crop and all five stages. PR #26 removed implicit Openverse from Commons-only provider registry; do not rerun old veteran-8/20/40/200. No deployment or automatic approval."
 }

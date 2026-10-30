@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1073,
-    "publishedFromPlan": 86,
-    "remainingSelectedNovel": 424,
+    "currentlyLiveUnique": 1074,
+    "publishedFromPlan": 87,
+    "remainingSelectedNovel": 423,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -14616,7 +14616,13 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "鄭弘儀 新聞挖挖哇 綜藝 節目 單人 特寫 正面 無浮水印"
+      "preferredImageQuery": "鄭弘儀 新聞挖挖哇 綜藝 節目 單人 特寫 正面 無浮水印",
+      "reviewExactCommonsFiles": [
+        "鄭弘儀.jpg"
+      ],
+      "reviewSearchQuery": "鄭弘儀 鄭知道了 主持人",
+      "reviewReason": "Commons source explicitly names host 鄭弘儀, own-work CC BY-SA 4.0 by 荻原ホシ (2023-03-29), but original shows background bystanders; do NOT approve automatic crop unless the 600x720 face crop excludes both secondary faces and five reveal stages pass independent human inspection.",
+      "verifiedSourceHint": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg"
     },
     {
       "candidateId": "c1500-0492",
@@ -18376,7 +18382,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 86,
+    "published": 87,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18463,10 +18469,11 @@
       "陶大宇",
       "羅蘭",
       "張兆輝",
-      "黃浩然"
+      "黃浩然",
+      "鄭融"
     ],
-    "pendingPhotoAndHintReview": 424,
-    "latestCommit": "4eec7030ee54552debc91490c890080ad1b7a9ba",
-    "note": "86 of 511 selected are live, including 張兆輝 PR #20; one known duplicate 羅璧玲=羅霈穎; 424 genuinely new selected remain, so selected-only maximum 1497 and at least 3 original backup/deferred people are still needed. Counts verified by Pages live QA 40998405754 on 2026-10-30."
+    "pendingPhotoAndHintReview": 423,
+    "latestCommit": "314ff842ae7cabf2f10da1821a5226412ecdb50c",
+    "note": "87 of 511 selected are live, including 鄭融 PR #27; one known duplicate 羅璧玲=羅霈穎; 423 genuinely new selected remain. Selected-only maximum remains 1497, so at least 3 original backup/deferred people still needed. Counts verified by Pages live QA 41017153717 on 2026-10-30."
   }
 }

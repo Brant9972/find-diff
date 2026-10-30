@@ -675,6 +675,22 @@ class EntityPortraits:
             chinese = [row.get('value', '') for lang, row in entity.get('labels', {}).items() if lang.startswith('zh')]
             chinese.extend(row.get('value', '') for lang, rows in entity.get('aliases', {}).items()
                            if lang.startswith('zh') for row in rows)
+            # Some Taiwanese performers have only an English Wikidata label,
+            # but a correctly typed Chinese native name (P1559). Without
+            # this, an exact Q5 person with a valid P18 is discarded as
+            # identity_unconfirmed before its photo can even be reviewed.
+            # Accept only non-deprecated, Chinese-language monolingual text
+            # matching the requested full name; never infer identity from
+            # a substring, search snippet, or an English P1559 value.
+            chinese.extend(
+                value['text']
+                for claim in entity.get('claims', {}).get('P1559', [])
+                if claim.get('rank') != 'deprecated'
+                for value in [claim.get('mainsnak', {}).get('datavalue', {}).get('value')]
+                if isinstance(value, dict)
+                and str(value.get('language', '')).lower().startswith('zh')
+                and isinstance(value.get('text'), str)
+            )
             matched = [value for value in chinese if norm(value) in expected]
             human = any(claim.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id') == 'Q5'
                         for claim in entity.get('claims', {}).get('P31', []) if claim.get('rank') != 'deprecated')

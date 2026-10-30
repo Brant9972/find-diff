@@ -45,13 +45,32 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         request = json.loads((root / 'pipeline' / 'batch-request.json')
                              .read_text(encoding='utf-8'))
-        self.assertEqual(request['plannedPersonIds'], [])
-        self.assertEqual(request['targetPeople'], 0)
-        self.assertEqual(request['mode'], 'render_only')
         self.assertEqual(request['providers'], ['curated', 'commons'])
-        self.assertIn('five-stage', request['purpose'])
-        self.assertIn('Preselected backup', request['purpose'])
-        self.assertIn('HTTP 404', request['purpose'])
+        self.assertFalse(request['retryFailed'])
+        self.assertIn(request['mode'], ('render_only', 'search'))
+        ids = request['plannedPersonIds']
+        if request['mode'] == 'render_only':
+            self.assertEqual(ids, [])
+            self.assertEqual(request['targetPeople'], 0)
+        else:
+            # A controlled diagnostic may replace a finished render-only
+            # request. Do not freeze the old request values into the test.
+            self.assertTrue(1 <= request['targetPeople'] <= 10)
+            self.assertEqual(len(ids), request['targetPeople'])
+            self.assertEqual(len(ids), len(set(ids)))
+            plan = json.loads((root / 'release-plan-20261028.json')
+                              .read_text(encoding='utf-8'))
+            eligible = {
+                row['plannedQuestionId']
+                for row in plan['selectedNew']
+                if row.get('photoStatus') != 'published'
+                and row.get('name') != '羅璧玲'
+            }
+            self.assertTrue(set(ids) <= eligible,
+                            'Only unpublished selectedNew IDs may be searched')
+            self.assertTrue(all(pid.startswith('t1500_') for pid in ids))
+            self.assertIn('Draft only', request['purpose'])
+            self.assertIn('no main', request['purpose'])
 
 
     def test_source_screening_records_no_approved_game_crop(self):

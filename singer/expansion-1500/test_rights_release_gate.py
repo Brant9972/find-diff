@@ -103,6 +103,27 @@ class ReleaseGateTests(unittest.TestCase):
         self.save()
         self.assert_fail("invalid five-stage")
 
+    def test_new_canonical_name_matching_old_alias_is_blocked(self):
+        self.q["name"] = "羅璧玲"
+        self.q["aliases"] = ["羅璧玲"]
+        self.save()
+        legacy = {"id": "old001", "name": "羅霈穎",
+                  "aliases": ["羅霈穎", "羅璧玲"]}
+        (self.root / "singer/actors.json").write_text(json.dumps({"questions": [legacy]}))
+        (self.root / "singer/expansion-1500/rights-release-baseline-20261031.json").write_text(
+            json.dumps({"uniquePeople": 1, "ids": ["old001"]}))
+        self.assert_fail("alias/answer collision")
+
+    def test_new_alias_matching_existing_person_is_blocked(self):
+        self.q["aliases"].append("舊藝名")
+        self.save()
+        legacy = {"id": "old001", "name": "另一位藝人",
+                  "aliases": ["另一位藝人", "舊藝名"]}
+        (self.root / "singer/actors.json").write_text(json.dumps({"questions": [legacy]}))
+        (self.root / "singer/expansion-1500/rights-release-baseline-20261031.json").write_text(
+            json.dumps({"uniquePeople": 1, "ids": ["old001"]}))
+        self.assert_fail("alias/answer collision")
+
     def test_existing_legacy_id_is_not_mistaken_for_rights_approval(self):
         baseline = {"uniquePeople": 1, "ids": ["new001"]}
         (self.root / "singer/expansion-1500/rights-release-baseline-20261031.json").write_text(json.dumps(baseline))

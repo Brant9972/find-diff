@@ -39,6 +39,18 @@ class BatchRequestIntegrityTest(unittest.TestCase):
             if files and row.get('photoStatus') != 'published':
                 self.assertNotEqual(row.get('qaStatus'), 'Pages_live_verified')
 
+    def test_curated_chenxiangqi_lead_does_not_imply_release_approval(self):
+        plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+        row = next(p for p in plan['selectedNew'] if p['plannedQuestionId'] == 't1500_0171')
+        self.assertEqual(row['name'], '陳湘琪')
+        self.assertEqual(row['representativeWorks'], ['迴光奏鳴曲'])
+        self.assertEqual(row['reviewExactCommonsFiles'], [
+            'Chen Shiang-chyi (陳湘琪) at the 51st Golden Horse Awards in November 2014.jpg'])
+        self.assertEqual(row['photoStatus'], 'not_prepared')
+        self.assertFalse(row['imageVerification']['rightsDocumented'])
+        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+
+
 
 if __name__ == '__main__':
     unittest.main()

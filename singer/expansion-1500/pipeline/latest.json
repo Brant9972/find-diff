@@ -1,13 +1,13 @@
 {
-  "runId": "20261030T105819Z-873b2c02",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T105819Z-873b2c02/review-index.json",
+  "runId": "20261030T135504Z-29b2a734",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T135504Z-29b2a734/review-index.json",
   "summary": {
-    "runId": "20261030T105819Z-873b2c02",
-    "generatedAt": "2026-10-30T10:59:37.309174+00:00",
-    "scannedPeople": 10,
+    "runId": "20261030T135504Z-29b2a734",
+    "generatedAt": "2026-10-30T13:55:18.085217+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 10,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 420,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 293,
@@ -20,7 +20,7 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 320,
+      "identity_unconfirmed": 324,
       "image_validation_failed": 121,
       "network_error": 263,
       "excluded_context": 17,
@@ -32,33 +32,30 @@
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "identity_ambiguous": 2,
-      "image_validation_failed": 2,
-      "identity_unconfirmed": 12
+      "image_validation_failed": 1,
+      "identity_unconfirmed": 4
     },
     "manualCropSources": 33,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 10,
-        "metadataCandidates": 14,
-        "identitySupportedMetadata": 2,
-        "openLicenseMetadata": 8,
+        "attemptedPeople": 1,
+        "metadataCandidates": 4,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 4,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 2,
-        "errors": {
-          "image_validation_failed": 2,
-          "identity_unconfirmed": 12
-        }
+        "savedForManualCrop": 0,
+        "errors": {}
       },
       "entity": {
-        "attemptedPeople": 10,
+        "attemptedPeople": 1,
         "metadataCandidates": 0,
         "identitySupportedMetadata": 0,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "identity_ambiguous": 2
+          "image_validation_failed": 1,
+          "identity_unconfirmed": 4
         }
       }
     },

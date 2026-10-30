@@ -43629,8 +43629,8 @@
     },
     "t1500_0564": {
       "personId": "t1500_0564",
-      "attempts": 6,
-      "nextRetryAt": "2026-11-01T12:17:44.772096+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-04T21:55:17.499313+00:00",
       "candidateId": "c1500-0564",
       "chatgptReview": {
         "personId": "t1500_0564",
@@ -43648,7 +43648,7 @@
         "handoffCollection": "decisions"
       },
       "lastEvidenceAttemptAt": "2026-10-28T18:32:16.632266+00:00",
-      "lastRunId": "20261029T201720Z-9c28875a",
+      "lastRunId": "20261030T135504Z-29b2a734",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0564": {
@@ -43670,20 +43670,21 @@
       "lastErrors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
-            "filename": "Eric Kot 200812.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
+            "filename": "EricKot2007.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Tksteven",
-            "credit": "Selfwork",
-            "license": "CC BY 2.5",
-            "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-            "caption": "Eric Kot(葛民輝)  was being the guest in the publicity on 2008.11",
+            "artist": "Pete Yeung",
+            "credit": "originally posted to Flickr as McConcert043",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "Eric Kot",
+            "licenseReviewStatus": "not_checked",
             "identityEvidence": {
               "wikidataId": "Q590914",
               "mappingSource": "https://www.wikidata.org/wiki/Q590914",
@@ -43701,23 +43702,18 @@
                 "Eric Kot Man-fai"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T20:17:22.511249+00:00",
+              "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
               "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
               "articleTitle": "葛民輝",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "Eric Kot",
+              "query": "葛民輝",
               "matchedAliases": [
-                "葛民輝",
-                "葛民辉",
                 "Eric Kot"
               ],
               "discoveryWarnings": [],
-              "claim": "P18",
               "captionAliasMatches": [
-                "葛民輝",
-                "葛民辉",
                 "Eric Kot"
               ]
             },
@@ -43728,27 +43724,46 @@
               "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-29T20:17:22.653131+00:00",
-            "width": 1000,
-            "height": 750,
-            "id": "b2574981ba5e9e0689c3",
+            "searchTime": "2026-10-30T13:55:08.321342+00:00",
+            "width": 582,
+            "height": 703,
+            "id": "cad3208d7ed5ebd101df",
             "personId": "t1500_0564",
-            "discoveryRunId": "20261029T201720Z-9c28875a",
+            "discoveryRunId": "20261030T135504Z-29b2a734",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "manual_crop_required",
+            "status": "metadata_only",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0564/b2574981ba5e9e0689c3/d6dbf1a6c343/original.bin",
-            "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
-            "cropFailure": "Face is too tilted",
-            "gamePath": null
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
           },
           "code": "image_validation_failed",
-          "message": "Face is too tilted"
+          "message": "Face is too small"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206625630).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206626223).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Wedding...%3F%3F%3F_(206958255).jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "candidates": [
@@ -44055,6 +44070,258 @@
           "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
           "cropFailure": "Face is too tilted",
           "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Eric_%28206630577%29.jpg/1920px-Eric_%28206630577%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Eric_%28206630577%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
+          "filename": "Eric (206630577).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Tommy Wong from Tuen Mun, Hong Kong",
+          "credit": "Eric",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "SoftHard Long Time No See\n\n軟硬 Long Time No See 紅館",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "wikidataId": "Q590914",
+            "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+            "exactChineseAliases": [
+              "葛民輝",
+              "葛民辉",
+              "葛民辉",
+              "葛民辉"
+            ],
+            "verifiedSearchAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot",
+              "Eric Kot Man Fai",
+              "Eric Kot Man-fai"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "articleTitle": "葛民輝",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "葛民輝",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "百分百感覺"
+            ],
+            "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T13:55:08.320604+00:00",
+          "width": 2450,
+          "height": 1634,
+          "id": "73adf93444c5cbacd776",
+          "personId": "t1500_0564",
+          "discoveryRunId": "20261030T135504Z-29b2a734",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Softhard_%28206625630%29.jpg/1920px-Softhard_%28206625630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Softhard_%28206625630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206625630).jpg",
+          "filename": "Softhard (206625630).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Tommy Wong from Tuen Mun, Hong Kong",
+          "credit": "IMG_0777",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "SoftHard Long Time No See\n\n軟硬 Long Time No See 紅館",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "wikidataId": "Q590914",
+            "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+            "exactChineseAliases": [
+              "葛民輝",
+              "葛民辉",
+              "葛民辉",
+              "葛民辉"
+            ],
+            "verifiedSearchAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot",
+              "Eric Kot Man Fai",
+              "Eric Kot Man-fai"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "articleTitle": "葛民輝",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "葛民輝",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "百分百感覺"
+            ],
+            "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T13:55:08.321844+00:00",
+          "width": 2330,
+          "height": 1554,
+          "id": "83e3f2e200293f81b15f",
+          "personId": "t1500_0564",
+          "discoveryRunId": "20261030T135504Z-29b2a734",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Softhard_%28206626223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Softhard_%28206626223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206626223).jpg",
+          "filename": "Softhard (206626223).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Tommy Wong from Tuen Mun, Hong Kong",
+          "credit": "Jan",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "SoftHard Long Time No See\n\n軟硬 Long Time No See 紅館",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "wikidataId": "Q590914",
+            "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+            "exactChineseAliases": [
+              "葛民輝",
+              "葛民辉",
+              "葛民辉",
+              "葛民辉"
+            ],
+            "verifiedSearchAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot",
+              "Eric Kot Man Fai",
+              "Eric Kot Man-fai"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "articleTitle": "葛民輝",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "葛民輝",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "百分百感覺"
+            ],
+            "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T13:55:08.322317+00:00",
+          "width": 1850,
+          "height": 2775,
+          "id": "68560087776b9b3364dd",
+          "personId": "t1500_0564",
+          "discoveryRunId": "20261030T135504Z-29b2a734",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Wedding...%3F%3F%3F_%28206958255%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Wedding...%3F%3F%3F_%28206958255%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Wedding...%3F%3F%3F_(206958255).jpg",
+          "filename": "Wedding...??? (206958255).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Tommy Wong from Tuen Mun, Hong Kong",
+          "credit": "Wedding...???",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "SoftHard Long Time No See\n\n軟硬 Long Time No See 紅館",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "wikidataId": "Q590914",
+            "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+            "exactChineseAliases": [
+              "葛民輝",
+              "葛民辉",
+              "葛民辉",
+              "葛民辉"
+            ],
+            "verifiedSearchAliases": [
+              "葛民輝",
+              "葛民辉",
+              "Eric Kot",
+              "Eric Kot Man Fai",
+              "Eric Kot Man-fai"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+            "articleTitle": "葛民輝",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "葛民輝",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "百分百感覺"
+            ],
+            "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T13:55:08.322897+00:00",
+          "width": 1744,
+          "height": 2615,
+          "id": "dbc2dedade5fd7e370fa",
+          "personId": "t1500_0564",
+          "discoveryRunId": "20261030T135504Z-29b2a734",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "name": "葛民輝",
@@ -44332,18 +44599,133 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-30T13:55:06.003846+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T13:55:12.710531+00:00"
+        },
+        {
+          "time": "2026-10-30T13:55:12.710567+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T13:55:17.499268+00:00"
+        },
+        {
+          "time": "2026-10-30T13:55:17.499293+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
+                "filename": "EricKot2007.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Pete Yeung",
+                "credit": "originally posted to Flickr as McConcert043",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "Eric Kot",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "wikidataId": "Q590914",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+                  "exactChineseAliases": [
+                    "葛民輝",
+                    "葛民辉",
+                    "葛民辉",
+                    "葛民辉"
+                  ],
+                  "verifiedSearchAliases": [
+                    "葛民輝",
+                    "葛民辉",
+                    "Eric Kot",
+                    "Eric Kot Man Fai",
+                    "Eric Kot Man-fai"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T13:55:06.530692+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+                  "articleTitle": "葛民輝",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "葛民輝",
+                  "matchedAliases": [
+                    "Eric Kot"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Eric Kot"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "百分百感覺"
+                  ],
+                  "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T13:55:08.321342+00:00",
+                "width": 582,
+                "height": 703,
+                "id": "cad3208d7ed5ebd101df",
+                "personId": "t1500_0564",
+                "discoveryRunId": "20261030T135504Z-29b2a734",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206625630).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206626223).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Wedding...%3F%3F%3F_(206958255).jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 5
         }
       ],
       "status": "no_suitable_source",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T20:17:21.841842+00:00",
+      "lastAttemptAt": "2026-10-30T13:55:05.911841+00:00",
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-29T20:17:44.772106+00:00",
-      "workerFinishedAt": "2026-10-29T20:17:44.773406+00:00"
+      "updatedAt": "2026-10-30T13:55:17.499328+00:00",
+      "workerFinishedAt": "2026-10-30T13:55:17.501269+00:00"
     },
     "t1500_0568": {
       "attempts": 7,

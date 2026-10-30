@@ -280,6 +280,47 @@ class HTTPFailureBoundTest(unittest.TestCase):
     def test_http_403_opens_host_circuit(self): self.assert_host_circuit(403)
     def test_http_429_opens_host_circuit(self): self.assert_host_circuit(429)
 
+    def test_same_host_commons_thumbnail_403_allows_one_original_retry(self):
+        thumbnail = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/portrait.jpg/1400px-portrait.jpg'
+        original = 'https://upload.wikimedia.org/wikipedia/commons/a/a1/portrait.jpg'
+        opener = mock.Mock()
+        opener.open.side_effect = [
+            urllib.error.HTTPError(thumbnail, 403, 'Thumbnail forbidden', Message(), None),
+            Response(b'original Wikimedia pixels'),
+        ]
+        client = HTTP(attempts=1, interval=0, timeout=2)
+        with mock.patch('media_pipeline.sources.urllib.request.build_opener', return_value=opener):
+            with self.assertRaises(SourceError) as refused:
+                client.get(thumbnail)
+            self.assertEqual(refused.exception.code, 'http_403')
+            # Normal requests remain blocked to prevent repeated host-wide 403s.
+            with self.assertRaises(SourceError):
+                client.get(original)
+            self.assertEqual(opener.open.call_count, 1)
+            # Only the explicitly selected Commons original may bypass that
+            # circuit; it is a different URL and still must be licensed/reviewed.
+            self.assertEqual(
+                client.get(original, allow_wikimedia_original_retry=True),
+                b'original Wikimedia pixels',
+            )
+            self.assertEqual(opener.open.call_count, 2)
+            self.assertNotIn('upload.wikimedia.org', client.blocked_hosts)
+            with self.assertRaises(SourceError) as wrong_host:
+                client.get('https://example.org/photo.jpg', allow_wikimedia_original_retry=True)
+            self.assertEqual(wrong_host.exception.code, 'invalid_fallback')
+
+    def test_original_retry_never_bypasses_wikimedia_429_or_proxy_refusal(self):
+        url = 'https://upload.wikimedia.org/wikipedia/commons/a/a1/portrait.jpg'
+        client = HTTP(attempts=1, interval=0, timeout=2)
+        client.blocked_hosts['upload.wikimedia.org'] = {
+            'code': 'proxy_access_denied', 'reason': 'Proxy denied', 'until': None,
+        }
+        with mock.patch('media_pipeline.sources.urllib.request.build_opener') as opener:
+            with self.assertRaises(SourceError) as denied:
+                client.get(url, allow_wikimedia_original_retry=True)
+            self.assertEqual(denied.exception.code, 'proxy_access_denied')
+            opener.assert_not_called()
+
     def test_expired_budget_performs_no_request(self):
         client = HTTP(attempts=3, interval=0, budget=time.monotonic()-1, timeout=8)
         with mock.patch('media_pipeline.sources.urllib.request.build_opener') as build:

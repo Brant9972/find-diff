@@ -44,7 +44,13 @@ def source_key(url):
 
 
 def clean(value):
-    return html.unescape(re.sub('<[^>]+>', '', str(value or ''))).strip()
+    # Commons extmetadata Artist/Credit often embeds MediaWiki template CSS.
+    # Strip style/script *with their contents*, not just the tags: leaving
+    # `.mw-parser-output {...}` in the author field corrupts attribution.
+    raw = str(value or '')
+    raw = re.sub(r'<\s*(style|script)\b[^>]*>.*?<\s*/\s*\1\s*>',
+                 '', raw, flags=re.IGNORECASE | re.DOTALL)
+    return html.unescape(re.sub('<[^>]+>', '', raw)).strip()
 
 
 def identity(person, text):

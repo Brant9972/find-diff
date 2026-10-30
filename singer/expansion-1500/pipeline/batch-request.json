@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-manual-recrops-sunpeng-zhenghongyi-1510",
+  "requestId": "20261030-zhenghongyi-v2-five-stage-visual-fix",
   "mode": "manual_recrop",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-sunpeng-zhenghongyi.json",
-  "targetPeople": 2,
-  "purpose": "No provider rerun. Reuse immutable source-only originals from run 41017698407 for two visually promising existing selectedNew. Render draft 600x720 and five reveal masks, verify pixel quality and exact identity/license manually before any live release. Do not touch main or creators."
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261030-zhenghongyi-v2.json",
+  "targetPeople": 1,
+  "purpose": "Re-render only one existing source-verified 2023 鄭弘儀 photo with corrected eyes/nose/mouth/chin masks. No provider search, no duplicate 孫鵬 rerender, no main deployment or automatic approval."
 }

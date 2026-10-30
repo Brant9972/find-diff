@@ -181,7 +181,7 @@ class SourceExpansionTest(unittest.TestCase):
     def test_entity_provider_does_not_implicitly_call_openverse(self):
         # Explicit providers=[entity, commons] must not hit Openverse.
         api = EntityAPI()
-        self.assertTrue(list(EntityPortraits().search(self.person, api)))
+        self.assertTrue(list(EntityPortraits(allow_openverse=False).search(self.person, api)))
         self.assertFalse(any('openverse.org' in url for url, _ in api.calls))
         # The separate Openverse adapter remains available when selected.
         from media_pipeline.sources import Openverse
@@ -191,7 +191,7 @@ class SourceExpansionTest(unittest.TestCase):
     def test_commons_refusal_does_not_prevent_independent_openverse_search(self):
         api = EntityAPI(commons_error=True)
         with self.assertRaises(SourceError):
-            list(EntityPortraits().search(self.person, api))
+            list(EntityPortraits(allow_openverse=False).search(self.person, api))
         self.assertFalse(any('openverse.org' in url for url, _ in api.calls))
         from media_pipeline.sources import Openverse
         rows = list(Openverse().search(self.person, api))

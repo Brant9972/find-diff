@@ -45,7 +45,7 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         request = json.loads((root / 'pipeline' / 'batch-request.json')
                              .read_text(encoding='utf-8'))
-        self.assertEqual(request['plannedPersonIds'], ['t1500_0564'])
+        self.assertEqual(request['plannedPersonIds'], ['t1500_0102'])
         self.assertEqual(request['targetPeople'], 1)
         self.assertEqual(request['mode'], 'search')
         self.assertEqual(request['providers'], ['curated'])

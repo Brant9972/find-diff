@@ -52,6 +52,7 @@ def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]
     people: dict[str, dict] = {}
     qids: dict[str, str] = {}
     names: dict[str, set[str]] = {}
+    answer_index: dict[str, set[str]] = {}
     for bank, path in BANKS:
         for q in json.loads((root / path).read_text(encoding="utf-8"))["questions"]:
             pid = str(q["id"])
@@ -65,6 +66,13 @@ def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]
                 people[pid] = {"q": q, "banks": {bank}}
             name_key = normal(q.get("name", ""))
             names.setdefault(name_key, set()).add(pid)
+            # A different person's existing accepted answer can be a stage
+            # name, former name or nickname (e.g. 羅璧玲 = 羅霈穎).
+            # Canonical-name-only deduplication would miss that identity.
+            for answer in [q.get("name", ""), *(q.get("aliases") or [])]:
+                key = normal(str(answer))
+                if key:
+                    answer_index.setdefault(key, set()).add(pid)
             qid = q.get("wikidataId") or ""
             if qid:
                 if not QID_RE.fullmatch(qid):
@@ -79,6 +87,10 @@ def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]
             errors.append(f"canonical name collision among IDs: {sorted(ids)}")
     for pid in new_ids:
         q, banks = people[pid]["q"], people[pid]["banks"]
+        for answer in {normal(str(a)) for a in [q.get("name", ""), *(q.get("aliases") or [])]}:
+            others = sorted(answer_index.get(answer, set()) - {pid})
+            if answer and others:
+                errors.append(f"{pid}: alias/answer collision {answer!r} with {others}; verify distinct identities before release")
         attr = q.get("attribution") or {}
         lic = (attr.get("license") or "").strip()
         url = (attr.get("licenseUrl") or "").strip()

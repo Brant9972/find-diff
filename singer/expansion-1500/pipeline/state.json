@@ -42816,8 +42816,8 @@
       "workerFinishedAt": "2026-10-29T17:35:13.198370+00:00"
     },
     "t1500_0554": {
-      "attempts": 6,
-      "nextRetryAt": "2026-11-01T18:35:33.649218+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-04T10:43:37.599855+00:00",
       "candidateId": "c1500-0554",
       "chatgptReview": {
         "personId": "t1500_0554",
@@ -42835,9 +42835,9 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T024333Z-eebc173e",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0554": {
@@ -42854,7 +42854,115 @@
           "handoffCollection": "decisions"
         }
       },
-      "lastErrors": [],
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+            "filename": "黃芷晴.jpg",
+            "artist": "數碼電台DBC",
+            "credit": "YouTube - 20141031 黃芷晴",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​無綫五虎將黃日華的女兒",
+            "identityEvidence": {
+              "query": "黃日華",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "黃日華"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "側臉模糊；找經典角色正面照",
+              "representativeWorks": [
+                "天龍八部"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-30T02:43:36.403851+00:00",
+            "width": 3120,
+            "height": 1980,
+            "id": "d7d5204a9f1fb81044fb",
+            "personId": "t1500_0554",
+            "discoveryRunId": "20261030T024333Z-eebc173e",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0554/d7d5204a9f1fb81044fb/10aae2fb1990/original.bin",
+            "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Felix_Wong_Yat_Wa%27s_autograph.png",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
+            "filename": "Adrian Wong Tsz-ching (黄芷晴) 2014 (cropped).jpg",
+            "artist": "數碼電台DBC",
+            "credit": "YouTube - 20141031 黃芷晴",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "caption": "​無綫五虎將黃日華的女兒",
+            "identityEvidence": {
+              "query": "黃日華",
+              "identityWarning": "Caption/name match is preliminary evidence only",
+              "captionAliasMatches": [
+                "黃日華"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "側臉模糊；找經典角色正面照",
+              "representativeWorks": [
+                "天龍八部"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-30T02:43:36.989629+00:00",
+            "width": 1402,
+            "height": 1868,
+            "id": "bfad33c13dcd53097e64",
+            "personId": "t1500_0554",
+            "discoveryRunId": "20261030T024333Z-eebc173e",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        }
+      ],
       "history": [
         {
           "time": "2026-10-28T17:30:07.737338+00:00",
@@ -43140,6 +43248,125 @@
           "time": "2026-10-30T02:35:33.649202+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T02:43:35.068587+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T02:43:37.599815+00:00"
+        },
+        {
+          "time": "2026-10-30T02:43:37.599835+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+                "filename": "黃芷晴.jpg",
+                "artist": "數碼電台DBC",
+                "credit": "YouTube - 20141031 黃芷晴",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​無綫五虎將黃日華的女兒",
+                "identityEvidence": {
+                  "query": "黃日華",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "黃日華"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "側臉模糊；找經典角色正面照",
+                  "representativeWorks": [
+                    "天龍八部"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-30T02:43:36.403851+00:00",
+                "width": 3120,
+                "height": 1980,
+                "id": "d7d5204a9f1fb81044fb",
+                "personId": "t1500_0554",
+                "discoveryRunId": "20261030T024333Z-eebc173e",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0554/d7d5204a9f1fb81044fb/10aae2fb1990/original.bin",
+                "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Felix_Wong_Yat_Wa%27s_autograph.png",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adrian_Wong_Tsz-ching_%28%E9%BB%84%E8%8A%B7%E6%99%B4%29_2014_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Adrian_Wong_Tsz-ching_(%E9%BB%84%E8%8A%B7%E6%99%B4)_2014_(cropped).jpg",
+                "filename": "Adrian Wong Tsz-ching (黄芷晴) 2014 (cropped).jpg",
+                "artist": "數碼電台DBC",
+                "credit": "YouTube - 20141031 黃芷晴",
+                "license": "CC BY 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                "caption": "​無綫五虎將黃日華的女兒",
+                "identityEvidence": {
+                  "query": "黃日華",
+                  "identityWarning": "Caption/name match is preliminary evidence only",
+                  "captionAliasMatches": [
+                    "黃日華"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "側臉模糊；找經典角色正面照",
+                  "representativeWorks": [
+                    "天龍八部"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-30T02:43:36.989629+00:00",
+                "width": 1402,
+                "height": 1868,
+                "id": "bfad33c13dcd53097e64",
+                "personId": "t1500_0554",
+                "discoveryRunId": "20261030T024333Z-eebc173e",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 3
         }
       ],
       "personId": "t1500_0554",
@@ -43691,76 +43918,6 @@
         },
         {
           "provider": "commons",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Felix_Wong_Yat_Wa%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Felix_Wong_Yat_Wa%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "downloadVariant": "wikimedia_thumbnail_1400",
-          "source": "https://commons.wikimedia.org/wiki/File:Felix_Wong_Yat_Wa%27s_autograph.png",
-          "filename": "Felix Wong Yat Wa's autograph.png",
-          "artist": "黃日華（由 Elmond 調整）",
-          "credit": "https://archive.ph/AaGSO",
-          "license": "Public domain",
-          "licenseUrl": "",
-          "caption": "​這是藝人黃日華的簽名。",
-          "identityEvidence": {
-            "query": "Felix Wong",
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "wikidataId": "Q1140128",
-            "mappingSource": "https://www.wikidata.org/wiki/Q1140128",
-            "exactChineseAliases": [
-              "黄日华",
-              "黃日華",
-              "黃日華",
-              "黄日华"
-            ],
-            "verifiedSearchAliases": [
-              "黃日華",
-              "黄日华",
-              "Felix Wong",
-              "Felix Yat-wah Wong",
-              "Wong Yat-wah",
-              "Wong Yat Wah"
-            ],
-            "entityTypeEvidence": "P31=Q5",
-            "retrievedAt": "2026-10-29T09:25:41.528277+00:00",
-            "visualIdentityVerified": false,
-            "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E6%97%A5%E8%8F%AF",
-            "articleTitle": "黃日華",
-            "articleLookup": "exact title with redirects; not a search result",
-            "matchedAliases": [
-              "黃日華",
-              "黃日華",
-              "黄日华",
-              "Felix Wong",
-              "黃日華"
-            ],
-            "captionAliasMatches": [
-              "黃日華",
-              "黃日華"
-            ]
-          },
-          "recognitionEvidence": {
-            "requestedReplacement": "側臉模糊；找經典角色正面照",
-            "representativeWorks": [
-              "天龍八部"
-            ],
-            "note": "Familiar appearance must be reviewed"
-          },
-          "searchTime": "2026-10-29T09:25:43.924402+00:00",
-          "width": 251,
-          "height": 323,
-          "id": "44d2d38d49fdb7fab708",
-          "personId": "t1500_0554",
-          "rightsStatus": "needs_review",
-          "eligibleForLive": false,
-          "humanReview": null,
-          "status": "metadata_only",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "Licence insufficient: image not downloaded"
-          ]
-        },
-        {
-          "provider": "commons",
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Galician-style_octopus.jpg/1920px-Galician-style_octopus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Galician-style_octopus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "downloadVariant": "wikimedia_thumbnail_1400",
@@ -43819,9 +43976,97 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg/1920px-%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%83%E8%8A%B7%E6%99%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%8A%B7%E6%99%B4.jpg",
+          "filename": "黃芷晴.jpg",
+          "artist": "數碼電台DBC",
+          "credit": "YouTube - 20141031 黃芷晴",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​無綫五虎將黃日華的女兒",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃日華"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T02:43:36.403851+00:00",
+          "width": 3120,
+          "height": 1980,
+          "id": "d7d5204a9f1fb81044fb",
+          "personId": "t1500_0554",
+          "discoveryRunId": "20261030T024333Z-eebc173e",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0554/d7d5204a9f1fb81044fb/10aae2fb1990/original.bin",
+          "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Felix_Wong_Yat_Wa%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Felix_Wong_Yat_Wa%27s_autograph.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Felix_Wong_Yat_Wa%27s_autograph.png",
+          "filename": "Felix Wong Yat Wa's autograph.png",
+          "artist": "黃日華（由 Elmond 調整）",
+          "credit": "https://archive.ph/AaGSO",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​這是藝人黃日華的簽名。",
+          "identityEvidence": {
+            "query": "黃日華",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [
+              "黃日華"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "側臉模糊；找經典角色正面照",
+            "representativeWorks": [
+              "天龍八部"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T02:43:36.987529+00:00",
+          "width": 251,
+          "height": 323,
+          "id": "44d2d38d49fdb7fab708",
+          "personId": "t1500_0554",
+          "discoveryRunId": "20261030T024333Z-eebc173e",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
-      "updatedAt": "2026-10-30T02:35:33.649230+00:00",
+      "updatedAt": "2026-10-30T02:43:37.599867+00:00",
       "name": "黃日華",
       "legacyRecord": {
         "questionId": "t1500_0554",
@@ -43881,9 +44126,9 @@
         }
       },
       "status": "no_suitable_source",
-      "lastAttemptAt": "2026-10-30T02:35:13.013865+00:00",
+      "lastAttemptAt": "2026-10-30T02:43:35.006823+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T02:35:33.650723+00:00"
+      "workerFinishedAt": "2026-10-30T02:43:37.601388+00:00"
     },
     "t1500_0315": {
       "personId": "t1500_0315",
@@ -83030,9 +83275,9 @@
       "personId": "t1500_0567",
       "candidateId": "c1500-0567",
       "name": "羅蘭",
-      "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T06:38:50.813647+00:00",
+      "status": "pending_review",
+      "attempts": 3,
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -83993,6 +84238,97 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E7%BE%85%E8%98%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E8%98%AD.jpg",
+          "filename": "羅蘭.jpg",
+          "artist": "Yahoo Hong Kong",
+          "credit": "https://www.flickr.com/photos/yahoohongkong/14693697553/in/album-72157645321552460/",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "​第19屆香港電影金像獎最佳女主角",
+          "identityEvidence": {
+            "query": "羅蘭",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "羅蘭"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "陰陽路"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T02:43:37.863659+00:00",
+          "width": 1488,
+          "height": 2071,
+          "id": "ccc5cca075050da823d4",
+          "personId": "t1500_0567",
+          "discoveryRunId": "20261030T024333Z-eebc173e",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0567/ccc5cca075050da823d4/eabab9f84468/original.bin",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0567/ccc5cca075050da823d4/eabab9f84468/7fa5ae7b8b89.jpg",
+          "originalSha256": "eabab9f84468b45c0d59ffcb1bdc4e49bc90dd1daf0906b4ef9d79cfa74485fb",
+          "gameSha256": "7fa5ae7b8b896363b52eea1f549fd6359c88e67ab075b222ef50ffed48e6d963",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.2776027550858058,
+              0.92,
+              0.42567769597085675
+            ],
+            "nose": [
+              0.08,
+              0.2776027550858058,
+              0.92,
+              0.5433222738544593
+            ],
+            "mouth": [
+              0.08,
+              0.2776027550858058,
+              0.92,
+              0.6669812377472495
+            ],
+            "chin": [
+              0.08,
+              0.2776027550858058,
+              0.92,
+              0.8185108347689168
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "originalSize": [
+              1488,
+              2071
+            ],
+            "sharpness": 257.03,
+            "overexposedFraction": 3.935185185185185e-05
+          }
         }
       ],
       "history": [
@@ -84174,6 +84510,17 @@
             }
           ],
           "candidatesTried": 12
+        },
+        {
+          "time": "2026-10-30T02:43:37.753262+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T02:43:39.415380+00:00"
+        },
+        {
+          "time": "2026-10-30T02:43:39.415389+00:00",
+          "errors": [],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -84197,91 +84544,15 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
-      "lastRunNewCandidateIds": [],
-      "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:38:46.948230+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 2"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Hungarian_University_plaque_Bp01_Szen_Gy%C3%B6rgy_t%C3%A9r2.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:P%C3%A1zm%C3%A1ny_P%C3%A9ter_Tudom%C3%A1nyegyetem_Tercen%C3%A1rium_-_1935.05.12_(1).tif",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:1974_Fortepan_88550.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:1974_Fortepan_88549.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:1974_Fortepan_88552.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Udr%C3%A1nszky_L%C3%A1szl%C3%B3.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Eotvos_Lorand_University,_dean%27s_office_sign,_Kecskemeti_Street,_2016_Budapest.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Az_ELTE_Lev%C3%A9lt%C3%A1ra,_T%C3%A9glagy%C3%A1rd%C5%B1l%C5%91,_2018_K%C5%91b%C3%A1nya.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Hunveyor-1_terepasztal.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%EA%99%9E%D0%B3%D1%80o%D0%BFa%D1%80%D1%A3_%D0%BB%C8%A2%D0%B9_A%D0%B2%D1%94%D0%BB,_1818.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Budapest,_ELTE,_L%C3%A1gym%C3%A1nyosi_Campus,_4.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Bolyai_J%C3%A1nos_Gimn%C3%A1zium_Szombathely.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
+      "lastRunId": "20261030T024333Z-eebc173e",
+      "lastRunNewCandidateIds": [
+        "ccc5cca075050da823d4"
       ],
-      "updatedAt": "2026-10-30T02:38:50.813660+00:00",
-      "workerFinishedAt": "2026-10-30T02:38:50.815707+00:00"
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T02:43:37.711192+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-30T02:43:39.415394+00:00",
+      "workerFinishedAt": "2026-10-30T02:43:39.417042+00:00"
     },
     "t1500_0235": {
       "personId": "t1500_0235",

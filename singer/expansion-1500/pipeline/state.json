@@ -8862,9 +8862,9 @@
       "personId": "t1500_0104",
       "candidateId": "c1500-0104",
       "name": "董至成",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:45.852363+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T15:42:33.659009+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -9271,6 +9271,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:42:30.627191+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:31.276112+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:31.276145+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:33.658974+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:33.658997+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -9289,24 +9306,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-29T17:34:27.945295+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:42:30.576427+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-29T17:34:45.852374+00:00",
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "updatedAt": "2026-10-30T07:42:33.659019+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T17:34:45.854046+00:00"
+      "workerFinishedAt": "2026-10-30T07:42:33.661355+00:00"
     },
     "t1500_0414": {
       "personId": "t1500_0414",
@@ -19842,8 +19853,8 @@
       "candidateId": "c1500-0016",
       "name": "庹宗康",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:40:51.269487+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T11:41:43.912973+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -20206,6 +20217,23 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-30T07:41:34.775311+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:39.415011+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:39.415044+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:43.912936+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:43.912960+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -20224,63 +20252,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:39:53.183971+00:00",
-      "lastErrors": [
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-009.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_formation.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_houses_on_S_5th_St.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun_loading.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:M1200_Shotgun_(7414627784).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Shotgun-Chokes-Basic_es.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Casey_Ryan_during_a_shotgun_stage_at_the_2018_USPSA_Multigun_Championship.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Hunting_shotgun_01.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:41:34.724406+00:00",
+      "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-28T12:40:51.269499+00:00"
+      "updatedAt": "2026-10-30T07:41:43.912983+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-30T07:41:43.915076+00:00"
     },
     "t1500_0128": {
       "personId": "t1500_0128",
@@ -38224,7 +38207,7 @@
       "personId": "t1500_0491",
       "candidateId": "c1500-0491",
       "name": "鄭弘儀",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -68473,9 +68456,9 @@
       "personId": "t1500_0103",
       "candidateId": "c1500-0103",
       "name": "陽帆",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:30.369365+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T15:42:30.466351+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -68866,6 +68849,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:42:23.053817+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:26.495180+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:26.495212+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:30.466320+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:30.466339+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -68884,24 +68884,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-29T17:34:11.169436+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:42:23.004524+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-29T17:34:30.369376+00:00",
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "updatedAt": "2026-10-30T07:42:30.466360+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T17:34:30.371054+00:00"
+      "workerFinishedAt": "2026-10-30T07:42:30.468636+00:00"
     },
     "t1500_0218": {
       "personId": "t1500_0218",
@@ -69067,9 +69061,9 @@
       "personId": "t1500_0094",
       "candidateId": "c1500-0094",
       "name": "寇世勳",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:28.043473+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T15:42:19.442279+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -69166,6 +69160,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:42:10.534262+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:14.907793+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:14.907823+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:19.442247+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:19.442269+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -69184,24 +69195,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-29T17:34:07.209498+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:42:10.481937+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-29T17:34:28.043483+00:00",
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "updatedAt": "2026-10-30T07:42:19.442288+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T17:34:28.044901+00:00"
+      "workerFinishedAt": "2026-10-30T07:42:19.444516+00:00"
     },
     "t1500_0379": {
       "personId": "t1500_0379",
@@ -69865,9 +69870,9 @@
       "personId": "t1500_0093",
       "candidateId": "c1500-0093",
       "name": "郭品超",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:43:13.935836+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T11:41:49.525258+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -70025,6 +70030,23 @@
             }
           ],
           "candidatesTried": 3
+        },
+        {
+          "time": "2026-10-30T07:41:44.080769+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:46.060016+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:46.060048+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:49.525224+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:49.525247+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -70043,38 +70065,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:42:01.523751+00:00",
-      "lastErrors": [
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_01.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_03.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%A7%90%E7%B7%AC%E7%94%B8%E4%BB%A3%E8%A1%A8%E8%99%95%E5%BC%95%E4%BB%8B%E7%B7%AC%E7%94%B8%E5%AF%B6%E9%81%8B%E9%9B%86%E5%9C%98%E8%88%87%E8%BE%B2%E5%8F%8B%E7%A8%AE%E8%8B%97%E5%85%AC%E5%8F%B8%E6%8E%A2%E8%A8%8E%E6%8E%A8%E5%BB%A3%E8%BE%B2%E6%A5%AD%E5%90%88%E4%BD%9C_02.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:41:44.027537+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-28T12:43:13.935849+00:00"
+      "updatedAt": "2026-10-30T07:41:49.525268+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-30T07:41:49.527466+00:00"
     },
     "t1500_0387": {
       "personId": "t1500_0387",
@@ -71684,9 +71686,9 @@
       "personId": "t1500_0099",
       "candidateId": "c1500-0099",
       "name": "阿翔",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:46:52.339402+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T11:42:00.222748+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -71946,6 +71948,79 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%98%BF%E7%BF%94.JPG/1920px-%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+          "filename": "阿翔.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Onlymyself65536",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​浩角翔起的阿翔",
+          "identityEvidence": {
+            "wikidataId": "Q8944380",
+            "mappingSource": "https://www.wikidata.org/wiki/Q8944380",
+            "exactChineseAliases": [
+              "陳秉立",
+              "陈秉立",
+              "阿翔",
+              "陈秉立",
+              "阿翔"
+            ],
+            "verifiedSearchAliases": [
+              "阿翔",
+              "陳秉立",
+              "陈秉立",
+              "Aaron Chen",
+              "Chen Bingli",
+              "Chen Wenxiang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:50.056473+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%A7%89%E7%AB%8B",
+            "articleTitle": "陳秉立",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "阿翔",
+            "matchedAliases": [
+              "阿翔"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "阿翔"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "食尚玩家"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:50.222318+00:00",
+          "width": 2736,
+          "height": 3648,
+          "id": "12578398260016a9a7e4",
+          "personId": "t1500_0099",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0099/12578398260016a9a7e4/5c544fe92d77/original.bin",
+          "originalSha256": "5c544fe92d7777378ad2f150e0464380127db98b1062150235bdb00708e5f988",
+          "cropFailure": "Multiple prominent faces",
+          "gamePath": null
         }
       ],
       "history": [
@@ -72026,6 +72101,104 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-30T07:41:49.695613+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:55.368232+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:55.368259+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:42:00.222707+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:00.222733+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%98%BF%E7%BF%94.JPG/1920px-%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%98%BF%E7%BF%94.JPG/1920px-%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+                "filename": "阿翔.JPG",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Onlymyself65536",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​浩角翔起的阿翔",
+                "identityEvidence": {
+                  "wikidataId": "Q8944380",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q8944380",
+                  "exactChineseAliases": [
+                    "陳秉立",
+                    "陈秉立",
+                    "阿翔",
+                    "陈秉立",
+                    "阿翔"
+                  ],
+                  "verifiedSearchAliases": [
+                    "阿翔",
+                    "陳秉立",
+                    "陈秉立",
+                    "Aaron Chen",
+                    "Chen Bingli",
+                    "Chen Wenxiang"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T07:41:50.056473+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%A7%89%E7%AB%8B",
+                  "articleTitle": "陳秉立",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "阿翔",
+                  "matchedAliases": [
+                    "阿翔"
+                  ],
+                  "discoveryWarnings": [],
+                  "claim": "P18",
+                  "captionAliasMatches": [
+                    "阿翔"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "食尚玩家"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T07:41:50.222318+00:00",
+                "width": 2736,
+                "height": 3648,
+                "id": "12578398260016a9a7e4",
+                "personId": "t1500_0099",
+                "discoveryRunId": "20261030T074115Z-090da76b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0099/12578398260016a9a7e4/5c544fe92d77/original.bin",
+                "originalSha256": "5c544fe92d7777378ad2f150e0464380127db98b1062150235bdb00708e5f988",
+                "cropFailure": "Multiple prominent faces",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Multiple prominent faces"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -72044,77 +72217,107 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:45:33.541865+00:00",
+      "lastAttemptAt": "2026-10-30T07:41:49.645610+00:00",
       "lastErrors": [
         {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Aaron_Chen.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "wikimedia",
+          "provider": "entity",
           "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%98%BF%E7%BF%94.JPG/1920px-%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%98%BF%E7%BF%94.JPG/1920px-%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%E9%98%BF%E7%BF%94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+            "filename": "阿翔.JPG",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Onlymyself65536",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​浩角翔起的阿翔",
+            "identityEvidence": {
+              "wikidataId": "Q8944380",
+              "mappingSource": "https://www.wikidata.org/wiki/Q8944380",
+              "exactChineseAliases": [
+                "陳秉立",
+                "陈秉立",
+                "阿翔",
+                "陈秉立",
+                "阿翔"
+              ],
+              "verifiedSearchAliases": [
+                "阿翔",
+                "陳秉立",
+                "陈秉立",
+                "Aaron Chen",
+                "Chen Bingli",
+                "Chen Wenxiang"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T07:41:50.056473+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%A7%89%E7%AB%8B",
+              "articleTitle": "陳秉立",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "阿翔",
+              "matchedAliases": [
+                "阿翔"
+              ],
+              "discoveryWarnings": [],
+              "claim": "P18",
+              "captionAliasMatches": [
+                "阿翔"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "食尚玩家"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T07:41:50.222318+00:00",
+            "width": 2736,
+            "height": 3648,
+            "id": "12578398260016a9a7e4",
+            "personId": "t1500_0099",
+            "discoveryRunId": "20261030T074115Z-090da76b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0099/12578398260016a9a7e4/5c544fe92d77/original.bin",
+            "originalSha256": "5c544fe92d7777378ad2f150e0464380127db98b1062150235bdb00708e5f988",
+            "cropFailure": "Multiple prominent faces",
+            "gamePath": null
+          },
           "code": "image_validation_failed",
           "message": "Multiple prominent faces"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(33825570024).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171886).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_(34627171146).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Avatar_Flight_of_Passage_-_Disney%27s_Animal_Kingdom.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%A0%B1%E6%AD%B2%E7%B4%A0%E7%BF%94%E9%BE%8D_Cymbidium_sinense_%27Plain_Flying_Dragon%27_-%E9%A6%99%E6%B8%AF%E6%B2%99%E7%94%B0%E5%9C%8B%E8%98%AD%E5%B1%95_Shatin_Orchid_Show,_Hong_Kong-_(12247700225).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:Luantan_Ascent_performing_at_the_celebration_ceremony_of_the_centennial_of_Taiwanese_Cultural_Association_2021-10-17.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
         }
       ],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:46:52.339416+00:00"
+      "updatedAt": "2026-10-30T07:42:00.222758+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-30T07:42:00.225022+00:00"
     },
     "t1500_0009": {
       "personId": "t1500_0009",
       "candidateId": "c1500-0009",
       "name": "姚淳耀",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:39:53.119027+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T11:41:34.619010+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -72188,6 +72391,23 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-30T07:41:29.113824+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:31.221718+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:31.221748+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:34.618974+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:34.618997+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -72206,26 +72426,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:38:43.364917+00:00",
-      "lastErrors": [
-        {
-          "provider": "wikimedia",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%88%91%E6%9C%80%E6%84%9B%E7%9A%84%E7%AC%A8%E7%94%B7%E4%BA%BA-%E8%87%BA%E4%B8%AD%E9%A6%96%E6%98%A0%E6%B4%BB%E5%8B%95-5.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:41:29.052837+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-28T12:39:53.119041+00:00"
+      "updatedAt": "2026-10-30T07:41:34.619020+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-30T07:41:34.621204+00:00"
     },
     "t1500_0382": {
       "personId": "t1500_0382",
@@ -76142,9 +76354,9 @@
       "personId": "t1500_0092",
       "candidateId": "c1500-0092",
       "name": "江祖平",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:27.843770+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T15:42:10.281169+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -76241,6 +76453,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:42:00.392009+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:05.780223+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:05.780254+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:10.281137+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:10.281159+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -76259,24 +76488,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-29T17:34:07.208902+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T07:42:00.337155+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-29T17:34:27.843784+00:00",
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "updatedAt": "2026-10-30T07:42:10.281179+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T17:34:27.845294+00:00"
+      "workerFinishedAt": "2026-10-30T07:42:10.283401+00:00"
     },
     "t1500_0507": {
       "personId": "t1500_0507",
@@ -103062,10 +103285,686 @@
       "personId": "t1500_0007",
       "candidateId": "c1500-0007",
       "name": "王瞳",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-28T14:38:43.300918+00:00",
-      "candidates": [],
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T11:41:28.932963+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Wang_Tong%2C_Kwangtung_province%2C_China._Wellcome_L0055714.jpg/1920px-Wang_Tong%2C_Kwangtung_province%2C_China._Wellcome_L0055714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Wang_Tong%2C_Kwangtung_province%2C_China._Wellcome_L0055714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Wang_Tong,_Kwangtung_province,_China._Wellcome_L0055714.jpg",
+          "filename": "Wang Tong, Kwangtung province, China. Wellcome L0055714.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "",
+          "credit": "https://wellcomeimages.org/indexplus/obf_images/a0/5b/c7f8728bf85e9fd375bd25d0c593.jpg\n\nGallery: https://wellcomeimages.org/indexplus/image/L0055714.html\nWellcome Collection gallery (2018-04-06): https://wellcomecollection.org/works/w65n5tjp CC-BY-4.0",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Wang Tong, Kwangtung province, China. Photograph by John Thomson, 1870.\n\nIconographic Collections\nKeywords: J. Thomson",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [
+              "Wang Tong"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Wang Tong"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.388639+00:00",
+          "width": 3267,
+          "height": 2670,
+          "id": "354560a88ba8a3d7513e",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Ablemma_shimojanai_%2810.3897-BDJ.10.e85365%29_Figure_3.jpg/1920px-Ablemma_shimojanai_%2810.3897-BDJ.10.e85365%29_Figure_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ablemma_shimojanai_%2810.3897-BDJ.10.e85365%29_Figure_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Ablemma_shimojanai_(10.3897-BDJ.10.e85365)_Figure_3.jpg",
+          "filename": "Ablemma shimojanai (10.3897-BDJ.10.e85365) Figure 3.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Fu, Wang & Tong (2022)",
+          "credit": "Fu H, Wang Y, Tong Y (2022) A newly-recorded species of the genus Ablemma Roewer, 1963 (Araneae, Tetrablemmidae) from China. Biodiversity Data Journal 10: e85365. https://doi.org/10.3897/BDJ.10.e85365",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Figure 3.\nAblemma shimojanai (Komatsu, 1968), male, A-C (light) and D-I (SEM); female, J (SEM) and K, L (light). A left palp, prolateral view; B left palp, retrolateral view; C left palp, dorsal view; D left palp, prolateral view; E left palp, retrolateral view; F left palp, dorsal view; G distal part of bulb, prolateral view; H distal part of bulb, retrolateral view; I distal part of bulb, dorsal view; J genital area, ventral view; K genital area, dorsal view; L genital area, ventral view. Abbreviations: BU = bulb; CY = cymbium; EF = epigynal fold; EM = embolus; FE = femur; IVP = inner vulval plate; PA = preanal plate; PAT = patella; PG = postgenital plate; PLC = posterolateral corners; PMP = posteromedial projection; SD = sperm duct; SR = seminal receptaculum; TI = tibia; VD = vulval duct; VS = vulval stem. Scales: A-G, J-L = 0.1 mm; H, I = 0.05 mm.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.386167+00:00",
+          "width": 3780,
+          "height": 3886,
+          "id": "664380b587cc82b30a3d",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Art_Life_2013_1211_IMG_3306_08.JPG/1920px-Art_Life_2013_1211_IMG_3306_08.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Art_Life_2013_1211_IMG_3306_08.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_08.JPG",
+          "filename": "Art Life 2013 1211 IMG 3306 08.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.386463+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "b54b231aa6b33553757f",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Art_Life_2013_1211_IMG_3306_10.JPG/1920px-Art_Life_2013_1211_IMG_3306_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Art_Life_2013_1211_IMG_3306_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_10.JPG",
+          "filename": "Art Life 2013 1211 IMG 3306 10.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.386744+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "90bfd2bb5045dbe68ce0",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Art_Life_2013_1211_IMG_3306_29.JPG/1920px-Art_Life_2013_1211_IMG_3306_29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Art_Life_2013_1211_IMG_3306_29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_29.JPG",
+          "filename": "Art Life 2013 1211 IMG 3306 29.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.387040+00:00",
+          "width": 3456,
+          "height": 5184,
+          "id": "251a853ea17642e2415e",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Art_Life_2013_1211_IMG_3359_01.JPG/1920px-Art_Life_2013_1211_IMG_3359_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Art_Life_2013_1211_IMG_3359_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3359_01.JPG",
+          "filename": "Art Life 2013 1211 IMG 3359 01.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.387322+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "19cbcf7a5124b70630ff",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Art_Life_2013_1211_IMG_3494.JPG/1920px-Art_Life_2013_1211_IMG_3494.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Art_Life_2013_1211_IMG_3494.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3494.JPG",
+          "filename": "Art Life 2013 1211 IMG 3494.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.387597+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "94d8f9666b760201dd9d",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Art_Life_2013_1211_IMG_3496.JPG/1920px-Art_Life_2013_1211_IMG_3496.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Art_Life_2013_1211_IMG_3496.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3496.JPG",
+          "filename": "Art Life 2013 1211 IMG 3496.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.387888+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "82e63e84baccd6f5b5d3",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Art_Life_2013_1211_IMG_3545.JPG/1920px-Art_Life_2013_1211_IMG_3545.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Art_Life_2013_1211_IMG_3545.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3545.JPG",
+          "filename": "Art Life 2013 1211 IMG 3545.JPG",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "維基小霸王",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "This photo was taken during the filming of Chinese talk show Art Life. In this episode, cast and director of popular TV drama We Let Married were invited.",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.388162+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "5e310fdb679a8e0b5a4d",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg/1920px-Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg",
+          "filename": "Portraits of Famous Men - Wang Xizhi 2.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Unknown Chinese artist",
+          "credit": "https://www.philamuseum.org/collection/object/42768",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.384718+00:00",
+          "width": 2622,
+          "height": 3828,
+          "id": "e9dc5e223ef735062704",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Portraits_of_Famous_Men_-_Zhou_Gong.jpg/1920px-Portraits_of_Famous_Men_-_Zhou_Gong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Portraits_of_Famous_Men_-_Zhou_Gong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Zhou_Gong.jpg",
+          "filename": "Portraits of Famous Men - Zhou Gong.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Unknown Chinese artist",
+          "credit": "https://www.philamuseum.org/collection/object/42758",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "",
+          "identityEvidence": {
+            "wikidataId": "Q9066373",
+            "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+            "exactChineseAliases": [
+              "王瞳",
+              "王瞳",
+              "王瞳"
+            ],
+            "verifiedSearchAliases": [
+              "王瞳",
+              "Hitomi Wu",
+              "Wang Tong",
+              "Wu Shanyun",
+              "Tong Wang"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+            "articleTitle": "王瞳",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Wang Tong",
+            "matchedAliases": [],
+            "discoveryWarnings": [],
+            "captionAliasMatches": []
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "多情城市"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T07:41:22.385009+00:00",
+          "width": 2544,
+          "height": 3810,
+          "id": "510915430197471a9af7",
+          "personId": "t1500_0007",
+          "discoveryRunId": "20261030T074115Z-090da76b",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
       "history": [
         {
           "time": "2026-10-28T12:37:34.097843+00:00",
@@ -103095,6 +103994,161 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:41:16.485043+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:25.400523+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:25.400554+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T07:41:28.932942+00:00"
+        },
+        {
+          "time": "2026-10-30T07:41:28.932948+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:New_Wang_Tong_River_Bridge_2025.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/New_Wang_Tong_River_Bridge_2025.jpg/1920px-New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/New_Wang_Tong_River_Bridge_2025.jpg/1920px-New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:New_Wang_Tong_River_Bridge_2025.jpg",
+                "filename": "New Wang Tong River Bridge 2025.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Tombus20032000",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​新橫塘河橋，位於梅窩的橋樑。",
+                "identityEvidence": {
+                  "wikidataId": "Q9066373",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+                  "exactChineseAliases": [
+                    "王瞳",
+                    "王瞳",
+                    "王瞳"
+                  ],
+                  "verifiedSearchAliases": [
+                    "王瞳",
+                    "Hitomi Wu",
+                    "Wang Tong",
+                    "Wu Shanyun",
+                    "Tong Wang"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+                  "articleTitle": "王瞳",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Wang Tong",
+                  "matchedAliases": [
+                    "Wang Tong"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Wang Tong"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "多情城市"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T07:41:22.388356+00:00",
+                "width": 4032,
+                "height": 3024,
+                "id": "8023bceff3b406eceb01",
+                "personId": "t1500_0007",
+                "discoveryRunId": "20261030T074115Z-090da76b",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Wang_Tong,_Kwangtung_province,_China._Wellcome_L0055714.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Ablemma_shimojanai_(10.3897-BDJ.10.e85365)_Figure_3.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_08.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_10.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_29.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3359_01.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3494.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3496.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3545.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Zhou_Gong.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 12
         }
       ],
       "legacyRecord": {
@@ -103113,20 +104167,156 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-28T12:37:34.038673+00:00",
+      "lastAttemptAt": "2026-10-30T07:41:16.414727+00:00",
       "lastErrors": [
         {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:New_Wang_Tong_River_Bridge_2025.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/New_Wang_Tong_River_Bridge_2025.jpg/1920px-New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/New_Wang_Tong_River_Bridge_2025.jpg/1920px-New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/New_Wang_Tong_River_Bridge_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:New_Wang_Tong_River_Bridge_2025.jpg",
+            "filename": "New Wang Tong River Bridge 2025.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Tombus20032000",
+            "credit": "Own work",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "caption": "​新橫塘河橋，位於梅窩的橋樑。",
+            "identityEvidence": {
+              "wikidataId": "Q9066373",
+              "mappingSource": "https://www.wikidata.org/wiki/Q9066373",
+              "exactChineseAliases": [
+                "王瞳",
+                "王瞳",
+                "王瞳"
+              ],
+              "verifiedSearchAliases": [
+                "王瞳",
+                "Hitomi Wu",
+                "Wang Tong",
+                "Wu Shanyun",
+                "Tong Wang"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T07:41:17.108978+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%9E%B3",
+              "articleTitle": "王瞳",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Wang Tong",
+              "matchedAliases": [
+                "Wang Tong"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Wang Tong"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "多情城市"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T07:41:22.388356+00:00",
+            "width": 4032,
+            "height": 3024,
+            "id": "8023bceff3b406eceb01",
+            "personId": "t1500_0007",
+            "discoveryRunId": "20261030T074115Z-090da76b",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "No reliable frontal face"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Wang_Tong,_Kwangtung_province,_China._Wellcome_L0055714.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Ablemma_shimojanai_(10.3897-BDJ.10.e85365)_Figure_3.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_08.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_10.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3306_29.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3359_01.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3494.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3496.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Art_Life_2013_1211_IMG_3545.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Wang_Xizhi_2.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Zhou_Gong.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
         }
       ],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:38:43.300933+00:00"
+      "updatedAt": "2026-10-30T07:41:28.932973+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "workerFinishedAt": "2026-10-30T07:41:28.934916+00:00"
     },
     "t1500_0173": {
       "personId": "t1500_0173",
@@ -104732,8 +105922,8 @@
       "candidateId": "c1500-0102",
       "name": "趙正平",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:11.067880+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-30T15:42:22.894029+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -104872,6 +106062,29 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T07:42:19.606500+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:21.251470+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:21.251498+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-30T07:42:22.893996+00:00"
+        },
+        {
+          "time": "2026-10-30T07:42:22.894018+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "identity_ambiguous",
+              "message": "Expected exactly one exact-name Q5 human; found 2"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -104890,7 +106103,7 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-29T17:34:07.210489+00:00",
+      "lastAttemptAt": "2026-10-30T07:42:19.552436+00:00",
       "lastErrors": [
         {
           "provider": "entity",
@@ -104903,11 +106116,11 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-29T17:34:11.067891+00:00",
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "updatedAt": "2026-10-30T07:42:22.894040+00:00",
+      "lastRunId": "20261030T074115Z-090da76b",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T17:34:11.069388+00:00"
+      "workerFinishedAt": "2026-10-30T07:42:22.896365+00:00"
     },
     "t1500_0353": {
       "personId": "t1500_0353",

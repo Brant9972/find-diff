@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1075,
-    "publishedFromPlan": 88,
-    "remainingSelectedNovel": 422,
+    "currentlyLiveUnique": 1076,
+    "publishedFromPlan": 89,
+    "remainingSelectedNovel": 421,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -14570,9 +14570,16 @@
       "candidateId": "c1500-0491",
       "plannedQuestionId": "t1500_0491",
       "name": "鄭弘儀",
-      "aliases": [],
+      "aliases": [
+        "郑弘仪",
+        "Eric Cheng",
+        "Cheng Hong-yi"
+      ],
       "acceptedAnswers": [
-        "鄭弘儀"
+        "鄭弘儀",
+        "郑弘仪",
+        "Eric Cheng",
+        "Cheng Hong-yi"
       ],
       "categories": [
         "綜藝"
@@ -14585,19 +14592,23 @@
       "photoSearchKeywords": [
         "鄭弘儀 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "鄭弘儀 新聞挖挖哇 綜藝 節目 單人 特寫 正面 無浮水印"
+      "hintsStatus": "tvbs_20230309_host_verified",
+      "identityStatus": "wikidata_commons_caption_human_verified",
+      "qaStatus": "ready_for_pr_qa_not_live",
+      "preferredImageQuery": "鄭弘儀 新聞挖挖哇 綜藝 節目 單人 特寫 正面 無浮水印",
+      "wikidataId": "Q8272691",
+      "verifiedWorkSource": "https://news.tvbs.com.tw/entertainment/2063358",
+      "reviewedPhotoSource": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
+      "reviewedPhotoSha256": "5761b17aa85c1f1eaf3ae7c0dd6adc59335baab29f785058d595addb94ae1ead"
     },
     {
       "candidateId": "c1500-0492",
@@ -18316,7 +18327,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 88,
+    "published": 89,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18405,9 +18416,10 @@
       "傅穎",
       "吳雨霏",
       "周柏豪",
-      "林美照"
+      "林美照",
+      "鄭弘儀"
     ],
-    "pendingPhotoAndHintReview": 423,
-    "latestCommit": "pending-sunpeng-pr-qa"
+    "pendingPhotoAndHintReview": 422,
+    "latestCommit": "pending-zhenghongyi-pr-qa"
   }
 }

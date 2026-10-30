@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30",
+  "id": "t1500_0470",
+  "name": "孫鵬",
+  "aliases": [
+    "孫鵬",
+    "孙鹏",
+    "Sun Peng"
+  ],
+  "wikidata": "Q9127242",
+  "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg",
+  "sourceAuthor": "Rico Shen",
+  "sourceCaption": "Famous Taiwanese entertainers Di Ying (狄鶯, left) and Sun Peng (孫鵬, right) at 2007 Alcon Taiwan Hiking.",
+  "sourceDate": "2007-10-21",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "licenseAllowsCrop": true,
+  "licenseShareAlikeRequired": true,
+  "sourceImageSha256": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+  "gameSha256": "83351dc924645475e36daaec9643e90c4d6e89bb043a53a3a2749496ca9cea82",
+  "gameSize": [
+    600,
+    720
+  ],
+  "gameImage": "photos/t1500_0470_review20261030.jpg",
+  "reveal": {
+    "chin": [
+      0.14,
+      0.26,
+      0.82,
+      0.64
+    ],
+    "eyes": [
+      0.14,
+      0.26,
+      0.82,
+      0.36
+    ],
+    "full": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "mouth": [
+      0.14,
+      0.26,
+      0.82,
+      0.54
+    ],
+    "nose": [
+      0.14,
+      0.26,
+      0.82,
+      0.43
+    ]
+  },
+  "stageSha256": {
+    "chin": "1add96ebe002f1c26d460ae5c6cea4e393abbd47a7fd9ec1ca20d62faad70d54",
+    "eyes": "46665f8485aaecd3ce07c08fa3c774cd2cf3a61665e89f728debcb9a89cd70af",
+    "full": "816a2b13eac907d6d09caf7f89e83abf18fb633e4a3850735076d1157c6c610c",
+    "mouth": "1deb28b0a2fccfa6858a145184dd964db3daa9c6a44f2c6b186969d7b5b633de",
+    "nose": "270c166bf9ca53d4726b1af7d5d5979957ddcc1da054050869da54c32186c1c5"
+  },
+  "visualReview": {
+    "candidate": "pass_single_clear_face_600x720",
+    "eyes": "pass_both_eyes_visible_no_mouth",
+    "nose": "pass_nose_visible_mouth_hidden",
+    "mouth": "pass_mouth_visible",
+    "chin": "pass_chin_and_jaw_visible",
+    "full": "pass_unobstructed_full_face",
+    "notes": "Actual immutable 1920x1440 source, derived 600x720 JPEG, eyes/nose/mouth/chin/full PNGs visually inspected. Original contains 狄鶯 on left but game crop excludes her completely. Sunglasses rest on cap above eyes; microphones below face; no occlusion or watermark. 2007-era appearance remains identifiable."
+  },
+  "identityEvidence": "Commons source caption explicitly identifies Sun Peng right, Wikidata Q9127242 identifies Taiwanese actor and same-event solo P18.",
+  "workHint": {
+    "title": "國光幫幫忙",
+    "source": "https://news.tvbs.com.tw/entertainment/1553743",
+    "kind": "綜藝節目",
+    "review": "TVBS 2021-07-27 original host reporting"
+  },
+  "rightsApproved": true,
+  "identityApproved": true,
+  "visualApproved": true,
+  "releaseGate": "READY_FOR_PR_QA_NOT_YET_LIVE",
+  "sourceRun": "20261030T071529Z-e498fa1f",
+  "sourceAssetCommit": "5067729f0d29629c450bbce56cb08c469b716567",
+  "sourceCandidateId": "manualrecrop-83351dc924645475e36d",
+  "sourceImageBlobSha": "45fef4ef658ef2aa5124606ee41bd1a62b25fea1b848f9d396f67c229fb9f078",
+  "rosterNote": "singer/roster.json tracks singer bank only; variety-only person intentionally not inserted into singers."
+}

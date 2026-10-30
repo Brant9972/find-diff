@@ -42,7 +42,9 @@
           ],
           "uploadDate": "2026-09-01",
           "exifDate": "2025-08-26",
-          "reviewNote": "Commons self-published CC0 and camera EXIF are source claims, not independently confirmed ownership or visual identity. Original exceeds pipeline 14 MB limit; prefer imageinfo 1400px thumbnail for review."
+          "reviewNote": "Commons self-published CC0 and camera EXIF are source claims, not independently confirmed ownership or visual identity. Original exceeds pipeline 14 MB limit; prefer imageinfo 1400px thumbnail for review.",
+          "accessStatus": "http_404_as_of_2026-10-30",
+          "rightsVerification": "UNVERIFIED_UNAVAILABLE"
         },
         {
           "filename": "潘親御演員照.jpg",
@@ -57,15 +59,25 @@
           ],
           "uploadDate": "2026-09-01",
           "exifDate": "2025-07-31",
-          "reviewNote": "Second distinct upload by same account; original exceeds 14 MB. Check that this is a genuine self-photograph rather than third-party publicity material."
+          "reviewNote": "Second distinct upload by same account; original exceeds 14 MB. Check that this is a genuine self-photograph rather than third-party publicity material.",
+          "accessStatus": "http_404_as_of_2026-10-30",
+          "rightsVerification": "UNVERIFIED_UNAVAILABLE"
         }
       ],
-      "reviewStatus": "SOURCE_METADATA_ONLY_NOT_VISUALLY_APPROVED",
+      "reviewStatus": "SOURCE_UNAVAILABLE_HTTP_404_NOT_APPROVED",
       "identityReview": "Cross-check pictured face with independently named 2025/2026 news photographs; Commons caption alone is insufficient.",
       "rightsReview": "Verify author/uploader rights independently where possible. CC0 page label is not final copyright clearance.",
       "visualReview": "Require actual 600x720 crop and eyes/nose/mouth/chin/full, no second faces or obstruction.",
       "dedupeReview": "Not found by canonical name or known aliases in 2026-10-30 main 460/572/113 question banks; recheck immediately before release.",
-      "reviewVerifiedOriginalSources": [
+      "reviewVerifiedOriginalSources": [],
+      "availabilityReview": {
+        "checkedAt": "2026-10-30",
+        "result": "BOTH_THUMBNAILS_HTTP_404_AND_COMMONS_PAGE_NOT_ACCESSIBLE",
+        "runId": 41085352931,
+        "runUrl": "https://github.com/Brant9972/find-diff/actions/runs/41085352931",
+        "note": "Indexed Commons search metadata was stale/unverifiable; do not reuse these URLs or claim valid rights. Original file existence/deletion reason not independently established."
+      },
+      "unavailableThumbnailLeads": [
         {
           "filename": "潘親御演員.jpg",
           "source": "https://commons.wikimedia.org/wiki/File:潘親御演員.jpg",

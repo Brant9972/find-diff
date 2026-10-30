@@ -87,6 +87,18 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertIn('黃芷晴', person['excludedCaptionNames'])
         self.assertEqual(len(person['excludedPhotoSources']), 2)
 
+    def test_patrick_tse_eye_obscured_exact_leads_are_blocked(self):
+        import json
+        plan = json.loads((Path(__file__).resolve().parents[1] /
+                           'release-plan-20261028.json').read_text(encoding='utf-8'))
+        person = next(row for row in plan['selectedNew']
+                      if row['plannedQuestionId'] == 't1500_0549')
+        sources = person['excludedPhotoSources']
+        self.assertEqual(len(sources), 2)
+        self.assertTrue(any('%E8%AC%9D%E8%B3%A2.jpg' in s for s in sources))
+        self.assertTrue(any('%E8%AC%9D%E8%80%81%E5%9B%9B.jpg' in s for s in sources))
+        self.assertFalse(person.get('reviewExactCommonsFiles'))
+
     def test_pinned_qid_rejects_wrong_same_name_human(self):
         person = {'name': '苗可秀', 'acceptedAnswers': ['苗可秀'],
                   'wikidataId': 'Q702088'}

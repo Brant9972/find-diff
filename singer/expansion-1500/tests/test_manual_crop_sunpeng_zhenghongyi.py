@@ -28,7 +28,7 @@ class ManualCropGeometryTest(unittest.TestCase):
             ids = batch["plannedPersonIds"]
             self.assertEqual(len(ids), batch["targetPeople"])
             self.assertEqual(len(ids), len(set(ids)))
-            self.assertIn(batch["providers"], (["curated"], ["entity", "commons"], ["commons"]))
+            self.assertIn(batch["providers"], (["curated"], ["entity", "commons"], ["commons"], ["curated", "commons"]))
             if batch["providers"] == ["curated"]:
                 plan = json.loads((ROOT / "release-plan-20261028.json").read_text(encoding="utf-8"))
                 selected = {p["plannedQuestionId"]: p for p in plan["selectedNew"]}

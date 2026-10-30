@@ -54,7 +54,8 @@ class SelectionTest(unittest.TestCase):
                    if person['plannedQuestionId'] == 't1500_0108')
         self.assertEqual(row['name'], '黃少谷')
         self.assertEqual(row['wikidataId'], 'Q28408495')
-        self.assertIn('Huang Shao-gu.jpg', row['reviewExactCommonsFiles'])
+        self.assertIn('黃少谷 20171015誠品唱談會.jpg', row['reviewExactCommonsFiles'])
+        self.assertIn('https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg', row['excludedPhotoSources'])
         self.assertFalse(row['imageVerification']['finalCropReviewed'])
         self.assertNotEqual(row['photoStatus'], 'published')
 

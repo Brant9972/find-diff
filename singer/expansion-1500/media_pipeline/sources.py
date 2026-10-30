@@ -111,10 +111,30 @@ def disputed_license_source(candidate):
     return bool(re.search(r'vogue[\s._-]*taiwan|vogue[\s._-]*臺灣|vogue[\s._-]*台灣|(?:台灣|臺灣)版?\s*vogue', text, re.I))
 
 
+
+def commons_review_status(page):
+    """Detect explicit Commons licence-review flags; absence is NOT approval.
+
+    Commons can advertise CC BY metadata while the file is still in the hidden
+    "License review needed" category (e.g. am730 video stills). Do not
+    download such sources until the review is independently resolved.
+    """
+    categories = {norm(row.get('title', '')) for row in page.get('categories', [])}
+    if 'categorylicensereviewfailed' in categories:
+        return 'failed'
+    if 'categorylicensereviewneeded' in categories:
+        return 'needed'
+    return 'not_flagged' if 'categories' in page else 'not_checked'
+
+
 def rights(candidate):
     """Conservative machine eligibility, never a final legal or human approval."""
     if disputed_license_source(candidate):
         return 'rights_disputed'
+    if candidate.get('licenseReviewStatus') == 'failed':
+        return 'rights_disputed'
+    if candidate.get('licenseReviewStatus') == 'needed':
+        return 'needs_review'
     name = candidate.get('license', '').strip().casefold().replace('_', '-')
     url = candidate.get('licenseUrl', '')
     p = urllib.parse.urlsplit(url)
@@ -357,7 +377,7 @@ class Wikimedia:
                 continue
             files.add(filename)
             data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
-                             titles='File:' + filename, prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400)
+                             titles='File:' + filename, prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
             for page in data.get('query', {}).get('pages', []):
                 for info in page.get('imageinfo', []):
                     ext = info.get('extmetadata', {})
@@ -366,7 +386,7 @@ class Wikimedia:
                            'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original', 'source': info.get('descriptionurl', ''),
                            'filename': filename, 'artist': val('Artist'), 'credit': val('Credit'),
                            'license': val('LicenseShortName'), 'licenseUrl': val('LicenseUrl'),
-                           'caption': val('ImageDescription'), 'identityEvidence': evidence,
+                           'caption': val('ImageDescription'), 'licenseReviewStatus': commons_review_status(page), 'identityEvidence': evidence,
                            'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []), 'matchedWorks': [w for w in person.get('representativeWorks', []) if isinstance(w, str) and norm(w) in norm(filename + ' ' + val('ImageDescription'))], 'note': 'Search context only; recognizability not verified'},
                            'searchTime': now(), 'width': info.get('width'), 'height': info.get('height')}
 
@@ -447,11 +467,11 @@ class CommonsSearch:
                     data = http.json('https://commons.wikimedia.org/w/api.php',
                         action='query', format='json', formatversion=2,
                         titles='|'.join('File:' + name for name in exact_files),
-                        prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400)
+                        prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
                 else:
                     data=http.json('https://commons.wikimedia.org/w/api.php',action='query',format='json',formatversion=2,
                         generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
-                        prop='imageinfo',iiprop='url|extmetadata|size',iiurlwidth=1400)
+                        prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10,iiprop='url|extmetadata|size',iiurlwidth=1400)
             except SourceError as exc:
                 # An unavailable exact-file lookup must not suppress normal search.
                 if mode == 'exact':
@@ -472,7 +492,7 @@ class CommonsSearch:
                     continue
                 data = http.json('https://commons.wikimedia.org/w/api.php', action='query',
                     format='json', formatversion=2, titles='|'.join(titles),
-                    prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400)
+                    prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
             for page in data.get('query',{}).get('pages',[]):
                 for info in page.get('imageinfo',[]):
                     source=info.get('descriptionurl','')
@@ -491,7 +511,7 @@ class CommonsSearch:
                     yield {'provider':self.name,'url':info.get('thumburl') or info.get('url',''),'originalUrl':info.get('url',''),
                         'downloadVariant':'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original','source':source,
                         'filename':page.get('title','').removeprefix('File:'),'artist':val('Artist'),'credit':val('Credit'),
-                        'license':val('LicenseShortName'),'licenseUrl':license_url,'caption':val('ImageDescription'),
+                        'license':val('LicenseShortName'),'licenseUrl':license_url,'caption':val('ImageDescription'), 'licenseReviewStatus':commons_review_status(page),
                         'identityEvidence':evidence,
                         'recognitionEvidence':{'requestedReplacement':person.get('reviewReason'),'representativeWorks':person.get('representativeWorks',[]),'note':'Familiar appearance must be reviewed'},
                         'searchTime':now(),'width':info.get('width'),'height':info.get('height')}
@@ -641,7 +661,7 @@ class EntityPortraits:
         for source_query, request in requests:
             try:
                 data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
-                                 prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
+                                 prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
                 pages = list(data.get('query', {}).get('pages', []))
                 pages.sort(key=lambda row: (not any(word in row.get('title', '').lower() for word in ('portrait', 'cropped')), row.get('title', '')))
                 for page in pages:
@@ -668,7 +688,7 @@ class EntityPortraits:
                                'originalUrl': info.get('url', ''), 'source': source, 'filename': filename,
                                'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original',
                                'artist': val('Artist'), 'credit': val('Credit'), 'license': val('LicenseShortName'),
-                               'licenseUrl': license_url, 'caption': caption, 'identityEvidence': evidence,
+                               'licenseUrl': license_url, 'caption': caption, 'licenseReviewStatus': commons_review_status(page), 'identityEvidence': evidence,
                                'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []),
                                    'requestedReplacement': person.get('reviewReason'), 'note': 'Familiar appearance has not been visually reviewed'},
                                'searchTime': now(), 'width': info.get('width'), 'height': info.get('height')})

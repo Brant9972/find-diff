@@ -17834,9 +17834,12 @@
       "candidateId": "c1500-0588",
       "plannedQuestionId": "t1500_0588",
       "name": "苗可秀",
-      "aliases": [],
+      "aliases": [
+        "Nora Miao"
+      ],
       "acceptedAnswers": [
-        "苗可秀"
+        "苗可秀",
+        "Nora Miao"
       ],
       "categories": [
         "演員"
@@ -17861,7 +17864,15 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "苗可秀 精武門 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "苗可秀 精武門 角色 劇照 正面 清晰 無浮水印",
+      "wikidataId": "Q702088",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg"
+      ],
+      "excludedCaptionNames": [
+        "中國青年黨黨員苗可秀"
+      ],
+      "reviewReason": "2026-10-30 run 40998681057 source-only file 苗可秀.jpg describes 中國青年黨黨員苗可秀 (male historical figure, born 1906), NOT Hong Kong actress Nora Miao (Wikidata Q702088). Exact-name Commons search is not identity proof. Exclude source and caption; seek actress-specific source, 600x720 five-stage and rights verification."
     },
     {
       "candidateId": "c1500-0589",

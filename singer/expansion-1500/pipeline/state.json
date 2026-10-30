@@ -108218,9 +108218,9 @@
       "personId": "t1500_0102",
       "candidateId": "c1500-0102",
       "name": "趙正平",
-      "status": "no_suitable_source",
-      "attempts": 3,
-      "nextRetryAt": "2026-10-30T15:42:22.894029+00:00",
+      "status": "pending_review",
+      "attempts": 4,
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "wikimedia",
@@ -108259,40 +108259,90 @@
           ]
         },
         {
-          "provider": "wikimedia",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "provider": "commons",
           "source": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
           "filename": "David Chao at Kinokuniya Taipei Breeze Store 20100102.jpg",
-          "artist": "竹筍弟弟 (talk)",
-          "credit": "Own work",
+          "caption": "藝人趙正平，於紀伊國屋書店台北微風店舉行《景行停看聽漫畫版》簽書會。",
+          "artist": "竹筍弟弟 (JeanHavoc)",
           "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "caption": "David Chao in the Kinokuniya Taipei Breeze Store, and he was holding a book-signing activity for his fans.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseReviewStatus": "not_checked",
           "identityEvidence": {
-            "query": "趙正平",
-            "identityWarning": "Search result only; identity needs review",
-            "captionAliasMatches": [],
-            "visualIdentityVerified": false
-          },
-          "recognitionEvidence": {
-            "representativeWorks": [
-              "康熙來了"
+            "curatedOriginalMetadataOnly": true,
+            "verifiedAt": "2026-10-30",
+            "verificationUrl": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
+            "verifiedSearchAliases": [
+              "趙正平",
+              "David Chao"
             ],
-            "note": "Search context only; recognizability not verified"
+            "visualIdentityVerified": false,
+            "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+            "captionAliasMatches": [
+              "趙正平",
+              "David Chao"
+            ]
           },
-          "searchTime": "2026-10-28T12:46:58.452047+00:00",
-          "width": 1280,
-          "height": 960,
-          "id": "20fae62503985d52547b",
+          "id": "b5b8b05b4b5079acdd9b",
           "personId": "t1500_0102",
+          "discoveryRunId": "20261030T144228Z-6a8c671b",
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "pending_review",
           "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
-          ]
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0102/b5b8b05b4b5079acdd9b/e17845d3a1f1/original.bin",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0102/b5b8b05b4b5079acdd9b/e17845d3a1f1/cdcac5381dcb.jpg",
+          "originalSha256": "e17845d3a1f1935c75a8657638b5e8626796812ef46e88bb5008dd75ad14d48e",
+          "gameSha256": "cdcac5381dcb7a2dbbaa4af10fb02fdb00033a6d21ad5ca89e54be0d269b0d52",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.2805332934762549,
+              0.92,
+              0.42067273958461493
+            ],
+            "nose": [
+              0.08,
+              0.2805332934762549,
+              0.92,
+              0.5463922255308297
+            ],
+            "mouth": [
+              0.08,
+              0.2805332934762549,
+              0.92,
+              0.6738977387195497
+            ],
+            "chin": [
+              0.08,
+              0.2805332934762549,
+              0.92,
+              0.8106325180574353
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "originalSize": [
+              1280,
+              960
+            ],
+            "sharpness": 95.46,
+            "overexposedFraction": 0.004988425925925926
+          }
         }
       ],
       "history": [
@@ -108382,6 +108432,17 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T14:42:30.398655+00:00",
+          "provider": "curated",
+          "attempt": 4,
+          "finishedAt": "2026-10-30T14:42:31.016903+00:00"
+        },
+        {
+          "time": "2026-10-30T14:42:31.016924+00:00",
+          "errors": [],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -108400,24 +108461,20 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T07:42:19.552436+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 2"
-        }
-      ],
+      "lastAttemptAt": "2026-10-30T14:42:30.311572+00:00",
+      "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-30T07:42:22.894040+00:00",
-      "lastRunId": "20261030T074115Z-090da76b",
-      "lastRunNewCandidateIds": [],
+      "updatedAt": "2026-10-30T14:42:31.016931+00:00",
+      "lastRunId": "20261030T144228Z-6a8c671b",
+      "lastRunNewCandidateIds": [
+        "b5b8b05b4b5079acdd9b"
+      ],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T07:42:22.896365+00:00"
+      "workerFinishedAt": "2026-10-30T14:42:31.019025+00:00"
     },
     "t1500_0353": {
       "personId": "t1500_0353",

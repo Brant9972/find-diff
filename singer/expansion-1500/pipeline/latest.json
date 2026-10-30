@@ -1,21 +1,21 @@
 {
-  "runId": "20261030T141143Z-0e253524",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T141143Z-0e253524/review-index.json",
+  "runId": "20261030T144228Z-6a8c671b",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T144228Z-6a8c671b/review-index.json",
   "summary": {
-    "runId": "20261030T141143Z-0e253524",
-    "generatedAt": "2026-10-30T14:11:45.660178+00:00",
+    "runId": "20261030T144228Z-6a8c671b",
+    "generatedAt": "2026-10-30T14:42:31.605643+00:00",
     "scannedPeople": 1,
-    "peopleWithNewCandidates": 0,
-    "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 1,
-    "retryNeeded": 420,
-    "pendingReviewPeople": 1,
+    "peopleWithNewCandidates": 1,
+    "newCandidatePhotos": 1,
+    "scannedWithoutCandidates": 0,
+    "retryNeeded": 419,
+    "pendingReviewPeople": 2,
     "licenseConcernCandidates": 293,
     "statusCounts": {
-      "no_suitable_source": 232,
+      "no_suitable_source": 231,
       "download_failed": 182,
       "published": 89,
-      "pending_review": 1,
+      "pending_review": 2,
       "rejected": 6,
       "duplicate_existing": 1
     },
@@ -27,13 +27,22 @@
       "source_api_busy": 69,
       "license_unclear": 75,
       "source_api_error": 22,
-      "identity_ambiguous": 12,
+      "identity_ambiguous": 11,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {},
     "manualCropSources": 33,
     "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 0,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 1,
+        "downloadedForHumanReview": 1,
+        "savedForManualCrop": 0,
+        "errors": {}
+      },
       "curated": {
         "attemptedPeople": 1,
         "metadataCandidates": 0,

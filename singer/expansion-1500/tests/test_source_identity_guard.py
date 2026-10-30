@@ -102,6 +102,23 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertTrue(any('%E8%AC%9D%E8%80%81%E5%9B%9B.jpg' in s for s in sources))
         self.assertFalse(person.get('reviewExactCommonsFiles'))
 
+    def test_fresh_source_verified_cohort_keeps_secondary_faces_pending(self):
+        import json
+        root = Path(__file__).resolve().parents[1]
+        plan = json.loads((root / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+        people = {p['plannedQuestionId']: p for p in plan['selectedNew']}
+        host = people['t1500_0491']
+        self.assertEqual(host['name'], '鄭弘儀')
+        self.assertIn('鄭弘儀.jpg', host['reviewExactCommonsFiles'])
+        self.assertIn('background', host['reviewReason'])
+        request = json.loads((root / 'pipeline' / 'batch-request.json').read_text(encoding='utf-8'))
+        ids = request['plannedPersonIds']
+        self.assertEqual(request['targetPeople'], len(ids))
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertTrue(all(pid in people for pid in ids))
+        self.assertNotIn('t1500_0596', ids, 'Already published 鄭融 must not be searched again')
+        self.assertEqual(request['providers'], ['entity', 'commons'])
+
     def test_pinned_qid_rejects_wrong_same_name_human(self):
         person = {'name': '苗可秀', 'acceptedAnswers': ['苗可秀'],
                   'wikidataId': 'Q702088'}

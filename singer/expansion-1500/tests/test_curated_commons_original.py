@@ -51,6 +51,47 @@ class CuratedCommonsOriginalTest(unittest.TestCase):
                 self.assertEqual(list(CuratedCommons().search(
                     {**self.person, 'reviewVerifiedOriginalSources': [bad]}, None)), [])
 
+    def test_hashed_wikimedia_thumbnails_are_review_only_and_strict(self):
+        thumbnail = ('https://upload.wikimedia.org/wikipedia/commons/thumb/'
+                     '6/63/Eric_Kot_20231029.jpg/960px-Eric_Kot_20231029.jpg')
+        item = {**self.item, 'url': thumbnail}
+        rows = list(CuratedCommons().search(
+            {**self.person, 'reviewVerifiedOriginalSources': [item]}, None))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['url'], thumbnail)
+        self.assertEqual(rows[0]['originalUrl'], self.original)
+        self.assertEqual(rows[0]['downloadVariant'], 'wikimedia_thumbnail_curated')
+        self.assertFalse(rows[0]['identityEvidence']['visualIdentityVerified'])
+        for bad_url in [
+            thumbnail.replace('/6/63/', '/6/62/'),
+            thumbnail.replace('960px-', '999px-'),
+            thumbnail.replace('Eric_Kot_20231029.jpg/960px-', 'Other.jpg/960px-'),
+            thumbnail + '?cache=1',
+            thumbnail.replace('upload.wikimedia.org', 'example.com'),
+        ]:
+            with self.subTest(url=bad_url):
+                bad = {**item, 'url': bad_url}
+                self.assertEqual(list(CuratedCommons().search(
+                    {**self.person, 'reviewVerifiedOriginalSources': [bad]}, None)), [])
+
+    def test_backup_photo_leads_are_not_human_approved(self):
+        import json
+        root = Path(__file__).resolve().parents[1]
+        leads = json.loads((root / 'pipeline/backup-photo-leads-20261030.json')
+                           .read_text(encoding='utf-8'))
+        backup = leads['people'][0]
+        self.assertEqual(backup['plannedQuestionId'], 't1500_0604')
+        person = {
+            'name': backup['name'], 'aliases': [], 'acceptedAnswers': [backup['name']],
+            'reviewExactCommonsFiles': backup['reviewExactCommonsFiles'],
+            'reviewVerifiedOriginalSources': backup['reviewVerifiedOriginalSources'],
+        }
+        rows = list(CuratedCommons().search(person, None))
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all(rights(row) == 'open_license_metadata' for row in rows))
+        self.assertTrue(all(not row['identityEvidence']['visualIdentityVerified'] for row in rows))
+        self.assertEqual(backup['reviewStatus'], 'SOURCE_METADATA_ONLY_NOT_VISUALLY_APPROVED')
+
     def test_replaces_same_source_metadata_even_if_url_variant_changes(self):
         old_url = self.original + '?utm_source=commons'
         old = {**self.item, 'url': old_url, 'status': 'metadata_only',

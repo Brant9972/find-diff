@@ -188,6 +188,12 @@ class SourceExpansionTest(unittest.TestCase):
         self.assertTrue(list(Openverse().search(self.person, api)))
         self.assertTrue(any('openverse.org' in url for url, _ in api.calls))
 
+    def test_legacy_opt_in_still_falls_back_to_openverse(self):
+        api = EntityAPI(commons_error=True)
+        rows = list(EntityPortraits(allow_openverse=True).search(self.person, api))
+        self.assertTrue(any(row.get('source', '').startswith('https://photos.example.org/') for row in rows))
+        self.assertTrue(any('openverse.org' in url for url, _ in api.calls))
+
     def test_commons_refusal_does_not_prevent_independent_openverse_search(self):
         api = EntityAPI(commons_error=True)
         with self.assertRaises(SourceError):

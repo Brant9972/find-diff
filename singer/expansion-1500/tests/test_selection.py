@@ -47,6 +47,17 @@ class SelectionTest(unittest.TestCase):
         self.assertFalse(row['imageVerification']['finalCropReviewed'])
         self.assertNotEqual(row['qaStatus'], 'releasable')
 
+    def test_musician_huang_shaoku_cannot_use_politician_qid(self):
+        plan_path = Path(__file__).resolve().parents[1] / 'release-plan-20261028.json'
+        plan = json.loads(plan_path.read_text(encoding='utf-8'))
+        row = next(person for person in plan['selectedNew']
+                   if person['plannedQuestionId'] == 't1500_0108')
+        self.assertEqual(row['name'], '黃少谷')
+        self.assertEqual(row['wikidataId'], 'Q28408495')
+        self.assertIn('Huang Shao-gu.jpg', row['reviewExactCommonsFiles'])
+        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+        self.assertNotEqual(row['photoStatus'], 'published')
+
     def test_limit_applies_after_review_priority(self):
         self.assertEqual(select_people(self.state, self.people, self.handoff, 1), ['reviewed'])
 

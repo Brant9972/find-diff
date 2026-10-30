@@ -2,244 +2,219 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261030T034045Z-29d66930",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261030T034045Z-29d66930/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json",
+  "runId": "20261030T045355Z-f535313a",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261030T045355Z-f535313a/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261030T045355Z-f535313a/assets-index.json",
   "summary": {
-    "runId": "20261030T034045Z-29d66930",
-    "generatedAt": "2026-10-30T03:43:29.924201+00:00",
-    "scannedPeople": 8,
-    "peopleWithNewCandidates": 0,
-    "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 8,
-    "retryNeeded": 424,
-    "pendingReviewPeople": 0,
-    "licenseConcernCandidates": 269,
+    "runId": "20261030T045355Z-f535313a",
+    "generatedAt": "2026-10-30T04:56:54.923728+00:00",
+    "scannedPeople": 10,
+    "peopleWithNewCandidates": 1,
+    "newCandidatePhotos": 1,
+    "scannedWithoutCandidates": 9,
+    "retryNeeded": 423,
+    "pendingReviewPeople": 1,
+    "licenseConcernCandidates": 279,
     "statusCounts": {
-      "no_suitable_source": 216,
-      "download_failed": 201,
-      "rejected": 7,
+      "no_suitable_source": 214,
+      "download_failed": 203,
+      "pending_review": 1,
       "published": 86,
+      "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
       "identity_unconfirmed": 296,
-      "image_validation_failed": 112,
-      "network_error": 285,
+      "image_validation_failed": 110,
+      "network_error": 287,
       "source_api_busy": 70,
       "license_unclear": 76,
-      "excluded_context": 13,
       "source_api_error": 25,
       "identity_ambiguous": 12,
+      "excluded_context": 12,
       "identity_not_found": 5,
       "proxy_access_denied": 4
     },
     "batchFailureReasons": {
-      "image_validation_failed": 6,
-      "identity_unconfirmed": 8,
-      "license_unclear": 2,
-      "network_error": 2
+      "identity_unconfirmed": 1,
+      "network_error": 2,
+      "image_validation_failed": 4,
+      "license_unclear": 11
     },
     "manualCropSources": 23,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 8,
-        "metadataCandidates": 11,
-        "identitySupportedMetadata": 4,
-        "openLicenseMetadata": 5,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 2,
-        "errors": {
-          "license_unclear": 1
-        }
+        "attemptedPeople": 10,
+        "metadataCandidates": 12,
+        "identitySupportedMetadata": 12,
+        "openLicenseMetadata": 1,
+        "downloadedForHumanReview": 1,
+        "savedForManualCrop": 0,
+        "errors": {}
       },
       "entity": {
-        "attemptedPeople": 8,
+        "attemptedPeople": 10,
         "metadataCandidates": 0,
         "identitySupportedMetadata": 0,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {
-          "image_validation_failed": 6,
-          "identity_unconfirmed": 8,
-          "license_unclear": 1,
-          "network_error": 2
+          "identity_unconfirmed": 1,
+          "network_error": 2,
+          "image_validation_failed": 4,
+          "license_unclear": 11
         }
-      },
-      "openverse": {
-        "attemptedPeople": 0,
-        "metadataCandidates": 1,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {}
       }
     },
-    "contactSheets": [],
+    "contactSheets": [
+      "contact-sheet-01.jpg"
+    ],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 8,
-      "processedPeople": 8,
+      "targetPeople": 10,
+      "processedPeople": 10,
       "workers": 1,
-      "elapsedSeconds": 163.6,
+      "elapsedSeconds": 179.44,
       "stoppedForBudget": false
     }
   },
-  "visualPeople": 0,
-  "visualPhotos": 0,
+  "visualPeople": 1,
+  "visualPhotos": 1,
   "batchPeople": [
-    "t1500_0568",
-    "t1500_0588",
-    "t1500_0589",
-    "t1500_0549",
-    "t1500_0551",
-    "t1500_0552",
-    "t1500_0555",
-    "t1500_0566"
+    "t1500_0559",
+    "t1500_0531",
+    "t1500_0538",
+    "t1500_0546",
+    "t1500_0572",
+    "t1500_0596",
+    "t1500_0537",
+    "t1500_0558",
+    "t1500_0561",
+    "t1500_0588"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0568",
-      "name": "李司棋",
+      "personId": "t1500_0559",
+      "name": "蔡一傑",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0531",
+      "name": "易柏辰",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
-            "filename": "Lee Sze Kei 2.JPG",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
-            "credit": "User:Iflwlou self-made",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "李司棋",
-            "identityEvidence": {
-              "wikidataId": "Q701921",
-              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
-              "exactChineseAliases": [
-                "李司棋",
-                "李司棋",
-                "李司棋"
-              ],
-              "verifiedSearchAliases": [
-                "李司棋",
-                "Louise Lee",
-                "Louise Lee Si-kei"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-              "articleTitle": "李司棋",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "李司棋",
-              "matchedAliases": [
-                "李司棋"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "李司棋"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "溏心風暴"
-              ],
-              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T03:40:49.657326+00:00",
-            "width": 480,
-            "height": 640,
-            "id": "3a5772a3bc683ad8d993",
-            "personId": "t1500_0568",
-            "discoveryRunId": "20261030T034045Z-29d66930",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
-            "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
+          "code": "identity_unconfirmed",
+          "message": "Expected exactly one exact-name Q5 human; found 0"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0538",
+      "name": "葉星辰",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0546",
+      "name": "謝孟偉",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0572",
+      "name": "釋小龍",
+      "status": "download_failed",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0596",
+      "name": "鄭融",
+      "status": "pending_review",
+      "newCandidateIds": [
+        "72b3c7ac919764ad557e"
+      ],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lee_Sze_Kei_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_3.JPG",
-            "filename": "Lee Sze Kei 3.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+            "filename": "Stephanie Cheng.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
-            "credit": "User:Iflwlou self-made",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "李司棋",
+            "artist": "kingofhiking",
+            "credit": "This image was originally posted to Flickr as Stephanie Cheng",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "en:Stephanie Cheng",
             "identityEvidence": {
-              "wikidataId": "Q701921",
-              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "wikidataId": "Q6135815",
+              "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
               "exactChineseAliases": [
-                "李司棋",
-                "李司棋",
-                "李司棋"
+                "郑融",
+                "鄭融",
+                "鄭融"
               ],
               "verifiedSearchAliases": [
-                "李司棋",
-                "Louise Lee",
-                "Louise Lee Si-kei"
+                "鄭融",
+                "郑融",
+                "Stephanie Cheng"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-              "articleTitle": "李司棋",
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+              "articleTitle": "鄭融",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "李司棋",
+              "query": "鄭融",
               "matchedAliases": [
-                "李司棋"
+                "Stephanie Cheng"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "李司棋"
+                "Stephanie Cheng"
               ]
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "溏心風暴"
+                "紅綠燈"
               ],
-              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T03:40:49.657563+00:00",
-            "width": 480,
-            "height": 640,
-            "id": "9e0744bb3abd7a027087",
-            "personId": "t1500_0568",
-            "discoveryRunId": "20261030T034045Z-29d66930",
+            "searchTime": "2026-10-30T04:55:11.786621+00:00",
+            "width": 314,
+            "height": 806,
+            "id": "350fc51bd7012d88a1f5",
+            "personId": "t1500_0596",
+            "discoveryRunId": "20261030T045355Z-f535313a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -253,62 +228,166 @@
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Sze_Kei_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_4.JPG",
-            "filename": "Lee Sze Kei 4.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+            "filename": "Stephanie Cheng.png",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
-            "credit": "User:Iflwlou self-made",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "李司棋",
+            "artist": "kingofhiking",
+            "credit": "Flickr",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "Crop of photo of Stephanie ChengStephanie Cheng",
             "identityEvidence": {
-              "wikidataId": "Q701921",
-              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "wikidataId": "Q6135815",
+              "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
               "exactChineseAliases": [
-                "李司棋",
-                "李司棋",
-                "李司棋"
+                "郑融",
+                "鄭融",
+                "鄭融"
               ],
               "verifiedSearchAliases": [
-                "李司棋",
-                "Louise Lee",
-                "Louise Lee Si-kei"
+                "鄭融",
+                "郑融",
+                "Stephanie Cheng"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-              "articleTitle": "李司棋",
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+              "articleTitle": "鄭融",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "李司棋",
+              "query": "鄭融",
               "matchedAliases": [
-                "李司棋"
+                "Stephanie Cheng"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "李司棋"
+                "Stephanie Cheng"
               ]
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "溏心風暴"
+                "紅綠燈"
               ],
-              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
+              "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T03:40:49.657743+00:00",
-            "width": 480,
-            "height": 640,
-            "id": "a1c985ea4b85145d4fb1",
-            "personId": "t1500_0568",
-            "discoveryRunId": "20261030T034045Z-29d66930",
+            "searchTime": "2026-10-30T04:55:11.786783+00:00",
+            "width": 314,
+            "height": 806,
+            "id": "b0fed431ae9cab5b6048",
+            "personId": "t1500_0596",
+            "discoveryRunId": "20261030T045355Z-f535313a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0537",
+      "name": "李鴻其",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0558",
+      "name": "蔡一智",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": []
+    },
+    {
+      "personId": "t1500_0561",
+      "name": "杜汶澤",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+            "filename": "CORSO (9515087612).jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "Archives New Zealand from New Zealand",
+            "credit": "CORSO",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "On the 16 August 1944 the Council of Organisations for Relief Service Overseas (CORSO) was formed.  One of the key figures in the development of the organisation was Sylvia Gytha de Lancey Chapman. During the Second World War Chapman represented the YWCA as a member and medical advisor of the Polish Children's Hospitality Committee. She studied Polish, hoping to visit Poland after the war, and also assisted many of the German refugees immigrating to New Zealand. On 16 August 1944 a historic meeting took place in Chapman's sitting room. Representatives of 12 churches and welfare organisations were concerned at the difficulty of giving aid to the millions of war sufferers: the homeless, the starving, and the desperately ill. That evening, the New Zealand Council of Organisations for Relief Service Overseas (CORSO) was born. The United Nations was founded in 1945, and CORSO agreed to combine with its Relief and Rehabilitation Administration (UNRRA) to send a medical team, led by Chapman, to Greece.  Archives New Zealand has film footage of the appeal made to the NZ public for supporting Greece after World War Two - www.youtube.com/watch?v=KU_b59qWVmY  [Our Debt to Greece - National Film Unit (1946)]\nCORSO supported United Nations appeals for children in 1948 and 1950; world refugee year appeals in 1959 and 1960 and the freedom from hunger campaign appeal in 1962. The countries CORSO was heavily involved in included: Greece; Hong Kong; China; India and Korea. The organisation still exists today as a Non Government Organisation active in the areas of health, education, international development, human rights, the environment, youth, women and ethnicity.\nThe images presented here are from a range of files held at Archives New Zealand from different agencies. These files are all open access and can viewed in our Wellington reading room. \n1. The image focussing on aid in Togo is from a file from the Office of the Governor General: CORSO [ABAH W4187 Box 11 6/WL/9 (R18697590) archway.archives.govt.nz/ViewFullItem.do?code=18697590\n2. The image of the 1959 CORSO annual report is from a Treasury File: Council for Organisation for Relief Overseas 1945 - March 1978 [AALR 873 W4446 262 53/221 1] archway.archives.govt.nz/ViewFullItem.do?code=22338421 \n\n3. The image of the 1950 CORSO annual report is from the Broadcasting Corporation of New Zealand: Campaigns Corso [AADL 564 W1516 458/c 2/15/10] archway.archives.govt.nz/ViewFullItem.do?code=18662562",
+            "identityEvidence": {
+              "wikidataId": "Q708456",
+              "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+              "exactChineseAliases": [
+                "杜汶泽",
+                "杜汶澤",
+                "杜汶澤",
+                "杜汶泽",
+                "杜汶澤",
+                "杜汶泽"
+              ],
+              "verifiedSearchAliases": [
+                "杜汶澤",
+                "杜汶泽",
+                "Chapman To",
+                "To Man-chak",
+                "Edward Ng Cheuk-cheung",
+                "Chapman To Man-Chat"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+              "articleTitle": "杜汶澤",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "Chapman To",
+              "matchedAliases": [
+                "Chapman To"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Chapman To"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "無間道"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T04:56:12.103530+00:00",
+            "width": 3244,
+            "height": 2436,
+            "id": "229e2bdd9e72e0686c4f",
+            "personId": "t1500_0561",
+            "discoveryRunId": "20261030T045355Z-f535313a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -322,287 +401,68 @@
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lee_Sze_Kei_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_5.JPG",
-            "filename": "Lee Sze Kei 5.JPG",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+            "filename": "Labuan - William Chapman to Fitzgerald - sends list of Thomase wanting to enter Barracks.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
-            "credit": "User:Iflwlou self-made",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "李司棋",
+            "artist": "Archives New Zealand",
+            "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE37969163",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "Canterbury Association Shipping Papers (CASP), 1850-1852\nNew Zealand Archives Reference: R21009366 \tCAAR \t19645 \tCH290 \t\t830 / \t\tCASP 4, 271",
             "identityEvidence": {
-              "wikidataId": "Q701921",
-              "mappingSource": "https://www.wikidata.org/wiki/Q701921",
+              "wikidataId": "Q708456",
+              "mappingSource": "https://www.wikidata.org/wiki/Q708456",
               "exactChineseAliases": [
-                "李司棋",
-                "李司棋",
-                "李司棋"
+                "杜汶泽",
+                "杜汶澤",
+                "杜汶澤",
+                "杜汶泽",
+                "杜汶澤",
+                "杜汶泽"
               ],
               "verifiedSearchAliases": [
-                "李司棋",
-                "Louise Lee",
-                "Louise Lee Si-kei"
+                "杜汶澤",
+                "杜汶泽",
+                "Chapman To",
+                "To Man-chak",
+                "Edward Ng Cheuk-cheung",
+                "Chapman To Man-Chat"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
+              "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-              "articleTitle": "李司棋",
+              "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+              "articleTitle": "杜汶澤",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "李司棋",
+              "query": "Chapman To",
               "matchedAliases": [
-                "李司棋"
+                "Chapman To"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "李司棋"
+                "Chapman To"
               ]
             },
             "recognitionEvidence": {
               "representativeWorks": [
-                "溏心風暴"
-              ],
-              "requestedReplacement": "眼鏡反光、前景遮擋；重找",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T03:40:49.657911+00:00",
-            "width": 480,
-            "height": 640,
-            "id": "87080ad753bdc008505c",
-            "personId": "t1500_0568",
-            "discoveryRunId": "20261030T034045Z-29d66930",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too tilted"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:GR_Lee,_1937.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:MM00013951_(8091335494)_(2).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_1.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Gypsy_Rose_Lee_NYWTS_1.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:GypsyRoseLeeStageDoorCanteen.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Neva_Patterson_1969.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_Andrews_Bacon.tif",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0588",
-      "name": "苗可秀",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
-            "filename": "苗可秀.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Ak47klo",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​中國青年黨黨員苗可秀",
-            "identityEvidence": {
-              "wikidataId": "Q702088",
-              "mappingSource": "https://www.wikidata.org/wiki/Q702088",
-              "exactChineseAliases": [
-                "苗可秀",
-                "苗可秀",
-                "苗可秀"
-              ],
-              "verifiedSearchAliases": [
-                "苗可秀",
-                "Nora Miao",
-                "Miao Kexiu",
-                "Nora Miao Ke-Hsiu",
-                "Chan Wing-Man"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
-              "articleTitle": "苗可秀",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "苗可秀",
-              "matchedAliases": [
-                "苗可秀"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "苗可秀"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "精武門"
+                "無間道"
               ],
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T03:41:16.123515+00:00",
-            "width": 230,
-            "height": 288,
-            "id": "bfd3d32d7f9493dca299",
-            "personId": "t1500_0588",
-            "discoveryRunId": "20261030T034045Z-29d66930",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
-            "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0589",
-      "name": "袁潔瑩",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": []
-    },
-    {
-      "personId": "t1500_0549",
-      "name": "謝賢",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/%E8%AC%9D%E8%80%81%E5%9B%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E8%AC%9D%E8%80%81%E5%9B%9B.jpg",
-            "filename": "謝老四.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "am730",
-            "credit": "【娛樂】四哥重返無綫拍劇 小青姐劇透《法證IV》 2018-10-25",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​《法證先鋒IV》試造型記者會",
-            "identityEvidence": {
-              "wikidataId": "Q2146157",
-              "mappingSource": "https://www.wikidata.org/wiki/Q2146157",
-              "exactChineseAliases": [
-                "謝賢",
-                "謝賢",
-                "谢贤",
-                "谢贤",
-                "謝賢",
-                "谢贤"
-              ],
-              "verifiedSearchAliases": [
-                "謝賢",
-                "谢贤",
-                "Patrick Tse",
-                "Xie Xian",
-                "Tse Ka-yuk",
-                "Patrick Tse Yin"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:41:46.164992+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E8%B3%A2",
-              "articleTitle": "謝賢",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "謝賢",
-              "matchedAliases": [],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": []
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "千王之王"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T03:41:46.374410+00:00",
-            "width": 1000,
-            "height": 1363,
-            "id": "228c39b77373f921696c",
-            "personId": "t1500_0549",
-            "discoveryRunId": "20261030T034045Z-29d66930",
+            "searchTime": "2026-10-30T04:56:12.114697+00:00",
+            "width": 3303,
+            "height": 4835,
+            "id": "f22e4876666ff98b4430",
+            "personId": "t1500_0561",
+            "discoveryRunId": "20261030T045355Z-f535313a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -613,289 +473,75 @@
           },
           "code": "image_validation_failed",
           "message": "No reliable frontal face"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0551",
-      "name": "曾江",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
+        },
         {
           "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0552",
-      "name": "石修",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p1.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
         {
           "provider": "entity",
-          "source": "http://digitaltmuseum.org/011012763480",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0555",
-      "name": "湯鎮業",
-      "status": "download_failed",
-      "newCandidateIds": [],
-      "errors": [
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p11.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
         {
           "provider": "entity",
-          "code": "network_error",
-          "message": "No catalogue response: Per-request wall time budget reached"
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p13.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p16.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p2.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p5.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p7.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Grafton_Chapman_to_Isaac_Knapp;_Monday,_September_11,_1837_p1.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Mary_Gray_Chapman_to_Maria_Weston_Chapman;_ca._1830_p2.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_(page_1).jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ]
     },
     {
-      "personId": "t1500_0566",
-      "name": "董驃",
+      "personId": "t1500_0588",
+      "name": "苗可秀",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": []
     }
-  ],
-  "visualAssetCommit": "c23457588c2befaf25b30c5c79765b15015fb6e4",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json",
-    "contactSheets": [],
-    "manualContactSheets": [
-      {
-        "bytes": 50196,
-        "entries": [
-          {
-            "candidateId": "3a5772a3bc683ad8d993",
-            "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
-            "personId": "t1500_0568",
-            "tile": 1
-          },
-          {
-            "candidateId": "bfd3d32d7f9493dca299",
-            "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
-            "personId": "t1500_0588",
-            "tile": 2
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/manual-source-sheet-01.jpg",
-        "sha256": "303cc036e0bc02316a0ba7f812310ae7e39629e8616a5d752e094e40f6453fe2",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/manual-source-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/manual-source-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/manual-source-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualSourceCount": 2,
-    "manualSourcePeopleCount": 2,
-    "manualSources": [
-      {
-        "candidateId": "3a5772a3bc683ad8d993",
-        "cropFailure": "Blurred crop: sharpness below 65",
-        "eligibleForLive": false,
-        "gameSha256": null,
-        "metadata": {
-          "author": ".mw-parser-output .ubx-floatdefault[dir=\"ltr\"],.mw-parser-output .ubx-floatopposite[dir=\"rtl\"],.mw-parser-output .ubx-floatleft{float:left}.mw-parser-output .ubx-floatdefault[dir=\"rtl\"],.mw-parser-output .ubx-floatopposite[dir=\"ltr\"],.mw-parser-output .ubx-floatright{float:right}.mw-parser-output .ubx-floatnone{float:none}\nIflwlou拍攝",
-          "caption": "李司棋",
-          "credit": "User:Iflwlou self-made",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%8F%B8%E6%A3%8B",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "李司棋",
-            "captionAliasMatches": [
-              "李司棋"
-            ],
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "李司棋",
-              "李司棋",
-              "李司棋"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q701921",
-            "matchedAliases": [
-              "李司棋"
-            ],
-            "query": "李司棋",
-            "retrievedAt": "2026-10-30T03:40:47.868166+00:00",
-            "verifiedSearchAliases": [
-              "李司棋",
-              "Louise Lee",
-              "Louise Lee Si-kei"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q701921"
-          },
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lee_Sze_Kei_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "溏心風暴"
-            ],
-            "requestedReplacement": "眼鏡反光、前景遮擋；重找"
-          },
-          "reviewerRequest": "眼鏡反光、前景遮擋；重找",
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:Lee_Sze_Kei_2.JPG",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-          ]
-        },
-        "name": "李司棋",
-        "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
-        "personId": "t1500_0568",
-        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
-        "sourceImage": {
-          "bytes": 192081,
-          "displayHeight": 640,
-          "displayWidth": 480,
-          "height": 640,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0001/original.jpg",
-          "sha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
-          "width": 480,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0001/original.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0001/original.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0001/original.jpg?raw=true"
-        },
-        "stageImages": {}
-      },
-      {
-        "candidateId": "bfd3d32d7f9493dca299",
-        "cropFailure": "Blurred crop: sharpness below 65",
-        "eligibleForLive": false,
-        "gameSha256": null,
-        "metadata": {
-          "author": "Ak47klo",
-          "caption": "​中國青年黨黨員苗可秀",
-          "credit": "Own work",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "苗可秀",
-            "captionAliasMatches": [
-              "苗可秀"
-            ],
-            "discoveryWarnings": [],
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "苗可秀",
-              "苗可秀",
-              "苗可秀"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q702088",
-            "matchedAliases": [
-              "苗可秀"
-            ],
-            "query": "苗可秀",
-            "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
-            "verifiedSearchAliases": [
-              "苗可秀",
-              "Nora Miao",
-              "Miao Kexiu",
-              "Nora Miao Ke-Hsiu",
-              "Chan Wing-Man"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q702088"
-          },
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": null,
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance has not been visually reviewed",
-            "representativeWorks": [
-              "精武門"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-          ]
-        },
-        "name": "苗可秀",
-        "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
-        "personId": "t1500_0588",
-        "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
-        "sourceImage": {
-          "bytes": 9125,
-          "displayHeight": 288,
-          "displayWidth": 230,
-          "height": 288,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0002/original.jpg",
-          "sha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
-          "width": 230,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0002/original.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0002/original.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/source-only-0002/original.jpg?raw=true"
-        },
-        "stageImages": {}
-      }
-    ],
-    "peopleCount": 0,
-    "photoCount": 0,
-    "photos": [],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [],
-    "runId": "20261030T034045Z-29d66930",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "c23457588c2befaf25b30c5c79765b15015fb6e4",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/c23457588c2befaf25b30c5c79765b15015fb6e4/singer/expansion-1500/pipeline/review-assets/20261030T034045Z-29d66930/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

@@ -266,8 +266,8 @@
       }
     },
     "t1500_0559": {
-      "attempts": 6,
-      "nextRetryAt": "2026-11-01T15:32:08.094182+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-04T12:54:19.089397+00:00",
       "candidateId": "c1500-0559",
       "chatgptReview": {
         "personId": "t1500_0559",
@@ -287,7 +287,7 @@
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunId": "20261030T045355Z-f535313a",
       "lastRunNewCandidateIds": [],
       "chatgptReviews": {
         "legacy-t1500_0559": {
@@ -511,6 +511,23 @@
           "time": "2026-10-29T23:32:08.094170+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T04:53:56.168181+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T04:54:15.656929+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:15.656959+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-10-30T04:54:19.089362+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:19.089384+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "personId": "t1500_0559",
@@ -610,7 +627,7 @@
           }
         }
       ],
-      "updatedAt": "2026-10-29T23:32:08.094195+00:00",
+      "updatedAt": "2026-10-30T04:54:19.089411+00:00",
       "name": "蔡一傑",
       "legacyRecord": {
         "questionId": "t1500_0559",
@@ -670,9 +687,9 @@
         }
       },
       "status": "no_suitable_source",
-      "lastAttemptAt": "2026-10-29T23:32:06.508740+00:00",
+      "lastAttemptAt": "2026-10-30T04:53:56.113625+00:00",
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-29T23:32:08.095893+00:00"
+      "workerFinishedAt": "2026-10-30T04:54:19.091322+00:00"
     },
     "t1500_0367": {
       "personId": "t1500_0367",
@@ -1259,8 +1276,8 @@
       "personId": "t1500_0596",
       "candidateId": "c1500-0596",
       "name": "鄭融",
-      "status": "rejected",
-      "attempts": 0,
+      "status": "pending_review",
+      "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
         {
@@ -1317,9 +1334,282 @@
           },
           "humanReview": null,
           "eligibleForLive": false
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/StephanieCheng2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/StephanieCheng2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:StephanieCheng2007.jpg",
+          "filename": "StephanieCheng2007.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Ken Mau",
+          "credit": "Flickr",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "Stephanie Cheng at SINA Music樂壇民意指數頒獎禮 2006 (hosted on 29 January 2007)鄭融",
+          "identityEvidence": {
+            "wikidataId": "Q6135815",
+            "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
+            "exactChineseAliases": [
+              "郑融",
+              "鄭融",
+              "鄭融"
+            ],
+            "verifiedSearchAliases": [
+              "鄭融",
+              "郑融",
+              "Stephanie Cheng"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+            "articleTitle": "鄭融",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "鄭融",
+            "matchedAliases": [
+              "鄭融",
+              "郑融",
+              "Stephanie Cheng"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "鄭融",
+              "郑融",
+              "Stephanie Cheng"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "紅綠燈"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:55:10.143401+00:00",
+          "width": 1066,
+          "height": 1600,
+          "id": "72b3c7ac919764ad557e",
+          "personId": "t1500_0596",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0596/72b3c7ac919764ad557e/fbae07203816/original.bin",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0596/72b3c7ac919764ad557e/fbae07203816/afb976dd53d8.jpg",
+          "originalSha256": "fbae072038161c5382851f90e35c42ae0fae1763cfb6bf53eb98786e4dd1a8e7",
+          "gameSha256": "afb976dd53d8f23616e65993e06eac2c6d3b869d5e7a9f5ee2cb47158daad449",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.27683476514155325,
+              0.92,
+              0.4193984078888846
+            ],
+            "nose": [
+              0.08,
+              0.27683476514155325,
+              0.92,
+              0.5350817387646968
+            ],
+            "mouth": [
+              0.08,
+              0.27683476514155325,
+              0.92,
+              0.6623006144608602
+            ],
+            "chin": [
+              0.08,
+              0.27683476514155325,
+              0.92,
+              0.8134456847540222
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "originalSize": [
+              1066,
+              1600
+            ],
+            "sharpness": 98.39,
+            "overexposedFraction": 6.944444444444445e-06
+          }
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-30T04:55:09.753869+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:55:30.896435+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:30.896471+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:55:33.259523+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:33.259548+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+                "filename": "Stephanie Cheng.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "kingofhiking",
+                "credit": "This image was originally posted to Flickr as Stephanie Cheng",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "en:Stephanie Cheng",
+                "identityEvidence": {
+                  "wikidataId": "Q6135815",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
+                  "exactChineseAliases": [
+                    "郑融",
+                    "鄭融",
+                    "鄭融"
+                  ],
+                  "verifiedSearchAliases": [
+                    "鄭融",
+                    "郑融",
+                    "Stephanie Cheng"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+                  "articleTitle": "鄭融",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "鄭融",
+                  "matchedAliases": [
+                    "Stephanie Cheng"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Stephanie Cheng"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "紅綠燈"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T04:55:11.786621+00:00",
+                "width": 314,
+                "height": 806,
+                "id": "350fc51bd7012d88a1f5",
+                "personId": "t1500_0596",
+                "discoveryRunId": "20261030T045355Z-f535313a",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+                "filename": "Stephanie Cheng.png",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "kingofhiking",
+                "credit": "Flickr",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "Crop of photo of Stephanie ChengStephanie Cheng",
+                "identityEvidence": {
+                  "wikidataId": "Q6135815",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
+                  "exactChineseAliases": [
+                    "郑融",
+                    "鄭融",
+                    "鄭融"
+                  ],
+                  "verifiedSearchAliases": [
+                    "鄭融",
+                    "郑融",
+                    "Stephanie Cheng"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+                  "articleTitle": "鄭融",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "鄭融",
+                  "matchedAliases": [
+                    "Stephanie Cheng"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Stephanie Cheng"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "紅綠燈"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T04:55:11.786783+00:00",
+                "width": 314,
+                "height": 806,
+                "id": "b0fed431ae9cab5b6048",
+                "personId": "t1500_0596",
+                "discoveryRunId": "20261030T045355Z-f535313a",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 3
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0596",
         "name": "鄭融",
@@ -1377,7 +1667,155 @@
           ]
         },
         "reviewNote": "鄭融草稿面紗網點與麥克風遮住五官"
-      }
+      },
+      "lastRunId": "20261030T045355Z-f535313a",
+      "lastRunNewCandidateIds": [
+        "72b3c7ac919764ad557e"
+      ],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T04:55:09.697356+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stephanie_Cheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.jpg",
+            "filename": "Stephanie Cheng.jpg",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "kingofhiking",
+            "credit": "This image was originally posted to Flickr as Stephanie Cheng",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "en:Stephanie Cheng",
+            "identityEvidence": {
+              "wikidataId": "Q6135815",
+              "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
+              "exactChineseAliases": [
+                "郑融",
+                "鄭融",
+                "鄭融"
+              ],
+              "verifiedSearchAliases": [
+                "鄭融",
+                "郑融",
+                "Stephanie Cheng"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+              "articleTitle": "鄭融",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "鄭融",
+              "matchedAliases": [
+                "Stephanie Cheng"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Stephanie Cheng"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "紅綠燈"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T04:55:11.786621+00:00",
+            "width": 314,
+            "height": 806,
+            "id": "350fc51bd7012d88a1f5",
+            "personId": "t1500_0596",
+            "discoveryRunId": "20261030T045355Z-f535313a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stephanie_Cheng.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Stephanie_Cheng.png",
+            "filename": "Stephanie Cheng.png",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "artist": "kingofhiking",
+            "credit": "Flickr",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "Crop of photo of Stephanie ChengStephanie Cheng",
+            "identityEvidence": {
+              "wikidataId": "Q6135815",
+              "mappingSource": "https://www.wikidata.org/wiki/Q6135815",
+              "exactChineseAliases": [
+                "郑融",
+                "鄭融",
+                "鄭融"
+              ],
+              "verifiedSearchAliases": [
+                "鄭融",
+                "郑融",
+                "Stephanie Cheng"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-30T04:55:10.022467+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E9%84%AD%E8%9E%8D",
+              "articleTitle": "鄭融",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "鄭融",
+              "matchedAliases": [
+                "Stephanie Cheng"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "Stephanie Cheng"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "紅綠燈"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-30T04:55:11.786783+00:00",
+            "width": 314,
+            "height": 806,
+            "id": "b0fed431ae9cab5b6048",
+            "personId": "t1500_0596",
+            "discoveryRunId": "20261030T045355Z-f535313a",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
+        }
+      ],
+      "updatedAt": "2026-10-30T04:55:33.259555+00:00",
+      "workerFinishedAt": "2026-10-30T04:55:33.261491+00:00"
     },
     "t1500_0149": {
       "personId": "t1500_0149",
@@ -6722,8 +7160,8 @@
       "candidateId": "c1500-0561",
       "name": "杜汶澤",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T04:36:04.089405+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T08:56:37.446335+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0561",
@@ -7475,6 +7913,696 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "Licence insufficient: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p1.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p1.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 1\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001389\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.104748+00:00",
+          "width": 976,
+          "height": 1500,
+          "id": "9f67ad2b4acb4e6f7393",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p11.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p11.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 11\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001399\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.105951+00:00",
+          "width": 982,
+          "height": 1500,
+          "id": "0b20c4003d9007986179",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p13.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p13.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 13\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001401\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.107102+00:00",
+          "width": 1007,
+          "height": 1500,
+          "id": "12f15b0b28ff18c55949",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p16.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p16.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 16\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001404\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.108250+00:00",
+          "width": 961,
+          "height": 1500,
+          "id": "3504b67d4822b7c0744c",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p2.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p2.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 2\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001390\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.109436+00:00",
+          "width": 972,
+          "height": 1500,
+          "id": "efdf0d4dac79e182d951",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p5.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p5.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 5\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001393\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.110576+00:00",
+          "width": 970,
+          "height": 1500,
+          "id": "da0f9e532bde728e844e",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/From_Henry_Chapman_to_Maria_Weston_Chapman%3B_Wednesday%2C_December_26%2C_1860_p7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p7.jpg",
+          "filename": "From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860 p7.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry, 1833-1882",
+          "credit": "Flickr: From Henry Chapman to Maria Weston Chapman; Wednesday, December 26, 1860.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 7\nCall Number: Ms.A.9.2 v.5 n.81\nFormat: Autograph Letter Signed\nExtent: 16 p. 17 1/8 x 4 5/8 in.\nCreator: Chapman, Henry, 1833-1882\nDate of creation: 1860-12-26\nRecipient: Chapman, Maria Weston, 1806-1885\nBPL department: Rare Books\nFlickr data on 2011-08-15:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_001395\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.111724+00:00",
+          "width": 997,
+          "height": 1500,
+          "id": "dde93c284fd76a09f165",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/From_Henry_Grafton_Chapman_to_Isaac_Knapp%3B_Monday%2C_September_11%2C_1837_p1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/From_Henry_Grafton_Chapman_to_Isaac_Knapp%3B_Monday%2C_September_11%2C_1837_p1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Grafton_Chapman_to_Isaac_Knapp;_Monday,_September_11,_1837_p1.jpg",
+          "filename": "From Henry Grafton Chapman to Isaac Knapp; Monday, September 11, 1837 p1.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Henry Grafton, 1804-1842",
+          "credit": "Flickr: From Henry Grafton Chapman to Isaac Knapp; Monday, September 11, 1837.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 1\nCall Number: Ms.A.9.2 v.9 n.67 (2)\nFormat: Autograph Document Signed\nExtent: 2 p., 3 1/4 x 8 in.\nCreator: Chapman, Henry Grafton, 1804-1842\nDate of creation: 1837-09-11\nPlace of creation: Boston, MA\nRecipient: Knapp, Isaac, 1808-1858\nBPL department: Rare Books\nFlickr data on 2011-08-14:\n\nCamera: Sinar AG Sinarback 54 FW, Sinar m\nTags: dc:identifier=08_07_000109\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.112948+00:00",
+          "width": 1500,
+          "height": 613,
+          "id": "aab825be4fa9b88ebed9",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/From_Mary_Gray_Chapman_to_Maria_Weston_Chapman%3B_ca._1830_p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/From_Mary_Gray_Chapman_to_Maria_Weston_Chapman%3B_ca._1830_p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Mary_Gray_Chapman_to_Maria_Weston_Chapman;_ca._1830_p2.jpg",
+          "filename": "From Mary Gray Chapman to Maria Weston Chapman; ca. 1830 p2.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Chapman, Mary Gray, 1798-1874",
+          "credit": "Flickr: From Mary Gray Chapman to Maria Weston Chapman; ca. 1830.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "Page: p. 2\nCall Number: Ms.A.9.2 v.5 n.18\nFormat: Autograph Letter Signed\nExtent: 2 p., 7 1/4 x 7 1/2 in.\nCreator: Chapman, Mary Gray, 1798-1874\nDate of creation: 1830 (approximate)\nRecipient: Chapman, Maria Weston, 1806-1885\nFlickr data on 2011-08-15:\n\nCamera: Epson Exp10000XL10000\nTags: Mary Gray Chapman, 1830, dc:identifier=08_07_001316\nLicense: CC BY 2.0\nUser: Boston Public Library BPL",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.114086+00:00",
+          "width": 1200,
+          "height": 1195,
+          "id": "85db4ab16cdaa3524b42",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_%28page_1%29.jpg/1920px-Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_%28page_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_%28page_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_(page_1).jpg",
+          "filename": "Letter from Representative Pleasant Thomas Chapman to Joseph Cannon - DPLA - 69e83d881df2a14cae2def571f8f7ee3 (page 1).jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "U.S. House of Representatives. 3/4/1789",
+          "credit": "File URL Catalog record",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "",
+          "identityEvidence": {
+            "wikidataId": "Q708456",
+            "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+            "exactChineseAliases": [
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶澤",
+              "杜汶泽",
+              "杜汶澤",
+              "杜汶泽"
+            ],
+            "verifiedSearchAliases": [
+              "杜汶澤",
+              "杜汶泽",
+              "Chapman To",
+              "To Man-chak",
+              "Edward Ng Cheuk-cheung",
+              "Chapman To Man-Chat"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+            "articleTitle": "杜汶澤",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "Chapman To",
+            "matchedAliases": [
+              "Chapman To"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "Chapman To"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "無間道"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T04:56:12.115108+00:00",
+          "width": 2439,
+          "height": 3150,
+          "id": "c92bd2e11e9fd8b5af45",
+          "personId": "t1500_0561",
+          "discoveryRunId": "20261030T045355Z-f535313a",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Licence insufficient: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -7791,6 +8919,234 @@
             }
           ],
           "candidatesTried": 13
+        },
+        {
+          "time": "2026-10-30T04:56:06.561547+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:33.412201+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:33.412231+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:37.446285+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:37.446317+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+                "filename": "CORSO (9515087612).jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Archives New Zealand from New Zealand",
+                "credit": "CORSO",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "On the 16 August 1944 the Council of Organisations for Relief Service Overseas (CORSO) was formed.  One of the key figures in the development of the organisation was Sylvia Gytha de Lancey Chapman. During the Second World War Chapman represented the YWCA as a member and medical advisor of the Polish Children's Hospitality Committee. She studied Polish, hoping to visit Poland after the war, and also assisted many of the German refugees immigrating to New Zealand. On 16 August 1944 a historic meeting took place in Chapman's sitting room. Representatives of 12 churches and welfare organisations were concerned at the difficulty of giving aid to the millions of war sufferers: the homeless, the starving, and the desperately ill. That evening, the New Zealand Council of Organisations for Relief Service Overseas (CORSO) was born. The United Nations was founded in 1945, and CORSO agreed to combine with its Relief and Rehabilitation Administration (UNRRA) to send a medical team, led by Chapman, to Greece.  Archives New Zealand has film footage of the appeal made to the NZ public for supporting Greece after World War Two - www.youtube.com/watch?v=KU_b59qWVmY  [Our Debt to Greece - National Film Unit (1946)]\nCORSO supported United Nations appeals for children in 1948 and 1950; world refugee year appeals in 1959 and 1960 and the freedom from hunger campaign appeal in 1962. The countries CORSO was heavily involved in included: Greece; Hong Kong; China; India and Korea. The organisation still exists today as a Non Government Organisation active in the areas of health, education, international development, human rights, the environment, youth, women and ethnicity.\nThe images presented here are from a range of files held at Archives New Zealand from different agencies. These files are all open access and can viewed in our Wellington reading room. \n1. The image focussing on aid in Togo is from a file from the Office of the Governor General: CORSO [ABAH W4187 Box 11 6/WL/9 (R18697590) archway.archives.govt.nz/ViewFullItem.do?code=18697590\n2. The image of the 1959 CORSO annual report is from a Treasury File: Council for Organisation for Relief Overseas 1945 - March 1978 [AALR 873 W4446 262 53/221 1] archway.archives.govt.nz/ViewFullItem.do?code=22338421 \n\n3. The image of the 1950 CORSO annual report is from the Broadcasting Corporation of New Zealand: Campaigns Corso [AADL 564 W1516 458/c 2/15/10] archway.archives.govt.nz/ViewFullItem.do?code=18662562",
+                "identityEvidence": {
+                  "wikidataId": "Q708456",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+                  "exactChineseAliases": [
+                    "杜汶泽",
+                    "杜汶澤",
+                    "杜汶澤",
+                    "杜汶泽",
+                    "杜汶澤",
+                    "杜汶泽"
+                  ],
+                  "verifiedSearchAliases": [
+                    "杜汶澤",
+                    "杜汶泽",
+                    "Chapman To",
+                    "To Man-chak",
+                    "Edward Ng Cheuk-cheung",
+                    "Chapman To Man-Chat"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+                  "articleTitle": "杜汶澤",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Chapman To",
+                  "matchedAliases": [
+                    "Chapman To"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Chapman To"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "無間道"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T04:56:12.103530+00:00",
+                "width": 3244,
+                "height": 2436,
+                "id": "229e2bdd9e72e0686c4f",
+                "personId": "t1500_0561",
+                "discoveryRunId": "20261030T045355Z-f535313a",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+                "filename": "Labuan - William Chapman to Fitzgerald - sends list of Thomase wanting to enter Barracks.jpg",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "artist": "Archives New Zealand",
+                "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE37969163",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "Canterbury Association Shipping Papers (CASP), 1850-1852\nNew Zealand Archives Reference: R21009366 \tCAAR \t19645 \tCH290 \t\t830 / \t\tCASP 4, 271",
+                "identityEvidence": {
+                  "wikidataId": "Q708456",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q708456",
+                  "exactChineseAliases": [
+                    "杜汶泽",
+                    "杜汶澤",
+                    "杜汶澤",
+                    "杜汶泽",
+                    "杜汶澤",
+                    "杜汶泽"
+                  ],
+                  "verifiedSearchAliases": [
+                    "杜汶澤",
+                    "杜汶泽",
+                    "Chapman To",
+                    "To Man-chak",
+                    "Edward Ng Cheuk-cheung",
+                    "Chapman To Man-Chat"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
+                  "articleTitle": "杜汶澤",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "Chapman To",
+                  "matchedAliases": [
+                    "Chapman To"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "Chapman To"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "無間道"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-30T04:56:12.114697+00:00",
+                "width": 3303,
+                "height": 4835,
+                "id": "f22e4876666ff98b4430",
+                "personId": "t1500_0561",
+                "discoveryRunId": "20261030T045355Z-f535313a",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "No reliable frontal face"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p1.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p11.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p13.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p16.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p2.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p5.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p7.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Grafton_Chapman_to_Isaac_Knapp;_Monday,_September_11,_1837_p1.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:From_Mary_Gray_Chapman_to_Maria_Weston_Chapman;_ca._1830_p2.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            },
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_(page_1).jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 12
         }
       ],
       "legacyRecord": {
@@ -7851,27 +9207,27 @@
         },
         "reviewNote": "杜汶澤草稿臉部明顯過曝"
       },
-      "lastRunId": "20261030T023511Z-d6593083",
+      "lastRunId": "20261030T045355Z-f535313a",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T02:35:33.760932+00:00",
+      "lastAttemptAt": "2026-10-30T04:56:06.501532+00:00",
       "lastErrors": [
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_(Ex)_cast_and_crew.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_%28Ex%29_cast_and_crew.jpg/1920px-2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_%28Ex%29_cast_and_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_%28Ex%29_cast_and_crew.jpg/1920px-2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_%28Ex%29_cast_and_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_%28Ex%29_cast_and_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:2010_Hong_Kong_International_Film_Festival_%E9%96%89%E5%B9%95%E9%9B%BB%E5%BD%B1%E2%80%94%E5%89%8D%E5%BA%A6_(Ex)_cast_and_crew.jpg",
-            "filename": "2010 Hong Kong International Film Festival 閉幕電影—前度 (Ex) cast and crew.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/CORSO_%289515087612%29.jpg/1920px-CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/CORSO_%289515087612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:CORSO_(9515087612).jpg",
+            "filename": "CORSO (9515087612).jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "alanine",
-            "credit": "https://www.flickr.com/photos/alanine/4498881896/",
+            "artist": "Archives New Zealand from New Zealand",
+            "credit": "CORSO",
             "license": "CC BY-SA 2.0",
             "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "​(右起) 導演麥曦茵、監製杜汶澤、鍾欣桐、陳偉霆、詩雅、曾國祥、周俊偉、吳浩康",
+            "caption": "On the 16 August 1944 the Council of Organisations for Relief Service Overseas (CORSO) was formed.  One of the key figures in the development of the organisation was Sylvia Gytha de Lancey Chapman. During the Second World War Chapman represented the YWCA as a member and medical advisor of the Polish Children's Hospitality Committee. She studied Polish, hoping to visit Poland after the war, and also assisted many of the German refugees immigrating to New Zealand. On 16 August 1944 a historic meeting took place in Chapman's sitting room. Representatives of 12 churches and welfare organisations were concerned at the difficulty of giving aid to the millions of war sufferers: the homeless, the starving, and the desperately ill. That evening, the New Zealand Council of Organisations for Relief Service Overseas (CORSO) was born. The United Nations was founded in 1945, and CORSO agreed to combine with its Relief and Rehabilitation Administration (UNRRA) to send a medical team, led by Chapman, to Greece.  Archives New Zealand has film footage of the appeal made to the NZ public for supporting Greece after World War Two - www.youtube.com/watch?v=KU_b59qWVmY  [Our Debt to Greece - National Film Unit (1946)]\nCORSO supported United Nations appeals for children in 1948 and 1950; world refugee year appeals in 1959 and 1960 and the freedom from hunger campaign appeal in 1962. The countries CORSO was heavily involved in included: Greece; Hong Kong; China; India and Korea. The organisation still exists today as a Non Government Organisation active in the areas of health, education, international development, human rights, the environment, youth, women and ethnicity.\nThe images presented here are from a range of files held at Archives New Zealand from different agencies. These files are all open access and can viewed in our Wellington reading room. \n1. The image focussing on aid in Togo is from a file from the Office of the Governor General: CORSO [ABAH W4187 Box 11 6/WL/9 (R18697590) archway.archives.govt.nz/ViewFullItem.do?code=18697590\n2. The image of the 1959 CORSO annual report is from a Treasury File: Council for Organisation for Relief Overseas 1945 - March 1978 [AALR 873 W4446 262 53/221 1] archway.archives.govt.nz/ViewFullItem.do?code=22338421 \n\n3. The image of the 1950 CORSO annual report is from the Broadcasting Corporation of New Zealand: Campaigns Corso [AADL 564 W1516 458/c 2/15/10] archway.archives.govt.nz/ViewFullItem.do?code=18662562",
             "identityEvidence": {
               "wikidataId": "Q708456",
               "mappingSource": "https://www.wikidata.org/wiki/Q708456",
@@ -7892,21 +9248,19 @@
                 "Chapman To Man-Chat"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T02:35:34.253843+00:00",
+              "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
               "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
               "articleTitle": "杜汶澤",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "杜汶澤",
+              "query": "Chapman To",
               "matchedAliases": [
-                "杜汶澤",
-                "杜汶泽"
+                "Chapman To"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "杜汶澤",
-                "杜汶泽"
+                "Chapman To"
               ]
             },
             "recognitionEvidence": {
@@ -7916,44 +9270,39 @@
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T02:35:35.854989+00:00",
-            "width": 4000,
-            "height": 3000,
-            "id": "86246634aa574672cdd8",
+            "searchTime": "2026-10-30T04:56:12.103530+00:00",
+            "width": 3244,
+            "height": 2436,
+            "id": "229e2bdd9e72e0686c4f",
             "personId": "t1500_0561",
-            "discoveryRunId": "20261030T023511Z-d6593083",
+            "discoveryRunId": "20261030T045355Z-f535313a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "manual_crop_required",
+            "status": "metadata_only",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0561/86246634aa574672cdd8/406cd28c37a2/original.bin",
-            "originalSha256": "406cd28c37a2da8658b01fb950d3b516e7c9bbc27184f53f990a9061fdb415d0",
-            "cropFailure": "Face is too small",
-            "gamePath": null
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
           },
           "code": "image_validation_failed",
           "message": "Face is too small"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:@Hang_TV_-_%E8%B6%8A%E5%8D%97%E5%A4%AF%E5%8F%B0%E7%81%A3_%E9%98%AE%E7%A7%8B%E5%A7%AE.png",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/%40Hang_TV_-_%E8%B6%8A%E5%8D%97%E5%A4%AF%E5%8F%B0%E7%81%A3_%E9%98%AE%E7%A7%8B%E5%A7%AE.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/%40Hang_TV_-_%E8%B6%8A%E5%8D%97%E5%A4%AF%E5%8F%B0%E7%81%A3_%E9%98%AE%E7%A7%8B%E5%A7%AE.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/%40Hang_TV_-_%E8%B6%8A%E5%8D%97%E5%A4%AF%E5%8F%B0%E7%81%A3_%E9%98%AE%E7%A7%8B%E5%A7%AE.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:@Hang_TV_-_%E8%B6%8A%E5%8D%97%E5%A4%AF%E5%8F%B0%E7%81%A3_%E9%98%AE%E7%A7%8B%E5%A7%AE.png",
-            "filename": "@Hang TV - 越南夯台灣 阮秋姮.png",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg/1920px-Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Labuan_-_William_Chapman_to_Fitzgerald_-_sends_list_of_Thomase_wanting_to_enter_Barracks.jpg",
+            "filename": "Labuan - William Chapman to Fitzgerald - sends list of Thomase wanting to enter Barracks.jpg",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "蔡英文",
-            "credit": "YouTube: https://www.youtube.com/watch?v=5GMt_uYVOSk – View/save archived versions on archive.org",
-            "license": "CC BY 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-            "caption": "​致 想家的你。小英與好友的中秋祝福 ft. 杜汶澤、 @Hang TV - 越南夯台灣 阮秋姮 、 @三原JAPAN Sanyuan_JAPAN 三原慧悟、王翎鳳、 @韓勾ㄟ金針菇 찐쩐꾸 金針菇",
+            "artist": "Archives New Zealand",
+            "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE37969163",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "Canterbury Association Shipping Papers (CASP), 1850-1852\nNew Zealand Archives Reference: R21009366 \tCAAR \t19645 \tCH290 \t\t830 / \t\tCASP 4, 271",
             "identityEvidence": {
               "wikidataId": "Q708456",
               "mappingSource": "https://www.wikidata.org/wiki/Q708456",
@@ -7974,21 +9323,19 @@
                 "Chapman To Man-Chat"
               ],
               "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T02:35:34.253843+00:00",
+              "retrievedAt": "2026-10-30T04:56:06.984892+00:00",
               "visualIdentityVerified": false,
               "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
               "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
               "articleTitle": "杜汶澤",
               "articleLookup": "exact title with redirects; not a search result",
-              "query": "杜汶澤",
+              "query": "Chapman To",
               "matchedAliases": [
-                "杜汶澤",
-                "杜汶泽"
+                "Chapman To"
               ],
               "discoveryWarnings": [],
               "captionAliasMatches": [
-                "杜汶澤",
-                "杜汶泽"
+                "Chapman To"
               ]
             },
             "recognitionEvidence": {
@@ -7998,12 +9345,12 @@
               "requestedReplacement": "",
               "note": "Familiar appearance has not been visually reviewed"
             },
-            "searchTime": "2026-10-30T02:35:35.855921+00:00",
-            "width": 220,
-            "height": 295,
-            "id": "1eb76929eeeeb63c33ab",
+            "searchTime": "2026-10-30T04:56:12.114697+00:00",
+            "width": 3303,
+            "height": 4835,
+            "id": "f22e4876666ff98b4430",
             "personId": "t1500_0561",
-            "discoveryRunId": "20261030T023511Z-d6593083",
+            "discoveryRunId": "20261030T045355Z-f535313a",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -8013,142 +9360,65 @@
             ]
           },
           "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
+          "message": "No reliable frontal face"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Heiwardmak.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Heiwardmak.jpg/1920px-Heiwardmak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Heiwardmak.jpg/1920px-Heiwardmak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Heiwardmak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Heiwardmak.jpg",
-            "filename": "Heiwardmak.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Alan from Hong Kong",
-            "credit": "閉幕電影 - 前度",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "導演麥曦茵 + 監製杜汶澤",
-            "identityEvidence": {
-              "wikidataId": "Q708456",
-              "mappingSource": "https://www.wikidata.org/wiki/Q708456",
-              "exactChineseAliases": [
-                "杜汶泽",
-                "杜汶澤",
-                "杜汶澤",
-                "杜汶泽",
-                "杜汶澤",
-                "杜汶泽"
-              ],
-              "verifiedSearchAliases": [
-                "杜汶澤",
-                "杜汶泽",
-                "Chapman To",
-                "To Man-chak",
-                "Edward Ng Cheuk-cheung",
-                "Chapman To Man-Chat"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T02:35:34.253843+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E6%B1%B6%E6%BE%A4",
-              "articleTitle": "杜汶澤",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "杜汶澤",
-              "matchedAliases": [
-                "杜汶澤",
-                "杜汶泽"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "杜汶澤",
-                "杜汶泽"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "無間道"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T02:35:35.856365+00:00",
-            "width": 4000,
-            "height": 3000,
-            "id": "fafd299c3711e85fcf5c",
-            "personId": "t1500_0561",
-            "discoveryRunId": "20261030T023511Z-d6593083",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Multiple prominent faces"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Memorial_of_Catherine_Stewart.jpg",
-          "code": "excluded_context",
-          "message": "Disallowed memorial/statue/generated context"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:C._W._Chapman_to_General_Lazarus_Noble,_1864-10-24_-_DPLA_-_0faa0551a5188a177f4a82bc6f1c5fe6.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p1.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p3.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p11.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p6.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p13.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:From_Maria_Weston_Chapman_to_Deborah_Weston;_185%3F-03-26%3F_p1.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p16.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:From_Maria_Weston_Chapman_to_Deborah_Weston;_185%3F-03-26%3F_p2.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p2.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Letter_from_Frederick_A._Chapman_to_John_G._Johnson_-_DPLA_-_1ac131b4a58c5e216247a1dc1de1405b_(page_2).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p5.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Supt._James_McConaghie_to_Director_National_Parks_Oct_30,_1933_(b592206f-cc49-485a-9cb3-7b11de3a494a).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Chapman_to_Maria_Weston_Chapman;_Wednesday,_December_26,_1860_p7.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Gardeners%27_chronicle_-_a_weekly_illustrated_journal_of_horticulture_and_allied_subjects_(1903)_(14783839915).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Henry_Grafton_Chapman_to_Isaac_Knapp;_Monday,_September_11,_1837_p1.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         },
         {
           "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:WASHINGTON_(Jan_6,_2020)_%E2%80%94_Thomas_Chapman_is_administered_the_oath_of_office_by_National_Transportation_Safety_Board_Chairman_Robert_Sumwalt_during_a_swearing_in_ceremony_held_here_Monday_(49340605882).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:From_Mary_Gray_Chapman_to_Maria_Weston_Chapman;_ca._1830_p2.jpg",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        },
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Letter_from_Representative_Pleasant_Thomas_Chapman_to_Joseph_Cannon_-_DPLA_-_69e83d881df2a14cae2def571f8f7ee3_(page_1).jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         }
@@ -8158,8 +9428,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-30T02:36:04.089417+00:00",
-      "workerFinishedAt": "2026-10-30T02:36:04.090978+00:00"
+      "updatedAt": "2026-10-30T04:56:37.446347+00:00",
+      "workerFinishedAt": "2026-10-30T04:56:37.448372+00:00"
     },
     "t1500_0388": {
       "personId": "t1500_0388",
@@ -9687,11 +10957,35 @@
       "personId": "t1500_0572",
       "candidateId": "c1500-0572",
       "name": "釋小龍",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T06:55:09.617227+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-30T04:54:47.669169+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:55:05.888774+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:05.888812+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:55:09.617193+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:09.617213+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0572",
         "name": "釋小龍",
@@ -9709,10 +11003,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261030T045355Z-f535313a",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T04:54:47.617782+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-30T04:55:09.617238+00:00",
+      "workerFinishedAt": "2026-10-30T04:55:09.619183+00:00"
     },
     "t1500_0338": {
       "personId": "t1500_0338",
@@ -20551,42 +21858,61 @@
       "candidateId": "c1500-0537",
       "name": "李鴻其",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T01:40:03.102715+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T08:55:53.571692+00:00",
       "candidates": [
         {
           "provider": "commons",
           "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "downloadVariant": "wikimedia_thumbnail_1400",
           "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
           "filename": "第52屆金馬「最佳新演員獎」得主李鴻其.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
           "artist": "張新偉",
           "credit": "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=622026",
           "license": "Public domain",
           "licenseUrl": "",
           "caption": "​第52屆金馬「最佳新演員獎」得主李鴻其 / 創作者：張新偉 / 數位物件授權：PDM / 建檔單位：中央通訊社 @ 國家文化記憶庫 https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=622026",
           "identityEvidence": {
-            "query": "李鴻其",
-            "identityWarning": "Caption/name match is preliminary evidence only",
-            "captionAliasMatches": [
+            "wikidataId": "Q21040241",
+            "mappingSource": "https://www.wikidata.org/wiki/Q21040241",
+            "exactChineseAliases": [
               "李鴻其"
             ],
-            "visualIdentityVerified": false
+            "verifiedSearchAliases": [
+              "李鴻其",
+              "Lee Hong-chi"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T04:55:33.635311+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B4%BB%E5%85%B6",
+            "articleTitle": "李鴻其",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "李鴻其",
+            "matchedAliases": [
+              "李鴻其"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "李鴻其"
+            ]
           },
           "recognitionEvidence": {
-            "requestedReplacement": "",
             "representativeWorks": [
               "醉・生夢死"
             ],
-            "note": "Familiar appearance must be reviewed"
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
           },
-          "searchTime": "2026-10-29T23:40:01.779733+00:00",
+          "searchTime": "2026-10-30T04:55:33.747910+00:00",
           "width": 237,
           "height": 341,
           "id": "a227e19d89e8928418f9",
           "personId": "t1500_0537",
-          "discoveryRunId": "20261029T233941Z-7bada67f",
+          "discoveryRunId": "20261030T045355Z-f535313a",
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
@@ -20609,6 +21935,30 @@
           "errors": [
             {
               "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-30T04:55:33.390102+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:55:51.242761+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:51.242798+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:55:53.571632+00:00"
+        },
+        {
+          "time": "2026-10-30T04:55:53.571681+00:00",
+          "errors": [
+            {
+              "provider": "entity",
               "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
               "code": "license_unclear",
               "message": "Source metadata retained; no download without reusable licence metadata"
@@ -20638,20 +21988,20 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T233941Z-7bada67f",
+      "lastRunId": "20261030T045355Z-f535313a",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T23:40:01.242162+00:00",
+      "lastAttemptAt": "2026-10-30T04:55:33.335412+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
+          "provider": "entity",
           "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC52%E5%B1%86%E9%87%91%E9%A6%AC%E3%80%8C%E6%9C%80%E4%BD%B3%E6%96%B0%E6%BC%94%E5%93%A1%E7%8D%8E%E3%80%8D%E5%BE%97%E4%B8%BB%E6%9D%8E%E9%B4%BB%E5%85%B6.jpg",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
-      "updatedAt": "2026-10-29T23:40:03.102728+00:00",
-      "workerFinishedAt": "2026-10-29T23:40:03.104567+00:00"
+      "updatedAt": "2026-10-30T04:55:53.571703+00:00",
+      "workerFinishedAt": "2026-10-30T04:55:53.573567+00:00"
     },
     "t1500_0225": {
       "personId": "t1500_0225",
@@ -31385,8 +32735,8 @@
       "candidateId": "c1500-0558",
       "name": "蔡一智",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T01:32:22.853974+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T08:56:06.416947+00:00",
       "candidates": [],
       "history": [
         {
@@ -31397,6 +32747,23 @@
         },
         {
           "time": "2026-10-29T23:32:22.853965+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-30T04:55:53.703951+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:02.992256+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:02.992293+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:06.416913+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:06.416937+00:00",
           "errors": [],
           "candidatesTried": 0
         }
@@ -31422,13 +32789,13 @@
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261029T233204Z-215bf587",
+      "lastRunId": "20261030T045355Z-f535313a",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T23:32:21.203349+00:00",
+      "lastAttemptAt": "2026-10-30T04:55:53.648802+00:00",
       "lastErrors": [],
-      "updatedAt": "2026-10-29T23:32:22.853986+00:00",
-      "workerFinishedAt": "2026-10-29T23:32:22.855765+00:00"
+      "updatedAt": "2026-10-30T04:56:06.416959+00:00",
+      "workerFinishedAt": "2026-10-30T04:56:06.419092+00:00"
     },
     "t1500_0445": {
       "personId": "t1500_0445",
@@ -76180,10 +77547,28 @@
       "candidateId": "c1500-0538",
       "name": "葉星辰",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T06:54:28.098024+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-30T04:54:21.372062+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:25.688098+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:25.688138+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:28.097993+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:28.098015+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0538",
         "name": "葉星辰",
@@ -76201,10 +77586,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "lastRunId": "20261030T045355Z-f535313a",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T04:54:21.312671+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-30T04:54:28.098035+00:00",
+      "workerFinishedAt": "2026-10-30T04:54:28.099950+00:00"
     },
     "t1500_0396": {
       "personId": "t1500_0396",
@@ -76342,8 +77734,8 @@
       "candidateId": "c1500-0588",
       "name": "苗可秀",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T05:41:31.539546+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-30T08:56:54.614518+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -76647,6 +78039,23 @@
             }
           ],
           "candidatesTried": 3
+        },
+        {
+          "time": "2026-10-30T04:56:37.563641+00:00",
+          "provider": "entity",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:51.271752+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:51.271789+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-30T04:56:54.614477+00:00"
+        },
+        {
+          "time": "2026-10-30T04:56:54.614507+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -76668,104 +78077,15 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261030T034045Z-29d66930",
+      "lastRunId": "20261030T045355Z-f535313a",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T03:41:15.099964+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
-            "filename": "苗可秀.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Ak47klo",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​中國青年黨黨員苗可秀",
-            "identityEvidence": {
-              "wikidataId": "Q702088",
-              "mappingSource": "https://www.wikidata.org/wiki/Q702088",
-              "exactChineseAliases": [
-                "苗可秀",
-                "苗可秀",
-                "苗可秀"
-              ],
-              "verifiedSearchAliases": [
-                "苗可秀",
-                "Nora Miao",
-                "Miao Kexiu",
-                "Nora Miao Ke-Hsiu",
-                "Chan Wing-Man"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
-              "articleTitle": "苗可秀",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "苗可秀",
-              "matchedAliases": [
-                "苗可秀"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "苗可秀"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "精武門"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T03:41:16.123515+00:00",
-            "width": 230,
-            "height": 288,
-            "id": "bfd3d32d7f9493dca299",
-            "personId": "t1500_0588",
-            "discoveryRunId": "20261030T034045Z-29d66930",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
-            "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
-            "cropFailure": "Blurred crop: sharpness below 65",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E7%B2%BE%E6%AD%A6%E9%96%93%E3%80%8B%E7%8D%B2%E7%AC%AC10%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E3%80%8C%E5%84%AA%E7%AD%89%E5%8A%87%E6%83%85%E7%89%87%E3%80%8D_%E8%8B%97%E5%8F%AF%E7%A7%80%E4%BB%A3%E8%A1%A8%E4%B8%8A%E5%8F%B0%E9%A0%98%E7%8D%8E.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:HKHM_%E6%B2%99%E7%94%B0_Shatin_%E9%A6%99%E6%B8%AF%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A4%A8_HK_Heritage_Museum_Hong_Kong_Pop_60%2B_Exhibition_August_2021_SS2_168.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ],
-      "updatedAt": "2026-10-30T03:41:31.539561+00:00",
-      "workerFinishedAt": "2026-10-30T03:41:31.541340+00:00"
+      "lastAttemptAt": "2026-10-30T04:56:37.529135+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-30T04:56:54.614529+00:00",
+      "workerFinishedAt": "2026-10-30T04:56:54.616606+00:00"
     },
     "t1500_0167": {
       "personId": "t1500_0167",
@@ -83984,10 +85304,34 @@
       "candidateId": "c1500-0531",
       "name": "易柏辰",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T06:54:21.153548+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-30T04:54:19.484754+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:19.693322+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:19.693351+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:21.153512+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:21.153535+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "identity_unconfirmed",
+              "message": "Expected exactly one exact-name Q5 human; found 0"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0531",
         "name": "易柏辰",
@@ -84005,10 +85349,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261030T045355Z-f535313a",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T04:54:19.356943+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "identity_unconfirmed",
+          "message": "Expected exactly one exact-name Q5 human; found 0"
+        }
+      ],
+      "updatedAt": "2026-10-30T04:54:21.153561+00:00",
+      "workerFinishedAt": "2026-10-30T04:54:21.155455+00:00"
     },
     "t1500_0109": {
       "personId": "t1500_0109",
@@ -87368,11 +88725,35 @@
       "personId": "t1500_0546",
       "candidateId": "c1500-0546",
       "name": "謝孟偉",
-      "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "download_failed",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-30T06:54:47.542994+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-30T04:54:28.235709+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:45.170133+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:45.170171+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-30T04:54:47.542961+00:00"
+        },
+        {
+          "time": "2026-10-30T04:54:47.542981+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "code": "network_error",
+              "message": "No catalogue response: Per-request wall time budget reached"
+            }
+          ],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0546",
         "name": "謝孟偉",
@@ -87390,10 +88771,23 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
-      }
+        "code": "download_failed",
+        "retryable": true,
+        "message": "See lastErrors"
+      },
+      "lastRunId": "20261030T045355Z-f535313a",
+      "lastRunNewCandidateIds": [],
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-30T04:54:28.182458+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "code": "network_error",
+          "message": "No catalogue response: Per-request wall time budget reached"
+        }
+      ],
+      "updatedAt": "2026-10-30T04:54:47.543004+00:00",
+      "workerFinishedAt": "2026-10-30T04:54:47.544822+00:00"
     },
     "t1500_0422": {
       "personId": "t1500_0422",

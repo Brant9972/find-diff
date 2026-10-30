@@ -33,5 +33,16 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertIn('not a blind', request['purpose'])
 
 
+    def test_source_screening_records_no_approved_game_crop(self):
+        root = Path(__file__).resolve().parents[1]
+        report = json.loads((root / 'pipeline' / 'chatgpt-review' /
+                             '20261030-source-led-visual-and-rights-screening.json')
+                            .read_text(encoding='utf-8'))
+        self.assertEqual(report['approvalGate'], 'no candidates approved for live')
+        self.assertEqual(len(report['records']), 8)
+        self.assertTrue(all(row['decision'] != 'approved_for_live'
+                            for row in report['records']))
+
+
 if __name__ == '__main__':
     unittest.main()

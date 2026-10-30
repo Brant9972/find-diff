@@ -405,7 +405,8 @@ class CommonsSearch:
         exact_files = []
         for raw in person.get('reviewExactCommonsFiles', [])[:3]:
             filename = str(raw).strip().removeprefix('File:')
-            if re.fullmatch(r'[^/\\\\\r\n]{1,200}\\.(?:jpg|jpeg|png|webp)', filename, re.I):
+            if (re.fullmatch(r'.{1,200}\.(?:jpg|jpeg|png|webp)', filename, re.I)
+                    and not any(ch in filename for ch in ('/', chr(92), chr(10), chr(13)))):
                 exact_files.append(filename)
         requests = ([('exact', person['name'])] if exact_files else [])
         requests.extend(('search', query) for query in dict.fromkeys(queries))

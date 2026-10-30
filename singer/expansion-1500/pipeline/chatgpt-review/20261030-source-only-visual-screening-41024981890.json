@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_only_pixel_and_caption_screening_not_live_approval",
+  "reviewedAt": "2026-10-30T16:17:00+08:00",
+  "sourceRun": "20261030T081340Z-23adfada",
+  "sourceWorkflowRun": 41024981890,
+  "sourceBranch": "automation/celebrity-photo-pipeline",
+  "sourceAssetCommit": "0981d2cd1dbd51983851c271316018d54feb59ba",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "sourceOnly": 1,
+    "visuallyScreened": 1,
+    "approvedForGame": 0,
+    "newPlayablePeople": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0108",
+      "name": "黃少谷",
+      "candidateId": "a4ed6e44e9b1698b677f",
+      "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+      "decision": "reject_as_game_portrait",
+      "reason": "Actual original 2457x2448 JPEG inspected: single singer with clear source caption, but the face occupies a modest portion of the frame, has visibly soft eyes and facial details, and is unevenly illuminated by strong purple stage lighting. Automatic crop failed 'Blurred crop: sharpness below 65'. Enlarging to 600x720 and progressive eye/nose/mouth reveal would amplify softness and color cast; seek a brighter, sharp, front-facing portrait instead.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
+      "caption": "黃少谷《未來》專輯簽唱會",
+      "artist": "Lidian192847",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsStatus": "open_license_metadata_not_independently_reverified",
+      "visualEvidence": "actual_original_jpeg_pixels_inspected_via_immutable_github_blob",
+      "sourceImage": "singer/expansion-1500/pipeline/review-assets/20261030T081340Z-23adfada/source-only-0001/original.jpg",
+      "gameSha256": null,
+      "eligibleForLive": false
+    }
+  ],
+  "otherSourceNotes": [
+    {
+      "personId": "t1500_0107",
+      "name": "陳明章",
+      "source": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+      "autoFailure": "Face is too tilted",
+      "visualStatus": "not_reviewed_original_not_retained",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0107",
+      "name": "陳明章",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
+      "autoFailure": "license_unclear",
+      "visualStatus": "not_reviewed_no_licensed_pixels",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0108",
+      "name": "黃少谷",
+      "source": "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg",
+      "autoFailure": "Face is too small",
+      "visualStatus": "not_reviewed_original_not_retained",
+      "rightsNote": "Commons web page indicates VRT ticket 2018110710003206 and CC BY-SA 4.0; source image still requires human inspection and suitable face size",
+      "eligibleForLive": false
+    }
+  ],
+  "notes": [
+    "No new 600x720 crop or five-stage reveal was produced, so no person was published.",
+    "The new scoped Wikimedia original-403 fallback passed regression QA but this batch did not produce a confirmed 403 fallback recovery; do not claim improved yield yet.",
+    "No existing completed reviews were reopened."
+  ]
+}

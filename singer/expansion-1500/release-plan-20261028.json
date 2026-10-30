@@ -18055,9 +18055,9 @@
         "鄭融"
       ],
       "categories": [
-        "演員"
+        "歌手"
       ],
-      "proposedPrimaryBank": "actors.json",
+      "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
         "紅綠燈"
       ],
@@ -18067,17 +18067,20 @@
       ],
       "photoStatus": "not_prepared",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "鄭融 紅綠燈 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "apple_music_work_verified",
+      "identityStatus": "qid_caption_human_verified",
+      "qaStatus": "ready_for_pr_qa_not_live",
+      "preferredImageQuery": "鄭融 紅綠燈 角色 劇照 正面 清晰 無浮水印",
+      "verifiedWorkSource": "https://music.apple.com/us/song/1501322393",
+      "reviewedPhotoSource": "https://commons.wikimedia.org/wiki/File:StephanieCheng2007.jpg",
+      "reviewedPhotoSha256": "afb976dd53d8f23616e65993e06eac2c6d3b869d5e7a9f5ee2cb47158daad449"
     },
     {
       "candidateId": "c1500-0597",

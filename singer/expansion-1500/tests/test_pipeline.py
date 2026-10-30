@@ -94,6 +94,30 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse(self.row['candidates'][0]['eligibleForLive'])
         self.assertEqual(self.row['lastErrors'][0]['code'], 'license_unclear')
 
+    def test_vogue_taiwan_rights_conflict_blocks_download_despite_cc_metadata(self):
+        photo = candidate('vogue')
+        photo.update({'artist': 'VOGUE Taiwan', 'caption': '測試人物 interview portrait'})
+        self.assertEqual(rights(photo), 'rights_disputed')
+        # Other independent VOGUE publishers must not be falsely blacklisted.
+        self.assertEqual(rights({**photo, 'artist': 'VOGUE Hong Kong'}), 'open_license_metadata')
+        http = FakeHTTP()
+        def fail_download(url):
+            raise AssertionError('Disputed VOGUE Taiwan media must not be downloaded')
+        http.get = fail_download
+        process(self.person, self.row, self.root, self.directory,
+                [Provider([photo])], http, self.crop, set())
+        self.assertEqual(self.row['candidates'][0]['status'], 'metadata_only')
+        self.assertEqual(self.row['candidates'][0]['rightsStatus'], 'rights_disputed')
+        self.assertEqual(self.row['lastErrors'][0]['code'], 'license_disputed')
+        self.assertFalse(self.row['candidates'][0]['eligibleForLive'])
+
+    def test_vogue_taiwan_in_file_source_is_also_disputed(self):
+        photo = candidate('other')
+        photo.update({'source': 'https://commons.wikimedia.org/wiki/File:VOGUE_Taiwan_interview.jpg'})
+        self.assertEqual(rights(photo), 'rights_disputed')
+        self.assertEqual(rights({**photo, 'source': 'https://commons.wikimedia.org/wiki/File:Vogue_Hong_Kong.jpg'}),
+                         'open_license_metadata')
+
     def test_commons_thumbnail_403_falls_back_to_original_without_approving(self):
         photo = candidate('wikimedia')
         photo.update({

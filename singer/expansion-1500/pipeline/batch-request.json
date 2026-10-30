@@ -1,27 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-taiwan-highpriority-distinct10-after-test-fix",
+  "requestId": "20261030-curated-two-musicians-qid-exact-commons-after-403-fix",
   "mode": "search",
-  "targetPeople": 10,
+  "targetPeople": 2,
   "plannedPersonIds": [
-    "t1500_0007",
-    "t1500_0009",
-    "t1500_0016",
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0099",
-    "t1500_0102",
-    "t1500_0103",
-    "t1500_0104"
+    "t1500_0107",
+    "t1500_0108"
   ],
   "retryFailed": true,
   "providers": [
     "entity",
     "commons"
   ],
-  "maxMinutes": 25,
-  "personSeconds": 100,
-  "maxCandidates": 2,
-  "purpose": "Ten distinct existing selectedNew Taiwan high-priority personalities (A); no rerun of 8/20/40/200 old batches. Search QID/P18 exact and adjacent source caption first, enforce alias/QID pre-dedup, reject substring/other-entity false matches, keep source-only if identity/license/face unclear. Report provider metadata/identity/open-license/download/stage counts. Human approval and main release are separate; no creators changes. Retry the exact same 10 only because previous Actions 41021328865 failed before collection due stale hardcoded manual-mode regression; PR #34 fixed it. Do not expand or change targets."
+  "maxMinutes": 18,
+  "personSeconds": 120,
+  "maxCandidates": 3,
+  "purpose": "Controlled new 2-person diagnostic for previously unprocessed existing selectedNew singers 陳明章 (Q9474720) and 黃少谷 (Q28408495, not the politician). PR #36 fixed Wikimedia thumbnail-403 original fallback, PR #37 added exact Commons file titles. Do not count metadata as verified faces, respect rights and source-caption evidence, stage only draft pixels. Report provider stages and failure reasons; do not touch main/creators."
 }

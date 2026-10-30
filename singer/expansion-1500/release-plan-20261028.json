@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1068,
-    "publishedFromPlan": 81,
-    "remainingSelectedNovel": 429,
+    "currentlyLiveUnique": 1073,
+    "publishedFromPlan": 86,
+    "remainingSelectedNovel": 424,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -16489,7 +16489,12 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "謝賢 千王之王 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "謝賢 千王之王 角色 劇照 正面 清晰 無浮水印",
+      "reviewExactCommonsFiles": [
+        "謝賢.jpg",
+        "謝老四.jpg"
+      ],
+      "reviewReason": "優先核對 2019 am730《謝賢.jpg》與 2018 am730《謝老四.jpg》單人肖像；兩者 Commons GRuban 2020-07-24 CC BY 3.0 授權審核已確認，但仍須實際裁切與五階段目視，不能自動核准"
     },
     {
       "candidateId": "c1500-0550",
@@ -17463,19 +17468,22 @@
       "photoSearchKeywords": [
         "張兆輝 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "張兆輝 黑社會 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "Pages_live_QA_passed_40998405754",
+      "preferredImageQuery": "張兆輝 黑社會 角色 劇照 正面 清晰 無浮水印",
+      "publishedQuestionId": "t1500_0577",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
+      "rightsNote": "am730 original YouTube CC BY 3.0; Commons GRuban license review 2020-07-24; crop reviewed, Pages live QA 2026-10-30"
     },
     {
       "candidateId": "c1500-0578",
@@ -18355,7 +18363,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 81,
+    "published": 86,
     "publishedNames": [
       "金超群",
       "林嘉欣",
@@ -18437,10 +18445,15 @@
       "劉真",
       "劉心悠",
       "雷嘉汭",
-      "田蕊妮"
+      "田蕊妮",
+      "黃智賢",
+      "陶大宇",
+      "羅蘭",
+      "張兆輝",
+      "黃浩然"
     ],
-    "pendingPhotoAndHintReview": 429,
-    "latestCommit": "a11bb237c17f17e01cfd6b4bc1743fa8d8118983",
-    "note": "81 of 511 selected are live; one duplicate 羅璧玲=羅霈穎; 429 novel selected remain; selected-only maximum 1497; at least three existing backup/deferred candidates still needed. 田蕊妮 2019 am730 CC BY 3.0 v2 manual crop reviewed and Pages live QA verified 2026-10-29."
+    "pendingPhotoAndHintReview": 424,
+    "latestCommit": "4eec7030ee54552debc91490c890080ad1b7a9ba",
+    "note": "86 of 511 selected are live, including 張兆輝 PR #20; one known duplicate 羅璧玲=羅霈穎; 424 genuinely new selected remain, so selected-only maximum 1497 and at least 3 original backup/deferred people are still needed. Counts verified by Pages live QA 40998405754 on 2026-10-30."
   }
 }

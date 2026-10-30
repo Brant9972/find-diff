@@ -1,18 +1,25 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261030-two-curated-commons-exact-1050",
+  "requestId": "20261030-veteran-8-exact-and-p18-1139",
   "mode": "search",
-  "targetPeople": 2,
+  "targetPeople": 8,
   "plannedPersonIds": [
-    "t1500_0567",
-    "t1500_0554"
+    "t1500_0549",
+    "t1500_0551",
+    "t1500_0552",
+    "t1500_0555",
+    "t1500_0566",
+    "t1500_0568",
+    "t1500_0588",
+    "t1500_0589"
   ],
   "retryFailed": true,
   "providers": [
+    "entity",
     "commons"
   ],
-  "maxMinutes": 10,
-  "personSeconds": 90,
-  "maxCandidates": 1,
-  "purpose": "Post-PR16 exact Commons file lookup verification: 羅蘭 File:羅蘭.jpg (Flickr-reviewed CC BY 2.0) and 黃日華 File:Wong Yat Wah Felix.JPG (own-work CC BY-SA 3.0). Existing selectedNew only, no live duplicates. Require source identity, licence, clear 600x720 eyes/nose/mouth/chin/full and human review before any main deploy. Draft-only."
+  "maxMinutes": 24,
+  "personSeconds": 110,
+  "maxCandidates": 2,
+  "purpose": "Distinct existing selectedNew HK veteran actors, no published people. One manually source-verified exact Commons lead for 謝賢 (two CC BY 3.0 GRuban-reviewed files), remaining candidates Wikidata Q5/P18 + Chinese-name Commons. This is a new cohort and targeted source strategy, not rerunning old 40/200. Identity, caption, rights, 600x720 and five stages must pass human review; draft only."
 }

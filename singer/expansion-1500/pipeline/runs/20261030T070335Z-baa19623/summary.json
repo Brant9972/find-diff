@@ -1,0 +1,77 @@
+{
+  "runId": "20261030T070335Z-baa19623",
+  "generatedAt": "2026-10-30T07:05:27.878035+00:00",
+  "scannedPeople": 10,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 10,
+  "retryNeeded": 423,
+  "pendingReviewPeople": 0,
+  "licenseConcernCandidates": 284,
+  "statusCounts": {
+    "no_suitable_source": 214,
+    "download_failed": 203,
+    "published": 87,
+    "rejected": 6,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 345,
+    "image_validation_failed": 128,
+    "network_error": 287,
+    "excluded_context": 17,
+    "source_api_busy": 70,
+    "license_unclear": 80,
+    "identity_ambiguous": 13,
+    "source_api_error": 25,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4
+  },
+  "batchFailureReasons": {
+    "identity_unconfirmed": 49,
+    "excluded_context": 5,
+    "image_validation_failed": 18,
+    "license_unclear": 4,
+    "identity_ambiguous": 1
+  },
+  "manualCropSources": 28,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 10,
+      "metadataCandidates": 58,
+      "identitySupportedMetadata": 9,
+      "openLicenseMetadata": 53,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 5,
+      "errors": {
+        "image_validation_failed": 1,
+        "identity_unconfirmed": 2
+      }
+    },
+    "entity": {
+      "attemptedPeople": 10,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {
+        "identity_unconfirmed": 47,
+        "excluded_context": 5,
+        "image_validation_failed": 17,
+        "license_unclear": 4,
+        "identity_ambiguous": 1
+      }
+    }
+  },
+  "contactSheets": [],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 10,
+    "processedPeople": 10,
+    "workers": 1,
+    "elapsedSeconds": 111.85,
+    "stoppedForBudget": false
+  }
+}

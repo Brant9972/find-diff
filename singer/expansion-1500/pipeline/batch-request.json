@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-source-yield-highres-retry-pr95-12-priority",
+  "requestId": "20261031-eight-priority-new-source-exact-caption-highres",
   "mode": "search",
-  "targetPeople": 12,
+  "targetPeople": 8,
   "plannedPersonIds": [
     "t1500_0007",
     "t1500_0009",
@@ -11,20 +11,16 @@
     "t1500_0099",
     "t1500_0103",
     "t1500_0104",
-    "t1500_0116",
-    "t1500_0125",
-    "t1500_0140",
-    "t1500_0141",
-    "t1500_0142"
+    "t1500_0116"
   ],
-  "retryFailed": true,
+  "retryFailed": false,
   "providers": [
-    "commons",
-    "entity"
+    "entity",
+    "commons"
   ],
   "workers": 2,
   "maxMinutes": 28,
   "personSeconds": 110,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY: prioritize 12 previously selected, unpublished Taiwanese performers, excluding the recently ineffective 20/40/200 batches and the already rejected exact photos. Exercise PR #95 bounded high-resolution Commons original fallback after soft/tiny 1400px preview crops. Do not relax sharpness, identity, source-caption, rights, human five-stage review, or publish to main/Pages. If a person is in cooldown, skip and report; never bypass rejected pixels."
+  "purpose": "DRAFT ONLY; no main or Pages modifications. Target 8 existing selectedNew Taiwan actors/variety performers. Require exact identity-bearing image-adjacent Commons captions and independently verified open-license source before any human 600x720 five-stage review. Exercise bounded same-file high-resolution fallback from PR #95. Do not auto-approve, do not bypass source cooldown or rejected pixels, and never touch creators."
 }

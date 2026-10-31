@@ -15,7 +15,7 @@ class SunYuehSourceScreeningTest(unittest.TestCase):
         plan = json.loads((ROOT / "release-plan-20261028.json").read_text(encoding="utf-8"))
         cls.people = {p["plannedQuestionId"]: p for p in plan["selectedNew"]}
 
-    def test_sunyueh_exact_source_is_licensed_but_not_approved(self):
+    def test_sunyueh_rejected_source_metadata_remains_but_is_not_retried(self):
         person = self.people["t1500_0207"]
         self.assertEqual(person["name"], "孫越")
         self.assertEqual(person["wikidataId"], "Q9041952")
@@ -25,14 +25,12 @@ class SunYuehSourceScreeningTest(unittest.TestCase):
         self.assertEqual(person["qaStatus"], "not_releasable")
         self.assertIn("https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg", person["excludedPhotoSources"])
         self.assertIn("Blurred crop: sharpness below 65", person["reviewReason"])
-        candidates = list(CuratedCommons().search(person, None))
-        self.assertEqual(len(candidates), 1)
-        candidate = candidates[0]
-        self.assertEqual(candidate["filename"], "2011 SKL RunUp Yueh Sun.jpg")
-        self.assertEqual(candidate["artist"], "Rico Shen")
-        self.assertEqual(candidate["license"], "CC BY-SA 4.0")
-        self.assertTrue(candidate["identityEvidence"]["curatedOriginalMetadataOnly"])
-        self.assertFalse(candidate["identityEvidence"]["visualIdentityVerified"])
+        # Historical provenance remains auditable, but the blurred photo
+        # must not be fetched again by the curated source provider.
+        self.assertIn("2011 SKL RunUp Yueh Sun.jpg", person["reviewExactCommonsFiles"])
+        self.assertEqual(person["reviewVerifiedOriginalSources"][0]["artist"], "Rico Shen")
+        self.assertEqual(person["reviewVerifiedOriginalSources"][0]["license"], "CC BY-SA 4.0")
+        self.assertEqual(list(CuratedCommons().search(person, None)), [])
 
     def test_two_bad_sources_remain_excluded(self):
         self.assertIn("https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg",

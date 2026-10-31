@@ -61,13 +61,24 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             self.assertTrue(request['plannedPersonIds'])
             self.assertLessEqual(len(request['plannedPersonIds']), 10)
             if 'curated' not in request['providers']:
-                # Commons-only retries are safe only when every ID has an
-                # explicit exact Commons file, not an open-ended name sweep.
-                self.assertEqual(request['providers'], ['commons'])
-                plan = json.loads((root / 'release-plan-20261028.json').read_text(encoding='utf-8'))
-                selected = {p['plannedQuestionId']: p for p in plan['selectedNew']}
-                self.assertTrue(all(selected[pid].get('reviewExactCommonsFiles')
-                                    for pid in request['plannedPersonIds']))
+                if request['providers'] == ['entity', 'commons']:
+                    # Only a small explicit cohort may retry with the new
+                    # exact-Q5 Wikidata Commons category-sitelink discovery.
+                    # Runtime Q5/name/QID checks and prior photo exclusions
+                    # remain mandatory; this never authorizes publication.
+                    self.assertLessEqual(len(request['plannedPersonIds']), 6)
+                    self.assertIn('exact q5', request['purpose'].casefold())
+                    self.assertIn('commonswiki', request['purpose'].casefold())
+                    self.assertLessEqual(request['maxMinutes'], 20)
+                    self.assertLessEqual(request['personSeconds'], 120)
+                else:
+                    # Commons-only retries require an explicit exact file,
+                    # not an open-ended name sweep.
+                    self.assertEqual(request['providers'], ['commons'])
+                    plan = json.loads((root / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+                    selected = {p['plannedQuestionId']: p for p in plan['selectedNew']}
+                    self.assertTrue(all(selected[pid].get('reviewExactCommonsFiles')
+                                        for pid in request['plannedPersonIds']))
             self.assertNotIn('openverse', request['providers'])
             self.assertIn('exact', request['purpose'].casefold())
         self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))

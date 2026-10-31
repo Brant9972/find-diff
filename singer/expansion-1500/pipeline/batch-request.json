@@ -1,16 +1,26 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-render-retained-source-only-review",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261101-priority-A-eight-new-identity-first-diagnostic",
+  "mode": "collect",
+  "targetPeople": 8,
+  "plannedPersonIds": [
+    "t1500_0009",
+    "t1500_0016",
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094",
+    "t1500_0096",
+    "t1500_0103",
+    "t1500_0104"
+  ],
+  "retryFailed": true,
   "providers": [
+    "entity",
     "commons"
   ],
-  "workers": 3,
-  "maxMinutes": 12,
-  "personSeconds": 65,
+  "workers": 2,
+  "maxMinutes": 25,
+  "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY: export all currently retained manual_crop_required source pixels (up to the existing 60-source safety cap), excluding exact human-rejected Commons files. No provider search, no redownload, no automatic photo approval, no main or Pages changes, no production or creators changes. This is to review the existing ~39 original sources rather than repeating low-yield 10/20/40/200-person searches. Independently verify each source caption, person identity, author, derivative rights and visual five-stage suitability before any separate release PR."
+  "purpose": "DRAFT ONLY. New targeted priority-A eight-person diagnostic; excludes previously misidentified Wang Tong and rejected A-Xiang. First exact Wikidata Q5/native-name/P18 then Commons Chinese caption, no Openverse network-error loop. Keep source/caption/author/CC metadata and 600x720 crop/five-stage assets for independent human review; no auto-approval, no main/Pages/creators modifications. This is not a rerun of earlier 8/10/20/40/200 batches."
 }

@@ -766,7 +766,7 @@ class EntityPortraits:
             raise SourceError('identity_not_found', 'No Wikidata entity candidates for the exact person name')
         data = http.json(self.wikidata_api, action='wbgetentities', format='json',
                          ids='|'.join(ids), props='labels|aliases|claims|sitelinks',
-                         languages='en|zh|zh-hant|zh-hans|zh-tw|zh-cn', sitefilter='zhwiki|enwiki')
+                         languages='en|zh|zh-hant|zh-hans|zh-tw|zh-cn', sitefilter='zhwiki|enwiki|commonswiki')
         eligible = []
         for qid in ids:
             entity = data.get('entities', {}).get(qid, {})
@@ -825,10 +825,20 @@ class EntityPortraits:
             for value in commons_categories
             if isinstance(value, str) and re.fullmatch(r'[^|#\r\n]{2,120}', value.strip())
         ), '')
+        category_evidence = 'Wikidata P373 on exact-name Q5 entity' if commons_category else None
+        # Many verified Q5 performers have a Commons category sitelink but no
+        # P373 statement. The sitelink belongs to this *same* resolved QID;
+        # never guess a category from a search result or an unverified alias.
+        if not commons_category:
+            sitelink = entity.get('sitelinks', {}).get('commonswiki', {}).get('title')
+            if (isinstance(sitelink, str) and
+                    re.fullmatch(r'Category:[^|#\r\n]{2,120}', sitelink)):
+                commons_category = sitelink[len('Category:'):].strip()
+                category_evidence = 'Wikidata commonswiki sitelink on exact-name Q5 entity'
         evidence = {'wikidataId': qid, 'mappingSource': 'https://www.wikidata.org/wiki/' + qid,
                     'exactChineseAliases': matched, 'verifiedSearchAliases': aliases,
                     'commonsCategory': commons_category,
-                    'commonsCategoryEvidence': 'Wikidata P373 on exact-name Q5 entity' if commons_category else None,
+                    'commonsCategoryEvidence': category_evidence,
                     'entityTypeEvidence': 'P31=Q5', 'retrievedAt': now(),
                     'visualIdentityVerified': False,
                     'identityWarning': 'Entity names only establish search aliases. Verify the pictured person and caption.'}

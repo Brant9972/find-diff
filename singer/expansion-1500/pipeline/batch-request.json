@@ -2,19 +2,8 @@
   "schemaVersion": 1,
   "requestId": "20261101-render-retained-source-only-review",
   "mode": "render_only",
-  "targetPeople": 10,
-  "plannedPersonIds": [
-    "t1500_0002",
-    "t1500_0004",
-    "t1500_0006",
-    "t1500_0029",
-    "t1500_0106",
-    "t1500_0118",
-    "t1500_0121",
-    "t1500_0125",
-    "t1500_0144",
-    "t1500_0179"
-  ],
+  "targetPeople": 0,
+  "plannedPersonIds": [],
   "retryFailed": false,
   "providers": [
     "commons"
@@ -23,5 +12,5 @@
   "maxMinutes": 12,
   "personSeconds": 65,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY: export all currently retained manual_crop_required source pixels (up to the existing 60-source safety cap), excluding exact human-rejected Commons files. No provider search, no redownload, no automatic photo approval, no changes to production, main, Pages or creators. This is to review the existing ~39 original sources rather than repeating low-yield 10/20/40/200-person searches. Independently verify each source caption, person identity, author, derivative rights and visual five-stage suitability before any separate release PR."
+  "purpose": "DRAFT ONLY: export all currently retained manual_crop_required source pixels (up to the existing 60-source safety cap), excluding exact human-rejected Commons files. No provider search, no redownload, no automatic photo approval, no main or Pages changes, no production or creators changes. This is to review the existing ~39 original sources rather than repeating low-yield 10/20/40/200-person searches. Independently verify each source caption, person identity, author, derivative rights and visual five-stage suitability before any separate release PR."
 }

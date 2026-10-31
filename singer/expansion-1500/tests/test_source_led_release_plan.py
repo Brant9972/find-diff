@@ -152,6 +152,12 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertFalse(verified_curated_p18_manual_source(
             {**person, 'wikidataId': None}, item, evidence))
         self.assertFalse(person['imageVerification']['finalCropReviewed'])
+        self.assertIn('https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg',
+                      person['excludedPhotoSources'])
+        self.assertIn('https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_02.jpg',
+                      person['excludedPhotoSources'])
+        self.assertNotIn('https://commons.wikimedia.org/wiki/File:2023_TTXC高雄電影節-陳明章.jpg',
+                         person['excludedPhotoSources'])
 
 
     def test_dayuan_and_huanghongxuan_exact_leads_stay_draft_only(self):

@@ -145,18 +145,33 @@ def rejection_keys(root, ref=None):
     return keys
 
 
-def apply_rejections(state, rejected):
-    """Apply newly received legacy rejections, preserving explicit approvals and live people."""
+def apply_rejections(state, rejected, excluded_by_person=None):
+    """Reconcile global and person-specific source rejections before review export.
+
+    A new human-rejected file in the release plan must invalidate any stale
+    pending_review crop in state. Never ban that file for a different person.
+    Keep the candidate and evidence; only its review status changes.
+    """
+    excluded_by_person = excluded_by_person or {}
     for row in state['people'].values():
         if row['status'] in {'approved', 'published'}:
             continue
+        personal = {source_key(url) for url in excluded_by_person.get(row['personId'], []) if url}
         for candidate in row['candidates']:
-            if candidate.get('status') != 'approved' and source_key(candidate.get('source')) in rejected:
-                candidate['status'] = 'rejected'
-                warning = 'Source rejected by existing review records'
-                if warning not in candidate.setdefault('warnings', []):
-                    candidate['warnings'].append(warning)
-        if row['status'] in {'pending_review', 'candidate_ready'} and not any(c.get('status') in {'pending_review', 'pending_evidence', 'legacy_requires_review'} for c in row['candidates']):
+            key = source_key(candidate.get('source'))
+            if candidate.get('status') == 'approved' or key not in rejected and key not in personal:
+                continue
+            candidate['status'] = 'rejected'
+            candidate['eligibleForLive'] = False
+            warning = ('Source rejected for this person in release plan' if key in personal
+                       else 'Source rejected by existing review records')
+            if warning not in candidate.setdefault('warnings', []):
+                candidate['warnings'].append(warning)
+        row['lastRunNewCandidateIds'] = [cid for cid in row.get('lastRunNewCandidateIds', [])
+            if any(c['id'] == cid and c.get('status') == 'pending_review' for c in row['candidates'])]
+        if row['status'] in {'pending_review', 'candidate_ready'} and not any(
+                c.get('status') in {'pending_review', 'pending_evidence', 'legacy_requires_review'}
+                for c in row['candidates']):
             row['status'], row['nextRetryAt'] = 'rejected', None
 
 

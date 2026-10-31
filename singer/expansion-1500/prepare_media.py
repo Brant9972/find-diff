@@ -270,7 +270,9 @@ def main(argv=None):
         if (args.review_round or args.evidence_only) and not handoff:parser.error('No fixed ChatGPT handoff')
         rejected=rejection_keys(root,args.live_ref)
         rejected.update(source_key(c.get('source')) for r in state['people'].values() for c in r['candidates'] if c.get('status')=='rejected' and c.get('source'))
-        apply_rejections(state,rejected);recover_checkpoints(directory,state)
+        apply_rejections(state, rejected, {pid: person.get('excludedPhotoSources', [])
+                                          for pid, person in people.items()})
+        recover_checkpoints(directory,state)
         if args.import_review:
             from media_pipeline.review import import_decisions
             import_decisions(root,directory,state,read(args.import_review))

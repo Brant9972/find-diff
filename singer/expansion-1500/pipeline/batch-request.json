@@ -1,17 +1,26 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-retained-source-visual-triage-no-new-search",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
+  "requestId": "20261031-qid-identity-eight-different-source-targets",
+  "mode": "search",
+  "targetPeople": 8,
+  "plannedPersonIds": [
+    "t1500_0007",
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094",
+    "t1500_0107",
+    "t1500_0112",
+    "t1500_0114",
+    "t1500_0181"
+  ],
   "retryFailed": false,
   "providers": [
     "entity",
     "commons"
   ],
-  "workers": 1,
-  "maxMinutes": 15,
-  "personSeconds": 90,
+  "workers": 2,
+  "maxMinutes": 28,
+  "personSeconds": 110,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. Rebuild contact sheets from already retained source pixels (39 cached manual-source images) and the pending Chen Shiang-chyi five-stage crop, without repeating low-yield 8/20/40/200-person API searches. Human triage must check identity, source-adjacent caption, author, crop-permitting rights and usable 600x720 five-stage reveal. No main or Pages modifications. Never approve or publish automatically; preserve creators and archived YouTuber data."
+  "purpose": "DRAFT ONLY; no main or Pages modifications. Target 8 existing selectedNew with known Wikidata identity or exact Commons leads, not the previous failed 8/20/40/200-person cohort. Recheck pinned Q9066373 Wang Tong homonym guard and preserve curated excludedCaptionNames from PR #100; skip rejected file pages and respect source cooldown. Require source-adjacent identity, crop-permitting verified rights, 600x720 five-stage human visual review before any separate release PR. Never touch creators or auto-approve."
 }

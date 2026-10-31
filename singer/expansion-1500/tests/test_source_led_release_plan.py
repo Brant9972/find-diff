@@ -45,11 +45,15 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         request = json.loads((root / 'pipeline' / 'batch-request.json')
                              .read_text(encoding='utf-8'))
+        # Do not freeze a historical source batch's provider selection:
+        # entity-led QID diagnostics and curated Commons recovery are both
+        # allowed, while arbitrary/unsafe providers remain forbidden.
+        self.assertIn(request['providers'], (
+            ['curated', 'commons'], ['entity', 'commons'],
+            ['commons'], ['curated'],
+        ))
         if request.get('requestId') == '20261031-sodagreen-alternative-photo-search-2':
-            self.assertEqual(request['providers'], ['entity', 'commons'])
             self.assertEqual(request['plannedPersonIds'], ['t1500_0112', 't1500_0114'])
-        else:
-            self.assertEqual(request['providers'], ['curated', 'commons'])
         self.assertFalse(request['retryFailed'])
         self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))
         ids = request['plannedPersonIds']

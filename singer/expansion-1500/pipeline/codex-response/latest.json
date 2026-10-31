@@ -2,33 +2,33 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261031T082257Z-768d2fc6",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T082257Z-768d2fc6/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/assets-index.json",
+  "runId": "20261031T095256Z-c4f97240",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T095256Z-c4f97240/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261031T095256Z-c4f97240/assets-index.json",
   "summary": {
-    "runId": "20261031T082257Z-768d2fc6",
-    "generatedAt": "2026-10-31T08:23:02.474720+00:00",
-    "scannedPeople": 1,
+    "runId": "20261031T095256Z-c4f97240",
+    "generatedAt": "2026-10-31T09:53:05.405021+00:00",
+    "scannedPeople": 2,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 1,
+    "scannedWithoutCandidates": 2,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 300,
     "statusCounts": {
-      "no_suitable_source": 232,
-      "download_failed": 179,
+      "no_suitable_source": 233,
+      "download_failed": 178,
       "published": 93,
       "pending_review": 1,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 274,
+      "identity_unconfirmed": 271,
       "image_validation_failed": 103,
-      "network_error": 260,
+      "network_error": 259,
       "source_api_busy": 70,
-      "license_unclear": 73,
+      "license_unclear": 69,
       "source_api_error": 20,
       "identity_ambiguous": 8,
       "excluded_context": 16,
@@ -38,29 +38,20 @@
       "http_404": 2
     },
     "batchFailureReasons": {
-      "identity_unconfirmed": 2
+      "image_validation_failed": 2
     },
-    "manualCropSources": 37,
+    "manualCropSources": 39,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 1,
+        "attemptedPeople": 2,
         "metadataCandidates": 2,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
+        "identitySupportedMetadata": 2,
+        "openLicenseMetadata": 2,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
+        "savedForManualCrop": 2,
         "errors": {
-          "identity_unconfirmed": 2
+          "image_validation_failed": 2
         }
-      },
-      "curated": {
-        "attemptedPeople": 1,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {}
       }
     },
     "contactSheets": [
@@ -69,12 +60,12 @@
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 1,
-      "processedPeople": 1,
+      "targetPeople": 2,
+      "processedPeople": 2,
       "workers": 1,
-      "elapsedSeconds": 4.2,
+      "elapsedSeconds": 7.68,
       "stoppedForBudget": false,
-      "requestedPeople": 1,
+      "requestedPeople": 2,
       "skippedRequested": [],
       "unprocessedSelected": []
     }
@@ -82,286 +73,136 @@
   "visualPeople": 1,
   "visualPhotos": 1,
   "batchPeople": [
-    "t1500_0312"
+    "t1500_0154",
+    "t1500_0123"
   ],
-  "reviewPublicationPending": false,
+  "reviewPublicationPending": true,
   "items": [
     {
-      "personId": "t1500_0312",
-      "name": "劉修甫",
+      "personId": "t1500_0154",
+      "name": "李炳輝",
       "status": "no_suitable_source",
       "newCandidateIds": [],
       "errors": [
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+            "filename": "Lee Ping-Huei & Wu Bai 20101127.jpg",
+            "artist": "音樂雯",
+            "credit": "https://www.flickr.com/photos/musicwen/5248544442",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "​李炳輝（左）與伍佰（右）出席滾石唱片30周年演唱會。",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "query": "李炳輝",
+              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+              "curatedExactFileHint": true,
+              "captionAliasMatches": [
+                "李炳輝"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
+              "representativeWorks": [
+                "流浪到淡水"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-31T09:52:58.812532+00:00",
+            "width": 1664,
+            "height": 2496,
+            "id": "04a8c0e46e6a1e3760c5",
+            "personId": "t1500_0154",
+            "discoveryRunId": "20261031T095256Z-c4f97240",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0154/04a8c0e46e6a1e3760c5/dbeed3a25915/original.bin",
+            "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        }
+      ]
+    },
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "downloadVariant": "wikimedia_thumbnail_1400",
+            "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+            "filename": "2013 臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會 Premiere of \"Beyond Beauty - TAIWAN FROM ABOVE\" in the Liberty Square, Taipei, TAIWAN.jpg",
+            "artist": "othree",
+            "credit": "https://www.flickr.com/photos/12452841@N00/10648196583/",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "2013/10/30 - 齊柏林執導紀錄片「看見台灣」在臺北自由廣場前",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "query": "林慶台",
+              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+              "curatedExactFileHint": true,
+              "captionAliasMatches": [
+                "林慶台"
+              ],
+              "visualIdentityVerified": false
+            },
+            "recognitionEvidence": {
+              "requestedReplacement": "",
+              "representativeWorks": [
+                "賽德克・巴萊"
+              ],
+              "note": "Familiar appearance must be reviewed"
+            },
+            "searchTime": "2026-10-31T09:53:02.041444+00:00",
+            "width": 4608,
+            "height": 3072,
+            "id": "3884cbc89afe5de79a7e",
+            "personId": "t1500_0123",
+            "discoveryRunId": "20261031T095256Z-c4f97240",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0123/3884cbc89afe5de79a7e/fd1b97c510e8/original.bin",
+            "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
         }
       ]
     }
-  ],
-  "visualAssetCommit": "aef44ee42968dbc96f64bcec0e2e35ca2b004ca9",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/assets-index.json",
-    "contactSheets": [
-      {
-        "bytes": 23876,
-        "entries": [
-          {
-            "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
-            "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
-            "personId": "t1500_0171",
-            "tile": 1
-          }
-        ],
-        "height": 315,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/contact-sheet-01.jpg",
-        "sha256": "b7951eb3d80a6dc7e8613e7aceedbc2e73651a142bc83bd9532c7fb4789c30f0",
-        "width": 960,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/contact-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/contact-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/contact-sheet-01.jpg?raw=true"
-      }
-    ],
-    "manualContactSheets": [],
-    "manualSourceCount": 0,
-    "manualSourcePeopleCount": 0,
-    "manualSources": [],
-    "peopleCount": 1,
-    "photoCount": 1,
-    "photos": [
-      {
-        "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
-        "candidateImage": {
-          "bytes": 98321,
-          "displayHeight": 720,
-          "displayWidth": 600,
-          "height": 720,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/candidate.jpg",
-          "sha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
-          "width": 600,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/candidate.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/candidate.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/candidate.jpg?raw=true"
-        },
-        "eligibleForLive": false,
-        "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
-        "metadata": {
-          "author": "CNA Taiwan - 中央社",
-          "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
-          "credit": "陳建斌陳湘琪 金馬稱王封后",
-          "evidenceSupplement": {},
-          "externalSourceLinks": [],
-          "humanIdentityVerifiedByExporter": false,
-          "humanRightsVerifiedByExporter": false,
-          "identityEvidence": {
-            "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
-            "articleLookup": "exact title with redirects; not a search result",
-            "articleTitle": "陳湘琪",
-            "captionAliasMatches": [
-              "陳湘琪",
-              "Chen Shiang-chyi"
-            ],
-            "curatedExactFileHint": true,
-            "entityTypeEvidence": "P31=Q5",
-            "exactChineseAliases": [
-              "陳湘琪"
-            ],
-            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-            "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
-            "matchedAliases": [
-              "陳湘琪",
-              "Chen Shiang-chyi"
-            ],
-            "query": "陳湘琪",
-            "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
-            "verifiedSearchAliases": [
-              "陳湘琪",
-              "Chen Shiang-chyi",
-              "Chén Xiāngqí"
-            ],
-            "visualIdentityVerified": false,
-            "wikidataId": "Q5090886"
-          },
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "originalDimensionsFromMetadata": [
-            null,
-            null
-          ],
-          "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "parentCandidateId": "11cfabb73b01aa6bd121",
-          "parentGameSha256": null,
-          "recognitionEvidence": {
-            "note": "Familiar appearance must be reviewed",
-            "representativeWorks": [
-              "迴光奏鳴曲"
-            ],
-            "requestedReplacement": ""
-          },
-          "reviewerRequest": null,
-          "rightsStatus": "open_license_metadata",
-          "sourceAlignmentEvidence": null,
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
-          "warnings": [
-            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
-          ]
-        },
-        "name": "陳湘琪",
-        "personId": "t1500_0171",
-        "reveal": {
-          "chin": [
-            0.08,
-            0.27,
-            0.92,
-            0.63
-          ],
-          "eyes": [
-            0.08,
-            0.27,
-            0.92,
-            0.37
-          ],
-          "full": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "mouth": [
-            0.08,
-            0.27,
-            0.92,
-            0.55
-          ],
-          "nose": [
-            0.08,
-            0.27,
-            0.92,
-            0.44
-          ]
-        },
-        "reviewStatus": "pending_review",
-        "sourceImage": {
-          "bytes": 291361,
-          "displayHeight": 1758,
-          "displayWidth": 1920,
-          "height": 1758,
-          "mimeType": "image/jpeg",
-          "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/source.jpg",
-          "sha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
-          "width": 1920,
-          "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/source.jpg",
-          "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/source.jpg",
-          "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/source.jpg?raw=true"
-        },
-        "stageImages": {
-          "chin": {
-            "bytes": 132496,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/chin.png",
-            "sha256": "4d18f84710f4dd46e6b511ff9049e8e93d2001a6927d31153ced15d2f024fd86",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/chin.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/chin.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/chin.png?raw=true"
-          },
-          "eyes": {
-            "bytes": 43385,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/eyes.png",
-            "sha256": "d78172a74954b0119c5dc9b8385643986706c885c73d2b19b87d20e16be0bb07",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/eyes.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/eyes.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/eyes.png?raw=true"
-          },
-          "full": {
-            "bytes": 380325,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/full.png",
-            "sha256": "87dee7c2af2794bdbd7c74d1e456d6ab95d04a48e5d6e3cca11481bf678b8e5d",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/full.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/full.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/full.png?raw=true"
-          },
-          "mouth": {
-            "bytes": 106119,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/mouth.png",
-            "sha256": "d31c71326bebe0adf05d46d2c60e4e326e4d2a992620708e4d97eebaa522b776",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/mouth.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/mouth.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/mouth.png?raw=true"
-          },
-          "nose": {
-            "bytes": 63794,
-            "height": 720,
-            "mimeType": "image/png",
-            "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/nose.png",
-            "sha256": "c3863413a2ab94c4111c1c2d7cae4b8248db4c1011144234c421b4b60c786bde",
-            "width": 600,
-            "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/nose.png",
-            "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/nose.png",
-            "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/photo-0001/nose.png?raw=true"
-          }
-        }
-      }
-    ],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [
-      {
-        "bytes": 34171,
-        "entries": [
-          {
-            "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
-            "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
-            "personId": "t1500_0171",
-            "row": 1
-          }
-        ],
-        "height": 280,
-        "mimeType": "image/jpeg",
-        "path": "expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/reveal-sheet-01.jpg",
-        "sha256": "b66e6f0725e0110d917f7e67ccb165fed9899853a9bd891fd9d97ce389bb09fc",
-        "width": 1000,
-        "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/reveal-sheet-01.jpg",
-        "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/reveal-sheet-01.jpg",
-        "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/reveal-sheet-01.jpg?raw=true"
-      }
-    ],
-    "runId": "20261031T082257Z-768d2fc6",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "aef44ee42968dbc96f64bcec0e2e35ca2b004ca9",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/aef44ee42968dbc96f64bcec0e2e35ca2b004ca9/singer/expansion-1500/pipeline/review-assets/20261031T082257Z-768d2fc6/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  ]
 }

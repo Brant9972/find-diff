@@ -29700,8 +29700,8 @@
       "candidateId": "c1500-0123",
       "name": "林慶台",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T21:34:53.105174+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T17:53:04.765686+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -29926,6 +29926,54 @@
           "originalPath": "expansion-1500/pipeline/assets/t1500_0123/d5e1b75b4539fc4f5eb3/cc70a2ca6bdd/original.bin",
           "originalSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
           "cropFailure": "Multiple prominent faces",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+          "filename": "2013 臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會 Premiere of \"Beyond Beauty - TAIWAN FROM ABOVE\" in the Liberty Square, Taipei, TAIWAN.jpg",
+          "artist": "othree",
+          "credit": "https://www.flickr.com/photos/12452841@N00/10648196583/",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "caption": "2013/10/30 - 齊柏林執導紀錄片「看見台灣」在臺北自由廣場前",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "林慶台",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "林慶台"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "賽德克・巴萊"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T09:53:02.041444+00:00",
+          "width": 4608,
+          "height": 3072,
+          "id": "3884cbc89afe5de79a7e",
+          "personId": "t1500_0123",
+          "discoveryRunId": "20261031T095256Z-c4f97240",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0123/3884cbc89afe5de79a7e/fd1b97c510e8/original.bin",
+          "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
+          "cropFailure": "Face is too small",
           "gamePath": null
         }
       ],
@@ -30218,6 +30266,73 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-31T09:53:01.787969+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T09:53:04.765647+00:00"
+        },
+        {
+          "time": "2026-10-31T09:53:04.765671+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+                "filename": "2013 臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會 Premiere of \"Beyond Beauty - TAIWAN FROM ABOVE\" in the Liberty Square, Taipei, TAIWAN.jpg",
+                "artist": "othree",
+                "credit": "https://www.flickr.com/photos/12452841@N00/10648196583/",
+                "license": "CC BY 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "caption": "2013/10/30 - 齊柏林執導紀錄片「看見台灣」在臺北自由廣場前",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "林慶台",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "林慶台"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "賽德克・巴萊"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T09:53:02.041444+00:00",
+                "width": 4608,
+                "height": 3072,
+                "id": "3884cbc89afe5de79a7e",
+                "personId": "t1500_0123",
+                "discoveryRunId": "20261031T095256Z-c4f97240",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0123/3884cbc89afe5de79a7e/fd1b97c510e8/original.bin",
+                "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
+                "cropFailure": "Face is too small",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -30236,71 +30351,50 @@
         "eligibleForLive": false,
         "error": "Multiple prominent faces"
       },
-      "lastRunId": "20261029T173405Z-6424ac1b",
+      "lastRunId": "20261031T095256Z-c4f97240",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T17:34:30.471733+00:00",
+      "lastAttemptAt": "2026-10-31T09:53:01.705888+00:00",
       "lastErrors": [
         {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Nolay_Piho.jpg/1920px-Nolay_Piho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Nolay_Piho.jpg/1920px-Nolay_Piho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Nolay_Piho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
-            "filename": "Nolay Piho.jpg",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square%2C_Taipei%2C_TAIWAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "P1340",
-            "credit": "Own work",
-            "license": "CC BY-SA 3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-            "caption": "​林慶台參與2014年新北市元旦升旗活動",
+            "source": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+            "filename": "2013 臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會 Premiere of \"Beyond Beauty - TAIWAN FROM ABOVE\" in the Liberty Square, Taipei, TAIWAN.jpg",
+            "artist": "othree",
+            "credit": "https://www.flickr.com/photos/12452841@N00/10648196583/",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "caption": "2013/10/30 - 齊柏林執導紀錄片「看見台灣」在臺北自由廣場前",
+            "licenseReviewStatus": "not_checked",
             "identityEvidence": {
-              "wikidataId": "Q7224941",
-              "mappingSource": "https://www.wikidata.org/wiki/Q7224941",
-              "exactChineseAliases": [
+              "query": "林慶台",
+              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+              "curatedExactFileHint": true,
+              "captionAliasMatches": [
                 "林慶台"
               ],
-              "verifiedSearchAliases": [
-                "林慶台",
-                "Nolay Piho",
-                "Lin Ching-Tai",
-                "Lim Kheng-Tai"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T17:34:30.969310+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%85%B6%E5%8F%B0",
-              "articleTitle": "林慶台",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Nolay Piho",
-              "matchedAliases": [
-                "林慶台",
-                "Nolay Piho"
-              ],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": [
-                "林慶台",
-                "Nolay Piho"
-              ]
+              "visualIdentityVerified": false
             },
             "recognitionEvidence": {
+              "requestedReplacement": "",
               "representativeWorks": [
                 "賽德克・巴萊"
               ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
+              "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-29T17:34:31.161894+00:00",
-            "width": 3240,
-            "height": 4320,
-            "id": "d5e1b75b4539fc4f5eb3",
+            "searchTime": "2026-10-31T09:53:02.041444+00:00",
+            "width": 4608,
+            "height": 3072,
+            "id": "3884cbc89afe5de79a7e",
             "personId": "t1500_0123",
-            "discoveryRunId": "20261029T173405Z-6424ac1b",
+            "discoveryRunId": "20261031T095256Z-c4f97240",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -30309,13 +30403,13 @@
               "Identity, iconic appearance, eyes/occlusion and watermark require human review",
               "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
             ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0123/d5e1b75b4539fc4f5eb3/cc70a2ca6bdd/original.bin",
-            "originalSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
-            "cropFailure": "Multiple prominent faces",
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0123/3884cbc89afe5de79a7e/fd1b97c510e8/original.bin",
+            "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
+            "cropFailure": "Face is too small",
             "gamePath": null
           },
           "code": "image_validation_failed",
-          "message": "Multiple prominent faces"
+          "message": "Face is too small"
         }
       ],
       "lastFailure": {
@@ -30323,8 +30417,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-29T17:34:53.105185+00:00",
-      "workerFinishedAt": "2026-10-29T17:34:53.106994+00:00"
+      "updatedAt": "2026-10-31T09:53:04.765698+00:00",
+      "workerFinishedAt": "2026-10-31T09:53:04.767845+00:00"
     },
     "t1500_0164": {
       "personId": "t1500_0164",
@@ -79537,9 +79631,9 @@
       "personId": "t1500_0154",
       "candidateId": "c1500-0154",
       "name": "李炳輝",
-      "status": "download_failed",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-29T16:19:45.593844+00:00",
+      "status": "no_suitable_source",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T17:53:01.569982+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -80381,6 +80475,54 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+          "filename": "Lee Ping-Huei & Wu Bai 20101127.jpg",
+          "artist": "音樂雯",
+          "credit": "https://www.flickr.com/photos/musicwen/5248544442",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "caption": "​李炳輝（左）與伍佰（右）出席滾石唱片30周年演唱會。",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "李炳輝",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "李炳輝"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
+            "representativeWorks": [
+              "流浪到淡水"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T09:52:58.812532+00:00",
+          "width": 1664,
+          "height": 2496,
+          "id": "04a8c0e46e6a1e3760c5",
+          "personId": "t1500_0154",
+          "discoveryRunId": "20261031T095256Z-c4f97240",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0154/04a8c0e46e6a1e3760c5/dbeed3a25915/original.bin",
+          "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
+          "cropFailure": "Face is too small",
+          "gamePath": null
         }
       ],
       "history": [
@@ -80663,6 +80805,73 @@
             }
           ],
           "candidatesTried": 8
+        },
+        {
+          "time": "2026-10-31T09:52:58.535287+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T09:53:01.569936+00:00"
+        },
+        {
+          "time": "2026-10-31T09:53:01.569962+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+                "filename": "Lee Ping-Huei & Wu Bai 20101127.jpg",
+                "artist": "音樂雯",
+                "credit": "https://www.flickr.com/photos/musicwen/5248544442",
+                "license": "CC BY-SA 2.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "caption": "​李炳輝（左）與伍佰（右）出席滾石唱片30周年演唱會。",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "李炳輝",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "李炳輝"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
+                  "representativeWorks": [
+                    "流浪到淡水"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T09:52:58.812532+00:00",
+                "width": 1664,
+                "height": 2496,
+                "id": "04a8c0e46e6a1e3760c5",
+                "personId": "t1500_0154",
+                "discoveryRunId": "20261031T095256Z-c4f97240",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0154/04a8c0e46e6a1e3760c5/dbeed3a25915/original.bin",
+                "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
+                "cropFailure": "Face is too small",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -80682,131 +80891,73 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261031T095256Z-c4f97240",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:19:34.508639+00:00",
+      "lastAttemptAt": "2026-10-31T09:52:58.435668+00:00",
       "lastErrors": [
         {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:President-Lee_Teng-hui-large_(cropped).png",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/President-Lee_Teng-hui-large_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
           "candidateMetadata": {
             "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/President-Lee_Teng-hui-large_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/President-Lee_Teng-hui-large_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:President-Lee_Teng-hui-large_(cropped).png",
-            "filename": "President-Lee Teng-hui-large (cropped).png",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "中華民國總統府(國史館提供)",
-            "credit": "https://www.president.gov.tw/images/president/presiden4a.png",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​李登輝總統",
+            "source": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+            "filename": "Lee Ping-Huei & Wu Bai 20101127.jpg",
+            "artist": "音樂雯",
+            "credit": "https://www.flickr.com/photos/musicwen/5248544442",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "caption": "​李炳輝（左）與伍佰（右）出席滾石唱片30周年演唱會。",
+            "licenseReviewStatus": "not_checked",
             "identityEvidence": {
-              "wikidataId": "Q315528",
-              "mappingSource": "https://www.wikidata.org/wiki/Q315528",
-              "exactChineseAliases": [
-                "阿輝伯"
+              "query": "李炳輝",
+              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+              "curatedExactFileHint": true,
+              "captionAliasMatches": [
+                "李炳輝"
               ],
-              "verifiedSearchAliases": [
-                "李炳輝",
-                "阿輝伯",
-                "Lee Teng-hui",
-                "Li Denghui",
-                "Masao Iwasato"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-29T12:19:35.240836+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%99%BB%E8%BC%9D",
-              "articleTitle": "李登輝",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "Lee Teng-hui",
-              "matchedAliases": [
-                "Lee Teng-hui"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": []
+              "visualIdentityVerified": false
             },
             "recognitionEvidence": {
+              "requestedReplacement": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
               "representativeWorks": [
                 "流浪到淡水"
               ],
-              "requestedReplacement": "SOURCE CAPTION IDENTITY MISMATCH: Commons File:Lee_Teng-hui_official_portrait.png depicts former Taiwan president 李登輝, not singer 李炳輝. Reject false English name match and require exact person-level source caption.",
-              "note": "Familiar appearance has not been visually reviewed"
+              "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-29T12:19:36.671833+00:00",
-            "width": 500,
-            "height": 699,
-            "id": "483ce9418fc0edec2417",
+            "searchTime": "2026-10-31T09:52:58.812532+00:00",
+            "width": 1664,
+            "height": 2496,
+            "id": "04a8c0e46e6a1e3760c5",
             "personId": "t1500_0154",
+            "discoveryRunId": "20261031T095256Z-c4f97240",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0154/04a8c0e46e6a1e3760c5/dbeed3a25915/original.bin",
+            "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
+            "cropFailure": "Face is too small",
+            "gamePath": null
           },
           "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_2004-cropped.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_2004_(cropped).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_(president_5).jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_younger.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Lee_Teng-chin.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%89%8D%E7%B8%BD%E7%B5%B1%E6%9D%8E%E7%99%BB%E8%BC%9D_(cropped).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:1947%E5%B9%B4%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8%E8%BE%B2%E7%B6%93%E7%B3%BB%E5%9B%9B%E5%B9%B4%E7%B4%9A%E7%9A%84%E6%9D%8E%E7%99%BB%E8%BC%9D.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
+          "message": "Face is too small"
         }
       ],
-      "updatedAt": "2026-10-29T12:19:45.593854+00:00",
-      "workerFinishedAt": "2026-10-29T12:19:45.594713+00:00",
+      "updatedAt": "2026-10-31T09:53:01.569994+00:00",
+      "workerFinishedAt": "2026-10-31T09:53:01.571979+00:00",
       "chatgptReviews": {
         "41a73831bde794f1179d": {
           "personId": "t1500_0154",

@@ -1,30 +1,30 @@
 {
-  "runId": "20261031T082257Z-768d2fc6",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T082257Z-768d2fc6/review-index.json",
+  "runId": "20261031T095256Z-c4f97240",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T095256Z-c4f97240/review-index.json",
   "summary": {
-    "runId": "20261031T082257Z-768d2fc6",
-    "generatedAt": "2026-10-31T08:23:02.474720+00:00",
-    "scannedPeople": 1,
+    "runId": "20261031T095256Z-c4f97240",
+    "generatedAt": "2026-10-31T09:53:05.405021+00:00",
+    "scannedPeople": 2,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 1,
+    "scannedWithoutCandidates": 2,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 300,
     "statusCounts": {
-      "no_suitable_source": 232,
-      "download_failed": 179,
+      "no_suitable_source": 233,
+      "download_failed": 178,
       "published": 93,
       "pending_review": 1,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 274,
+      "identity_unconfirmed": 271,
       "image_validation_failed": 103,
-      "network_error": 260,
+      "network_error": 259,
       "source_api_busy": 70,
-      "license_unclear": 73,
+      "license_unclear": 69,
       "source_api_error": 20,
       "identity_ambiguous": 8,
       "excluded_context": 16,
@@ -34,29 +34,20 @@
       "http_404": 2
     },
     "batchFailureReasons": {
-      "identity_unconfirmed": 2
+      "image_validation_failed": 2
     },
-    "manualCropSources": 37,
+    "manualCropSources": 39,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 1,
+        "attemptedPeople": 2,
         "metadataCandidates": 2,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
+        "identitySupportedMetadata": 2,
+        "openLicenseMetadata": 2,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
+        "savedForManualCrop": 2,
         "errors": {
-          "identity_unconfirmed": 2
+          "image_validation_failed": 2
         }
-      },
-      "curated": {
-        "attemptedPeople": 1,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {}
       }
     },
     "contactSheets": [

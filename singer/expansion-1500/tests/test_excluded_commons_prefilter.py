@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import CommonsSearch, CuratedCommons, excluded_commons_keys
+from media_pipeline.sources import CommonsSearch, CuratedCommons, EntityPortraits, excluded_commons_keys
 
 
 class FakeCommons:
@@ -59,6 +59,18 @@ class RejectedSourcePreFilterTest(unittest.TestCase):
         self.assertFalse(any('titles' in p for p in api.calls))
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]['filename'], 'New_Wang_Portrait.jpg')
+
+    def test_entity_p18_skips_rejected_source_before_imageinfo(self):
+        api = FakeCommons()
+        with patch.object(EntityPortraits, '_resolve', return_value=(
+                ['王耀慶'], '王耀慶', {'wikidataId': 'Q9315976'},
+                ['王耀慶@2011.jpg', 'New Wang Portrait.jpg'])):
+            rows = list(EntityPortraits(allow_openverse=False).search(
+                self.person, api))
+        exact = [p['titles'] for p in api.calls if p.get('titles')]
+        self.assertEqual(exact, ['File:New Wang Portrait.jpg'])
+        self.assertEqual([r['filename'] for r in rows],
+                         ['New_Wang_Portrait.jpg'])
 
     def test_curated_original_respects_exact_rejection(self):
         person = {

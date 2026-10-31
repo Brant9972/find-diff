@@ -91,6 +91,21 @@ class HighResolutionRetryTest(unittest.TestCase):
         self.assertEqual(downloads, [PREVIEW])
         self.assertNotEqual(row['status'], 'pending_review')
 
+    def test_imageinfo_tracking_query_is_not_a_different_source(self):
+        original = (ORIGINAL +
+                    '?utm_source=commons.wikimedia.org&utm_campaign=imageinfo'
+                    '&utm_content=original')
+        row, downloads = self.run_case(original=original)
+        self.assertEqual(downloads, [PREVIEW, original])
+        self.assertEqual(row['status'], 'pending_review')
+
+    def test_extra_query_parameter_is_not_trusted(self):
+        original = (ORIGINAL +
+                    '?utm_source=commons.wikimedia.org&utm_campaign=imageinfo'
+                    '&utm_content=original&redirect=https://example.com/other.jpg')
+        _, downloads = self.run_case(original=original)
+        self.assertEqual(downloads, [PREVIEW])
+
     def test_same_host_different_commons_file_never_downloaded(self):
         _, downloads = self.run_case(
             original='https://upload.wikimedia.org/wikipedia/commons/b/bc/Other.jpg')

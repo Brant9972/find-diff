@@ -12660,8 +12660,8 @@
       "candidateId": "c1500-0388",
       "name": "林宇中",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-31T23:23:29.466749+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-11-01T01:30:52.120164+00:00",
       "candidates": [],
       "history": [
         {
@@ -12678,6 +12678,17 @@
         },
         {
           "time": "2026-10-31T21:23:29.466741+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T21:30:47.146310+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-31T21:30:52.120134+00:00"
+        },
+        {
+          "time": "2026-10-31T21:30:52.120152+00:00",
           "errors": [],
           "candidatesTried": 0
         }
@@ -12704,12 +12715,12 @@
         "message": "No usable candidates returned by sources"
       },
       "lastRunNewCandidateIds": [],
-      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastRunId": "20261031T213044Z-8c2e46e3",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T21:23:22.783321+00:00",
+      "lastAttemptAt": "2026-10-31T21:30:47.047787+00:00",
       "lastErrors": [],
-      "updatedAt": "2026-10-31T21:23:29.466760+00:00",
-      "workerFinishedAt": "2026-10-31T21:23:29.469350+00:00"
+      "updatedAt": "2026-10-31T21:30:52.120189+00:00",
+      "workerFinishedAt": "2026-10-31T21:30:52.122415+00:00"
     },
     "t1500_0598": {
       "personId": "t1500_0598",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-curated-single-high-quality-portrait",
+  "requestId": "20261031-huangshaoku-retained-source-visual-review",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -8,11 +8,10 @@
   ],
   "retryFailed": false,
   "providers": [
-    "curated",
-    "commons"
+    "curated"
   ],
-  "maxMinutes": 15,
-  "personSeconds": 120,
+  "maxMinutes": 5,
+  "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Draft only: target a NEW person-specific Commons own-work CC BY-SA 4.0 source for 黃少谷, not the distant microphone stage image. Source metadata and source-only visual screening are preliminary; 600x720 crop, five-stage eyes/nose/mouth/chin/full, identity, rights and hint human review required. Do not repeat rejected P18 sources or old 10/20/40/200 batches; no main/Pages/creators changes."
+  "purpose": "Review cached, SHA-verified Huang Shao-ku source-only pixels from an earlier run. Targeted retained-source export was fixed by PR #69; no source redownload, no new candidate approval, no main/Pages/creators change. Inspect existing source image before deciding whether to create a manual 600x720 five-stage crop."
 }

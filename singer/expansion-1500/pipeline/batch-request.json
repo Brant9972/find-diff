@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-exact-p18-wang-cheung-kwong-search-v2",
+  "requestId": "20261031-exact-p18-wang-cheung-kwong-search-v3",
   "mode": "search",
   "targetPeople": 3,
   "plannedPersonIds": [
@@ -17,5 +17,5 @@
   "maxMinutes": 17,
   "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "Only three existing selectedNew actors, with QID and exact Commons P18 filenames newly pinned in release-plan. Diagnose source identity, caption, rights and pixels; draft-only checkpoint, never publish automatically. Do not re-run prior failed 20/40/200 batches. All photos remain unapproved pending actual five-stage human review. Corrected request mode to 'search' after run 41169942330 failed preflight on two mode-specific tests; no collection was executed in failed run."
+  "purpose": "Exact QID/P18 3-person targeted source diagnostic for unpublished selectedNew; draft only, no main, no Pages, no creators changes. Curated and Commons only, retryFailed explicitly bounded to these 3 IDs. Do not approve metadata or source-only images as game crops. Prior preflight failures: invalid collect mode and missing literal no main purpose; both corrected after inspecting test_source_led_release_plan.py."
 }

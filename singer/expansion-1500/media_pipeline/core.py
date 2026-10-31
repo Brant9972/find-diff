@@ -382,15 +382,15 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                 verified_aliases = evidence.get('verifiedSearchAliases', [])
                 matches = identity({**person, 'aliases': [*person.get('aliases', []), *verified_aliases]},
                                    item.get('caption', '') + ' ' + item.get('filename', ''))
-                # A caption such as "黃日華的女兒黃芷晴" mentions the father
-                # but identifies the *daughter* as the pictured subject.
-                # Without a matching filename or exact P18 claim, kinship
-                # mentions are context, not evidence of depicted identity.
-                caption_key = norm(item.get('caption', ''))
-                filename_matches = identity({**person, 'aliases': [*person.get('aliases', []), *verified_aliases]},
-                                            item.get('filename', ''))
-                kinship_only = not filename_matches and any(
-                    re.search(re.escape(norm(alias)) + r'(?:的)?(?:女儿|儿子|妻子|丈夫|父亲|母亲|女婿|媳妇)', caption_key)
+                # A caption OR filename such as "黃日華的女兒黃芷晴"
+                # names the parent but describes the daughter as the subject.
+                # Checking only the caption and exempting filename name-matches
+                # lets this false positive through when the filename repeats
+                # the parent's name. P18 only bypasses the download prefilter,
+                # never the required human portrait-identity review.
+                context_key = norm(item.get('caption', '') + ' ' + item.get('filename', ''))
+                kinship_only = any(
+                    re.search(re.escape(norm(alias)) + r'(?:的)?(?:女儿|儿子|妻子|丈夫|父亲|母亲|女婿|媳妇)', context_key)
                     for alias in [person['name'], *person.get('acceptedAnswers', [])]
                     if len(norm(alias)) >= 2
                 )

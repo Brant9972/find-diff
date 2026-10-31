@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "reviewType": "exact_commons_original_pixel_visual_screening",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "personId": "t1500_0107",
+  "name": "陳明章",
+  "wikidataId": "Q9474720",
+  "mainAtReview": "a40a2ed16fdb98619a7f88a65d38df3410593b11",
+  "sourceRun": "20261031T025110Z-6e7cc0dd",
+  "notes": "Actual Wikimedia original pixels were opened and visually inspected, not merely metadata. No 600x720 game crop or five-stage previews approved; no live change. Wikidata P18 is an identity clue, not a game-quality endorsement.",
+  "decisions": [
+    {
+      "filename": "2022-03-06 Chen Ming-chang 01.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+      "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2022-03-06_Chen_Ming-chang_01.jpg",
+      "originalDimensions": [
+        2508,
+        1672
+      ],
+      "author": "Taiwan Presidential Office; official photo by Simon Liu",
+      "licenseClaim": "CC BY 2.0; FlickrReviewR 2 confirmed 2022-03-06",
+      "flickrSource": "https://www.flickr.com/photos/presidentialoffice/51921131036/",
+      "decision": "reject_visual",
+      "eligibleForLive": false,
+      "reason": "Original shows strong side profile, eyes barely visible and microphone near mouth. Cannot support clearly recognizable eyes-first five-stage game."
+    },
+    {
+      "filename": "2022-03-06 Chen Ming-chang 02.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_02.jpg",
+      "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/2a/2022-03-06_Chen_Ming-chang_02.jpg",
+      "originalDimensions": [
+        2475,
+        1693
+      ],
+      "author": "Taiwan Presidential Office; official photo by Simon Liu",
+      "licenseClaim": "CC BY 2.0; FlickrReviewR 2 confirmed 2022-03-06",
+      "flickrSource": "https://www.flickr.com/photos/presidentialoffice/51921462934/",
+      "decision": "reject_visual",
+      "eligibleForLive": false,
+      "reason": "Wikidata Q9474720 P18 photo identifies the performer but both eyes are closed while playing instrument. Eyes-only reveal would fail. Do not manually recrop or publish this P18 file."
+    },
+    {
+      "filename": "2023 TTXC高雄電影節-陳明章.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_TTXC高雄電影節-陳明章.jpg",
+      "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/0/09/2023_TTXC高雄電影節-陳明章.jpg",
+      "originalDimensions": [
+        1920,
+        1280
+      ],
+      "author": "高雄市政府文化局",
+      "licenseClaim": "Government Website Open Information Announcement; attribution required; verify original event page scope",
+      "originalSourcePage": "https://www.kff.tw/content/kff-FreeBeatsTheMusicalJo",
+      "decision": "pending_game_crop",
+      "eligibleForLive": false,
+      "reason": "Original is a single person with face and mouth visible; eyes are narrowed behind glasses, head relatively small in wide image and microphone near chin. Need actual 600x720 crop and all five stage previews, pixel sharpness, source-rights verification and work hint before any approval."
+    }
+  ],
+  "nextActions": [
+    "Exclude the two 2022 photos from automatic reuse by exact source URL; do not remove the person or existing aliases.",
+    "For 2023 Kaohsiung source, stage a single manual 600x720 crop only if source licence and original pixels can be retrieved; reject if eyes-stage or sharpness fails.",
+    "Prefer a more frontal open-eyed licensed portrait from existing selectedNew source plan; do not expand new roster.",
+    "Keep main, creators, Pages and existing reviewed people unchanged."
+  ]
+}

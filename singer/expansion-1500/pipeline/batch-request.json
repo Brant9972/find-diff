@@ -1,16 +1,22 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-post-dayuan-live-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261031-exact-source-four-1039",
+  "mode": "search",
+  "targetPeople": 4,
+  "plannedPersonIds": [
+    "t1500_0107",
+    "t1500_0534",
+    "t1500_0562",
+    "t1500_0583"
+  ],
+  "retryFailed": true,
   "providers": [
+    "curated",
     "commons"
   ],
-  "workers": 1,
-  "maxMinutes": 10,
-  "personSeconds": 60,
-  "maxCandidates": 1,
-  "purpose": "Draft only: reconcile newly published Dayuan with main and render current review index; no main, no Pages, no creators changes, no new source searches."
+  "workers": 2,
+  "maxMinutes": 12,
+  "personSeconds": 85,
+  "maxCandidates": 2,
+  "purpose": "Targeted new-source diagnostic using already curated exact Commons filenames for Chen Ming-chang, Huang Hong-xuan, Cheung Tat-ming and Kong Wah. Bypass prior failure cooldown only for these four IDs; no repeat 20/40/200 sweep, no live approval, no main/Pages/creators changes. Preserve review-only gate."
 }

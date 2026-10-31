@@ -22024,7 +22024,7 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "pending_review",
+          "status": "superseded",
           "warnings": [
             "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
           ],
@@ -22129,6 +22129,175 @@
                 0.29,
                 0.92,
                 0.68
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          },
+          "supersededBy": "manualrecrop-640dca127720-9663057b"
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg/1920px-%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%B0%91%E8%B0%B7_20171015%E8%AA%A0%E5%93%81%E5%94%B1%E8%AB%87%E6%9C%83.jpg",
+          "filename": "黃少谷 20171015誠品唱談會.jpg",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "artist": "Lidian192847",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​黃少谷《未來》專輯簽唱會",
+          "identityEvidence": {
+            "wikidataId": "Q28408495",
+            "mappingSource": "https://www.wikidata.org/wiki/Q28408495",
+            "exactChineseAliases": [
+              "黃少谷"
+            ],
+            "verifiedSearchAliases": [
+              "黃少谷",
+              "Huang Shao-Ku"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-30T08:13:54.991880+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "query": "黃少谷",
+            "matchedAliases": [
+              "黃少谷"
+            ],
+            "discoveryWarnings": [],
+            "claim": "P18",
+            "captionAliasMatches": [
+              "黃少谷"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "強辯樂團"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-30T08:13:55.684354+00:00",
+          "width": 2457,
+          "height": 2448,
+          "id": "manualrecrop-640dca127720-9663057b",
+          "personId": "t1500_0108",
+          "discoveryRunId": "20261030T081340Z-23adfada",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0108/manualrecrop-640dca127720-9663057b/4b0e7a9a196d/original.bin",
+          "originalSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0108/manualrecrop-640dca127720-9663057b/4b0e7a9a196d/640dca127720.jpg",
+          "parentCandidateId": "a4ed6e44e9b1698b677f",
+          "parentSourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+          "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.29,
+              0.92,
+              0.41
+            ],
+            "nose": [
+              0.08,
+              0.29,
+              0.92,
+              0.49
+            ],
+            "mouth": [
+              0.08,
+              0.29,
+              0.92,
+              0.55
+            ],
+            "chin": [
+              0.08,
+              0.29,
+              0.92,
+              0.62
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": "9663057b2fe5",
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "d1b708f2eaeb023784339406546c1d58a67fe802",
+            "sourceCandidateId": "a4ed6e44e9b1698b677f",
+            "sourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+            "sourceSize": [
+              1920,
+              1913
+            ],
+            "cropBox": [
+              800,
+              120,
+              1700,
+              1200
+            ],
+            "parentCropFailure": "Blurred crop: sharpness below 65",
+            "reviewerNotes": "V1 game SHA 640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9 visually reviewed. Eyes/nose stages pass; mouth stage bottom .58 reveals lower chin too early; chin stage .68 shows much of neck. Retain same JPEG pixels, tighten mouth to .55 and chin to .62, then inspect five stages again. Rights/source evidence: Commons own-work CC BY-SA 4.0 by Lidian192847, Q28408495, album 《未來》 LINE MUSIC."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9/9663057b2fe5/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9/9663057b2fe5/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9/9663057b2fe5/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9/9663057b2fe5/chin.png",
+            "full": "expansion-1500/pipeline/evidence/640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9/9663057b2fe5/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.29,
+                0.92,
+                0.41
+              ],
+              "nose": [
+                0.08,
+                0.29,
+                0.92,
+                0.49
+              ],
+              "mouth": [
+                0.08,
+                0.29,
+                0.92,
+                0.55
+              ],
+              "chin": [
+                0.08,
+                0.29,
+                0.92,
+                0.62
               ],
               "full": [
                 0,
@@ -22512,6 +22681,13 @@
           "sourceCommit": "d1b708f2eaeb023784339406546c1d58a67fe802",
           "candidateId": "manualrecrop-640dca1277207e65cf27",
           "sourceCandidateId": "a4ed6e44e9b1698b677f"
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261031T005036Z-d5dcb8c7",
+          "sourceCommit": "d1b708f2eaeb023784339406546c1d58a67fe802",
+          "candidateId": "manualrecrop-640dca127720-9663057b",
+          "sourceCandidateId": "a4ed6e44e9b1698b677f"
         }
       ],
       "legacyRecord": {
@@ -22530,9 +22706,9 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastRunId": "20261031T004704Z-1dc7f025",
+      "lastRunId": "20261031T005036Z-d5dcb8c7",
       "lastRunNewCandidateIds": [
-        "manualrecrop-640dca1277207e65cf27"
+        "manualrecrop-640dca127720-9663057b"
       ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-30T23:08:57.215502+00:00",

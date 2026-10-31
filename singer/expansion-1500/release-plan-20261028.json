@@ -4310,7 +4310,11 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "鳳小岳 艋舺 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "鳳小岳 艋舺 角色 劇照 正面 清晰 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg"
+      ],
+      "reviewSourceResearchNote": "2026-10-31 original-pixel review: File:Rhydian-Vaughan.jpg by 邱鈺鋒, CC BY-SA 4.0, 600x900; image shows handheld microphone with large rectangular '魔鏡魔鏡' placard crossing mouth/lower face. Reject for eyes→nose→mouth→chin reveal despite clear caption and valid open license; do not use this original."
     },
     {
       "candidateId": "c1500-0175",
@@ -4557,7 +4561,8 @@
       "excludedPhotoSources": [
         "https://commons.wikimedia.org/wiki/File:TaLu.jpg"
       ],
-      "reviewReason": "2026-10-31 verified Q5 Wikidata Q15938098 and exact Chinese native name 王大陸 (P1559). Its P18 TaLu.jpg is a 2016 CC BY-SA 4.0 own-work airport photograph by 王愛粉, but the actor wears reflective sunglasses that completely hide both eyes; reject for the eyes/nose/mouth/chin/full reveal game despite valid source metadata. Do not download or re-review this P18. Continue searching DIFFERENT named and licensed front-facing portraits. No live approval."
+      "reviewReason": "2026-10-31 verified Q5 Wikidata Q15938098 and exact Chinese native name 王大陸 (P1559). Its P18 TaLu.jpg is a 2016 CC BY-SA 4.0 own-work airport photograph by 王愛粉, but the actor wears reflective sunglasses that completely hide both eyes; reject for the eyes/nose/mouth/chin/full reveal game despite valid source metadata. Do not download or re-review this P18. Continue searching DIFFERENT named and licensed front-facing portraits. No live approval.",
+      "reviewSourceResearchNote": "2026-10-31 Commons original File:TaLu.jpg by 王愛粉, 3024x4032, own-work CC BY-SA 4.0, shows 王大陸 wearing dark sunglasses. Reject because eyes-only reveal cannot show eyes; source/license/size are insufficient for game approval."
     },
     {
       "candidateId": "c1500-0182",
@@ -5375,9 +5380,14 @@
       "candidateId": "c1500-0207",
       "plannedQuestionId": "t1500_0207",
       "name": "孫越",
-      "aliases": [],
+      "aliases": [
+        "Sun Yueh",
+        "Yueh Sun"
+      ],
       "acceptedAnswers": [
-        "孫越"
+        "孫越",
+        "Sun Yueh",
+        "Yueh Sun"
       ],
       "categories": [
         "演員"
@@ -5402,7 +5412,28 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "孫越 搭錯車 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "孫越 搭錯車 角色 劇照 正面 清晰 無浮水印",
+      "wikidataId": "Q9041952",
+      "reviewExactCommonsFiles": [
+        "2011 SKL RunUp Yueh Sun.jpg"
+      ],
+      "reviewSearchQuery": "Sun Yueh 孫越 2011 SKL Run Up",
+      "reviewVerifiedOriginalSources": [
+        {
+          "filename": "2011 SKL RunUp Yueh Sun.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+          "caption": "2011 SKL Run Up: Yueh Sun.",
+          "artist": "Rico Shen",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceType": "uploader_own_work",
+          "verificationUrl": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+          "verifiedAt": "2026-10-31",
+          "reviewNote": "Source caption explicitly names Yueh Sun, linked by Commons Category:Sun Yueh and Wikidata Q9041952 to actor 孫越; own-work by Rico Shen, CC BY-SA 4.0. Original 1311x1748 inspected: one person, eyes visible through tinted prescription glasses, mouth and chin not blocked, microphone below chin. Eyes stage recognizability and final 600x720 sharpness still require actual crop/five-stage human review; source metadata alone does not approve release."
+        }
+      ],
+      "reviewSourceResearchNote": "2026-10-31 exact source screening: Rico Shen 2011 event photo, original 1311x1748, CC BY-SA 4.0 self-published; single actor with mouth and chin unobstructed; dark eyeglasses could make eyes-only stage too difficult. Await crop, five-stage visual QA, work hint verification and release gates. Do not publish automatically."
     },
     {
       "candidateId": "c1500-0208",

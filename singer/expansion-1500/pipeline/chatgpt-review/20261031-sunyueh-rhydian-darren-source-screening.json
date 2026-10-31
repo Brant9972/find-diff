@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "reviewType": "commons_original_pixel_and_license_source_screening",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "mainAtReview": "a40a2ed16fdb98619a7f88a65d38df3410593b11",
+  "decisions": [
+    {
+      "personId": "t1500_0207",
+      "name": "孫越",
+      "wikidataId": "Q9041952",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+      "filename": "2011 SKL RunUp Yueh Sun.jpg",
+      "originalDimensions": [
+        1311,
+        1748
+      ],
+      "author": "Rico Shen",
+      "sourceCaption": "2011 SKL Run Up: Yueh Sun.",
+      "license": "CC BY-SA 4.0 (own work)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "decision": "pending_manual_crop",
+      "eligibleForLive": false,
+      "reason": "Original inspected: a single older man with both eyes visible behind tinted glasses; microphone stays below chin and does not obscure lips. Strong caption/name/category/Wikidata Q9041952 correspondence, but tinted lenses may make eyes-only reveal difficult. Actual 600x720 game crop, five stage visual check, photo SHA, work hint and attribution not yet approved."
+    },
+    {
+      "personId": "t1500_0174",
+      "name": "鳳小岳",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg",
+      "originalDimensions": [
+        600,
+        900
+      ],
+      "author": "邱鈺鋒",
+      "license": "CC BY-SA 4.0 (own work)",
+      "decision": "reject_visual",
+      "eligibleForLive": false,
+      "reason": "Actual original image shows a large rectangular microphone placard over lower face/mouth, making mouth-stage unreliable; cannot rescue by simple crop."
+    },
+    {
+      "personId": "t1500_0181",
+      "name": "王大陸",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:TaLu.jpg",
+      "originalDimensions": [
+        3024,
+        4032
+      ],
+      "author": "王愛粉",
+      "license": "CC BY-SA 4.0 (own work)",
+      "decision": "reject_visual",
+      "eligibleForLive": false,
+      "reason": "Actual original shows opaque dark sunglasses covering eyes; eyes-first reveal cannot work even though portrait is high resolution and freely licensed."
+    }
+  ],
+  "nextActions": [
+    "Run a targeted curated/Commons source collection only for 孫越 (not the old ineffective 40/200-person batches).",
+    "Inspect actual 600x720 game JPEG and five reveal PNGs; reject if eyes behind tinted glasses are not recognizable.",
+    "Verify 《搭錯車》 role against a reliable credited cast source, then only after complete rights, attribution, dedupe and branch QA consider main.",
+    "Keep creators, main and all unrelated assets unchanged."
+  ]
+}

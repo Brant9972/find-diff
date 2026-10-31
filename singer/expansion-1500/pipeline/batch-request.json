@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huanghongxuan-exact-commons-v4",
+  "requestId": "20261031-huanghongxuan-new-exact-source-cooldown-override-v5",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0534"
   ],
-  "retryFailed": false,
+  "retryFailed": true,
   "providers": [
     "curated",
     "commons"
@@ -15,5 +15,5 @@
   "maxMinutes": 12,
   "personSeconds": 110,
   "maxCandidates": 2,
-  "purpose": "Target only the existing selectedNew 黃宏軒. First try exact Commons 台灣演員黃宏軒.jpg (Petersuuu CC BY 4.0, 3667x5500, own-work claim), with prior alternative retained. Draft only: source discovery and 600x720 candidate staging; check caption, independent identity and uploader rights, actual eyes/nose/mouth/chin/full before any release. Do not re-use rejected S_37822478.jpg, no main changes, no Pages deployment, no creators modifications."
+  "purpose": "Draft only, no main changes, no Pages, no creators. Exact NEW Commons file 台灣演員黃宏軒.jpg (3667x5500 Petersuuu self-published CC BY 4.0) added after previous failed source search. One-person curated+Commons source diagnostic explicitly bypasses old cooldown to test this DIFFERENT exact file, not re-run rejected S_37822478.jpg; retain independent identity, ownership and five-stage human review gates. No approval or release."
 }

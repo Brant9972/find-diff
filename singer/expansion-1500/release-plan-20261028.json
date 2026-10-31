@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1077,
-    "publishedFromPlan": 90,
-    "remainingSelectedNovel": 420,
+    "currentlyLiveUnique": 1078,
+    "publishedFromPlan": 91,
+    "remainingSelectedNovel": 419,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -2035,34 +2035,44 @@
       "candidateId": "c1500-0108",
       "plannedQuestionId": "t1500_0108",
       "name": "黃少谷",
-      "aliases": [],
+      "aliases": [
+        "少少",
+        "黃牛",
+        "Huang Shao-Ku"
+      ],
       "acceptedAnswers": [
-        "黃少谷"
+        "黃少谷",
+        "少少",
+        "黃牛",
+        "Huang Shao-Ku"
       ],
       "categories": [
         "歌手"
       ],
       "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
-        "強辯樂團"
+        "未來"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "黃少谷 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "黃少谷 強辯樂團 經典時期 歌手 獨照 正面 清晰 無浮水印"
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pending_branch_and_pages_qa",
+      "preferredImageQuery": "黃少谷 強辯樂團 經典時期 歌手 獨照 正面 清晰 無浮水印",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+      "reviewSourceCommit": "3a58fb1a7191c66ca25e129e1d177117f255e44f",
+      "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9"
     },
     {
       "candidateId": "c1500-0109",
@@ -18345,7 +18355,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 90,
+    "published": 91,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18436,9 +18446,10 @@
       "周柏豪",
       "林美照",
       "鄭弘儀",
-      "趙正平"
+      "趙正平",
+      "黃少谷"
     ],
-    "pendingPhotoAndHintReview": 421,
-    "latestCommit": "pending-zhaozhengping-pr-qa"
+    "pendingPhotoAndHintReview": 420,
+    "latestCommit": "pending-huangshaoku-pr-qa"
   }
 }

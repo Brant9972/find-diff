@@ -52,5 +52,19 @@ class FlickrSourceLeadTest(unittest.TestCase):
         self.assertIn("do not auto-approve", req["purpose"])
 
 
+    def test_visual_rejections_are_source_specific_and_not_releasable(self):
+        report = json.loads((ROOT / "pipeline/chatgpt-review/20261031-flickr-source-visual-screening-41190446979.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["releaseGate"], "DRAFT_ONLY_NOT_PLAYABLE")
+        self.assertEqual(report["summary"]["approvedForGame"], 0)
+        self.assertEqual(report["summary"]["rejectedExactSources"], 2)
+        for row in report["decisions"]:
+            self.assertFalse(row["eligibleForLive"])
+            self.assertFalse(row["fiveStageReviewed"])
+            if row["decision"] == "reject_source_as_game_portrait":
+                self.assertIn(row["sourcePage"], self.people[row["personId"]]["excludedPhotoSources"])
+            else:
+                self.assertEqual(row["candidateId"], "d5e1b75b4539fc4f5eb3")
+                self.assertEqual(row["decision"], "defer_manual_face_isolation_not_approved")
+
 if __name__ == "__main__":
     unittest.main()

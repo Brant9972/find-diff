@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "manual_pixel_five_stage_visual_with_rights_hold",
+  "reviewedAt": "2026-10-31",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "sourceAssetCommit": "c05e16f2805ad23290b429ccf0a430bbf7d7b1ff",
+  "sourceRun": "20261031T124123Z-4539fe40",
+  "summary": {
+    "reviewedCandidates": 1,
+    "visualPass": 1,
+    "rightsPending": 1,
+    "approvedForLive": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "decision": "visual_pass_rights_and_identity_pending",
+      "eligibleForLive": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "sourceVideo": "https://www.youtube.com/watch?v=ffxdss7Xk6Y",
+      "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+      "authorCredit": "CNA Taiwan - 中央社",
+      "licenseClaim": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceImagePixels": "singer/expansion-1500/pipeline/review-assets/20261031T124123Z-4539fe40/photo-0001/source.jpg",
+      "cropPixels": "singer/expansion-1500/pipeline/review-assets/20261031T124123Z-4539fe40/photo-0001/candidate.jpg",
+      "sourceImageDimensions": [
+        1920,
+        1758
+      ],
+      "cropDimensions": [
+        600,
+        720
+      ],
+      "fiveStageVisual": {
+        "eyes": "pass: both eyes open and clearly visible, no glasses or eye obstruction",
+        "nose": "pass: nose visible, not obscured",
+        "mouth": "pass: lips and mouth fully visible; microphone is below and to the left, not covering the mouth",
+        "chin": "pass: chin and lower face visible; stage logo behind head does not resemble a second face",
+        "full": "pass: clear single-person crop with no watermark across face; microphone remains in lower-left foreground, away from facial features"
+      },
+      "visualCaveats": [
+        "Face is mildly three-quarter turned rather than perfectly frontal; acceptable visually but not an identity proof.",
+        "Backdrop contains text and a microphone at lower left, neither hides facial landmarks."
+      ],
+      "identityEvidence": {
+        "commonsCaptionNamesTarget": true,
+        "wikidataId": "Q5090886",
+        "wikipediaUse": "https://en.wikipedia.org/wiki/Chen_Shiang-chyi",
+        "independentFaceIdentityConfirmed": false,
+        "reason": "Caption and linked Wikimedia usage identify the subject, but source metadata and visual appearance alone are not independent person-identity verification."
+      },
+      "rightsEvidence": {
+        "commonsLicenseMetadata": "CC BY 3.0",
+        "commonsPageUploader": "DangNgH6464",
+        "commonsUploadDate": "2024-05-04",
+        "claimedOriginalVideoPublisher": "CNA Taiwan - 中央社",
+        "youtubeLicenseIndependentlyReverified": false,
+        "commonsLicenseReviewerIdentified": false,
+        "reason": "The Commons file page asserts a YouTube CC BY 3.0 license, but no independent dated licence review or direct original-video licence confirmation was established. A Commons tag is not sufficient for final release."
+      },
+      "nextAction": "Obtain independent proof that CNA Taiwan's exact source video ffxdss7Xk6Y was released under crop-permitting CC BY 3.0 by its rights holder, verify pictured-person identity against image-adjacent original footage, then review attribution/hints and stage via a release branch with full QA. Do not auto-publish."
+    }
+  ],
+  "notes": [
+    "The five reveal PNGs and 600x720 crop were actually viewed at the immutable asset commit.",
+    "Visual pass is not a license or identity approval and adds zero playable people.",
+    "Do not overwrite older human reviews or main/Pages/creators."
+  ]
+}

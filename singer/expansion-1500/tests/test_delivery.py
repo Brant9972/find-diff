@@ -213,6 +213,33 @@ class DeliveryTest(unittest.TestCase):
         self.assertEqual(retained['manualSources'][0]['personId'], 't5')
         self.assertFalse(retained['manualSources'][0]['eligibleForLive'])
 
+    def test_rescanned_person_exports_only_own_retained_source_without_redownload(self):
+        for pid in ('t5', 't6'):
+            candidate = self._person(pid, '既有來源' + pid, 'manual_crop_required')
+            candidate.pop('gamePath')
+            candidate.pop('gameSha256')
+            candidate.pop('reveal')
+            candidate['discoveryRunId'] = 'older-run'
+            candidate['cropFailure'] = 'No reliable frontal face'
+            self.state['people'][pid]['status'] = 'no_suitable_source'
+
+        before = copy.deepcopy(self.state)
+        package = build_assets(self.root, self.directory, self.state, 'targeted-run',
+                               retained_source_person_ids=['t5'])
+        self.assertEqual(package['manualSourceCount'], 1)
+        self.assertEqual([p['personId'] for p in package['manualSources']], ['t5'])
+        self.assertEqual(self.state, before)
+        source = package['manualSources'][0]['sourceImage']
+        self.assertEqual(source['sha256'],
+                         self.state['people']['t5']['candidates'][0]['originalSha256'])
+
+        unrelated = build_assets(self.root, self.directory, self.state, 'unrelated-run',
+                                 retained_source_person_ids=['missing'])
+        self.assertEqual(unrelated['manualSourceCount'], 0)
+        all_retained = build_assets(self.root, self.directory, self.state, 'all-retained-run',
+                                    include_retained_sources=True)
+        self.assertEqual(all_retained['manualSourceCount'], 2)
+
     def test_source_only_images_get_real_preview_links_without_approval(self):
         candidate = self._person('t5', '待裁切人物', 'manual_crop_required')
         candidate.pop('gamePath')

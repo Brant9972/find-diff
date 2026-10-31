@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-targeted-source-review-valid-request",
+  "requestId": "20261031-huangshaoku-cached-source-preview-after-cooldown-fix",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -14,5 +14,5 @@
   "maxMinutes": 5,
   "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Draft only: re-export previously retained, SHA-verified 黃少谷 source-only image after PR #69, for human visual review without re-downloading or automatically approving. Strictly no main, no Pages, no creators changes."
+  "purpose": "Draft only: export the already saved 黃少谷 source-only image for explicit requested ID even while discovery is cooling down. No re-download, no automatic approval, no main, no Pages, no creators changes."
 }

@@ -486,8 +486,19 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         'No reliable frontal face', 'Multiple prominent faces',
                         'Face is too small', 'Face is too tilted',
                         'Blurred crop', 'Overexposed crop'))
-                    already_saved = any(c.get('status') == 'manual_crop_required'
-                                        for c in row['candidates'])
+                    # A previously saved source-only original must not block a
+                    # different source after the reviewer explicitly excluded
+                    # the old one for obstructed eyes/chin or wrong identity.
+                    # Keep the old asset for audit; still cap active retained
+                    # manual-crop sources to one per person.
+                    excluded_manual = rejected | {
+                        source_key(url) for url in person.get('excludedPhotoSources', [])
+                    }
+                    already_saved = any(
+                        c.get('status') == 'manual_crop_required'
+                        and source_key(c.get('source')) not in excluded_manual
+                        for c in row['candidates']
+                    )
                     if (crop_started and isinstance(exc, ValueError) and
                             source_named and crop_recoverable and not already_saved):
                         raw_path = directory / 'assets' / row['personId'] / cid / digest[:12] / 'original.bin'

@@ -67,6 +67,39 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(self.row['candidates']), 1)
         self.assertEqual(self.row['lastErrors'][0]['code'], 'network_error')
 
+    def test_excluded_old_manual_crop_allows_new_source_original(self):
+        old = 'https://example.org/old'
+        self.row['candidates'].append({
+            'id': 'old-manual', 'personId': 't1',
+            'source': old, 'status': 'manual_crop_required',
+            'originalPath': 'expansion-1500/pipeline/assets/old/original.bin',
+        })
+        self.person['excludedPhotoSources'] = [old]
+        new = candidate('new')
+        def failed_auto_crop(blob):
+            raise ValueError('Face is too tilted')
+        self.run_person([Provider([new])], crop=failed_auto_crop)
+        retained = [c for c in self.row['candidates']
+                    if c.get('status') == 'manual_crop_required']
+        self.assertEqual(len(retained), 2)
+        self.assertEqual(retained[-1]['source'], new['source'])
+        self.assertTrue(retained[-1]['originalPath'])
+        self.assertFalse(retained[-1]['eligibleForLive'])
+        self.assertIsNone(retained[-1]['gamePath'])
+
+    def test_unexcluded_manual_crop_still_caps_source_only_originals(self):
+        self.row['candidates'].append({
+            'id': 'old-manual', 'personId': 't1',
+            'source': 'https://example.org/old',
+            'status': 'manual_crop_required',
+        })
+        def failed_auto_crop(blob):
+            raise ValueError('Blurred crop: sharpness below 65')
+        self.run_person([Provider([candidate('new')])], crop=failed_auto_crop)
+        self.assertEqual(
+            len([c for c in self.row['candidates']
+                 if c.get('status') == 'manual_crop_required']), 1)
+
     def test_no_result_can_retry_after_restart(self):
         self.run_person([Provider([])])
         self.assertEqual(self.row['status'], 'no_suitable_source')

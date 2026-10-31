@@ -13691,8 +13691,11 @@
       ],
       "reviewSearchQuery": "王耀慶",
       "cachedMetadataRecheckToken": "20261031-exact-p18-three-identity-preflight",
-      "reviewSourceResearchNote": "Wikidata Q9315976 (Taiwanese actor David Wang) P18 is 王耀慶@2011.jpg, 1014x1386; source caption in actor biography says 2011 theatre The Doppelgänger. Exact source identity lead ONLY; author, reuse licence, actual pixels, 600x720 five stages and work hint still unverified. Distinguish from 王永慶 and other Wang names.",
-      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q9315976"
+      "reviewSourceResearchNote": "Wikidata Q9315976 (Taiwanese actor David Wang) P18 is 王耀慶@2011.jpg, 1014x1386; source caption in actor biography says 2011 theatre The Doppelgänger. Exact source identity lead ONLY; author, reuse licence, actual pixels, 600x720 five stages and work hint still unverified. Distinguish from 王永慶 and other Wang names. 2026-10-31 original pixel review: narrow/soft eyes and small face; reject this exact source despite Tksteven CC BY 3.0.",
+      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q9315976",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:王耀慶@2011.jpg"
+      ]
     },
     {
       "candidateId": "c1500-0458",
@@ -17194,11 +17197,13 @@
       "reviewExactCommonsFiles": [
         "張達明.jpg"
       ],
-      "reviewSourceResearchNote": "Wikidata Q5094266 (Hong Kong comedian/actor Cheung Tat-ming) P18 names 張達明.jpg, 1000x1375. P18 is not independent photographer or licensing proof. Exact Commons file must be checked for actual person, rights and usable five-stage crop before approval.",
+      "reviewSourceResearchNote": "Wikidata Q5094266 (Hong Kong comedian/actor Cheung Tat-ming) P18 names 張達明.jpg, 1000x1375. P18 is not independent photographer or licensing proof. Exact Commons file must be checked for actual person, rights and usable five-stage crop before approval. 2026-10-31 exact Commons original pixel review: 2019 am730 frontal face eyes open/unobstructed; YouTube CC BY 3.0 reviewed by GRuban 2020-07-24. Still only source candidate, pending 600x720 five-stage human QA, game SHA and work hint.",
       "wikidataId": "Q5094266",
       "reviewSearchQuery": "張達明",
       "cachedMetadataRecheckToken": "20261031-exact-p18-three-identity-preflight",
-      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q5094266"
+      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q5094266",
+      "reviewSourceOriginalUrl": "https://www.youtube.com/watch?v=lUMttVkRH-Y",
+      "reviewLicenseUrl": "https://creativecommons.org/licenses/by/3.0/"
     },
     {
       "candidateId": "c1500-0563",
@@ -17990,11 +17995,14 @@
       "reviewExactCommonsFiles": [
         "江華.jpg"
       ],
-      "reviewSourceResearchNote": "Wikidata Q5692593 (Hong Kong actor Kwong Wa, born 陳木華) P18 names 江華.jpg, 2496x3571. Distinguish from other people called 江華 and from stage-name aliases. Require adjacent caption, rights, actual pixels and five-stage crop before approval.",
+      "reviewSourceResearchNote": "Wikidata Q5692593 (Hong Kong actor Kwong Wa, born 陳木華) P18 names 江華.jpg, 2496x3571. Distinguish from other people called 江華 and from stage-name aliases. Require adjacent caption, rights, actual pixels and five-stage crop before approval. 2026-10-31 original pixel review: dark opaque sunglasses hide eyes, reject this exact source despite am730 CC BY 3.0 (Shizhao reviewed 2024-08-15).",
       "wikidataId": "Q5692593",
       "reviewSearchQuery": "江華",
       "cachedMetadataRecheckToken": "20261031-exact-p18-three-identity-preflight",
-      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q5692593"
+      "reviewIdentityEvidenceUrl": "https://www.wikidata.org/wiki/Q5692593",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:江華.jpg"
+      ]
     },
     {
       "candidateId": "c1500-0584",

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_only_visual_screening_not_release_approval",
+  "reviewedAt": "2026-10-31",
+  "sourceRunId": "20261031T095256Z-c4f97240",
+  "sourceActionRun": 41190446979,
+  "sourceBranch": "automation/celebrity-photo-pipeline",
+  "assetCommit": "964ef54073c03b0bf7fe3530e427ae20a5c97c45",
+  "contactSheetSha256": "f3bb571e67255c541727d34f133f48debf35af913cb2229fc84d4761eaa3dd2a",
+  "contactSheetUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/964ef54073c03b0bf7fe3530e427ae20a5c97c45/singer/expansion-1500/pipeline/review-assets/20261031T095256Z-c4f97240/manual-source-sheet-01.jpg",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "peopleScanned": 2,
+    "manualSourceImages": 3,
+    "rejectedExactSources": 2,
+    "manualSourceDeferred": 1,
+    "approvedForGame": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "3884cbc89afe5de79a7e",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2013_%E8%87%BA%E7%81%A3%E6%B3%B0%E9%9B%85%E6%97%8F%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%9E%97%E6%85%B6%E5%8F%B0%E8%88%87%E8%90%8A%E8%90%8A%E5%9C%A8%E8%87%AA%E7%94%B1%E5%BB%A3%E5%A0%B4%E3%80%8A%E7%9C%8B%E8%A6%8B%E5%8F%B0%E7%81%A3%E3%80%8B%E9%9C%B2%E5%A4%A9%E9%A6%96%E6%98%A0%E6%9C%83_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+      "caption": "2013/10/30 - 齊柏林執導紀錄片「看見台灣」在臺北自由廣場前",
+      "author": "othree",
+      "licenseMetadata": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
+      "autoCropFailure": "Face is too small",
+      "sourceImageDimensions": [
+        1920,
+        1280
+      ],
+      "visualEvidence": "actual_960x315_source_only_contact_sheet_pixel_inspected_not_full_resolution",
+      "decision": "reject_source_as_game_portrait",
+      "reason": "Distant outdoor stage with two small performers. The named person is not independently isolatable at enough facial pixel detail for eyes/nose/mouth/chin/full; source-only crop auto failed Face is too small.",
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "d5e1b75b4539fc4f5eb3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
+      "caption": "​林慶台參與2014年新北市元旦升旗活動",
+      "author": "P1340",
+      "licenseMetadata": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "autoCropFailure": "Multiple prominent faces",
+      "sourceImageDimensions": [
+        1920,
+        2560
+      ],
+      "visualEvidence": "actual_960x315_source_only_contact_sheet_pixel_inspected_not_full_resolution",
+      "decision": "defer_manual_face_isolation_not_approved",
+      "reason": "Multiple people at a flag-raising event, target likely near center in red scarf; original 1920x2560 requires full-resolution manual face isolation to assess whether neighboring faces can be excluded. Auto failed Multiple prominent faces; do not approve from contact sheet.",
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0154",
+      "name": "李炳輝",
+      "candidateId": "04a8c0e46e6a1e3760c5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lee_Ping-Huei_%26_Wu_Bai_20101127.jpg",
+      "caption": "​李炳輝（左）與伍佰（右）出席滾石唱片30周年演唱會。",
+      "author": "音樂雯",
+      "licenseMetadata": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
+      "autoCropFailure": "Face is too small",
+      "sourceImageDimensions": [
+        1664,
+        2496
+      ],
+      "visualEvidence": "actual_960x315_source_only_contact_sheet_pixel_inspected_not_full_resolution",
+      "decision": "reject_source_as_game_portrait",
+      "reason": "Two standing musicians; 李炳輝 on left has a very small face relative to the full frame. Source-only crop auto failed Face is too small. A 600x720 portrait would require excessive enlargement and lack clear five-stage detail.",
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "eligibleForLive": false
+    }
+  ],
+  "nextSteps": [
+    "Do not retry the two rejected exact Commons file URLs; exclusion is source-specific, not person-specific.",
+    "Inspect the full-resolution Nolay_Piho.jpg image and isolate the intended subject; group composition is not yet approved.",
+    "Find new, independently captioned and licensed close-up portraits for 林慶台 and 李炳輝; verify all five reveal stages before release.",
+    "No production bank, creators or Pages changes."
+  ]
+}

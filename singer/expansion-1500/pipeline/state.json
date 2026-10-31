@@ -37969,8 +37969,8 @@
       "candidateId": "c1500-0534",
       "name": "黃宏軒",
       "status": "no_suitable_source",
-      "attempts": 4,
-      "nextRetryAt": "2026-10-31T18:43:41.978375+00:00",
+      "attempts": 5,
+      "nextRetryAt": "2026-11-01T13:19:28.161509+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -39202,6 +39202,74 @@
             }
           ],
           "candidatesTried": 7
+        },
+        {
+          "time": "2026-10-31T05:19:25.262795+00:00",
+          "provider": "curated",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T05:19:25.262942+00:00"
+        },
+        {
+          "time": "2026-10-31T05:19:25.262950+00:00",
+          "provider": "commons",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T05:19:28.161473+00:00"
+        },
+        {
+          "time": "2026-10-31T05:19:28.161499+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
+                "filename": "台灣演員黃宏軒.jpg",
+                "artist": "Petersuuu",
+                "credit": "Own work",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "caption": "​台灣演員黃宏軒，攝於2024年",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "黃宏軒",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "黃宏軒"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "關於未知的我們"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T05:19:25.493387+00:00",
+                "width": 3667,
+                "height": 5500,
+                "id": "03c2d3da3bfbf862d483",
+                "personId": "t1500_0534",
+                "discoveryRunId": "20261031T051924Z-986f5ca1",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -39225,305 +39293,11 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T024327Z-a5749fa6",
+      "lastRunId": "20261031T051924Z-986f5ca1",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T02:43:31.456103+00:00",
+      "lastAttemptAt": "2026-10-31T05:19:25.100945+00:00",
       "lastErrors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:S_91570178.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/S_91570178.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/S_91570178.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/S_91570178.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:S_91570178.jpg",
-            "filename": "S 91570178.jpg",
-            "artist": "黃宏軒",
-            "credit": "黃宏軒ig",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​黃宏軒沙灘帥照",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:33.326807+00:00",
-            "width": 828,
-            "height": 1792,
-            "id": "18442496af226073c1a8",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_Bluecharm_%E9%96%B1%E4%B8%96%E9%9B%9C%E8%AA%8C%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
-            "filename": "黃宏軒 Bluecharm 閱世雜誌，攝於2024年.jpg",
-            "artist": "Petersuuu",
-            "credit": "Own work",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "caption": "​台灣演員黃宏軒的雜誌照，攝於2024年",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:33.921491+00:00",
-            "width": 4209,
-            "height": 5712,
-            "id": "cd2f98edfa8f67f9aae3",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_Versace%E6%8B%8D%E6%94%9D.jpg",
-            "filename": "黃宏軒 Versace拍攝.jpg",
-            "artist": "Petersuuu",
-            "credit": "Own work",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "caption": "​台灣演員黃宏軒的形象照，攝於2024年",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:34.633200+00:00",
-            "width": 4664,
-            "height": 6996,
-            "id": "2256211a68d110e0f74e",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg/1920px-%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg/1920px-%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92Celine%E5%93%81%E7%89%8C%E6%8B%8D%E6%94%9D%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
-            "filename": "演員黃宏軒Celine品牌拍攝，攝於2024年.jpg",
-            "artist": "Petersuuu",
-            "credit": "Own work",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "caption": "​台灣演員黃宏軒Celine品牌拍攝，攝於2024年",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:36.162595+00:00",
-            "width": 3808,
-            "height": 5712,
-            "id": "3dbb7b8533ba14ece3a0",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too tilted"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92Boom%E4%B8%AD%E5%9C%8B%E9%9B%9C%E8%AA%8C%E6%8B%8D%E6%94%9D.jpg",
-            "filename": "黃宏軒Boom中國雜誌拍攝.jpg",
-            "artist": "Petersuuu",
-            "credit": "Own work",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "caption": "​台灣演員黃宏軒的雜誌照，攝於2024年",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:37.740205+00:00",
-            "width": 3808,
-            "height": 5712,
-            "id": "119e083820cf3054246d",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg/1920px-%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%AE%8F%E8%BB%92_%E8%B2%BB%E5%8A%A0%E7%BE%85%E9%9B%9C%E8%AA%8C.jpg",
-            "filename": "黃宏軒 費加羅雜誌.jpg",
-            "artist": "Petersuuu",
-            "credit": "Own work",
-            "license": "CC BY 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-            "caption": "Processed with VSCO with a6 preset",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
-              "captionAliasMatches": [
-                "黃宏軒"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "關於未知的我們"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:43:39.089172+00:00",
-            "width": 3367,
-            "height": 5050,
-            "id": "5edb372f1355c00e4523",
-            "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        },
         {
           "provider": "commons",
           "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
@@ -39543,7 +39317,8 @@
             "licenseReviewStatus": "not_checked",
             "identityEvidence": {
               "query": "黃宏軒",
-              "identityWarning": "Caption/name match is preliminary evidence only",
+              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+              "curatedExactFileHint": true,
               "captionAliasMatches": [
                 "黃宏軒"
               ],
@@ -39556,12 +39331,12 @@
               ],
               "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-31T02:43:40.600391+00:00",
+            "searchTime": "2026-10-31T05:19:25.493387+00:00",
             "width": 3667,
             "height": 5500,
             "id": "03c2d3da3bfbf862d483",
             "personId": "t1500_0534",
-            "discoveryRunId": "20261031T024327Z-a5749fa6",
+            "discoveryRunId": "20261031T051924Z-986f5ca1",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
@@ -39574,8 +39349,8 @@
           "message": "Blurred crop: sharpness below 65"
         }
       ],
-      "updatedAt": "2026-10-31T02:43:41.978386+00:00",
-      "workerFinishedAt": "2026-10-31T02:43:41.980917+00:00"
+      "updatedAt": "2026-10-31T05:19:28.161519+00:00",
+      "workerFinishedAt": "2026-10-31T05:19:28.163445+00:00"
     },
     "t1500_0140": {
       "personId": "t1500_0140",

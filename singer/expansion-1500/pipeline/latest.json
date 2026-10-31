@@ -1,13 +1,13 @@
 {
-  "runId": "20261031T051745Z-c5094b6a",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T051745Z-c5094b6a/review-index.json",
+  "runId": "20261031T051924Z-986f5ca1",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T051924Z-986f5ca1/review-index.json",
   "summary": {
-    "runId": "20261031T051745Z-c5094b6a",
-    "generatedAt": "2026-10-31T05:17:46.399878+00:00",
-    "scannedPeople": 0,
+    "runId": "20261031T051924Z-986f5ca1",
+    "generatedAt": "2026-10-31T05:19:28.807865+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 298,
@@ -21,7 +21,7 @@
     },
     "failureReasons": {
       "identity_unconfirmed": 272,
-      "image_validation_failed": 109,
+      "image_validation_failed": 103,
       "network_error": 260,
       "source_api_busy": 70,
       "license_unclear": 73,
@@ -33,9 +33,32 @@
       "proxy_access_denied": 4,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "image_validation_failed": 1
+    },
     "manualCropSources": 36,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "image_validation_failed": 1
+        }
+      },
+      "curated": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

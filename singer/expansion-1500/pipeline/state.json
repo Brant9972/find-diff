@@ -31056,8 +31056,8 @@
       "candidateId": "c1500-0112",
       "name": "謝馨儀",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-31T03:01:45.771094+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T21:24:04.279974+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -31349,6 +31349,23 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-31T13:23:56.356084+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T13:23:59.769566+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:59.769584+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T13:24:04.279948+00:00"
+        },
+        {
+          "time": "2026-10-31T13:24:04.279966+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -31367,90 +31384,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastRunId": "20261030T230133Z-46d3545a",
+      "lastRunId": "20261031T132345Z-8c7da397",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T23:01:35.232749+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_31_(cropped).jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_31_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_31_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_31_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_31_(cropped).jpg",
-            "filename": "2014 蘇打綠10週年世界巡回演唱會-空氣中的視聽與幻覺 - 31 (cropped).jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Lionel Leong",
-            "credit": "https://www.flickr.com/photos/lionel-arts/15229709711/",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "​Location: Singapore Indoor Stadium\n2014年苏打绿10周年空气中的视听与幻觉世界巡回演唱会-新加坡站\n人气天团苏打绿今年正式出道满十周年，以全新的十周年巡演“空气中的视听与幻觉”，于8月30日再次引爆狮城!巡演今年4月在香港红磡体育馆起跑，两场演唱爆满又另加一场，而3万3千名观众当中有多位歌迷还是特地从外地赴香港看演唱会。\n十年前，学生生涯走入尾声，当时还是学生团体的苏打绿面临解散，6人就开着小巴士环绕台湾作为告别巡演 – 只是没想到在海洋音乐祭的舞台被音乐人林暐哲发掘，从此开启了这团队的黄金十年。\n“空气中的视听与幻觉”是苏打绿正式出道发行的第一首单曲，此次10周年巡演主题同样也以此命名。他们希望通过这一场纪念演唱会， 与歌迷一起回味过去十年的经历，回到音乐起点，让十年庆祝更加忠实完整。经纪公司林暐哲音乐社也表示，“希望这次世界巡回演唱会可以让更多的人们听到苏打绿的音乐，感受到苏打绿对待音乐的真诚和热爱。”\n\n不要错过这个机会，和苏打绿一起庆祝他们的10周年！",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "wikidataId": "Q15905462",
-              "mappingSource": "https://www.wikidata.org/wiki/Q15905462",
-              "exactChineseAliases": [
-                "謝馨儀",
-                "謝馨儀"
-              ],
-              "verifiedSearchAliases": [
-                "謝馨儀",
-                "Hsieh Shin-Yi",
-                "Claire Hsieh"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T23:01:36.063877+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%A6%A8%E5%84%80",
-              "articleTitle": "謝馨儀",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "謝馨儀",
-              "matchedAliases": [],
-              "discoveryWarnings": [],
-              "claim": "P18",
-              "captionAliasMatches": []
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "蘇打綠"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T23:01:36.265556+00:00",
-            "width": 1791,
-            "height": 2304,
-            "id": "2cade137e2cd52d1c021",
-            "personId": "t1500_0112",
-            "discoveryRunId": "20261030T230133Z-46d3545a",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0112/2cade137e2cd52d1c021/5a90e4f35587/original.bin",
-            "originalSha256": "5a90e4f355871f043b8d029a926e6e91c0816a16ee49c51217b5ed0147df8c66",
-            "cropFailure": "No reliable frontal face",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "No reliable frontal face"
-        }
-      ],
+      "lastAttemptAt": "2026-10-31T13:23:56.260556+00:00",
+      "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T23:01:45.771106+00:00",
-      "workerFinishedAt": "2026-10-30T23:01:45.773122+00:00"
+      "updatedAt": "2026-10-31T13:24:04.279983+00:00",
+      "workerFinishedAt": "2026-10-31T13:24:04.281984+00:00"
     },
     "t1500_0201": {
       "personId": "t1500_0201",
@@ -56346,8 +56291,8 @@
       "candidateId": "c1500-0181",
       "name": "王大陸",
       "status": "no_suitable_source",
-      "attempts": 3,
-      "nextRetryAt": "2026-10-30T18:59:36.864539+00:00",
+      "attempts": 4,
+      "nextRetryAt": "2026-11-01T05:24:10.283408+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0181",
@@ -56474,6 +56419,23 @@
           "time": "2026-10-30T10:59:36.864528+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T13:24:04.525592+00:00",
+          "provider": "entity",
+          "attempt": 4,
+          "finishedAt": "2026-10-31T13:24:06.796659+00:00"
+        },
+        {
+          "time": "2026-10-31T13:24:06.796677+00:00",
+          "provider": "commons",
+          "attempt": 4,
+          "finishedAt": "2026-10-31T13:24:10.283392+00:00"
+        },
+        {
+          "time": "2026-10-31T13:24:10.283401+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -56534,18 +56496,18 @@
         },
         "reviewNote": "王大陸照片戴反光墨鏡，第一階段眼睛不可辨"
       },
-      "lastRunId": "20261030T105819Z-873b2c02",
+      "lastRunId": "20261031T132345Z-8c7da397",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T10:59:29.716695+00:00",
+      "lastAttemptAt": "2026-10-31T13:24:04.420109+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T10:59:36.864550+00:00",
-      "workerFinishedAt": "2026-10-30T10:59:36.867147+00:00"
+      "updatedAt": "2026-10-31T13:24:10.283418+00:00",
+      "workerFinishedAt": "2026-10-31T13:24:10.285434+00:00"
     },
     "t1500_0554": {
       "attempts": 7,
@@ -69467,8 +69429,8 @@
       "candidateId": "c1500-0114",
       "name": "龔鈺祺",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-31T03:01:56.684810+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T21:24:04.415435+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0114",
@@ -69628,6 +69590,23 @@
           "time": "2026-10-30T23:01:56.684798+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T13:23:56.577977+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T13:23:59.866881+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:59.866899+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T13:24:04.415419+00:00"
+        },
+        {
+          "time": "2026-10-31T13:24:04.415427+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -69688,18 +69667,18 @@
         },
         "reviewNote": "Eyes closed, low-resolution stage photo; not recognizable from eyes."
       },
-      "lastRunId": "20261030T230133Z-46d3545a",
+      "lastRunId": "20261031T132345Z-8c7da397",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T23:01:46.210195+00:00",
+      "lastAttemptAt": "2026-10-31T13:23:56.488499+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T23:01:56.684821+00:00",
-      "workerFinishedAt": "2026-10-30T23:01:56.687015+00:00"
+      "updatedAt": "2026-10-31T13:24:04.415443+00:00",
+      "workerFinishedAt": "2026-10-31T13:24:04.417536+00:00"
     },
     "t1500_0433": {
       "personId": "t1500_0433",
@@ -73321,9 +73300,9 @@
       "personId": "t1500_0094",
       "candidateId": "c1500-0094",
       "name": "寇世勳",
-      "status": "download_failed",
-      "attempts": 4,
-      "nextRetryAt": "2026-10-31T06:54:09.318774+00:00",
+      "status": "no_suitable_source",
+      "attempts": 5,
+      "nextRetryAt": "2026-11-01T21:23:56.125940+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -73465,6 +73444,23 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T13:23:47.615827+00:00",
+          "provider": "entity",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T13:23:51.538628+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:51.538653+00:00",
+          "provider": "commons",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T13:23:56.125921+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:56.125931+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -73483,29 +73479,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T14:54:00.115652+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "code": "source_api_busy",
-          "message": "No catalogue response: cirrussearch-too-busy-error: Search is currently too busy. Please try again later."
-        },
-        {
-          "provider": "commons",
-          "code": "source_api_busy",
-          "message": "CirrusSearch busy; exact file-prefix lookups found no candidates"
-        }
-      ],
+      "lastAttemptAt": "2026-10-31T13:23:47.107193+00:00",
+      "lastErrors": [],
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T14:54:09.318786+00:00",
-      "lastRunId": "20261030T145342Z-4edc1047",
+      "updatedAt": "2026-10-31T13:23:56.125950+00:00",
+      "lastRunId": "20261031T132345Z-8c7da397",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T14:54:09.320898+00:00"
+      "workerFinishedAt": "2026-10-31T13:23:56.127746+00:00"
     },
     "t1500_0379": {
       "personId": "t1500_0379",
@@ -82023,8 +82008,8 @@
       "candidateId": "c1500-0092",
       "name": "江祖平",
       "status": "no_suitable_source",
-      "attempts": 4,
-      "nextRetryAt": "2026-10-31T06:54:00.003873+00:00",
+      "attempts": 5,
+      "nextRetryAt": "2026-11-01T21:23:56.123350+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -82155,6 +82140,23 @@
           "time": "2026-10-30T14:54:00.003857+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T13:23:47.651481+00:00",
+          "provider": "entity",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T13:23:51.587331+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:51.587345+00:00",
+          "provider": "commons",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T13:23:56.123330+00:00"
+        },
+        {
+          "time": "2026-10-31T13:23:56.123341+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -82173,18 +82175,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-30T14:53:51.478357+00:00",
+      "lastAttemptAt": "2026-10-31T13:23:47.106682+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-30T14:54:00.003888+00:00",
-      "lastRunId": "20261030T145342Z-4edc1047",
+      "updatedAt": "2026-10-31T13:23:56.123362+00:00",
+      "lastRunId": "20261031T132345Z-8c7da397",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-30T14:54:00.006017+00:00"
+      "workerFinishedAt": "2026-10-31T13:23:56.125258+00:00"
     },
     "t1500_0507": {
       "personId": "t1500_0507",

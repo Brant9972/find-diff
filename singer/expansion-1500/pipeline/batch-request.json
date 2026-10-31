@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-priority-A-eight-new-identity-first-diagnostic",
-  "mode": "collect",
+  "requestId": "20261101-priority-A-eight-new-identity-first-diagnostic-v2",
+  "mode": "search",
   "targetPeople": 8,
   "plannedPersonIds": [
     "t1500_0009",
@@ -22,5 +22,5 @@
   "maxMinutes": 25,
   "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. New targeted priority-A eight-person diagnostic; excludes previously misidentified Wang Tong and rejected A-Xiang. First exact Wikidata Q5/native-name/P18 then Commons Chinese caption, no Openverse network-error loop. Keep source/caption/author/CC metadata and 600x720 crop/five-stage assets for independent human review; no auto-approval, no main/Pages/creators modifications. This is not a rerun of earlier 8/10/20/40/200 batches."
+  "purpose": "DRAFT ONLY. New targeted priority-A eight-person diagnostic; excludes previously misidentified Wang Tong and rejected A-Xiang. First exact Wikidata Q5/native-name/P18 then Commons Chinese caption, no Openverse network-error loop. Keep source/caption/author/CC metadata and 600x720 crop/five-stage assets for independent human review; no auto-approval, no main/Pages/creators modifications. This is not a rerun of earlier 8/10/20/40/200 batches. Corrected schema mode to search (CI tests only allow search/render_only/manual_recrop)."
 }

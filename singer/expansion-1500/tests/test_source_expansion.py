@@ -223,7 +223,7 @@ class CommonsQueryPriorityTest(unittest.TestCase):
                 if params.get('list') == 'allimages':
                     # Empty native-name CirrusSearch may now try one bounded
                     # filename-prefix lookup before the English aliases.
-                    self.assertNotIn('gsrsearch', params)
+                    assert 'gsrsearch' not in params
                     return {'query': {'allimages': []}}
                 raise AssertionError('Unexpected request: ' + str(params))
 

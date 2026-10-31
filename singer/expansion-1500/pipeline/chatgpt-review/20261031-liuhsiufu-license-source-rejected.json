@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "personId": "t1500_0312",
+  "name": "劉修甫",
+  "reviewType": "source_license_review_only_no_image_pixels",
+  "releaseGate": "REJECTED_EXACT_SOURCES_NOT_PLAYABLE",
+  "sourceDiagnostic": {
+    "runId": 41184338997,
+    "url": "https://github.com/Brant9972/find-diff/actions/runs/41184338997",
+    "testAndCheckpoint": "success",
+    "scannedPeople": 1,
+    "metadataCandidates": 2,
+    "identitySupportedMetadata": 0,
+    "openLicenseMetadata": 0,
+    "newCandidatePhotos": 0,
+    "batchFailureReasons": {
+      "identity_unconfirmed": 2
+    }
+  },
+  "sourcePages": [
+    {
+      "filename": "Liuhsiufu2023.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+      "caption": "Taiwanese actor Liu Hsiu-fu interviewed at the press conference for Trick or Love in May 2023",
+      "authorClaim": "SET News",
+      "originalSource": "https://www.youtube.com/watch?v=nI10i5vSLO0",
+      "dimensions": [
+        1070,
+        1352
+      ],
+      "licenseClaim": "CC BY 3.0",
+      "commonsCategory": "License review needed",
+      "commonsReviewed": false,
+      "decision": "BLOCK_EXACT_SOURCE_PENDING_INDEPENDENT_LICENSE_REVIEW"
+    },
+    {
+      "filename": "Liuhsiufu2020.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
+      "caption": "Taiwanese actor Liu Hsiu-fu modelling for Chanel in August 2020",
+      "authorClaim": "Elle Taiwan",
+      "originalSource": "https://www.youtube.com/watch?v=xZvEWu5UR6s",
+      "dimensions": [
+        512,
+        708
+      ],
+      "licenseClaim": "CC BY 3.0",
+      "commonsCategory": "License review needed",
+      "commonsReviewed": false,
+      "decision": "BLOCK_EXACT_SOURCE_PENDING_INDEPENDENT_LICENSE_REVIEW"
+    }
+  ],
+  "workHint": {
+    "title": "你的孩子不是你的孩子－貓的孩子",
+    "publisher": "公共電視",
+    "source": "https://about.pts.org.tw/pr/latestnews/article/3816",
+    "publishedAt": "2018-07-13",
+    "verified": true,
+    "oldUnverifiedHint": "誰是被害者"
+  },
+  "identityNote": "Both Commons captions name the actor, but the source identity is not a visual confirmation; no image was approved.",
+  "imagePixelInspected": false,
+  "gameCropReviewed": false,
+  "fiveStageReviewed": false,
+  "gameSha256": null,
+  "approvedForLive": false,
+  "creatorsModified": false,
+  "productionModified": false,
+  "nextAction": "Find a DIFFERENT face-visible photo with independently verified author rights and caption. Do not repeat these exact two unreviewed YouTube stills."
+}

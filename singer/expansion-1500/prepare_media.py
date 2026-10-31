@@ -17,6 +17,21 @@ from media_pipeline.delivery import build_assets
 
 
 
+def merge_caption_exclusions(person, review_reason):
+    """Preserve human-curated false-identity exclusions when adding review hints.
+
+    Previous batching silently replaced excludedCaptionNames with only names
+    parsed from a transient review reason. This made rejected namesakes
+    searchable again even though the release plan still excluded them.
+    """
+    curated = person.get('excludedCaptionNames', [])
+    from_review = re.findall(r'涉及([^；，。 ]+)', review_reason or '')
+    return list(dict.fromkeys(
+        name.strip() for name in [*curated, *from_review]
+        if isinstance(name, str) and name.strip()
+    ))
+
+
 def retained_source_targets(scanned, explicitly_requested):
     """Re-expose cached source pixels for explicit IDs even during cooldown."""
     return sorted(set(scanned) | set(explicitly_requested))
@@ -207,7 +222,7 @@ def main(argv=None):
                     enriched={}
                     for pid in queue:
                         person=copy.deepcopy(people[pid]);review=state['people'][pid].get('chatgptReview',{})
-                        person['reviewReason']=review.get('reason','');person['excludedCaptionNames']=re.findall(r'涉及([^；，。 ]+)',person['reviewReason'])
+                        person['reviewReason']=review.get('reason','');person['excludedCaptionNames']=merge_caption_exclusions(person, person['reviewReason'])
                         works=re.findall(r'《([^》]+)》',person['reviewReason'])+person.get('representativeWorks',[])
                         person['reviewSearchQuery']=person['name']+' '+' '.join(dict.fromkeys(works))+' portrait';enriched[pid]=person
                     records=read(args.official_sources,[]) if args.official_sources else []

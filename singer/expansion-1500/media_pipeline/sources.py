@@ -492,7 +492,7 @@ class CuratedCommons:
                 and str(item.get('licenseUrl', '')).rstrip('/')
                     == 'https://creativecommons.org/licenses/by/3.0'
                 and bool(str(item.get('licenseReviewer', '')).strip())
-                and bool(re.fullmatch(r'\\d{4}-\\d{2}-\\d{2}',
+                and bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',
                                       str(item.get('licenseReviewedAt', ''))))
             )
             if (not item.get('artist') or not item.get('caption')

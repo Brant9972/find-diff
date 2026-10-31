@@ -100,6 +100,56 @@ class PipelineTest(unittest.TestCase):
             len([c for c in self.row['candidates']
                  if c.get('status') == 'manual_crop_required']), 1)
 
+    def test_curator_pinned_different_commons_file_retained_with_two_older_manual_sources(self):
+        # Regression: a 2024 actor portrait failed the sharpness gate, but
+        # its original pixels must remain reviewable even if two older
+        # source-only images are already retained for that person.
+        for index in range(2):
+            self.row['candidates'].append({
+                'id': f'old-{index}', 'personId': 't1',
+                'source': f'https://commons.wikimedia.org/wiki/File:old-{index}.jpg',
+                'status': 'manual_crop_required',
+            })
+        filename = '台灣演員黃宏軒.jpg'
+        self.person['reviewExactCommonsFiles'] = [filename]
+        new = candidate('new')
+        new.update({'source': 'https://commons.wikimedia.org/wiki/File:' + filename,
+                    'filename': filename, 'caption': '測試人物 正面肖像'})
+        def failed_auto_crop(blob):
+            raise ValueError('Blurred crop: sharpness below 65')
+        self.run_person([Provider([new])], crop=failed_auto_crop)
+        retained = [c for c in self.row['candidates']
+                    if c.get('status') == 'manual_crop_required']
+        self.assertEqual(len(retained), 3)
+        self.assertEqual(retained[-1]['source'], new['source'])
+        self.assertTrue(retained[-1]['originalPath'])
+        self.assertFalse(retained[-1]['eligibleForLive'])
+        self.assertIsNone(retained[-1]['gamePath'])
+
+        # A fourth image must not cause unbounded source-only retention.
+        next_file = '另一張新肖像.jpg'
+        self.person['reviewExactCommonsFiles'] = [next_file]
+        extra = candidate('extra')
+        extra.update({'source': 'https://commons.wikimedia.org/wiki/File:' + next_file,
+                      'filename': next_file, 'caption': '測試人物 肖像'})
+        self.run_person([Provider([extra])], crop=failed_auto_crop)
+        self.assertEqual(len([c for c in self.row['candidates']
+                              if c.get('status') == 'manual_crop_required']), 3)
+
+    def test_curated_filename_does_not_allow_non_commons_retention_bypass(self):
+        self.row['candidates'].append({
+            'id': 'old', 'personId': 't1',
+            'source': 'https://commons.wikimedia.org/wiki/File:old.jpg',
+            'status': 'manual_crop_required',
+        })
+        self.person['reviewExactCommonsFiles'] = ['new.jpg']
+        def failed_auto_crop(blob):
+            raise ValueError('Blurred crop: sharpness below 65')
+        # Same filename, but an unrelated host is not the pinned Commons file.
+        self.run_person([Provider([candidate('new')])], crop=failed_auto_crop)
+        self.assertEqual(len([c for c in self.row['candidates']
+                              if c.get('status') == 'manual_crop_required']), 1)
+
     def test_no_result_can_retry_after_restart(self):
         self.run_person([Provider([])])
         self.assertEqual(self.row['status'], 'no_suitable_source')

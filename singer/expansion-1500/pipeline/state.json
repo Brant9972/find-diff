@@ -1145,9 +1145,9 @@
       "personId": "t1500_0475",
       "candidateId": "c1500-0475",
       "name": "大元",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 3,
-      "nextRetryAt": "2026-10-31T10:21:56.713983+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -3224,6 +3224,160 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+          "filename": "LinDaYuan.jpg",
+          "artist": "邱鈺鋒",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​台北信義威秀影城中庭廣場，Yahoo!奇摩超級商城三周年慶「獨家破天荒全店5折搶購大會」舞台，「一日網購店長」大元。",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "大元"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:53.719679+00:00",
+          "width": 1000,
+          "height": 1500,
+          "id": "manualrecrop-f8910be33a78b55efe67",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0475/manualrecrop-f8910be33a78b55efe67/5069f0338f0d/original.bin",
+          "originalSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0475/manualrecrop-f8910be33a78b55efe67/5069f0338f0d/f8910be33a78.jpg",
+          "parentCandidateId": "17584c9fcf63be759a55",
+          "parentSourceSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+          "gameSha256": "f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349",
+          "reveal": {
+            "eyes": [
+              0.08,
+              0.28,
+              0.92,
+              0.44
+            ],
+            "nose": [
+              0.08,
+              0.28,
+              0.92,
+              0.53
+            ],
+            "mouth": [
+              0.08,
+              0.28,
+              0.92,
+              0.62
+            ],
+            "chin": [
+              0.08,
+              0.28,
+              0.92,
+              0.73
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "d0c39ae02f9c30a2739fe67266fe45340a32f86a",
+            "sourceCandidateId": "17584c9fcf63be759a55",
+            "sourceSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+            "sourceSize": [
+              1000,
+              1500
+            ],
+            "cropBox": [
+              190,
+              60,
+              790,
+              780
+            ],
+            "parentCropFailure": "Face is too tilted",
+            "reviewerNotes": "Original is 1000x1500 and visually inspected via pipeline retained source. Single woman, both eyes, nose, open smile, chin clearly visible; head angled, automatic face tilt rejection is geometric not necessarily a game visual rejection. Crop x190..790 y60..780 retains full face and no microphone. Must inspect five actual rendered stages and ensure eyes preview does not reveal nose, mouth preview does not reveal chin; verify recognizability and no overlay watermark. Source Commons Q9293309 Dayuan, caption explicitly says 一日網購店長大元, own work 邱鈺鋒, CC BY-SA 4.0."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349/chin.png",
+            "full": "expansion-1500/pipeline/evidence/f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.08,
+                0.28,
+                0.92,
+                0.44
+              ],
+              "nose": [
+                0.08,
+                0.28,
+                0.92,
+                0.53
+              ],
+              "mouth": [
+                0.08,
+                0.28,
+                0.92,
+                0.62
+              ],
+              "chin": [
+                0.08,
+                0.28,
+                0.92,
+                0.73
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -3993,6 +4147,13 @@
             }
           ],
           "candidatesTried": 13
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261031T022403Z-6b9351f2",
+          "sourceCommit": "d0c39ae02f9c30a2739fe67266fe45340a32f86a",
+          "candidateId": "manualrecrop-f8910be33a78b55efe67",
+          "sourceCandidateId": "17584c9fcf63be759a55"
         }
       ],
       "legacyRecord": {
@@ -4016,139 +4177,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T022151Z-d4295725",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T022403Z-6b9351f2",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-f8910be33a78b55efe67"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-31T02:21:53.291558+00:00",
-      "lastErrors": [
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
-            "filename": "LinDaYuan.jpg",
-            "artist": "邱鈺鋒",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "​台北信義威秀影城中庭廣場，Yahoo!奇摩超級商城三周年慶「獨家破天荒全店5折搶購大會」舞台，「一日網購店長」大元。",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "query": "大元",
-              "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
-              "curatedExactFileHint": true,
-              "captionAliasMatches": [
-                "大元"
-              ],
-              "visualIdentityVerified": false
-            },
-            "recognitionEvidence": {
-              "requestedReplacement": "",
-              "representativeWorks": [
-                "Popu Lady"
-              ],
-              "note": "Familiar appearance must be reviewed"
-            },
-            "searchTime": "2026-10-31T02:21:53.719679+00:00",
-            "width": 1000,
-            "height": 1500,
-            "id": "17584c9fcf63be759a55",
-            "personId": "t1500_0475",
-            "discoveryRunId": "20261031T022151Z-d4295725",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "manual_crop_required",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
-            ],
-            "originalPath": "expansion-1500/pipeline/assets/t1500_0475/17584c9fcf63be759a55/5069f0338f0d/original.bin",
-            "originalSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
-            "cropFailure": "Face is too tilted",
-            "gamePath": null
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too tilted"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Tianyuanshu.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Polynomial_equation_with_rod_numerals.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Ger_Tereg_Blue.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_iron_magic_square.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Celadon_glazes.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_03.jpg",
-          "code": "nonportrait_scene",
-          "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_02.jpg",
-          "code": "nonportrait_scene",
-          "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Purpoted_Military_Flag_of_the_Yuan_Dynasty_(2).png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%B5%B7%E5%85%AC%E5%9B%AD%E5%9B%A2%E5%9F%8E%E5%85%83%E4%BB%A3%E6%B8%8E%E5%B1%B1%E5%A4%A7%E7%8E%89%E6%B5%B7.jpg",
-          "code": "nonportrait_scene",
-          "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-31T02:21:56.714044+00:00",
       "workerFinishedAt": "2026-10-31T02:21:56.715978+00:00"
     },

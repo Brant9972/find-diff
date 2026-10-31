@@ -1,16 +1,16 @@
 {
-  "runId": "20261031T021826Z-78764bab",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T021826Z-78764bab/review-index.json",
+  "runId": "20261031T022151Z-d4295725",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T022151Z-d4295725/review-index.json",
   "summary": {
-    "runId": "20261031T021826Z-78764bab",
-    "generatedAt": "2026-10-31T02:18:31.300324+00:00",
+    "runId": "20261031T022151Z-d4295725",
+    "generatedAt": "2026-10-31T02:21:57.322175+00:00",
     "scannedPeople": 2,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
     "scannedWithoutCandidates": 2,
     "retryNeeded": 419,
     "pendingReviewPeople": 1,
-    "licenseConcernCandidates": 296,
+    "licenseConcernCandidates": 299,
     "statusCounts": {
       "no_suitable_source": 233,
       "download_failed": 180,
@@ -20,10 +20,10 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 298,
+      "identity_unconfirmed": 296,
       "image_validation_failed": 105,
       "network_error": 261,
-      "nonportrait_scene": 1,
+      "nonportrait_scene": 3,
       "source_api_busy": 70,
       "license_unclear": 73,
       "source_api_error": 20,
@@ -35,22 +35,22 @@
     },
     "batchFailureReasons": {
       "image_validation_failed": 2,
-      "identity_unconfirmed": 11,
-      "nonportrait_scene": 1
+      "identity_unconfirmed": 9,
+      "nonportrait_scene": 3
     },
-    "manualCropSources": 34,
+    "manualCropSources": 36,
     "batchProviderStages": {
       "commons": {
         "attemptedPeople": 2,
         "metadataCandidates": 11,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 9,
+        "identitySupportedMetadata": 2,
+        "openLicenseMetadata": 8,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
+        "savedForManualCrop": 2,
         "errors": {
           "image_validation_failed": 2,
-          "identity_unconfirmed": 11,
-          "nonportrait_scene": 1
+          "identity_unconfirmed": 9,
+          "nonportrait_scene": 3
         }
       }
     },

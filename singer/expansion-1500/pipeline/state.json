@@ -1146,8 +1146,8 @@
       "candidateId": "c1500-0475",
       "name": "大元",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-31T06:18:30.847941+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T10:21:56.713983+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -2807,6 +2807,423 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+          "filename": "LinDaYuan.jpg",
+          "artist": "邱鈺鋒",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "​台北信義威秀影城中庭廣場，Yahoo!奇摩超級商城三周年慶「獨家破天荒全店5折搶購大會」舞台，「一日網購店長」大元。",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "大元"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:53.719679+00:00",
+          "width": 1000,
+          "height": 1500,
+          "id": "17584c9fcf63be759a55",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0475/17584c9fcf63be759a55/5069f0338f0d/original.bin",
+          "originalSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+          "cropFailure": "Face is too tilted",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tianyuanshu.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tianyuanshu.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Tianyuanshu.png",
+          "filename": "Tianyuanshu.png",
+          "artist": "The original uploader was Shizhao at Chinese Wikipedia.",
+          "credit": "Transferred from zh.wikipedia to Commons by Shizhao using CommonsHelper.",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​天元术。",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.496192+00:00",
+          "width": 140,
+          "height": 116,
+          "id": "cbb251a3a1adfbd1b4d8",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Polynomial_equation_with_rod_numerals.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Polynomial_equation_with_rod_numerals.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Polynomial_equation_with_rod_numerals.png",
+          "filename": "Polynomial equation with rod numerals.png",
+          "artist": "Apoc2400",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "The polynomial equation 2x2 + 18x − 316 = 0 in rod numerals, as in tian yuan shu. Based on File:Tianyuanshu.png.",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.500872+00:00",
+          "width": 152,
+          "height": 122,
+          "id": "167354dca1e91e8bef89",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Ger_Tereg_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Ger_Tereg_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Ger_Tereg_Blue.jpg",
+          "filename": "Ger Tereg Blue.jpg",
+          "artist": "User:Gantuya_eng",
+          "credit": "Cropped from File:1000 Tugriks - Verso.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "caption": "Ger tereg of the 12-13th centuries",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.505799+00:00",
+          "width": 217,
+          "height": 117,
+          "id": "8d05c020efbab759d9c2",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG/1920px-%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG",
+          "filename": "元代梓人遗制格子门.JPG",
+          "artist": "薛景石",
+          "credit": "mybook",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​元代梓人遗制格子门",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.510137+00:00",
+          "width": 2153,
+          "height": 2752,
+          "id": "cd942eb28ee1f516873c",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Yuan_dynasty_iron_magic_square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Yuan_dynasty_iron_magic_square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_iron_magic_square.jpg",
+          "filename": "Yuan dynasty iron magic square.jpg",
+          "artist": "BabelStone",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "Iron plate with Arabic numbers arranged in a 6 × 6 grid to form a magic square adding up to 111 horizontally, vertically and diagonally\n28     4      3     31    35   10\n36    18    21    24     11    1\n 7     23    12    17    22    30\n 8     13    26    19    16    29\n 5     20    15    14    25    32\n27    33    34     6      2      9\n\nYuan Dynasty (1206-1368). Currently housed at the Shaanxi History Museum in Xi'an. Discovered at Xi'an, Shaanxi Province, 1956.",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.514358+00:00",
+          "width": 1608,
+          "height": 1409,
+          "id": "70ea5ae895eaf45e8843",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG",
+          "filename": "Dai Ön Kemekü Yeke Mongghul Ulus.PNG",
+          "artist": "唐吉訶德的侍從",
+          "credit": "Own work",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "\"Dai Ön Kemekü Yekhe Mongghul Ulus\", which means \"Great Mongol Empire which is called Great Yuan\" in Mongolian language, is one of names of Yuan Dynasty in classical Mongolian.",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.520688+00:00",
+          "width": 213,
+          "height": 95,
+          "id": "d7e7c7b08d5bbaf99e28",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG/1920px-%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG",
+          "filename": "管軍総把印.JPG",
+          "artist": "震天動地",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "管軍総把印。",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.526425+00:00",
+          "width": 5184,
+          "height": 3456,
+          "id": "9c582bd328c43a232559",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Celadon_glazes.JPG/1920px-Celadon_glazes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Celadon_glazes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Celadon_glazes.JPG",
+          "filename": "Celadon glazes.JPG",
+          "artist": "Pchmelda",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "caption": "Greenish and brownish celadon glazes \nSong (960-1279) and Yuan (1271-1368) dynasties",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.531327+00:00",
+          "width": 4320,
+          "height": 3240,
+          "id": "2a8a71ba501554928f02",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Purpoted_Military_Flag_of_the_Yuan_Dynasty_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Purpoted_Military_Flag_of_the_Yuan_Dynasty_%282%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Purpoted_Military_Flag_of_the_Yuan_Dynasty_(2).png",
+          "filename": "Purpoted Military Flag of the Yuan Dynasty (2).png",
+          "artist": "Sci Show With Moh",
+          "credit": "Own work",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "caption": "Source: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Yuan_dynasty_flag_%2851169667130%29.jpg/1280px-Yuan_dynasty_flag_%2851169667130%29.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Yuan_dynasty_flag_%2851168573791%29.jpg/1280px-Yuan_dynasty_flag_%2851168573791%29.jpg https://upload.wikimedia.org/wikipedia/commons/5/50/Yuan_Dynasty_Military_Banners.jpg",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "大元",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "Popu Lady"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:55.538029+00:00",
+          "width": 957,
+          "height": 686,
+          "id": "4a1e90c5f53c7231ef63",
+          "personId": "t1500_0475",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -3437,6 +3854,145 @@
             }
           ],
           "candidatesTried": 13
+        },
+        {
+          "time": "2026-10-31T02:21:53.470711+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T02:21:56.713927+00:00"
+        },
+        {
+          "time": "2026-10-31T02:21:56.713951+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/LinDaYuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+                "filename": "LinDaYuan.jpg",
+                "artist": "邱鈺鋒",
+                "credit": "Own work",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "caption": "​台北信義威秀影城中庭廣場，Yahoo!奇摩超級商城三周年慶「獨家破天荒全店5折搶購大會」舞台，「一日網購店長」大元。",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "大元",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "大元"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "Popu Lady"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T02:21:53.719679+00:00",
+                "width": 1000,
+                "height": 1500,
+                "id": "17584c9fcf63be759a55",
+                "personId": "t1500_0475",
+                "discoveryRunId": "20261031T022151Z-d4295725",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0475/17584c9fcf63be759a55/5069f0338f0d/original.bin",
+                "originalSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+                "cropFailure": "Face is too tilted",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too tilted"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Tianyuanshu.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Polynomial_equation_with_rod_numerals.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Ger_Tereg_Blue.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_iron_magic_square.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Celadon_glazes.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_03.jpg",
+              "code": "nonportrait_scene",
+              "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_02.jpg",
+              "code": "nonportrait_scene",
+              "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Purpoted_Military_Flag_of_the_Yuan_Dynasty_(2).png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%B5%B7%E5%85%AC%E5%9B%AD%E5%9B%A2%E5%9F%8E%E5%85%83%E4%BB%A3%E6%B8%8E%E5%B1%B1%E5%A4%A7%E7%8E%89%E6%B5%B7.jpg",
+              "code": "nonportrait_scene",
+              "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
+            }
+          ],
+          "candidatesTried": 13
         }
       ],
       "legacyRecord": {
@@ -3460,10 +4016,10 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T021826Z-78764bab",
+      "lastRunId": "20261031T022151Z-d4295725",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T02:18:27.363750+00:00",
+      "lastAttemptAt": "2026-10-31T02:21:53.291558+00:00",
       "lastErrors": [
         {
           "provider": "commons",
@@ -3498,98 +4054,103 @@
               ],
               "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-31T02:18:27.729324+00:00",
+            "searchTime": "2026-10-31T02:21:53.719679+00:00",
             "width": 1000,
             "height": 1500,
             "id": "17584c9fcf63be759a55",
             "personId": "t1500_0475",
-            "discoveryRunId": "20261031T021826Z-78764bab",
+            "discoveryRunId": "20261031T022151Z-d4295725",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0475/17584c9fcf63be759a55/5069f0338f0d/original.bin",
+            "originalSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+            "cropFailure": "Face is too tilted",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Face is too tilted"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Sakyamuni_Buddha_Dry_Lacquer_Yuan_Dynasty_(1271-1368_CE)_China_02.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tianyuanshu.png",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Sakyamuni_Buddha_Dry_Lacquer_Yuan_Dynasty_(1271-1368_CE)_China.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Polynomial_equation_with_rod_numerals.png",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Ger_Tereg_Blue.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%85%83%E4%BB%A3%E6%A2%93%E4%BA%BA%E9%81%97%E5%88%B6%E6%A0%BC%E5%AD%90%E9%97%A8.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_iron_magic_square.jpg",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Dai_%C3%96n_Kemek%C3%BC_Yeke_Mongghul_Ulus.PNG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AE%A1%E8%BB%8D%E7%B7%8F%E6%8A%8A%E5%8D%B0.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Celadon_glazes.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_03.jpg",
           "code": "nonportrait_scene",
           "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Neolithic_Peiligang_Culture_(10202320736).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_Jin_or_Yuan_Dynasty_1115-1234_CE_or_1271-1368_CE_China_wood_overlaid_with_Gesso_and_Gilt_Penn_Museum_02.jpg",
+          "code": "nonportrait_scene",
+          "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Purpoted_Military_Flag_of_the_Yuan_Dynasty_(2).png",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Mogao_Cave_465,_bow_harp.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Yuan_Dynasty_Military_Banners.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Ceramic_stoneware_storage_jar_12th-13th_century_CE_Song-Yuan_period_Guangdong_or_Fujian_Province_China_recovered_from_the_Java_Sea.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Closeup_of_Guanyin_(Avalokiteshvara)_Yuan-early_Ming_dynasty_late_14th_century_CE.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Guanyin_(Avalokiteshvara)_Yuan-early_Ming_dynasty_late_14th_century_CE.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Chinese_dice_from_Late_Yuan_Dynasty_to_early_Qing_Dynasty.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_under_Kublai_Khan.png",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:The_Yuan_(Mongol)_Dynasty_1280-1368_AD.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%B5%B7%E5%85%AC%E5%9B%AD%E5%9B%A2%E5%9F%8E%E5%85%83%E4%BB%A3%E6%B8%8E%E5%B1%B1%E5%A4%A7%E7%8E%89%E6%B5%B7.jpg",
+          "code": "nonportrait_scene",
+          "message": "Filename indicates a place, business or building rather than a person; image not downloaded"
         }
       ],
-      "updatedAt": "2026-10-31T02:18:30.847952+00:00",
-      "workerFinishedAt": "2026-10-31T02:18:30.850009+00:00"
+      "updatedAt": "2026-10-31T02:21:56.714044+00:00",
+      "workerFinishedAt": "2026-10-31T02:21:56.715978+00:00"
     },
     "t1500_0290": {
       "personId": "t1500_0290",
@@ -37052,8 +37613,8 @@
       "candidateId": "c1500-0534",
       "name": "黃宏軒",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-31T06:18:30.091956+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T10:21:56.448744+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -37117,6 +37678,54 @@
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0534/aa4385a6eb7b9154b681/74ad747dbc62/original.bin",
           "originalSha256": "74ad747dbc62372aebc0c2ab795e511ea522141625bfb6ed4229cfc576fd7165",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
+          "filename": "台灣演員黃宏軒的形象照，攝於2024年.jpg",
+          "artist": "Petersuuu",
+          "credit": "Own work",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "Processed with VSCO with al3pro preset",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "黃宏軒",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "黃宏軒"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "關於未知的我們"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T02:21:53.715199+00:00",
+          "width": 1717,
+          "height": 2610,
+          "id": "f6935a26bdbbab2e51b7",
+          "personId": "t1500_0534",
+          "discoveryRunId": "20261031T022151Z-d4295725",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0534/f6935a26bdbbab2e51b7/a7be2cc6b60e/original.bin",
+          "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
           "cropFailure": "Blurred crop: sharpness below 65",
           "gamePath": null
         }
@@ -37809,6 +38418,73 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-31T02:21:53.434579+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T02:21:56.448708+00:00"
+        },
+        {
+          "time": "2026-10-31T02:21:56.448730+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
+                "filename": "台灣演員黃宏軒的形象照，攝於2024年.jpg",
+                "artist": "Petersuuu",
+                "credit": "Own work",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "caption": "Processed with VSCO with al3pro preset",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "黃宏軒",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "黃宏軒"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "關於未知的我們"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T02:21:53.715199+00:00",
+                "width": 1717,
+                "height": 2610,
+                "id": "f6935a26bdbbab2e51b7",
+                "personId": "t1500_0534",
+                "discoveryRunId": "20261031T022151Z-d4295725",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0534/f6935a26bdbbab2e51b7/a7be2cc6b60e/original.bin",
+                "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -37832,10 +38508,10 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T021826Z-78764bab",
+      "lastRunId": "20261031T022151Z-d4295725",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T02:18:27.363825+00:00",
+      "lastAttemptAt": "2026-10-31T02:21:53.291654+00:00",
       "lastErrors": [
         {
           "provider": "commons",
@@ -37870,26 +38546,31 @@
               ],
               "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-31T02:18:27.650557+00:00",
+            "searchTime": "2026-10-31T02:21:53.715199+00:00",
             "width": 1717,
             "height": 2610,
             "id": "f6935a26bdbbab2e51b7",
             "personId": "t1500_0534",
-            "discoveryRunId": "20261031T021826Z-78764bab",
+            "discoveryRunId": "20261031T022151Z-d4295725",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0534/f6935a26bdbbab2e51b7/a7be2cc6b60e/original.bin",
+            "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
         }
       ],
-      "updatedAt": "2026-10-31T02:18:30.091967+00:00",
-      "workerFinishedAt": "2026-10-31T02:18:30.093910+00:00"
+      "updatedAt": "2026-10-31T02:21:56.448756+00:00",
+      "workerFinishedAt": "2026-10-31T02:21:56.450691+00:00"
     },
     "t1500_0140": {
       "personId": "t1500_0140",

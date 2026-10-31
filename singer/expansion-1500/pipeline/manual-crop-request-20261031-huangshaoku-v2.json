@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d1b708f2eaeb023784339406546c1d58a67fe802",
+  "sourceRun": "20261031T004335Z-ca5e8937",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Draft only: same 600x720 JPEG source pixels as first Huang Shao-ku crop, adjust mouth/chin stage boundaries so mouth reveal does not already expose chin. No release until actual visual QA.",
+  "items": [
+    {
+      "personId": "t1500_0108",
+      "sourceCandidateId": "a4ed6e44e9b1698b677f",
+      "sourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+      "box": [
+        800,
+        120,
+        1700,
+        1200
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.29,
+          0.92,
+          0.41
+        ],
+        "nose": [
+          0.08,
+          0.29,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.29,
+          0.92,
+          0.55
+        ],
+        "chin": [
+          0.08,
+          0.29,
+          0.92,
+          0.62
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "V1 game SHA 640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9 visually reviewed. Eyes/nose stages pass; mouth stage bottom .58 reveals lower chin too early; chin stage .68 shows much of neck. Retain same JPEG pixels, tighten mouth to .55 and chin to .62, then inspect five stages again. Rights/source evidence: Commons own-work CC BY-SA 4.0 by Lidian192847, Q28408495, album 《未來》 LINE MUSIC."
+    }
+  ]
+}

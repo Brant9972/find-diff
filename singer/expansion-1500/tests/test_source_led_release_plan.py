@@ -126,6 +126,34 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         self.assertNotEqual(person['photoStatus'], 'published')
 
 
+    def test_exact_qid_p18_source_may_be_retained_for_manual_crop_only(self):
+        import sys
+        root = Path(__file__).resolve().parents[1]
+        sys.path.insert(0, str(root))
+        from media_pipeline.core import verified_curated_p18_manual_source
+        plan = json.loads((root / 'release-plan-20261028.json').read_text(
+            encoding='utf-8'))
+        person = next(row for row in plan['selectedNew']
+                      if row['plannedQuestionId'] == 't1500_0107')
+        self.assertEqual(person['reviewVerifiedP18File'],
+                         '2022-03-06 Chen Ming-chang 02.jpg')
+        source = 'https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_02.jpg'
+        item = {'filename': person['reviewVerifiedP18File'],
+                'source': source}
+        evidence = {'curatedExactFileHint': True}
+        self.assertTrue(verified_curated_p18_manual_source(
+            person, item, evidence))
+        self.assertFalse(verified_curated_p18_manual_source(
+            person, {**item, 'filename': '2022-03-06 Chen Ming-chang 01.jpg'}, evidence))
+        self.assertFalse(verified_curated_p18_manual_source(
+            person, {**item, 'source': 'https://example.org/' + item['filename']}, evidence))
+        self.assertFalse(verified_curated_p18_manual_source(
+            person, item, {'curatedExactFileHint': False}))
+        self.assertFalse(verified_curated_p18_manual_source(
+            {**person, 'wikidataId': None}, item, evidence))
+        self.assertFalse(person['imageVerification']['finalCropReviewed'])
+
+
     def test_dayuan_and_huanghongxuan_exact_leads_stay_draft_only(self):
         root = Path(__file__).resolve().parents[1]
         plan = json.loads((root / 'release-plan-20261028.json').read_text(

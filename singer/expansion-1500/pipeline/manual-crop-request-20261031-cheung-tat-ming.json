@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "3ae2261ce0611e696b8e260b1cfea245e41bb010",
+  "sourceRun": "retained-original-before-20261031; inspected via QA 41170672128",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Stage one retained source-only Commons original for 張達明 into a 600x720 draft and explicit five-stage reveal; do not re-download, do not publish, do not claim approval.",
+  "items": [
+    {
+      "personId": "t1500_0562",
+      "sourceCandidateId": "8cb00c32a88015b25b4d",
+      "sourceSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+      "box": [
+        0,
+        100,
+        1000,
+        1300
+      ],
+      "reveal": {
+        "eyes": [
+          0.12,
+          0.33,
+          0.88,
+          0.46
+        ],
+        "nose": [
+          0.12,
+          0.33,
+          0.88,
+          0.57
+        ],
+        "mouth": [
+          0.12,
+          0.33,
+          0.88,
+          0.69
+        ],
+        "chin": [
+          0.12,
+          0.33,
+          0.88,
+          0.84
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Original 1000x1375 CC BY 3.0 am730 2019 video still, Commons independent licence review by GRuban 2020-07-24. Retained source SHA verified by QA 41170672128; automatic YuNet failed 'No reliable frontal face', but original image was manually viewed: single frontal face, open eyes, visible nose/mouth/chin, no microphone or sunglasses. Proposed crop x0=0,y0=100,width1000,height1200; face eye line around y~560 original, nose ~700, mouth ~840, chin ~1000. Reveal windows deliberately separate eyes then nose then mouth then chin. Geometry remains provisional; human MUST inspect all five rendered stages and reject/adjust if any feature leaks or is cropped. Work hint 《大內密探零零發》 role 皇帝 verified via Apple TV; not yet integrated. No game approval."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-verified-qid-six-people-source-diagnostic",
-  "mode": "collect",
+  "requestId": "20261031-verified-qid-six-people-source-diagnostic-v2",
+  "mode": "search",
   "targetPeople": 6,
   "plannedPersonIds": [
     "t1500_0092",
@@ -20,5 +20,5 @@
   "maxMinutes": 24,
   "personSeconds": 105,
   "maxCandidates": 2,
-  "purpose": "Draft-only six-person diagnostic of previously selectedNew Taiwanese/HK actors, prioritizing five existing curated QIDs (江祖平, 郭品超, 寇世勳, 葛民輝, 苗可秀) and exact-name 王耀慶. Search new sources, preserve Q5/exact caption and license evidence; no auto approval, no main, no Pages, no creators changes. Do not retry rejected photos or count duplicate people."
+  "purpose": "Draft only: six-person exact-QID/source diagnostic for existing selectedNew actors; no main, no Pages, no creators. Do not approve without identity, author, license, 600x720 five-stage human QA. Do not retry rejected sources."
 }

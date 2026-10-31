@@ -508,19 +508,31 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         'No reliable frontal face', 'Multiple prominent faces',
                         'Face is too small', 'Face is too tilted',
                         'Blurred crop', 'Overexposed crop'))
-                    # A previously saved source-only original must not block a
-                    # different source after the reviewer explicitly excluded
-                    # the old one for obstructed eyes/chin or wrong identity.
-                    # Keep the old asset for audit; still cap active retained
-                    # manual-crop sources to one per person.
+                    # Keep source-only assets for audit. Normally retain only
+                    # one active manual-crop source per person. A curator may
+                    # explicitly pin a DIFFERENT exact Commons filename after
+                    # the first source proved unusable. Permit at most three
+                    # active originals in that narrow case; otherwise a new
+                    # correctly captioned/CC-licensed image is silently lost
+                    # whenever an older, inferior image remains in the queue.
+                    # Exact Commons URL equality prevents arbitrary providers
+                    # from spoofing a filename in reviewExactCommonsFiles.
                     excluded_manual = rejected | {
                         source_key(url) for url in person.get('excludedPhotoSources', [])
                     }
-                    already_saved = any(
-                        c.get('status') == 'manual_crop_required'
+                    active_manual = [
+                        c for c in row['candidates']
+                        if c.get('status') == 'manual_crop_required'
                         and source_key(c.get('source')) not in excluded_manual
-                        for c in row['candidates']
+                    ]
+                    pinned_exact = any(
+                        source_key(item.get('source')) ==
+                        source_key('https://commons.wikimedia.org/wiki/File:' + filename.removeprefix('File:').replace(' ', '_'))
+                        for filename in person.get('reviewExactCommonsFiles', [])[:3]
+                        if isinstance(filename, str)
                     )
+                    retention_limit = 3 if pinned_exact else 1
+                    already_saved = len(active_manual) >= retention_limit
                     if (crop_started and isinstance(exc, ValueError) and
                             source_named and crop_recoverable and not already_saved):
                         raw_path = directory / 'assets' / row['personId'] / cid / digest[:12] / 'original.bin'

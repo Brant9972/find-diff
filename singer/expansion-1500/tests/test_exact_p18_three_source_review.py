@@ -22,8 +22,14 @@ class ExactP18ThreeSourceReviewTest(unittest.TestCase):
                 self.assertEqual(person["name"], name)
                 self.assertEqual(person["wikidataId"], qid)
                 self.assertIn(filename, person["reviewExactCommonsFiles"])
-                self.assertNotEqual(person["photoStatus"], "published")
-                self.assertFalse(person["imageVerification"]["finalCropReviewed"])
+                if person_id == "t1500_0562":
+                    # This candidate passed a later independent crop/rights
+                    # review; the old source-only report remains unchanged.
+                    self.assertEqual(person["photoStatus"], "published")
+                    self.assertTrue(person["imageVerification"]["finalCropReviewed"])
+                else:
+                    self.assertNotEqual(person["photoStatus"], "published")
+                    self.assertFalse(person["imageVerification"]["finalCropReviewed"])
 
     def test_visually_rejected_sources_are_excluded_without_excluding_people(self):
         plan = json.loads((ROOT / "release-plan-20261028.json").read_text(encoding="utf-8"))

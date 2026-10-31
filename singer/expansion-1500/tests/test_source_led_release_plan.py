@@ -60,7 +60,14 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             self.assertEqual(request['mode'], 'search')
             self.assertTrue(request['plannedPersonIds'])
             self.assertLessEqual(len(request['plannedPersonIds']), 10)
-            self.assertIn('curated', request['providers'])
+            if 'curated' not in request['providers']:
+                # Commons-only retries are safe only when every ID has an
+                # explicit exact Commons file, not an open-ended name sweep.
+                self.assertEqual(request['providers'], ['commons'])
+                plan = json.loads((root / 'release-plan-20261028.json').read_text(encoding='utf-8'))
+                selected = {p['plannedQuestionId']: p for p in plan['selectedNew']}
+                self.assertTrue(all(selected[pid].get('reviewExactCommonsFiles')
+                                    for pid in request['plannedPersonIds']))
             self.assertNotIn('openverse', request['providers'])
             self.assertIn('exact', request['purpose'].casefold())
         self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))

@@ -32,6 +32,88 @@ def merge_caption_exclusions(person, review_reason):
     ))
 
 
+
+def reconcile_live_people(state, people, active):
+    """Fail closed on known live identities before any photo-source requests.
+
+    A planned ID is published only if that *same ID* exists in the latest
+    playable banks. Other matches are duplicates, not new published people.
+    Match pinned Wikidata QIDs, canonical names, and unique strong
+    canonical-to-alias links; never infer a duplicate from two generic
+    nicknames or from a conflicting pair of pinned QIDs.
+    """
+    def qid(item):
+        value = item.get('wikidataId') or item.get('wikidataQid')
+        return value if isinstance(value, str) and re.fullmatch(r'Q[1-9][0-9]*', value) else None
+
+    def strong_alias(value):
+        key = norm(value)
+        if re.fullmatch(r'[a-z0-9]+', key):
+            return len(key) >= 5
+        return len(key) >= 3
+
+    canonical, aliases, qids = {}, {}, {}
+    for live_id, question in active.items():
+        name_key = norm(question.get('name', ''))
+        if name_key:
+            canonical.setdefault(name_key, set()).add(live_id)
+        for alias in question.get('aliases', []):
+            if isinstance(alias, str) and strong_alias(alias):
+                aliases.setdefault(norm(alias), set()).add(live_id)
+        if qid(question):
+            qids.setdefault(qid(question), set()).add(live_id)
+
+    def unique_identity(ids, candidate_qid):
+        # Multiple questions in different banks can be the SAME person.
+        # Different canonical people sharing a nickname are ambiguous.
+        eligible = [live_id for live_id in ids
+                    if not (candidate_qid and qid(active[live_id])
+                            and qid(active[live_id]) != candidate_qid)]
+        if len({norm(active[live_id].get('name', '')) for live_id in eligible}) != 1:
+            return None
+        return sorted(eligible)[0] if eligible else None
+
+    for pid, row in state['people'].items():
+        if pid in active:
+            row['status'] = 'published'
+            continue
+        person = people.get(pid)
+        if person is None:
+            continue
+        candidate_qid = qid(person)
+        name_key = norm(person.get('name', row.get('name', '')))
+        match, reason = None, None
+        explicit = person.get('duplicateExistingCanonicalId')
+        if explicit in active:
+            match, reason = explicit, 'curated_duplicate_id'
+        elif candidate_qid and qids.get(candidate_qid):
+            match, reason = sorted(qids[candidate_qid])[0], 'wikidata_qid'
+        elif name_key and canonical.get(name_key):
+            match = unique_identity(canonical[name_key], candidate_qid)
+            reason = 'canonical_name' if match else None
+        if not match and name_key and strong_alias(name_key) and aliases.get(name_key):
+            match = unique_identity(aliases[name_key], candidate_qid)
+            reason = 'canonical_matches_live_alias' if match else None
+        if not match:
+            candidate_aliases = {
+                norm(alias) for alias in [*person.get('aliases', []), *person.get('acceptedAnswers', [])]
+                if isinstance(alias, str) and strong_alias(alias)
+            }
+            ids = set().union(*(canonical.get(key, set()) for key in candidate_aliases)) if candidate_aliases else set()
+            match = unique_identity(ids, candidate_qid) if ids else None
+            reason = 'candidate_alias_matches_live_canonical' if match else None
+        if match:
+            row['status'] = 'duplicate_existing'
+            row['duplicateExistingCanonicalId'] = match
+            row['duplicateMatchReason'] = reason
+            row['duplicateMatchSource'] = 'live_preflight'
+            row['nextRetryAt'] = None
+        elif row.get('status') == 'published':
+            # A stale state cannot prove publication when the latest live
+            # questions no longer contain the planned ID or its identity.
+            row['status'] = 'no_suitable_source'
+            row['preflightWarning'] = 'previous_published_state_absent_from_current_live_banks'
+
 def retained_source_targets(scanned, explicitly_requested):
     """Re-expose cached source pixels for explicit IDs even during cooldown."""
     return sorted(set(scanned) | set(explicitly_requested))
@@ -183,10 +265,7 @@ def main(argv=None):
                   or state['people'][pid].get('name') != person['name']):
                 raise ValueError('Backup state identity mismatch')
         if set(args.person_id)-people.keys():parser.error('Unknown person ID')
-        active_names={norm(q['name']) for q in active.values()}
-        for pid,row in state['people'].items():
-            if pid in active or norm(row['name']) in active_names:row['status']='published'
-            elif people[pid].get('duplicateExistingCanonicalId') in active:row['status']='duplicate_existing'
+        reconcile_live_people(state, people, active)
         handoff=consume(root,directory,state)
         if (args.review_round or args.evidence_only) and not handoff:parser.error('No fixed ChatGPT handoff')
         rejected=rejection_keys(root,args.live_ref)

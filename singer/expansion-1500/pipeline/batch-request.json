@@ -1,17 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-priority-A-eight-new-identity-first-diagnostic-v3",
+  "requestId": "20261101-fresh-zero-attempt-ten-selectedNew-source-diagnostic",
   "mode": "search",
-  "targetPeople": 8,
+  "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0009",
-    "t1500_0016",
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0096",
-    "t1500_0103",
-    "t1500_0104"
+    "t1500_0345",
+    "t1500_0361",
+    "t1500_0422",
+    "t1500_0423",
+    "t1500_0424",
+    "t1500_0425",
+    "t1500_0426",
+    "t1500_0430",
+    "t1500_0432",
+    "t1500_0433"
   ],
   "retryFailed": false,
   "providers": [
@@ -20,7 +22,7 @@
   ],
   "workers": 2,
   "maxMinutes": 25,
-  "personSeconds": 105,
+  "personSeconds": 100,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY: bounded fresh priority-A eight-person source diagnostic. Respect existing cooldown and human rejection, never force retry. Exact Wikidata Q5/name/P18 and native Chinese Commons search only; no Openverse network-error loop. Preserve metadata and unapproved 600x720 five-stage assets for human review. No main, Pages or creators changes; no automatic release."
+  "purpose": "DRAFT ONLY: ten never-searched selectedNew performers, each with zero prior attempts and no cooldown, rather than repeating previously failed source queries. Exact Chinese Q5/entity/P18 and Commons captions only; no Openverse retry loop. Human identity, attribution, allowed derivatives, 600x720 and five-stage visual review remain mandatory. No main, Pages, creators or automatic release changes."
 }

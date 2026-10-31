@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-excluded-old-original-retention-fix-two",
-  "mode": "search",
-  "targetPeople": 2,
+  "requestId": "20261031-dayuan-source-manual-crop-v1",
+  "mode": "manual_recrop",
+  "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0475",
-    "t1500_0534"
+    "t1500_0475"
   ],
-  "retryFailed": true,
+  "retryFailed": false,
   "providers": [
     "commons"
   ],
-  "workers": 2,
-  "maxMinutes": 20,
-  "personSeconds": 135,
-  "maxCandidates": 2,
-  "purpose": "Draft only: controlled two-person replay after retained-original manual-crop retention fix; no main, no Pages, no creators. Retry only 大元 t1500_0475 and 黃宏軒 t1500_0534 using new exact Commons sources, with previous obstructed/side-profile files explicitly excluded. Preserve at most one active manual original per person; five-stage, identity, rights and work hints remain unapproved."
+  "workers": 1,
+  "maxMinutes": 15,
+  "personSeconds": 90,
+  "maxCandidates": 1,
+  "purpose": "Draft only: stage 大元 600x720 five-stage manual crop from retained Commons source, no main, no Pages, no creators. Not approved until visual stages, identity, license, hint, attribution and QA are checked.",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-dayuan-v1.json"
 }

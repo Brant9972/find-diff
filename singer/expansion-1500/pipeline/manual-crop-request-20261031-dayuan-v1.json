@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d0c39ae02f9c30a2739fe67266fe45340a32f86a",
+  "sourceRun": "20261031T022151Z-d4295725",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Draft only: manually stage a new 600x720 five-stage portrait from independently captioned Commons LinDaYuan.jpg, 2012 event, original photo by 邱鈺鋒 CC BY-SA 4.0. Source visually opened; eyes/nose/mouth/chin visible with tilted head. Not approval until stage geometry, face, attribution, rights, hints and cross-bank uniqueness are reviewed.",
+  "items": [
+    {
+      "personId": "t1500_0475",
+      "sourceCandidateId": "17584c9fcf63be759a55",
+      "sourceSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+      "box": [
+        190,
+        60,
+        790,
+        780
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28,
+          0.92,
+          0.44
+        ],
+        "nose": [
+          0.08,
+          0.28,
+          0.92,
+          0.53
+        ],
+        "mouth": [
+          0.08,
+          0.28,
+          0.92,
+          0.62
+        ],
+        "chin": [
+          0.08,
+          0.28,
+          0.92,
+          0.73
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Original is 1000x1500 and visually inspected via pipeline retained source. Single woman, both eyes, nose, open smile, chin clearly visible; head angled, automatic face tilt rejection is geometric not necessarily a game visual rejection. Crop x190..790 y60..780 retains full face and no microphone. Must inspect five actual rendered stages and ensure eyes preview does not reveal nose, mouth preview does not reveal chin; verify recognizability and no overlay watermark. Source Commons Q9293309 Dayuan, caption explicitly says 一日網購店長大元, own work 邱鈺鋒, CC BY-SA 4.0."
+    }
+  ]
+}

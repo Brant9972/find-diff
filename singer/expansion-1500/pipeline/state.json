@@ -37969,8 +37969,8 @@
       "candidateId": "c1500-0534",
       "name": "黃宏軒",
       "status": "no_suitable_source",
-      "attempts": 5,
-      "nextRetryAt": "2026-11-01T13:19:28.161509+00:00",
+      "attempts": 6,
+      "nextRetryAt": "2026-11-02T23:36:19.372640+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -38082,6 +38082,54 @@
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0534/f6935a26bdbbab2e51b7/a7be2cc6b60e/original.bin",
           "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+          "cropFailure": "Blurred crop: sharpness below 65",
+          "gamePath": null
+        },
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
+          "filename": "台灣演員黃宏軒.jpg",
+          "artist": "Petersuuu",
+          "credit": "Own work",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "caption": "​台灣演員黃宏軒，攝於2024年",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "黃宏軒",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "黃宏軒"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "關於未知的我們"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T07:36:16.672681+00:00",
+          "width": 3667,
+          "height": 5500,
+          "id": "03c2d3da3bfbf862d483",
+          "personId": "t1500_0534",
+          "discoveryRunId": "20261031T073614Z-ae389956",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0534/03c2d3da3bfbf862d483/d17b28aa75f5/original.bin",
+          "originalSha256": "d17b28aa75f5dda625683f83f31c25e079f2a3f13ce5744b784a8583672bf27d",
           "cropFailure": "Blurred crop: sharpness below 65",
           "gamePath": null
         }
@@ -39270,6 +39318,79 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-10-31T07:36:16.371307+00:00",
+          "provider": "curated",
+          "attempt": 6,
+          "finishedAt": "2026-10-31T07:36:16.371534+00:00"
+        },
+        {
+          "time": "2026-10-31T07:36:16.371547+00:00",
+          "provider": "commons",
+          "attempt": 6,
+          "finishedAt": "2026-10-31T07:36:19.372602+00:00"
+        },
+        {
+          "time": "2026-10-31T07:36:19.372625+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg/1920px-%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "downloadVariant": "wikimedia_thumbnail_1400",
+                "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92.jpg",
+                "filename": "台灣演員黃宏軒.jpg",
+                "artist": "Petersuuu",
+                "credit": "Own work",
+                "license": "CC BY 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                "caption": "​台灣演員黃宏軒，攝於2024年",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "query": "黃宏軒",
+                  "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+                  "curatedExactFileHint": true,
+                  "captionAliasMatches": [
+                    "黃宏軒"
+                  ],
+                  "visualIdentityVerified": false
+                },
+                "recognitionEvidence": {
+                  "requestedReplacement": "",
+                  "representativeWorks": [
+                    "關於未知的我們"
+                  ],
+                  "note": "Familiar appearance must be reviewed"
+                },
+                "searchTime": "2026-10-31T07:36:16.672681+00:00",
+                "width": 3667,
+                "height": 5500,
+                "id": "03c2d3da3bfbf862d483",
+                "personId": "t1500_0534",
+                "discoveryRunId": "20261031T073614Z-ae389956",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0534/03c2d3da3bfbf862d483/d17b28aa75f5/original.bin",
+                "originalSha256": "d17b28aa75f5dda625683f83f31c25e079f2a3f13ce5744b784a8583672bf27d",
+                "cropFailure": "Blurred crop: sharpness below 65",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -39293,10 +39414,10 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T051924Z-986f5ca1",
+      "lastRunId": "20261031T073614Z-ae389956",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T05:19:25.100945+00:00",
+      "lastAttemptAt": "2026-10-31T07:36:16.267568+00:00",
       "lastErrors": [
         {
           "provider": "commons",
@@ -39331,26 +39452,31 @@
               ],
               "note": "Familiar appearance must be reviewed"
             },
-            "searchTime": "2026-10-31T05:19:25.493387+00:00",
+            "searchTime": "2026-10-31T07:36:16.672681+00:00",
             "width": 3667,
             "height": 5500,
             "id": "03c2d3da3bfbf862d483",
             "personId": "t1500_0534",
-            "discoveryRunId": "20261031T051924Z-986f5ca1",
+            "discoveryRunId": "20261031T073614Z-ae389956",
             "rightsStatus": "open_license_metadata",
             "eligibleForLive": false,
             "humanReview": null,
-            "status": "metadata_only",
+            "status": "manual_crop_required",
             "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0534/03c2d3da3bfbf862d483/d17b28aa75f5/original.bin",
+            "originalSha256": "d17b28aa75f5dda625683f83f31c25e079f2a3f13ce5744b784a8583672bf27d",
+            "cropFailure": "Blurred crop: sharpness below 65",
+            "gamePath": null
           },
           "code": "image_validation_failed",
           "message": "Blurred crop: sharpness below 65"
         }
       ],
-      "updatedAt": "2026-10-31T05:19:28.161519+00:00",
-      "workerFinishedAt": "2026-10-31T05:19:28.163445+00:00"
+      "updatedAt": "2026-10-31T07:36:19.372653+00:00",
+      "workerFinishedAt": "2026-10-31T07:36:19.374711+00:00"
     },
     "t1500_0140": {
       "personId": "t1500_0140",

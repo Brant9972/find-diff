@@ -1,9 +1,9 @@
 {
-  "runId": "20261031T051924Z-986f5ca1",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T051924Z-986f5ca1/review-index.json",
+  "runId": "20261031T073614Z-ae389956",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T073614Z-ae389956/review-index.json",
   "summary": {
-    "runId": "20261031T051924Z-986f5ca1",
-    "generatedAt": "2026-10-31T05:19:28.807865+00:00",
+    "runId": "20261031T073614Z-ae389956",
+    "generatedAt": "2026-10-31T07:36:20.012462+00:00",
     "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
@@ -36,15 +36,15 @@
     "batchFailureReasons": {
       "image_validation_failed": 1
     },
-    "manualCropSources": 36,
+    "manualCropSources": 37,
     "batchProviderStages": {
       "commons": {
         "attemptedPeople": 1,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 1,
         "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
+        "savedForManualCrop": 1,
         "errors": {
           "image_validation_failed": 1
         }

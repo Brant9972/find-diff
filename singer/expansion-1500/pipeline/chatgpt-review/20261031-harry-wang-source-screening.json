@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "exact_source_visual_screening_and_pending_lead_not_live",
+  "reviewedAt": "2026-10-31",
+  "baseMainSha": "c68cd8ab7991071c63a37450f89221d89610ed43",
+  "basePipelineSha": "4d6a743102bdc89592a95af4909f01bb079a941e",
+  "releaseGate": "NO_NEW_GAME_PHOTO_APPROVED",
+  "records": [
+    {
+      "personId": "t1500_0445",
+      "name": "張懷秋",
+      "candidateId": "c1500-0445",
+      "wikidataQid": "Q9138397",
+      "filename": "大嘴巴懷秋.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:大嘴巴懷秋.JPG",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/%E5%A4%A7%E5%98%B4%E5%B7%B4%E6%87%B7%E7%A7%8B.JPG",
+      "sourceDate": "2010-10-03",
+      "author": "Onlymyself65536",
+      "sourceCaption": "大嘴巴懷秋在台南遠東百貨的《首部曲》簽唱會",
+      "sourceType": "photographer own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "dimensions": [
+        2736,
+        3648
+      ],
+      "licenseAllowsCrop": true,
+      "sourcePixelInspected": true,
+      "sourceCaptionIdentifiesPerson": true,
+      "decision": "REJECT_AS_GAME_PORTRAIT",
+      "reason": "Original source image visibly contains a handheld Hit FM microphone over the lower face/chin area, with bright mic flag immediately below lips; eyes narrowed in deep shadow, with partial other people on both sides. Cropping 600x720 cannot recover unobstructed chin and mouth-stage recognition; not suitable despite usable CC BY-SA license and named caption.",
+      "fiveStageReviewed": false,
+      "gameCropCreated": false,
+      "approvedForLive": false,
+      "nextStep": "Find a DIFFERENT single-person front-facing open-eye photo without microphone occlusion. Do not retry this exact file. Verify a representative acting credit rather than treating band membership as an acting title."
+    },
+    {
+      "personId": "t1500_0457",
+      "name": "王耀慶",
+      "candidateId": "c1500-0457",
+      "wikidataQid": "Q9315976",
+      "filename": "王耀慶@2011.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:王耀慶@2011.jpg",
+      "sourceIdentityEvidence": "Wikidata Q9315976 P18 points to this filename and describes Taiwanese actor David Wang; Commons presenter category lists the exact file.",
+      "dimensions": [
+        1014,
+        1386
+      ],
+      "decision": "SOURCE_LEAD_ONLY_PENDING_INDEPENDENT_REVIEW",
+      "sourcePixelInspected": false,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "sourceAdjacentCaptionVerified": false,
+      "gameCropCreated": false,
+      "fiveStageReviewed": false,
+      "approvedForLive": false,
+      "nextStep": "Fetch exact Commons imageinfo and file page, verify author and license allowing derivative crops, inspect full pixels and five reveal stages, verify actor work hint 《失戀33天》 from independent reliable source; do not publish from P18 alone."
+    }
+  ],
+  "safety": {
+    "changedProduction": false,
+    "creatorsUntouched": true,
+    "doNotCountAsPublished": true,
+    "doNotUseRejectedPhoto": true
+  }
+}

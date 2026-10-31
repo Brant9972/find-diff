@@ -8807,10 +8807,28 @@
       "candidateId": "c1500-0321",
       "name": "陳子強",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:12.185298+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:02.540893+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:06.040866+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:06.040890+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:12.185275+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:12.185288+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0321",
         "name": "陳子強",
@@ -8826,11 +8844,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:02.306940+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:12.185308+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:12.187432+00:00"
     },
     "t1500_0220": {
       "personId": "t1500_0220",
@@ -12636,10 +12660,28 @@
       "candidateId": "c1500-0388",
       "name": "林宇中",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:29.466749+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:22.851355+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:26.108786+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:26.108808+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:29.466727+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:29.466741+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0388",
         "name": "林宇中",
@@ -12657,11 +12699,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:22.783321+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:29.466760+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:29.469350+00:00"
     },
     "t1500_0598": {
       "personId": "t1500_0598",
@@ -21265,10 +21313,175 @@
       "candidateId": "c1500-0330",
       "name": "楊昇達",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:15.990584+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yang_Shengda.JPG/1920px-Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "source": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+          "filename": "Yang Shengda.JPG",
+          "downloadVariant": "wikimedia_original_after_crop_failure",
+          "artist": "BreakdownDiode",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "caption": "​2012年12月1日「愛滋向零、未來就贏」宣導活動 新北市政府主辦 （楊昇達為右一）",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "wikidataId": "Q15934772",
+            "mappingSource": "https://www.wikidata.org/wiki/Q15934772",
+            "exactChineseAliases": [
+              "楊昇達",
+              "楊昇達"
+            ],
+            "verifiedSearchAliases": [
+              "楊昇達",
+              "Yang Sheng-Da"
+            ],
+            "entityTypeEvidence": "P31=Q5",
+            "retrievedAt": "2026-10-31T21:23:09.602732+00:00",
+            "visualIdentityVerified": false,
+            "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+            "article": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E6%98%87%E9%81%94",
+            "articleTitle": "楊昇達",
+            "articleLookup": "exact title with redirects; not a search result",
+            "query": "楊昇達",
+            "matchedAliases": [
+              "楊昇達",
+              "Yang Sheng-Da"
+            ],
+            "discoveryWarnings": [],
+            "captionAliasMatches": [
+              "楊昇達",
+              "Yang Sheng-Da"
+            ]
+          },
+          "recognitionEvidence": {
+            "representativeWorks": [
+              "站立喜劇"
+            ],
+            "requestedReplacement": "",
+            "note": "Familiar appearance has not been visually reviewed"
+          },
+          "searchTime": "2026-10-31T21:23:10.009425+00:00",
+          "width": 4320,
+          "height": 3240,
+          "id": "75c6ff23b9b330474231",
+          "personId": "t1500_0330",
+          "discoveryRunId": "20261031T212259Z-51cbb791",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "manual_crop_required",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Preview crop failed (Face is too small); tried full-resolution Commons original with unchanged quality and human-review gates",
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0330/75c6ff23b9b330474231/d2b5431c79c2/original.bin",
+          "originalSha256": "d2b5431c79c2944da88fa68f66be788c3da8126aa7c5e5389282dda321df124a",
+          "cropFailure": "Face is too small",
+          "gamePath": null
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:09.368081+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:13.581243+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:13.581269+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:15.990561+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:15.990575+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yang_Shengda.JPG/1920px-Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "candidateMetadata": {
+                "provider": "commons",
+                "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yang_Shengda.JPG/1920px-Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "source": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+                "filename": "Yang Shengda.JPG",
+                "downloadVariant": "wikimedia_original_after_crop_failure",
+                "artist": "BreakdownDiode",
+                "credit": "Own work",
+                "license": "CC BY-SA 3.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "caption": "​2012年12月1日「愛滋向零、未來就贏」宣導活動 新北市政府主辦 （楊昇達為右一）",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "wikidataId": "Q15934772",
+                  "mappingSource": "https://www.wikidata.org/wiki/Q15934772",
+                  "exactChineseAliases": [
+                    "楊昇達",
+                    "楊昇達"
+                  ],
+                  "verifiedSearchAliases": [
+                    "楊昇達",
+                    "Yang Sheng-Da"
+                  ],
+                  "entityTypeEvidence": "P31=Q5",
+                  "retrievedAt": "2026-10-31T21:23:09.602732+00:00",
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+                  "article": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E6%98%87%E9%81%94",
+                  "articleTitle": "楊昇達",
+                  "articleLookup": "exact title with redirects; not a search result",
+                  "query": "楊昇達",
+                  "matchedAliases": [
+                    "楊昇達",
+                    "Yang Sheng-Da"
+                  ],
+                  "discoveryWarnings": [],
+                  "captionAliasMatches": [
+                    "楊昇達",
+                    "Yang Sheng-Da"
+                  ]
+                },
+                "recognitionEvidence": {
+                  "representativeWorks": [
+                    "站立喜劇"
+                  ],
+                  "requestedReplacement": "",
+                  "note": "Familiar appearance has not been visually reviewed"
+                },
+                "searchTime": "2026-10-31T21:23:10.009425+00:00",
+                "width": 4320,
+                "height": 3240,
+                "id": "75c6ff23b9b330474231",
+                "personId": "t1500_0330",
+                "discoveryRunId": "20261031T212259Z-51cbb791",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "manual_crop_required",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+                  "Preview crop failed (Face is too small); tried full-resolution Commons original with unchanged quality and human-review gates",
+                  "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+                ],
+                "originalPath": "expansion-1500/pipeline/assets/t1500_0330/75c6ff23b9b330474231/d2b5431c79c2/original.bin",
+                "originalSha256": "d2b5431c79c2944da88fa68f66be788c3da8126aa7c5e5389282dda321df124a",
+                "cropFailure": "Face is too small",
+                "gamePath": null
+              },
+              "code": "image_validation_failed",
+              "message": "Face is too small"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0330",
         "name": "楊昇達",
@@ -21286,11 +21499,94 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:09.273435+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yang_Shengda.JPG/1920px-Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "candidateMetadata": {
+            "provider": "commons",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Yang_Shengda.JPG/1920px-Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Yang_Shengda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "source": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+            "filename": "Yang Shengda.JPG",
+            "downloadVariant": "wikimedia_original_after_crop_failure",
+            "artist": "BreakdownDiode",
+            "credit": "Own work",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "caption": "​2012年12月1日「愛滋向零、未來就贏」宣導活動 新北市政府主辦 （楊昇達為右一）",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "wikidataId": "Q15934772",
+              "mappingSource": "https://www.wikidata.org/wiki/Q15934772",
+              "exactChineseAliases": [
+                "楊昇達",
+                "楊昇達"
+              ],
+              "verifiedSearchAliases": [
+                "楊昇達",
+                "Yang Sheng-Da"
+              ],
+              "entityTypeEvidence": "P31=Q5",
+              "retrievedAt": "2026-10-31T21:23:09.602732+00:00",
+              "visualIdentityVerified": false,
+              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+              "article": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E6%98%87%E9%81%94",
+              "articleTitle": "楊昇達",
+              "articleLookup": "exact title with redirects; not a search result",
+              "query": "楊昇達",
+              "matchedAliases": [
+                "楊昇達",
+                "Yang Sheng-Da"
+              ],
+              "discoveryWarnings": [],
+              "captionAliasMatches": [
+                "楊昇達",
+                "Yang Sheng-Da"
+              ]
+            },
+            "recognitionEvidence": {
+              "representativeWorks": [
+                "站立喜劇"
+              ],
+              "requestedReplacement": "",
+              "note": "Familiar appearance has not been visually reviewed"
+            },
+            "searchTime": "2026-10-31T21:23:10.009425+00:00",
+            "width": 4320,
+            "height": 3240,
+            "id": "75c6ff23b9b330474231",
+            "personId": "t1500_0330",
+            "discoveryRunId": "20261031T212259Z-51cbb791",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "manual_crop_required",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+              "Preview crop failed (Face is too small); tried full-resolution Commons original with unchanged quality and human-review gates",
+              "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            ],
+            "originalPath": "expansion-1500/pipeline/assets/t1500_0330/75c6ff23b9b330474231/d2b5431c79c2/original.bin",
+            "originalSha256": "d2b5431c79c2944da88fa68f66be788c3da8126aa7c5e5389282dda321df124a",
+            "cropFailure": "Face is too small",
+            "gamePath": null
+          },
+          "code": "image_validation_failed",
+          "message": "Face is too small"
+        }
+      ],
+      "updatedAt": "2026-10-31T21:23:15.990595+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:15.992925+00:00"
     },
     "t1500_0265": {
       "personId": "t1500_0265",
@@ -35849,10 +36145,28 @@
       "candidateId": "c1500-0377",
       "name": "王海玲",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:22.640114+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:16.206957+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:18.145207+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:18.145232+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:22.640093+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:22.640106+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0377",
         "name": "王海玲",
@@ -35870,11 +36184,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:16.132647+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:22.640125+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:22.642544+00:00"
     },
     "t1500_0556": {
       "personId": "t1500_0556",
@@ -76487,10 +76807,28 @@
       "candidateId": "c1500-0379",
       "name": "李建復",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:26.513434+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:19.321863+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:21.972240+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:21.972267+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:26.513415+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:26.513427+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0379",
         "name": "李建復",
@@ -76508,11 +76846,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:19.236610+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:26.513471+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:26.515979+00:00"
     },
     "t1500_0226": {
       "personId": "t1500_0226",
@@ -80739,10 +81083,28 @@
       "candidateId": "c1500-0412",
       "name": "曾靜玟",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:37.439551+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:33.404207+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:34.003262+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:34.003289+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:37.439523+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:37.439540+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0412",
         "name": "曾靜玟",
@@ -80760,11 +81122,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:33.334073+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:37.439565+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:37.442330+00:00"
     },
     "t1500_0583": {
       "personId": "t1500_0583",
@@ -90742,9 +91110,9 @@
       "personId": "t1500_0410",
       "candidateId": "c1500-0410",
       "name": "賴銘偉",
-      "status": "rejected",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "status": "no_suitable_source",
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:36.576580+00:00",
       "candidates": [
         {
           "id": "legacy-t1500_0410",
@@ -90802,7 +91170,25 @@
           "eligibleForLive": false
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:29.687729+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:33.213128+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:33.213143+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:36.576559+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:36.576572+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0410",
         "name": "賴銘偉",
@@ -90861,7 +91247,18 @@
         },
         "reviewNote": "賴銘偉照片像素不足且麥克風遮嘴"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:29.610266+00:00",
+      "lastErrors": [],
+      "lastFailure": {
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
+      },
+      "updatedAt": "2026-10-31T21:23:36.576590+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:36.579268+00:00"
     },
     "t1500_0186": {
       "personId": "t1500_0186",
@@ -93966,10 +94363,28 @@
       "candidateId": "c1500-0396",
       "name": "徐暐翔",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:33.189895+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:26.723126+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:28.638189+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:28.638215+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:33.189875+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:33.189887+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0396",
         "name": "徐暐翔",
@@ -93987,11 +94402,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:26.654662+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:33.189907+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:33.192557+00:00"
     },
     "t1500_0179": {
       "personId": "t1500_0179",
@@ -105961,10 +106382,28 @@
       "candidateId": "c1500-0309",
       "name": "梁正群",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:09.130303+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:02.541315+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:04.620365+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:04.620396+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:09.130280+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:09.130293+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0309",
         "name": "梁正群",
@@ -105982,11 +106421,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:02.306634+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:09.130314+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:09.132603+00:00"
     },
     "t1500_0176": {
       "personId": "t1500_0176",
@@ -115083,10 +115528,28 @@
       "candidateId": "c1500-0352",
       "name": "陳建騏",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
+      "attempts": 1,
+      "nextRetryAt": "2026-10-31T23:23:19.089228+00:00",
       "candidates": [],
-      "history": [],
+      "history": [
+        {
+          "time": "2026-10-31T21:23:12.474058+00:00",
+          "provider": "entity",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:14.517246+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:14.517274+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-10-31T21:23:19.089207+00:00"
+        },
+        {
+          "time": "2026-10-31T21:23:19.089220+00:00",
+          "errors": [],
+          "candidatesTried": 0
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0352",
         "name": "陳建騏",
@@ -115104,11 +115567,17 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T212259Z-51cbb791",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-10-31T21:23:12.342851+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-10-31T21:23:19.089239+00:00",
+      "workerFinishedAt": "2026-10-31T21:23:19.091490+00:00"
     },
     "t1500_0592": {
       "personId": "t1500_0592",

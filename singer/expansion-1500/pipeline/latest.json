@@ -1,27 +1,27 @@
 {
-  "runId": "20261031T210547Z-ef5e60b2",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T210547Z-ef5e60b2/review-index.json",
+  "runId": "20261031T212259Z-51cbb791",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T212259Z-51cbb791/review-index.json",
   "summary": {
-    "runId": "20261031T210547Z-ef5e60b2",
-    "generatedAt": "2026-10-31T21:05:48.132662+00:00",
-    "scannedPeople": 0,
+    "runId": "20261031T212259Z-51cbb791",
+    "generatedAt": "2026-10-31T21:23:38.111707+00:00",
+    "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 10,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 334,
     "statusCounts": {
-      "no_suitable_source": 242,
+      "no_suitable_source": 243,
       "download_failed": 168,
       "published": 93,
       "pending_review": 1,
-      "rejected": 7,
+      "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
       "identity_unconfirmed": 307,
-      "image_validation_failed": 108,
+      "image_validation_failed": 109,
       "network_error": 248,
       "source_api_busy": 69,
       "license_unclear": 66,
@@ -33,9 +33,32 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
-    "manualCropSources": 17,
-    "batchProviderStages": {},
+    "batchFailureReasons": {
+      "image_validation_failed": 1
+    },
+    "manualCropSources": 18,
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 10,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 1,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 1,
+        "errors": {}
+      },
+      "entity": {
+        "attemptedPeople": 10,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "image_validation_failed": 1
+        }
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

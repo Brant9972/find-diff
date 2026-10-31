@@ -1332,7 +1332,18 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "王瞳 多情城市 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "王瞳 多情城市 角色 劇照 正面 清晰 無浮水印",
+      "wikidataId": "Q9066373",
+      "photoSearchBlockedEnglishAliases": [
+        "Wang Tong",
+        "Tong Wang"
+      ],
+      "excludedCaptionNames": [
+        "王童",
+        "王彤",
+        "王統"
+      ],
+      "reviewReason": "2026-10-31 identity-source correction: Wikidata Q9066373 (Hitomi Wu) has P31=Q5, native name 王瞳 and birth name 吳姍耘; English aliases Wang Tong / Tong Wang collide with unrelated director 王童 and footballers 王彤／王統. Block ambiguous romanizations and conflicting captions before image download; still require adjacent identity caption, independently verified crop-permitting rights and five-stage human review. No photograph approved."
     },
     {
       "candidateId": "c1500-0008",

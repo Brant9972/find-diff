@@ -35,6 +35,18 @@ class ExactSourceVisualAuditTest(unittest.TestCase):
         self.assertNotIn('潘越雲', person['acceptedAnswers'])
         self.assertNotEqual(person.get('photoStatus'), 'published')
 
+    def test_wang_zhilei_has_concrete_record_label_verified_hints(self):
+        person = self.people['t1500_0381']
+        self.assertEqual(person['name'], '王芷蕾')
+        self.assertEqual(person['representativeWorks'], ['台北的天空', '翩翩飛起'])
+        self.assertEqual({x['title'] for x in person['verifiedWorkSources']},
+                         {'台北的天空', '翩翩飛起'})
+        self.assertTrue(any('warnermusic.com.tw' in x['url']
+                            for x in person['verifiedWorkSources']))
+        self.assertTrue(any('music-tw.line.me' in x['url']
+                            for x in person['verifiedWorkSources']))
+        self.assertNotEqual(person.get('qaStatus'), 'released')
+
     def test_exclusions_do_not_blacklist_people_or_unrelated_sources(self):
         for pid in ('t1500_0390', 't1500_0156'):
             person = self.people[pid]

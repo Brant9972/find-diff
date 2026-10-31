@@ -1,24 +1,16 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0758-exact-q5-commonswiki-six-person-diagnostic",
-  "mode": "search",
-  "targetPeople": 6,
-  "plannedPersonIds": [
-    "t1500_0549",
-    "t1500_0552",
-    "t1500_0555",
-    "t1500_0561",
-    "t1500_0565",
-    "t1500_0588"
-  ],
-  "retryFailed": true,
+  "requestId": "20261101T0800-render-only-after-film-sign-exclusion",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
-    "entity",
     "commons"
   ],
   "workers": 2,
   "maxMinutes": 16,
   "personSeconds": 100,
   "maxCandidates": 2,
-  "purpose": "Exact Q5 verified Wikidata commonswiki-sitelink six-person category source retry after PR #113; DRAFT ONLY, preserve all human exclusions, no main or Pages deployment"
+  "purpose": "DRAFT ONLY render retained human-review sources after PR #115 film-sign rejection; verify no excluded signs reappear, no main or Pages deployment"
 }

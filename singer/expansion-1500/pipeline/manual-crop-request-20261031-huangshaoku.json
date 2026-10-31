@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d1b708f2eaeb023784339406546c1d58a67fe802",
+  "sourceRun": "20261031T004335Z-ca5e8937",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Draft only: generate one 600x720 and five-stage preview from previously saved Huang Shao-ku Commons own-work source. Never approve automatically; source identity, crop and rights must be human reviewed.",
+  "items": [
+    {
+      "personId": "t1500_0108",
+      "sourceCandidateId": "a4ed6e44e9b1698b677f",
+      "sourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+      "box": [
+        800,
+        120,
+        1700,
+        1200
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.29,
+          0.92,
+          0.41
+        ],
+        "nose": [
+          0.08,
+          0.29,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.29,
+          0.92,
+          0.58
+        ],
+        "chin": [
+          0.08,
+          0.29,
+          0.92,
+          0.68
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "Source-only 1920x1913 pixel preview inspected: one person, eyes/nose/lips visible; face in upper-right with neon sign and purple cast on left. Proposed 900x1080 crop isolates face, removes most neon sign; manually inspect actual 600x720 JPEG and every stage for clarity, mouth and chin boundary before approval. Commons file 黃少谷 20171015誠品唱談會.jpg lists uploader Lidian192847, own work, CC BY-SA 4.0, original 2457x2448; Wikidata Q28408495 P18, caption 黃少谷《未來》專輯簽唱會. Album 《未來》 independently listed on LINE MUSIC https://music-tw.line.me/album/1370542. This staging is not approval."
+    }
+  ]
+}

@@ -108,6 +108,13 @@ def identity(person, text):
             words = re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKC', str(alias)).casefold())
             pattern = r'(?<![a-z0-9])' + r'[\W_]*'.join(map(re.escape, words)) + r'(?![a-z0-9])'
             for match in re.finditer(pattern, hay) if words else ():
+                # "Chapman to Fitzgerald" in a letter title uses the English
+                # preposition, not actor Chapman To's surname. Keep genuine
+                # "Chapman To Man-chat" and captioned performer mentions.
+                if (len(words) == 2 and words[-1] == 'to' and
+                        re.search(r'(?i:\b' + re.escape(words[0]) +
+                                  r')\s+to\s+[A-Z]', str(text or ''))):
+                    continue
                 # A suffix of a hyphenated given name is a different person.
                 prefix = hay[:match.start()]
                 if len(words) >= 2 and len(prefix) > 1 and prefix.endswith('-') and prefix[-2].isalnum():

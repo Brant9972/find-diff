@@ -112,8 +112,8 @@ def identity(person, text):
                 # preposition, not actor Chapman To's surname. Keep genuine
                 # "Chapman To Man-chat" and captioned performer mentions.
                 if (len(words) == 2 and words[-1] == 'to' and
-                        re.search(r'(?i:\\b' + re.escape(words[0]) +
-                                  r')\\s+to\\s+[A-Z]', str(text or ''))):
+                        re.search(r'(?i:\b' + re.escape(words[0]) +
+                                  r')\s+to\s+[A-Z]', str(text or ''))):
                     continue
                 # A suffix of a hyphenated given name is a different person.
                 prefix = hay[:match.start()]

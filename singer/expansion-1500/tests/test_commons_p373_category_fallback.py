@@ -1,5 +1,8 @@
 """P373 is a bounded discovery hint, not permission or face identity evidence."""
 import unittest
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from media_pipeline.sources import EntityPortraits
 

@@ -1,26 +1,27 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-qid-identity-eight-different-source-targets",
+  "requestId": "20261031-commons-empty-prefix-diagnostic-ten-distinct",
   "mode": "search",
-  "targetPeople": 8,
+  "targetPeople": 10,
   "plannedPersonIds": [
-    "t1500_0007",
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0107",
-    "t1500_0112",
-    "t1500_0114",
-    "t1500_0181"
+    "t1500_0002",
+    "t1500_0004",
+    "t1500_0006",
+    "t1500_0029",
+    "t1500_0106",
+    "t1500_0118",
+    "t1500_0121",
+    "t1500_0125",
+    "t1500_0144",
+    "t1500_0179"
   ],
   "retryFailed": false,
   "providers": [
-    "entity",
     "commons"
   ],
-  "workers": 2,
-  "maxMinutes": 28,
-  "personSeconds": 110,
+  "workers": 3,
+  "maxMinutes": 12,
+  "personSeconds": 65,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY; no main or Pages modifications. Target 8 existing selectedNew with known Wikidata identity or exact Commons leads, not the previous failed 8/20/40/200-person cohort. Recheck pinned Q9066373 Wang Tong homonym guard and preserve curated excludedCaptionNames from PR #100; skip rejected file pages and respect source cooldown. Require source-adjacent identity, crop-permitting verified rights, 600x720 five-stage human visual review before any separate release PR. Never touch creators or auto-approve."
+  "purpose": "DRAFT ONLY; test PR #103 empty-native-name Commons allimages prefix recovery on 10 distinct, currently unplayed selectedNew people, not previous failed cohorts. Honor cooldown and rejected source pages. Source metadata, licence templates or P18 alone do not approve identity. Preserve author/caption, verify reuse/cropping rights, 600x720 five-stage human inspection and hints before any separate release PR. Do not change main, Pages or creators."
 }

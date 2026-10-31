@@ -108,15 +108,18 @@ def _metadata(person, candidate):
     }
 
 
-def build_assets(root, directory, state, run_id, include_retained_sources=False):
+def build_assets(root, directory, state, run_id, include_retained_sources=False,
+                 retained_source_person_ids=None):
     """Build one immutable visual package after the batch, without mutating state.
 
     root is the singer directory. Return a deterministic manifest whose paths are
     relative to it. All active pending candidates are included, including retained
     candidates from previous batches; rejected/superseded/approved/live ones are not.
     Source-only images default to the current discovery run, preventing repeated
-    re-export of old rejected-looking sources. Explicit render-only mode may
-    include retained sources for a dedicated manual review.
+    re-export of old rejected-looking sources. A newly scanned person may reuse
+    its already saved source-only pixels without downloading them again; other
+    historical sources remain excluded. Explicit render-only mode may include
+    all retained sources for a dedicated manual review.
     """
     root, directory = Path(root).resolve(), Path(directory).resolve()
     if not directory.is_relative_to(root):
@@ -162,13 +165,15 @@ def build_assets(root, directory, state, run_id, include_retained_sources=False)
                            'reveal': copy.deepcopy(candidate['reveal']), 'metadata': _metadata(person, candidate)})
     # SOURCE-ONLY photos remain ineligible for game release until cropped and reviewed.
     manual_sources = []
+    targeted_retained = set(retained_source_person_ids or ())
     for person_id, person in sorted(state['people'].items()):
         if person.get('status') in {'published', 'approved', 'duplicate_existing'}:
             continue
         for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
             if candidate.get('status') != 'manual_crop_required' or not candidate.get('originalPath'):
                 continue
-            if not include_retained_sources and candidate.get('discoveryRunId') != run_id:
+            if (not include_retained_sources and person_id not in targeted_retained
+                    and candidate.get('discoveryRunId') != run_id):
                 continue
             if not candidate.get('originalSha256'):
                 raise ValueError('Source-only candidate requires immutable source SHA-256')

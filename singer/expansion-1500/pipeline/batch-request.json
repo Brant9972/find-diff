@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-retain-pinned-exact-huanghongxuan-v1",
+  "requestId": "20261031-retain-pinned-exact-huanghongxuan-v2",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -15,5 +15,5 @@
   "maxMinutes": 12,
   "personSeconds": 110,
   "maxCandidates": 2,
-  "purpose": "After PR #87 passed 169+ source QA tests and merged, retry only the NEW pinned Commons file 台灣演員黃宏軒.jpg (Petersuuu CC BY 4.0, 3667x5500). The previous attempt lost its original pixels because two older source-only photos occupied the retention cap. The fixed bounded exact-source retention should preserve this distinct source for actual human review even if automatic crop still fails. Do not retry excluded S_37822478.jpg; no main, Pages, creators or live approval."
+  "purpose": "Draft only; After PR #87 passed 169+ source QA tests and merged, retry only the NEW pinned Commons file 台灣演員黃宏軒.jpg (Petersuuu CC BY 4.0, 3667x5500). The previous attempt lost its original pixels because two older source-only photos occupied the retention cap. The fixed bounded exact-source retention should preserve this distinct source for actual human review even if automatic crop still fails. Do not retry excluded S_37822478.jpg; no main, Pages, creators or live approval."
 }

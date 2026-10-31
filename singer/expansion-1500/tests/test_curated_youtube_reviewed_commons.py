@@ -31,8 +31,10 @@ class ReviewedCommonsYoutubeTest(unittest.TestCase):
         self.assertEqual(rights(item), "open_license_metadata")
         self.assertEqual(item["identityEvidence"]["commonsYouTubeLicenseReview"]["reviewer"], "GRuban")
         self.assertFalse(item["identityEvidence"]["visualIdentityVerified"])
-        self.assertFalse(self.person["imageVerification"]["finalCropReviewed"])
-        self.assertNotEqual(self.person["photoStatus"], "published")
+        # The immutable source is still only metadata; the person was later
+        # released after separate five-stage human review and live QA.
+        self.assertTrue(self.person["imageVerification"]["finalCropReviewed"])
+        self.assertEqual(self.person["photoStatus"], "published")
 
     def test_no_unreviewed_or_misaddressed_youtube_source(self):
         for change in (

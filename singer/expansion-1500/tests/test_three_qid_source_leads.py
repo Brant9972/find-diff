@@ -32,8 +32,10 @@ class ThreeQidSourceLeadsTest(unittest.TestCase):
         request = json.loads((ROOT / 'pipeline/batch-request.json').read_text(encoding='utf-8'))
         zhao = next(p for p in plan['selectedNew'] if p['plannedQuestionId'] == 't1500_0102')
         self.assertEqual(zhao['photoStatus'], 'published')
-        self.assertEqual(plan['arithmetic']['currentlyLiveUnique'], 1077)
-        self.assertEqual(plan['releaseProgress']['published'], 90)
+        # Release counts must advance as new people are actually deployed;
+        # never freeze a historical milestone in a source-lead regression.
+        self.assertGreaterEqual(plan['arithmetic']['currentlyLiveUnique'], 1077)
+        self.assertGreaterEqual(plan['releaseProgress']['published'], 90)
         self.assertNotIn('t1500_0102', request['plannedPersonIds'])
 
 

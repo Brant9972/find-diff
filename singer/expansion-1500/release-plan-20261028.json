@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1078,
-    "publishedFromPlan": 91,
-    "remainingSelectedNovel": 419,
+    "currentlyLiveUnique": 1079,
+    "publishedFromPlan": 92,
+    "remainingSelectedNovel": 418,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -2098,24 +2098,24 @@
       ],
       "proposedPrimaryBank": "questions.json",
       "representativeWorks": [
-        "強辯樂團"
+        "未來"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "黃少谷 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pending_branch_and_pages_qa",
       "preferredImageQuery": "黃少谷 強辯樂團 經典時期 歌手 獨照 正面 清晰 無浮水印",
       "wikidataId": "Q28408495",
       "reviewExactCommonsFiles": [
@@ -2141,7 +2141,10 @@
       "excludedPhotoSources": [
         "https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg"
       ],
-      "reviewReason": "2026-10-31 source-only visual screening: own-work 2017 album event photo has open eyes, unobstructed mouth and a sizeable face. NOT approved until actual 600x720 crop, five-stage, iconic appearance and rights attribution QA. Exclude 2018 wide stage/microphone source."
+      "reviewReason": "2026-10-31 source-only visual screening: own-work 2017 album event photo has open eyes, unobstructed mouth and a sizeable face. NOT approved until actual 600x720 crop, five-stage, iconic appearance and rights attribution QA. Exclude 2018 wide stage/microphone source.",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+      "reviewSourceCommit": "3a58fb1a7191c66ca25e129e1d177117f255e44f",
+      "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9"
     },
     {
       "candidateId": "c1500-0109",
@@ -18616,7 +18619,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 91,
+    "published": 92,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18676,7 +18679,6 @@
       "孫鵬",
       "郭源元",
       "篠崎泫",
-      "鄭弘儀",
       "陳鳳桂",
       "宏正",
       "爾冬陞",
@@ -18707,11 +18709,12 @@
       "吳雨霏",
       "周柏豪",
       "林美照",
+      "鄭弘儀",
       "趙正平",
+      "黃少谷",
       "大元"
     ],
     "pendingPhotoAndHintReview": 419,
-    "latestCommit": "a40a2ed16fdb98619a7f88a65d38df3410593b11",
-    "note": "89 of 511 selected are present in verified main 673306eb (2026-10-30); one known duplicate 羅璧玲=羅霈穎; 421 selected novel people remain. At least 3 original backup/deferred still needed for 1500. This reconciliation changes staging bookkeeping only, not QA claims or playable files."
+    "latestCommit": "pending-dayuan-pr-qa"
   }
 }

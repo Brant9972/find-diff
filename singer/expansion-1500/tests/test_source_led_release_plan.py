@@ -120,9 +120,16 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             row = people[person_id]
             self.assertIn(filename, row['reviewExactCommonsFiles'])
             self.assertIn(rejected, row['excludedPhotoSources'])
-            self.assertEqual(row['qaStatus'], 'not_releasable')
-            self.assertFalse(row['imageVerification']['finalCropReviewed'])
-            self.assertFalse(row['imageVerification']['rightsDocumented'])
+            if row.get('photoStatus') == 'published':
+                # A previously staged exact-source lead may now be genuinely
+                # live after its independent five-stage and Pages QA.
+                self.assertTrue(row['imageVerification']['finalCropReviewed'])
+                self.assertTrue(row['imageVerification']['rightsDocumented'])
+                self.assertEqual(row['qaStatus'], 'pages_live_verified')
+            else:
+                self.assertEqual(row['qaStatus'], 'not_releasable')
+                self.assertFalse(row['imageVerification']['finalCropReviewed'])
+                self.assertFalse(row['imageVerification']['rightsDocumented'])
 
     def test_source_screening_records_no_approved_game_crop(self):
         root = Path(__file__).resolve().parents[1]

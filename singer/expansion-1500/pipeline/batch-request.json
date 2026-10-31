@@ -1,28 +1,17 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-fresh-zero-attempt-ten-selectedNew-source-diagnostic",
-  "mode": "search",
-  "targetPeople": 10,
-  "plannedPersonIds": [
-    "t1500_0345",
-    "t1500_0361",
-    "t1500_0422",
-    "t1500_0423",
-    "t1500_0424",
-    "t1500_0425",
-    "t1500_0426",
-    "t1500_0430",
-    "t1500_0432",
-    "t1500_0433"
-  ],
+  "requestId": "20261101-render-only-verify-linwei-exclusion",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
   "retryFailed": false,
   "providers": [
     "entity",
     "commons"
   ],
-  "workers": 2,
-  "maxMinutes": 25,
-  "personSeconds": 100,
+  "workers": 1,
+  "maxMinutes": 10,
+  "personSeconds": 60,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY: ten never-searched selectedNew performers, each with zero prior attempts and no cooldown, rather than repeating previously failed source queries. Exact Chinese Q5/entity/P18 and Commons captions only; no Openverse retry loop. Human identity, attribution, allowed derivatives, 600x720 and five-stage visual review remain mandatory. No main, Pages, creators or automatic release changes."
+  "purpose": "DRAFT ONLY. Render existing retained candidates after rejecting Tzu-Wei Lin baseball photo for actor 林煒; verify excluded source no longer appears as an active review candidate. No search, no main, no Pages, no creators, no automatic approval."
 }

@@ -103,6 +103,29 @@ class SourceLedReleasePlanTest(unittest.TestCase):
 
 
 
+    def test_chen_mingchang_verified_qid_alias_replays_exact_metadata_only(self):
+        import sys
+        root = Path(__file__).resolve().parents[1]
+        sys.path.insert(0, str(root))
+        from media_pipeline.sources import identity
+        plan = json.loads((root / 'release-plan-20261028.json').read_text(
+            encoding='utf-8'))
+        person = next(row for row in plan['selectedNew']
+                      if row['plannedQuestionId'] == 't1500_0107')
+        self.assertEqual(person['wikidataId'], 'Q9474720')
+        self.assertIn('Chen Ming-chang', person['aliases'])
+        self.assertIn('Chen Ming-chang', person['acceptedAnswers'])
+        self.assertIn('2022-03-06 Chen Ming-chang 02.jpg',
+                      person['reviewExactCommonsFiles'])
+        self.assertTrue(person['cachedMetadataRecheckToken'].startswith(
+            '20261031-chen-mingchang-q9474720'))
+        self.assertIn('Chen Ming-chang', identity(
+            person, '2022-03-06 Chen Ming-chang 02.jpg'))
+        self.assertEqual(identity(person, 'Chen Ming-changson unrelated'), [])
+        self.assertFalse(person['imageVerification']['finalCropReviewed'])
+        self.assertNotEqual(person['photoStatus'], 'published')
+
+
     def test_dayuan_and_huanghongxuan_exact_leads_stay_draft_only(self):
         root = Path(__file__).resolve().parents[1]
         plan = json.loads((root / 'release-plan-20261028.json').read_text(

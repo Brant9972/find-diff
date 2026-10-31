@@ -263,7 +263,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0559": {
       "attempts": 7,
@@ -718,7 +719,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0208": {
       "personId": "t1500_0208",
@@ -5658,7 +5660,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0165": {
       "personId": "t1500_0165",
@@ -5984,7 +5987,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0550": {
       "personId": "t1500_0550",
@@ -6190,7 +6194,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0466": {
       "personId": "t1500_0466",
@@ -6221,7 +6226,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0416": {
       "personId": "t1500_0416",
@@ -6945,10 +6951,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0394/39edee5c5db174c3163b/131d16619655/original.bin",
           "originalSha256": "131d16619655716ac3bbe7ee9252273dda1a28c0ccaf21d2fc36f92b8c670901",
@@ -8103,7 +8110,8 @@
         "code": "legacy_failure",
         "message": "Face is too tilted",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0258": {
       "personId": "t1500_0258",
@@ -8821,7 +8829,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0220": {
       "personId": "t1500_0220",
@@ -10310,7 +10319,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0548": {
       "personId": "t1500_0548",
@@ -10341,7 +10351,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0561": {
       "personId": "t1500_0561",
@@ -10471,10 +10482,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0561/86246634aa574672cdd8/406cd28c37a2/original.bin",
           "originalSha256": "406cd28c37a2da8658b01fb950d3b516e7c9bbc27184f53f990a9061fdb415d0",
@@ -12648,7 +12660,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0598": {
       "personId": "t1500_0598",
@@ -14206,7 +14219,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0331": {
       "personId": "t1500_0331",
@@ -14448,7 +14462,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0484": {
       "personId": "t1500_0484",
@@ -14477,7 +14492,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0572": {
       "personId": "t1500_0572",
@@ -15569,7 +15585,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0152": {
       "personId": "t1500_0152",
@@ -17681,7 +17698,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0599": {
       "personId": "t1500_0599",
@@ -18231,7 +18249,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0403": {
       "personId": "t1500_0403",
@@ -18861,7 +18880,8 @@
         "code": "legacy_failure",
         "message": "Face is too tilted",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0440": {
       "personId": "t1500_0440",
@@ -18892,7 +18912,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0481": {
       "attempts": 5,
@@ -21236,7 +21257,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0330": {
       "personId": "t1500_0330",
@@ -21267,7 +21289,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0265": {
       "personId": "t1500_0265",
@@ -22140,7 +22163,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0133": {
       "personId": "t1500_0133",
@@ -22929,7 +22953,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0108": {
       "personId": "t1500_0108",
@@ -24517,7 +24542,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0125": {
       "personId": "t1500_0125",
@@ -25334,7 +25360,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0228": {
       "personId": "t1500_0228",
@@ -26385,7 +26412,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0446": {
       "personId": "t1500_0446",
@@ -26414,7 +26442,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0341": {
       "personId": "t1500_0341",
@@ -26688,7 +26717,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0175": {
       "personId": "t1500_0175",
@@ -26899,7 +26929,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0250": {
       "personId": "t1500_0250",
@@ -27409,10 +27440,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0333/c7cf2ad638f9356eb595/b54d7984c6c7/original.bin",
           "originalSha256": "b54d7984c6c746b19e5343d66d54e8ac4b78831d759453c60a65105ebac0fc3a",
@@ -28041,7 +28073,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0145": {
       "personId": "t1500_0145",
@@ -28507,7 +28540,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0594": {
       "personId": "t1500_0594",
@@ -28631,7 +28665,8 @@
           ]
         },
         "reviewNote": "李婉華候選誤用了 TIFF 節目主管 Anita Lee 照片"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0601": {
       "personId": "t1500_0601",
@@ -29021,7 +29056,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0339": {
       "personId": "t1500_0339",
@@ -30031,10 +30067,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0123/3884cbc89afe5de79a7e/fd1b97c510e8/original.bin",
           "originalSha256": "fd1b97c510e8a0bff68c8b8da10a45a06ec3291be45bdb7445f0f7b409ac5f2d",
@@ -30899,7 +30936,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0462": {
       "personId": "t1500_0462",
@@ -30930,7 +30968,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0112": {
       "personId": "t1500_0112",
@@ -30973,10 +31012,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "No name-bearing caption/article/entity evidence: image not downloaded",
+            "Source rejected for this person in release plan"
           ]
         },
         {
@@ -31072,10 +31112,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0112/2cade137e2cd52d1c021/5a90e4f35587/original.bin",
           "originalSha256": "5a90e4f355871f043b8d029a926e6e91c0816a16ee49c51217b5ed0147df8c66",
@@ -31517,7 +31558,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0259": {
       "personId": "t1500_0259",
@@ -31816,9 +31858,7 @@
         "retryable": true
       },
       "lastRunId": "20261029T123128Z-e72f4f1b",
-      "lastRunNewCandidateIds": [
-        "79adef831d2d0f56d48e"
-      ],
+      "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-29T12:31:44.259914+00:00",
       "lastErrors": [
@@ -31980,7 +32020,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0478": {
       "personId": "t1500_0478",
@@ -32011,7 +32052,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0457": {
       "personId": "t1500_0457",
@@ -33926,7 +33968,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0107": {
       "personId": "t1500_0107",
@@ -33983,7 +34026,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -35829,7 +35873,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0556": {
       "personId": "t1500_0556",
@@ -36204,7 +36249,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0590": {
       "personId": "t1500_0590",
@@ -36328,7 +36374,8 @@
           ]
         },
         "reviewNote": "陳淑蘭照片戴口罩，無法玩眼鼻嘴逐步揭露"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0450": {
       "personId": "t1500_0450",
@@ -36482,7 +36529,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0365": {
       "personId": "t1500_0365",
@@ -36724,7 +36772,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0474": {
       "personId": "t1500_0474",
@@ -38134,10 +38183,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0534/aa4385a6eb7b9154b681/74ad747dbc62/original.bin",
           "originalSha256": "74ad747dbc62372aebc0c2ab795e511ea522141625bfb6ed4229cfc576fd7165",
@@ -38230,10 +38280,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0534/03c2d3da3bfbf862d483/d17b28aa75f5/original.bin",
           "originalSha256": "d17b28aa75f5dda625683f83f31c25e079f2a3f13ce5744b784a8583672bf27d",
@@ -40181,7 +40232,8 @@
         "code": "legacy_failure",
         "message": "Face is too small",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0153": {
       "personId": "t1500_0153",
@@ -40422,7 +40474,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0551": {
       "personId": "t1500_0551",
@@ -40630,10 +40683,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0551/293d47c882d341f7eac1/fd91367e7ba1/original.bin",
           "originalSha256": "fd91367e7ba1509f33db1ea4e52627443f516e4d21750166352e3ef94d4cda5e",
@@ -41243,7 +41297,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0584": {
       "personId": "t1500_0584",
@@ -41453,7 +41508,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0522": {
       "personId": "t1500_0522",
@@ -41482,7 +41538,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0442": {
       "personId": "t1500_0442",
@@ -41513,7 +41570,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0214": {
       "personId": "t1500_0214",
@@ -44110,7 +44168,8 @@
           ]
         },
         "reviewNote": "劉家昌候選誤用了鄧麗君 Teresa Teng 照片"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0134": {
       "personId": "t1500_0134",
@@ -44684,7 +44743,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0597": {
       "personId": "t1500_0597",
@@ -46081,7 +46141,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0600": {
       "personId": "t1500_0600",
@@ -49688,10 +49749,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0568/3a5772a3bc683ad8d993/fd5dece82c20/original.bin",
           "originalSha256": "fd5dece82c205b521a10d34fb0ec26405d373cb23cfc094fddaf1868f6a2805a",
@@ -50206,7 +50268,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0482": {
       "personId": "t1500_0482",
@@ -50235,7 +50298,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0302": {
       "personId": "t1500_0302",
@@ -52748,7 +52812,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0174": {
       "attempts": 6,
@@ -53011,7 +53076,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "source": "https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg",
           "chatgptReview": {
@@ -53610,7 +53676,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0508": {
       "personId": "t1500_0508",
@@ -53734,7 +53801,8 @@
           ]
         },
         "reviewNote": "張甯兒草稿照片與大眾熟悉形象差距大"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0166": {
       "personId": "t1500_0166",
@@ -55175,7 +55243,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0570": {
       "personId": "t1500_0570",
@@ -55327,7 +55396,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0260": {
       "personId": "t1500_0260",
@@ -55889,7 +55959,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0252": {
       "personId": "t1500_0252",
@@ -56186,7 +56257,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -56914,7 +56986,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "source": "https://commons.wikimedia.org/wiki/File:Wong_Yat_Wah_Felix.JPG",
           "chatgptReview": {
@@ -57552,10 +57625,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0554/d7d5204a9f1fb81044fb/10aae2fb1990/original.bin",
           "originalSha256": "10aae2fb19906bb5be473b45ac198694ba2c7d035feb85267a7982810fdf69c0",
@@ -58005,7 +58079,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0593": {
       "personId": "t1500_0593",
@@ -58159,7 +58234,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0425": {
       "personId": "t1500_0425",
@@ -58809,7 +58885,8 @@
         "code": "legacy_failure",
         "message": "Multiple prominent faces",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0504": {
       "personId": "t1500_0504",
@@ -59205,7 +59282,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0264": {
       "personId": "t1500_0264",
@@ -60111,7 +60189,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0543": {
       "personId": "t1500_0543",
@@ -60140,7 +60219,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0576": {
       "personId": "t1500_0576",
@@ -60294,7 +60374,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0506": {
       "personId": "t1500_0506",
@@ -60323,7 +60404,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0409": {
       "personId": "t1500_0409",
@@ -60352,7 +60434,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0342": {
       "personId": "t1500_0342",
@@ -60504,7 +60587,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0203": {
       "personId": "t1500_0203",
@@ -61213,7 +61297,8 @@
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-28T13:06:03.409444+00:00"
+      "updatedAt": "2026-10-28T13:06:03.409444+00:00",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0202": {
       "personId": "t1500_0202",
@@ -62929,7 +63014,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0540": {
       "personId": "t1500_0540",
@@ -62958,7 +63044,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0312": {
       "personId": "t1500_0312",
@@ -63005,10 +63092,11 @@
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "No name-bearing caption/article/entity evidence: image not downloaded",
+            "Source rejected for this person in release plan"
           ]
         },
         {
@@ -63048,10 +63136,11 @@
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "No name-bearing caption/article/entity evidence: image not downloaded",
+            "Source rejected for this person in release plan"
           ]
         }
       ],
@@ -63314,7 +63403,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0253": {
       "personId": "t1500_0253",
@@ -63435,7 +63525,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0155": {
       "personId": "t1500_0155",
@@ -64092,7 +64183,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0418": {
       "personId": "t1500_0418",
@@ -64123,7 +64215,8 @@
         "code": "legacy_failure",
         "message": "Face is too tilted",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0119": {
       "personId": "t1500_0119",
@@ -66365,7 +66458,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0227": {
       "personId": "t1500_0227",
@@ -66496,7 +66590,8 @@
         "code": "legacy_failure",
         "message": "Face is too small",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0435": {
       "personId": "t1500_0435",
@@ -66527,7 +66622,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0395": {
       "personId": "t1500_0395",
@@ -67481,7 +67577,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0122": {
       "personId": "t1500_0122",
@@ -69754,7 +69851,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "validation": {
             "legacyAssetIntact": true
@@ -69959,7 +70057,7 @@
       "personId": "t1500_0433",
       "candidateId": "c1500-0433",
       "name": "林煒",
-      "status": "pending_review",
+      "status": "rejected",
       "attempts": 1,
       "nextRetryAt": null,
       "candidates": [
@@ -70754,9 +70852,10 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "pending_review",
+          "status": "rejected",
           "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0433/90fc149c74d14e6a6c67/c7107c776193/original.bin",
           "gamePath": "expansion-1500/pipeline/assets/t1500_0433/90fc149c74d14e6a6c67/c7107c776193/202034372595.jpg",
@@ -71720,9 +71819,7 @@
         "retryable": true
       },
       "lastRunId": "20261031T205242Z-f955d8d9",
-      "lastRunNewCandidateIds": [
-        "90fc149c74d14e6a6c67"
-      ],
+      "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-31T20:53:21.907217+00:00",
       "lastErrors": [
@@ -73009,7 +73106,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0429": {
       "personId": "t1500_0429",
@@ -73040,7 +73138,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0054": {
       "personId": "t1500_0054",
@@ -74280,7 +74379,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0210": {
       "personId": "t1500_0210",
@@ -76151,7 +76251,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0381": {
       "personId": "t1500_0381",
@@ -76182,7 +76283,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0094": {
       "personId": "t1500_0094",
@@ -76409,7 +76511,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0226": {
       "personId": "t1500_0226",
@@ -76540,7 +76643,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0517": {
       "personId": "t1500_0517",
@@ -76569,7 +76673,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0285": {
       "personId": "t1500_0285",
@@ -77330,7 +77435,8 @@
         "code": "legacy_failure",
         "message": "Face is too small",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0591": {
       "personId": "t1500_0591",
@@ -77482,7 +77588,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0139": {
       "personId": "t1500_0139",
@@ -77635,7 +77742,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0261": {
       "personId": "t1500_0261",
@@ -79150,10 +79258,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0099/12578398260016a9a7e4/5c544fe92d77/original.bin",
           "originalSha256": "5c544fe92d7777378ad2f150e0464380127db98b1062150235bdb00708e5f988",
@@ -79611,7 +79720,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0306": {
       "personId": "t1500_0306",
@@ -79907,7 +80017,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0003": {
       "personId": "t1500_0003",
@@ -80153,10 +80264,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0571/53896cc15665c7f2d0b2/10ed7d369106/original.bin",
           "originalSha256": "10ed7d369106211760a49fabb474706540e6dbf9b72894885a3765d275b8f47c",
@@ -80651,7 +80763,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0583": {
       "personId": "t1500_0583",
@@ -80738,10 +80851,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0583/97cb33f8949b130629c4/da69162755dc/original.bin",
           "originalSha256": "da69162755dc5c67be990726ed47e8cbfca1d224f0757af5b1076d1f657719d1",
@@ -83508,10 +83622,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0154/04a8c0e46e6a1e3760c5/dbeed3a25915/original.bin",
           "originalSha256": "dbeed3a2591593b174f31aab048b3cd4d5e85f9104d73c3dfe5c4799ad4b53dd",
@@ -85037,7 +85152,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0582": {
       "personId": "t1500_0582",
@@ -88136,7 +88252,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0401": {
       "personId": "t1500_0401",
@@ -88165,7 +88282,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0426": {
       "personId": "t1500_0426",
@@ -89196,7 +89314,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0513": {
       "personId": "t1500_0513",
@@ -90281,7 +90400,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0137": {
       "personId": "t1500_0137",
@@ -90492,7 +90612,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0301": {
       "personId": "t1500_0301",
@@ -90739,7 +90860,8 @@
           ]
         },
         "reviewNote": "賴銘偉照片像素不足且麥克風遮嘴"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0186": {
       "personId": "t1500_0186",
@@ -91471,7 +91593,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0105": {
       "personId": "t1500_0105",
@@ -91713,7 +91836,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0486": {
       "personId": "t1500_0486",
@@ -91744,7 +91868,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0196": {
       "attempts": 5,
@@ -92851,7 +92976,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0535": {
       "personId": "t1500_0535",
@@ -92880,7 +93006,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0369": {
       "personId": "t1500_0369",
@@ -92911,7 +93038,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0115": {
       "personId": "t1500_0115",
@@ -93300,7 +93428,8 @@
         "code": "legacy_failure",
         "message": "Multiple prominent faces",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0351": {
       "personId": "t1500_0351",
@@ -93331,7 +93460,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0120": {
       "personId": "t1500_0120",
@@ -93485,7 +93615,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0325": {
       "personId": "t1500_0325",
@@ -93639,7 +93770,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0277": {
       "personId": "t1500_0277",
@@ -93770,7 +93902,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0538": {
       "personId": "t1500_0538",
@@ -93857,7 +93990,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0179": {
       "personId": "t1500_0179",
@@ -94021,10 +94155,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0588/bfd3d32d7f9493dca299/a3365d2b39ec/original.bin",
           "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
@@ -95412,10 +95547,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0552/40167bc4d98768ba947b/51071ffafdaf/original.bin",
           "originalSha256": "51071ffafdafd7d505a87372b4b4e19dac3f058716d7cac9ba8e895786023454",
@@ -96070,7 +96206,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0219": {
       "personId": "t1500_0219",
@@ -97224,10 +97361,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0587/112667a574dc0120dcc4/d046a0fc9782/original.bin",
           "originalSha256": "d046a0fc978267fd6c03ffe5fef003f9e81e2246085212ff4893ffa0a11a30a9",
@@ -97985,7 +98123,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0398": {
       "personId": "t1500_0398",
@@ -98014,7 +98153,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0430": {
       "personId": "t1500_0430",
@@ -99932,7 +100072,8 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "updatedAt": "2026-10-28T12:31:50.328809+00:00"
+      "updatedAt": "2026-10-28T12:31:50.328809+00:00",
+      "lastRunNewCandidateIds": []
     },
     "t1500_0521": {
       "personId": "t1500_0521",
@@ -100656,7 +100797,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0555": {
       "personId": "t1500_0555",
@@ -100910,7 +101052,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0358": {
       "personId": "t1500_0358",
@@ -101368,7 +101511,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0376": {
       "personId": "t1500_0376",
@@ -101415,10 +101559,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0376/f49261751e2b5f89dce3/6e0820de3c66/original.bin",
           "originalSha256": "6e0820de3c66adea31eeae10cca70b518e06a55e6a83687560a87c203687441c",
@@ -101607,7 +101752,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0237": {
       "personId": "t1500_0237",
@@ -101736,7 +101882,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0563": {
       "personId": "t1500_0563",
@@ -102671,7 +102818,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0581": {
       "personId": "t1500_0581",
@@ -102825,7 +102973,8 @@
         "code": "legacy_failure",
         "message": "Face is too small",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0510": {
       "personId": "t1500_0510",
@@ -102854,7 +103003,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0421": {
       "personId": "t1500_0421",
@@ -103058,7 +103208,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0567": {
       "personId": "t1500_0567",
@@ -104588,10 +104739,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0390/4a0daf851facfd8ed183/f4f3f7ff62e8/original.bin",
           "originalSha256": "f4f3f7ff62e8b4bb624e40029df415c568792d4f8b6730ac0a3774a5d5cf22b5",
@@ -105677,7 +105829,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0546": {
       "personId": "t1500_0546",
@@ -105832,7 +105985,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0176": {
       "personId": "t1500_0176",
@@ -106489,7 +106643,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0216": {
       "personId": "t1500_0216",
@@ -107662,10 +107817,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0392/3f7f2fcfdb1055d3b40a/59dccd4696ee/original.bin",
           "originalSha256": "59dccd4696ee97770666a4ee6e3470f061302f0db724b9a52b02689b587e3f89",
@@ -107852,7 +108008,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0329": {
       "personId": "t1500_0329",
@@ -108052,10 +108209,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0549/0919a0a0f1965380bfee/fe963e0615fa/original.bin",
           "originalSha256": "fe963e0615fa3dd38dbf44c12e054600156d096ee579404ab52b0682868d88c3",
@@ -110602,7 +110760,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0328": {
       "personId": "t1500_0328",
@@ -111695,7 +111854,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0489": {
       "personId": "t1500_0489",
@@ -111726,7 +111886,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0566": {
       "personId": "t1500_0566",
@@ -111845,7 +112006,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0269": {
       "personId": "t1500_0269",
@@ -114945,7 +115107,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0592": {
       "personId": "t1500_0592",
@@ -115471,7 +115634,8 @@
         "code": "legacy_failure",
         "message": "No suitable licensed Wikipedia portrait found",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0468": {
       "personId": "t1500_0468",
@@ -115595,7 +115759,8 @@
           ]
         },
         "reviewNote": "劉爾金照片畫質模糊，辨識度不足"
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0589": {
       "personId": "t1500_0589",
@@ -116855,7 +117020,8 @@
         "code": "legacy_failure",
         "message": "Face is too tilted",
         "retryable": true
-      }
+      },
+      "lastRunNewCandidateIds": []
     },
     "t1500_0363": {
       "personId": "t1500_0363",
@@ -117111,10 +117277,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "manual_crop_required",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+            "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required",
+            "Source rejected for this person in release plan"
           ],
           "originalPath": "expansion-1500/pipeline/assets/t1500_0565/0ad030ff729aa9963b03/38e797c18dac/original.bin",
           "originalSha256": "38e797c18dacaf45393205a14145aae4c067daeddc33eacd27c2258b9023e92e",

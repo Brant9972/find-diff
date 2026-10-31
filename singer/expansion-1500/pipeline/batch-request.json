@@ -1,19 +1,20 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-cheung-reviewed-am730-original-curated-v1",
-  "mode": "search",
+  "requestId": "20261031-cheung-retained-manual-crop-v1",
+  "mode": "manual_recrop",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0562"
   ],
-  "retryFailed": true,
+  "retryFailed": false,
   "providers": [
     "curated",
     "commons"
   ],
   "workers": 1,
   "maxMinutes": 12,
-  "personSeconds": 110,
-  "maxCandidates": 2,
-  "purpose": "Exact human-verified Commons am730 YouTube CC BY 3.0 source for 張達明 only; draft only, no main, no Pages, no creators. Use strict curated fallback because Commons exact imageinfo previously returned no usable metadata; stage crop for five-stage review only, never auto-approve. Excluded 王耀慶 and 江華 source images must not be retried."
+  "personSeconds": 100,
+  "maxCandidates": 1,
+  "purpose": "Exact retained original SHA and source candidate ID for 張達明; manual 600x720 five-stage draft only, no main, no Pages, no creators. No source redownload; manual recrop is not identity, rights or visual QA approval.",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-cheung-tat-ming.json"
 }

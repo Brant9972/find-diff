@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "reviewType": "actual_source_pixel_and_five_stage_visual_review",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "sourceRun": "20261031T004704Z-1dc7f025",
+  "assetCommit": "b59d5d0a206c4526788c26ceff4e7f0c7fd1ac14",
+  "personId": "t1500_0108",
+  "name": "黃少谷",
+  "wikidataId": "Q28408495",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+  "sourceAuthor": "Lidian192847",
+  "sourceLicense": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+  "work": "未來",
+  "workSource": "https://music-tw.line.me/album/1370542",
+  "decisions": [
+    {
+      "personId": "t1500_0108",
+      "candidateId": "manualrecrop-640dca1277207e65cf27",
+      "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9",
+      "decision": "rejected_for_stage_geometry",
+      "eligibleForLive": false,
+      "reason": "Inspected actual 600x720 JPEG and all five PNG stages. Single face, both eyes open, no microphone/second face/watermark; dim background and purple cast but facial detail usable. Eyes and nose stages acceptable; mouth reveal bottom 0.58 shows chin already, and chin stage 0.68 exposes neck. Supersede with tighter mouth/chin masks; do not approve V1."
+    }
+  ],
+  "stageVisualReview": {
+    "eyes": "pass: both eyes visible; mouth and nose tip hidden",
+    "nose": "pass: nose tip near bottom, lips hidden",
+    "mouth": "fail: bottom includes chin too early",
+    "chin": "fail progression: extra neck revealed after chin already shown",
+    "full": "single recognizable face, moderate softness and purple light; no extra face or watermark"
+  },
+  "identityEvidence": "Wikidata Q28408495 P18 matches Commons file and Chinese caption 黃少谷《未來》專輯簽唱會; own-work uploader and same Commons file history",
+  "rightsEvidence": "Commons source file explicitly own work by Lidian192847, CC BY-SA 4.0 with reuse/remix allowed subject to attribution and share-alike; derivative must carry same license and crop notice",
+  "nextActions": [
+    "Stage V2 identical game JPEG with mouth bottom .55 and chin bottom .62; visually inspect all five previews",
+    "Confirm source/identity/recognizability and derivative attribution in production fields",
+    "Only after human approval integrate aliases, hint-candidates, eligibility, roster, photo and release evidence on review branch, run QA, then main and Pages live verification"
+  ]
+}

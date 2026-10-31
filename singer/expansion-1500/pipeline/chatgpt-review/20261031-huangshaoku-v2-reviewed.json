@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source/license and actual five-stage pixel review",
+  "reviewedAt": "2026-10-31",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "3a58fb1a7191c66ca25e129e1d177117f255e44f",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "decisions": [
+    {
+      "personId": "t1500_0108",
+      "name": "黃少谷",
+      "candidateId": "manualrecrop-640dca127720-9663057b",
+      "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9",
+      "sourceSha256": "4b0e7a9a196dd83591ca61ad44f4e6d567e834919e14bbd0d94ecee6f131257f",
+      "decision": "approved_for_integration_qa_only",
+      "eligibleForLive": false,
+      "source": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q28408495",
+      "artist": "Lidian192847",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceDate": "2017-10-15",
+      "sourceDescription": "黃少谷《未來》專輯簽唱會",
+      "sourceCredit": "Lidian192847 / Wikimedia Commons, CC BY-SA 4.0; cropped to 600×720, 900×1080 region of 1920×1913 cached original; derivative share-alike and crop notice required",
+      "cropBox": [
+        800,
+        120,
+        1700,
+        1200
+      ],
+      "gameSize": [
+        600,
+        720
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.29,
+          0.92,
+          0.41
+        ],
+        "nose": [
+          0.08,
+          0.29,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.29,
+          0.92,
+          0.55
+        ],
+        "chin": [
+          0.08,
+          0.29,
+          0.92,
+          0.62
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "stageReview": {
+        "eyes": "pass: both eyes visible, nose tip and lips hidden",
+        "nose": "pass: nose revealed, mouth hidden",
+        "mouth": "pass: lips revealed, chin not fully revealed",
+        "chin": "pass: full chin visible, no extra person",
+        "full": "pass: single face, eyes/nose/mouth/chin unobstructed, no watermark, no second face; mild softness and purple event lighting noted"
+      },
+      "identityEvidence": "Commons own-work upload caption explicitly names 黃少谷 and 《未來》 signing; Commons file is Wikidata Q28408495 P18 and linked from zh.wikipedia artist page. Identity based on verified source/caption linkage, not inferred from facial recognition.",
+      "rightsEvidence": "Commons page lists original uploader Lidian192847 as author, Own work, CC BY-SA 4.0; cropping and redistribution permitted with attribution, link, changes noted, share-alike.",
+      "recognitionEvidence": "2017 solo promotional photo; visible face and familiar period hairstyle, mild color cast but sufficient for five-stage play.",
+      "work": "未來",
+      "workSource": "https://music-tw.line.me/album/1370542",
+      "aliases": [
+        "少少",
+        "黃牛",
+        "Huang Shao-Ku"
+      ],
+      "reason": "Human visual inspection of source and actual V2 600×720 JPEG plus eyes/nose/mouth/chin/full PNGs completed. V1 geometry rejected because mouth stage revealed chin; V2 corrected and re-inspected. No game bank, roster, hints or attribution updated yet. Approval only for safe integration review branch, GitHub QA, main merge and independent live Pages validation."
+    }
+  ],
+  "notes": [
+    "Do not count as a live new person before main and public Pages JSON QA.",
+    "Keep source JPEG and attribution under CC BY-SA 4.0; do not use copyrighted promotional/news images without reuse rights.",
+    "Do not overwrite unrelated questions, creators or existing reviews."
+  ]
+}

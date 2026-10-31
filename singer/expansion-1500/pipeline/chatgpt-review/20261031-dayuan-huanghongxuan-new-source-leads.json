@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_pixel_rejection_and_exact_file_source_leads",
+  "reviewedAt": "2026-10-31T02:12:00Z",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "mainAtReview": "c68cd8ab7991071c63a37450f89221d89610ed43",
+  "decisions": [
+    {
+      "personId": "t1500_0475",
+      "name": "大元",
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Lin_DaYuan_from_Popu_Lady.jpg",
+      "decision": "rejected_for_game",
+      "reason": "Opened retained original pixels from pipeline. Single person and face identifiable, but microphone crosses the chin/lower-face reveal area; do not use this file for progressive eyes/nose/mouth/chin/full play.",
+      "newExactSource": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+      "newFile": "LinDaYuan.jpg",
+      "sourceCaption": "2012 Yahoo!奇摩超級商城活動的一日網購店長大元",
+      "artist": "邱鈺鋒 (Kuyohong)",
+      "licenseClaim": "CC BY-SA 4.0; uploader own work",
+      "originalSize": [
+        1000,
+        1500
+      ],
+      "newSourceStatus": "source_only_not_pixel_reviewed"
+    },
+    {
+      "personId": "t1500_0534",
+      "name": "黃宏軒",
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:S_37822478.jpg",
+      "decision": "rejected_for_game",
+      "reason": "Opened retained original pixels: strong side profile, only one eye visible, cannot support the first eyes stage.",
+      "newExactSource": "https://commons.wikimedia.org/wiki/File:台灣演員黃宏軒的形象照，攝於2024年.jpg",
+      "newFile": "台灣演員黃宏軒的形象照，攝於2024年.jpg",
+      "artist": "Petersuuu",
+      "licenseClaim": "CC BY 4.0 on Commons uploader page; EXIF all-rights-reserved wording requires provenance review",
+      "originalSize": [
+        1717,
+        2610
+      ],
+      "newSourceStatus": "source_only_not_pixel_reviewed"
+    }
+  ],
+  "mustVerify": [
+    "Check downloaded exact source pixels and independent face/caption correspondence",
+    "Verify original uploader rights and any conflicting embedded metadata",
+    "Prepare 600x720 crop and inspect eyes/nose/mouth/chin/full stage images",
+    "Verify work hints, alias/QID de-duplication, attribution and CC BY/SA derivative conditions",
+    "Review branch QA before main, then Pages/live JSON QA"
+  ],
+  "notes": "No approved photo or newly playable person in this record. Existing selectedNew roster only; creators untouched."
+}

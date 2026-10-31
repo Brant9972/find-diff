@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-verified-qid-six-people-source-diagnostic-v2",
+  "requestId": "20261031-dayuan-huanghongxuan-exact-file-visual-source-v1",
   "mode": "search",
-  "targetPeople": 6,
+  "targetPeople": 2,
   "plannedPersonIds": [
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0564",
-    "t1500_0588",
-    "t1500_0457"
+    "t1500_0475",
+    "t1500_0534"
   ],
   "retryFailed": false,
   "providers": [
-    "entity",
     "commons"
   ],
   "workers": 2,
-  "maxMinutes": 24,
-  "personSeconds": 105,
+  "maxMinutes": 20,
+  "personSeconds": 135,
   "maxCandidates": 2,
-  "purpose": "Draft only: six-person exact-QID/source diagnostic for existing selectedNew actors; no main, no Pages, no creators. Do not approve without identity, author, license, 600x720 five-stage human QA. Do not retry rejected sources."
+  "purpose": "Draft-only targeted exact Commons file retrieval for existing selectedNew 大元/黃宏軒, with prior side-profile and mic-blocked sources excluded. No human approval, main, Pages or creators changes; source, identity, licensing, 600x720 five-stage and hints still require separate review."
 }

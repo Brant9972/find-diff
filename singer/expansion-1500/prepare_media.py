@@ -239,7 +239,9 @@ def main(argv=None):
             # Build pictures and contact sheets exactly once after collecting the batch.
             manifest=build_assets(root,directory,state,run_id,
                                   include_retained_sources=args.render_only,
-                                  retained_source_person_ids=retained_source_targets(scanned, args.person_id))
+                                  retained_source_person_ids=retained_source_targets(scanned, args.person_id),
+                                  excluded_sources_by_person={pid: person.get('excludedPhotoSources', [])
+                                                              for pid, person in people.items()})
             response={'schemaVersion':2,'sourceReviewSha256':(handoff or {}).get('sha256'),'releaseGate':'DRAFT_ONLY_NOT_PLAYABLE','runId':run_id,'reviewIndex':f'expansion-1500/pipeline/runs/{run_id}/review-index.json','visualAssetManifest':manifest['assetManifestPath'],'summary':summary,'visualPeople':manifest['peopleCount'],'visualPhotos':manifest['photoCount'],'batchPeople':scanned,'reviewPublicationPending':True,'items':[{'personId':pid,'name':state['people'][pid]['name'],'status':state['people'][pid]['status'],'newCandidateIds':state['people'][pid].get('lastRunNewCandidateIds',[]),'errors':state['people'][pid].get('lastErrors',[])} for pid in scanned]}
             atomic(directory/'codex-response/latest.json',response)
             print('BATCH SUMMARY',summary,flush=True);print('Visual assets:',manifest['assetManifestPath'],flush=True)

@@ -107,8 +107,13 @@ def identity(person, text):
         elif re.fullmatch(r'[a-z0-9]+', key):
             words = re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKC', str(alias)).casefold())
             pattern = r'(?<![a-z0-9])' + r'[\W_]*'.join(map(re.escape, words)) + r'(?![a-z0-9])'
-            if words and re.search(pattern, hay):
+            for match in re.finditer(pattern, hay) if words else ():
+                # A suffix of a hyphenated given name is a different person.
+                prefix = hay[:match.start()]
+                if len(words) >= 2 and len(prefix) > 1 and prefix.endswith('-') and prefix[-2].isalnum():
+                    continue
                 found.append(alias)
+                break
         elif key in norm(text):
             found.append(alias)
     return found

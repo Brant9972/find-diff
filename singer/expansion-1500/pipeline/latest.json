@@ -1,58 +1,55 @@
 {
-  "runId": "20261031T132345Z-8c7da397",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T132345Z-8c7da397/review-index.json",
+  "runId": "20261031T152406Z-b11c3ee6",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T152406Z-b11c3ee6/review-index.json",
   "summary": {
-    "runId": "20261031T132345Z-8c7da397",
-    "generatedAt": "2026-10-31T13:24:10.922901+00:00",
-    "scannedPeople": 5,
+    "runId": "20261031T152406Z-b11c3ee6",
+    "generatedAt": "2026-10-31T15:24:20.988217+00:00",
+    "scannedPeople": 10,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 5,
+    "scannedWithoutCandidates": 10,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
-    "licenseConcernCandidates": 307,
+    "licenseConcernCandidates": 308,
     "statusCounts": {
-      "no_suitable_source": 234,
-      "download_failed": 177,
+      "no_suitable_source": 243,
+      "download_failed": 168,
       "published": 93,
       "pending_review": 1,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 282,
-      "image_validation_failed": 103,
-      "network_error": 259,
-      "source_api_busy": 68,
-      "license_unclear": 70,
-      "source_api_error": 20,
+      "identity_unconfirmed": 258,
+      "image_validation_failed": 97,
+      "network_error": 248,
+      "source_api_busy": 69,
+      "license_unclear": 64,
+      "source_api_error": 16,
       "identity_ambiguous": 9,
-      "excluded_context": 16,
+      "excluded_context": 15,
       "identity_not_found": 5,
       "nonportrait_scene": 1,
-      "proxy_access_denied": 4,
+      "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "license_unclear": 1,
+      "source_api_busy": 1
+    },
     "manualCropSources": 39,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 5,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
+        "attemptedPeople": 10,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
-        "errors": {}
-      },
-      "entity": {
-        "attemptedPeople": 5,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {}
+        "errors": {
+          "license_unclear": 1,
+          "source_api_busy": 1
+        }
       }
     },
     "contactSheets": [

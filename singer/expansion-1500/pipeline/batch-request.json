@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-cached-source-preview-after-cooldown-fix",
-  "mode": "search",
+  "requestId": "20261031-huangshaoku-manual-crop-preview",
+  "mode": "manual_recrop",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0108"
@@ -14,5 +14,6 @@
   "maxMinutes": 5,
   "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Draft only: export the already saved 黃少谷 source-only image for explicit requested ID even while discovery is cooling down. No re-download, no automatic approval, no main, no Pages, no creators changes."
+  "purpose": "Draft only: stage one source-pixel 600x720 portrait and eyes/nose/mouth/chin/full previews for human visual QA; no main, no Pages, no creators change. No automatic rights/identity approval.",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-huangshaoku.json"
 }

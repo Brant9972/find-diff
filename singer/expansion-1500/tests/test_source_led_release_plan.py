@@ -54,7 +54,18 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         ))
         if request.get('requestId') == '20261031-sodagreen-alternative-photo-search-2':
             self.assertEqual(request['plannedPersonIds'], ['t1500_0112', 't1500_0114'])
-        self.assertFalse(request['retryFailed'])
+        if request['retryFailed']:
+            # The one explicit post-fix replay is permitted only for two
+            # known sources after the retained-original cap bug was fixed.
+            self.assertEqual(
+                request['requestId'],
+                '20261031-excluded-old-original-retention-fix-two')
+            self.assertEqual(
+                request['plannedPersonIds'], ['t1500_0475', 't1500_0534'])
+            self.assertEqual(request['providers'], ['commons'])
+            self.assertIn('retention fix', request['purpose'].casefold())
+        else:
+            self.assertFalse(request['retryFailed'])
         self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))
         ids = request['plannedPersonIds']
         if request['mode'] == 'render_only':

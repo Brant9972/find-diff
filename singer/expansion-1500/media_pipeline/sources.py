@@ -823,7 +823,7 @@ class EntityPortraits:
         commons_category = next((
             value.strip().removeprefix('Category:')
             for value in commons_categories
-            if isinstance(value, str) and re.fullmatch(r'[^|#\\r\\n]{2,120}', value.strip())
+            if isinstance(value, str) and re.fullmatch(r'[^|#\r\n]{2,120}', value.strip())
         ), '')
         evidence = {'wikidataId': qid, 'mappingSource': 'https://www.wikidata.org/wiki/' + qid,
                     'exactChineseAliases': matched, 'verifiedSearchAliases': aliases,
@@ -871,7 +871,7 @@ class EntityPortraits:
                     list='categorymembers', cmtitle='Category:' + category,
                     cmtype='file', cmlimit=12)
                 titles = [item['title'] for item in listing.get('query', {}).get('categorymembers', [])
-                          if re.fullmatch(r'File:[^|\\r\\n]{1,200}\\.(?:jpg|jpeg|png|webp)',
+                          if re.fullmatch(r'File:[^|\r\n]{1,200}\.(?:jpg|jpeg|png|webp)',
                                           str(item.get('title', '')), re.I)]
                 if titles:
                     requests.append(('commons_category_p373', {'titles': '|'.join(titles)}))

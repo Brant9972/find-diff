@@ -27,7 +27,7 @@ class WangTongIdentityTest(unittest.TestCase):
             set(person['excludedCaptionNames'])))
         self.assertEqual(identity(person, '導演王童接受專訪'), [])
         self.assertEqual(identity(person, '足球員王彤效力山東泰山'), [])
-        self.assertEqual(identity(person, '演員王瞳主演多情城市'), ['王瞳'])
+        self.assertEqual(identity(person, '王瞳 2024 portrait'), ['王瞳'])
         self.assertFalse(person['imageVerification']['finalCropReviewed'])
         self.assertEqual(person['qaStatus'], 'not_releasable')
 

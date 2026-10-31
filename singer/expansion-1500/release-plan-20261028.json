@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1079,
-    "publishedFromPlan": 92,
-    "remainingSelectedNovel": 418,
+    "currentlyLiveUnique": 1080,
+    "publishedFromPlan": 93,
+    "remainingSelectedNovel": 417,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -2685,7 +2685,13 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "林慶台 賽德克・巴萊 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "林慶台 賽德克・巴萊 角色 劇照 正面 清晰 無浮水印",
+      "reviewExactCommonsFiles": [
+        "2013 臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會 Premiere of \"Beyond Beauty - TAIWAN FROM ABOVE\" in the Liberty Square, Taipei, TAIWAN.jpg"
+      ],
+      "reviewSourceResearchNote": "2013-10-30 Flickr othree, Commons CC BY 2.0; Leoboudv confirmed Flickr licence 2013-11-08. Source title explicitly names 林慶台 and 萊萊, so group/occlusion and exact pictured subject require pixel review. Source is a discovery hint only, not approved; 4608x3072.",
+      "reviewLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reviewSourceOriginalUrl": "https://www.flickr.com/photos/12452841@N00/10648196583/"
     },
     {
       "candidateId": "c1500-0124",
@@ -3608,7 +3614,13 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "李炳輝 流浪到淡水 經典時期 歌手 獨照 正面 清晰 無浮水印"
+      "preferredImageQuery": "李炳輝 流浪到淡水 經典時期 歌手 獨照 正面 清晰 無浮水印",
+      "reviewExactCommonsFiles": [
+        "Lee Ping-Huei & Wu Bai 20101127.jpg"
+      ],
+      "reviewSourceResearchNote": "2010-11-27 concert image by 音樂雯/musicwen, Commons CC BY-SA 2.0, FlickreviewR verified 2015-10-25. Caption explicitly says 李炳輝 left and 伍佰 right; two-person source must be manually cropped and the left face checked for resolution and unobstructed five-stage reveal. 1664x2496; not approved.",
+      "reviewLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reviewSourceOriginalUrl": "https://www.flickr.com/photos/musicwen/5248544442"
     },
     {
       "candidateId": "c1500-0155",
@@ -17208,18 +17220,18 @@
         "張達明 藝人 正面 清晰 肖像",
         "Cheung Tat-ming portrait"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
+      "hintsStatus": "published_verified",
+      "identityStatus": "verified",
+      "qaStatus": "pages_live_verified",
       "preferredImageQuery": "張達明 大內密探零零發 角色 劇照 正面 清晰 無浮水印",
       "reviewExactCommonsFiles": [
         "張達明.jpg"
@@ -17247,7 +17259,10 @@
           "verificationUrl": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
           "verifiedAt": "2026-10-31"
         }
-      ]
+      ],
+      "publishedQuestionId": "t1500_0562",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
+      "rightsNote": "am730 CC BY 3.0, Commons original YouTube licence reviewed by GRuban on 2020-07-24; game portrait and five stages reviewed, published in main 8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04"
     },
     {
       "candidateId": "c1500-0563",
@@ -18733,7 +18748,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 92,
+    "published": 93,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18826,9 +18841,10 @@
       "鄭弘儀",
       "趙正平",
       "黃少谷",
-      "大元"
+      "大元",
+      "張達明"
     ],
-    "pendingPhotoAndHintReview": 418,
-    "latestCommit": "pending-dayuan-pr-qa"
+    "pendingPhotoAndHintReview": 417,
+    "latestCommit": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04"
   }
 }

@@ -30,7 +30,7 @@ NONPORTRAIT_FILENAME = re.compile(
     r'skyline|landscape|town\s+hall|river\s+bridge)(?![a-z])'
     r'|(?:美食|餐廳|餐馆|店面|古城|考古|橋樑|桥梁|車站|车站|寺廟|寺庙|'
     r'神社|靈堂|灵堂|大學|大学|建築|建筑|拍賣|拍卖|公園|公园|'
-    r'博物館|博物馆|校園|校园|河橋|河桥)'
+    r'博物館|博物馆|校園|校园|河橋|河桥|養生館|养生馆|'\n    r'足體|足体|按摩店|門市|门市|商店|店鋪|店铺|店家|招牌)'
 )
 PORTRAIT_CONTEXT = re.compile(
     r'(?i)(?<![a-z])(?:portrait|headshot|close[- ]?up|actor|actress|'
@@ -51,7 +51,7 @@ def obvious_nonportrait_scene(item):
     filename = unquote(str(item.get('filename') or ''))
     if not NONPORTRAIT_FILENAME.search(filename):
         return False
-    return not bool(PORTRAIT_CONTEXT.search(filename + ' ' + str(item.get('caption') or '')))
+    # Captions may name a performer even when the file itself shows a shop\n    # named after them (e.g. 李炳輝足體養生館). A caption is not visual proof.\n    # Keep genuinely named portraits/events when the *filename* says so.\n    return not bool(PORTRAIT_CONTEXT.search(filename))
 
 
 

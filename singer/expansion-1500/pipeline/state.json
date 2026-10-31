@@ -31946,7 +31946,10 @@
         "reviewType": "human_visual_preliminary_with_source_gaps",
         "sourceCommit": "cdd21c4feb4d3f0da089a0393629ea4a0e85fdcb",
         "handoffCollection": "newCandidates"
-      }
+      },
+      "duplicateExistingCanonicalId": "x1000_p0217",
+      "duplicateMatchReason": "curated_duplicate_id",
+      "duplicateMatchSource": "live_preflight"
     },
     "t1500_0544": {
       "personId": "t1500_0544",
@@ -74006,8 +74009,8 @@
       "candidateId": "c1500-0093",
       "name": "郭品超",
       "status": "no_suitable_source",
-      "attempts": 4,
-      "nextRetryAt": "2026-10-31T17:31:55.700514+00:00",
+      "attempts": 5,
+      "nextRetryAt": "2026-11-02T04:50:52.468866+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -74216,6 +74219,23 @@
           "time": "2026-10-31T01:31:55.700503+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T20:50:46.275496+00:00",
+          "provider": "entity",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T20:50:48.035288+00:00"
+        },
+        {
+          "time": "2026-10-31T20:50:48.035323+00:00",
+          "provider": "commons",
+          "attempt": 5,
+          "finishedAt": "2026-10-31T20:50:52.468840+00:00"
+        },
+        {
+          "time": "2026-10-31T20:50:52.468855+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -74234,18 +74254,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-10-31T01:31:49.690195+00:00",
+      "lastAttemptAt": "2026-10-31T20:50:46.179454+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-10-31T01:31:55.700526+00:00",
-      "lastRunId": "20261031T013148Z-c906c761",
+      "updatedAt": "2026-10-31T20:50:52.468879+00:00",
+      "lastRunId": "20261031T205044Z-2199c2f0",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-10-31T01:31:55.702392+00:00"
+      "workerFinishedAt": "2026-10-31T20:50:52.470809+00:00"
     },
     "t1500_0387": {
       "personId": "t1500_0387",

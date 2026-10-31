@@ -43,13 +43,20 @@ class FlickrSourceLeadTest(unittest.TestCase):
                 self.assertFalse(row["imageVerification"]["rightsDocumented"])
                 self.assertNotEqual(row["qaStatus"], "Pages_live_verified")
 
-    def test_targeted_request_never_changes_production(self):
+    def test_historical_flickr_leads_do_not_pin_future_batch_requests(self):
+        # These two Flickr sources remain subject to their independent
+        # source-specific review, but the ACTIVE batch may legitimately move
+        # to a different set of selectedNew people.
         req = json.loads((ROOT / "pipeline/batch-request.json").read_text(encoding="utf-8"))
-        self.assertEqual(req["plannedPersonIds"], ["t1500_0123", "t1500_0154"])
-        self.assertEqual(req["targetPeople"], 2)
-        self.assertEqual(req["providers"], ["commons"])
-        self.assertIn("Draft only", req["purpose"])
-        self.assertIn("do not auto-approve", req["purpose"])
+        self.assertIn(req["mode"], {"search", "render_only", "manual_recrop"})
+        if req["mode"] == "search":
+            ids = req["plannedPersonIds"]
+            self.assertEqual(len(ids), req["targetPeople"])
+            self.assertEqual(len(ids), len(set(ids)))
+            self.assertTrue(all(pid.startswith("t1500_") for pid in ids))
+            self.assertTrue(set(req["providers"]) <= {"curated", "commons", "entity"})
+        self.assertIn("draft only", req["purpose"].casefold())
+        self.assertIn("no main", req["purpose"].casefold())
 
 
     def test_visual_rejections_are_source_specific_and_not_releasable(self):

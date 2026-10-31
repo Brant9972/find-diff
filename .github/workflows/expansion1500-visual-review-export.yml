@@ -1,0 +1,78 @@
+name: Expansion1500 human visual review export (no deploy)
+on:
+  push:
+    branches:
+      - automation/celebrity-photo-pipeline
+    paths:
+      - singer/expansion-1500/pipeline/visual-review-request.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation/celebrity-photo-pipeline
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==12.0.0
+      - name: Render compact five-stage montage for direct human inspection
+        run: |
+          python - <<'PY'
+          import base64, hashlib, io, json, re
+          from pathlib import Path
+          from PIL import Image, ImageDraw, ImageFont
+
+          root = Path('singer')
+          req = json.loads((root / 'expansion-1500/pipeline/visual-review-request.json').read_text(encoding='utf-8'))
+          run = req['runId']
+          person = req['personId']
+          candidate = req['candidateId']
+          if not re.fullmatch(r'20[0-9]{6}T[0-9]{6}Z-[a-z0-9]{8}', run):
+              raise ValueError('Invalid immutable run ID')
+          if not re.fullmatch(r't1500_[0-9]{4}', person):
+              raise ValueError('Invalid existing selectedNew ID')
+          if not re.fullmatch(r'(?:manualrecrop-|[a-z0-9-]{8,})[a-z0-9-]*', candidate):
+              raise ValueError('Invalid candidate ID')
+          idx = root / 'expansion-1500/pipeline/review-assets' / run / 'assets-index.json'
+          data = json.loads(idx.read_text(encoding='utf-8'))
+          matches = [p for p in data['photos'] if p['personId'] == person and p['candidateId'] == candidate]
+          if len(matches) != 1:
+              raise ValueError('Expected exactly one retained draft candidate')
+          photo = matches[0]
+          if photo['eligibleForLive'] or photo['reviewStatus'] not in ('pending_review', 'manual_crop_required'):
+              raise ValueError('Only unapproved draft candidates can be exported')
+          labels = ['eyes', 'nose', 'mouth', 'chin', 'full', 'candidate']
+          paths = [photo['stageImages'][name]['path'] if name != 'candidate' else photo['candidateImage']['path'] for name in labels]
+          tile_w, tile_h, pad, header = 220, 264, 12, 27
+          out = Image.new('RGB', (3 * (tile_w + pad) + pad, 2 * (tile_h + header + pad) + pad), '#16191d')
+          draw = ImageDraw.Draw(out)
+          for i, (label, rel) in enumerate(zip(labels, paths)):
+              file = root / rel
+              if not file.is_file() or not str(file.resolve()).startswith(str(root.resolve())):
+                  raise ValueError('Review image missing or outside singer')
+              im = Image.open(file).convert('RGBA')
+              bg = Image.new('RGBA', im.size, (30, 32, 36, 255))
+              bg.alpha_composite(im)
+              img = bg.convert('RGB').resize((tile_w, tile_h), Image.Resampling.LANCZOS)
+              x = pad + (i % 3) * (tile_w + pad)
+              y = pad + (i // 3) * (tile_h + header + pad)
+              draw.text((x + 5, y + 5), label.upper(), fill='white')
+              out.paste(img, (x, y + header))
+          buf = io.BytesIO()
+          out.save(buf, format='JPEG', quality=80, optimize=True)
+          raw = buf.getvalue()
+          if len(raw) > 500_000:
+              raise ValueError('Visual review export unexpectedly large')
+          print('VISUAL_SHEET_META ' + json.dumps({
+              'runId': run, 'personId': person, 'candidateId': candidate,
+              'sha256': hashlib.sha256(raw).hexdigest(),
+              'size': list(out.size), 'bytes': len(raw),
+              'releaseGate': 'HUMAN_VISUAL_REVIEW_ONLY_NOT_LIVE'
+          }, ensure_ascii=False), flush=True)
+          print('VISUAL_SHEET_BASE64 ' + base64.b64encode(raw).decode('ascii'), flush=True)
+          PY

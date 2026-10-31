@@ -785,6 +785,9 @@ class EntityPortraits:
 
     def search(self, person, http, round_number=0):
         aliases, query, mapping, entity_files = self._resolve(person, http)
+        excluded = excluded_commons_keys(person)
+        entity_files = [filename for filename in entity_files
+                        if source_key('https://commons.wikimedia.org/wiki/File:' + urllib.parse.quote(filename.replace(' ', '_'))) not in excluded]
         enriched = {**person, 'aliases': aliases}
         failures, seen, commons, yielded = [], set(), [], False
         # Exact Wikidata P18 first, then native-name Commons search, then
@@ -810,7 +813,7 @@ class EntityPortraits:
                         continue
                     for info in page.get('imageinfo', []):
                         source = info.get('descriptionurl', '')
-                        if not source or source_key(source) in seen:
+                        if not source or source_key(source) in seen or source_key(source) in excluded:
                             continue
                         seen.add(source_key(source))
                         ext = info.get('extmetadata', {})

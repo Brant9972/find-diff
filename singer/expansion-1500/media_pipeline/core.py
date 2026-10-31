@@ -277,6 +277,27 @@ class CachedExactMetadata:
         yield from self.items
 
 
+def verified_curated_p18_manual_source(person, item, evidence):
+    """Allow a *source-only* manual crop for an exact QID/P18 file.
+
+    A verified English file title need not contain Chinese characters. This
+    is never identity approval or a playable photo; normal source identity,
+    licence and pixel gates run first. Generic English homonyms cannot opt in.
+    """
+    filename = str(person.get('reviewVerifiedP18File') or '')
+    if not (person.get('wikidataId') and filename
+            and evidence.get('curatedExactFileHint')
+            and norm(item.get('filename', '')) == norm(filename)):
+        return False
+    source = urlsplit(str(item.get('source') or ''))
+    if source.scheme != 'https' or source.hostname != 'commons.wikimedia.org':
+        return False
+    path = unquote(source.path).replace('_', ' ')
+    if not path.startswith('/wiki/File:'):
+        return False
+    return norm(path.removeprefix('/wiki/File:')) == norm(filename)
+
+
 def process(person, row, root, directory, providers, http, crop, rejected, max_candidates=3, max_attempts=24, deadline=None, checkpoint=None, active=None, rejected_pixels=None):
     row['status'] = 'searching'
     row['attempts'] += 1
@@ -479,6 +500,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                     crop_reason = str(exc)
                     source_named = (
                         evidence.get('claim') == 'P18'
+                        or verified_curated_p18_manual_source(person, item, evidence)
                         or any(re.search(r'[一-鿿]', match)
                                for match in candidate['identityEvidence'].get('captionAliasMatches', []))
                     )

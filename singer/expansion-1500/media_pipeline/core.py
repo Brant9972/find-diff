@@ -26,7 +26,7 @@ BLOCKED = ('funeral', 'mourning', 'memorial', 'obituary', 'waxwork', 'statue', '
 NONPORTRAIT_FILENAME = re.compile(
     r'(?i)(?<![a-z])(?:township|district|temple|restaurant|street|bridge|'
     r'archaeological|construction|harbor|harbour|railway|station|palace|'
-    r'film\\s+location\\s+signs?|signage|movie\\s+poster|film\\s+poster|'
+    r'film\s+location\s+signs?|signage|movie\s+poster|film\s+poster|'
     r'university|campus|shrine|museum|airport|shopping|auction|market|'
     r'skyline|landscape|town\s+hall|river\s+bridge)(?![a-z])'
     r'|(?:美食|餐廳|餐馆|店面|古城|考古|橋樑|桥梁|車站|车站|寺廟|寺庙|'

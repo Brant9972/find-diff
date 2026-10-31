@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source, licence and actual five-stage pixel inspection",
+  "reviewedAt": "2026-10-31",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "538961d65d8b477e6d79edaa2b58397322eb568a",
+  "releaseGate": "HUMAN_PHOTO_APPROVED_PENDING_INTEGRATION_QA",
+  "decisions": [
+    {
+      "personId": "t1500_0475",
+      "name": "大元",
+      "candidateId": "manualrecrop-f8910be33a78-43f7831a",
+      "gameSha256": "f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349",
+      "sourceSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+      "decision": "approved_for_integration_qa_only",
+      "eligibleForLive": false,
+      "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q9293309",
+      "artist": "邱鈺鋒 (Kuyohong)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceDate": "2012-05-01",
+      "sourceDescription": "2012 台北信義威秀 Yahoo!奇摩超級商城三周年活動，「一日網購店長」大元",
+      "sourceCredit": "邱鈺鋒／Wikimedia Commons，自攝 CC BY-SA 4.0；1000×1500 原圖取 [190,60,790,780] 600×720 裁切；須保留署名、來源、改作說明及相同方式分享授權",
+      "cropBox": [
+        190,
+        60,
+        790,
+        780
+      ],
+      "gameSize": [
+        600,
+        720
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28,
+          0.92,
+          0.44
+        ],
+        "nose": [
+          0.08,
+          0.28,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.28,
+          0.92,
+          0.62
+        ],
+        "chin": [
+          0.08,
+          0.28,
+          0.92,
+          0.73
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "stageReview": {
+        "eyes": "pass: both eyes visible, nose and mouth hidden",
+        "nose": "pass: nose revealed, mouth and teeth hidden; V1 .53 leaked upper teeth, V2 .49 corrected",
+        "mouth": "pass: lips and teeth visible, chin not fully revealed",
+        "chin": "pass: full chin and jaw visible, no obstruction",
+        "full": "pass: single face, eyes/nose/mouth/chin clear, no microphone, watermark or second face; slight head tilt is acceptable"
+      },
+      "identityEvidence": "Commons caption explicitly identifies 大元 at 2012 event, original uploader's own photograph; structured depicts points to Dayuan Q9293309. Cross-checked stage face against source metadata; not based on automated face recognition.",
+      "rightsEvidence": "Commons author 邱鈺鋒 (Kuyohong) declares own work under CC BY-SA 4.0, upload history and camera EXIF corroborate original photography; cropping and share-alike redistribution permitted with attribution and derivative notice.",
+      "recognitionEvidence": "2012 solo event portrait, both eyes and full smiling face visible, clear enough for five-stage gameplay despite head tilt; no obstructed mouth or chin.",
+      "work": "女孩壞壞",
+      "workSource": "https://www.lib.wfu.edu.tw/node/2366",
+      "aliases": [
+        "大元",
+        "林盈臻",
+        "林艾璇",
+        "Dayuan",
+        "Da Yuan",
+        "Josie Lin"
+      ],
+      "reason": "Opened actual 1000×1500 source, 600×720 JPEG and V1/V2 eyes/nose/mouth/chin/full PNGs. V1 nose stage rejected for teeth leakage; V2 corrected and all five stages passed. This is approval for review-branch integration only; no playable claim before Actions and public Pages QA."
+    }
+  ],
+  "notes": [
+    "Do not count as new playable person until main merge and independent Pages JSON confirmation.",
+    "Use the original 600x720 JPEG blob without recompression; preserve SHA256.",
+    "Original old microphone photo Lin DaYuan from Popu Lady.jpg remains rejected; do not reuse.",
+    "Do not modify unrelated people, creators or old reviews."
+  ]
+}

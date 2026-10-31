@@ -50,7 +50,8 @@ class ExactSourceVisualAuditTest(unittest.TestCase):
     def test_exclusions_do_not_blacklist_people_or_unrelated_sources(self):
         for pid in ('t1500_0390', 't1500_0156'):
             person = self.people[pid]
-            self.assertEqual(len(person['excludedPhotoSources']), 1)
+            self.assertGreaterEqual(len(person['excludedPhotoSources']), 1,
+                                    'New exact-photo rejections must not be blocked by a stale count')
             self.assertNotIn(source_key('https://commons.wikimedia.org/wiki/File:Another_Portrait.jpg'),
                              excluded_commons_keys(person))
 

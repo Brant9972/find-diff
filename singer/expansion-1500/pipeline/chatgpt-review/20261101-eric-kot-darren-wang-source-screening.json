@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-01T06:26:00+08:00",
+  "reviewType": "independent_source_page_and_visible_preview_screening",
+  "targetBranch": "automation/celebrity-photo-pipeline",
+  "sourceBranchSha": "0f191c5a7e4ad62b5fc457ab799f6d1dceb3be2c",
+  "mainCheckedSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "notes": [
+    "Source-page attribution and the linked Wikimedia preview were inspected, but no 600x720 crop or five-stage reveal pixels were generated or reviewed.",
+    "A Commons category, QID or source caption is corroborating metadata, not independent final facial identity verification.",
+    "Do not auto-approve, publish, or change main; require fresh main dedupe, complete game image and five-stage eyes/nose/mouth/chin/full visual review.",
+    "For CC BY-SA sources, record author, license URL, source link, crop/transform and share-alike terms for the derived game image."
+  ],
+  "people": [
+    {
+      "plannedQuestionId": "t1500_0564",
+      "name": "葛民輝",
+      "wikidataQid": "Q590914",
+      "alreadyLiveByNameAtMain": false,
+      "sourceCategory": "https://commons.wikimedia.org/wiki/Category:Eric_Kot",
+      "sources": [
+        {
+          "file": "Eric Kot 20231029.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
+          "author": "Tombus20032000",
+          "caption": "葛民輝在 Cinema City 朗豪坊參與電影《夜校》謝票",
+          "date": "2023-10-29",
+          "dimensions": [
+            2708,
+            3611
+          ],
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsEvidence": "Uploader claims own work, explicit CC BY-SA 4.0 on Commons; photographer authorship not independently authenticated.",
+          "identityEvidence": "Named caption, Eric Kot category, depicts Wikidata Q590914 and Chinese/English Wikipedia use.",
+          "visualScreening": "Single visible person, mouth not directly covered; microphone below chin. Black cap shadows eyebrows/upper eyes; partial eye-area visibility and possible softness from ISO 6400.",
+          "decision": "pending_crop_and_five_stage_review",
+          "eligibleForLive": false,
+          "nextAction": "Only if an actual 600x720 face crop preserves clearly recognizable eyes, nose, mouth, chin and familiar appearance; reject if cap-shadow impairs eye reveal."
+        },
+        {
+          "file": "Eric Kot 200812.JPG",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+          "author": "Tksteven",
+          "caption": "Eric Kot at a 2008 publicity event",
+          "dimensions": [
+            1000,
+            750
+          ],
+          "license": "CC BY 2.5 / CC BY-SA 3.0 / GFDL",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "identityEvidence": "Named file caption and depicts Eric Kot Q590914.",
+          "visualScreening": "Side-looking face, microphone boom crosses mouth and chin; soft low-resolution source.",
+          "decision": "reject_this_exact_source",
+          "reason": "Mouth obstruction and unsuitable five-stage reveal",
+          "eligibleForLive": false
+        },
+        {
+          "file": "EricKot2007.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
+          "author": "Pete Yeung",
+          "caption": "Eric Kot on stage",
+          "dimensions": [
+            582,
+            703
+          ],
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "identityEvidence": "File caption, Wikidata Q590914 depicts statement and Wikipedia use.",
+          "visualScreening": "Eyes shut, microphone near mouth, low face-pixel count and distant stage pose.",
+          "decision": "reject_this_exact_source",
+          "reason": "Eyes closed and face too small",
+          "eligibleForLive": false
+        },
+        {
+          "file": "Eric (206630577).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
+          "author": "Tommy Wong",
+          "caption": "SoftHard Long Time No See 2006 concert",
+          "dimensions": [
+            2450,
+            1634
+          ],
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "rightsEvidence": "Flickr license confirmed by FlickreviewR 2 on 2017-10-31.",
+          "visualScreening": "Eyes closed, side profile, microphone held over mouth.",
+          "decision": "reject_this_exact_source",
+          "reason": "Eyes closed, side profile and mouth obstruction",
+          "eligibleForLive": false
+        }
+      ]
+    },
+    {
+      "plannedQuestionId": "t1500_0181",
+      "name": "王大陸",
+      "wikidataQid": "Q15938098",
+      "alreadyLiveByNameAtMain": false,
+      "sourceCategory": "https://commons.wikimedia.org/wiki/Category:Darren_Wang",
+      "sources": [
+        {
+          "file": "TaLu.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:TaLu.jpg",
+          "author": "王愛粉",
+          "caption": "2016-10-18 桃園送機，王大陸前往北京拍攝新電影",
+          "dimensions": [
+            3024,
+            4032
+          ],
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "identityEvidence": "File used on 王大陸 / Darren Wang Wikipedia pages and Wikidata Q15938098; single file in Darren Wang category.",
+          "visualScreening": "Commons file categorizes this portrait as a man wearing sunglasses; eye reveal unsuitable.",
+          "decision": "reject_this_exact_source",
+          "reason": "Sunglasses block eyes",
+          "eligibleForLive": false
+        }
+      ]
+    }
+  ],
+  "nextSteps": [
+    "Preserve these exact-source rejections in the per-person source exclusion map only after verifying the latest pipeline state and existing exclusions; do not overwrite concurrent state.",
+    "Prioritize an alternative unobstructed Eric Kot portrait; 2023 source may be reconsidered only after five-stage crop visual QA.",
+    "Keep creators archived, unchanged; do not count either person as newly playable."
+  ]
+}

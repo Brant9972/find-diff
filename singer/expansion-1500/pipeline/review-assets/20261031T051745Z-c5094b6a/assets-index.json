@@ -1,0 +1,385 @@
+{
+  "assetManifestPath": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/assets-index.json",
+  "contactSheets": [
+    {
+      "bytes": 23876,
+      "entries": [
+        {
+          "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+          "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+          "personId": "t1500_0171",
+          "tile": 1
+        }
+      ],
+      "height": 315,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/contact-sheet-01.jpg",
+      "sha256": "b7951eb3d80a6dc7e8613e7aceedbc2e73651a142bc83bd9532c7fb4789c30f0",
+      "width": 960
+    }
+  ],
+  "manualContactSheets": [
+    {
+      "bytes": 44402,
+      "entries": [
+        {
+          "candidateId": "aa4385a6eb7b9154b681",
+          "originalSha256": "74ad747dbc62372aebc0c2ab795e511ea522141625bfb6ed4229cfc576fd7165",
+          "personId": "t1500_0534",
+          "tile": 1
+        },
+        {
+          "candidateId": "f6935a26bdbbab2e51b7",
+          "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+          "personId": "t1500_0534",
+          "tile": 2
+        }
+      ],
+      "height": 315,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/manual-source-sheet-01.jpg",
+      "sha256": "042b511e406b9f01c70fd242c58b129b88474732f9a47152790feb9856d4b848",
+      "width": 960
+    }
+  ],
+  "manualSourceCount": 2,
+  "manualSourcePeopleCount": 1,
+  "manualSources": [
+    {
+      "candidateId": "aa4385a6eb7b9154b681",
+      "cropFailure": "Blurred crop: sharpness below 65",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "黃宏軒",
+        "caption": "​黃宏軒帥照",
+        "credit": "黃宏軒ig",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E9%BB%83%E5%AE%8F%E8%BB%92",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "黃宏軒",
+          "captionAliasMatches": [
+            "黃宏軒"
+          ],
+          "discoveryWarnings": [],
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "黃宏軒"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q27888799",
+          "matchedAliases": [
+            "黃宏軒"
+          ],
+          "query": "黃宏軒",
+          "retrievedAt": "2026-10-30T07:04:48.996738+00:00",
+          "verifiedSearchAliases": [
+            "黃宏軒",
+            "Huang Hongxuan",
+            "Kurt Huang"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q27888799"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/S_37822478.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/S_37822478.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance has not been visually reviewed",
+          "representativeWorks": [
+            "關於未知的我們"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:S_37822478.jpg",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "黃宏軒",
+      "originalSha256": "74ad747dbc62372aebc0c2ab795e511ea522141625bfb6ed4229cfc576fd7165",
+      "personId": "t1500_0534",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 112448,
+        "displayHeight": 960,
+        "displayWidth": 959,
+        "height": 960,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/source-only-0001/original.jpg",
+        "sha256": "74ad747dbc62372aebc0c2ab795e511ea522141625bfb6ed4229cfc576fd7165",
+        "width": 959
+      },
+      "stageImages": {}
+    },
+    {
+      "candidateId": "f6935a26bdbbab2e51b7",
+      "cropFailure": "Blurred crop: sharpness below 65",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "Petersuuu",
+        "caption": "Processed with VSCO with al3pro preset",
+        "credit": "Own work",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "captionAliasMatches": [
+            "黃宏軒"
+          ],
+          "curatedExactFileHint": true,
+          "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+          "query": "黃宏軒",
+          "visualIdentityVerified": false
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance must be reviewed",
+          "representativeWorks": [
+            "關於未知的我們"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "黃宏軒",
+      "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+      "personId": "t1500_0534",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 1328480,
+        "displayHeight": 2610,
+        "displayWidth": 1717,
+        "height": 2610,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/source-only-0002/original.jpg",
+        "sha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+        "width": 1717
+      },
+      "stageImages": {}
+    }
+  ],
+  "peopleCount": 1,
+  "photoCount": 1,
+  "photos": [
+    {
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "candidateImage": {
+        "bytes": 98321,
+        "displayHeight": 720,
+        "displayWidth": 600,
+        "height": 720,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/candidate.jpg",
+        "sha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+        "width": 600
+      },
+      "eligibleForLive": false,
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "metadata": {
+        "author": "CNA Taiwan - 中央社",
+        "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+        "credit": "陳建斌陳湘琪 金馬稱王封后",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "陳湘琪",
+          "captionAliasMatches": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "curatedExactFileHint": true,
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "陳湘琪"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
+          "matchedAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "query": "陳湘琪",
+          "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
+          "verifiedSearchAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi",
+            "Chén Xiāngqí"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q5090886"
+        },
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": "11cfabb73b01aa6bd121",
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance must be reviewed",
+          "representativeWorks": [
+            "迴光奏鳴曲"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+        "warnings": [
+          "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+        ]
+      },
+      "name": "陳湘琪",
+      "personId": "t1500_0171",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.27,
+          0.92,
+          0.63
+        ],
+        "eyes": [
+          0.08,
+          0.27,
+          0.92,
+          0.37
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.92,
+          0.55
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.92,
+          0.44
+        ]
+      },
+      "reviewStatus": "pending_review",
+      "sourceImage": {
+        "bytes": 291361,
+        "displayHeight": 1758,
+        "displayWidth": 1920,
+        "height": 1758,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/source.jpg",
+        "sha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+        "width": 1920
+      },
+      "stageImages": {
+        "chin": {
+          "bytes": 132496,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/chin.png",
+          "sha256": "4d18f84710f4dd46e6b511ff9049e8e93d2001a6927d31153ced15d2f024fd86",
+          "width": 600
+        },
+        "eyes": {
+          "bytes": 43385,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/eyes.png",
+          "sha256": "d78172a74954b0119c5dc9b8385643986706c885c73d2b19b87d20e16be0bb07",
+          "width": 600
+        },
+        "full": {
+          "bytes": 380325,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/full.png",
+          "sha256": "87dee7c2af2794bdbd7c74d1e456d6ab95d04a48e5d6e3cca11481bf678b8e5d",
+          "width": 600
+        },
+        "mouth": {
+          "bytes": 106119,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/mouth.png",
+          "sha256": "d31c71326bebe0adf05d46d2c60e4e326e4d2a992620708e4d97eebaa522b776",
+          "width": 600
+        },
+        "nose": {
+          "bytes": 63794,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/photo-0001/nose.png",
+          "sha256": "c3863413a2ab94c4111c1c2d7cae4b8248db4c1011144234c421b4b60c786bde",
+          "width": 600
+        }
+      }
+    }
+  ],
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "revealSheets": [
+    {
+      "bytes": 34171,
+      "entries": [
+        {
+          "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+          "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+          "personId": "t1500_0171",
+          "row": 1
+        }
+      ],
+      "height": 280,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T051745Z-c5094b6a/reveal-sheet-01.jpg",
+      "sha256": "b66e6f0725e0110d917f7e67ccb165fed9899853a9bd891fd9d97ce389bb09fc",
+      "width": 1000
+    }
+  ],
+  "runId": "20261031T051745Z-c5094b6a",
+  "schemaVersion": 1,
+  "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c"
+}

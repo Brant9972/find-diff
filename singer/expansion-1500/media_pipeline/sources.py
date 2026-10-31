@@ -468,8 +468,35 @@ class CuratedCommons:
                     or file_path not in ({original_path} | allowed_thumbs)
                     or original.query or original.fragment):
                 continue
+            # A Commons page can also carry a human-reviewed CC licence for
+            # a YouTube still. This is NOT equivalent to arbitrary YouTube
+            # footage or to a licence string supplied by a search result.
+            # Require an exact Commons file, hashed Wikimedia original URL,
+            # named author, a dated independent Commons licence reviewer and
+            # the exact 11-character source video identifier. The caller's
+            # curated record must have been checked against that Commons page.
+            source_type = item.get('sourceType')
+            own_work = source_type == 'uploader_own_work'
+            youtube = urllib.parse.urlsplit(str(item.get('originalSourceUrl', '')))
+            youtube_params = urllib.parse.parse_qs(youtube.query, strict_parsing=False)
+            reviewed_youtube = (
+                source_type == 'commons_youtube_cc_reviewed'
+                and youtube.scheme == 'https'
+                and youtube.hostname in {'www.youtube.com', 'youtube.com'}
+                and youtube.path == '/watch'
+                and not youtube.fragment and not youtube.username
+                and set(youtube_params) == {'v'}
+                and len(youtube_params.get('v', [])) == 1
+                and bool(re.fullmatch(r'[A-Za-z0-9_-]{11}', youtube_params['v'][0]))
+                and item.get('license') == 'CC BY 3.0'
+                and str(item.get('licenseUrl', '')).rstrip('/')
+                    == 'https://creativecommons.org/licenses/by/3.0'
+                and bool(str(item.get('licenseReviewer', '')).strip())
+                and bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',
+                                      str(item.get('licenseReviewedAt', ''))))
+            )
             if (not item.get('artist') or not item.get('caption')
-                    or item.get('sourceType') != 'uploader_own_work'
+                    or not (own_work or reviewed_youtube)
                     or item.get('verificationUrl') != source
                     or not item.get('verifiedAt')
                     or not identity(person, item['caption'])):
@@ -483,9 +510,14 @@ class CuratedCommons:
                 'caption': item['caption'], 'artist': item['artist'],
                 'license': item.get('license', ''),
                 'licenseUrl': item.get('licenseUrl', ''),
-                'licenseReviewStatus': 'not_checked',
+                'licenseReviewStatus': 'reviewed' if reviewed_youtube else 'not_checked',
                 'identityEvidence': {
                     'curatedOriginalMetadataOnly': True,
+                    'commonsYouTubeLicenseReview': ({
+                        'originalSourceUrl': item['originalSourceUrl'],
+                        'reviewer': item['licenseReviewer'],
+                        'reviewedAt': item['licenseReviewedAt'],
+                    } if reviewed_youtube else None),
                     'verifiedAt': item['verifiedAt'],
                     'verificationUrl': source,
                     'verifiedSearchAliases': [person['name'], *person.get('aliases', [])],

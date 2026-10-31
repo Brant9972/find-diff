@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-exact-p18-wang-cheung-kwong-search-v3",
+  "requestId": "20261031-cheung-reviewed-am730-original-curated-v1",
   "mode": "search",
-  "targetPeople": 3,
+  "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0457",
-    "t1500_0562",
-    "t1500_0583"
+    "t1500_0562"
   ],
   "retryFailed": true,
   "providers": [
@@ -14,8 +12,8 @@
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 17,
-  "personSeconds": 105,
-  "maxCandidates": 3,
-  "purpose": "Exact QID/P18 3-person targeted source diagnostic for unpublished selectedNew; draft only, no main, no Pages, no creators changes. Curated and Commons only, retryFailed explicitly bounded to these 3 IDs. Do not approve metadata or source-only images as game crops. Prior preflight failures: invalid collect mode and missing literal no main purpose; both corrected after inspecting test_source_led_release_plan.py."
+  "maxMinutes": 12,
+  "personSeconds": 110,
+  "maxCandidates": 2,
+  "purpose": "Exact human-verified Commons am730 YouTube CC BY 3.0 source for 張達明 only; draft only, no main, no Pages, no creators. Use strict curated fallback because Commons exact imageinfo previously returned no usable metadata; stage crop for five-stage review only, never auto-approve. Excluded 王耀慶 and 江華 source images must not be retried."
 }

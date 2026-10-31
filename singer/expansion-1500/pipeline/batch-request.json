@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-commons-empty-prefix-diagnostic-ten-distinct",
-  "mode": "search",
+  "requestId": "20261101-render-retained-source-only-review",
+  "mode": "render_only",
   "targetPeople": 10,
   "plannedPersonIds": [
     "t1500_0002",
@@ -23,5 +23,5 @@
   "maxMinutes": 12,
   "personSeconds": 65,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY; test PR #103 empty-native-name Commons allimages prefix recovery on 10 distinct, currently unplayed selectedNew people, not previous failed cohorts. Honor cooldown and rejected source pages. Source metadata, licence templates or P18 alone do not approve identity. Preserve author/caption, verify reuse/cropping rights, 600x720 five-stage human inspection and hints before any separate release PR. No main or Pages changes; creators archived and untouched."
+  "purpose": "DRAFT ONLY: export all currently retained manual_crop_required source pixels (up to the existing 60-source safety cap), excluding exact human-rejected Commons files. No provider search, no redownload, no automatic photo approval, no changes to production, main, Pages or creators. This is to review the existing ~39 original sources rather than repeating low-yield 10/20/40/200-person searches. Independently verify each source caption, person identity, author, derivative rights and visual five-stage suitability before any separate release PR."
 }

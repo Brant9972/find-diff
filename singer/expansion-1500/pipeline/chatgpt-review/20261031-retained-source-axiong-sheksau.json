@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "retained_source_only_contact_sheet_and_full_pixel_screening",
+  "reviewedAt": "2026-10-31",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "sourceRun": "20261031T132012Z-6eecd09a",
+  "sourceAssetCommit": "3b6cf915e5888f8b19d36016a4118d42ebfe8c27",
+  "summary": {
+    "sourceOnlyContactSheetImagesViewed": 29,
+    "fullResolutionSourcesNewlyExamined": 2,
+    "newSourceDecisions": 2,
+    "approvedForLive": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0099",
+      "name": "阿翔",
+      "candidateId": "12578398260016a9a7e4",
+      "originalSha256": "5c544fe92d7777378ad2f150e0464380127db98b1062150235bdb00708e5f988",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG",
+      "sourceAuthor": "Onlymyself65536",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "sourceCaption": "浩角翔起的阿翔",
+      "decision": "reject_as_game_portrait",
+      "reason": "Full source pixels viewed: foreground face is angled down under a cap shading the eyes; another prominent person stands left. Even if cropped to one face, the eyes-first reveal would be weak and the face not frontal. Automated detector reported multiple prominent faces. Seek a new frontal single-person source.",
+      "visualEvidence": "source-only-0001/original.jpg and manual-source-sheet-01.jpg",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0552",
+      "name": "石修",
+      "candidateId": "40167bc4d98768ba947b",
+      "originalSha256": "51071ffafdafd7d505a87372b4b4e19dac3f058716d7cac9ba8e895786023454",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg",
+      "sourceAuthor": "am730",
+      "licenseMetadata": "CC BY 3.0 claimed from YouTube still",
+      "sourceCaption": "《反黑路人甲》拜神儀式",
+      "sourceVideo": "https://www.youtube.com/watch?v=aG10DunJnoI",
+      "commonsLicenseReviewStatus": "needed",
+      "decision": "reject_source_until_rights_proven",
+      "reason": "Full pixels show a clear close-up with visible facial features, but Commons explicitly marks this source Category:License review needed; no independent review proves the am730 YouTube clip was licensed for reuse and cropping. Do not use this exact source or infer rights from CC template. Caption describes event rather than independently naming depicted face.",
+      "visualEvidence": "source-only-0020/original.jpg and manual-source-sheet-01.jpg",
+      "eligibleForLive": false
+    }
+  ],
+  "notes": [
+    "The 29-image retained contact sheets were actually viewed; no other new approval is asserted. Previously screened and rejected sources are not re-reviewed here.",
+    "Both exact Commons file pages are excluded from future downloads, but the people remain eligible for different licensed photos.",
+    "No 600x720 game crop approved, no main/Pages/creators modifications."
+  ]
+}

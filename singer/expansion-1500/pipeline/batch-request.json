@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-manual-crop-preview",
+  "requestId": "20261031-huangshaoku-manual-reveal-v2",
   "mode": "manual_recrop",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -14,6 +14,6 @@
   "maxMinutes": 5,
   "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Draft only: stage one source-pixel 600x720 portrait and eyes/nose/mouth/chin/full previews for human visual QA; no main, no Pages, no creators change. No automatic rights/identity approval.",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-huangshaoku.json"
+  "purpose": "Draft only: same source JPEG for 黃少谷 but corrected mouth/chin five-stage geometry; no main, no Pages, no creators changes. Human visual review required.",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-huangshaoku-v2.json"
 }

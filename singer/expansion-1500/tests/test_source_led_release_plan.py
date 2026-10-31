@@ -77,8 +77,9 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             self.assertTrue(set(ids) <= eligible,
                             'Only unpublished selectedNew IDs may be searched')
             self.assertTrue(all(pid.startswith('t1500_') for pid in ids))
-            self.assertIn('Draft only', request['purpose'])
-            self.assertIn('no main', request['purpose'])
+            purpose = request['purpose'].casefold().replace('-', ' ')
+            self.assertIn('draft only', purpose)
+            self.assertIn('no main', purpose)
             if request['mode'] == 'manual_recrop':
                 spec_name = Path(request['manualCropRequestPath']).name
                 self.assertTrue(spec_name.startswith('manual-crop-request-'))
@@ -93,6 +94,24 @@ class SourceLedReleasePlanTest(unittest.TestCase):
                     self.assertEqual((x1-x0)*6, (y1-y0)*5)
 
 
+
+    def test_dayuan_and_huanghongxuan_exact_leads_stay_draft_only(self):
+        root = Path(__file__).resolve().parents[1]
+        plan = json.loads((root / 'release-plan-20261028.json').read_text(
+            encoding='utf-8'))
+        people = {row['plannedQuestionId']: row for row in plan['selectedNew']}
+        for person_id, filename, rejected in (
+            ('t1500_0475', 'LinDaYuan.jpg',
+             'https://commons.wikimedia.org/wiki/File:Lin_DaYuan_from_Popu_Lady.jpg'),
+            ('t1500_0534', '台灣演員黃宏軒的形象照，攝於2024年.jpg',
+             'https://commons.wikimedia.org/wiki/File:S_37822478.jpg'),
+        ):
+            row = people[person_id]
+            self.assertIn(filename, row['reviewExactCommonsFiles'])
+            self.assertIn(rejected, row['excludedPhotoSources'])
+            self.assertEqual(row['qaStatus'], 'not_releasable')
+            self.assertFalse(row['imageVerification']['finalCropReviewed'])
+            self.assertFalse(row['imageVerification']['rightsDocumented'])
 
     def test_source_screening_records_no_approved_game_crop(self):
         root = Path(__file__).resolve().parents[1]

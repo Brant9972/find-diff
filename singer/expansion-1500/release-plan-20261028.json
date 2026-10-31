@@ -8891,11 +8891,13 @@
         "title": "誰是被害者",
         "reason": "No cast evidence; replaced with PTS-confirmed work; never use as a hint without a separate source"
       },
-      "reviewExactCommonsFiles": [
-        "Liuhsiufu2023.png",
-        "Liuhsiufu2020.png"
+      "reviewExactCommonsFiles": [],
+      "reviewReason": "2026-10-31 exact imageinfo run 41184338997: both Commons files are YouTube stills with Category:License review needed. Source captions identify 劉修甫 but CC BY 3.0 claim is not independently reviewed; source only, no pixels/crop, do not reuse these exact files. Seek distinct independently cleared portraits.",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+        "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png"
       ],
-      "reviewReason": "2026-10-31 source-only lead: Wikimedia Commons Category:Actors from Taiwan lists these two filenames as portraits; file captions, uploader rights, image pixels and five-stage 600x720 crop NOT YET VERIFIED. Exact imageinfo only, never auto-approve."
+      "photoSourceRightsStatus": "BLOCKED_EXACT_TWO_COMMONS_LICENSE_REVIEW_NEEDED"
     },
     {
       "candidateId": "c1500-0313",

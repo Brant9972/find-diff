@@ -23,6 +23,8 @@ class SunYuehSourceScreeningTest(unittest.TestCase):
         self.assertEqual(person["photoStatus"], "not_prepared")
         self.assertFalse(person["imageVerification"]["finalCropReviewed"])
         self.assertEqual(person["qaStatus"], "not_releasable")
+        self.assertIn("https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg", person["excludedPhotoSources"])
+        self.assertIn("Blurred crop: sharpness below 65", person["reviewReason"])
         candidates = list(CuratedCommons().search(person, None))
         self.assertEqual(len(candidates), 1)
         candidate = candidates[0]

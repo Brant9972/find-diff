@@ -72,7 +72,7 @@ class CommonsSitelinkFallbackTest(unittest.TestCase):
         self.assertEqual(categories[0]['cmtitle'], 'Category:Verified Kwong Wa')
 
     def test_noncategory_sitelink_cannot_trigger_category_query(self):
-        for title in ('File:江華.jpg', 'Category:Unsafe|other', 'Category:Unsafe\\nOther', ''):
+        for title in ('File:江華.jpg', 'Category:Unsafe|other', 'Category:Unsafe' + chr(10) + 'Other', ''):
             with self.subTest(title=title):
                 http = FakeHttp(category=title)
                 list(EntityPortraits(allow_openverse=False).search(self.person, http))

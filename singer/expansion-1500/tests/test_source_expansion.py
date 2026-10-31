@@ -220,6 +220,11 @@ class CommonsQueryPriorityTest(unittest.TestCase):
                 if params.get('generator') == 'search':
                     self.search_queries.append(params['gsrsearch'])
                     return {'query': {'pages': []}}
+                if params.get('list') == 'allimages':
+                    # Empty native-name CirrusSearch may now try one bounded
+                    # filename-prefix lookup before the English aliases.
+                    self.assertNotIn('gsrsearch', params)
+                    return {'query': {'allimages': []}}
                 raise AssertionError('Unexpected request: ' + str(params))
 
         api = EmptyCommonsAPI()

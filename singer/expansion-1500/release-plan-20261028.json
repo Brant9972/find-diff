@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1078,
-    "publishedFromPlan": 91,
-    "remainingSelectedNovel": 419,
+    "currentlyLiveUnique": 1079,
+    "publishedFromPlan": 92,
+    "remainingSelectedNovel": 418,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -14084,7 +14084,7 @@
       ],
       "proposedPrimaryBank": "actors.json",
       "representativeWorks": [
-        "Popu Lady"
+        "女孩壞壞"
       ],
       "priority": "B",
       "photoSearchKeywords": [
@@ -14092,19 +14092,28 @@
         "林盈臻 portrait",
         "林艾璇 portrait"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "大元 Popu Lady 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pending_branch_and_pages_qa",
+      "preferredImageQuery": "大元 Popu Lady 角色 劇照 正面 清晰 無浮水印",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+      "reviewSourceCommit": "538961d65d8b477e6d79edaa2b58397322eb568a",
+      "gameSha256": "f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349",
+      "reviewExactCommonsFiles": [
+        "LinDaYuan.jpg"
+      ],
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Lin_DaYuan_from_Popu_Lady.jpg"
+      ]
     },
     {
       "candidateId": "c1500-0476",
@@ -18355,7 +18364,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 91,
+    "published": 92,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18447,9 +18456,10 @@
       "林美照",
       "鄭弘儀",
       "趙正平",
-      "黃少谷"
+      "黃少谷",
+      "大元"
     ],
-    "pendingPhotoAndHintReview": 420,
-    "latestCommit": "pending-huangshaoku-pr-qa"
+    "pendingPhotoAndHintReview": 419,
+    "latestCommit": "pending-dayuan-pr-qa"
   }
 }

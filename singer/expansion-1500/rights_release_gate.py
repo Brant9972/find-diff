@@ -150,7 +150,10 @@ def validate(root: Path, strict_baseline: bool = True) -> tuple[list[str], dict]
         except (KeyError, TypeError, ValueError) as exc:
             errors.append(f"{pid}: invalid five-stage reveal: {exc}")
         for bank in banks:
-            hint = (hints.get(pid) or {}).get(bank) or {}
+            # Question banks use "actors.json", but hints.json has always
+            # used the singular "actor" mode. Check the actual game key.
+            hint_mode = "actor" if bank == "actors" else bank
+            hint = (hints.get(pid) or {}).get(hint_mode) or {}
             if not all(isinstance(hint.get(k), str) and hint[k].strip() for k in ("title", "source", "review")) or not is_https(hint.get("source") or ""):
                 errors.append(f"{pid}: missing sourced and reviewed {bank} work hint")
     return errors, {"baselinePeople": len(old), "livePeople": len(people), "newPeople": len(new_ids), "newIds": new_ids}

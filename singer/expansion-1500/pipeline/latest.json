@@ -1,13 +1,13 @@
 {
-  "runId": "20261031T152406Z-b11c3ee6",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T152406Z-b11c3ee6/review-index.json",
+  "runId": "20261031T165258Z-cd0e6ecb",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T165258Z-cd0e6ecb/review-index.json",
   "summary": {
-    "runId": "20261031T152406Z-b11c3ee6",
-    "generatedAt": "2026-10-31T15:24:20.988217+00:00",
-    "scannedPeople": 10,
+    "runId": "20261031T165258Z-cd0e6ecb",
+    "generatedAt": "2026-10-31T16:52:59.036134+00:00",
+    "scannedPeople": 0,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 10,
+    "scannedWithoutCandidates": 0,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
     "licenseConcernCandidates": 308,
@@ -33,25 +33,9 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {
-      "license_unclear": 1,
-      "source_api_busy": 1
-    },
+    "batchFailureReasons": {},
     "manualCropSources": 39,
-    "batchProviderStages": {
-      "commons": {
-        "attemptedPeople": 10,
-        "metadataCandidates": 1,
-        "identitySupportedMetadata": 1,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "license_unclear": 1,
-          "source_api_busy": 1
-        }
-      }
-    },
+    "batchProviderStages": {},
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

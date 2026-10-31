@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.core import process
+from media_pipeline.core import process, obvious_nonportrait_scene
 from media_pipeline.sources import EntityPortraits, SourceError, identity
 
 
@@ -15,6 +15,32 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertEqual(identity({'name': '黃玠'}, '黃玠瑋 Zooey Wonder'), [])
         self.assertEqual(identity({'name': '家家'}, '歌手家家 2024 演出'), ['家家'])
         self.assertEqual(identity({'name': '黃玠'}, '黃玠 portrait 2024'), ['黃玠'])
+
+    def test_named_business_is_not_a_portrait_even_if_caption_names_artist(self):
+        # Commons contains a shop named after singer 李炳輝. The caption may
+        # accurately mention him without depicting his face.
+        self.assertTrue(obvious_nonportrait_scene({
+            'filename': '李炳輝足體養生館西門館 20240309.jpg',
+            'caption': '歌手李炳輝創辦的養生館，台北市萬華區',
+        }))
+        self.assertTrue(obvious_nonportrait_scene({
+            'filename': '家家美食餐廳.jpg',
+            'caption': '歌手家家接受專訪',
+        }))
+        self.assertTrue(obvious_nonportrait_scene({
+            'filename': '黃玠紀念商店招牌.jpg',
+            'caption': '歌手黃玠出席活動',
+        }))
+        # Explicit portrait/event cues in the filename remain eligible for
+        # independent caption, identity, rights and pixel checks.
+        self.assertFalse(obvious_nonportrait_scene({
+            'filename': '歌手李炳輝在餐廳演出.jpg',
+            'caption': '李炳輝本人現場演唱',
+        }))
+        self.assertFalse(obvious_nonportrait_scene({
+            'filename': '李炳輝肖像.jpg',
+            'caption': '李炳輝',
+        }))
 
     def test_romanised_name_needs_a_whole_name(self):
         self.assertEqual(identity({'name': 'Ben Wong'}, 'Ben Wongster portrait'), [])

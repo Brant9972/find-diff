@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT source, licensing, actual 600x720 image and five-stage pixel inspection",
+  "reviewedAt": "2026-10-31",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "39f69d8b8aea50a3e283dc4415282cac4553338a",
+  "sourceReviewRun": "20261031T050012Z-4544daa5",
+  "visualExportRun": "https://github.com/Brant9972/find-diff/actions/runs/41170980227",
+  "releaseGate": "REVIEWED_PENDING_GITHUB_QA_AND_PAGES",
+  "decisions": [
+    {
+      "personId": "t1500_0562",
+      "name": "張達明",
+      "candidateId": "manualrecrop-bab0b80245ffecb66242",
+      "parentCandidateId": "8cb00c32a88015b25b4d",
+      "gameSha256": "bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d",
+      "sourceSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+      "decision": "approved_for_integration_qa_only",
+      "eligibleForLive": false,
+      "source": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q5094266",
+      "artist": "am730",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "originalVideo": "https://www.youtube.com/watch?v=lUMttVkRH-Y",
+      "licenseReviewer": "GRuban",
+      "licenseReviewedAt": "2020-07-24",
+      "sourceDate": "2019-01-18",
+      "sourceDescription": "《家和萬事驚》首映活動；Commons 中文圖說與 Wikidata Q5094266 指向張達明",
+      "sourceCredit": "am730／Wikimedia Commons；原影片經 YouTubeReviewBot 和 Commons 審核員 GRuban 於 2020-07-24 確認 CC BY 3.0；1000×1375 原圖裁切 [0,100,1000,1300]，縮放 600×720，需保留署名及改作說明",
+      "cropBox": [
+        0,
+        100,
+        1000,
+        1300
+      ],
+      "gameSize": [
+        600,
+        720
+      ],
+      "reveal": {
+        "eyes": [
+          0.12,
+          0.33,
+          0.88,
+          0.46
+        ],
+        "nose": [
+          0.12,
+          0.33,
+          0.88,
+          0.57
+        ],
+        "mouth": [
+          0.12,
+          0.33,
+          0.88,
+          0.69
+        ],
+        "chin": [
+          0.12,
+          0.33,
+          0.88,
+          0.84
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "stageReview": {
+        "eyes": "pass: two eyes and eyebrows clear, no nose tip or mouth",
+        "nose": "pass: eyes and complete nose revealed, mouth/teeth hidden",
+        "mouth": "pass: eyes, nose and teeth/mouth visible; full chin not yet revealed",
+        "chin": "pass: lower chin/jaw visible; scarf remains below face",
+        "full": "pass: single recognizable frontal face, both eyes, nose, mouth and chin visible, no glasses, microphone, watermark, second face or obtrusive object"
+      },
+      "identityEvidence": "Wikidata Q5094266 P18 and Commons photo caption identify Hong Kong actor 張達明 at 2019 premiere; source photo visually matches event imagery, not unrelated same-name person.",
+      "rightsEvidence": "Commons page names am730 as author and 2019 original YouTube video; independent reviewer GRuban confirmed CC BY 3.0 on 2020-07-24. Licence allows cropped redistribution with attribution and modification notice; original and crop hashes retained.",
+      "recognitionEvidence": "Actual 600x720 JPEG and all five PNG stages were displayed as a six-panel montage from GitHub Actions #41170980227, manually inspected: eyes→nose→mouth→chin→full sequence is correct, face clear and recognizable.",
+      "work": "大內密探零零發",
+      "workRole": "皇帝",
+      "workSource": "https://tv.apple.com/tw/movie/%E5%A4%A7%E5%85%A7%E5%AF%86%E6%8E%A2%E9%9B%B6%E9%9B%B6%E7%99%BC/umc.cmc.44ymz98g2t1cp1yvg11wew38",
+      "aliases": [
+        "張達明",
+        "Cheung Tat-ming",
+        "Cheung Tat Ming",
+        "Tat Ming Cheung"
+      ],
+      "reason": "Automated YuNet initially failed frontal face detection; immutable original SHA verified by GitHub Actions #41170672128 and manually cropped from original pixels. Five-stage montage reviewed from actual GitHub-rendered PNGs, not merely inferred from metadata. Approved only for review-branch integration pending Mobile QA, work hints QA, rights gate, Pages build/live JSON and public image SHA checks."
+    }
+  ],
+  "notes": [
+    "No new playable person claim until main merge and Pages public JSON confirms t1500_0562.",
+    "Do not recompress game JPEG: preserve exact SHA256 bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d.",
+    "Do not touch creators or unrelated people. Existing rejected 王耀慶@2011.jpg and 江華.jpg remain excluded.",
+    "Review montage generated with actual 600x720 candidate and all five PNG stages; no fabricated visual approval."
+  ]
+}

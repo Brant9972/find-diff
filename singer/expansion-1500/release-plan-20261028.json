@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1079,
-    "publishedFromPlan": 92,
-    "remainingSelectedNovel": 418,
+    "currentlyLiveUnique": 1080,
+    "publishedFromPlan": 93,
+    "remainingSelectedNovel": 417,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -16938,11 +16938,15 @@
       "plannedQuestionId": "t1500_0562",
       "name": "張達明",
       "aliases": [
-        "Cheung Tat-ming"
+        "Cheung Tat-ming",
+        "Cheung Tat Ming",
+        "Tat Ming Cheung"
       ],
       "acceptedAnswers": [
         "張達明",
-        "Cheung Tat-ming"
+        "Cheung Tat-ming",
+        "Cheung Tat Ming",
+        "Tat Ming Cheung"
       ],
       "categories": [
         "演員"
@@ -16956,19 +16960,36 @@
         "張達明 藝人 正面 清晰 肖像",
         "Cheung Tat-ming portrait"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "張達明 大內密探零零發 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pending_branch_and_pages_qa",
+      "preferredImageQuery": "張達明 大內密探零零發 角色 劇照 正面 清晰 無浮水印",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
+      "reviewSourceCommit": "39f69d8b8aea50a3e283dc4415282cac4553338a",
+      "gameSha256": "bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d",
+      "wikidataId": "Q5094266",
+      "reviewExactCommonsFiles": [
+        "張達明.jpg"
+      ],
+      "reviewCropBox": [
+        0,
+        100,
+        1000,
+        1300
+      ],
+      "reviewOriginalSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+      "reviewYouTubeOriginal": "https://www.youtube.com/watch?v=lUMttVkRH-Y",
+      "reviewLicenseReviewer": "GRuban",
+      "reviewLicenseReviewedAt": "2020-07-24"
     },
     {
       "candidateId": "c1500-0563",
@@ -18364,7 +18385,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 92,
+    "published": 93,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18457,9 +18478,10 @@
       "鄭弘儀",
       "趙正平",
       "黃少谷",
-      "大元"
+      "大元",
+      "張達明"
     ],
-    "pendingPhotoAndHintReview": 419,
-    "latestCommit": "pending-dayuan-pr-qa"
+    "pendingPhotoAndHintReview": 418,
+    "latestCommit": "pending-cheung-tat-ming-pr-qa"
   }
 }

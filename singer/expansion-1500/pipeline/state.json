@@ -69563,9 +69563,9 @@
       "personId": "t1500_0207",
       "candidateId": "c1500-0207",
       "name": "孫越",
-      "status": "download_failed",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-29T14:20:32.521761+00:00",
+      "status": "no_suitable_source",
+      "attempts": 2,
+      "nextRetryAt": "2026-10-31T07:14:18.442722+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -69598,45 +69598,6 @@
           "id": "676d1c6f30fcbde96a06",
           "personId": "t1500_0207",
           "rightsStatus": "needs_review",
-          "eligibleForLive": false,
-          "humanReview": null,
-          "status": "metadata_only",
-          "warnings": [
-            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
-          ]
-        },
-        {
-          "provider": "commons",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "downloadVariant": "wikimedia_thumbnail_1400",
-          "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
-          "filename": "2011 SKL RunUp Yueh Sun.jpg",
-          "artist": "Rico Shen",
-          "credit": "Own work",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "caption": "2011 SKL Run Up: Yueh Sun.",
-          "identityEvidence": {
-            "query": "孫越",
-            "identityWarning": "Caption/name match is preliminary evidence only",
-            "captionAliasMatches": [],
-            "visualIdentityVerified": false
-          },
-          "recognitionEvidence": {
-            "requestedReplacement": "",
-            "representativeWorks": [
-              "搭錯車"
-            ],
-            "note": "Familiar appearance must be reviewed"
-          },
-          "searchTime": "2026-10-29T12:20:32.516804+00:00",
-          "width": 1311,
-          "height": 1748,
-          "id": "a05b20a061c46d4480ec",
-          "personId": "t1500_0207",
-          "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
           "status": "metadata_only",
@@ -69722,6 +69683,47 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg",
+          "filename": "第20屆金馬獎最佳男主角孫越.jpg",
+          "artist": "馮國鏘",
+          "credit": "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=623869",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "caption": "​第20屆金馬獎最佳男主角孫越 / 創作者：馮國鏘 / 數位物件授權：PDM / 建檔單位：中央通訊社 @ 國家文化記憶庫 https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=623869",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "孫越",
+            "identityWarning": "Caption/name match is preliminary evidence only",
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "搭錯車"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-31T03:14:17.195628+00:00",
+          "width": 237,
+          "height": 292,
+          "id": "0092557ddc0bf0265dac",
+          "personId": "t1500_0207",
+          "discoveryRunId": "20261031T031412Z-e4f21427",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
         }
       ],
       "history": [
@@ -69788,6 +69790,75 @@
             }
           ],
           "candidatesTried": 4
+        },
+        {
+          "time": "2026-10-31T03:14:14.255812+00:00",
+          "provider": "curated",
+          "attempt": 2,
+          "finishedAt": "2026-10-31T03:14:15.675914+00:00"
+        },
+        {
+          "time": "2026-10-31T03:14:15.675945+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-10-31T03:14:18.442682+00:00"
+        },
+        {
+          "time": "2026-10-31T03:14:18.442705+00:00",
+          "errors": [
+            {
+              "provider": "curated",
+              "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+              "candidateMetadata": {
+                "provider": "commons",
+                "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+                "downloadVariant": "original",
+                "filename": "2011 SKL RunUp Yueh Sun.jpg",
+                "caption": "2011 SKL Run Up: Yueh Sun.",
+                "artist": "Rico Shen",
+                "license": "CC BY-SA 4.0",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "licenseReviewStatus": "not_checked",
+                "identityEvidence": {
+                  "curatedOriginalMetadataOnly": true,
+                  "verifiedAt": "2026-10-31",
+                  "verificationUrl": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+                  "verifiedSearchAliases": [
+                    "孫越",
+                    "Sun Yueh",
+                    "Yueh Sun"
+                  ],
+                  "visualIdentityVerified": false,
+                  "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+                  "captionAliasMatches": [
+                    "Yueh Sun"
+                  ]
+                },
+                "id": "64586999706edb748872",
+                "personId": "t1500_0207",
+                "discoveryRunId": "20261031T031412Z-e4f21427",
+                "rightsStatus": "open_license_metadata",
+                "eligibleForLive": false,
+                "humanReview": null,
+                "status": "metadata_only",
+                "warnings": [
+                  "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+                ]
+              },
+              "code": "image_validation_failed",
+              "message": "Blurred crop: sharpness below 65"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "legacyRecord": {
@@ -69807,52 +69878,69 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "download_failed",
+        "code": "no_suitable_source",
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261029T121933Z-4ee9dcdd",
+      "lastRunId": "20261031T031412Z-e4f21427",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-29T12:20:29.949732+00:00",
+      "lastAttemptAt": "2026-10-31T03:14:14.158413+00:00",
       "lastErrors": [
         {
-          "provider": "entity",
-          "code": "identity_ambiguous",
-          "message": "Expected exactly one exact-name Q5 human; found 3"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:The_100th_Episode_of_The_Million_Primary_School_Opening.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
+          "provider": "curated",
           "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+          "candidateMetadata": {
+            "provider": "commons",
+            "source": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2011_SKL_RunUp_Yueh_Sun.jpg",
+            "downloadVariant": "original",
+            "filename": "2011 SKL RunUp Yueh Sun.jpg",
+            "caption": "2011 SKL Run Up: Yueh Sun.",
+            "artist": "Rico Shen",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "licenseReviewStatus": "not_checked",
+            "identityEvidence": {
+              "curatedOriginalMetadataOnly": true,
+              "verifiedAt": "2026-10-31",
+              "verificationUrl": "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg",
+              "verifiedSearchAliases": [
+                "孫越",
+                "Sun Yueh",
+                "Yueh Sun"
+              ],
+              "visualIdentityVerified": false,
+              "identityWarning": "Curated source metadata is NOT photo identity, rights or game crop approval",
+              "captionAliasMatches": [
+                "Yueh Sun"
+              ]
+            },
+            "id": "64586999706edb748872",
+            "personId": "t1500_0207",
+            "discoveryRunId": "20261031T031412Z-e4f21427",
+            "rightsStatus": "open_license_metadata",
+            "eligibleForLive": false,
+            "humanReview": null,
+            "status": "metadata_only",
+            "warnings": [
+              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
+            ]
+          },
+          "code": "image_validation_failed",
+          "message": "Blurred crop: sharpness below 65"
         },
         {
           "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Sun_Yueh2010filmingTheMillionPrimarySchoolOpening.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC20%E5%B1%86%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E7%94%B7%E4%B8%BB%E8%A7%92%E5%AD%AB%E8%B6%8A.jpg",
           "code": "identity_unconfirmed",
           "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:1001025%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%BB%BA%E5%9C%8B%E4%B8%80%E7%99%BE%E5%B9%B4%E8%81%AF%E5%90%88%E6%8E%88%E5%8B%B3%E5%85%B8%E7%A6%AE%E3%80%8D_(6282269885).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "openverse",
-          "code": "network_error",
-          "message": "The read operation timed out"
         }
       ],
-      "updatedAt": "2026-10-29T12:20:32.521770+00:00",
-      "workerFinishedAt": "2026-10-29T12:20:32.523186+00:00"
+      "updatedAt": "2026-10-31T03:14:18.442737+00:00",
+      "workerFinishedAt": "2026-10-31T03:14:18.444712+00:00"
     },
     "t1500_0536": {
       "personId": "t1500_0536",

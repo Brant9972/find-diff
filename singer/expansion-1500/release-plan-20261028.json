@@ -5433,7 +5433,11 @@
           "reviewNote": "Source caption explicitly names Yueh Sun, linked by Commons Category:Sun Yueh and Wikidata Q9041952 to actor 孫越; own-work by Rico Shen, CC BY-SA 4.0. Original 1311x1748 inspected: one person, eyes visible through tinted prescription glasses, mouth and chin not blocked, microphone below chin. Eyes stage recognizability and final 600x720 sharpness still require actual crop/five-stage human review; source metadata alone does not approve release."
         }
       ],
-      "reviewSourceResearchNote": "2026-10-31 exact source screening: Rico Shen 2011 event photo, original 1311x1748, CC BY-SA 4.0 self-published; single actor with mouth and chin unobstructed; dark eyeglasses could make eyes-only stage too difficult. Await crop, five-stage visual QA, work hint verification and release gates. Do not publish automatically."
+      "reviewSourceResearchNote": "2026-10-31 exact source screening: Rico Shen 2011 event photo, original 1311x1748, CC BY-SA 4.0 self-published; single actor with mouth and chin unobstructed; dark eyeglasses could make eyes-only stage too difficult. Await crop, five-stage visual QA, work hint verification and release gates. Do not publish automatically. 2026-10-31 actual pipeline download/crop failure confirmed: image_validation_failed, Blurred crop: sharpness below 65; source excluded. Original metadata remains for audit, not for reuse.",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:2011_SKL_RunUp_Yueh_Sun.jpg"
+      ],
+      "reviewReason": "2026-10-31 run 41163447108 exact curated source downloaded but automatic 600x720 crop failed `Blurred crop: sharpness below 65`; tinted eyeglasses also reduce eyes-stage recognition. Reject this exact original rather than lower sharpness threshold or re-run it. Commons result File:第20屆金馬獎最佳男主角孫越.jpg lacked independent depicted-identity proof; not approved. New high-resolution, open-eyed and unoccluded source required."
     },
     {
       "candidateId": "c1500-0208",

@@ -19,9 +19,12 @@
       "sourceCaption": "2011 SKL Run Up: Yueh Sun.",
       "license": "CC BY-SA 4.0 (own work)",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "decision": "pending_manual_crop",
+      "decision": "reject_after_pipeline_crop_failure",
       "eligibleForLive": false,
-      "reason": "Original inspected: a single older man with both eyes visible behind tinted glasses; microphone stays below chin and does not obscure lips. Strong caption/name/category/Wikidata Q9041952 correspondence, but tinted lenses may make eyes-only reveal difficult. Actual 600x720 game crop, five stage visual check, photo SHA, work hint and attribution not yet approved."
+      "reason": "Original inspected: a single older man with both eyes visible behind tinted glasses; microphone stays below chin and does not obscure lips. Strong caption/name/category/Wikidata Q9041952 correspondence, but tinted lenses may make eyes-only reveal difficult. Actual 600x720 game crop, five stage visual check, photo SHA, work hint and attribution not yet approved. Pipeline 2026-10-31 confirmed the original can be downloaded and caption/CC metadata recognized, but 600x720 crop failed sharpness <65; reject source rather than weaken threshold. No five-stage approved crop. Other Commons award image was identity_unconfirmed.",
+      "pipelineRunId": 41163447108,
+      "pipelineRunUrl": "https://github.com/Brant9972/find-diff/actions/runs/41163447108",
+      "pipelineError": "image_validation_failed: Blurred crop: sharpness below 65"
     },
     {
       "personId": "t1500_0174",
@@ -53,9 +56,8 @@
     }
   ],
   "nextActions": [
-    "Run a targeted curated/Commons source collection only for 孫越 (not the old ineffective 40/200-person batches).",
-    "Inspect actual 600x720 game JPEG and five reveal PNGs; reject if eyes behind tinted glasses are not recognizable.",
-    "Verify 《搭錯車》 role against a reliable credited cast source, then only after complete rights, attribution, dedupe and branch QA consider main.",
-    "Keep creators, main and all unrelated assets unchanged."
+    "Do not retry the same Rico Shen source without a materially different original; find a sharp, front-facing, unoccluded, open-eyed photo for 孫越.",
+    "Do not infer person identity from the unverified historical award photo's search result.",
+    "Keep verified 《搭錯車》 role evidence from Hong Kong Film Archive for future hints; do not publish until photo, attribution, five-stage, SHA, branch and live QA pass."
   ]
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-liuhsiufu-two-exact-commons-source-check",
+  "requestId": "20261031-two-flickr-reviewed-precise-taiwan-portraits",
   "mode": "search",
-  "targetPeople": 1,
+  "targetPeople": 2,
   "plannedPersonIds": [
-    "t1500_0312"
+    "t1500_0123",
+    "t1500_0154"
   ],
   "retryFailed": true,
   "providers": [
-    "curated",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 12,
-  "personSeconds": 110,
+  "maxMinutes": 18,
+  "personSeconds": 120,
   "maxCandidates": 3,
-  "purpose": "Draft only; targeted exact Commons file imageinfo for existing selectedNew 劉修甫 (Liuhsiufu2023.png, Liuhsiufu2020.png) after PTS work-hint correction. Validate exact file existence, uploader/caption/rights and preserve source pixels for five-stage human review. Category listings do not prove rights or identity. No main changes, no Pages deployment, no creators changes, no approval."
+  "purpose": "Draft only; precise Commons file imageinfo for existing selectedNew 林慶台 and 李炳輝. Both Flickr-origin photographs have Commons licence review records, but contain another named subject. Check original source/caption, image rights, face selection and 600x720 five-stage usability; do not auto-approve, publish, change creators, or deploy Pages."
 }

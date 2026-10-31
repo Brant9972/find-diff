@@ -62691,8 +62691,8 @@
       "candidateId": "c1500-0312",
       "name": "劉修甫",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-10-30T13:42:19.127098+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-10-31T16:23:02.094442+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -62706,26 +62706,29 @@
           "license": "CC BY 3.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
           "caption": "Taiwanese actor Liu Hsiu-fu modelling for Chanel in August 2020",
+          "licenseReviewStatus": "needed",
           "identityEvidence": {
             "query": "劉修甫",
-            "identityWarning": "Caption/name match is preliminary evidence only",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
             "captionAliasMatches": [],
             "visualIdentityVerified": false
           },
           "recognitionEvidence": {
             "requestedReplacement": "",
             "representativeWorks": [
-              "誰是被害者"
+              "你的孩子不是你的孩子",
+              "刺心切骨"
             ],
             "note": "Familiar appearance must be reviewed"
           },
-          "searchTime": "2026-10-29T14:38:22.253636+00:00",
+          "searchTime": "2026-10-31T08:22:59.219043+00:00",
           "width": 512,
           "height": 708,
           "id": "e0c3975875e37caaffcc",
           "personId": "t1500_0312",
-          "discoveryRunId": "20261029T143031Z-cb626fef",
-          "rightsStatus": "open_license_metadata",
+          "discoveryRunId": "20261031T082257Z-768d2fc6",
+          "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
           "status": "metadata_only",
@@ -62746,26 +62749,29 @@
           "license": "CC BY 3.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
           "caption": "Taiwanese actor Liu Hsiu-fu interviewed at the press conference for Trick or Love (2023) in May 2023",
+          "licenseReviewStatus": "needed",
           "identityEvidence": {
             "query": "劉修甫",
-            "identityWarning": "Caption/name match is preliminary evidence only",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
             "captionAliasMatches": [],
             "visualIdentityVerified": false
           },
           "recognitionEvidence": {
             "requestedReplacement": "",
             "representativeWorks": [
-              "誰是被害者"
+              "你的孩子不是你的孩子",
+              "刺心切骨"
             ],
             "note": "Familiar appearance must be reviewed"
           },
-          "searchTime": "2026-10-29T14:38:22.255130+00:00",
+          "searchTime": "2026-10-31T08:22:59.221336+00:00",
           "width": 1070,
           "height": 1352,
           "id": "625d6d684264cc12387a",
           "personId": "t1500_0312",
-          "discoveryRunId": "20261029T143031Z-cb626fef",
-          "rightsStatus": "open_license_metadata",
+          "discoveryRunId": "20261031T082257Z-768d2fc6",
+          "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
           "status": "metadata_only",
@@ -62833,6 +62839,36 @@
           "time": "2026-10-30T09:42:19.127088+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-10-31T08:22:59.025767+00:00",
+          "provider": "curated",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T08:22:59.025867+00:00"
+        },
+        {
+          "time": "2026-10-31T08:22:59.025876+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-10-31T08:23:02.094420+00:00"
+        },
+        {
+          "time": "2026-10-31T08:23:02.094432+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 2
         }
       ],
       "legacyRecord": {
@@ -62854,15 +62890,28 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
-      "lastRunId": "20261030T094146Z-a2a94968",
+      "lastRunId": "20261031T082257Z-768d2fc6",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T09:42:10.636430+00:00",
-      "lastErrors": [],
-      "updatedAt": "2026-10-30T09:42:19.127108+00:00",
-      "workerFinishedAt": "2026-10-30T09:42:19.129048+00:00"
+      "lastAttemptAt": "2026-10-31T08:22:58.957265+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-10-31T08:23:02.094452+00:00",
+      "workerFinishedAt": "2026-10-31T08:23:02.095846+00:00"
     },
     "t1500_0241": {
       "personId": "t1500_0241",

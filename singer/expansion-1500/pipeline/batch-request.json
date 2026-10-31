@@ -1,17 +1,21 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-after-sunyueh-blur-reject-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261031-exact-p18-wang-cheung-kwong",
+  "mode": "collect",
+  "targetPeople": 3,
+  "plannedPersonIds": [
+    "t1500_0457",
+    "t1500_0562",
+    "t1500_0583"
+  ],
+  "retryFailed": true,
   "providers": [
     "curated",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 95,
+  "maxMinutes": 17,
+  "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "Draft only: no main, no Pages, no creators changes. Render retained source-only review assets without re-searching rejected 孫越, 鳳小岳, 王大陸 files. Wait for genuinely different licensed original sources before next targeted request."
+  "purpose": "Only three existing selectedNew actors, with QID and exact Commons P18 filenames newly pinned in release-plan. Diagnose source identity, caption, rights and pixels; draft-only checkpoint, never publish automatically. Do not re-run prior failed 20/40/200 batches. All photos remain unapproved pending actual five-stage human review."
 }

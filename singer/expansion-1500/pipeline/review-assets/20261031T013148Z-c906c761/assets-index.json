@@ -1,0 +1,511 @@
+{
+  "assetManifestPath": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/assets-index.json",
+  "contactSheets": [
+    {
+      "bytes": 23876,
+      "entries": [
+        {
+          "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+          "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+          "personId": "t1500_0171",
+          "tile": 1
+        }
+      ],
+      "height": 315,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/contact-sheet-01.jpg",
+      "sha256": "b7951eb3d80a6dc7e8613e7aceedbc2e73651a142bc83bd9532c7fb4789c30f0",
+      "width": 960
+    }
+  ],
+  "manualContactSheets": [
+    {
+      "bytes": 61815,
+      "entries": [
+        {
+          "candidateId": "ac10019a6325ca05958d",
+          "originalSha256": "ad5f603f91bd8a73891a137af0fee43938146a9289eae34d605652aa3e8c90fa",
+          "personId": "t1500_0457",
+          "tile": 1
+        },
+        {
+          "candidateId": "b2574981ba5e9e0689c3",
+          "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+          "personId": "t1500_0564",
+          "tile": 2
+        },
+        {
+          "candidateId": "bfd3d32d7f9493dca299",
+          "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+          "personId": "t1500_0588",
+          "tile": 3
+        }
+      ],
+      "height": 315,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/manual-source-sheet-01.jpg",
+      "sha256": "bfe80942f36ccb3d80fc1a9676c97504c2cdb6bd0a7fb2c14f4aaeaa4f9f26bb",
+      "width": 960
+    }
+  ],
+  "manualSourceCount": 3,
+  "manualSourcePeopleCount": 3,
+  "manualSources": [
+    {
+      "candidateId": "ac10019a6325ca05958d",
+      "cropFailure": "Face is too small",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "Tksteven",
+        "caption": "The director and main casts of The Doppelgänger\n\n《紅娘的異想世界之在西廂》男女主角及導演林奕華，左起：劉若英、林奕華、王耀慶及周姮吟",
+        "credit": "Own work",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%80%80%E6%85%B6",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "王耀慶",
+          "captionAliasMatches": [
+            "王耀慶",
+            "王耀庆"
+          ],
+          "discoveryWarnings": [],
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "王耀慶",
+            "王耀庆"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q9315976",
+          "matchedAliases": [
+            "王耀慶",
+            "王耀庆"
+          ],
+          "query": "王耀慶",
+          "retrievedAt": "2026-10-30T07:04:15.770154+00:00",
+          "verifiedSearchAliases": [
+            "王耀慶",
+            "王耀庆",
+            "David Wang",
+            "Wang Yaoqing",
+            "David Wang Yao-Qing",
+            "Wang Yaw-Chinq"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q9315976"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/The_Doppelg%C3%A4nger_201107_cast.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/The_Doppelg%C3%A4nger_201107_cast.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance has not been visually reviewed",
+          "representativeWorks": [
+            "失戀33天"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Doppelg%C3%A4nger_201107_cast.JPG",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "王耀慶",
+      "originalSha256": "ad5f603f91bd8a73891a137af0fee43938146a9289eae34d605652aa3e8c90fa",
+      "personId": "t1500_0457",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 293726,
+        "displayHeight": 800,
+        "displayWidth": 1067,
+        "height": 800,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/source-only-0001/original.jpg",
+        "sha256": "ad5f603f91bd8a73891a137af0fee43938146a9289eae34d605652aa3e8c90fa",
+        "width": 1067
+      },
+      "stageImages": {}
+    },
+    {
+      "candidateId": "b2574981ba5e9e0689c3",
+      "cropFailure": "Face is too tilted",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "Tksteven",
+        "caption": "Eric Kot(葛民輝)  was being the guest in the publicity on 2008.11",
+        "credit": "Selfwork",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "葛民輝",
+          "captionAliasMatches": [
+            "葛民輝",
+            "葛民辉",
+            "Eric Kot"
+          ],
+          "claim": "P18",
+          "discoveryWarnings": [],
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "葛民輝",
+            "葛民辉",
+            "葛民辉",
+            "葛民辉"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q590914",
+          "matchedAliases": [
+            "葛民輝",
+            "葛民辉",
+            "Eric Kot"
+          ],
+          "query": "Eric Kot",
+          "retrievedAt": "2026-10-29T20:17:22.511249+00:00",
+          "verifiedSearchAliases": [
+            "葛民輝",
+            "葛民辉",
+            "Eric Kot",
+            "Eric Kot Man Fai",
+            "Eric Kot Man-fai"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q590914"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Eric_Kot_200812.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance has not been visually reviewed",
+          "representativeWorks": [
+            "百分百感覺"
+          ],
+          "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait."
+        },
+        "reviewerRequest": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "葛民輝",
+      "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+      "personId": "t1500_0564",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 119749,
+        "displayHeight": 750,
+        "displayWidth": 1000,
+        "height": 750,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/source-only-0002/original.jpg",
+        "sha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+        "width": 1000
+      },
+      "stageImages": {}
+    },
+    {
+      "candidateId": "bfd3d32d7f9493dca299",
+      "cropFailure": "Blurred crop: sharpness below 65",
+      "eligibleForLive": false,
+      "gameSha256": null,
+      "metadata": {
+        "author": "Ak47klo",
+        "caption": "​中國青年黨黨員苗可秀",
+        "credit": "Own work",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E8%8B%97%E5%8F%AF%E7%A7%80",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "苗可秀",
+          "captionAliasMatches": [
+            "苗可秀"
+          ],
+          "discoveryWarnings": [],
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "苗可秀",
+            "苗可秀",
+            "苗可秀"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q702088",
+          "matchedAliases": [
+            "苗可秀"
+          ],
+          "query": "苗可秀",
+          "retrievedAt": "2026-10-30T03:41:15.609907+00:00",
+          "verifiedSearchAliases": [
+            "苗可秀",
+            "Nora Miao",
+            "Miao Kexiu",
+            "Nora Miao Ke-Hsiu",
+            "Chan Wing-Man"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q702088"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E8%8B%97%E5%8F%AF%E7%A7%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": null,
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance has not been visually reviewed",
+          "representativeWorks": [
+            "精武門"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E8%8B%97%E5%8F%AF%E7%A7%80.jpg",
+        "warnings": [
+          "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+          "SOURCE ONLY: no 600x720 game crop or five reveal stages; manual recrop and full human review required"
+        ]
+      },
+      "name": "苗可秀",
+      "originalSha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+      "personId": "t1500_0588",
+      "reviewStatus": "SOURCE_ONLY_MANUAL_CROP_REQUIRED",
+      "sourceImage": {
+        "bytes": 9125,
+        "displayHeight": 288,
+        "displayWidth": 230,
+        "height": 288,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/source-only-0003/original.jpg",
+        "sha256": "a3365d2b39ec972efa7e00435173da810471e34fd4fccd7fc96c3e0b2b34284c",
+        "width": 230
+      },
+      "stageImages": {}
+    }
+  ],
+  "peopleCount": 1,
+  "photoCount": 1,
+  "photos": [
+    {
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "candidateImage": {
+        "bytes": 98321,
+        "displayHeight": 720,
+        "displayWidth": 600,
+        "height": 720,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/candidate.jpg",
+        "sha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+        "width": 600
+      },
+      "eligibleForLive": false,
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "metadata": {
+        "author": "CNA Taiwan - 中央社",
+        "caption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+        "credit": "陳建斌陳湘琪 金馬稱王封后",
+        "evidenceSupplement": {},
+        "externalSourceLinks": [],
+        "humanIdentityVerifiedByExporter": false,
+        "humanRightsVerifiedByExporter": false,
+        "identityEvidence": {
+          "article": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B9%98%E7%90%AA",
+          "articleLookup": "exact title with redirects; not a search result",
+          "articleTitle": "陳湘琪",
+          "captionAliasMatches": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "curatedExactFileHint": true,
+          "entityTypeEvidence": "P31=Q5",
+          "exactChineseAliases": [
+            "陳湘琪"
+          ],
+          "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
+          "mappingSource": "https://www.wikidata.org/wiki/Q5090886",
+          "matchedAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi"
+          ],
+          "query": "陳湘琪",
+          "retrievedAt": "2026-10-30T09:42:34.829130+00:00",
+          "verifiedSearchAliases": [
+            "陳湘琪",
+            "Chen Shiang-chyi",
+            "Chén Xiāngqí"
+          ],
+          "visualIdentityVerified": false,
+          "wikidataId": "Q5090886"
+        },
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg/1920px-Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "originalDimensionsFromMetadata": [
+          null,
+          null
+        ],
+        "originalSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chen_Shiang-chyi_%28%E9%99%B3%E6%B9%98%E7%90%AA%29_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "parentCandidateId": "11cfabb73b01aa6bd121",
+        "parentGameSha256": null,
+        "recognitionEvidence": {
+          "note": "Familiar appearance must be reviewed",
+          "representativeWorks": [
+            "迴光奏鳴曲"
+          ],
+          "requestedReplacement": ""
+        },
+        "reviewerRequest": null,
+        "rightsStatus": "open_license_metadata",
+        "sourceAlignmentEvidence": null,
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+        "warnings": [
+          "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+        ]
+      },
+      "name": "陳湘琪",
+      "personId": "t1500_0171",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.27,
+          0.92,
+          0.63
+        ],
+        "eyes": [
+          0.08,
+          0.27,
+          0.92,
+          0.37
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.92,
+          0.55
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.92,
+          0.44
+        ]
+      },
+      "reviewStatus": "pending_review",
+      "sourceImage": {
+        "bytes": 291361,
+        "displayHeight": 1758,
+        "displayWidth": 1920,
+        "height": 1758,
+        "mimeType": "image/jpeg",
+        "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/source.jpg",
+        "sha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+        "width": 1920
+      },
+      "stageImages": {
+        "chin": {
+          "bytes": 132496,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/chin.png",
+          "sha256": "4d18f84710f4dd46e6b511ff9049e8e93d2001a6927d31153ced15d2f024fd86",
+          "width": 600
+        },
+        "eyes": {
+          "bytes": 43385,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/eyes.png",
+          "sha256": "d78172a74954b0119c5dc9b8385643986706c885c73d2b19b87d20e16be0bb07",
+          "width": 600
+        },
+        "full": {
+          "bytes": 380325,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/full.png",
+          "sha256": "87dee7c2af2794bdbd7c74d1e456d6ab95d04a48e5d6e3cca11481bf678b8e5d",
+          "width": 600
+        },
+        "mouth": {
+          "bytes": 106119,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/mouth.png",
+          "sha256": "d31c71326bebe0adf05d46d2c60e4e326e4d2a992620708e4d97eebaa522b776",
+          "width": 600
+        },
+        "nose": {
+          "bytes": 63794,
+          "height": 720,
+          "mimeType": "image/png",
+          "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/photo-0001/nose.png",
+          "sha256": "c3863413a2ab94c4111c1c2d7cae4b8248db4c1011144234c421b4b60c786bde",
+          "width": 600
+        }
+      }
+    }
+  ],
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "revealSheets": [
+    {
+      "bytes": 34171,
+      "entries": [
+        {
+          "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+          "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+          "personId": "t1500_0171",
+          "row": 1
+        }
+      ],
+      "height": 280,
+      "mimeType": "image/jpeg",
+      "path": "expansion-1500/pipeline/review-assets/20261031T013148Z-c906c761/reveal-sheet-01.jpg",
+      "sha256": "b66e6f0725e0110d917f7e67ccb165fed9899853a9bd891fd9d97ce389bb09fc",
+      "width": 1000
+    }
+  ],
+  "runId": "20261031T013148Z-c906c761",
+  "schemaVersion": 1,
+  "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c"
+}

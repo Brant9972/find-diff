@@ -1,57 +1,65 @@
 {
-  "runId": "20261031T005036Z-d5dcb8c7",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T005036Z-d5dcb8c7/review-index.json",
+  "runId": "20261031T013148Z-c906c761",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261031T013148Z-c906c761/review-index.json",
   "summary": {
-    "runId": "20261031T005036Z-d5dcb8c7",
-    "generatedAt": "2026-10-31T00:50:37.835142+00:00",
-    "scannedPeople": 1,
-    "peopleWithNewCandidates": 1,
-    "newCandidatePhotos": 1,
-    "scannedWithoutCandidates": 0,
+    "runId": "20261031T013148Z-c906c761",
+    "generatedAt": "2026-10-31T01:32:04.980893+00:00",
+    "scannedPeople": 3,
+    "peopleWithNewCandidates": 0,
+    "newCandidatePhotos": 0,
+    "scannedWithoutCandidates": 3,
     "retryNeeded": 419,
-    "pendingReviewPeople": 2,
-    "licenseConcernCandidates": 293,
+    "pendingReviewPeople": 1,
+    "licenseConcernCandidates": 294,
     "statusCounts": {
       "no_suitable_source": 233,
       "download_failed": 180,
-      "published": 90,
-      "pending_review": 2,
+      "published": 91,
+      "pending_review": 1,
       "rejected": 6,
       "duplicate_existing": 1
     },
     "failureReasons": {
       "identity_unconfirmed": 306,
-      "image_validation_failed": 118,
+      "image_validation_failed": 117,
       "network_error": 261,
-      "excluded_context": 17,
+      "excluded_context": 18,
       "source_api_busy": 70,
-      "license_unclear": 75,
+      "license_unclear": 73,
       "source_api_error": 20,
       "identity_ambiguous": 11,
       "identity_not_found": 5,
       "proxy_access_denied": 4,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "excluded_context": 1,
+      "license_unclear": 1,
+      "identity_unconfirmed": 10
+    },
     "manualCropSources": 34,
     "batchProviderStages": {
       "commons": {
-        "attemptedPeople": 1,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
+        "attemptedPeople": 3,
+        "metadataCandidates": 11,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 10,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
         "errors": {}
       },
-      "curated": {
-        "attemptedPeople": 1,
+      "entity": {
+        "attemptedPeople": 3,
         "metadataCandidates": 0,
         "identitySupportedMetadata": 0,
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
-        "errors": {}
+        "errors": {
+          "excluded_context": 1,
+          "license_unclear": 1,
+          "identity_unconfirmed": 10
+        }
       }
     },
     "contactSheets": [

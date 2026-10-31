@@ -1,0 +1,96 @@
+{
+  "runId": "20261031T013148Z-c906c761",
+  "generatedAt": "2026-10-31T01:32:04.980893+00:00",
+  "scannedPeople": 3,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 3,
+  "retryNeeded": 419,
+  "pendingReviewPeople": 1,
+  "licenseConcernCandidates": 294,
+  "statusCounts": {
+    "no_suitable_source": 233,
+    "download_failed": 180,
+    "published": 91,
+    "pending_review": 1,
+    "rejected": 6,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 306,
+    "image_validation_failed": 117,
+    "network_error": 261,
+    "excluded_context": 18,
+    "source_api_busy": 70,
+    "license_unclear": 73,
+    "source_api_error": 20,
+    "identity_ambiguous": 11,
+    "identity_not_found": 5,
+    "proxy_access_denied": 4,
+    "http_404": 2
+  },
+  "batchFailureReasons": {
+    "excluded_context": 1,
+    "license_unclear": 1,
+    "identity_unconfirmed": 10
+  },
+  "manualCropSources": 34,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 3,
+      "metadataCandidates": 11,
+      "identitySupportedMetadata": 1,
+      "openLicenseMetadata": 10,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {}
+    },
+    "entity": {
+      "attemptedPeople": 3,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {
+        "excluded_context": 1,
+        "license_unclear": 1,
+        "identity_unconfirmed": 10
+      }
+    }
+  },
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 3,
+    "processedPeople": 3,
+    "workers": 2,
+    "elapsedSeconds": 15.88,
+    "stoppedForBudget": false,
+    "requestedPeople": 6,
+    "skippedRequested": [
+      {
+        "personId": "t1500_0092",
+        "status": "no_suitable_source",
+        "reason": "cooldown",
+        "nextRetryAt": "2026-10-31T06:54:00.003873+00:00"
+      },
+      {
+        "personId": "t1500_0094",
+        "status": "download_failed",
+        "reason": "cooldown",
+        "nextRetryAt": "2026-10-31T06:54:09.318774+00:00"
+      },
+      {
+        "personId": "t1500_0564",
+        "status": "no_suitable_source",
+        "reason": "cooldown",
+        "nextRetryAt": "2026-11-04T22:11:45.089213+00:00"
+      }
+    ],
+    "unprocessedSelected": []
+  }
+}

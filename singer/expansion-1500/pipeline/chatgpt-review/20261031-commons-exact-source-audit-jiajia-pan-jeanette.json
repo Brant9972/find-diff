@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "source_page_and_full_image_visual_screening",
+  "reviewedAt": "2026-10-31",
+  "mainBaselineSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "pipelineBaselineSha": "d0e1aab964f1e0002bf4be7f7d8817b599201407",
+  "releaseGate": "SOURCE_AUDIT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "sourcePagesChecked": 3,
+    "originalImagesViewed": 2,
+    "sourceRejections": 2,
+    "unapprovedSourceLeads": 1,
+    "approvedForLive": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0390",
+      "name": "家家",
+      "realName": "紀家盈",
+      "wikidataQid": "Q15908468",
+      "file": "JiJiaJia 20121230.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:JiJiaJia_20121230.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/JiJiaJia_20121230.JPG",
+      "sourceCaption": "紀家盈(家家)，拍攝於2012/12/30五月天高雄市運場館外",
+      "author": "Latinboy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceType": "own_work_claim",
+      "sourceDimensions": [
+        3448,
+        4592
+      ],
+      "sourceOnlyPixelsViewed": true,
+      "decision": "REJECT_EXACT_SOURCE_FOR_GAME",
+      "reason": "Full original image inspected: singer is performing in a side-angled pose, with handheld microphone directly over lips and mouth. Five-stage eyes/nose/mouth reveal cannot be clean even though the page identifies the correct singer and permits derivative cropping. Do not reject the person or search for this exact file again.",
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "gameSha256": null,
+      "approvedForLive": false
+    },
+    {
+      "personId": "t1500_0156",
+      "name": "潘美辰",
+      "file": "Michelle Pan 20101127.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Michelle_Pan_20101127.jpg",
+      "originalFlickr": "https://www.flickr.com/photos/musicwen/5247938443",
+      "sourceCaption": "潘越雲出席滾石唱片30周年演唱會",
+      "author": "音樂雯",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "flickrReviewDate": "2015-10-25",
+      "sourceDimensions": [
+        1664,
+        2496
+      ],
+      "decision": "REJECT_EXACT_SOURCE_WRONG_PERSON",
+      "reason": "Commons explicitly identifies 潘越雲, not 潘美辰. English title Michelle Pan must not be treated as proof for Pan Mei-chen. Even a valid Flickr-reviewed CC license cannot cure a subject-identity mismatch.",
+      "sourceOnlyPixelsViewed": false,
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "gameSha256": null,
+      "approvedForLive": false
+    },
+    {
+      "personId": "t1500_0381",
+      "name": "王芷蕾",
+      "wikidataQid": "Q9066613",
+      "file": "Jeanette Wang.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Jeanette_Wang.JPG",
+      "sourceCaption": "臺灣歌手王芷蕾於臺灣電視公司中央大樓大門前留影",
+      "author": "竹筍弟弟 (JeanHavoc)",
+      "sourceType": "own_work_claim",
+      "license": "Copyrighted free use (Commons template)",
+      "rightsDescription": "Commons states unrestricted redistribution, commercial use and modification; not a Creative Commons license. Do not automatically convert this to CC BY/CC0.",
+      "sourceDimensions": [
+        2048,
+        1536
+      ],
+      "sourceOnlyPixelsViewed": true,
+      "decision": "SOURCE_LEAD_ONLY_VISUAL_AND_RIGHTS_REVIEW_REQUIRED",
+      "reason": "Original image viewed. Main subject is front-facing and unobstructed but face occupies a relatively small area and 2010 iPhone 3GS pixels look soft; background includes smaller bystanders. Verify face crop sharpness at 600x720, five-stage eye clarity, and the custom free-use grant/attribution independently. Do not treat the image as accepted.",
+      "gameCropReviewed": false,
+      "fiveStageReviewed": false,
+      "gameSha256": null,
+      "approvedForLive": false
+    }
+  ],
+  "nextSteps": [
+    "The two exact rejected Commons files are added to excludedPhotoSources for their respective selectedNew people, not a global person blacklist.",
+    "Do not auto-approve Wang Zhi-lei from the source page's free-use claim; obtain a quality 600x720 crop, rights assessment, and five-stage visual inspection first.",
+    "Never count any of these three as a new playable person until branch QA, main merge and public Pages JSON verification.",
+    "Do not alter creators or unrelated candidates."
+  ]
+}

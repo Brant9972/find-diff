@@ -624,7 +624,7 @@ class CommonsSearch:
             # full-text search, this cannot fan out into unrelated English
             # homonyms. The result is metadata only, never identity approval.
             if (mode == 'search' and not pages and query == person['name']
-                    and re.fullmatch(r'[\\u3400-\\u9fff]{3,8}', str(query).strip())):
+                    and re.fullmatch(r'[㐀-鿿]{3,8}', str(query).strip())):
                 try:
                     listing = http.json('https://commons.wikimedia.org/w/api.php',
                         action='query', format='json', formatversion=2,

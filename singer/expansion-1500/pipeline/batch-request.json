@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-retained-source-review-qa-retry",
+  "requestId": "20261031-huangshaoku-targeted-source-review-valid-request",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -14,5 +14,5 @@
   "maxMinutes": 5,
   "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Re-run the single-person cached source visual export after fixing a provider-list regression in batch request. No old broad batch, no auto-approval, no main/Pages change."
+  "purpose": "Draft only: re-export previously retained, SHA-verified 黃少谷 source-only image after PR #69, for human visual review without re-downloading or automatically approving. Strictly no main, no Pages, no creators changes."
 }

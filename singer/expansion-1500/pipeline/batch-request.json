@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-retain-pinned-exact-huanghongxuan-v2",
+  "requestId": "20261031-liuhsiufu-two-exact-commons-source-check",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0534"
+    "t1500_0312"
   ],
   "retryFailed": true,
   "providers": [
@@ -14,6 +14,6 @@
   "workers": 1,
   "maxMinutes": 12,
   "personSeconds": 110,
-  "maxCandidates": 2,
-  "purpose": "Draft only; After PR #87 passed 169+ source QA tests and merged, retry only the NEW pinned Commons file 台灣演員黃宏軒.jpg (Petersuuu CC BY 4.0, 3667x5500). The previous attempt lost its original pixels because two older source-only photos occupied the retention cap. The fixed bounded exact-source retention should preserve this distinct source for actual human review even if automatic crop still fails. Do not retry excluded S_37822478.jpg; no main, Pages, creators or live approval."
+  "maxCandidates": 3,
+  "purpose": "Draft only; targeted exact Commons file imageinfo for existing selectedNew 劉修甫 (Liuhsiufu2023.png, Liuhsiufu2020.png) after PTS work-hint correction. Validate exact file existence, uploader/caption/rights and preserve source pixels for five-stage human review. Do not claim CC rights or visual approval from category listings; do not modify main, Pages or creators."
 }

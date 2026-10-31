@@ -15,6 +15,7 @@ from urllib.parse import quote, urlsplit
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 from .core import atomic, contained, immutable_bytes, valid_reveal
+from .sources import source_key
 
 ACTIVE_CANDIDATE_STATES = {'pending_review', 'pending_evidence', 'legacy_requires_review', 'candidate_ready'}
 ACTIVE_PERSON_STATES = {'pending_review', 'candidate_ready'}
@@ -109,7 +110,7 @@ def _metadata(person, candidate):
 
 
 def build_assets(root, directory, state, run_id, include_retained_sources=False,
-                 retained_source_person_ids=None):
+                 retained_source_person_ids=None, excluded_sources_by_person=None):
     """Build one immutable visual package after the batch, without mutating state.
 
     root is the singer directory. Return a deterministic manifest whose paths are
@@ -127,12 +128,21 @@ def build_assets(root, directory, state, run_id, include_retained_sources=False,
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,119}', str(run_id)):
         raise ValueError('Invalid visual package run ID')
     output = directory / 'review-assets' / run_id
+    # Durable state can still contain an old manual source after its exact
+    # Commons file page was rejected in the release plan. Do not re-export
+    # those pixels as if they were fresh review leads. Never delete state.
+    excluded = {
+        pid: {source_key(url) for url in urls if isinstance(url, str) and url}
+        for pid, urls in (excluded_sources_by_person or {}).items()
+    }
     photos = []
     for person_id, person in sorted(state['people'].items()):
         if person.get('status') not in ACTIVE_PERSON_STATES:
             continue
         for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
             if candidate.get('status') not in ACTIVE_CANDIDATE_STATES or not candidate.get('gamePath'):
+                continue
+            if source_key(candidate.get('source')) in excluded.get(person_id, set()):
                 continue
             if not valid_reveal(candidate.get('reveal', {})):
                 raise ValueError('Invalid reveal for ' + person_id + '/' + candidate['id'])
@@ -171,6 +181,8 @@ def build_assets(root, directory, state, run_id, include_retained_sources=False,
             continue
         for candidate in sorted(person.get('candidates', []), key=lambda c: c['id']):
             if candidate.get('status') != 'manual_crop_required' or not candidate.get('originalPath'):
+                continue
+            if source_key(candidate.get('source')) in excluded.get(person_id, set()):
                 continue
             if (not include_retained_sources and person_id not in targeted_retained
                     and candidate.get('discoveryRunId') != run_id):

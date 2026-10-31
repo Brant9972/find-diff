@@ -240,6 +240,30 @@ class DeliveryTest(unittest.TestCase):
                                     include_retained_sources=True)
         self.assertEqual(all_retained['manualSourceCount'], 2)
 
+    def test_curated_exclusions_do_not_resurface_old_review_pixels(self):
+        retained = self._person('t5', '先前退件原圖', 'manual_crop_required')
+        retained.pop('gamePath')
+        retained.pop('gameSha256')
+        retained.pop('reveal')
+        retained['discoveryRunId'] = 'old-run'
+        self.state['people']['t5']['status'] = 'no_suitable_source'
+        self.state['people']['t1']['candidates'][0]['source'] = (
+            'https://commons.wikimedia.org/wiki/File:Foo_Bar.jpg')
+        before = copy.deepcopy(self.state)
+        manifest = build_assets(
+            self.root, self.directory, self.state, 'filter-excluded',
+            retained_source_person_ids=['t5'],
+            excluded_sources_by_person={
+                't1': ['https://commons.wikimedia.org/wiki/File:Foo%20Bar.jpg'],
+                't5': ['https://commons.wikimedia.org/wiki/File:Example.jpg'],
+            })
+        self.assertEqual([p['personId'] for p in manifest['photos']], ['t2'])
+        self.assertEqual(manifest['manualSourceCount'], 0)
+        self.assertEqual(self.state, before)
+        # An exclusion for one person must never hide a different person's
+        # independently reviewed image, even when Commons file URLs coincide.
+        self.assertEqual(manifest['photoCount'], 1)
+
     def test_source_only_images_get_real_preview_links_without_approval(self):
         candidate = self._person('t5', '待裁切人物', 'manual_crop_required')
         candidate.pop('gamePath')

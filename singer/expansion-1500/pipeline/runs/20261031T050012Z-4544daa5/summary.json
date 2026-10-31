@@ -1,0 +1,67 @@
+{
+  "runId": "20261031T050012Z-4544daa5",
+  "generatedAt": "2026-10-31T05:00:13.517770+00:00",
+  "scannedPeople": 1,
+  "peopleWithNewCandidates": 1,
+  "newCandidatePhotos": 1,
+  "scannedWithoutCandidates": 0,
+  "retryNeeded": 417,
+  "pendingReviewPeople": 2,
+  "licenseConcernCandidates": 302,
+  "statusCounts": {
+    "no_suitable_source": 232,
+    "download_failed": 179,
+    "published": 92,
+    "pending_review": 2,
+    "rejected": 6,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 272,
+    "image_validation_failed": 109,
+    "network_error": 260,
+    "source_api_busy": 70,
+    "license_unclear": 73,
+    "source_api_error": 20,
+    "identity_ambiguous": 8,
+    "excluded_context": 16,
+    "identity_not_found": 5,
+    "nonportrait_scene": 1,
+    "proxy_access_denied": 4,
+    "http_404": 2
+  },
+  "batchFailureReasons": {},
+  "manualCropSources": 36,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 1,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {}
+    },
+    "curated": {
+      "attemptedPeople": 1,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {}
+    }
+  },
+  "contactSheets": [
+    "contact-sheet-01.jpg"
+  ],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 1,
+    "processedPeople": 1,
+    "workers": 0,
+    "manualRecrop": true,
+    "sourceCommit": "3ae2261ce0611e696b8e260b1cfea245e41bb010"
+  }
+}

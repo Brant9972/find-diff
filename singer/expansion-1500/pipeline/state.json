@@ -110943,9 +110943,9 @@
       "personId": "t1500_0562",
       "candidateId": "c1500-0562",
       "name": "張達明",
-      "status": "no_suitable_source",
+      "status": "pending_review",
       "attempts": 5,
-      "nextRetryAt": "2026-11-01T12:55:31.801881+00:00",
+      "nextRetryAt": null,
       "candidates": [
         {
           "provider": "commons",
@@ -111162,6 +111162,159 @@
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
             "No name-bearing caption/article/entity evidence: image not downloaded"
           ]
+        },
+        {
+          "provider": "commons",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/%E5%BC%B5%E9%81%94%E6%98%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/%E5%BC%B5%E9%81%94%E6%98%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E9%81%94%E6%98%8E.jpg",
+          "filename": "張達明.jpg",
+          "artist": "am730",
+          "credit": "【娛樂】好耐無演草根 吳鎮宇：以前月底捱蔥油撈飯 2019-01-18",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "caption": "​《家和萬事驚》首映活動",
+          "identityEvidence": {
+            "query": "張達明",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [
+              "張達明"
+            ],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "大內密探零零發"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-10-30T10:58:44.570131+00:00",
+          "width": 1000,
+          "height": 1375,
+          "id": "manualrecrop-bab0b80245ffecb66242",
+          "personId": "t1500_0562",
+          "discoveryRunId": "20261030T105819Z-873b2c02",
+          "rightsStatus": "open_license_metadata",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "pending_review",
+          "warnings": [
+            "Manually staged source-pixel crop; original person identity, author, rights, image quality and every reveal stage require independent human approval."
+          ],
+          "originalPath": "expansion-1500/pipeline/assets/t1500_0562/manualrecrop-bab0b80245ffecb66242/dcfb383f66e2/original.bin",
+          "originalSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+          "gamePath": "expansion-1500/pipeline/assets/t1500_0562/manualrecrop-bab0b80245ffecb66242/dcfb383f66e2/bab0b80245ff.jpg",
+          "parentCandidateId": "8cb00c32a88015b25b4d",
+          "parentSourceSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+          "gameSha256": "bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d",
+          "reveal": {
+            "eyes": [
+              0.12,
+              0.33,
+              0.88,
+              0.46
+            ],
+            "nose": [
+              0.12,
+              0.33,
+              0.88,
+              0.57
+            ],
+            "mouth": [
+              0.12,
+              0.33,
+              0.88,
+              0.69
+            ],
+            "chin": [
+              0.12,
+              0.33,
+              0.88,
+              0.84
+            ],
+            "full": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "previewVariantKey": null,
+          "validation": {
+            "decoded": true,
+            "size": [
+              600,
+              720
+            ],
+            "manualGeometryRequiresHumanVisualQA": true
+          },
+          "manualCropEvidence": {
+            "sourceCommit": "3ae2261ce0611e696b8e260b1cfea245e41bb010",
+            "sourceCandidateId": "8cb00c32a88015b25b4d",
+            "sourceSha256": "dcfb383f66e214e7b0bba4f446c634c0d652781266944b64b000ceb7a70cdf17",
+            "sourceSize": [
+              1000,
+              1375
+            ],
+            "cropBox": [
+              0,
+              100,
+              1000,
+              1300
+            ],
+            "parentCropFailure": "No reliable frontal face",
+            "reviewerNotes": "Original 1000x1375 CC BY 3.0 am730 2019 video still, Commons independent licence review by GRuban 2020-07-24. Retained source SHA verified by QA 41170672128; automatic YuNet failed 'No reliable frontal face', but original image was manually viewed: single frontal face, open eyes, visible nose/mouth/chin, no microphone or sunglasses. Proposed crop x0=0,y0=100,width1000,height1200; face eye line around y~560 original, nose ~700, mouth ~840, chin ~1000. Reveal windows deliberately separate eyes then nose then mouth then chin. Geometry remains provisional; human MUST inspect all five rendered stages and reject/adjust if any feature leaks or is cropped. Work hint 《大內密探零零發》 role 皇帝 verified via Apple TV; not yet integrated. No game approval."
+          },
+          "stagePreviews": {
+            "eyes": "expansion-1500/pipeline/evidence/bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d/eyes.png",
+            "nose": "expansion-1500/pipeline/evidence/bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d/nose.png",
+            "mouth": "expansion-1500/pipeline/evidence/bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d/mouth.png",
+            "chin": "expansion-1500/pipeline/evidence/bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d/chin.png",
+            "full": "expansion-1500/pipeline/evidence/bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d/full.png"
+          },
+          "revealEvidence": {
+            "gameSha256": "bab0b80245ffecb66242d39f9145539ab170c3ad1c53ee5d96ab156857453d2d",
+            "size": [
+              600,
+              720
+            ],
+            "reveal": {
+              "eyes": [
+                0.12,
+                0.33,
+                0.88,
+                0.46
+              ],
+              "nose": [
+                0.12,
+                0.33,
+                0.88,
+                0.57
+              ],
+              "mouth": [
+                0.12,
+                0.33,
+                0.88,
+                0.69
+              ],
+              "chin": [
+                0.12,
+                0.33,
+                0.88,
+                0.84
+              ],
+              "full": [
+                0,
+                0,
+                1,
+                1
+              ]
+            },
+            "note": "Exact masks of saved game pixels, not a manual crop approval"
+          }
         }
       ],
       "history": [
@@ -111388,6 +111541,13 @@
             }
           ],
           "candidatesTried": 0
+        },
+        {
+          "provider": "manual_recrop",
+          "runId": "20261031T050012Z-4544daa5",
+          "sourceCommit": "3ae2261ce0611e696b8e260b1cfea245e41bb010",
+          "candidateId": "manualrecrop-bab0b80245ffecb66242",
+          "sourceCandidateId": "8cb00c32a88015b25b4d"
         }
       ],
       "legacyRecord": {
@@ -111411,18 +111571,13 @@
         "retryable": true,
         "message": "See lastErrors"
       },
-      "lastRunId": "20261031T045527Z-4b328c91",
-      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261031T050012Z-4544daa5",
+      "lastRunNewCandidateIds": [
+        "manualrecrop-bab0b80245ffecb66242"
+      ],
       "lastSearchRevision": 4,
       "lastAttemptAt": "2026-10-31T04:55:28.778380+00:00",
-      "lastErrors": [
-        {
-          "provider": "curated",
-          "source": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
-          "code": "curated_already_retained",
-          "message": "Curated source already rejected/retained/excluded; find a different image or review retained pixels"
-        }
-      ],
+      "lastErrors": [],
       "updatedAt": "2026-10-31T04:55:31.801895+00:00",
       "workerFinishedAt": "2026-10-31T04:55:31.804028+00:00",
       "lastCachedRecheckToken": "20261031-cheung-tat-ming-reviewed-youtube-original-v1"

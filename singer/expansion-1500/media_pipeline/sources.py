@@ -108,9 +108,13 @@ def identity(person, text):
             words = re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKC', str(alias)).casefold())
             pattern = r'(?<![a-z0-9])' + r'[\W_]*'.join(map(re.escape, words)) + r'(?![a-z0-9])'
             for match in re.finditer(pattern, hay) if words else ():
-                # A short romanized name must not match the tail of another
-                # person's hyphenated given name: Wei Lin != Tzu-Wei Lin.
-                if len(words) >= 2 and re.search(r'[a-z0-9]+-        elif key in norm(text):
+                # Wei Lin must not match inside another person's Tzu-Wei Lin.
+                prefix = hay[:match.start()]
+                if len(words) >= 2 and len(prefix) > 1 and prefix.endswith('-') and prefix[-2].isalnum():
+                    continue
+                found.append(alias)
+                break
+        elif key in norm(text):
             found.append(alias)
     return found
 

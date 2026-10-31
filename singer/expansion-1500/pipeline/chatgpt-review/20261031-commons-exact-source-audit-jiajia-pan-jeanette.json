@@ -83,13 +83,24 @@
       "gameCropReviewed": false,
       "fiveStageReviewed": false,
       "gameSha256": null,
-      "approvedForLive": false
+      "approvedForLive": false,
+      "workHintsVerified": [
+        {
+          "title": "台北的天空",
+          "url": "https://music-tw.line.me/track/7794278005"
+        },
+        {
+          "title": "翩翩飛起",
+          "url": "https://www.warnermusic.com.tw/products/wang-chih-lei-flutteringly-fly"
+        }
+      ]
     }
   ],
   "nextSteps": [
     "The two exact rejected Commons files are added to excludedPhotoSources for their respective selectedNew people, not a global person blacklist.",
     "Do not auto-approve Wang Zhi-lei from the source page's free-use claim; obtain a quality 600x720 crop, rights assessment, and five-stage visual inspection first.",
     "Never count any of these three as a new playable person until branch QA, main merge and public Pages JSON verification.",
-    "Do not alter creators or unrelated candidates."
+    "Do not alter creators or unrelated candidates.",
+    "王芷蕾 generic 台灣流行歌壇 representative-work placeholder replaced with concrete songs verified against LINE MUSIC and Warner Music Taiwan; no playable hint published yet."
   ]
 }

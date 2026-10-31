@@ -1,11 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0522-twelve-never-searched-selectednew-fixed-mode",
+  "requestId": "20261101T0524-ten-never-searched-selectednew-valid",
   "mode": "search",
-  "targetPeople": 12,
+  "targetPeople": 10,
   "plannedPersonIds": [
     "t1500_0309",
-    "t1500_0317",
     "t1500_0321",
     "t1500_0330",
     "t1500_0352",
@@ -14,8 +13,7 @@
     "t1500_0388",
     "t1500_0396",
     "t1500_0410",
-    "t1500_0412",
-    "t1500_0442"
+    "t1500_0412"
   ],
   "retryFailed": false,
   "providers": [
@@ -26,5 +24,5 @@
   "maxMinutes": 16,
   "personSeconds": 60,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. First-time exact identity and open-license source discovery for 12 previously zero-attempt selectedNew people. Preserve existing rejected-source exclusions; no main, Pages, creators, or automatic photo approval. Require human caption, author, rights and five-stage 600x720 review before release."
+  "purpose": "DRAFT ONLY. First-time exact identity and open-license source discovery for 10 zero-attempt selectedNew people; no main, Pages, creators or automatic approval. Human five-stage 600x720 review required before any release."
 }

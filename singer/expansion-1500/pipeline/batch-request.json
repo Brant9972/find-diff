@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-cheung-retained-manual-crop-v1",
-  "mode": "manual_recrop",
+  "requestId": "20261031-huanghongxuan-exact-commons-v1",
+  "mode": "source_discovery",
   "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0562"
+    "t1500_0534"
   ],
   "retryFailed": false,
   "providers": [
@@ -13,8 +13,7 @@
   ],
   "workers": 1,
   "maxMinutes": 12,
-  "personSeconds": 100,
-  "maxCandidates": 1,
-  "purpose": "Exact retained original SHA and source candidate ID for 張達明; manual 600x720 five-stage draft only, no main, no Pages, no creators. No source redownload; manual recrop is not identity, rights or visual QA approval.",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-cheung-tat-ming.json"
+  "personSeconds": 110,
+  "maxCandidates": 2,
+  "purpose": "Target only the existing selectedNew 黃宏軒. First try exact Commons 台灣演員黃宏軒.jpg (Petersuuu CC BY 4.0, 3667x5500, own-work claim), with prior alternative retained. Draft source/600x720 only; check caption, independent identity and uploader rights, actual eyes/nose/mouth/chin/full before any release. Do not re-use rejected S_37822478.jpg, do not touch main, Pages or creators."
 }

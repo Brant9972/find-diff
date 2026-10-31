@@ -1,17 +1,30 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-render-only-verify-person-specific-state-rejection-after-pr109",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
+  "requestId": "20261101T0518-twelve-never-searched-selectednew",
+  "mode": "collect",
+  "targetPeople": 12,
+  "plannedPersonIds": [
+    "t1500_0309",
+    "t1500_0317",
+    "t1500_0321",
+    "t1500_0330",
+    "t1500_0352",
+    "t1500_0377",
+    "t1500_0379",
+    "t1500_0388",
+    "t1500_0396",
+    "t1500_0410",
+    "t1500_0412",
+    "t1500_0442"
+  ],
   "retryFailed": false,
   "providers": [
     "entity",
     "commons"
   ],
-  "workers": 1,
-  "maxMinutes": 10,
+  "workers": 2,
+  "maxMinutes": 16,
   "personSeconds": 60,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. Verify PR #109 state reconciliation rejects actor 林煒's stale baseball player photo from pending-review export. Render existing pixels only; no source search, no main, no Pages, no creators, no automatic approval."
+  "purpose": "DRAFT ONLY. First-time exact identity and open-license source discovery for 12 previously zero-attempt selectedNew people. Preserve existing rejected-source exclusions; no main, Pages, creators, or automatic photo approval. Require human caption, author, rights and five-stage 600x720 review before release."
 }

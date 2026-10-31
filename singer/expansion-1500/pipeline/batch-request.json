@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-dayuan-source-manual-crop-v1",
+  "requestId": "20261031-dayuan-source-manual-crop-v2",
   "mode": "manual_recrop",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -14,6 +14,6 @@
   "maxMinutes": 15,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Draft only: stage 大元 600x720 five-stage manual crop from retained Commons source, no main, no Pages, no creators. Not approved until visual stages, identity, license, hint, attribution and QA are checked.",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-dayuan-v1.json"
+  "purpose": "Draft only: correct 大元 nose-stage mask to prevent mouth leakage, no main, no Pages, no creators. V2 must pass five-stage human visual QA, author/license, alias and work hints before release.",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-dayuan-v2.json"
 }

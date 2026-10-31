@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d347109e74132476cacb17fe02e8e527aa14f605",
+  "sourceRun": "20261031T022403Z-6b9351f2",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Draft only: retain the same 600x720 Dayuan JPEG source and correct nose-stage reveal to avoid leaking upper teeth. The V1 eyes/nose/mouth/chin/full sheet was actually opened. Do not publish until V2 five-stage inspection, author/license, alias, hint and QA pass.",
+  "items": [
+    {
+      "personId": "t1500_0475",
+      "sourceCandidateId": "17584c9fcf63be759a55",
+      "sourceSha256": "5069f0338f0da9d3e54a543b9890a8bf9db18b429da8fb6d19381da6981c11f6",
+      "box": [
+        190,
+        60,
+        790,
+        780
+      ],
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28,
+          0.92,
+          0.44
+        ],
+        "nose": [
+          0.08,
+          0.28,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.28,
+          0.92,
+          0.62
+        ],
+        "chin": [
+          0.08,
+          0.28,
+          0.92,
+          0.73
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "V1 game SHA f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349, 600x720 source visually checked. Eyes stage shows both eyes only; nose stage to .53 leaked the top of teeth at lower boundary; reduce nose bottom to .49. Mouth and chin stages correctly reveal teeth/lips then jaw; no microphone or overlay watermark. Verify V2 rendered stages before approval. Commons LinDaYuan.jpg, original photo by 邱鈺鋒, own-work CC BY-SA 4.0, Q9293309, 2012 event caption."
+    }
+  ]
+}

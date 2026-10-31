@@ -1,18 +1,24 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0534-linyuzhong-exact-file-first-replay",
-  "mode": "search",
-  "targetPeople": 1,
+  "requestId": "20261101T0750-commons-sitelink-six-person-diagnostic",
+  "mode": "collect",
+  "targetPeople": 6,
   "plannedPersonIds": [
-    "t1500_0388"
+    "t1500_0549",
+    "t1500_0552",
+    "t1500_0555",
+    "t1500_0561",
+    "t1500_0565",
+    "t1500_0588"
   ],
   "retryFailed": true,
   "providers": [
+    "entity",
     "commons"
   ],
-  "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 90,
-  "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. Exact Commons File:林宇中.JPG imageinfo and source validation after independent category lead; no main, Pages, creators or automatic photo approval. Human author/licence/caption and 600x720 five-stage visual review mandatory."
+  "workers": 2,
+  "maxMinutes": 16,
+  "personSeconds": 100,
+  "maxCandidates": 2,
+  "purpose": "Focused six-person verified Wikidata commonswiki-sitelink category discovery after PR #113; source metadata and image crops are DRAFT ONLY, preserve all human exclusions; no main or Pages deployment"
 }

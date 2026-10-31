@@ -813,8 +813,22 @@ class EntityPortraits:
         english = [value for value in dict.fromkeys(english) if re.search('[A-Za-z]', value)
                    and len(norm(value)) >= 5 and norm(value) not in blocked_english][:4]
         aliases = list(dict.fromkeys([person['name'], *matched, *english]))
+        # P373 is scoped to the already verified exact-name Q5 entity.
+        # It is a discovery hint, never proof that a category photo depicts it.
+        commons_categories = [
+            claim.get('mainsnak', {}).get('datavalue', {}).get('value')
+            for claim in entity.get('claims', {}).get('P373', [])
+            if claim.get('rank') != 'deprecated'
+        ]
+        commons_category = next((
+            value.strip().removeprefix('Category:')
+            for value in commons_categories
+            if isinstance(value, str) and re.fullmatch(r'[^|#\r\n]{2,120}', value.strip())
+        ), '')
         evidence = {'wikidataId': qid, 'mappingSource': 'https://www.wikidata.org/wiki/' + qid,
                     'exactChineseAliases': matched, 'verifiedSearchAliases': aliases,
+                    'commonsCategory': commons_category,
+                    'commonsCategoryEvidence': 'Wikidata P373 on exact-name Q5 entity' if commons_category else None,
                     'entityTypeEvidence': 'P31=Q5', 'retrievedAt': now(),
                     'visualIdentityVerified': False,
                     'identityWarning': 'Entity names only establish search aliases. Verify the pictured person and caption.'}
@@ -846,6 +860,24 @@ class EntityPortraits:
         requests = []
         if entity_files:
             requests.append((query, {'titles': '|'.join('File:' + value for value in entity_files)}))
+        # Bounded P373 category lookup can discover portraits whose filenames
+        # omit the native/English name. Category membership is NOT approval:
+        # the normal caption/P18, rights, crop and human-review gates remain.
+        category = mapping.get('commonsCategory')
+        if category:
+            try:
+                listing = http.json('https://commons.wikimedia.org/w/api.php',
+                    action='query', format='json', formatversion=2,
+                    list='categorymembers', cmtitle='Category:' + category,
+                    cmtype='file', cmlimit=12)
+                titles = [item['title'] for item in listing.get('query', {}).get('categorymembers', [])
+                          if re.fullmatch(r'File:[^|\r\n]{1,200}\.(?:jpg|jpeg|png|webp)',
+                                          str(item.get('title', '')), re.I)]
+                if titles:
+                    requests.append(('commons_category_p373', {'titles': '|'.join(titles)}))
+            except SourceError as exc:
+                failures.append({'provider': 'commons_category_p373', 'code': exc.code,
+                                 'message': str(exc)[:300]})
         english_fallbacks = [alias for alias in aliases if re.search(r'[A-Za-z]', alias)][:2]
         for search_term in dict.fromkeys([query, *english_fallbacks]):
             requests.append((search_term, {'generator': 'search',

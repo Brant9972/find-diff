@@ -44,6 +44,17 @@ def source_key(url):
     return (p.hostname or '').casefold() + path + ('?' + p.query if p.query else '')
 
 
+def excluded_commons_keys(person):
+    """Skip explicitly rejected Commons files before exact lookup or download.
+
+    A rejection is attached to the file page, not the performer: new photos
+    remain searchable. Exact URL normalization also handles Chinese filenames
+    and Commons' underscore/space variants.
+    """
+    return {key for url in person.get('excludedPhotoSources', [])
+            if (key := source_key(url)).startswith('wikimedia:')}
+
+
 def clean(value):
     # Commons extmetadata Artist/Credit often embeds MediaWiki template CSS.
     # Strip style/script *with their contents*, not just the tags: leaving
@@ -434,11 +445,14 @@ class CuratedCommons:
     name = 'curated'
 
     def search(self, person, http, round_number=0):
+        excluded = excluded_commons_keys(person)
         exact = {norm(str(name).removeprefix('File:'))
                  for name in person.get('reviewExactCommonsFiles', [])[:3]}
         for item in person.get('reviewVerifiedOriginalSources', [])[:3]:
             filename = str(item.get('filename', '')).strip()
             source = str(item.get('source', '')).strip()
+            if source_key(source) in excluded:
+                continue
             url = str(item.get('url', '')).strip()
             src = urllib.parse.urlsplit(source)
             original = urllib.parse.urlsplit(url)
@@ -562,10 +576,12 @@ class CommonsSearch:
         # Never infer identity, rights or visual approval from this field.
         # Exact imageinfo bypasses noisy CirrusSearch and is capped at 3 files.
         exact_files = []
+        excluded = excluded_commons_keys(person)
         for raw in person.get('reviewExactCommonsFiles', [])[:3]:
             filename = str(raw).strip().removeprefix('File:')
             if (re.fullmatch(r'.{1,200}\.(?:jpg|jpeg|png|webp)', filename, re.I)
-                    and not any(ch in filename for ch in ('/', chr(92), chr(10), chr(13)))):
+                    and not any(ch in filename for ch in ('/', chr(92), chr(10), chr(13)))
+                    and source_key('https://commons.wikimedia.org/wiki/File:' + urllib.parse.quote(filename.replace(' ', '_'))) not in excluded):
                 exact_files.append(filename)
         requests = ([('exact', person['name'])] if exact_files else [])
         requests.extend(('search', query) for query in dict.fromkeys(queries))
@@ -604,7 +620,7 @@ class CommonsSearch:
             for page in data.get('query',{}).get('pages',[]):
                 for info in page.get('imageinfo',[]):
                     source=info.get('descriptionurl','')
-                    if source in seen:continue
+                    if source_key(source) in excluded or source in seen:continue
                     seen.add(source)
                     ext=info.get('extmetadata',{});val=lambda key:clean(ext.get(key,{}).get('value',''))
                     license_url=val('LicenseUrl')
@@ -769,6 +785,9 @@ class EntityPortraits:
 
     def search(self, person, http, round_number=0):
         aliases, query, mapping, entity_files = self._resolve(person, http)
+        excluded = excluded_commons_keys(person)
+        entity_files = [filename for filename in entity_files
+                        if source_key('https://commons.wikimedia.org/wiki/File:' + urllib.parse.quote(filename.replace(' ', '_'))) not in excluded]
         enriched = {**person, 'aliases': aliases}
         failures, seen, commons, yielded = [], set(), [], False
         # Exact Wikidata P18 first, then native-name Commons search, then
@@ -794,7 +813,7 @@ class EntityPortraits:
                         continue
                     for info in page.get('imageinfo', []):
                         source = info.get('descriptionurl', '')
-                        if not source or source_key(source) in seen:
+                        if not source or source_key(source) in seen or source_key(source) in excluded:
                             continue
                         seen.add(source_key(source))
                         ext = info.get('extmetadata', {})

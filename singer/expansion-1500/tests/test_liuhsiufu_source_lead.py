@@ -17,13 +17,33 @@ class LiuHsiufuSourceLeadTest(unittest.TestCase):
         self.assertNotIn("誰是被害者", person["representativeWorks"])
         self.assertEqual(person["verifiedWorkSources"][0]["url"],
                          "https://about.pts.org.tw/pr/latestnews/article/3816")
-        self.assertEqual(person["reviewExactCommonsFiles"],
-                         ["Liuhsiufu2023.png", "Liuhsiufu2020.png"])
+        self.assertEqual(person["reviewExactCommonsFiles"], [])
+        self.assertEqual(set(person["excludedPhotoSources"]), {
+            "https://commons.wikimedia.org/wiki/File:Liuhsiufu2023.png",
+            "https://commons.wikimedia.org/wiki/File:Liuhsiufu2020.png",
+        })
+        self.assertEqual(person["photoSourceRightsStatus"],
+                         "BLOCKED_EXACT_TWO_COMMONS_LICENSE_REVIEW_NEEDED")
         self.assertEqual(person["photoStatus"], "not_prepared")
         self.assertEqual(person["qaStatus"], "not_releasable")
         self.assertFalse(person["imageVerification"]["rightsDocumented"])
         self.assertFalse(person["imageVerification"]["finalCropReviewed"])
         self.assertEqual(person["hintsStatus"], "candidate_only_unverified")
+
+    def test_rejected_rights_are_not_approvals(self):
+        root = Path(__file__).resolve().parents[1]
+        review = json.loads((root / "pipeline/chatgpt-review/20261031-liuhsiufu-license-source-rejected.json").read_text(encoding="utf-8"))
+        self.assertEqual(review["releaseGate"], "REJECTED_EXACT_SOURCES_NOT_PLAYABLE")
+        self.assertEqual(review["sourceDiagnostic"]["metadataCandidates"], 2)
+        self.assertEqual(review["sourceDiagnostic"]["openLicenseMetadata"], 0)
+        self.assertFalse(review["imagePixelInspected"])
+        self.assertFalse(review["gameCropReviewed"])
+        self.assertFalse(review["fiveStageReviewed"])
+        self.assertFalse(review["approvedForLive"])
+        for source in review["sourcePages"]:
+            self.assertEqual(source["commonsCategory"], "License review needed")
+            self.assertFalse(source["commonsReviewed"])
+            self.assertTrue(source["decision"].startswith("BLOCK_EXACT_SOURCE"))
 
     def test_not_already_live_under_known_name(self):
         root = Path(__file__).resolve().parents[2]

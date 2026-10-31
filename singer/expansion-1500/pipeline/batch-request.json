@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-exact-source-four-1039",
+  "requestId": "20261031-exact-source-four-retry-qa-fix",
   "mode": "search",
   "targetPeople": 4,
   "plannedPersonIds": [
@@ -18,5 +18,5 @@
   "maxMinutes": 12,
   "personSeconds": 85,
   "maxCandidates": 2,
-  "purpose": "Targeted new-source diagnostic using already curated exact Commons filenames for Chen Ming-chang, Huang Hong-xuan, Cheung Tat-ming and Kong Wah. Bypass prior failure cooldown only for these four IDs; no repeat 20/40/200 sweep, no live approval, no main/Pages/creators changes. Preserve review-only gate."
+  "purpose": "Draft only: four exact curated Commons filenames for 陳明章, 黃宏軒, 張達明 and 江華; retry prior failed status only for these explicit selectedNew IDs after curated source improvements. No main, no Pages, no creators changes; no approval without full human review."
 }

@@ -33,10 +33,17 @@ class HuangShaokuCuratedTest(unittest.TestCase):
     def test_rejected_stage_photo_is_excluded_and_game_is_unapproved(self):
         p = self.person
         self.assertIn("https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg", p["excludedPhotoSources"])
-        self.assertEqual(p["photoStatus"], "not_prepared")
-        self.assertEqual(p["qaStatus"], "not_releasable")
-        self.assertFalse(p["imageVerification"]["finalCropReviewed"])
-        self.assertFalse(p["imageVerification"]["rightsDocumented"])
+        if p["photoStatus"] == "published":
+            # After verified release, the old source rejection still stands,
+            # but the replacement crop is no longer a draft.
+            self.assertTrue(p["imageVerification"]["finalCropReviewed"])
+            self.assertTrue(p["imageVerification"]["rightsDocumented"])
+            self.assertTrue(p.get("gameSha256"))
+        else:
+            self.assertEqual(p["photoStatus"], "not_prepared")
+            self.assertEqual(p["qaStatus"], "not_releasable")
+            self.assertFalse(p["imageVerification"]["finalCropReviewed"])
+            self.assertFalse(p["imageVerification"]["rightsDocumented"])
 
 
 if __name__ == "__main__":

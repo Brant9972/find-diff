@@ -56,8 +56,13 @@ class SelectionTest(unittest.TestCase):
         self.assertEqual(row['wikidataId'], 'Q28408495')
         self.assertIn('黃少谷 20171015誠品唱談會.jpg', row['reviewExactCommonsFiles'])
         self.assertIn('https://commons.wikimedia.org/wiki/File:Huang_Shao-gu.jpg', row['excludedPhotoSources'])
-        self.assertFalse(row['imageVerification']['finalCropReviewed'])
-        self.assertNotEqual(row['photoStatus'], 'published')
+        if row['photoStatus'] == 'published':
+            self.assertTrue(row['imageVerification']['finalCropReviewed'])
+            self.assertTrue(row['imageVerification']['rightsDocumented'])
+            self.assertTrue(row.get('gameSha256'))
+        else:
+            self.assertFalse(row['imageVerification']['finalCropReviewed'])
+            self.assertNotEqual(row['photoStatus'], 'published')
 
     def test_limit_applies_after_review_priority(self):
         self.assertEqual(select_people(self.state, self.people, self.handoff, 1), ['reviewed'])

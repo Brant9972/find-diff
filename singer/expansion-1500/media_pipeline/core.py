@@ -472,7 +472,59 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         raise SourceError('rejected_photo_pixels', 'Pixels match a previously rejected source photograph')
                     digest = hashlib.sha256(blob).hexdigest()
                     crop_started = True
-                    image, reveal, validation = crop(blob)
+                    try:
+                        image, reveal, validation = crop(blob)
+                    except ValueError as thumbnail_crop_error:
+                        # The 1400px Commons preview may be too soft or make a
+                        # face too small even when the licensed original has
+                        # enough real pixels. Retry that SAME Commons file once
+                        # at full resolution; never relax sharpness/face gates.
+                        # Do not retry poor geometry, exposure or unrelated
+                        # hosts, and do not download huge originals.
+                        original = str(item.get('originalUrl') or '')
+                        original_parts = urlsplit(original)
+                        width, height = item.get('width'), item.get('height')
+                        original_is_larger = (
+                            isinstance(width, int) and isinstance(height, int)
+                            and min(width, height) >= 180
+                            and max(width, height) >= 2400
+                            and width * height <= 30_000_000
+                        )
+                        recoverable = any(token in str(thumbnail_crop_error)
+                                          for token in ('Blurred crop', 'Face is too small'))
+                        same_commons_file = (
+                            item.get('provider') in {'commons', 'wikimedia'}
+                            and str(item.get('downloadVariant', '')).startswith('wikimedia_thumbnail')
+                            and original != item['url']
+                            and original_parts.scheme == 'https'
+                            and original_parts.hostname == 'upload.wikimedia.org'
+                            and original_parts.path.startswith('/wikipedia/commons/')
+                            and urlsplit(item['url']).path.startswith(
+                                original_parts.path.replace(
+                                    '/wikipedia/commons/', '/wikipedia/commons/thumb/', 1) + '/')
+                            and not original_parts.query and not original_parts.fragment
+                        )
+                        if not (recoverable and original_is_larger and same_commons_file):
+                            raise
+                        try:
+                            original_blob = http.get(original)
+                        except SourceError as original_error:
+                            errors.append({
+                                'provider': provider.name, 'source': item['source'],
+                                'code': 'highres_retry_download_failed',
+                                'originalError': original_error.code,
+                                'message': 'Full-resolution Commons retry failed; original preview remains eligible only for manual review',
+                            })
+                            raise thumbnail_crop_error
+                        if matches_rejected(original_blob, rejected_pixels or []):
+                            raise SourceError('rejected_photo_pixels', 'Full-resolution original matches a rejected photograph')
+                        blob = original_blob
+                        digest = hashlib.sha256(blob).hexdigest()
+                        candidate['downloadVariant'] = 'wikimedia_original_after_crop_failure'
+                        candidate['warnings'].append(
+                            'Preview crop failed (' + str(thumbnail_crop_error)[:100]
+                            + '); tried full-resolution Commons original with unchanged quality and human-review gates')
+                        image, reveal, validation = crop(blob)
                     if matches_rejected(image, rejected_pixels or []):
                         raise SourceError('rejected_photo_pixels', 'Crop matches a previously rejected game photograph')
                     game_digest = hashlib.sha256(image).hexdigest()

@@ -2090,7 +2090,11 @@
       "reviewSearchQuery": "陳明章",
       "cachedMetadataRecheckToken": "20261031-chen-mingchang-q9474720-p18-manual-v2",
       "reviewVerifiedP18File": "2022-03-06 Chen Ming-chang 02.jpg",
-      "reviewSourceResearchNote": "Wikidata Q9474720 verifies English label Chen Ming-chang and P18 File:2022-03-06 Chen Ming-chang 02.jpg. Commons 2022 files were Taiwan Presidential Office Flickr CC BY 2.0 reviewed by FlickreviewR 2 on 2022-03-06; author credit Office of the President / Simon Liu. Recheck exact metadata after alias fix; photo face, crop and stages NOT approved."
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2022-03-06_Chen_Ming-chang_02.jpg"
+      ],
+      "reviewSourceResearchNote": "Wikidata Q9474720 verifies English label Chen Ming-chang and P18 File:2022-03-06 Chen Ming-chang 02.jpg. Commons 2022 files were Taiwan Presidential Office Flickr CC BY 2.0 reviewed by FlickreviewR 2 on 2022-03-06; author credit Office of the President / Simon Liu. Original pixels screened 2026-10-31: 2022 file 01 side-profile/microphone and 02 (Wikidata P18) closed eyes both visually rejected; 2023 Kaohsiung source pending 600x720 five-stage and rights check. No approved game crop."
     },
     {
       "candidateId": "c1500-0108",

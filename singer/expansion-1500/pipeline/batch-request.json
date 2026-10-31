@@ -1,12 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-sun-yueh-rico-shen-curated-one-person",
-  "mode": "search",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0207"
-  ],
-  "retryFailed": true,
+  "requestId": "20261031-after-sunyueh-blur-reject-render-only",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "curated",
     "commons"
@@ -15,5 +13,5 @@
   "maxMinutes": 8,
   "personSeconds": 95,
   "maxCandidates": 3,
-  "purpose": "Draft only: no main, no Pages, no creators changes. One-person source collection for 孫越 Q9041952, exact Commons own-work File:2011 SKL RunUp Yueh Sun.jpg by Rico Shen, CC BY-SA 4.0. Metadata is not a playable crop. Human must inspect 600x720 JPEG and all five reveal stages (especially eyes behind tinted glasses), photo SHA, 《搭錯車》 hint and rights attribution before any release."
+  "purpose": "Draft only: no main, no Pages, no creators changes. Render retained source-only review assets without re-searching rejected 孫越, 鳳小岳, 王大陸 files. Wait for genuinely different licensed original sources before next targeted request."
 }

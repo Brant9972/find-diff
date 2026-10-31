@@ -1,28 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0524-ten-never-searched-selectednew-valid",
+  "requestId": "20261101T0534-linyuzhong-exact-file-first-replay",
   "mode": "search",
-  "targetPeople": 10,
+  "targetPeople": 1,
   "plannedPersonIds": [
-    "t1500_0309",
-    "t1500_0321",
-    "t1500_0330",
-    "t1500_0352",
-    "t1500_0377",
-    "t1500_0379",
-    "t1500_0388",
-    "t1500_0396",
-    "t1500_0410",
-    "t1500_0412"
+    "t1500_0388"
   ],
-  "retryFailed": false,
+  "retryFailed": true,
   "providers": [
-    "entity",
     "commons"
   ],
-  "workers": 2,
-  "maxMinutes": 16,
-  "personSeconds": 60,
+  "workers": 1,
+  "maxMinutes": 8,
+  "personSeconds": 90,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. First-time exact identity and open-license source discovery for 10 zero-attempt selectedNew people; no main, Pages, creators or automatic approval. Human five-stage 600x720 review required before any release."
+  "purpose": "DRAFT ONLY. Exact Commons File:林宇中.JPG imageinfo and source validation after independent category lead; no main, Pages, creators or automatic photo approval. Human author/licence/caption and 600x720 five-stage visual review mandatory."
 }

@@ -51,7 +51,7 @@ class SourceLedReleasePlanTest(unittest.TestCase):
         else:
             self.assertEqual(request['providers'], ['curated', 'commons'])
         self.assertFalse(request['retryFailed'])
-        self.assertIn(request['mode'], ('render_only', 'search'))
+        self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))
         ids = request['plannedPersonIds']
         if request['mode'] == 'render_only':
             self.assertEqual(ids, [])
@@ -75,6 +75,19 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             self.assertTrue(all(pid.startswith('t1500_') for pid in ids))
             self.assertIn('Draft only', request['purpose'])
             self.assertIn('no main', request['purpose'])
+            if request['mode'] == 'manual_recrop':
+                spec_name = Path(request['manualCropRequestPath']).name
+                self.assertTrue(spec_name.startswith('manual-crop-request-'))
+                self.assertTrue(spec_name.endswith('.json'))
+                spec = json.loads((root / 'pipeline' / spec_name).read_text(encoding='utf-8'))
+                self.assertEqual(spec['releaseGate'], 'MANUAL_CROP_STAGING_ONLY_NO_LIVE')
+                self.assertEqual([item['personId'] for item in spec['items']], ids)
+                self.assertEqual(len(spec['sourceCommit']), 40)
+                for item in spec['items']:
+                    self.assertEqual(len(item['sourceSha256']), 64)
+                    x0, y0, x1, y1 = item['box']
+                    self.assertEqual((x1-x0)*6, (y1-y0)*5)
+
 
 
     def test_source_screening_records_no_approved_game_crop(self):

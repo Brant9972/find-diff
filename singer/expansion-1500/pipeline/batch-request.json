@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-render-only-verify-linwei-exclusion",
+  "requestId": "20261101-render-only-verify-person-specific-state-rejection-after-pr109",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -13,5 +13,5 @@
   "maxMinutes": 10,
   "personSeconds": 60,
   "maxCandidates": 3,
-  "purpose": "DRAFT ONLY. Render existing retained candidates after rejecting Tzu-Wei Lin baseball photo for actor 林煒; verify excluded source no longer appears as an active review candidate. No search, no main, no Pages, no creators, no automatic approval."
+  "purpose": "DRAFT ONLY. Verify PR #109 state reconciliation rejects actor 林煒's stale baseball player photo from pending-review export. Render existing pixels only; no source search, no main, no Pages, no creators, no automatic approval."
 }

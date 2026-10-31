@@ -91,6 +91,11 @@ class HighResolutionRetryTest(unittest.TestCase):
         self.assertEqual(downloads, [PREVIEW])
         self.assertNotEqual(row['status'], 'pending_review')
 
+    def test_same_host_different_commons_file_never_downloaded(self):
+        _, downloads = self.run_case(
+            original='https://upload.wikimedia.org/wikipedia/commons/b/bc/Other.jpg')
+        self.assertEqual(downloads, [PREVIEW])
+
     def test_no_original_retry_for_geometry_or_overexposure(self):
         for failure in ('Multiple prominent faces',
                         'Overexposed crop: more than 55% near-white pixels'):

@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1077,
-    "publishedFromPlan": 90,
-    "remainingSelectedNovel": 420,
+    "currentlyLiveUnique": 1078,
+    "publishedFromPlan": 91,
+    "remainingSelectedNovel": 419,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 3
   },
@@ -14222,7 +14222,7 @@
       ],
       "proposedPrimaryBank": "actors.json",
       "representativeWorks": [
-        "Popu Lady"
+        "女孩壞壞"
       ],
       "priority": "B",
       "photoSearchKeywords": [
@@ -14230,18 +14230,18 @@
         "林盈臻 portrait",
         "林艾璇 portrait"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pages_live_verified",
       "preferredImageQuery": "大元 Popu Lady 角色 劇照 正面 清晰 無浮水印",
       "reviewExactCommonsFiles": [
         "LinDaYuan.jpg"
@@ -14249,7 +14249,10 @@
       "excludedPhotoSources": [
         "https://commons.wikimedia.org/wiki/File:Lin_DaYuan_from_Popu_Lady.jpg"
       ],
-      "reviewSourceResearchNote": "2026-10-31: Commons LinDaYuan.jpg, 1000x1500, original photo by 邱鈺鋒 (Kuyohong), own work CC BY-SA 4.0; file caption explicitly names 大元 at 2012 Yahoo! Kimo event and Commons depicts Q9293309. NEW SOURCE LEAD ONLY: source pixels and five reveal stages not yet inspected. Older Lin DaYuan from Popu Lady.jpg visually rejected: microphone intrudes into lower-face/chin area."
+      "reviewSourceResearchNote": "2026-10-31: Commons LinDaYuan.jpg, 1000x1500, original photo by 邱鈺鋒 (Kuyohong), own work CC BY-SA 4.0; file caption explicitly names 大元 at 2012 Yahoo! Kimo event and Commons depicts Q9293309. NEW SOURCE LEAD ONLY: source pixels and five reveal stages not yet inspected. Older Lin DaYuan from Popu Lady.jpg visually rejected: microphone intrudes into lower-face/chin area.",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
+      "reviewSourceCommit": "538961d65d8b477e6d79edaa2b58397322eb568a",
+      "gameSha256": "f8910be33a78b55efe672d45a43c6cbd5dbe2c32666118a9275212f0f81be349"
     },
     {
       "candidateId": "c1500-0476",
@@ -18613,7 +18616,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 90,
+    "published": 91,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18704,10 +18707,11 @@
       "吳雨霏",
       "周柏豪",
       "林美照",
-      "趙正平"
+      "趙正平",
+      "大元"
     ],
-    "pendingPhotoAndHintReview": 420,
-    "latestCommit": "3873bc709abfc0e5eb0058e7bd625cb6a28b1c5e_live_qa_pass",
+    "pendingPhotoAndHintReview": 419,
+    "latestCommit": "a40a2ed16fdb98619a7f88a65d38df3410593b11",
     "note": "89 of 511 selected are present in verified main 673306eb (2026-10-30); one known duplicate 羅璧玲=羅霈穎; 421 selected novel people remain. At least 3 original backup/deferred still needed for 1500. This reconciliation changes staging bookkeeping only, not QA claims or playable files."
   }
 }

@@ -1,19 +1,16 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-dayuan-source-manual-crop-v2",
-  "mode": "manual_recrop",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0475"
-  ],
+  "requestId": "20261031-post-dayuan-live-render-only",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
   "retryFailed": false,
   "providers": [
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 15,
-  "personSeconds": 90,
+  "maxMinutes": 10,
+  "personSeconds": 60,
   "maxCandidates": 1,
-  "purpose": "Draft only: correct 大元 nose-stage mask to prevent mouth leakage, no main, no Pages, no creators. V2 must pass five-stage human visual QA, author/license, alias and work hints before release.",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261031-dayuan-v2.json"
+  "purpose": "Draft only: reconcile newly published Dayuan with main and render current review index; no main, no Pages, no creators changes, no new source searches."
 }

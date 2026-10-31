@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-31",
+  "reviewType": "actual_source_pixel_screening_no_game_crop",
+  "releaseGate": "REJECTED_SOURCE_NOT_PLAYABLE",
+  "sourceRun": "20261031T073614Z-ae389956",
+  "sourceAssetCommit": "eccde3b1e6e6531abacc4febabcded0c7d6df26b",
+  "personId": "t1500_0534",
+  "name": "黃宏軒",
+  "candidateId": "03c2d3da3bfbf862d483",
+  "wikidataQid": "Q27888799",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:台灣演員黃宏軒.jpg",
+  "sourceImagePath": "singer/expansion-1500/pipeline/review-assets/20261031T073614Z-ae389956/source-only-0001/original.jpg",
+  "downloadedSourceSha256": "d17b28aa75f5dda625683f83f31c25e079f2a3f13ce5744b784a8583672bf27d",
+  "downloadedSourceDimensions": [
+    1920,
+    2880
+  ],
+  "originalCommonsDimensions": [
+    3667,
+    5500
+  ],
+  "sourceCaption": "台灣演員黃宏軒，攝於2024年",
+  "claimedAuthor": "Petersuuu",
+  "sourceLicenseMetadata": "CC BY 4.0",
+  "sourceLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "identityEvidence": "Commons caption names 黃宏軒; Q27888799 linked by curated roster. Independent second-source facial match not completed.",
+  "licenseEvidence": "Commons own-work/CC BY 4.0 metadata is a claim, not independent verification of uploader ownership.",
+  "actualSourcePixelsInspected": true,
+  "visualReview": {
+    "singleFace": true,
+    "eyesOpen": true,
+    "mouthAndChinUnobstructed": true,
+    "watermarkObserved": false,
+    "secondFaceObserved": false,
+    "decision": "REJECT_AS_GAME_PORTRAIT",
+    "reason": "The 1920x2880 retained source image is a dramatic split-lit portrait: almost the entire viewer-right eye and cheek fall into deep shadow, so the eyes-only reveal would provide very uneven, weak facial detail. Automatic 600x720 crop also failed sharpness threshold 65. Although one frontal subject and mouth are visible, the face is not sufficiently evenly legible for this five-stage recognition game; do not brighten or silently waive the sharpness gate without a separately reviewed variant."
+  },
+  "gameCropCreated": false,
+  "fiveStageReviewed": false,
+  "gameSha256": null,
+  "eligibleForLive": false,
+  "nextStep": "Exclude this exact Commons file from future source queries, keep immutable pixels for audit. Search a genuinely different well-lit, sharp, independently licensed/captioned front-facing photograph; no main/Pages/creators changes."
+}

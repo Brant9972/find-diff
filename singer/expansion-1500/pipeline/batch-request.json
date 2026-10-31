@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-exact-p18-wang-cheung-kwong",
-  "mode": "collect",
+  "requestId": "20261031-exact-p18-wang-cheung-kwong-search-v2",
+  "mode": "search",
   "targetPeople": 3,
   "plannedPersonIds": [
     "t1500_0457",
@@ -17,5 +17,5 @@
   "maxMinutes": 17,
   "personSeconds": 105,
   "maxCandidates": 3,
-  "purpose": "Only three existing selectedNew actors, with QID and exact Commons P18 filenames newly pinned in release-plan. Diagnose source identity, caption, rights and pixels; draft-only checkpoint, never publish automatically. Do not re-run prior failed 20/40/200 batches. All photos remain unapproved pending actual five-stage human review."
+  "purpose": "Only three existing selectedNew actors, with QID and exact Commons P18 filenames newly pinned in release-plan. Diagnose source identity, caption, rights and pixels; draft-only checkpoint, never publish automatically. Do not re-run prior failed 20/40/200 batches. All photos remain unapproved pending actual five-stage human review. Corrected request mode to 'search' after run 41169942330 failed preflight on two mode-specific tests; no collection was executed in failed run."
 }

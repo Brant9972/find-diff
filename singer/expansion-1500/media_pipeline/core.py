@@ -499,6 +499,9 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                             and original_parts.scheme == 'https'
                             and original_parts.hostname == 'upload.wikimedia.org'
                             and original_parts.path.startswith('/wikipedia/commons/')
+                            and urlsplit(item['url']).path.startswith(
+                                original_parts.path.replace(
+                                    '/wikipedia/commons/', '/wikipedia/commons/thumb/', 1) + '/')
                             and not original_parts.query and not original_parts.fragment
                         )
                         if not (recoverable and original_is_larger and same_commons_file):

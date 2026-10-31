@@ -11,7 +11,7 @@ import subprocess
 import time
 import uuid
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import parse_qs, unquote, urlsplit
 
 from .sources import HTTP, SourceError, identity, norm, now, rights, source_key
 from .rejection_pixels import matches_rejected
@@ -483,6 +483,18 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         # hosts, and do not download huge originals.
                         original = str(item.get('originalUrl') or '')
                         original_parts = urlsplit(original)
+                        # Commons imageinfo URLs may carry these three
+                        # *tracking-only* query parameters. They are not
+                        # redirects or alternate sources; require the exact
+                        # known set and values, or a query-free original.
+                        tracking = parse_qs(original_parts.query)
+                        safe_original_query = (
+                            not original_parts.query or tracking == {
+                                'utm_source': ['commons.wikimedia.org'],
+                                'utm_campaign': ['imageinfo'],
+                                'utm_content': ['original'],
+                            }
+                        )
                         width, height = item.get('width'), item.get('height')
                         original_is_larger = (
                             isinstance(width, int) and isinstance(height, int)
@@ -502,7 +514,7 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                             and urlsplit(item['url']).path.startswith(
                                 original_parts.path.replace(
                                     '/wikipedia/commons/', '/wikipedia/commons/thumb/', 1) + '/')
-                            and not original_parts.query and not original_parts.fragment
+                            and safe_original_query and not original_parts.fragment
                         )
                         if not (recoverable and original_is_larger and same_commons_file):
                             raise

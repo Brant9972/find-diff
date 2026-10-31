@@ -52,7 +52,10 @@ def obvious_nonportrait_scene(item):
     filename = unquote(str(item.get('filename') or ''))
     if not NONPORTRAIT_FILENAME.search(filename):
         return False
-    # Captions may name a performer even when the file itself shows a shop\n    # named after them (e.g. 李炳輝足體養生館). A caption is not visual proof.\n    # Keep genuinely named portraits/events when the *filename* says so.\n    return not bool(PORTRAIT_CONTEXT.search(filename))
+    # Captions may name a performer even when the file itself shows a shop
+    # named after them (e.g. 李炳輝足體養生館). A caption is not visual proof.
+    # Keep genuinely named portraits/events when the *filename* says so.
+    return not bool(PORTRAIT_CONTEXT.search(filename))
 
 
 

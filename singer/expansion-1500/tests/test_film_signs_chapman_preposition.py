@@ -14,7 +14,7 @@ class FilmSignsAndPrepositionTest(unittest.TestCase):
             'GD Guangdong Foshan National Arts Studio film location signs April 2018 Michael Tse.jpg',
             'GD Guangdong Foshan National Arts Studio film location signs April 2018 Michael Tse 02.jpg',
             '國藝影視城電影海報謝天華.jpg',
-            'National Arts Studio signage with actor name.jpg',
+            'National Arts Studio signage with celebrity name.jpg',
         ):
             with self.subTest(filename=filename):
                 self.assertTrue(obvious_nonportrait_scene({

@@ -23,7 +23,7 @@ class ExactSourceVisualAuditTest(unittest.TestCase):
         self.assertIn(source, person['excludedPhotoSources'])
         self.assertIn(source_key(source), excluded_commons_keys(person))
         self.assertEqual(source_key(source),
-                         source_key('https://commons.wikimedia.org/wiki/File:JiJiaJia%20201230.JPG'))
+                         source_key('https://commons.wikimedia.org/wiki/File:JiJiaJia%2020121230.JPG'))
         self.assertNotEqual(person.get('photoStatus'), 'published')
 
     def test_michelle_pan_is_other_singer_not_pan_meichen(self):

@@ -66,6 +66,23 @@ class ReleaseGateTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(stats["newPeople"], 1)
 
+    def test_new_actor_with_reviewed_actor_mode_hint_passes(self):
+        self.save()
+        (self.root / "singer/questions.json").write_text(
+            json.dumps({"questions": []}))
+        (self.root / "singer/actors.json").write_text(
+            json.dumps({"questions": [self.q]}))
+        (self.root / "singer/hints.json").write_text(json.dumps({
+            "entries": {"new001": {"actor": {
+                "title": "Test Film",
+                "source": "https://example.org/film",
+                "review": "verified_actor_cast"
+            }}}
+        }))
+        errors, stats = validate(self.root, strict_baseline=False)
+        self.assertEqual(errors, [])
+        self.assertEqual(stats["newPeople"], 1)
+
     def test_missing_open_licence_fails(self):
         self.q["attribution"]["license"] = "Copyright retained by source"
         self.save()

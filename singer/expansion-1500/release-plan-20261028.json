@@ -1843,7 +1843,11 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "阿翔 食尚玩家 綜藝 節目 單人 特寫 正面 無浮水印"
+      "preferredImageQuery": "阿翔 食尚玩家 綜藝 節目 單人 特寫 正面 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E7%BF%94.JPG"
+      ],
+      "reviewReason": "2026-10-31 retained source pixel review: File:阿翔.JPG (Onlymyself65536, CC BY-SA 4.0 claim) contains a second prominent person, the foreground subject looks downward and wears a low cap shading the eyes. Cannot provide clear 600x720 eyes-first reveal; reject exact source only. Seek a different frontal single-person photo."
     },
     {
       "candidateId": "c1500-0102",
@@ -16886,7 +16890,11 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "石修 香港電視劇 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "石修 香港電視劇 角色 劇照 正面 清晰 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BF%AE.jpg"
+      ],
+      "reviewReason": "2026-10-31 Commons source check: File:石修.jpg is a 2019 am730 YouTube still marked Category:License review needed (2025-04-05 page). Although close-up facial pixels are visually clear, CC BY 3.0 has not been independently confirmed; block this exact source until rights-holder licence review, seek an alternative original."
     },
     {
       "candidateId": "c1500-0553",

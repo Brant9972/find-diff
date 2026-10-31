@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261031-huangshaoku-retained-source-visual-review",
+  "requestId": "20261031-huangshaoku-retained-source-review-qa-retry",
   "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
@@ -8,10 +8,11 @@
   ],
   "retryFailed": false,
   "providers": [
-    "curated"
+    "curated",
+    "commons"
   ],
   "maxMinutes": 5,
   "personSeconds": 45,
   "maxCandidates": 1,
-  "purpose": "Review cached, SHA-verified Huang Shao-ku source-only pixels from an earlier run. Targeted retained-source export was fixed by PR #69; no source redownload, no new candidate approval, no main/Pages/creators change. Inspect existing source image before deciding whether to create a manual 600x720 five-stage crop."
+  "purpose": "Re-run the single-person cached source visual export after fixing a provider-list regression in batch request. No old broad batch, no auto-approval, no main/Pages change."
 }

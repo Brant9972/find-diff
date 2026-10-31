@@ -617,7 +617,34 @@ class CommonsSearch:
                 data = http.json('https://commons.wikimedia.org/w/api.php', action='query',
                     format='json', formatversion=2, titles='|'.join(titles),
                     prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
-            for page in data.get('query',{}).get('pages',[]):
+            pages = data.get('query', {}).get('pages', [])
+            # A zero-result CirrusSearch is not proof that Commons has no
+            # portrait. For an exact, reasonably distinctive Chinese name,
+            # make ONE bounded filename-prefix lookup. Unlike an unquoted
+            # full-text search, this cannot fan out into unrelated English
+            # homonyms. The result is metadata only, never identity approval.
+            if (mode == 'search' and not pages and query == person['name']
+                    and re.fullmatch(r'[㐀-鿿]{3,8}', str(query).strip())):
+                try:
+                    listing = http.json('https://commons.wikimedia.org/w/api.php',
+                        action='query', format='json', formatversion=2,
+                        list='allimages', aiprefix=query, ailimit=8,
+                        aiprop='canonicaltitle')
+                    titles = [row.get('title') or ('File:' + row['name'])
+                        for row in listing.get('query', {}).get('allimages', [])
+                        if row.get('title') or row.get('name')]
+                    if titles:
+                        detail = http.json('https://commons.wikimedia.org/w/api.php',
+                            action='query', format='json', formatversion=2,
+                            titles='|'.join(titles), prop='imageinfo|categories',
+                            clcategories='Category:License review needed|Category:License review failed',
+                            cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
+                        pages = detail.get('query', {}).get('pages', [])
+                except SourceError:
+                    # A failing secondary lookup must not consume the rest of
+                    # the person's ordinary search attempts.
+                    pass
+            for page in pages:
                 for info in page.get('imageinfo',[]):
                     source=info.get('descriptionurl','')
                     if source_key(source) in excluded or source in seen:continue

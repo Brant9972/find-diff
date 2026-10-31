@@ -36,12 +36,30 @@ def norm(value):
 
 
 def source_key(url):
+    """Canonicalize Commons file pages across path and index.php URL forms.
+
+    The same Commons file can be linked as /wiki/File:Name.jpg or as
+    /w/index.php?title=File%3AName.jpg. Human source rejections must match
+    both forms, without treating an unrelated host's /wiki/File: path as
+    authoritative Wikimedia metadata.
+    """
     p = urllib.parse.urlsplit(str(url or ''))
+    host = (p.hostname or '').casefold()
     path = urllib.parse.unquote(p.path).replace('_', ' ').casefold().rstrip('/')
-    # Wikimedia descriptions can appear under either language domain.
-    if '/wiki/file:' in path:
-        return 'wikimedia:' + path.split('/wiki/file:', 1)[1]
-    return (p.hostname or '').casefold() + path + ('?' + p.query if p.query else '')
+    is_wikimedia = (host == 'commons.wikimedia.org' or
+                    host.endswith('.wikipedia.org'))
+    if is_wikimedia:
+        filename = None
+        if '/wiki/file:' in path:
+            filename = path.split('/wiki/file:', 1)[1]
+        elif path.endswith('/w/index.php'):
+            title = urllib.parse.parse_qs(p.query).get('title', [''])[0]
+            title = urllib.parse.unquote(title).replace('_', ' ')
+            if title.casefold().startswith('file:'):
+                filename = title[5:]
+        if filename:
+            return 'wikimedia:' + unicodedata.normalize('NFKC', filename).strip().casefold()
+    return host + path + ('?' + p.query if p.query else '')
 
 
 def excluded_commons_keys(person):

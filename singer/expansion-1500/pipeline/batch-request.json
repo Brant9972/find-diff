@@ -1,24 +1,14 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0847-exact-q5-commonswiki-403-diagnostic6",
-  "mode": "search",
-  "targetPeople": 6,
-  "plannedPersonIds": [
-    "t1500_0007",
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094",
-    "t1500_0457",
-    "t1500_0583"
-  ],
-  "retryFailed": true,
-  "providers": [
-    "entity",
-    "commons"
-  ],
-  "workers": 2,
-  "maxMinutes": 15,
-  "personSeconds": 90,
-  "maxCandidates": 2,
-  "purpose": "DRAFT ONLY, no main, no Pages, no creators: six selectedNew using exact Q5 pinned QID, commonswiki category-sitelink, and exact Commons filename hints after URL-scoped Wikimedia 403 fix. Check actual metadata, download errors, source caption, rights and five-stage pixels separately; never auto approve."
+  "requestId": "20261101T0920-retained-source-visual-audit-all",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
+  "providers": [],
+  "workers": 1,
+  "maxMinutes": 10,
+  "personSeconds": 30,
+  "maxCandidates": 1,
+  "purpose": "DRAFT ONLY: render all retained source pixels and staged five-stage crops for actual human visual audit; no source re-search, no approval, no main/Pages/creators changes. Review previously rejected exact sources and rights separately."
 }

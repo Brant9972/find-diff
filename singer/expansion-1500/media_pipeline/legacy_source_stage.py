@@ -93,19 +93,28 @@ def stage(request, output):
     output.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
     session.headers.update({"User-Agent": "FindDiff/1.0 (licensed-photo QA; GitHub: Brant9972/find-diff)"})
-    # Shared CI IPs can receive 429. Respect Retry-After; never bypass source
-    # throttling, downgrade verification, or silently use unverified thumbnails.
-    retries = Retry(total=3, backoff_factor=4, status_forcelist=[429, 500, 502, 503, 504],
-                    allowed_methods=["GET"], respect_retry_after_header=True)
+    # Shared CI IPs can receive HTTP 429. Never repeat a throttled original
+    # URL within this run: preserve Retry-After for a later, separately
+    # scheduled attempt. Retrying 5xx is safe; a 429 is not a 5xx.
+    retries = Retry(total=2, backoff_factor=4, status_forcelist=[500, 502, 503, 504],
+                    allowed_methods=["GET"], respect_retry_after_header=False,
+                    raise_on_status=False)
     session.mount("https://", HTTPAdapter(max_retries=retries))
     try:
         response = session.get(url, timeout=45)
         response.raise_for_status()
     except requests.RequestException as exc:
-        status = getattr(getattr(exc, "response", None), "status_code", None)
+        error_response = getattr(exc, "response", None)
+        status = getattr(error_response, "status_code", None)
+        retry_after = (error_response.headers.get("Retry-After")
+                       if error_response is not None else None)
         failure = {"releaseGate": RELEASE_GATE, "sourceUrl": url,
                    "sourceSha1Expected": item["sha1"], "sourceDownloadStatus": "failed",
                    "httpStatus": status, "errorClass": type(exc).__name__,
+                   "retryAfter": retry_after,
+                   "rateLimited": status == 429,
+                   "retryPolicy": ("wait_for_later_run_no_same_url_retry"
+                                   if status == 429 else "no_unverified_fallback"),
                    "noOriginalPixelsObtained": True, "eligibleForLive": False}
         (output / "staging-failure.json").write_text(json.dumps(failure, indent=2) + "\n")
         print("LEGACY_SOURCE_DOWNLOAD_BLOCKED " + json.dumps(failure), flush=True)

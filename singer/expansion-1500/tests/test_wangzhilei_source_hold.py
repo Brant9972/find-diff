@@ -22,6 +22,10 @@ class WangZhileiSourceHoldTests(unittest.TestCase):
     def test_exact_file_is_only_a_discovery_hint(self):
         self.assertEqual(self.person['name'], '王芷蕾')
         self.assertEqual(self.person['reviewExactCommonsFiles'], ['Jeanette Wang.JPG'])
+        self.assertEqual(self.person['aliases'], ['Jeanette Wang'])
+        self.assertEqual(self.person['acceptedAnswers'], ['王芷蕾', 'Jeanette Wang'])
+        self.assertEqual(self.person['cachedMetadataRecheckToken'],
+                         '20261101-wangzhilei-english-caption-q9066613')
         self.assertNotEqual(self.person['photoStatus'], 'published')
         self.assertEqual(self.person['qaStatus'], 'not_releasable')
 

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "75c95971878145a57fa5d1214a127226ff3809d9",
+  "sourceRun": "20261101T085603Z-9bb875a9",
+  "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
+  "purpose": "Replace failed high-background crop with one lower, tighter isolation hypothesis. No source search, no automatic approval, no production changes.",
+  "items": [
+    {
+      "personId": "t1500_0123",
+      "sourceCandidateId": "d5e1b75b4539fc4f5eb3",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "box": [
+        720,
+        880,
+        1320,
+        1600
+      ],
+      "reveal": {
+        "eyes": [
+          0.07,
+          0.25,
+          0.93,
+          0.41
+        ],
+        "nose": [
+          0.07,
+          0.25,
+          0.93,
+          0.5
+        ],
+        "mouth": [
+          0.07,
+          0.25,
+          0.93,
+          0.65
+        ],
+        "chin": [
+          0.07,
+          0.25,
+          0.93,
+          0.82
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "notes": "UNAPPROVED crop hypothesis. Check if subject's eyes are in eyes stage and nose/mouth/chin reveal progressively, no second face in full frame, no head clipping. Reject if any fail."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>找出四人組｜台灣娛樂圈連連看</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1121;--text:#f2f5ff;--sub:#abbad3;--tile:#26324b;--active:#8061e7}
+*{box-sizing:border-box}
+html{font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif}
+body{min-height:100dvh;margin:0;color:var(--text);background:radial-gradient(ellipse 85% 42% at 15% -10%,#40326f80,transparent 75%),radial-gradient(ellipse 65% 42% at 100% 50%,#1a60704d,transparent 75%),var(--bg)}
+button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible{outline:3px solid #f6db8c;outline-offset:2px}
+.shell{width:min(100%,640px);margin:auto;padding:clamp(16px,4vw,30px) clamp(14px,4.5vw,30px) max(20px,env(safe-area-inset-bottom))}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:850;font-size:12px;letter-spacing:.12em;color:#c5adff}
+.top .tag{font-size:11px;letter-spacing:0;border:1px solid #8061e7a0;padding:5px 9px;border-radius:20px}
+h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spacing:-.04em;background:linear-gradient(90deg,#fff,#cebaff 55%,#a0e8e0);color:transparent;background-clip:text}
+.subtitle{color:#afbdd5;font-size:13px;line-height:1.6;margin:0 0 18px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);padding:13px 4px;background:#141f35c9;border:1px solid #ffffff1a;border-radius:16px;margin-bottom:14px}
+.stat{text-align:center}.stat+.stat{border-left:1px solid #ffffff1a}
+.number{display:block;font-size:21px;font-weight:850;min-height:28px;font-variant-numeric:tabular-nums}
+.caption{display:block;font-size:10px;color:#a4b0c6}.hearts{color:#ffa9a3;font-size:17px}
+.progress{display:flex;gap:5px;margin-bottom:15px}
+.progress i{height:5px;flex:1;background:#25324b;border-radius:20px}
+.progress i.on{background:linear-gradient(90deg,#a589ff,#75dcc7)}
+.heading{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:800;margin-bottom:10px}
+.heading span:last-child{font-size:12px;color:#b6c2d9}
+.groups{display:grid;gap:7px;margin-bottom:10px}
+.group{padding:10px 8px;border-radius:11px;text-align:center;color:#1a2030;display:grid;gap:3px}
+.group strong{font-size:15px}.group span{font-size:11px;font-weight:650}
+.c0{background:#e8ca7c}.c1{background:#add0d8}.c2{background:#b9b0ed}.c3{background:#91d0ae}
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(6px,1.7vw,10px);margin-bottom:12px}
+.tile{min-width:0;min-height:clamp(59px,17vw,82px);padding:5px 2px;background:var(--tile);border:1px solid #b4c6ed1c;border-bottom:3px solid #101729aa;border-radius:12px;color:#f5f7ff;font-size:clamp(12px,3.7vw,17px);font-weight:850;line-height:1.25;transition:transform .12s,background .1s}
+.tile:active{transform:scale(.97)}.tile[aria-pressed=true]{background:var(--active);border-color:#d9ccff94;box-shadow:0 4px 14px #8f72ff42;transform:translateY(-2px)}
+.feedback{min-height:29px;text-align:center;color:#e0d9f5;font-weight:750;font-size:12px;line-height:1.45;margin-bottom:9px}
+.feedback.bad{color:#ffb0a5}.feedback.good{color:#9ce4c8}
+.actions{display:grid;grid-template-columns:1fr 1fr 1.32fr;gap:8px}
+.btn{border:1px solid #46516a;background:#1b2943;color:#ecf1ff;border-radius:12px;padding:12px 6px;min-height:46px;font-size:13px;font-weight:850}
+.btn:disabled{opacity:.38;cursor:default}
+.btn.primary{background:linear-gradient(110deg,#b49aff,#b3a4f8);color:#241744;border-color:transparent}
+.btn.wide{width:100%;margin-top:12px}
+.note{text-align:center;color:#8898b1;font-size:11px;line-height:1.7;margin:14px 0}
+.extra{text-align:center}.link{border:0;background:transparent;color:#c3cce0;text-decoration:underline;font-size:12px;padding:8px}
+.modalhost:empty{display:none}.overlay{position:fixed;inset:0;background:#080e1ce9;z-index:10;display:grid;place-items:center;padding:18px;overflow:auto}
+.modal{background:linear-gradient(140deg,#222b47,#101c30 70%);border:1px solid #7780a34c;border-radius:20px;padding:24px 20px;max-width:440px;width:100%;text-align:center;box-shadow:0 22px 70px #0009}
+.modal .emoji{font-size:40px}.modal h2{font-size:25px;margin:6px 0}.modal p{font-size:13px;line-height:1.7;color:#c5cce0}
+.score{font-size:31px;font-weight:900;color:#f3d68d;padding:12px}
+.answers{text-align:left;display:grid;gap:8px;margin-top:14px;max-height:45vh;overflow:auto}
+.answers div{background:#ffffff11;padding:9px 10px;border-radius:8px;font-size:12px}
+.answers strong{color:#e6d6ff}.answers small{display:block;color:#c2cee5;margin-top:4px}
+@media(max-width:360px){.shell{padding:14px 10px}.tile{font-size:12px;min-height:54px}.btn{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="top"><span>✦ FOUR CONNECTIONS</span><span class="tag">台灣娛樂特輯 · DEMO</span></div>
+  <h1>找出四人組</h1>
+  <p class="subtitle">16 個名字，隱藏著 4 個共同關係。每次選出 4 人，看看你能不能全部找出來。</p>
+  <div class="stats">
+    <div class="stat"><span id="level" class="number">1 / 3</span><span class="caption">目前關卡</span></div>
+    <div class="stat"><span id="score" class="number">0</span><span class="caption">累積分數</span></div>
+    <div class="stat"><span id="hearts" class="number hearts">♥ ♥ ♥ ♥</span><span class="caption">剩餘失誤</span></div>
+  </div>
+  <div id="progress" class="progress"></div>
+  <div class="heading"><span id="roundTitle"></span><span id="found"></span></div>
+  <div id="groups" class="groups" aria-live="polite"></div>
+  <div id="board" class="board" aria-label="選擇四個名字"></div>
+  <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+  <div class="actions">
+    <button id="shuffle" class="btn" type="button">↻ 洗牌</button>
+    <button id="hint" class="btn" type="button">✦ 提示 −25</button>
+    <button id="submit" class="btn primary" type="button" disabled>送出答案 (0/4)</button>
+  </div>
+  <p class="note">正確 +100 分｜答錯 −15 分｜提示 −25 分<br>每關最多可錯 4 次；手機、電腦都能玩，無須登入。</p>
+  <div class="extra"><button id="restart" class="link" type="button">重新開始整個遊戲</button> · <button id="rules" class="link" type="button">遊戲規則</button></div>
+</main>
+<div id="modalHost" class="modalhost"></div>
+<script>
+'use strict';
+const ROUNDS=[
+{title:'偶像天團',groups:[
+{name:'F4',hint:'四人因《流星花園》而走紅',names:['言承旭','周渝民','朱孝天','吳建豪']},
+{name:'飛輪海',hint:'團名帶著「溫度」的男子組合',names:['汪東城','辰亦儒','吳尊','炎亞綸']},
+{name:'香港四大天王',hint:'90 年代起被合稱為四大天王',names:['劉德華','張學友','郭富城','黎明']},
+{name:'五月天的四位樂器手',hint:'同屬一個五人樂團，但不包含主唱',names:['怪獸','石頭','瑪莎','冠佑']}]},
+{title:'經典台劇',groups:[
+{name:'《想見你》',hint:'主題曲是〈想見你想見你想見你〉',names:['柯佳嬿','許光漢','施柏宇','顏毓麟']},
+{name:'《我可能不會愛你》',hint:'男女主角是程又青和李大仁',names:['林依晨','陳柏霖','王陽明','陳匡怡']},
+{name:'《犀利人妻》',hint:'女主角的經典台詞：「可是瑞凡……」',names:['隋棠','溫昇豪','朱芯儀','宥勝']},
+{name:'《俗女養成記》',hint:'女主角是陳嘉玲',names:['謝盈萱','陳竹昇','楊麗音','于子育']}]},
+{title:'經典國片',groups:[
+{name:'《海角七號》',hint:'故事圍繞恆春演唱會與七封情書',names:['范逸臣','田中千繪','馬念先','林宗仁']},
+{name:'《那些年，我們一起追的女孩》',hint:'主角包括柯騰和沈佳宜',names:['柯震東','陳妍希','敖犬','郝劭文']},
+{name:'《不能說的·秘密》',hint:'周杰倫執導，與鋼琴有關的愛情電影',names:['周杰倫','桂綸鎂','黃秋生','曾愷玹']},
+{name:'《我的少女時代》',hint:'主角包括林真心和徐太宇',names:['宋芸樺','王大陸','李玉璽','簡廷芮']}]}];
+for(const [i,r] of ROUNDS.entries()){let all=r.groups.flatMap(g=>g.names);if(all.length!==16||new Set(all).size!==16)throw Error('第'+(i+1)+'關重複人名')}
+const $=id=>document.getElementById(id);
+const randomize=a=>{let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
+const s={round:0,score:0,baseline:0,tries:4,selected:[],solved:[],hints:[],tiles:[],done:false};
+function say(msg,type=''){let e=$('feedback');e.textContent=msg;e.className='feedback '+type}
+function newRound(i){s.round=i;s.baseline=s.score;s.tries=4;s.selected=[];s.solved=[];s.hints=[];s.done=false;s.tiles=randomize(ROUNDS[i].groups.flatMap((g,j)=>g.names.map(n=>({id:j+':'+n,g:j,n}))));$('modalHost').replaceChildren();say('選擇 4 個你認為有共同關係的人名');render()}
+function render(){
+ const r=ROUNDS[s.round];$('level').textContent=(s.round+1)+' / '+ROUNDS.length;$('score').textContent=s.score;$('hearts').textContent=('♥ '.repeat(s.tries)).trim()||'—';$('roundTitle').textContent='第 '+(s.round+1)+' 關 · '+r.title;$('found').textContent='找出 '+s.solved.length+' / 4 組';
+ $('progress').innerHTML=Array.from({length:4},(_,i)=>'<i class="'+(i<s.solved.length?'on':'')+'"></i>').join('');
+ const g=$('groups');g.replaceChildren();s.solved.forEach(j=>{let el=document.createElement('div');el.className='group c'+j;let strong=document.createElement('strong'),small=document.createElement('span');strong.textContent=r.groups[j].name;small.textContent=r.groups[j].names.join(' · ');el.append(strong,small);g.append(el)});
+ let b=$('board');b.replaceChildren();s.tiles.forEach(t=>{if(s.solved.includes(t.g))return;let e=document.createElement('button');e.type='button';e.className='tile';e.textContent=t.n;e.setAttribute('aria-pressed',String(s.selected.includes(t.id)));e.addEventListener('click',()=>choose(t.id));b.append(e)});
+ $('submit').disabled=s.selected.length!==4||s.done;$('submit').textContent='送出答案 ('+s.selected.length+'/4)';$('shuffle').disabled=s.done;$('hint').disabled=s.done||s.hints.length>=4;
+}
+function choose(id){if(s.done)return;const i=s.selected.indexOf(id);if(i>=0)s.selected.splice(i,1);else if(s.selected.length<4)s.selected.push(id);else{say('最多選 4 人，請先取消一個','bad');return}render()}
+function submit(){
+ if(s.selected.length!==4||s.done)return;
+ let gs=s.selected.map(id=>s.tiles.find(t=>t.id===id).g),j=gs[0];
+ if(gs.every(x=>x===j)){s.solved.push(j);s.score+=100;s.selected=[];say('答對！「'+ROUNDS[s.round].groups[j].name+'」','good');render();if(s.solved.length===4){s.done=true;render();setTimeout(()=>modal('win'),350)}return}
+ let matches=Math.max(...[0,1,2,3].filter(x=>!s.solved.includes(x)).map(x=>gs.filter(y=>x===y).length));
+ s.tries--;s.score=Math.max(0,s.score-15);s.selected=[];say(matches===3?'差一個就答對了！':'這四個人並不是同一組','bad');render();if(s.tries===0){s.done=true;render();setTimeout(()=>modal('lost'),350)}
+}
+function hint(){let j=[0,1,2,3].find(x=>!s.solved.includes(x)&&!s.hints.includes(x));if(j===undefined)return;s.hints.push(j);s.score=Math.max(0,s.score-25);say('提示｜'+ROUNDS[s.round].groups[j].hint);render()}
+function shuffle(){s.tiles=randomize(s.tiles);s.selected=[];say('已洗牌，再試著找出四人關係');render()}
+function modal(type){
+ const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
+ let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
+ let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
+ let p=document.createElement('p');p.textContent=type==='rules'?'每關有 16 人，分成四組，每組四人。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'三大主題、12 組關聯都完成了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
+ if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
+ let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'開始挑戰':type==='lost'?'重新挑戰這關':s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()
+}
+$('submit').addEventListener('click',submit);$('hint').addEventListener('click',hint);$('shuffle').addEventListener('click',shuffle);$('rules').addEventListener('click',()=>modal('rules'));$('restart').addEventListener('click',()=>{s.score=0;newRound(0)});document.addEventListener('keydown',e=>{if($('modalHost').childElementCount)return;if(e.key==='Enter'&&s.selected.length===4)submit();if(e.key==='Escape'){s.selected=[];render()}});newRound(0);
+</script>
+</body></html>

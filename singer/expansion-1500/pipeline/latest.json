@@ -1,13 +1,13 @@
 {
-  "runId": "20261101T145448Z-9129d760",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261101T145448Z-9129d760/review-index.json",
+  "runId": "20261101T154740Z-cfc755ee",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261101T154740Z-cfc755ee/review-index.json",
   "summary": {
-    "runId": "20261101T145448Z-9129d760",
-    "generatedAt": "2026-11-01T14:54:49.008196+00:00",
-    "scannedPeople": 0,
+    "runId": "20261101T154740Z-cfc755ee",
+    "generatedAt": "2026-11-01T15:47:59.094085+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 416,
     "pendingReviewPeople": 2,
     "licenseConcernCandidates": 353,
@@ -20,8 +20,8 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 324,
-      "image_validation_failed": 117,
+      "identity_unconfirmed": 328,
+      "image_validation_failed": 116,
       "network_error": 247,
       "source_api_busy": 69,
       "license_unclear": 76,
@@ -34,9 +34,34 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "license_unclear": 1,
+      "identity_unconfirmed": 4
+    },
     "manualCropSources": 12,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 5,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 4,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      },
+      "entity": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "license_unclear": 1,
+          "identity_unconfirmed": 4
+        }
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

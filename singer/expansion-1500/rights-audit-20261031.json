@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baselineMainSha": "3873bc709abfc0e5eb0058e7bd625cb6a28b1c5e",
+  "baselineMainSha": "3a1d870d83d5c0aaf2db04d3a6f0a70e134ac26e",
   "scope": "metadata evidence gaps only; not a legal finding or human photo review",
   "summary": {
     "bankCounts": {
@@ -11,11 +11,11 @@
     "bankEntries": 1148,
     "duplicateIdEntries": 68,
     "uniquePeopleById": 1080,
-    "rightsUnresolved": 578,
-    "otherLicenseClaimsNotIndependentlyVerified": 502,
-    "unresolvedMissingArtist": 576,
-    "unresolvedMissingLicenseUrl": 578,
-    "unresolvedMissingPhotoSha256": 578
+    "rightsUnresolved": 577,
+    "otherLicenseClaimsNotIndependentlyVerified": 503,
+    "unresolvedMissingArtist": 575,
+    "unresolvedMissingLicenseUrl": 577,
+    "unresolvedMissingPhotoSha256": 577
   },
   "records": [
     {
@@ -7915,24 +7915,6 @@
       "rightsStatus": "unresolved_no_open_reuse_claim"
     },
     {
-      "id": "x1000_p0274",
-      "name": "胡瓜",
-      "banks": [
-        "variety"
-      ],
-      "photo": "photos/x1000_p0274_r2.jpg",
-      "photoSha256": null,
-      "source": "https://cnalifestyle.channelnewsasia.com/8days/hu-gua-taiwans-top-earning-host-2020-s462mil-overall-income-shrank-20-cos-covid-19-533616",
-      "sourceHost": "cnalifestyle.channelnewsasia.com",
-      "artist": "",
-      "credit": "Hu Gua Is Taiwan’s Top-Earning Host In 2020 With S$4.62mil, Overall Income Shrank By 20% ’Cos Of COVID-19 - CNA Lifestyle",
-      "license": "Copyright retained by original source; no open licence asserted",
-      "licenseUrl": "",
-      "photoStatus": "reviewed",
-      "humanReviewedFlag": true,
-      "rightsStatus": "unresolved_no_open_reuse_claim"
-    },
-    {
       "id": "x1000_p0275",
       "name": "徐乃麟",
       "banks": [
@@ -10434,7 +10416,5 @@
       "humanReviewedFlag": true,
       "rightsStatus": "unresolved_no_open_reuse_claim"
     }
-  ],
-  "lastReviewBranch": "review/legacy-rights-jj-lin-chiling-20261031",
-  "lastRemediation": "2026-10-31: two existing portraits moved to source-backed CC claims; 499 claims remain subject to independent review."
+  ]
 }

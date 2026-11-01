@@ -55,11 +55,11 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
 </head>
 <body>
 <main class="shell">
-  <div class="top"><span>✦ FOUR CONNECTIONS</span><span class="tag">台灣娛樂特輯 · DEMO</span></div>
+  <div class="top"><span>✦ FOUR CONNECTIONS</span><span class="tag">台灣娛樂特輯 · 10 關</span></div>
   <h1>找出四人組</h1>
-  <p class="subtitle">16 個名字，隱藏著 4 個共同關係。每次選出 4 人，看看你能不能全部找出來。</p>
+  <p class="subtitle">每關 16 位台灣熟悉的演藝人物，藏著 4 組關係。共 10 關，挑戰你的台灣娛樂記憶！</p>
   <div class="stats">
-    <div class="stat"><span id="level" class="number">1 / 3</span><span class="caption">目前關卡</span></div>
+    <div class="stat"><span id="level" class="number">1 / 10</span><span class="caption">目前關卡</span></div>
     <div class="stat"><span id="score" class="number">0</span><span class="caption">累積分數</span></div>
     <div class="stat"><span id="hearts" class="number hearts">♥ ♥ ♥ ♥</span><span class="caption">剩餘失誤</span></div>
   </div>
@@ -74,28 +74,13 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
     <button id="hint" class="btn" type="button">✦ 提示 −25</button>
     <button id="submit" class="btn primary" type="button" disabled>送出答案 (0/4)</button>
   </div>
-  <p class="note">可自由排列方塊，整理順序不扣分。<br>正確 +100 分｜答錯 −15 分｜提示 −25 分<br>每關最多可錯 4 次；手機、電腦都能玩，無須登入。</p>
+  <p class="note">可自由排列方塊，整理順序不扣分。<br>正確 +100 分｜答錯 −15 分｜提示 −25 分<br>共 10 關、40 組｜每關最多可錯 4 次；手機、電腦都能玩。</p>
   <div class="extra"><button id="restart" class="link" type="button">重新開始整個遊戲</button> · <button id="rules" class="link" type="button">遊戲規則</button></div>
 </main>
 <div id="modalHost" class="modalhost"></div>
 <script>
 'use strict';
-const ROUNDS=[
-{title:'偶像天團',groups:[
-{name:'F4',hint:'四人因《流星花園》而走紅',names:['言承旭','周渝民','朱孝天','吳建豪']},
-{name:'飛輪海',hint:'團名帶著「溫度」的男子組合',names:['汪東城','辰亦儒','吳尊','炎亞綸']},
-{name:'香港四大天王',hint:'90 年代起被合稱為四大天王',names:['劉德華','張學友','郭富城','黎明']},
-{name:'五月天的四位樂器手',hint:'同屬一個五人樂團，但不包含主唱',names:['怪獸','石頭','瑪莎','冠佑']}]},
-{title:'經典台劇',groups:[
-{name:'《想見你》',hint:'主題曲是〈想見你想見你想見你〉',names:['柯佳嬿','許光漢','施柏宇','顏毓麟']},
-{name:'《我可能不會愛你》',hint:'男女主角是程又青和李大仁',names:['林依晨','陳柏霖','王陽明','陳匡怡']},
-{name:'《犀利人妻》',hint:'女主角的經典台詞：「可是瑞凡……」',names:['隋棠','溫昇豪','朱芯儀','宥勝']},
-{name:'《俗女養成記》',hint:'女主角是陳嘉玲',names:['謝盈萱','陳竹昇','楊麗音','于子育']}]},
-{title:'經典國片',groups:[
-{name:'《海角七號》',hint:'故事圍繞恆春演唱會與七封情書',names:['范逸臣','田中千繪','馬念先','林宗仁']},
-{name:'《那些年，我們一起追的女孩》',hint:'主角包括柯騰和沈佳宜',names:['柯震東','陳妍希','敖犬','郝劭文']},
-{name:'《不能說的·秘密》',hint:'周杰倫執導，與鋼琴有關的愛情電影',names:['周杰倫','桂綸鎂','黃秋生','曾愷玹']},
-{name:'《我的少女時代》',hint:'主角包括林真心和徐太宇',names:['宋芸樺','王大陸','李玉璽','簡廷芮']}]}];
+const ROUNDS=[{"title":"經典偶像團體","groups":[{"name":"F4","hint":"四個人因《流星花園》成為人氣男子團體","names":["言承旭","周渝民","朱孝天","吳建豪"]},{"name":"飛輪海","hint":"2000 年代出道的四人男子團體","names":["汪東城","辰亦儒","吳尊","炎亞綸"]},{"name":"5566 經典四人陣容","hint":"小刀退團後廣為人知的四人時期","names":["孫協志","王仁甫","許孟哲","王少偉"]},{"name":"五月天的四位器樂手","hint":"五人樂團中，不含主唱的四位團員","names":["怪獸","石頭","瑪莎","冠佑"]}]},{"title":"偶像劇黃金年代","groups":[{"name":"《惡作劇之吻》","hint":"江直樹與袁湘琴的校園戀愛故事","names":["鄭元暢","林依晨","汪東城","趙詠華"]},{"name":"《命中注定我愛你》","hint":"一段意外的郵輪旅行改變兩個人的命運","names":["陳喬恩","阮經天","陳楚河","白歆惠"]},{"name":"《下一站，幸福》","hint":"失憶、律師與孩子是劇情重要元素","names":["安以軒","吳建豪","許瑋甯","吳慷仁"]},{"name":"《放羊的星星》","hint":"珠寶集團二少爺與詐欺女孩的戀曲","names":["林志穎","劉荷娜","立威廉","洪小鈴"]}]},{"title":"經典台劇記憶","groups":[{"name":"《我可能不會愛你》","hint":"程又青與李大仁的好友變戀人故事","names":["林依晨","陳柏霖","王陽明","陳匡怡"]},{"name":"《犀利人妻》","hint":"安真、瑞凡、小三薇恩的愛情風暴","names":["隋棠","溫昇豪","朱芯儀","宥勝"]},{"name":"《痞子英雄》","hint":"兩位個性迥異的警察攜手辦案","names":["周渝民","趙又廷","陳意涵","張鈞甯"]},{"name":"《華燈初上》","hint":"林森北路日式酒店的懸疑故事","names":["林心如","楊謹華","楊祐寧","鳳小岳"]}]},{"title":"近年人氣台劇","groups":[{"name":"《火神的眼淚》","hint":"消防員的日常與職場困境","names":["溫昇豪","陳庭妮","林柏宏","劉冠廷"]},{"name":"《俗女養成記》","hint":"台南女孩陳嘉玲的成長與家庭故事","names":["謝盈萱","陳竹昇","楊麗音","于子育"]},{"name":"《有生之年》","hint":"高家三兄弟與父母重聚的家庭故事","names":["吳慷仁","鄭元暢","林哲熹","楊貴媚"]},{"name":"《花甲男孩轉大人》","hint":"盧廣仲飾演的男孩回到家族裡","names":["盧廣仲","嚴正嵐","蔡振南","龍劭華"]}]},{"title":"台灣賣座電影","groups":[{"name":"《周處除三害》","hint":"第三名通緝犯決心除掉前兩名","names":["阮經天","袁富華","陳以文","王淨"]},{"name":"《我的少女時代》","hint":"林真心、徐太宇與青春校園戀情","names":["宋芸樺","王大陸","李玉璽","簡廷芮"]},{"name":"《不能說的·秘密》","hint":"一部與鋼琴、淡江中學有關的愛情電影","names":["周杰倫","桂綸鎂","黃秋生","曾愷玹"]},{"name":"《角頭－浪流連》","hint":"以黑道世界與愛情為主軸的電影","names":["鄭人碩","謝欣穎","柯叔元","高捷"]}]},{"title":"金馬級國片","groups":[{"name":"《陽光普照》","hint":"鍾孟宏執導的家庭劇情長片","names":["陳以文","柯淑勤","巫建和","劉冠廷"]},{"name":"《孤味》","hint":"一位母親與三位女兒的家庭故事","names":["陳淑芳","謝盈萱","徐若瑄","孫可芳"]},{"name":"《目擊者》","hint":"記者追查多年前肇事逃逸車禍","names":["莊凱勛","許瑋甯","柯佳嬿","李淳"]},{"name":"《返校》電影版","hint":"翠華中學、禁書與恐怖校園的故事","names":["王淨","曾敬驊","傅孟柏","蔡思韵"]}]},{"title":"台灣綜藝班底","groups":[{"name":"《綜藝大熱門》早期主持群","hint":"三立經典談話綜藝，包含曾經的早期主持人","names":["吳宗憲","歐漢聲","陳漢典","Lulu"]},{"name":"《天才衝衝衝》主持群","hint":"以聯想 TEMPO 等遊戲單元聞名","names":["徐乃麟","曾國城","張文綺","徐凱希"]},{"name":"《綜藝大集合》主持群","hint":"胡瓜帶隊的戶外遊戲與獎金節目","names":["胡瓜","阿翔","郭忠祐","籃籃"]},{"name":"《木曜4超玩》四大金剛時期","hint":"一日系列影片風行的 YouTube 節目","names":["邰智源","KID","溫妮","泱泱"]}]},{"title":"近年話題影集","groups":[{"name":"《影后》","hint":"演藝圈女演員的生存與友情故事","names":["謝盈萱","楊謹華","陳庭妮","謝瓊煖"]},{"name":"《做工的人》","hint":"以工地上的勞動者為主角","names":["李銘順","柯叔元","游安順","薛仕凌"]},{"name":"《我們與惡的距離》","hint":"一樁社會案件牽動媒體與律師","names":["賈靜雯","溫昇豪","吳慷仁","周采詩"]},{"name":"《誰是被害者》","hint":"鑑識官與刑警追查連環命案","names":["張孝全","許瑋甯","王識賢","李沐"]}]},{"title":"國片人物挑戰","groups":[{"name":"《鬼才之道》","hint":"新鬼如何在陰間出人頭地的恐怖喜劇","names":["陳柏霖","張榕容","王淨","姚以緹"]},{"name":"《當男人戀愛時》","hint":"一位討債男子意外愛上債務人的女兒","names":["邱澤","許瑋甯","蔡振南","鍾欣凌"]},{"name":"《總舖師》","hint":"以台灣辦桌文化為主角的電影","names":["夏于喬","楊祐寧","林美秀","喜翔"]},{"name":"《艋舺》","hint":"以萬華少年幫派為背景的電影","names":["阮經天","趙又廷","鳳小岳","王識賢"]}]},{"title":"影視終極挑戰","groups":[{"name":"《不良執念清除師》","hint":"能看見執念化身的少年踏上解謎之旅","names":["曾敬驊","宋芸樺","彭千祐","楊謹華"]},{"name":"《王子變青蛙》","hint":"失憶總裁與鄉下女孩的經典偶像劇","names":["明道","陳喬恩","王少偉","趙虹喬"]},{"name":"《她和她的她》","hint":"失憶、平行現實與創傷記憶的懸疑台劇","names":["許瑋甯","李程彬","賈靜雯","吳慷仁"]},{"name":"《終極一班》","hint":"汪大東、王亞瑟、丁小雨與雷克斯","names":["汪東城","辰亦儒","炎亞綸","唐禹哲"]}]}];
 for(const [i,r] of ROUNDS.entries()){let all=r.groups.flatMap(g=>g.names);if(all.length!==16||new Set(all).size!==16)throw Error('第'+(i+1)+'關重複人名')}
 const $=id=>document.getElementById(id);
 const randomize=a=>{let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
@@ -182,7 +167,7 @@ function modal(type){
  const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
  let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
  let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
- let p=document.createElement('p');p.textContent=type==='rules'?'每關有 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'三大主題、12 組關聯都完成了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 10 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'10 關全部完成，40 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
  if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
  if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
  let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'開始挑戰':type==='lost'?'重新挑戰這關':s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()

@@ -619,6 +619,7 @@ class CommonsSearch:
         queries = list(dict.fromkeys(q for q in queries if str(q).strip()))
         seen=set()
         busy_fallbacks=0
+        exact_errors=[]  # Preserve exact-file failures even if generic search is empty.
         # Human-curated exact Commons file titles are discovery hints only.
         # Never infer identity, rights or visual approval from this field.
         # Exact imageinfo bypasses noisy CirrusSearch and is capped at 3 files.
@@ -646,6 +647,7 @@ class CommonsSearch:
             except SourceError as exc:
                 # An unavailable exact-file lookup must not suppress normal search.
                 if mode == 'exact':
+                    exact_errors.append((exc.code, str(exc)[:160]))
                     continue
                 if exc.code != 'source_api_busy':
                     raise
@@ -665,6 +667,8 @@ class CommonsSearch:
                     format='json', formatversion=2, titles='|'.join(titles),
                     prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
             pages = data.get('query', {}).get('pages', [])
+            if mode == 'exact' and not any(page.get('imageinfo') for page in pages):
+                exact_errors.append(('exact_source_metadata_empty', 'Exact file imageinfo returned no image'))
             # A zero-result CirrusSearch is not proof that Commons has no
             # portrait. For an exact, reasonably distinctive Chinese name,
             # make ONE bounded filename-prefix lookup. Unlike an unquoted
@@ -715,6 +719,13 @@ class CommonsSearch:
                         'searchTime':now(),'width':info.get('width'),'height':info.get('height')}
         if busy_fallbacks and not seen:
             raise SourceError('source_api_busy', 'CirrusSearch busy; exact file-prefix lookups found no candidates')
+        if exact_files and not seen:
+            # Do not silently report a zero-result batch when the exact-file
+            # metadata request failed or returned no imageinfo. This does not
+            # grant identity, rights, download, or photo approval.
+            code, detail = (exact_errors[0] if exact_errors else
+                            ('exact_source_metadata_empty', 'No Commons image metadata returned'))
+            raise SourceError(code, 'Exact Commons lookup for ' + ', '.join(exact_files[:3]) + ': ' + detail)
 
 
 class EntityPortraits:

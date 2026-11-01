@@ -24,4 +24,13 @@ for e in candidates:
 for mode,bank in banks.items():
     assert all((id,mode) in seen for id in bank),mode+" hint coverage incomplete"
 print("PASS:",len(seen),"curated work hints for",len(payload["entries"]),"people")
+# Audience screening overrides must be actively respected by future expansion jobs.
+screening_file = ROOT / "expansion-1500/audience-screening-20261101.json"
+if screening_file.exists():
+    rules = json.loads(screening_file.read_text(encoding="utf-8"))
+    active_ids = {pid for bank in banks.values() for pid in bank}
+    for entry in rules["excludedFromPlayable"]:
+        assert entry["id"] not in active_ids, "Blocked by Taiwan-audience screening: " + entry["id"]
+    for entry in rules["retainedBecauseOfIndependentWorks"]:
+        assert entry["id"] in active_ids, "Protected independently recognizable actor missing: " + entry["id"]
 

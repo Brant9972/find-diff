@@ -1,0 +1,37 @@
+name: Stage Taiwan-audience celebrity roster screening
+on:
+  push:
+    branches:
+      - fix/taiwan-audience-screening-20261101
+    paths:
+      - '.github/workflows/screen-taiwan-audience-20261101.yml'
+      - 'singer/tools/screen_taiwan_audience_20261101.py'
+permissions:
+  contents: write
+jobs:
+  stage-screened-roster:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Apply reversible screening and prepare next 1500-person review queue
+        run: python singer/tools/screen_taiwan_audience_20261101.py
+      - name: Update copyright metadata audit against the selected release baseline
+        run: |
+          python singer/expansion-1500/rights_audit.py --write --main-sha 3f957189a56eee5df8ea28454f8b39f7bdd5582a
+          python singer/expansion-1500/rights_audit.py --check
+      - name: Validate playable work hints and exclusion guard
+        run: python singer/prepare_hints.py
+      - name: Preserve screened changes on work branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/actors.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/eligibility-review.json singer/prepare_hints.py singer/expansion-1500/audience-screening-removed-archive-20261101.json singer/expansion-1500/audience-screening-20261101.json singer/expansion-1500/rights-audit-20261031.json
+          git diff --cached --check
+          git commit -m "Retire three Forensic Heroes-only entries and reorganize 1500-person Taiwan-audience review queue"
+          git push origin HEAD:fix/taiwan-audience-screening-20261101

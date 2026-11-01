@@ -78021,10 +78021,73 @@
       "candidateId": "c1500-0381",
       "name": "王芷蕾",
       "status": "no_suitable_source",
-      "attempts": 0,
-      "nextRetryAt": null,
-      "candidates": [],
-      "history": [],
+      "attempts": 1,
+      "nextRetryAt": "2026-11-01T13:17:37.158274+00:00",
+      "candidates": [
+        {
+          "provider": "commons",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Jeanette_Wang.JPG/1920px-Jeanette_Wang.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Jeanette_Wang.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadVariant": "wikimedia_thumbnail_1400",
+          "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+          "filename": "Jeanette Wang.JPG",
+          "artist": "竹筍弟弟 (talk)",
+          "credit": "Own work",
+          "license": "Copyrighted free use",
+          "licenseUrl": "",
+          "caption": "The Taiwanese singer Jeanette Wang.",
+          "licenseReviewStatus": "not_checked",
+          "identityEvidence": {
+            "query": "王芷蕾",
+            "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
+            "curatedExactFileHint": true,
+            "captionAliasMatches": [],
+            "visualIdentityVerified": false
+          },
+          "recognitionEvidence": {
+            "requestedReplacement": "",
+            "representativeWorks": [
+              "台北的天空",
+              "翩翩飛起"
+            ],
+            "note": "Familiar appearance must be reviewed"
+          },
+          "searchTime": "2026-11-01T11:17:34.474659+00:00",
+          "width": 2048,
+          "height": 1536,
+          "id": "adfce18c9d8073067687",
+          "personId": "t1500_0381",
+          "discoveryRunId": "20261101T111732Z-b1c78379",
+          "rightsStatus": "needs_review",
+          "eligibleForLive": false,
+          "humanReview": null,
+          "status": "metadata_only",
+          "warnings": [
+            "Identity, iconic appearance, eyes/occlusion and watermark require human review",
+            "No name-bearing caption/article/entity evidence: image not downloaded"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-01T11:17:34.339983+00:00",
+          "provider": "commons",
+          "attempt": 1,
+          "finishedAt": "2026-11-01T11:17:37.158247+00:00"
+        },
+        {
+          "time": "2026-11-01T11:17:37.158264+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+              "code": "identity_unconfirmed",
+              "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 1
+        }
+      ],
       "legacyRecord": {
         "questionId": "t1500_0381",
         "name": "王芷蕾",
@@ -78042,11 +78105,24 @@
         "error": "No suitable licensed Wikipedia portrait found"
       },
       "lastFailure": {
-        "code": "legacy_failure",
-        "message": "No suitable licensed Wikipedia portrait found",
-        "retryable": true
+        "code": "no_suitable_source",
+        "retryable": true,
+        "message": "See lastErrors"
       },
-      "lastRunNewCandidateIds": []
+      "lastRunNewCandidateIds": [],
+      "lastRunId": "20261101T111732Z-b1c78379",
+      "lastSearchRevision": 4,
+      "lastAttemptAt": "2026-11-01T11:17:34.272679+00:00",
+      "lastErrors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+          "code": "identity_unconfirmed",
+          "message": "Search result alone does not establish depicted identity"
+        }
+      ],
+      "updatedAt": "2026-11-01T11:17:37.158285+00:00",
+      "workerFinishedAt": "2026-11-01T11:17:37.160624+00:00"
     },
     "t1500_0094": {
       "personId": "t1500_0094",

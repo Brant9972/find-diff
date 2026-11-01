@@ -1,16 +1,16 @@
 {
-  "runId": "20261101T103422Z-3384dc0a",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261101T103422Z-3384dc0a/review-index.json",
+  "runId": "20261101T111732Z-b1c78379",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261101T111732Z-b1c78379/review-index.json",
   "summary": {
-    "runId": "20261101T103422Z-3384dc0a",
-    "generatedAt": "2026-11-01T10:34:23.085574+00:00",
-    "scannedPeople": 0,
+    "runId": "20261101T111732Z-b1c78379",
+    "generatedAt": "2026-11-01T11:17:37.562376+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 416,
     "pendingReviewPeople": 2,
-    "licenseConcernCandidates": 352,
+    "licenseConcernCandidates": 353,
     "statusCounts": {
       "no_suitable_source": 243,
       "download_failed": 167,
@@ -20,7 +20,7 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 324,
+      "identity_unconfirmed": 325,
       "image_validation_failed": 118,
       "network_error": 247,
       "source_api_busy": 69,
@@ -33,9 +33,23 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "identity_unconfirmed": 1
+    },
     "manualCropSources": 12,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "identity_unconfirmed": 1
+        }
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

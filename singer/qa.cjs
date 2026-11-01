@@ -22,6 +22,17 @@ const realHints=JSON.parse(fs.readFileSync(path.join(__dirname,"hints.json")));
 for(const q of realQuestions)assert(realHints.entries[q.id]?.singer?.title,"Missing singer work hint: "+q.id);
 const actorBank=JSON.parse(fs.readFileSync(path.join(__dirname,"actors.json")));
 const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
+const audienceScreen=JSON.parse(fs.readFileSync(path.join(__dirname,"expansion-1500/audience-screening-20261101.json")));
+assert.equal(audienceScreen.liveSummary.newUniqueById,1077,"Audience screening expected 1077 playable unique people on this release");
+for(const excluded of audienceScreen.excludedFromPlayable){
+ assert(!actorBank.questions.some(q=>q.id===excluded.id),"Audience-deferred artist reappeared as actor: "+excluded.id);
+ assert(!actorRoster.some(q=>q.id===excluded.id),"Audience-deferred artist still in actor roster: "+excluded.id);
+ assert(!realHints.entries[excluded.id]?.actor,"Audience-deferred artist still has active work hint: "+excluded.id);
+}
+for(const retained of audienceScreen.retainedBecauseOfIndependentWorks){
+ assert(actorBank.questions.some(q=>q.id===retained.id),"Independently-recognized actor was wrongly excluded: "+retained.id);
+ assert.equal(realHints.entries[retained.id].actor.title,retained.independentWork,"Protected actor's independent work changed: "+retained.id);
+}
 assert.equal(actorBank.playable,actorBank.questions.length);
 assert(actorBank.playable<=1000);
 assert(actorBank.playable>=20,"Actor mode needs at least 20 playable portraits");

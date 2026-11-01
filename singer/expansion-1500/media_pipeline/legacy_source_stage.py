@@ -100,8 +100,36 @@ def stage(request, output):
     thumb = image.copy()
     thumb.thumbnail((500, 667))
     thumb.save(output / "source-preview.jpg", "JPEG", quality=72)
-    box, face_count = draft_face_box(image)
-    reveal = render_drafts(image, box, output) if box else None
+    # Crop geometry was selected against the actual original photo, not a face
+    # detector guess.  It remains an unapproved draft until five-stage QA.
+    box = item["cropBox"]
+    if len(box) != 4 or any(type(v) is not int for v in box):
+        raise ValueError("Four integer source-pixel crop coordinates required")
+    x0, y0, x1, y1 = box
+    if not (0 <= x0 < x1 <= image.width and 0 <= y0 < y1 <= image.height):
+        raise ValueError("Crop outside source pixels")
+    if (x1 - x0) * 6 != (y1 - y0) * 5:
+        raise ValueError("Crop aspect ratio must be 5:6")
+    reveal = item["reveal"]
+    keys = ("eyes", "nose", "mouth", "chin", "full")
+    if set(reveal) != set(keys) or reveal["full"] != [0, 0, 1, 1]:
+        raise ValueError("All five stages are required")
+    for k in keys[:-1]:
+        v = reveal[k]
+        if len(v) != 4 or not all(isinstance(t, (int, float)) for t in v) or not (0 <= v[0] < v[2] <= 1 and 0 <= v[1] < v[3] <= 1):
+            raise ValueError("Invalid reveal: " + k)
+    for a, b in zip(keys[:-2], keys[1:-1]):
+        p, q = reveal[a], reveal[b]
+        if not (q[0] <= p[0] and q[1] <= p[1] and q[2] >= p[2] and q[3] >= p[3]):
+            raise ValueError("Stages must expand without hiding earlier features")
+    crop = image.crop(tuple(box)).resize((600, 720), Image.Resampling.LANCZOS)
+    crop.save(output / "draft-600x720.jpg", "JPEG", quality=94, subsampling=0)
+    for name, rect in reveal.items():
+        bg = Image.new("RGB", crop.size, "#17151f")
+        a, b, d, e = [round(v * scale) for v, scale in zip(rect, (600, 720, 600, 720))]
+        bg.paste(crop.crop((a, b, d, e)), (a, b))
+        bg.save(output / (name + ".png"))
+    face_count = "not_used_manual_geometry"
     report = {
         "releaseGate": RELEASE_GATE, "person": item["person"], "bankId": item["bankId"],
         "commonsPage": item["commonsPage"], "sourceUrl": url,
@@ -116,6 +144,16 @@ def stage(request, output):
     (output / "staging-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # Small original-pixel preview, suitable for direct inspection from job logs.
     preview = (output / "source-preview.jpg").read_bytes()
+    # Export the exact staged crop and the five masks in the log for human QA.
+    sheet = Image.new("RGB", (3 * 240, 2 * 318), "#17151f")
+    for i, name in enumerate(("eyes", "nose", "mouth", "chin", "full", "draft-600x720")):
+        fn = output / (name + (".jpg" if name == "draft-600x720" else ".png"))
+        tile = Image.open(fn).convert("RGB").resize((240, 288), Image.Resampling.LANCZOS)
+        sheet.paste(tile, ((i % 3) * 240, (i // 3) * 318 + 30))
+        ImageDraw.Draw(sheet).text(((i % 3) * 240 + 8, (i // 3) * 318 + 8), name, fill="white")
+    sheet_bytes = io.BytesIO()
+    sheet.save(sheet_bytes, "JPEG", quality=78)
+    print("LEGACY_FIVE_STAGE_SHEET_BASE64 " + base64.b64encode(sheet_bytes.getvalue()).decode(), flush=True)
     print("LEGACY_SOURCE_REPORT " + json.dumps(report, ensure_ascii=False), flush=True)
     print("LEGACY_SOURCE_PREVIEW_BASE64 " + base64.b64encode(preview).decode(), flush=True)
     return report

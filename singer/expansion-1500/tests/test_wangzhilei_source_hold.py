@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from media_pipeline.sources import rights
+from media_pipeline.sources import identity, rights
 
 
 class WangZhileiSourceHoldTests(unittest.TestCase):
@@ -28,6 +28,10 @@ class WangZhileiSourceHoldTests(unittest.TestCase):
                          '20261101-wangzhilei-english-caption-q9066613')
         self.assertNotEqual(self.person['photoStatus'], 'published')
         self.assertEqual(self.person['qaStatus'], 'not_releasable')
+
+    def test_exact_english_filename_matches_verified_alias(self):
+        self.assertIn('Jeanette Wang', identity(self.person, 'Jeanette Wang.JPG'))
+        self.assertNotIn('Jeanette Wang', identity(self.person, 'Cher Wang at WEF.jpg'))
 
     def test_rights_not_automatically_promoted(self):
         p = self.review['person']

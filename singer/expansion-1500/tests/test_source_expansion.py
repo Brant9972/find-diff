@@ -292,23 +292,26 @@ class HTTPFailureBoundTest(unittest.TestCase):
         opener.open.side_effect = [
             urllib.error.HTTPError(thumbnail, 403, 'Thumbnail forbidden', Message(), None),
             Response(b'original Wikimedia pixels'),
+            Response(b'original Wikimedia pixels'),
         ]
         client = HTTP(attempts=1, interval=0, timeout=2)
         with mock.patch('media_pipeline.sources.urllib.request.build_opener', return_value=opener):
             with self.assertRaises(SourceError) as refused:
                 client.get(thumbnail)
             self.assertEqual(refused.exception.code, 'http_403')
-            # Normal requests remain blocked to prevent repeated host-wide 403s.
+            # The denied thumbnail itself is cached as refused; a different
+            # URL on the same Commons host must remain reachable.
             with self.assertRaises(SourceError):
-                client.get(original)
+                client.get(thumbnail)
             self.assertEqual(opener.open.call_count, 1)
-            # Only the explicitly selected Commons original may bypass that
-            # circuit; it is a different URL and still must be licensed/reviewed.
+            self.assertEqual(client.get(original), b'original Wikimedia pixels')
+            self.assertEqual(opener.open.call_count, 2)
+            # The explicit original-file fallback remains compatible.
             self.assertEqual(
                 client.get(original, allow_wikimedia_original_retry=True),
                 b'original Wikimedia pixels',
             )
-            self.assertEqual(opener.open.call_count, 2)
+            self.assertEqual(opener.open.call_count, 3)
             self.assertNotIn('upload.wikimedia.org', client.blocked_hosts)
             with self.assertRaises(SourceError) as wrong_host:
                 client.get('https://example.org/photo.jpg', allow_wikimedia_original_retry=True)

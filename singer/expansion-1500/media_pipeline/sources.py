@@ -235,6 +235,10 @@ class HTTP:
         self.last = {}
         self.timeout = max(.01, timeout)
         self.denied_hosts = set()
+        # A single Wikimedia thumbnail can return 403 while another file on
+        # the same upload host is accessible. Keep these refusals URL-scoped;
+        # a 429 or a proxy-level refusal still blocks the whole host.
+        self.blocked_upload_urls = set()
         # May be shared by concurrent workers. Each worker still owns its time budget.
         self.blocked_hosts = blocked_hosts if blocked_hosts is not None else {}
         self.verified_identities = {}
@@ -279,6 +283,8 @@ class HTTP:
         if params:
             url += ('&' if '?' in url else '?') + urllib.parse.urlencode(params)
         host = public_https(url)
+        if host == 'upload.wikimedia.org' and url in self.blocked_upload_urls:
+            raise SourceError('http_403', 'This exact Wikimedia upload URL refused earlier in the batch')
         # Commons thumbnail and original URLs often share upload.wikimedia.org.
         # A 403 on one thumbnail path must not make the *one* original-file
         # fallback unreachable. Never bypass a 429, proxy refusal, or any
@@ -327,9 +333,14 @@ class HTTP:
                     return bytes(data)
             except urllib.error.HTTPError as exc:
                 if exc.code in {403, 429}:
-                    self.blocked_hosts[host] = {'code': 'http_' + str(exc.code),
-                        'reason': 'Source refused/rate-limited this batch: ' + str(exc),
-                        'until': time.monotonic() + self._retry_after(exc.headers) if exc.code == 429 else None}
+                    if exc.code == 403 and host == 'upload.wikimedia.org':
+                        # A denied thumb path is not evidence that all other
+                        # Commons images (or its original) are inaccessible.
+                        self.blocked_upload_urls.add(url)
+                    else:
+                        self.blocked_hosts[host] = {'code': 'http_' + str(exc.code),
+                            'reason': 'Source refused/rate-limited this batch: ' + str(exc),
+                            'until': time.monotonic() + self._retry_after(exc.headers) if exc.code == 429 else None}
                     raise SourceError('http_' + str(exc.code), str(exc)) from exc
                 if exc.code not in {500, 502, 503, 504} or attempt + 1 == self.attempts:
                     raise SourceError('http_' + str(exc.code), str(exc)) from exc

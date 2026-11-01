@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0845-wikimedia403-qid-diagnostic6-fixed",
+  "requestId": "20261101T0847-exact-q5-commonswiki-403-diagnostic6",
   "mode": "search",
   "targetPeople": 6,
   "plannedPersonIds": [
@@ -20,5 +20,5 @@
   "maxMinutes": 15,
   "personSeconds": 90,
   "maxCandidates": 2,
-  "purpose": "DRAFT ONLY, no main, no Pages, no creators: six selectedNew with QID/precise Commons hints after upload URL-scoped 403 fix. Review identity, rights and five-stage pixels separately; do not auto approve."
+  "purpose": "DRAFT ONLY, no main, no Pages, no creators: six selectedNew using exact Q5 pinned QID, commonswiki category-sitelink, and exact Commons filename hints after URL-scoped Wikimedia 403 fix. Check actual metadata, download errors, source caption, rights and five-stage pixels separately; never auto approve."
 }

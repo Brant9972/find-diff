@@ -4,6 +4,10 @@ import unittest
 from pathlib import Path
 from urllib.parse import quote
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from media_pipeline.sources import source_key, excluded_commons_keys
+
 ROOT = Path(__file__).resolve().parents[1]
 FILE = (
     '學者管中祥與歌手林生祥參加20120901反媒體壟斷大遊行 '
@@ -12,13 +16,16 @@ FILE = (
 
 
 class LinShengXiangSourceGuardTest(unittest.TestCase):
-    def test_only_verified_exact_source_is_queued_and_remains_unapproved(self):
+    def test_cluttered_exact_source_is_excluded_and_person_remains_eligible(self):
         plan = json.loads((ROOT / 'release-plan-20261028.json').read_text(encoding='utf-8'))
         person = next(p for p in plan['selectedNew'] if p['plannedQuestionId'] == 't1500_0106')
         self.assertEqual(person['name'], '林生祥')
         self.assertEqual(person['wikidataId'], 'Q8986967')
-        self.assertEqual(person['reviewExactCommonsFiles'], [FILE])
-        self.assertIn('two people', person['reviewReason'])
+        self.assertNotIn(FILE, person['reviewExactCommonsFiles'])
+        source = 'https://commons.wikimedia.org/wiki/File:' + quote(FILE.replace(' ', '_'))
+        self.assertIn(source_key(source), excluded_commons_keys(person))
+        self.assertIn('2026-11-02 additional source-only visual screening', person['reviewReason'])
+        self.assertIn('CC BY-SA 2.0', person['reviewReason'])
         self.assertFalse(person['imageVerification']['finalCropReviewed'])
         self.assertFalse(person['imageVerification']['rightsDocumented'])
         self.assertNotEqual(person['photoStatus'], 'published')

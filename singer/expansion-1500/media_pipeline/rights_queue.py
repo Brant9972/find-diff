@@ -64,26 +64,62 @@ def build_queue(banks, limit=None):
         entries.sort(key=lambda x: (BANKS.index(x["bank"]), x["id"]))
         n_no_license = sum(not e["declaredOpenLicense"] for e in entries)
         n_no_human = sum(not e["humanReviewedFlag"] for e in entries)
-        n_no_source = sum(not e["source"] for e in entries)
-        n_no_author = sum(not e["author"] for e in entries)
-        # Rights gap first, then unreviewed portraits. Count every bank entry:
-        # a person is not complete when only one of their portraits is checked.
-        priority = (n_no_license * 100 + n_no_human * 20 + n_no_source * 5 + n_no_author)
+        # Same photo path AND identical rights provenance across banks represents
+        # one asset to investigate, but each bank entry still needs a valid link.
+        # Divergent provenance for the same path must NOT be silently coalesced.
+        asset_map = defaultdict(list)
+        for entry in entries:
+            key = (entry["photo"], entry["source"], entry["author"],
+                   entry["declaredLicense"])
+            asset_map[key].append(entry)
+        assets = []
+        for (photo, source, author, license_label), references in sorted(asset_map.items()):
+            gaps = sorted({gap for ref in references for gap in ref["metadataGaps"]})
+            assets.append({
+                "photo": photo,
+                "source": source,
+                "author": author,
+                "declaredLicense": license_label,
+                "bankReferences": [{"bank": ref["bank"], "id": ref["id"]}
+                                   for ref in references],
+                "metadataGaps": gaps,
+                "independentlyCertified": False,
+            })
+        photo_provenance = defaultdict(set)
+        for photo, source, author, license_label in asset_map:
+            photo_provenance[photo].add((source, author, license_label))
+        conflicts = sum(len(provenance) > 1 for provenance in photo_provenance.values())
+        # Prioritize distinct evidence units rather than counting a reused
+        # photo twice. Inconsistent attribution for one path is a higher risk.
+        n_no_license_assets = sum("no_declared_open_license" in a["metadataGaps"] for a in assets)
+        n_no_human_assets = sum("human_review_flag_missing" in a["metadataGaps"] for a in assets)
+        n_no_source_assets = sum("source_url_missing" in a["metadataGaps"] for a in assets)
+        n_no_author_assets = sum("author_metadata_missing" in a["metadataGaps"] for a in assets)
+        priority = (conflicts * 200 + n_no_license_assets * 100 +
+                    n_no_human_assets * 20 + n_no_source_assets * 5 +
+                    n_no_author_assets)
         people.append({
             "name": name,
             "priorityScore": priority,
             "bankEntryCount": len(entries),
             "unlicensedMetadataEntries": n_no_license,
             "unreviewedFlagEntries": n_no_human,
+            "distinctPhotoAssetUnits": len(assets),
+            "reusedBankEntryReferences": len(entries) - len(assets),
+            "attributionConflictsForSamePhoto": conflicts,
+            "assetUnits": assets,
             "entries": entries,
             "independentlyCertified": False,
         })
     people.sort(key=lambda p: (-p["priorityScore"], -p["bankEntryCount"], p["name"]))
     total_people = len(people)
     return {
-        "warning": "Metadata-only triage, not rights approval or five-stage certification; existing playable entries remain unchanged.",
+        "warning": "Metadata-only triage by distinct photo/provenance, not rights approval or five-stage certification; all bank references remain independently accountable and existing playable entries unchanged.",
         "totalPeopleByCanonicalName": total_people,
         "totalEntries": len(ids),
+        "distinctPhotoAssetUnits": sum(p["distinctPhotoAssetUnits"] for p in people),
+        "reusedBankEntryReferences": sum(p["reusedBankEntryReferences"] for p in people),
+        "peopleWithAttributionConflictsForSamePhoto": sum(p["attributionConflictsForSamePhoto"] > 0 for p in people),
         "entryMetadataGapCounts": dict(sorted(entry_totals.items())),
         "peopleWithNoDeclaredOpenLicenseInAtLeastOneBank": sum(p["unlicensedMetadataEntries"] > 0 for p in people),
         "peopleWithNoHumanFlagInAtLeastOneBank": sum(p["unreviewedFlagEntries"] > 0 for p in people),

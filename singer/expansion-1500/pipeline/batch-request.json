@@ -1,17 +1,15 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0842-wikimedia403-qid-diagnostic8-fixed",
+  "requestId": "20261101T0845-wikimedia403-qid-diagnostic6-fixed",
   "mode": "search",
-  "targetPeople": 8,
+  "targetPeople": 6,
   "plannedPersonIds": [
     "t1500_0007",
     "t1500_0092",
     "t1500_0093",
     "t1500_0094",
-    "t1500_0433",
     "t1500_0457",
-    "t1500_0583",
-    "t1500_0588"
+    "t1500_0583"
   ],
   "retryFailed": true,
   "providers": [
@@ -22,5 +20,5 @@
   "maxMinutes": 15,
   "personSeconds": 90,
   "maxCandidates": 2,
-  "purpose": "DRAFT ONLY: 8 existing QID-pinned selectedNew people after URL-scoped Wikimedia thumbnail 403 fix; measure actual metadata/download failures, reject homonyms, do not approve or deploy."
+  "purpose": "DRAFT ONLY, no main, no Pages, no creators: six selectedNew with QID/precise Commons hints after upload URL-scoped 403 fix. Review identity, rights and five-stage pixels separately; do not auto approve."
 }

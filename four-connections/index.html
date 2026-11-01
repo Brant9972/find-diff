@@ -32,8 +32,8 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
 .c0{background:#e8ca7c}.c1{background:#add0d8}.c2{background:#b9b0ed}.c3{background:#91d0ae}
 .board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(6px,1.7vw,10px);margin-bottom:12px}
 .tile{min-width:0;min-height:clamp(59px,17vw,82px);padding:5px 2px;background:var(--tile);border:1px solid #b4c6ed1c;border-bottom:3px solid #101729aa;border-radius:12px;color:#f5f7ff;font-size:clamp(12px,3.7vw,17px);font-weight:850;line-height:1.25;transition:transform .12s,background .1s}
-.tile:active{transform:scale(.97)}.tile[aria-pressed=true]{background:var(--active);border-color:#d9ccff94;box-shadow:0 4px 14px #8f72ff42;transform:translateY(-2px)}
-.feedback{min-height:29px;text-align:center;color:#e0d9f5;font-weight:750;font-size:12px;line-height:1.45;margin-bottom:9px}
+.tile{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}.tile.dragging{z-index:8;opacity:.9;cursor:grabbing;transition:none!important;box-shadow:0 15px 30px #0009;border-color:#dfd6ff}.tile.drop-target{outline:3px solid #90e5d4;outline-offset:-3px;background:#364662}.tile:active{transform:scale(.97)}.tile[aria-pressed=true]{background:var(--active);border-color:#d9ccff94;box-shadow:0 4px 14px #8f72ff42;transform:translateY(-2px)}
+.drag-guide{display:flex;justify-content:space-between;gap:8px;margin:0 2px 9px;font-size:11px;color:#aebcda}.drag-guide strong{color:#c9b8ff}.feedback{min-height:29px;text-align:center;color:#e0d9f5;font-weight:750;font-size:12px;line-height:1.45;margin-bottom:9px}
 .feedback.bad{color:#ffb0a5}.feedback.good{color:#9ce4c8}
 .actions{display:grid;grid-template-columns:1fr 1fr 1.32fr;gap:8px}
 .btn{border:1px solid #46516a;background:#1b2943;color:#ecf1ff;border-radius:12px;padding:12px 6px;min-height:46px;font-size:13px;font-weight:850}
@@ -66,14 +66,15 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
   <div id="progress" class="progress"></div>
   <div class="heading"><span id="roundTitle"></span><span id="found"></span></div>
   <div id="groups" class="groups" aria-live="polite"></div>
-  <div id="board" class="board" aria-label="選擇四個名字"></div>
+  <div class="drag-guide"><span>☝ 點一下選人</span><span><strong>⠿ 按住拖動</strong>，交換位置</span></div>
+  <div id="board" class="board" aria-label="點選或拖曳名字，將四人排成一組"></div>
   <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
   <div class="actions">
     <button id="shuffle" class="btn" type="button">↻ 洗牌</button>
     <button id="hint" class="btn" type="button">✦ 提示 −25</button>
     <button id="submit" class="btn primary" type="button" disabled>送出答案 (0/4)</button>
   </div>
-  <p class="note">正確 +100 分｜答錯 −15 分｜提示 −25 分<br>每關最多可錯 4 次；手機、電腦都能玩，無須登入。</p>
+  <p class="note">可自由排列方塊，整理順序不扣分。<br>正確 +100 分｜答錯 −15 分｜提示 −25 分<br>每關最多可錯 4 次；手機、電腦都能玩，無須登入。</p>
   <div class="extra"><button id="restart" class="link" type="button">重新開始整個遊戲</button> · <button id="rules" class="link" type="button">遊戲規則</button></div>
 </main>
 <div id="modalHost" class="modalhost"></div>
@@ -105,9 +106,68 @@ function render(){
  const r=ROUNDS[s.round];$('level').textContent=(s.round+1)+' / '+ROUNDS.length;$('score').textContent=s.score;$('hearts').textContent=('♥ '.repeat(s.tries)).trim()||'—';$('roundTitle').textContent='第 '+(s.round+1)+' 關 · '+r.title;$('found').textContent='找出 '+s.solved.length+' / 4 組';
  $('progress').innerHTML=Array.from({length:4},(_,i)=>'<i class="'+(i<s.solved.length?'on':'')+'"></i>').join('');
  const g=$('groups');g.replaceChildren();s.solved.forEach(j=>{let el=document.createElement('div');el.className='group c'+j;let strong=document.createElement('strong'),small=document.createElement('span');strong.textContent=r.groups[j].name;small.textContent=r.groups[j].names.join(' · ');el.append(strong,small);g.append(el)});
- let b=$('board');b.replaceChildren();s.tiles.forEach(t=>{if(s.solved.includes(t.g))return;let e=document.createElement('button');e.type='button';e.className='tile';e.textContent=t.n;e.setAttribute('aria-pressed',String(s.selected.includes(t.id)));e.addEventListener('click',()=>choose(t.id));b.append(e)});
+ let b=$('board');b.replaceChildren();s.tiles.forEach(t=>{if(s.solved.includes(t.g))return;let e=document.createElement('button');e.type='button';e.className='tile';e.textContent=t.n;e.dataset.tileId=t.id;e.setAttribute('aria-pressed',String(s.selected.includes(t.id)));e.addEventListener('click',()=>{if(Date.now()<suppressClickUntil)return;choose(t.id)});b.append(e)});
  $('submit').disabled=s.selected.length!==4||s.done;$('submit').textContent='送出答案 ('+s.selected.length+'/4)';$('shuffle').disabled=s.done;$('hint').disabled=s.done||s.hints.length>=4;
 }
+// Pointer-based drag-and-swap works with touchscreens, mice and pens.
+let drag=null,suppressClickUntil=0;
+const boardEl=$('board');
+function targetAt(x,y){
+ const rect=boardEl.getBoundingClientRect();
+ if(x<rect.left-18||x>rect.right+18||y<rect.top-18||y>rect.bottom+18)return null;
+ if(!drag)return null;
+ const moving=drag.el,previous=moving.style.pointerEvents;
+ moving.style.pointerEvents='none';
+ const hit=document.elementFromPoint(x,y);
+ moving.style.pointerEvents=previous;
+ const tile=hit&&hit.closest('.tile');
+ if(tile&&boardEl.contains(tile)&&tile!==moving)return tile.dataset.tileId;
+ let nearest=null,best=Infinity;
+ for(const el of boardEl.querySelectorAll('.tile')){
+   if(el===moving)continue;
+   const r=el.getBoundingClientRect();
+   const distance=Math.hypot(x-r.left-r.width/2,y-r.top-r.height/2);
+   if(distance<best){best=distance;nearest=el}
+ }
+ return nearest?nearest.dataset.tileId:null;
+}
+function markDrop(id){
+ boardEl.querySelectorAll('.drop-target').forEach(el=>el.classList.remove('drop-target'));
+ if(id){const el=Array.from(boardEl.querySelectorAll('.tile')).find(el=>el.dataset.tileId===id);if(el)el.classList.add('drop-target')}
+}
+boardEl.addEventListener('pointerdown',e=>{
+ if(s.done||(e.pointerType==='mouse'&&e.button!==0))return;
+ const el=e.target.closest('.tile');
+ if(!el||!boardEl.contains(el))return;
+ drag={pointerId:e.pointerId,id:el.dataset.tileId,el,startX:e.clientX,startY:e.clientY,moving:false,targetId:null};
+ try{el.setPointerCapture(e.pointerId)}catch(_){}
+});
+boardEl.addEventListener('pointermove',e=>{
+ if(!drag||e.pointerId!==drag.pointerId)return;
+ const dx=e.clientX-drag.startX,dy=e.clientY-drag.startY;
+ if(!drag.moving&&Math.hypot(dx,dy)<10)return;
+ if(!drag.moving){drag.moving=true;drag.el.classList.add('dragging');say('放到另一個名字上，就能交換兩人的位置')}
+ drag.el.style.transform='translate('+dx+'px, '+dy+'px) scale(1.05)';
+ const id=targetAt(e.clientX,e.clientY);
+ if(drag.targetId!==id){drag.targetId=id;markDrop(id)}
+});
+function finishDrag(e,cancel=false){
+ if(!drag||e.pointerId!==drag.pointerId)return;
+ const d=drag;
+ if(d.moving){
+   suppressClickUntil=Date.now()+350;
+   let target=cancel?null:targetAt(e.clientX,e.clientY);
+   if(target&&target!==d.id){
+     const a=s.tiles.findIndex(t=>t.id===d.id),b=s.tiles.findIndex(t=>t.id===target);
+     if(a!==-1&&b!==-1){[s.tiles[a],s.tiles[b]]=[s.tiles[b],s.tiles[a]];say('已交換位置，可以繼續整理或直接選四人送出','good')}
+   } else if(!cancel){say('放在其他方塊上，就能交換位置')}
+ }
+ drag=null;
+ markDrop(null);
+ if(d.moving){d.el.style.transform='';d.el.classList.remove('dragging');render()}
+}
+boardEl.addEventListener('pointerup',e=>finishDrag(e));
+boardEl.addEventListener('pointercancel',e=>finishDrag(e,true));
 function choose(id){if(s.done)return;const i=s.selected.indexOf(id);if(i>=0)s.selected.splice(i,1);else if(s.selected.length<4)s.selected.push(id);else{say('最多選 4 人，請先取消一個','bad');return}render()}
 function submit(){
  if(s.selected.length!==4||s.done)return;
@@ -122,7 +182,7 @@ function modal(type){
  const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
  let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
  let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
- let p=document.createElement('p');p.textContent=type==='rules'?'每關有 16 人，分成四組，每組四人。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'三大主題、12 組關聯都完成了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ let p=document.createElement('p');p.textContent=type==='rules'?'每關有 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'三大主題、12 組關聯都完成了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
  if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
  if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
  let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'開始挑戰':type==='lost'?'重新挑戰這關':s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()

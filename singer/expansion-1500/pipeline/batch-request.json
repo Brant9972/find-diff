@@ -1,16 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-stop-wangzhilei-noncc-retry",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261101-zhanghuaichiu-exact-commons-diagnostic",
+  "mode": "diagnostic",
+  "targetPeople": 1,
+  "plannedPersonIds": [
+    "t1500_0445"
+  ],
+  "retryFailed": true,
   "providers": [
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 10,
-  "personSeconds": 30,
+  "maxMinutes": 8,
+  "personSeconds": 75,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN, NO DEPLOY: stop repeating Wang Zhilei exact-file search after identity was confirmed but non-CC rights remain pending. Preserve existing source-only evidence; do not auto-crop or approve. Resume with different licensed sources or independent rights proof."
+  "purpose": "DRAFT ONLY; no main; no deploy. One-person exact Commons source diagnostic for Zhang Huai-chiu Q9138397; CC BY-SA 3.0 source is metadata-only, requires actual 600x720 five-stage human review and second-face/microphone exclusion before approval. No broad failed 20/40/200 repeat."
 }

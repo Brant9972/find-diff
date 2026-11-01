@@ -1,16 +1,23 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-stop-rejected-zhanghuaichiu-exact-file",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
+  "requestId": "20261101-five-new-qid-native-name-diagnostic",
+  "mode": "search",
+  "targetPeople": 5,
+  "plannedPersonIds": [
+    "t1500_0007",
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094",
+    "t1500_0388"
+  ],
   "retryFailed": false,
   "providers": [
+    "entity",
     "commons"
   ],
-  "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 75,
-  "maxCandidates": 1,
-  "purpose": "DRAFT ONLY; no main; no deploy. Exact File:大嘴巴懷秋.JPG was rejected on 2026-10-21 for closed eyes (photo-review.json a839); stop repeat searches. Preserve existing review assets without modifying production. Next source must be a DIFFERENT licensed open-eyed portrait."
+  "workers": 2,
+  "maxMinutes": 15,
+  "personSeconds": 80,
+  "maxCandidates": 2,
+  "purpose": "DRAFT ONLY; no main or deploy. Five distinct selectedNew performers, not the rejected 20/40/200 batches. Validate exact QID/native-name and Commons source stages after PR #137, preserve full errors and any five-stage review assets. No source metadata is human approval."
 }

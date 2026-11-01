@@ -60,5 +60,39 @@ class RightsQueueTest(unittest.TestCase):
             build_queue(banks, limit=-1)
 
 
+    def test_same_photo_reused_in_two_banks_counts_one_evidence_unit(self):
+        a = row("甲", "s1", license="Copyright retained", human=False)
+        b = row("甲", "a1", license="Copyright retained", human=False)
+        b["photo"] = a["photo"]
+        banks = {"questions.json": [a], "actors.json": [b], "variety.json": []}
+        report = build_queue(banks)
+        self.assertEqual(report["totalEntries"], 2)
+        self.assertEqual(report["distinctPhotoAssetUnits"], 1)
+        self.assertEqual(report["reusedBankEntryReferences"], 1)
+        person = report["queue"][0]
+        self.assertEqual(person["priorityScore"], 120)
+        self.assertEqual(person["unlicensedMetadataEntries"], 2)
+        self.assertEqual(person["distinctPhotoAssetUnits"], 1)
+        self.assertEqual(len(person["assetUnits"][0]["bankReferences"]), 2)
+        self.assertFalse(person["assetUnits"][0]["independentlyCertified"])
+
+    def test_distinct_photos_and_conflicting_rights_are_never_coalesced(self):
+        a = row("甲", "s1", license="Copyright retained", human=False)
+        b = row("甲", "a1", license="CC BY 4.0", human=True)
+        b["photo"] = a["photo"]
+        banks = {"questions.json": [a], "actors.json": [b], "variety.json": []}
+        report = build_queue(banks)
+        person = report["queue"][0]
+        self.assertEqual(person["distinctPhotoAssetUnits"], 2)
+        self.assertEqual(person["attributionConflictsForSamePhoto"], 1)
+        self.assertEqual(report["peopleWithAttributionConflictsForSamePhoto"], 1)
+        self.assertEqual(person["priorityScore"], 320)
+        b["photo"] = "photos/different.jpg"
+        report = build_queue(banks)
+        self.assertEqual(report["queue"][0]["distinctPhotoAssetUnits"], 2)
+        self.assertEqual(report["queue"][0]["attributionConflictsForSamePhoto"], 0)
+        self.assertEqual(report["queue"][0]["priorityScore"], 120)
+
+
 if __name__ == "__main__":
     unittest.main()

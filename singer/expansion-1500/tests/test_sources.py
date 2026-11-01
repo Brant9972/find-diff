@@ -122,12 +122,29 @@ class SourcesTest(unittest.TestCase):
                     raise SourceError('http_403', 'Exact lookup temporarily refused')
                 return {'query': {'pages': []}}
         api = Refusal()
-        self.assertEqual(list(CommonsSearch().search({
-            'name': '羅蘭', 'reviewExactCommonsFiles': [
-                '../unrelated.jpg', 'File:羅蘭.jpg'],
-        }, api)), [])
+        with self.assertRaises(SourceError) as error:
+            list(CommonsSearch().search({
+                'name': '羅蘭', 'reviewExactCommonsFiles': [
+                    '../unrelated.jpg', 'File:羅蘭.jpg'],
+            }, api))
+        self.assertEqual(error.exception.code, 'http_403')
+        self.assertIn('羅蘭.jpg', str(error.exception))
         self.assertEqual(api.calls[0]['titles'], 'File:羅蘭.jpg')
         self.assertTrue(any(p.get('generator') == 'search' for p in api.calls))
+
+    def test_exact_commons_missing_imageinfo_is_reported_not_silently_zero(self):
+        class MissingImage:
+            def json(self, url, **params):
+                if params.get('titles'):
+                    return {'query': {'pages': [{'title': 'File:測試人物.jpg', 'missing': True}]}}
+                return {'query': {'pages': []}}
+        with self.assertRaises(SourceError) as error:
+            list(CommonsSearch().search({
+                'name': '測試人物',
+                'reviewExactCommonsFiles': ['測試人物.jpg'],
+            }, MissingImage()))
+        self.assertEqual(error.exception.code, 'exact_source_metadata_empty')
+        self.assertIn('測試人物.jpg', str(error.exception))
 
     def test_openverse_preserves_original_landing_page_and_rights_warning(self):
         class API:

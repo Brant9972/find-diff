@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 
 BANKS = ("questions.json", "actors.json", "variety.json")
-OPEN = re.compile(r"^(?:CC0|CC BY(?:-SA)? [0-9]+(?:\.[0-9]+)?|Public domain|PD)$", re.I)
+OPEN = re.compile(r"^(?:CC0(?: 1\.0)?|CC BY(?:-SA)? (?:2\.0|2\.5|3\.0|4\.0)|Public domain|PD)$", re.I)
 
 
 def report(banks, limit=None):
@@ -19,6 +19,10 @@ def report(banks, limit=None):
         raise ValueError("limit must be nonnegative")
     people = defaultdict(list)
     seen = set()
+    id_names = defaultdict(set)
+    name_ids = defaultdict(set)
+    qid_ids = defaultdict(set)
+    id_provenance = defaultdict(set)
     for bank in BANKS:
         for q in banks[bank]:
             ident = str(q.get("id") or "")
@@ -32,6 +36,13 @@ def report(banks, limit=None):
             seen.add((bank, ident))
             att = q.get("attribution") or {}
             lic = str(att.get("license") or "").strip()
+            id_names[ident].add(name)
+            name_ids[name].add(ident)
+            qid = str(q.get("wikidataId") or "").strip()
+            if qid:
+                qid_ids[qid].add(ident)
+            id_provenance[ident].add((str(q["photo"]), str(att.get("source") or ""),
+                                      str(att.get("artist") or ""), lic))
             declared = bool(OPEN.fullmatch(lic))
             human = q.get("humanReviewed") is True
             gaps = []
@@ -62,10 +73,30 @@ def report(banks, limit=None):
     rows.sort(key=lambda x: (-x["noDeclaredOpenLicenseEntries"],
                              -x["noHumanReviewFlagEntries"], -x["entryCount"], x["name"]))
     flat = [e for row in rows for e in row["entries"]]
+    identity_warnings = {
+        "sameIdDifferentNames": [
+            {"id": ident, "names": sorted(names)}
+            for ident, names in sorted(id_names.items()) if len(names) > 1
+        ],
+        "sameCanonicalNameDifferentIds": [
+            {"name": name, "ids": sorted(ids)}
+            for name, ids in sorted(name_ids.items()) if len(ids) > 1
+        ],
+        "sameWikidataQidDifferentIds": [
+            {"qid": qid, "ids": sorted(ids)}
+            for qid, ids in sorted(qid_ids.items()) if len(ids) > 1
+        ],
+        "sameIdDifferentPhotoOrRights": [
+            {"id": ident, "distinctProvenanceCount": len(provenance)}
+            for ident, provenance in sorted(id_provenance.items()) if len(provenance) > 1
+        ],
+    }
     return {
         "warning": "Metadata-only audit, NOT independently verified identity, rights, 600x720 crop or five-stage reveals. Existing game files are unchanged.",
         "expansionEntries": len(flat),
         "expansionUniqueByCanonicalName": len(rows),
+        "expansionUniqueById": len(id_names),
+        "identityWarnings": identity_warnings,
         "declaredOpenLicenseEntries": sum(e["declaredOpenLicense"] for e in flat),
         "humanReviewedFlagEntries": sum(e["humanReviewedFlag"] for e in flat),
         "bothMetadataFlagsEntries": sum(e["declaredOpenLicense"] and e["humanReviewedFlag"] for e in flat),

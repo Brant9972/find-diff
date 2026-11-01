@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "human_actual_pixels_second_recrop_rejection",
+  "reviewedAt": "2026-11-01",
+  "assetCommit": "da77806dea3be88cf8b9db0ff697588150b2f0de",
+  "sourceRun": "20261101T103053Z-8161e64e",
+  "workflowRun": "https://github.com/Brant9972/find-diff/actions/runs/41297769134",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "newCropsViewed": 1,
+    "approvedForLive": 0,
+    "rejectedExactCrops": 1,
+    "mainChanges": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-24a4fb7b59e2c3136377",
+      "gameSha256": "24a4fb7b59e2c3136377730109c7cbe04cd5cece1ace240492a510420748576c",
+      "sourceCandidateId": "d5e1b75b4539fc4f5eb3",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
+      "sourceAuthor": "P1340",
+      "sourceLicense": "CC BY-SA 3.0",
+      "cropBox": [
+        720,
+        880,
+        1320,
+        1600
+      ],
+      "decision": "reject_exact_crop_stop_blind_recrops",
+      "eligibleForLive": false,
+      "fiveStageVisual": {
+        "eyes": "FAIL: crop starts at the subject's lower face/neck, so eye-stage displays neck/clothing instead of eyes",
+        "nose": "FAIL: no target nose",
+        "mouth": "FAIL: face largely outside reveal, mostly scarf and clothing",
+        "chin": "FAIL: chin and face not properly staged; scarf fills region",
+        "full": "FAIL: target forehead/eyes cut off by top edge; a second person's face appears at left"
+      },
+      "visualEvidence": "Actually viewed new 600x720 contact-sheet and five-stage reveal-sheet at immutable asset commit. Corrected framing is worse than prior version. Group source is crowded and not a suitable candidate for further blind automated recrops.",
+      "nextAction": "Reject both exact crop hashes and pause further attempts on Nolay_Piho.jpg; find a different caption-confirmed, single-face, legally croppable source, then run fresh five-stage visual QA."
+    }
+  ],
+  "notes": [
+    "Previous rejected SHA256: 5a2d5126a85b9a5d6e706255e18500dadd4e531f7f34357e114c9e27d9830f59.",
+    "Keep Chen Shiang-chyi t1500_0171 on independent source-video license hold; no release.",
+    "No production JSON, main, Pages or creators touched."
+  ]
+}

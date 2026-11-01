@@ -51,6 +51,13 @@ for(const [role,file,rosterFile,rosterKey] of [["variety","variety.json","variet
  additionalBanks.push(...bank.questions);
 }
 realQuestions=[...new Map([...realQuestions,...actorBank.questions,...additionalBanks].map(q=>[q.id,q])).values()];
+const huGua=realQuestions.find(q=>q.id==="x1000_p0274");
+assert(huGua&&huGua.name==="胡瓜","Hu Gua question must be retained");
+assert.equal(huGua.photo,"photos/x1000_p0274_commons_2010.jpg","Hu Gua must not reuse the mistaken Zeng Guocheng portrait");
+assert(huGua.attribution.source.includes("commons.wikimedia.org/wiki/File:")&&huGua.attribution.source.includes("%E7%93%9C"),"Hu Gua portrait must have its directly named Commons source");
+assert(huGua.aliases.includes("瓜哥")&&huGua.aliases.includes("胡自雄"),"Hu Gua familiar aliases must count");
+assert(huGua.reveal.eyes[1]>=.35&&huGua.reveal.eyes[3]>=.48,"Hu Gua first clue must show the eyes, not just forehead");
+
 const eligibility=JSON.parse(fs.readFileSync(path.join(__dirname,"eligibility-review.json"))).entries;
 for(const q of realQuestions){
  const r=eligibility[q.id];
@@ -165,6 +172,7 @@ const server=http.createServer((req,res)=>{
   assert.equal((await snapshot()).stage,4);
   assert.equal((await snapshot()).finished,false,"Full-face clue was skipped");
   await guess("仍然答錯");assert.equal((await snapshot()).finished,true);
+  assert.equal(await page.$eval("#message",e=>e.textContent),"答案是：測試乙","Answer reveal must display the actual name");
   assert.equal((await snapshot()).score,80,"Failure changed score");
   await page.click("#next");
   assert.equal(await page.$eval("#photoMessage",e=>e.textContent),"這輪挑戰完成！");

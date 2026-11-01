@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0922-retained-source-visual-audit-all-fixed",
+  "requestId": "20261101T0930-post-pr118-exclusion-replay",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 10,
   "personSeconds": 30,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY: render all retained source pixels and staged five-stage crops for actual human visual audit; no source re-search, no approval, no main/Pages/creators changes. Review previously rejected exact sources and rights separately."
+  "purpose": "DRAFT ONLY: render_only replay after PR #118 six exact-source exclusions to verify stale rejected original pixels disappear from retained review list; no providers searched, no new approvals, no main/Pages/creators changes."
 }

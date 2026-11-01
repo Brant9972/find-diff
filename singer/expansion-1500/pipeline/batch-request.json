@@ -1,16 +1,26 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0800-render-only-after-film-sign-exclusion",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261101T0840-wikimedia403-qid-diagnostic8",
+  "mode": "collect",
+  "targetPeople": 8,
+  "plannedPersonIds": [
+    "t1500_0007",
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094",
+    "t1500_0433",
+    "t1500_0457",
+    "t1500_0583",
+    "t1500_0588"
+  ],
+  "retryFailed": true,
   "providers": [
-    "commons"
+    "commons",
+    "entity"
   ],
   "workers": 2,
-  "maxMinutes": 16,
-  "personSeconds": 100,
+  "maxMinutes": 15,
+  "personSeconds": 90,
   "maxCandidates": 2,
-  "purpose": "DRAFT ONLY render retained human-review sources after PR #115 film-sign rejection; verify no excluded signs reappear, no main or Pages deployment"
+  "purpose": "DRAFT ONLY: 8 existing QID-pinned selectedNew people after URL-scoped Wikimedia thumbnail 403 fix; measure actual metadata/download failures, reject homonyms, do not approve or deploy."
 }

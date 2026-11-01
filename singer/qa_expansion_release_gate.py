@@ -5,6 +5,7 @@ It allows unchanged historical entries to remain playable while preventing
 future unreviewed or rights-unclear expansion photos from silently landing.
 """
 import argparse
+import copy
 import hashlib
 import json
 import re
@@ -23,7 +24,7 @@ SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
 def snapshot(bank, entry):
     row = {"bank": bank}
     for key in SNAPSHOT_FIELDS:
-        row[key] = entry.get(key)
+        row[key] = copy.deepcopy(entry.get(key))
     attribution = entry.get("attribution") or {}
     for key in ATTR_FIELDS:
         row[key] = attribution.get(key)

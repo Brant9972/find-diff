@@ -1,16 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-stop-invalid-nolay-source-recrop",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261101-wangzhilei-exact-commons-license-diagnostic",
+  "mode": "search",
+  "targetPeople": 1,
+  "plannedPersonIds": [
+    "t1500_0381"
+  ],
+  "retryFailed": true,
   "providers": [
     "commons"
   ],
   "workers": 1,
   "maxMinutes": 10,
-  "personSeconds": 30,
+  "personSeconds": 60,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN: pause rejected Nolay group-photo recrops after two failed actual five-stage reviews; render retained source-only evidence without searching or approving anything until an independently sourced alternative portrait is selected."
+  "purpose": "DRAFT ONLY: exact Commons imageinfo for Wang Zhilei (Jeanette Wang.JPG), check identity and non-CC copyrighted-free-use metadata; do not auto-approve, crop or deploy if rights() remains needs_review."
 }

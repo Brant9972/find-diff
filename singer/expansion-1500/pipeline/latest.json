@@ -1,9 +1,9 @@
 {
-  "runId": "20261101T131422Z-81219d4f",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261101T131422Z-81219d4f/review-index.json",
+  "runId": "20261101T145029Z-5e6b8859",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261101T145029Z-5e6b8859/review-index.json",
   "summary": {
-    "runId": "20261101T131422Z-81219d4f",
-    "generatedAt": "2026-11-01T13:14:30.457508+00:00",
+    "runId": "20261101T145029Z-5e6b8859",
+    "generatedAt": "2026-11-01T14:50:44.280645+00:00",
     "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
@@ -25,6 +25,7 @@
       "network_error": 247,
       "source_api_busy": 69,
       "license_unclear": 76,
+      "source_already_rejected": 2,
       "source_api_error": 16,
       "identity_ambiguous": 9,
       "excluded_context": 16,
@@ -33,7 +34,9 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "source_already_rejected": 2
+    },
     "manualCropSources": 12,
     "batchProviderStages": {
       "commons": {
@@ -43,7 +46,20 @@
         "openLicenseMetadata": 0,
         "downloadedForHumanReview": 0,
         "savedForManualCrop": 0,
-        "errors": {}
+        "errors": {
+          "source_already_rejected": 1
+        }
+      },
+      "entity": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "source_already_rejected": 1
+        }
       }
     },
     "contactSheets": [

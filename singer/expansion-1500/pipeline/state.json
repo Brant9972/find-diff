@@ -13561,8 +13561,8 @@
       "candidateId": "c1500-0388",
       "name": "林宇中",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-11-01T01:30:52.120164+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-11-01T22:50:43.554456+00:00",
       "candidates": [],
       "history": [
         {
@@ -13592,6 +13592,36 @@
           "time": "2026-10-31T21:30:52.120152+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-11-01T14:50:32.923719+00:00",
+          "provider": "entity",
+          "attempt": 3,
+          "finishedAt": "2026-11-01T14:50:36.594850+00:00"
+        },
+        {
+          "time": "2026-11-01T14:50:36.594875+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-11-01T14:50:43.554432+00:00"
+        },
+        {
+          "time": "2026-11-01T14:50:43.554445+00:00",
+          "errors": [
+            {
+              "provider": "entity",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%AE%87%E4%B8%AD.JPG",
+              "code": "source_already_rejected",
+              "message": "Previously rejected photo source; search a different image, not this URL"
+            },
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%AE%87%E4%B8%AD.JPG",
+              "code": "source_already_rejected",
+              "message": "Previously rejected photo source; search a different image, not this URL"
+            }
+          ],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -13613,15 +13643,28 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "No usable candidates returned by sources"
+        "message": "See lastErrors"
       },
       "lastRunNewCandidateIds": [],
-      "lastRunId": "20261031T213044Z-8c2e46e3",
+      "lastRunId": "20261101T145029Z-5e6b8859",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-31T21:30:47.047787+00:00",
-      "lastErrors": [],
-      "updatedAt": "2026-10-31T21:30:52.120189+00:00",
-      "workerFinishedAt": "2026-10-31T21:30:52.122415+00:00"
+      "lastAttemptAt": "2026-11-01T14:50:32.822245+00:00",
+      "lastErrors": [
+        {
+          "provider": "entity",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%AE%87%E4%B8%AD.JPG",
+          "code": "source_already_rejected",
+          "message": "Previously rejected photo source; search a different image, not this URL"
+        },
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%AE%87%E4%B8%AD.JPG",
+          "code": "source_already_rejected",
+          "message": "Previously rejected photo source; search a different image, not this URL"
+        }
+      ],
+      "updatedAt": "2026-11-01T14:50:43.554501+00:00",
+      "workerFinishedAt": "2026-11-01T14:50:43.556656+00:00"
     },
     "t1500_0598": {
       "personId": "t1500_0598",

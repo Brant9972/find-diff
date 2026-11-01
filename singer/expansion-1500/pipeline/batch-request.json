@@ -1,17 +1,20 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-five-person-diagnostic-complete-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
+  "requestId": "20261101-two-verified-exact-source-diagnostic",
+  "mode": "search",
+  "targetPeople": 2,
+  "plannedPersonIds": [
+    "t1500_0564",
+    "t1500_0107"
+  ],
   "retryFailed": false,
   "providers": [
-    "entity",
-    "commons"
+    "commons",
+    "entity"
   ],
   "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 75,
-  "maxCandidates": 1,
-  "purpose": "DRAFT ONLY; no main or deploy. Run 41318134880 scanned one explicit candidate; four QID names were in cooldown, and Lin Yu-zhong exact Commons photo was already rejected on 2026-10-21. Preserve all assets; do not rerun the same five without new source evidence. Await different licensed portraits."
+  "maxMinutes": 9,
+  "personSeconds": 90,
+  "maxCandidates": 2,
+  "purpose": "DRAFT ONLY, no deploy. Two selectedNew candidates with independent exact Commons source evidence: Eric Kot (2023 solo, CC BY-SA 4.0, Q590914) and Chen Ming-chang (2023 Kaohsiung source unreviewed; older 2022 01/02 photos already excluded). Use fixed source-already-rejected reporting and exact API diagnostics; respect cooldown. Require human caption/identity, source rights, 600x720 eyes/nose/mouth/chin/full review. Do not publish or count without all gates."
 }

@@ -151,7 +151,7 @@ function finish(won){
  if(loading||state.finished||!question())return;
  state.finished=true;state.won=won;state.completed++;
  if(won){state.correct++;state.score+=points();}
- save();render();message(won?"答對了！":"答案是…",won?"good":"");
+ save();render();message(won?"答對了！":"答案是："+question().name,won?"good":"");
  el.next.focus({preventScroll:true});
 }
 function end(){
@@ -177,7 +177,7 @@ function loadQuestion(){
  const token=++photoToken;loading=true;
  el.answer.value="";el.result.hidden=true;el.credits.hidden=true;el.credits.open=false;
  el.portrait.hidden=true;el.photoTag.hidden=true;el.photoMessage.hidden=false;el.photoMessage.textContent="照片載入中…";
- render();message(state.finished?(state.won?"答對了！":"答案揭曉"):state.stage===0?"先從眼睛開始。":"繼續上一題：目前已露出"+labels[state.stage]+"。");
+ render();message(state.finished?(state.won?"答對了！":"答案是："+q.name):state.stage===0?"先從眼睛開始。":"繼續上一題：目前已露出"+labels[state.stage]+"。");
  const ready=()=>{
   if(token!==photoToken)return;loading=false;el.portrait.hidden=false;el.photoTag.hidden=false;el.photoMessage.hidden=true;render();
  };

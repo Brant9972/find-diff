@@ -3,7 +3,7 @@ import hashlib
 import tempfile
 import unittest
 from pathlib import Path
-from qa_expansion_release_gate import validate, snapshot, license_ok, verify_reveal, BANKS
+from qa_expansion_release_gate import validate, snapshot, license_ok, verify_reveal, git_blob_sha, BANKS
 
 SHA = "a" * 40
 
@@ -59,6 +59,7 @@ class ExpansionGateTest(unittest.TestCase):
         self.row["humanReviewed"] = False
         self.row["attribution"]["license"] = "Copyright retained"
         base = snapshot("questions.json", self.row)
+        base["photoGitBlobSha"] = git_blob_sha(self.root / self.row["photo"])
         result = self.run_gate([base])
         self.assertFalse(result["errors"])
         self.assertEqual(result["unchangedLegacyMetadataDebt"], ["t1500_0001"])
@@ -79,6 +80,33 @@ class ExpansionGateTest(unittest.TestCase):
         self.assertFalse(license_ok(self.row["attribution"]))
         self.row["reveal"]["eyes"] = [0, 0, 1, 1]
         self.assertFalse(verify_reveal(self.row["reveal"]))
+
+
+    def test_overwriting_legacy_jpeg_at_same_path_is_not_exempt(self):
+        self.row["humanReviewed"] = False
+        self.row["attribution"]["license"] = "Copyright retained"
+        base = snapshot("questions.json", self.row)
+        base["photoGitBlobSha"] = git_blob_sha(self.root / self.row["photo"])
+        self.assertFalse(self.run_gate([base])["errors"])
+        (self.root / self.row["photo"]).write_bytes(b"new image bytes at unchanged path")
+        result = self.run_gate([base])
+        self.assertIn(self.row["id"], result["newOrChangedEntries"])
+        self.assertTrue(result["errors"])
+
+    def test_changing_reveal_of_legacy_entry_requires_review(self):
+        self.row["humanReviewed"] = False
+        base = snapshot("questions.json", self.row)
+        base["photoGitBlobSha"] = git_blob_sha(self.root / self.row["photo"])
+        self.assertFalse(self.run_gate([base])["errors"])
+        self.row["reveal"]["eyes"] = [0.08, 0.28, 0.92, 0.4]
+        result = self.run_gate([base])
+        self.assertIn(self.row["id"], result["newOrChangedEntries"])
+        self.assertTrue(result["errors"])
+
+    def test_unpinned_legacy_photo_fails_closed(self):
+        base = snapshot("questions.json", self.row)
+        result = self.run_gate([base])
+        self.assertTrue(any("baseline photo Git blob SHA" in e for e in result["errors"]))
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-post-135-exact-commons-one-person-diagnostic",
-  "mode": "source_search",
+  "requestId": "20261101-post-135-exact-commons-one-person-diagnostic-v2",
+  "mode": "search",
   "targetPeople": 1,
   "plannedPersonIds": [
     "t1500_0445"
@@ -14,5 +14,5 @@
   "maxMinutes": 9,
   "personSeconds": 110,
   "maxCandidates": 1,
-  "purpose": "After PR #135 fixes silent exact-file Commons metadata failure, run exactly ONE bounded source lookup for Zhang Huai-chiu (File:大嘴巴懷秋.JPG). Collect diagnostic error code, candidate metadata and rights only; do not approve or publish without original pixels and five-stage visual review. Do not rerun 20/40/200."
+  "purpose": "DRAFT ONLY; no main; no deploy. After PR #135 fixed silent exact-file Commons metadata failures, run exactly ONE bounded Commons-only lookup for 張懷秋, File:大嘴巴懷秋.JPG. Preserve exact provider error codes, imageinfo metadata and license evidence. Do not approve or publish without 600x720 five-stage visual review; no 20/40/200 reruns."
 }

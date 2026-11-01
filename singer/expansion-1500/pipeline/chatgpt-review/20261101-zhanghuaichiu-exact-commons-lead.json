@@ -60,10 +60,22 @@
     }
   ],
   "nextActions": [
+    "Fix suppressed exact-file Commons metadata errors and inspect the exact lookup result before reattempting this candidate; no blind 1/20/40/200 rerun.",
     "Run one exact-file Commons metadata lookup, no broad repeated batch.",
     "Only download if current source metadata confirms the same file and CC BY-SA 3.0; verify original hash/bytes.",
     "Crop a single central portrait 600x720 excluding edge faces and microphone from five-stage focus, then visually inspect eyes/nose/mouth/chin/full actual pixels.",
     "Reject this exact source if chin or mouth is blocked or if identity cannot be confirmed from the image; do not count the person until all bank/roster/hints/attribution, branch QA, main and live Pages verification."
   ],
-  "eligibleForLive": false
+  "eligibleForLive": false,
+  "diagnostic": {
+    "runId": 41306358370,
+    "runUrl": "https://github.com/Brant9972/find-diff/actions/runs/41306358370",
+    "result": "COLLECT_AND_CHECKPOINT_SUCCESS_ZERO_METADATA_ZERO_CROPS",
+    "scannedPeople": 1,
+    "metadataCandidates": 0,
+    "newCandidatePhotos": 0,
+    "sourceErrorsReported": {},
+    "interpretation": "Exact Commons page and image preview independently exist, but the GitHub pipeline yielded no imageinfo candidate and no surfaced provider error. This is an unresolved API/adapter observability failure, NOT evidence the image is unlicensed or unsuitable. Do not repeat same batch without diagnostics.",
+    "releaseGate": "SOURCE_ONLY_NOT_PLAYABLE"
+  }
 }

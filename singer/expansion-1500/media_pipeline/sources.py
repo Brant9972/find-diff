@@ -435,10 +435,16 @@ class Wikimedia:
                 for info in page.get('imageinfo', []):
                     ext = info.get('extmetadata', {})
                     val = lambda key: clean(ext.get(key, {}).get('value', ''))
+                    # Legacy Wikimedia article/P18 adapter must normalize the
+                    # Commons HTTP CC metadata URL just like CommonsSearch.
+                    # This is metadata canonicalization, NOT rights approval.
+                    license_url = val('LicenseUrl')
+                    if license_url.startswith('http://creativecommons.org/'):
+                        license_url = 'https://' + license_url[7:]
                     yield {'provider': self.name, 'url': info.get('thumburl') or info.get('url', ''), 'originalUrl': info.get('url', ''),
                            'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original', 'source': info.get('descriptionurl', ''),
                            'filename': filename, 'artist': val('Artist'), 'credit': val('Credit'),
-                           'license': val('LicenseShortName'), 'licenseUrl': val('LicenseUrl'),
+                           'license': val('LicenseShortName'), 'licenseUrl': license_url,
                            'caption': val('ImageDescription'), 'licenseReviewStatus': commons_review_status(page), 'identityEvidence': evidence,
                            'recognitionEvidence': {'representativeWorks': person.get('representativeWorks', []), 'matchedWorks': [w for w in person.get('representativeWorks', []) if isinstance(w, str) and norm(w) in norm(filename + ' ' + val('ImageDescription'))], 'note': 'Search context only; recognizability not verified'},
                            'searchTime': now(), 'width': info.get('width'), 'height': info.get('height')}

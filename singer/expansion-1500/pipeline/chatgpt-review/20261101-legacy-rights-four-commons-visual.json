@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-01",
+  "reviewType": "legacy_rights_exact_commons_file_source_and_actual_preview_screening",
+  "releaseGate": "EVIDENCE_ONLY_NO_PRODUCTION_APPROVAL",
+  "mainCheckedSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "pipelineBaseSha": "bee055b60255eb6372fe18590ee478434053802b",
+  "scope": {
+    "people": 4,
+    "affectedBankEntries": 8,
+    "bankNames": [
+      "questions.json",
+      "actors.json"
+    ],
+    "newGameCropsApproved": 0,
+    "productionChanges": 0
+  },
+  "methodology": "Each named Wikimedia Commons file description and its linked actual image preview was inspected. Exact identity supported by caption and Commons category/Wikidata; no generated 600x720 file or five-stage reveal inspected, and no final face-identity certification made. Do not copy rights tags onto existing unrelated photos.",
+  "decisions": [
+    {
+      "name": "吳建豪",
+      "existingIds": [
+        "questions.json:s227",
+        "actors.json:s227"
+      ],
+      "currentPhoto": "photos/s227_r2.jpg",
+      "currentSourceRights": "Copyright retained by original source; no open licence asserted",
+      "candidateFile": "AdidasRunFor2008OlympicsInTaiwan Vanness Wu.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:AdidasRunFor2008OlympicsInTaiwan_Vanness_Wu.jpg",
+      "sourceDate": "2008-04-20",
+      "sourceCaption": "Adidas Run For 2008 Olympics in Taiwan: Vanness Wu",
+      "author": "Rico Shen (BrockF5)",
+      "license": "CC BY-SA 3.0 Unported",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceLicenseBasis": "Self-published by photographer Rico Shen under CC BY-SA 3.0; modifications including crop allowed with attribution and share-alike.",
+      "sourceDimensions": [
+        2304,
+        3072
+      ],
+      "actualImageViewed": true,
+      "visualScreening": "One clearly identifiable close-up with open unobstructed eyes, visible nose, mouth and chin; microphones are below face. 2008 long hairstyle and facial hair differ from recent public image. Image is portrait-oriented and has adequate source pixels. This is not a final five-stage crop assessment.",
+      "decision": "priority_manual_crop_and_five_stage_review",
+      "eligibleForLive": false,
+      "nextAction": "Use exact Commons original, not existing copyright-retained file. Download in GitHub Actions with retry/backoff; create fresh uniquely named 600x720 JPEG. Human inspect eyes/nose/mouth/chin/full without background faces or microphones, verify recognizability despite 2008 look; preserve author/source/license/change and share-alike attribution. Only then replace same asset references in BOTH banks and QA."
+    },
+    {
+      "name": "劉若英",
+      "existingIds": [
+        "questions.json:s260",
+        "actors.json:s260"
+      ],
+      "currentPhoto": "photos/s260_r2.jpg",
+      "currentSourceRights": "Copyright retained by original source; no open licence asserted",
+      "candidateFile": "Rene Liu.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Rene_Liu.jpg",
+      "sourceDate": "2008-01-20",
+      "sourceCaption": "Rene Liu / 劉若英",
+      "author": "User:Reke",
+      "license": "CC BY 3.0 Unported",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceDimensions": [
+        435,
+        527
+      ],
+      "actualImageViewed": true,
+      "visualScreening": "Whole/half body 435x527 image with face occupying only a small portion; face is too low-resolution for reliable 600x720 eyes/nose/mouth/chin stages even if enlarged.",
+      "decision": "reject_exact_source_for_game_crop",
+      "eligibleForLive": false,
+      "nextAction": "Do not upscale this small face and call it approved. Search another rights-verified closer portrait; keep both existing bank entries pending replacement."
+    },
+    {
+      "name": "張衛健",
+      "existingIds": [
+        "questions.json:s316",
+        "actors.json:s316"
+      ],
+      "currentPhoto": "photos/s316_r2.jpg",
+      "currentSourceRights": "Copyright retained by original source; no open licence asserted",
+      "candidateFile": "張衛健.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E8%A1%9B%E5%81%A5.jpg",
+      "sourceDate": "2018-11-21",
+      "sourceCaption": "張衛健出席《大帥哥》帥氣登場宣傳會",
+      "author": "am730",
+      "license": "CC BY 3.0 Unported",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceDimensions": [
+        1245,
+        1679
+      ],
+      "licenseReview": "YouTubeReviewBot 2020-07-23 and human reviewer GRuban",
+      "actualImageViewed": true,
+      "visualScreening": "Prominent foreground subject wearing round dark sunglasses fully covering both eyes; other people behind. Eye-only reveal would fail despite license review and sufficient dimensions.",
+      "decision": "reject_exact_source_for_game_crop",
+      "eligibleForLive": false,
+      "nextAction": "Retain evidence of valid Commons license but exclude this exact image from game portrait sourcing; seek uncovered eyes."
+    },
+    {
+      "name": "李麗珍",
+      "existingIds": [
+        "questions.json:s385",
+        "actors.json:s385"
+      ],
+      "currentPhoto": "photos/s385_r2.jpg",
+      "currentSourceRights": "Copyright retained by original source; no open licence asserted",
+      "candidateFile": "李麗珍.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%BA%97%E7%8F%8D.jpg",
+      "sourceDate": "2019-12-03",
+      "sourceCaption": "am730 interview screenshot of actress Rachel/Loletta Lee",
+      "author": "am730",
+      "license": "CC BY 3.0 claimed; not independently license-reviewed",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceDimensions": [
+        370,
+        395
+      ],
+      "licenseReview": "Commons page explicitly flags License review needed",
+      "actualImageViewed": true,
+      "visualScreening": "Single clear frontal face in a low-resolution 370x395 video screenshot; source cannot provide native 600x720 pixels.",
+      "decision": "reject_exact_source_for_game_crop_and_hold_rights",
+      "eligibleForLive": false,
+      "nextAction": "Do not treat Commons CC metadata as independent YouTube rights confirmation. Seek photographer-owned higher-resolution licensed source; do not release."
+    }
+  ],
+  "safeguards": [
+    "This review concerns proposed replacements only, not rights approval for existing copyright-retained photos.",
+    "No source-only metadata should be promoted to humanReviewed, released or playable without full original-pixel and five-stage inspection.",
+    "Preserve existing photos, questions, aliases, hints, creators and main until separately verified and QA passes.",
+    "For reused photo path across singer and actors, perform one asset-level visual review but update and verify both entries on approved release."
+  ]
+}

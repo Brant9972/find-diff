@@ -17,6 +17,10 @@ for e in candidates:
     assert hint["title"]==e["title"] and hint["kind"]==e["kind"]
     assert 1<=len(hint["title"])<=160
     assert hint["source"].startswith("https://")
+    if e["id"] == "x1000_p0266" and e["mode"] == "actor":
+        assert e["name"] == "林辰唏"
+        assert hint["title"] == "第一次遇見花香的那刻", "林辰唏作品不得誤填其他金鐘入圍影集"
+        assert "kff.tw/content/_kffevent09" in hint["source"], "林辰唏提示須保留直接證實演出的來源"
 for mode,bank in banks.items():
     assert all((id,mode) in seen for id in bank),mode+" hint coverage incomplete"
 print("PASS:",len(seen),"curated work hints for",len(payload["entries"]),"people")

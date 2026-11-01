@@ -41,6 +41,33 @@ class SourcesTest(unittest.TestCase):
         self.assertTrue(any('wikidata.org' in url for url, _ in http.calls))
         self.assertTrue(any(p.get('generator') == 'search' for _, p in http.calls))
 
+    def test_wikimedia_article_p18_http_cc_metadata_is_canonicalized(self):
+        # Older Commons imageinfo records return http://creativecommons.org.
+        # A valid CC metadata URL must not be mistaken for an unknown licence.
+        class LegacyCommonsHTTP(FixtureHTTP):
+            def json(self, url, **params):
+                data = super().json(url, **params)
+                for page in data.get('query', {}).get('pages', []):
+                    for info in page.get('imageinfo', []):
+                        info['extmetadata']['LicenseUrl']['value'] = (
+                            'http://creativecommons.org/licenses/by/4.0/')
+                return data
+
+        rows = list(Wikimedia().search({
+            'name': '測試人物',
+            'representativeWorks': ['代表作'],
+            'preferredImageQuery': '測試人物 代表作',
+        }, LegacyCommonsHTTP()))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['licenseUrl'],
+                         'https://creativecommons.org/licenses/by/4.0/')
+        self.assertEqual(rights(rows[0]), 'open_license_metadata')
+        self.assertNotEqual(rows[0]['identityEvidence'].get('visualIdentityVerified'), True)
+        self.assertEqual(rights({
+            'license': 'CC BY 4.0', 'artist': 'Photographer',
+            'licenseUrl': 'http://untrusted.example/licenses/by/4.0/',
+        }), 'needs_review')
+
     def test_commons_bulk_search_does_not_depend_on_wikipedia(self):
         class Bulk:
             def json(self,url,**params):

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "exact_commons_source_and_visual_preview",
+  "researchedAt": "2026-11-01",
+  "releaseGate": "SOURCE_ONLY_NOT_PLAYABLE",
+  "mainShaChecked": "3b9a5c68428f76aeea3e3680c5b9b70a5e2a1fe9",
+  "person": {
+    "personId": "t1500_0445",
+    "name": "張懷秋",
+    "aliases": [
+      "懷秋",
+      "Harry Chang",
+      "Chang Huai-chiu"
+    ],
+    "canonicalWikidataQid": "Q9138397",
+    "plannedPrimaryBank": "actors.json",
+    "duplicatePreflight": "2026-11-01 three live banks: no exact canonical or listed alias collision"
+  },
+  "source": {
+    "file": "大嘴巴懷秋.JPG",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:大嘴巴懷秋.JPG",
+    "permalink": "https://commons.wikimedia.org/w/index.php?title=File:大嘴巴懷秋.JPG&oldid=1264067572",
+    "caption": "大嘴巴懷秋在台南遠東百貨的《首部曲》簽唱會",
+    "date": "2010-10-03",
+    "artist": "Onlymyself65536",
+    "sourceType": "Uploader own work claim",
+    "license": "CC BY-SA 3.0 Unported",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceDimensions": [
+      2736,
+      3648
+    ],
+    "sourceSizeApproxBytes": 2750000,
+    "originalSha1": null,
+    "identityEvidence": [
+      "Commons caption explicitly names 懷秋 as Da Mouth performer",
+      "Wikidata Q9138397 P18 points to this exact Commons file",
+      "Chinese Wikipedia 張懷秋 links the same file"
+    ],
+    "licenseEvidence": [
+      "Commons original uploader and author are both Onlymyself65536",
+      "2010 original upload declares own work and CC BY-SA 3.0, allowing cropped derivative with attribution and share-alike",
+      "Nikon COOLPIX S220 EXIF and original upload date consistent with own event photograph"
+    ],
+    "visualSourcePreview": {
+      "viewed": true,
+      "notes": "Original-resolution web preview inspected. Central performer is near-frontal with both eyes and lips visible; handheld microphone top sits just below mouth/chin. Other faces at left and right edges must be excluded. The 2010 look and mic position may fail five-stage game crop; source preview is not game approval.",
+      "gameCropViewed": false,
+      "fiveStageViewed": false
+    }
+  },
+  "works": [
+    {
+      "title": "大嘴巴",
+      "url": "https://musicbrainz.org/artist/6299c1e4-7237-4cf2-8f5f-b39d7fb7a164"
+    },
+    {
+      "title": "永遠在身邊",
+      "url": "https://music.apple.com/us/song/1442723004"
+    }
+  ],
+  "nextActions": [
+    "Run one exact-file Commons metadata lookup, no broad repeated batch.",
+    "Only download if current source metadata confirms the same file and CC BY-SA 3.0; verify original hash/bytes.",
+    "Crop a single central portrait 600x720 excluding edge faces and microphone from five-stage focus, then visually inspect eyes/nose/mouth/chin/full actual pixels.",
+    "Reject this exact source if chin or mouth is blocked or if identity cannot be confirmed from the image; do not count the person until all bank/roster/hints/attribution, branch QA, main and live Pages verification."
+  ],
+  "eligibleForLive": false
+}

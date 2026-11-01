@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "retained_source_contact_sheet_and_selected_original_pixel_review",
+  "reviewedAt": "2026-11-01",
+  "sourceRun": "20261101T012124Z-3441ff89",
+  "sourceAssetCommit": "c681eef3e2913e4023a5ce1bbc65a19b10c9f0e4",
+  "mainBaselineSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "pipelineBaselineSha": "0c299fd3b956570cbf0035b1a000273f239b444f",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "retainedSourcesReviewed": 8,
+    "exactSourcesRejected": 6,
+    "pendingIndependentReview": 2,
+    "approvedForGame": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "d5e1b75b4539fc4f5eb3",
+      "originalSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
+      "sourceCaption": "​林慶台參與2014年新北市元旦升旗活動",
+      "author": "P1340",
+      "licenseMetadata": "CC BY-SA 3.0",
+      "sourcePixels": [
+        1920,
+        2560
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "retained_contact_sheet_pixel_inspected",
+      "decision": "pending_manual_isolation",
+      "reason": "2014 New Taipei flag ceremony shows several prominent faces; caption identifies 林慶台 but not an unambiguous single-face crop. Retain for person-specific face identification and manual crop; do not auto-approve.",
+      "rights": "Commons CC BY-SA 3.0 metadata; source authorship not independently confirmed",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
+      "candidateId": "11cfabb73b01aa6bd121",
+      "originalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "sourceCaption": "Chen Shiang-chyi at the 51st Golden Horse Awards in November 2014",
+      "author": "CNA Taiwan - 中央社",
+      "licenseMetadata": "CC BY 3.0",
+      "sourcePixels": [
+        1920,
+        1758
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "contact_sheet_and_full_source_or_game_pixel_inspected",
+      "decision": "pending_rights_and_crop",
+      "reason": "Actual source and 600x720 eyes/nose/mouth/chin/full pixels inspected: eyes open, mouth unobstructed, no second face, sufficiently recognizable, but face is left-of-center and crop can be improved. Commons attributes CNA Taiwan YouTube CC BY 3.0; original video's license has not been independently verified, and file page shows no explicit license-review bot. Hold release.",
+      "rights": "CC BY 3.0 claimed by Commons from CNA YouTube video ffxdss7Xk6Y; independent source license verification pending",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "hintVerified": "迴光奏鳴曲",
+      "hintSource": "https://www.goldenhorse.org.tw/news/detail/516",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0297",
+      "name": "李香琴",
+      "candidateId": "d7fc094c0949e28fecd3",
+      "originalSha256": "6c16c7872fe867743aa8ddb4e16ae5f4aa61a61e18f404a2bd49443abe6ad8fb",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%A6%99%E7%90%B4%E7%99%BD%E5%BA%95%E7%BB%BF%E8%83%B6%E7%89%87%E5%A4%A7%E9%9D%A0_20240206.jpg",
+      "sourceCaption": "​粤剧名伶李香琴穿用的白底绿胶片大靠",
+      "author": "Uuongkinghe",
+      "licenseMetadata": "CC BY-SA 4.0",
+      "sourcePixels": [
+        1920,
+        2882
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "retained_contact_sheet_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "Actual retained contact sheet shows an opera costume displayed on a stand, not the performer 李香琴. Caption describes clothing worn by the performer; no human face is present.",
+      "rights": "Commons CC BY-SA 4.0 metadata; irrelevant non-person source",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0330",
+      "name": "楊昇達",
+      "candidateId": "75c6ff23b9b330474231",
+      "originalSha256": "d2b5431c79c2944da88fa68f66be788c3da8126aa7c5e5389282dda321df124a",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Yang_Shengda.JPG",
+      "sourceCaption": "​2012年12月1日「愛滋向零、未來就贏」宣導活動 新北市政府主辦 （楊昇達為右一）",
+      "author": "BreakdownDiode",
+      "licenseMetadata": "CC BY-SA 3.0",
+      "sourcePixels": [
+        4320,
+        3240
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "retained_contact_sheet_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "2012 stage photo contains multiple people; caption identifies 楊昇達 as the rightmost person, but his face is too small for a clear 600x720 five-stage crop, even though source is 4320x3240.",
+      "rights": "Commons CC BY-SA 3.0 metadata; unsuitable game composition",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0339",
+      "name": "陳錦鴻",
+      "candidateId": "c2637ed92a68887159af",
+      "originalSha256": "62de610120caf5178dbb3f7167c47cda7e798853d8ad1dfffd782f880c28d12b",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunny_Chan_2.2.jpg",
+      "sourceCaption": "Sunny Chan in Brent Cross as guest compere of a TVB-Europe promotional event. Taken in car park opposite main entrance of London's Brent Cross shopping centre.",
+      "author": "KTo288",
+      "licenseMetadata": "CC BY-SA 3.0",
+      "sourcePixels": [
+        268,
+        401
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "retained_contact_sheet_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "268x401 low-resolution photo shows a person speaking into a microphone, with mouth obstructed; insufficient face pixels for a sharp 600x720 five-stage game portrait.",
+      "rights": "Commons CC BY-SA 3.0 metadata; unsuitable game composition",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0457",
+      "name": "王耀慶",
+      "candidateId": "ac10019a6325ca05958d",
+      "originalSha256": "ad5f603f91bd8a73891a137af0fee43938146a9289eae34d605652aa3e8c90fa",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Doppelg%C3%A4nger_201107_cast.JPG",
+      "sourceCaption": "The director and main casts of The Doppelgänger\n\n《紅娘的異想世界之在西廂》男女主角及導演林奕華，左起：劉若英、林奕華、王耀慶及周姮吟",
+      "author": "Tksteven",
+      "licenseMetadata": "CC BY-SA 3.0",
+      "sourcePixels": [
+        1067,
+        800
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "contact_sheet_and_full_source_or_game_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "2011 stage photo contains four people; caption identifies 王耀慶 as third from left. The small face is obscured at the mouth by a handheld microphone, preventing mouth/chin reveals.",
+      "rights": "Commons CC BY-SA 3.0 metadata; unsuitable game composition",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0534",
+      "name": "黃宏軒",
+      "candidateId": "f6935a26bdbbab2e51b7",
+      "originalSha256": "a7be2cc6b60e0b0b57fc1db3dd921c84d1f045435091521da51ebc6f6ef9aaef",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E6%BC%94%E5%93%A1%E9%BB%83%E5%AE%8F%E8%BB%92%E7%9A%84%E5%BD%A2%E8%B1%A1%E7%85%A7%EF%BC%8C%E6%94%9D%E6%96%BC2024%E5%B9%B4.jpg",
+      "sourceCaption": "Processed with VSCO with al3pro preset",
+      "author": "Petersuuu",
+      "licenseMetadata": "CC BY 4.0",
+      "sourcePixels": [
+        1717,
+        2610
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "retained_contact_sheet_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "2024-labelled studio portrait has dark, small face and weak eye detail in retained source sheet; automatic crop failed sharpness. Commons uploader claims own work CC BY 4.0, but EXIF explicitly states 'Copyright 2025. All rights reserved.' and uploader authorship is not independently established. Reject this exact game source; do not infer all other photos of the person are unusable.",
+      "rights": "Commons CC BY 4.0 uploader claim conflicts with EXIF all-rights-reserved notice; independent rights holder verification missing",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0564",
+      "name": "葛民輝",
+      "candidateId": "b2574981ba5e9e0689c3",
+      "originalSha256": "d6dbf1a6c3436d37c275c80e711b32572e1c73b6ed5e799df75560002f924fd1",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+      "sourceCaption": "Eric Kot(葛民輝)  was being the guest in the publicity on 2008.11",
+      "author": "Tksteven",
+      "licenseMetadata": "CC BY 2.5",
+      "sourcePixels": [
+        1000,
+        750
+      ],
+      "contactSheet": "singer/expansion-1500/pipeline/review-assets/20261101T012124Z-3441ff89/manual-source-sheet-01.jpg",
+      "visualEvidence": "contact_sheet_and_full_source_or_game_pixel_inspected",
+      "decision": "reject_exact_source",
+      "reason": "Actual original pixels inspected: face markedly tilted, with gooseneck microphone touching the lower face/chin; old 2008 appearance is less recognizable, not appropriate for five-stage reveal.",
+      "rights": "Commons CC BY 2.5 metadata; unsuitable game composition",
+      "eligibleForLive": false
+    }
+  ],
+  "nextSteps": [
+    "Do not search or render the six rejected exact source URLs again; retain rejection evidence.",
+    "Manually isolate and independently identify 林慶台 in the group photo before considering a crop.",
+    "For 陳湘琪, independently verify CNA YouTube original CC BY license and improve face centering before release; five-stage pixels were viewed but rights remain unverified.",
+    "No production changes, no live approval, no creator deletion."
+  ]
+}

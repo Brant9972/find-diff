@@ -17,6 +17,9 @@ def person(name, license_label, reviewed):
 class LiveRightsAuditTest(unittest.TestCase):
     def test_declared_open_license_is_conservative(self):
         self.assertTrue(open_license(person("A", "CC BY-SA 4.0", True)))
+        self.assertTrue(open_license(person("A", "CC BY 2.5", True)))
+        self.assertFalse(open_license(person("A", "CC BY-SA 99.0", True)))
+        self.assertFalse(open_license(person("A", "CC BY 0.1", True)))
         self.assertTrue(open_license(person("A", "CC0", True)))
         self.assertTrue(open_license(person("A", "PD", True)))
         self.assertFalse(open_license(person("A", "Copyright retained by original source; no open licence asserted", True)))

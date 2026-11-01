@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0840-wikimedia403-qid-diagnostic8",
-  "mode": "collect",
+  "requestId": "20261101T0842-wikimedia403-qid-diagnostic8-fixed",
+  "mode": "search",
   "targetPeople": 8,
   "plannedPersonIds": [
     "t1500_0007",
@@ -15,8 +15,8 @@
   ],
   "retryFailed": true,
   "providers": [
-    "commons",
-    "entity"
+    "entity",
+    "commons"
   ],
   "workers": 2,
   "maxMinutes": 15,

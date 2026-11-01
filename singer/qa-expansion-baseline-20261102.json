@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "baselineMainSha": "961e5cd38ff86db7969d5cd776cfd55a4b510f1f",
   "releaseGate": "EXISTING_METADATA_DEBT_NOT_CERTIFIED",
-  "warning": "This frozen snapshot exempts unchanged legacy expansion entries from the non-regression test; it does NOT approve their rights or visual review. Any changed or new entry must pass strict checks.",
+  "warning": "This frozen snapshot exempts unchanged legacy expansion entries from the non-regression test; it does NOT approve their rights or visual review. Any changed or new entry must pass strict checks. Pinned photoGitBlobSha uses Git's blob SHA-1 solely for byte-level non-regression; it does not establish image identity, authorization, or human review.",
   "people": [
     {
       "bank": "questions.json",
@@ -17,7 +17,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:2014_%E8%98%87%E6%89%93%E7%B6%A010%E9%80%B1%E5%B9%B4%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E6%9C%83-%E7%A9%BA%E6%B0%A3%E4%B8%AD%E7%9A%84%E8%A6%96%E8%81%BD%E8%88%87%E5%B9%BB%E8%A6%BA_-_18.jpg",
       "artist": "Lionel Leong",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28208126831054686,
+          0.92,
+          0.4219020652770996
+        ],
+        "nose": [
+          0.08,
+          0.28208126831054686,
+          0.92,
+          0.5461021423339844
+        ],
+        "mouth": [
+          0.08,
+          0.28208126831054686,
+          0.92,
+          0.6653620605468751
+        ],
+        "chin": [
+          0.08,
+          0.28208126831054686,
+          0.92,
+          0.7928371704101562
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "03f210535f75a126173d812183f5ba8eaee5edc9"
     },
     {
       "bank": "questions.json",
@@ -32,7 +65,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Queen_Wei_at_O%27sweet_20100917.jpg",
       "artist": "Iluvqw84",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27937756119487445,
+          0.92,
+          0.41923915114358207
+        ],
+        "nose": [
+          0.08,
+          0.27937756119487445,
+          0.92,
+          0.5373956793193877
+        ],
+        "mouth": [
+          0.08,
+          0.27937756119487445,
+          0.92,
+          0.6654396508713006
+        ],
+        "chin": [
+          0.08,
+          0.27937756119487445,
+          0.92,
+          0.8121197205540547
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "aaf9a58e8577d57b5958ba37e3b993ff3768725d"
     },
     {
       "bank": "questions.json",
@@ -47,7 +113,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E8%88%9E%E6%80%9D%E6%84%9B_%E7%B6%AD%E5%9F%BA%E7%99%BE%E7%A7%91.png",
       "artist": "陳伊涵",
       "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28126808113151497,
+          0.92,
+          0.4122219885979499
+        ],
+        "nose": [
+          0.08,
+          0.28126808113151497,
+          0.92,
+          0.5398207444411057
+        ],
+        "mouth": [
+          0.08,
+          0.28126808113151497,
+          0.92,
+          0.6799782919717001
+        ],
+        "chin": [
+          0.08,
+          0.28126808113151497,
+          0.92,
+          0.8201684292879972
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "882b98e20bb107c60921a36e0b80b2899acc64e0"
     },
     {
       "bank": "questions.json",
@@ -62,7 +161,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ray_%E9%BB%83%E9%9C%86%E7%9D%BF.jpg",
       "artist": "Ray 黃霆睿",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28178733390372795,
+          0.92,
+          0.41910772925024636
+        ],
+        "nose": [
+          0.08,
+          0.28178733390372795,
+          0.92,
+          0.5430198646522499
+        ],
+        "mouth": [
+          0.08,
+          0.28178733390372795,
+          0.92,
+          0.6672574888120543
+        ],
+        "chin": [
+          0.08,
+          0.28178733390372795,
+          0.92,
+          0.799134620460304
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "25ad765f2831ae04990c24dfa81ba46e1d5d1d94"
     },
     {
       "bank": "questions.json",
@@ -77,7 +209,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Edmond_So_Chi_Wai%27s_portrait.png",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27704214504387376,
+          0.92,
+          0.4239869998696962
+        ],
+        "nose": [
+          0.08,
+          0.27704214504387376,
+          0.92,
+          0.5433860845929367
+        ],
+        "mouth": [
+          0.08,
+          0.27704214504387376,
+          0.92,
+          0.6678505368945885
+        ],
+        "chin": [
+          0.08,
+          0.27704214504387376,
+          0.92,
+          0.8150268143013425
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "a7b539c2035a64fc46aadf6273fef55cbb0b87b4"
     },
     {
       "bank": "questions.json",
@@ -92,7 +257,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Vincy_Chan_20240428.jpg",
       "artist": "Tombus20032000",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.43209148119854673
+        ],
+        "nose": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.5723713044197328
+        ],
+        "mouth": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.7174189019972278
+        ],
+        "chin": [
+          0.08,
+          0.26834215389784943,
+          0.92,
+          0.880171637422295
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "c80be7073a92b4519a4e87e1583cf692ee63985d"
     },
     {
       "bank": "questions.json",
@@ -107,7 +305,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:HK_Central_night_LKF_%E8%97%9D%E4%BA%BA_%E5%82%85%E7%A9%8E_Theresa_Fu_Wing_at_work_with_fans_Eclipse_04.JPG",
       "artist": "Licakoe",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2768292578030737,
+          0.92,
+          0.4245508849390685
+        ],
+        "nose": [
+          0.08,
+          0.2768292578030737,
+          0.92,
+          0.5498161315917969
+        ],
+        "mouth": [
+          0.08,
+          0.2768292578030737,
+          0.92,
+          0.6835442797097461
+        ],
+        "chin": [
+          0.08,
+          0.2768292578030737,
+          0.92,
+          0.837092917895225
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "11741f96de0e44e295ce241664d93032ab676b5f"
     },
     {
       "bank": "questions.json",
@@ -122,7 +353,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:KaryNg_2012.JPG",
       "artist": "子房",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27897520323057434,
+          0.92,
+          0.4315228333344331
+        ],
+        "nose": [
+          0.08,
+          0.27897520323057434,
+          0.92,
+          0.5583281130404085
+        ],
+        "mouth": [
+          0.08,
+          0.27897520323057434,
+          0.92,
+          0.6756275280101879
+        ],
+        "chin": [
+          0.08,
+          0.27897520323057434,
+          0.92,
+          0.8109954627784522
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "569f96893bb61cab636576d4375dc5cc0da2ec2f"
     },
     {
       "bank": "questions.json",
@@ -137,7 +401,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Pakho_Chau_20260426.jpg",
       "artist": "Will629",
       "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27739199454324287,
+          0.92,
+          0.4152208830180921
+        ],
+        "nose": [
+          0.08,
+          0.27739199454324287,
+          0.92,
+          0.5459121436403509
+        ],
+        "mouth": [
+          0.08,
+          0.27739199454324287,
+          0.92,
+          0.6786355965597588
+        ],
+        "chin": [
+          0.08,
+          0.27739199454324287,
+          0.92,
+          0.8097411124246162
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "4c638e336faeda3595b13844f909f2359c9e245c"
     },
     {
       "bank": "questions.json",
@@ -152,7 +449,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Elaine_Kong02.JPG",
       "artist": "Seansoo3",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28450423209897935,
+          0.92,
+          0.41858089816185734
+        ],
+        "nose": [
+          0.08,
+          0.28450423209897935,
+          0.92,
+          0.5393115628150201
+        ],
+        "mouth": [
+          0.08,
+          0.28450423209897935,
+          0.92,
+          0.6629441784274194
+        ],
+        "chin": [
+          0.08,
+          0.28450423209897935,
+          0.92,
+          0.7960906785534275
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "7f73c1a2d2fd6e0a3f33839437e2185be54da621"
     },
     {
       "bank": "questions.json",
@@ -167,7 +497,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:StephanieCheng2007.jpg",
       "artist": "Ken Mau",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27683476514155325,
+          0.92,
+          0.4193984078888846
+        ],
+        "nose": [
+          0.08,
+          0.27683476514155325,
+          0.92,
+          0.5350817387646968
+        ],
+        "mouth": [
+          0.08,
+          0.27683476514155325,
+          0.92,
+          0.6623006144608602
+        ],
+        "chin": [
+          0.08,
+          0.27683476514155325,
+          0.92,
+          0.8134456847540222
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "fa00b696184420fac902cbee147b16fd765fd224"
     },
     {
       "bank": "questions.json",
@@ -182,7 +545,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:黃少谷_20171015誠品唱談會.jpg",
       "artist": "Lidian192847",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.29,
+          0.92,
+          0.41
+        ],
+        "nose": [
+          0.08,
+          0.29,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.29,
+          0.92,
+          0.55
+        ],
+        "chin": [
+          0.08,
+          0.29,
+          0.92,
+          0.62
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "4c0ac236347a5de0fdb987b0a157506433fcd229"
     },
     {
       "bank": "actors.json",
@@ -197,7 +593,40 @@
       "source": "https://p7.itc.cn/images01/20220815/f88933f4f0174b10a5517bcff201c946.jpeg",
       "artist": "《包青天》影視劇照；原攝影及版權人未確認",
       "license": "Copyright retained by original rights holders; no open license asserted",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "reveal": {
+        "eyes": [
+          0.26,
+          0.3,
+          0.68,
+          0.41
+        ],
+        "nose": [
+          0.26,
+          0.3,
+          0.68,
+          0.465
+        ],
+        "mouth": [
+          0.26,
+          0.3,
+          0.68,
+          0.515
+        ],
+        "chin": [
+          0.26,
+          0.3,
+          0.68,
+          0.655
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "68952b67117471447fd06e8dd371d511014a9648"
     },
     {
       "bank": "actors.json",
@@ -212,7 +641,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%98%89%E6%AC%A3_-_Standing_position.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2795068899509126,
+          0.92,
+          0.4281817816000069
+        ],
+        "nose": [
+          0.08,
+          0.2795068899509126,
+          0.92,
+          0.5577049322887859
+        ],
+        "mouth": [
+          0.08,
+          0.2795068899509126,
+          0.92,
+          0.6825043102703263
+        ],
+        "chin": [
+          0.08,
+          0.2795068899509126,
+          0.92,
+          0.8201839383555725
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "61ef6d9411ef6d1f4212497b4d9ec90bcfa3c3b5"
     },
     {
       "bank": "actors.json",
@@ -227,7 +689,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Linda_Chung_2022.jpg",
       "artist": "愛麗健醫療儀器",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2825234338008996,
+          0.92,
+          0.4187592246315696
+        ],
+        "nose": [
+          0.08,
+          0.2825234338008996,
+          0.92,
+          0.5349394364790483
+        ],
+        "mouth": [
+          0.08,
+          0.2825234338008996,
+          0.92,
+          0.655028603293679
+        ],
+        "chin": [
+          0.08,
+          0.2825234338008996,
+          0.92,
+          0.7914506780450994
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "ebaa7de554093e4f1eeb30032fa4af3fd05e8771"
     },
     {
       "bank": "actors.json",
@@ -242,7 +737,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Eli_Shih_2024_Pastry_Chef.jpg",
       "artist": "Elishih",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27880472322789634,
+          0.92,
+          0.4216251094166825
+        ],
+        "nose": [
+          0.08,
+          0.27880472322789634,
+          0.92,
+          0.5450748536644913
+        ],
+        "mouth": [
+          0.08,
+          0.27880472322789634,
+          0.92,
+          0.6734622490115282
+        ],
+        "chin": [
+          0.08,
+          0.27880472322789634,
+          0.92,
+          0.8159762573242187
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "200cda1f6ea5641a648af567a29b01812c1c309f"
     },
     {
       "bank": "actors.json",
@@ -257,7 +785,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Sung_Yi-min_20151123b.jpg",
       "artist": "Jcentco",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27937851414535986,
+          0.92,
+          0.432352031360973
+        ],
+        "nose": [
+          0.08,
+          0.27937851414535986,
+          0.92,
+          0.5603593306107955
+        ],
+        "mouth": [
+          0.08,
+          0.27937851414535986,
+          0.92,
+          0.6670512806285511
+        ],
+        "chin": [
+          0.08,
+          0.27937851414535986,
+          0.92,
+          0.7870834239612927
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "fdf5611776a0e346ec8f160baf28628fc78da2fd"
     },
     {
       "bank": "actors.json",
@@ -272,7 +833,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Lorene_Jen_in_2019.png",
       "artist": "Elle Taiwan",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2811143133727419,
+          0.92,
+          0.42400934213023644
+        ],
+        "nose": [
+          0.08,
+          0.2811143133727419,
+          0.92,
+          0.5404092782359583
+        ],
+        "mouth": [
+          0.08,
+          0.2811143133727419,
+          0.92,
+          0.6545600156055337
+        ],
+        "chin": [
+          0.08,
+          0.2811143133727419,
+          0.92,
+          0.7904323103895219
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "b0ae9da646803cb022a36f6a2dda02ef1e388c0a"
     },
     {
       "bank": "actors.json",
@@ -287,7 +881,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Pierce220114-tsaoyuning.jpg",
       "artist": "Chencherry3",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27834866597102237,
+          0.92,
+          0.42636796144338757
+        ],
+        "nose": [
+          0.08,
+          0.27834866597102237,
+          0.92,
+          0.5619901510385367
+        ],
+        "mouth": [
+          0.08,
+          0.27834866597102237,
+          0.92,
+          0.6884809053861177
+        ],
+        "chin": [
+          0.08,
+          0.27834866597102237,
+          0.92,
+          0.81917787698599
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "9749af05720cb918f30d61f8fcc857b4301e2c09"
     },
     {
       "bank": "actors.json",
@@ -302,7 +929,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Caitlin_Fang_20220709.jpg",
       "artist": "PlayIN",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28415963939159594,
+          0.92,
+          0.40858484830470443
+        ],
+        "nose": [
+          0.08,
+          0.28415963939159594,
+          0.92,
+          0.5229479839347001
+        ],
+        "mouth": [
+          0.08,
+          0.28415963939159594,
+          0.92,
+          0.6534599348299766
+        ],
+        "chin": [
+          0.08,
+          0.28415963939159594,
+          0.92,
+          0.7916919615640805
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "dc5b6b74ec59fd2d9c87f77d1cc6cafaa0d8093c"
     },
     {
       "bank": "actors.json",
@@ -317,7 +977,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Weiman.jpg",
       "artist": "Cynthia.ccccc",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27505235803841455,
+          0.92,
+          0.431405274000036
+        ],
+        "nose": [
+          0.08,
+          0.27505235803841455,
+          0.92,
+          0.574565201860419
+        ],
+        "mouth": [
+          0.08,
+          0.27505235803841455,
+          0.92,
+          0.720162574779786
+        ],
+        "chin": [
+          0.08,
+          0.27505235803841455,
+          0.92,
+          0.8762007593485982
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "0210b11586c1606cfcb76cb558261795a0c08238"
     },
     {
       "bank": "actors.json",
@@ -332,7 +1025,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2u_Minh_T%C4%83ng.jpg",
       "artist": "三立娛樂星聞",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28496060294900993,
+          0.92,
+          0.41906736241304937
+        ],
+        "nose": [
+          0.08,
+          0.28496060294900993,
+          0.92,
+          0.5426487030192493
+        ],
+        "mouth": [
+          0.08,
+          0.28496060294900993,
+          0.92,
+          0.6697794460357829
+        ],
+        "chin": [
+          0.08,
+          0.28496060294900993,
+          0.92,
+          0.8047371995895304
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "a872fc7d6a3b8c25e4fdd52e9aa8a9b3121e900d"
     },
     {
       "bank": "actors.json",
@@ -347,7 +1073,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E6%B5%A9%E4%BF%A1.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2838984276103858,
+          0.92,
+          0.42267562515646256
+        ],
+        "nose": [
+          0.08,
+          0.2838984276103858,
+          0.92,
+          0.5474692993902094
+        ],
+        "mouth": [
+          0.08,
+          0.2838984276103858,
+          0.92,
+          0.6782340071653945
+        ],
+        "chin": [
+          0.08,
+          0.2838984276103858,
+          0.92,
+          0.8227804074639132
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "8c726219d828c9fa1b8c5910b4e71153159c48a7"
     },
     {
       "bank": "actors.json",
@@ -362,7 +1121,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E6%96%BD%E5%AC%85_Selena_Li_in_2023.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2700109913173748,
+          0.92,
+          0.4270186671119295
+        ],
+        "nose": [
+          0.08,
+          0.2700109913173748,
+          0.92,
+          0.5704288950408187
+        ],
+        "mouth": [
+          0.08,
+          0.2700109913173748,
+          0.92,
+          0.7200425400071313
+        ],
+        "chin": [
+          0.08,
+          0.2700109913173748,
+          0.92,
+          0.8761039862775674
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "6feb530e8c82c3b591f82d492f76a076e0d590b2"
     },
     {
       "bank": "actors.json",
@@ -377,7 +1169,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E6%96%87%E9%BE%8D.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2808978014755767,
+          0.92,
+          0.424026841224453
+        ],
+        "nose": [
+          0.08,
+          0.2808978014755767,
+          0.92,
+          0.5504430307623813
+        ],
+        "mouth": [
+          0.08,
+          0.2808978014755767,
+          0.92,
+          0.6821394735307835
+        ],
+        "chin": [
+          0.08,
+          0.2808978014755767,
+          0.92,
+          0.8283498048200051
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "2fff016cc700ceec739a42eeb6be08a4f27e6dcc"
     },
     {
       "bank": "actors.json",
@@ -392,7 +1217,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E6%95%8F%E4%B9%8B.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2707358496908684,
+          0.92,
+          0.4367887154739656
+        ],
+        "nose": [
+          0.08,
+          0.2707358496908684,
+          0.92,
+          0.5895968717063087
+        ],
+        "mouth": [
+          0.08,
+          0.2707358496908684,
+          0.92,
+          0.7277508179899382
+        ],
+        "chin": [
+          0.08,
+          0.2707358496908684,
+          0.92,
+          0.8675370879829841
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "2111b4e095f1bb586a354c849e8675b0d97b7ebb"
     },
     {
       "bank": "actors.json",
@@ -407,7 +1265,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:1G3A8076_retouch.jpg",
       "artist": "Nikowu123",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27743621290775766,
+          0.92,
+          0.4264584725363213
+        ],
+        "nose": [
+          0.08,
+          0.27743621290775766,
+          0.92,
+          0.547083028157552
+        ],
+        "mouth": [
+          0.08,
+          0.27743621290775766,
+          0.92,
+          0.6699104389391447
+        ],
+        "chin": [
+          0.08,
+          0.27743621290775766,
+          0.92,
+          0.8169645182291666
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "fa76a1a6c6f238ee84ae10de72972ee12400313a"
     },
     {
       "bank": "actors.json",
@@ -422,7 +1313,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E5%BE%B7%E6%96%8C.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2780680847167969,
+          0.92,
+          0.42046955249927664
+        ],
+        "nose": [
+          0.08,
+          0.2780680847167969,
+          0.92,
+          0.5366476694742839
+        ],
+        "mouth": [
+          0.08,
+          0.2780680847167969,
+          0.92,
+          0.6615658399793837
+        ],
+        "chin": [
+          0.08,
+          0.2780680847167969,
+          0.92,
+          0.8095657314724393
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "0ffb635d1a6c902fc01c133a1f727efcec00559c"
     },
     {
       "bank": "actors.json",
@@ -437,7 +1361,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Joyce_Tang_2023.jpg",
       "artist": "SSeun",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28623718590453884,
+          0.92,
+          0.41516259842329867
+        ],
+        "nose": [
+          0.08,
+          0.28623718590453884,
+          0.92,
+          0.5261597419341548
+        ],
+        "mouth": [
+          0.08,
+          0.28623718590453884,
+          0.92,
+          0.6357953384919911
+        ],
+        "chin": [
+          0.08,
+          0.28623718590453884,
+          0.92,
+          0.7569943933127384
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "2c89f67dbb779056f61068f9886ecff819d29b71"
     },
     {
       "bank": "actors.json",
@@ -452,7 +1409,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Lo_Hoi_Pang_Photo.jpg",
       "artist": "Alexsiu323",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27774294339693506,
+          0.92,
+          0.4163051751943735
+        ],
+        "nose": [
+          0.08,
+          0.27774294339693506,
+          0.92,
+          0.5355804149921124
+        ],
+        "mouth": [
+          0.08,
+          0.27774294339693506,
+          0.92,
+          0.6617899087759164
+        ],
+        "chin": [
+          0.08,
+          0.27774294339693506,
+          0.92,
+          0.8028754058251015
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "30e23c42c36503dc4dac80df98dfa85fe27397fb"
     },
     {
       "bank": "actors.json",
@@ -467,7 +1457,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Edwin_Siu_20240518.jpg",
       "artist": "Tombus20032000",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28370865269711143,
+          0.92,
+          0.4166445146527207
+        ],
+        "nose": [
+          0.08,
+          0.28370865269711143,
+          0.92,
+          0.531497085303591
+        ],
+        "mouth": [
+          0.08,
+          0.28370865269711143,
+          0.92,
+          0.6488389266164679
+        ],
+        "chin": [
+          0.08,
+          0.28370865269711143,
+          0.92,
+          0.7797820656759697
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "aae71466859b4221b6d33e5718644373c0e6b848"
     },
     {
       "bank": "actors.json",
@@ -482,7 +1505,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ruco_Chan_(%E9%99%B3%E5%B1%95%E9%B5%AC)_2020.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2826512470337504,
+          0.92,
+          0.4201294995736385
+        ],
+        "nose": [
+          0.08,
+          0.2826512470337504,
+          0.92,
+          0.5419671616116584
+        ],
+        "mouth": [
+          0.08,
+          0.2826512470337504,
+          0.92,
+          0.6673849207191652
+        ],
+        "chin": [
+          0.08,
+          0.2826512470337504,
+          0.92,
+          0.8039582773107262
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "85332e60e1c394e0e9ce25907e29673d0558ede9"
     },
     {
       "bank": "actors.json",
@@ -497,7 +1553,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E5%B1%B1%E8%81%B0.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2786179551133164,
+          0.92,
+          0.4310340046729207
+        ],
+        "nose": [
+          0.08,
+          0.2786179551133164,
+          0.92,
+          0.5659851506256536
+        ],
+        "mouth": [
+          0.08,
+          0.2786179551133164,
+          0.92,
+          0.7036341211817286
+        ],
+        "chin": [
+          0.08,
+          0.2786179551133164,
+          0.92,
+          0.8574219268445343
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "46069d55c8c2bae6e1033e9b319a4360b982357d"
     },
     {
       "bank": "actors.json",
@@ -512,7 +1601,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Janice_Man.jpg",
       "artist": "https://www.flickr.com/people/lge/",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2741567298280241,
+          0.92,
+          0.4240395004200823
+        ],
+        "nose": [
+          0.08,
+          0.2741567298280241,
+          0.92,
+          0.5523872017300745
+        ],
+        "mouth": [
+          0.08,
+          0.2741567298280241,
+          0.92,
+          0.6939534147020797
+        ],
+        "chin": [
+          0.08,
+          0.2741567298280241,
+          0.92,
+          0.8544583287485328
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "7cf18d1b92c29f6b8957fe7c872980723fb41d20"
     },
     {
       "bank": "actors.json",
@@ -527,7 +1649,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Eliza_Sam_2014.jpg",
       "artist": "阿 B",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.280594604163157,
+          0.92,
+          0.418430297522532
+        ],
+        "nose": [
+          0.08,
+          0.280594604163157,
+          0.92,
+          0.5433709897763646
+        ],
+        "mouth": [
+          0.08,
+          0.280594604163157,
+          0.92,
+          0.6755681204988628
+        ],
+        "chin": [
+          0.08,
+          0.280594604163157,
+          0.92,
+          0.8158755435583727
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "a9f2cc18ed9e363bf9b57ef98353f1c5154f306c"
     },
     {
       "bank": "actors.json",
@@ -542,7 +1697,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E8%8C%B5%E5%AA%BA.jpg",
       "artist": "zh:am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2754558070424641,
+          0.92,
+          0.4344728643243963
+        ],
+        "nose": [
+          0.08,
+          0.2754558070424641,
+          0.92,
+          0.5675343782707835
+        ],
+        "mouth": [
+          0.08,
+          0.2754558070424641,
+          0.92,
+          0.6943558396334853
+        ],
+        "chin": [
+          0.08,
+          0.2754558070424641,
+          0.92,
+          0.8410453672272167
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "7a1d5a63007d72c62fb4c5f18876d47f38b20710"
     },
     {
       "bank": "actors.json",
@@ -557,7 +1745,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Priscilla_Wong_(%E9%BB%83%E7%BF%A0%E5%A6%82)_in_October_2019.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2699599770242854,
+          0.92,
+          0.43025871099427687
+        ],
+        "nose": [
+          0.08,
+          0.2699599770242854,
+          0.92,
+          0.5745048818662185
+        ],
+        "mouth": [
+          0.08,
+          0.2699599770242854,
+          0.92,
+          0.7231439350926598
+        ],
+        "chin": [
+          0.08,
+          0.2699599770242854,
+          0.92,
+          0.882360114992127
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "71d6adb6f3618e8bfbe998b5e36288744ab88c0b"
     },
     {
       "bank": "actors.json",
@@ -572,7 +1793,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E4%BB%B2%E8%AC%99.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2810757716391801,
+          0.92,
+          0.42628599945431184
+        ],
+        "nose": [
+          0.08,
+          0.2810757716391801,
+          0.92,
+          0.5484929557205663
+        ],
+        "mouth": [
+          0.08,
+          0.2810757716391801,
+          0.92,
+          0.6715594716242156
+        ],
+        "chin": [
+          0.08,
+          0.2810757716391801,
+          0.92,
+          0.8146697038577444
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "cf034dcde7019ed48206755f28c237fd1483df91"
     },
     {
       "bank": "actors.json",
@@ -587,7 +1841,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:2008TaipeiGameShow_Day3_SCET_Angela_Chia-yu_Li_in_Gaming.jpg",
       "artist": "Rico Shen",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2734002923153323,
+          0.92,
+          0.42427673711103825
+        ],
+        "nose": [
+          0.08,
+          0.2734002923153323,
+          0.92,
+          0.5728518632206604
+        ],
+        "mouth": [
+          0.08,
+          0.2734002923153323,
+          0.92,
+          0.7200977854485059
+        ],
+        "chin": [
+          0.08,
+          0.2734002923153323,
+          0.92,
+          0.8601675689771517
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "9e1a310fb07eca7149296ae15716bf4cdb034707"
     },
     {
       "bank": "actors.json",
@@ -602,7 +1889,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Shuting_Zhao.jpg",
       "artist": "jamiweb",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28580990122325384,
+          0.92,
+          0.41237005546911437
+        ],
+        "nose": [
+          0.08,
+          0.28580990122325384,
+          0.92,
+          0.5214481496099216
+        ],
+        "mouth": [
+          0.08,
+          0.28580990122325384,
+          0.92,
+          0.642095884636267
+        ],
+        "chin": [
+          0.08,
+          0.28580990122325384,
+          0.92,
+          0.7778859380465836
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "1dea5c74cf9e0c4c8779bc57f3d1c4c7fb6b5c88"
     },
     {
       "bank": "actors.json",
@@ -617,7 +1937,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%91%A8%E6%9B%89%E6%B6%B5202208.jpg",
       "artist": "TOMO0208",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.26912767525178843,
+          0.92,
+          0.4268384267048663
+        ],
+        "nose": [
+          0.08,
+          0.26912767525178843,
+          0.92,
+          0.5624085575701242
+        ],
+        "mouth": [
+          0.08,
+          0.26912767525178843,
+          0.92,
+          0.7060520548992846
+        ],
+        "chin": [
+          0.08,
+          0.26912767525178843,
+          0.92,
+          0.8656291798051581
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "357b074fe7f6899ce7818f9c4049b62a11b0ba7b"
     },
     {
       "bank": "actors.json",
@@ -632,7 +1985,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:2017%E6%B3%B3%E8%A3%9D%E7%99%BC%E8%A1%A8@SOGO_%E8%A2%81%E8%89%BE%E8%8F%B2.jpg",
       "artist": "HH FRED",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2789294775846962,
+          0.92,
+          0.42353019357841704
+        ],
+        "nose": [
+          0.08,
+          0.2789294775846962,
+          0.92,
+          0.559304795309762
+        ],
+        "mouth": [
+          0.08,
+          0.2789294775846962,
+          0.92,
+          0.6975838349244305
+        ],
+        "chin": [
+          0.08,
+          0.2789294775846962,
+          0.92,
+          0.8402526695750584
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "f8ad249cd5384cbe6d697ada54f4345d7a76bb8e"
     },
     {
       "bank": "actors.json",
@@ -647,7 +2033,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:2019_Elle%E6%99%82%E5%B0%9A%E8%B7%AF%E8%B7%91-%E9%83%AD%E6%BA%90%E5%85%83.jpg",
       "artist": "Chen Stig Tim",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2793049205433239,
+          0.92,
+          0.4169667561848958
+        ],
+        "nose": [
+          0.08,
+          0.2793049205433239,
+          0.92,
+          0.5338516895905202
+        ],
+        "mouth": [
+          0.08,
+          0.2793049205433239,
+          0.92,
+          0.6640187581380209
+        ],
+        "chin": [
+          0.08,
+          0.2793049205433239,
+          0.92,
+          0.8123192910198527
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "25ff701e169980ad12c6e92d67edf10df9a32a12"
     },
     {
       "bank": "actors.json",
@@ -662,7 +2081,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Actor_Wes_Lo_at_the_2025_Busan_International_Film_Festival_3_(cropped).jpg",
       "artist": "Jennifer 8. Lee",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28093768812205694,
+          0.92,
+          0.4236774392323951
+        ],
+        "nose": [
+          0.08,
+          0.28093768812205694,
+          0.92,
+          0.5529891758748929
+        ],
+        "mouth": [
+          0.08,
+          0.28093768812205694,
+          0.92,
+          0.6846811623769264
+        ],
+        "chin": [
+          0.08,
+          0.28093768812205694,
+          0.92,
+          0.8260451091609589
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "d50949d2f9db866bb9f546f781012c8ebbedaa73"
     },
     {
       "bank": "actors.json",
@@ -677,7 +2129,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%88%BE%E5%86%AC%E9%99%9E.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27782650600660225,
+          0.92,
+          0.4292572253637459
+        ],
+        "nose": [
+          0.08,
+          0.27782650600660225,
+          0.92,
+          0.5661515780669195
+        ],
+        "mouth": [
+          0.08,
+          0.27782650600660225,
+          0.92,
+          0.6981052002966157
+        ],
+        "chin": [
+          0.08,
+          0.27782650600660225,
+          0.92,
+          0.838918377677105
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "bc80487961f272e45b95e108cf0296b5b68eb374"
     },
     {
       "bank": "actors.json",
@@ -692,7 +2177,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Michael_Miu_(%E8%8B%97%E5%83%91%E5%81%89)_in_October_2009.jpg",
       "artist": "Nate Robert",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2814949437191612,
+          0.92,
+          0.42652621249920925
+        ],
+        "nose": [
+          0.08,
+          0.2814949437191612,
+          0.92,
+          0.5511348173525008
+        ],
+        "mouth": [
+          0.08,
+          0.2814949437191612,
+          0.92,
+          0.6798255827745445
+        ],
+        "chin": [
+          0.08,
+          0.2814949437191612,
+          0.92,
+          0.827996999146002
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "6011cf5ad8cca3583a25fb9e06b21141a6b09fe4"
     },
     {
       "bank": "actors.json",
@@ -707,7 +2225,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%97%9C%E8%A9%A0%E8%8D%B7EstherKwan.jpg",
       "artist": "Hoie1217",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27666830772210743,
+          0.92,
+          0.4216636216344912
+        ],
+        "nose": [
+          0.08,
+          0.27666830772210743,
+          0.92,
+          0.5477816495028409
+        ],
+        "mouth": [
+          0.08,
+          0.27666830772210743,
+          0.92,
+          0.6781737171519887
+        ],
+        "chin": [
+          0.08,
+          0.27666830772210743,
+          0.92,
+          0.8216197398792613
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "dd80671f40402adb7ab7d1bc72e454386aafd8b9"
     },
     {
       "bank": "actors.json",
@@ -722,7 +2273,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Nancy_Sit_20251226.jpg",
       "artist": "Will629",
       "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.279791136827514,
+          0.92,
+          0.41988249864623445
+        ],
+        "nose": [
+          0.08,
+          0.279791136827514,
+          0.92,
+          0.5391312187881832
+        ],
+        "mouth": [
+          0.08,
+          0.279791136827514,
+          0.92,
+          0.6672490196770401
+        ],
+        "chin": [
+          0.08,
+          0.279791136827514,
+          0.92,
+          0.8144042983213308
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "bf72dd485a66e8f3621fdd2d73a86c18fa2c5890"
     },
     {
       "bank": "actors.json",
@@ -737,7 +2321,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E5%92%AA%E5%92%AA_2018.jpg",
       "artist": "The Future Cut Fashion Design Competition Asia",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2816674956193207,
+          0.92,
+          0.4220909767962517
+        ],
+        "nose": [
+          0.08,
+          0.2816674956193207,
+          0.92,
+          0.5494487573069038
+        ],
+        "mouth": [
+          0.08,
+          0.2816674956193207,
+          0.92,
+          0.6813247283863402
+        ],
+        "chin": [
+          0.08,
+          0.2816674956193207,
+          0.92,
+          0.823422534121971
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "4acb45f346a0cf332e1fd4d3521a6c67c708624f"
     },
     {
       "bank": "actors.json",
@@ -752,7 +2369,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Teresa_Mo%27s_portrait_(Clear_version).png",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2783771894842505,
+          0.92,
+          0.4152890999478648
+        ],
+        "nose": [
+          0.08,
+          0.2783771894842505,
+          0.92,
+          0.532538486191951
+        ],
+        "mouth": [
+          0.08,
+          0.2783771894842505,
+          0.92,
+          0.6639559559613111
+        ],
+        "chin": [
+          0.08,
+          0.2783771894842505,
+          0.92,
+          0.8108880007314492
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "4a32342534d6c688878079a1fc6d11b259bb027b"
     },
     {
       "bank": "actors.json",
@@ -767,7 +2417,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Tenky_Tin.jpg",
       "artist": "漢矮祖",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27973211836265066,
+          0.92,
+          0.4204771733633877
+        ],
+        "nose": [
+          0.08,
+          0.27973211836265066,
+          0.92,
+          0.5458642411781807
+        ],
+        "mouth": [
+          0.08,
+          0.27973211836265066,
+          0.92,
+          0.6799935202928459
+        ],
+        "chin": [
+          0.08,
+          0.27973211836265066,
+          0.92,
+          0.8261461557832154
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "03bc31b4b3f61d465b621a38075c2e1e64430746"
     },
     {
       "bank": "actors.json",
@@ -782,7 +2465,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E5%AD%90%E5%96%84.png",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2836045695239713,
+          0.92,
+          0.42583578358525814
+        ],
+        "nose": [
+          0.08,
+          0.2836045695239713,
+          0.92,
+          0.5529183903095886
+        ],
+        "mouth": [
+          0.08,
+          0.2836045695239713,
+          0.92,
+          0.6822848984617624
+        ],
+        "chin": [
+          0.08,
+          0.2836045695239713,
+          0.92,
+          0.8258354856123835
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "366dcc3615bffb19c45657016fb6f44f40f5825e"
     },
     {
       "bank": "actors.json",
@@ -797,7 +2513,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Waiselee.png",
       "artist": "China News Service",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2751803604397762,
+          0.92,
+          0.41578222959096195
+        ],
+        "nose": [
+          0.08,
+          0.2751803604397762,
+          0.92,
+          0.5507109935653726
+        ],
+        "mouth": [
+          0.08,
+          0.2751803604397762,
+          0.92,
+          0.6984994281642612
+        ],
+        "chin": [
+          0.08,
+          0.2751803604397762,
+          0.92,
+          0.8468353892707339
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "c3089b13c8a76b6784c90f9df8151490616eded0"
     },
     {
       "bank": "actors.json",
@@ -812,7 +2561,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:HK_%E5%B0%87%E8%BB%8D%E6%BE%B3_TKO_PopCorn_%E6%B4%B2%E7%AB%8B%E5%BD%B1%E8%97%9D_MCL_Star_Cinema_Film_Makers_Nov_2017_IX1_%E9%BA%A5%E9%95%B7%E9%9D%92_Evergreen_Mak.jpg",
       "artist": "Stangitko25",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2736686470582313,
+          0.92,
+          0.42423464588283266
+        ],
+        "nose": [
+          0.08,
+          0.2736686470582313,
+          0.92,
+          0.5616289119130558
+        ],
+        "mouth": [
+          0.08,
+          0.2736686470582313,
+          0.92,
+          0.7048662480619764
+        ],
+        "chin": [
+          0.08,
+          0.2736686470582313,
+          0.92,
+          0.8554775025672519
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "b5d2b2623541e714b8b5728660ade781b06d416a"
     },
     {
       "bank": "actors.json",
@@ -827,7 +2609,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E5%8D%93%E7%BE%B2_Ron_Ng_(9522094195).jpg",
       "artist": "LeonardKong",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2797236609080481,
+          0.92,
+          0.4199175304836697
+        ],
+        "nose": [
+          0.08,
+          0.2797236609080481,
+          0.92,
+          0.53951538933648
+        ],
+        "mouth": [
+          0.08,
+          0.2797236609080481,
+          0.92,
+          0.6615861559671069
+        ],
+        "chin": [
+          0.08,
+          0.2797236609080481,
+          0.92,
+          0.7984674266028026
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "7eaa6cc6ffc15a93a4766f68bca8218733ee0d07"
     },
     {
       "bank": "actors.json",
@@ -842,7 +2657,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Michelle_Reis_SHISEIDO_(3).jpg",
       "artist": "蔡雙碩士(趕海、踏青)日記",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2797295236756018,
+          0.92,
+          0.4196160522029594
+        ],
+        "nose": [
+          0.08,
+          0.2797295236756018,
+          0.92,
+          0.5435200344126132
+        ],
+        "mouth": [
+          0.08,
+          0.2797295236756018,
+          0.92,
+          0.6661151252450033
+        ],
+        "chin": [
+          0.08,
+          0.2797295236756018,
+          0.92,
+          0.7979106307282464
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "f71e4c08ff5113e879274d60d015246ec02b54f4"
     },
     {
       "bank": "actors.json",
@@ -857,7 +2705,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%90%B3%E5%AE%B6%E9%BA%97.jpg",
       "artist": "數碼電台DBC",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27673278977666205,
+          0.92,
+          0.4296690711024065
+        ],
+        "nose": [
+          0.08,
+          0.27673278977666205,
+          0.92,
+          0.5550789872695204
+        ],
+        "mouth": [
+          0.08,
+          0.27673278977666205,
+          0.92,
+          0.6791435770050641
+        ],
+        "chin": [
+          0.08,
+          0.27673278977666205,
+          0.92,
+          0.8262341849625606
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "0827e718d95df7d39d165a3fef67898391351fb8"
     },
     {
       "bank": "actors.json",
@@ -872,7 +2753,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Stephy_Tang_20240328.jpg",
       "artist": "Will629",
       "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28256965243200743,
+          0.92,
+          0.42845811978192394
+        ],
+        "nose": [
+          0.08,
+          0.28256965243200743,
+          0.92,
+          0.5536847181723151
+        ],
+        "mouth": [
+          0.08,
+          0.28256965243200743,
+          0.92,
+          0.6780766017000439
+        ],
+        "chin": [
+          0.08,
+          0.28256965243200743,
+          0.92,
+          0.8220198582035836
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "016c188f426254800d1145ed8ceff0b98cf3ccc0"
     },
     {
       "bank": "actors.json",
@@ -887,7 +2801,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E8%B6%85%E7%B4%9A%E5%A4%9C%E7%B8%BD%E6%9C%83_%E6%9E%97%E7%BE%8E%E7%85%A7_20151025.jpg",
       "artist": "蕭嘉錡",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27303779914033455,
+          0.92,
+          0.42481237361865415
+        ],
+        "nose": [
+          0.08,
+          0.27303779914033455,
+          0.92,
+          0.5684045841259584
+        ],
+        "mouth": [
+          0.08,
+          0.27303779914033455,
+          0.92,
+          0.7227856717588291
+        ],
+        "chin": [
+          0.08,
+          0.27303779914033455,
+          0.92,
+          0.8815263803474966
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "e135a8638b9c721b585f47e040f47816c2285e0f"
     },
     {
       "bank": "actors.json",
@@ -902,7 +2849,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B3%E9%B3%B3%E6%A1%82%E8%82%96%E5%83%8F.jpg",
       "artist": "​中華民國總統府",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2742442632518641,
+          0.92,
+          0.4261987912256305
+        ],
+        "nose": [
+          0.08,
+          0.2742442632518641,
+          0.92,
+          0.570253667860408
+        ],
+        "mouth": [
+          0.08,
+          0.2742442632518641,
+          0.92,
+          0.7172781715277118
+        ],
+        "chin": [
+          0.08,
+          0.2742442632518641,
+          0.92,
+          0.8662953867810838
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "4f2231ad285f74b81e2d5d5948d6aec80f0c6672"
     },
     {
       "bank": "actors.json",
@@ -917,7 +2897,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E8%91%89%E5%AD%90%E6%A5%A3.png",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28261536383853464,
+          0.92,
+          0.4218714471460191
+        ],
+        "nose": [
+          0.08,
+          0.28261536383853464,
+          0.92,
+          0.541544343067852
+        ],
+        "mouth": [
+          0.08,
+          0.28261536383853464,
+          0.92,
+          0.6668373487839628
+        ],
+        "chin": [
+          0.08,
+          0.28261536383853464,
+          0.92,
+          0.8103187530230064
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "ac08e2bf5bb001055d51ba6ff20c5fd737d788c0"
     },
     {
       "bank": "actors.json",
@@ -932,7 +2945,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E4%B8%B9%E7%91%9E.jpg",
       "artist": "數碼電台DBC",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27816659930262466,
+          0.92,
+          0.4272113852146363
+        ],
+        "nose": [
+          0.08,
+          0.27816659930262466,
+          0.92,
+          0.564926656859055
+        ],
+        "mouth": [
+          0.08,
+          0.27816659930262466,
+          0.92,
+          0.7105391228868313
+        ],
+        "chin": [
+          0.08,
+          0.27816659930262466,
+          0.92,
+          0.866726254823537
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "cc6877917d6007940d061f5495e014e5914e39c2"
     },
     {
       "bank": "actors.json",
@@ -947,7 +2993,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Carol_Cheng_Yu_Ling_2018.jpg",
       "artist": "Wpcpey",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28141268181078366,
+          0.92,
+          0.41103781497839725
+        ],
+        "nose": [
+          0.08,
+          0.28141268181078366,
+          0.92,
+          0.5277806137547348
+        ],
+        "mouth": [
+          0.08,
+          0.28141268181078366,
+          0.92,
+          0.6616538862748579
+        ],
+        "chin": [
+          0.08,
+          0.28141268181078366,
+          0.92,
+          0.8092087291370738
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "3d5b961864e16d2afc1b334b654894406b8ae1a9"
     },
     {
       "bank": "actors.json",
@@ -962,7 +3041,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Alex_Lam_20230401.jpg",
       "artist": "Tombus20032000",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.4156135991517349
+        ],
+        "nose": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.5474191889589132
+        ],
+        "mouth": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.6900450671732667
+        ],
+        "chin": [
+          0.08,
+          0.2767204192003258,
+          0.92,
+          0.83340346239839
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "cfcd91560a814d07626117f1ad78af7042afa766"
     },
     {
       "bank": "actors.json",
@@ -977,7 +3089,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E8%AD%9A%E4%BF%8A%E5%BD%A5.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.27,
+          0.92,
+          0.9
+        ],
+        "eyes": [
+          0.08,
+          0.27,
+          0.92,
+          0.47
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.92,
+          0.72
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.92,
+          0.58
+        ]
+      },
+      "photoGitBlobSha": "c3b8239bb60daa409efbef561a99bc8578dcd235"
     },
     {
       "bank": "actors.json",
@@ -992,7 +3137,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%8A%89%E5%BF%83%E6%82%A0.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.26,
+          0.92,
+          0.9
+        ],
+        "eyes": [
+          0.08,
+          0.26,
+          0.92,
+          0.47
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.26,
+          0.92,
+          0.72
+        ],
+        "nose": [
+          0.08,
+          0.26,
+          0.92,
+          0.58
+        ]
+      },
+      "photoGitBlobSha": "6c19d9055481a0c4bd7db805dc9ea08cb17fd8a7"
     },
     {
       "bank": "actors.json",
@@ -1007,7 +3185,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Regina_Lei_in_February_2025.png",
       "artist": "Elle Taiwan",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.24,
+          0.92,
+          0.89
+        ],
+        "eyes": [
+          0.08,
+          0.24,
+          0.92,
+          0.46
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.24,
+          0.92,
+          0.74
+        ],
+        "nose": [
+          0.08,
+          0.24,
+          0.92,
+          0.57
+        ]
+      },
+      "photoGitBlobSha": "a12cd32286278c54878f752cfc36f308990bffca"
     },
     {
       "bank": "actors.json",
@@ -1022,7 +3233,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E8%95%8A%E5%A6%AE.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27,
+          0.96,
+          0.52
+        ],
+        "nose": [
+          0.08,
+          0.27,
+          0.96,
+          0.67
+        ],
+        "mouth": [
+          0.08,
+          0.27,
+          0.96,
+          0.84
+        ],
+        "chin": [
+          0.08,
+          0.27,
+          0.96,
+          0.97
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "8db7072cc4d871235a88df5268e97fbb3016ad04"
     },
     {
       "bank": "actors.json",
@@ -1037,7 +3281,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:20190304%E2%80%94Ben_Wong_Chi-yin_%E9%BB%83%E6%99%BA%E8%B3%A2,_%22The_Ghetto-Fabulous_Lady%22_press_event,_am730_screenshot_(00m12s).jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2780240078204073,
+          0.92,
+          0.43081854486915905
+        ],
+        "nose": [
+          0.08,
+          0.2780240078204073,
+          0.92,
+          0.5665044540014023
+        ],
+        "mouth": [
+          0.08,
+          0.2780240078204073,
+          0.92,
+          0.7077036663266489
+        ],
+        "chin": [
+          0.08,
+          0.2780240078204073,
+          0.92,
+          0.8655209041703568
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "ccd6d33002b0c01116a75488139103c197f4f565"
     },
     {
       "bank": "actors.json",
@@ -1052,7 +3329,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B5%A9%E7%84%B6.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.23,
+          0.92,
+          0.35
+        ],
+        "nose": [
+          0.08,
+          0.23,
+          0.92,
+          0.43
+        ],
+        "mouth": [
+          0.08,
+          0.23,
+          0.92,
+          0.53
+        ],
+        "chin": [
+          0.08,
+          0.23,
+          0.92,
+          0.64
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "9bb7af946f9907a0ec93145398fec4d994eceded"
     },
     {
       "bank": "actors.json",
@@ -1067,7 +3377,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%99%B6%E5%A4%A7%E5%AE%87.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.38,
+          0.92,
+          0.52
+        ],
+        "nose": [
+          0.08,
+          0.38,
+          0.92,
+          0.65
+        ],
+        "mouth": [
+          0.08,
+          0.38,
+          0.92,
+          0.76
+        ],
+        "chin": [
+          0.08,
+          0.38,
+          0.92,
+          0.89
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "de1376be768dd6cae347b09835d52f2d24aeed9e"
     },
     {
       "bank": "actors.json",
@@ -1082,7 +3425,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%BE%85%E8%98%AD.jpg",
       "artist": "Yahoo Hong Kong",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2776027550858058,
+          0.92,
+          0.42567769597085675
+        ],
+        "nose": [
+          0.08,
+          0.2776027550858058,
+          0.92,
+          0.5433222738544593
+        ],
+        "mouth": [
+          0.08,
+          0.2776027550858058,
+          0.92,
+          0.6669812377472495
+        ],
+        "chin": [
+          0.08,
+          0.2776027550858058,
+          0.92,
+          0.8185108347689168
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "ad2a03bf55ba97aa5874f6e407ca488d61de1fe9"
     },
     {
       "bank": "actors.json",
@@ -1097,7 +3473,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%85%86%E8%BC%9D.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.32,
+          0.92,
+          0.84
+        ],
+        "eyes": [
+          0.08,
+          0.32,
+          0.92,
+          0.48
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.32,
+          0.92,
+          0.69
+        ],
+        "nose": [
+          0.08,
+          0.32,
+          0.92,
+          0.57
+        ]
+      },
+      "photoGitBlobSha": "ba5453c506deb1dbe3cb0a4a696b809399638ae0"
     },
     {
       "bank": "actors.json",
@@ -1112,7 +3521,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:LinDaYuan.jpg",
       "artist": "邱鈺鋒 (Kuyohong)",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28,
+          0.92,
+          0.44
+        ],
+        "nose": [
+          0.08,
+          0.28,
+          0.92,
+          0.49
+        ],
+        "mouth": [
+          0.08,
+          0.28,
+          0.92,
+          0.62
+        ],
+        "chin": [
+          0.08,
+          0.28,
+          0.92,
+          0.73
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "3814fb031c3b55da97accac1ebbdaf22bedd5b6d"
     },
     {
       "bank": "actors.json",
@@ -1127,7 +3569,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:張達明.jpg",
       "artist": "am730",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.12,
+          0.33,
+          0.88,
+          0.46
+        ],
+        "nose": [
+          0.12,
+          0.33,
+          0.88,
+          0.57
+        ],
+        "mouth": [
+          0.12,
+          0.33,
+          0.88,
+          0.69
+        ],
+        "chin": [
+          0.12,
+          0.33,
+          0.88,
+          0.84
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "f21117493d1995a288937575b05f08873a3f723b"
     },
     {
       "bank": "variety.json",
@@ -1142,7 +3617,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Cheryl_Hsieh_and_CTI_News_microphone_20190824.jpg",
       "artist": "NepotismTW",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2786774593660202,
+          0.92,
+          0.41888580322265623
+        ],
+        "nose": [
+          0.08,
+          0.2786774593660202,
+          0.92,
+          0.5414035314801096
+        ],
+        "mouth": [
+          0.08,
+          0.2786774593660202,
+          0.92,
+          0.6705303534146013
+        ],
+        "chin": [
+          0.08,
+          0.2786774593660202,
+          0.92,
+          0.8120291860295439
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "0fe18bba1d2d5e82d3189b22b1d6b57d56cc08f4"
     },
     {
       "bank": "variety.json",
@@ -1157,7 +3665,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Janet_Hsieh_2016.jpg",
       "artist": "Hsin-Jen Hsu",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2788563402393196,
+          0.92,
+          0.4222110796578323
+        ],
+        "nose": [
+          0.08,
+          0.2788563402393196,
+          0.92,
+          0.5432012855755126
+        ],
+        "mouth": [
+          0.08,
+          0.2788563402393196,
+          0.92,
+          0.6635057859782932
+        ],
+        "chin": [
+          0.08,
+          0.2788563402393196,
+          0.92,
+          0.7997201628222245
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "d34e460b003ae364630e48de2d1c8f0372ac2bb0"
     },
     {
       "bank": "variety.json",
@@ -1172,7 +3713,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Bernice_Zhao_and_Sony_Cyber-shot_DSC-KW11_20141029.png",
       "artist": "Gene Wang",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28055724685256545,
+          0.92,
+          0.4182014980831662
+        ],
+        "nose": [
+          0.08,
+          0.28055724685256545,
+          0.92,
+          0.5378960068161424
+        ],
+        "mouth": [
+          0.08,
+          0.28055724685256545,
+          0.92,
+          0.6722621690904772
+        ],
+        "chin": [
+          0.08,
+          0.28055724685256545,
+          0.92,
+          0.8240811008762668
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "fc9c1fbef58a0d98055347d78277e766ef28fb7c"
     },
     {
       "bank": "variety.json",
@@ -1187,7 +3761,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Homei_0526.jpg",
       "artist": "Silverawolf.kevin",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2714549026722572,
+          0.92,
+          0.4286888192553039
+        ],
+        "nose": [
+          0.08,
+          0.2714549026722572,
+          0.92,
+          0.5642441682494744
+        ],
+        "mouth": [
+          0.08,
+          0.2714549026722572,
+          0.92,
+          0.705029390200927
+        ],
+        "chin": [
+          0.08,
+          0.2714549026722572,
+          0.92,
+          0.8619218757466074
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "e3b0c6f8883326584f9f6a4d6ab632d4f2e97946"
     },
     {
       "bank": "variety.json",
@@ -1202,7 +3809,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E6%B2%90%E5%A6%8D-%E5%8D%81%E4%BA%8C%E5%A4%9C2_%E9%9B%BB%E5%BD%B1%E5%AE%A3%E5%82%B3.jpg",
       "artist": "Chen Stig Tim",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.27848628117487984,
+          0.92,
+          0.4263611441768368
+        ],
+        "nose": [
+          0.08,
+          0.27848628117487984,
+          0.92,
+          0.5534925592486439
+        ],
+        "mouth": [
+          0.08,
+          0.27848628117487984,
+          0.92,
+          0.6814151921921229
+        ],
+        "chin": [
+          0.08,
+          0.27848628117487984,
+          0.92,
+          0.8251965933955868
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "0c267e495c0e7e3ed8d217e2ae573ef01bf5f311"
     },
     {
       "bank": "variety.json",
@@ -1217,7 +3857,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Wayne_kkbox20th_stage.jpg",
       "artist": "湯姆葉",
       "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2787689208984375,
+          0.92,
+          0.4236143808516245
+        ],
+        "nose": [
+          0.08,
+          0.2787689208984375,
+          0.92,
+          0.5516106257362972
+        ],
+        "mouth": [
+          0.08,
+          0.2787689208984375,
+          0.92,
+          0.675165773421999
+        ],
+        "chin": [
+          0.08,
+          0.2787689208984375,
+          0.92,
+          0.8081612916976686
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "58f7dcff01364a717c8da5d80544e7fe6f44ba9d"
     },
     {
       "bank": "variety.json",
@@ -1232,7 +3905,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%83%E8%B1%AA%E5%B9%B3%E5%9C%A8%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87%E5%B0%8F%E8%B3%A3%E6%89%80.png",
       "artist": "知識迷航 SAT. KNOWLEDGE SHOW",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28084560181737994,
+          0.92,
+          0.4253718020978911
+        ],
+        "nose": [
+          0.08,
+          0.28084560181737994,
+          0.92,
+          0.5466410841060874
+        ],
+        "mouth": [
+          0.08,
+          0.28084560181737994,
+          0.92,
+          0.6550527086006231
+        ],
+        "chin": [
+          0.08,
+          0.28084560181737994,
+          0.92,
+          0.7766736188871769
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "d07e30b0a6d057d9b8b509e3094791f668ad239e"
     },
     {
       "bank": "variety.json",
@@ -1247,7 +3953,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Otani_Mondo.jpg",
       "artist": "Otani Mondo本人",
       "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2733480949688675,
+          0.92,
+          0.43005960794319786
+        ],
+        "nose": [
+          0.08,
+          0.2733480949688675,
+          0.92,
+          0.5680287296610668
+        ],
+        "mouth": [
+          0.08,
+          0.2733480949688675,
+          0.92,
+          0.7133743722098214
+        ],
+        "chin": [
+          0.08,
+          0.2733480949688675,
+          0.92,
+          0.8749162799577067
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "e1d27836c8278752545587546b082c8a655290f2"
     },
     {
       "bank": "variety.json",
@@ -1262,7 +4001,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Vivi_Ho_retouched.jpg",
       "artist": "Hardworking",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2856403274024093,
+          0.92,
+          0.4165655174511391
+        ],
+        "nose": [
+          0.08,
+          0.2856403274024093,
+          0.92,
+          0.5342660942333657
+        ],
+        "mouth": [
+          0.08,
+          0.2856403274024093,
+          0.92,
+          0.6567923731451867
+        ],
+        "chin": [
+          0.08,
+          0.2856403274024093,
+          0.92,
+          0.7896538978935088
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "bfe0f939883db1357e08d767821af8739eb2d3be"
     },
     {
       "bank": "variety.json",
@@ -1277,7 +4049,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Taiwanese_Entertainer_Hou_Chang-Ming.JPG",
       "artist": "SSR2000",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2827181619814677,
+          0.92,
+          0.4165102984454181
+        ],
+        "nose": [
+          0.08,
+          0.2827181619814677,
+          0.92,
+          0.5438762355495144
+        ],
+        "mouth": [
+          0.08,
+          0.2827181619814677,
+          0.92,
+          0.6737838967178567
+        ],
+        "chin": [
+          0.08,
+          0.2827181619814677,
+          0.92,
+          0.804577857511207
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "5f5f36cc110e72816ed9fd87e25ce8539571e5de"
     },
     {
       "bank": "variety.json",
@@ -1292,7 +4097,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E7%AF%A0%E5%B4%8E%E6%B3%ABHsyan.jpg",
       "artist": "Wu70145",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2827221307030605,
+          0.92,
+          0.42318534221586224
+        ],
+        "nose": [
+          0.08,
+          0.2827221307030605,
+          0.92,
+          0.5511554932043498
+        ],
+        "mouth": [
+          0.08,
+          0.2827221307030605,
+          0.92,
+          0.6752735402324411
+        ],
+        "chin": [
+          0.08,
+          0.2827221307030605,
+          0.92,
+          0.8049319991813635
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "a84fc954b56084c5f0704e23f100e0a93593b005"
     },
     {
       "bank": "variety.json",
@@ -1307,7 +4145,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E6%9E%97%E9%87%87%E7%B7%B9_Sunny_Lin.jpg",
       "artist": "ChenTim0602",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2762669255183293,
+          0.92,
+          0.43735372103177583
+        ],
+        "nose": [
+          0.08,
+          0.2762669255183293,
+          0.92,
+          0.5776716965895433
+        ],
+        "mouth": [
+          0.08,
+          0.2762669255183293,
+          0.92,
+          0.6843377568171574
+        ],
+        "chin": [
+          0.08,
+          0.2762669255183293,
+          0.92,
+          0.7939751821664665
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "da76d03623d59505d5dfa1f4fda588029b56b37b"
     },
     {
       "bank": "variety.json",
@@ -1322,7 +4193,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:李妍瑾Yuni_Li_2026形象照-1.jpg",
       "artist": "ChiYLin",
       "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.2793413460430494,
+          0.92,
+          0.4164583099275212
+        ],
+        "nose": [
+          0.08,
+          0.2793413460430494,
+          0.92,
+          0.5398439840581213
+        ],
+        "mouth": [
+          0.08,
+          0.2793413460430494,
+          0.92,
+          0.6694461248617256
+        ],
+        "chin": [
+          0.08,
+          0.2793413460430494,
+          0.92,
+          0.8061305943491889
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "e5dd6a7abfcef601ff2a1a0398f66f48f24a95a5"
     },
     {
       "bank": "variety.json",
@@ -1337,7 +4241,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Lin_Yu-pin_standing_(11146907725).jpg",
       "artist": "Gene Wang",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.277812693175242,
+          0.92,
+          0.4173321322559909
+        ],
+        "nose": [
+          0.08,
+          0.277812693175242,
+          0.92,
+          0.5473048534457531
+        ],
+        "mouth": [
+          0.08,
+          0.277812693175242,
+          0.92,
+          0.6916748406509758
+        ],
+        "chin": [
+          0.08,
+          0.277812693175242,
+          0.92,
+          0.8441908228196682
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "865d6856a1a8d66e51805b8af872a16380d86ec1"
     },
     {
       "bank": "variety.json",
@@ -1352,7 +4289,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Serina_Liu_20140824.jpg",
       "artist": "Gene Wang",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.21,
+          0.92,
+          0.75
+        ],
+        "eyes": [
+          0.08,
+          0.21,
+          0.92,
+          0.39
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.21,
+          0.92,
+          0.6
+        ],
+        "nose": [
+          0.08,
+          0.21,
+          0.92,
+          0.49
+        ]
+      },
+      "photoGitBlobSha": "e4cf882bd686f962f43e9b153fefc58bd901771e"
     },
     {
       "bank": "variety.json",
@@ -1367,7 +4337,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:2007AlconTaiwanHiking_DiYing_SunPeng.jpg",
       "artist": "Rico Shen",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reveal": {
+        "chin": [
+          0.14,
+          0.26,
+          0.82,
+          0.64
+        ],
+        "eyes": [
+          0.14,
+          0.26,
+          0.82,
+          0.36
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.14,
+          0.26,
+          0.82,
+          0.54
+        ],
+        "nose": [
+          0.14,
+          0.26,
+          0.82,
+          0.43
+        ]
+      },
+      "photoGitBlobSha": "fd50060037e4c014bffe4201432c6aa327691bb3"
     },
     {
       "bank": "variety.json",
@@ -1382,7 +4385,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E5%BC%98%E5%84%80.jpg",
       "artist": "荻原ホシ",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "eyes": [
+          0.1,
+          0.35,
+          0.9,
+          0.55
+        ],
+        "nose": [
+          0.1,
+          0.35,
+          0.9,
+          0.69
+        ],
+        "mouth": [
+          0.1,
+          0.35,
+          0.9,
+          0.83
+        ],
+        "chin": [
+          0.1,
+          0.35,
+          0.9,
+          0.96
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "photoGitBlobSha": "2a72d3d681ee49fa571a61169d30eee269bba82b"
     },
     {
       "bank": "variety.json",
@@ -1397,7 +4433,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:David_Chao_at_Kinokuniya_Taipei_Breeze_Store_20100102.jpg",
       "artist": "竹筍弟弟 (JeanHavoc)",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reveal": {
+        "chin": [
+          0.08,
+          0.2805332934762549,
+          0.92,
+          0.8106325180574353
+        ],
+        "eyes": [
+          0.08,
+          0.2805332934762549,
+          0.92,
+          0.42067273958461493
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "mouth": [
+          0.08,
+          0.2805332934762549,
+          0.92,
+          0.6738977387195497
+        ],
+        "nose": [
+          0.08,
+          0.2805332934762549,
+          0.92,
+          0.5463922255308297
+        ]
+      },
+      "photoGitBlobSha": "332d10eccaab2e5aaf263cfc380a43ea79050ffc"
     }
   ]
 }

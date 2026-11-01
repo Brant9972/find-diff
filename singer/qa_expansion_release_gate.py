@@ -5,6 +5,7 @@ It allows unchanged historical entries to remain playable while preventing
 future unreviewed or rights-unclear expansion photos from silently landing.
 """
 import argparse
+import copy
 import hashlib
 import json
 import re
@@ -13,7 +14,7 @@ from urllib.parse import urlsplit
 
 BANKS = ("questions.json", "actors.json", "variety.json")
 SNAPSHOT_FIELDS = ("id", "name", "photo", "photoStatus", "eligibility",
-                   "humanReviewed", "gameSha256", "photoSha256")
+                   "humanReviewed", "gameSha256", "photoSha256", "reveal")
 ATTR_FIELDS = ("source", "artist", "license", "licenseUrl")
 STAGES = ("eyes", "nose", "mouth", "chin", "full")
 CC = re.compile(r"^CC (BY|BY-SA) (1\.0|2\.0|2\.5|3\.0|4\.0)$", re.I)
@@ -23,11 +24,17 @@ SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
 def snapshot(bank, entry):
     row = {"bank": bank}
     for key in SNAPSHOT_FIELDS:
-        row[key] = entry.get(key)
+        row[key] = copy.deepcopy(entry.get(key))
     attribution = entry.get("attribution") or {}
     for key in ATTR_FIELDS:
         row[key] = attribution.get(key)
     return row
+
+
+def git_blob_sha(path):
+    """Git blob identity for unchanged-file detection; not a rights proof."""
+    data = path.read_bytes()
+    return hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\x00" + data).hexdigest()
 
 
 def license_ok(attribution):
@@ -88,7 +95,26 @@ def validate(banks, baseline, root, hints):
                 errors.append(f"{pid}: duplicate ID across banks")
                 continue
             found[pid] = bank
-            if pid in old and snapshot(bank, entry) == old[pid]:
+            previous = old.get(pid)
+            if previous is not None:
+                pinned = previous.get("photoGitBlobSha")
+                if not isinstance(pinned, str) or not re.fullmatch(r"[0-9a-f]{40}", pinned):
+                    errors.append(f"{pid}: missing or invalid baseline photo Git blob SHA")
+                photo_path = (root / str(entry.get("photo") or "")).resolve()
+                same_pixels = (isinstance(pinned, str)
+                               and bool(re.fullmatch(r"[0-9a-f]{40}", pinned))
+                               and photo_path.is_relative_to(root.resolve())
+                               and photo_path.is_file()
+                               and git_blob_sha(photo_path) == pinned)
+                same_metadata = snapshot(bank, entry) == {
+                    key: value for key, value in previous.items()
+                    if key != "photoGitBlobSha"
+                }
+            else:
+                same_pixels = same_metadata = False
+            # A JPEG overwritten at the same path, or altered reveal geometry,
+            # must not inherit an old metadata-only release exemption.
+            if previous is not None and same_pixels and same_metadata:
                 if entry.get("humanReviewed") is not True or not license_ok(entry.get("attribution") or {}):
                     legacy_debt.append(pid)
                 continue

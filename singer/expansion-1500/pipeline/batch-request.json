@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-nolay-cached-two-framing-review",
+  "requestId": "20261101-nolay-exact-cached-single-crop-qa-retry",
   "mode": "manual_recrop",
   "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261101-nolay-two-framings.json",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
+  "targetPeople": 1,
+  "plannedPersonIds": [
+    "t1500_0123"
+  ],
   "retryFailed": false,
   "providers": [
     "commons"
@@ -13,5 +15,5 @@
   "maxMinutes": 10,
   "personSeconds": 30,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY: render two manual crop hypotheses for 林慶台 from exact immutable source pixels in 417bdfb; no network source search, no release, no main/creators/Pages modifications. Review actual eyes/nose/mouth/chin/full stages before deciding."
+  "purpose": "DRAFT ONLY, NO MAIN: exact cached Commons Nolay Piho.jpg source; render one unapproved manual 600x720 framing and eyes/nose/mouth/chin/full masks for human review. No new source search, no release, no creators/Pages changes."
 }

@@ -1,20 +1,17 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-two-verified-exact-source-diagnostic",
-  "mode": "search",
-  "targetPeople": 2,
-  "plannedPersonIds": [
-    "t1500_0564",
-    "t1500_0107"
-  ],
+  "requestId": "20261101-exact-two-person-diagnostic-complete-render-only",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
   "retryFailed": false,
   "providers": [
     "entity",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 9,
-  "personSeconds": 90,
-  "maxCandidates": 2,
-  "purpose": "DRAFT ONLY; no main or deploy. Two selectedNew exact-source candidates: Eric Kot 2023 solo CC BY-SA 4.0 Q590914; Chen Ming-chang 2023 Kaohsiung source still requires rights check, older 2022 files excluded. Use source-already-rejected and exact API diagnostics; respect cooldown. Require independent identity, author, license, 600x720 five-stage human review before any release. No production edits."
+  "maxMinutes": 8,
+  "personSeconds": 75,
+  "maxCandidates": 1,
+  "purpose": "DRAFT ONLY; no main or deploy. 41322972146 checked two selectedNew exact-source IDs: t1500_0564 skipped due cooldown until 2026-11-04T22:11:45Z, t1500_0107 scanned with 5 Commons metadata but 0 downloaded, including government-source 2023 photo marked license_unclear. Do not bypass rights gate or repeat without independent GWOIA grant evidence. Preserve review assets and stop source searches."
 }

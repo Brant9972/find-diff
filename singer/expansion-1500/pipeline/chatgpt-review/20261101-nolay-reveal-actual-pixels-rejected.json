@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "actual_600x720_and_five_stage_visual_screening",
+  "reviewedAt": "2026-11-01",
+  "mainBaselineSha": "3b9a5c68428f76aeea3e3680c5b9b70a5e2a1fe9",
+  "pipelineAssetCommit": "75c95971878145a57fa5d1214a127226ff3809d9",
+  "sourceRun": "20261101T085603Z-9bb875a9",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "candidatesViewed": 2,
+    "revealSheetsViewed": 1,
+    "approvedForLive": 0,
+    "rejectedExactCrops": 1,
+    "rightsPending": 1
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-5a2d5126a85b9a5d6e70",
+      "gameSha256": "5a2d5126a85b9a5d6e706255e18500dadd4e531f7f34357e114c9e27d9830f59",
+      "decision": "reject_exact_crop_and_reveal",
+      "eligibleForLive": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
+      "wikidataQid": "Q7224941",
+      "sourceCredit": "P1340; own work; CC BY-SA 3.0 metadata",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "cropBox": [
+        520,
+        240,
+        1320,
+        1200
+      ],
+      "stageReview": {
+        "eyes": "FAIL: only blue event backdrop visible; neither eye is in the revealed region",
+        "nose": "FAIL: backdrop and only a sliver of hair, no nose",
+        "mouth": "FAIL: face is not visible, despite the mouth stage label",
+        "chin": "FAIL: a partial upper face appears only; mouth and chin not fully exposed",
+        "full": "FAIL: target face low and partly clipped; a second person's face is clearly visible at lower left"
+      },
+      "visualEvidence": "Opened immutable GitHub reveal-sheet-01.jpg, contact-sheet-01.jpg, and manual-source-sheet-01.jpg and inspected actual pixels. This crop fails all meaningful reveal stages and contains another face. Source photo itself is a group photo, not automatically disqualified if an isolated, usable crop can be made.",
+      "nextAction": "Do not use this gameSha256. Trial a single tighter lower crop from the exact cached source (proposed box [720,880,1320,1600]) with new five-stage boundaries; treat proposal as unapproved until actual pixels are inspected."
+    },
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "decision": "visual_pass_but_rights_hold",
+      "eligibleForLive": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "sourceVideo": "https://www.youtube.com/watch?v=ffxdss7Xk6Y",
+      "sourceAuthor": "CNA Taiwan - 中央社",
+      "sourceLicenseClaim": "CC BY 3.0 (Commons page)",
+      "stageReview": {
+        "eyes": "PASS: both eyes visible in first stage",
+        "nose": "PASS: nose exposed progressively",
+        "mouth": "PASS: lips visible, microphone does not obstruct",
+        "chin": "PASS: lower face and chin visible",
+        "full": "PASS: single clear portrait, no second face or facial watermark"
+      },
+      "rightsEvidence": "Commons file description and upload history claim that the source CNA YouTube video was CC BY 3.0; no independent archived or direct video-license confirmation found. Commons tag alone is insufficient under the project's strict rights gate.",
+      "identityEvidence": "Commons caption explicitly names Chen Shiang-chyi and Wikidata Q5090886 matches; no separate original-video frame-by-frame identity confirmation recorded.",
+      "nextAction": "Keep rights hold until original CNA video CC license and identity are independently evidenced; do not integrate merely because crop looks good."
+    }
+  ],
+  "notes": [
+    "No changes to main, official question banks, creators, or Pages.",
+    "Never carry a rejected crop's review status to a new SHA.",
+    "Re-check source and QA before release; candidate visual acceptance does not imply rights acceptance."
+  ]
+}

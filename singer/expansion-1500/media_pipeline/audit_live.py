@@ -12,7 +12,7 @@ from pathlib import Path
 
 BANKS = ("questions.json", "actors.json", "variety.json")
 OPEN_LICENSE = re.compile(
-    r"^(?:CC0|CC BY(?:-SA)? [0-9]+(?:\.[0-9]+)?|Public domain|PD)$",
+    r"^(?:CC0|CC BY(?:-SA)? (?:1\.0|2\.0|2\.5|3\.0|4\.0)|Public domain|PD)$",
     re.IGNORECASE,
 )
 

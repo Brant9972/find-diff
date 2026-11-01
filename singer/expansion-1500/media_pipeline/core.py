@@ -374,6 +374,14 @@ def process(person, row, root, directory, providers, http, crop, rejected, max_c
                         errors.append({'provider': provider.name, 'source': item['source'],
                                        'code': code, 'message':
                                        'Curated source already rejected/retained/excluded; find a different image or review retained pixels'})
+                    elif key in rejected or key in {source_key(url) for url in person.get('excludedPhotoSources', [])}:
+                        # A Commons search can successfully return metadata for a
+                        # photograph that an earlier human already rejected.
+                        # Silently discarding it creates misleading 0 candidates /
+                        # 0 errors reports and triggers needless API retries.
+                        errors.append({'provider': provider.name, 'source': item['source'],
+                                       'code': 'source_already_rejected',
+                                       'message': 'Previously rejected photo source; search a different image, not this URL'})
                     continue
                 seen.add(key)
                 tried += 1

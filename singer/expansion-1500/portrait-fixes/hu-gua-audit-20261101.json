@@ -17,6 +17,12 @@
     299
   ],
   "crop": "600x720, 5/6, full face visible at stage 5",
-  "qaStatus": "pending visual confirmation before release",
-  "productionModified": false
+  "qaStatus": "manual_crop_visual_check_complete_pending_branch_QA",
+  "productionModified": false,
+  "visualNotes": [
+    "Dominant in-focus foreground face matches the Wikidata-linked Commons portrait file; source caption explicitly names 胡瓜 (胡自雄).",
+    "Two smaller people remain visible behind the main subject; consider a cleaner open-license replacement if available later.",
+    "Adjusted eyes/nose/mouth/chin reveal coordinates after preview inspection."
+  ],
+  "releaseReview": "No image-based identity identification made; source caption, Wikidata file linkage and license reviewed."
 }

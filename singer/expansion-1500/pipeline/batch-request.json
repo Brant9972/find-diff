@@ -9,12 +9,12 @@
   ],
   "retryFailed": false,
   "providers": [
-    "commons",
-    "entity"
+    "entity",
+    "commons"
   ],
   "workers": 1,
   "maxMinutes": 9,
   "personSeconds": 90,
   "maxCandidates": 2,
-  "purpose": "DRAFT ONLY, no deploy. Two selectedNew candidates with independent exact Commons source evidence: Eric Kot (2023 solo, CC BY-SA 4.0, Q590914) and Chen Ming-chang (2023 Kaohsiung source unreviewed; older 2022 01/02 photos already excluded). Use fixed source-already-rejected reporting and exact API diagnostics; respect cooldown. Require human caption/identity, source rights, 600x720 eyes/nose/mouth/chin/full review. Do not publish or count without all gates."
+  "purpose": "DRAFT ONLY; no main or deploy. Two selectedNew exact-source candidates: Eric Kot 2023 solo CC BY-SA 4.0 Q590914; Chen Ming-chang 2023 Kaohsiung source still requires rights check, older 2022 files excluded. Use source-already-rejected and exact API diagnostics; respect cooldown. Require independent identity, author, license, 600x720 five-stage human review before any release. No production edits."
 }

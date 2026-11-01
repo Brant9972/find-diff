@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-01",
+  "reviewType": "existing_human_rejection_reconciliation",
+  "releaseGate": "REJECT_THIS_EXACT_PHOTO_NOT_PERSON",
+  "person": {
+    "personId": "t1500_0445",
+    "name": "張懷秋",
+    "wikidataQid": "Q9138397"
+  },
+  "source": {
+    "file": "大嘴巴懷秋.JPG",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:大嘴巴懷秋.JPG",
+    "license": "CC BY-SA 3.0",
+    "author": "Onlymyself65536",
+    "caption": "大嘴巴懷秋在台南遠東百貨的《首部曲》簽唱會"
+  },
+  "priorHumanDecision": {
+    "file": "singer/photo-review.json",
+    "recordId": "a839",
+    "reviewedAt": "2026-10-21",
+    "reason": "閉眼",
+    "decision": "reject_photo_not_person"
+  },
+  "diagnostic": {
+    "workflowRun": "https://github.com/Brant9972/find-diff/actions/runs/41310245851",
+    "runId": "20261101T131422Z-81219d4f",
+    "scannedPeople": 1,
+    "metadataCandidates": 0,
+    "newCandidatePhotos": 0,
+    "providerErrors": {},
+    "interpretation": "The Commons page exists and carries open-license metadata, but the exact photo was already human-rejected. The pipeline silently skipped it through global rejection_keys; empty providerErrors does not mean an API defect. Do not retry this exact file."
+  },
+  "changes": [
+    "Remove rejected exact filename from selectedNew reviewExactCommonsFiles",
+    "Add rejected Commons URL to excludedPhotoSources",
+    "Keep existing photo-review rejection and all production banks unchanged",
+    "Require a DIFFERENT licensed single-person portrait with open eyes, 600x720 five-stage human QA before release"
+  ],
+  "eligibleForLive": false
+}

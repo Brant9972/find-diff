@@ -1,18 +1,16 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-post-135-exact-commons-one-person-diagnostic-v2",
-  "mode": "search",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0445"
-  ],
-  "retryFailed": true,
+  "requestId": "20261101-stop-rejected-zhanghuaichiu-exact-file",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 9,
-  "personSeconds": 110,
+  "maxMinutes": 8,
+  "personSeconds": 75,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY; no main; no deploy. After PR #135 fixed silent exact-file Commons metadata failures, run exactly ONE bounded Commons-only lookup for 張懷秋, File:大嘴巴懷秋.JPG. Preserve exact provider error codes, imageinfo metadata and license evidence. Do not approve or publish without 600x720 five-stage visual review; no 20/40/200 reruns."
+  "purpose": "DRAFT ONLY; no main; no deploy. Exact File:大嘴巴懷秋.JPG was rejected on 2026-10-21 for closed eyes (photo-review.json a839); stop repeat searches. Preserve existing review assets without modifying production. Next source must be a DIFFERENT licensed open-eyed portrait."
 }

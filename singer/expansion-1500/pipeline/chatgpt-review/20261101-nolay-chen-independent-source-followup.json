@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "incremental_source_evidence_not_game_approval",
+  "reviewedAt": "2026-11-01",
+  "mainBaselineSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "pipelineBaselineSha": "482dd5e582430557415ff45b3710b6119cf758ed",
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "summary": {
+    "peopleChecked": 2,
+    "sourceImagesViewed": 2,
+    "newGameCropsApproved": 0,
+    "productionChanges": 0
+  },
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "d5e1b75b4539fc4f5eb3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nolay_Piho.jpg",
+      "wikidataQid": "Q7224941",
+      "sourcePhotographer": "P1340",
+      "sourceLicense": "CC BY-SA 3.0",
+      "sourceRightsEvidence": "Commons uploader P1340 claims own work and CC BY-SA 3.0; cropping is permitted subject to attribution and share-alike.",
+      "sourceDimensions": [
+        3240,
+        4320
+      ],
+      "visualEvidence": "Commons 500x667 actual image preview opened and inspected 2026-11-01; center foreground man is the subject identified in the caption, with other people at left/right and behind. Face is three-quarter and dim/noisy; original full pixels and 600x720 reveal stages not independently inspected in this run.",
+      "decision": "pending_manual_isolation_and_full_pixel_review",
+      "nextAction": "Manually crop central foreground man's face from the 3240x4320 original, exclude all other faces, inspect full 600x720 and five reveals for eye/nose/mouth/chin visibility, sharpness, and identity; verify derivative attribution/share-alike before any release.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2013_臺灣泰雅族原住民林慶台與萊萊在自由廣場《看見台灣》露天首映會_Premiere_of_%22Beyond_Beauty_-_TAIWAN_FROM_ABOVE%22_in_the_Liberty_Square,_Taipei,_TAIWAN.jpg",
+      "sourcePhotographer": "othree",
+      "sourceLicense": "CC BY 2.0",
+      "licenseReview": "Leoboudv verified Flickr license on 2013-11-08",
+      "sourceDimensions": [
+        4608,
+        3072
+      ],
+      "visualEvidence": "Actual 960x640 Commons thumbnail viewed 2026-11-01: subject at center-left of a wide stage, with a second prominent performer at right, foreground audience and handheld microphone. Face occupies a small fraction of the frame; nighttime stage image not suitable for a sharp, isolated five-stage quiz portrait.",
+      "decision": "reject_exact_source_game_crop",
+      "nextAction": "Do not use this exact photo for the game despite reviewed CC license; keep searching other independently licensed close portraits.",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
+      "candidateId": "11cfabb73b01aa6bd121",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(陳湘琪)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "sourceVideo": "https://www.youtube.com/watch?v=ffxdss7Xk6Y",
+      "sourceAuthor": "CNA Taiwan - 中央社",
+      "licenseMetadata": "CC BY 3.0 on Commons",
+      "rightsEvidence": "Commons page describes YouTube CC BY 3.0 but no visible reviewer confirmation. Original YouTube video page could not be fetched in this run (throttled); license not independently verified.",
+      "decision": "continue_rights_hold",
+      "nextAction": "Verify original video's CC license via authoritative preserved evidence or obtain an alternative independently verified photographer-owned portrait; improve face centering and review all five stages before release.",
+      "eligibleForLive": false
+    }
+  ],
+  "restrictions": [
+    "No approved image or new playable person in this record.",
+    "Do not alter the existing eight-source review or reintroduce previously rejected photos.",
+    "Do not modify main, creators, release plan, production JSON or Pages without complete review and QA."
+  ]
+}

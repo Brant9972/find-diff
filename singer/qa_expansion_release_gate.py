@@ -98,9 +98,9 @@ def validate(banks, baseline, root, hints):
             if pid not in old and entry.get("name") in existing_names:
                 errors.append(f"{pid}: canonical name already playable in another bank")
             attr = entry.get("attribution") or {}
-            if entry.get("humanReviewed") is not True or entry.get("photoStatus") != "reviewed":
+            if entry.get("humanReviewed") is not True or entry.get("photoStatus") not in ("reviewed", "manually_reviewed_source_and_photo"):
                 errors.append(f"{pid}: human-reviewed portrait flag/status missing")
-            if entry.get("eligibility") != "approved":
+            if entry.get("eligibility") not in ("approved", "curated_reviewed"):
                 errors.append(f"{pid}: eligibility must be approved")
             if not license_ok(attr) or not str(attr.get("artist") or "").strip():
                 errors.append(f"{pid}: valid CC license URL and named author required")

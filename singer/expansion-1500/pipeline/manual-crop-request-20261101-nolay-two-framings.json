@@ -3,7 +3,7 @@
   "sourceCommit": "417bdfbc96cad667a8ea2f34ab39d80ba6ff894d",
   "sourceRun": "20261101T012602Z-f8798e60",
   "releaseGate": "MANUAL_CROP_STAGING_ONLY_NO_LIVE",
-  "purpose": "Draft-only two framing alternatives from already checkpointed Nolay Piho.jpg source pixels. Central subject was identified in source-only review, but no crop geometry or five-stage human inspection has been approved. No fresh source search or Wikimedia download; choose/reject based on actual generated five-stage contact sheets. Never publish without independent identity, rights, face, hint and live QA.",
+  "purpose": "DRAFT ONLY, NO MAIN: exact immutable Nolay source; one tight framing hypothesis. Other framing retained as research notes only; no new source search, identity approval, rights approval or Pages change. Human review required.",
   "items": [
     {
       "personId": "t1500_0123",
@@ -48,50 +48,12 @@
         ]
       },
       "notes": "TIGHT central-figure framing hypothesis only, not visual approval. Source 1920x2560, group photograph. Confirm the correct subject is inside the crop and that no second face/occlusion enters any stage; reject otherwise."
-    },
-    {
-      "personId": "t1500_0123",
-      "sourceCandidateId": "d5e1b75b4539fc4f5eb3",
-      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
-      "box": [
-        360,
-        200,
-        1560,
-        1640
-      ],
-      "reveal": {
-        "eyes": [
-          0.1,
-          0.22,
-          0.9,
-          0.38
-        ],
-        "nose": [
-          0.1,
-          0.22,
-          0.9,
-          0.5
-        ],
-        "mouth": [
-          0.1,
-          0.22,
-          0.9,
-          0.64
-        ],
-        "chin": [
-          0.1,
-          0.22,
-          0.9,
-          0.79
-        ],
-        "full": [
-          0,
-          0,
-          1,
-          1
-        ]
-      },
-      "notes": "WIDER central-figure framing hypothesis only; may include other people, which must be rejected if present. No identity/rights/visual approval; source already retained in immutable GitHub commit."
     }
+  ],
+  "alternativeDeferredBox": [
+    360,
+    200,
+    1560,
+    1640
   ]
 }

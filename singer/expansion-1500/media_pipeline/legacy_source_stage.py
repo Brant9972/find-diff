@@ -14,6 +14,8 @@ from urllib.parse import quote
 import cv2
 import numpy as np
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from PIL import Image, ImageDraw, ImageOps
 
 RELEASE_GATE = "SOURCE_PIXELS_AND_DRAFT_ONLY_NO_LIVE"
@@ -91,8 +93,23 @@ def stage(request, output):
     output.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
     session.headers.update({"User-Agent": "FindDiff/1.0 (licensed-photo QA; GitHub: Brant9972/find-diff)"})
-    response = session.get(url, timeout=45)
-    response.raise_for_status()
+    # Shared CI IPs can receive 429. Respect Retry-After; never bypass source
+    # throttling, downgrade verification, or silently use unverified thumbnails.
+    retries = Retry(total=3, backoff_factor=4, status_forcelist=[429, 500, 502, 503, 504],
+                    allowed_methods=["GET"], respect_retry_after_header=True)
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+    try:
+        response = session.get(url, timeout=45)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        status = getattr(getattr(exc, "response", None), "status_code", None)
+        failure = {"releaseGate": RELEASE_GATE, "sourceUrl": url,
+                   "sourceSha1Expected": item["sha1"], "sourceDownloadStatus": "failed",
+                   "httpStatus": status, "errorClass": type(exc).__name__,
+                   "noOriginalPixelsObtained": True, "eligibleForLive": False}
+        (output / "staging-failure.json").write_text(json.dumps(failure, indent=2) + "\n")
+        print("LEGACY_SOURCE_DOWNLOAD_BLOCKED " + json.dumps(failure), flush=True)
+        raise
     raw = response.content
     digest = verify_original(raw, item["sha1"], item["size"], item["dimensions"])
     (output / "commons-original.jpg").write_bytes(raw)

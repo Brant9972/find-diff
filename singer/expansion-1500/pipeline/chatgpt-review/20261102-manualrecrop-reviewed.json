@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT direct source, 600x720 and five-stage pixel review",
+  "reviewedAt": "2026-11-02",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "42f42ced1d1de214481e3e445af1a128683f1ffe",
+  "releaseGate": "ONE_RELEASED_AFTER_MAIN_QA_PENDING_PAGES_LIVE_VERIFICATION",
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-24a4fb7b59e2c3136377",
+      "gameSha256": "24a4fb7b59e2c3136377730109c7cbe04cd5cece1ace240492a510420748576c",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "decision": "rejected",
+      "reason": "600×720 crop 頭頂及雙眼均被切掉，eyes/nose 階段只見衣服與下半臉，五階段錯位，不能使用。",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-5a2d5126a85b9a5d6e70",
+      "gameSha256": "5a2d5126a85b9a5d6e706255e18500dadd4e531f7f34357e114c9e27d9830f59",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "decision": "rejected",
+      "reason": "eyes 階段顯示活動背板，鼻階段只見頭頂，mouth/chin 階段才出現五官，背景仍有第二張臉；不符合漸進揭露。",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0171",
+      "name": "陳湘琪",
+      "candidateId": "manualrecrop-f186fd95e6ed-4bcc5ace",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "sourceSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+      "decision": "approved",
+      "source": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "wikidata": "https://www.wikidata.org/wiki/Q5090886",
+      "artist": "CNA Taiwan - 中央社",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sourceVideo": "https://www.youtube.com/watch?v=ffxdss7Xk6Y",
+      "reason": "2014 第51屆金馬獎陳湘琪單人紅毯／受訪畫面；Commons 圖說具名、英文維基人物頁沿用同圖，Wikidata Q5090886 指向台灣演員。實際目視 600×720 JPEG 與眼／鼻／嘴／下巴／全臉五階段：眼睛、鼻尖、嘴唇與下巴逐步揭露，五官完整，無第二張臉、浮水印或眼嘴遮擋；左下麥克風在嘴巴以下。影片截圖略柔，但五官可辨識，符合遊戲使用。",
+      "work": "迴光奏鳴曲",
+      "workSource": "https://www.goldenhorse.org.tw/film/about/archive/detail/1018",
+      "eligibleForLive": false
+    }
+  ],
+  "notes": [
+    "Review includes actual 600×720 JPEG pixels, source contact sheet and all five reveal stages. Approval is not live until PR QA, main merge, Pages build and public JSON checks.",
+    "Original Commons source: https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(陳湘琪)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+    "Do not regenerate the two rejected 林慶台 crops; their source may be searched for different framing only. Do not overwrite state.json from an old review branch."
+  ]
+}

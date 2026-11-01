@@ -49,6 +49,39 @@ class ExpansionReleaseAuditTests(unittest.TestCase):
         self.assertIn("source_url_missing", r["queue"][0]["entries"][0]["metadataGaps"])
         self.assertIn("author_missing", r["queue"][0]["entries"][0]["metadataGaps"])
 
+    def test_identity_collisions_are_reported_not_auto_merged(self):
+        alice = q("t1500_1", "甲", "CC BY 4.0", True)
+        alice["wikidataId"] = "Q123"
+        alias = q("t1500_1", "甲別名", "CC BY 4.0", True,
+                  photo="photos/other.jpg")
+        alias["wikidataId"] = "Q123"
+        same_name = q("t1500_2", "甲", "CC BY 4.0", True)
+        same_name["wikidataId"] = "Q123"
+        banks = {"questions.json": [alice, same_name],
+                 "actors.json": [alias], "variety.json": []}
+        r = report(banks)
+        self.assertEqual(r["expansionUniqueById"], 2)
+        self.assertEqual(r["expansionUniqueByCanonicalName"], 2)
+        warnings = r["identityWarnings"]
+        self.assertEqual(warnings["sameIdDifferentNames"][0]["id"], "t1500_1")
+        self.assertEqual(warnings["sameCanonicalNameDifferentIds"][0]["ids"],
+                         ["t1500_1", "t1500_2"])
+        self.assertEqual(warnings["sameWikidataQidDifferentIds"][0]["qid"], "Q123")
+        self.assertEqual(warnings["sameIdDifferentPhotoOrRights"][0]["id"], "t1500_1")
+        self.assertTrue(all(not row["independentlyCertified"] for row in r["queue"]))
+
+    def test_nonexistent_cc_versions_do_not_count_as_open(self):
+        banks = {"questions.json": [
+                    q("t1500_1", "甲", "CC BY 99.9", True),
+                    q("t1500_2", "乙", "CC BY-SA 4.0", True),
+                    q("t1500_3", "丙", "CC0 1.0", True),
+                    q("t1500_4", "丁", "CC BY 2.5", True)],
+                 "actors.json": [], "variety.json": []}
+        r = report(banks)
+        self.assertEqual(r["declaredOpenLicenseEntries"], 3)
+        self.assertEqual(r["missingDeclaredOpenLicenseEntries"], 1)
+        self.assertEqual(r["identityWarnings"]["sameIdDifferentNames"], [])
+
     def test_duplicate_id_and_missing_photo_fail_closed(self):
         item = q("t1500_1", "A", "CC0", True)
         with self.assertRaisesRegex(ValueError, "duplicate id"):

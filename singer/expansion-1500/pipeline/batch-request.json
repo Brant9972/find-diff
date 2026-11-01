@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0930-post-pr118-exclusion-replay",
-  "mode": "render_only",
+  "requestId": "20261101-nolay-cached-two-framing-review",
+  "mode": "manual_recrop",
+  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261101-nolay-two-framings.json",
   "targetPeople": 0,
   "plannedPersonIds": [],
   "retryFailed": false,
@@ -12,5 +13,5 @@
   "maxMinutes": 10,
   "personSeconds": 30,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY: render_only replay after PR #118 six exact-source exclusions to verify stale rejected original pixels disappear from retained review list; no providers searched, no new approvals, no main/Pages/creators changes."
+  "purpose": "DRAFT ONLY: render two manual crop hypotheses for 林慶台 from exact immutable source pixels in 417bdfb; no network source search, no release, no main/creators/Pages modifications. Review actual eyes/nose/mouth/chin/full stages before deciding."
 }

@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101T0920-retained-source-visual-audit-all",
+  "requestId": "20261101T0922-retained-source-visual-audit-all-fixed",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
   "retryFailed": false,
-  "providers": [],
+  "providers": [
+    "commons"
+  ],
   "workers": 1,
   "maxMinutes": 10,
   "personSeconds": 30,

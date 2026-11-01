@@ -32,7 +32,7 @@ class RetainedEightVisualReviewTest(unittest.TestCase):
         row = next(x for x in audit["decisions"] if x["personId"] == "t1500_0171")
         self.assertEqual(row["decision"], "pending_rights_and_crop")
         self.assertEqual(row["gameSha256"], "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4")
-        self.assertIn("independently verified", row["rights"])
+        self.assertIn("verification pending", row["rights"])
         self.assertFalse(row["eligibleForLive"])
 
 if __name__ == "__main__":

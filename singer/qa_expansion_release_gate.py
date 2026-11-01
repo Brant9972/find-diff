@@ -16,7 +16,7 @@ SNAPSHOT_FIELDS = ("id", "name", "photo", "photoStatus", "eligibility",
                    "humanReviewed", "gameSha256", "photoSha256")
 ATTR_FIELDS = ("source", "artist", "license", "licenseUrl")
 STAGES = ("eyes", "nose", "mouth", "chin", "full")
-CC = re.compile(r"^CC (BY|BY-SA) (1\\.0|2\\.0|2\\.5|3\\.0|4\\.0)$", re.I)
+CC = re.compile(r"^CC (BY|BY-SA) (1\.0|2\.0|2\.5|3\.0|4\.0)$", re.I)
 SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
 
 

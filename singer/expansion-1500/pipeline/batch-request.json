@@ -1,18 +1,16 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-wangzhilei-cached-english-alias-recheck",
-  "mode": "search",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0381"
-  ],
-  "retryFailed": true,
+  "requestId": "20261101-stop-wangzhilei-noncc-retry",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "commons"
   ],
   "workers": 1,
   "maxMinutes": 10,
-  "personSeconds": 60,
+  "personSeconds": 30,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN, NO DEPLOY: one-time cached exact Commons metadata replay for 王芷蕾 after verified Jeanette Wang alias fix; expect exact-file identity match, but non-CC copyrighted-free-use rights must remain needs_review and prevent download/crop."
+  "purpose": "DRAFT ONLY, NO MAIN, NO DEPLOY: stop repeating Wang Zhilei exact-file search after identity was confirmed but non-CC rights remain pending. Preserve existing source-only evidence; do not auto-crop or approve. Resume with different licensed sources or independent rights proof."
 }

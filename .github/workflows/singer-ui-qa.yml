@@ -10,6 +10,9 @@ on:
       - 'singer/creators.json'
       - 'singer/actors.json'
       - 'singer/questions.json'
+      - 'singer/qa_expansion_release_gate.py'
+      - 'singer/test_expansion_release_gate.py'
+      - 'singer/qa-expansion-baseline-20261102.json'
       - 'singer/hints.json'
       - 'singer/hint-candidates.json'
       - 'singer/eligibility-review.json'
@@ -32,6 +35,8 @@ jobs:
           node --check singer/qa.cjs
       - run: npm install --no-save --package-lock=false puppeteer-core@24
       - run: python singer/prepare_hints.py
+      - run: python -m unittest discover -s singer -p 'test_expansion_release_gate.py' -q
+      - run: python singer/qa_expansion_release_gate.py --root singer
       - run: node singer/qa.cjs
       - uses: actions/upload-artifact@v4
         if: always()

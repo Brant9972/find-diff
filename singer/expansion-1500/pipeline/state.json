@@ -45298,8 +45298,8 @@
       "candidateId": "c1500-0445",
       "name": "張懷秋",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-10-30T09:04:15.385616+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-11-01T16:25:19.363128+00:00",
       "candidates": [],
       "history": [
         {
@@ -45390,6 +45390,17 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-11-01T12:25:14.938057+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-11-01T12:25:19.363095+00:00"
+        },
+        {
+          "time": "2026-11-01T12:25:19.363117+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -45411,87 +45422,15 @@
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
-        "message": "See lastErrors"
+        "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261030T070335Z-baa19623",
+      "lastRunId": "20261101T122511Z-73761c46",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-10-30T07:04:06.610500+00:00",
-      "lastErrors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg/1920px-Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:Harry_Chang_79th_Locarno_Film_Festival_-_Red_Carpet-16.jpg",
-            "filename": "Harry Chang 79th Locarno Film Festival - Red Carpet-16.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "LucaFazPhoto",
-            "credit": "Own work",
-            "license": "CC BY-SA 4.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-            "caption": "Harry Chang 79th Locarno Film Festival",
-            "identityEvidence": {
-              "wikidataId": "Q9138397",
-              "mappingSource": "https://www.wikidata.org/wiki/Q9138397",
-              "exactChineseAliases": [
-                "張懷秋",
-                "張懷秋",
-                "張懷秋"
-              ],
-              "verifiedSearchAliases": [
-                "張懷秋",
-                "Harry Chang",
-                "Chang Huai-chiu",
-                "Zhang Huai Qiu",
-                "Harry Zhang"
-              ],
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-10-30T07:04:06.919101+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%87%B7%E7%A7%8B",
-              "articleTitle": "張懷秋",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "張懷秋",
-              "matchedAliases": [
-                "Harry Chang"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "Harry Chang"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "大嘴巴"
-              ],
-              "requestedReplacement": "",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-10-30T07:04:08.383450+00:00",
-            "width": 3543,
-            "height": 5314,
-            "id": "e883ab9070f9acabef8b",
-            "personId": "t1500_0445",
-            "discoveryRunId": "20261030T070335Z-baa19623",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Blurred crop: sharpness below 65"
-        }
-      ],
-      "updatedAt": "2026-10-30T07:04:15.385628+00:00",
-      "workerFinishedAt": "2026-10-30T07:04:15.387432+00:00"
+      "lastAttemptAt": "2026-11-01T12:25:14.857065+00:00",
+      "lastErrors": [],
+      "updatedAt": "2026-11-01T12:25:19.363140+00:00",
+      "workerFinishedAt": "2026-11-01T12:25:19.365416+00:00"
     },
     "t1500_0136": {
       "personId": "t1500_0136",

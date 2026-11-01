@@ -1,16 +1,16 @@
 {
-  "runId": "20261031T235355Z-5b1955cc",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261031T235355Z-5b1955cc/review-index.json",
+  "runId": "20261101T004014Z-aa527dff",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261101T004014Z-aa527dff/review-index.json",
   "summary": {
-    "runId": "20261031T235355Z-5b1955cc",
-    "generatedAt": "2026-10-31T23:53:56.721546+00:00",
-    "scannedPeople": 0,
+    "runId": "20261101T004014Z-aa527dff",
+    "generatedAt": "2026-11-01T00:41:11.106928+00:00",
+    "scannedPeople": 6,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 6,
     "retryNeeded": 417,
     "pendingReviewPeople": 1,
-    "licenseConcernCandidates": 345,
+    "licenseConcernCandidates": 352,
     "statusCounts": {
       "no_suitable_source": 244,
       "download_failed": 167,
@@ -20,22 +20,53 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 316,
-      "image_validation_failed": 116,
+      "identity_unconfirmed": 324,
+      "image_validation_failed": 119,
       "network_error": 247,
       "source_api_busy": 69,
-      "license_unclear": 72,
+      "license_unclear": 75,
       "source_api_error": 16,
       "identity_ambiguous": 9,
-      "excluded_context": 15,
+      "excluded_context": 16,
       "identity_not_found": 5,
-      "nonportrait_scene": 2,
+      "nonportrait_scene": 12,
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "license_unclear": 4,
+      "identity_unconfirmed": 28,
+      "image_validation_failed": 5,
+      "nonportrait_scene": 11,
+      "excluded_context": 1
+    },
     "manualCropSources": 18,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 6,
+        "metadataCandidates": 32,
+        "identitySupportedMetadata": 4,
+        "openLicenseMetadata": 15,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {}
+      },
+      "entity": {
+        "attemptedPeople": 6,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "license_unclear": 4,
+          "identity_unconfirmed": 28,
+          "image_validation_failed": 5,
+          "nonportrait_scene": 11,
+          "excluded_context": 1
+        }
+      }
+    },
     "contactSheets": [
       "contact-sheet-01.jpg"
     ],

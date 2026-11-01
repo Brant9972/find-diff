@@ -45298,8 +45298,8 @@
       "candidateId": "c1500-0445",
       "name": "張懷秋",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-11-01T16:25:19.363128+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-11-01T21:14:29.742866+00:00",
       "candidates": [],
       "history": [
         {
@@ -45401,6 +45401,17 @@
           "time": "2026-11-01T12:25:19.363117+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-11-01T13:14:26.120309+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-11-01T13:14:29.742837+00:00"
+        },
+        {
+          "time": "2026-11-01T13:14:29.742853+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -45424,13 +45435,13 @@
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "lastRunId": "20261101T122511Z-73761c46",
+      "lastRunId": "20261101T131422Z-81219d4f",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-11-01T12:25:14.857065+00:00",
+      "lastAttemptAt": "2026-11-01T13:14:26.019981+00:00",
       "lastErrors": [],
-      "updatedAt": "2026-11-01T12:25:19.363140+00:00",
-      "workerFinishedAt": "2026-11-01T12:25:19.365416+00:00"
+      "updatedAt": "2026-11-01T13:14:29.742880+00:00",
+      "workerFinishedAt": "2026-11-01T13:14:29.745163+00:00"
     },
     "t1500_0136": {
       "personId": "t1500_0136",

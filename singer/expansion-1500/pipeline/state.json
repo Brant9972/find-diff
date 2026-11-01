@@ -78021,8 +78021,8 @@
       "candidateId": "c1500-0381",
       "name": "王芷蕾",
       "status": "no_suitable_source",
-      "attempts": 1,
-      "nextRetryAt": "2026-11-01T13:17:37.158274+00:00",
+      "attempts": 2,
+      "nextRetryAt": "2026-11-01T15:22:57.176928+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -78041,7 +78041,9 @@
             "query": "王芷蕾",
             "identityWarning": "Curated exact-file lookup is not proof of the pictured person; independently verify caption and identity",
             "curatedExactFileHint": true,
-            "captionAliasMatches": [],
+            "captionAliasMatches": [
+              "Jeanette Wang"
+            ],
             "visualIdentityVerified": false
           },
           "recognitionEvidence": {
@@ -78057,14 +78059,14 @@
           "height": 1536,
           "id": "adfce18c9d8073067687",
           "personId": "t1500_0381",
-          "discoveryRunId": "20261101T111732Z-b1c78379",
+          "discoveryRunId": "20261101T112249Z-59567520",
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
           "status": "metadata_only",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "Licence insufficient: image not downloaded"
           ]
         }
       ],
@@ -78083,6 +78085,30 @@
               "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
               "code": "identity_unconfirmed",
               "message": "Search result alone does not establish depicted identity"
+            }
+          ],
+          "candidatesTried": 1
+        },
+        {
+          "time": "2026-11-01T11:22:53.350740+00:00",
+          "provider": "cached_exact",
+          "attempt": 2,
+          "finishedAt": "2026-11-01T11:22:53.354256+00:00"
+        },
+        {
+          "time": "2026-11-01T11:22:53.354312+00:00",
+          "provider": "commons",
+          "attempt": 2,
+          "finishedAt": "2026-11-01T11:22:57.176899+00:00"
+        },
+        {
+          "time": "2026-11-01T11:22:57.176917+00:00",
+          "errors": [
+            {
+              "provider": "cached_exact",
+              "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
             }
           ],
           "candidatesTried": 1
@@ -78110,19 +78136,20 @@
         "message": "See lastErrors"
       },
       "lastRunNewCandidateIds": [],
-      "lastRunId": "20261101T111732Z-b1c78379",
+      "lastRunId": "20261101T112249Z-59567520",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-11-01T11:17:34.272679+00:00",
+      "lastAttemptAt": "2026-11-01T11:22:53.248600+00:00",
       "lastErrors": [
         {
-          "provider": "commons",
+          "provider": "cached_exact",
           "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
-      "updatedAt": "2026-11-01T11:17:37.158285+00:00",
-      "workerFinishedAt": "2026-11-01T11:17:37.160624+00:00"
+      "updatedAt": "2026-11-01T11:22:57.176940+00:00",
+      "workerFinishedAt": "2026-11-01T11:22:57.179163+00:00",
+      "lastCachedRecheckToken": "20261101-wangzhilei-english-caption-q9066613"
     },
     "t1500_0094": {
       "personId": "t1500_0094",

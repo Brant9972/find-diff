@@ -4077,34 +4077,45 @@
       "candidateId": "c1500-0171",
       "plannedQuestionId": "t1500_0171",
       "name": "陳湘琪",
-      "aliases": [],
+      "aliases": [
+        "Chen Shiang-chyi",
+        "Chen Shiang-Chyi"
+      ],
       "acceptedAnswers": [
-        "陳湘琪"
+        "陳湘琪",
+        "Chen Shiang-chyi",
+        "Chen Shiang-Chyi"
       ],
       "categories": [
         "演員"
       ],
       "proposedPrimaryBank": "actors.json",
       "representativeWorks": [
-        "回光奏鳴曲"
+        "迴光奏鳴曲"
       ],
       "priority": "B",
       "photoSearchKeywords": [
         "陳湘琪 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "陳湘琪 回光奏鳴曲 角色 劇照 正面 清晰 無浮水印"
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pending_branch_and_pages_qa",
+      "preferredImageQuery": "陳湘琪 回光奏鳴曲 角色 劇照 正面 清晰 無浮水印",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "reviewSourceCommit": "42f42ced1d1de214481e3e445af1a128683f1ffe",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "wikidataId": "Q5090886",
+      "reviewOriginalSha256": "359bc6b4efc73d4c21bbde85caa080cee4f2296242b5b7b32c5a369007ee4a04",
+      "reviewYouTubeOriginal": "https://www.youtube.com/watch?v=ffxdss7Xk6Y"
     },
     {
       "candidateId": "c1500-0172",
@@ -18385,7 +18396,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 93,
+    "published": 94,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18479,9 +18490,10 @@
       "趙正平",
       "黃少谷",
       "大元",
-      "張達明"
+      "張達明",
+      "陳湘琪"
     ],
-    "pendingPhotoAndHintReview": 418,
-    "latestCommit": "pending-cheung-tat-ming-pr-qa"
+    "pendingPhotoAndHintReview": 417,
+    "latestCommit": "pending-chen-shiang-chyi-pr-qa"
   }
 }

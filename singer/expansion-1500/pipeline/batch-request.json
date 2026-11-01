@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-nolay-lower-single-crop-after-five-stage-rejection",
-  "mode": "manual_recrop",
-  "manualCropRequestPath": "singer/expansion-1500/pipeline/manual-crop-request-20261101-nolay-lower-isolation.json",
-  "targetPeople": 1,
-  "plannedPersonIds": [
-    "t1500_0123"
-  ],
+  "requestId": "20261101-stop-invalid-nolay-source-recrop",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
   "retryFailed": false,
   "providers": [
     "commons"
@@ -15,5 +12,5 @@
   "maxMinutes": 10,
   "personSeconds": 30,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN: current crop 5a2d... rejected on actual pixel review (eyes/nose/mouth missing, second face). Render one lower/tighter source-cached crop from existing original; no source search or auto approval. Re-review 600x720 and all five reveal stages."
+  "purpose": "DRAFT ONLY, NO MAIN: pause rejected Nolay group-photo recrops after two failed actual five-stage reviews; render retained source-only evidence without searching or approving anything until an independently sourced alternative portrait is selected."
 }

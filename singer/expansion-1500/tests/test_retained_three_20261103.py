@@ -36,8 +36,26 @@ class RetainedThree20261103Test(unittest.TestCase):
         for d in self.audit["decisions"]:
             with self.subTest(d=d["source"]):
                 self.assertFalse(d["eligibleForLive"])
-                self.assertEqual(self.people[d["personId"]]["photoStatus"], "not_prepared")
-                self.assertFalse(self.people[d["personId"]]["imageVerification"]["finalCropReviewed"])
+                person = self.people[d["personId"]]
+                # A source-specific rejection remains rejected even if the
+                # same performer later publishes a DIFFERENT approved photo.
+                # Jade Kwan was released on 2026-11-03 using a new Guangzhou
+                # image; historical rejected sources must stay excluded.
+                if person["photoStatus"] == "published":
+                    self.assertTrue(person["imageVerification"]["finalCropReviewed"])
+                    self.assertTrue(person.get("reviewRecord"))
+                    self.assertTrue(person.get("liveQaRun"))
+                    self.assertNotIn(
+                        source_key(person["portraitSource"]),
+                        excluded_commons_keys(person),
+                    )
+                    self.assertNotEqual(
+                        source_key(person["portraitSource"]),
+                        source_key(d["source"]),
+                    )
+                else:
+                    self.assertEqual(person["photoStatus"], "not_prepared")
+                    self.assertFalse(person["imageVerification"]["finalCropReviewed"])
 
     def test_rejected_sources_are_exact_person_scoped(self):
         for d in self.audit["decisions"]:

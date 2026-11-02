@@ -143,7 +143,7 @@ class CuratedStillOriginalTest(unittest.TestCase):
         import ast
         import re
         game = (ROOT.parent / "game.js").read_text(encoding="utf-8")
-        match = re.search(r"\\|\\|(\\[\\[.*?\\]\\])\\[state\\.stage\\]", game)
+        match = re.search(r"\|\|(\[\[.*?\]\])\[state\.stage\]", game)
         self.assertIsNotNone(match, "Singer game reveal fallback missing")
         self.assertEqual(
             [list(rect) for rect in diag.STAGES.values()],

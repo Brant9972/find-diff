@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT visual and Commons-source screening",
+  "reviewedAt": "2026-11-02",
+  "liveBaselineSha": "e9fb5567045345fa2fb3fc8ee90037ac2fa32a97",
+  "sourceReviewBranchCommit": "3efa6c137f4c768f28c408bf948eee5aed2869b7",
+  "releaseGate": "REJECTION_ONLY_NOT_PLAYABLE",
+  "notes": "9 retained draft source photos rejected after five-stage contact-sheet visual inspection and available source metadata. No identities, photos, hints or live banks approved.",
+  "decisions": [
+    {
+      "personId": "t1500_0196",
+      "candidateId": "c1500-0196",
+      "name": "蔡亘晏",
+      "source": "https://commons.wikimedia.org/wiki/File:Tsai_Hsuan-yen_2022-11-19.jpg",
+      "gameSha256": "f432273735d29aa2e3239be79bd0e193842f0cec0e1d0cac7ecac3bcedd773e7",
+      "decision": "rejected",
+      "reason": "原始肖像僅 277×381，遊戲 600×720 為放大圖；Commons YouTube 來源授權仍標記 license review needed，不能驗收。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0224",
+      "candidateId": "c1500-0224",
+      "name": "丁國琳",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%B6%85%E7%B4%9A%E5%A4%9C%E7%B8%BD%E6%9C%83_%E4%B8%81%E5%9C%8B%E7%90%B3_20150718.jpg",
+      "gameSha256": "e9986ce070e44b2e93a2b22d15b5400aff96a0ebe40d69918d707fca67502dff",
+      "decision": "rejected",
+      "reason": "五階段檢視發現瀏海遮蔽部分眼睛，眼部及面部輪廓柔焦、缺乏辨識度；另需更清晰的正面照片。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0276",
+      "candidateId": "c1500-0276",
+      "name": "許書豪",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%98%87%E6%BE%B3%E5%86%B7%E6%B3%89%E5%AD%A3%E8%A8%B1%E6%9B%B8%E8%B1%AA.jpg",
+      "gameSha256": "f4bb6c9f5b78cea1034019108d7c5c136aac2aa4260cfcd1c8d8b02e37ffac45",
+      "decision": "rejected",
+      "reason": "演唱畫面眼睛閉合，嘴部受麥克風影響；眼睛揭露關卡無法正常辨識。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0335",
+      "candidateId": "c1500-0335",
+      "name": "李思捷",
+      "source": "https://commons.wikimedia.org/wiki/File:Johnson_Lee_2019_(cropped).jpg",
+      "gameSha256": "381976ae57260cf09fe42f42d01d463e40ac16c804e88b22bd8104881d9b3216",
+      "decision": "rejected",
+      "reason": "深色太陽眼鏡遮擋眼睛，眼睛揭露關卡失去辨識度；來源僅 366×484。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0350",
+      "candidateId": "c1500-0350",
+      "name": "陳惠婷",
+      "source": "https://commons.wikimedia.org/wiki/File:2008_YODEX_Opening_Tizzy_Bac_Hui-ting_Chen.jpg",
+      "gameSha256": "fada557b360a25792388c52f10b84e1395246194cd4b62fb624a2a8c78c99fd2",
+      "decision": "rejected",
+      "reason": "演出畫面麥克風與器材遮擋嘴部，無法通過嘴巴／下巴階段；雖來源為 Rico Shen CC BY-SA，仍須換圖。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0393",
+      "candidateId": "c1500-0393",
+      "name": "吳蓓雅",
+      "source": "https://commons.wikimedia.org/wiki/File:PiA.png",
+      "gameSha256": "f579cd6bca687173a032e70f03dbd18a374f9abfd73238365120eb41faca9292",
+      "decision": "rejected",
+      "reason": "演唱畫面眼睛下垂／近乎閉合，麥克風遮擋嘴部；無法通過五階段五官辨識。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0559",
+      "candidateId": "c1500-0559",
+      "name": "蔡一傑",
+      "source": "https://commons.wikimedia.org/wiki/File:20190821%E2%80%94Remus_Choy_%E8%94%A1%E4%B8%80%E5%82%91_press_junket_am730_screenshot_(00m03s).jpg",
+      "gameSha256": "90d01470ceafdc2ad10aa2ef6afc78bb49c6394e2c87b87b0b35973d13b4db83",
+      "decision": "rejected",
+      "reason": "大面積黃色太陽眼鏡遮蔽眼部細節，眼睛揭露關卡不合格；即使來源有 am730 CC metadata 也不能用。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0568",
+      "candidateId": "c1500-0568",
+      "name": "李司棋",
+      "source": "https://commons.wikimedia.org/wiki/File:Louise_Lee_in_2017.png",
+      "gameSha256": "7455f5dd56f58ffa825191fa867c65049d41d40a946ab14e251bf1e830aca5e2",
+      "decision": "rejected",
+      "reason": "畫面下方黑色擋板遮住下巴，眼鏡反光且舊圖解析度不足，五官揭露不合格。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    },
+    {
+      "personId": "t1500_0586",
+      "candidateId": "c1500-0586",
+      "name": "向海嵐",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%90%91%E6%B5%B7%E5%B5%90.jpg",
+      "gameSha256": "50ce98db5c4f8771d7c7b64e97c318f8833b0c5b707133e1c57dae001adc7412",
+      "decision": "rejected",
+      "reason": "Commons 原始圖僅 428×574，遊戲圖明顯放大變軟；來源 YouTube CC BY 3.0 仍標記 license review needed，授權未核准。",
+      "reviewedStages": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "scope": "exact retained draft pixels and source; do not reject person"
+    }
+  ]
+}

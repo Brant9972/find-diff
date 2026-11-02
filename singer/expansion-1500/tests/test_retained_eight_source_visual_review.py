@@ -20,7 +20,14 @@ class RetainedEightVisualReviewTest(unittest.TestCase):
         for item in audit["decisions"]:
             self.assertIn(item["personId"], people)
             self.assertFalse(item["eligibleForLive"])
-            self.assertEqual(people[item["personId"]]["photoStatus"], "not_prepared")
+            # The 2026-11-01 source-only hold remains historically valid.
+            # 陳湘琪 was separately released after actual five-stage review,
+            # PR #147 and Pages LIVE QA on 2026-11-02.
+            if item["personId"] == "t1500_0171":
+                self.assertEqual(people[item["personId"]]["photoStatus"], "published")
+                self.assertEqual(people[item["personId"]]["gameSha256"], item["gameSha256"])
+            else:
+                self.assertEqual(people[item["personId"]]["photoStatus"], "not_prepared")
             if item["decision"] == "reject_exact_source":
                 self.assertIn(item["sourcePage"], people[item["personId"]]["excludedPhotoSources"])
             else:

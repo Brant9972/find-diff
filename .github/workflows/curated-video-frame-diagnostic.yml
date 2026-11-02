@@ -5,6 +5,8 @@ on:
       - automation/celebrity-photo-pipeline
     paths:
       - .github/workflows/curated-video-frame-diagnostic.yml
+      - singer/expansion-1500/tools/curated_video_frames.py
+      - singer/expansion-1500/pipeline/curated-video-source-leads-20261102.json
   workflow_dispatch:
 
 permissions:

@@ -51,6 +51,29 @@ jobs:
               subprocess.run(['python', 'singer/expansion-1500/prepare_media.py',
                               '--limit', '0', '--render-only', '--live-ref', 'origin/main'],
                              check=True)
+          elif request.get('mode') == 'import_review_rejections':
+              # Import only already completed, SHA-bound human rejections.
+              # An approval must follow its separate release/QA process.
+              import re, sys
+              spec = Path(request.get('reviewDecisionPath', ''))
+              allowed = Path('singer/expansion-1500/pipeline/chatgpt-review')
+              if (spec.parent != allowed or
+                      not re.fullmatch(r'20\\d{6}-[a-z0-9-]+-rejections-only\\.json', spec.name)):
+                  raise ValueError('Rejection document must be an explicit immutable draft review file')
+              sys.path.insert(0, 'singer/expansion-1500')
+              from media_pipeline.review import validate_rejection_only_document
+              decisions = validate_rejection_only_document(json.loads(spec.read_text(encoding='utf-8')))
+              subprocess.run(['python', 'singer/expansion-1500/prepare_media.py',
+                              '--limit', '0', '--import-review', str(spec),
+                              '--live-ref', 'origin/main'], check=True)
+              # Reset this one-shot request before checkpoint: nightly jobs
+              # must never import the same archived review twice.
+              request.update(mode='render_only', targetPeople=0,
+                             plannedPersonIds=[], retryFailed=False,
+                             purpose='SHA-verified human rejections imported; render-only, no source search or deployment')
+              Path('singer/expansion-1500/pipeline/batch-request.json').write_text(
+                  json.dumps(request, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+              print('Imported rejected photos:', len(decisions), flush=True)
           elif request.get('mode') == 'manual_recrop':
               spec = Path(request.get('manualCropRequestPath', 'singer/expansion-1500/pipeline/manual-crop-request-20261029.json'))
               if not str(spec).startswith('singer/expansion-1500/pipeline/manual-crop-request-') or spec.suffix != '.json' or '..' in spec.parts:

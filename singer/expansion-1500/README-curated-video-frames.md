@@ -14,7 +14,7 @@ python singer/expansion-1500/tools/curated_video_frames.py \
   --out /tmp/celebrity-video-research
 ```
 
-The download mode queries **one exact curated Commons file** and only accepts an HTTPS `upload.wikimedia.org/wikipedia/commons/` WebM URL. Maximum original size 80 MiB; stream limit and timeouts apply. There is no generic artist-name search, no automatic retry loop, and no branch commit. An HTTP 403/429 must be treated as a source-access problem, **not** as permission to scrape a different site.
+The download mode queries **one exact curated Commons file** and only accepts an HTTPS `upload.wikimedia.org/wikipedia/commons/` WebM URL. If and only if the Commons metadata API responds HTTP 403, it falls back to the **exact original CDN URL pinned from the Commons file page**. The original byte size (67,245,954) and SHA-1 (`146fecdf335b2e397458422daa4be9b8007d3080`) must match the downloaded file before frame extraction. HTTP 429 still stops without bypass or retries. Maximum original size 80 MiB; stream limit and timeouts apply. There is no generic artist-name search, no automatic retry loop, and no branch commit. An HTTP 403/429 must be treated as a source-access problem, **not** as permission to scrape a different site.
 
 The output contains seven or fewer timestamped JPEGs, `contact-sheet.jpg`, `manifest.json`, and (download mode only) `source.webm`. The manifest records the video SHA-256 and each extracted frame SHA-256. All images are marked **PENDING_HUMAN_IDENTITY_AND_FACE_REVIEW**; `eligibleForLive=false`. The script does not create a 600×720 game crop or mark any identity, license, or five-stage check approved.
 

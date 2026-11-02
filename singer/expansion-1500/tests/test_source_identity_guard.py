@@ -163,7 +163,8 @@ class IdentityGuardTest(unittest.TestCase):
         self.assertEqual(arithmetic['publishedFromPlan'], progress['published'])
         self.assertEqual(len(set(progress['publishedNames'])), progress['published'])
         self.assertEqual(arithmetic['currentlyLiveUnique'],
-                         plan['baseline']['uniquePeople'] + progress['published'])
+                         plan['baseline']['uniquePeople'] + progress['published']
+                         - arithmetic.get('liveRemovedSinceBaseline', 0))
         self.assertEqual(arithmetic['remainingSelectedNovel'],
                          arithmetic['selectedNovel'] - progress['published'] - 1)
 

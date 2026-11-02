@@ -18,7 +18,11 @@ class FlickrSourceLeadTest(unittest.TestCase):
         self.assertEqual(row["photoStatus"], "published")
         self.assertEqual(row["publishedQuestionId"], "t1500_0562")
         self.assertEqual(row["portraitSource"], "https://commons.wikimedia.org/wiki/File:張達明.jpg")
-        self.assertEqual(self.plan["arithmetic"]["currentlyLiveUnique"], 1080)
+        arithmetic = self.plan["arithmetic"]
+        self.assertEqual(arithmetic["currentlyLiveUnique"],
+                         self.plan["baseline"]["uniquePeople"] +
+                         self.plan["releaseProgress"]["published"] -
+                         arithmetic["liveRemovedSinceBaseline"])
 
     def test_precise_licensed_flickr_sources_are_only_discovery_hints(self):
         expected = {

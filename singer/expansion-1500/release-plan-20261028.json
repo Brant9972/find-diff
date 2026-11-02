@@ -20,12 +20,13 @@
     "novelTargets": 518,
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
-    "targetUniqueAfterFullPass": 1497,
-    "currentlyLiveUnique": 1080,
-    "publishedFromPlan": 93,
-    "remainingSelectedNovel": 417,
+    "targetUniqueAfterFullPass": 1494,
+    "currentlyLiveUnique": 1078,
+    "publishedFromPlan": 94,
+    "remainingSelectedNovel": 416,
     "targetGoal": 1500,
-    "replacementCandidatesNeeded": 3
+    "replacementCandidatesNeeded": 6,
+    "liveRemovedSinceBaseline": 3
   },
   "criteria": {
     "image": [
@@ -4239,19 +4240,25 @@
       "photoSearchKeywords": [
         "陳湘琪 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "candidate_only_unverified",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
-      "preferredImageQuery": "陳湘琪 迴光奏鳴曲 金馬獎 單人肖像 正面 清晰"
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pages_live_verified",
+      "preferredImageQuery": "陳湘琪 迴光奏鳴曲 金馬獎 單人肖像 正面 清晰",
+      "publishedQuestionId": "t1500_0171",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "reviewSource": "https://commons.wikimedia.org/wiki/File:Chen_Shiang-chyi_(%E9%99%B3%E6%B9%98%E7%90%AA)_at_the_51st_Golden_Horse_Awards_in_November_2014.jpg",
+      "reviewSourceCommit": "ebb7c34b2ff3b05d2d8ae6f13a868ce8aff78433",
+      "gameSha256": "f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4",
+      "reviewSourceResearchNote": "2026-11-02 main PR #147 ebb7c34b merged and LIVE QA #41360953521 passed. CNA Taiwan Commons CC BY 3.0; 600x720 and five-stage eyes/nose/mouth/chin/full inspected; verified Golden Horse work hint 迴光奏鳴曲. Game SHA256 f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4. Do not re-search or count as new. Note subsequent main 7ba8951a excluded 3 unrelated 法證先鋒 entries; current playable unique is 1078."
     },
     {
       "candidateId": "c1500-0172",
@@ -18871,7 +18878,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 93,
+    "published": 94,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -18965,9 +18972,10 @@
       "趙正平",
       "黃少谷",
       "大元",
-      "張達明"
+      "張達明",
+      "陳湘琪"
     ],
-    "pendingPhotoAndHintReview": 417,
-    "latestCommit": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04"
+    "pendingPhotoAndHintReview": 416,
+    "latestCommit": "7ba8951a375b68ad25d9e40f97a9c85ba7c6c63b"
   }
 }

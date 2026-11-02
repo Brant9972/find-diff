@@ -43,8 +43,35 @@
     "Identify which pictured woman is 楊麗花 using independent named photography, not only page caption or position inference.",
     "Download exactly this source from Wikimedia only if allowed, check SHA-1 176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3; no broad batch or alternative same-name images.",
     "Crop only the right-hand subject to 600×720 without any portion of the second face; reject if insufficient pixels, eye stage weak, or background face leaks.",
-    "Inspect actual eyes/nose/mouth/chin/full five-stage previews; separately verify work hint 《忠孝節義》, aliases, QID and source attribution before PR/QA/main/Pages."
+    "Inspect actual eyes/nose/mouth/chin/full five-stage previews; separately verify work hint 《忠孝節義》, aliases, QID and source attribution before PR/QA/main/Pages.",
+    "Use pinned originalUrl, originalSizeBytes, originalSha1 and provisionalOriginalPixelCropBox only for a single non-production diagnostic; if 429/503, do not retry immediately."
   ],
   "approvedForGame": false,
-  "modifiedProduction": false
+  "modifiedProduction": false,
+  "personId": "t1500_0273",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/%E6%A5%8A%E9%BA%97%E8%8A%B1%E6%AD%8C%E4%BB%94%E6%88%B2%E3%80%8A%E5%BF%A0%E5%AD%9D%E7%AF%80%E7%BE%A9%E3%80%8B%E5%AA%92%E9%AB%94%E9%A6%96%E6%98%A0%E6%9C%83.jpg",
+  "originalSizeBytes": 324913,
+  "originalSha1": "176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3",
+  "imageDimensions": [
+    1280,
+    1920
+  ],
+  "provisionalOriginalPixelCropBox": [
+    640,
+    270,
+    1180,
+    918
+  ],
+  "rightsEvidence": {
+    "checkedAt": "2026-11-03",
+    "governmentArticle": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6820052F7D453764&sms=72544237BBE4C5F6",
+    "governmentArticlePublisher": "臺北市政府秘書處媒體事務組",
+    "governmentArticlePublished": "2019-09-23",
+    "governmentArticleReferencesWork": "《忠孝節義》",
+    "governmentArticleHasRelatedPhotos": true,
+    "governmentLicense": "https://english.gov.taipei/News_Content.aspx?n=4E3FA84AC9A12D24&s=52C7D2409618530A&sms=5E019B60E5224755",
+    "governmentLicenseAllows": "Attribution required; reproduction, adaptation, public transmission, commercial derivative products permitted unless material specifically excluded by special agreements",
+    "exceptionScope": "No individual photo exemption shown in accessible article text; cannot independently establish whether this particular image is subject to an undisclosed contractor exception",
+    "releaseDecision": "PENDING_SOURCE_PIXEL_REVIEW_AND_INDIVIDUAL_RIGHTS_SCOPE"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261103-reconcile-live-1079-without-source-search",
+  "requestId": "20261103-reconcile-live-1079-after-qa-fix",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 7,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Reconcile pipeline published status against main 36100451 and 1079 unique live people after Jade Kwan; render retained review assets only, zero source searches, zero live edits"
+  "purpose": "After PR #171 historical-source test repair, reconcile latest main 1079 and 95 published selected people; zero-person render-only, no source search or production edits"
 }

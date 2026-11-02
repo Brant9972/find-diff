@@ -116,7 +116,8 @@ def build_previews(data: bytes, lead: dict, out: Path) -> dict:
             raise ValueError("Invalid reveal rectangle")
         if not (0 <= rect[0] < rect[2] <= 1 and 0 <= rect[1] < rect[3] <= 1):
             raise ValueError("Reveal rectangle outside portrait")
-    for previous, current in zip(list(stages.values()), list(stages.values())[1:]):
+    ordered = [stages[key] for key in STAGES]
+    for previous, current in zip(ordered, ordered[1:]):
         if any(current[j] > previous[j] for j in (0, 1)) or any(current[j] < previous[j] for j in (2, 3)):
             raise ValueError("Five-stage reveal must be monotonically expanding")
     sheet = Image.new("RGB", (5 * 240, 330), (26, 26, 26))

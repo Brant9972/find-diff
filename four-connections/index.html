@@ -27,6 +27,16 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
 .heading{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:800;margin-bottom:10px}
 .heading span:last-child{font-size:12px;color:#b6c2d9}
 .groups{display:grid;gap:7px;margin-bottom:10px}
+[hidden]{display:none!important}
+.hint-panel{margin:0 0 13px;padding:12px;background:linear-gradient(125deg,#2f2846,#202a45);border:1px solid #a38bf97c;border-radius:13px}
+.hint-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px}
+.hint-header strong{color:#f1d8a5;font-size:13px}
+.hint-header span{font-size:11px;color:#c4bde1}
+.hint-items{display:grid;gap:7px}
+.hint-item{font-size:13px;line-height:1.6;padding:9px 10px;border-radius:9px;background:#ffffff10;color:#f0eafc}
+.hint-item strong{color:#f4d99d}
+.hint-item.solved{opacity:.65}
+.hint-item .solved-mark{font-size:11px;color:#b5e9d0;font-weight:750;margin-left:6px}
 .group{padding:10px 8px;border-radius:11px;text-align:center;color:#1a2030;display:grid;gap:3px}
 .group strong{font-size:15px}.group span{font-size:11px;font-weight:650}
 .c0{background:#e8ca7c}.c1{background:#add0d8}.c2{background:#b9b0ed}.c3{background:#91d0ae}
@@ -66,6 +76,7 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
   <div id="progress" class="progress"></div>
   <div class="heading"><span id="roundTitle"></span><span id="found"></span></div>
   <div id="groups" class="groups" aria-live="polite"></div>
+  <section id="hintPanel" class="hint-panel" aria-label="已解鎖提示" aria-live="polite" hidden></section>
   <div class="drag-guide"><span>☝ 點一下選人</span><span><strong>⠿ 按住拖動</strong>，交換位置</span></div>
   <div id="board" class="board" aria-label="點選或拖曳名字，將四人排成一組"></div>
   <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
@@ -96,6 +107,7 @@ function restore(){
  if(new Set(d.tiles.map(t=>t.id)).size!==16||d.tiles.some(t=>!canonical.includes(t.id)||t.id!==t.g+':'+t.n))return false;
  if(d.solved.some(j=>!Number.isInteger(j)||j<0||j>3)||new Set(d.solved).size!==d.solved.length)return false;
  if(d.selected.some(id=>!canonical.includes(id))||d.selected.length>4)return false;
+ if(d.hints.length>4||new Set(d.hints).size!==d.hints.length||d.hints.some(j=>!Number.isInteger(j)||j<0||j>3))return false;
  Object.assign(s,d);
  render();if(s.done)modal(s.tries===0?'lost':'win');
  say('已載入上次進度，可從第 '+(s.round+1)+' 關繼續','good');return true;
@@ -107,6 +119,25 @@ function render(){
  const r=ROUNDS[s.round];$('level').textContent=(s.round+1)+' / '+ROUNDS.length;$('score').textContent=s.score;$('hearts').textContent=('♥ '.repeat(s.tries)).trim()||'—';$('roundTitle').textContent='第 '+(s.round+1)+' 關 · '+r.title;$('found').textContent='找出 '+s.solved.length+' / 4 組';
  $('progress').innerHTML=Array.from({length:4},(_,i)=>'<i class="'+(i<s.solved.length?'on':'')+'"></i>').join('');
  const g=$('groups');g.replaceChildren();s.solved.forEach(j=>{let el=document.createElement('div');el.className='group c'+j;let strong=document.createElement('strong'),small=document.createElement('span');strong.textContent=r.groups[j].name;small.textContent=r.groups[j].names.join(' · ');el.append(strong,small);g.append(el)});
+ const panel=$('hintPanel');panel.replaceChildren();panel.hidden=s.hints.length===0;
+ if(s.hints.length){
+   const header=document.createElement('div');header.className='hint-header';
+   const title=document.createElement('strong');title.textContent='✦ 已解鎖提示';
+   const count=document.createElement('span');count.textContent=s.hints.length+' 則 · 本關持續顯示';
+   header.append(title,count);panel.append(header);
+   const list=document.createElement('div');list.className='hint-items';
+   s.hints.forEach((j,i)=>{
+     const item=document.createElement('div');item.className='hint-item'+(s.solved.includes(j)?' solved':'');
+     const prefix=document.createElement('strong');prefix.textContent='提示 '+(i+1)+'｜';
+     const clue=document.createElement('span');clue.textContent=r.groups[j].hint;
+     item.append(prefix,clue);
+     if(s.solved.includes(j)){
+       const mark=document.createElement('span');mark.className='solved-mark';mark.textContent='✓ 已解出';item.append(mark);
+     }
+     list.append(item);
+   });
+   panel.append(list);
+ }
  let b=$('board');b.replaceChildren();s.tiles.forEach(t=>{if(s.solved.includes(t.g))return;let e=document.createElement('button');e.type='button';e.className='tile';e.textContent=t.n;e.dataset.tileId=t.id;e.setAttribute('aria-pressed',String(s.selected.includes(t.id)));e.addEventListener('click',()=>{if(Date.now()<suppressClickUntil)return;choose(t.id)});b.append(e)});
  $('submit').disabled=s.selected.length!==4||s.done;$('submit').textContent='送出答案 ('+s.selected.length+'/4)';$('shuffle').disabled=s.done;$('hint').disabled=s.done||s.hints.length>=4;persist();
 }
@@ -177,13 +208,13 @@ function submit(){
  let matches=Math.max(...[0,1,2,3].filter(x=>!s.solved.includes(x)).map(x=>gs.filter(y=>x===y).length));
  s.tries--;s.score=Math.max(0,s.score-15);s.selected=[];say(matches===3?'差一個就答對了！':'這四個人並不是同一組','bad');render();if(s.tries===0){s.done=true;render();setTimeout(()=>modal('lost'),350)}
 }
-function hint(){let j=[0,1,2,3].find(x=>!s.solved.includes(x)&&!s.hints.includes(x));if(j===undefined)return;s.hints.push(j);s.score=Math.max(0,s.score-25);say('提示｜'+ROUNDS[s.round].groups[j].hint);render()}
+function hint(){let j=[0,1,2,3].find(x=>!s.solved.includes(x)&&!s.hints.includes(x));if(j===undefined)return;s.hints.push(j);s.score=Math.max(0,s.score-25);render();say('已解鎖提示 '+s.hints.length+'，上方會持續顯示，不會被操作訊息覆蓋','good')}
 function shuffle(){s.tiles=randomize(s.tiles);s.selected=[];say('已洗牌，再試著找出四人關係');render()}
 function modal(type){
  const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
  let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
  let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
- let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分，已解鎖的提示會固定顯示在題目上方，不受拖曳等操作影響。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
  if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
  if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
  let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'開始挑戰':type==='lost'?'重新挑戰這關':s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()

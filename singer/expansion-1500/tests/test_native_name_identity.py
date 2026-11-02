@@ -74,6 +74,17 @@ class NativeNameIdentityTest(unittest.TestCase):
                             person, self._http(native_text, language, rank, property_id))
                     self.assertEqual(caught.exception.code, 'identity_unconfirmed')
 
+    def test_birth_name_and_nickname_cannot_select_unpinned_homonyms(self):
+        # Even an exact Chinese nickname on a Q5 entity must not select a
+        # namesake unless a reviewer has already pinned that entity's QID.
+        person = {'name': '王大陸'}
+        for property_id in ('P1477', 'P1449'):
+            with self.subTest(property_id=property_id):
+                with self.assertRaises(SourceError) as caught:
+                    EntityPortraits()._resolve(
+                        person, self._http(property_id=property_id))
+                self.assertEqual(caught.exception.code, 'identity_unconfirmed')
+
     def test_wang_talu_lead_remains_draft_and_pinned(self):
         import json
         root = Path(__file__).resolve().parents[1]

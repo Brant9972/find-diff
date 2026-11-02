@@ -864,6 +864,18 @@ class EntityPortraits:
                 and str(value.get('language', '')).lower().startswith('zh')
                 and isinstance(value.get('text'), str)
             )
+            # Some Q5 entities have no Chinese label/alias despite an exact
+            # Chinese Wikipedia sitelink (e.g. Taiwan's Jerry Li). Only a
+            # reviewer-pinned QID AND reviewer-pinned exact sitelink title may
+            # bridge that metadata gap. A search result or namesake article
+            # must never supply this identity shortcut.
+            pinned_title = person.get('wikidataSitelinkTitle')
+            sitelink_title = entity.get('sitelinks', {}).get('zhwiki', {}).get('title')
+            if (pinned_qid == qid and isinstance(pinned_title, str)
+                    and pinned_title and sitelink_title == pinned_title):
+                title_name = re.split(r'[（(]', sitelink_title, maxsplit=1)[0].strip()
+                if norm(title_name) in expected:
+                    chinese.append(title_name)
             matched = [value for value in chinese if norm(value) in expected]
             human = any(claim.get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id') == 'Q5'
                         for claim in entity.get('claims', {}).get('P31', []) if claim.get('rank') != 'deprecated')

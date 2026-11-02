@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-11-03",
+  "releaseGate": "HOMONYM_SOURCE_REJECTED_NOT_PLAYABLE",
+  "personId": "t1500_0395",
+  "candidateId": "c1500-0395",
+  "plannedPerson": "李權哲",
+  "intendedIdentity": {
+    "name": "李權哲",
+    "otherNames": [
+      "Jerry Li",
+      "雲端司機"
+    ],
+    "wikidataQid": "Q65046310",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q65046310",
+    "wikipediaUrl": "https://zh.wikipedia.org/wiki/李權哲_(台灣歌手)",
+    "birthYear": 1997,
+    "origin": "Taiwan",
+    "works": [
+      "愛情一陣風",
+      "醒著不醉"
+    ],
+    "photoAvailable": false
+  },
+  "wrongIdentity": {
+    "name": "李權哲",
+    "otherNames": [
+      "Ely Li",
+      "Carl Li",
+      "Lee QZ"
+    ],
+    "wikidataQid": "Q56259814",
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q56259814",
+    "wikipediaUrl": "https://zh.wikipedia.org/wiki/李權哲_(中國大陸歌手)",
+    "birthYear": 2001,
+    "origin": "Liaoning, China",
+    "group": "LOONG9 / NEXT",
+    "commonsPhoto": "https://commons.wikimedia.org/wiki/File:Li_Quanzhe_20240609.jpg",
+    "commonsPhotoCaption": "Li Quanzhe at wwwtc mall x Loong 9 autograph event in Hong Kong, 2024-06-09",
+    "commonsPhotoAuthor": "Tombus20032000",
+    "commonsPhotoLicense": "CC BY-SA 4.0",
+    "photoDecision": "REJECT_WRONG_PERSON_EVEN_THOUGH_LICENSED"
+  },
+  "verification": {
+    "wikidataQidCrossCheck": true,
+    "sourceAdjacentCaptionChecked": true,
+    "personIdentityDifferent": true,
+    "gameCrop600x720Reviewed": false,
+    "allFiveStagesReviewed": false,
+    "rightsReviewForIntendedPerson": false,
+    "approvedForGame": false
+  },
+  "nextAction": "Do not search/download the LOONG9 portrait for Taiwanese Jerry Li. Use pinned Q65046310 and Chinese article, seek independently captioned Taiwan music/Golden Melody images with crop-permitting rights; verify actual pixels and five stages before release."
+}

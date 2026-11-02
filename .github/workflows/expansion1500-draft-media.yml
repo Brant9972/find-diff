@@ -51,6 +51,10 @@ jobs:
               subprocess.run(['python', 'singer/expansion-1500/prepare_media.py',
                               '--limit', '0', '--render-only', '--live-ref', 'origin/main'],
                              check=True)
+              # Also screen unpublished, already-retained draft portraits offline.
+              # Do not rescan rejected sources or grant human approval.
+              subprocess.run(['python', 'singer/expansion-1500/tools/retained_draft_contact_sheet.py'],
+                             check=True)
           elif request.get('mode') == 'import_review_rejections':
               # Import only already completed, SHA-bound human rejections.
               # An approval must follow its separate release/QA process.

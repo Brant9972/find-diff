@@ -37,7 +37,14 @@
     ],
     "person": [
       "Taiwan relevance and expected audience familiarity validated; no YouTuber category.",
-      "Verify legal/stage name aliases are same individual and do not create a duplicate of an official person."
+      "Verify legal/stage name aliases are same individual and do not create a duplicate of an official person.",
+      "以台灣玩家是否熟悉具體代表作品為首要條件，不以籍貫、國籍、出生地或發展市場作為單一刪除依據。",
+      "台灣出道或長期發展、在台灣擁有受歡迎的電影、戲劇、歌曲、節目者優先保留。",
+      "香港經典港片與在台灣廣泛重播的港劇，主要演員可保留；只在某部戲出現不自動取得資格。",
+      "主要在中國或香港發展但在台灣有高知名度代表作的藝人仍可保留，需核對具體作品與本地熟悉程度。",
+      "《法證先鋒》本身不足以單獨取得入選資格：2026-11-02 依使用者要求暫停該劇作為唯一線索的三題，日後若找到另一部台灣知名代表作再重新審核。",
+      "候選人物不得只憑 Wiki 條目、新聞出現次數或參演一個配角就通過；不確定者保留在審核佇列，不以個人來源地直接刪除。",
+      "人名、別名、Wikidata QID 須與現有三類題庫交叉去重；不得刪除 creators 封存，也不得動到遊戲舊照片資產。"
     ],
     "hint": [
       "Verify an actual film/TV/song/variety credit from attributable sources; no placeholders like 綜藝節目通告.",
@@ -18495,5 +18502,34 @@
     ],
     "pendingPhotoAndHintReview": 417,
     "latestCommit": "pending-chen-shiang-chyi-pr-qa"
+  },
+  "audienceReview": {
+    "updatedAt": "2026-11-02",
+    "status": "IN_PROGRESS",
+    "appliedExclusions": [
+      {
+        "id": "x1000_p0384",
+        "name": "歐陽震華"
+      },
+      {
+        "id": "a323",
+        "name": "蒙嘉慧"
+      },
+      {
+        "id": "x1000_p0548",
+        "name": "林文龍"
+      }
+    ],
+    "liveUniqueBeforeReview": 1081,
+    "liveUniqueAfterExclusions": 1078,
+    "targetUnique": 1500,
+    "remainingToTarget": 422,
+    "selectedNewPendingTaiwanRecognitionReview": 434,
+    "screeningNote": "All remaining planned 1500 candidates still require work-specific Taiwan familiarity evidence; unreviewed is NOT rejected.",
+    "doNotReaddWithoutReview": [
+      "x1000_p0384",
+      "a323",
+      "x1000_p0548"
+    ]
   }
 }

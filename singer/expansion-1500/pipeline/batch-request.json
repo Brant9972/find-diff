@@ -9,7 +9,6 @@
   ],
   "retryFailed": true,
   "providers": [
-    "curated",
     "entity",
     "commons"
   ],
@@ -17,5 +16,5 @@
   "maxMinutes": 9,
   "personSeconds": 110,
   "maxCandidates": 2,
-  "purpose": "DRAFT ONLY: post-PR156 targeted exact Commons/P18 metadata recovery for 葛民輝 and 陳明章; source exclusions remain binding; no live deployment or human approval"
+  "purpose": "DRAFT ONLY: two-person verified-QID P18 metadata diagnostic after PR156; no broad batch, no excluded files, no live deployment"
 }

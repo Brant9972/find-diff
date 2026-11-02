@@ -1,13 +1,13 @@
 {
-  "runId": "20261102T051427Z-de65f782",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261102T051427Z-de65f782/review-index.json",
+  "runId": "20261102T051701Z-436524d0",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261102T051701Z-436524d0/review-index.json",
   "summary": {
-    "runId": "20261102T051427Z-de65f782",
-    "generatedAt": "2026-11-02T05:14:35.409839+00:00",
-    "scannedPeople": 1,
+    "runId": "20261102T051701Z-436524d0",
+    "generatedAt": "2026-11-02T05:17:02.121461+00:00",
+    "scannedPeople": 0,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 1,
+    "scannedWithoutCandidates": 0,
     "retryNeeded": 417,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 364,
@@ -33,23 +33,9 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {
-      "license_unclear": 1
-    },
+    "batchFailureReasons": {},
     "manualCropSources": 11,
-    "batchProviderStages": {
-      "commons": {
-        "attemptedPeople": 1,
-        "metadataCandidates": 1,
-        "identitySupportedMetadata": 1,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "license_unclear": 1
-        }
-      }
-    },
+    "batchProviderStages": {},
     "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"

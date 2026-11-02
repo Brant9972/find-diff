@@ -19,7 +19,7 @@ class ManualCropGeometryTest(unittest.TestCase):
         self.assertEqual(spec["sourceCommit"], "0bef170ec4f28ccf0d47fffc30548e17a3b45ffc")
         # Historical crop regression must not require the active pipeline to
         # remain in manual mode forever; new source-search batches are valid.
-        self.assertIn(batch["mode"], {"manual_recrop", "search", "render_only"})
+        self.assertIn(batch["mode"], {"manual_recrop", "search", "render_only", "import_review_rejections"})
         if batch["mode"] == "manual_recrop":
             # Only assert the 2-person count if this historical spec is active.
             if batch.get("manualCropRequestPath") == str(SPEC.relative_to(ROOT.parent.parent)).replace("\\", "/"):

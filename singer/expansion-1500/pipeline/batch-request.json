@@ -1,21 +1,17 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-three-qid-commonswiki-sitelink-diagnostic",
-  "mode": "search",
-  "targetPeople": 3,
-  "plannedPersonIds": [
-    "t1500_0092",
-    "t1500_0093",
-    "t1500_0094"
-  ],
-  "retryFailed": true,
+  "requestId": "20261102-qid-three-zero-metadata-reset-render-only",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "entity",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 16,
-  "personSeconds": 100,
-  "maxCandidates": 2,
-  "purpose": "DRAFT ONLY, no main/creators/Pages modifications. Exact Q5 Wikidata commonswiki sitelink pinned-QID source diagnostic for 江祖平 Q8975739, 郭品超 Q710553, 寇世勳 Q8980013. Search three selectedNew people with native-name Commons and entity metadata; no 20/40/200 repeat. Do not treat P18, source caption, CC metadata or automatic crop as approval. Human must verify identity, author, rights, 600x720 five-stage and work hints. Baseline main 7ba8951a has 1078 unique; dedupe again before release."
+  "maxMinutes": 8,
+  "personSeconds": 75,
+  "maxCandidates": 1,
+  "purpose": "DRAFT ONLY, no main, creators or Pages changes. Three exact Q5 commonswiki pinned-QID selectedNew diagnostic completed at run 41374323299: 江祖平 t1500_0092, 郭品超 t1500_0093, 寇世勳 t1500_0094 produced zero Commons/entity metadata, no new crop, no provider errors. Do not repeat these three without newly verified exact Commons filename/P18 or a different licensed source. Preserve existing assets and cooldowns; render only for review."
 }

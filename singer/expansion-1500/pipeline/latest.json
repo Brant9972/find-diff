@@ -1,13 +1,13 @@
 {
-  "runId": "20261102T051701Z-436524d0",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261102T051701Z-436524d0/review-index.json",
+  "runId": "20261102T065108Z-62819cdc",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261102T065108Z-62819cdc/review-index.json",
   "summary": {
-    "runId": "20261102T051701Z-436524d0",
-    "generatedAt": "2026-11-02T05:17:02.121461+00:00",
-    "scannedPeople": 0,
+    "runId": "20261102T065108Z-62819cdc",
+    "generatedAt": "2026-11-02T06:51:36.845973+00:00",
+    "scannedPeople": 2,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 2,
     "retryNeeded": 417,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 364,
@@ -19,12 +19,12 @@
       "duplicate_existing": 1
     },
     "failureReasons": {
-      "identity_unconfirmed": 335,
-      "image_validation_failed": 106,
+      "identity_unconfirmed": 339,
+      "image_validation_failed": 107,
       "network_error": 247,
       "source_api_busy": 69,
       "license_unclear": 77,
-      "source_already_rejected": 2,
+      "source_already_rejected": 4,
       "source_api_error": 16,
       "identity_ambiguous": 9,
       "excluded_context": 17,
@@ -33,9 +33,40 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "source_already_rejected": 2,
+      "image_validation_failed": 1,
+      "identity_unconfirmed": 8,
+      "license_unclear": 1
+    },
     "manualCropSources": 11,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 2,
+        "metadataCandidates": 9,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 8,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "source_already_rejected": 1
+        }
+      },
+      "entity": {
+        "attemptedPeople": 2,
+        "metadataCandidates": 0,
+        "identitySupportedMetadata": 0,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "source_already_rejected": 1,
+          "image_validation_failed": 1,
+          "identity_unconfirmed": 8,
+          "license_unclear": 1
+        }
+      }
+    },
     "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"

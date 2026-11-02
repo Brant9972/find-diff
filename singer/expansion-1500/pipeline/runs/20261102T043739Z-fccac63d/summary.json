@@ -1,0 +1,80 @@
+{
+  "runId": "20261102T043739Z-fccac63d",
+  "generatedAt": "2026-11-02T04:38:14.395624+00:00",
+  "scannedPeople": 3,
+  "peopleWithNewCandidates": 0,
+  "newCandidatePhotos": 0,
+  "scannedWithoutCandidates": 3,
+  "retryNeeded": 417,
+  "pendingReviewPeople": 0,
+  "licenseConcernCandidates": 364,
+  "statusCounts": {
+    "no_suitable_source": 244,
+    "download_failed": 167,
+    "published": 94,
+    "rejected": 6,
+    "duplicate_existing": 1
+  },
+  "failureReasons": {
+    "identity_unconfirmed": 335,
+    "image_validation_failed": 106,
+    "network_error": 247,
+    "source_api_busy": 69,
+    "license_unclear": 77,
+    "source_already_rejected": 2,
+    "source_api_error": 16,
+    "identity_ambiguous": 9,
+    "excluded_context": 17,
+    "identity_not_found": 5,
+    "nonportrait_scene": 13,
+    "proxy_access_denied": 2,
+    "http_404": 2
+  },
+  "batchFailureReasons": {
+    "image_validation_failed": 1,
+    "license_unclear": 4,
+    "identity_unconfirmed": 29,
+    "nonportrait_scene": 1,
+    "excluded_context": 1
+  },
+  "manualCropSources": 11,
+  "batchProviderStages": {
+    "commons": {
+      "attemptedPeople": 3,
+      "metadataCandidates": 33,
+      "identitySupportedMetadata": 4,
+      "openLicenseMetadata": 18,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {}
+    },
+    "entity": {
+      "attemptedPeople": 3,
+      "metadataCandidates": 0,
+      "identitySupportedMetadata": 0,
+      "openLicenseMetadata": 0,
+      "downloadedForHumanReview": 0,
+      "savedForManualCrop": 0,
+      "errors": {
+        "image_validation_failed": 1,
+        "license_unclear": 4,
+        "identity_unconfirmed": 29,
+        "nonportrait_scene": 1,
+        "excluded_context": 1
+      }
+    }
+  },
+  "contactSheets": [],
+  "modifiedProduction": false,
+  "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
+  "batch": {
+    "targetPeople": 3,
+    "processedPeople": 3,
+    "workers": 1,
+    "elapsedSeconds": 34.23,
+    "stoppedForBudget": false,
+    "requestedPeople": 3,
+    "skippedRequested": [],
+    "unprocessedSelected": []
+  }
+}

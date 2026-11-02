@@ -12,6 +12,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from PIL import Image, UnidentifiedImageError
+
 BANKS = ("questions.json", "actors.json", "variety.json")
 SNAPSHOT_FIELDS = ("id", "name", "photo", "photoStatus", "eligibility",
                    "humanReviewed", "gameSha256", "photoSha256", "reveal")
@@ -67,8 +69,9 @@ def verify_reveal(reveal):
         if coords[0] >= coords[2] or coords[1] >= coords[3]:
             return False
     return reveal["full"] == [0, 0, 1, 1] and all(
-        reveal[STAGES[i]][3] <= reveal[STAGES[i+1]][3]
-        for i in range(3))
+        a[0] >= b[0] and a[1] >= b[1] and a[2] <= b[2] and a[3] < b[3]
+        for a, b in zip((reveal[s] for s in STAGES[:-1]),
+                        (reveal[s] for s in STAGES[1:])))
 
 
 def validate(banks, baseline, root, hints):
@@ -144,6 +147,21 @@ def validate(banks, baseline, root, hints):
                 declared = entry.get("gameSha256") or entry.get("photoSha256")
                 if not isinstance(declared, str) or not SHA256.fullmatch(declared) or actual != declared.lower():
                     errors.append(f"{pid}: game JPEG SHA-256 missing or differs from actual bytes")
+                # A matching hash does not prove that a file is a usable game
+                # portrait. Validate the actual encoded pixels, not just its
+                # .jpg extension or metadata, before allowing a new release.
+                try:
+                    with Image.open(target) as image:
+                        if image.format != "JPEG":
+                            errors.append(f"{pid}: game portrait must be JPEG")
+                        if image.size != (600, 720):
+                            errors.append(f"{pid}: game JPEG must be 600x720, got {image.size}")
+                        image.verify()
+                    with Image.open(target) as image:
+                        image.load()
+                except (OSError, ValueError, UnidentifiedImageError,
+                        Image.DecompressionBombError) as exc:
+                    errors.append(f"{pid}: game JPEG cannot be decoded: {exc}")
             mode = {"questions.json": "singer", "actors.json": "actor", "variety.json": "variety"}[bank]
             hint = (hints.get("entries") or {}).get(pid, {}).get(mode) or {}
             if not str(hint.get("title") or "").strip():

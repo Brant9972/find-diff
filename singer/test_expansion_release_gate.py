@@ -3,6 +3,8 @@ import hashlib
 import tempfile
 import unittest
 from pathlib import Path
+
+from PIL import Image
 from qa_expansion_release_gate import validate, snapshot, license_ok, verify_reveal, git_blob_sha, BANKS
 
 SHA = "a" * 40
@@ -31,9 +33,9 @@ class ExpansionGateTest(unittest.TestCase):
         self.root = Path(self.tmp.name)
         (self.root / "photos").mkdir()
         self.row = person()
-        content = b"test jpeg bytes"
-        (self.root / self.row["photo"]).write_bytes(content)
-        self.row["gameSha256"] = hashlib.sha256(content).hexdigest()
+        target = self.root / self.row["photo"]
+        Image.new("RGB", (600, 720), (80, 90, 100)).save(target, format="JPEG")
+        self.row["gameSha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
         self.banks = {b: [] for b in BANKS}
         self.banks["questions.json"] = [self.row]
         self.hints = {"entries": {self.row["id"]: {"singer": {"title": "真實作品"}}}}
@@ -54,6 +56,31 @@ class ExpansionGateTest(unittest.TestCase):
         self.row["gameSha256"] = "b" * 64
         result = self.run_gate()
         self.assertGreaterEqual(len(result["errors"]), 3)
+
+    def test_new_wrong_dimensions_fail_even_with_matching_hash(self):
+        target = self.root / self.row["photo"]
+        Image.new("RGB", (599, 720), (80, 90, 100)).save(target, format="JPEG")
+        self.row["gameSha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
+        self.assertTrue(any("must be 600x720" in e for e in self.run_gate()["errors"]))
+
+    def test_new_corrupt_image_fails_even_with_matching_hash(self):
+        target = self.root / self.row["photo"]
+        target.write_bytes(b"not a JPEG")
+        self.row["gameSha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
+        self.assertTrue(any("cannot be decoded" in e for e in self.run_gate()["errors"]))
+
+    def test_png_disguised_as_jpg_fails_even_with_matching_hash(self):
+        target = self.root / self.row["photo"]
+        Image.new("RGB", (600, 720), (80, 90, 100)).save(target, format="PNG")
+        self.row["gameSha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
+        self.assertTrue(any("must be JPEG" in e for e in self.run_gate()["errors"]))
+
+    def test_nonexpanding_or_disjoint_reveal_fails(self):
+        self.row["reveal"]["nose"][3] = self.row["reveal"]["eyes"][3]
+        self.assertFalse(verify_reveal(self.row["reveal"]))
+        self.row["reveal"]["nose"][3] = 0.5
+        self.row["reveal"]["nose"][0] = 0.2
+        self.assertFalse(verify_reveal(self.row["reveal"]))
 
     def test_unchanged_legacy_debt_is_not_certified(self):
         self.row["humanReviewed"] = False

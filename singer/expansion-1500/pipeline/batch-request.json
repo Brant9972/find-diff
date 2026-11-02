@@ -1,14 +1,10 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-qid-chinese-claims-three-person-diagnostic",
-  "mode": "search",
-  "targetPeople": 3,
-  "plannedPersonIds": [
-    "t1500_0007",
-    "t1500_0433",
-    "t1500_0457"
-  ],
-  "retryFailed": true,
+  "requestId": "20261102-qid-diagnostic-complete-render-only",
+  "mode": "render_only",
+  "targetPeople": 0,
+  "plannedPersonIds": [],
+  "retryFailed": false,
   "providers": [
     "entity",
     "commons"
@@ -17,5 +13,5 @@
   "maxMinutes": 8,
   "personSeconds": 85,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN: three-person exact Q5 pinned-QID CommonsWiki category sitelink diagnostic with exact Chinese P1477/P1449 fallback; prior rejected sources excluded; report candidate yield, no publication"
+  "purpose": "DRAFT ONLY, NO MAIN: exact Q5 CommonsWiki three-person diagnostic completed, zero new playable crops; render-only safety reset, no repeat search"
 }

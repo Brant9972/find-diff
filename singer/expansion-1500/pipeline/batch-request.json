@@ -13,6 +13,6 @@
   "maxMinutes": 8,
   "personSeconds": 75,
   "maxCandidates": 1,
-  "purpose": "ONE-SHOT: import two previously human-rejected 林慶台 crops by exact candidate ID and SHA; exclude already-live 陳湘琪; no provider search, no main/creators/Pages changes. Auto-reset to render_only after successful import.",
+  "purpose": "DRAFT ONLY, no main, creators or Pages changes. ONE-SHOT: import exactly two previously human-rejected 林慶台 JPEG crops with SHA and ID verification; already-live 陳湘琪 excluded. No provider search; auto-reset to render_only after success.",
   "reviewDecisionPath": "singer/expansion-1500/pipeline/chatgpt-review/20261102-nolay-rejections-only.json"
 }

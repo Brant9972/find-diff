@@ -109,6 +109,33 @@ class CuratedStillOriginalTest(unittest.TestCase):
             with Image.open(out / "contact-sheet.jpg") as sheet:
                 self.assertEqual(sheet.size, (1200, 330))
 
+    def test_yang_lihua_pinned_source_is_review_only(self):
+        """The right-side subject can be isolated without including left-side pixels."""
+        original = Image.new("RGB", (1280, 1920), (32, 35, 38))
+        from PIL import ImageDraw
+        ImageDraw.Draw(original).rectangle((0, 0, 629, 1919), fill=(240, 20, 20))
+        buf = io.BytesIO()
+        original.save(buf, format="JPEG", quality=95)
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(diag, "fetch_exact", return_value=buf.getvalue()) as fetch:
+                result = diag.run(Path(tmp), lead_path=diag.YANG_LEAD)
+            self.assertEqual(result["status"], "download_verified_provisional_crop_created")
+            self.assertEqual(result["personId"], "t1500_0273")
+            self.assertFalse(result["humanReviewed"])
+            self.assertFalse(result["rightsAndIdentityFinalApproval"])
+            self.assertFalse(result["liveUpdated"])
+            self.assertEqual(result["cropBox"], [640, 270, 1180, 918])
+            self.assertEqual(fetch.call_args.args[1], 324913)
+            self.assertEqual(fetch.call_args.args[2], "176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3")
+            with Image.open(Path(tmp) / "draft-600x720.jpg") as photo:
+                self.assertEqual(photo.size, (600, 720))
+                self.assertLess(photo.getpixel((0, 360))[0], 100)
+
+    def test_arbitrary_source_lead_cannot_be_injected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, "not allowlisted"):
+                diag.run(Path(tmp), lead_path=Path(tmp) / "external.json")
+
 
 if __name__ == "__main__":
     unittest.main()

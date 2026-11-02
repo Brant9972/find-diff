@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-retained-drafts-live-ref-main-fix",
+  "requestId": "20261102-retained-drafts-main-identity-verified-v2",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 7,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Rebuild retained five-stage review sheet pinned to fetched origin/main; exclude already-live people; draft-only, no source search or production edits"
+  "purpose": "Validated 341-test offline retained draft review, using current origin/main SHA for live exclusions; no external source search, no production changes"
 }

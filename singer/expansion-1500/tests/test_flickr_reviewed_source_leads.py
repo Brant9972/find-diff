@@ -59,8 +59,13 @@ class FlickrSourceLeadTest(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)))
             self.assertTrue(all(pid.startswith("t1500_") for pid in ids))
             self.assertTrue(set(req["providers"]) <= {"curated", "commons", "entity"})
-        self.assertIn("draft only", req["purpose"].casefold())
-        self.assertIn("no main", req["purpose"].casefold())
+        # Human-readable purpose changes as review-only checkpoints evolve.
+        # Verify machine-enforced release safety rather than fixed prose.
+        self.assertNotIn(req["mode"], {"publish", "release", "deploy"})
+        self.assertFalse(req.get("publishToMain", False))
+        if req["mode"] == "render_only":
+            self.assertEqual(req["targetPeople"], 0)
+            self.assertEqual(req["plannedPersonIds"], [])
 
 
     def test_visual_rejections_are_source_specific_and_not_releasable(self):

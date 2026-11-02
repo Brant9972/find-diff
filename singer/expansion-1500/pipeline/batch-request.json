@@ -1,18 +1,21 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-import-two-reviewed-nolay-rejections",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261102-qid-chinese-claims-three-person-diagnostic",
+  "mode": "search",
+  "targetPeople": 3,
+  "plannedPersonIds": [
+    "t1500_0007",
+    "t1500_0433",
+    "t1500_0457"
+  ],
+  "retryFailed": true,
   "providers": [
     "entity",
     "commons"
   ],
   "workers": 1,
   "maxMinutes": 8,
-  "personSeconds": 75,
+  "personSeconds": 85,
   "maxCandidates": 1,
-  "purpose": "SHA-verified human rejections imported; render-only, no source search or deployment",
-  "reviewDecisionPath": "singer/expansion-1500/pipeline/chatgpt-review/20261102-nolay-rejections-only.json"
+  "purpose": "Three-person bounded diagnostic after pinned Q5 P1477/P1449 Chinese-name fallback; do not publish, do not reuse excluded sources; inspect identity/caption/rights/pixels and checkpoint evidence"
 }

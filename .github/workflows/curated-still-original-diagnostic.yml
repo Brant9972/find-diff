@@ -1,0 +1,22 @@
+# Dispatch registration only. The photo-processing implementation lives on the
+# automation/celebrity-photo-pipeline branch, not in production main.
+# GitHub requires workflow_dispatch registration on the default branch.
+name: Curated Commons still original diagnostic (no deploy)
+on:
+  workflow_dispatch:
+    inputs:
+      reuse_run_id:
+        description: 'Prior same-repository Yang Li-hua diagnostic run with SHA-verified original'
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  select-photo-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Fail closed when main is selected
+        run: |
+          echo "::error::Select the automation/celebrity-photo-pipeline branch when manually running this workflow. No production assets were changed."
+          exit 1

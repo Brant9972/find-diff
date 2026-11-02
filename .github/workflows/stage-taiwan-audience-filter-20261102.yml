@@ -1,0 +1,49 @@
+name: Stage Taiwan audience recognition exclusions
+on:
+  push:
+    branches:
+      - review/taiwan-recognition-filter-20261102
+    paths:
+      - singer/tools/apply_taiwan_audience_filter_20261102.py
+      - .github/workflows/stage-taiwan-audience-filter-20261102.yml
+permissions:
+  contents: write
+jobs:
+  review-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconcile question banks and preserve removal history
+        run: python singer/tools/apply_taiwan_audience_filter_20261102.py
+      - name: Rebuild deterministic rights inventory after changed active membership
+        run: |
+          python singer/expansion-1500/rights_audit.py --write --main-sha ebb7c34b2ff3b05d2d8ae6f13a868ce8aff78433
+          python singer/expansion-1500/rights_audit.py --check
+      - name: Check the hint bank and release gate
+        run: |
+          python singer/prepare_hints.py
+          python -m unittest discover -s singer -p 'test_expansion_release_gate.py' -q
+          python singer/qa_expansion_release_gate.py --root singer
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test mobile/guessing app behavior
+        run: |
+          node --check singer/game.js
+          node --check singer/qa.cjs
+          npm install --no-save --package-lock=false puppeteer-core@24
+          node singer/qa.cjs
+      - name: Commit only vetted content changes to review branch
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add singer/actors.json singer/actors-roster.json singer/hints.json singer/hint-candidates.json singer/eligibility-review.json singer/expansion-1500/release-plan-20261028.json singer/expansion-1500/taiwan-audience-selection-20261102.json singer/expansion-1500/rights-audit-20261031.json
+          git diff --cached --check
+          git commit -m "Pause three Forensic Heroes-only entries and document Taiwan familiarity policy"
+          git push origin HEAD:review/taiwan-recognition-filter-20261102

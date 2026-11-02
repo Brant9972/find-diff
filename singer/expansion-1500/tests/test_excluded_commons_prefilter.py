@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import CommonsSearch, CuratedCommons, EntityPortraits, excluded_commons_keys
+from media_pipeline.sources import CommonsSearch, CuratedCommons, EntityPortraits, Wikimedia, excluded_commons_keys
 
 
 class FakeCommons:
@@ -106,6 +106,69 @@ class RejectedSourcePreFilterTest(unittest.TestCase):
         person['excludedPhotoSources'] = []
         self.assertEqual(len(list(CuratedCommons().search(person, None))), 1)
 
+
+
+
+class LegacyWikimediaExcludedFileTest(unittest.TestCase):
+    def test_article_p18_and_search_cannot_reintroduce_rejected_file(self):
+        """All three legacy discovery paths share the exact-source rejection."""
+        rejected = '王耀慶@2011.jpg'
+        fresh = 'New Wang Portrait.jpg'
+
+        class FakeLegacyAPI:
+            def __init__(self):
+                self.calls = []
+
+            def json(self, url, **params):
+                self.calls.append((url, params))
+                if 'zh.wikipedia.org' in url:
+                    return {'query': {'pages': [{
+                        'title': '王耀慶',
+                        'extract': '台灣演員王耀慶接受專訪。',
+                        'pageprops': {'wikibase_item': 'Q9315976'},
+                        'pageimage': rejected,
+                        'images': [{'title': 'File:' + fresh}],
+                    }]}}
+                if 'en.wikipedia.org' in url:
+                    return {'query': {'pages': []}}
+                if 'wikidata.org' in url:
+                    return {'entities': {'Q9315976': {'claims': {'P18': [
+                        {'mainsnak': {'datavalue': {'value': rejected}}},
+                        {'mainsnak': {'datavalue': {'value': fresh}}},
+                    ]}}}}
+                if params.get('generator') == 'search':
+                    return {'query': {'pages': [
+                        {'title': 'File:' + rejected},
+                        {'title': 'File:' + fresh},
+                    ]}}
+                if params.get('titles') == 'File:' + fresh:
+                    return {'query': {'pages': [{
+                        'imageinfo': [{
+                            'url': 'https://upload.wikimedia.org/wikipedia/commons/1/11/new.jpg',
+                            'descriptionurl': 'https://commons.wikimedia.org/wiki/File:New_Wang_Portrait.jpg',
+                            'extmetadata': {},
+                        }],
+                    }]}}
+                raise AssertionError('Rejected or unexpected imageinfo request: ' +
+                                     str((url, params)))
+
+        person = {
+            'name': '王耀慶',
+            'wikidataId': 'Q9315976',
+            'excludedPhotoSources': [
+                'https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%80%80%E6%85%B6%402011.jpg',
+            ],
+        }
+        api = FakeLegacyAPI()
+        rows = list(Wikimedia().search(person, api))
+        self.assertEqual([row['filename'] for row in rows], [fresh])
+        self.assertEqual(
+            [params['titles'] for _, params in api.calls if 'titles' in params
+             and 'commons.wikimedia.org' in _],
+            ['File:' + fresh],
+        )
+        self.assertTrue(any(params.get('generator') == 'search'
+                            for _, params in api.calls))
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,35 @@
+name: Retained celebrity draft visual export (no deploy)
+on:
+  push:
+    branches: [automation/celebrity-photo-pipeline]
+    paths:
+      - .github/workflows/retained-draft-visual.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  visual-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation/celebrity-photo-pipeline
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==12.0.0
+      - name: Validate offline retained-draft exporter
+        run: python -m unittest discover -s singer/expansion-1500/tests -p test_retained_draft_contact_sheet.py -q
+      - run: git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
+      - name: Build human-only five-stage contact sheet against live main
+        run: python singer/expansion-1500/tools/retained_draft_contact_sheet.py --live-ref origin/main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: retained-celebrity-draft-visuals-${{ github.run_id }}
+          retention-days: 30
+          path: |
+            singer/expansion-1500/pipeline/review-assets/retained-drafts-20261102/contact-sheet.png
+            singer/expansion-1500/pipeline/review-assets/retained-drafts-20261102/index.json
+          if-no-files-found: error

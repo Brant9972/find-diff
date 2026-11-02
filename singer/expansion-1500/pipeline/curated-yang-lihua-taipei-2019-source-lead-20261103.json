@@ -40,7 +40,7 @@
   },
   "blockingChecks": [
     "Original Taipei government page and whether this particular image falls within its non-contracted reusable materials must be verified; Commons licence statement alone is not independent rights clearance.",
-    "Identify which pictured woman is 楊麗花 using independent named photography, not only page caption or position inference.",
+    "CNA independently captions Yang Li-hua on the right and Chen Ya-lan on the left at the same 2019-09-23 press event; confirm the selected Wikimedia source crop corresponds to that arrangement, with no second face visible.",
     "Download exactly this source from Wikimedia only if allowed, check SHA-1 176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3; no broad batch or alternative same-name images.",
     "Crop only the right-hand subject to 600×720 without any portion of the second face; reject if insufficient pixels, eye stage weak, or background face leaks.",
     "Inspect actual eyes/nose/mouth/chin/full five-stage previews; separately verify work hint 《忠孝節義》, aliases, QID and source attribution before PR/QA/main/Pages.",
@@ -73,5 +73,13 @@
     "governmentLicenseAllows": "Attribution required; reproduction, adaptation, public transmission, commercial derivative products permitted unless material specifically excluded by special agreements",
     "exceptionScope": "No individual photo exemption shown in accessible article text; cannot independently establish whether this particular image is subject to an undisclosed contractor exception",
     "releaseDecision": "PENDING_SOURCE_PIXEL_REVIEW_AND_INDIVIDUAL_RIGHTS_SCOPE"
+  },
+  "independentEventEvidence": {
+    "date": "2019-09-23",
+    "source": "https://www.cna.com.tw/news/firstnews/201909230248.aspx",
+    "photographer": "中央社記者張皓安",
+    "caption": "國寶級歌仔戲天王楊麗花（右）與愛徒陳亞蘭（左）出席《忠孝節義》記者會",
+    "scope": "Independent caption for another photograph at the same event; supports which named person stood on each side, not independent confirmation of Wikimedia photographer or rights",
+    "workHintVerified": "《忠孝節義》2019-09-24台視首播"
   }
 }

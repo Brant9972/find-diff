@@ -16990,7 +16990,7 @@
       "personId": "t1500_0171",
       "candidateId": "c1500-0171",
       "name": "陳湘琪",
-      "status": "pending_review",
+      "status": "published",
       "attempts": 3,
       "nextRetryAt": null,
       "candidates": [
@@ -78299,8 +78299,8 @@
       "candidateId": "c1500-0094",
       "name": "寇世勳",
       "status": "no_suitable_source",
-      "attempts": 6,
-      "nextRetryAt": "2026-11-03T16:40:37.516406+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-07T09:48:49.935148+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -78476,6 +78476,23 @@
           "time": "2026-11-01T00:40:37.516396+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-11-02T01:48:41.144035+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:44.402867+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:44.402896+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:49.935119+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:49.935137+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -78494,18 +78511,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-11-01T00:40:28.021980+00:00",
+      "lastAttemptAt": "2026-11-02T01:48:41.079238+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-11-01T00:40:37.516418+00:00",
-      "lastRunId": "20261101T004014Z-aa527dff",
+      "updatedAt": "2026-11-02T01:48:49.935161+00:00",
+      "lastRunId": "20261102T014822Z-3a4a8751",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-11-01T00:40:37.518961+00:00"
+      "workerFinishedAt": "2026-11-02T01:48:49.940646+00:00"
     },
     "t1500_0379": {
       "personId": "t1500_0379",
@@ -79197,8 +79214,8 @@
       "candidateId": "c1500-0093",
       "name": "郭品超",
       "status": "no_suitable_source",
-      "attempts": 6,
-      "nextRetryAt": "2026-11-03T16:40:33.587869+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-07T09:48:40.954690+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -79441,6 +79458,23 @@
           "time": "2026-11-01T00:40:33.587859+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-11-02T01:48:34.335442+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:36.483029+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:36.483057+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:40.954665+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:40.954680+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -79459,18 +79493,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-11-01T00:40:26.959807+00:00",
+      "lastAttemptAt": "2026-11-02T01:48:34.267785+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-11-01T00:40:33.587880+00:00",
-      "lastRunId": "20261101T004014Z-aa527dff",
+      "updatedAt": "2026-11-02T01:48:40.954702+00:00",
+      "lastRunId": "20261102T014822Z-3a4a8751",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-11-01T00:40:33.590433+00:00"
+      "workerFinishedAt": "2026-11-02T01:48:40.957063+00:00"
     },
     "t1500_0387": {
       "personId": "t1500_0387",
@@ -88630,8 +88664,8 @@
       "candidateId": "c1500-0092",
       "name": "江祖平",
       "status": "no_suitable_source",
-      "attempts": 6,
-      "nextRetryAt": "2026-11-03T16:40:27.873211+00:00",
+      "attempts": 7,
+      "nextRetryAt": "2026-11-07T09:48:34.162945+00:00",
       "candidates": [
         {
           "provider": "wikimedia",
@@ -88796,6 +88830,23 @@
           "time": "2026-11-01T00:40:27.873198+00:00",
           "errors": [],
           "candidatesTried": 0
+        },
+        {
+          "time": "2026-11-02T01:48:25.163547+00:00",
+          "provider": "entity",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:28.651092+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:28.651122+00:00",
+          "provider": "commons",
+          "attempt": 7,
+          "finishedAt": "2026-11-02T01:48:34.162914+00:00"
+        },
+        {
+          "time": "2026-11-02T01:48:34.162934+00:00",
+          "errors": [],
+          "candidatesTried": 0
         }
       ],
       "legacyRecord": {
@@ -88814,18 +88865,18 @@
         "eligibleForLive": false,
         "error": "No suitable licensed Wikipedia portrait found"
       },
-      "lastAttemptAt": "2026-11-01T00:40:17.542710+00:00",
+      "lastAttemptAt": "2026-11-02T01:48:25.100162+00:00",
       "lastErrors": [],
       "lastFailure": {
         "code": "no_suitable_source",
         "retryable": true,
         "message": "No usable candidates returned by sources"
       },
-      "updatedAt": "2026-11-01T00:40:27.873223+00:00",
-      "lastRunId": "20261101T004014Z-aa527dff",
+      "updatedAt": "2026-11-02T01:48:34.162957+00:00",
+      "lastRunId": "20261102T014822Z-3a4a8751",
       "lastRunNewCandidateIds": [],
       "lastSearchRevision": 4,
-      "workerFinishedAt": "2026-11-01T00:40:27.875600+00:00"
+      "workerFinishedAt": "2026-11-02T01:48:34.165233+00:00"
     },
     "t1500_0507": {
       "personId": "t1500_0507",
@@ -115852,10 +115903,11 @@
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "Licence insufficient: image not downloaded"
+            "Licence insufficient: image not downloaded",
+            "Source rejected for this person in release plan"
           ]
         }
       ],

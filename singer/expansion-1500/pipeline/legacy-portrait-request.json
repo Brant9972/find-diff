@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "releaseGate": "SOURCE_PIXELS_AND_DRAFT_ONLY_NO_LIVE",
-  "mainCheckedSha": "8b19e2a47c9ee3f9e73c0a12762c357cca5bbb04",
+  "mainCheckedSha": "7ba8951a375b68ad25d9e40f97a9c85ba7c6c63b",
   "items": [
     {
       "person": "吳建豪",
@@ -57,5 +57,7 @@
       }
     }
   ],
-  "retryPolicyRevision": "20261101-respect-retry-after-v2"
+  "retryPolicyRevision": "20261101-respect-retry-after-v2",
+  "requestedAt": "2026-11-02T00:28:41Z",
+  "purpose": "Run one exact Commons SHA1-verified legacy photo staging for existing s227 only. Draft pixels and five-stage QA; do not modify main or creators. Recheck current live main before integration."
 }

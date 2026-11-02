@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-retained-drafts-main-identity-verified-v2",
+  "requestId": "20261102-retained-review-after-nine-rejections",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 7,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Validated 341-test offline retained draft review, using current origin/main SHA for live exclusions; no external source search, no production changes"
+  "purpose": "Apply 20261102 SHA-bound nine retained visual source rejections; regenerate remaining draft contact sheet against origin/main; no source search, no live changes"
 }

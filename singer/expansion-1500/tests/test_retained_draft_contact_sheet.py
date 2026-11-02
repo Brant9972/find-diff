@@ -3,6 +3,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 from PIL import Image
@@ -50,6 +51,19 @@ class RetainedDraftContactSheetTests(unittest.TestCase):
                              {"source_previously_excluded", "not_selected_or_already_live"})
             self.assertTrue((root/"expansion-1500/pipeline/review-assets/retained/contact-sheet.png").is_file())
             self.assertEqual(result["people"][0]["reviewStatus"], "VISUAL_SCREENING_REQUIRED_NOT_APPROVED")
+            # A pipeline branch can lag behind main: fetched main, not local banks,
+            # must decide whether a portrait is already published.
+            def git_read(cmd, text=True):
+                if cmd[-2:] == ["rev-parse", "origin/main"]:
+                    return "a"*40+"\\n"
+                if cmd[-1] == "origin/main:singer/questions.json":
+                    return json.dumps({"questions": [{"id": "t1500_0001"}]})
+                return json.dumps({"questions": []})
+            with mock.patch("retained_draft_contact_sheet.subprocess.check_output", side_effect=git_read):
+                current = build(root, root/"expansion-1500/pipeline/review-assets/live-ref", live_ref="origin/main")
+            self.assertEqual(current["summary"]["screeningRows"], 0)
+            self.assertEqual(current["baselineLiveSha"], "a"*40)
+            self.assertIn("not_selected_or_already_live", {x["reason"] for x in current["skipped"]})
 
 
 if __name__ == "__main__":

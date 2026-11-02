@@ -81,7 +81,7 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
   <div id="board" class="board" aria-label="點選或拖曳名字，將四人排成一組"></div>
   <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
   <div class="actions">
-    <button id="shuffle" class="btn" type="button">↻ 洗牌</button>
+    <button id="clearSelection" class="btn" type="button" disabled>✕ 取消全選</button>
     <button id="hint" class="btn" type="button">✦ 提示 −25</button>
     <button id="submit" class="btn primary" type="button" disabled>送出答案 (0/4)</button>
   </div>
@@ -139,7 +139,7 @@ function render(){
    panel.append(list);
  }
  let b=$('board');b.replaceChildren();s.tiles.forEach(t=>{if(s.solved.includes(t.g))return;let e=document.createElement('button');e.type='button';e.className='tile';e.textContent=t.n;e.dataset.tileId=t.id;e.setAttribute('aria-pressed',String(s.selected.includes(t.id)));e.addEventListener('click',()=>{if(Date.now()<suppressClickUntil)return;choose(t.id)});b.append(e)});
- $('submit').disabled=s.selected.length!==4||s.done;$('submit').textContent='送出答案 ('+s.selected.length+'/4)';$('shuffle').disabled=s.done;$('hint').disabled=s.done||s.hints.length>=4;persist();
+ $('submit').disabled=s.selected.length!==4||s.done;$('submit').textContent='送出答案 ('+s.selected.length+'/4)';$('clearSelection').disabled=s.done||s.selected.length===0;$('hint').disabled=s.done||s.hints.length>=4;persist();
 }
 // Pointer-based drag-and-swap works with touchscreens, mice and pens.
 let drag=null,suppressClickUntil=0;
@@ -209,16 +209,16 @@ function submit(){
  s.tries--;s.score=Math.max(0,s.score-15);s.selected=[];say(matches===3?'差一個就答對了！':'這四個人並不是同一組','bad');render();if(s.tries===0){s.done=true;render();setTimeout(()=>modal('lost'),350)}
 }
 function hint(){let j=[0,1,2,3].find(x=>!s.solved.includes(x)&&!s.hints.includes(x));if(j===undefined)return;s.hints.push(j);s.score=Math.max(0,s.score-25);render();say('已解鎖提示 '+s.hints.length+'，上方會持續顯示，不會被操作訊息覆蓋','good')}
-function shuffle(){s.tiles=randomize(s.tiles);s.selected=[];say('已洗牌，再試著找出四人關係');render()}
+function clearSelection(){if(s.done||s.selected.length===0)return;s.selected=[];render();say('已取消全部選取；方塊排列位置維持不變','good')}
 function modal(type){
  const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
  let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
  let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
- let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分，已解鎖的提示會固定顯示在題目上方，不受拖曳等操作影響。答錯會少一顆愛心，每關可錯四次。洗牌免費、提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分，已解鎖的提示會固定顯示在題目上方，不受拖曳等操作影響。答錯會少一顆愛心，每關可錯四次。取消全選不扣分，也不改變你排好的方塊順序；提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
  if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
  if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
  let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'開始挑戰':type==='lost'?'重新挑戰這關':s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()
 }
-$('submit').addEventListener('click',submit);$('hint').addEventListener('click',hint);$('shuffle').addEventListener('click',shuffle);$('rules').addEventListener('click',()=>modal('rules'));$('restart').addEventListener('click',()=>{s.score=0;newRound(0)});document.addEventListener('keydown',e=>{if($('modalHost').childElementCount)return;if(e.key==='Enter'&&s.selected.length===4)submit();if(e.key==='Escape'){s.selected=[];render()}});if(!restore())newRound(0);
+$('submit').addEventListener('click',submit);$('hint').addEventListener('click',hint);$('clearSelection').addEventListener('click',clearSelection);$('rules').addEventListener('click',()=>modal('rules'));$('restart').addEventListener('click',()=>{s.score=0;newRound(0)});document.addEventListener('keydown',e=>{if($('modalHost').childElementCount)return;if(e.key==='Enter'&&s.selected.length===4)submit();if(e.key==='Escape'){s.selected=[];render()}});if(!restore())newRound(0);
 </script>
 </body></html>

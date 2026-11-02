@@ -125,6 +125,34 @@ document.querySelector('#export').onclick=()=>{const reviewer=document.querySele
     return summary
 
 
+def validate_rejection_only_document(document):
+    """Reject approval or incomplete SHA bindings before a batch review import.
+
+    This narrow import path reconciles previously completed human rejections.
+    It cannot publish a photo, reinterpret a pending review, or re-approve
+    an existing playable person. import_decisions separately verifies the
+    candidate ID, actual JPEG bytes and immutable review archive.
+    """
+    if document.get('schemaVersion') != 1 or not document.get('reviewer') or not document.get('reviewedAt'):
+        raise ValueError('Rejection import needs a dated, named reviewer')
+    decisions = document.get('decisions')
+    if not isinstance(decisions, list) or not decisions:
+        raise ValueError('Rejection import must have at least one decision')
+    seen = set()
+    for entry in decisions:
+        if not isinstance(entry, dict) or entry.get('decision') != 'rejected':
+            raise ValueError('Rejection-only import cannot approve or defer photos')
+        key = (entry.get('personId'), entry.get('candidateId'))
+        if not all(isinstance(value, str) and value.strip() for value in key) or key in seen:
+            raise ValueError('Missing or duplicate person/candidate binding')
+        seen.add(key)
+        if (not isinstance(entry.get('gameSha256'), str) or
+                not __import__('re').fullmatch(r'[0-9a-f]{64}', entry['gameSha256']) or
+                not isinstance(entry.get('reason'), str) or not entry['reason'].strip()):
+            raise ValueError('Rejection requires exact SHA-256 and human reason')
+    return decisions
+
+
 def import_decisions(root, directory, state, document):
     """Import only explicit external review, validate the ENTIRE file before any mutation."""
     if document.get('schemaVersion') != 1 or not document.get('reviewer') or not document.get('reviewedAt'):

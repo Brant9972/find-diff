@@ -57,7 +57,11 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
 .bonus-copy small{font-size:11px;line-height:1.5;color:#becae8}
 .bonus-btn{flex-shrink:0;border:1px solid #b9a7ff;background:#5b48a3;color:#fff;border-radius:10px;padding:10px 11px;font-size:12px;font-weight:800;min-height:42px}
 .bonus-btn:hover{background:#6a56bb}
-@media(max-width:380px){.bonus-bar{flex-wrap:wrap}.bonus-btn{width:100%}}
+.replay-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#17243d;border:1px solid #7186a75c;border-radius:14px;padding:10px 12px;margin:-5px 0 14px}
+.replay-bar .bonus-copy strong{color:#d7e9ff}
+.replay-bar .bonus-btn{background:#34516b;border-color:#709ebc}
+.replay-bar .bonus-btn:hover{background:#456783}
+@media(max-width:380px){.bonus-bar,.replay-bar{flex-wrap:wrap}.bonus-btn{width:100%}}
 .extra{text-align:center}.link{border:0;background:transparent;color:#c3cce0;text-decoration:underline;font-size:12px;padding:8px}
 .modalhost:empty{display:none}.overlay{position:fixed;inset:0;background:#080e1ce9;z-index:10;display:grid;place-items:center;padding:18px;overflow:auto}
 .modal{background:linear-gradient(140deg,#222b47,#101c30 70%);border:1px solid #7780a34c;border-radius:20px;padding:24px 20px;max-width:440px;width:100%;text-align:center;box-shadow:0 22px 70px #0009}
@@ -79,6 +83,10 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
     <div class="bonus-copy"><strong id="bonusTitle">✨ 新增題目補玩</strong><small id="bonusDesc">已破關的玩家也能玩到新增戲劇，主線進度不受影響。</small></div>
     <button id="bonusToggle" class="bonus-btn" type="button">補玩新增題目</button>
   </section>
+  <section class="replay-bar" aria-label="重新遊玩">
+    <div class="bonus-copy"><strong id="replayTitle">↻ 重新遊玩</strong><small id="replayDesc">從第 1 關重新挑戰，保留原本的進度與分數。</small></div>
+    <button id="replayToggle" class="bonus-btn" type="button">重新遊玩</button>
+  </section>
   <div class="stats">
     <div class="stat"><span id="level" class="number">1 / 50</span><span class="caption">目前關卡</span></div>
     <div class="stat"><span id="score" class="number">0</span><span id="scoreCaption" class="caption">累積分數</span></div>
@@ -96,8 +104,8 @@ h1{font-size:clamp(32px,8vw,44px);margin:14px 0 6px;line-height:1.1;letter-spaci
     <button id="hint" class="btn" type="button">✦ 提示 −25</button>
     <button id="submit" class="btn primary" type="button" disabled>送出答案 (0/4)</button>
   </div>
-  <p class="note">可自由排列方塊，整理順序不扣分。<br>正確 +100 分｜答錯 −15 分｜提示 −25 分<br>共 50 關、200 組｜自動記錄進度｜每關最多可錯 4 次。<br>新增題目可獨立補玩，不改變主線關卡與分數。</p>
-  <div class="extra"><button id="restart" class="link" type="button">重新開始整個遊戲</button> · <button id="rules" class="link" type="button">遊戲規則</button></div>
+  <p class="note">可自由排列方塊，整理順序不扣分。<br>正確 +100 分｜答錯 −15 分｜提示 −25 分<br>共 50 關、200 組｜自動記錄進度｜每關最多可錯 4 次。<br>新增題目補玩、重新遊玩各自存檔，不會清除原本的主線紀錄。</p>
+  <div class="extra"><button id="restart" class="link" type="button">重新挑戰本關</button> · <button id="rules" class="link" type="button">遊戲規則</button></div>
 </main>
 <div id="modalHost" class="modalhost"></div>
 <script>
@@ -111,7 +119,8 @@ const LEGACY_STORAGE_KEYS=["four-connections-50-progress-v2","four-connections-5
 // One bonus puzzle is the updated version of a level containing a newly added drama.
 const BONUS_LEVELS=[0,1,2,3,4,5,6,8,9,14];
 const BONUS_STORAGE_KEY="four-connections-bonus-20261102-v1";
-let bonusMode=false, mainSnapshot=null;
+let bonusMode=false,replayMode=false,mainSnapshot=null;
+const REPLAY_STORAGE_KEY="four-connections-50-replay-v1";
 const bonusCompleted=new Set();
 function readBonus(){
  try{
@@ -125,7 +134,8 @@ if(previousBonus)for(const level of previousBonus.completed){if(BONUS_LEVELS.inc
 const s={round:0,score:0,baseline:0,tries:4,selected:[],solved:[],hints:[],tiles:[],done:false};
 function persist(){
  try{
-  if(bonusMode)localStorage.setItem(BONUS_STORAGE_KEY,JSON.stringify({state:s,completed:[...bonusCompleted]}));
+  if(replayMode)localStorage.setItem(REPLAY_STORAGE_KEY,JSON.stringify(s));
+  else if(bonusMode)localStorage.setItem(BONUS_STORAGE_KEY,JSON.stringify({state:s,completed:[...bonusCompleted]}));
   else localStorage.setItem(STORAGE_KEY,JSON.stringify(s));
  }catch(_){}
 }
@@ -151,6 +161,7 @@ function restore(){
 function firstUnplayedBonus(){return BONUS_LEVELS.find(i=>!bonusCompleted.has(i))??null}
 function startBonus(){
  if(bonusMode)return;
+ if(replayMode)returnMain();
  mainSnapshot=JSON.parse(JSON.stringify(s));
  bonusMode=true;
  const saved=readBonus();
@@ -166,9 +177,26 @@ function startBonus(){
   say('補玩模式已開啟：這些關卡都包含新增的偶像劇','good');
  }
 }
+function startReplay(){
+ if(replayMode)return;
+ if(bonusMode)returnMain();
+ mainSnapshot=JSON.parse(JSON.stringify(s));
+ replayMode=true;
+ let prior=null;
+ try{prior=JSON.parse(localStorage.getItem(REPLAY_STORAGE_KEY)||"null")}catch(_){}
+ if(validSavedState(prior)){
+  Object.assign(s,prior);
+  $('modalHost').replaceChildren();render();
+  if(s.done)modal(s.tries===0?'lost':'win');
+  else say('已載入重新遊玩的第 '+(s.round+1)+' 關；原本進度與分數都保留','good');
+ }else{
+  s.score=0;newRound(0);
+  say('重新遊玩已開始！從第 1 關挑戰，原本進度不受影響','good');
+ }
+}
 function returnMain(){
- if(!bonusMode)return;
- bonusMode=false;
+ if(!bonusMode&&!replayMode)return;
+ bonusMode=false;replayMode=false;
  const saved=mainSnapshot;
  mainSnapshot=null;
  $('modalHost').replaceChildren();
@@ -183,14 +211,17 @@ function say(msg,type=''){let e=$('feedback');e.textContent=msg;e.className='fee
 function newRound(i){s.round=i;s.baseline=s.score;s.tries=4;s.selected=[];s.solved=[];s.hints=[];s.done=false;s.tiles=randomize(ROUNDS[i].groups.flatMap((g,j)=>g.names.map(n=>({id:j+':'+n,g:j,n}))));$('modalHost').replaceChildren();say('選擇 4 個你認為有共同關係的人名');render()}
 function render(){
  const r=ROUNDS[s.round];$('level').textContent=bonusMode?(BONUS_LEVELS.indexOf(s.round)+1)+' / '+BONUS_LEVELS.length:(s.round+1)+' / '+ROUNDS.length;
- $('score').textContent=s.score;$('scoreCaption').textContent=bonusMode?'補玩分數':'累積分數';
+ $('score').textContent=s.score;$('scoreCaption').textContent=bonusMode?'補玩分數':replayMode?'重玩分數':'累積分數';
  $('hearts').textContent=('♥ '.repeat(s.tries)).trim()||'—';
- $('roundTitle').textContent=bonusMode?'補玩：原第 '+(s.round+1)+' 關 · '+r.title:'第 '+(s.round+1)+' 關 · '+r.title;
+ $('roundTitle').textContent=bonusMode?'補玩：原第 '+(s.round+1)+' 關 · '+r.title:replayMode?'重新遊玩：第 '+(s.round+1)+' 關 · '+r.title:'第 '+(s.round+1)+' 關 · '+r.title;
  $('found').textContent='找出 '+s.solved.length+' / 4 組';
  $('bonusTitle').textContent=bonusMode?'✨ 新題補玩 · '+(BONUS_LEVELS.indexOf(s.round)+1)+' / '+BONUS_LEVELS.length:'✨ 新增題目 · 已補玩 '+bonusCompleted.size+' / '+BONUS_LEVELS.length+' 關';
  $('bonusDesc').textContent=bonusMode?'補玩完成後可隨時返回主線；補玩分數獨立記錄。':'新增《愛殺17》等 10 組戲劇，玩到後面也能回頭挑戰。';
  $('bonusToggle').textContent=bonusMode?'← 返回原本關卡':'補玩新增題目';
- $('restart').textContent=bonusMode?'重新挑戰這一題':'重新開始整個遊戲';
+ $('replayTitle').textContent=replayMode?'↻ 重新遊玩中 · 第 '+(s.round+1)+' / '+ROUNDS.length+' 關':'↻ 重新遊玩';
+ $('replayDesc').textContent=replayMode?'重玩進度獨立保存，隨時可以回原本的關卡。':'從第 1 關重新挑戰，保留原本的進度與分數。';
+ $('replayToggle').textContent=replayMode?'← 返回原本進度':'重新遊玩';
+ $('restart').textContent='重新挑戰本關';
  $('progress').innerHTML=Array.from({length:4},(_,i)=>'<i class="'+(i<s.solved.length?'on':'')+'"></i>').join('');
  const g=$('groups');g.replaceChildren();s.solved.forEach(j=>{let el=document.createElement('div');el.className='group c'+j;let strong=document.createElement('strong'),small=document.createElement('span');strong.textContent=r.groups[j].name;small.textContent=r.groups[j].names.join(' · ');el.append(strong,small);g.append(el)});
  const panel=$('hintPanel');panel.replaceChildren();panel.hidden=s.hints.length===0;
@@ -278,27 +309,29 @@ function choose(id){if(s.done)return;const i=s.selected.indexOf(id);if(i>=0)s.se
 function submit(){
  if(s.selected.length!==4||s.done)return;
  let gs=s.selected.map(id=>s.tiles.find(t=>t.id===id).g),j=gs[0];
- if(gs.every(x=>x===j)){s.solved.push(j);s.score+=100;s.selected=[];say('答對！「'+ROUNDS[s.round].groups[j].name+'」','good');render();if(s.solved.length===4){s.done=true;if(bonusMode)bonusCompleted.add(s.round);render();const finishedRound=s.round,finishedMode=bonusMode;setTimeout(()=>{if(s.round===finishedRound&&bonusMode===finishedMode&&s.done)modal('win')},350)}return}
+ if(gs.every(x=>x===j)){s.solved.push(j);s.score+=100;s.selected=[];say('答對！「'+ROUNDS[s.round].groups[j].name+'」','good');render();if(s.solved.length===4){s.done=true;if(bonusMode)bonusCompleted.add(s.round);render();const finishedRound=s.round,finishedMode=bonusMode,finishedReplay=replayMode;setTimeout(()=>{if(s.round===finishedRound&&bonusMode===finishedMode&&replayMode===finishedReplay&&s.done)modal('win')},350)}return}
  let matches=Math.max(...[0,1,2,3].filter(x=>!s.solved.includes(x)).map(x=>gs.filter(y=>x===y).length));
- s.tries--;s.score=Math.max(0,s.score-15);s.selected=[];say(matches===3?'差一個就答對了！':'這四個人並不是同一組','bad');render();if(s.tries===0){s.done=true;render();const finishedRound=s.round,finishedMode=bonusMode;setTimeout(()=>{if(s.round===finishedRound&&bonusMode===finishedMode&&s.done)modal('lost')},350)}
+ s.tries--;s.score=Math.max(0,s.score-15);s.selected=[];say(matches===3?'差一個就答對了！':'這四個人並不是同一組','bad');render();if(s.tries===0){s.done=true;render();const finishedRound=s.round,finishedMode=bonusMode,finishedReplay=replayMode;setTimeout(()=>{if(s.round===finishedRound&&bonusMode===finishedMode&&replayMode===finishedReplay&&s.done)modal('lost')},350)}
 }
 function hint(){let j=[0,1,2,3].find(x=>!s.solved.includes(x)&&!s.hints.includes(x));if(j===undefined)return;s.hints.push(j);s.score=Math.max(0,s.score-25);render();say('已解鎖提示 '+s.hints.length+'，上方會持續顯示，不會被操作訊息覆蓋','good')}
 function clearSelection(){if(s.done||s.selected.length===0)return;s.selected=[];render();say('已取消全部選取；方塊排列位置維持不變','good')}
 function modal(type){
  const host=$('modalHost');host.replaceChildren();let d=document.createElement('div');d.className='overlay';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');
  let m=document.createElement('div');m.className='modal';let icon=document.createElement('div');icon.className='emoji',icon.textContent=type==='rules'?'🧩':type==='lost'?'💔':'🏆';
- let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':bonusMode?(bonusCompleted.size===BONUS_LEVELS.length?'新增題目全部完成！':'補玩過關！'):s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
- let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分，已解鎖的提示會固定顯示在題目上方，不受拖曳等操作影響。答錯會少一顆愛心，每關可錯四次。取消全選不扣分，也不改變你排好的方塊順序；提示扣 25 分。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':bonusMode?(bonusCompleted.size===BONUS_LEVELS.length?'這次新增的 10 組戲劇都體驗過了！主線進度與分數完全保留。':'已完成這道新增題目！補玩不會更改原本關卡與分數。'):s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
+ let title=document.createElement('h2');title.textContent=type==='rules'?'遊戲規則':type==='lost'?'這關差一點！':bonusMode?(bonusCompleted.size===BONUS_LEVELS.length?'新增題目全部完成！':'補玩過關！'):replayMode?(s.round===ROUNDS.length-1?'重新遊玩全部通關！':'重新遊玩過關！'):s.round===ROUNDS.length-1?'全部通關！':'這一關過關啦！';
+ let p=document.createElement('p');p.textContent=type==='rules'?'全遊戲有 50 關，每關 16 人，分成四組，每組四人。點人名可選取、再點一次可取消；長按拖動到另一張方塊上，可以交換兩人的位置，先把同組的排在一起。重新排列不扣分，已解鎖的提示會固定顯示在題目上方，不受拖曳等操作影響。答錯會少一顆愛心，每關可錯四次。取消全選不扣分，也不改變你排好的方塊順序；提示扣 25 分。重新遊玩和新題補玩會獨立記錄進度，不影響原本的闖關紀錄。':type==='lost'?'四次失誤已用完。下面是本關正確分組。':bonusMode?(bonusCompleted.size===BONUS_LEVELS.length?'這次新增的 10 組戲劇都體驗過了！主線進度與分數完全保留。':'已完成這道新增題目！補玩不會更改原本關卡與分數。'):replayMode?(s.round===ROUNDS.length-1?'重新遊玩的 50 關全部完成！原本的通關紀錄仍保留。':'這是重新遊玩紀錄，原本的關卡與分數不受影響。'):s.round===ROUNDS.length-1?'50 關全部完成，200 組關聯都被你找出來了！':'太棒了，準備挑戰下一個主題！';m.append(icon,title,p);
  if(type==='win'){let sc=document.createElement('div');sc.className='score';sc.textContent=s.score+' 分';m.append(sc)}
  if(type==='lost'){let a=document.createElement('div');a.className='answers';ROUNDS[s.round].groups.forEach(g=>{let row=document.createElement('div');let strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=g.name;small.textContent=g.names.join(' · ');row.append(strong,small);a.append(row)});m.append(a)}
- let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'返回題目':type==='lost'?'重新挑戰這關':bonusMode?(firstUnplayedBonus()===null?'返回原本關卡':'挑戰下一個補玩關卡'):s.round===ROUNDS.length-1?'再玩一次':'挑戰下一關';
- btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(bonusMode){const next=firstUnplayedBonus();if(next===null)returnMain();else newRound(next)}else if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)});m.append(btn);
- if(bonusMode&&type!=='rules'){
+ let btn=document.createElement('button');btn.type='button';btn.className='btn primary wide';btn.textContent=type==='rules'?'返回題目':type==='lost'?'重新挑戰這關':bonusMode?(firstUnplayedBonus()===null?'返回原本關卡':'挑戰下一個補玩關卡'):replayMode?(s.round===ROUNDS.length-1?'重新遊玩第一關':'挑戰下一關'):s.round===ROUNDS.length-1?'開始重新遊玩':'挑戰下一關';
+ btn.addEventListener('click',()=>{if(type==='rules'){host.replaceChildren();return}if(type==='lost'){s.score=s.baseline;newRound(s.round)}else if(bonusMode){const next=firstUnplayedBonus();if(next===null)returnMain();else newRound(next)}else if(replayMode){if(s.round===ROUNDS.length-1){s.score=0;newRound(0)}else newRound(s.round+1)}else if(s.round===ROUNDS.length-1){startReplay()}else newRound(s.round+1)});m.append(btn);
+ if((bonusMode||replayMode)&&type!=='rules'){
   let back=document.createElement('button');back.type='button';back.className='btn wide';back.textContent='← 返回原本進度';back.addEventListener('click',returnMain);m.append(back);
  }
  d.append(m);host.append(d);if(type==='rules')d.addEventListener('click',e=>{if(e.target===d)host.replaceChildren()});btn.focus()
 }
-$('submit').addEventListener('click',submit);$('hint').addEventListener('click',hint);$('clearSelection').addEventListener('click',clearSelection);$('rules').addEventListener('click',()=>modal('rules'));$('bonusToggle').addEventListener('click',()=>bonusMode?returnMain():startBonus());$('restart').addEventListener('click',()=>{if(bonusMode){s.score=s.baseline;newRound(s.round)}else{s.score=0;newRound(0)}});document.addEventListener('keydown',e=>{if($('modalHost').childElementCount)return;if(e.key==='Enter'&&s.selected.length===4)submit();if(e.key==='Escape'){s.selected=[];render()}});function migrateLegacy(){
+$('submit').addEventListener('click',submit);$('hint').addEventListener('click',hint);$('clearSelection').addEventListener('click',clearSelection);$('rules').addEventListener('click',()=>modal('rules'));$('bonusToggle').addEventListener('click',()=>bonusMode?returnMain():startBonus());
+$('replayToggle').addEventListener('click',()=>replayMode?returnMain():startReplay());
+$('restart').addEventListener('click',()=>{s.score=s.baseline;newRound(s.round)});document.addEventListener('keydown',e=>{if($('modalHost').childElementCount)return;if(e.key==='Enter'&&s.selected.length===4)submit();if(e.key==='Escape'){s.selected=[];render()}});function migrateLegacy(){
  try{
   for(const key of LEGACY_STORAGE_KEYS){
    const old=JSON.parse(localStorage.getItem(key)||'null');

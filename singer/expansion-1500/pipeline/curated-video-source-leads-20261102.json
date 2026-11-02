@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-11-02",
+  "reviewType": "CURATED_COMMONS_VIDEO_STILL_SOURCE_LEAD_NOT_A_PHOTO_APPROVAL",
+  "mainBaselineSha": "9a30e9cf333a063efa946bf6b481e61634f5c45a",
+  "pipelineBaselineSha": "67a183f66ca26c29d4f129fce23a64160620bba8",
+  "releaseGate": "SOURCE_RESEARCH_ONLY_NO_DOWNLOAD_NO_CROP_NO_LIVE",
+  "people": [
+    {
+      "personId": "t1500_0094",
+      "name": "寇世勳",
+      "wikidataQid": "Q8980013",
+      "bank": "actors.json",
+      "dedupeCheckedAgainstMain": true,
+      "alreadyLive": false,
+      "sourceType": "wikimedia_commons_reviewed_cc_video_possible_still",
+      "commonsSourcePage": "https://commons.wikimedia.org/wiki/File:大囍臨門賀歲_豬哥亮首映圍爐.webm",
+      "sourceVideoTitle": "大囍臨門賀歲 豬哥亮首映圍爐",
+      "originalVideo": "https://www.youtube.com/watch?v=_FxIiaIXJKU",
+      "captionEvidence": "中央社影片說明提及賀歲片《大囍臨門》首映，豬哥亮、寇世勳與素珠同台；此為活動參與證據，尚未證明任何單一影格拍到寇世勳本人。",
+      "authorClaim": "中央社 (CNA Taiwan), video by 張新偉",
+      "licenseClaim": "CC BY 3.0, Commons category Files from external sources with reviewed licenses",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "licenseReview": "Commons video file page displays CC-BY-3.0 and reviewed-license category; exact source-video license evidence, reviewer/date and derivative frame attribution require independent confirmation before use.",
+      "mediaProperties": {
+        "type": "video/webm",
+        "width": 1920,
+        "height": 1080,
+        "durationSeconds": 151,
+        "approxFileMB": 64.13
+      },
+      "sourceReviewed": true,
+      "sourceFrameDownloaded": false,
+      "frameTimecode": null,
+      "picturedIdentityConfirmed": false,
+      "frameAuthorAndLicenseIndependentlyApproved": false,
+      "gameCrop600x720": false,
+      "fiveStagesReviewed": false,
+      "gameSha256": null,
+      "status": "HOLD_CURATED_VIDEO_FRAME_EXTRACTION_AND_IDENTITY_REVIEW",
+      "nextSteps": [
+        "Do not pass a WebM into image-only photo pipeline or use it as a game image.",
+        "Use a bounded, opt-in Commons-video frame extraction diagnostic on a review branch; avoid fetching the 64MB original through the image adapter's 14MB cap.",
+        "Record exact timecode, extracted frame SHA-256, source video URL, original Commons author/license review, adjacent person-specific evidence, and compare the pictured subject with reliable independent named event photography.",
+        "Reject group scenes, obscured eyes/mouth, small face or uncertain identity; only a clean single-person crop can proceed to 600x720 five-stage human inspection.",
+        "Only after review and source rights approval may integrate new game photo, aliases, hints, attribution and QA; no main/creators changes during this research."
+      ]
+    }
+  ],
+  "notes": [
+    "This is a source-led alternative to repeatedly searching the same 20/40/200 Commons still-image batches.",
+    "A reviewed video license is not a verified portrait or approval of an arbitrary extracted frame."
+  ]
+}

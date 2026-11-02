@@ -66,12 +66,12 @@ jobs:
               echo "::error::Prior artifact has no original-sha1-verified.jpg; do not fall back to Commons."
               exit 1
             fi
-            python singer/expansion-1500/tools/curated_still_original.py \\
-              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \\
+            python singer/expansion-1500/tools/curated_still_original.py \
+              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \
               --source-file "$SOURCE_FILE" --out "$RUNNER_TEMP/curated-yang-lihua-2019"
           else
-            python singer/expansion-1500/tools/curated_still_original.py \\
-              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \\
+            python singer/expansion-1500/tools/curated_still_original.py \
+              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \
               --out "$RUNNER_TEMP/curated-yang-lihua-2019"
           fi
       - name: Preserve evidence even when Commons returns HTTP 403

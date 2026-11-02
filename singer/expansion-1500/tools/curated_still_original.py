@@ -144,6 +144,9 @@ def run(out: Path, session=None) -> dict:
     except RuntimeError as exc:
         result["status"] = "source_blocked"
         result["error"] = str(exc)
+    except requests.RequestException as exc:
+        result["status"] = "network_error"
+        result["error"] = type(exc).__name__
     except (ValueError, OSError) as exc:
         result["status"] = "integrity_or_image_validation_failed"
         result["error"] = str(exc)

@@ -9,6 +9,7 @@ import copy
 import hashlib
 import json
 import re
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -21,6 +22,34 @@ ATTR_FIELDS = ("source", "artist", "license", "licenseUrl")
 STAGES = ("eyes", "nose", "mouth", "chin", "full")
 CC = re.compile(r"^CC (BY|BY-SA) (1\.0|2\.0|2\.5|3\.0|4\.0)$", re.I)
 SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
+QID = re.compile(r"^Q[1-9][0-9]*$")
+IDENTITY_BASELINE_GIT_BLOB = "ff9e80a8e586f34113d2b32174ed08530c643c69"
+
+
+def normalized_answer(value):
+    """Match whole playable answers, never substrings (家家 != 家家美食)."""
+    return unicodedata.normalize("NFKC", str(value or "")).strip().casefold()
+
+
+def playable_answers(entry):
+    aliases = entry.get("aliases")
+    if not isinstance(aliases, list):
+        aliases = []
+    return {normalized_answer(answer) for answer in
+            [entry.get("name"), *aliases] if isinstance(answer, str)
+            and normalized_answer(answer)}
+
+
+def identity_snapshot(bank, entry):
+    """Frozen accepted answers and identity IDs, separate from photo rights."""
+    return {
+        "id": entry.get("id"),
+        "bank": bank,
+        "name": entry.get("name"),
+        "aliases": copy.deepcopy(entry.get("aliases") or []),
+        "wikidataId": entry.get("wikidataId") or None,
+        "wikidataQid": entry.get("wikidataQid") or None,
+    }
 
 
 def snapshot(bank, entry):
@@ -74,7 +103,7 @@ def verify_reveal(reveal):
                         (reveal[s] for s in STAGES[1:])))
 
 
-def validate(banks, baseline, root, hints):
+def validate(banks, baseline, root, hints, identity_baseline=None):
     if baseline.get("schemaVersion") != 1 or not re.fullmatch(
             r"[0-9a-f]{40}", baseline.get("baselineMainSha", "")):
         raise ValueError("Invalid pinned baseline SHA")
@@ -85,9 +114,19 @@ def validate(banks, baseline, root, hints):
             raise ValueError(f"Duplicate baseline ID: {pid}")
         old[pid] = item
     found = {}
-    existing_names = {str(e.get("name") or "").strip()
-                      for bank in BANKS for e in banks[bank]
-                      if not str(e.get("id") or "").startswith("t1500_")}
+    # Include ALL playable banks and aliases before testing a new/changed
+    # expansion portrait. A former name can already be an accepted answer
+    # even when the other person's canonical name is different.
+    answer_index, qid_index = {}, {}
+    for source_bank in BANKS:
+        for existing in banks[source_bank]:
+            existing_id = str(existing.get("id") or "")
+            for answer in playable_answers(existing):
+                answer_index.setdefault(answer, set()).add(existing_id)
+            for field in ("wikidataId", "wikidataQid"):
+                qid = existing.get(field)
+                if isinstance(qid, str) and QID.fullmatch(qid):
+                    qid_index.setdefault(qid, set()).add(existing_id)
     errors, new_ids, legacy_debt = [], [], []
     for bank in BANKS:
         for entry in banks[bank]:
@@ -113,6 +152,15 @@ def validate(banks, baseline, root, hints):
                     key: value for key, value in previous.items()
                     if key != "photoGitBlobSha"
                 }
+                if identity_baseline is not None:
+                    pinned_identity = identity_baseline.get(pid)
+                    if pinned_identity is None:
+                        errors.append(f"{pid}: missing frozen identity snapshot")
+                        same_metadata = False
+                    elif identity_snapshot(bank, entry) != pinned_identity:
+                        # Alias-only or QID-only edits must not bypass the
+                        # historical portrait release gate.
+                        same_metadata = False
             else:
                 same_pixels = same_metadata = False
             # A JPEG overwritten at the same path, or altered reveal geometry,
@@ -124,8 +172,25 @@ def validate(banks, baseline, root, hints):
             new_ids.append(pid)
             if pid in old and old[pid]["bank"] != bank:
                 errors.append(f"{pid}: unexpected bank move requires manual review")
-            if pid not in old and entry.get("name") in existing_names:
-                errors.append(f"{pid}: canonical name already playable in another bank")
+            aliases = entry.get("aliases")
+            if (not isinstance(aliases, list)
+                    or normalized_answer(entry.get("name")) not in playable_answers(
+                        {"aliases": aliases})):
+                errors.append(f"{pid}: canonical name missing from accepted aliases")
+            for answer in sorted(playable_answers(entry)):
+                others = sorted(answer_index.get(answer, set()) - {pid})
+                if others:
+                    errors.append(
+                        f"{pid}: playable name/alias {answer!r} already belongs to {others}")
+            for field in ("wikidataId", "wikidataQid"):
+                qid = entry.get(field)
+                if qid is not None and qid != "":
+                    if not isinstance(qid, str) or not QID.fullmatch(qid):
+                        errors.append(f"{pid}: invalid {field}")
+                    else:
+                        others = sorted(qid_index.get(qid, set()) - {pid})
+                        if others:
+                            errors.append(f"{pid}: Wikidata {qid} already belongs to {others}")
             attr = entry.get("attribution") or {}
             if entry.get("humanReviewed") is not True or entry.get("photoStatus") not in ("reviewed", "manually_reviewed_source_and_photo"):
                 errors.append(f"{pid}: human-reviewed portrait flag/status missing")
@@ -183,7 +248,19 @@ def main():
     banks = {b: json.loads((root / b).read_text(encoding="utf-8"))["questions"] for b in BANKS}
     baseline = json.loads((root / "qa-expansion-baseline-20261102.json").read_text(encoding="utf-8"))
     hints = json.loads((root / "hints.json").read_text(encoding="utf-8"))
-    result = validate(banks, baseline, root, hints)
+    identity_path = root / "qa-expansion-identity-baseline-20261102.json"
+    if git_blob_sha(identity_path) != IDENTITY_BASELINE_GIT_BLOB:
+        raise ValueError("Frozen identity baseline was changed")
+    identity_data = json.loads(identity_path.read_text(encoding="utf-8"))
+    if (identity_data.get("schemaVersion") != 1
+            or identity_data.get("baselineMainSha") !=
+            "de474b7b1b691ac3a98444bdbff48731fe568764"):
+        raise ValueError("Invalid frozen identity baseline")
+    identity_rows = identity_data.get("people", [])
+    identity_baseline = {row["id"]: row for row in identity_rows}
+    if len(identity_rows) != len(identity_baseline):
+        raise ValueError("Duplicate IDs in frozen identity baseline")
+    result = validate(banks, baseline, root, hints, identity_baseline)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if result["errors"]:
         raise SystemExit(1)

@@ -124,7 +124,9 @@ class CuratedStillOriginalTest(unittest.TestCase):
             self.assertFalse(result["humanReviewed"])
             self.assertFalse(result["rightsAndIdentityFinalApproval"])
             self.assertFalse(result["liveUpdated"])
-            self.assertEqual(result["cropBox"], [640, 270, 1180, 918])
+            self.assertEqual(result["cropBox"], [690, 330, 1090, 810])
+            self.assertTrue(result["customStageMasks"])
+            self.assertEqual(result["stageRects"]["nose"], [0.08, 0.38, 0.92, 0.55])
             self.assertEqual(fetch.call_args.args[1], 324913)
             self.assertEqual(fetch.call_args.args[2], "176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3")
             with Image.open(Path(tmp) / "draft-600x720.jpg") as photo:
@@ -135,6 +137,33 @@ class CuratedStillOriginalTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(ValueError, "not allowlisted"):
                 diag.run(Path(tmp), lead_path=Path(tmp) / "external.json")
+
+    def test_default_reveal_rectangles_match_actual_singer_game(self):
+        """A review montage must not show more of the face than the live game."""
+        import ast
+        import re
+        game = (ROOT.parent / "game.js").read_text(encoding="utf-8")
+        match = re.search(r"\\|\\|(\\[\\[.*?\\]\\])\\[state\\.stage\\]", game)
+        self.assertIsNotNone(match, "Singer game reveal fallback missing")
+        self.assertEqual(
+            [list(rect) for rect in diag.STAGES.values()],
+            ast.literal_eval(match.group(1)),
+        )
+
+    def test_reject_nonmonotonic_custom_stage_rectangles(self):
+        img = Image.new("RGB", (100, 120), (20, 20, 20))
+        buf = io.BytesIO()
+        img.save(buf, format="JPEG")
+        masks = {name: list(rect) for name, rect in diag.STAGES.items()}
+        masks["nose"] = [0.08, 0.275, 0.92, 0.4]
+        lead = {
+            "imageDimensions": [100, 120],
+            "provisionalOriginalPixelCropBox": [10, 10, 60, 70],
+            "provisionalReveal": masks,
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, "monotonically expanding"):
+                diag.build_previews(buf.getvalue(), lead, Path(tmp))
 
 
 if __name__ == "__main__":

@@ -87,6 +87,8 @@ class SourceLedReleasePlanTest(unittest.TestCase):
             self.assertEqual(ids, [])
             self.assertEqual(request['targetPeople'], 0)
             if request['mode'] == 'import_review_rejections':
+                import sys
+                sys.path.insert(0, str(root))
                 from media_pipeline.review import validate_rejection_only_document
                 review_path = Path(request['reviewDecisionPath'])
                 self.assertEqual(review_path.parent, Path('singer/expansion-1500/pipeline/chatgpt-review'))

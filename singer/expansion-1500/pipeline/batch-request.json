@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-three-pinned-qid-source-diagnostic-mode-search",
+  "requestId": "20261102-three-pinned-qid-source-diagnostic-safe-search",
   "mode": "search",
   "targetPeople": 3,
   "plannedPersonIds": [
@@ -17,5 +17,5 @@
   "maxMinutes": 16,
   "personSeconds": 100,
   "maxCandidates": 2,
-  "purpose": "Three previously unapproved selectedNew Taiwanese performers 江祖平 Q8975739, 郭品超 Q710553, 寇世勳 Q8980013. Pinned exact QID and native-name Commons metadata only; avoid old 20/40/200 batches. Never treat P18, caption, CC metadata or auto-crop as human approval. Stage candidate pixels and five-stage sheets only; do not touch main, creators or Pages. Check fresh main SHA 7ba8951a375b68ad25d9e40f97a9c85ba7c6c63b for dedupe; no live promotion without manual review."
+  "purpose": "DRAFT ONLY, no main/creators/Pages modifications. Exact Q5 Wikidata pinned-QID source diagnostic for 江祖平 Q8975739, 郭品超 Q710553, 寇世勳 Q8980013. Search three selectedNew people with native-name Commons and entity metadata; no 20/40/200 repeat. Do not treat P18, source caption, CC metadata or automatic crop as approval. Human must verify identity, author, rights, 600x720 five-stage and work hints. Baseline main 7ba8951a has 1078 unique; dedupe again before release."
 }

@@ -51,6 +51,15 @@ class RetainedDraftContactSheetTests(unittest.TestCase):
                              {"source_previously_excluded", "not_selected_or_already_live"})
             self.assertTrue((root/"expansion-1500/pipeline/review-assets/retained/contact-sheet.png").is_file())
             self.assertEqual(result["people"][0]["reviewStatus"], "VISUAL_SCREENING_REQUIRED_NOT_APPROVED")
+            # Global source-level human rejections must not return to review.
+            review_file = root/"photo-review.json"
+            review_file.write_text(json.dumps({"rejected": [
+                {"source": "https://commons.wikimedia.org/wiki/File:good.jpg"}
+            ]}), encoding="utf-8")
+            rejected = build(root, root/"expansion-1500/pipeline/review-assets/rejected")
+            self.assertEqual(rejected["summary"]["screeningRows"], 0)
+            self.assertIn("source_previously_rejected", {x["reason"] for x in rejected["skipped"]})
+            review_file.unlink()
             # A pipeline branch can lag behind main: fetched main, not local banks,
             # must decide whether a portrait is already published.
             def git_read(cmd, text=True):

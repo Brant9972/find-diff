@@ -969,10 +969,37 @@ class EntityPortraits:
                 'gsrsearch': phrase_query(search_term), 'gsrnamespace': 6,
                 'gsrlimit': 12, 'gsroffset': (round_number % 3) * 12}))
         for source_query, request in requests:
+            # A Q5 + exact-name-verified Wikidata P18 is an exact FILE hint,
+            # not proof of a photographed face. If Commons imageinfo fails,
+            # ask Wikipedia's shared Commons repository for only these titles.
+            # Never use this fallback for noisy search or category members.
+            is_p18 = source_query == query and 'titles' in request
+            foreign_p18 = False
             try:
-                data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
-                                 prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
-                pages = list(data.get('query', {}).get('pages', []))
+                try:
+                    data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,
+                                     prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400, **request)
+                    pages = list(data.get('query', {}).get('pages', []))
+                except SourceError as exc:
+                    if not is_p18:
+                        raise
+                    failures.append({'provider': 'commons_p18', 'code': exc.code,
+                                     'message': str(exc)[:300]})
+                    pages = []
+                if is_p18 and not any(page.get('imageinfo') for page in pages):
+                    failures.append({'provider': 'commons_p18', 'code': 'exact_source_metadata_empty',
+                                     'message': 'P18 exact-file lookup returned no imageinfo'})
+                    try:
+                        data = http.json('https://en.wikipedia.org/w/api.php',
+                                         action='query', format='json', formatversion=2,
+                                         prop='imageinfo', iiprop='url|extmetadata|size',
+                                         iiurlwidth=1400, **request)
+                        pages = list(data.get('query', {}).get('pages', []))
+                        foreign_p18 = True
+                    except SourceError as exc:
+                        failures.append({'provider': 'foreign_repo_p18', 'code': exc.code,
+                                         'message': str(exc)[:300]})
+                        pages = []
                 pages.sort(key=lambda row: (not any(word in row.get('title', '').lower() for word in ('portrait', 'cropped')), row.get('title', '')))
                 for page in pages:
                     filename = page.get('title', '').removeprefix('File:')
@@ -980,6 +1007,23 @@ class EntityPortraits:
                         continue
                     for info in page.get('imageinfo', []):
                         source = info.get('descriptionurl', '')
+                        if foreign_p18:
+                            # A local Wikipedia upload or an unrelated Commons
+                            # file must never inherit the pinned person's QID.
+                            expected = ('https://commons.wikimedia.org/wiki/File:' +
+                                        urllib.parse.quote(filename.replace(' ', '_')))
+                            original = urllib.parse.urlsplit(info.get('url', ''))
+                            thumbnail = urllib.parse.urlsplit(info.get('thumburl', ''))
+                            if (filename not in entity_files or
+                                    source_key(source) != source_key(expected) or
+                                    original.scheme != 'https' or
+                                    original.hostname != 'upload.wikimedia.org' or
+                                    not original.path.startswith('/wikipedia/commons/') or
+                                    (info.get('thumburl') and (
+                                        thumbnail.scheme != 'https' or
+                                        thumbnail.hostname != 'upload.wikimedia.org' or
+                                        not thumbnail.path.startswith('/wikipedia/commons/thumb/')))):
+                                continue
                         if not source or source_key(source) in seen or source_key(source) in excluded:
                             continue
                         seen.add(source_key(source))
@@ -994,6 +1038,11 @@ class EntityPortraits:
                                     'discoveryWarnings': list(failures)}
                         if filename in entity_files:
                             evidence['claim'] = 'P18'
+                        if foreign_p18:
+                            evidence['foreignRepoFallback'] = True
+                            evidence['identityWarning'] = (
+                                'Wikipedia shared-repository metadata for pinned P18; '
+                                'verify actual face, Commons author and crop rights')
                         commons.append({'provider': 'commons', 'url': info.get('thumburl') or info.get('url', ''),
                                'originalUrl': info.get('url', ''), 'source': source, 'filename': filename,
                                'downloadVariant': 'wikimedia_thumbnail_1400' if info.get('thumburl') else 'original',

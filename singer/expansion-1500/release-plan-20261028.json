@@ -14404,7 +14404,10 @@
       "hintsStatus": "candidate_only_unverified",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "蔡黃汝 豆花妹 角色 劇照 正面 清晰 無浮水印"
+      "preferredImageQuery": "蔡黃汝 豆花妹 角色 劇照 正面 清晰 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg"
+      ]
     },
     {
       "candidateId": "c1500-0475",
@@ -14657,7 +14660,11 @@
       "hintsStatus": "missing",
       "identityStatus": "candidate_only_unverified",
       "qaStatus": "not_releasable",
-      "preferredImageQuery": "關心妍  經典時期 歌手 獨照 正面 清晰 無浮水印"
+      "preferredImageQuery": "關心妍  經典時期 歌手 獨照 正面 清晰 無浮水印",
+      "excludedPhotoSources": [
+        "https://commons.wikimedia.org/wiki/File:20080112-JadeKwan.jpg",
+        "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019.jpg"
+      ]
     },
     {
       "candidateId": "c1500-0482",

@@ -1005,6 +1005,35 @@
       "reviewedAt": "2026-11-02",
       "reviewer": "ChatGPT five-stage visual screening",
       "reviewRecord": "expansion-1500/pipeline/chatgpt-review/20261102-retained-five-stage-rejections-only.json"
+    },
+    {
+      "id": "t1500_0474",
+      "name": "蔡黃汝",
+      "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg",
+      "reason": "五階段 600×720 顯示嚴重暗部顆粒與柔化細節；2011 年肖像與現今熟悉形象落差較大，眼睛／鼻子階段辨識品質不足。此為 2011 Commons 圖，不是先前已拒絕的 2024 麥克風照片。",
+      "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "ChatGPT retained-draft visual screening",
+      "reviewRecord": "expansion-1500/pipeline/chatgpt-review/20261103-retained-three-and-jade2019-source-screen.json"
+    },
+    {
+      "id": "t1500_0481",
+      "name": "關心妍",
+      "source": "https://commons.wikimedia.org/wiki/File:20080112-JadeKwan.jpg",
+      "reason": "原始照片僅 335×545，放大成 600×720 後眼部細節偏軟；雖五官未被遮擋，五階段辨識品質不達標。只拒絕這張舊圖，不排除關心妍本人。",
+      "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "ChatGPT retained-draft visual screening",
+      "reviewRecord": "expansion-1500/pipeline/chatgpt-review/20261103-retained-three-and-jade2019-source-screen.json"
+    },
+    {
+      "id": "t1500_0481",
+      "name": "關心妍",
+      "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019.jpg",
+      "reason": "已直接目視 Commons 6,240×4,160 原圖：舞台上的人物雙眼閉合，眼睛揭露關卡不可用。麥克風雖在胸前未遮嘴，但高像素與 CC 授權不足以彌補閉眼。此來源未製作或核准遊戲裁切，不可宣稱完成五階段。",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "ChatGPT retained-draft visual screening",
+      "reviewRecord": "expansion-1500/pipeline/chatgpt-review/20261103-retained-three-and-jade2019-source-screen.json"
     }
   ],
   "note": "已檢視223張照片及五官揭露線。此紀錄為視覺品質檢查，仍應核對照片人物與台灣發片來源。",

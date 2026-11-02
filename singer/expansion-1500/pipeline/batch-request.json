@@ -1,16 +1,21 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-wangzhilei-exact-probe-complete-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261102-p18-foreignrepo-targeted-two-source-diagnostic",
+  "mode": "search",
+  "targetPeople": 2,
+  "plannedPersonIds": [
+    "t1500_0564",
+    "t1500_0107"
+  ],
+  "retryFailed": true,
   "providers": [
+    "curated",
+    "entity",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 7,
-  "personSeconds": 90,
-  "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN: exact 王芷蕾 Commons metadata recovered but copyrighted-free-use rights remain nonstandard and unapproved; render-only safety reset; no repeated search"
+  "maxMinutes": 9,
+  "personSeconds": 110,
+  "maxCandidates": 2,
+  "purpose": "DRAFT ONLY: post-PR156 targeted exact Commons/P18 metadata recovery for 葛民輝 and 陳明章; source exclusions remain binding; no live deployment or human approval"
 }

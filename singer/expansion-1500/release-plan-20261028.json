@@ -17489,8 +17489,11 @@
         }
       ],
       "excludedPhotoSources": [
-        "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG"
-      ]
+        "https://commons.wikimedia.org/wiki/File:Eric_Kot_200812.JPG",
+        "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
+        "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg"
+      ],
+      "reviewReason": "2026-11-02 run 41402478948: 2023 Eric Kot source remains human-rejected (cap shadow over eyes, microphone near mouth/chin, beard); do not requeue. EricKot2007.jpg (Pete Yeung, CC BY-SA 2.0, 582x703) had identity-supported metadata but failed actual face-size validation; reject this exact low-resolution image without relaxing 600x720 quality. Other sources for 葛民輝 remain eligible."
     },
     {
       "candidateId": "c1500-0565",

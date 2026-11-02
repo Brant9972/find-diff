@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-retained-review-after-nine-rejections",
+  "requestId": "20261103-reconcile-live-1079-without-source-search",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 7,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Apply 20261102 SHA-bound nine retained visual source rejections; regenerate remaining draft contact sheet against origin/main; no source search, no live changes"
+  "purpose": "Reconcile pipeline published status against main 36100451 and 1079 unique live people after Jade Kwan; render retained review assets only, zero source searches, zero live edits"
 }

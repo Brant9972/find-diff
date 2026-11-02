@@ -14,6 +14,7 @@ class CuratedVideoRunnerSafetyTests(unittest.TestCase):
         self.assertIn("curated_video_frames.py", source)
         self.assertIn("timeout-minutes: 12", source)
         self.assertIn("contents: read", source)
+        self.assertIn("sudo apt-get install -y --no-install-recommends ffmpeg", source)
         self.assertIn("retention-days: 3", source)
 
     def test_no_release_or_source_video_artifact(self):

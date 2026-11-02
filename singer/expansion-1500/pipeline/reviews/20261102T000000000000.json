@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "ChatGPT direct source, 600x720 and five-stage pixel review",
+  "reviewedAt": "2026-11-02",
+  "sourceReviewBranch": "automation/celebrity-photo-pipeline",
+  "sourceReviewCommit": "42f42ced1d1de214481e3e445af1a128683f1ffe",
+  "releaseGate": "REJECTION_IMPORT_ONLY_NO_APPROVAL_OR_DEPLOY",
+  "decisions": [
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-24a4fb7b59e2c3136377",
+      "gameSha256": "24a4fb7b59e2c3136377730109c7cbe04cd5cece1ace240492a510420748576c",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "decision": "rejected",
+      "reason": "600×720 crop 頭頂及雙眼均被切掉，eyes/nose 階段只見衣服與下半臉，五階段錯位，不能使用。",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0123",
+      "name": "林慶台",
+      "candidateId": "manualrecrop-5a2d5126a85b9a5d6e70",
+      "gameSha256": "5a2d5126a85b9a5d6e706255e18500dadd4e531f7f34357e114c9e27d9830f59",
+      "sourceSha256": "cc70a2ca6bdde639bd49efad0c5b1ba441fbf2fc4a32376d5e8571503087980f",
+      "decision": "rejected",
+      "reason": "eyes 階段顯示活動背板，鼻階段只見頭頂，mouth/chin 階段才出現五官，背景仍有第二張臉；不符合漸進揭露。",
+      "eligibleForLive": false
+    }
+  ],
+  "notes": [
+    "These two exact game JPEG SHA-256 hashes were visually rejected in 20261102-manualrecrop-reviewed.json; do not re-review or re-download.",
+    "The approved Chen Shiang-chyi decision is intentionally omitted because she is already live; importing that immutable published person would reject the whole transaction.",
+    "Import only if the current pipeline candidate IDs and actual JPEG hashes still match; otherwise stop without altering state."
+  ]
+}

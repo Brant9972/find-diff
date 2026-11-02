@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "requestId": "20261102-import-two-reviewed-nolay-rejections",
-  "mode": "import_review_rejections",
+  "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
   "retryFailed": false,
@@ -13,6 +13,6 @@
   "maxMinutes": 8,
   "personSeconds": 75,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, no main, creators or Pages changes. ONE-SHOT: import exactly two previously human-rejected 林慶台 JPEG crops with SHA and ID verification; already-live 陳湘琪 excluded. No provider search; auto-reset to render_only after success.",
+  "purpose": "SHA-verified human rejections imported; render-only, no source search or deployment",
   "reviewDecisionPath": "singer/expansion-1500/pipeline/chatgpt-review/20261102-nolay-rejections-only.json"
 }

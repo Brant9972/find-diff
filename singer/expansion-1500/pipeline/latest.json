@@ -1,22 +1,21 @@
 {
-  "runId": "20261102T015204Z-cb57fa92",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261102T015204Z-cb57fa92/review-index.json",
+  "runId": "20261102T020221Z-41f75681",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261102T020221Z-41f75681/review-index.json",
   "summary": {
-    "runId": "20261102T015204Z-cb57fa92",
-    "generatedAt": "2026-11-02T01:52:05.772419+00:00",
+    "runId": "20261102T020221Z-41f75681",
+    "generatedAt": "2026-11-02T02:02:21.981076+00:00",
     "scannedPeople": 0,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
     "scannedWithoutCandidates": 0,
-    "retryNeeded": 416,
-    "pendingReviewPeople": 1,
+    "retryNeeded": 417,
+    "pendingReviewPeople": 0,
     "licenseConcernCandidates": 350,
     "statusCounts": {
       "no_suitable_source": 243,
       "download_failed": 167,
       "published": 94,
-      "rejected": 6,
-      "pending_review": 1,
+      "rejected": 7,
       "duplicate_existing": 1
     },
     "failureReasons": {
@@ -37,9 +36,7 @@
     "batchFailureReasons": {},
     "manualCropSources": 12,
     "batchProviderStages": {},
-    "contactSheets": [
-      "contact-sheet-01.jpg"
-    ],
+    "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE"
   }

@@ -10,8 +10,14 @@ on:
       - singer/expansion-1500/tools/curated_still_original.py
       - singer/expansion-1500/tests/test_curated_still_original.py
   workflow_dispatch:
+    inputs:
+      reuse_run_id:
+        description: 'Prior same-repository diagnostic run retaining the SHA-verified original; leave blank for one remote fetch'
+        required: false
+        type: string
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: curated-still-original-${{ github.ref }}
   cancel-in-progress: true
@@ -40,8 +46,34 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install requests==2.32.5 Pillow==12.0.0
-      - name: Download only pinned 2019 Yang Li-hua original and create unapproved previews
-        run: python singer/expansion-1500/tools/curated_still_original.py --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json --out "${{ runner.temp }}/curated-yang-lihua-2019"
+      # Reuse is opt-in. It never silently falls back to Wikimedia when the
+      # earlier artifact is missing or does not contain the verified original.
+      - name: Restore exact original from a prior diagnostic artifact
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.reuse_run_id != '' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: curated-yang-lihua-2019-unapproved-${{ inputs.reuse_run_id }}
+          run-id: ${{ inputs.reuse_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/reused-source
+      - name: Build unapproved five-stage previews from SHA-verified pixels
+        env:
+          REUSE_RUN_ID: ${{ inputs.reuse_run_id }}
+        run: |
+          if [ -n "$REUSE_RUN_ID" ]; then
+            SOURCE_FILE="$RUNNER_TEMP/reused-source/original-sha1-verified.jpg"
+            if [ ! -s "$SOURCE_FILE" ]; then
+              echo "::error::Prior artifact has no original-sha1-verified.jpg; do not fall back to Commons."
+              exit 1
+            fi
+            python singer/expansion-1500/tools/curated_still_original.py \
+              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \
+              --source-file "$SOURCE_FILE" --out "$RUNNER_TEMP/curated-yang-lihua-2019"
+          else
+            python singer/expansion-1500/tools/curated_still_original.py \
+              --lead curated-yang-lihua-taipei-2019-source-lead-20261103.json \
+              --out "$RUNNER_TEMP/curated-yang-lihua-2019"
+          fi
       - name: Preserve evidence even when Commons returns HTTP 403
         if: always()
         uses: actions/upload-artifact@v4

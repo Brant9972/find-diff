@@ -9,6 +9,7 @@ import copy
 import hashlib
 import json
 import re
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -21,6 +22,21 @@ ATTR_FIELDS = ("source", "artist", "license", "licenseUrl")
 STAGES = ("eyes", "nose", "mouth", "chin", "full")
 CC = re.compile(r"^CC (BY|BY-SA) (1\.0|2\.0|2\.5|3\.0|4\.0)$", re.I)
 SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
+QID = re.compile(r"^Q[1-9][0-9]*$")
+
+
+def normalized_answer(value):
+    """Match whole playable answers, never substrings (家家 != 家家美食)."""
+    return unicodedata.normalize("NFKC", str(value or "")).strip().casefold()
+
+
+def playable_answers(entry):
+    aliases = entry.get("aliases")
+    if not isinstance(aliases, list):
+        aliases = []
+    return {normalized_answer(answer) for answer in
+            [entry.get("name"), *aliases] if isinstance(answer, str)
+            and normalized_answer(answer)}
 
 
 def snapshot(bank, entry):
@@ -85,9 +101,19 @@ def validate(banks, baseline, root, hints):
             raise ValueError(f"Duplicate baseline ID: {pid}")
         old[pid] = item
     found = {}
-    existing_names = {str(e.get("name") or "").strip()
-                      for bank in BANKS for e in banks[bank]
-                      if not str(e.get("id") or "").startswith("t1500_")}
+    # Include ALL playable banks and aliases before testing a new/changed
+    # expansion portrait. A former name can already be an accepted answer
+    # even when the other person's canonical name is different.
+    answer_index, qid_index = {}, {}
+    for source_bank in BANKS:
+        for existing in banks[source_bank]:
+            existing_id = str(existing.get("id") or "")
+            for answer in playable_answers(existing):
+                answer_index.setdefault(answer, set()).add(existing_id)
+            for field in ("wikidataId", "wikidataQid"):
+                qid = existing.get(field)
+                if isinstance(qid, str) and QID.fullmatch(qid):
+                    qid_index.setdefault(qid, set()).add(existing_id)
     errors, new_ids, legacy_debt = [], [], []
     for bank in BANKS:
         for entry in banks[bank]:
@@ -124,8 +150,25 @@ def validate(banks, baseline, root, hints):
             new_ids.append(pid)
             if pid in old and old[pid]["bank"] != bank:
                 errors.append(f"{pid}: unexpected bank move requires manual review")
-            if pid not in old and entry.get("name") in existing_names:
-                errors.append(f"{pid}: canonical name already playable in another bank")
+            aliases = entry.get("aliases")
+            if (not isinstance(aliases, list)
+                    or normalized_answer(entry.get("name")) not in playable_answers(
+                        {"aliases": aliases})):
+                errors.append(f"{pid}: canonical name missing from accepted aliases")
+            for answer in sorted(playable_answers(entry)):
+                others = sorted(answer_index.get(answer, set()) - {pid})
+                if others:
+                    errors.append(
+                        f"{pid}: playable name/alias {answer!r} already belongs to {others}")
+            for field in ("wikidataId", "wikidataQid"):
+                qid = entry.get(field)
+                if qid is not None and qid != "":
+                    if not isinstance(qid, str) or not QID.fullmatch(qid):
+                        errors.append(f"{pid}: invalid {field}")
+                    else:
+                        others = sorted(qid_index.get(qid, set()) - {pid})
+                        if others:
+                            errors.append(f"{pid}: Wikidata {qid} already belongs to {others}")
             attr = entry.get("attribution") or {}
             if entry.get("humanReviewed") is not True or entry.get("photoStatus") not in ("reviewed", "manually_reviewed_source_and_photo"):
                 errors.append(f"{pid}: human-reviewed portrait flag/status missing")

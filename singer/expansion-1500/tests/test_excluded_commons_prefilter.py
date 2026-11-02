@@ -73,8 +73,14 @@ class RejectedSourcePreFilterTest(unittest.TestCase):
                 ['王耀慶@2011.jpg', 'New Wang Portrait.jpg'])):
             rows = list(EntityPortraits(allow_openverse=False).search(
                 self.person, api))
-        exact = [p['titles'] for p in api.calls if p.get('titles')]
-        self.assertEqual(exact, ['File:New Wang Portrait.jpg'])
+        commons_exact = [p['titles'] for url, p in zip(api.urls, api.calls)
+                         if p.get('titles') and 'commons.wikimedia.org' in url]
+        foreign_exact = [p['titles'] for url, p in zip(api.urls, api.calls)
+                         if p.get('titles') and 'en.wikipedia.org' in url]
+        # An empty Commons P18 response now permits one *exact same title*
+        # shared-repository lookup, never the previously rejected file.
+        self.assertEqual(commons_exact, ['File:New Wang Portrait.jpg'])
+        self.assertEqual(foreign_exact, ['File:New Wang Portrait.jpg'])
         self.assertEqual([r['filename'] for r in rows],
                          ['New_Wang_Portrait.jpg'])
 

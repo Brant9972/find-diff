@@ -638,9 +638,25 @@ class CommonsSearch:
                     and not any(ch in filename for ch in ('/', chr(92), chr(10), chr(13)))
                     and source_key('https://commons.wikimedia.org/wiki/File:' + urllib.parse.quote(filename.replace(' ', '_'))) not in excluded):
                 exact_files.append(filename)
+        # A Commons API refusal/empty exact lookup can be a metadata-service
+        # failure rather than a missing file. A public Wikipedia foreign-repo
+        # imageinfo lookup is an independent, bounded fallback for ONLY the
+        # human-curated exact titles. It does not establish photo identity.
+        def foreign_repo_exact():
+            try:
+                return http.json('https://en.wikipedia.org/w/api.php',
+                    action='query', format='json', formatversion=2,
+                    titles='|'.join('File:' + name for name in exact_files),
+                    prop='imageinfo', iiprop='url|extmetadata|size',
+                    iiurlwidth=1400)
+            except SourceError as exc:
+                exact_errors.append(('foreign_repo_' + exc.code, str(exc)[:160]))
+                return {'query': {'pages': []}}
+        expected_exact_titles = {norm(name) for name in exact_files}
         requests = ([('exact', person['name'])] if exact_files else [])
         requests.extend(('search', query) for query in dict.fromkeys(queries))
         for mode, query in requests:
+            used_foreign_repo = False
             try:
                 if mode == 'exact':
                     data = http.json('https://commons.wikimedia.org/w/api.php',
@@ -652,30 +668,35 @@ class CommonsSearch:
                         generator='search',gsrsearch=phrase_query(query),gsrnamespace=6,gsrlimit=12,gsroffset=(round_number%3)*12,
                         prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10,iiprop='url|extmetadata|size',iiurlwidth=1400)
             except SourceError as exc:
-                # An unavailable exact-file lookup must not suppress normal search.
+                # A failing Commons exact-file endpoint may still be resolved
+                # through Wikipedia's shared Commons file repository.
                 if mode == 'exact':
                     exact_errors.append((exc.code, str(exc)[:160]))
-                    continue
-                if exc.code != 'source_api_busy':
-                    raise
-                # allimages uses title-prefix enumeration, not CirrusSearch.
-                # Resolve a bounded set of exact files with normal imageinfo metadata.
-                # A prefix match is never proof of the depicted person's identity.
-                busy_fallbacks += 1
-                listing = http.json('https://commons.wikimedia.org/w/api.php', action='query',
-                    format='json', formatversion=2, list='allimages', aiprefix=str(query).strip(),
-                    ailimit=8, aiprop='canonicaltitle')
-                titles = [row.get('title') or ('File:' + row['name'])
-                    for row in listing.get('query', {}).get('allimages', [])
-                    if row.get('title') or row.get('name')]
-                if not titles:
-                    continue
-                data = http.json('https://commons.wikimedia.org/w/api.php', action='query',
-                    format='json', formatversion=2, titles='|'.join(titles),
-                    prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed', cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
+                    data = foreign_repo_exact()
+                    used_foreign_repo = True
+                else:
+                    if exc.code != 'source_api_busy':
+                        raise
+                    # allimages uses title-prefix enumeration, not CirrusSearch.
+                    # A prefix match is not proof of the pictured person's identity.
+                    busy_fallbacks += 1
+                    listing = http.json('https://commons.wikimedia.org/w/api.php', action='query',
+                        format='json', formatversion=2, list='allimages', aiprefix=str(query).strip(),
+                        ailimit=8, aiprop='canonicaltitle')
+                    titles = [row.get('title') or ('File:' + row['name'])
+                        for row in listing.get('query', {}).get('allimages', [])
+                        if row.get('title') or row.get('name')]
+                    if not titles:
+                        continue
+                    data = http.json('https://commons.wikimedia.org/w/api.php', action='query',
+                        format='json', formatversion=2, titles='|'.join(titles),
+                        prop='imageinfo|categories', clcategories='Category:License review needed|Category:License review failed',
+                        cllimit=10, iiprop='url|extmetadata|size', iiurlwidth=1400)
             pages = data.get('query', {}).get('pages', [])
             if mode == 'exact' and not any(page.get('imageinfo') for page in pages):
                 exact_errors.append(('exact_source_metadata_empty', 'Exact file imageinfo returned no image'))
+                if not used_foreign_repo:
+                    pages = foreign_repo_exact().get('query', {}).get('pages', [])
             # A zero-result CirrusSearch is not proof that Commons has no
             # portrait. For an exact, reasonably distinctive Chinese name,
             # make ONE bounded filename-prefix lookup. Unlike an unquoted
@@ -703,8 +724,19 @@ class CommonsSearch:
                     # the person's ordinary search attempts.
                     pass
             for page in pages:
+                if (mode == 'exact' and
+                        norm(page.get('title', '').removeprefix('File:')) not in expected_exact_titles):
+                    continue
                 for info in page.get('imageinfo',[]):
                     source=info.get('descriptionurl','')
+                    # Reject locally uploaded Wikipedia namesakes. A foreign
+                    # repo fallback must point to the exact Commons file page.
+                    if mode == 'exact':
+                        expected_page = ('https://commons.wikimedia.org/wiki/File:' +
+                            urllib.parse.quote(page.get('title', '').removeprefix('File:').replace(' ', '_')))
+                        if (urllib.parse.urlsplit(source).hostname != 'commons.wikimedia.org'
+                                or source_key(source) != source_key(expected_page)):
+                            continue
                     if source_key(source) in excluded or source in seen:continue
                     seen.add(source)
                     ext=info.get('extmetadata',{});val=lambda key:clean(ext.get(key,{}).get('value',''))

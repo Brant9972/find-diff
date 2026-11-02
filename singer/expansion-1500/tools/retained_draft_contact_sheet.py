@@ -60,6 +60,10 @@ def build(root, output_dir, live_ref=None):
         else:
             content = (root/bank).read_text(encoding="utf-8")
         live.update(q["id"] for q in json.loads(content)["questions"])
+    # Keep historical source-level human rejections out of retained reviews.
+    global_review = root/"photo-review.json"
+    review = json.loads(global_review.read_text(encoding="utf-8")) if global_review.exists() else {}
+    globally_rejected = {source_key(x.get("source")) for x in review.get("rejected", []) if x.get("source")}
     selected, skipped = [], []
     for entry in index["items"]:
         if entry.get("reviewStatus") != "draft_not_verified":
@@ -70,6 +74,9 @@ def build(root, output_dir, live_ref=None):
             skipped.append({"personId": pid, "reason": "not_selected_or_already_live"})
             continue
         source = source_key(entry.get("source"))
+        if source in globally_rejected:
+            skipped.append({"personId": pid, "reason": "source_previously_rejected"})
+            continue
         if source in {source_key(s) for s in person.get("excludedPhotoSources", [])}:
             skipped.append({"personId": pid, "reason": "source_previously_excluded"})
             continue

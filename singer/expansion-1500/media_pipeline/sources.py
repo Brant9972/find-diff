@@ -405,6 +405,13 @@ class Wikimedia:
                     if page.get('missing') or 'disambiguation' in page.get('pageprops', {}) or not identity(person, intro):
                         continue
                     qid = page.get('pageprops', {}).get('wikibase_item')
+                    # An exact Wikipedia title/intro can belong to a namesake.
+                    # If a reviewer pinned a Wikidata identity, never borrow
+                    # that other person's article image or P18. Commons direct
+                    # search remains available for independently reviewed leads.
+                    pinned_qid = person.get('wikidataId')
+                    if pinned_qid and qid != pinned_qid:
+                        continue
                     if qid:
                         qids.add(qid)
                     evidence = {'article': page.get('fullurl', ''), 'excerpt': intro[:1200], 'matchedAliases': identity(person, intro), 'wikidataId': qid}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-retained-unpublished-five-stage-contact-sheet",
+  "requestId": "20261102-retained-drafts-live-ref-main-fix",
   "mode": "render_only",
   "targetPeople": 0,
   "plannedPersonIds": [],
@@ -12,5 +12,5 @@
   "maxMinutes": 7,
   "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "Offline retained-draft five-stage contact sheet and SHA-bound review index; no source search, no approval, no production edits"
+  "purpose": "Rebuild retained five-stage review sheet pinned to fetched origin/main; exclude already-live people; draft-only, no source search or production edits"
 }

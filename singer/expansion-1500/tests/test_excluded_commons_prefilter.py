@@ -11,9 +11,11 @@ from media_pipeline.sources import CommonsSearch, CuratedCommons, EntityPortrait
 class FakeCommons:
     def __init__(self):
         self.calls = []
+        self.urls = []
 
     def json(self, url, **params):
         self.calls.append(params)
+        self.urls.append(url)
         if params.get('titles'):
             return {'query': {'pages': []}}
         return {'query': {'pages': [
@@ -45,8 +47,12 @@ class RejectedSourcePreFilterTest(unittest.TestCase):
         api = FakeCommons()
         with patch('media_pipeline.sources.verified_identity', return_value=None):
             rows = list(CommonsSearch().search(self.person, api))
-        exact = [p['titles'] for p in api.calls if p.get('titles')]
+        exact = [p['titles'] for url, p in zip(api.urls, api.calls)
+                 if p.get('titles') and 'commons.wikimedia.org' in url]
         self.assertEqual(exact, ['File:New Wang Portrait.jpg'])
+        foreign = [p['titles'] for url, p in zip(api.urls, api.calls)
+                   if p.get('titles') and 'en.wikipedia.org' in url]
+        self.assertEqual(foreign, ['File:New Wang Portrait.jpg'])
         self.assertEqual([r['filename'] for r in rows],
                          ['New_Wang_Portrait.jpg'])
         self.assertEqual(len(excluded_commons_keys(self.person)), 1)

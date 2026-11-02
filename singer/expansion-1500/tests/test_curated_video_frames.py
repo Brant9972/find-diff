@@ -58,6 +58,14 @@ class CuratedVideoFrameResearchTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         module.commons_video_url(lead)
 
+    def test_refuse_review_output_inside_repository(self):
+        from unittest.mock import patch
+        repo_root = module.ROOT.parents[1]
+        with patch("sys.argv", ["curated_video_frames.py", "--person-id", "t1500_0094",
+                                "--video-file", "/tmp/placeholder.webm", "--out", str(repo_root)]):
+            with self.assertRaisesRegex(ValueError, "outside the Git repository"):
+                module.main()
+
     def test_research_only_manifest_without_game_photo(self):
         # Mock ffprobe/ffmpeg while creating valid tiny JPEG frames.
         from PIL import Image

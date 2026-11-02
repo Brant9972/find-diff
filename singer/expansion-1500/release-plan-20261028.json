@@ -21,9 +21,9 @@
     "deferredForIdentityAndHints": 6,
     "selectedNovel": 511,
     "targetUniqueAfterFullPass": 1494,
-    "currentlyLiveUnique": 1078,
-    "publishedFromPlan": 94,
-    "remainingSelectedNovel": 416,
+    "currentlyLiveUnique": 1079,
+    "publishedFromPlan": 95,
+    "remainingSelectedNovel": 415,
     "targetGoal": 1500,
     "replacementCandidatesNeeded": 6,
     "liveRemovedSinceBaseline": 3
@@ -14663,36 +14663,52 @@
       "candidateId": "c1500-0481",
       "plannedQuestionId": "t1500_0481",
       "name": "關心妍",
-      "aliases": [],
+      "aliases": [
+        "Jade Kwan",
+        "關惠文",
+        "Kwan Sum-yin"
+      ],
       "acceptedAnswers": [
-        "關心妍"
+        "關心妍",
+        "Jade Kwan",
+        "關惠文",
+        "Kwan Sum-yin"
       ],
       "categories": [
         "歌手"
       ],
       "proposedPrimaryBank": "questions.json",
-      "representativeWorks": [],
+      "representativeWorks": [
+        "負擔不起"
+      ],
       "priority": "B",
       "photoSearchKeywords": [
         "關心妍 藝人 正面 清晰 肖像"
       ],
-      "photoStatus": "not_prepared",
+      "photoStatus": "published",
       "imageVerification": {
-        "faceMatchesPerson": false,
-        "imageAdjacentCaptionVerified": false,
-        "iconicContextVerified": false,
-        "noWatermarkVerified": false,
-        "rightsDocumented": false,
-        "finalCropReviewed": false
+        "faceMatchesPerson": true,
+        "imageAdjacentCaptionVerified": true,
+        "iconicContextVerified": true,
+        "noWatermarkVerified": true,
+        "rightsDocumented": true,
+        "finalCropReviewed": true
       },
-      "hintsStatus": "missing",
-      "identityStatus": "candidate_only_unverified",
-      "qaStatus": "not_releasable",
+      "hintsStatus": "source_verified",
+      "identityStatus": "source_caption_and_wikidata_verified",
+      "qaStatus": "pages_live_qa_passed",
       "preferredImageQuery": "關心妍  經典時期 歌手 獨照 正面 清晰 無浮水印",
       "excludedPhotoSources": [
         "https://commons.wikimedia.org/wiki/File:20080112-JadeKwan.jpg",
         "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019.jpg"
-      ]
+      ],
+      "wikidataId": "Q837037",
+      "publishedQuestionId": "t1500_0481",
+      "portraitSource": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg",
+      "gameSha256": "5e4368df870636c999e3acb36be7ca903d3746f38e9305dcc34c76b199adee70",
+      "reviewRecord": "singer/expansion-1500/reviews/20261103-jade-kwan-reviewed.json",
+      "reviewSourceCommit": "36100451ddf643329e0d67e5ad6fde987271dbfa",
+      "liveQaRun": "https://github.com/Brant9972/find-diff/actions/runs/41506574155"
     },
     {
       "candidateId": "c1500-0482",
@@ -18916,7 +18932,7 @@
   ],
   "instruction": "DO NOT merge this manifest into active question banks. All selectedNew entries are unverified and lack portraits; a target count is not proof of 1500 playable faces.",
   "releaseProgress": {
-    "published": 94,
+    "published": 95,
     "publishedNames": [
       "李佳豫",
       "林嘉欣",
@@ -19011,9 +19027,10 @@
       "黃少谷",
       "大元",
       "張達明",
-      "陳湘琪"
+      "陳湘琪",
+      "關心妍"
     ],
-    "pendingPhotoAndHintReview": 416,
-    "latestCommit": "7ba8951a375b68ad25d9e40f97a9c85ba7c6c63b"
+    "pendingPhotoAndHintReview": 415,
+    "latestCommit": "36100451ddf643329e0d67e5ad6fde987271dbfa"
   }
 }

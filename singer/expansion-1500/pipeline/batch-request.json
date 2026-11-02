@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-qid-three-zero-metadata-reset-render-only",
-  "mode": "render_only",
+  "requestId": "20261102-import-two-reviewed-nolay-rejections",
+  "mode": "import_review_rejections",
   "targetPeople": 0,
   "plannedPersonIds": [],
   "retryFailed": false,
@@ -13,5 +13,6 @@
   "maxMinutes": 8,
   "personSeconds": 75,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, no main, creators or Pages changes. Three exact Q5 commonswiki pinned-QID selectedNew diagnostic completed at run 41374323299: 江祖平 t1500_0092, 郭品超 t1500_0093, 寇世勳 t1500_0094 produced zero Commons/entity metadata, no new crop, no provider errors. Do not repeat these three without newly verified exact Commons filename/P18 or a different licensed source. Preserve existing assets and cooldowns; render only for review."
+  "purpose": "ONE-SHOT: import two previously human-rejected 林慶台 crops by exact candidate ID and SHA; exclude already-live 陳湘琪; no provider search, no main/creators/Pages changes. Auto-reset to render_only after successful import.",
+  "reviewDecisionPath": "singer/expansion-1500/pipeline/chatgpt-review/20261102-nolay-rejections-only.json"
 }

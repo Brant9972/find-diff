@@ -165,6 +165,29 @@ class CuratedStillOriginalTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "monotonically expanding"):
                 diag.build_previews(buf.getvalue(), lead, Path(tmp))
 
+    def test_verified_original_bytes_can_be_reused_without_network(self):
+        data = b"sha-bound source original"
+        digest = hashlib.sha1(data).hexdigest()
+        self.assertEqual(diag.verify_exact_bytes(data, len(data), digest), data)
+        with self.assertRaisesRegex(ValueError, "SHA-1 mismatch"):
+            diag.verify_exact_bytes(data, len(data), "0" * 40)
+        with self.assertRaisesRegex(ValueError, "size mismatch"):
+            diag.verify_exact_bytes(data, len(data) + 1, digest)
+        with tempfile.TemporaryDirectory() as tmp:
+            original = Path(tmp) / "source.jpg"
+            original.write_bytes(data)
+            out = Path(tmp) / "review"
+            with patch.object(diag, "fetch_exact") as fetch, \
+                 patch.object(diag, "verify_exact_bytes", return_value=data) as verify, \
+                 patch.object(diag, "build_previews", return_value={"cropSha256": "test"}):
+                result = diag.run(out, lead_path=diag.YANG_LEAD, source_file=original)
+            fetch.assert_not_called()
+            verify.assert_called_once()
+            self.assertEqual((out / "original-sha1-verified.jpg").read_bytes(), data)
+            self.assertEqual(result["sourceRetrieval"], "sha_verified_local_reuse")
+            self.assertFalse(result["humanReviewed"])
+            self.assertFalse(result["liveUpdated"])
+
 
 if __name__ == "__main__":
     unittest.main()

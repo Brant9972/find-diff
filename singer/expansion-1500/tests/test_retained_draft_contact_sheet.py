@@ -57,7 +57,7 @@ class RetainedDraftContactSheetTests(unittest.TestCase):
                 if cmd[-2:] == ["rev-parse", "origin/main"]:
                     return "a"*40+"\n"
                 if cmd[-1] == "origin/main:singer/questions.json":
-                    return json.dumps({"questions": [{"id": "t1500_0001"}]})
+                    return json.dumps({"questions": [{"id": "t1500_0001"}, {"id": "t1500_0003"}]})
                 return json.dumps({"questions": []})
             with mock.patch("retained_draft_contact_sheet.subprocess.check_output", side_effect=git_read):
                 current = build(root, root/"expansion-1500/pipeline/review-assets/live-ref", live_ref="origin/main")

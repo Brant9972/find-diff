@@ -79334,8 +79334,8 @@
       "candidateId": "c1500-0381",
       "name": "王芷蕾",
       "status": "no_suitable_source",
-      "attempts": 2,
-      "nextRetryAt": "2026-11-01T15:22:57.176928+00:00",
+      "attempts": 3,
+      "nextRetryAt": "2026-11-02T13:14:34.777475+00:00",
       "candidates": [
         {
           "provider": "commons",
@@ -79367,12 +79367,12 @@
             ],
             "note": "Familiar appearance must be reviewed"
           },
-          "searchTime": "2026-11-01T11:17:34.474659+00:00",
+          "searchTime": "2026-11-02T05:14:31.159977+00:00",
           "width": 2048,
           "height": 1536,
           "id": "adfce18c9d8073067687",
           "personId": "t1500_0381",
-          "discoveryRunId": "20261101T112249Z-59567520",
+          "discoveryRunId": "20261102T051427Z-de65f782",
           "rightsStatus": "needs_review",
           "eligibleForLive": false,
           "humanReview": null,
@@ -79425,6 +79425,24 @@
             }
           ],
           "candidatesTried": 1
+        },
+        {
+          "time": "2026-11-02T05:14:31.013087+00:00",
+          "provider": "commons",
+          "attempt": 3,
+          "finishedAt": "2026-11-02T05:14:34.777441+00:00"
+        },
+        {
+          "time": "2026-11-02T05:14:34.777462+00:00",
+          "errors": [
+            {
+              "provider": "commons",
+              "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+              "code": "license_unclear",
+              "message": "Source metadata retained; no download without reusable licence metadata"
+            }
+          ],
+          "candidatesTried": 1
         }
       ],
       "legacyRecord": {
@@ -79449,19 +79467,19 @@
         "message": "See lastErrors"
       },
       "lastRunNewCandidateIds": [],
-      "lastRunId": "20261101T112249Z-59567520",
+      "lastRunId": "20261102T051427Z-de65f782",
       "lastSearchRevision": 4,
-      "lastAttemptAt": "2026-11-01T11:22:53.248600+00:00",
+      "lastAttemptAt": "2026-11-02T05:14:30.927752+00:00",
       "lastErrors": [
         {
-          "provider": "cached_exact",
+          "provider": "commons",
           "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
           "code": "license_unclear",
           "message": "Source metadata retained; no download without reusable licence metadata"
         }
       ],
-      "updatedAt": "2026-11-01T11:22:57.176940+00:00",
-      "workerFinishedAt": "2026-11-01T11:22:57.179163+00:00",
+      "updatedAt": "2026-11-02T05:14:34.777486+00:00",
+      "workerFinishedAt": "2026-11-02T05:14:34.780060+00:00",
       "lastCachedRecheckToken": "20261101-wangzhilei-english-caption-q9066613"
     },
     "t1500_0094": {

@@ -2,16 +2,16 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261102T044009Z-8b0a042b",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261102T044009Z-8b0a042b/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261102T044009Z-8b0a042b/assets-index.json",
+  "runId": "20261102T051427Z-de65f782",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261102T051427Z-de65f782/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261102T051427Z-de65f782/assets-index.json",
   "summary": {
-    "runId": "20261102T044009Z-8b0a042b",
-    "generatedAt": "2026-11-02T04:40:10.379799+00:00",
-    "scannedPeople": 0,
+    "runId": "20261102T051427Z-de65f782",
+    "generatedAt": "2026-11-02T05:14:35.409839+00:00",
+    "scannedPeople": 1,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 0,
+    "scannedWithoutCandidates": 1,
     "retryNeeded": 417,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 364,
@@ -37,52 +37,57 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {},
+    "batchFailureReasons": {
+      "license_unclear": 1
+    },
     "manualCropSources": 11,
-    "batchProviderStages": {},
+    "batchProviderStages": {
+      "commons": {
+        "attemptedPeople": 1,
+        "metadataCandidates": 1,
+        "identitySupportedMetadata": 1,
+        "openLicenseMetadata": 0,
+        "downloadedForHumanReview": 0,
+        "savedForManualCrop": 0,
+        "errors": {
+          "license_unclear": 1
+        }
+      }
+    },
     "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 0,
-      "processedPeople": 0,
-      "workers": 3
+      "targetPeople": 1,
+      "processedPeople": 1,
+      "workers": 1,
+      "elapsedSeconds": 6.82,
+      "stoppedForBudget": false,
+      "requestedPeople": 1,
+      "skippedRequested": [],
+      "unprocessedSelected": []
     }
   },
   "visualPeople": 0,
   "visualPhotos": 0,
-  "batchPeople": [],
-  "reviewPublicationPending": false,
-  "items": [],
-  "visualAssetCommit": "a2c19c0705074a4f940e7155d4c7e08e3767e510",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261102T044009Z-8b0a042b/assets-index.json",
-    "contactSheets": [],
-    "manualContactSheets": [],
-    "manualSourceCount": 0,
-    "manualSourcePeopleCount": 0,
-    "manualSources": [],
-    "peopleCount": 0,
-    "photoCount": 0,
-    "photos": [],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [],
-    "runId": "20261102T044009Z-8b0a042b",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "a2c19c0705074a4f940e7155d4c7e08e3767e510",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/a2c19c0705074a4f940e7155d4c7e08e3767e510/singer/expansion-1500/pipeline/review-assets/20261102T044009Z-8b0a042b/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/a2c19c0705074a4f940e7155d4c7e08e3767e510/singer/expansion-1500/pipeline/review-assets/20261102T044009Z-8b0a042b/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/a2c19c0705074a4f940e7155d4c7e08e3767e510/singer/expansion-1500/pipeline/review-assets/20261102T044009Z-8b0a042b/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  "batchPeople": [
+    "t1500_0381"
+  ],
+  "reviewPublicationPending": true,
+  "items": [
+    {
+      "personId": "t1500_0381",
+      "name": "王芷蕾",
+      "status": "no_suitable_source",
+      "newCandidateIds": [],
+      "errors": [
+        {
+          "provider": "commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jeanette_Wang.JPG",
+          "code": "license_unclear",
+          "message": "Source metadata retained; no download without reusable licence metadata"
+        }
+      ]
+    }
+  ]
 }

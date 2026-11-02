@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03",
+  "personId": "t1500_0273",
+  "name": "楊麗花",
+  "status": "DRAFT_VISUAL_REVIEW_ONLY_NOT_APPROVED_NOT_PLAYABLE",
+  "source": {
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:楊麗花歌仔戲《忠孝節義》媒體首映會.jpg",
+    "originalGovernmentArticle": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6820052F7D453764&sms=72544237BBE4C5F6",
+    "author": "臺北市政府秘書處媒體事務組",
+    "date": "2019-09-23",
+    "originalSha1": "176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3",
+    "originalDimensions": [
+      1280,
+      1920
+    ],
+    "originalSizeBytes": 324913
+  },
+  "independentIdentityContext": {
+    "source": "https://www.cna.com.tw/news/firstnews/201909230248.aspx",
+    "caption": "楊麗花（右）與陳亞蘭（左）出席2019-09-23《忠孝節義》記者會",
+    "identityStatus": "source-caption-supported-not-face-recognition",
+    "workHint": "《忠孝節義》"
+  },
+  "rights": {
+    "source": "https://english.gov.taipei/News_Content.aspx?n=4E3FA84AC9A12D24&s=52C7D2409618530A&sms=5E019B60E5224755",
+    "permission": "Government website general policy allows attribution-only reproduction and adaptation, except specifically excluded contracted works",
+    "individualPhotoRightsFinal": "PENDING_EXCEPTION_SCOPE_VERIFICATION",
+    "attributionRequired": "臺北市政府秘書處媒體事務組／臺北市政府；裁切修改須標明"
+  },
+  "firstRun": {
+    "url": "https://github.com/Brant9972/find-diff/actions/runs/41530584582",
+    "artifactId": 13180709261,
+    "sourceSha1Verified": true,
+    "cropBox": [
+      640,
+      270,
+      1180,
+      918
+    ],
+    "cropSha256": "c211a084104e36c8c343322f01319d96c071c13a9e4eaeef0a8f0b72305181a5",
+    "visual": "Subject eyes and mouth visible, no second face. First preview nose stage exposes mouth prematurely and red sleeve intrudes bottom-left; REJECTED",
+    "status": "REJECTED_CROP_NOT_PERSON"
+  },
+  "revisedRun": {
+    "url": "https://github.com/Brant9972/find-diff/actions/runs/41531295002",
+    "status": "source_http_429",
+    "retryAfterHeader": "10",
+    "artifactId": 13182895147,
+    "sourceDownloaded": false,
+    "noImmediateRetry": true
+  },
+  "offlineProvisionalRecrop": {
+    "method": "Crop only the SHA-bound first-run 600x720 JPEG [56,67,500,600], resize to 600x720; double JPEG generation, not a native original-pixel export",
+    "equivalentOriginalCropBox": [
+      690,
+      330,
+      1090,
+      810
+    ],
+    "cropSha256": "9f81a865e54f765ac3b178e4b9c1584505828642c2f390e7b10d28741ca808e7",
+    "contactSheetSha256": "244136f4bdcb9731ebbd96d2d8941245867c045d3f7bfadaf62d746b21745fe4",
+    "stageRects": {
+      "eyes": [
+        0.08,
+        0.38,
+        0.92,
+        0.46
+      ],
+      "nose": [
+        0.08,
+        0.38,
+        0.92,
+        0.55
+      ],
+      "mouth": [
+        0.08,
+        0.38,
+        0.92,
+        0.63
+      ],
+      "chin": [
+        0.08,
+        0.38,
+        0.92,
+        0.74
+      ],
+      "full": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "humanVisualScreening": {
+      "eyes": "PASS_PROVISIONAL eyes visible without mouth",
+      "nose": "PASS_PROVISIONAL nose revealed while mouth remains hidden",
+      "mouth": "PASS_PROVISIONAL mouth revealed at correct stage, no microphone occlusion",
+      "chin": "PASS_PROVISIONAL chin added",
+      "full": "PASS_PROVISIONAL clear face, second face excluded, red costume excluded"
+    },
+    "releaseGate": "PROVISIONAL_OFFLINE_VISUAL_ONLY_NOT_FINAL_PIXEL_QA"
+  },
+  "nextActions": [
+    "Preserve and reuse original SHA-verified pixels if retrievable; avoid immediate Commons re-fetch after 429.",
+    "Regenerate final 600x720 JPEG directly from the verified original rather than from first JPEG crop.",
+    "Reinspect exact final asset SHA and live q.reveal masks and ensure all five stages show the intended anatomy.",
+    "Confirm government photo is not specifically excluded by a contracted work exception and attach attribution.",
+    "Recheck main SHA, QID/aliases and work hint; only then stage PR, mobile/hints QA, main merge, Pages/live QA."
+  ],
+  "approvedForGame": false,
+  "modifiedProduction": false
+}

@@ -731,9 +731,12 @@ class CommonsSearch:
                     source=info.get('descriptionurl','')
                     # Reject locally uploaded Wikipedia namesakes. A foreign
                     # repo fallback must point to the exact Commons file page.
-                    if (mode == 'exact' and
-                            urllib.parse.urlsplit(source).hostname != 'commons.wikimedia.org'):
-                        continue
+                    if mode == 'exact':
+                        expected_page = ('https://commons.wikimedia.org/wiki/File:' +
+                            urllib.parse.quote(page.get('title', '').removeprefix('File:').replace(' ', '_')))
+                        if (urllib.parse.urlsplit(source).hostname != 'commons.wikimedia.org'
+                                or source_key(source) != source_key(expected_page)):
+                            continue
                     if source_key(source) in excluded or source in seen:continue
                     seen.add(source)
                     ext=info.get('extmetadata',{});val=lambda key:clean(ext.get(key,{}).get('value',''))

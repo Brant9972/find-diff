@@ -6,6 +6,7 @@ identity, changes production files, or marks an image human-reviewed.
 import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -39,15 +40,26 @@ def stage_tile(image, rect):
     return tile
 
 
-def build(root, output_dir):
+def build(root, output_dir, live_ref=None):
     root = Path(root)
     output_dir = Path(output_dir)
     plan = json.loads((root/"expansion-1500/release-plan-20261028.json").read_text(encoding="utf-8"))
     index = json.loads((root/"expansion-1500/draft-media-index.json").read_text(encoding="utf-8"))
     planned = {p["plannedQuestionId"]: p for p in plan["selectedNew"]}
+    if live_ref not in (None, "origin/main"):
+        raise ValueError("Only the fetched origin/main ref may define current live people")
+    live_sha = None
+    if live_ref:
+        live_sha = subprocess.check_output(["git", "-C", str(root.parent), "rev-parse", live_ref], text=True).strip()
+        if len(live_sha) != 40:
+            raise ValueError("Unverified live commit SHA")
     live = set()
     for bank in ("questions.json", "actors.json", "variety.json"):
-        live.update(q["id"] for q in json.loads((root/bank).read_text(encoding="utf-8"))["questions"])
+        if live_ref:
+            content = subprocess.check_output(["git", "-C", str(root.parent), "show", f"{live_ref}:singer/{bank}"], text=True)
+        else:
+            content = (root/bank).read_text(encoding="utf-8")
+        live.update(q["id"] for q in json.loads(content)["questions"])
     selected, skipped = [], []
     for entry in index["items"]:
         if entry.get("reviewStatus") != "draft_not_verified":
@@ -102,6 +114,7 @@ def build(root, output_dir):
     sheet.save(output_dir/"contact-sheet.png", optimize=True)
     report = {
         "schemaVersion": 1, "releaseGate": "RETAINED_DRAFT_ONLY_NOT_PLAYABLE",
+        "liveRef": live_ref, "baselineLiveSha": live_sha,
         "warning": "Masked preview is not a human inspection or approval; source caption, author, license and five-stage crop still require independent verification.",
         "summary": {"screeningRows": len(selected), "skippedRows": len(skipped)},
         "people": selected, "skipped": skipped,
@@ -114,9 +127,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument("--output-dir", type=Path)
+    parser.add_argument("--live-ref", required=True, choices=["origin/main"])
     args = parser.parse_args()
     target = args.output_dir or args.root/"expansion-1500/pipeline/review-assets/retained-drafts-20261102"
-    report = build(args.root, target)
+    report = build(args.root, target, live_ref=args.live_ref)
     print(json.dumps(report["summary"], ensure_ascii=False))
 
 

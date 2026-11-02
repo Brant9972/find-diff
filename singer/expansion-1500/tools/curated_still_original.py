@@ -22,10 +22,11 @@ YANG_LEAD = ROOT / "pipeline/curated-yang-lihua-taipei-2019-source-lead-20261103
 APPROVED_DIAGNOSTIC_LEADS = {p.name: p for p in (LEAD, YANG_LEAD)}
 MAX_BYTES = 10 * 1024 * 1024
 STAGES = {
-    "eyes": (0.08, 0.30, 0.92, 0.50),
-    "nose": (0.08, 0.30, 0.92, 0.63),
-    "mouth": (0.08, 0.30, 0.92, 0.78),
-    "chin": (0.08, 0.30, 0.92, 0.93),
+    # Must mirror singer/game.js fallback reveal rectangles, not an approximate mask.
+    "eyes": (0.08, 0.275, 0.92, 0.425),
+    "nose": (0.08, 0.275, 0.92, 0.59),
+    "mouth": (0.08, 0.275, 0.92, 0.74),
+    "chin": (0.08, 0.275, 0.92, 0.92),
     "full": (0.0, 0.0, 1.0, 1.0),
 }
 
@@ -107,9 +108,20 @@ def build_previews(data: bytes, lead: dict, out: Path) -> dict:
     out.mkdir(parents=True, exist_ok=True)
     photo = out / "draft-600x720.jpg"
     crop.save(photo, "JPEG", quality=94, subsampling=0)
+    stages = lead.get("provisionalReveal", STAGES)
+    if set(stages) != set(STAGES):
+        raise ValueError("Five-stage reveal keys must match game")
+    for stage, rect in stages.items():
+        if len(rect) != 4 or not all(isinstance(v, (int, float)) for v in rect):
+            raise ValueError("Invalid reveal rectangle")
+        if not (0 <= rect[0] < rect[2] <= 1 and 0 <= rect[1] < rect[3] <= 1):
+            raise ValueError("Reveal rectangle outside portrait")
+    for previous, current in zip(list(stages.values()), list(stages.values())[1:]):
+        if any(current[j] > previous[j] for j in (0, 1)) or any(current[j] < previous[j] for j in (2, 3)):
+            raise ValueError("Five-stage reveal must be monotonically expanding")
     sheet = Image.new("RGB", (5 * 240, 330), (26, 26, 26))
     draw = ImageDraw.Draw(sheet)
-    for i, (stage, rect) in enumerate(STAGES.items()):
+    for i, (stage, rect) in enumerate((key, stages[key]) for key in STAGES):
         masked = Image.new("RGB", (600, 720), (0, 0, 0))
         box_px = tuple(round(x * (600 if j % 2 == 0 else 720)) for j, x in enumerate(rect))
         masked.paste(crop.crop(box_px), box_px)
@@ -122,6 +134,8 @@ def build_previews(data: bytes, lead: dict, out: Path) -> dict:
         "cropBox": box,
         "cropSha256": hashlib.sha256(photo.read_bytes()).hexdigest(),
         "fiveStages": list(STAGES),
+        "stageRects": {key: list(stages[key]) for key in STAGES},
+        "customStageMasks": "provisionalReveal" in lead,
         "stageMasksProvisional": True,
     }
 

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "target": 1000,
-  "playable": 461,
-  "updatedAt": "2026-10-30",
+  "playable": 462,
+  "updatedAt": "2026-11-03",
   "verification": "1500 expansion, visually reviewed musician role credit",
   "questions": [
     {
@@ -26326,6 +26326,67 @@
       "bioExcerpt": "黃少谷（Huang Shao-Ku），暱稱少少、曾用黃牛，臺灣創作歌手、強辯樂團主唱，2017 年推出個人專輯《未來》。",
       "gameSha256": "640dca1277207e65cf27e5a2278afc36f689c7af358364324c9d13bfc4164ab9",
       "wikidataId": "Q28408495"
+    },
+    {
+      "id": "t1500_0481",
+      "name": "關心妍",
+      "aliases": [
+        "關心妍",
+        "Jade Kwan",
+        "關惠文",
+        "Kwan Sum-yin"
+      ],
+      "photo": "photos/t1500_0481.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.3,
+          0.92,
+          0.5
+        ],
+        "nose": [
+          0.08,
+          0.3,
+          0.92,
+          0.63
+        ],
+        "mouth": [
+          0.08,
+          0.3,
+          0.92,
+          0.78
+        ],
+        "chin": [
+          0.08,
+          0.3,
+          0.92,
+          0.93
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "manually_reviewed_source_and_photo",
+      "humanReviewed": true,
+      "recognitionContext": "2019 年 7 月 13 日廣州《時刻觸動》演唱會，Jadefanclub 自攝高解析度單人肖像；原圖 SHA-1 與 600×720 遊戲裁切 SHA-256 核對一致，實際檢查眼、鼻、嘴、下巴、全臉五階段，眼睛睜開、五官清楚、無麥克風遮擋或第二張臉。",
+      "eligibility": "curated_reviewed",
+      "batchId": "manual_review_20261103",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E9%97%9C%E5%BF%83%E5%A6%8D",
+        "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019%28%E5%BB%A3%E5%B7%9E%E7%AB%99%29.jpg",
+        "artist": "Jadefanclub",
+        "credit": "Jadefanclub 自攝 2019-07-13 關心妍《時刻觸動》廣州站演唱會；原圖 4160×6240，裁切為 600×720 人像；遊戲以五階段遮罩逐步揭露。",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "© Jadefanclub / Wikimedia Commons；原圖經裁切與縮放，五階段遮罩屬改作，須保留原作者署名、來源及 CC BY-SA 4.0 相同方式分享授權。"
+      },
+      "bioExcerpt": "關心妍（Jade Kwan），香港女歌手，代表歌曲〈負擔不起〉、〈你有心〉；其專輯可見於台灣佳佳唱片的藝人發行目錄。",
+      "gameSha256": "5e4368df870636c999e3acb36be7ca903d3746f38e9305dcc34c76b199adee70",
+      "wikidataId": "Q837037"
     }
   ],
   "eligibilityReview": "eligibility-review.json"

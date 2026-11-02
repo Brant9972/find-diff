@@ -1,0 +1,57 @@
+name: Curated Commons still original diagnostic (no deploy)
+on:
+  push:
+    branches: [automation/celebrity-photo-pipeline]
+    paths:
+      - .github/workflows/curated-still-original-diagnostic.yml
+      - singer/expansion-1500/tools/curated_still_original.py
+      - singer/expansion-1500/pipeline/curated-jade-kwan-guangzhou-2019-lead-20261103.json
+  pull_request:
+    paths:
+      - .github/workflows/curated-still-original-diagnostic.yml
+      - singer/expansion-1500/tools/curated_still_original.py
+      - singer/expansion-1500/tests/test_curated_still_original.py
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: curated-still-original-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests==2.32.5 Pillow==12.0.0
+      - run: python -m unittest discover -s singer/expansion-1500/tests -p test_curated_still_original.py -q
+  diagnostic:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/automation/celebrity-photo-pipeline'
+    needs: unit-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation/celebrity-photo-pipeline
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests==2.32.5 Pillow==12.0.0
+      - name: Download only pinned 2019 Jade Kwan original and create unapproved previews
+        run: python singer/expansion-1500/tools/curated_still_original.py --out "${{ runner.temp }}/curated-jade-kwan-2019"
+      - name: Preserve evidence even when Commons returns HTTP 403
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: curated-jade-kwan-2019-unapproved-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/curated-jade-kwan-2019/manifest.json
+            ${{ runner.temp }}/curated-jade-kwan-2019/draft-600x720.jpg
+            ${{ runner.temp }}/curated-jade-kwan-2019/contact-sheet.jpg

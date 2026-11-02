@@ -818,12 +818,13 @@ class EntityPortraits:
             # Some performers have only an English Wikidata label. Their
             # Chinese native name (P1559), birth name (P1477), or nickname
             # (P1449) can still establish an exact-name match on the pinned
-            # Q5 entity. Never accept a substring, deprecated claim, or
+            # Q5 entity. Birth/nickname fallbacks require a pinned QID. Never accept a substring, deprecated claim, or
             # non-Chinese monolingual value as an identity shortcut. This
             # resolves a search alias only, never the pictured face.
             chinese.extend(
                 value['text']
-                for property_id in ('P1559', 'P1477', 'P1449')
+                for property_id in (('P1559', 'P1477', 'P1449')
+                                    if pinned_qid == qid else ('P1559',))
                 for claim in entity.get('claims', {}).get(property_id, [])
                 if claim.get('rank') != 'deprecated'
                 for value in [claim.get('mainsnak', {}).get('datavalue', {}).get('value')]

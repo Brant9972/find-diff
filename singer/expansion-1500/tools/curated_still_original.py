@@ -1,6 +1,6 @@
 """Bounded exact Commons original diagnostic; never publishes or approves a portrait.
 
-Run only against the pinned source in curated-jade-kwan-guangzhou-2019-lead-20261103.json.
+Run only against an explicitly allowlisted, SHA-pinned Commons source lead.
 A successful download produces a provisional draft and five-stage contact sheet for
 human review. All status outputs explicitly remain NOT APPROVED.
 """
@@ -18,6 +18,8 @@ from PIL import Image, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 LEAD = ROOT / "pipeline/curated-jade-kwan-guangzhou-2019-lead-20261103.json"
+YANG_LEAD = ROOT / "pipeline/curated-yang-lihua-taipei-2019-source-lead-20261103.json"
+APPROVED_DIAGNOSTIC_LEADS = {p.name: p for p in (LEAD, YANG_LEAD)}
 MAX_BYTES = 10 * 1024 * 1024
 STAGES = {
     "eyes": (0.08, 0.30, 0.92, 0.50),
@@ -124,13 +126,20 @@ def build_previews(data: bytes, lead: dict, out: Path) -> dict:
     }
 
 
-def run(out: Path, session=None) -> dict:
-    lead = json.loads(LEAD.read_text(encoding="utf-8"))
-    if lead["releaseGate"] != "HIGH_RES_ORIGINAL_VISUAL_LEAD_NOT_CROPPED_NOT_APPROVED":
+def run(out: Path, session=None, lead_path: Path | None = None) -> dict:
+    lead_path = lead_path or LEAD
+    if lead_path not in APPROVED_DIAGNOSTIC_LEADS.values():
+        raise ValueError("Diagnostic source lead is not allowlisted")
+    lead = json.loads(lead_path.read_text(encoding="utf-8"))
+    if lead["releaseGate"] not in (
+        "HIGH_RES_ORIGINAL_VISUAL_LEAD_NOT_CROPPED_NOT_APPROVED",
+        "SOURCE_PREVIEW_ONLY_NOT_APPROVED_NOT_PLAYABLE",
+    ):
         raise ValueError("Unapproved lead gate changed unexpectedly")
     result = {
         "personId": lead["personId"],
-        "source": lead["source"],
+        "source": lead["source"] if isinstance(lead["source"], str) else lead["source"]["commonsPage"],
+        "sourceLead": lead_path.name,
         "originalSha1Expected": lead["originalSha1"],
         "releaseGate": "DIAGNOSTIC_DRAFT_ONLY_NOT_APPROVED_NOT_PLAYABLE",
         "status": "not_started",
@@ -165,8 +174,9 @@ def run(out: Path, session=None) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--lead", choices=sorted(APPROVED_DIAGNOSTIC_LEADS), default=LEAD.name)
     args = parser.parse_args()
-    result = run(args.out)
+    result = run(args.out, lead_path=APPROVED_DIAGNOSTIC_LEADS[args.lead])
     print(json.dumps(result, ensure_ascii=False))
     return 2 if result["status"] == "integrity_or_image_validation_failed" else 0
 

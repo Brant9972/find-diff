@@ -2,16 +2,16 @@
   "schemaVersion": 2,
   "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
   "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-  "runId": "20261102T065108Z-62819cdc",
-  "reviewIndex": "expansion-1500/pipeline/runs/20261102T065108Z-62819cdc/review-index.json",
-  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261102T065108Z-62819cdc/assets-index.json",
+  "runId": "20261102T065419Z-09b0574f",
+  "reviewIndex": "expansion-1500/pipeline/runs/20261102T065419Z-09b0574f/review-index.json",
+  "visualAssetManifest": "expansion-1500/pipeline/review-assets/20261102T065419Z-09b0574f/assets-index.json",
   "summary": {
-    "runId": "20261102T065108Z-62819cdc",
-    "generatedAt": "2026-11-02T06:51:36.845973+00:00",
-    "scannedPeople": 2,
+    "runId": "20261102T065419Z-09b0574f",
+    "generatedAt": "2026-11-02T06:54:20.764676+00:00",
+    "scannedPeople": 0,
     "peopleWithNewCandidates": 0,
     "newCandidatePhotos": 0,
-    "scannedWithoutCandidates": 2,
+    "scannedWithoutCandidates": 0,
     "retryNeeded": 417,
     "pendingReviewPeople": 0,
     "licenseConcernCandidates": 364,
@@ -37,249 +37,21 @@
       "proxy_access_denied": 2,
       "http_404": 2
     },
-    "batchFailureReasons": {
-      "source_already_rejected": 2,
-      "image_validation_failed": 1,
-      "identity_unconfirmed": 8,
-      "license_unclear": 1
-    },
+    "batchFailureReasons": {},
     "manualCropSources": 11,
-    "batchProviderStages": {
-      "commons": {
-        "attemptedPeople": 2,
-        "metadataCandidates": 9,
-        "identitySupportedMetadata": 1,
-        "openLicenseMetadata": 8,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "source_already_rejected": 1
-        }
-      },
-      "entity": {
-        "attemptedPeople": 2,
-        "metadataCandidates": 0,
-        "identitySupportedMetadata": 0,
-        "openLicenseMetadata": 0,
-        "downloadedForHumanReview": 0,
-        "savedForManualCrop": 0,
-        "errors": {
-          "source_already_rejected": 1,
-          "image_validation_failed": 1,
-          "identity_unconfirmed": 8,
-          "license_unclear": 1
-        }
-      }
-    },
+    "batchProviderStages": {},
     "contactSheets": [],
     "modifiedProduction": false,
     "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
     "batch": {
-      "targetPeople": 2,
-      "processedPeople": 2,
-      "workers": 1,
-      "elapsedSeconds": 27.54,
-      "stoppedForBudget": false,
-      "requestedPeople": 2,
-      "skippedRequested": [],
-      "unprocessedSelected": []
+      "targetPeople": 0,
+      "processedPeople": 0,
+      "workers": 3
     }
   },
   "visualPeople": 0,
   "visualPhotos": 0,
-  "batchPeople": [
-    "t1500_0564",
-    "t1500_0107"
-  ],
-  "reviewPublicationPending": false,
-  "items": [
-    {
-      "personId": "t1500_0564",
-      "name": "葛民輝",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
-          "code": "source_already_rejected",
-          "message": "Previously rejected photo source; search a different image, not this URL"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "candidateMetadata": {
-            "provider": "commons",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-            "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/EricKot2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "source": "https://commons.wikimedia.org/wiki/File:EricKot2007.jpg",
-            "filename": "EricKot2007.jpg",
-            "downloadVariant": "wikimedia_thumbnail_1400",
-            "artist": "Pete Yeung",
-            "credit": "originally posted to Flickr as McConcert043",
-            "license": "CC BY-SA 2.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-            "caption": "Eric Kot",
-            "licenseReviewStatus": "not_checked",
-            "identityEvidence": {
-              "wikidataId": "Q590914",
-              "mappingSource": "https://www.wikidata.org/wiki/Q590914",
-              "exactChineseAliases": [
-                "葛民輝",
-                "葛民辉",
-                "葛民辉",
-                "葛民辉"
-              ],
-              "verifiedSearchAliases": [
-                "葛民輝",
-                "葛民辉",
-                "Eric Kot",
-                "Eric Kot Man Fai",
-                "Eric Kot Man-fai"
-              ],
-              "commonsCategory": "Eric Kot",
-              "commonsCategoryEvidence": "Wikidata P373 on exact-name Q5 entity",
-              "entityTypeEvidence": "P31=Q5",
-              "retrievedAt": "2026-11-02T06:51:12.248197+00:00",
-              "visualIdentityVerified": false,
-              "identityWarning": "Entity names only establish search aliases. Verify the pictured person and caption.",
-              "article": "https://zh.wikipedia.org/wiki/%E8%91%9B%E6%B0%91%E8%BC%9D",
-              "articleTitle": "葛民輝",
-              "articleLookup": "exact title with redirects; not a search result",
-              "query": "commons_category_p373",
-              "matchedAliases": [
-                "Eric Kot"
-              ],
-              "discoveryWarnings": [],
-              "captionAliasMatches": [
-                "Eric Kot"
-              ]
-            },
-            "recognitionEvidence": {
-              "representativeWorks": [
-                "百分百感覺"
-              ],
-              "requestedReplacement": "Visual crop and source review: Eric Kot image has cap shadow over eyes, microphone obstructing mouth/chin and heavy beard interfering with chin reveal; seek clear unobstructed frontal portrait.",
-              "note": "Familiar appearance has not been visually reviewed"
-            },
-            "searchTime": "2026-11-02T06:51:13.796532+00:00",
-            "width": 582,
-            "height": 703,
-            "id": "cad3208d7ed5ebd101df",
-            "personId": "t1500_0564",
-            "discoveryRunId": "20261102T065108Z-62819cdc",
-            "rightsStatus": "open_license_metadata",
-            "eligibleForLive": false,
-            "humanReview": null,
-            "status": "metadata_only",
-            "warnings": [
-              "Identity, iconic appearance, eyes/occlusion and watermark require human review"
-            ]
-          },
-          "code": "image_validation_failed",
-          "message": "Face is too small"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Eric_(206630577).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206625630).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Softhard_(206626223).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:Wedding...%3F%3F%3F_(206958255).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "commons",
-          "source": "https://commons.wikimedia.org/wiki/File:Eric_Kot_20231029.jpg",
-          "code": "source_already_rejected",
-          "message": "Previously rejected photo source; search a different image, not this URL"
-        }
-      ]
-    },
-    {
-      "personId": "t1500_0107",
-      "name": "陳明章",
-      "status": "no_suitable_source",
-      "newCandidateIds": [],
-      "errors": [
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2023_TTXC%E9%AB%98%E9%9B%84%E9%9B%BB%E5%BD%B1%E7%AF%80-%E9%99%B3%E6%98%8E%E7%AB%A0.jpg",
-          "code": "license_unclear",
-          "message": "Source metadata retained; no download without reusable licence metadata"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:06.25_%E7%B8%BD%E7%B5%B1%E5%81%95%E5%90%8C%E5%89%AF%E7%B8%BD%E7%B5%B1%E5%87%BA%E5%B8%AD%E3%80%8C%E7%AB%AF%E5%8D%88%E8%AC%9D%E5%B9%B3%E5%AE%89_%E8%97%9D%E6%96%87%E5%A4%A7%E5%8C%AF%E6%BC%94%E3%80%8D%E6%B4%BB%E5%8B%95_(50044409142).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:2012-02-28_Ming_Chang_Chen_%26_Band.jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:830%E9%81%8A%E8%A1%8C_MiNe-10D_372-7257FG_(2814469931).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        },
-        {
-          "provider": "entity",
-          "source": "https://commons.wikimedia.org/wiki/File:830%E9%81%8A%E8%A1%8C_MiNe-10D_372-7272FG_(2815321102).jpg",
-          "code": "identity_unconfirmed",
-          "message": "Search result alone does not establish depicted identity"
-        }
-      ]
-    }
-  ],
-  "visualAssetCommit": "30e5151c825a0326073ffcb980c8f74f11792589",
-  "publicReviewMarkdown": "https://github.com/Brant9972/find-diff/blob/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.md",
-  "publicReviewJson": "https://raw.githubusercontent.com/Brant9972/find-diff/refs/heads/automation/celebrity-photo-pipeline/singer/expansion-1500/pipeline/review-public/latest.json",
-  "publicVisualManifest": {
-    "assetManifestPath": "expansion-1500/pipeline/review-assets/20261102T065108Z-62819cdc/assets-index.json",
-    "contactSheets": [],
-    "manualContactSheets": [],
-    "manualSourceCount": 0,
-    "manualSourcePeopleCount": 0,
-    "manualSources": [],
-    "peopleCount": 0,
-    "photoCount": 0,
-    "photos": [],
-    "releaseGate": "DRAFT_ONLY_NOT_PLAYABLE",
-    "revealSheets": [],
-    "runId": "20261102T065108Z-62819cdc",
-    "schemaVersion": 1,
-    "sourceReviewSha256": "1fbc97f61fd967fe941a993f3fa0533e8b5d3b5ea7f39734929b40c01a203e7c",
-    "assetCommit": "30e5151c825a0326073ffcb980c8f74f11792589",
-    "assetManifest": {
-      "rawUrl": "https://raw.githubusercontent.com/Brant9972/find-diff/30e5151c825a0326073ffcb980c8f74f11792589/singer/expansion-1500/pipeline/review-assets/20261102T065108Z-62819cdc/assets-index.json",
-      "githubViewUrl": "https://github.com/Brant9972/find-diff/blob/30e5151c825a0326073ffcb980c8f74f11792589/singer/expansion-1500/pipeline/review-assets/20261102T065108Z-62819cdc/assets-index.json",
-      "githubRawUrl": "https://github.com/Brant9972/find-diff/blob/30e5151c825a0326073ffcb980c8f74f11792589/singer/expansion-1500/pipeline/review-assets/20261102T065108Z-62819cdc/assets-index.json?raw=true"
-    },
-    "reviewInstructions": [
-      "These are actual committed JPEG/PNG pixels. Open rawUrl directly; githubViewUrl is a browser fallback.",
-      "Review pending candidates only. Loading pixels or source metadata is not identity, recognizability or rights approval.",
-      "Match decisions to personId + candidateId + gameSha256. Do not approve by list position.",
-      "Write the next review to singer/expansion-1500/pipeline/chatgpt-review/latest.json on automation/celebrity-photo-pipeline."
-    ]
-  }
+  "batchPeople": [],
+  "reviewPublicationPending": true,
+  "items": []
 }

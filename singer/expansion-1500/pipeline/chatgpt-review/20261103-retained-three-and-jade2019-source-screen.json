@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03",
+  "reviewer": "ChatGPT five-stage retained draft and original Commons visual screening",
+  "liveBaselineSha": "e9fb5567045345fa2fb3fc8ee90037ac2fa32a97",
+  "sourceBranchBaselineSha": "178e1aa4f89a062f2fb46d9136a2099a382cb93c",
+  "releaseGate": "SOURCE_SCREENING_ONLY_NOT_PLAYABLE",
+  "contactSheetPath": "singer/expansion-1500/pipeline/review-assets/retained-drafts-20261102/contact-sheet.png",
+  "summary": {
+    "peopleScreened": 3,
+    "exactSourcesRejected": 3,
+    "exactSourcesHeld": 1,
+    "approvedForGame": 0
+  },
+  "notes": "拒絕僅限精確照片來源，不刪除候選人物；不得用人審退件推定人物本身不適合。曹晏豪只完成視覺初篩，未完成原始圖說/授權核實。",
+  "decisions": [
+    {
+      "personId": "t1500_0308",
+      "candidateId": "c1500-0308",
+      "name": "曹晏豪",
+      "source": "https://commons.wikimedia.org/wiki/File:20191016%E9%9B%BB%E5%BD%B1%E9%A6%96%E6%98%A0%E6%9C%83.png",
+      "gameSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
+      "decision": "hold_exact_source",
+      "reason": "已目視 600×720 JPG 與五階段 contact sheet：五官可見、沒有明顯遮擋；但照片偏軟，且 Commons 原始檔頁面/貼圖說、PlayIN 來源影片與 CC BY 3.0 授權核驗尚未完成，不能宣稱合格或上線。維基百科人物頁有《聖人大盜》首映會圖說，不能取代原始圖片貼圖說及來源權利審查。",
+      "fiveStagesReviewed": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "rightsVerified": false,
+      "sourceAdjacentCaptionVerified": false,
+      "qualityPass": "conditional_visual_only",
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0474",
+      "candidateId": "c1500-0474",
+      "name": "蔡黃汝",
+      "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg",
+      "gameSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
+      "decision": "reject_exact_source",
+      "reason": "五階段 600×720 顯示嚴重暗部顆粒與柔化細節；2011 年肖像與現今熟悉形象落差較大，眼睛／鼻子階段辨識品質不足。此為 2011 Commons 圖，不是先前已拒絕的 2024 麥克風照片。",
+      "fiveStagesReviewed": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "sourceAdjacentCaption": "豆花妹《情豆花開》台中簽唱會",
+      "artist": "Onlymyself65536",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalDimensions": [
+        1010,
+        1428
+      ],
+      "rightsVerifiedFromCommonsPage": true,
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0481",
+      "candidateId": "c1500-0481",
+      "name": "關心妍",
+      "source": "https://commons.wikimedia.org/wiki/File:20080112-JadeKwan.jpg",
+      "gameSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
+      "decision": "reject_exact_source",
+      "reason": "原始照片僅 335×545，放大成 600×720 後眼部細節偏軟；雖五官未被遮擋，五階段辨識品質不達標。只拒絕這張舊圖，不排除關心妍本人。",
+      "fiveStagesReviewed": [
+        "eyes",
+        "nose",
+        "mouth",
+        "chin",
+        "full"
+      ],
+      "sourceAdjacentCaption": "Jade Kwan 關心妍",
+      "artist": "Vincent Kwok (Jade Online)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalDimensions": [
+        335,
+        545
+      ],
+      "rightsVerifiedFromCommonsPage": true,
+      "eligibleForLive": false
+    },
+    {
+      "personId": "t1500_0481",
+      "candidateId": null,
+      "name": "關心妍",
+      "source": "https://commons.wikimedia.org/wiki/File:2019%E5%B9%B47%E6%9C%8813%E6%97%A5%E9%97%9C%E5%BF%83%E5%A6%8D%E6%99%82%E5%88%BB%E8%A7%B8%E5%8B%95%E6%BC%94%E5%94%B1%E6%9C%832019.jpg",
+      "gameSha256": null,
+      "decision": "reject_exact_source",
+      "reason": "已直接目視 Commons 6,240×4,160 原圖：舞台上的人物雙眼閉合，眼睛揭露關卡不可用。麥克風雖在胸前未遮嘴，但高像素與 CC 授權不足以彌補閉眼。此來源未製作或核准遊戲裁切，不可宣稱完成五階段。",
+      "originalVisualReviewed": true,
+      "gameCrop600x720Reviewed": false,
+      "fiveStagesReviewed": [],
+      "sourceAdjacentCaption": "2019年7月13日關心妍時刻觸動演唱會2019",
+      "artist": "Jadefanclub",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "originalDimensions": [
+        6240,
+        4160
+      ],
+      "rightsVerifiedFromCommonsPage": true,
+      "eligibleForLive": false
+    }
+  ]
+}

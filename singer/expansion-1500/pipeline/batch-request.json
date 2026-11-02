@@ -1,17 +1,21 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261101-exact-two-person-diagnostic-complete-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261102-three-pinned-qid-identity-source-diagnostic",
+  "mode": "collect",
+  "targetPeople": 3,
+  "plannedPersonIds": [
+    "t1500_0092",
+    "t1500_0093",
+    "t1500_0094"
+  ],
+  "retryFailed": true,
   "providers": [
     "entity",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 75,
-  "maxCandidates": 1,
-  "purpose": "DRAFT ONLY; no main or deploy. 41322972146 checked two selectedNew exact-source IDs: t1500_0564 skipped due cooldown until 2026-11-04T22:11:45Z, t1500_0107 scanned with 5 Commons metadata but 0 downloaded, including government-source 2023 photo marked license_unclear. Do not bypass rights gate or repeat without independent GWOIA grant evidence. Preserve review assets and stop source searches."
+  "maxMinutes": 16,
+  "personSeconds": 100,
+  "maxCandidates": 2,
+  "purpose": "Three previously unapproved selectedNew Taiwanese performers 江祖平 Q8975739, 郭品超 Q710553, 寇世勳 Q8980013. Pinned exact QID and native-name Commons metadata only; avoid old 20/40/200 batches. Never treat P18, caption, CC metadata or auto-crop as human approval. Stage candidate pixels and five-stage sheets only; do not touch main, creators or Pages. Check fresh main SHA 7ba8951a375b68ad25d9e40f97a9c85ba7c6c63b for dedupe; no live promotion without manual review."
 }

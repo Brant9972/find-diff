@@ -13,6 +13,7 @@ on:
       - 'singer/qa_expansion_release_gate.py'
       - 'singer/test_expansion_release_gate.py'
       - 'singer/qa-expansion-baseline-20261102.json'
+      - 'singer/qa-expansion-identity-baseline-20261102.json'
       - 'singer/hints.json'
       - 'singer/hint-candidates.json'
       - 'singer/eligibility-review.json'

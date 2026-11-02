@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "requestId": "20261102-qid-diagnostic-complete-render-only",
-  "mode": "render_only",
-  "targetPeople": 0,
-  "plannedPersonIds": [],
-  "retryFailed": false,
+  "requestId": "20261102-wangzhilei-exact-foreignrepo-one-person",
+  "mode": "source_diagnostic",
+  "targetPeople": 1,
+  "plannedPersonIds": [
+    "t1500_0381"
+  ],
+  "retryFailed": true,
   "providers": [
-    "entity",
     "commons"
   ],
   "workers": 1,
-  "maxMinutes": 8,
-  "personSeconds": 85,
+  "maxMinutes": 7,
+  "personSeconds": 90,
   "maxCandidates": 1,
-  "purpose": "DRAFT ONLY, NO MAIN: exact Q5 CommonsWiki three-person diagnostic completed, zero new playable crops; render-only safety reset, no repeat search"
+  "purpose": "DRAFT ONLY: one-person exact Commons / foreign-repository metadata diagnostic for 王芷蕾, nonstandard rights remain unapproved; do not search previously rejected images or modify production"
 }

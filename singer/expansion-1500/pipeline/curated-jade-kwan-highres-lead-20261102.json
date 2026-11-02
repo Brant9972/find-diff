@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "researchedAt": "2026-11-02",
-  "releaseGate": "CURATED_SOURCE_LEAD_NOT_APPROVED",
+  "releaseGate": "REJECTED_EXACT_SOURCE_NOT_PLAYABLE",
   "personId": "t1500_0481",
   "name": "關心妍",
   "replacesRejectedSource": false,
@@ -24,7 +24,11 @@
   "risks": [
     "concert stage may include microphone over mouth",
     "image is landscape; face may be small",
-    "do not reuse the 335x545 legacy photo without further quality review"
+    "do not reuse the 335x545 legacy photo without further quality review",
+    "confirmed original source shows closed eyes; unusable for eye reveal"
   ],
-  "nextAction": "Download exact Commons original only when CDN permits; verify portrait subject and face area, create 600x720 and five-stage preview; reject if microphone or second face obstructs; do not auto-approve."
+  "nextAction": "Do not reuse this exact 2019 Commons photograph; seek another verified licensed portrait with eyes open and unobstructed face.",
+  "sourceOriginalVisualScreened": true,
+  "sourceOriginalVisualFinding": "eyes_closed",
+  "reviewRecord": "singer/expansion-1500/pipeline/chatgpt-review/20261103-retained-three-and-jade2019-source-screen.json"
 }

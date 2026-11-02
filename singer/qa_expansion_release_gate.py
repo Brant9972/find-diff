@@ -23,6 +23,7 @@ STAGES = ("eyes", "nose", "mouth", "chin", "full")
 CC = re.compile(r"^CC (BY|BY-SA) (1\.0|2\.0|2\.5|3\.0|4\.0)$", re.I)
 SHA256 = re.compile(r"^[0-9a-f]{64}$", re.I)
 QID = re.compile(r"^Q[1-9][0-9]*$")
+IDENTITY_BASELINE_GIT_BLOB = "ff9e80a8e586f34113d2b32174ed08530c643c69"
 
 
 def normalized_answer(value):
@@ -37,6 +38,18 @@ def playable_answers(entry):
     return {normalized_answer(answer) for answer in
             [entry.get("name"), *aliases] if isinstance(answer, str)
             and normalized_answer(answer)}
+
+
+def identity_snapshot(bank, entry):
+    """Frozen accepted answers and identity IDs, separate from photo rights."""
+    return {
+        "id": entry.get("id"),
+        "bank": bank,
+        "name": entry.get("name"),
+        "aliases": copy.deepcopy(entry.get("aliases") or []),
+        "wikidataId": entry.get("wikidataId") or None,
+        "wikidataQid": entry.get("wikidataQid") or None,
+    }
 
 
 def snapshot(bank, entry):
@@ -90,7 +103,7 @@ def verify_reveal(reveal):
                         (reveal[s] for s in STAGES[1:])))
 
 
-def validate(banks, baseline, root, hints):
+def validate(banks, baseline, root, hints, identity_baseline=None):
     if baseline.get("schemaVersion") != 1 or not re.fullmatch(
             r"[0-9a-f]{40}", baseline.get("baselineMainSha", "")):
         raise ValueError("Invalid pinned baseline SHA")
@@ -139,6 +152,15 @@ def validate(banks, baseline, root, hints):
                     key: value for key, value in previous.items()
                     if key != "photoGitBlobSha"
                 }
+                if identity_baseline is not None:
+                    pinned_identity = identity_baseline.get(pid)
+                    if pinned_identity is None:
+                        errors.append(f"{pid}: missing frozen identity snapshot")
+                        same_metadata = False
+                    elif identity_snapshot(bank, entry) != pinned_identity:
+                        # Alias-only or QID-only edits must not bypass the
+                        # historical portrait release gate.
+                        same_metadata = False
             else:
                 same_pixels = same_metadata = False
             # A JPEG overwritten at the same path, or altered reveal geometry,
@@ -226,7 +248,19 @@ def main():
     banks = {b: json.loads((root / b).read_text(encoding="utf-8"))["questions"] for b in BANKS}
     baseline = json.loads((root / "qa-expansion-baseline-20261102.json").read_text(encoding="utf-8"))
     hints = json.loads((root / "hints.json").read_text(encoding="utf-8"))
-    result = validate(banks, baseline, root, hints)
+    identity_path = root / "qa-expansion-identity-baseline-20261102.json"
+    if git_blob_sha(identity_path) != IDENTITY_BASELINE_GIT_BLOB:
+        raise ValueError("Frozen identity baseline was changed")
+    identity_data = json.loads(identity_path.read_text(encoding="utf-8"))
+    if (identity_data.get("schemaVersion") != 1
+            or identity_data.get("baselineMainSha") !=
+            "de474b7b1b691ac3a98444bdbff48731fe568764"):
+        raise ValueError("Invalid frozen identity baseline")
+    identity_rows = identity_data.get("people", [])
+    identity_baseline = {row["id"]: row for row in identity_rows}
+    if len(identity_rows) != len(identity_baseline):
+        raise ValueError("Duplicate IDs in frozen identity baseline")
+    result = validate(banks, baseline, root, hints, identity_baseline)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if result["errors"]:
         raise SystemExit(1)

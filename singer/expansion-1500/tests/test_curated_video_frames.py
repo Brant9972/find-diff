@@ -58,6 +58,58 @@ class CuratedVideoFrameResearchTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         module.commons_video_url(lead)
 
+
+    def test_exact_sha1_pinned_fallback_only_on_api_403(self):
+        import requests
+        lead = module.select_lead("t1500_0094")
+        url = module.pinned_original_url(lead)
+        self.assertTrue(url.startswith("https://upload.wikimedia.org/wikipedia/commons/"))
+        class FailedResponse:
+            def __init__(self, code):
+                self.status_code = code
+            def raise_for_status(self):
+                raise requests.HTTPError("blocked")
+        with patch.object(module.requests, "get", return_value=FailedResponse(403)):
+            self.assertEqual(module.commons_video_url(lead), url)
+        with patch.object(module.requests, "get", return_value=FailedResponse(429)):
+            with self.assertRaises(requests.HTTPError):
+                module.commons_video_url(lead)
+        for key, value in (("commonsOriginalFileUrl", "https://evil.example/a.webm"),
+                           ("commonsOriginalSha1", "invalid"),
+                           ("commonsOriginalSizeBytes", module.MAX_BYTES + 1)):
+            modified = dict(lead, **{key: value})
+            with self.subTest(key=key):
+                with self.assertRaises(ValueError):
+                    module.pinned_original_url(modified)
+
+    def test_download_checks_pinned_original_sha1_and_size(self):
+        import hashlib
+        payload = b"v" * 2048
+        url = module.pinned_original_url(module.select_lead("t1500_0094"))
+        class Response:
+            history = []
+            headers = {"Content-Length": str(len(payload))}
+            def __init__(self):
+                self.url = url
+            def __enter__(self):
+                return self
+            def __exit__(self, *args):
+                return False
+            def raise_for_status(self):
+                pass
+            def iter_content(self, _):
+                yield payload
+        with tempfile.TemporaryDirectory() as temp:
+            target = Path(temp) / "source.webm"
+            with patch.object(module.requests, "get", return_value=Response()):
+                module.download_video(url, target, expected_sha1=hashlib.sha1(payload).hexdigest(),
+                                      expected_size=len(payload))
+                self.assertTrue(target.is_file())
+                with self.assertRaisesRegex(ValueError, "size/SHA-1"):
+                    module.download_video(url, target, expected_sha1="0" * 40,
+                                          expected_size=len(payload))
+                self.assertFalse(target.exists())
+
     def test_refuse_review_output_inside_repository(self):
         from unittest.mock import patch
         repo_root = module.ROOT.parents[1]

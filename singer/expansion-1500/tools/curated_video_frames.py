@@ -9,9 +9,10 @@ No production files, state.json, or review decisions are changed.
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 import requests
 from PIL import Image, ImageDraw
@@ -44,15 +45,33 @@ def select_lead(person_id):
     return lead
 
 
+def pinned_original_url(lead):
+    """Only one exact Commons original, pinned to independent page SHA-1 and size."""
+    url = lead.get("commonsOriginalFileUrl", "")
+    filename = unquote(lead["commonsSourcePage"].split("/wiki/File:", 1)[1]).replace("_", " ")
+    parsed = urlparse(url)
+    if (not allowed_video_url(url)
+            or unquote(parsed.path.rsplit("/", 1)[-1]).replace("_", " ") != filename
+            or not re.fullmatch(r"[a-f0-9]{40}", lead.get("commonsOriginalSha1", ""))
+            or not 1024 <= lead.get("commonsOriginalSizeBytes", 0) <= MAX_BYTES):
+        raise ValueError("Pinned Commons original URL, checksum or size invalid")
+    return url
+
+
 def commons_video_url(lead):
     # Query only the exact human-curated Commons file; never run name search.
     filename = lead["commonsSourcePage"].split("/wiki/File:", 1)[1]
-    from urllib.parse import unquote
     title = "File:" + unquote(filename).replace("_", " ")
     response = requests.get("https://commons.wikimedia.org/w/api.php",
                             params={"action": "query", "format": "json", "titles": title,
                                     "prop": "videoinfo", "viprop": "url|size"}, timeout=25)
-    response.raise_for_status()
+    try:
+        response.raise_for_status()
+    except requests.HTTPError:
+        # One exact, SHA-1-pinned original; never general search or a retry loop.
+        if response.status_code == 403:
+            return pinned_original_url(lead)
+        raise
     pages = response.json()["query"]["pages"]
     if len(pages) != 1:
         raise ValueError("Commons returned multiple pages")
@@ -70,7 +89,7 @@ def commons_video_url(lead):
     return url
 
 
-def download_video(url, target):
+def download_video(url, target, expected_sha1=None, expected_size=None):
     if not allowed_video_url(url):
         raise ValueError("Disallowed video URL")
     with requests.get(url, stream=True, timeout=(15, 45)) as response:
@@ -82,6 +101,7 @@ def download_video(url, target):
         if int(response.headers.get("Content-Length", "0")) > MAX_BYTES:
             raise ValueError("Video exceeds download limit")
         size = 0
+        digest = hashlib.sha1()
         with target.open("wb") as stream:
             for chunk in response.iter_content(256 * 1024):
                 if not chunk:
@@ -90,10 +110,15 @@ def download_video(url, target):
                 if size > MAX_BYTES:
                     target.unlink(missing_ok=True)
                     raise ValueError("Video exceeded streaming limit")
+                digest.update(chunk)
                 stream.write(chunk)
     if size < 1024:
         target.unlink(missing_ok=True)
         raise ValueError("Empty video download")
+    if ((expected_size is not None and size != expected_size)
+            or (expected_sha1 is not None and digest.hexdigest() != expected_sha1)):
+        target.unlink(missing_ok=True)
+        raise ValueError("Downloaded Commons original size/SHA-1 does not match pinned file")
 
 
 def sha256(path):
@@ -171,7 +196,8 @@ def main():
     if args.download:
         url = commons_video_url(lead)
         video = output / "source.webm"
-        download_video(url, video)
+        download_video(url, video, expected_sha1=lead['commonsOriginalSha1'],
+                       expected_size=lead['commonsOriginalSizeBytes'])
     else:
         video = args.video_file.resolve()
         if not video.is_file() or video.stat().st_size > MAX_BYTES:

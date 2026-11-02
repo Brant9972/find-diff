@@ -3,8 +3,6 @@ on:
   push:
     branches: [automation/celebrity-photo-pipeline]
     paths:
-      - .github/workflows/curated-still-original-diagnostic.yml
-      - singer/expansion-1500/tools/curated_still_original.py
       - singer/expansion-1500/pipeline/curated-yang-lihua-taipei-2019-source-lead-20261103.json
   pull_request:
     paths:
@@ -53,5 +51,6 @@ jobs:
           if-no-files-found: warn
           path: |
             ${{ runner.temp }}/curated-yang-lihua-2019/manifest.json
+            ${{ runner.temp }}/curated-yang-lihua-2019/original-sha1-verified.jpg
             ${{ runner.temp }}/curated-yang-lihua-2019/draft-600x720.jpg
             ${{ runner.temp }}/curated-yang-lihua-2019/contact-sheet.jpg

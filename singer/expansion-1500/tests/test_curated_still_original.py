@@ -4,7 +4,7 @@ import io
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 from PIL import Image
 
@@ -17,10 +17,11 @@ URL = "https://upload.wikimedia.org/wikipedia/commons/9/99/Jade_Kwan_2019.jpg"
 
 
 class FakeResponse:
-    def __init__(self, url=URL, status=200, data=b"test"):
+    def __init__(self, url=URL, status=200, data=b"test", headers=None):
         self.url = url
         self.status_code = status
         self.data = data
+        self.headers = headers or {}
         self.closed = False
 
     def iter_content(self, chunk_size=65536):
@@ -66,6 +67,32 @@ class CuratedStillOriginalTest(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "source_http_403"):
             diag.fetch_exact(URL, 4, "0" * 40, session=session)
         self.assertEqual(session.get.call_count, 1)
+
+    def test_rate_limit_does_not_immediately_retry_and_retains_server_cooldown(self):
+        for code, cooldown in [(429, "7200"), (503, "Wed, 04 Nov 2026 00:00:00 GMT")]:
+            with self.subTest(code=code):
+                session = Mock()
+                response = FakeResponse(status=code, headers={"Retry-After": cooldown})
+                session.get.return_value = response
+                with self.assertRaises(diag.SourceHTTPError) as caught:
+                    diag.fetch_exact(URL, 4, "0" * 40, session=session)
+                self.assertEqual(str(caught.exception), f"source_http_{code}")
+                self.assertEqual(caught.exception.retry_after, cooldown)
+                self.assertEqual(session.get.call_count, 1)
+                self.assertTrue(response.closed)
+
+    def test_rate_limit_manifest_is_not_approval_and_records_retry_after(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(diag, "fetch_exact", side_effect=diag.SourceHTTPError(429, "3600")):
+                result = diag.run(Path(tmp))
+            self.assertEqual(result["status"], "source_blocked")
+            self.assertEqual(result["error"], "source_http_429")
+            self.assertEqual(result["retryAfterHeader"], "3600")
+            self.assertEqual(result["retryPolicy"], "no_immediate_retry_wait_for_source_cooldown")
+            self.assertFalse(result["humanReviewed"])
+            self.assertFalse(result["liveUpdated"])
+            self.assertFalse(result["rightsAndIdentityFinalApproval"])
+            self.assertEqual(result, __import__("json").loads((Path(tmp) / "manifest.json").read_text(encoding="utf-8")))
 
     def test_preview_is_not_an_approval(self):
         original = Image.new("RGB", (100, 120), (130, 120, 100))

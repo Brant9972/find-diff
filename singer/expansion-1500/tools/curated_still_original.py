@@ -10,7 +10,6 @@ import argparse
 import hashlib
 import io
 import json
-import time
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -44,45 +43,48 @@ def allowed_original_url(url: str) -> bool:
     )
 
 
+class SourceHTTPError(RuntimeError):
+    """One-shot source denial with optional server-specified cooldown."""
+
+    def __init__(self, status_code: int, retry_after: str | None = None):
+        super().__init__(f"source_http_{status_code}")
+        self.status_code = status_code
+        self.retry_after = (retry_after or "").strip()[:80]
+
+
 def fetch_exact(url: str, expected_size: int, expected_sha1: str, session=None) -> bytes:
+    """Attempt exactly one original fetch. Never hammer a 429/503 with short retries."""
     if not allowed_original_url(url):
         raise ValueError("Only a pinned Wikimedia Commons JPEG original is allowed")
     if expected_size <= 0 or expected_size > MAX_BYTES:
         raise ValueError("Source size exceeds bounded diagnostic cap")
     session = session or requests.Session()
-    response = None
-    for attempt in range(2):
-        response = session.get(
-            url, stream=True, allow_redirects=True, timeout=(8, 20),
-            headers={"User-Agent": "FindDiff-CuratedPortraitQA/1.0 (source integrity diagnostic)"},
-        )
+    response = session.get(
+        url, stream=True, allow_redirects=True, timeout=(8, 20),
+        headers={"User-Agent": "FindDiff-CuratedPortraitQA/1.0 (source integrity diagnostic)"},
+    )
+    try:
         if not allowed_original_url(response.url):
-            response.close()
             raise ValueError("Untrusted download redirect")
-        if response.status_code in (429, 503) and attempt == 0:
-            response.close()
-            time.sleep(2)
-            continue
         if response.status_code != 200:
-            code = response.status_code
-            response.close()
-            raise RuntimeError(f"source_http_{code}")
-        try:
-            data = bytearray()
-            for chunk in response.iter_content(chunk_size=65536):
-                if chunk:
-                    data.extend(chunk)
-                    if len(data) > MAX_BYTES:
-                        raise ValueError("Original exceeds bounded download cap")
-        finally:
-            response.close()
-        if len(data) != expected_size:
-            raise ValueError(f"Original size mismatch: {len(data)} != {expected_size}")
-        digest = hashlib.sha1(data).hexdigest()
-        if digest.lower() != expected_sha1.lower():
-            raise ValueError("Original SHA-1 mismatch")
-        return bytes(data)
-    raise RuntimeError("source_retry_exhausted")
+            raise SourceHTTPError(
+                response.status_code,
+                response.headers.get("Retry-After") if response.status_code in (429, 503) else None,
+            )
+        data = bytearray()
+        for chunk in response.iter_content(chunk_size=65536):
+            if chunk:
+                data.extend(chunk)
+                if len(data) > MAX_BYTES:
+                    raise ValueError("Original exceeds bounded download cap")
+    finally:
+        response.close()
+    if len(data) != expected_size:
+        raise ValueError(f"Original size mismatch: {len(data)} != {expected_size}")
+    digest = hashlib.sha1(data).hexdigest()
+    if digest.lower() != expected_sha1.lower():
+        raise ValueError("Original SHA-1 mismatch")
+    return bytes(data)
 
 
 def build_previews(data: bytes, lead: dict, out: Path) -> dict:
@@ -141,6 +143,12 @@ def run(out: Path, session=None) -> dict:
         data = fetch_exact(lead["originalUrl"], lead["originalSizeBytes"], lead["originalSha1"], session=session)
         result.update(build_previews(data, lead, out))
         result["status"] = "download_verified_provisional_crop_created"
+    except SourceHTTPError as exc:
+        result["status"] = "source_blocked"
+        result["error"] = str(exc)
+        if exc.retry_after:
+            result["retryAfterHeader"] = exc.retry_after
+        result["retryPolicy"] = "no_immediate_retry_wait_for_source_cooldown"
     except RuntimeError as exc:
         result["status"] = "source_blocked"
         result["error"] = str(exc)

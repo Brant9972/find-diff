@@ -55,6 +55,17 @@ class SourceHTTPError(RuntimeError):
         self.retry_after = (retry_after or "").strip()[:80]
 
 
+def verify_exact_bytes(data: bytes, expected_size: int, expected_sha1: str) -> bytes:
+    """Validate reusable source bytes before they may be cropped or preserved."""
+    if expected_size <= 0 or expected_size > MAX_BYTES:
+        raise ValueError("Source size exceeds bounded diagnostic cap")
+    if len(data) != expected_size:
+        raise ValueError(f"Original size mismatch: {len(data)} != {expected_size}")
+    if hashlib.sha1(data).hexdigest().lower() != expected_sha1.lower():
+        raise ValueError("Original SHA-1 mismatch")
+    return data
+
+
 def fetch_exact(url: str, expected_size: int, expected_sha1: str, session=None) -> bytes:
     """Attempt exactly one original fetch. Never hammer a 429/503 with short retries."""
     if not allowed_original_url(url):
@@ -82,12 +93,7 @@ def fetch_exact(url: str, expected_size: int, expected_sha1: str, session=None) 
                     raise ValueError("Original exceeds bounded download cap")
     finally:
         response.close()
-    if len(data) != expected_size:
-        raise ValueError(f"Original size mismatch: {len(data)} != {expected_size}")
-    digest = hashlib.sha1(data).hexdigest()
-    if digest.lower() != expected_sha1.lower():
-        raise ValueError("Original SHA-1 mismatch")
-    return bytes(data)
+    return verify_exact_bytes(bytes(data), expected_size, expected_sha1)
 
 
 def build_previews(data: bytes, lead: dict, out: Path) -> dict:
@@ -141,7 +147,8 @@ def build_previews(data: bytes, lead: dict, out: Path) -> dict:
     }
 
 
-def run(out: Path, session=None, lead_path: Path | None = None) -> dict:
+def run(out: Path, session=None, lead_path: Path | None = None,
+        source_file: Path | None = None) -> dict:
     lead_path = lead_path or LEAD
     if lead_path not in APPROVED_DIAGNOSTIC_LEADS.values():
         raise ValueError("Diagnostic source lead is not allowlisted")
@@ -164,7 +171,15 @@ def run(out: Path, session=None, lead_path: Path | None = None) -> dict:
     }
     out.mkdir(parents=True, exist_ok=True)
     try:
-        data = fetch_exact(lead["originalUrl"], lead["originalSizeBytes"], lead["originalSha1"], session=session)
+        if source_file is None:
+            data = fetch_exact(lead["originalUrl"], lead["originalSizeBytes"], lead["originalSha1"], session=session)
+            result["sourceRetrieval"] = "exact_remote_once"
+        else:
+            data = verify_exact_bytes(source_file.read_bytes(), lead["originalSizeBytes"], lead["originalSha1"])
+            result["sourceRetrieval"] = "sha_verified_local_reuse"
+        # Keep verified original pixels in the short-lived review artifact. A future
+        # recrop must not hit Commons again just because the first crop was rejected.
+        (out / "original-sha1-verified.jpg").write_bytes(data)
         result.update(build_previews(data, lead, out))
         result["status"] = "download_verified_provisional_crop_created"
     except SourceHTTPError as exc:
@@ -190,8 +205,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--lead", choices=sorted(APPROVED_DIAGNOSTIC_LEADS), default=LEAD.name)
+    parser.add_argument("--source-file", type=Path, help="Reuse a previously SHA-verified local original; no HTTP")
     args = parser.parse_args()
-    result = run(args.out, lead_path=APPROVED_DIAGNOSTIC_LEADS[args.lead])
+    result = run(args.out, lead_path=APPROVED_DIAGNOSTIC_LEADS[args.lead], source_file=args.source_file)
     print(json.dumps(result, ensure_ascii=False))
     return 2 if result["status"] == "integrity_or_image_validation_failed" else 0
 

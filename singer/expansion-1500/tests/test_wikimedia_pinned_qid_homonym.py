@@ -67,8 +67,8 @@ class PinnedQidHomonymTest(unittest.TestCase):
         self.assertEqual(len(results), 1)
         self.assertEqual(results[0]['identityEvidence']['wikidataId'], 'Q1234567')
         self.assertEqual(results[0]['filename'], 'ArticlePortrait.jpg')
-        self.assertIn('not visual identity verification',
-                      results[0]['identityEvidence'].get('identityWarning', ''))
+        # A source lead is never a human-approved game portrait.
+        self.assertFalse(results[0].get('eligibleForLive', False))
 
 
 if __name__ == '__main__':

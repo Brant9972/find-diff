@@ -81,11 +81,20 @@ class SourceLedReleasePlanTest(unittest.TestCase):
                                         for pid in request['plannedPersonIds']))
             self.assertNotIn('openverse', request['providers'])
             self.assertIn('exact', request['purpose'].casefold())
-        self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop'))
+        self.assertIn(request['mode'], ('render_only', 'search', 'manual_recrop', 'import_review_rejections'))
         ids = request['plannedPersonIds']
-        if request['mode'] == 'render_only':
+        if request['mode'] in {'render_only', 'import_review_rejections'}:
             self.assertEqual(ids, [])
             self.assertEqual(request['targetPeople'], 0)
+            if request['mode'] == 'import_review_rejections':
+                import sys
+                sys.path.insert(0, str(root))
+                from media_pipeline.review import validate_rejection_only_document
+                review_path = Path(request['reviewDecisionPath'])
+                self.assertEqual(review_path.parent, Path('singer/expansion-1500/pipeline/chatgpt-review'))
+                self.assertTrue(review_path.name.endswith('-rejections-only.json'))
+                review = json.loads((root.parent.parent / review_path).read_text(encoding='utf-8'))
+                self.assertGreater(len(validate_rejection_only_document(review)), 0)
         else:
             # A controlled diagnostic may replace a finished render-only
             # request. Do not freeze the old request values into the test.

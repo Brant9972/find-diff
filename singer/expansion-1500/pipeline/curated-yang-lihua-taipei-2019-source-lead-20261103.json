@@ -32,17 +32,17 @@
   },
   "sourceVisualPreview": {
     "inspected": true,
-    "description": "Original Wikimedia 1280x1920 pixels rendered for source-only visual screening: two women. Right-hand woman in black appears consistent with 楊麗花 per source caption and depicts metadata; eyes, nose and mouth visible. Left-hand 陳亞蘭 in red stage costume must be entirely excluded. This is not a game crop or independent face identification.",
-    "originalDownloadedAndShaVerified": false,
-    "crop600x720Created": false,
-    "fiveStagePixelsReviewed": false,
+    "description": "Original Wikimedia 1280x1920 pixels rendered for source-only visual screening: two women. Right-hand woman in black appears consistent with 楊麗花 per source caption and depicts metadata; eyes, nose and mouth visible. Left-hand 陳亞蘭 in red stage costume must be entirely excluded. This is not a game crop or independent face identification. GitHub Actions exact-original SHA-1 confirmed 2026-11-03; first provisional crop reviewed and rejected because nose stage revealed mouth prematurely and red costume intruded lower-left.",
+    "originalDownloadedAndShaVerified": true,
+    "crop600x720Created": true,
+    "fiveStagePixelsReviewed": true,
     "independentPicturedFaceConfirmed": false
   },
   "blockingChecks": [
     "Original Taipei government page and whether this particular image falls within its non-contracted reusable materials must be verified; Commons licence statement alone is not independent rights clearance.",
     "CNA independently captions Yang Li-hua on the right and Chen Ya-lan on the left at the same 2019-09-23 press event; confirm the selected Wikimedia source crop corresponds to that arrangement, with no second face visible.",
     "Download exactly this source from Wikimedia only if allowed, check SHA-1 176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3; no broad batch or alternative same-name images.",
-    "Crop only the right-hand subject to 600×720 without any portion of the second face; reject if insufficient pixels, eye stage weak, or background face leaks.",
+    "Recreate revised 400x480 source crop [690,330,1090,810] to 600x720, exclude red sleeve/second face; inspect custom reveal rectangles against actual singer/game.js q.reveal support.",
     "Inspect actual eyes/nose/mouth/chin/full five-stage previews; separately verify work hint 《忠孝節義》, aliases, QID and source attribution before PR/QA/main/Pages.",
     "Use pinned originalUrl, originalSizeBytes, originalSha1 and provisionalOriginalPixelCropBox only for a single non-production diagnostic; if 429/503, do not retry immediately."
   ],
@@ -57,10 +57,10 @@
     1920
   ],
   "provisionalOriginalPixelCropBox": [
-    640,
-    270,
-    1180,
-    918
+    690,
+    330,
+    1090,
+    810
   ],
   "rightsEvidence": {
     "checkedAt": "2026-11-03",
@@ -81,5 +81,52 @@
     "caption": "國寶級歌仔戲天王楊麗花（右）與愛徒陳亞蘭（左）出席《忠孝節義》記者會",
     "scope": "Independent caption for another photograph at the same event; supports which named person stood on each side, not independent confirmation of Wikimedia photographer or rights",
     "workHintVerified": "《忠孝節義》2019-09-24台視首播"
+  },
+  "preliminaryDiagnostics": {
+    "workflowRun": "https://github.com/Brant9972/find-diff/actions/runs/41530584582",
+    "artifactId": 13180709261,
+    "exactOriginalVerified": true,
+    "originalSha1": "176c36fcd5a039936b7f2b31bbdc6da10fd5b7a3",
+    "firstProvisionalCrop": [
+      640,
+      270,
+      1180,
+      918
+    ],
+    "firstProvisionalCropSha256": "c211a084104e36c8c343322f01319d96c071c13a9e4eaeef0a8f0b72305181a5",
+    "visualFinding": "Actual five-stage montage viewed: subject face clear, eyes open, mouth unobstructed, second face excluded. However nose-stage window prematurely reveals the mouth and a red sleeve intrudes at lower-left. First provisional crop not approved.",
+    "gate": "REJECT_FIRST_CROP_REVISE_AND_REVIEW"
+  },
+  "provisionalReveal": {
+    "eyes": [
+      0.08,
+      0.38,
+      0.92,
+      0.46
+    ],
+    "nose": [
+      0.08,
+      0.38,
+      0.92,
+      0.55
+    ],
+    "mouth": [
+      0.08,
+      0.38,
+      0.92,
+      0.63
+    ],
+    "chin": [
+      0.08,
+      0.38,
+      0.92,
+      0.74
+    ],
+    "full": [
+      0,
+      0,
+      1,
+      1
+    ]
   }
 }

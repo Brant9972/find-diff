@@ -12,7 +12,8 @@ SHA = "a" * 40
 
 def person(pid="t1500_0001"):
     return {
-        "id": pid, "name": "測試歌手", "photo": f"photos/{pid}.jpg",
+        "id": pid, "name": "測試歌手", "aliases": ["測試歌手"],
+        "photo": f"photos/{pid}.jpg",
         "photoStatus": "reviewed", "eligibility": "approved",
         "humanReviewed": True,
         "attribution": {"source": "https://commons.wikimedia.org/wiki/File:Test.jpg",
@@ -81,6 +82,53 @@ class ExpansionGateTest(unittest.TestCase):
         self.row["reveal"]["nose"][3] = 0.5
         self.row["reveal"]["nose"][0] = 0.2
         self.assertFalse(verify_reveal(self.row["reveal"]))
+
+    def test_new_canonical_name_matching_existing_alias_fails(self):
+        # 羅璧玲 is an accepted former name for existing 羅霈穎.
+        self.row["name"] = "羅璧玲"
+        self.row["aliases"] = ["羅璧玲"]
+        self.banks["actors.json"] = [{
+            "id": "x1000_p0217", "name": "羅霈穎",
+            "aliases": ["羅霈穎", "羅璧玲"]
+        }]
+        self.assertTrue(any("playable name/alias" in e
+                            for e in self.run_gate()["errors"]))
+
+    def test_new_alias_matching_existing_canonical_name_fails(self):
+        self.row["aliases"].append("羅霈穎")
+        self.banks["actors.json"] = [{
+            "id": "x1000_p0217", "name": "羅霈穎",
+            "aliases": ["羅霈穎"]
+        }]
+        self.assertTrue(any("playable name/alias" in e
+                            for e in self.run_gate()["errors"]))
+
+    def test_new_wikidata_qid_matching_existing_person_fails(self):
+        self.row["wikidataId"] = "Q123456"
+        self.banks["actors.json"] = [{
+            "id": "a101", "name": "其他人物",
+            "aliases": ["其他人物"], "wikidataId": "Q123456"
+        }]
+        self.assertTrue(any("Wikidata Q123456" in e
+                            for e in self.run_gate()["errors"]))
+
+    def test_malformed_new_qid_fails(self):
+        self.row["wikidataId"] = "not-a-qid"
+        self.assertTrue(any("invalid wikidataId" in e
+                            for e in self.run_gate()["errors"]))
+
+    def test_short_name_is_not_a_substring_identity_match(self):
+        self.row["name"] = "家家"
+        self.row["aliases"] = ["家家"]
+        self.banks["actors.json"] = [{
+            "id": "a101", "name": "家家美食", "aliases": ["家家美食"]
+        }]
+        self.assertFalse(self.run_gate()["errors"])
+
+    def test_missing_accepted_canonical_alias_fails(self):
+        self.row["aliases"] = ["另一個名字"]
+        self.assertTrue(any("canonical name missing" in e
+                            for e in self.run_gate()["errors"]))
 
     def test_unchanged_legacy_debt_is_not_certified(self):
         self.row["humanReviewed"] = False

@@ -80,5 +80,20 @@ class RetainedThree20261103Test(unittest.TestCase):
         self.assertFalse(lead["fiveStageReviewed"])
 
 
+
+    def test_new_guangzhou_original_is_only_a_highres_lead(self):
+        lead = json.loads((ROOT / "pipeline/curated-jade-kwan-guangzhou-2019-lead-20261103.json").read_text(encoding="utf-8"))
+        self.assertEqual(lead["personId"], "t1500_0481")
+        self.assertEqual(lead["releaseGate"], "HIGH_RES_ORIGINAL_VISUAL_LEAD_NOT_CROPPED_NOT_APPROVED")
+        self.assertEqual(lead["imageDimensions"], [4160, 6240])
+        self.assertEqual(lead["originalSha1"], "deedf1eae08b911b404149cad9c63d07cc32cf9b")
+        self.assertTrue(lead["visualFindings"]["eyesOpen"])
+        self.assertTrue(lead["visualFindings"]["mouthVisible"])
+        self.assertFalse(lead["originalPixelsDownloadedToPipeline"])
+        self.assertFalse(lead["gameCrop600x720Reviewed"])
+        self.assertFalse(lead["fiveStageReviewed"])
+        self.assertFalse(lead["approvedForGame"])
+        self.assertNotIn(source_key(lead["source"]), excluded_commons_keys(self.people["t1500_0481"]))
+
 if __name__ == "__main__":
     unittest.main()

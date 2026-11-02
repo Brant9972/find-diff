@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "releaseGate": "RETAINED_DRAFT_ONLY_NOT_PLAYABLE",
   "liveRef": "origin/main",
-  "baselineLiveSha": "e9fb5567045345fa2fb3fc8ee90037ac2fa32a97",
+  "baselineLiveSha": "36100451ddf643329e0d67e5ad6fde987271dbfa",
   "warning": "Masked preview is not a human inspection or approval; source caption, author, license and five-stage crop still require independent verification.",
   "summary": {
-    "screeningRows": 3,
-    "skippedRows": 381
+    "screeningRows": 1,
+    "skippedRows": 383
   },
   "people": [
     {
@@ -15,38 +15,6 @@
       "source": "https://commons.wikimedia.org/wiki/File:20191016%E9%9B%BB%E5%BD%B1%E9%A6%96%E6%98%A0%E6%9C%83.png",
       "photo": "expansion-1500/review_photos/t1500_0308.jpg",
       "photoSha256": "4e036011d507786ecb1556b46121a93c15b8fe4d8d660a63b892f10c06c2b287",
-      "reviewStatus": "VISUAL_SCREENING_REQUIRED_NOT_APPROVED",
-      "rightsStatus": "INDEPENDENT_VERIFICATION_REQUIRED",
-      "fiveStages": [
-        "eyes",
-        "nose",
-        "mouth",
-        "chin",
-        "full"
-      ]
-    },
-    {
-      "personId": "t1500_0474",
-      "name": "蔡黃汝",
-      "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg",
-      "photo": "expansion-1500/review_photos/t1500_0474.jpg",
-      "photoSha256": "1975aa1650bd71a00aa2f4d71bf2cbaa0a1d0048b7294de87e02eefb664211e2",
-      "reviewStatus": "VISUAL_SCREENING_REQUIRED_NOT_APPROVED",
-      "rightsStatus": "INDEPENDENT_VERIFICATION_REQUIRED",
-      "fiveStages": [
-        "eyes",
-        "nose",
-        "mouth",
-        "chin",
-        "full"
-      ]
-    },
-    {
-      "personId": "t1500_0481",
-      "name": "關心妍",
-      "source": "https://commons.wikimedia.org/wiki/File:20080112-JadeKwan.jpg",
-      "photo": "expansion-1500/review_photos/t1500_0481.jpg",
-      "photoSha256": "e99faeaff15cd59e4453d7a84f7b841b36fca57e11bc109ef4580a18d5a0faae",
       "reviewStatus": "VISUAL_SCREENING_REQUIRED_NOT_APPROVED",
       "rightsStatus": "INDEPENDENT_VERIFICATION_REQUIRED",
       "fiveStages": [
@@ -1204,6 +1172,10 @@
       "reason": "invalid_draft_path"
     },
     {
+      "personId": "t1500_0474",
+      "reason": "source_previously_rejected"
+    },
+    {
       "personId": "t1500_0475",
       "reason": "not_selected_or_already_live"
     },
@@ -1222,6 +1194,10 @@
     {
       "personId": "t1500_0480",
       "reason": "invalid_draft_path"
+    },
+    {
+      "personId": "t1500_0481",
+      "reason": "not_selected_or_already_live"
     },
     {
       "personId": "t1500_0482",

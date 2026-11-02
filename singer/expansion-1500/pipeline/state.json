@@ -21030,7 +21030,7 @@
           ]
         }
       },
-      "status": "download_failed",
+      "status": "published",
       "lastAttemptAt": "2026-10-29T09:25:38.181000+00:00",
       "lastSearchRevision": 4,
       "workerFinishedAt": "2026-10-29T09:25:43.291710+00:00"
@@ -38967,7 +38967,8 @@
           "warnings": [
             "Legacy provenance is incomplete; original URL/licence URL may be missing",
             "blurry_draft",
-            "Source rejected by existing review records"
+            "Source rejected by existing review records",
+            "Source rejected for this person in release plan"
           ],
           "source": "https://commons.wikimedia.org/wiki/File:Mini_Tsai_(2011,_cropped).jpg",
           "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mini_Tsai_%282011%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -68997,10 +68998,11 @@
           "rightsStatus": "open_license_metadata",
           "eligibleForLive": false,
           "humanReview": null,
-          "status": "metadata_only",
+          "status": "rejected",
           "warnings": [
             "Identity, iconic appearance, eyes/occlusion and watermark require human review",
-            "No name-bearing caption/article/entity evidence: image not downloaded"
+            "No name-bearing caption/article/entity evidence: image not downloaded",
+            "Source rejected for this person in release plan"
           ]
         }
       ],

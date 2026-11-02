@@ -390,6 +390,10 @@ class Wikimedia:
 
     def search(self, person, http, round_number=0):
         queries = list(dict.fromkeys([person['name'], person.get('preferredImageQuery') or person['name'], *person.get('photoSearchKeywords', []), *person.get('aliases', [])]))
+        # Legacy article/P18 and direct Commons discovery must honor the same
+        # exact-file human rejections as CommonsSearch and EntityPortraits.
+        # Filter BEFORE imageinfo, not after downloading rejected pixels.
+        excluded = excluded_commons_keys(person)
         # Rotating query order gives retries new searches even with a bounded candidate budget.
         shift = round_number % len(queries)
         queries = queries[shift:] + queries[:shift]
@@ -434,6 +438,9 @@ class Wikimedia:
                 articles.setdefault(page.get('title', '').removeprefix('File:'), {'query': query, 'identityWarning': 'Search result only; identity needs review'})
         for filename, evidence in articles.items():
             if filename in files or not re.search(r'\.(jpg|jpeg|png|webp)$', filename, re.I):
+                continue
+            file_page = 'https://commons.wikimedia.org/wiki/File:' + urllib.parse.quote(filename.replace(' ', '_'))
+            if source_key(file_page) in excluded:
                 continue
             files.add(filename)
             data = http.json('https://commons.wikimedia.org/w/api.php', action='query', format='json', formatversion=2,

@@ -75,9 +75,15 @@ class BatchRequestIntegrityTest(unittest.TestCase):
         self.assertEqual(row['representativeWorks'], ['迴光奏鳴曲'])
         self.assertEqual(row['reviewExactCommonsFiles'], [
             'Chen Shiang-chyi (陳湘琪) at the 51st Golden Horse Awards in November 2014.jpg'])
-        self.assertEqual(row['photoStatus'], 'not_prepared')
-        self.assertFalse(row['imageVerification']['rightsDocumented'])
-        self.assertFalse(row['imageVerification']['finalCropReviewed'])
+        self.assertEqual(row['photoStatus'], 'published')
+        self.assertEqual(row['publishedQuestionId'], 't1500_0171')
+        self.assertEqual(row['qaStatus'], 'pages_live_verified')
+        self.assertTrue(row['imageVerification']['rightsDocumented'])
+        self.assertTrue(row['imageVerification']['finalCropReviewed'])
+        self.assertEqual(row['gameSha256'],
+                         'f186fd95e6ed3d7592fd3a0ceba6f51d74f5fb04e455f7c4ba47a88a24562fb4')
+        self.assertNotIn('t1500_0171', json.loads((ROOT / 'pipeline/batch-request.json')
+                              .read_text(encoding='utf-8'))['plannedPersonIds'])
 
 
 

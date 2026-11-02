@@ -165,6 +165,8 @@ def main():
     args = parser.parse_args()
     lead = select_lead(args.person_id)
     output = args.out.resolve() / args.person_id
+    if output.is_relative_to(ROOT.parents[1]):
+        raise ValueError('Review output must stay outside the Git repository')
     output.mkdir(parents=True, exist_ok=True)
     if args.download:
         url = commons_video_url(lead)

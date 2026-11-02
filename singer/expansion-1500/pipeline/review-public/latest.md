@@ -1,11 +1,11 @@
 # 照片視覺審核入口
 
-批次 `20261102T154115Z-fd54d95a`：0 位人物、0 張現行待審圖。
-所有圖片固定於資產 Commit `864fb7f399fbe20ea3c66878412ea1e9669825aa`。沒有修改正式題庫或自動核准照片。
+批次 `20261102T204110Z-ab28cfe0`：0 位人物、0 張現行待審圖。
+所有圖片固定於資產 Commit `9813b40fda7a2ccd144b7337a86d263db91c3bd6`。沒有修改正式題庫或自動核准照片。
 
 請先看總覽，再開每張候選圖與五階段預覽。若圖片工具無法開啟 raw 連結，使用旁邊的 GitHub 看圖頁；無法取得像素時保留待審，不得視為已目視。
 
-[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/864fb7f399fbe20ea3c66878412ea1e9669825aa/singer/expansion-1500/pipeline/review-assets/20261102T154115Z-fd54d95a/assets-index.json)
+[固定資產索引 JSON](https://raw.githubusercontent.com/Brant9972/find-diff/9813b40fda7a2ccd144b7337a86d263db91c3bd6/singer/expansion-1500/pipeline/review-assets/20261102T204110Z-ab28cfe0/assets-index.json)
 
 請將下一輪審核結果寫入分支 `automation/celebrity-photo-pipeline` 的固定檔案 `singer/expansion-1500/pipeline/chatgpt-review/latest.json`。
 

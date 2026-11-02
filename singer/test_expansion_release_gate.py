@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 from PIL import Image
-from qa_expansion_release_gate import validate, snapshot, license_ok, verify_reveal, git_blob_sha, BANKS
+from qa_expansion_release_gate import validate, snapshot, identity_snapshot, license_ok, verify_reveal, git_blob_sha, BANKS
 
 SHA = "a" * 40
 
@@ -41,9 +41,10 @@ class ExpansionGateTest(unittest.TestCase):
         self.banks["questions.json"] = [self.row]
         self.hints = {"entries": {self.row["id"]: {"singer": {"title": "真實作品"}}}}
 
-    def run_gate(self, baseline_people=()):
+    def run_gate(self, baseline_people=(), identity_baseline=None):
         return validate(self.banks, {"schemaVersion": 1, "baselineMainSha": SHA,
-                                     "people": list(baseline_people)}, self.root, self.hints)
+                                     "people": list(baseline_people)}, self.root,
+                        self.hints, identity_baseline)
 
     def test_new_reviewed_cc_photo_and_sha_pass(self):
         report = self.run_gate()
@@ -140,6 +141,29 @@ class ExpansionGateTest(unittest.TestCase):
         self.assertEqual(result["unchangedLegacyMetadataDebt"], ["t1500_0001"])
         self.row["photo"] = "photos/replacement.jpg"
         self.assertTrue(self.run_gate([base])["errors"])
+
+    def test_legacy_alias_only_change_cannot_inherit_review_exemption(self):
+        self.row["humanReviewed"] = False
+        self.row["attribution"]["license"] = "Copyright retained"
+        base = snapshot("questions.json", self.row)
+        base["photoGitBlobSha"] = git_blob_sha(self.root / self.row["photo"])
+        pinned = {self.row["id"]: identity_snapshot("questions.json", self.row)}
+        self.assertFalse(self.run_gate([base], pinned)["errors"])
+        self.row["aliases"].append("另一人的藝名")
+        report = self.run_gate([base], pinned)
+        self.assertIn(self.row["id"], report["newOrChangedEntries"])
+        self.assertTrue(any("human-reviewed portrait" in e for e in report["errors"]))
+
+    def test_legacy_qid_only_change_cannot_inherit_review_exemption(self):
+        self.row["humanReviewed"] = False
+        base = snapshot("questions.json", self.row)
+        base["photoGitBlobSha"] = git_blob_sha(self.root / self.row["photo"])
+        pinned = {self.row["id"]: identity_snapshot("questions.json", self.row)}
+        self.assertFalse(self.run_gate([base], pinned)["errors"])
+        self.row["wikidataId"] = "Q123456"
+        report = self.run_gate([base], pinned)
+        self.assertIn(self.row["id"], report["newOrChangedEntries"])
+        self.assertTrue(report["errors"])
 
     def test_missing_baseline_and_cross_bank_duplicate_fail(self):
         base = snapshot("questions.json", self.row)

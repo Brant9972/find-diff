@@ -52,7 +52,7 @@ class FlickrSourceLeadTest(unittest.TestCase):
         # source-specific review, but the ACTIVE batch may legitimately move
         # to a different set of selectedNew people.
         req = json.loads((ROOT / "pipeline/batch-request.json").read_text(encoding="utf-8"))
-        self.assertIn(req["mode"], {"search", "render_only", "manual_recrop"})
+        self.assertIn(req["mode"], {"search", "render_only", "manual_recrop", "import_review_rejections"})
         if req["mode"] == "search":
             ids = req["plannedPersonIds"]
             self.assertEqual(len(ids), req["targetPeople"])

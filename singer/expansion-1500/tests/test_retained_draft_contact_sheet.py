@@ -55,7 +55,7 @@ class RetainedDraftContactSheetTests(unittest.TestCase):
             # must decide whether a portrait is already published.
             def git_read(cmd, text=True):
                 if cmd[-2:] == ["rev-parse", "origin/main"]:
-                    return "a"*40+"\\n"
+                    return "a"*40+"\n"
                 if cmd[-1] == "origin/main:singer/questions.json":
                     return json.dumps({"questions": [{"id": "t1500_0001"}]})
                 return json.dumps({"questions": []})

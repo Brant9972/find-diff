@@ -808,23 +808,23 @@ class EntityPortraits:
             raise SourceError('identity_not_found', 'No Wikidata entity candidates for the exact person name')
         data = http.json(self.wikidata_api, action='wbgetentities', format='json',
                          ids='|'.join(ids), props='labels|aliases|claims|sitelinks',
-                         languages='en|zh|zh-hant|zh-hans|zh-tw|zh-cn', sitefilter='zhwiki|enwiki|commonswiki')
+                         languages='en|zh|zh-hant|zh-hans|zh-tw|zh-cn|zh-hk|zh-mo', sitefilter='zhwiki|enwiki|commonswiki')
         eligible = []
         for qid in ids:
             entity = data.get('entities', {}).get(qid, {})
             chinese = [row.get('value', '') for lang, row in entity.get('labels', {}).items() if lang.startswith('zh')]
             chinese.extend(row.get('value', '') for lang, rows in entity.get('aliases', {}).items()
                            if lang.startswith('zh') for row in rows)
-            # Some Taiwanese performers have only an English Wikidata label,
-            # but a correctly typed Chinese native name (P1559). Without
-            # this, an exact Q5 person with a valid P18 is discarded as
-            # identity_unconfirmed before its photo can even be reviewed.
-            # Accept only non-deprecated, Chinese-language monolingual text
-            # matching the requested full name; never infer identity from
-            # a substring, search snippet, or an English P1559 value.
+            # Some performers have only an English Wikidata label. Their
+            # Chinese native name (P1559), birth name (P1477), or nickname
+            # (P1449) can still establish an exact-name match on the pinned
+            # Q5 entity. Never accept a substring, deprecated claim, or
+            # non-Chinese monolingual value as an identity shortcut. This
+            # resolves a search alias only, never the pictured face.
             chinese.extend(
                 value['text']
-                for claim in entity.get('claims', {}).get('P1559', [])
+                for property_id in ('P1559', 'P1477', 'P1449')
+                for claim in entity.get('claims', {}).get(property_id, [])
                 if claim.get('rank') != 'deprecated'
                 for value in [claim.get('mainsnak', {}).get('datavalue', {}).get('value')]
                 if isinstance(value, dict)

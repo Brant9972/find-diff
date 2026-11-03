@@ -35,7 +35,7 @@ class CuratedStillOriginalTest(unittest.TestCase):
     def test_curated_source_is_manual_only(self):
         """Metadata-only commits and PR QA must never trigger a remote original fetch."""
         workflow = (ROOT.parent.parent / ".github/workflows/curated-still-original-diagnostic.yml").read_text(encoding="utf-8")
-        self.assertNotIn("\\n  push:\\n", workflow)
+        self.assertNotIn("\n  push:\n", workflow)
         self.assertIn("  workflow_dispatch:", workflow)
         self.assertIn("  pull_request:", workflow)
         self.assertIn("if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/automation/celebrity-photo-pipeline'", workflow)

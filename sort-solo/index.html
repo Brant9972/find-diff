@@ -29,13 +29,13 @@ header{display:flex;justify-content:space-between;align-items:center;gap:8px;fle
 <section id="home" class="screen home active" aria-label="遊戲首頁">
  <span class="pill">🎭 猜線索 × 比大小 × 排順序</span>
  <h1 class="hero">先猜出來，<br><em>再擺一擺順！</em></h1>
- <p class="desc">卡片只給自然的生活線索，不顯示名稱。先猜物品、歌名或台劇，再比較長度、年代、集數或時間；不會硬湊相近的數字。每局 10 題。</p>
+ <p class="desc">卡片只給自然的生活線索，不顯示名稱。先猜物品、歌名或台劇，再比較長度、年代、集數或時間；不會硬湊相近的數字。每局 20 題。</p>
  <div class="sample"><div class="sample-head">試想一下：物品長度由短到長 <span>範例題</span></div><div class="mini"><span>找零常收到的銀色圓片</span><span>廚房裡低溫保存食物的高大家電</span></div><div class="sample-foot">先猜「一元硬幣」與「冰箱」，再比較大小；不是比只差一點點的數字。卡片可點選交換或用 ↑ ↓ 微調。</div></div>
  <div class="modes" role="group" aria-label="選擇遊戲模式"><button type="button" class="mode" data-mode="normal" aria-pressed="true"><strong>🎯 標準挑戰</strong><span>每題 100–160 秒</span></button><button type="button" class="mode" data-mode="fast" aria-pressed="false"><strong>⚡ 極速挑戰</strong><span>每題 55–100 秒</span></button><button type="button" class="mode" data-mode="relaxed" aria-pressed="false"><strong>🌿 無限時挑戰</strong><span>慢慢思考，不會因時間到而結束</span></button></div>
- <button type="button" class="primary" id="startBtn">開始 10 題挑戰 →</button><p class="note">免登入・不用安裝・手機直接玩</p>
+ <button type="button" class="primary" id="startBtn">開始 20 題挑戰 →</button><p class="note">免登入・不用安裝・手機直接玩</p>
 </section>
 <section id="play" class="screen play" aria-label="單人排序挑戰">
- <div class="meta"><div class="stat"><span>回合</span><b id="roundLabel">1 / 10</b></div><div class="stat"><span>連勝</span><b id="streakLabel">0 🔥</b></div><div class="stat"><span>總分</span><b id="scoreLabel">0</b></div></div>
+ <div class="meta"><div class="stat"><span>回合</span><b id="roundLabel">1 / 20</b></div><div class="stat"><span>連勝</span><b id="streakLabel">0 🔥</b></div><div class="stat"><span>總分</span><b id="scoreLabel">0</b></div></div>
  <div class="progress" aria-label="挑戰進度"><i id="progressFill"></i></div>
  <div class="prompt"><div class="topic"><span id="categoryLabel">🧠 常識</span><span id="countLabel">5 個選項</span></div><h2 id="questionLabel">題目</h2><p id="detailLabel">由前到後排序，第一格代表最前面。</p></div>
  <div class="clock" id="clock"><strong id="timerLabel">00:40</strong><div class="track"><i id="timerFill"></i></div></div>
@@ -54,18 +54,18 @@ header{display:flex;justify-content:space-between;align-items:center;gap:8px;fle
 <div id="resultOverlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="resultTitle"><div class="result"><div class="tag" id="resultTag">第 1 題</div><h2 id="resultTitle">排序完成！</h2><p id="resultDescription"></p><div class="points" id="earnedLabel">+0 分</div><div class="correct-title">✅ 正確順序（由上到下）</div><div class="answer-list" id="answerList"></div><button type="button" class="primary" id="nextBtn">下一題 →</button></div></div>
 <div class="footer">原創單人排序遊戲 · 台劇以台灣原播版本為準</div>
 </div>
-<script src="./questions-v3.js"></script>
+<script src="./questions-v4.js"></script>
 <script>
 'use strict';
-// Clue-only banks are defined in questions-v3.js. Each round may show fewer cards for meaningful differences.
-const TOTAL_ROUNDS=10;const ROUND_COUNTS=[5,5,6,6,6,7,7,7,8,8];
+// Clue-only banks in questions-v4.js support 20 rounds with spaced ranks and natural descriptions.
+const TOTAL_ROUNDS=20;const ROUND_COUNTS=[5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,8,8];
 const TIMES={normal:{4:90,5:100,6:120,7:140,8:160},fast:{4:50,5:55,6:70,7:85,8:100}};
-const CAT_ICON={'生活長短':'📏','台劇首播':'📺','台劇集數':'🎞️','台灣電影':'🎬','熱門歌名':'🎵','生活時間':'⏱️','日常重量':'⚖️','生活容量':'🧃'};
+const CAT_ICON={'生活長短':'📏','台劇首播':'📺','台劇集數':'🎞️','台灣電影':'🎬','熱門歌名':'🎵','生活時間':'⏱️','日常重量':'⚖️','生活容量':'🧃','動畫電影':'🍿','電玩主機':'🎮','生活節日':'🎉','家電耗電':'🔌','水果重量':'🍎'};
 const $=id=>document.getElementById(id);const rand=n=>Math.floor(Math.random()*n);
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=rand(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
 let mode='normal',state=null,timerId=null,deadline=0,remaining=0,selected=-1,dragFrom=-1;
-function bestKey(){return 'sort-solo-best-v1-'+mode;}
+function bestKey(){return 'sort-solo-best-20-v4-'+mode;}
 function readBest(){try{return +(localStorage.getItem(bestKey())||0);}catch(e){return 0;}}
 function storeBest(num){try{localStorage.setItem(bestKey(),String(num));}catch(e){}}
 function refreshBest(){$('bestLabel').textContent=readBest().toLocaleString();}
@@ -99,7 +99,7 @@ function resolveRound(timedOut=false){if(!state||state.resolved)return;state.res
  $('scoreLabel').textContent=state.score.toLocaleString();$('streakLabel').textContent=state.streak+' 🔥';$('hintBtn').disabled=true;$('submitBtn').disabled=true;renderItems();$('resultTag').textContent=`第 ${state.round+1} 題 / ${TOTAL_ROUNDS} 題${timedOut?' · 時間到':''}`;$('resultTitle').textContent=right?'🎉 完美排序！':timedOut?'⏰ 時間到！':'差一點，再接再厲！';$('resultDescription').textContent=right?`全部 ${n} 個位置都正確！${state.streak>1?'連續答對 '+state.streak+' 題！':''}`:`${n} 個選項中，有 ${state.order.filter((item,i)=>item.value===state.answers[i].value).length} 個位置正確；相對前後順序答對 ${correctPairs} / ${total} 組。`; $('earnedLabel').textContent='+'+earned.toLocaleString()+' 分'+(state.hintUsed?'（已扣提示分）':'');
  $('answerList').innerHTML=state.answers.map((item,i)=>`<div class="answer"><div class="answer-main"><b>${i+1}. ${escapeHTML(item.answer)}</b><span>${escapeHTML(item.label)}</span></div><small>${escapeHTML(item.note)}</small></div>`).join('');$('nextBtn').textContent=state.round===TOTAL_ROUNDS-1?'查看總成績 →':'下一題 →';$('answerList').scrollTop=0;$('resultOverlay').classList.add('show');}
 function nextRound(){if(!state||!state.resolved)return;state.round++;if(state.round>=TOTAL_ROUNDS)showFinish();else startRound();}
-function showFinish(){clearInterval(timerId);$('resultOverlay').classList.remove('show');$('progressFill').style.width='100%';screen('finish');const isRecord=state.score>readBest();if(isRecord)storeBest(state.score);refreshBest();$('trophy').textContent=state.perfect>=8?'🏆':state.perfect>=5?'🥇':'🧠';$('finishTitle').textContent=isRecord?'刷新最佳紀錄！':'挑戰完成！';$('finishDescription').textContent=`${mode==='fast'?'極速':mode==='relaxed'?'無限時':'標準'}模式・10 題完成${isRecord?'・新紀錄！':''}`;$('finalScore').textContent=state.score.toLocaleString();$('finalPerfect').textContent=state.perfect+' / 10';$('finalStreak').textContent=state.maxStreak;$('finalAccuracy').textContent=(state.pairsTotal?Math.round(state.pairsCorrect/state.pairsTotal*100):0)+'%';}
+function showFinish(){clearInterval(timerId);$('resultOverlay').classList.remove('show');$('progressFill').style.width='100%';screen('finish');const isRecord=state.score>readBest();if(isRecord)storeBest(state.score);refreshBest();$('trophy').textContent=state.perfect>=16?'🏆':state.perfect>=10?'🥇':'🧠';$('finishTitle').textContent=isRecord?'刷新最佳紀錄！':'挑戰完成！';$('finishDescription').textContent=`${mode==='fast'?'極速':mode==='relaxed'?'無限時':'標準'}模式・${TOTAL_ROUNDS} 題完成${isRecord?'・新紀錄！':''}`;$('finalScore').textContent=state.score.toLocaleString();$('finalPerfect').textContent=state.perfect+' / '+TOTAL_ROUNDS;$('finalStreak').textContent=state.maxStreak;$('finalAccuracy').textContent=(state.pairsTotal?Math.round(state.pairsCorrect/state.pairsTotal*100):0)+'%';}
 function setMode(next){mode=next;document.querySelectorAll('.mode').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));refreshBest();}
 document.querySelectorAll('.mode').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));$('startBtn').addEventListener('click',newGame);$('retryBtn').addEventListener('click',newGame);$('homeBtn').addEventListener('click',()=>screen('home'));$('submitBtn').addEventListener('click',()=>resolveRound(false));$('hintBtn').addEventListener('click',showHint);$('nextBtn').addEventListener('click',nextRound);
 $('quitBtn').addEventListener('click',()=>{if(confirm('要結束這次挑戰嗎？未完成的成績不會保存。')){clearInterval(timerId);state=null;screen('home');}});

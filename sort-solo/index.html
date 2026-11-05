@@ -60,7 +60,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:8px;fle
 // Clue-only banks are defined in questions-v3.js. Each round may show fewer cards for meaningful differences.
 const TOTAL_ROUNDS=10;const ROUND_COUNTS=[5,5,6,6,6,7,7,7,8,8];
 const TIMES={normal:{4:90,5:100,6:120,7:140,8:160},fast:{4:50,5:55,6:70,7:85,8:100}};
-const CAT_ICON={'生活長短':'📏','台劇首播':'📺','台劇集數':'🎞️','台灣電影':'🎬','熱門歌名':'🎵','生活時間':'⏱️'};
+const CAT_ICON={'生活長短':'📏','台劇首播':'📺','台劇集數':'🎞️','台灣電影':'🎬','熱門歌名':'🎵','生活時間':'⏱️','日常重量':'⚖️','生活容量':'🧃'};
 const $=id=>document.getElementById(id);const rand=n=>Math.floor(Math.random()*n);
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=rand(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}

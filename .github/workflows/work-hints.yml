@@ -1,5 +1,10 @@
 name: Verify work hints
 on:
+  pull_request:
+    paths:
+      - 'singer/hints.json'
+      - 'singer/hint-candidates.json'
+      - '.github/workflows/work-hints.yml'
   push:
     paths:
       - 'singer/hint-candidates.json'

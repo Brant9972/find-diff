@@ -1,5 +1,10 @@
 name: Singer quiz rounds and mobile QA
 on:
+  pull_request:
+    paths:
+      - 'singer/hints.json'
+      - 'singer/hint-candidates.json'
+      - '.github/workflows/singer-ui-qa.yml'
   push:
     paths:
       - 'singer/game.js'

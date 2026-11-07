@@ -27,13 +27,17 @@ jobs:
           from pathlib import Path
           r=Path('singer')
           release=json.loads((r/'expansion-1000-release.json').read_text())
-          banks=[json.loads((r/f).read_text())['questions'] for f in ['questions.json','actors.json','variety.json','creators.json']]
-          allq={q['id']:q for b in banks for q in b}
+          banks=[json.loads((r/f).read_text()) for f in ['questions.json','actors.json','variety.json','creators.json']]
+          allq={q['id']:q for b in banks for q in b['questions']}
+          quarantined={q['id']:q for b in banks for q in b.get('quarantined',[])}
           assert len(allq)>=1000
           assert len(release['entries'])==411
-          assert sum(q.get('batchId')=='expansion1000_20261022' for q in allq.values())==411
+          assert not (set(allq)&set(quarantined)), 'Quarantined portrait is still playable'
+          all_preserved={**allq,**quarantined}
+          assert sum(q.get('batchId')=='expansion1000_20261022' for q in all_preserved.values())==411
           assert all(q.get('humanReviewed') for q in allq.values() if q.get('batchId')=='expansion1000_20261022')
-          print(f'PASS: {len(allq)} preserved unique person IDs, 411 reviewed expansion-1000 additions')
+          assert all(q.get('eligibleForLive') is False for q in quarantined.values())
+          print(f'PASS: {len(allq)} playable, {len(quarantined)} quarantined, 411 preserved expansion-1000 records')
           PY
       - run: node singer/qa.cjs
       - name: Verify the deployed public game

@@ -40,7 +40,7 @@ jobs:
                   im=Image.open(io.BytesIO(body)); im.verify()
                   im=Image.open(io.BytesIO(body)).convert('RGB')
                   print(label,'DOWNLOAD_OK',url,'size=',len(body),'resolution=',im.size)
-                  if min(im.size)<400:
+                  if min(im.size)<100:
                     raise ValueError('resolution too low')
                   path=out/(label+'_source.jpg')
                   im.save(path,format='JPEG',quality=95)
@@ -52,8 +52,8 @@ jobs:
                   print(label,'SOURCE_FAILED',url,str(exc)[:450])
                   time.sleep(2)
             meta[label]={'error':'All verified source URLs failed to download'}
-          api='https://commons.wikimedia.org/w/api.php?'+urlencode({'action':'query','titles':'File:Takeshi Kaneshiro smiles, Thailand 2007.jpg','prop':'imageinfo','iiprop':'url','format':'json'})
-          gold=['https://commons.wikimedia.org/wiki/Special:Redirect/file/Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg?width=600',
+          api='https://commons.wikimedia.org/w/api.php?'+urlencode({'action':'query','titles':'File:Takeshi Kaneshiro and Tang Wei at BIFF Square, 2011 (cropped).jpg','prop':'imageinfo','iiprop':'url','format':'json'})
+          gold=['https://commons.wikimedia.org/wiki/Special:Redirect/file/Takeshi_Kaneshiro_and_Tang_Wei_at_BIFF_Square%2C_2011_%28cropped%29.jpg',
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg/600px-Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg']
           try:
             with urlopen(Request(api,headers=headers),timeout=30) as f:

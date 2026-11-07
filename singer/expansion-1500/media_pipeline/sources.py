@@ -89,7 +89,7 @@ def identity(person, text):
     hay = converter().convert(hay) if converter() else hay
     hay = unicodedata.normalize('NFKC', hay).casefold()
     prefixes = ('歌手', '歌星', '艺人', '演员', '主持人', '音乐人', '台湾', '台语', '专访')
-    suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场')
+    suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场', '出席', '参与', '接受', '正面', '是')
     found = []
     for alias in dict.fromkeys([person['name'], *person.get('aliases', []), *person.get('acceptedAnswers', [])]):
         key = norm(alias)

@@ -1,0 +1,44 @@
+name: One-time Kaneshiro manual crops
+on:
+  push:
+    branches:
+      - review/banana-kaneshiro-media-20261108
+    paths:
+      - .github/workflows/photo-crop-20261108.yml
+permissions:
+  contents: write
+jobs:
+  crops:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Prepare photo comparisons (no production changes)
+        run: |
+          python - <<'PY'
+          from PIL import Image,ImageEnhance
+          from pathlib import Path
+          root=Path("singer/expansion-1500/media-review/20261108")
+          specs=[
+             ("kaneshiro_source.jpg","kaneshiro_2011_tight.jpg",(472,0,750,334)),
+             ("kaneshiro_source.jpg","kaneshiro_2011_medium.jpg",(432,0,762,396)),
+             ("kaneshiro_single_source.jpg","kaneshiro_2007_single.jpg",(50,44,400,464)),
+             ("kaneshiro_warlords_source.jpg","kaneshiro_2007_warlords.jpg",(315,225,710,699))
+          ]
+          for source,name,crop in specs:
+             im=Image.open(root/source).convert('RGB')
+             if im.width<crop[2] or im.height<crop[3]: raise RuntimeError('crop outside image')
+             cr=im.crop(crop).resize((600,720),Image.Resampling.LANCZOS)
+             cr.save(root/name,quality=91,optimize=True)
+             print(name,'from',source,'crop=',crop,'pixels=',(600,720))
+          PY
+      - name: Record on isolated branch
+        run: |
+          git config user.name "brant-photo-review-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/expansion-1500/media-review/20261108/*jpg
+          git diff --cached --quiet || git commit -m "chore(review): stage candidate game portrait crops"
+          git push origin HEAD:review/banana-kaneshiro-media-20261108

@@ -7,12 +7,16 @@ payload=json.loads((ROOT/"hints.json").read_text())
 banks={mode:{q["id"]:q for q in json.loads((ROOT/file).read_text())["questions"]}
        for mode,file in [("singer","questions.json"),("actor","actors.json"),("variety","variety.json"),("creator","creators.json")]
        if (ROOT/file).exists()}
+quarantined={mode:{q["id"]:q for q in json.loads((ROOT/file).read_text()).get("quarantined",[])}
+       for mode,file in [("singer","questions.json"),("actor","actors.json"),("variety","variety.json"),("creator","creators.json")]
+       if (ROOT/file).exists()}
 seen=set()
 for e in candidates:
     key=(e["id"],e["mode"])
     assert key not in seen,key
     seen.add(key)
-    assert banks[e["mode"]][e["id"]]["name"]==e["name"]
+    subject=banks[e["mode"]].get(e["id"]) or quarantined[e["mode"]].get(e["id"])
+    assert subject is not None and subject["name"]==e["name"],key
     hint=payload["entries"][e["id"]][e["mode"]]
     assert hint["title"]==e["title"] and hint["kind"]==e["kind"]
     assert 1<=len(hint["title"])<=160

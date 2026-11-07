@@ -1,0 +1,51 @@
+name: Publish verified Kaneshiro and stage Banana Brother
+on:
+  push:
+    branches: [review/banana-kaneshiro-media-20261108]
+    paths: [.github/workflows/publish-manual-additions-20261108.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Use latest main; preserve verified crop and edit script
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp singer/expansion-1500/media-review/20261108/manual_additions_20261108.py "$RUNNER_TEMP/manual_additions_20261108.py"
+          cp singer/expansion-1500/media-review/20261108/kaneshiro_pingbook_clean_20261108.jpg "$RUNNER_TEMP/kaneshiro_verified.jpg"
+          git fetch --no-tags origin main
+          main_base=$(git rev-parse FETCH_HEAD)
+          git checkout -B manual-additions-verified "$main_base"
+          mkdir -p singer/photos
+          cp "$RUNNER_TEMP/kaneshiro_verified.jpg" singer/photos/a_kaneshiro_20261108.jpg
+          echo "$main_base" > "$RUNNER_TEMP/main-base-sha"
+          python "$RUNNER_TEMP/manual_additions_20261108.py"
+          python singer/prepare_hints.py
+          python -m pip install 'Pillow>=11,<13'
+          python singer/expansion-1500/rights_audit.py --write --main-sha "$main_base"
+          python singer/expansion-1500/rights_audit.py --check
+          python -m unittest discover -s singer -p 'test_expansion_release_gate.py' -q
+          python singer/qa_expansion_release_gate.py --root singer
+          node --check singer/game.js
+          node --check singer/qa.cjs
+          git status --short
+      - name: Fast-forward main with only reviewed files (no force)
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "brant-photo-review-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/actors.json singer/actors-roster.json singer/variety.json singer/variety-roster.json singer/hints.json singer/hint-candidates.json singer/eligibility-review.json singer/qa.cjs singer/expansion-1500/rights-audit-20261031.json singer/photos/a_kaneshiro_20261108.jpg
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m "feat(singer): verified Gold Kaneshiro portrait; quarantine Banana pending clear media"
+          git push origin HEAD:main

@@ -1,0 +1,78 @@
+name: One-time verified celebrity photo candidates
+on:
+  push:
+    branches:
+      - review/banana-kaneshiro-media-20261108
+    paths:
+      - .github/workflows/photo-candidate-20261108.yml
+permissions:
+  contents: write
+jobs:
+  fetch-photo-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Download candidate photos to review branch only
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.parse import urlencode
+          import json, io, hashlib, time
+          from PIL import Image
+          out=Path('singer/expansion-1500/media-review/20261108')
+          out.mkdir(parents=True, exist_ok=True)
+          headers={'User-Agent':'BrantPhotoReview/1.0 (https://github.com/Brant9972/find-diff)','Accept':'image/jpeg,image/png,image/*;q=0.9,*/*;q=0.1'}
+          meta={}
+          def tryget(label,urls):
+            for url in urls:
+              for attempt in range(2):
+                try:
+                  req=Request(url, headers={**headers,'Referer':'https://tcmb.culture.tw/' if label=='banana' else 'https://commons.wikimedia.org/'})
+                  with urlopen(req,timeout=35) as response:
+                    body=response.read()
+                  im=Image.open(io.BytesIO(body)); im.verify()
+                  im=Image.open(io.BytesIO(body)).convert('RGB')
+                  print(label,'DOWNLOAD_OK',url,'size=',len(body),'resolution=',im.size)
+                  if min(im.size)<400:
+                    raise ValueError('resolution too low')
+                  path=out/(label+'_source.jpg')
+                  im.save(path,format='JPEG',quality=95)
+                  meta[label]={'sourceDownloadUrl':url,'width':im.width,'height':im.height,
+                               'originalSha256':hashlib.sha256(body).hexdigest(),
+                               'savedSha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+                  return
+                except Exception as exc:
+                  print(label,'SOURCE_FAILED',url,str(exc)[:450])
+                  time.sleep(2)
+            meta[label]={'error':'All verified source URLs failed to download'}
+          api='https://commons.wikimedia.org/w/api.php?'+urlencode({'action':'query','titles':'File:Takeshi Kaneshiro smiles, Thailand 2007.jpg','prop':'imageinfo','iiprop':'url','format':'json'})
+          gold=['https://commons.wikimedia.org/wiki/Special:Redirect/file/Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg?width=600',
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg/600px-Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg']
+          try:
+            with urlopen(Request(api,headers=headers),timeout=30) as f:
+              pages=json.load(f)['query']['pages']
+            for p in pages.values():
+              for info in p.get('imageinfo',[]):
+                gold.insert(0,info['url'])
+          except Exception as exc:
+            print('GOLD_API_FAILED',str(exc))
+          tryget('kaneshiro',gold)
+          banana=['https://dcm.s3.hicloud.net.tw/new/excel/object/2020-07-03/4f3c0671-f4c7-45d8-9de9-40549e412bd1/collection/55f3e35c-20b8-4f7e-a27c-e4041166909e/8b35fa5f-9349-4d83-a5fe-702580739366.JPG']
+          tryget('banana',banana)
+          (out/'retrieval-results.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
+          print('FINAL',json.dumps(meta,ensure_ascii=False))
+          PY
+      - name: Commit candidates only to isolated review branch
+        run: |
+          git config user.name "brant-photo-review-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/expansion-1500/media-review/20261108/
+          git diff --cached --quiet || git commit -m "chore(review): download candidate portraits for human QA"
+          git push origin HEAD:review/banana-kaneshiro-media-20261108

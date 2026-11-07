@@ -1,0 +1,49 @@
+name: Verify published Kaneshiro game image (one-time)
+on:
+  push:
+    branches: [review/banana-kaneshiro-media-20261108]
+    paths: [.github/workflows/verify-public-manual-additions-20261108.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Confirm public GitHub Pages has Gold actor, correct photo, and no unapproved banana
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request, json,hashlib,time
+          base="https://brant9972.github.io/find-diff/singer/"
+          rev="e3feb0df2b3822db06571a2d8a3ae6b1d25ef1e3"
+          def get(f):
+            url=base+f+("?audit="+rev if "?" not in f else "&audit="+rev)
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'GitHub-Pages-Manual-Game-QA/2026-11-08','Cache-Control':'no-cache'}),timeout=25) as r:
+              if r.status!=200: raise RuntimeError('HTTP '+str(r.status)+' '+url)
+              return r.read()
+          last=None
+          for attempt in range(6):
+            try:
+              a=json.loads(get('actors.json'));v=json.loads(get('variety.json'));h=json.loads(get('hints.json'))
+              q=[q for q in a['questions'] if q['id']=='a_kaneshiro_20261108']
+              assert len(q)==1 and q[0]['name']=='金城武','Gold missing from live actor bank'
+              assert q[0]['photo']=='photos/a_kaneshiro_20261108.jpg','Wrong Gold photo path'
+              assert '重慶森林'==h['entries'][q[0]['id']]['actor']['title'],'Gold work hint missing'
+              assert not any(x['name']=='香蕉哥哥' for x in v['questions']),'Banana not cleared but exposed'
+              assert any(x['id']=='v_banana_20261108' for x in v.get('quarantined',[])),'Banana pending record missing'
+              image=get(q[0]['photo'])
+              assert image.startswith(b'\\xff\\xd8') and len(image)>40000,'Live portrait invalid JPEG'
+              actual=hashlib.sha256(image).hexdigest()
+              assert actual==q[0]['gameSha256'],f'Live photo SHA mismatch: {actual}'
+              print('PASS_PUBLIC_PAGES',json.dumps({'actorPlayable':a['playable'],'gold':q[0]['name'],'photo':q[0]['photo'],'sha256':actual,'banana':'pending_not_playable'},ensure_ascii=False))
+              break
+            except Exception as e:
+              last=repr(e)
+              print('RETRY',attempt+1,last)
+              if attempt==5: raise
+              time.sleep(8)
+          PY

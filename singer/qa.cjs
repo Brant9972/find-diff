@@ -21,6 +21,12 @@ if(fs.existsSync(path.join(__dirname,"questions.json"))){
 const realHints=JSON.parse(fs.readFileSync(path.join(__dirname,"hints.json")));
 for(const q of realQuestions)assert(realHints.entries[q.id]?.singer?.title,"Missing singer work hint: "+q.id);
 const actorBank=JSON.parse(fs.readFileSync(path.join(__dirname,"actors.json")));
+// Regression: rejected portraits stay archived but must never enter playable rounds.
+for(const rejected of (actorBank.quarantined||[])){
+ assert(!actorBank.questions.some(q=>q.id===rejected.id),"Quarantined portrait must not be playable: "+rejected.id);
+ assert(rejected.eligibleForLive===false,"Quarantined portrait must not have live approval: "+rejected.id);
+}
+
 const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
 assert.equal(actorBank.playable,actorBank.questions.length);
 assert(actorBank.playable<=1000);

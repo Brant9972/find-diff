@@ -1,0 +1,82 @@
+name: Inspect Pingbook licensed event originals
+on:
+  push:
+    branches:
+      - review/banana-kaneshiro-media-20261108
+    paths: 
+      - .github/workflows/photo-pingbook-20261108.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow beautifulsoup4
+      - name: Download Pingbook article media as review-only thumbnails
+        run: |
+          python - <<'PY'
+          import re,io,hashlib,json
+          from pathlib import Path
+          from urllib.parse import urljoin
+          from urllib.request import Request,urlopen
+          from bs4 import BeautifulSoup
+          from PIL import Image,ImageDraw
+          page='https://www.pingbook.com/2016/10/30/2205'
+          ua={'User-Agent':'Mozilla/5.0 (compatible; OpenSourcePhotoReview/1.0)'}
+          try:
+            with urlopen(Request(page,headers=ua),timeout=25) as f: html=f.read().decode('utf-8','replace')
+          except Exception as e:
+            print('PAGE_FAILED',repr(e)); raise SystemExit(0)
+          soup=BeautifulSoup(html,'html.parser')
+          urls=[]
+          for im in soup.find_all('img'):
+            for attr in ('data-src','data-lazy-src','src','data-srcset'):
+              v=im.get(attr,'')
+              if v:
+                u=urljoin(page,v.split(',')[0].strip().split(' ')[0])
+                if u.startswith('http') and u not in urls: urls.append(u)
+          for a in soup.find_all('a'):
+            u=a.get('href','')
+            if re.search(r'\.(?:jpe?g|png)(?:\?.*)?$',u,re.I):
+              u=urljoin(page,u)
+              if u not in urls: urls.append(u)
+          print('URLS_TOTAL',len(urls)); print('IMAGE_URLS',json.dumps(urls[:120]))
+          root=Path('singer/expansion-1500/media-review/20261108/pingbook')
+          root.mkdir(parents=True,exist_ok=True)
+          thumbs=[]; files=[]
+          for u in urls[:90]:
+            try:
+              with urlopen(Request(u,headers=ua),timeout=10) as f: raw=f.read(3000000)
+              im=Image.open(io.BytesIO(raw)).convert('RGB')
+              if im.width<350 or im.height<280: continue
+              f=root/('photo_%02d.jpg'%len(files))
+              im.thumbnail((800,850))
+              im.save(f,quality=85)
+              thumb=im.copy();thumb.thumbnail((170,140))
+              files.append({'name':f.name,'url':u,'originalSize':(im.width,im.height)})
+              thumbs.append(thumb)
+              print('CANDIDATE',f,u)
+              if len(files)>=36: break
+            except Exception as ex: print('FAILED_URL',u,str(ex)[:100])
+          (root/'index.json').write_text(json.dumps(files,ensure_ascii=False,indent=2)+'\n')
+          if thumbs:
+            cols=5; cellw=195; cellh=180; rows=(len(thumbs)+cols-1)//cols
+            sheet=Image.new('RGB',(cols*cellw,rows*cellh),(240,240,240));draw=ImageDraw.Draw(sheet)
+            for i,img in enumerate(thumbs):
+              x=i%cols*cellw;y=i//cols*cellh
+              sheet.paste(img,(x,y+20));draw.text((x+3,y+2),files[i]['name'],fill=(20,20,20))
+            sheet.save(root/'contact.jpg',quality=88)
+          print('SAVED',len(files))
+          PY
+      - name: Save to review branch, not production
+        run: |
+          git config user.name "brant-photo-review-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/expansion-1500/media-review/20261108/pingbook/
+          git diff --cached --quiet || git commit -m "chore(review): inspect original Pingbook gold portraits"
+          git push origin HEAD:review/banana-kaneshiro-media-20261108

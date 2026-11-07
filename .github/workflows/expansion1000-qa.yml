@@ -34,10 +34,17 @@ jobs:
           assert len(release['entries'])==411
           assert not (set(allq)&set(quarantined)), 'Quarantined portrait is still playable'
           all_preserved={**allq,**quarantined}
-          assert sum(q.get('batchId')=='expansion1000_20261022' for q in all_preserved.values())==411
+          release_ids={q['id'] for q in release['entries']}
+          assert len(release_ids)==411
+          batch_ids={q['id'] for q in all_preserved.values() if q.get('batchId')=='expansion1000_20261022'}
+          assert batch_ids<=release_ids, 'Unrecorded expansion-1000 additions'
+          # Historical editorial removals: misidentified 管罄 portrait and two Hong Kong drama exclusions.
+          previously_retired={'x1000_p0107','x1000_p0384','x1000_p0548'}
+          missing=release_ids-batch_ids
+          assert missing<=previously_retired, f'Unexpected missing expansion-1000 records: {missing}'
           assert all(q.get('humanReviewed') for q in allq.values() if q.get('batchId')=='expansion1000_20261022')
           assert all(q.get('eligibleForLive') is False for q in quarantined.values())
-          print(f'PASS: {len(allq)} playable, {len(quarantined)} quarantined, 411 preserved expansion-1000 records')
+          print(f'PASS: 411 historically recorded, {len(batch_ids)} playable/quarantined, {len(missing)} previously retired; {len(allq)} playable total')
           PY
       - run: node singer/qa.cjs
       - name: Verify the deployed public game

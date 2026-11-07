@@ -27,6 +27,13 @@ for(const rejected of (actorBank.quarantined||[])){
  assert(rejected.eligibleForLive===false,"Quarantined portrait must not have live approval: "+rejected.id);
 }
 
+// Kaneshiro 20261108 portrait release regression
+const gold20261108=actorBank.questions.find(q=>q.id==="a_kaneshiro_20261108");
+assert(gold20261108&&gold20261108.name==="金城武","Missing reviewed Kaneshiro actor");
+assert(gold20261108.attribution.license==="CC BY 4.0","Kaneshiro rights metadata lost");
+const pendingBanana=JSON.parse(fs.readFileSync(path.join(__dirname,"variety.json")));
+assert(!pendingBanana.questions.some(q=>q.id==="v_banana_20261108"),"Unreviewed Banana image is playable");
+assert(pendingBanana.quarantined?.some(q=>q.id==="v_banana_20261108"&&q.eligibleForLive===false),"Missing Banana pending review record");
 const actorRoster=JSON.parse(fs.readFileSync(path.join(__dirname,"actors-roster.json"))).actors;
 assert.equal(actorBank.playable,actorBank.questions.length);
 assert(actorBank.playable<=1000);

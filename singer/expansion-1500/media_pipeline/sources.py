@@ -121,12 +121,18 @@ def identity(person, text):
                     continue
                 found.append(alias)
                 break
-        elif re.fullmatch(r'[\\u3400-\\u9fff]{3,}', key):
-            # Full Chinese names can also be prefixes of landmarks or other
-            # names: 金城武樹 is a tree, not a portrait of 金城武.
+        elif re.fullmatch(r'[\u3400-\u9fff]{3,}', key):
+            # Longer Chinese names need boundaries too: 金城武樹 is not 金城武.
             for match in re.finditer(re.escape(key), hay):
                 left, right = hay[:match.start()], hay[match.end():]
-                if left and re.search(r'[\\u3400-\\u9fff]
+                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
+                    continue
+                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
+                    continue
+                found.append(alias)
+                break
+        elif key in norm(text):
+            found.append(alias)
     return found
 
 

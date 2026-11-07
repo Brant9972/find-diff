@@ -52,8 +52,8 @@ jobs:
                   print(label,'SOURCE_FAILED',url,str(exc)[:450])
                   time.sleep(2)
             meta[label]={'error':'All verified source URLs failed to download'}
-          api='https://commons.wikimedia.org/w/api.php?'+urlencode({'action':'query','titles':'File:The Warlords Actors and Director (cropped).JPG','prop':'imageinfo','iiprop':'url','format':'json'})
-          gold=['https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Warlords_Actors_and_Director_%28cropped%29.JPG',
+          api='https://commons.wikimedia.org/w/api.php?'+urlencode({'action':'query','titles':'File:Takeshi Kaneshiro smiles at Central World Bangkok, Thailand 2007.jpg','prop':'imageinfo','iiprop':'url','format':'json'})
+          gold=['https://commons.wikimedia.org/wiki/Special:Redirect/file/Takeshi_Kaneshiro_smiles_at_Central_World_Bangkok%2C_Thailand_2007.jpg',
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg/600px-Takeshi_Kaneshiro_smiles%2C_Thailand_2007.jpg']
           try:
             with urlopen(Request(api,headers=headers),timeout=30) as f:
@@ -63,7 +63,7 @@ jobs:
                 gold.insert(0,info['url'])
           except Exception as exc:
             print('GOLD_API_FAILED',str(exc))
-          tryget('kaneshiro_warlords',gold)
+          tryget('kaneshiro_portrait',gold)
           banana=['https://dcm.s3.hicloud.net.tw/new/excel/object/2020-07-03/4f3c0671-f4c7-45d8-9de9-40549e412bd1/collection/55f3e35c-20b8-4f7e-a27c-e4041166909e/8b35fa5f-9349-4d83-a5fe-702580739366.JPG']
           tryget('banana',banana)
           (out/'retrieval-results.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')

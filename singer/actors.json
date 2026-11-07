@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "playable": 572,
-  "updatedAt": "2026-11-02",
+  "playable": 571,
+  "updatedAt": "2026-11-07",
   "verification": "1500 expansion, approved iconic or clear actor portraits",
   "questions": [
     {
@@ -19755,60 +19755,6 @@
       "processorVersion": 2
     },
     {
-      "id": "x1000_p0144",
-      "name": "李岳",
-      "aliases": [
-        "李岳"
-      ],
-      "photo": "photos/x1000_p0144.jpg",
-      "reveal": {
-        "eyes": [
-          0.08,
-          0.28005882760752815,
-          0.92,
-          0.4234224402386209
-        ],
-        "nose": [
-          0.08,
-          0.28005882760752815,
-          0.92,
-          0.5520246339880902
-        ],
-        "mouth": [
-          0.08,
-          0.28005882760752815,
-          0.92,
-          0.693475457896357
-        ],
-        "chin": [
-          0.08,
-          0.28005882760752815,
-          0.92,
-          0.8494382576320482
-        ],
-        "full": [
-          0,
-          0,
-          1,
-          1
-        ]
-      },
-      "attribution": {
-        "article": "https://www.ttshow.tw/article/78749",
-        "source": "https://www.ttshow.tw/article/78749",
-        "credit": "西瓜哥哥陪伴20年「退出水果家族」！初期成員只剩1人　網淚：國民初戀",
-        "artist": "",
-        "license": "Copyright retained by original source; no open licence asserted",
-        "licenseUrl": ""
-      },
-      "batchId": "expansion1000_20261022",
-      "photoStatus": "reviewed",
-      "humanReviewed": true,
-      "eligibility": "approved",
-      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
-      "processorVersion": 2
-    },
-    {
       "id": "x1000_p0145",
       "name": "李芳雯",
       "aliases": [
@@ -32192,5 +32138,68 @@
     }
   ],
   "target": 1500,
-  "eligibilityReview": "eligibility-review.json"
+  "eligibilityReview": "eligibility-review.json",
+  "quarantined": [
+    {
+      "id": "x1000_p0144",
+      "name": "李岳",
+      "aliases": [
+        "李岳",
+        "西瓜哥哥",
+        "小岳哥哥",
+        "李豐嘉"
+      ],
+      "photo": "photos/x1000_p0144.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28005882760752815,
+          0.92,
+          0.4234224402386209
+        ],
+        "nose": [
+          0.08,
+          0.28005882760752815,
+          0.92,
+          0.5520246339880902
+        ],
+        "mouth": [
+          0.08,
+          0.28005882760752815,
+          0.92,
+          0.693475457896357
+        ],
+        "chin": [
+          0.08,
+          0.28005882760752815,
+          0.92,
+          0.8494382576320482
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "attribution": {
+        "article": "https://www.ttshow.tw/article/78749",
+        "source": "https://www.ttshow.tw/article/78749",
+        "credit": "西瓜哥哥陪伴20年「退出水果家族」！初期成員只剩1人　網淚：國民初戀",
+        "artist": "",
+        "license": "Copyright retained by original source; no open licence asserted",
+        "licenseUrl": ""
+      },
+      "batchId": "expansion1000_20261022",
+      "photoStatus": "rejected_wrong_identity",
+      "humanReviewed": false,
+      "eligibility": "blocked_identity_mismatch",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
+      "processorVersion": 2,
+      "eligibleForLive": false,
+      "quarantineReason": "x1000_p0144.jpg shows 香蕉哥哥（林掄元） rather than 李岳／西瓜哥哥；article mentions both artists but image-adjacent caption not verified. Replace only after image identity and reuse rights are verified.",
+      "quarantinedAt": "2026-11-07",
+      "evidenceSource": "https://www.ttshow.tw/article/78749"
+    }
+  ]
 }

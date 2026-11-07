@@ -89,7 +89,7 @@ def identity(person, text):
     hay = converter().convert(hay) if converter() else hay
     hay = unicodedata.normalize('NFKC', hay).casefold()
     prefixes = ('歌手', '歌星', '艺人', '演员', '主持人', '音乐人', '台湾', '台语', '专访')
-    suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场')
+    suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场', '出席', '参与', '接受', '正面', '是')
     found = []
     for alias in dict.fromkeys([person['name'], *person.get('aliases', []), *person.get('acceptedAnswers', [])]):
         key = norm(alias)
@@ -118,6 +118,16 @@ def identity(person, text):
                 # A suffix of a hyphenated given name is a different person.
                 prefix = hay[:match.start()]
                 if len(words) >= 2 and len(prefix) > 1 and prefix.endswith('-') and prefix[-2].isalnum():
+                    continue
+                found.append(alias)
+                break
+        elif re.fullmatch(r'[\u3400-\u9fff]{3,}', key):
+            # Longer Chinese names need boundaries too: 金城武樹 is not 金城武.
+            for match in re.finditer(re.escape(key), hay):
+                left, right = hay[:match.start()], hay[match.end():]
+                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
+                    continue
+                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
                     continue
                 found.append(alias)
                 break

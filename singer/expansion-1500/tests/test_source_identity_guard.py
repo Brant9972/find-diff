@@ -42,6 +42,12 @@ class IdentityGuardTest(unittest.TestCase):
             'caption': '李炳輝',
         }))
 
+    def test_three_character_chinese_name_not_matched_inside_landmark(self):
+        self.assertEqual(identity({'name': '金城武'}, '台東金城武樹風景照'), [])
+        self.assertEqual(identity({'name': '金城武'}, '金城武樹下的遊客'), [])
+        self.assertEqual(identity({'name': '金城武'}, '演員金城武出席首映會'), ['金城武'])
+        self.assertEqual(identity({'name': '金城武'}, '金城武肖像照'), ['金城武'])
+
     def test_romanised_name_needs_a_whole_name(self):
         self.assertEqual(identity({'name': 'Ben Wong'}, 'Ben Wongster portrait'), [])
         self.assertEqual(identity({'name': 'Ben Wong'}, 'Ben-Wong portrait'), ['Ben Wong'])

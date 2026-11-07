@@ -36,7 +36,7 @@ jobs:
               assert not any(x['name']=='香蕉哥哥' for x in v['questions']),'Banana not cleared but exposed'
               assert any(x['id']=='v_banana_20261108' for x in v.get('quarantined',[])),'Banana pending record missing'
               image=get(q[0]['photo'])
-              assert image.startswith(b'\\xff\\xd8') and len(image)>40000,'Live portrait invalid JPEG'
+              assert image.startswith(b'\xff\xd8') and len(image)>40000,'Live portrait invalid JPEG'
               actual=hashlib.sha256(image).hexdigest()
               assert actual==q[0]['gameSha256'],f'Live photo SHA mismatch: {actual}'
               print('PASS_PUBLIC_PAGES',json.dumps({'actorPlayable':a['playable'],'gold':q[0]['name'],'photo':q[0]['photo'],'sha256':actual,'banana':'pending_not_playable'},ensure_ascii=False))

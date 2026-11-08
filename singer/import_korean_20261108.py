@@ -58,6 +58,7 @@ def sources(person):
 def make_question(person, candidate):
     data=pt.get(candidate["url"]).content
     if not 5000<len(data)<18_000_000:raise ValueError("Bad photo size")
+    manual_used=False
     try:
         crop,reveal=pt.crop_face(data)
     except ValueError as exc:
@@ -65,6 +66,7 @@ def make_question(person, candidate):
         # use a manually reviewed portrait crop rather than selecting another image.
         if not person.get("manualCrop") or "No reliable frontal face" not in str(exc):
             raise
+        manual_used=True
         from PIL import ImageOps
         im=ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert("RGB")
         l,t,r,b=person["manualCrop"]
@@ -87,7 +89,7 @@ def make_question(person, candidate):
     crop.save(target,"JPEG",quality=90)
     return {"id":person["id"],"name":person["name"],"aliases":list(dict.fromkeys([person["name"]]+person["aliases"])),
        "photo":"photos/"+person["id"]+".jpg","reveal":reveal,"processorVersion":2,
-       "photoStatus":"automatic_landmark_checks_passed","humanReviewed":False,
+       "photoStatus":"manually_framed_photo" if manual_used else "automatic_landmark_checks_passed","humanReviewed":False,
        "eligibleForLive":True,"eligibility":"approved",
        "attribution":{k:v for k,v in candidate.items() if k not in ("url","intro")},
        "bioExcerpt":candidate.get("intro","")[:400],"batchId":"korean-20261108",

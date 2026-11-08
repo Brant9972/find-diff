@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "batchId": "korean-wave4-20261109",
   "requestedByUser": "2026-11-09",
-  "notes": "19 user-requested people: 5 actors, 9 Running Man variety participants (including former cast), and 5 current i-dle members. One-person identity per solo photo, CC BY/SA/CC0 only, no group photos or unverifiable lookalikes. Keep unqualified pictures pending. Recognition and rights require individual review; humanReviewed remains false. Second-pass photo QA: replace Ji Suk-jin sunglasses, Soyeon sunglasses, and blurry concert Shuhua with verified solo CC portraits; add specifically named Commons files for Yoo Jae-suk, HaHa and Gary. Preserve old photos if replacement fails.",
+  "notes": "19 user-requested people: 5 actors, 9 Running Man variety participants (including former cast), and 5 current i-dle members. One-person identity per solo photo, CC BY/SA/CC0 only, no group photos or unverifiable lookalikes. Keep unqualified pictures pending. Recognition and rights require individual review; humanReviewed remains false. Second-pass photo QA: replace Ji Suk-jin sunglasses, Soyeon sunglasses, and blurry concert Shuhua with verified solo CC portraits; add specifically named Commons files for Yoo Jae-suk, HaHa and Gary. Preserve old photos if replacement fails. Final quality fix: HaHa 2014 source from CC BY 4.0 verified photo has clearly visible uncovered eyes, unlike stage sunglasses. Gary only known file has tiny sunglass-covered face; remains pending until a genuinely usable licensed portrait is found.",
   "people": [
     {
       "id": "kr4_20261109_01",
@@ -88,7 +88,7 @@
         "Ji Suk-jin"
       ],
       "commonsFile": "Ji Suk-jin crop.JPG",
-      "replacePhoto": true
+      "replacePhoto": false
     },
     {
       "id": "kr4_20261109_06",
@@ -124,7 +124,8 @@
       "searchAliases": [
         "Haha"
       ],
-      "commonsFile": "HaHa, Running Man Bros US Tour 2014 press conference, Dallas, December 14.jpg"
+      "commonsFile": "140807 하하 01.jpg",
+      "replacePhoto": true
     },
     {
       "id": "kr4_20261109_08",
@@ -311,7 +312,7 @@
         "Jeon Soyeon"
       ],
       "commonsFile": "Jeon Soyeon photo call 2024 02.jpg",
-      "replacePhoto": true
+      "replacePhoto": false
     },
     {
       "id": "kr4_20261109_18",
@@ -358,7 +359,7 @@
         "Yeh Shu-hua"
       ],
       "commonsFile": "(G)I-DLE Airport Departure 2024 Shuhua waving hand.png",
-      "replacePhoto": true
+      "replacePhoto": false
     }
   ]
 }

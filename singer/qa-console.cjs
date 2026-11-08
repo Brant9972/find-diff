@@ -53,7 +53,7 @@ const server=http.createServer((req,res)=>{
     await page.click('.person[data-id="kr20261108_13"]');
     const iu=await page.evaluate(()=>({work:document.querySelector("#featuredWork").textContent,aliases:document.querySelector("#answerAliases").textContent}));
     assert.equal(iu.work,"好日子");assert(iu.aliases.includes("李知恩"));
-    await page.setViewport({width:1200,height:800,isMobile:false,hasTouch:false,deviceScaleFactor:1});
+    await page.setViewport({width:1200,height:800,isMobile:true,hasTouch:true,deviceScaleFactor:1});
     const desktop=await page.$eval(".identity-overview",el=>getComputedStyle(el).gridTemplateColumns.split(" ").length);
     assert.equal(desktop,2,"Desktop cards should be side-by-side");
     assert.deepEqual(errors,[],"Console JavaScript errors");

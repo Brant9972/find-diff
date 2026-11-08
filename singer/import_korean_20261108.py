@@ -48,6 +48,7 @@ def sources(person):
     # Explicit Commons file first; otherwise require subject-linked Wikipedia/Wikidata photos.
     if person.get("commonsFile"):
         yield from commons_photo(person["commonsFile"],person)
+        return # Explicit identity-verified file only; never fall back to ambiguous names
     target={"id":person["id"],"name":person["name"],"aliases":person.get("searchAliases",[])+person["aliases"]}
     if person["mode"]=="variety":return
     for ix,candidate in enumerate(pt.portrait_candidates(target)):
@@ -94,7 +95,9 @@ for person in M["people"]:
         continue
     mode=person["mode"]
     banks[mode]["questions"].append(q); banks[mode]["playable"]=len(banks[mode]["questions"])
-    rosters[mode][mapping[mode][2]].append({"id":q["id"],"name":q["name"],"aliases":q["aliases"],"eligibility":"approved"})
+    banks[mode]["quarantined"]=[x for x in banks[mode].get("quarantined",[]) if x.get("id")!=q["id"]]
+    if not any(x.get("id")==q["id"] for x in rosters[mode][mapping[mode][2]]):
+        rosters[mode][mapping[mode][2]].append({"id":q["id"],"name":q["name"],"aliases":q["aliases"],"eligibility":"approved"})
     hints["entries"][q["id"]]={mode:{"title":person["work"],"kind":person["kind"],"source":person["article"],"review":"editorial_selection"}}
     elig["entries"][q["id"]]={"name":q["name"],"status":"approved",
         "reason":"使用者指定加入韓國知名影視、音樂或綜藝人物；台灣觀眾熟悉代表作品："+person["work"],

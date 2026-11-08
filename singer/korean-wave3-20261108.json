@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "batchId": "korean-wave3-20261108",
   "requestedByUser": "2026-11-08",
-  "notes": "User explicitly requested 10 Korean actors. Identity and work names verified; never substitute photos of same-named people. Accept only independently credited openly licensed Commons images that pass facial cropping. Unqualified remain pending; do not alter prior questions or their portraits.",
+  "notes": "User explicitly requested 10 Korean actors. Identity and work names verified; never substitute photos of same-named people. Accept only independently credited openly licensed Commons images that pass facial cropping. Unqualified remain pending; do not alter prior questions or their portraits. Manually visually checked the April 2024 Choi Ji-woo Commons portrait (CC BY 3.0): explicit filename and bounded face crop if automatic detector fails. Do not allow Bae Yong-joon Madame Tussauds waxwork photos as real portrait.",
   "people": [
     {
       "id": "kr3_20261108_01",
@@ -69,7 +69,46 @@
       ],
       "searchAliases": [
         "Choi Ji-woo"
-      ]
+      ],
+      "commonsFile": "Choi Ji-woo in April 2024.png",
+      "manualCrop": [
+        0.08,
+        0.03,
+        0.92,
+        0.73
+      ],
+      "manualReveal": {
+        "eyes": [
+          0.08,
+          0.25,
+          0.92,
+          0.4
+        ],
+        "nose": [
+          0.08,
+          0.25,
+          0.92,
+          0.54
+        ],
+        "mouth": [
+          0.08,
+          0.25,
+          0.92,
+          0.69
+        ],
+        "chin": [
+          0.08,
+          0.25,
+          0.92,
+          0.86
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
     },
     {
       "id": "kr3_20261108_05",

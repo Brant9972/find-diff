@@ -12,6 +12,7 @@ mapping={"singer":("questions.json","roster.json","singers"),"actor":("actors.js
 banks={k:json.loads((R/v[0]).read_text(encoding="utf-8")) for k,v in mapping.items()}
 rosters={k:json.loads((R/v[1]).read_text(encoding="utf-8")) for k,v in mapping.items()}
 hints=json.loads((R/"hints.json").read_text(encoding="utf-8"))
+hint_candidates=json.loads((R/"hint-candidates.json").read_text(encoding="utf-8"))
 elig=json.loads((R/"eligibility-review.json").read_text(encoding="utf-8"))
 allq=[q for d in banks.values() for q in d["questions"]]
 existing={q["name"].casefold():q for q in allq}
@@ -134,6 +135,8 @@ for person in M["people"]:
     if not any(x.get("id")==q["id"] for x in rosters[mode][mapping[mode][2]]):
         rosters[mode][mapping[mode][2]].append({"id":q["id"],"name":q["name"],"aliases":q["aliases"],"eligibility":"approved"})
     hints["entries"][q["id"]]={mode:{"title":person["work"],"kind":person["kind"],"source":person["article"],"review":"editorial_selection"}}
+    if not any(e["id"]==q["id"] and e["mode"]==mode for e in hint_candidates["entries"]):
+        hint_candidates["entries"].append({"id":q["id"],"name":q["name"],"mode":mode,"title":person["work"],"kind":person["kind"],"article":person["article"]})
     elig["entries"][q["id"]]={"name":q["name"],"status":"approved",
         "reason":"使用者指定加入韓國知名影視、音樂或綜藝人物；台灣觀眾熟悉代表作品："+person["work"],
         "sources":[person["article"],q["attribution"]["source"]],
@@ -149,7 +152,7 @@ for mode,(bankfile,rosterfile,_) in mapping.items():
         banks[mode]["updatedAt"]=datetime.date.today().isoformat()
         write(bankfile,banks[mode]);write(rosterfile,rosters[mode])
 if ready:
-    write("hints.json",hints);write("eligibility-review.json",elig)
+    write("hints.json",hints);write("hint-candidates.json",hint_candidates);write("eligibility-review.json",elig)
 write("batches/korean-wave2-20261108-review.json",{"requested":len(M["people"]),"prepared":len(ready),"ready":ready,"pending":pending,
  "note":"Automated subject-linked Commons sourcing and facial landmark checks; humanReviewed=false. Verify each released face in the console."})
 if ready:

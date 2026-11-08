@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "target": 1000,
-  "playable": 466,
+  "playable": 465,
   "updatedAt": "2026-11-08",
   "verification": "1500 expansion, visually reviewed musician role credit",
   "questions": [
@@ -26462,68 +26462,6 @@
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     },
     {
-      "id": "kr20261108_17",
-      "name": "Giselle",
-      "aliases": [
-        "Giselle",
-        "GISELLE",
-        "吉賽兒",
-        "內永枝利",
-        "Uchinaga Eri",
-        "지젤"
-      ],
-      "photo": "photos/kr20261108_17.jpg",
-      "reveal": {
-        "eyes": [
-          0.08,
-          0.28274670585257106,
-          0.92,
-          0.41635725928134604
-        ],
-        "nose": [
-          0.08,
-          0.28274670585257106,
-          0.92,
-          0.5327808817879098
-        ],
-        "mouth": [
-          0.08,
-          0.28274670585257106,
-          0.92,
-          0.6580294999919954
-        ],
-        "chin": [
-          0.08,
-          0.28274670585257106,
-          0.92,
-          0.7966245057152919
-        ],
-        "full": [
-          0,
-          0,
-          1,
-          1
-        ]
-      },
-      "processorVersion": 2,
-      "photoStatus": "automatic_landmark_checks_passed",
-      "humanReviewed": false,
-      "eligibleForLive": true,
-      "eligibility": "approved",
-      "attribution": {
-        "article": "https://zh.wikipedia.org/wiki/%E5%90%89%E8%B3%BD%E7%88%BE",
-        "source": "https://commons.wikimedia.org/wiki/File:Carlotta_Grisi_in_the_title_role_of_Giselle,_1842.jpg",
-        "artist": "John Henry Robinson (1796–1871), after  Alfred Edward Chalon (1780-1860)",
-        "credit": "该文件来自于Gallica数字图书馆，可通过数字IDbtv1b84206154获取。",
-        "license": "Public domain",
-        "licenseUrl": "",
-        "attribution": ""
-      },
-      "bioExcerpt": "《吉賽爾》（/dʒɪˈzɛl/； 法語：[ʒizɛl]），原名为 《Giselle, ou les Wilis》（法語：[ʒizɛl u le vili]，《吉赛尔或威利斯》），是浪漫芭蕾舞剧（ballet-pantomime），共有两场两幕，音乐由阿道夫·亚当提供。被认为是古典芭蕾表演经典中的杰作，它首次由皇家音乐学院剧院芭蕾舞团在巴黎的佩尔蒂埃厅 1841 年 6 月 28 日演出，由意大利芭蕾舞演员卡洛塔·格雷饰演吉赛尔。这是一场公认的杰作。它非常受欢迎，并立即在欧洲和美国上演。",
-      "batchId": "korean-20261108",
-      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
-    },
-    {
       "id": "kr20261108_18",
       "name": "Winter",
       "aliases": [
@@ -26648,5 +26586,71 @@
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     }
   ],
-  "eligibilityReview": "eligibility-review.json"
+  "eligibilityReview": "eligibility-review.json",
+  "quarantined": [
+    {
+      "id": "kr20261108_17",
+      "name": "Giselle",
+      "aliases": [
+        "Giselle",
+        "GISELLE",
+        "吉賽兒",
+        "內永枝利",
+        "Uchinaga Eri",
+        "지젤"
+      ],
+      "photo": "photos/kr20261108_17.jpg",
+      "reveal": {
+        "eyes": [
+          0.08,
+          0.28274670585257106,
+          0.92,
+          0.41635725928134604
+        ],
+        "nose": [
+          0.08,
+          0.28274670585257106,
+          0.92,
+          0.5327808817879098
+        ],
+        "mouth": [
+          0.08,
+          0.28274670585257106,
+          0.92,
+          0.6580294999919954
+        ],
+        "chin": [
+          0.08,
+          0.28274670585257106,
+          0.92,
+          0.7966245057152919
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "rejected_wrong_identity",
+      "humanReviewed": false,
+      "eligibleForLive": false,
+      "eligibility": "approved",
+      "attribution": {
+        "article": "https://zh.wikipedia.org/wiki/%E5%90%89%E8%B3%BD%E7%88%BE",
+        "source": "https://commons.wikimedia.org/wiki/File:Carlotta_Grisi_in_the_title_role_of_Giselle,_1842.jpg",
+        "artist": "John Henry Robinson (1796–1871), after  Alfred Edward Chalon (1780-1860)",
+        "credit": "该文件来自于Gallica数字图书馆，可通过数字IDbtv1b84206154获取。",
+        "license": "Public domain",
+        "licenseUrl": "",
+        "attribution": ""
+      },
+      "bioExcerpt": "《吉賽爾》（/dʒɪˈzɛl/； 法語：[ʒizɛl]），原名为 《Giselle, ou les Wilis》（法語：[ʒizɛl u le vili]，《吉赛尔或威利斯》），是浪漫芭蕾舞剧（ballet-pantomime），共有两场两幕，音乐由阿道夫·亚当提供。被认为是古典芭蕾表演经典中的杰作，它首次由皇家音乐学院剧院芭蕾舞团在巴黎的佩尔蒂埃厅 1841 年 6 月 28 日演出，由意大利芭蕾舞演员卡洛塔·格雷饰演吉赛尔。这是一场公认的杰作。它非常受欢迎，并立即在欧洲和美国上演。",
+      "batchId": "korean-20261108",
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
+      "quarantineReason": "Automated Wikipedia fallback selected 1842 ballerina Carlotta Grisi, not aespa Giselle. Awaiting correct sourced portrait.",
+      "quarantinedAt": "2026-11-08"
+    }
+  ]
 }

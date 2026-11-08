@@ -1,7 +1,7 @@
 {
   "batchId": "korean-20261108",
   "requestedByUser": "2026-11-08",
-  "notes": "User selected 15 Korean celebrities plus all 4 aespa members. Only legally sourced, single-face verified portraits may become playable. Giselle source fixed and locked to titled 2024 Wikimedia portrait after wrong-identity quarantine.",
+  "notes": "User selected 15 Korean celebrities plus all 4 aespa members. Only legally sourced, single-face verified portraits may become playable. Giselle source fixed and locked to titled 2024 Wikimedia portrait after wrong-identity quarantine. IU original photo had floral obstruction; use 2025 Blue Dragon Commons CC BY 3.0 portrait and fail closed if unavailable.",
   "people": [
     {
       "name": "玄彬",
@@ -171,7 +171,9 @@
       "searchAliases": [
         "IU (singer)"
       ],
-      "id": "kr20261108_13"
+      "id": "kr20261108_13",
+      "commonsFile": "IU at the Blue Dragon Series Awards, 18 July 2025 01.png",
+      "replacePhoto": true
     },
     {
       "name": "朴寶劍",

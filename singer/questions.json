@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "target": 1000,
-  "playable": 465,
+  "playable": 466,
   "updatedAt": "2026-11-08",
   "verification": "1500 expansion, visually reviewed musician role credit",
   "questions": [
@@ -26584,10 +26584,7 @@
       "bioExcerpt": "Ningning — Supernova",
       "batchId": "korean-20261108",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
-    }
-  ],
-  "eligibilityReview": "eligibility-review.json",
-  "quarantined": [
+    },
     {
       "id": "kr20261108_17",
       "name": "Giselle",
@@ -26603,27 +26600,27 @@
       "reveal": {
         "eyes": [
           0.08,
-          0.28274670585257106,
+          0.27986741238496066,
           0.92,
-          0.41635725928134604
+          0.4251944049222425
         ],
         "nose": [
           0.08,
-          0.28274670585257106,
+          0.27986741238496066,
           0.92,
-          0.5327808817879098
+          0.5535244534571161
         ],
         "mouth": [
           0.08,
-          0.28274670585257106,
+          0.27986741238496066,
           0.92,
-          0.6580294999919954
+          0.6860153794461152
         ],
         "chin": [
           0.08,
-          0.28274670585257106,
+          0.27986741238496066,
           0.92,
-          0.7966245057152919
+          0.8334709553918687
         ],
         "full": [
           0,
@@ -26633,24 +26630,24 @@
         ]
       },
       "processorVersion": 2,
-      "photoStatus": "rejected_wrong_identity",
+      "photoStatus": "automatic_landmark_checks_passed",
       "humanReviewed": false,
-      "eligibleForLive": false,
+      "eligibleForLive": true,
       "eligibility": "approved",
       "attribution": {
-        "article": "https://zh.wikipedia.org/wiki/%E5%90%89%E8%B3%BD%E7%88%BE",
-        "source": "https://commons.wikimedia.org/wiki/File:Carlotta_Grisi_in_the_title_role_of_Giselle,_1842.jpg",
-        "artist": "John Henry Robinson (1796–1871), after  Alfred Edward Chalon (1780-1860)",
-        "credit": "该文件来自于Gallica数字图书馆，可通过数字IDbtv1b84206154获取。",
-        "license": "Public domain",
-        "licenseUrl": "",
-        "attribution": ""
+        "article": "https://en.wikipedia.org/wiki/Giselle_(singer)",
+        "source": "https://commons.wikimedia.org/wiki/File:Giselle_of_Aespa,_July_25,_2024_(2).png",
+        "artist": "티비텐",
+        "credit": "YouTube: 에스파(aespa) 지젤, 청순 바로 지금 | aespa GISELLE CASA LOEWE Seoul [4K] – View/save archived versions on archive.org",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "티비텐"
       },
-      "bioExcerpt": "《吉賽爾》（/dʒɪˈzɛl/； 法語：[ʒizɛl]），原名为 《Giselle, ou les Wilis》（法語：[ʒizɛl u le vili]，《吉赛尔或威利斯》），是浪漫芭蕾舞剧（ballet-pantomime），共有两场两幕，音乐由阿道夫·亚当提供。被认为是古典芭蕾表演经典中的杰作，它首次由皇家音乐学院剧院芭蕾舞团在巴黎的佩尔蒂埃厅 1841 年 6 月 28 日演出，由意大利芭蕾舞演员卡洛塔·格雷饰演吉赛尔。这是一场公认的杰作。它非常受欢迎，并立即在欧洲和美国上演。",
+      "bioExcerpt": "Giselle — Supernova",
       "batchId": "korean-20261108",
-      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play",
-      "quarantineReason": "Automated Wikipedia fallback selected 1842 ballerina Carlotta Grisi, not aespa Giselle. Awaiting correct sourced portrait.",
-      "quarantinedAt": "2026-11-08"
+      "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
     }
-  ]
+  ],
+  "eligibilityReview": "eligibility-review.json",
+  "quarantined": []
 }

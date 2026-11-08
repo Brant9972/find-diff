@@ -74,8 +74,18 @@ def make_question(person, candidate):
 for person in M["people"]:
     key=person["name"].casefold()
     if key in existing:
-        pending.append({"name":person["name"],"status":"already_playable","id":existing[key]["id"]})
-        continue
+        if person.get("replacePhoto"):
+            old=existing[key]
+            if old["id"]!=person["id"] or old.get("batchId")!="korean-20261108":
+                raise ValueError("Photo replacement ID does not match our imported record")
+            banks[person["mode"]]["questions"]=[q for q in banks[person["mode"]]["questions"] if q["id"]!=person["id"]]
+            existing.pop(key)
+            ids.discard(person["id"])
+            source_urls.discard(old["attribution"]["source"])
+            article_urls.discard(old["attribution"]["article"])
+        else:
+            pending.append({"name":person["name"],"status":"already_playable","id":existing[key]["id"]})
+            continue
     if person["id"] in ids:raise ValueError("Colliding ID: "+person["id"])
     q=None;reason="No licensed, single-face portrait qualified"
     try:
@@ -90,6 +100,8 @@ for person in M["people"]:
     except Exception as err:
         reason=str(err)[:180]
     if not q:
+        if person.get("replacePhoto"):
+            raise RuntimeError("Photo replacement failed; no changes will be committed: "+person["name"]+": "+reason)
         pending.append({"name":person["name"],"id":person["id"],"reason":reason,"status":"pending_photo_review"})
         print("PENDING:",person["name"],reason,flush=True)
         continue

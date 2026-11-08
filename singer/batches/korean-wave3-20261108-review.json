@@ -1,76 +1,61 @@
 {
   "requested": 10,
-  "prepared": 8,
+  "prepared": 1,
   "ready": [
     {
-      "id": "kr3_20261108_01",
-      "name": "尹恩惠",
+      "id": "kr3_20261108_04",
+      "name": "崔智友",
       "mode": "actor",
-      "photo": "photos/kr3_20261108_01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Yoon_Eun-hye_in_April_2021.png"
-    },
-    {
-      "id": "kr3_20261108_02",
-      "name": "河智苑",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_02.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:20250915_Ha_Jiwon(%ED%95%98%EC%A7%80%EC%9B%90).png"
-    },
-    {
-      "id": "kr3_20261108_03",
-      "name": "李英愛",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_03.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Lee_Young-ae_at_the_17th_Asian_Film_Awards_in_Hong_Kong_on_March_10,_2024_(cropped).jpg"
-    },
-    {
-      "id": "kr3_20261108_06",
-      "name": "朴恩斌",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_06.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Park_Eun-bin_in_July_2025.png"
-    },
-    {
-      "id": "kr3_20261108_07",
-      "name": "金宣虎",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_07.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Kim_Seon-ho_Bottega_2026_A.jpg"
-    },
-    {
-      "id": "kr3_20261108_08",
-      "name": "金世正",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_08.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Kim_Sejeong_in_June_2025.png"
-    },
-    {
-      "id": "kr3_20261108_09",
-      "name": "廉惠蘭",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_09.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Yeom_Hye-ran.jpg"
-    },
-    {
-      "id": "kr3_20261108_10",
-      "name": "金武烈",
-      "mode": "actor",
-      "photo": "photos/kr3_20261108_10.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Kim_Mu-yeol_in_June_2026.png"
+      "photo": "photos/kr3_20261108_04.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Choi_Ji-woo_in_April_2024.png"
     }
   ],
   "pending": [
     {
-      "name": "崔智友",
-      "id": "kr3_20261108_04",
-      "reason": "No reliable frontal face",
-      "status": "pending_photo_review"
+      "name": "尹恩惠",
+      "status": "already_playable",
+      "id": "kr3_20261108_01"
+    },
+    {
+      "name": "河智苑",
+      "status": "already_playable",
+      "id": "kr3_20261108_02"
+    },
+    {
+      "name": "李英愛",
+      "status": "already_playable",
+      "id": "kr3_20261108_03"
     },
     {
       "name": "裴勇俊",
       "id": "kr3_20261108_05",
       "reason": "Face is too small",
       "status": "pending_photo_review"
+    },
+    {
+      "name": "朴恩斌",
+      "status": "already_playable",
+      "id": "kr3_20261108_06"
+    },
+    {
+      "name": "金宣虎",
+      "status": "already_playable",
+      "id": "kr3_20261108_07"
+    },
+    {
+      "name": "金世正",
+      "status": "already_playable",
+      "id": "kr3_20261108_08"
+    },
+    {
+      "name": "廉惠蘭",
+      "status": "already_playable",
+      "id": "kr3_20261108_09"
+    },
+    {
+      "name": "金武烈",
+      "status": "already_playable",
+      "id": "kr3_20261108_10"
     }
   ],
   "note": "Automated subject-linked Commons sourcing and facial landmark checks; humanReviewed=false. Verify each released face in the console."

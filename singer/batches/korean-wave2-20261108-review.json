@@ -1,15 +1,7 @@
 {
   "requested": 26,
-  "prepared": 1,
-  "ready": [
-    {
-      "id": "kr2_20261108_26",
-      "name": "崔鉉碩",
-      "mode": "variety",
-      "photo": "photos/kr2_20261108_26.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Choi_Hyun-Seok_from_acrofan.jpg"
-    }
-  ],
+  "prepared": 0,
+  "ready": [],
   "pending": [
     {
       "name": "李敏鎬",
@@ -137,6 +129,11 @@
       "id": "kr2_20261108_25",
       "reason": "No licensed, single-face portrait qualified",
       "status": "pending_photo_review"
+    },
+    {
+      "name": "崔鉉碩",
+      "status": "already_playable",
+      "id": "kr2_20261108_26"
     }
   ],
   "note": "Automated subject-linked Commons sourcing and facial landmark checks; humanReviewed=false. Verify each released face in the console."

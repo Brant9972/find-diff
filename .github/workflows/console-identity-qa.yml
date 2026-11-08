@@ -1,0 +1,31 @@
+name: Engineer console aliases and work hints QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'singer/console-a11323ac9e6c9177808240d797a88257/index.html'
+      - 'singer/qa-console.cjs'
+      - 'singer/hints.json'
+      - '.github/workflows/console-identity-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  console-smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false puppeteer-core@24
+      - name: Verify aliases and work hints in mobile and desktop engineer console
+        run: |
+          node --check singer/qa-console.cjs
+          node singer/qa-console.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: console-alias-work-qa
+          path: qa-output/console-aliases-works.png

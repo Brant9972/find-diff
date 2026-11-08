@@ -5,7 +5,7 @@ let seen=[];
 const $=id=>document.getElementById(id);
 const el={};for(const id of ["round","correct","score","portrait","photoMessage","photoTag","message","answer","submit","guessForm","revealMore","giveup","next","result","credits","creditText","creditLink","poolInfo","restart","saveWarning","roundSize","startRound","quizMode","hintPanel","hintButton","hintText","hintNote","roundSummary","summaryTitle","summaryMode","summaryScore","summaryCorrect","summaryRate","summaryRestart","photoCard"])el[id]=$(id);
 const labels=["眼睛","鼻子","嘴巴","下巴","全臉"],revealKeys=["eyes","nose","mouth","chin","full"];
-let bank=[],singerBank=[],actorBank=[],varietyBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={};
+let bank=[],singerBank=[],actorBank=[],varietyBank=[],byId=new Map(),state=null,loading=true,photoToken=0,empty=false,hints={},regionPolicy=null;
 const normalize=text=>String(text).normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 function shuffle(items){const out=[...items];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
 const modeLabels={singer:"歌手",actor:"演員",variety:"綜藝",mixed:"全部混合"};
@@ -35,11 +35,12 @@ function remember(id){
 }
 function makeDeck(mode,roundSize){
  const limit=Math.min(roundSize||bank.length,bank.length);
+ // Selected artist markets get lower odds, but the same shared 'seen' history
+ // still prevents repeats until unseen people are exhausted.
+ if(window.FaceStarRegionDraw)return window.FaceStarRegionDraw.makeDeck(bank,seen,limit,regionPolicy);
  const history=new Set(seen),eligible=new Set(bank.map(q=>q.id));
  const unseen=shuffle(bank.filter(q=>!history.has(q.id)).map(q=>q.id));
- // One shared history covers every mode. Once exhausted, revisit least-recently seen people.
- const older=seen.filter(id=>eligible.has(id));
- return [...unseen,...older].slice(0,limit);
+ return [...unseen,...seen.filter(id=>eligible.has(id))].slice(0,limit);
 }
 function fresh(roundSize=10,mode="singer"){setPool(mode);return {version:1,mode,roundSize,deck:makeDeck(mode,roundSize),pos:0,stage:0,hintUsed:false,tried:[],finished:false,won:false,score:0,correct:0,completed:0};}
 function updateRoundOption(){
@@ -53,7 +54,7 @@ function showMode(){
  document.querySelector(".sub").textContent="輸入"+(mode==="mixed"?"明星":label)+"名字；猜錯或按揭露按鈕，都能看到更多五官。";
  document.querySelector(".play").setAttribute("aria-label","猜"+(mode==="mixed"?"明星":label)+"遊戲");
  el.portrait.alt="本題"+(mode==="mixed"?"明星":label)+"的五官線索";
- el.poolInfo.textContent=label+"模式 · "+bank.length+" 位 · 優先出未看過的人 · 自動記錄進度";
+ el.poolInfo.textContent=label+"模式 · "+bank.length+" 位 · "+(state.roundSize===0?"全部模式包含每位人物":"臺灣市場優先，大陸／香港低頻出題")+" · 優先未看過的人 · 自動記錄進度";
  document.title="猜"+(mode==="mixed"?"明星":label)+"・五官挑戰";
 }
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{el.saveWarning.hidden=false;}}
@@ -239,6 +240,11 @@ async function init(){
    const response=await fetch("./hints.json",{cache:"no-store"});
    if(response.ok)hints=(await response.json()).entries||{};
   }catch{hints={};}
+  // Editorial grouping by primary entertainment market, not nationality.
+  try{
+   const response=await fetch("./regional-draw-policy.json",{cache:"no-store"});
+   if(response.ok){const policy=await response.json();if(policy&&policy.schemaVersion===1)regionPolicy=policy;}
+  }catch{regionPolicy=null;}
   readHistory();setPool("singer");state=restore();if(!bank.length)state=fresh();save();
   el.quizMode.value=state.mode;el.quizMode.disabled=false;
   el.roundSize.value=state.roundSize===0?"all":String(state.roundSize);

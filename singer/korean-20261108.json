@@ -1,7 +1,7 @@
 {
   "batchId": "korean-20261108",
   "requestedByUser": "2026-11-08",
-  "notes": "User selected 15 Korean celebrities plus all 4 aespa members. Only legally sourced, single-face verified portraits may become playable. Giselle source fixed and locked to titled 2024 Wikimedia portrait after wrong-identity quarantine. IU original photo had floral obstruction; use 2025 Blue Dragon Commons CC BY 3.0 portrait and fail closed if unavailable. Park Bo-gum image replacement requested 2026-11-08: Commons reviewed single portrait, March 2025 press conference; retain question metadata and fail closed. User 2026-11-08 specified Celine event November 2024 portrait for Park Bo-gum; attribution licensed CC BY-SA 3.0; do not change other portraits.",
+  "notes": "User selected 15 Korean celebrities plus all 4 aespa members. Only legally sourced, single-face verified portraits may become playable. Giselle source fixed and locked to titled 2024 Wikimedia portrait after wrong-identity quarantine. IU original photo had floral obstruction; use 2025 Blue Dragon Commons CC BY 3.0 portrait and fail closed if unavailable. Park Bo-gum image replacement requested 2026-11-08: Commons reviewed single portrait, March 2025 press conference; retain question metadata and fail closed. User 2026-11-08 specified Celine event November 2024 portrait for Park Bo-gum; attribution licensed CC BY-SA 3.0; do not change other portraits. Manually framed supplied Celine portrait after automatic face detector returned No reliable frontal face; crop bounded to front-facing single subject.",
   "people": [
     {
       "name": "玄彬",
@@ -187,7 +187,45 @@
       "article": "https://zh.wikipedia.org/wiki/%E6%9C%B4%E5%AF%B6%E5%8A%8D",
       "id": "kr20261108_14",
       "commonsFile": "Park Bo-gum 박보검 at a Celine event in November 2024 5.png",
-      "replacePhoto": true
+      "replacePhoto": true,
+      "manualCrop": [
+        0.075,
+        0.025,
+        0.925,
+        0.752
+      ],
+      "manualReveal": {
+        "eyes": [
+          0.08,
+          0.38,
+          0.92,
+          0.55
+        ],
+        "nose": [
+          0.08,
+          0.38,
+          0.92,
+          0.68
+        ],
+        "mouth": [
+          0.08,
+          0.38,
+          0.92,
+          0.79
+        ],
+        "chin": [
+          0.08,
+          0.38,
+          0.92,
+          0.95
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
     },
     {
       "name": "金高銀",

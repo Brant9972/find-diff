@@ -23,6 +23,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 @media(max-width:950px){.intro{align-items:start;flex-direction:column}.workspace{grid-template-columns:minmax(260px,300px) minmax(0,1fr)}.stat-band{width:100%}.stat{flex:1}.compare{gap:8px}.inspector{padding:16px}.meta-grid{grid-template-columns:90px 1fr}}
 @media(max-width:720px){.shell{padding:14px 12px 28px}.top-right .mini-pill{display:none}.intro{padding:23px 0 15px}.workspace{grid-template-columns:1fr}.sidebar{position:static}.people{height:auto;max-height:220px}.person{padding:5px}.person img{width:42px;height:48px}.inspector{padding:15px}.inspect-head{flex-direction:column;gap:4px}.id-pill{font-size:11px}.record-row{margin-bottom:14px}.image-overlay{font-size:9px}.stat{padding:8px 5px;min-width:0}.stat b{font-size:18px}.stat span{font-size:10px}.sliders{grid-template-columns:1fr 1fr}.stage-tabs button{font-size:11px}.buttons>*{flex:1}}
 @media(max-width:350px){.stage-tabs button{font-size:10px}.sliders{grid-template-columns:1fr}}
+.identity-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:5px 0 23px}.identity-card{min-width:0;background:#22283c;border:1px solid #454d65;border-radius:13px;padding:14px}.identity-card h3{font-size:12px;color:var(--muted);font-weight:750;margin:0 0 10px}.alias-tags{display:flex;gap:6px;flex-wrap:wrap}.alias-tag{font-size:12px;padding:5px 9px;background:#323b52;border:1px solid #56627c;border-radius:8px;overflow-wrap:anywhere}.alias-tag.canonical{background:#34402f;color:var(--lime);border-color:#9cac69}.identity-note{font-size:11px;color:var(--muted);margin:9px 0 0}.featured-work{font-size:19px;line-height:1.4;font-weight:800;overflow-wrap:anywhere}.work-kind{font-size:12px;color:var(--muted);margin:6px 0}.work-source{font-size:11px;overflow-wrap:anywhere}.person small.person-summary{margin-top:3px;color:#c4c9dc;line-height:1.35}@media(max-width:600px){.identity-overview{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -31,14 +32,18 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 <section class="intro"><div><p class="eyebrow">PERSONNEL / PORTRAIT INSPECTOR</p><h1>人物資料檢視台</h1><p class="desc">搜尋正式題庫、查看五官揭露、試換照片並下載修正資料。</p></div><div class="stat-band"><div class="stat"><b id="countAll">—</b><span>不重複人物</span></div><div class="stat"><b id="countSinger">—</b><span>歌手</span></div><div class="stat"><b id="countActor">—</b><span>演員</span></div><div class="stat"><b id="countVariety">—</b><span>綜藝</span></div></div></section>
 <div class="notice">這個頁面是獨立的工程檢視工具：只讀取正式 JSON。預覽、裁切與填表不會直接改動 GitHub 或正式遊戲；下載檔案後仍須經照片身分核對、提交及部署。</div>
 <div class="workspace">
-<aside class="sidebar" aria-label="人物搜尋"><h2>搜尋人物</h2><input id="search" class="search" type="search" placeholder="姓名、別名或人物 ID" autocomplete="off" aria-label="搜尋姓名、別名、ID">
+<aside class="sidebar" aria-label="人物搜尋"><h2>搜尋人物</h2><input id="search" class="search" type="search" placeholder="姓名、別名、代表作品或人物 ID" autocomplete="off" aria-label="搜尋姓名、別名、代表作品或人物 ID">
 <div class="filter" role="group" aria-label="分類篩選"><button type="button" data-role="all" aria-pressed="true">全部</button><button type="button" data-role="singer" aria-pressed="false">歌手</button><button type="button" data-role="actor" aria-pressed="false">演員</button><button type="button" data-role="variety" aria-pressed="false">綜藝</button></div>
 <p id="resultCount" class="result-count" role="status">正在載入題庫…</p><div id="people" class="people" aria-label="搜尋結果"></div>
 <section class="batch-queue" aria-label="待修正清單"><div class="batch-head"><h3>待修正清單</h3><span class="count-pill" id="batchCount">0</span></div><p class="batch-hint">每位調整完成後加入清單，可跨人物累積，最後一次下載 ZIP。</p><div id="batchList" class="batch-list"></div><button id="exportBatch" type="button" class="primary batch-export" disabled>下載整批修正包 ZIP</button><p id="batchProgress" class="progress" role="status"></p><p class="batch-hint">修正資料會暫存在這個瀏覽器；請下載 ZIP 保存，尚未發布到正式題庫。</p></section></aside>
 <div id="empty" class="empty" role="status">正在讀取正式人物資料…</div>
 <article id="inspector" class="inspector" hidden>
-<header class="inspect-head"><div><div class="person-kicker">PERSON RECORD</div><h2 id="personName"></h2><div class="categories" id="categoryChips"></div><div id="aliases" class="muted"></div></div><div id="personId" class="id-pill"></div></header>
+<header class="inspect-head"><div><div class="person-kicker">PERSON RECORD</div><h2 id="personName"></h2><div class="categories" id="categoryChips"></div></div><div id="personId" class="id-pill"></div></header>
 <div class="record-row"><label for="recordSelect">檢視題庫</label><select id="recordSelect"></select></div>
+<section class="identity-overview" aria-label="可接受答案與正式代表作品">
+<div class="identity-card"><h3>可接受答案／人物別名</h3><div id="answerAliases" class="alias-tags"></div><p id="aliasCount" class="identity-note"></p></div>
+<div class="identity-card"><h3>代表作品／正式遊戲提示</h3><div id="featuredWork" class="featured-work"></div><p id="featuredWorkKind" class="work-kind"></p><a id="featuredWorkSource" class="work-source" target="_blank" rel="noopener noreferrer" hidden>查看作品提示來源 ↗</a></div>
+</section>
 <h3 class="section-label">五階段線索預覽 · 與正式遊戲相同的揭露順序</h3>
 <div class="stage-tabs" id="stageTabs" role="group" aria-label="揭露階段"><button type="button" data-stage="eyes" aria-pressed="true">1 眼睛</button><button type="button" data-stage="nose" aria-pressed="false">2 鼻子</button><button type="button" data-stage="mouth" aria-pressed="false">3 嘴巴</button><button type="button" data-stage="chin" aria-pressed="false">4 下巴</button><button type="button" data-stage="full" aria-pressed="false">5 全臉</button></div>
 <div class="compare">
@@ -73,10 +78,11 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:man
 (function(){
 "use strict";
 var roles=[["singer","questions.json","歌手"],["actor","actors.json","演員"],["variety","variety.json","綜藝"]];
-var steps=["eyes","nose","mouth","chin","full"],selected=null,recordRole=null,stage="eyes",all=[],filterRole="all",draft=null,candidateObjectUrl=null,candidateSource="",localFile=null,corrections=new Map(),batch=new Map(),batchBusy=false;
+var steps=["eyes","nose","mouth","chin","full"],selected=null,recordRole=null,stage="eyes",all=[],filterRole="all",draft=null,candidateObjectUrl=null,candidateSource="",localFile=null,corrections=new Map(),batch=new Map(),batchBusy=false,hintEntries=Object.create(null);
 var $=function(id){return document.getElementById(id);};
 var normalize=function(s){return String(s||"").normalize("NFKC").toLocaleLowerCase().replace(/[\s\-_·．.]/g,"");};
 var prettyRole=function(role){var found=roles.find(function(x){return x[0]===role;});return found?found[2]:role;};
+var hintFor=function(p,role){return hintEntries[p.id]&&hintEntries[p.id][role]||null;};
 var safeHttp=function(s){try{var u=new URL(s);return (u.protocol==="https:"||u.protocol==="http:")?u.href:null;}catch(e){return null;}};
 var defaultRect=function(k){return {eyes:[.08,.275,.92,.425],nose:[.08,.275,.92,.59],mouth:[.08,.275,.92,.74],chin:[.08,.275,.92,.92],full:[0,0,1,1]}[k];};
 function clonedReveal(q){var out={};steps.forEach(function(k){var r=q.reveal&&q.reveal[k];out[k]=Array.isArray(r)&&r.length===4?r.slice():defaultRect(k).slice();});return out;}
@@ -86,14 +92,16 @@ function clearCandidate(){if(candidateObjectUrl){URL.revokeObjectURL(candidateOb
 function rec(){return selected.records[recordRole];}
 function renderPeople(){
  var query=normalize($("search").value);
- var matches=all.filter(function(p){return (filterRole==="all"||p.roles.includes(filterRole))&&(!query||normalize([p.id,p.name].concat(p.aliases).join(" ")).includes(query));});
+ var matches=all.filter(function(p){return (filterRole==="all"||p.roles.includes(filterRole))&&(!query||normalize([p.id,p.name].concat(p.aliases,p.roles.map(function(role){var h=hintFor(p,role);return h&&h.title||"";})).join(" ")).includes(query));});
  $("resultCount").textContent="找到 "+matches.length+" 位"+(matches.length>70?" · 顯示前 70 位":"");
  $("people").replaceChildren();
  matches.slice(0,70).forEach(function(p){
   var button=document.createElement("button");button.type="button";button.className="person";button.setAttribute("aria-current",String(selected&&selected.id===p.id));button.dataset.id=p.id;
   var img=document.createElement("img");img.alt="";img.loading="lazy";img.src="../"+p.records[p.roles[0]].photo;
-  var info=document.createElement("span"),name=document.createElement("strong"),small=document.createElement("small");name.textContent=p.name;small.textContent=p.id+" · "+p.roles.map(prettyRole).join("、");
-  info.append(name,small);button.append(img,info);button.addEventListener("click",function(){selectPerson(p);});
+  var info=document.createElement("span"),name=document.createElement("strong"),small=document.createElement("small"),summary=document.createElement("small");name.textContent=p.name;small.textContent=p.id+" · "+p.roles.map(prettyRole).join("、");
+  var work=p.roles.map(function(role){return hintFor(p,role);}).find(function(item){return item&&item.title;});
+  summary.className="person-summary";summary.textContent=(p.aliases.length?"別名："+p.aliases.slice(0,2).join("、")+(p.aliases.length>2?"…":""):"無其他別名")+(work?" · 作品："+work.title:"");
+  info.append(name,small,summary);button.append(img,info);button.addEventListener("click",function(){selectPerson(p);});
   $("people").append(button);
  });
  if(!matches.length)$("resultCount").textContent="沒有符合條件的人物";
@@ -101,13 +109,22 @@ function renderPeople(){
 function selectPerson(p){
  selected=p;recordRole=p.roles[0];stage="eyes";draft=clonedReveal(rec());clearCandidate();$("issue").value="";$("sourceArticle").value="";showFeedback(batch.has(p.id)?"此人物已有一份候選修正草稿；再次加入將取代舊版本。":"");
  $("empty").hidden=true;$("inspector").hidden=false;
- $("personName").textContent=p.name;$("personId").textContent=p.id;$("aliases").textContent=p.aliases.length?"其他名稱："+p.aliases.join("、"):"無其他別名";
+ $("personName").textContent=p.name;$("personId").textContent=p.id;
  $("categoryChips").replaceChildren();p.roles.forEach(function(role){var s=document.createElement("span");s.className="chip";s.textContent=prettyRole(role);$("categoryChips").append(s);});
  $("recordSelect").replaceChildren();p.roles.forEach(function(role){var o=document.createElement("option");o.value=role;o.textContent=prettyRole(role)+"題庫";$("recordSelect").append(o);});
  $("recordSelect").value=recordRole;renderRecord();renderPeople();
 }
 function renderRecord(){
  var q=rec();draft=clonedReveal(q);stage="eyes";
+ var answers=[selected.name].concat(selected.aliases).filter(function(a,i,items){return a&&items.indexOf(a)===i;});
+ $("answerAliases").replaceChildren();
+ answers.forEach(function(alias,i){var tag=document.createElement("span");tag.className="alias-tag"+(i===0?" canonical":"");tag.textContent=alias;$("answerAliases").append(tag);});
+ $("aliasCount").textContent="共 "+answers.length+" 個可接受名稱（含正式姓名）";
+ var hint=hintFor(selected,recordRole);
+ $("featuredWork").textContent=hint&&hint.title||"尚未設定作品提示";
+ $("featuredWorkKind").textContent=(hint&&hint.kind||"未提供作品類型")+" · "+prettyRole(recordRole)+"題庫";
+ var source=hint&&safeHttp(hint.source),link=$("featuredWorkSource");link.hidden=!source;
+ if(source){link.href=source;}else{link.removeAttribute("href");}
  $("currentPhoto").src="../"+q.photo;$("currentFilename").textContent=q.photo;$("photoPath").textContent=q.photo;
  $("allPaths").replaceChildren();selected.roles.forEach(function(role){var el=document.createElement("div");el.textContent=prettyRole(role)+"："+selected.records[role].photo;$("allPaths").append(el);});
  var correction=corrections.get(q.id),updated=correction&&correction.replacementPhoto===q.photo;
@@ -338,7 +355,8 @@ $("exportBatch").addEventListener("click",async function(){
 });
 async function init(){
  try{
-  var data=await Promise.all(roles.map(async function(role){var res=await fetch("../"+role[1],{cache:"no-store"});if(!res.ok)throw Error(role[1]+" 無法讀取");var value=await res.json();if(!Array.isArray(value.questions))throw Error(role[1]+" 格式不正確");return value.questions;}));
+  var loaded=await Promise.all([Promise.all(roles.map(async function(role){var res=await fetch("../"+role[1],{cache:"no-store"});if(!res.ok)throw Error(role[1]+" 無法讀取");var value=await res.json();if(!Array.isArray(value.questions))throw Error(role[1]+" 格式不正確");return value.questions;})),fetch("../hints.json",{cache:"no-store"}).then(function(res){if(!res.ok)throw Error("hints.json 無法讀取");return res.json();})]);
+  var data=loaded[0];if(!loaded[1]||!loaded[1].entries)throw Error("作品提示資料格式不正確");hintEntries=loaded[1].entries;
   for(var correctionFile of ["photo-corrections-20261025.json","photo-corrections-20261028.json"]){try{var correctionResponse=await fetch("../"+correctionFile,{cache:"no-store"});if(correctionResponse.ok){var correctionData=await correctionResponse.json();(correctionData.corrections||[]).forEach(function(item){corrections.set(item.id,item);});}}catch(e){}}
   var byId=new Map();
   data.forEach(function(bank,i){var role=roles[i][0];$("count"+role[0].toUpperCase()+role.slice(1)).textContent=bank.length;

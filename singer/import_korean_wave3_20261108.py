@@ -53,6 +53,13 @@ def sources(person):
     target={"id":person["id"],"name":person["name"],"aliases":person.get("searchAliases",[])+person["aliases"]}
     for ix,candidate in enumerate(pt.portrait_candidates(target)):
         if ix>=18:break
+        # A wax figure is not the person. Commons has Madame Tussauds images
+        # labelled as Bae Yong-joon; they must never enter the celebrity quiz.
+        source=(candidate.get("source") or "").lower()
+        if any(term in source for term in ("madame_tussaud","wax_figure","waxwork")):
+            continue
+        if person["id"]=="kr3_20261108_05" and "bae_yong_joon.jpg" in source:
+            continue
         yield candidate
 
 def make_question(person, candidate):

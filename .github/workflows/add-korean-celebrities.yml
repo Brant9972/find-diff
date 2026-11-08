@@ -29,7 +29,7 @@ jobs:
         run: python -u singer/import_korean_20261108.py
       - name: Regression test playable banks
         run: node singer/qa.cjs
-      - name: Commit only tested data and portraits
+      - name: Commit tested portraits to isolated review branch only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -39,7 +39,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Add verified Korean celebrity portraits and quiz hints"
             git pull --rebase origin main
-            git push origin HEAD:main
+            git push origin HEAD:refs/heads/automation/korean-review-${{ github.run_id }}
           fi
       - uses: actions/upload-artifact@v4
         if: always()

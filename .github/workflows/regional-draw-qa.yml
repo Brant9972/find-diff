@@ -1,0 +1,38 @@
+name: Regional appearance and game QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'singer/regional-draw-policy.json'
+      - 'singer/regional-draw.js'
+      - 'singer/qa-regional-draw.cjs'
+      - 'singer/game.js'
+      - 'singer/index.html'
+      - '.github/workflows/regional-draw-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regional-draw-and-rounds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify scripts and mainland/HK weighting
+        run: |
+          node --check singer/regional-draw.js
+          node --check singer/game.js
+          node --check singer/qa-regional-draw.cjs
+          node singer/qa-regional-draw.cjs
+      - name: Install browser QA support
+        run: npm install --no-save --package-lock=false puppeteer-core@24
+      - name: Test existing quiz flow and saved progress
+        run: node singer/qa.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: regional-draw-mobile-qa
+          path: qa-output/

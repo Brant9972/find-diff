@@ -58,7 +58,29 @@ def sources(person):
 def make_question(person, candidate):
     data=pt.get(candidate["url"]).content
     if not 5000<len(data)<18_000_000:raise ValueError("Bad photo size")
-    crop,reveal=pt.crop_face(data)
+    try:
+        crop,reveal=pt.crop_face(data)
+    except ValueError as exc:
+        # For a user-selected, verified Commons file with no machine-detected face,
+        # use a manually reviewed portrait crop rather than selecting another image.
+        if not person.get("manualCrop") or "No reliable frontal face" not in str(exc):
+            raise
+        from PIL import ImageOps
+        im=ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert("RGB")
+        l,t,r,b=person["manualCrop"]
+        if not (0<=l<r<=1 and 0<=t<b<=1 and (r-l)>.25 and (b-t)>.25):
+            raise ValueError("Invalid manual crop")
+        box=(round(im.width*l),round(im.height*t),round(im.width*r),round(im.height*b))
+        crop=im.crop(box).resize((600,720),Image.Resampling.LANCZOS)
+        reveal=person["manualReveal"]
+        for stage in ("eyes","nose","mouth","chin","full"):
+            a=reveal[stage]
+            if not (len(a)==4 and all(0<=v<=1 for v in a) and a[0]<a[2] and a[1]<a[3]):
+                raise ValueError("Invalid manual reveal: "+stage)
+        if not (reveal["eyes"][3]<reveal["nose"][3]<reveal["mouth"][3]<reveal["chin"][3]):
+            raise ValueError("Invalid manual reveal sequence")
+        if reveal["full"]!=[0,0,1,1]:
+            raise ValueError("Invalid final reveal")
     if crop.size!=(600,720):raise ValueError("Unexpected crop size")
     target=R/"photos"/(person["id"]+".jpg")
     target.parent.mkdir(exist_ok=True)

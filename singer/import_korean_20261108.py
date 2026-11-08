@@ -48,7 +48,7 @@ def sources(person):
     # Explicit Commons file first; otherwise require subject-linked Wikipedia/Wikidata photos.
     if person.get("commonsFile"):
         yield from commons_photo(person["commonsFile"],person)
-    target={"id":person["id"],"name":person["name"],"aliases":person["aliases"]+person.get("searchAliases",[])}
+    target={"id":person["id"],"name":person["name"],"aliases":person.get("searchAliases",[])+person["aliases"]}
     if person["mode"]=="variety":return
     for ix,candidate in enumerate(pt.portrait_candidates(target)):
         if ix>=18:break
@@ -107,10 +107,11 @@ for person in M["people"]:
 
 # No changes to existing question objects. Publish only individually qualified portraits.
 for mode,(bankfile,rosterfile,_) in mapping.items():
-    if any(q["id"]==p["id"] for q in banks[mode]["questions"] for p in M["people"]):
+    if any(p["mode"]==mode for p in M["people"] if any(q["id"]==p["id"] for q in banks[mode]["questions"])):
         banks[mode]["updatedAt"]=datetime.date.today().isoformat()
-    write(bankfile,banks[mode]);write(rosterfile,rosters[mode])
-write("hints.json",hints);write("eligibility-review.json",elig)
+        write(bankfile,banks[mode]);write(rosterfile,rosters[mode])
+if ready:
+    write("hints.json",hints);write("eligibility-review.json",elig)
 write("batches/korean-20261108-review.json",{"requested":len(M["people"]),"prepared":len(ready),"ready":ready,"pending":pending,
  "note":"Automated subject-linked Commons sourcing and facial landmark checks; humanReviewed=false. Verify each released face in the console."})
 if ready:

@@ -1,0 +1,53 @@
+name: Commons portrait download smoke test
+
+on:
+  push:
+    paths:
+      - '.github/workflows/commons-portrait-smoke-test.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-soyeon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Test Wikimedia Commons metadata and original image access
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, urllib.parse, urllib.request, sys
+          title = "File:06072026_SOYEON_I-DLE_SHOWCASE_4.png"
+          params = urllib.parse.urlencode({
+              "action":"query","format":"json","prop":"imageinfo",
+              "iiprop":"url|size|mime|extmetadata","titles":title
+          })
+          url = "https://commons.wikimedia.org/w/api.php?" + params
+          req = urllib.request.Request(url, headers={"User-Agent":"FindDiffPortraitQA/1.0 (GitHub Actions; Wikimedia Commons license audit)"})
+          try:
+              with urllib.request.urlopen(req, timeout=25) as resp:
+                  data=json.load(resp)
+              page=next(iter(data["query"]["pages"].values()))
+              if "missing" in page or not page.get("imageinfo"):
+                  raise ValueError("Commons file missing or no imageinfo: "+title)
+              info=page["imageinfo"][0]
+              ext=info.get("extmetadata",{})
+              print("Commons title:", page["title"])
+              print("MIME:", info.get("mime"), "size:", info.get("size"))
+              for k in ("LicenseShortName","LicenseUrl","Artist","Credit","AttributionRequired","UsageTerms"):
+                  print(k+":", str(ext.get(k,{}).get("value",""))[:600])
+              source=info["url"]
+              print("Original URL:", source)
+              imgreq=urllib.request.Request(source,headers={"User-Agent":"FindDiffPortraitQA/1.0"})
+              with urllib.request.urlopen(imgreq,timeout=30) as img:
+                  head=img.read(24)
+                  print("Original HTTP:", img.status, "content-type:",img.headers.get("Content-Type"))
+              if not head.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+                  raise ValueError("Original is not a valid PNG signature")
+              print("PASS: Commons metadata and original PNG are accessible from GitHub Actions")
+          except Exception as exc:
+              print("FAIL:",repr(exc),file=sys.stderr)
+              sys.exit(1)
+          PY

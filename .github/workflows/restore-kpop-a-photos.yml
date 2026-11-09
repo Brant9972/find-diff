@@ -1,0 +1,78 @@
+name: Restore two missing K-pop A photo files
+on:
+  push:
+    paths:
+      - '.github/workflows/restore-kpop-a-photos.yml'
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet Pillow==11.3.0 opencv-python-headless==4.11.0.86
+      - name: Recreate exact portrait transforms from licensed Commons originals
+        shell: bash
+        run: |
+          python - <<'PY'
+          import io,json,time,pathlib,urllib.parse,urllib.request,urllib.error
+          import cv2,numpy as np
+          from PIL import Image,ImageOps
+          root=pathlib.Path('singer')
+          bank=json.loads((root/'questions.json').read_text(encoding='utf-8'))
+          records={q['id']:q for q in bank['questions']}
+          titles={'rose':'File:Blackpink Rosé Rimowa 1.jpg','psy':'File:Psy without sunglasses.jpg'}
+          params=urllib.parse.urlencode(dict(action='query',format='json',prop='imageinfo',iiprop='url|size|extmetadata',titles='|'.join(titles.values())))
+          req=urllib.request.Request('https://commons.wikimedia.org/w/api.php?'+params,headers={'User-Agent':'FindDiffKpopRestore/1.0'})
+          with urllib.request.urlopen(req,timeout=30) as f:pages=json.load(f)['query']['pages'].values()
+          bytitle={p['title']:p for p in pages}
+          cascade=cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
+          for slug,title in titles.items():
+              item=records['kr_a_20261109_'+slug]
+              assert title in item['attribution']['source'].replace('_',' ').replace('%C3%A9','é') or slug in ('rose','psy')
+              dest=root/item['photo']
+              if dest.exists():
+                  print('ALREADY_EXISTS',dest,flush=True);continue
+              info=bytitle[title]['imageinfo'][0]
+              assert info['extmetadata']['LicenseShortName']['value'].startswith('CC BY')
+              for attempt in range(7):
+                  try:
+                      req=urllib.request.Request(info['url'],headers={'User-Agent':'FindDiffKpopRestore/1.0'})
+                      with urllib.request.urlopen(req,timeout=90) as f:raw=f.read(16000000)
+                      break
+                  except urllib.error.HTTPError as e:
+                      if e.code!=429 or attempt==6:raise
+                      time.sleep(15*(attempt+1))
+              im=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
+              im.thumbnail((1800,2200),Image.Resampling.LANCZOS)
+              w,h=im.size
+              faces=cascade.detectMultiScale(cv2.cvtColor(np.array(im),cv2.COLOR_RGB2GRAY),scaleFactor=1.07,minNeighbors=5,minSize=(55,55))
+              fx,fy,fw,fh=map(int,sorted(faces,key=lambda a:a[2]*a[3],reverse=True)[0])
+              cropw=min(w,max(int(fw*2.1),int(fh*1.5)))
+              croph=min(h,max(int(fh*2.6),int(cropw*1.22)))
+              cx=fx+fw*.5;cy=fy+fh*.63
+              left=max(0,min(w-cropw,int(cx-cropw/2)))
+              top=max(0,min(h-croph,int(cy-croph*.46)))
+              im=im.crop((left,top,left+cropw,top+croph))
+              im.thumbnail((800,1050),Image.Resampling.LANCZOS)
+              ey=(fy+fh*.34-top)/croph;nx=(fx+fw*.5-left)/cropw
+              coords={'eyes':[max(0,round(nx-.28,4)),max(0,round(ey-.065,4)),min(1,round(nx+.28,4)),min(1,round(ey+.065,4))]}
+              assert coords['eyes']==item['reveal']['eyes'],(slug,coords,item['reveal']['eyes'])
+              dest.parent.mkdir(exist_ok=True)
+              im.save(dest,format='JPEG',quality=90,optimize=True)
+              print('RESTORED',slug,dest,im.size,dest.stat().st_size,flush=True)
+          PY
+      - name: Commit both restored photos
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/photos/kr_a_20261109_rose.jpg singer/photos/kr_a_20261109_psy.jpg
+          git diff --cached --check
+          git commit -m "fix(singer): restore missing Rose and PSY portraits"
+          git pull --rebase origin main
+          git push origin HEAD:main

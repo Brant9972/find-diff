@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "target": 1000,
-  "playable": 471,
+  "playable": 474,
   "updatedAt": "2026-11-08",
   "verification": "1500 expansion, visually reviewed musician role credit",
   "questions": [
@@ -26953,6 +26953,193 @@
       "bioExcerpt": "舒華 — Queencard",
       "batchId": "korean-wave4-20261109",
       "transform": "Face cropped, eye line aligned, resized; revealed progressively during play"
+    },
+    {
+      "id": "kr_a_20261109_gd",
+      "name": "G-DRAGON",
+      "aliases": [
+        "G-DRAGON",
+        "G-Dragon",
+        "權志龍",
+        "权志龙",
+        "Kwon Ji-yong",
+        "G-Dragon (BIGBANG)"
+      ],
+      "photo": "photos/kr_a_20261109_gd.jpg",
+      "reveal": {
+        "eyes": [
+          0.1035,
+          0.2325,
+          0.6635,
+          0.3625
+        ],
+        "nose": [
+          0.1035,
+          0.2325,
+          0.6635,
+          0.4775
+        ],
+        "mouth": [
+          0.1035,
+          0.2325,
+          0.6635,
+          0.5975
+        ],
+        "chin": [
+          0.1035,
+          0.2325,
+          0.6635,
+          0.7675
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "automatic_landmark_checks_passed",
+      "humanReviewed": false,
+      "eligibleForLive": true,
+      "eligibility": "approved",
+      "attribution": {
+        "article": "",
+        "source": "https://commons.wikimedia.org/wiki/File:G-DRAGON_CHANEL_Photo_Call_1.jpg",
+        "artist": "K-POPIT 케이팝잇",
+        "credit": "G-DRAGON CHANEL Photo Call 1.jpg — K-POPIT 케이팝잇",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "K-POPIT 케이팝잇"
+      },
+      "bioExcerpt": "G-DRAGON — BIGBANG",
+      "batchId": "kpop-a-20261109",
+      "transform": "Face-centered crop from licensed Wikimedia Commons file, resized JPEG; progressive reveals recomputed from detected face geometry"
+    },
+    {
+      "id": "kr_a_20261109_jennie",
+      "name": "Jennie",
+      "aliases": [
+        "Jennie",
+        "JENNIE",
+        "金珍妮",
+        "Kim Jennie",
+        "Jennie Kim",
+        "김제니"
+      ],
+      "photo": "photos/kr_a_20261109_jennie.jpg",
+      "reveal": {
+        "eyes": [
+          0.0707,
+          0.3846,
+          0.6307,
+          0.5146
+        ],
+        "nose": [
+          0.0707,
+          0.3846,
+          0.6307,
+          0.6296
+        ],
+        "mouth": [
+          0.0707,
+          0.3846,
+          0.6307,
+          0.7496
+        ],
+        "chin": [
+          0.0707,
+          0.3846,
+          0.6307,
+          0.9196
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "automatic_landmark_checks_passed",
+      "humanReviewed": false,
+      "eligibleForLive": true,
+      "eligibility": "approved",
+      "attribution": {
+        "article": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Jennie_Kim_2024_(facecrop).png",
+        "artist": "티비텐",
+        "credit": "Jennie Kim 2024 (facecrop).png — 티비텐",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "티비텐"
+      },
+      "bioExcerpt": "Jennie — BLACKPINK",
+      "batchId": "kpop-a-20261109",
+      "transform": "Face-centered crop from licensed Wikimedia Commons file, resized JPEG; progressive reveals recomputed from detected face geometry"
+    },
+    {
+      "id": "kr_a_20261109_rose",
+      "name": "Rosé",
+      "aliases": [
+        "Rosé",
+        "ROSÉ",
+        "Rose",
+        "朴彩英",
+        "Park Chae-young",
+        "Roseanne Park",
+        "彩英"
+      ],
+      "photo": "photos/kr_a_20261109_rose.jpg",
+      "reveal": {
+        "eyes": [
+          0.2059,
+          0.25,
+          0.7659,
+          0.38
+        ],
+        "nose": [
+          0.2059,
+          0.25,
+          0.7659,
+          0.495
+        ],
+        "mouth": [
+          0.2059,
+          0.25,
+          0.7659,
+          0.615
+        ],
+        "chin": [
+          0.2059,
+          0.25,
+          0.7659,
+          0.785
+        ],
+        "full": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "processorVersion": 2,
+      "photoStatus": "automatic_landmark_checks_passed",
+      "humanReviewed": false,
+      "eligibleForLive": true,
+      "eligibility": "approved",
+      "attribution": {
+        "article": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Blackpink_Ros%C3%A9_Rimowa_1.jpg",
+        "artist": "TV10",
+        "credit": "Blackpink Rosé Rimowa 1.jpg — TV10",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "attribution": "TV10"
+      },
+      "bioExcerpt": "Rosé — BLACKPINK",
+      "batchId": "kpop-a-20261109",
+      "transform": "Face-centered crop from licensed Wikimedia Commons file, resized JPEG; progressive reveals recomputed from detected face geometry"
     }
   ],
   "eligibilityReview": "eligibility-review.json",

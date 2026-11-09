@@ -227,7 +227,7 @@ async function init(){
   const responses=await Promise.all(["./questions.json","./actors.json"].map(url=>fetch(url,{cache:"no-store"})));
   if(responses.some(r=>!r.ok))throw Error("Question bank unavailable");
   const payloads=await Promise.all(responses.map(r=>r.json()));
-  const valid=payload=>(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&/^photos\/[a-zA-Z0-9_-]+\.jpg$/.test(q.photo));
+  const valid=payload=>(payload.questions||[]).filter(q=>q.id&&q.name&&Array.isArray(q.aliases)&&(/^(?:photos\/[a-zA-Z0-9_-]+\.jpg|https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/[a-zA-Z0-9_./-]+\.png)$/.test(q.photo)));
   singerBank=valid(payloads[0]);actorBank=valid(payloads[1]);
   if(!singerBank.length||!actorBank.length)throw Error("No prepared photos");
   // Each optional category fails independently; existing categories remain playable.

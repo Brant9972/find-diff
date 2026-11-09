@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - run: python3 -m pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python opencv-contrib-python-headless || true
-      - run: python3 -m pip install --quiet --no-cache-dir opencv-python-headless Pillow
+      - run: python3 -m pip install --quiet --no-cache-dir 'opencv-python-headless==4.11.0.86' Pillow
       - run: |
           python3 - <<'PY'
           import cv2

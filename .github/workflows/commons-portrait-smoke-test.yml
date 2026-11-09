@@ -44,7 +44,7 @@ jobs:
               with urllib.request.urlopen(imgreq,timeout=30) as img:
                   head=img.read(24)
                   print("Original HTTP:", img.status, "content-type:",img.headers.get("Content-Type"))
-              if not head.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+              if not head[:8] == bytes([137,80,78,71,13,10,26,10]):
                   raise ValueError("Original is not a valid PNG signature")
               print("PASS: Commons metadata and original PNG are accessible from GitHub Actions")
           except Exception as exc:

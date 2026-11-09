@@ -7,6 +7,9 @@
 })(typeof window!=="undefined"?window:globalThis,function(){
  "use strict";
  function regionOf(q,policy){
+  // Market is explicit per ID. Only uncatalogued new IDs use legacy name fallbacks.
+  const market=policy?.primaryMarketsById?.[q.id] ?? q.primaryMarket;
+  if(typeof market==="string"&&market&&market!=="unverified")return market;
   const lists=policy&&policy.lowFrequencyNames||{};
   if(Array.isArray(lists.mainland)&&lists.mainland.includes(q.name))return "mainland";
   if(Array.isArray(lists.hongkong)&&lists.hongkong.includes(q.name))return "hongkong";

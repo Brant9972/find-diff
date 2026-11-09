@@ -1,0 +1,29 @@
+name: Diagnose Soyeon face landmarks
+
+on:
+  push:
+    paths:
+      - '.github/workflows/diagnose-soyeon-face.yml'
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m pip install --quiet opencv-python-headless Pillow
+      - run: |
+          python3 - <<'PY'
+          import cv2
+          p='singer/photos/kr4_20261109_17_soyeon_showcase_2026.jpg'
+          im=cv2.imread(p)
+          h,w=im.shape[:2]
+          gray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
+          faces=cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
+          eyes=cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_eye.xml')
+          found=faces.detectMultiScale(gray,scaleFactor=1.05,minNeighbors=4,minSize=(45,45))
+          print('IMAGE',w,h,'FACES',len(found),flush=True)
+          for x,y,fw,fh in sorted(found,key=lambda z:z[2]*z[3],reverse=True):
+              e=eyes.detectMultiScale(gray[y:y+int(fh*.65),x:x+fw],scaleFactor=1.05,minNeighbors=4,minSize=(10,10))
+              print('FACE pixels',x,y,fw,fh,'normalized',[round(x/w,4),round(y/h,4),round((x+fw)/w,4),round((y+fh)/h,4)],'EYES',[(int(a+x),int(b+y),int(c),int(d)) for a,b,c,d in e],flush=True)
+          PY

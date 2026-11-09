@@ -1,0 +1,59 @@
+name: K-pop A live release QA
+on:
+  push:
+    paths:
+      - '.github/workflows/kpop-a-live-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify ten identities, local photos and live Pages deployment
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,urllib.request,urllib.error,time
+          from PIL import Image
+          root=pathlib.Path('singer')
+          bank=json.loads((root/'questions.json').read_text(encoding='utf-8'))
+          ids=['gd','jennie','lisa','rose','jisoo','jungkook','wonyoung','tzuyu','taeyeon','psy']
+          records=[x for x in bank['questions'] if x.get('batchId')=='kpop-a-20261109']
+          assert len(records)==10,(len(records),[x['name'] for x in records])
+          assert set(x['id'] for x in records)=={'kr_a_20261109_'+x for x in ids}
+          assert bank['playable']==len(bank['questions'])
+          for r in records:
+              p=root/r['photo']
+              assert p.is_file() and p.stat().st_size>5000,(r['name'],str(p))
+              with Image.open(p) as im:im.verify()
+              assert r['attribution']['source'].startswith('https://commons.wikimedia.org/wiki/File:')
+              assert r['attribution']['license'].startswith('CC BY')
+              prev=0
+              for key in ['eyes','nose','mouth','chin']:
+                  x1,y1,x2,y2=r['reveal'][key]
+                  assert 0<=x1<x2<=1 and 0<=y1<y2<=1
+                  assert y2>prev
+                  prev=y2
+          print('LOCAL_QA_PASS',len(records),'SINGER_COUNT',bank['playable'],flush=True)
+          base='https://brant9972.github.io/find-diff/singer/'
+          for attempt in range(30):
+              try:
+                  req=urllib.request.Request(base+'questions.json?qa='+str(attempt),headers={'User-Agent':'FindDiffReleaseQA/1.0','Cache-Control':'no-cache'})
+                  with urllib.request.urlopen(req,timeout=20) as f:live=json.load(f)
+                  liveids={x['id'] for x in live['questions']}
+                  if all(x['id'] in liveids for x in records) and live['playable']>=481:break
+                  print('LIVE_WAIT',attempt,'count',live.get('playable'),flush=True)
+              except Exception as e:print('LIVE_WAIT_ERROR',attempt,str(e)[:140],flush=True)
+              time.sleep(15)
+          else:raise RuntimeError('Live Pages has not published all 10 records')
+          for r in records:
+              url=base+r['photo']
+              req=urllib.request.Request(url,headers={'User-Agent':'FindDiffReleaseQA/1.0'})
+              with urllib.request.urlopen(req,timeout=20) as f:
+                  header=f.read(3)
+                  assert f.status==200 and header==bytes([255,216,255]),(r['name'],f.status,header)
+              print('LIVE_PHOTO_PASS',r['name'],url,flush=True)
+          print('LIVE_QA_PASS',len(records),'PLAYABLE',live['playable'],flush=True)
+          PY

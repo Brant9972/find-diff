@@ -11,6 +11,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - run: python3 -m pip install --quiet Pillow
       - name: Verify ten identities, local photos and live Pages deployment
         shell: bash
         run: |

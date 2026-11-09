@@ -36,6 +36,20 @@ This is an existing, production GitHub Pages project. **Do not recreate the game
 6. If no reliable replacement is available, temporarily quarantine the bad question when supported by the existing schema.
 7. Check local paths, image decoding, and live image responses before calling a photo fix complete.
 
+## Reliable Wikimedia Commons portrait replacement via GitHub Actions
+- **Do not ask the user to download/upload a Commons image just because the chat's container cannot resolve Wikimedia DNS.** A tested GitHub-hosted runner can fetch Commons metadata and original image; use that as the fallback.
+- Proven example: `.github/workflows/replace-soyeon-commons.yml` successfully downloaded `File:06072026_SOYEON_I-DLE_SHOWCASE_4.png`, verified **CC BY 4.0**, converted PNG to JPEG with Pillow, updated only singer ID `kr4_20261109_17` in `singer/questions.json`, committed and pushed the photo and metadata. See `.github/workflows/commons-portrait-smoke-test.yml` for the network/download smoke test. These are **examples, not a generic parameterized replacement interface**; adapt the job for a different person/file rather than assuming the Soyeon-specific workflow can process anyone.
+- Workflow recipe for future changes:
+  1. Fetch latest `main`, inspect the exact target record and photo references, source URL, rights and any concurrent work.
+  2. Use a GitHub Actions runner with Python `urllib.request` to query `https://commons.wikimedia.org/w/api.php` using `action=query&prop=imageinfo&iiprop=url|size|mime|extmetadata`; supply a descriptive User-Agent. Read `imageinfo[0].url` for the **actual original image URL**, and confirm the source's license and artist before download.
+  3. Download the original bytes from `upload.wikimedia.org`, verify format and decode with Pillow. Resize/convert for the game as necessary; **do not silently alter facial framing or keep stale reveal coordinates if cropping changes**. Prefer a **new descriptive photo filename** so browser caches cannot show the old image.
+  4. Make a **targeted edit** to only the intended person's record in the current bank; preserve other records, aliases, eligibility, hint links, player progress and localStorage. Set the new `photo` and correct `attribution.source`, `artist`, `credit`, `license`, `licenseUrl`, `attribution` based on actual Commons metadata. Do not invent attribution.
+  5. Give the workflow `permissions: contents: write`; stage **only** the target photo and JSON; validate image decoding and JSON, commit, `git pull --rebase origin main` and push without force. On a concurrent edit/conflict, stop and reconcile rather than overwriting someone else's work.
+  6. Inspect the **workflow run logs and success status**, reread `main` to verify the committed photo and JSON, then inspect the **separate GitHub Pages deployment run** and verify the live asset/site. Report committed, deployed and live-verified statuses separately.
+- **Critical caution:** a workflow can fail due to a scripting mistake even if the network works. The initial Commons smoke test downloaded an HTTP 200 PNG but failed because the test compared against a double-escaped PNG signature; the corrected check `head[:8] == bytes([137,80,78,71,13,10,26,10])` passed. Read logs before diagnosing network failure.
+- Avoid retriggering a one-shot workflow unintentionally. The Soyeon workflow is currently configured to run when **its own workflow YAML changes**, and is specific to that one portrait. Prefer a reusable `workflow_dispatch` interface or a targeted one-off workflow for new requests, with clear validation and safeguards.
+- Relevant example commit for the Soyeon image/JSON: `6a1366ad5a121d444bfde36c5b3266229d9e0942`. Always inspect the current HEAD rather than treating this historical SHA as latest.
+
 ## Safe GitHub changes
 - Read current `main` HEAD immediately before work; prefer a short-lived branch/PR for risky or multi-file edits.
 - Make minimal targeted modifications. Before publishing, fetch `main` again and compare to the original HEAD. On concurrent changes, rebase/merge logically from the latest files and rerun validation; never force push.

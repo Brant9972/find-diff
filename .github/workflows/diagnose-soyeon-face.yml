@@ -16,6 +16,7 @@ jobs:
       - run: |
           python3 - <<'PY'
           import cv2
+          print('CV2 DIAGNOSTIC',repr(getattr(cv2,'__file__',None)),repr(getattr(cv2,'__version__',None)),str(getattr(cv2,'__path__',None)),flush=True)
           p='singer/photos/kr4_20261109_17_soyeon_showcase_2026.jpg'
           im=cv2.imread(p)
           h,w=im.shape[:2]

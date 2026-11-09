@@ -865,6 +865,312 @@
         "Local JPEG identity, watermark, clarity, image bytes, and five-stage actual visual framing were not verified; runtime network cannot retrieve GitHub photo bytes"
       ],
       "modificationCommit": null
+    },
+    {
+      "id": "s065",
+      "category": "questions",
+      "name": "高凌風",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Frankie_Gao.jpg",
+        "https://zh.wikipedia.org/wiki/%E9%AB%98%E5%87%8C%E9%A2%A8"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null,
+      "reviewNotes": [
+        "Commons lists JeanHavoc as author and CC0 1.0; description identifies 高凌風."
+      ]
+    },
+    {
+      "id": "s066",
+      "category": "questions",
+      "name": "余天",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:07.04_%E7%B8%BD%E7%B5%B1%E5%8F%83%E6%8B%9C%E3%80%8C%E4%B8%89%E9%87%8D%E5%85%88%E5%97%87%E5%AE%AE%E3%80%8D_(48193864076)_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/%E4%BD%99%E5%A4%A9"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s070",
+      "category": "questions",
+      "name": "蔡小虎",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Tsai_Hsiao-hu_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/%E8%94%A1%E5%B0%8F%E8%99%8E"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s072",
+      "category": "questions",
+      "name": "沈文程",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E6%96%87%E7%A8%8B.jpg",
+        "https://zh.wikipedia.org/wiki/%E6%B2%88%E6%96%87%E7%A8%8B"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null,
+      "reviewNotes": [
+        "Commons lists 信吉衛星電視台 as author and CC BY 3.0; YouTube-license reviewer Yeeno confirmed on 2022-03-02."
+      ]
+    },
+    {
+      "id": "s073",
+      "category": "questions",
+      "name": "王識賢",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Wang_Shih-hsien_(%E7%8E%8B%E8%AD%98%E8%B3%A2)_-_Behind_the_Scenes_of_the_film_%22Your_Name_Engraved_Herein%22.jpg",
+        "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%AD%98%E8%B3%A2"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null,
+      "reviewNotes": [
+        "Commons lists ELLE TAIWAN as author and CC BY 3.0; reviewer Shizhao confirmed on 2024-10-04."
+      ]
+    },
+    {
+      "id": "s076",
+      "category": "questions",
+      "name": "鼓鼓",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E9%BC%93%E9%BC%9320210424.jpg",
+        "https://zh.wikipedia.org/wiki/%E5%91%82%E6%80%9D%E7%B7%AF"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s078",
+      "category": "questions",
+      "name": "敖犬",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Owodog_2009_in_Tainan.jpg",
+        "https://zh.wikipedia.org/wiki/%E6%95%96%E7%8A%AC"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s079",
+      "category": "questions",
+      "name": "蔡旻佑",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Evan_Yo_2017.jpg",
+        "https://zh.wikipedia.org/wiki/%E8%94%A1%E6%97%BB%E4%BD%91"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s086",
+      "category": "questions",
+      "name": "大支",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:CMJTaiwan_Dwagie10242014_21_(15441351187).jpg",
+        "https://en.wikipedia.org/wiki/Dwagie"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s089",
+      "category": "questions",
+      "name": "黃宣",
+      "reviewedAt": "2026-11-10T05:06:16+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:220702_%E9%BB%83%E5%AE%A3_02.png",
+        "https://zh.wikipedia.org/wiki/%E9%BB%83%E5%AE%A3"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons source page author and license not independently verified (source fetch unsuccessful)",
+        "Local JPEG bytes and identity not compared to Commons original",
+        "Watermark, clarity, and five-stage visual composition not visually inspected"
+      ],
+      "modificationCommit": null
     }
   ]
 }

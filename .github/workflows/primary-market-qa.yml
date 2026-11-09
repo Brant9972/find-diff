@@ -1,0 +1,31 @@
+name: Primary market roster QA
+on:
+  push:
+    paths:
+      - '.github/workflows/primary-market-qa.yml'
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/primary-market-audit.json'
+      - 'singer/regional-draw-policy.json'
+      - 'singer/regional-draw.js'
+      - 'singer/validate-primary-markets.cjs'
+  pull_request:
+    paths:
+      - '.github/workflows/primary-market-qa.yml'
+      - 'singer/questions.json'
+      - 'singer/actors.json'
+      - 'singer/variety.json'
+      - 'singer/primary-market-audit.json'
+      - 'singer/regional-draw-policy.json'
+      - 'singer/regional-draw.js'
+      - 'singer/validate-primary-markets.cjs'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check complete market classification and drawing rules
+        run: node singer/validate-primary-markets.cjs

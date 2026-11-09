@@ -1,0 +1,85 @@
+name: Crop Soyeon portrait for face quiz
+
+on:
+  push:
+    paths:
+      - '.github/workflows/crop-soyeon-portrait.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: soyeon-face-crop
+  cancel-in-progress: false
+
+jobs:
+  crop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet 'Pillow>=10,<12'
+      - name: Crop portrait and recompute progressive face clues
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, io
+          from PIL import Image
+          root=pathlib.Path('singer')
+          src=root/'photos/kr4_20261109_17_soyeon_showcase_2026.jpg'
+          dest=root/'photos/kr4_20261109_17_soyeon_showcase_2026_facecrop.jpg'
+          with Image.open(src) as im:
+              im.load()
+              assert im.size==(1193,1600), f'Unexpected source dimensions: {im.size}'
+              # Based on face detection in workflow diagnose-soyeon-face.yml:
+              # primary face bbox (448,344,290,290); keep hair and chin margins.
+              box=(290,160,900,900)
+              cropped=im.crop(box).convert('RGB')
+              cropped.thumbnail((900,1100),Image.Resampling.LANCZOS)
+              cropped.save(dest,quality=91,optimize=True)
+              w,h=cropped.size
+              print('CROP:',box,'OUTPUT:',w,h,'BYTES:',dest.stat().st_size,flush=True)
+          path=root/'questions.json'
+          original=path.read_text(encoding='utf-8')
+          bank=json.loads(original)
+          q=next(x for x in bank['questions'] if x['id']=='kr4_20261109_17')
+          if q['photo']!='photos/kr4_20261109_17_soyeon_showcase_2026.jpg':
+              raise RuntimeError('Portrait was changed concurrently; refusing overwrite')
+          q['photo']='photos/'+dest.name
+          q['reveal']={
+              'eyes':[0.25,0.305,0.75,0.43],
+              'nose':[0.25,0.305,0.75,0.505],
+              'mouth':[0.25,0.305,0.75,0.605],
+              'chin':[0.25,0.305,0.75,0.685],
+              'full':[0,0,1,1]}
+          q['transform']='Face-centered crop from Wikimedia Commons original; cropped source x=290..900 y=160..900 (1193x1600 input), resized JPEG; reveal coordinates recomputed on cropped image'
+          start=original.index('    {\n      "id": "kr4_20261109_17"')
+          end=original.index('\n    },',start)+len('\n    }')
+          block=json.dumps(q,ensure_ascii=False,indent=2)
+          block='\n'.join('    '+line for line in block.splitlines())
+          result=original[:start]+block+original[end:]
+          updated=json.loads(result)
+          assert updated['playable']==len(updated['questions'])
+          assert len(updated['questions'])==len(bank['questions'])
+          for key in ('eyes','nose','mouth','chin'):
+              x1,y1,x2,y2=q['reveal'][key]
+              assert 0<=x1<x2<=1 and 0<=y1<y2<=1
+          assert q['reveal']['eyes'][3]<q['reveal']['mouth'][3]
+          path.write_text(result,encoding='utf-8')
+          # Preview-stage crop sanity: stage 1 contains eye region in face bbox
+          # Face top in new image ~ (344-160)/740=.249, eyes ~.34-.43.
+          print('REVEAL:',json.dumps(q['reveal']),flush=True)
+          PY
+      - name: Commit and push only Soyeon crop and metadata
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/questions.json singer/photos/kr4_20261109_17_soyeon_showcase_2026_facecrop.jpg
+          git diff --cached --check
+          git commit -m "fix(singer): crop Soyeon portrait around face and realign clues"
+          git pull --rebase origin main
+          git push origin HEAD:main

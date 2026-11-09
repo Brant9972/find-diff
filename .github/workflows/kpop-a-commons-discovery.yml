@@ -1,0 +1,46 @@
+name: Discover K-pop A Commons portrait candidates
+on:
+  push:
+    paths:
+      - '.github/workflows/kpop-a-commons-discovery.yml'
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search Commons image candidates and licenses
+        run: |
+          python3 - <<'PY'
+          import json,urllib.parse,urllib.request,html,re,time
+          terms={
+          'G-DRAGON':['G-Dragon BigBang portrait','G-Dragon 2024','G-Dragon 2023'],
+          'Jennie':['Jennie BLACKPINK 2024','Jennie Kim BLACKPINK','Jennie BLACKPINK portrait'],
+          'Lisa':['Lisa BLACKPINK 2024','Lalisa Manobal BLACKPINK','Lisa BLACKPINK portrait'],
+          'Rose':['Rosé BLACKPINK 2024','Roseanne Park BLACKPINK','Rosé BLACKPINK'],
+          'Jisoo':['Jisoo BLACKPINK 2024','Kim Ji-soo BLACKPINK','Jisoo BLACKPINK'],
+          'Jungkook':['Jungkook BTS 2023','Jung Kook BTS','Jeon Jung-kook'],
+          'Wonyoung':['Jang Wonyoung IVE 2024','Jang Won-young IVE','Wonyoung IVE'],
+          'Tzuyu':['Tzuyu TWICE 2024','Chou Tzuyu TWICE','Tzuyu TWICE'],
+          'Taeyeon':['Taeyeon Girls Generation 2024','Kim Tae-yeon Girls Generation','Taeyeon SNSD'],
+          'PSY':['PSY Gangnam Style 2024','Psy singer 2023','Park Jae-sang PSY']}
+          def api(p):
+              url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(dict(action='query',format='json',**p))
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'FindDiffKpopCandidateDiscovery/1.0 (contact: github.com/Brant9972/find-diff)'}),timeout=30) as f:return json.load(f)
+          for person,qs in terms.items():
+              print('PERSON',person,flush=True)
+              found={}
+              for term in qs:
+                  try:
+                      result=api({'generator':'search','gsrsearch':'filetype:bitmap '+term,'gsrnamespace':6,'gsrlimit':12,'prop':'imageinfo','iiprop':'size|extmetadata|url'})
+                      for p in result.get('query',{}).get('pages',{}).values():
+                          title=p['title'];ii=p.get('imageinfo',[{}])[0];ext=ii.get('extmetadata',{})
+                          lic=ext.get('LicenseShortName',{}).get('value','')
+                          if lic.startswith('CC BY') or lic in ('CC0','Public domain'):
+                              if title not in found:found[title]={'title':title,'license':lic,'width':ii.get('width'),'height':ii.get('height'),'url':ii.get('url'),'artist':re.sub('<[^>]+>','',ext.get('Artist',{}).get('value',''))[:100]}
+                  except Exception as e:print('SEARCH ERROR',term,str(e),flush=True)
+              for item in list(found.values())[:18]:print('CANDIDATE',json.dumps(item,ensure_ascii=False),flush=True)
+              print('COUNT',len(found),flush=True)
+          PY

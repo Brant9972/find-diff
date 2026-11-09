@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Independent AI-only photo review progress. Never change humanReviewed based on AI checks. An incomplete result must never count as a passed photo QA.",
+  "createdAt": "2026-11-10T02:04:29+08:00",
+  "entries": [
+    {
+      "id": "s001",
+      "category": "questions",
+      "name": "周杰倫",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:2022%E5%91%A8%E6%9D%B0%E5%80%AB.png",
+        "https://zh.wikipedia.org/wiki/%E5%91%A8%E6%9D%B0%E5%80%AB"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s003",
+      "category": "questions",
+      "name": "王力宏",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E4%B8%80%E4%BA%BA%C2%B7%E4%B8%80%E5%BC%A0%EF%BD%9CNO.150_%E7%8E%8B%E5%8A%9B%E5%AE%8F.jpg",
+        "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s006",
+      "category": "questions",
+      "name": "林宥嘉",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Yoga-Lin.jpg",
+        "https://en.wikipedia.org/wiki/Yoga_Lin"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s007",
+      "category": "questions",
+      "name": "韋禮安",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:William_Wei_Elle_Taiwan_2020_(2).jpg",
+        "https://zh.wikipedia.org/wiki/%E9%9F%8B%E7%A6%AE%E5%AE%89"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s008",
+      "category": "questions",
+      "name": "盧廣仲",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:CrowdLu_201707_taiwan.jpg",
+        "https://zh.wikipedia.org/wiki/%E7%9B%A7%E5%BB%A3%E4%BB%B2"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s009",
+      "category": "questions",
+      "name": "吳青峰",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Wu_Tsing-feng_in_Kaohsiung_20191123.jpg",
+        "https://zh.wikipedia.org/wiki/%E5%90%B4%E9%9D%92%E5%B3%B0"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s010",
+      "category": "questions",
+      "name": "阿信",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:2008TIBE_Day1_Hall1_Opening_Mayday_Ashin.jpg",
+        "https://en.wikipedia.org/wiki/Ashin"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s014",
+      "category": "questions",
+      "name": "婁峻碩",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:ShouLou.png",
+        "https://zh.wikipedia.org/wiki/%E5%A9%81%E5%B3%BB%E7%A2%A9"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s016",
+      "category": "questions",
+      "name": "許光漢",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E4%BB%96%E5%B9%B4%E5%A5%B9%E6%97%A5%E3%80%8B%E8%87%BA%E5%8C%97%E9%A6%96%E6%98%A0%E5%85%B8%E7%A6%AE%EF%BC%8D%E8%A8%B1%E5%85%89%E6%BC%A2_01.png",
+        "https://zh.wikipedia.org/wiki/%E8%A8%B1%E5%85%89%E6%BC%A2"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s019",
+      "category": "questions",
+      "name": "辰亦儒",
+      "reviewedAt": "2026-11-10T02:04:29+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_checked_binary_fetch_unavailable",
+        "identityInLocalPhoto": "not_visually_verified",
+        "watermarkAndClarity": "not_visually_verified",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_visually_verified",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Calvin_Chen_at_the_Let%27s_Bike_Taiwan_2009_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/%E8%BE%B0%E4%BA%A6%E5%84%92"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons author/license not independently checked in this run",
+        "Local image identity, watermarks, clarity and five-stage visual composition require image-level verification"
+      ],
+      "modificationCommit": null
+    }
+  ]
+}

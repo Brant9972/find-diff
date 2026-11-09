@@ -1,0 +1,83 @@
+name: Replace Soyeon portrait from Wikimedia Commons
+
+on:
+  push:
+    paths:
+      - '.github/workflows/replace-soyeon-commons.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: soyeon-portrait-replacement
+  cancel-in-progress: false
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - run: python3 -m pip install --quiet Pillow
+      - name: Download, verify license, update Soyeon only
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import io, json, pathlib, urllib.parse, urllib.request
+          from PIL import Image, ImageOps
+          root=pathlib.Path("singer")
+          title="File:06072026_SOYEON_I-DLE_SHOWCASE_4.png"
+          page_url="https://commons.wikimedia.org/wiki/File:06072026_SOYEON_I-DLE_SHOWCASE_4.png"
+          params=urllib.parse.urlencode({"action":"query","format":"json","prop":"imageinfo","iiprop":"url|size|mime|extmetadata","titles":title})
+          req=urllib.request.Request("https://commons.wikimedia.org/w/api.php?"+params,headers={"User-Agent":"FindDiffPortraitMaintenance/1.0 (GitHub Actions)"})
+          with urllib.request.urlopen(req,timeout=30) as resp: page=next(iter(json.load(resp)["query"]["pages"].values()))
+          info=page["imageinfo"][0]; ext=info["extmetadata"]
+          license_name=ext.get("LicenseShortName",{}).get("value","")
+          if license_name!="CC BY 4.0": raise ValueError("Unexpected license: "+license_name)
+          url=info["url"]
+          with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"FindDiffPortraitMaintenance/1.0"}),timeout=60) as resp: data=resp.read()
+          if not data.startswith(bytes([137,80,78,71,13,10,26,10])): raise ValueError("Invalid PNG")
+          img=Image.open(io.BytesIO(data));img.load();img=ImageOps.exif_transpose(img).convert("RGB")
+          print("Original dimensions",img.size)
+          # Preserve full original composition: no speculative face landmark recropping.
+          img.thumbnail((1200,1600),Image.Resampling.LANCZOS)
+          dest=root/"photos"/"kr4_20261109_17_soyeon_showcase_2026.jpg"
+          img.save(dest,format="JPEG",quality=91,optimize=True)
+          file=root/"questions.json";raw=file.read_text(encoding="utf-8")
+          bank=json.loads(raw)
+          matches=[x for x in bank["questions"] if x["id"]=="kr4_20261109_17"]
+          if len(matches)!=1 or matches[0]["name"]!="小娟":raise ValueError("Soyeon record missing/ambiguous")
+          item=matches[0];oldphoto=item["photo"]
+          if oldphoto!="photos/kr4_20261109_17.jpg" and oldphoto!="photos/kr4_20261109_17_soyeon_showcase_2026.jpg":raise ValueError("Concurrent portrait change detected: "+oldphoto)
+          item["photo"]="photos/"+dest.name
+          item["attribution"]["source"]=page_url
+          item["attribution"]["artist"]="K-POPIT 케이팝잇"
+          item["attribution"]["credit"]="06072026 SOYEON I-DLE SHOWCASE 4 — K-POPIT 케이팝잇"
+          item["attribution"]["license"]="CC BY 4.0"
+          item["attribution"]["licenseUrl"]="https://creativecommons.org/licenses/by/4.0"
+          item["attribution"]["attribution"]="K-POPIT 케이팝잇"
+          item["transform"]="Original Commons image resized without cropping; reveal rectangles retained"
+          # Modify only the specific record block; preserve every other person's JSON verbatim.
+          start=raw.index('    {\n      "id": "kr4_20261109_17"')
+          end=raw.index('\n    },',start)+len('\n    }')
+          newblock=json.dumps(item,ensure_ascii=False,indent=2)
+          newblock='\n'.join(('    '+line if line else line) for line in newblock.splitlines())
+          raw=raw[:start]+newblock+raw[end:]
+          check=json.loads(raw)
+          assert len(check["questions"])==bank["playable"]
+          assert next(x for x in check["questions"] if x["id"]=="kr4_20261109_17")["photo"]=="photos/"+dest.name
+          file.write_text(raw,encoding="utf-8")
+          print("Replaced Soyeon only:",dest,"license",license_name,"bytes",dest.stat().st_size)
+          PY
+      - name: Commit portrait and targeted metadata
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add singer/questions.json singer/photos/kr4_20261109_17_soyeon_showcase_2026.jpg
+          git diff --cached --check
+          git commit -m "fix(singer): replace Soyeon portrait with licensed 2026 showcase photo"
+          git pull --rebase origin main
+          git push origin HEAD:main

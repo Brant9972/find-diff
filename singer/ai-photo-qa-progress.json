@@ -2725,6 +2725,305 @@
       ],
       "sourceVerificationNote": null,
       "modificationCommit": null
+    },
+    {
+      "id": "s198",
+      "category": "questions",
+      "name": "張學友",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visual_concern_noted",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E5%AD%B8%E5%8F%8B_Jacky_Cheung_2024.jpg",
+        "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%AD%A6%E5%8F%8B"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Visible background lettering remains near the right side of the head; Commons file is derived from a YouTube video; verify source licensing chain before calling license fully cleared.",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s199",
+      "category": "questions",
+      "name": "黎明",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visually_inspected_no_obvious_watermark",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E9%BB%8E%E6%98%8ELEON_LAI_ROBBABA_%E7%B4%85%E9%A4%A8%E6%BC%94%E5%94%B1%E6%9C%832026_20260330-6_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/%E9%BB%8E%E6%98%8E"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s200",
+      "category": "questions",
+      "name": "郭富城",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visually_inspected_no_obvious_watermark",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Aaron_Kwok_at_the_Tokyo_International_Film_Festival_-_2019_(49014147617)_(cropped).jpg",
+        "https://zh.wikipedia.org/wiki/%E9%83%AD%E5%AF%8C%E5%9F%8E"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons exact source-page author/license not independently confirmed in this run",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s201",
+      "category": "questions",
+      "name": "陳奕迅",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visually_inspected_no_obvious_watermark",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:%E9%99%88%E5%A5%95%E8%BF%85_Eason_Chan.jpg",
+        "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%A5%95%E8%BF%85"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s206",
+      "category": "questions",
+      "name": "陳小春",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visual_concern_noted",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Jordan_Chan,_2019-4.png",
+        "https://zh.wikipedia.org/wiki/%E9%99%88%E5%B0%8F%E6%98%A5"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Visible no-smoking sign and microphones distract from the face; YouTube-derived CC BY licensing chain requires confirmation.",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s207",
+      "category": "questions",
+      "name": "鄭伊健",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visually_inspected_no_obvious_watermark",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Ekin_Cheng_Beautiful_Day_Concert_2011.JPG",
+        "https://zh.wikipedia.org/wiki/%E9%84%AD%E4%BC%8A%E5%81%A5"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s208",
+      "category": "questions",
+      "name": "古巨基",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visual_concern_noted",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:LeoKu2007.jpg",
+        "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B7%A8%E5%9F%BA"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Prominent text on microphone placard and cap, face partly shaded by brim; source author name is malformed in roster ('Chun Lam 来自 (optional)').",
+        "Commons exact source-page author/license not independently confirmed in this run",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s209",
+      "category": "questions",
+      "name": "蘇永康",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": true,
+        "authorAndLicenseMatchCommons": true,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visual_concern_noted",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:William_So_20221119.jpg",
+        "https://zh.wikipedia.org/wiki/%E8%98%87%E6%B0%B8%E5%BA%B7"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Glasses obscure the eye area; confirm first-stage recognizability in actual game.",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s210",
+      "category": "questions",
+      "name": "許志安",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visually_inspected_no_obvious_watermark",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:AndyHui2007_(cropped).jpg",
+        "https://en.wikipedia.org/wiki/Andy_Hui"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Commons exact source-page author/license not independently confirmed in this run",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
+    },
+    {
+      "id": "s211",
+      "category": "questions",
+      "name": "梁漢文",
+      "reviewedAt": "2026-11-10T11:00:41+08:00",
+      "humanReviewedUnchanged": true,
+      "checks": {
+        "sourceMetadataPresent": true,
+        "commonsOriginalPageVerified": false,
+        "authorAndLicenseMatchCommons": false,
+        "localPhotoByteMatch": "not_verified",
+        "identityInLocalPhoto": "visually_plausible_not_independently_authenticated",
+        "watermarkAndClarity": "visual_concern_noted",
+        "fiveStageGeometryNumeric": "pass",
+        "fiveStageVisual": "not_verified_in_browser",
+        "hintPresent": true,
+        "aliasPresent": true
+      },
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Usc2013_Edmond_Leung.JPG",
+        "https://zh.wikipedia.org/wiki/%E6%A2%81%E6%BC%A2%E6%96%87"
+      ],
+      "result": "incomplete_visual_and_binary_qa",
+      "unresolvedIssues": [
+        "Image appears soft/blurred and side-angled; first-stage eye crop needs browser playback inspection.",
+        "Commons exact source-page author/license not independently confirmed in this run",
+        "Local photo was visually inspected, but byte-level match with Commons original not verified",
+        "Five-stage actual browser/gameplay rendering not verified"
+      ],
+      "modificationCommit": null
     }
   ]
 }

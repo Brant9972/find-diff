@@ -34,7 +34,7 @@ jobs:
           source = Path('.github/workflows/expansion-two-portrait-review.yml').read_text()
           script = source.split('          import json, pathlib, urllib.parse', 1)[1].split('          PY', 1)[0]
           body = 'import json, pathlib, urllib.parse' + script
-          body = '\\n'.join(line[10:] if line.startswith('          ') else line for line in body.splitlines())
+          body = '\n'.join(line[10:] if line.startswith('          ') else line for line in body.splitlines())
           compile(body, '<portrait-review>', 'exec')
           print('Portrait review Python syntax PASS')
           PY

@@ -4,6 +4,15 @@ on:
     paths:
       - '.github/workflows/expansion-p18-source-probe.yml'
   workflow_dispatch:
+    inputs:
+      offset:
+        description: 'Skip this many unpublished candidates (avoid repeating the first batch)'
+        required: false
+        default: '12'
+      limit:
+        description: 'Number of candidates to probe (1-25)'
+        required: false
+        default: '12'
 permissions:
   contents: read
 jobs:
@@ -22,9 +31,20 @@ jobs:
           for f in ('questions.json','actors.json','variety.json'):
               live+=json.loads((root/f).read_text())['questions']
           ids={str(p.get('id','')) for p in live}
-          names={str(p.get('name','')).strip().casefold() for p in live}
-          candidates=[p for p in plan['selectedNew'] if p.get('plannedQuestionId') not in ids and p.get('name','').strip().casefold() not in names and p.get('photoStatus')!='published']
-          candidates=candidates[:12]
+          def norm(s): return re.sub(r'[\s·・.．_-]+','',str(s or '')).casefold()
+          names={norm(n) for p in live for n in [p.get('name'), *(p.get('aliases') or [])] if isinstance(n,str) and n.strip()}
+          seen=set()
+          candidates=[]
+          for p in plan['selectedNew']:
+              key=norm(p.get('name'))
+              pid=p.get('plannedQuestionId')
+              if not key or key in names or key in seen or pid in ids or p.get('photoStatus')=='published': continue
+              seen.add(key)
+              candidates.append(p)
+          offset=max(0,int('${{ inputs.offset || '12' }}'))
+          limit=max(1,min(25,int('${{ inputs.limit || '12' }}')))
+          candidates=candidates[offset:offset+limit]
+          print('PROBE WINDOW',offset,limit,'eligible total',len(seen),flush=True)
           headers={'User-Agent':'FindDiffExpansionP18Probe/1.0 (github.com/Brant9972/find-diff; metadata-only)'}
           def api(host, params):
               url=host+'?'+urllib.parse.urlencode(params)
@@ -59,7 +79,7 @@ jobs:
               report.append(row)
               print(row['id'],name,row['status'],len(row['candidates']),flush=True)
           out=pathlib.Path('p18-source-probe.json')
-          out.write_text(json.dumps({'mainCommit':'${{ github.sha }}','entries':report,'note':'Metadata only. No photo or person is approved; cross-bank alias/QID, source caption, rights and five-stage manual review required.'},ensure_ascii=False,indent=2))
+          out.write_text(json.dumps({'mainCommit':'${{ github.sha }}','offset':offset,'limit':limit,'entries':report,'note':'Metadata only. No photo or person is approved; cross-bank alias/QID, source caption, rights and five-stage manual review required.'},ensure_ascii=False,indent=2))
           print('PROBE SUMMARY',json.dumps({'people':len(report),'withP18':sum(bool(r['candidates']) for r in report)},ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v4

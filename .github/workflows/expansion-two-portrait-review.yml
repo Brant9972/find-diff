@@ -1,0 +1,61 @@
+name: Expansion 1500 two verified-source portrait review
+on:
+  push:
+    paths:
+      - '.github/workflows/expansion-two-portrait-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepare-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install pillow
+      - name: Download exact Commons originals and prepare visual review
+        run: |
+          python - <<'PY'
+          import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io
+          from PIL import Image,ImageOps,ImageDraw
+          out=pathlib.Path('portrait-review');out.mkdir()
+          entries=[('t1500_0099','阿翔','File:阿翔.JPG'),('t1500_0110','葉佳修','File:Joseph Yeh.jpg')]
+          report=[]
+          for pid,name,title in entries:
+              row={'id':pid,'name':name,'commonsTitle':title,'approved':False}
+              try:
+                  url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
+                  headers={'User-Agent':'FindDiffPortraitReview/1.0 (github.com/Brant9972/find-diff; license and visual audit)'}
+                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:data=json.load(response)
+                  page=next(iter(data['query']['pages'].values()))
+                  info=page['imageinfo'][0]
+                  ext=info.get('extmetadata',{})
+                  clean=lambda k:re.sub('<[^>]+>',' ',html.unescape(ext.get(k,{}).get('value',''))).strip()
+                  for key in ['LicenseShortName','LicenseUrl','Artist','Credit','ImageDescription','ObjectName','UsageTerms','AttributionRequired']:
+                      row[key]=clean(key)
+                  row['sourceUrl']=info['url']
+                  row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
+                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_000)
+                  row['sha256']=hashlib.sha256(raw).hexdigest()
+                  image=Image.open(io.BytesIO(raw));image.load()
+                  row['originalSize']=list(image.size)
+                  image=ImageOps.exif_transpose(image).convert('RGB')
+                  image.thumbnail((900,1080))
+                  image.save(out/(pid+'-source.jpg'),quality=88)
+                  # CENTER crop is only a review proposal, never an approved game image
+                  original=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
+                  proposal=ImageOps.fit(original,(600,720),method=Image.Resampling.LANCZOS,centering=(.5,.4))
+                  proposal.save(out/(pid+'-UNREVIEWED-proposal.jpg'),quality=90)
+                  row['status']='source_and_crop_proposal_ready_for_human_review'
+              except Exception as e:
+                  row['status']='failed';row['error']=repr(e)
+              report.append(row)
+              print(pid,name,row['status'],flush=True)
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: expansion-two-portrait-human-review
+          path: portrait-review/
+          retention-days: 14

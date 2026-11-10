@@ -37,7 +37,7 @@ jobs:
           from PIL import Image,ImageOps,ImageDraw
           out=pathlib.Path('portrait-review');out.mkdir()
           entries=[(os.environ['PERSON_ID'],os.environ['PERSON_NAME'],os.environ['COMMONS_FILE'])]
-          if not re.fullmatch(r't1500_\\d{4}', entries[0][0]): raise SystemExit('Invalid expansion ID')
+          if not re.fullmatch(r't1500_\d{4}', entries[0][0]): raise SystemExit('Invalid expansion ID')
           if not entries[0][2].startswith('File:'): raise SystemExit('Expected exact Commons File: title')
           report=[]
           for pid,name,title in entries:

@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/expansion-two-portrait-review.yml'
   workflow_dispatch:
     inputs:
       person_id:
@@ -27,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: python -m pip install pillow
       - name: Validate workflow script syntax on push
-        if: github.event_name == 'push'
+        if: github.event_name != 'workflow_dispatch'
         run: |
           python - <<'PY'
           from pathlib import Path

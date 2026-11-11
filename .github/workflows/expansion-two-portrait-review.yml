@@ -38,7 +38,7 @@ jobs:
           lines = source.splitlines()
           marker = '      - name: Download exact Commons originals and prepare visual review'
           start = next(i for i, line in enumerate(lines) if line == marker)
-          script_start = next(i for i in range(start + 1, len(lines)) if lines[i].startswith('          import json, pathlib, urllib.parse, re,'))
+          script_start = next(i for i in range(start + 1, len(lines)) if lines[i].startswith('          import json, pathlib, urllib.parse, urllib.request, re,'))
           script_end = next(i for i in range(script_start + 1, len(lines)) if lines[i] == '          PY')
           body = '\n'.join(line[10:] for line in lines[script_start:script_end])
           compile(body, '<portrait-review>', 'exec')

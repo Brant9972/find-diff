@@ -3,7 +3,23 @@ on:
   push:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/expansion-two-portrait-review.yml'
   workflow_dispatch:
+    inputs:
+      person_id:
+        description: 'Existing expansion-1500 candidate ID'
+        required: true
+        type: string
+      person_name:
+        description: 'Candidate name for the review report'
+        required: true
+        type: string
+      commons_file:
+        description: 'Exact Commons File: title, manually checked against candidate identity'
+        required: true
+        type: string
 permissions:
   contents: read
 jobs:
@@ -13,13 +29,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python -m pip install pillow
-      - name: Download exact Commons originals and prepare visual review
+      - name: Validate workflow script syntax on push
+        if: github.event_name != 'workflow_dispatch'
         run: |
           python - <<'PY'
-          import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io
+          from pathlib import Path
+          source = Path('.github/workflows/expansion-two-portrait-review.yml').read_text()
+          lines = source.splitlines()
+          marker = '      - name: Download exact Commons originals and prepare visual review'
+          start = next(i for i, line in enumerate(lines) if line == marker)
+          script_start = next(i for i in range(start + 1, len(lines)) if lines[i].startswith('          import json, pathlib, urllib.parse, urllib.request, re,'))
+          script_end = next(i for i in range(script_start + 1, len(lines)) if lines[i] == '          PY')
+          body = '\n'.join(line[10:] for line in lines[script_start:script_end])
+          compile(body, '<portrait-review>', 'exec')
+          print('Portrait review Python syntax PASS')
+          PY
+      - name: Download exact Commons originals and prepare visual review
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          PERSON_ID: ${{ inputs.person_id }}
+          PERSON_NAME: ${{ inputs.person_name }}
+          COMMONS_FILE: ${{ inputs.commons_file }}
+        run: |
+          python - <<'PY'
+          import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io, os
           from PIL import Image,ImageOps,ImageDraw
           out=pathlib.Path('portrait-review');out.mkdir()
-          entries=[('t1500_0099','阿翔','File:阿翔.JPG'),('t1500_0110','葉佳修','File:Joseph Yeh.jpg')]
+          entries=[(os.environ['PERSON_ID'],os.environ['PERSON_NAME'],os.environ['COMMONS_FILE'])]
+          if not all(os.environ.get(k, '').strip() for k in ('PERSON_ID','PERSON_NAME','COMMONS_FILE')): raise SystemExit('Missing workflow_dispatch inputs')
+          if not re.fullmatch(r't1500_\d{4}', entries[0][0]): raise SystemExit('Invalid expansion ID')
+          if not entries[0][2].startswith('File:'): raise SystemExit('Expected exact Commons File: title')
           report=[]
           for pid,name,title in entries:
               row={'id':pid,'name':name,'commonsTitle':title,'approved':False}
@@ -55,6 +94,7 @@ jobs:
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY
       - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch'
         with:
           name: expansion-two-portrait-human-review
           path: portrait-review/

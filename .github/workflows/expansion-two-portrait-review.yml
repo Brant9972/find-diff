@@ -59,6 +59,18 @@ jobs:
           if not all(os.environ.get(k, '').strip() for k in ('PERSON_ID','PERSON_NAME','COMMONS_FILE')): raise SystemExit('Missing workflow_dispatch inputs')
           if not re.fullmatch(r't1500_\d{4}', entries[0][0]): raise SystemExit('Invalid expansion ID')
           if not entries[0][2].startswith('File:'): raise SystemExit('Expected exact Commons File: title')
+          # Refuse fabricated IDs, name mismatches, and already-published targets.
+          plan=json.loads(pathlib.Path('singer/expansion-1500/release-plan-20261028.json').read_text())
+          candidates={c['plannedQuestionId']:c for c in plan['selectedNew']}
+          candidate=candidates.get(entries[0][0])
+          if not candidate: raise SystemExit('Candidate ID absent from selectedNew')
+          if candidate['name'] != entries[0][1].strip(): raise SystemExit('Candidate ID/name mismatch with release plan')
+          if candidate.get('photoStatus') == 'published': raise SystemExit('Candidate already marked published in release plan')
+          for bank in ('questions.json','actors.json','variety.json'):
+              live=json.loads((pathlib.Path('singer')/bank).read_text())
+              records=live if isinstance(live,list) else live.get('questions',live.get('people',[]))
+              if any(isinstance(p,dict) and p.get('id')==entries[0][0] for p in records):
+                  raise SystemExit('Candidate ID already live in '+bank)
           report=[]
           for pid,name,title in entries:
               row={'id':pid,'name':name,'commonsTitle':title,'approved':False}

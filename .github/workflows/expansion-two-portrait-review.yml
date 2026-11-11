@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+      - 'singer/expansion-1500/review-request.json'
   pull_request:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
@@ -30,7 +31,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: python -m pip install pillow
       - name: Validate workflow script syntax on push
-        if: github.event_name != 'workflow_dispatch'
+        if: github.event_name == 'pull_request' || (github.event_name == 'push' && !contains(github.event.head_commit.message, '[portrait-review-request]'))
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -45,7 +46,7 @@ jobs:
           print('Portrait review Python syntax PASS')
           PY
       - name: Download exact Commons originals and prepare visual review
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
         env:
           PERSON_ID: ${{ inputs.person_id }}
           PERSON_NAME: ${{ inputs.person_name }}
@@ -55,8 +56,14 @@ jobs:
           import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io, os
           from PIL import Image,ImageOps,ImageDraw
           out=pathlib.Path('portrait-review');out.mkdir()
-          entries=[(os.environ['PERSON_ID'],os.environ['PERSON_NAME'],os.environ['COMMONS_FILE'])]
-          if not all(os.environ.get(k, '').strip() for k in ('PERSON_ID','PERSON_NAME','COMMONS_FILE')): raise SystemExit('Missing workflow_dispatch inputs')
+          if os.environ.get('PERSON_ID','').strip():
+              entries=[(os.environ['PERSON_ID'],os.environ['PERSON_NAME'],os.environ['COMMONS_FILE'])]
+          else:
+              request_path=pathlib.Path('singer/expansion-1500/review-request.json')
+              request=json.loads(request_path.read_text())
+              if set(request)!={'person_id','person_name','commons_file'}: raise SystemExit('Unexpected review-request keys')
+              entries=[(request['person_id'],request['person_name'],request['commons_file'])]
+          if not all(isinstance(v,str) and v.strip() for v in entries[0]): raise SystemExit('Missing review inputs')
           if not re.fullmatch(r't1500_\d{4}', entries[0][0]): raise SystemExit('Invalid expansion ID')
           if not entries[0][2].startswith('File:'): raise SystemExit('Expected exact Commons File: title')
           # Refuse fabricated IDs, name mismatches, and already-published targets.

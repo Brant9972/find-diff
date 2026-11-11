@@ -9445,7 +9445,7 @@
       "checks": {
         "sourceMetadataPresent": true,
         "commonsOriginalPageVerified": false,
-        "authorAndLicenseMatchCommons": true,
+        "authorAndLicenseMatchCommons": false,
         "localPhotoByteMatch": "not_checked",
         "identityInLocalPhoto": "not_visually_verified",
         "watermarkAndClarity": "not_visually_verified",
@@ -9463,7 +9463,8 @@
         "Local JPEG not decoded or compared against Commons original; subject identity, watermark and sharpness not visually verified",
         "Eye/nose/mouth/chin reveal stages not visually inspected",
         "Work hint and aliases present but not independently fact-checked",
-        "Flickr review confirmed CC BY 2.0 on Commons; exact source file metadata not directly fetched; sibling image verified"
+        "Flickr review confirmed CC BY 2.0 on Commons; exact source file metadata not directly fetched; sibling image verified",
+        "Exact Commons file 52460439732 could not be opened; sibling file 52460957896 has matching author/license but cannot verify this specific photo"
       ],
       "modificationCommit": null
     },

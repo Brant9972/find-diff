@@ -122,7 +122,7 @@ jobs:
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY
       - uses: actions/upload-artifact@v4
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
         with:
           name: expansion-two-portrait-human-review
           path: portrait-review/

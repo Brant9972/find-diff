@@ -75,8 +75,9 @@ jobs:
                   # Reject clearly non-reusable licenses before downloading bytes.
                   # Metadata alone never constitutes identity or visual approval.
                   license_name=row.get('LicenseShortName','').strip().lower().replace(' ','')
-                  allowed=('ccby','ccby-sa','cc0','publicdomain')
-                  if not any(license_name.startswith(prefix) for prefix in allowed):
+                  # Full-match only: cc-by-nc, cc-by-nd and cc-by-sa-nc must never pass.
+                  allowed_pattern=r'(?:ccby(?:-sa)?(?:[1-4]\\.0)?|cc0(?:1\\.0)?|publicdomain)'
+                  if not re.fullmatch(allowed_pattern,license_name):
                       raise ValueError('License not on Commons reusable allowlist: '+row.get('LicenseShortName',''))
                   if not row.get('Artist','').strip():
                       raise ValueError('Missing Commons artist attribution')

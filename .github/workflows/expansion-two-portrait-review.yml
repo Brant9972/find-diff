@@ -72,6 +72,14 @@ jobs:
                   clean=lambda k:re.sub('<[^>]+>',' ',html.unescape(ext.get(k,{}).get('value',''))).strip()
                   for key in ['LicenseShortName','LicenseUrl','Artist','Credit','ImageDescription','ObjectName','UsageTerms','AttributionRequired']:
                       row[key]=clean(key)
+                  # Reject clearly non-reusable licenses before downloading bytes.
+                  # Metadata alone never constitutes identity or visual approval.
+                  license_name=row.get('LicenseShortName','').strip().lower().replace(' ','')
+                  allowed=('ccby','ccby-sa','cc0','publicdomain')
+                  if not any(license_name.startswith(prefix) for prefix in allowed):
+                      raise ValueError('License not on Commons reusable allowlist: '+row.get('LicenseShortName',''))
+                  if not row.get('Artist','').strip():
+                      raise ValueError('Missing Commons artist attribution')
                   row['sourceUrl']=info['url']
                   row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
                   with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_000)

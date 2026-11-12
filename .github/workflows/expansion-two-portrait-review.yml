@@ -7,6 +7,7 @@ on:
   pull_request:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+      - 'singer/expansion-1500/review-request.json'
   workflow_dispatch:
     inputs:
       person_id:
@@ -31,7 +32,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: python -m pip install pillow
       - name: Validate workflow script syntax on push
-        if: github.event_name == 'pull_request' || (github.event_name == 'push' && !contains(github.event.head_commit.message, '[portrait-review-request]'))
+        if: github.event_name == 'push' && !contains(github.event.head_commit.message, '[portrait-review-request]')
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -46,7 +47,7 @@ jobs:
           print('Portrait review Python syntax PASS')
           PY
       - name: Download exact Commons originals and prepare visual review
-        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
         env:
           PERSON_ID: ${{ inputs.person_id }}
           PERSON_NAME: ${{ inputs.person_name }}
@@ -122,7 +123,7 @@ jobs:
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY
       - uses: actions/upload-artifact@v4
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
         with:
           name: expansion-two-portrait-human-review
           path: portrait-review/

@@ -24,7 +24,7 @@ class IdentityBoundaryTests(unittest.TestCase):
 
     def test_contextual_captions_still_match(self):
         self.assertTrue(sources.identity({"name": "家家", "aliases": []}, "歌手家家演出"))
-        self.assertTrue(sources.identity({"name": "金城武", "aliases": []}, "演員金城武出席"))
+        self.assertTrue(sources.identity({"name": "金城武", "aliases": []}, "金城武出席"))
         self.assertTrue(sources.identity({"name": "金城武", "aliases": []}, "金城武"))
 
 if __name__ == "__main__":

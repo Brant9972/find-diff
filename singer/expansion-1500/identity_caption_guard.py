@@ -26,12 +26,7 @@ def caption_mentions_identity(caption: str, names: list[str]) -> bool:
         for match in re.finditer(re.escape(name), caption):
             left = caption[match.start() - 1] if match.start() else ""
             right = caption[match.end()] if match.end() < len(caption) else ""
-            if re.search(r"[\u3400-\u9fff]", name):
-                if (left and re.match(r"[\u3400-\u9fff]", left)) or (
-                    right and re.match(r"[\u3400-\u9fff]", right)
-                ):
-                    continue
-            elif (left and (left.isalnum() or left == "_")) or (
+            if (left and (left.isalnum() or left == "_")) or (
                 right and (right.isalnum() or right == "_")
             ):
                 continue

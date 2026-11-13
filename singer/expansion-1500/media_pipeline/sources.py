@@ -84,7 +84,7 @@ def clean(value):
 
 
 def identity(person, text):
-    """Avoid partial matches such as 家家美食 or 黃玠瑋 for short stage names."""
+    """Match performer aliases with explicit CJK and ASCII boundaries."""
     hay = str(text or '')
     hay = converter().convert(hay) if converter() else hay
     hay = unicodedata.normalize('NFKC', hay).casefold()
@@ -95,11 +95,14 @@ def identity(person, text):
         key = norm(alias)
         if len(key) < 2:
             continue
-        if re.fullmatch(r'[\u3400-\u9fff]{2}', key):
+        if re.fullmatch(r'[\u3400-\u9fff]{2,}', key):
             for match in re.finditer(re.escape(key), hay):
                 left, right = hay[:match.start()], hay[match.end():]
-                # Reject CJK names glued to Latin letters, digits or underscores.
-                if left and re.search(r'[a-z0-9_]
+                if left and re.search(r'[a-z0-9_]$', left):
+                    continue
+                if right and re.match(r'[a-z0-9_]', right):
+                    continue
+                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
                     continue
                 if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
                     continue
@@ -109,27 +112,12 @@ def identity(person, text):
             words = re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKC', str(alias)).casefold())
             pattern = r'(?<![a-z0-9])' + r'[\W_]*'.join(map(re.escape, words)) + r'(?![a-z0-9])'
             for match in re.finditer(pattern, hay) if words else ():
-                # "Chapman to Fitzgerald" in a letter title uses the English
-                # preposition, not actor Chapman To's surname. Keep genuine
-                # "Chapman To Man-chat" and captioned performer mentions.
                 if (len(words) == 2 and words[-1] == 'to' and
                         re.search(r'(?i:\b' + re.escape(words[0]) +
                                   r')\s+to\s+[A-Z]', str(text or ''))):
                     continue
-                # A suffix of a hyphenated given name is a different person.
                 prefix = hay[:match.start()]
                 if len(words) >= 2 and len(prefix) > 1 and prefix.endswith('-') and prefix[-2].isalnum():
-                    continue
-                found.append(alias)
-                break
-        elif re.fullmatch(r'[\u3400-\u9fff]{3,}', key):
-            # Longer Chinese names need boundaries too: 金城武樹 is not 金城武.
-            for match in re.finditer(re.escape(key), hay):
-                left, right = hay[:match.start()], hay[match.end():]
-                if left and re.search(r'[a-z0-9_]
-                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
-                    continue
-                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
                     continue
                 found.append(alias)
                 break

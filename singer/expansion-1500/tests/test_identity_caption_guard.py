@@ -10,6 +10,12 @@ class IdentityCaptionRegression(unittest.TestCase):
     def test_food_business_not_singer(self):
         self.assertFalse(caption_mentions_identity("香港家家美食餐廳招牌", ["家家"]))
 
+    def test_cjk_name_embedded_in_latin_identifier(self):
+        self.assertFalse(caption_mentions_identity("家家food", ["家家"]))
+        self.assertFalse(caption_mentions_identity("abc家家", ["家家"]))
+        self.assertFalse(caption_mentions_identity("黃玠2026", ["黃玠"]))
+        self.assertTrue(caption_mentions_identity("歌手：家家，現場演唱", ["家家"]))
+
     def test_different_artist_not_huang_jie(self):
         self.assertFalse(caption_mentions_identity("黃玠瑋 Zooey Wonder", ["黃玠"]))
 

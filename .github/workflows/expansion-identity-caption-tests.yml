@@ -1,0 +1,22 @@
+name: Expansion identity caption regression
+on:
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/identity_caption_guard.py'
+      - 'singer/expansion-1500/tests/test_identity_caption_guard.py'
+      - '.github/workflows/expansion-identity-caption-tests.yml'
+  push:
+    branches:
+      - 'automation/identity-caption-regression-20261113'
+permissions:
+  contents: read
+jobs:
+  identity-caption-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run identity caption regression tests
+        run: python3 -m unittest discover -s singer/expansion-1500/tests -p 'test_identity_caption_guard.py' -v

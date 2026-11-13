@@ -98,9 +98,9 @@ def identity(person, text):
         if re.fullmatch(r'[\u3400-\u9fff]{2}', key):
             for match in re.finditer(re.escape(key), hay):
                 left, right = hay[:match.start()], hay[match.end():]
-                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
+                if left and re.search(r'[\u3400-\u9fffa-z0-9_]$', left) and not any(left.endswith(p) for p in prefixes):
                     continue
-                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
+                if right and re.match(r'[\u3400-\u9fffa-z0-9_]', right) and not any(right.startswith(s) for s in suffixes):
                     continue
                 found.append(alias)
                 break
@@ -125,9 +125,9 @@ def identity(person, text):
             # Longer Chinese names need boundaries too: 金城武樹 is not 金城武.
             for match in re.finditer(re.escape(key), hay):
                 left, right = hay[:match.start()], hay[match.end():]
-                if left and re.search(r'[\u3400-\u9fff]$', left) and not any(left.endswith(p) for p in prefixes):
+                if left and re.search(r'[\u3400-\u9fffa-z0-9_]$', left) and not any(left.endswith(p) for p in prefixes):
                     continue
-                if right and re.match(r'[\u3400-\u9fff]', right) and not any(right.startswith(s) for s in suffixes):
+                if right and re.match(r'[\u3400-\u9fffa-z0-9_]', right) and not any(right.startswith(s) for s in suffixes):
                     continue
                 found.append(alias)
                 break

@@ -1,0 +1,30 @@
+{
+  "reviewDate": "2026-11-15",
+  "id": "t1500_0196",
+  "name": "蔡亘晏",
+  "sourceTitle": "File:Tsai Hsuan-yen 2022-11-19.jpg",
+  "workflowRun": 43615197560,
+  "artifactId": 14121414541,
+  "humanReviewed": true,
+  "approved": false,
+  "status": "rejected_source_not_for_live",
+  "sourceLicenseClaim": "CC BY 3.0 listed, author 娛樂星聞; source is a YouTube video frame, requiring verification of original-video licensing and attribution.",
+  "visualReview": {
+    "sourceImage": true,
+    "proposed600x720": true,
+    "stages": [
+      "eyes",
+      "nose",
+      "mouth",
+      "chin",
+      "full"
+    ],
+    "fiveStageApproval": false
+  },
+  "rejectionReasons": [
+    "Source image is only 277x381 pixels; enlarging to 600x720 does not restore missing detail and produces visibly soft facial features.",
+    "The source description names 謝盈萱, while the target is 蔡亘晏; caption-to-identity evidence is insufficient to confidently approve this portrait. Verify against original video and exact frame before considering any replacement."
+  ],
+  "requiredNextAction": "Find a different precise-source, attributable, crop-permitted, unoccluded and sufficiently sharp portrait; review source identity and all five stages before publishing.",
+  "liveChanges": false
+}

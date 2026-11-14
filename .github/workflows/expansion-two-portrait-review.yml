@@ -117,7 +117,12 @@ jobs:
                   row['sha256']=hashlib.sha256(raw).hexdigest()
                   image=Image.open(io.BytesIO(raw));image.load()
                   row['originalSize']=list(image.size)
-                  image=ImageOps.exif_transpose(image).convert('RGB')
+                  # A 600x720 export must not conceal severe source upscaling.
+                  # Keep this a source-quality gate, NOT an identity/visual approval.
+                  oriented=ImageOps.exif_transpose(image)
+                  if min(oriented.size)<600 or max(oriented.size)<720:
+                      raise ValueError('Source resolution too low for 600x720 portrait review: '+str(oriented.size))
+                  image=oriented.convert('RGB')
                   image.thumbnail((900,1080))
                   image.save(out/(pid+'-source.jpg'),quality=88)
                   # CENTER crop is only a review proposal, never an approved game image

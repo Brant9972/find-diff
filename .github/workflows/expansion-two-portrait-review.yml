@@ -81,8 +81,12 @@ jobs:
               for p in records:
                   if not isinstance(p,dict): continue
                   if p.get('id')==entries[0][0]: raise SystemExit('Candidate ID already live in '+bank)
-                  live_names={p.get('name',''),*(p.get('aliases') or [])}
+                  live_names={p.get('name',''),*(p.get('aliases') or []),*(p.get('acceptedAnswers') or [])}
                   live_names={str(n).strip().casefold() for n in live_names if str(n).strip()}
+                  candidate_qid=candidate.get('wikidataId') or candidate.get('wikidataQid')
+                  live_qid=p.get('wikidataId') or p.get('wikidataQid')
+                  if candidate_qid and live_qid and str(candidate_qid).strip().upper()==str(live_qid).strip().upper():
+                      raise SystemExit('Candidate Wikidata QID already live in '+bank+': '+str(candidate_qid))
                   if candidate_names & live_names:
                       raise SystemExit('Candidate name/alias already live in '+bank+': '+', '.join(sorted(candidate_names & live_names)))
           report=[]

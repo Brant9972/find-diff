@@ -1,0 +1,30 @@
+{
+  "reviewDate": "2026-11-15",
+  "id": "t1500_0181",
+  "name": "王大陸",
+  "sourceTitle": "File:TaLu.jpg",
+  "workflowRun": 43615188894,
+  "artifactId": 14120879786,
+  "humanReviewed": true,
+  "approved": false,
+  "status": "rejected_source_not_for_live",
+  "sourceLicenseClaim": "CC BY-SA 4.0, author 王愛粉; attribution must be preserved.",
+  "visualReview": {
+    "sourceImage": true,
+    "proposed600x720": true,
+    "stages": [
+      "eyes",
+      "nose",
+      "mouth",
+      "chin",
+      "full"
+    ],
+    "fiveStageApproval": false
+  },
+  "rejectionReasons": [
+    "Sunglasses completely conceal both eyes and eyebrows, making the eyes reveal stage unusable.",
+    "The proposed 600x720 image is a full-body airport photograph; the face occupies too little area for reliable eyes/nose/mouth/chin game crops."
+  ],
+  "requiredNextAction": "Find a different precise-source, attributable, crop-permitted, unoccluded and sufficiently sharp portrait; review source identity and all five stages before publishing.",
+  "liveChanges": false
+}

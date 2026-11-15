@@ -118,9 +118,10 @@ jobs:
                   image=Image.open(io.BytesIO(raw));image.load()
                   row['originalSize']=list(image.size)
                   # A 600x720 export must not conceal severe source upscaling.
+                  # Check dimensions by axis: a 720x600 landscape photo must not pass.
                   # Keep this a source-quality gate, NOT an identity/visual approval.
                   oriented=ImageOps.exif_transpose(image)
-                  if min(oriented.size)<600 or max(oriented.size)<720:
+                  if oriented.width < 600 or oriented.height < 720:
                       raise ValueError('Source resolution too low for 600x720 portrait review: '+str(oriented.size))
                   image=oriented.convert('RGB')
                   image.thumbnail((900,1080))

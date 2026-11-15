@@ -2,7 +2,8 @@
 """Fail-closed preflight for expansion-1500 candidates against all three live banks.
 
 Usage: python singer/expansion-1500/identity_preflight.py candidates.json
-Input: JSON array of candidate objects, an object with 'candidates'/'items',\nor the existing expansion-1500 release plan's 'selectedNew' array.
+Input: JSON array of candidate objects, an object with 'candidates'/'items',
+or the existing expansion-1500 release plan's 'selectedNew' array.
 This is a collision report, NOT permission to publish photos.
 """
 import argparse
@@ -24,10 +25,14 @@ def normalize(value):
 
 def names(record):
     raw = [record.get("name", "")]
-    aliases = record.get("aliases") or []\n    accepted = record.get("acceptedAnswers") or []\n    if isinstance(accepted, str):\n        accepted = [accepted]
+    aliases = record.get("aliases") or []
+    accepted = record.get("acceptedAnswers") or []
+    if isinstance(accepted, str):
+        accepted = [accepted]
     if isinstance(aliases, str):
         aliases = [aliases]
-    raw.extend(aliases)\n    raw.extend(accepted)
+    raw.extend(aliases)
+    raw.extend(accepted)
     return {v for item in raw if (v := normalize(item))}
 
 

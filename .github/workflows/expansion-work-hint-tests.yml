@@ -1,0 +1,25 @@
+name: Expansion work-hint preflight tests
+on:
+  push:
+    paths:
+      - 'singer/expansion-1500/work_hint_preflight.py'
+      - 'singer/expansion-1500/test_work_hint_preflight.py'
+      - '.github/workflows/expansion-work-hint-tests.yml'
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/work_hint_preflight.py'
+      - 'singer/expansion-1500/test_work_hint_preflight.py'
+      - '.github/workflows/expansion-work-hint-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test award/event detection
+        run: python -m unittest singer/expansion-1500/test_work_hint_preflight.py

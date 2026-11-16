@@ -1,0 +1,28 @@
+name: Expansion selectedNew review queue
+on:
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/build_review_queue.py'
+      - 'singer/expansion-1500/test_build_review_queue.py'
+      - '.github/workflows/expansion-review-queue.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review-queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test exact identity and review queue
+        run: |
+          python -m unittest discover -s singer/expansion-1500 -p 'test_identity_preflight.py' -v
+          python -m unittest discover -s singer/expansion-1500 -p 'test_build_review_queue.py' -v
+      - name: Build queue from latest checked-out live banks
+        run: python singer/expansion-1500/build_review_queue.py --output selected-new-review-queue.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: selected-new-review-queue
+          path: selected-new-review-queue.json

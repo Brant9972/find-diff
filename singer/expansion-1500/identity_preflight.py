@@ -2,7 +2,8 @@
 """Fail-closed preflight for expansion-1500 candidates against all three live banks.
 
 Usage: python singer/expansion-1500/identity_preflight.py candidates.json
-Input: JSON array of candidate objects (or an object with 'candidates'/'items').
+Input: JSON array of candidate objects, an object with 'candidates'/'items',
+or the existing expansion-1500 release plan's 'selectedNew' array.
 This is a collision report, NOT permission to publish photos.
 """
 import argparse
@@ -25,9 +26,13 @@ def normalize(value):
 def names(record):
     raw = [record.get("name", "")]
     aliases = record.get("aliases") or []
+    accepted = record.get("acceptedAnswers") or []
+    if isinstance(accepted, str):
+        accepted = [accepted]
     if isinstance(aliases, str):
         aliases = [aliases]
     raw.extend(aliases)
+    raw.extend(accepted)
     return {v for item in raw if (v := normalize(item))}
 
 
@@ -47,7 +52,7 @@ def collisions(candidate, records):
         shared_names = cn & names(live)
         shared_qids = cq & qids(live)
         if shared_names or shared_qids or (
-            candidate.get("id") and candidate["id"] == live.get("id")
+            (candidate.get("id") or candidate.get("plannedQuestionId")) and (candidate.get("id") or candidate.get("plannedQuestionId")) == live.get("id")
         ):
             matches.append({
                 "bank": bank, "id": live.get("id"), "name": live.get("name"),
@@ -73,14 +78,14 @@ def main():
     args = parser.parse_args()
     payload = json.loads(args.candidates.read_text(encoding="utf-8"))
     if isinstance(payload, dict):
-        payload = payload.get("candidates", payload.get("items"))
+        payload = payload.get("candidates", payload.get("items", payload.get("selectedNew")))
     if not isinstance(payload, list):
-        parser.error("expected array or object with candidates/items array")
+        parser.error("expected array or object with candidates/items/selectedNew array")
     records = load_records()
     output = []
     for candidate in payload:
         matches = collisions(candidate, records)
-        output.append({"id": candidate.get("id", candidate.get("questionId")),
+        output.append({"id": candidate.get("id") or candidate.get("questionId") or candidate.get("plannedQuestionId"),
                        "name": candidate.get("name"), "matches": matches,
                        "status": "BLOCK_DUPLICATE" if matches else "NEEDS_IDENTITY_AND_RIGHTS_REVIEW"})
     print(json.dumps(output, ensure_ascii=False, indent=2))

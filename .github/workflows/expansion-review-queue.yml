@@ -4,6 +4,8 @@ on:
     paths:
       - 'singer/expansion-1500/build_review_queue.py'
       - 'singer/expansion-1500/test_build_review_queue.py'
+      - 'singer/expansion-1500/evidence_crosswalk.py'
+      - 'singer/expansion-1500/test_evidence_crosswalk.py'
       - '.github/workflows/expansion-review-queue.yml'
   workflow_dispatch:
 permissions:
@@ -20,9 +22,14 @@ jobs:
         run: |
           python -m unittest discover -s singer/expansion-1500 -p 'test_identity_preflight.py' -v
           python -m unittest discover -s singer/expansion-1500 -p 'test_build_review_queue.py' -v
+          python -m unittest discover -s singer/expansion-1500 -p 'test_evidence_crosswalk.py' -v
       - name: Build queue from latest checked-out live banks
         run: python singer/expansion-1500/build_review_queue.py --output selected-new-review-queue.json
+      - name: Crosswalk existing draft media evidence (leads only)
+        run: python singer/expansion-1500/evidence_crosswalk.py --output selected-new-media-leads.json
       - uses: actions/upload-artifact@v4
         with:
           name: selected-new-review-queue
-          path: selected-new-review-queue.json
+          path: |
+            selected-new-review-queue.json
+            selected-new-media-leads.json

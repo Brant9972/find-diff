@@ -19,6 +19,33 @@ class CrosswalkTests(unittest.TestCase):
         media = {"items": [{"questionId": "t2", "source": "家家美食"}]}
         row = crosswalk(plan, [], media)["candidates"][0]
         self.assertEqual(row["mediaLeadCount"], 0)
+    def test_rejected_sources_are_not_recycled(self):
+        plan = {"selectedNew": [{"name": "瑪莎", "plannedQuestionId": "t1500_0169"}]}
+        media = {"items": [
+            {"questionId": "t1500_0169", "source": "https://example.org/old.jpg",
+             "reviewStatus": "rejected_previous_source_identity_conflict"},
+            {"questionId": "t1500_0169", "source": "https://example.org/blurry.jpg",
+             "reviewStatus": "rejected_blurry_branded_image"},
+            {"questionId": "t1500_0169", "source": "https://example.org/eyes.jpg",
+             "reviewStatus": "rejected_eyes_not_visible"},
+            {"questionId": "t1500_0169", "source": "https://example.org/alternative.jpg",
+             "reviewStatus": "needs_alternative_source"},
+        ]}
+        row = crosswalk(plan, [], media)["candidates"][0]
+        self.assertEqual(row["mediaLeadCount"], 0)
+
+    def test_valid_source_survives_rejected_source_for_same_person(self):
+        plan = {"selectedNew": [{"name": "甲", "plannedQuestionId": "t1"}]}
+        media = {"items": [
+            {"questionId": "t1", "source": "https://example.org/rejected.jpg",
+             "reviewStatus": "rejected_eyes_not_visible"},
+            {"questionId": "t1", "source": "https://commons.wikimedia.org/wiki/File:Good.jpg",
+             "reviewStatus": "pending_review"},
+        ]}
+        row = crosswalk(plan, [], media)["candidates"][0]
+        self.assertEqual(row["mediaLeadCount"], 1)
+        self.assertIn("Good.jpg", row["existingMediaLeads"][0]["source"])
+
     def test_wrong_id_does_not_join(self):
         plan = {"selectedNew": [{"name": "乙", "plannedQuestionId": "t3"}]}
         media = {"items": [{"questionId": "t4", "source": "https://example.org/other.jpg"}]}

@@ -1,0 +1,64 @@
+name: Exact Commons source diagnostics (Wang Dalu)
+on:
+  push:
+    branches:
+      - automation/wang-dalu-portrait-review-20261117
+    paths:
+      - .github/workflows/wang-dalu-source-diagnostics.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect exact Commons source and preserve error details
+        shell: bash
+        run: |
+          mkdir -p portrait-review
+          python - <<'PY'
+          import json,urllib.request,urllib.parse,traceback,pathlib,hashlib
+          title='File:TaLu.jpg'
+          row={'personId':'t1500_0181','name':'王大陸','commonsTitle':title,'approved':False}
+          headers={'User-Agent':'FindDiffSourceAudit/1.0 (https://github.com/Brant9972/find-diff; review-only)'}
+          try:
+              query=urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
+              url='https://commons.wikimedia.org/w/api.php?'+query
+              with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as resp:
+                  row['apiHttpStatus']=resp.status
+                  data=json.load(resp)
+              page=next(iter(data['query']['pages'].values()))
+              row['pageId']=page.get('pageid')
+              if 'missing' in page or 'imageinfo' not in page:
+                  raise ValueError('Exact Commons file does not exist or has no imageinfo')
+              info=page['imageinfo'][0]
+              row['mime']=info.get('mime')
+              row['width']=info.get('width')
+              row['height']=info.get('height')
+              row['sourceUrl']=info.get('url')
+              row['metadata']={k:v.get('value','') for k,v in info.get('extmetadata',{}).items() if k in ('LicenseShortName','LicenseUrl','Artist','Credit','ImageDescription','ObjectName','UsageTerms','AttributionRequired')}
+              if not info.get('url'): raise ValueError('No original download URL')
+              with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as resp:
+                  row['downloadHttpStatus']=resp.status
+                  raw=resp.read(18000001)
+              if len(raw)>18000000: raise ValueError('Source larger than 18MB audit limit')
+              row['downloadBytes']=len(raw)
+              row['sha256']=hashlib.sha256(raw).hexdigest()
+              row['status']='downloaded_for_review_only'
+          except Exception as exc:
+              row['status']='failed'
+              row['errorType']=type(exc).__name__
+              row['error']=str(exc)[:1000]
+              row['traceback']=traceback.format_exc()[-3000:]
+          path=pathlib.Path('portrait-review/report.json')
+          path.write_text(json.dumps(row,ensure_ascii=False,indent=2))
+          print(json.dumps({k:v for k,v in row.items() if k not in ('metadata','traceback')},ensure_ascii=False))
+          PY
+      - name: Upload diagnostics even if source failed
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wang-dalu-source-diagnostics
+          path: portrait-review/report.json
+          if-no-files-found: error

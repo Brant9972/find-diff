@@ -12,6 +12,8 @@ from identity_preflight import load_records
 HERE = Path(__file__).resolve().parent
 
 # A URL on a previously rejected photo is not a reusable source lead.
+KNOWN_IDENTITY_CONFLICTS = {("t1500_0465", "https://commons.wikimedia.org/wiki/File:Teresa_Teng_onstage.jpg")}
+
 REJECTED_STATUSES = {"needs_alternative_source", "identity_unconfirmed", "image_validation_failed", "excluded_context"}
 
 def is_rejected_media(item):
@@ -30,7 +32,7 @@ def crosswalk(plan, live, media):
         leads = []
         if row["status"] != "BLOCK":
             for item in by_id.get(row["id"], []):
-                if is_rejected_media(item):
+                if is_rejected_media(item) or (row["id"], item.get("source")) in KNOWN_IDENTITY_CONFLICTS:
                     continue
                 source = item.get("source")
                 if not isinstance(source, str) or not source.startswith(("https://", "http://")):

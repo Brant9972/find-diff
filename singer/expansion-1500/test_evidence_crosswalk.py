@@ -46,6 +46,16 @@ class CrosswalkTests(unittest.TestCase):
         self.assertEqual(row["mediaLeadCount"], 1)
         self.assertIn("Good.jpg", row["existingMediaLeads"][0]["source"])
 
+    def test_known_teresa_teng_photo_cannot_be_used_for_liu_jia_chang(self):
+        plan = {"selectedNew": [{"name": "劉家昌", "plannedQuestionId": "t1500_0465"}]}
+        media = {"items": [
+            {"questionId": "t1500_0465", "source": "https://commons.wikimedia.org/wiki/File:Teresa_Teng_onstage.jpg", "reviewStatus": "draft_not_verified"},
+            {"questionId": "t1500_0465", "source": "https://commons.wikimedia.org/wiki/File:Different_verified_candidate.jpg", "reviewStatus": "pending_review"},
+        ]}
+        row = crosswalk(plan, [], media)["candidates"][0]
+        self.assertEqual(row["mediaLeadCount"], 1)
+        self.assertIn("Different_verified_candidate.jpg", row["existingMediaLeads"][0]["source"])
+
     def test_wrong_id_does_not_join(self):
         plan = {"selectedNew": [{"name": "乙", "plannedQuestionId": "t3"}]}
         media = {"items": [{"questionId": "t4", "source": "https://example.org/other.jpg"}]}

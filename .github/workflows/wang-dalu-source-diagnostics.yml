@@ -45,6 +45,8 @@ jobs:
               if len(raw)>18000000: raise ValueError('Source larger than 18MB audit limit')
               row['downloadBytes']=len(raw)
               row['sha256']=hashlib.sha256(raw).hexdigest()
+              if raw[:3] != bytes([255,216,255]): raise ValueError('Original does not have JPEG signature')
+              pathlib.Path('portrait-review/source-TaLu.jpg').write_bytes(raw)
               row['status']='downloaded_for_review_only'
           except Exception as exc:
               row['status']='failed'
@@ -60,5 +62,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wang-dalu-source-diagnostics
-          path: portrait-review/report.json
+          path: |
+            portrait-review/report.json
+            portrait-review/source-TaLu.jpg
           if-no-files-found: error

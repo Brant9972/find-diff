@@ -11,6 +11,14 @@ from identity_preflight import load_records
 
 HERE = Path(__file__).resolve().parent
 
+# A URL on a previously rejected photo is not a reusable source lead.
+REJECTED_STATUSES = {"needs_alternative_source", "identity_unconfirmed", "image_validation_failed", "excluded_context"}
+
+def is_rejected_media(item):
+    status = str(item.get("reviewStatus") or "").strip().lower()
+    return status.startswith(("rejected", "failed", "invalid")) or status in REJECTED_STATUSES
+
+
 def crosswalk(plan, live, media):
     queue = review_queue(plan, live)
     by_id = {}
@@ -22,6 +30,8 @@ def crosswalk(plan, live, media):
         leads = []
         if row["status"] != "BLOCK":
             for item in by_id.get(row["id"], []):
+                if is_rejected_media(item):
+                    continue
                 source = item.get("source")
                 if not isinstance(source, str) or not source.startswith(("https://", "http://")):
                     continue

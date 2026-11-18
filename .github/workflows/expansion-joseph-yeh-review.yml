@@ -4,6 +4,9 @@ on:
     paths:
       - '.github/workflows/expansion-joseph-yeh-review.yml'
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/expansion-joseph-yeh-review.yml'
 permissions:
   contents: read
 jobs:

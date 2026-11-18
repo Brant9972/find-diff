@@ -1,0 +1,53 @@
+name: Expansion 1500 Joseph Yeh portrait review evidence
+on:
+  push:
+    paths:
+      - '.github/workflows/expansion-joseph-yeh-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exact Commons source and build review sheet
+        run: |
+          python3 -m pip install pillow
+          python3 - <<'PY'
+          import json,urllib.parse,urllib.request,re,html,pathlib,hashlib,io
+          from PIL import Image,ImageOps,ImageDraw
+          title='File:Joseph Yeh.jpg'
+          api='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
+          headers={'User-Agent':'FindDiffPortraitReview/1.0 (https://github.com/Brant9972/find-diff)'}
+          def fetch(url):
+              with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=45) as r:return r.read()
+          pages=json.loads(fetch(api))['query']['pages']
+          info=next(p['imageinfo'][0] for p in pages.values() if p.get('imageinfo'))
+          md=info.get('extmetadata',{})
+          clean=lambda k:re.sub('<[^>]*>',' ',html.unescape(md.get(k,{}).get('value',''))).strip()
+          report={'candidateId':'t1500_0110','candidateName':'葉佳修','commonsTitle':title,'sourceUrl':info['url'],'sourcePage':'https://commons.wikimedia.org/wiki/File:Joseph_Yeh.jpg','license':clean('LicenseShortName'),'licenseUrl':clean('LicenseUrl'),'artist':clean('Artist'),'credit':clean('Credit'),'description':clean('ImageDescription'),'usageTerms':clean('UsageTerms'),'status':'source_only_not_approved'}
+          assert 'BY' in report['license'].upper() and report['artist'], 'Rights metadata needs manual review'
+          raw=fetch(info['url'])
+          im=Image.open(io.BytesIO(raw));im.load()
+          assert im.width>=400 and im.height>=600
+          report.update({'width':im.width,'height':im.height,'sha256':hashlib.sha256(raw).hexdigest()})
+          out=pathlib.Path('review-evidence');out.mkdir(exist_ok=True)
+          (out/'metadata.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          im.convert('RGB').save(out/'original.jpg',quality=92)
+          # This is a provisional centered crop, not approved face landmark coordinates.
+          crop=ImageOps.fit(im.convert('RGB'),(600,720),method=Image.Resampling.LANCZOS,centering=(0.5,0.4))
+          crop.save(out/'provisional-600x720.jpg',quality=90)
+          # Review the whole frame plus a provisional crop; do not fabricate five-stage coordinates.
+          sheet=Image.new('RGB',(1200,760),'white')
+          sheet.paste(ImageOps.contain(im.convert('RGB'),(560,720)),(20,20))
+          sheet.paste(crop,(590,20))
+          sheet.save(out/'contact-sheet.jpg',quality=90)
+          print('SOURCE EVIDENCE CREATED',json.dumps(report,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: joseph-yeh-source-review-only
+          path: review-evidence/
+          retention-days: 14

@@ -219,6 +219,17 @@ class SourcesTest(unittest.TestCase):
         self.assertEqual(identity(short, '歌手家家演出'), ['家家'])
         self.assertEqual(identity(long, '演員金城武出席'), ['金城武'])
 
+    def test_known_false_positive_caption_names_are_not_identity_evidence(self):
+        # Regression: these previously consumed the portrait candidate quota.
+        jiajia = {'name': '家家', 'aliases': [], 'acceptedAnswers': []}
+        huangjie = {'name': '黃玠', 'aliases': [], 'acceptedAnswers': []}
+        for caption in ('家家美食', '香港家家美食餐廳', '家家美食招牌'):
+            self.assertEqual(identity(jiajia, caption), [], caption)
+        for caption in ('黃玠瑋', '黃玠瑋 Zooey Wonder', '歌手黃玠瑋演出'):
+            self.assertEqual(identity(huangjie, caption), [], caption)
+        self.assertEqual(identity(jiajia, '歌手家家演出'), ['家家'])
+        self.assertEqual(identity(huangjie, '歌手黃玠演出'), ['黃玠'])
+
 
 if __name__ == '__main__':
     unittest.main()

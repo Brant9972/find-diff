@@ -55,6 +55,23 @@ jobs:
                   except (urllib.error.HTTPError,urllib.error.URLError,TimeoutError) as e:
                       if i==3: return {'error':str(e)}
                       time.sleep(3*(i+1))
+          # Regression checks run on every probe before any remote lookup.
+          def identity_gate(planned, labels, aliases, human_qids, occupations):
+              planned_names={norm(v) for v in planned if isinstance(v,str) and v.strip()}
+              entity_names={norm(v) for v in labels+aliases if isinstance(v,str) and v.strip()}
+              if not (planned_names & entity_names): return 'name_or_alias_mismatch'
+              if 'Q5' not in human_qids: return 'not_confirmed_human'
+              relevant={'Q177220','Q33999','Q49757','Q483501','Q639669','Q488205','Q2526255','Q10800557','Q2405480','Q2252262'}
+              if not (set(occupations) & relevant): return 'occupation_not_confirmed'
+              return None
+          assert identity_gate(['家家'],['家家美食'],[],{'Q5'},['Q177220'])=='name_or_alias_mismatch'
+          assert identity_gate(['黃玠'],['黃玠瑋'],[],{'Q5'},['Q177220'])=='name_or_alias_mismatch'
+          assert identity_gate(['喜翔'],['Jason King'],[],{'Q5'},['Q33999'])=='name_or_alias_mismatch'
+          assert identity_gate(['家家'],['家家'],[],{'Q41176'},['Q177220'])=='not_confirmed_human'
+          assert identity_gate(['王瞳'],['王瞳'],[],{'Q5'},[])=='occupation_not_confirmed'
+          assert identity_gate(['王瞳'],['王瞳'],[],{'Q5'},['Q33999']) is None
+          assert identity_gate(['黃智賢'],['Ben Wong'],['黃智賢'],{'Q5'},['Q33999']) is None
+          print('IDENTITY GATE REGRESSION PASS',flush=True)
           report=[]
           for p in candidates:
               name=p['name']
@@ -70,22 +87,9 @@ jobs:
                   # A P18 is only a source candidate, not identity or license approval.
                   labels=[v.get('value','') for v in e.get('labels',{}).values()]
                   aliases=[a.get('value','') for values in e.get('aliases',{}).values() for a in values]
-                  planned=[name,*(p.get('aliases') or [])]
-                  planned_names={norm(v) for v in planned if isinstance(v,str) and v.strip()}
-                  entity_names={norm(v) for v in labels+aliases if isinstance(v,str) and v.strip()}
-                  if not (planned_names & entity_names):
-                      row['rejectedEntities'].append({'qid':qid,'reason':'name_or_alias_mismatch'})
-                      continue
-                  # Exclude obvious non-person items and entities with no acting/music
-                  # occupation. Unknown occupations require manual triage, not approval.
-                  human=e.get('claims',{}).get('P31',[])
-                  human_qids={x.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') for x in human}
-                  if 'Q5' not in human_qids:
-                      row['rejectedEntities'].append({'qid':qid,'reason':'not_confirmed_human'})
-                      continue
-                  relevant={'Q177220','Q33999','Q49757','Q483501','Q639669','Q488205','Q2526255','Q10800557','Q2405480','Q2252262'}
-                  if not (set(occupation) & relevant):
-                      row['rejectedEntities'].append({'qid':qid,'reason':'occupation_not_confirmed','occupationQids':occupation})
+                  reason=identity_gate([name,*(p.get('aliases') or [])],labels,aliases,{x.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') for x in e.get('claims',{}).get('P31',[])},occupation)
+                  if reason:
+                      row['rejectedEntities'].append({'qid':qid,'reason':reason,'occupationQids':occupation})
                       continue
                   for claim in e.get('claims',{}).get('P18',[])[:2]:
                       title=claim.get('mainsnak',{}).get('datavalue',{}).get('value')

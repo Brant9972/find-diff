@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - '.github/workflows/expansion-p18-source-probe.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/expansion-p18-source-probe.yml'
   workflow_dispatch:
     inputs:
       offset:

@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from media_pipeline.sources import CommonsSearch, HTTP, Official, Openverse, SourceError, Wikimedia, clean, rights
+from media_pipeline.sources import CommonsSearch, HTTP, Official, Openverse, SourceError, Wikimedia, clean, rights, identity
 
 
 class FixtureHTTP:
@@ -207,6 +207,21 @@ class SourcesTest(unittest.TestCase):
         with self.assertRaises(SourceError):
             client.json(url, action='query', generator='search')
         self.assertEqual(len(calls), 2, 'Cooldown must skip Cirrus requests but permit prefix metadata')
+
+
+    def test_real_world_caption_false_positives(self):
+        jiajia = {'name': '家家', 'aliases': [], 'acceptedAnswers': []}
+        huangjie = {'name': '黃玠', 'aliases': [], 'acceptedAnswers': []}
+        jin = {'name': '金城武', 'aliases': [], 'acceptedAnswers': []}
+        for bad in ('家家美食', '香港家家美食餐廳', '家家food', 'abc家家', '家家2026', '家家_test'):
+            self.assertEqual(identity(jiajia, bad), [], bad)
+        for bad in ('黃玠瑋', '黃玠瑋 Zooey Wonder', '歌手黃玠瑋演出'):
+            self.assertEqual(identity(huangjie, bad), [], bad)
+        for bad in ('金城武2026', 'abc金城武', '金城武_test', '金城武樹'):
+            self.assertEqual(identity(jin, bad), [], bad)
+        self.assertEqual(identity(jiajia, '歌手家家演出'), ['家家'])
+        self.assertEqual(identity(huangjie, '歌手黃玠演出'), ['黃玠'])
+        self.assertEqual(identity(jin, '演員金城武出席'), ['金城武'])
 
 
 if __name__ == '__main__':

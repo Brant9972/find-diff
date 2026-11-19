@@ -34,7 +34,7 @@ jobs:
           for f in ('questions.json','actors.json','variety.json'):
               live+=json.loads((root/f).read_text())['questions']
           ids={str(p.get('id','')) for p in live}
-          def norm(s): return re.sub(r'[\\s·・.．_-]+','',str(s or '')).casefold()
+          def norm(s): return re.sub(r'[\s·・.．_-]+','',str(s or '')).casefold()
           def aliases(p):
               a=p.get('aliases') or []
               return a if isinstance(a,list) else [a] if isinstance(a,str) else []

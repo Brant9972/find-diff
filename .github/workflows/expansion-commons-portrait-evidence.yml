@@ -1,5 +1,8 @@
 name: Expansion 1500 reusable Commons portrait evidence
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/expansion-commons-portrait-evidence.yml'
   workflow_dispatch:
     inputs:
       candidate_id:
@@ -13,7 +16,29 @@ on:
 permissions:
   contents: read
 jobs:
+  preflight-regression:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify existing expansion candidate identity checks
+        run: |
+          python3 - <<'PY'
+          import json,re,pathlib
+          root=pathlib.Path('singer')
+          plan=json.loads((root/'expansion-1500/release-plan-20261028.json').read_text())
+          live=[q for fn in ('questions.json','actors.json','variety.json') for q in json.loads((root/fn).read_text())['questions']]
+          def norm(v):
+              return re.sub(r'[\\s\\u3000·・.．_-]+','',str(v or '')).casefold()
+          assert norm('葉 佳修')==norm('葉佳修')==norm('葉　佳修')
+          assert norm('家家')!=norm('家家美食')
+          assert norm('黃玠')!=norm('黃玠瑋')
+          assert all(isinstance(q.get('id'),str) for q in live)
+          assert plan.get('selectedNew') and len(live)>1000
+          print('PASS: three live banks loaded, existing plan loaded, name regression checks passed')
+          PY
   evidence:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

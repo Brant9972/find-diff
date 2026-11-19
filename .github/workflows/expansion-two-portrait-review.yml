@@ -53,7 +53,7 @@ jobs:
           COMMONS_FILE: ${{ inputs.commons_file }}
         run: |
           python - <<'PY'
-          import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io, os
+          import json, pathlib, urllib.parse, urllib.request, urllib.error, re, html, hashlib, io, os, time
           from PIL import Image,ImageOps,ImageDraw
           out=pathlib.Path('portrait-review');out.mkdir()
           if os.environ.get('PERSON_ID','').strip():
@@ -95,7 +95,22 @@ jobs:
               try:
                   url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
                   headers={'User-Agent':'FindDiffPortraitReview/1.0 (github.com/Brant9972/find-diff; license and visual audit)'}
-                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:data=json.load(response)
+                  def fetch_with_backoff(target, timeout, max_bytes=None):
+                      # Respect Commons rate limits; never bypass license verification.
+                      for attempt in range(4):
+                          try:
+                              with urllib.request.urlopen(urllib.request.Request(target,headers=headers),timeout=timeout) as response:
+                                  return response.read(max_bytes) if max_bytes is not None else response.read()
+                          except urllib.error.HTTPError as exc:
+                              if exc.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                                  raise
+                              retry_after=exc.headers.get('Retry-After','').strip()
+                              try: delay=min(30,max(1,int(retry_after)))
+                              except ValueError: delay=min(30,3*(2**attempt))
+                              print('Commons transient HTTP',exc.code,'retry',attempt+1,'delay',delay,'seconds',flush=True)
+                              time.sleep(delay)
+                      raise RuntimeError('Retry budget exhausted')
+                  data=json.loads(fetch_with_backoff(url,35))
                   page=next(iter(data['query']['pages'].values()))
                   info=page['imageinfo'][0]
                   ext=info.get('extmetadata',{})
@@ -113,7 +128,8 @@ jobs:
                       raise ValueError('Missing Commons artist attribution')
                   row['sourceUrl']=info['url']
                   row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
-                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_000)
+                  raw=fetch_with_backoff(info['url'],50,18_000_001)
+                  if len(raw)>18_000_000: raise ValueError('Original exceeds 18 MB review download limit')
                   row['sha256']=hashlib.sha256(raw).hexdigest()
                   image=Image.open(io.BytesIO(raw));image.load()
                   row['originalSize']=list(image.size)

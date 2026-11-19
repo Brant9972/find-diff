@@ -29,7 +29,7 @@ jobs:
           plan=json.loads((root/'expansion-1500/release-plan-20261028.json').read_text())
           live=[q for fn in ('questions.json','actors.json','variety.json') for q in json.loads((root/fn).read_text())['questions']]
           def norm(v):
-              return re.sub(r'[\\s\\u3000·・.．_-]+','',str(v or '')).casefold()
+              return re.sub(r'[\s\u3000·・.．_-]+','',str(v or '')).casefold()
           assert norm('葉 佳修')==norm('葉佳修')==norm('葉　佳修')
           assert norm('家家')!=norm('家家美食')
           assert norm('黃玠')!=norm('黃玠瑋')

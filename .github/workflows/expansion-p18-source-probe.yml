@@ -34,20 +34,36 @@ jobs:
           for f in ('questions.json','actors.json','variety.json'):
               live+=json.loads((root/f).read_text())['questions']
           ids={str(p.get('id','')) for p in live}
-          def norm(s): return re.sub(r'[\s·・.．_-]+','',str(s or '')).casefold()
-          names={norm(n) for p in live for n in [p.get('name'), *(p.get('aliases') or [])] if isinstance(n,str) and n.strip()}
-          seen=set()
+          def norm(s): return re.sub(r'[\\s·・.．_-]+','',str(s or '')).casefold()
+          def aliases(p):
+              a=p.get('aliases') or []
+              return a if isinstance(a,list) else [a] if isinstance(a,str) else []
+          def identity_names(p):
+              return {norm(v) for v in [p.get('name'),*aliases(p)] if isinstance(v,str) and v.strip()}
+          def qids(p):
+              # Only explicit Wikidata identifiers; never infer a QID from a person's name.
+              return {str(p[k]).upper() for k in ('wikidataQid','wikidataQID','wikidataId','wikidata') if isinstance(p.get(k),str) and re.fullmatch(r'Q[0-9]+',p[k],re.I)}
+          live_names=set().union(*(identity_names(p) for p in live))
+          live_qids=set().union(*(qids(p) for p in live))
+          seen_names=set()
+          seen_qids=set()
           candidates=[]
           for p in plan['selectedNew']:
-              key=norm(p.get('name'))
+              keys=identity_names(p)
+              pqids=qids(p)
               pid=p.get('plannedQuestionId')
-              if not key or key in names or key in seen or pid in ids or p.get('photoStatus')=='published': continue
-              seen.add(key)
+              if not keys or keys & (live_names|seen_names) or pqids & (live_qids|seen_qids) or pid in ids or p.get('photoStatus')=='published': continue
+              seen_names.update(keys)
+              seen_qids.update(pqids)
               candidates.append(p)
+          # Preflight: aliases and explicit QIDs must prevent duplicate candidates.
+          assert identity_names({'name':'葉 佳修','aliases':['Joseph Yeh']}) & identity_names({'name':'葉佳修'})
+          assert qids({'wikidataQid':'Q123'}) & qids({'wikidata':'q123'})
+          assert not (identity_names({'name':'家家'}) & identity_names({'name':'家家美食'}))
           offset=max(0,int('${{ inputs.offset || '12' }}'))
           limit=max(1,min(25,int('${{ inputs.limit || '12' }}')))
           candidates=candidates[offset:offset+limit]
-          print('PROBE WINDOW',offset,limit,'eligible total',len(seen),flush=True)
+          print('PROBE WINDOW',offset,limit,'eligible total',len(candidates),flush=True)
           headers={'User-Agent':'FindDiffExpansionP18Probe/1.0 (github.com/Brant9972/find-diff; metadata-only)'}
           def api(host, params):
               url=host+'?'+urllib.parse.urlencode(params)

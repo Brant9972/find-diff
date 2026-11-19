@@ -36,7 +36,10 @@ jobs:
           # Check all live banks before fetching any image; an alias or QID collision
           # is the same person even when a different question ID was assigned.
           def norm(v):
-              return re.sub(r'[\\s\\u3000·・.．_-]+','',str(v or '')).casefold()
+              return re.sub(r'[\s\u3000·・.．_-]+','',str(v or '')).casefold()
+          # Regression: whitespace and ideographic spaces must normalize, while distinct names stay distinct.
+          assert norm('葉 佳修')==norm('葉佳修')==norm('葉　佳修')
+          assert norm('家家')!=norm('家家美食') and norm('黃玠')!=norm('黃玠瑋')
           planned=matches[0]
           candidate_names={norm(v) for v in [planned.get('name'),*(planned.get('aliases') or []),*(planned.get('acceptedAnswers') or [])] if norm(v)}
           candidate_qid=planned.get('wikidataQid') or planned.get('wikidataQID') or planned.get('wikidataId')

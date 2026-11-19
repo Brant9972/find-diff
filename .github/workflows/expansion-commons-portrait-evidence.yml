@@ -33,7 +33,19 @@ jobs:
           matches=[p for k in ('selectedNew','backup','deferred') for p in plan.get(k,[]) if isinstance(p,dict) and p.get('plannedQuestionId')==cid]
           assert len(matches)==1,'Candidate must be uniquely present in existing expansion plan'
           live=[q for fn in ('questions.json','actors.json','variety.json') for q in json.loads((root/fn).read_text())['questions']]
-          assert not any(q.get('id')==cid for q in live),'Candidate already live'
+          # Check all live banks before fetching any image; an alias or QID collision
+          # is the same person even when a different question ID was assigned.
+          def norm(v):
+              return re.sub(r'[\\s\\u3000·・.．_-]+','',str(v or '')).casefold()
+          planned=matches[0]
+          candidate_names={norm(v) for v in [planned.get('name'),*(planned.get('aliases') or []),*(planned.get('acceptedAnswers') or [])] if norm(v)}
+          candidate_qid=planned.get('wikidataQid') or planned.get('wikidataQID') or planned.get('wikidataId')
+          for q in live:
+              assert q.get('id')!=cid,'Candidate ID already live'
+              live_names={norm(v) for v in [q.get('name'),*(q.get('aliases') or [])] if norm(v)}
+              assert not candidate_names.intersection(live_names),f"Existing live name/alias collision: {q.get('id')} ({q.get('name')})"
+              live_qid=q.get('wikidataQid') or q.get('wikidataQID') or q.get('wikidataId')
+              assert not (candidate_qid and live_qid and candidate_qid==live_qid),f"Existing live Wikidata QID collision: {q.get('id')}"
           title=os.environ['COMMONS_TITLE'].strip()
           assert title.startswith('File:') and len(title)<220 and not any(c in title for c in '\r\n'),'Exact Commons File: title required'
           headers={'User-Agent':'FindDiffExpansionEvidence/1.0 (https://github.com/Brant9972/find-diff)'}

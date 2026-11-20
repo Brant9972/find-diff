@@ -95,6 +95,13 @@ jobs:
           def aliases_for_person(p):
               return [v for v in (p.get('aliases') if isinstance(p.get('aliases'),list) else [p.get('aliases')] if isinstance(p.get('aliases'),str) else []) if isinstance(v,str)]
           assert aliases_for_person({'aliases':'Joseph Yeh'})==['Joseph Yeh']
+          # Exercise the real gate with the same alias normalization used for live/planned records.
+          # A string alias must be treated as one full name, never individual characters.
+          planned_aliases=aliases_for_person({'aliases':'Joseph Yeh'})
+          assert identity_gate(['葉佳修',*planned_aliases],['Joseph Yeh'],[],{'Q5'},['Q177220']) is None
+          assert identity_gate(['葉佳修',*planned_aliases],['Joseph'],[],{'Q5'},['Q177220'])=='name_or_alias_mismatch'
+          assert identity_gate(['喜翔'],['Jason King'],['King'],{'Q5'},['Q33999'])=='name_or_alias_mismatch'
+          assert identity_gate(['黃玠'],['黃玠瑋'],['Zooey Wonder'],{'Q5'},['Q177220'])=='name_or_alias_mismatch'
           report=[]
           for p in candidates:
               name=p['name']

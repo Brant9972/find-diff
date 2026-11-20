@@ -66,11 +66,19 @@ jobs:
           assert norm('葉 佳修')==norm('葉佳修')==norm('葉　佳修')
           assert norm('家家')!=norm('家家美食') and norm('黃玠')!=norm('黃玠瑋')
           planned=matches[0]
-          candidate_names={norm(v) for v in [planned.get('name'),*(planned.get('aliases') or []),*(planned.get('acceptedAnswers') or [])] if norm(v)}
+          def values(v):
+              return [v] if isinstance(v,str) else [x for x in v if isinstance(x,str)] if isinstance(v,list) else []
+          def names(p):
+              return {norm(v) for v in [p.get('name'),*values(p.get('aliases')),*values(p.get('acceptedAnswers'))] if isinstance(v,str) and norm(v)}
+          # Regression: a string alias must be one complete identity, never single letters.
+          assert 'josephyeh' in names({'name':'葉佳修','aliases':'Joseph Yeh'})
+          assert 'j' not in names({'name':'葉佳修','aliases':'Joseph Yeh'})
+          assert '家家美食' not in names({'name':'家家'})
+          candidate_names=names(planned)
           candidate_qid=planned.get('wikidataQid') or planned.get('wikidataQID') or planned.get('wikidataId')
           for q in live:
               assert q.get('id')!=cid,'Candidate ID already live'
-              live_names={norm(v) for v in [q.get('name'),*(q.get('aliases') or [])] if norm(v)}
+              live_names=names(q)
               assert not candidate_names.intersection(live_names),f"Existing live name/alias collision: {q.get('id')} ({q.get('name')})"
               live_qid=q.get('wikidataQid') or q.get('wikidataQID') or q.get('wikidataId')
               assert not (candidate_qid and live_qid and candidate_qid==live_qid),f"Existing live Wikidata QID collision: {q.get('id')}"

@@ -62,8 +62,9 @@ jobs:
           assert not (identity_names({'name':'家家'}) & identity_names({'name':'家家美食'}))
           offset=max(0,int('${{ inputs.offset || '12' }}'))
           limit=max(1,min(25,int('${{ inputs.limit || '12' }}')))
+          eligible_total=len(candidates)
           candidates=candidates[offset:offset+limit]
-          print('PROBE WINDOW',offset,limit,'eligible total',len(candidates),flush=True)
+          print('PROBE WINDOW',offset,limit,'eligible total',eligible_total,'window count',len(candidates),flush=True)
           headers={'User-Agent':'FindDiffExpansionP18Probe/1.0 (github.com/Brant9972/find-diff; metadata-only)'}
           def api(host, params):
               url=host+'?'+urllib.parse.urlencode(params)
@@ -91,6 +92,9 @@ jobs:
           assert identity_gate(['王瞳'],['王瞳'],[],{'Q5'},['Q33999']) is None
           assert identity_gate(['黃智賢'],['Ben Wong'],['黃智賢'],{'Q5'},['Q33999']) is None
           print('IDENTITY GATE REGRESSION PASS',flush=True)
+          def aliases_for_person(p):
+              return [v for v in (p.get('aliases') if isinstance(p.get('aliases'),list) else [p.get('aliases')] if isinstance(p.get('aliases'),str) else []) if isinstance(v,str)]
+          assert aliases_for_person({'aliases':'Joseph Yeh'})==['Joseph Yeh']
           report=[]
           for p in candidates:
               name=p['name']
@@ -106,7 +110,7 @@ jobs:
                   # A P18 is only a source candidate, not identity or license approval.
                   labels=[v.get('value','') for v in e.get('labels',{}).values()]
                   aliases=[a.get('value','') for values in e.get('aliases',{}).values() for a in values]
-                  reason=identity_gate([name,*(p.get('aliases') or [])],labels,aliases,{x.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') for x in e.get('claims',{}).get('P31',[])},occupation)
+                  reason=identity_gate([name,*aliases_for_person(p)],labels,aliases,{x.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') for x in e.get('claims',{}).get('P31',[])},occupation)
                   if reason:
                       row['rejectedEntities'].append({'qid':qid,'reason':reason,'occupationQids':occupation})
                       continue

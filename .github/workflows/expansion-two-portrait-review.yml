@@ -7,6 +7,7 @@ on:
   pull_request:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+      - 'singer/expansion-1500/review-request.json'
   workflow_dispatch:
     inputs:
       person_id:
@@ -73,16 +74,19 @@ jobs:
           if not candidate: raise SystemExit('Candidate ID absent from selectedNew')
           if candidate['name'] != entries[0][1].strip(): raise SystemExit('Candidate ID/name mismatch with release plan')
           if candidate.get('photoStatus') == 'published': raise SystemExit('Candidate already marked published in release plan')
+          def names_as_set(value):
+              if isinstance(value,str): return {value.strip().casefold()} if value.strip() else set()
+              if isinstance(value,(list,tuple,set)):
+                  return {v.strip().casefold() for v in value if isinstance(v,str) and v.strip()}
+              return set()
+          candidate_names=names_as_set(candidate.get('name')) | names_as_set(candidate.get('aliases')) | names_as_set(candidate.get('acceptedAnswers'))
           for bank in ('questions.json','actors.json','variety.json'):
               live=json.loads((pathlib.Path('singer')/bank).read_text())
               records=live if isinstance(live,list) else live.get('questions',live.get('people',[]))
-              candidate_names={candidate['name'],*candidate.get('aliases',[]),*candidate.get('acceptedAnswers',[])}
-              candidate_names={str(n).strip().casefold() for n in candidate_names if str(n).strip()}
               for p in records:
                   if not isinstance(p,dict): continue
                   if p.get('id')==entries[0][0]: raise SystemExit('Candidate ID already live in '+bank)
-                  live_names={p.get('name',''),*(p.get('aliases') or []),*(p.get('acceptedAnswers') or [])}
-                  live_names={str(n).strip().casefold() for n in live_names if str(n).strip()}
+                  live_names=names_as_set(p.get('name')) | names_as_set(p.get('aliases')) | names_as_set(p.get('acceptedAnswers'))
                   candidate_qid=candidate.get('wikidataId') or candidate.get('wikidataQid')
                   live_qid=p.get('wikidataId') or p.get('wikidataQid')
                   if candidate_qid and live_qid and str(candidate_qid).strip().upper()==str(live_qid).strip().upper():

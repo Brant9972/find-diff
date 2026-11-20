@@ -56,6 +56,21 @@ class CrosswalkTests(unittest.TestCase):
         self.assertEqual(row["mediaLeadCount"], 1)
         self.assertIn("Different_verified_candidate.jpg", row["existingMediaLeads"][0]["source"])
 
+    def test_rejected_status_field_blocks_even_with_pending_review_status(self):
+        plan = {"selectedNew": [{"name": "甲", "plannedQuestionId": "t1"}]}
+        media = {"items": [{"questionId": "t1", "source": "https://example.org/wrong.jpg",
+                            "reviewStatus": "pending_review", "status": "rejected_identity_conflict"}]}
+        self.assertEqual(crosswalk(plan, [], media)["candidates"][0]["mediaLeadCount"], 0)
+
+    def test_duplicate_source_leads_count_once(self):
+        plan = {"selectedNew": [{"name": "甲", "plannedQuestionId": "t1"}]}
+        media = {"items": [
+            {"questionId": "t1", "source": "https://example.org/one.jpg"},
+            {"questionId": "t1", "source": "https://example.org/one.jpg"},
+        ]}
+        row = crosswalk(plan, [], media)["candidates"][0]
+        self.assertEqual(row["mediaLeadCount"], 1)
+
     def test_wrong_id_does_not_join(self):
         plan = {"selectedNew": [{"name": "乙", "plannedQuestionId": "t3"}]}
         media = {"items": [{"questionId": "t4", "source": "https://example.org/other.jpg"}]}

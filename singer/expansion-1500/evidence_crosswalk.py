@@ -17,8 +17,9 @@ KNOWN_IDENTITY_CONFLICTS = {("t1500_0465", "https://commons.wikimedia.org/wiki/F
 REJECTED_STATUSES = {"needs_alternative_source", "identity_unconfirmed", "image_validation_failed", "excluded_context"}
 
 def is_rejected_media(item):
-    status = str(item.get("reviewStatus") or "").strip().lower()
-    return status.startswith(("rejected", "failed", "invalid")) or status in REJECTED_STATUSES
+    statuses = (str(item.get(key) or "").strip().lower() for key in ("reviewStatus", "status"))
+    return any(status.startswith(("rejected", "failed", "invalid")) or status in REJECTED_STATUSES
+               for status in statuses)
 
 
 def crosswalk(plan, live, media):
@@ -30,6 +31,7 @@ def crosswalk(plan, live, media):
             by_id.setdefault(key, []).append(item)
     for row in queue:
         leads = []
+        seen_sources = set()
         if row["status"] != "BLOCK":
             for item in by_id.get(row["id"], []):
                 if is_rejected_media(item) or (row["id"], item.get("source")) in KNOWN_IDENTITY_CONFLICTS:
@@ -37,8 +39,12 @@ def crosswalk(plan, live, media):
                 source = item.get("source")
                 if not isinstance(source, str) or not source.startswith(("https://", "http://")):
                     continue
+                canonical_source = source.strip()
+                if canonical_source in seen_sources:
+                    continue
+                seen_sources.add(canonical_source)
                 leads.append({
-                    "source": source,
+                    "source": canonical_source,
                     "licenseClaim": item.get("license") or "",
                     "artistClaim": item.get("artist") or "",
                     "captionClaim": item.get("credit") or "",

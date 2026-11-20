@@ -17,8 +17,9 @@ KNOWN_IDENTITY_CONFLICTS = {("t1500_0465", "https://commons.wikimedia.org/wiki/F
 REJECTED_STATUSES = {"needs_alternative_source", "identity_unconfirmed", "image_validation_failed", "excluded_context"}
 
 def is_rejected_media(item):
-    status = str(item.get("reviewStatus") or item.get("status") or "").strip().lower()
-    return status.startswith(("rejected", "failed", "invalid")) or status in REJECTED_STATUSES
+    statuses = (str(item.get(key) or "").strip().lower() for key in ("reviewStatus", "status"))
+    return any(status.startswith(("rejected", "failed", "invalid")) or status in REJECTED_STATUSES
+               for status in statuses)
 
 
 def crosswalk(plan, live, media):

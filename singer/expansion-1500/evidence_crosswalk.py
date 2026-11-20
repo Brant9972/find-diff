@@ -34,12 +34,18 @@ def crosswalk(plan, live, media):
         seen_sources = set()
         if row["status"] != "BLOCK":
             for item in by_id.get(row["id"], []):
-                if is_rejected_media(item) or (row["id"], item.get("source")) in KNOWN_IDENTITY_CONFLICTS:
+                if is_rejected_media(item):
                     continue
                 source = item.get("source")
-                if not isinstance(source, str) or not source.startswith(("https://", "http://")):
+                if not isinstance(source, str):
                     continue
                 canonical_source = source.strip()
+                if not canonical_source.startswith(("https://", "http://")):
+                    continue
+                # Normalize before checking known identity conflicts: surrounding
+                # whitespace must never let a rejected photo re-enter the queue.
+                if (row["id"], canonical_source) in KNOWN_IDENTITY_CONFLICTS:
+                    continue
                 if canonical_source in seen_sources:
                     continue
                 seen_sources.add(canonical_source)

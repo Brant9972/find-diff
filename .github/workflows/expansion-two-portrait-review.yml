@@ -150,6 +150,25 @@ jobs:
               except Exception as e:
                   row['status']='failed';row['error']=repr(e)
                   print('Portrait evidence error:', pid, repr(e), flush=True)
+                  # Separate preview-only retrieval from license verification. Commons
+                  # API 429 must not prevent producing an untrusted visual reference,
+                  # but NEVER approve, crop for game, or publish without metadata.
+                  if isinstance(e, urllib.error.HTTPError) and e.code == 429:
+                      try:
+                          redirect='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(title.removeprefix('File:').replace(' ','_'),safe='')
+                          preview_raw=fetch_with_backoff(redirect,35,18_000_001)
+                          if len(preview_raw)>18_000_000: raise ValueError('Preview exceeds 18 MB')
+                          preview=Image.open(io.BytesIO(preview_raw));preview.load()
+                          preview=ImageOps.exif_transpose(preview).convert('RGB')
+                          row['unverifiedPreviewSize']=list(preview.size)
+                          preview.thumbnail((900,1080))
+                          preview.save(out/(pid+'-UNVERIFIED-source-only.jpg'),quality=85)
+                          row['unverifiedPreviewUrl']=redirect
+                          row['status']='unverified_preview_only_license_and_identity_not_checked'
+                          print('Preview only; no license, identity or release approval:',pid,flush=True)
+                      except Exception as preview_error:
+                          row['previewError']=repr(preview_error)
+                          print('Unverified preview retrieval failed:',repr(preview_error),flush=True)
               report.append(row)
               print(pid,name,row['status'],flush=True)
           (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))

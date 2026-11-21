@@ -7,6 +7,7 @@ on:
   pull_request:
     paths:
       - '.github/workflows/expansion-two-portrait-review.yml'
+      - 'singer/expansion-1500/review-request.json'
   workflow_dispatch:
     inputs:
       person_id:
@@ -39,21 +40,21 @@ jobs:
           lines = source.splitlines()
           marker = '      - name: Download exact Commons originals and prepare visual review'
           start = next(i for i, line in enumerate(lines) if line == marker)
-          script_start = next(i for i in range(start + 1, len(lines)) if lines[i].startswith('          import json, pathlib, urllib.parse, urllib.request, re,'))
+          script_start = next(i for i in range(start + 1, len(lines)) if lines[i].startswith('          import json, pathlib, urllib.parse, urllib.request,'))
           script_end = next(i for i in range(script_start + 1, len(lines)) if lines[i] == '          PY')
           body = '\n'.join(line[10:] for line in lines[script_start:script_end])
           compile(body, '<portrait-review>', 'exec')
           print('Portrait review Python syntax PASS')
           PY
       - name: Download exact Commons originals and prepare visual review
-        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
         env:
           PERSON_ID: ${{ inputs.person_id }}
           PERSON_NAME: ${{ inputs.person_name }}
           COMMONS_FILE: ${{ inputs.commons_file }}
         run: |
           python - <<'PY'
-          import json, pathlib, urllib.parse, urllib.request, re, html, hashlib, io, os
+          import json, pathlib, urllib.parse, urllib.request, urllib.error, re, html, hashlib, io, os, time
           from PIL import Image,ImageOps,ImageDraw
           out=pathlib.Path('portrait-review');out.mkdir()
           if os.environ.get('PERSON_ID','').strip():
@@ -73,16 +74,19 @@ jobs:
           if not candidate: raise SystemExit('Candidate ID absent from selectedNew')
           if candidate['name'] != entries[0][1].strip(): raise SystemExit('Candidate ID/name mismatch with release plan')
           if candidate.get('photoStatus') == 'published': raise SystemExit('Candidate already marked published in release plan')
+          def names_as_set(value):
+              if isinstance(value,str): return {value.strip().casefold()} if value.strip() else set()
+              if isinstance(value,(list,tuple,set)):
+                  return {v.strip().casefold() for v in value if isinstance(v,str) and v.strip()}
+              return set()
+          candidate_names=names_as_set(candidate.get('name')) | names_as_set(candidate.get('aliases')) | names_as_set(candidate.get('acceptedAnswers'))
           for bank in ('questions.json','actors.json','variety.json'):
               live=json.loads((pathlib.Path('singer')/bank).read_text())
               records=live if isinstance(live,list) else live.get('questions',live.get('people',[]))
-              candidate_names={candidate['name'],*candidate.get('aliases',[]),*candidate.get('acceptedAnswers',[])}
-              candidate_names={str(n).strip().casefold() for n in candidate_names if str(n).strip()}
               for p in records:
                   if not isinstance(p,dict): continue
                   if p.get('id')==entries[0][0]: raise SystemExit('Candidate ID already live in '+bank)
-                  live_names={p.get('name',''),*(p.get('aliases') or []),*(p.get('acceptedAnswers') or [])}
-                  live_names={str(n).strip().casefold() for n in live_names if str(n).strip()}
+                  live_names=names_as_set(p.get('name')) | names_as_set(p.get('aliases')) | names_as_set(p.get('acceptedAnswers'))
                   candidate_qid=candidate.get('wikidataId') or candidate.get('wikidataQid')
                   live_qid=p.get('wikidataId') or p.get('wikidataQid')
                   if candidate_qid and live_qid and str(candidate_qid).strip().upper()==str(live_qid).strip().upper():
@@ -95,7 +99,22 @@ jobs:
               try:
                   url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
                   headers={'User-Agent':'FindDiffPortraitReview/1.0 (github.com/Brant9972/find-diff; license and visual audit)'}
-                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:data=json.load(response)
+                  def fetch_with_backoff(target, timeout, max_bytes=None):
+                      # Respect Commons rate limits; never bypass license verification.
+                      for attempt in range(4):
+                          try:
+                              with urllib.request.urlopen(urllib.request.Request(target,headers=headers),timeout=timeout) as response:
+                                  return response.read(max_bytes) if max_bytes is not None else response.read()
+                          except urllib.error.HTTPError as exc:
+                              if exc.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                                  raise
+                              retry_after=exc.headers.get('Retry-After','').strip()
+                              try: delay=min(30,max(1,int(retry_after)))
+                              except ValueError: delay=min(30,3*(2**attempt))
+                              print('Commons transient HTTP',exc.code,'retry',attempt+1,'delay',delay,'seconds',flush=True)
+                              time.sleep(delay)
+                      raise RuntimeError('Retry budget exhausted')
+                  data=json.loads(fetch_with_backoff(url,35))
                   page=next(iter(data['query']['pages'].values()))
                   info=page['imageinfo'][0]
                   ext=info.get('extmetadata',{})
@@ -113,7 +132,8 @@ jobs:
                       raise ValueError('Missing Commons artist attribution')
                   row['sourceUrl']=info['url']
                   row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
-                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_000)
+                  raw=fetch_with_backoff(info['url'],50,18_000_001)
+                  if len(raw)>18_000_000: raise ValueError('Original exceeds 18 MB review download limit')
                   row['sha256']=hashlib.sha256(raw).hexdigest()
                   image=Image.open(io.BytesIO(raw));image.load()
                   row['originalSize']=list(image.size)
@@ -133,13 +153,33 @@ jobs:
                   row['status']='source_and_crop_proposal_ready_for_human_review'
               except Exception as e:
                   row['status']='failed';row['error']=repr(e)
+                  print('Portrait evidence error:', pid, repr(e), flush=True)
+                  # Separate preview-only retrieval from license verification. Commons
+                  # API 429 must not prevent producing an untrusted visual reference,
+                  # but NEVER approve, crop for game, or publish without metadata.
+                  if isinstance(e, urllib.error.HTTPError) and e.code == 429:
+                      try:
+                          redirect='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(title.removeprefix('File:').replace(' ','_'),safe='')
+                          preview_raw=fetch_with_backoff(redirect,35,18_000_001)
+                          if len(preview_raw)>18_000_000: raise ValueError('Preview exceeds 18 MB')
+                          preview=Image.open(io.BytesIO(preview_raw));preview.load()
+                          preview=ImageOps.exif_transpose(preview).convert('RGB')
+                          row['unverifiedPreviewSize']=list(preview.size)
+                          preview.thumbnail((900,1080))
+                          preview.save(out/(pid+'-UNVERIFIED-source-only.jpg'),quality=85)
+                          row['unverifiedPreviewUrl']=redirect
+                          row['status']='unverified_preview_only_license_and_identity_not_checked'
+                          print('Preview only; no license, identity or release approval:',pid,flush=True)
+                      except Exception as preview_error:
+                          row['previewError']=repr(preview_error)
+                          print('Unverified preview retrieval failed:',repr(preview_error),flush=True)
               report.append(row)
               print(pid,name,row['status'],flush=True)
           (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY
       - uses: actions/upload-artifact@v4
-        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]'))
+        if: always() && (github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[portrait-review-request]')))
         with:
           name: expansion-two-portrait-human-review
           path: portrait-review/

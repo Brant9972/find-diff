@@ -73,7 +73,8 @@ jobs:
                       row[key]=clean(key)
                   row['sourceUrl']=info['url']
                   row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
-                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_000)
+                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_001)
+                  if len(raw)>18_000_000: raise ValueError('Original exceeds 18 MB review limit; refusing truncated image')
                   row['sha256']=hashlib.sha256(raw).hexdigest()
                   image=Image.open(io.BytesIO(raw));image.load()
                   row['originalSize']=list(image.size)
@@ -93,8 +94,9 @@ jobs:
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY
       - uses: actions/upload-artifact@v4
-        if: github.event_name == 'workflow_dispatch'
+        if: ${{ always() && github.event_name == 'workflow_dispatch' }}
         with:
           name: expansion-two-portrait-human-review
           path: portrait-review/
           retention-days: 14
+          if-no-files-found: warn

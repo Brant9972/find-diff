@@ -56,6 +56,20 @@ class CrosswalkTests(unittest.TestCase):
         self.assertEqual(row["mediaLeadCount"], 1)
         self.assertIn("Different_verified_candidate.jpg", row["existingMediaLeads"][0]["source"])
 
+    def test_rejected_rhydian_portrait_does_not_reenter_queue(self):
+        plan = {"selectedNew": [{"name": "鳳小岳", "plannedQuestionId": "t1500_0174"}]}
+        media = {"items": [
+            {"questionId": "t1500_0174",
+             "source": "  https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg  ",
+             "reviewStatus": "pending_review"},
+            {"questionId": "t1500_0174",
+             "source": "https://commons.wikimedia.org/wiki/File:Different-Rhydian-photo.jpg",
+             "reviewStatus": "pending_review"},
+        ]}
+        row = crosswalk(plan, [], media)["candidates"][0]
+        self.assertEqual(row["mediaLeadCount"], 1)
+        self.assertIn("Different-Rhydian-photo.jpg", row["existingMediaLeads"][0]["source"])
+
     def test_rejected_status_field_blocks_even_with_pending_review_status(self):
         plan = {"selectedNew": [{"name": "甲", "plannedQuestionId": "t1"}]}
         media = {"items": [{"questionId": "t1", "source": "https://example.org/wrong.jpg",

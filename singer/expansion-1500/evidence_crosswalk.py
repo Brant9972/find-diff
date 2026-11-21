@@ -12,7 +12,11 @@ from identity_preflight import load_records
 HERE = Path(__file__).resolve().parent
 
 # A URL on a previously rejected photo is not a reusable source lead.
-KNOWN_IDENTITY_CONFLICTS = {("t1500_0465", "https://commons.wikimedia.org/wiki/File:Teresa_Teng_onstage.jpg")}
+KNOWN_IDENTITY_CONFLICTS = {
+    ("t1500_0465", "https://commons.wikimedia.org/wiki/File:Teresa_Teng_onstage.jpg"),
+    # Issue #213: verified source image obstructs mouth/chin; do not recycle.
+    ("t1500_0174", "https://commons.wikimedia.org/wiki/File:Rhydian-Vaughan.jpg"),
+}
 
 REJECTED_STATUSES = {"needs_alternative_source", "identity_unconfirmed", "image_validation_failed", "excluded_context"}
 

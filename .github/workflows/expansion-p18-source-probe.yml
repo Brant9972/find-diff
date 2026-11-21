@@ -105,12 +105,16 @@ jobs:
           report=[]
           for p in candidates:
               name=p['name']
-              row={'id':p['plannedQuestionId'],'name':name,'status':'unverified','candidates':[]}
+              row={'id':p['plannedQuestionId'],'name':name,'status':'unverified','candidates':[],'sourceErrors':[]}
               search=api('https://www.wikidata.org/w/api.php',dict(action='wbsearchentities',search=name,language='zh',uselang='zh',format='json',limit=5))
               row['rejectedEntities']=[]
+              if search.get('error'): row['sourceErrors'].append({'stage':'wikidata_search','error':str(search['error'])})
               for hit in search.get('search',[]):
                   qid=hit['id']
                   entity=api('https://www.wikidata.org/w/api.php',dict(action='wbgetentities',ids=qid,props='claims|labels|descriptions|aliases',languages='zh|en|zh-hant|zh-hans',format='json'))
+                  if entity.get('error'):
+                      row['sourceErrors'].append({'stage':'wikidata_entity','qid':qid,'error':str(entity['error'])})
+                      continue
                   e=entity.get('entities',{}).get(qid,{})
                   occupation=[x.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') for x in e.get('claims',{}).get('P106',[])]
                   # Require an exact full-name/alias match, never substring matching.
@@ -125,18 +129,21 @@ jobs:
                       title=claim.get('mainsnak',{}).get('datavalue',{}).get('value')
                       if not isinstance(title,str):continue
                       commons=api('https://commons.wikimedia.org/w/api.php',dict(action='query',format='json',prop='imageinfo',iiprop='url|size|mime|extmetadata',titles='File:'+title))
+                      if commons.get('error'):
+                          row['sourceErrors'].append({'stage':'commons_imageinfo','title':title,'error':str(commons['error'])})
+                          continue
                       pages=commons.get('query',{}).get('pages',{})
                       info=next((v['imageinfo'][0] for v in pages.values() if v.get('imageinfo')),None)
                       if not info:continue
                       m=info.get('extmetadata',{})
                       get=lambda key:re.sub('<[^>]*>',' ',html.unescape(m.get(key,{}).get('value',''))).strip()[:600]
                       row['candidates'].append({'qid':qid,'wikidataDescription':hit.get('description',''),'occupationQids':occupation,'commonsTitle':title,'commonsPage':'https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(title.replace(' ','_')),'license':get('LicenseShortName'),'licenseUrl':get('LicenseUrl'),'artist':get('Artist'),'credit':get('Credit'),'usageTerms':get('UsageTerms'),'mime':info.get('mime'),'width':info.get('width'),'height':info.get('height'),'sourceUrl':info.get('url'),'warning':'NOT identity/rights/crop approved; manual verification mandatory'})
-              row['status']='metadata_candidates_only' if row['candidates'] else 'no_verified_p18_source'
+              row['status']='metadata_candidates_only' if row['candidates'] else 'source_api_error' if row['sourceErrors'] else 'no_verified_p18_source'
               report.append(row)
               print(row['id'],name,row['status'],len(row['candidates']),flush=True)
           out=pathlib.Path('p18-source-probe.json')
           out.write_text(json.dumps({'mainCommit':'${{ github.sha }}','offset':offset,'limit':limit,'entries':report,'note':'Metadata only. No photo or person is approved; cross-bank alias/QID, source caption, rights and five-stage manual review required.'},ensure_ascii=False,indent=2))
-          print('PROBE SUMMARY',json.dumps({'people':len(report),'withP18':sum(bool(r['candidates']) for r in report)},ensure_ascii=False))
+          print('PROBE SUMMARY',json.dumps({'people':len(report),'withP18':sum(bool(r['candidates']) for r in report),'sourceApiErrorPeople':sum(r['status']=='source_api_error' for r in report)},ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v4
         with:

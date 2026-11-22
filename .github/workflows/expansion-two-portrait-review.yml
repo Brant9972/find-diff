@@ -95,7 +95,21 @@ jobs:
               try:
                   url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode({'action':'query','format':'json','prop':'imageinfo','iiprop':'url|size|mime|extmetadata','titles':title})
                   headers={'User-Agent':'FindDiffPortraitReview/1.0 (github.com/Brant9972/find-diff; license and visual audit)'}
-                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:data=json.load(response)
+                  # Commons may throttle metadata requests; retry only transient 429/5xx.
+                  import time, urllib.error
+                  def open_with_backoff(target, timeout):
+                      for attempt in range(4):
+                          try:
+                              return urllib.request.urlopen(urllib.request.Request(target,headers=headers),timeout=timeout)
+                          except urllib.error.HTTPError as exc:
+                              if exc.code not in (429,500,502,503,504) or attempt==3:
+                                  raise
+                              retry_after=exc.headers.get('Retry-After','')
+                              try: delay=min(60,max(1,int(retry_after)))
+                              except (ValueError,TypeError): delay=min(60,5*(2**attempt))
+                              print('Commons transient HTTP',exc.code,'retry',attempt+1,'in',delay,'seconds',flush=True)
+                              time.sleep(delay)
+                  with open_with_backoff(url,35) as response:data=json.load(response)
                   page=next(iter(data['query']['pages'].values()))
                   info=page['imageinfo'][0]
                   ext=info.get('extmetadata',{})
@@ -113,7 +127,7 @@ jobs:
                       raise ValueError('Missing Commons artist attribution')
                   row['sourceUrl']=info['url']
                   row['commonsPage']='https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'))
-                  with urllib.request.urlopen(urllib.request.Request(info['url'],headers=headers),timeout=50) as response: raw=response.read(18_000_001)
+                  with open_with_backoff(info['url'],50) as response: raw=response.read(18_000_001)
                   if len(raw)>18_000_000: raise ValueError('Original exceeds 18 MB review limit; refusing truncated image')
                   row['sha256']=hashlib.sha256(raw).hexdigest()
                   image=Image.open(io.BytesIO(raw));image.load()

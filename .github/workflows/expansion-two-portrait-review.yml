@@ -135,7 +135,7 @@ jobs:
               except Exception as e:
                   row['status']='failed';row['error']=repr(e)
               report.append(row)
-              print(pid,name,row['status'],flush=True)
+              print(pid,name,row['status'],('error='+row['error'] if row.get('error') else ''),flush=True)
           (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
           if not any(r['status'].startswith('source_and') for r in report):raise SystemExit('No original photos could be downloaded')
           PY

@@ -1,0 +1,22 @@
+name: Portrait Commons retry regression QA
+on:
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/tests/test_portrait_review_backoff.py'
+      - '.github/workflows/expansion-two-portrait-review.yml'
+      - '.github/workflows/portrait-retry-regression.yml'
+  push:
+    paths:
+      - 'singer/expansion-1500/tests/test_portrait_review_backoff.py'
+      - '.github/workflows/expansion-two-portrait-review.yml'
+      - '.github/workflows/portrait-retry-regression.yml'
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify embedded Commons retry behavior
+        run: python -m unittest discover -s singer/expansion-1500/tests -p 'test_portrait_review_backoff.py' -v

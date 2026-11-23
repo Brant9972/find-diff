@@ -1,0 +1,19 @@
+name: Expansion scalar alias identity regression
+on:
+  pull_request:
+    paths:
+      - 'singer/expansion-1500/media_pipeline/sources.py'
+      - 'singer/expansion-1500/tests/test_scalar_alias_identity.py'
+      - '.github/workflows/expansion-scalar-alias-regression.yml'
+permissions:
+  contents: read
+jobs:
+  scalar-alias-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check scalar aliases and name boundaries
+        run: python3 -m unittest discover -s singer/expansion-1500/tests -p 'test_scalar_alias_identity.py' -v

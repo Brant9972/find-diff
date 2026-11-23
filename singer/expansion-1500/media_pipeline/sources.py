@@ -91,7 +91,15 @@ def identity(person, text):
     prefixes = ('歌手', '歌星', '艺人', '演员', '主持人', '音乐人', '台湾', '台语', '专访')
     suffixes = ('演唱会', '演出', '专访', '访谈', '记者会', '音乐', '的', '在', '与', '照片', '肖像', '表演', '现场', '出席', '参与', '接受', '正面', '是')
     found = []
-    for alias in dict.fromkeys([person['name'], *person.get('aliases', []), *person.get('acceptedAnswers', [])]):
+    def alias_values(value):
+        # A scalar alias is one complete name, not an iterable of characters.
+        if isinstance(value, str):
+            return [value]
+        if isinstance(value, (list, tuple)):
+            return [v for v in value if isinstance(v, str)]
+        return []
+
+    for alias in dict.fromkeys([person['name'], *alias_values(person.get('aliases')), *alias_values(person.get('acceptedAnswers'))]):
         key = norm(alias)
         if len(key) < 2:
             continue
